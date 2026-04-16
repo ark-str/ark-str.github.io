@@ -1,0 +1,364 @@
+.page {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.page::before,
+.page::after {
+  content: "";
+  position: absolute;
+  inset: auto;
+  border-radius: 999px;
+  filter: blur(24px);
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+.page::before {
+  top: -6rem;
+  right: -8rem;
+  width: 22rem;
+  height: 22rem;
+  background: radial-gradient(circle, rgba(255, 201, 116, 0.85) 0%, rgba(255, 201, 116, 0) 72%);
+}
+
+.page::after {
+  bottom: 4rem;
+  left: -10rem;
+  width: 24rem;
+  height: 24rem;
+  background: radial-gradient(circle, rgba(80, 124, 255, 0.28) 0%, rgba(80, 124, 255, 0) 72%);
+}
+
+.shell {
+  position: relative;
+  z-index: 1;
+  width: min(1120px, calc(100vw - 2rem));
+  margin: 0 auto;
+  padding: 2rem 0 4rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.35fr 0.95fr;
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.panel {
+  border: 1px solid rgba(20, 24, 34, 0.08);
+  background: rgba(255, 252, 245, 0.92);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 1.2rem 2.6rem rgba(20, 24, 34, 0.08);
+}
+
+.heroMain {
+  padding: 2rem;
+  border-radius: 2rem 2rem 2rem 0.75rem;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(20, 24, 34, 0.08);
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted-ink);
+}
+
+.title {
+  max-width: 12ch;
+  margin-top: 1.15rem;
+  font-size: clamp(3.15rem, 9vw, 5.4rem);
+  line-height: 0.92;
+  letter-spacing: -0.06em;
+}
+
+.lead {
+  max-width: 56ch;
+  margin-top: 1.25rem;
+  color: var(--muted-ink);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.metricRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1.5rem;
+}
+
+.metric {
+  min-width: 10rem;
+  padding: 0.95rem 1rem;
+  border-radius: 1.1rem;
+  background: var(--surface-alt);
+}
+
+.metricLabel {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted-ink);
+}
+
+.metricValue {
+  margin-top: 0.25rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.heroSide {
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  padding: 1.4rem;
+  border-radius: 1.55rem;
+}
+
+.card h2 {
+  font-size: 1rem;
+  margin-bottom: 0.55rem;
+}
+
+.card p {
+  color: var(--muted-ink);
+  line-height: 1.6;
+}
+
+.cardAccent {
+  background: linear-gradient(135deg, rgba(240, 115, 74, 0.96), rgba(255, 198, 112, 0.88));
+  color: #101014;
+}
+
+.cardAccent p {
+  color: rgba(16, 16, 20, 0.78);
+}
+
+.cardSlate {
+  background: linear-gradient(180deg, rgba(19, 27, 39, 0.98), rgba(31, 48, 72, 0.95));
+  color: #f9f7f2;
+}
+
+.cardSlate p {
+  color: rgba(249, 247, 242, 0.74);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.stack {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.sectionTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.sectionTitle h2 {
+  font-size: 1.4rem;
+  letter-spacing: -0.03em;
+}
+
+.sectionTitle span {
+  color: var(--muted-ink);
+  font-size: 0.92rem;
+}
+
+.manifest {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.manifestItem {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.85rem;
+  align-items: center;
+  padding: 0.95rem 1rem;
+  border-radius: 1rem;
+  background: var(--surface-alt);
+}
+
+.manifestBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 0.85rem;
+  background: rgba(20, 24, 34, 0.08);
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.manifestMeta h3 {
+  font-size: 0.98rem;
+}
+
+.manifestMeta p {
+  margin-top: 0.24rem;
+  color: var(--muted-ink);
+  line-height: 1.5;
+}
+
+.manifestMeta code {
+  display: inline-block;
+  margin-top: 0.35rem;
+  color: var(--muted-ink);
+  font-size: 0.78rem;
+}
+
+.checkbox {
+  width: 1.15rem;
+  height: 1.15rem;
+  accent-color: var(--accent-blue);
+}
+
+.workspaceFields {
+  display: grid;
+  gap: 1rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.field label {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted-ink);
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  border: 1px solid rgba(20, 24, 34, 0.12);
+  border-radius: 1rem;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  padding: 0.95rem 1rem;
+}
+
+.field textarea {
+  min-height: 10rem;
+  resize: vertical;
+}
+
+.actionRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.buttonPrimary,
+.buttonSecondary {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.9rem 1.15rem;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.buttonPrimary {
+  background: var(--ink);
+  color: #fff;
+}
+
+.buttonSecondary {
+  background: var(--surface-alt);
+  color: var(--ink);
+}
+
+.checklist {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.checklistItem {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.8rem;
+  align-items: start;
+  padding: 0.95rem 1rem;
+  border-radius: 1rem;
+  background: var(--surface-alt);
+}
+
+.checklistItem h3 {
+  font-size: 0.97rem;
+}
+
+.checklistItem p {
+  margin-top: 0.22rem;
+  color: var(--muted-ink);
+  line-height: 1.5;
+}
+
+.footerNote {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(20, 24, 34, 0.08);
+  color: var(--muted-ink);
+  line-height: 1.6;
+}
+
+.hydration {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 0.75rem;
+  color: var(--muted-ink);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 960px) {
+  .hero,
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .shell {
+    width: min(100vw - 1rem, 1120px);
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .heroMain,
+  .card {
+    padding: 1.2rem;
+  }
+
+  .manifestItem {
+    grid-template-columns: auto 1fr;
+  }
+}

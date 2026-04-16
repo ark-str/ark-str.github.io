@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ARK STR
 
-## Getting Started
+Single-page Next.js starter with a repository-local harness for autonomous, agent-led iteration.
 
-First, run the development server:
+## What is in this repo
+
+- Next.js App Router app under `src/app`
+- local-first sample page under `src/features/harness`
+- repository docs that act as the system of record
+- guard scripts that enforce architecture and asset constraints
+- a Codex CLI entry point for one-shot autonomous iterations
+
+## Commands
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run verify
+npm run smoke
+npm run harness:iterate -- --goal "Improve the hero and checklist copy"
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Repository rules
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- bundled resources only
+- no remote runtime calls
+- mutable client state via `localStorage`
+- update docs when behavior changes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Harness flow
 
-## Learn More
+`npm run harness:iterate` will:
 
-To learn more about Next.js, take a look at the following resources:
+1. snapshot a prompt under `artifacts/harness/runs/<timestamp>/prompt.txt`
+2. run `codex exec --full-auto`
+3. write the event log to `artifacts/harness/runs/<timestamp>/events.jsonl`
+4. write the final agent message to `artifacts/harness/latest-message.md`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The Codex run itself is instructed to read the repo docs, implement one coherent change, run `npm run verify`, and update `docs/generated/latest-iteration.md` only after the strict verification gates pass.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+`npm run verify` now includes:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. repository guard checks
+2. typecheck
+3. lint
+4. production build
+5. Playwright browser smoke with zero console or page errors
