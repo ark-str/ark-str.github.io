@@ -143,13 +143,11 @@ function resolveDialogueSpeaker(line, parserState) {
     return [];
   }
 
-  const lastResolvedSpeaker =
-    parserState.lastDialogue && parserState.lastDialogue.speakerName === speakerName
-      ? parserState.lastDialogue
-      : null;
+  const knownSpeakerBinding = parserState.speakerBindings.get(speakerName) ?? null;
+  const speakerToken = parserState.activeSpeakerToken ?? knownSpeakerBinding?.speakerToken ?? null;
+  const operatorId =
+    speakerToken !== null ? normalizeOperatorIdToken(speakerToken) : knownSpeakerBinding?.operatorId ?? null;
 
-  const speakerToken = parserState.activeSpeakerToken ?? lastResolvedSpeaker?.speakerToken ?? null;
-  const operatorId = speakerToken ? normalizeOperatorIdToken(speakerToken) : null;
   const block = {
     type: "dialogue",
     speakerName,
@@ -159,11 +157,12 @@ function resolveDialogueSpeaker(line, parserState) {
     text,
   };
 
-  parserState.lastDialogue = {
-    speakerName,
-    speakerToken,
-    operatorId,
-  };
+  if (speakerToken !== null) {
+    parserState.speakerBindings.set(speakerName, {
+      speakerToken,
+      operatorId,
+    });
+  }
 
   return [block];
 }
@@ -271,7 +270,7 @@ export function parseStoryText(rawText) {
   let currentPredicate = null;
   const parserState = {
     activeSpeakerToken: null,
-    lastDialogue: null,
+    speakerBindings: new Map(),
   };
 
   function flushChoice() {

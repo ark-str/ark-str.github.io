@@ -112,6 +112,25 @@ test("parseStoryText reuses the last resolved speaker only while the name stays 
   assert.equal(blocks[2].operatorId, null);
 });
 
+test("parseStoryText preserves speaker bindings across effect-only character tags", () => {
+  const blocks = parseStoryText(`
+[Character(name="char_101_sora_1#4")]
+[name="Sora"]The stage is ours.
+[Character(name="char_102_texas_1#1")]
+[name="Texas"]Stay sharp.
+[Character(fadetime=1)]
+[name="Sora"]We are not done yet.
+`);
+
+  assert.equal(blocks[0].type, "dialogue");
+  assert.equal(blocks[0].operatorId, "char_101_sora");
+  assert.equal(blocks[1].type, "dialogue");
+  assert.equal(blocks[1].operatorId, "char_102_texas");
+  assert.equal(blocks[2].type, "dialogue");
+  assert.equal(blocks[2].speakerToken, "char_101_sora_1#4");
+  assert.equal(blocks[2].operatorId, "char_101_sora");
+});
+
 test("parseStoryText keeps non-operator tokens on dialogue blocks without alias observations", () => {
   const blocks = parseStoryText(`
 [character(name="avg_npc_175",name2="avg_npc_360_1#1$1",focus=2)]
