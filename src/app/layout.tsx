@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "ARK STR | Agentic Frontend Harness",
-  description:
-    "Single-page Next.js starter tuned for bundled resources, localStorage persistence, and autonomous Codex iterations.",
+  title: "ARK STR",
+  description: "Root-first bootstrap for the Arknights story reader.",
 };
 
 export default function RootLayout({
@@ -13,8 +12,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko">
-      <body>{children}</body>
+    <html lang="ko" className="h-full">
+      <body className="min-h-full">{children}</body>
     </html>
   );
 }

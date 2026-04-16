@@ -1,5 +1,5 @@
-import { HarnessDashboard } from "@/features/harness/ui/harness-dashboard";
+import { BootstrapHome } from "@/features/bootstrap/ui/bootstrap-home";
 
 export default function Home() {
-  return <HarnessDashboard />;
+  return <BootstrapHome />;
 }
