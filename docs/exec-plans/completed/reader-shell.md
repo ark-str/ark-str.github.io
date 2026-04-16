@@ -1,6 +1,6 @@
 # Reader Shell
 
-Status: active
+Status: completed
 Owner: Codex
 Started: 2026-04-16
 Parent issue: `#1`
