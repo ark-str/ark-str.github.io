@@ -1,0 +1,1743 @@
+{
+  "server": "en",
+  "storyId": "main_14_level_main_14-17_end",
+  "groupId": "main_14",
+  "stageId": "main_14-17",
+  "title": "Inside the Crystal",
+  "storyCode": "14-19",
+  "avgTag": "After Operation",
+  "sourcePath": "vendor/ArknightsData/en/gamedata/story/obt/main/level_main_14-17_end.txt",
+  "sourceHash": "a157b3c1cad579567f004581cbedd6ff587d42ad89776c7672ac1f563887374d",
+  "bodyAvailable": true,
+  "blocks": [
+    {
+      "type": "narration",
+      "text": "I have returned.\nIt feels like it has been a very long time since I left, and I have not come back to the ship for a good night's rest in quite a while either.\nDoctor, Dr. Kal'tsit, Siege...\nHas the war outside ended? Finally, I can have a rest.\nI'd like nothing more than a bowl of hot vegetable soup at the cafeteria, then plop myself down in my bed in the dorms.\nWhat about Theresa? At this hour, she should be—\n...\nNo... No, that's not right...\nTheresa is gone."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "The room is empty. Nobody is waiting for my return.\nI clearly remember that on many nights in the past, there would be someone who would tell me a whole library's worth of stories to put me to sleep.\nBut now, they are no longer here.\nWait... Why is there a piece of clothing on the bed?\nA white dress, with a neat corsage sewn to the collar. The needlework is deft, clearly done by a very experienced hand.\n'White suits you, Amiya.'\nTheresa...?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Distant Voice",
+      "text": "...Doctor!",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Approaching Voice",
+      "text": "Can you hear my voice?",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "text": "Doctor!",
+      "portraitKey": null
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "text": "Doctor...",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "text": "You are here, as I surmised.",
+      "portraitKey": null
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "(I feel rather unwell.)",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "(What happened just now?)",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "(Where am I?)",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Based on how you look, you seem in poor health.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "I am afraid that there's no way for me to do a physical examination here, Doctor. Please keep your head clear and look at me.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Did you... manage to remember something?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "You hear the woman's stern but caring words, and you make an effort to open your eyes wide."
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "Your vision gradually clears as the various parts of your body regain their functionality.\nYou slowly open your mouth—"
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "(Unknown language) Kal'tsit...",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "(Unknown language) Where am I?",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "—!",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "Your shattered consciousness reassembles, your fragmented thoughts realign with one another. You are now able to determine that you are standing on solid ground.\nYou look around, certain of the familiarity of your surroundings. You have spent quite a long time here before.\nThe expression on the woman before you turns rather strange. Even hostile."
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "(Unknown language) Who am I...",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "...",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "Who am I?",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "narration",
+          "text": "I am Dr. {@nickname} of Rhodes Island."
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Amiya!",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "Kal'tsit! Why are we on Rhodes Island?",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "You...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "...It seems you still remember who you are.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Amiya is not here with us. What I can say for certain that this is not the original Rhodes Island.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "We were separated from the others?",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "Where are Logos and W?",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "You are the only one I have seen since I arrived here.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Are you sure you don't know what is going on?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "I'm as confused as you are.",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "...",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Do you...",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "...not believe me?",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "...A certain degree of precaution is necessary in these circumstances.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Be on guard, Doctor. We must leave here, no matter what.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "This is <i>not</i> a place that we are familiar with. I do not know what unexpected complications we may encounter.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Still, I will do everything I can to protect you. Don't stray too far from me.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kroos",
+          "text": "No... No more...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kroos",
+          "text": "I'm so tuckered out that I could sleep for an entire month.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Fang",
+          "text": "Don't be like that, Kroos!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Fang",
+          "text": "This is a live combat exercise! You need to treat the training room like the battlefield!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Beagle",
+          "text": "You can be real fierce sometimes, Captain...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Fang",
+          "text": "Focus up. There's still lots of training drills arranged by the instructors to go.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kroos",
+          "text": "Why so serious... They're not even here—",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kroos",
+          "text": "Oh, Doctor!",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Good morning, Kroos.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "Is everyone... here?",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Fang",
+          "text": "Kroos!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kroos",
+          "text": "Oh, don't worry, the Doctor's definitely not going to tattle on us to the instructors.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kroos",
+          "text": "Let me just take a nap here before—",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Stern Voice",
+          "text": "I thought I gave you combat <i>training</i> exercises, not combat sleeping ones.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Fang",
+          "text": "...We're doomed.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ace",
+          "text": "Attention, all members of A1 Detachment!",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "The Whole Team",
+          "text": "Sir!",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ace",
+          "text": "All of you, a hundred laps around the training room, then fifty sets of stamina training exercises, on the double!",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "The Whole Team",
+          "text": "Yessir...",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ace",
+          "text": "Sorry you had to see that, Doctor.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ace",
+          "text": "It's been too long since Rhodes Island experienced battle. These young fighters of ours can be a little slack.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ace",
+          "text": "So I guess it's up to me to tighten them up.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "...",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Letting them grow up peacefully isn't so bad...",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Ace",
+          "text": "Of course, but they still need to be prepared for any dangers we may come across.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ace",
+          "text": "It'll be fine. No need to trouble yourself over their training. I'll handle it.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ace",
+          "text": "You've been working real hard lately, Doctor. Go take a rest.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ace",
+          "text": "Don't worry. We'll be keeping watch.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Did you see all that too, Kal'tsit?",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "Am I dreaming?",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "I saw the same scene unfurl as you did. They truly do exist here.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Dreams would not be so clear, and this is not a scene out of your memory.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "It would be nice if everything here was real...",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "No, it definitely isn't real.",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Keep a clear head, Doctor.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "We must press onwards.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Outcast",
+          "text": "Rare to see you here, Doctor.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Outcast",
+          "text": "Got time to sit down and have a drink? Everything's on my tab, for one night only.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "It's lively here.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "Sure is a lot of people, isn't it?",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Touch",
+          "text": "Did you forget, Doctor? Today's Outcast's retirement party.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Sharp",
+          "text": "Here's to our venerate elder.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Outcast",
+          "text": "Oh, shut it, Sharp. I'm barely older than you are.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Thank you for all that you've done for Rhodes Island, Outcast.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "I wish you a happy retirement.",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Pith",
+          "text": "Here's to you, Outcast. We'll always remember your many deeds and exquisite marksmanship.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Blaze",
+          "text": "I can't believe that Outcast is leaving us...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Blaze",
+          "text": "There'sh not gonna to be anyone left to... *hic* drink wish me on weekend nights...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Outcast",
+          "text": "Hey, I'm just retiring. Not even a Lateran funeral would be this sentimental.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Outcast",
+          "text": "Plus, even if I drink so much tonight that I don't wake up tomorrow, I'd call my life a life well lived.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Outcast",
+          "text": "My memories of working alongside you all are my greatest treasures, and I'll bring them to the grave with me along with my patron firearm.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Outcast",
+          "text": "Just make sure that it's Rangers teaching the youngsters how to shoot.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Blaze",
+          "text": "You're drunk, Outcast. He uses a gun, how's he s'pposed to teach kids 'bout—*burp*—shootin' a Sankta crossbow?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Pith",
+          "text": "You need to cut back, Blaze. You're talking nonsense again.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Outcast",
+          "text": "Pah, both need you to keep one eye open and one eye shut. Not too big a difference.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Outcast",
+          "text": "Oh, looks like we're not the only ones at the bar tonight.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Indra",
+          "text": "I'm serious, Dagda!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Indra",
+          "text": "Show me how powerful the fist of a Knight of the Tower can be!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Dagda",
+          "text": "...Just remember, you asked for this.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Baird",
+          "text": "Hey! This isn't the boxing gym! We're guests here on Rhodes Island, so don't go about making trouble!",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Allerdale",
+          "text": "I've had my fair share of times like this before.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Vina",
+          "text": "Now that you're formally a member of the Steam Knights, are you going to break things off with street loafers like us?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Allerdale",
+          "text": "Oh, stop it... Have you made your decision, Vina?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Vina",
+          "text": "I see no real reason for me to hesitate. My days in Norport might have been some of the happiest in my life, and I don't really see any need to return to the palace.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Vina",
+          "text": "Alexandrina Vina Victoria is a descendant of the royal family, but she is also a normal, honorable Victorian.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Vina",
+          "text": "You are now an honorable Steam Knight, Allerdale, I the honorable Siege.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Vina",
+          "text": "I believe that these lives of ours are for the best.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Allerdale",
+          "text": "Peaceful lives. Such precious things.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Vina",
+          "text": "To life.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Allerdale",
+          "text": "To Victoria.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Vina",
+          "text": "Whenever you're in the mood, we should go out and have a stroll together. Perhaps throw some stones at the dukes' windows?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "How wonderful.",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "You still remember each and every one of them. The regret you feel over their tragic fates is clear on your face.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "Otherwise you would not be seeing such things.",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "...",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "What do you feel, Doctor?",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "Gratification? Confusion? Perhaps anger?",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "This isn't real.",
+          "value": "3",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "These are the scenes that your subconscious mind wished to see.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "You hoped that they were all real, didn't you?",
+              "portraitKey": null
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Who else will I see here?",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Only you can answer that.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Let us continue, Doctor.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "No matter what you see, you must face it. Surmount it.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Talulah",
+          "text": "I'm back, Doctor. It's been a while.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "...",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "...Talulah?",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Talulah",
+          "text": "Hehe, it hasn't been that long. Don't recognize me anymore?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Talulah",
+          "text": "I was out setting up an Infected treatment center in the north of Ursus. Took quite a lot of effort.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Talulah",
+          "text": "Thankfully the workers in town were all supporting us, nothing the local lord could do but compromise. We managed to get the land that we needed out of the deal.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Reunion doesn't exist...?",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Talulah",
+          "text": "Are you trying to crack a joke, Doctor, or have you just woken up?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Talulah",
+          "text": "If Reunion didn't exist, then who would be helping Rhodes Island with treating the Infected in Ursus?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "And Kashchey? What about him?",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Talulah",
+          "text": "Why would you suddenly bring up the dead Black Snake?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Talulah",
+          "text": "Did you want me to thank you again? Very well. After all, it was only thanks to Rhodes Island that Ursus and I were able to cast off that mastermind and start a new future for countless people.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Cold Voice",
+          "text": "Doctor.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "No...",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "(Do not look back.)",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "FrostNova",
+          "text": "Doctor?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": ".........",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "FrostNova...",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "You shouldn't be here.",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "FrostNova",
+          "text": "Why?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "FrostNova",
+          "text": "You told me to give you my report immediately after completing the missions, no?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Missions... for Rhodes Island?",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "FrostNova",
+          "text": "Who else would I do them for? I've always been a Rhodes Island Operator.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "...",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "FrostNova",
+          "text": "You look strange, Doctor. Am I standing too close and making you feel cold?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "This isn't right.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "This isn't...",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "THIS ISN'T RIGHT!",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "narration",
+          "text": "One by one, the lively crew shed their visages, shifting into indistinct, jet-black shadows.\nThey do not appear dangerous. They just slowly drift around you."
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Kal'tsit... What are they?",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "This is no illusion or dream. It is all real, in a sense.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "All the people, all the things you have encountered in the past exist within your imagination. They took their forms based on what you most hoped to see.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "They sully our memories.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "How can you stay so calm?",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "These scenes affect me as much as they do you, Doctor.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "But they are ultimately the product of your thoughts.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Originium, guided by your wishes deep in your subconscious and your desires to make up for past regrets, has reproduced what you wish to see.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "You continue to hold a deep regard for everything you have experienced alongside Rhodes Island, yet despite that, you were able to break away from this beautiful lie.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Only now can I believe that you, as you are now, are still the Doctor of Rhodes Island.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Originium? Since when could it do this?",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "Why is it being guided by what I want?",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Pries...tess...",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "As I thought, you already...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "I once told you, Doctor, that others cannot tell you how to solve the mysteries surrounding you. You can only rely on yourself.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "I suspect that we are now extremely close to that critical juncture.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "If this is all based on my hopes, then are you...",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "I thought that our prior interactions would be sufficient for you to render an accurate judgement.",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "I can at least say for sure that you are no illusion.",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "I hope that this judgement of yours is based on rationality, and not something else.",
+              "portraitKey": null
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "If these scenes are all about making up for regrets...",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Will I be able to meet Theresa?",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "I do not know for certain where Theresa is, nor what she is doing.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "What I am sure of is that she has something to do with this environment.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Gentle Voice",
+          "text": "Doctor.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "—!",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Amiya!",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Doctor, Dr. Kal'tsit. Good, you're both here.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "(Hesitate)",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Amiya",
+              "text": "Don't worry, Doctor. I am the real Amiya. Really.",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "(Step forward without hesitation)",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Amiya",
+              "text": "*sniff* I was looking all over for you, Doctor.",
+              "portraitKey": null
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "You look a little different.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "Your clothes...?",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Theresa left me this dress.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "So she really is here?",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "I haven't seen her. I've sensed no presence of her aboard this 'Rhodes Island', in fact.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Did you run into any danger?",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "I'm fine.",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "So many memories flowed before me...\nBut not only memories. Emotions too, rich ones in every shape and form."
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "I think that the people that we saw were truly alive.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "But this form of 'life' just makes me... sad.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "After walking down this corridor and seeing you, I think I understand now.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "The emotions that I felt all stemmed from the same source, Doctor.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "...Me.",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Yes.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "I... 'touched' you, Doctor. I've never done that before...",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "The girl holds your hand, just as she has always done, but a little tighter, and more carefully this time."
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "I know that you've changed a lot compared to the past, Doctor.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "But considering all that we've experienced together, I am even more convinced that... the you who stands before me now has always been the you that I've trusted the most.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Memory may tell falsehoods, but emotion always speaks the truth.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "There are many things that I still don't understand at this moment. I have questions that can't be answered until we see Theresa once more.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "No matter what happens, no matter how many unhappy endings await us...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "You'll stand by my side, won't you, Doctor?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "I will.",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "I am Dr. {@nickname} of Rhodes Island.",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Good. That's all I ask for.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Let's go find Theresa, then.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "First, we must figure out how to leave.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "The answers we seek are not here.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Logos",
+          "text": "Though this is no illusion, heaven and earth, life and death...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Logos",
+          "text": "It is all falsehood.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "W",
+          "text": "Hah, so even if you leave that dreary gallery of fakes, you'd just find yourself wandering around an even bigger stage?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "W",
+          "text": "Who the hell set up these curtains for us? Their taste sucks.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "W",
+          "text": "Oh, looks like the main cast is finally here.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "W",
+          "text": "Hey, crone, let's put that all-knowing brain of yours to good use. I've got a real big question I want answered—",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "W",
+          "text": "Where. The hell. Are we?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "A small boat, drifting atop an endless golden sea."
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "We are within Originium.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Within Originium, there exists a universe.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,579 @@
+{
+  "server": "en",
+  "storyId": "main_3_level_main_03-05_beg",
+  "groupId": "main_3",
+  "stageId": "main_03-05",
+  "title": "Call",
+  "storyCode": "3-5",
+  "avgTag": "Before Operation",
+  "sourcePath": "vendor/ArknightsData/en/gamedata/story/obt/main/level_main_03-05_beg.txt",
+  "sourceHash": "8bf62e6c592441cdc16d6ffb6a1aeea40d69236873c17df3a836ca65f5741513",
+  "bodyAvailable": true,
+  "blocks": [
+    {
+      "type": "narration",
+      "text": "第二十七关（前）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "text": "Dr. {@nickname}...",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "text": "I... I didn't mean to... I...",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoshiguma",
+      "text": "The fog has dispersed.",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoshiguma",
+      "text": "We've received communications from the L.G.D. They found more Reunion movements.",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoshiguma",
+      "text": "They're currently tracking down one enemy, described as female with white hair--",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "text": "...",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoshiguma",
+      "text": "Amiya, Ch'en told me that she wanted you to...",
+      "portraitKey": null
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoshiguma",
+      "text": "...",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoshiguma",
+      "text": "...You don't look so good.",
+      "portraitKey": null
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Let me handle it.",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Hoshiguma",
+          "text": "Well...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Hoshiguma",
+          "text": "I'll leave her to you, Dr. {@nickname}.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Hoshiguma",
+          "text": "It'd be ideal to leave within 5 minutes.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Dr. {@nickname}...",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Are you scared?",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Amiya",
+              "text": "Huh...? I...",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Amiya",
+              "text": "Doctor... it's not like I'm afraid or anything...",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Amiya",
+              "text": "Of course, I'm afraid... of losing you again... That's why...",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Amiya",
+              "text": "I just... didn't mean to...",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "...Do you not like this power you have?",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Amiya",
+              "text": "I... I just don't know...",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Amiya",
+              "text": "I don't know if I should be saying this, but...",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Amiya",
+              "text": "It shouldn't... only be hurting other people.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Amiya",
+              "text": "I don't want you to see me like this, up close...",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Amiya",
+              "text": "...I took someone's life.",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "Amiya, it's not your fault.",
+          "value": "3",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Amiya",
+              "text": "I feel no regret.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Amiya",
+              "text": "No, what I mean is...",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Amiya",
+              "text": "I will always use my power for your sake. No matter what kind of burden he was carrying, I don't regret killing him.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Amiya",
+              "text": "But... there should have been a better way.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Amiya",
+              "text": "He died because... I wasn't able to find it.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Amiya",
+              "text": "And that... is eating me up inside.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Amiya",
+              "text": "I don't want...",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Amiya",
+              "text": "I don't want you to see this side of me, {@nickname}.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Amiya",
+              "text": "Even though I've always talked about freeing the Infected from pain and suffering...",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Amiya",
+              "text": "But when matters the most, I have to persuade myself, again and again, that it's justified to take the life of another Infected.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Amiya",
+              "text": "I am truly pathetic.",
+              "portraitKey": null
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Amiya, at least you protected me.",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "...This was my duty.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "I understand.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "I never believed that anything was already determined by fate.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "But, no matter what happens... no matter what I become...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "I'll always protect you, Doctor.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "I promise.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Reunion Member",
+          "text": "No!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Reunion Member",
+          "text": "You all go first!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Reunion Member",
+          "text": "I need to... I need to bring Skullshatterer back!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Reunion Member",
+          "text": "Are you insane?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Reunion Member",
+          "text": "That's suicide... If you're going, we're all going together!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Reunion Member",
+          "text": "All right!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Reunion Member",
+          "text": "I can't leave him alone out there...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Reunion Member",
+          "text": "Let's go then!",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Hoshiguma",
+          "text": "Why...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Hoshiguma",
+          "text": "Why is Reunion... turning back around?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Hoshiguma",
+          "text": "What are they doing...?!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Madam Hoshiguma! Fall back!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Hoshiguma",
+          "text": "L.G.D., don't panic!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Hoshiguma",
+          "text": "Prepare for enemy attack!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Reunion Member",
+          "text": "Cover! Cover me!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Reunion Member",
+          "text": "That woman...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Reunion Member",
+          "text": "It's impossible... We can't get past her shield!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Reunion Member",
+          "text": "Quick! Wrap around, before they have a chance to react...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Reunion Member",
+          "text": "We have to get to Skullshatterer... and bring him...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Reunion Member",
+          "text": "And bring him home!!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Hoshiguma",
+          "text": "Rhodes Island! They're changing their target, watch out!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Oh no!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Madam Hoshiguma! Watch your right!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Hoshiguma",
+          "text": "Huh...?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "W",
+          "text": "Hehe, you managed to block that? That's a bit interesting...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Hoshiguma",
+          "text": "An explosion? Another Reunion ambush?!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "W",
+          "text": "Not just that, of course~",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "W",
+          "text": "I'd like you to behave yourself and stay put right here. Don't think about turning back, all right?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Hoshiguma",
+          "text": "Tsk... Where the hell did you come from?!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Hoshiguma",
+          "text": "Again with those explosives...!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Hoshiguma",
+          "text": "Amiya! I'm getting bombarded by Reunion!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Hoshiguma",
+          "text": "Their forces are currently headed your way!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "W",
+          "text": "Hmm, that shield of yours is pretty sturdy.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "W",
+          "text": "Seems like I've gotten myself into a bit of trouble...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "W",
+          "text": "Whatever, I'll just treat it like I'm doing Reunion a little favor.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "W",
+          "text": "Show me something entertaining. Make sure you don't let me down~",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "That's the 'W' person who we saw at Chernobog!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Could she... have managed to shake off Madam Ch'en? !",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Be careful of the enemy assault! We've got to help Madam Hoshiguma right away!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "There are many more enemies hiding nearby!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "We won't be able to get the upper hand unless we reveal them!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Doctor! Please lead our squads and hold off the enemy assault!",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    }
+  ]
+}

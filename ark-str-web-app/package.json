@@ -4,11 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build --webpack",
+    "export": "next build --webpack",
+    "export:ghpages": "ARK_STR_BASE_PATH=/ark-str next build --webpack",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "verify": "npm run typecheck && npm run lint && npm run build"
+    "verify": "npm run typecheck && npm run lint && npm run export:ghpages"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",

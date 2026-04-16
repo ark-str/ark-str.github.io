@@ -24,6 +24,7 @@ The app should feel editorial, deliberate, and product-specific rather than like
 - canonical locale archive routes and direct story deep links
 - first-pass story body rendering sourced from bundled story detail JSON
 - a generated-content readiness panel and explicit summary empty state sourced from bundled JSON
+- gh-pages-safe reader routes rendered from exported static files under the `/ark-str/` base path
 - no framework starter copy, remote links, or vendor branding
 - reader shell must use shared UI primitives instead of one-off styled markup
 

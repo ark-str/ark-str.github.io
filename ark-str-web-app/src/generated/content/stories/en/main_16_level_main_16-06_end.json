@@ -1,0 +1,1625 @@
+{
+  "server": "en",
+  "storyId": "main_16_level_main_16-06_end",
+  "groupId": "main_16",
+  "stageId": "main_16-05",
+  "title": "Flickering Pain",
+  "storyCode": "16-6",
+  "avgTag": "After Operation",
+  "sourcePath": "vendor/ArknightsData/en/gamedata/story/obt/main/level_main_16-06_end.txt",
+  "sourceHash": "ae4b6a0ab739d950adce6bf6a8a800444b833b8d6a20b270c523d740946b72e2",
+  "bodyAvailable": true,
+  "blocks": [
+    {
+      "type": "narration",
+      "text": "<p=1>Central Far North Mining District Laboratory, Ursus</>"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "text": "Ugh...",
+      "portraitKey": null
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "text": "Ksenia!",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "text": "Ksenia, are you awake? How are you feeling?",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "text": "Feeling? I don't know. Am I supposed to feel something?",
+      "portraitKey": null
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "text": "...You...",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "text": "You're not Kal'tsit.",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "text": "No... you were never her, why did I even ask you that...? <i>Suka,</i> my head—what am I even saying?",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "text": "I'm Mon3tr, an Operator of Rhodes Island... and also a companion to Kal'tsit.",
+      "portraitKey": null
+    },
+    {
+      "type": "narration",
+      "text": "Mon3tr, a familiar name, though I don't remember where I heard it... And what about you? Why are you—\n*cough*, *cough* *cough*!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "text": "Easy now, no need to rush!",
+      "portraitKey": null
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "I am {@nickname}.",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "We're from Rhodes Island.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "We need your help.",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Ksenia",
+          "text": "So you're indeed connected to Director Kal'tsit.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ksenia",
+          "text": "Rhodes Island... Serafina talked about the place. What sort of help do you need?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ksenia",
+          "text": "What help can I even give you, as I am now?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Take this back.",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Ksenia",
+          "text": "Oh, <i>bog.</i> Burn it.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ksenia",
+          "text": "I thought I'd be awake enough to destroy it myself... but it seems staying sober did not save me from this headache anyway.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ksenia",
+          "text": "This was written for the dead, and I hope it did not cause you any offense.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Sorry, but we read it.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "We have questions.",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "You were a Sarcophagus researcher in Chernobog.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "Your writing and way of addressing Kal'tsit prove this as well.",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Ksenia",
+          "text": "That was a long time ago...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ksenia",
+          "text": "I was just an assistant then, following Professor Ilia around and running basic data analyses. I barely had any significant ties to the project...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ksenia",
+          "text": "But now I see it is the very link to my ruin. I'd rather all of that had never happened at all.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "But you still treat Kal'tsit as your director, and the research is still on your mind.",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Do you know where the Sarcophagus is currently located, or where it possibly could have gone?",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "It's complicated to explain, but we really have to find the Sarcophagus, we—",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ksenia",
+          "text": "No, wait. Explain. What do you mean by 'currently located'?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ksenia",
+          "text": "Is it not in Chernobog?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "—What?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ksenia",
+          "text": "So, not only is the Sarcophagus no longer in Chernobog, the city itself has completely changed...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ksenia",
+          "text": "I don't know what happened, and I have no clue where it went either...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ksenia",
+          "text": "Sorry, I can't help you.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Then, do you know of...",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "Artyom Chaadayev?",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Ksenia",
+          "text": "You... how do you know this name?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "Let's skip that first! You know him, right? Did he ever tell you anything about the Sarcophagus—",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ksenia",
+          "text": "No... I've actually never met him.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "You what...?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ksenia",
+          "text": "After the incident in Chernobog that year, someone with that name contacted me by mail...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ksenia",
+          "text": "He called himself a friend of Professor Ilia, expressed his condolences about what happened, and showed a willingness to help out a student of his old friend and recommend me to some other laboratories within the country.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ksenia",
+          "text": "I once thought it a nasty joke... until the well-funded labs mentioned in the letter actually came looking for me.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ksenia",
+          "text": "This would happen a few more times. Indeed he gave me many rare opportunities... but even now I have no idea who this man is, or why he helped me.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "He contacted you again recently.",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Ksenia",
+          "text": "Yes... He invited me to Deity Grypherburg, claiming there was an important project I could deploy my skills on.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ksenia",
+          "text": "But I was tired, what could I even do...? Looking back on what I did, all I could bring was more calamity.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ksenia",
+          "text": "If I had to choose where to end my miserable life, let it be the frozen soil out here in the Far North.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "(Doctor... what do we do now?)",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "(That project in Grypherburg sounds somewhat suspicious.)",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "(It sounds like she doesn't know much about it either.)",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Ksenia, how did you come to know Serafina?",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Ksenia",
+          "text": "The lab had to supervise the mobile medical team in the mining district, so we got acquainted rather quickly.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ksenia",
+          "text": "Though we never spoke much to each other. They don't allow researchers to get too close to anyone unrelated to the project.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ksenia",
+          "text": "It's a bit too late now, if you wanted to find her. She left the lab with your people.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ksenia",
+          "text": "With that group of miners...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ksenia",
+          "text": "......",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ksenia",
+          "text": "That's all I know.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "What is the 'Oka' mentioned in your writing?",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "What kind of experiments did you do on the Infected miners?",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Ksenia",
+          "text": "......",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ksenia",
+          "text": "A wretched mistake...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ksenia",
+          "text": "I didn't know... I had no idea they would use 'Oka' to do those things...",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Calm down...",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "There's still time to rectify mistakes.",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "narration",
+          "text": "<p=1>Central Far North Mining District, Ursus</>"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "The Central Mining District is huge, and all eleven mines are connected by a surface transport system.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Stations are installed at every mine to deliver raw ore to be washed, processed, and stored in the warehouse.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "The map seems to indicate this is the largest warehouse, and the worker dormitories are right next to it, with the south mine exit behind.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "This layout...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Storing Originium in a warehouse so close to the dormitories does not mean they trust the miners, but that they absolutely do not care about the hazard posed by active Originium particles.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "Amiya.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Yes? Did you find something?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "A chip.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "I saw it from the research lab terminal. Every miner here has a positioning chip in them. This could be why the miners we met earlier were found by the Patrol Unit.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "Before the miners we were chasing chose to leave, they must have gotten rid of these.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Did they tear out the chips themselves?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "(Shakes head)",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Meticulous Operator",
+          "text": "You were right, Captain! In the south dorms, we found bandages, hemostats and other medical equipment, all Rhodes Island issue.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Meticulous Operator",
+          "text": "There's blood on the bandages and equipment. They turned the metal beds into a makeshift operating table, and might have performed surgery on it.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "I suspect quite a big fight happened here, and the injured had to patch up their wounds.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "So those are normal findings.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "(Shakes head)",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Elysium",
+          "text": "Captain's asking if you've seen any tracking chips that were forcibly removed.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "No sign of any such thing.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Meticulous Operator",
+          "text": "No, we've swept this area.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Meticulous Operator",
+          "text": "As Eloysius says, the man-made damage inside and outside the warehouse seems to imply a fight broke out.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Meticulous Operator",
+          "text": "But I think it was a minor scuffle, unless the fresh snow is covering up some of the aftermath...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "(Nods)",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Elysium",
+          "text": "Alright, good work!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Elysium",
+          "text": "Captain, should we go take a look?",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "There is no answer, but the Phidia walks straight in the warehouse's direction.\nThe soldier pauses, then follows the group's footsteps."
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "......",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Looks like you figured it out. To be honest, I called it a big fight, because—",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "The Guardswoman steps to one side and motions Elysium to help lift a waterproof sheet.\nThe revealed hole is filled with uneven matter covered up with a white substance that at a glance appears to be thick and dirty snow."
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "This smell... doesn't seem to be snow.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Correct. It's limestone.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "......",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "And below it are corpses.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "I told your Operator earlier I already investigated the area, and they took it as-is, and did not search the place any further.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "I wasn't going to tell you about this...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "They probably wanted to burn the bodies first, before realizing they couldn't get a big enough fire going and resorted to whatever was around. Quicklime to cover the stench, and the waterproof sheet to hide the hole.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "It worked, since we didn't smell the blood, yes?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "(Shakes head)",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Elysium",
+          "text": "Captain's saying the dead are Patrol Unit members.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "I can't say for sure. I'll climb down the hole and find out just who our unlucky customers are.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "I... I'll help.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "It's fine. Just pull me up later.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "Eloysius jumps right down, and stands on the edge of the hole as she wipes some limestone off.\nShe grabs a sleeve, quickly drops it, and goes over to check the clothes on the next body."
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Alright. Could you help me back up?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "Before anyone extends their hand, Mantra moves her thick tail down and wraps it around Eloysius to hoist her up, then releases her gently onto the ground."
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Ugh...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Elysium",
+          "text": "I've never been treated like this!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "(Shakes head)",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Elysium",
+          "text": "Alright not the best time for that so sorry Captain.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "I'll get to the point. Most of the bodies down there are indeed Patrol Unit members—the first and second layers, at least.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "I found this too.",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "The crowd looks at the fragile crystal fragment in her hand. Most of it has been charred, but the neat circuit proves it used to be a chip."
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Quite a few on the ground down there. Fragments like this one, or even less.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "It seems like they made a difficult choice.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "You're putting it lightly.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "(Shakes head)",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Elysium",
+          "text": "Captain says, the miners probably attracted the Patrol Unit with their chips, and then offed them all in one shot.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Elysium",
+          "text": "After all, they only got the time to remove everyone else's chips after eliminating their pursuers.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "This sort of organization and ability... certainly not your garden variety miners.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Their leader definitely has military expertise... or perhaps something else.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Something else...?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "An Ursine folktale. 'The great Yurodstvo descends upon those in distress, and leads them out of dire straits'... just a tale born of boredom, though, so don't pay it much mind.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "......",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "But we ought to find them before their actions become more radical.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "After all, it's just the Patrol Unit today, but tomorrow it could be the military police, and then... it might just be the Royal Guard.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "We have to find them before things get even worse.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Mantra... what are you looking for?",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "Mantra's eyes sweep through her surroundings, and after a long silence, Amiya hears her voice in her mind."
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "That young Imperial Guardswoman reminded me of something.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "The <i>Yurodstvo.</i>",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "I think... I remember seeing this word in Dr. Kal'tsit's documents. It was related to Ursine research on demons...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "A long, long, time ago, I too was on Ursine soil.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "After a few mishaps, I was taken to be a Yurodstvo.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "Only then did I learn of an unrecorded Ursus secret, so hidden that even libraries in Sargon's City of Gold did not know it.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "The people of Ursus venerate the Yurodstvo; they believe the Yurodstvo's love transcends both the mortal realm and suffering, and this is how it has the power to lead one astray.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "So you think what's happening here is related to the Yurodstvo? But shouldn't the Yurodstvo be at the heart of Deity Grypherburg...?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "Only a hunch of mine. Everything that has happened here gives me a sense of unsettling familiarity.",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "Amiya follows Mantra's gaze and scans the area, but does not catch anything unusual."
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "......",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "Perhaps I was overthinking. But I also found some unexpected delight.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "Raidian has left a beacon nearby.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "News from her? Wonderful!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "So this is how you and Raidian communicate—",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "(Nods)",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "Back at Babel, Raidian was my first assistant.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "But her talent far exceeded that role, and she led her own squad after becoming an Elite Operator.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "I heard there used to be many on Rhodes Island who feared you before Raidian joined us...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "Occasionally, it proves to be true.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "Some of our colleagues are better at speaking than thinking, and interactions can be problematic, while I am no expert at 'explanation.'",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "That is how my 'fearsome reputation' got passed around the Rhodes Island water coolers.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "A few emergency operations where I probed into minds without prior notice, and after several rounds of exaggerated retellings, I became a witch who could stick my hand into their heads to toy with their minds.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Oh! I heard this one, in a story Theresa told me... I thought it was a Sarkaz legend.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "Perhaps that was a true Sarkaz tale. The Speaker would have been defending me in saying that.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "After Raidian joined Babel, she stood among those defending my reputation.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "But today... Elysium is the flagbearer in that regard, as are you.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "It's our responsibility!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "(Nods)",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "Just as I thought.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "Found them.",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "Mantra reaches out to wipe snow off the beacon's base, and slowly the symbols on it are revealed.\nShe feels the faint signals left on them, and some words gradually float into her mind."
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "<p=1>Central Far North Mining District, Ursus</> <p=2>Three days ago...</>"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Injured Miner",
+          "text": "You know what, doctor?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Injured Miner",
+          "text": "We beat those Patrol Unit monsters!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rhodes Island Medic Operator",
+          "text": "Please, calm down and don't move! It's a deep wound!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Injured Miner",
+          "text": "Haha! No big deal, my life would've been well-lived, even if all I managed was ending the lives of those brutes.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Injured Miner",
+          "text": "How can I even relax like this?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Injured Miner",
+          "text": "I never imagined this. Those high and mighty Patrol Unit guys couldn't either, I bet. That one day they would have to bow down to the Infected!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Injured Miner",
+          "text": "He even asked us to spare his life? Lucky I went straight for his head!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Injured Miner",
+          "text": "Rankin was right. No one can tread on us forever! We'll drag those old bastards down from their ivory towers one by one, and let them have a taste of the ground!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rhodes Island Medic Operator",
+          "text": "But...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rhodes Island Medic Operator",
+          "text": "*sigh*...",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Nikto",
+          "text": "Rankin, we've already searched the place.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Nikto",
+          "text": "A total of ten Ursine medium-sized military trucks, with little fuel left. If everyone gets on, it'll only last us around two hundred kilometers.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Nikto",
+          "text": "Besides weapons and medicine, we found some food and water. It's not much, though it's no medicine either...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rankin",
+          "text": "That's pretty good already.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Nikto",
+          "text": "I don't think these were worth the price we paid...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Nikto",
+          "text": "Right, we discovered a container door with extra encryption on it... we need an identification code.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rankin",
+          "text": "Hmph... Can anyone here tell me what other secrets are lying around here?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rankin",
+          "text": "Patrolling the mines at this hour, on this day? No telling me you stumbled here from boredom.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Frightened Patrol Unit",
+          "text": "I don't know...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Frightened Patrol Unit",
+          "text": "I'm just a driver! No better than a burdenbeast, I go wherever the captain tells me to!",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rankin",
+          "text": "The code or your life. Choose.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Frightened Patrol Unit",
+          "text": "I don't know! I really don't know!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Frightened Patrol Unit",
+          "text": "They've never given us the code to prevent the goods from running off! Only the recipient can open it!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rankin",
+          "text": "'Running off'? What kind of 'thing' would do that?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Frightened Patrol Unit",
+          "text": "——!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rankin",
+          "text": "Answer me! What the hell's inside those containers?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Frightened Patrol Unit",
+          "text": "I...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rankin",
+          "text": "......",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rankin",
+          "text": "Nikto, give me one of those explosives.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Nikto",
+          "text": "Rankin, what are you—",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rankin",
+          "text": "Just do as I say!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Nikto",
+          "text": "......",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "Rankin sticks a small Originium bomb on the container's lock. A simple move, but he almost drops it from how fast he's breathing."
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rankin",
+          "text": "......",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Frightened Patrol Unit",
+          "text": "Ah...",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "The door slowly falls.\nRankin sees no fewer than thirty to forty bodies packed in a ten-meter-squared container, all long deceased, with no exception.\nSome had struggled to the very last, their Originium crystals piercing into neighbors with messy, bloody wounds—no doubt, they were stuffed in here still alive.\nRankin can no longer tell what stole their lives away, and he does not wish to think about it..."
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rankin",
+          "text": "Did you know?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Frightened Patrol Unit",
+          "text": "I, what—",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rankin",
+          "text": "Drop the act!!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rankin",
+          "text": "Who was it... who gave you the order?!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Frightened Patrol Unit",
+          "text": "The mine boss—No, the Grand Duchess! She made us do it!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Frightened Patrol Unit",
+          "text": "She cares about the miners here! Those in charge here get punished if the head count drops!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Frightened Patrol Unit",
+          "text": "They always have to patch up the gap by buying some Infected with their own funds whenever one miner escapes—sometimes they get non-Infected to solve their problem, and it costs more.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Frightened Patrol Unit",
+          "text": "But I have nothing to do with all that! Look, you already killed the actual bad guys!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Frightened Patrol Unit",
+          "text": "I'm just a driver who listens to his boss... I'm the same as you, right...?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Frightened Patrol Unit",
+          "text": "Infected, sir, please, let me go. I promise I'll desert the Patrol Unit, just pretend I died—",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rankin",
+          "text": "......",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rankin",
+          "text": "No, we're different, you and I.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rankin",
+          "text": "None of us willingly became Infected... but you had a choice. You could have chosen not to stand on the same side as those murderers.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rankin",
+          "text": "There's no reason I should forgive you.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Hawley",
+          "text": "Rankin, we're done organizing the food we found.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Hawley",
+          "text": "These Patrol Unit guys have it good. Tonight we can—",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Frightened Patrol Unit",
+          "text": "...Father?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rankin",
+          "text": "...What?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Hawley",
+          "text": "...Ah...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Frightened Patrol Unit",
+          "text": "Father? Is that really you?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Frightened Patrol Unit",
+          "text": "Wonderful! Please, explain it to him! Tell him I'm not evil—My father's an Infected, how could I hate them?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Hawley",
+          "text": "Ganea... didn't you... go to Grypherburg...?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Frightened Patrol Unit",
+          "text": "I did! I really did, I didn't lie to you!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Frightened Patrol Unit",
+          "text": "But I needed money to stay alive, even in Grypherburg! They don't just hand out bread and mead—being a driver was the only option I had.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Frightened Patrol Unit",
+          "text": "Father, please... save me... I'll never do this again...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rankin",
+          "text": "......",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rankin",
+          "text": "Hawley...",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "He silently stares at the oblivious elderly miner, then gestures at Hawley with his head to look at the container."
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rankin",
+          "text": "I won't try to reform him, much less release him.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rankin",
+          "text": "If he truly is your son...",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "Rankin throws a knife on the ground and walks away."
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Hawley",
+          "text": "...Ah...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Hawley",
+          "text": "No... wait...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Hawley",
+          "text": "This, is not my boy, is it?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Frightened Patrol Unit",
+          "text": "Father...?",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "Even the late autumn weather fails to prevent the corpses' rotting stench from spreading out into the air.\nThe old miner's gaze shifts between the mess of mangled limbs in the dark depths of the container and the tall young man before him...\nFinally, he shakes his head incessantly, as if refusing to believe the truth."
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Hawley",
+          "text": "My son wouldn't... wouldn't say such words. He wouldn't do something this disgraceful.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Hawley",
+          "text": "You're just... a damned bastard...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Hawley",
+          "text": "Why—Why do you wear my son's skin? Why do you live inside his body?!",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "Originally trembling, the old miner explodes into a rage, knocking the man down to the ground."
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "His fists rain like a storm, as if trying to drive something out of the body.\nThe man has no strength to resist."
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Hawley",
+          "text": "Who are you? Who the hell are you?!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Hawley",
+          "text": "Oh, poor Ganea, his soul could have been saved! This isn't how it should have been! It was you, abomination, that left him with nowhere to go!",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "Just—\nDie!!!"
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    }
+  ]
+}

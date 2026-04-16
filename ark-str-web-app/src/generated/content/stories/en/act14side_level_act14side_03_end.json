@@ -1,0 +1,665 @@
+{
+  "server": "en",
+  "storyId": "act14side_level_act14side_03_end",
+  "groupId": "act14side",
+  "stageId": "act14side_03",
+  "title": "Inscrutable",
+  "storyCode": "BI-3",
+  "avgTag": "After Operation",
+  "sourcePath": "vendor/ArknightsData/en/gamedata/story/activities/act14side/level_act14side_03_end.txt",
+  "sourceHash": "51405e8ffdc75b8f08c96ef464f45a9d528d84985d9d7dcc739d4a7336548a05",
+  "bodyAvailable": true,
+  "blocks": [
+    {
+      "type": "dialogue",
+      "speakerName": "Sluggish Soldier",
+      "text": "Hey, did you hear? Supposedly that guest of honor we were keeping an eye on, the Doctor or whatever, was attacked by Silverash's people?",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nosy Soldier",
+      "text": "You only just heard about it? The news is everywhere.",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sluggish Soldier",
+      "text": "Then why don't you tell me what the hell is going on? Wasn't this Doctor person invited by Enciodes himself?",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nosy Soldier",
+      "text": "Well, the version of the story I heard is, the attackers apparently thought that after the Doctor went over, Arctosz offered some under-the-table deals.",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sluggish Soldier",
+      "text": "Huh? Master Arctosz wouldn't do something like that!",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nosy Soldier",
+      "text": "Dumbass, can't you tell this is obviously nonsense made up by the attackers?",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nosy Soldier",
+      "text": "If you ask me, after finding out that Arctosz is going to be hosting the Doctor, Enciodes is trying to set Arctosz up.",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nosy Soldier",
+      "text": "Maybe the people behind the attack were sent by Enciodes too.",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sluggish Soldier",
+      "text": "Yeah, that makes sense, just as you said.",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sluggish Soldier",
+      "text": "Then why are we spending all this time keeping tabs on this Doctor? They're probably not in cahoots with Enciodes.",
+      "portraitKey": null
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Valais",
+      "text": "I didn't fully understand you before, so I ask your forgiveness if I have offended you in any way.",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Valais",
+      "text": "As you are Enciodes's honored guest, I should be watching my words...",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Valais",
+      "text": "But, something doesn't add up about this attack made against you.",
+      "portraitKey": null
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Indeed, it doesn't add up.",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Someone's pulling the strings.",
+          "value": "4",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Valais",
+              "text": "Enciodes...",
+              "portraitKey": null
+            },
+            {
+              "type": "sceneBreak"
+            }
+          ]
+        },
+        {
+          "label": "I can't determine what the purpose would be.",
+          "value": "5",
+          "blocks": []
+        },
+        {
+          "label": "Their actions aren't exactly reasonable.",
+          "value": "6",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "No, he doesn't stand to gain anything from this.",
+          "value": "4",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "(I have my own ideas about who's behind it, but...)",
+          "value": "4",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "That makes no sense.",
+          "value": "5",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "A crime is a far graver offense than dereliction of duty.",
+          "value": "5",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Someone anticipated Enciodes's plans.",
+          "value": "6",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "And used the premise we just discussed to incite them.",
+          "value": "6",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Valais",
+              "text": "Ugh...",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "???",
+              "text": "Hah, well said.",
+              "portraitKey": null
+            },
+            {
+              "type": "sceneBreak"
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Arctosz",
+              "text": "Valais, we always said you were a skilled tactician and had a good head on your shoulders. But looks like you still have a lot to learn from the Doctor.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Valais",
+              "text": "You're exactly right, Sir.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Arctosz",
+              "text": "Oh, right, Valais. Pass this message on for me – My men don't need to keep watch over the Doctor anymore. Just focus on guarding our territory.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Arctosz",
+              "text": "As for the guards the Doctor brought along, they will be allowed to come and go freely from now on.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Valais",
+              "text": "Yessir.",
+              "portraitKey": null
+            },
+            {
+              "type": "sceneBreak"
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Arctosz",
+              "text": "I just happened to overhear a bit of your conversation from the hallway.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Arctosz",
+              "text": "I don't have any interest in your guessing games, but I might be able to offer you some clues.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Arctosz",
+              "text": "Kjeragandr is our witness. Doctor, I apologize for the rudeness of the Paleroche clan––",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Arctosz",
+              "text": "On my name as head of the house of Paleroche, I swear to Kjeragandr that I was not the one who instigated this attack.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Arctosz",
+              "text": "If you are willing to believe me, let me assure you that there are absolutely no scoundrels in the Paleroche clan that would carry out such a malicious attack behind my back.",
+              "portraitKey": null
+            },
+            {
+              "type": "sceneBreak"
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Thank you for your trust, Arctosz.",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Arctosz",
+              "text": "Hm? I never said anything about trusting you, Doctor.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Arctosz",
+              "text": "But at least I am certain now that you aren't up to any mischief.",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "Thanks for the tip, Arctosz.",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Arctosz",
+              "text": "Hahaha! Good.",
+              "portraitKey": null
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Arctosz",
+          "text": "Doctor, I may not be much of a philosopher, but even a rough-around-the-edges man like me can smell that there's something unusual brewing in Kjerag.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Arctosz",
+          "text": "That damned Enciodes, suddenly talking about ceding power back to the Saintess, then driving Gnosis away, and now putting you in this position...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Arctosz",
+          "text": "And someone attacked you in the midst of it all.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Arctosz",
+          "text": "Let me be honest – I can't help but to suspect that Enciodes is up to no good, even if he hasn't shown the slightest flaw in what he's doing.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Arctosz",
+          "text": "But I'm not going to sit around and wait for the land granted to us by Kjeragandr to fall into danger...",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "In that case, Arctosz...",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Arctosz",
+          "text": "What is it?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Us making amends could also mean...",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "If our enemy is able to predict your response...",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Then they no longer need to use me as a smokescreen.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "They've finished their preparations, and there's not much time left.",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Arctosz",
+          "text": "What?!",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "Boom–– A massive explosion goes off in the distance.\nThe people outside whisper amongst each other, debating whether or not it is going to snow.\nThe people inside lower their heads without a word, shouldering an intangible burden."
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ratatos",
+          "text": "Gnosis Edelweiss.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Gnosis",
+          "text": "Madame Ratatos Browntail.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Gnosis",
+          "text": "It seems like I've finally earned the privilege of talking with you face-to-face?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ratatos",
+          "text": "You can't fool me with that feigned humility, Gnosis.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ratatos",
+          "text": "You are plenty smart yourself. Let there be no shady dealings between honest people.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ratatos",
+          "text": "If you didn't want something from me, you would not have been trying to meet me again and again.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Gnosis",
+          "text": "Heh. If you're just trying to assert your dominance here, then I do believe it is time for me to bid thee farewell.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ratatos",
+          "text": "Don't be in such a hurry, Gnosis. I have a few questions for you.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ratatos",
+          "text": "When I first heard that the Edelweiss clan followed Enciodes back to Kjerag, I frankly was not too surprised.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ratatos",
+          "text": "I thought you either had some evidence to prove that the Edelweisses would not be adverse to the Silverash clan, or perhaps, you had something to hold over Enciodes.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ratatos",
+          "text": "But neither you nor Enciodes have said anything about what happened back then, while you still allow the Silverashes to rebuke you for your shamelessness.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ratatos",
+          "text": "What keeps you going? I'm curious.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Gnosis",
+          "text": "...He promised me a future.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ratatos",
+          "text": "A future?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Gnosis",
+          "text": "Kjerag's future. An emerging industrial country that would allow me to utilize my talent in research without fear of plagiarism, misuse, or suppression.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ratatos",
+          "text": "That's all?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Gnosis",
+          "text": "Needless to say, I never expected you to understand in the first place, Ratatos. You will never be a researcher after all.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Gnosis",
+          "text": "It may be difficult for you to understand how thrilling it is to freely explore the innovation and application of technology, backed by plenty of resources and privilege. To be given a legitimate purpose.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ratatos",
+          "text": "So that's the deal you struck. You give him your skills, and he provides you a stage.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ratatos",
+          "text": "And then what?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ratatos",
+          "text": "Surely you aren't going to tell me that he pushed you out and made you take the fall just to protect himself.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ratatos",
+          "text": "Is this all that Karlan Trade's cost-benefit analysis amounts to?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Gnosis",
+          "text": "You seem to have a lot of faith in Karlan Trade. Why didn't you accept the offer to work under Enciodes two years ago?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ratatos",
+          "text": "Don't be ridiculous. No matter how powerful Enciodes is, he cannot change the faith that has been deeply rooted in the bones of our people for thousands of years.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ratatos",
+          "text": "Karlan Trade can only grow as big as the Tri-Clan Council and the Vine-Bead Court allow, and it is impossible for Kjerag to industrialize––",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ratatos",
+          "text": "—Wait.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ratatos",
+          "text": "So he's found a new bargaining chip?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Gnosis",
+          "text": "Exactly.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Gnosis",
+          "text": "There was no way for Enciodes to turn the people of Kjerag against Kjeragandr, so he had to reach a compromise.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Gnosis",
+          "text": "But he's been stuck there for far too long. No matter how many times I tried to push him, he seems indifferent.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Gnosis",
+          "text": "Until there finally came an opportunity to turn things around.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Gnosis",
+          "text": "Ensia's Oripathy symptoms are under control, and though there still isn't a cure, she was able to return to him alive and well...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Gnosis",
+          "text": "...and excitedly told him that it might be possible to deepen cooperation with an outside party to better control the spread and harm of Oripathy at a lower cost.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ratatos",
+          "text": "No, Enciodes wouldn't...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Gnosis",
+          "text": "Of course not. Once the gate to Kjerag is opened, it cannot be completely sealed again.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Gnosis",
+          "text": "The number of Infected living in Kjerag will only increase– this is the reality of our world. During the process of Kjerag's continued development, the ability to deal with Oripathy will ultimately become a new bargaining chip.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Gnosis",
+          "text": "He is about to make the people of Kjerag decide between faith and technology, and faith alone will no longer protect them from Oripathy.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Ratatos",
+          "text": "Empty rhetoric. There's no proof.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Gnosis",
+          "text": "Come with me then. Bring your people along, including those who can fight, and I will show you something.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    }
+  ]
+}

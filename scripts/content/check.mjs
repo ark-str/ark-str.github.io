@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import {
   buildContentArtifacts,
+  getGeneratedFilePaths,
   hasArknightsDataSource,
   loadGeneratedArtifacts,
 } from "./lib.mjs";
@@ -49,11 +50,26 @@ function compareLiveArtifacts(generated, live) {
 }
 
 function validateGeneratedArtifacts(generated) {
+  const filePaths = getGeneratedFilePaths(process.cwd());
   invariant(Array.isArray(generated.index.vendor.servers), "index.vendor.servers must be an array");
   invariant(Array.isArray(generated.index.groups), "index.groups must be an array");
   invariant(Array.isArray(generated.index.stories), "index.stories must be an array");
   invariant(Array.isArray(generated.sourceManifest.items), "source-manifest items must be an array");
   invariant(Array.isArray(generated.summaryManifest.items), "summary-manifest items must be an array");
+  invariant(fs.existsSync(filePaths.appIndex), "app-generated index.json is missing");
+  invariant(fs.existsSync(filePaths.appSummaryManifest), "app-generated summary-manifest.json is missing");
+  invariant(fs.existsSync(filePaths.appRegistry), "app-generated registry.ts is missing");
+
+  const appIndex = JSON.parse(fs.readFileSync(filePaths.appIndex, "utf8"));
+  const appSummaryManifest = JSON.parse(fs.readFileSync(filePaths.appSummaryManifest, "utf8"));
+  invariant(
+    JSON.stringify(appIndex) === JSON.stringify(generated.index),
+    "app-generated index.json does not match the published generated index",
+  );
+  invariant(
+    JSON.stringify(appSummaryManifest) === JSON.stringify(generated.summaryManifest),
+    "app-generated summary-manifest.json does not match the published generated summary manifest",
+  );
 
   invariant(
     generated.index.stories.length === generated.sourceManifest.items.length,
@@ -105,12 +121,19 @@ function validateGeneratedArtifacts(generated) {
     }
 
     const bodyFilePath = path.join(process.cwd(), "ark-str-web-app", "public", "generated", "content", story.bodyPath);
+    const appBodyFilePath = path.join(filePaths.appContentRoot, story.bodyPath);
     invariant(fs.existsSync(bodyFilePath), `story detail file is missing for ${story.server}:${story.storyId}`);
+    invariant(fs.existsSync(appBodyFilePath), `app story detail file is missing for ${story.server}:${story.storyId}`);
 
     const body = JSON.parse(fs.readFileSync(bodyFilePath, "utf8"));
+    const appBody = JSON.parse(fs.readFileSync(appBodyFilePath, "utf8"));
     invariant(body.storyId === story.storyId, `story detail storyId mismatch for ${story.server}:${story.storyId}`);
     invariant(body.server === story.server, `story detail locale mismatch for ${story.server}:${story.storyId}`);
     invariant(Array.isArray(body.blocks), `story detail blocks must be an array for ${story.server}:${story.storyId}`);
+    invariant(
+      JSON.stringify(body) === JSON.stringify(appBody),
+      `app story detail content drift detected for ${story.server}:${story.storyId}`,
+    );
   }
 }
 

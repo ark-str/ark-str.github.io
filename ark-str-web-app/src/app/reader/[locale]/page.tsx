@@ -2,10 +2,17 @@ import { notFound } from "next/navigation";
 import { isReaderLocale } from "@/features/content/config/canonical-reader-locales";
 import {
   getGroupStories,
+  getReaderLocaleStaticParams,
   getLocaleGroups,
   readContentIndex,
 } from "@/features/content/service/read-content-index";
 import { ReaderLocaleArchive } from "@/features/reader/ui/reader-locale-archive";
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return getReaderLocaleStaticParams();
+}
 
 export default async function ReaderLocalePage({
   params,

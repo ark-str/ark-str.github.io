@@ -1,0 +1,1053 @@
+{
+  "server": "jp",
+  "storyId": "act34side_level_act34side_01_end",
+  "groupId": "act34side",
+  "stageId": "act34side_01",
+  "title": "ファーストコンタクト",
+  "storyCode": "BP-1",
+  "avgTag": "戦闘後",
+  "sourcePath": "vendor/ArknightsData/jp/gamedata/story/activities/act34side/level_act34side_01_end.txt",
+  "sourceHash": "5de6680758dc8c3435618a3bee5633834a63c98ed3ffc20dfcdfc9ad67bbadd5",
+  "bodyAvailable": true,
+  "blocks": [
+    {
+      "type": "dialogue",
+      "speakerName": "スカジ",
+      "text": "ドクター、さっき見学した建物のこと、博物館だと思ってない？　あの計器を見ている時、何かの展示品でも鑑賞しているように見えたわよ。",
+      "portraitKey": null
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "博物館と間違えた建物はこれで三つ目だ。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "建物内の重力を逆転させるなんて、どうやってるんだ？",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "柱の間を自律的に行き交う水流があったがあれは何だ？",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "指がねじれて変形するあの空間は何なんだ？",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "スカジ",
+          "text": "私にも、原理を全部説明することはできないわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "スカジ",
+          "text": "この五年いなかった分、私たちは新しく生まれた技術の発展を見逃してしまったから。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "待った、前にあるあの高い塔……",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "この都市の中心に立っているのは、発射サイロか？",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "スペクター",
+          "text": "ええ、そうよ。あれはビーコンの発射サイロ。相当長い歴史があるのよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "スカジ",
+          "text": "よく知ってたわね、サメ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "スペクター",
+          "text": "小さい頃、両親に連れられて本つ域を回ったことがあるんだけど、多くの都市に同じような建物があったから。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "エーギル人は皆集団で育てられるものと思っていた。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "スカジ",
+          "text": "私なんかはそうだけど、サメは実の両親と特別な繋がりがあったから。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "スペクター",
+          "text": "親というより、友達に近い感じね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "スペクター",
+          "text": "二人は公共養育所と変わった約束をしていたの。基本的には公共養育所に養育を任せるけど、二人が都市のドーム建設をする時には、私も一緒に連れて行くっていう形でね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "スペクター",
+          "text": "そうして二人は、私を色んな所に連れて行ってくれたし、仕事を少し体験させてくれたりもした……もちろん、それ以外のほとんどの時間は公共養育所で過ごしたけれど。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "それで、この発射サイロは何に使うんだ？",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "スペクター",
+          "text": "もちろん、ビーコンを発射して、航路を定めるのに使うのよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "通常、これほどの規模にはならないと思うが。",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "これが必要な航路となると、どれほどの規模なんだ？",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "スペクター",
+          "text": "大体三百年くらい前、エーギルの海洋開発はほとんど完了したの。自然に存在するエネルギー源は余すところなく活用されていたし、海溝の一つ一つまでが海図に記録されていたくらい。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "スペクター",
+          "text": "それでその時、人々は星の瞬くもう一つの海へと視線を向けたの。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "スペクター",
+          "text": "当初の想定としては、私たちの艦隊や、私たちの都市そのものが、あの本来在るべきではない境界線を越えて、阻隔層の外に文明の火を灯すはずだった。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "阻隔層の外……",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "保存者の意見は正しかったようだな。クリステンの快挙も、エーギルにとっては手の届く範囲のものなんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "海洋国家と空との距離は、我々の想像以上に近しいらしい。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "スペクター",
+          "text": "当時の人々は、大きな熱意を持って色々なことを試みたの。電子雲層の観測とクラッキングに、推進装置と資材の技術的革新、宇宙環境に適応可能な生命体の研究……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "スペクター",
+          "text": "この発射サイロも、当時の産物よ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "スペクター",
+          "text": "最初の構想ではこれは、星空のどんな小さな信号さえも捕捉して、星図上の特定座標にビーコンを打ち込み、永遠に消えることのない道しるべとできるはずだった。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "スペクター",
+          "text": "無数のマイクロホバーマシンを連結させて航路網を敷き、エーギルは瞬時にはるかな空間を行き来することができるようになる……って、人々はそう考えていたの。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "スカジ",
+          "text": "あなた、これまで私にはそんな話をしたことなかったじゃない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "スペクター",
+          "text": "だって、陸にいた頃は、私の意識がはっきりしていた時なんてほとんどなかったんだもの。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "スペクター",
+          "text": "でも、昨日は夢を見たのよ。自分がもう一度、闘智場からあの歴史へと足を踏み入れていく夢を。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "スペクター",
+          "text": "それに、ローレンティーナが踊っているのも見たわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "スペクター",
+          "text": "ステップを踏みながら、大波から星空へ飛び上がって、星屑がそのスカートを追いかけるの。すると、遠くから誰かの――万物の主の声が聞こえてきてね。彼女に歌声で応えるのよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "スペクター",
+          "text": "果てのない宇宙に、限りない想像力。ローレンティーナのステップは永遠に止まらない……",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "スペクターは、まるでその夢の中に戻ったかのように目を閉じた。"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "スカジ",
+          "text": "うん……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "スペクター",
+          "text": "どうかした？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "スカジ",
+          "text": "その光景を想像していたのよ、サメ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "美しい夢だな、ローレンティーナ。",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "いずれ本当にそんな瞬間が来るかもしれないな。",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "スペクター",
+          "text": "――人々は、星の海の扉を開く前に、阻隔層の外の脅威に完璧に備えようとしていたの……シーボーンの出現によって、この遠大な夢が断たれるまではね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "スペクター",
+          "text": "いつからか、「シーボーン」の存在は私たちにとってほとんど唯一の難題になった。芸術も科学も、私たちが未来を思い描くことすらも、すべてが保留を余儀なくされたのよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "スペクター",
+          "text": "シーボーンは、エーギルを大きく変えてしまったの。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "スカジ、アビサルハンターになる前は何を？",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "スカジ",
+              "text": "私？",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "スカジ",
+              "text": "これでも、設備管理所で一番の技術者だったのよ。都市全体の海底照明アレイを一人でメンテナンスできるくらい。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "スカジ",
+              "text": "展望研究所から、自分で思い描いていたのと同じような進路提案を受けたから、そのまま受け入れて技術者になったの。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "スカジ",
+              "text": "一人で過ごすのは少し孤独には感じたけど、時折、サンゴ礁に隠れた大きな鱗獣にちょっかいを出したり、ぼんやりしながら海を照らしたりする生活には、結構満足していたわ。",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "スペクター、アビサルハンターになる前は何を？",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "スペクター",
+              "text": "当時は、ただの彫刻家見習いだったわね。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "スペクター",
+              "text": "展望研究所は、実情に基づいて公民一人一人に合わせた進路提案をしてくれるんだけど、その内容は大抵、私たち自身の希望に合致したものなの。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "スペクター",
+              "text": "ちなみに私が希望していた分野は……ドームの設計か、彫刻美術、もしくはダンスって感じだったわ。",
+              "portraitKey": null
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "スペクター",
+          "text": "そういえば、ドクターにもケルシー先生にも、これまで一緒に歩く間に数えきれないくらいの情報を共有してきたけれど、昔のことは話したことなかったわね。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "すでに変わってしまった過去のことだからな。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "スペクター",
+          "text": "それもそうね。だけど、せっかく都市を案内してるのに、こんな重たい話題なんてやめましょ。場違いだもの。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "スペクター",
+          "text": "ほら見て、無限の波が私たちの頭上に広がってるわよ。嫌なことに向き合う前に、ここで一曲踊っていってもいいと思わない？",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "優しげな女性",
+          "text": "……グレイディーア。",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "儀礼刀を斜めに持った女性がゆっくりと歩み寄る。グレイディーアは無意識に、手を矛の柄にかけた。\nしかし相手はただ両腕で彼女の肩をそっと包み込んだだけだった。グレイディーアは、神経活性剤の匂いが自身の周りに広がるのを嗅ぎ取った。\nエーギル人は通常、挨拶として親密な身体的接触をすることはしない。グレイディーアには、母親にさえこうしてもらった覚えがないほどだ。\nしかし今、相手が行った動作は非常に自然なものだった。"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイディーア",
+          "text": "クレメンティア執政官？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイディーア",
+          "text": "総戦略設計士の間で、こういった軍礼があった覚えはないけれど。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "あなたたち狩人が正気を保ったまま帰還する姿を見られたことは、今回の旅の最大の収穫です。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイディーア",
+          "text": "兵士たちが私を目にした時の見苦しい反応からすると、迷惑というほうが大きいように思えてよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "――「ファーストボーン」抹殺計画のために、エーギルはすべてのアビサルハンターを失ってしまいました。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "セクンダは幾度となく捜索を試みましたが、毎回何の成果も得られずに終わっていました。「ファーストボーン」の死後、狂ったシーボーンによってあの海域全体が封じ込められてしまったからです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "そのために、ホラーティア――あなたの母君は、あなたたちの死を国民に通達するしかありませんでした。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "ですが、私にはわかります。彼女が、本気でそうだと思っていたわけではないということが。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイディーア",
+          "text": "あるいは、科学展望研究所で最も優秀な執政官であるあの人には、受け入れられなかっただけかもしれないわね。私の死が、エーギルの問題を解決するに至らなかったことが。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイディーア",
+          "text": "私も、あの人のことならよくわかっていてよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイディーア",
+          "text": "クレメンティア、私たち総戦略設計士が二人揃ったこの場に相応しいのは、ねじ曲がった母娘関係の話題などではないでしょう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "ええ、その通りですね。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "――この都市をご覧ください。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "執政官の「瞑想の間」は都市の高台に位置しており、今この時も海水は二人の頭上に広がっている。\nここから見ると、透明なドームはまるで柔らかい鏡のようで、深い混沌を遠ざけ、エーギル人がエーギル自身をより細かく観察できるようになっていた。\nドームの下、都市全体が紺色の光に包まれている。ビーコンの発射サイロは都市の中心にそびえ立ち、遠くに見えるポートターミナルに停泊する船はまるで群れを成して泳ぐ鱗獣のようだ。"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "海水に色はなく、ただ暗闇が広がるばかり。ミリアリウムはこの広大な海に開かれた、孤独で、明るい文明の眼のようなものです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "かつては、こうした都市がいくつもあったものでした。しかし海を照らした星々は一つまた一つと消えていき、シーボーンの糧となってしまった。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "そして今や、海底に散らばるのは奇怪な色をした巣穴ばかりです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイディーア",
+          "text": "アビサルハンター計画という賭けが失敗に終わったことは否定しないわ。「ファーストボーン」を殺しても、シーボーンの進化の勢いを止めることはできなかったのだから。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイディーア",
+          "text": "差し当たって、現在のエーギルにおける解決策を知る必要があるでしょう。クレメンティア、あなたの考える解決策をね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイディーア",
+          "text": "「航路計画」というのは何？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "グレイディーア、私にはあなたを責めるつもりなどありません……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "私もまた、より大きな代償を求められるもう一つの賭けに挑んだだけなのですから。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "「兵器等級区分計画」は兵器の使用を厳格に規制するためのものであり、その目的はシーボーンの進化を遅らせることにあります。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "ですが今回、我々は既存の兵器のみならず、開発中のものまでもを計画の中に盛り込みました。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "従来の弾道兵器と、第Ⅰ級兵器の混合運用は優れた戦果をもたらすことができました。シーボーンは、なぜ自分が周囲の海水によって火傷を負ったのかを理解できなかったのです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "ですが奴らは、たった一年でこの未知の脅威にほぼ完璧に適応して見せました。ですから十一ヶ月目には、我々は次の等級の適用を前倒しして、殺傷方法が大きく異なる第Ⅱ級兵器を投入しました。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "そうして、それを繰り返していったのです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイディーア",
+          "text": "シーボーンの進化が、技術アカデミーの開発速度を超えるまでね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "はい。結局、我々は時間を稼いでいるだけです。エーギルは莫大なリソースをシーボーンの研究につぎこんできました。奴らを根本から理解してようやく、奴らを排除することができるのですから。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "あなたが持ち帰った情報は非常に貴重なものです。陸におけるブレオガンの発見は、科学アカデミーの推測を別の側面から裏付けるものでした。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイディーア",
+          "text": "――シーボーンと巨獣は根源を同じくしている。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイディーア",
+          "text": "エーギルが陸地を訪れたのは、古い記憶を求めてのことかしら？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "それだけではありません。ここで我々が介入しなければ、大陸全体がシーボーンの温床になりかねないという危険ありきの話でもあるのです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "シーボーンと巨獣が根源を同じくするものであっても、それらは大きく異なっており、シーボーンの身体には不自然な要素が多く含まれています。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "シーボーンの行動には明確な目的意識が見受けられ――奴らは海の未練を早々に捨て、陸地への大規模移動を始めているのです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイディーア",
+          "text": "私たちがイベリアで目にした光景とも一致するわね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "つまり、現代のエーギル人にとって、陸地はつまびらかにされねばならぬ場所であり、我々はそれにまつわるすべてに対して責任を負わねばならないということです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "ホラーティアは展望研究所を代表して新たなる開戦命令に署名し、ミリアリウムは技術アカデミーが開発した、今までとまったく異なる生物兵器である「第Ⅳ級兵器」を携えてここに来ました。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "この第Ⅳ級兵器を用いれば、目標範囲内のシーボーンの巣と幼体をアポトーシス――細胞単位で自己破壊させることで壊滅させ、大量の成体を目標海域から排除することができます。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "目標海域に存在する巣穴の大部分は、すでに位置を特定済みです。今もなおビーコンを投下していないのは、イベリア付近にある巣穴のみとなりました。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "ビーコンの展開が完了し、兵器が起動すれば、久方ぶりにシーボーンのいない澄んだ水域を作り出し、エーギル本つ域への航路を築くことができるでしょう。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイディーア",
+          "text": "ホラーティア執政官は、自らの計画に失敗の可能性が存在することを許さない。にもかかわらず私が見たのは、シーボーンの厳しい包囲網に置かれて崩壊しかけている危険な都市だけよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "確かに、彼女は言っていました。「航路計画は失敗しない」と。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "ホラーティアが何通りの可能性を考慮して計算したかはわかりませんが、それを知らずに済むことを祈るばかりです。私にとっては、この「危険な都市」こそが航路計画のすべてでしたから。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "とはいえ、今はまた事情が変わってきています。この一ヶ月であまりにも多くの変化が起き、計画を見直す必要が出てきたのです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "というのは、シーボーンが兵器への適応力を爆発的に高めてきたからです。奴らは今や、第Ⅲ級兵器の砲撃から同胞を守る手段を得るまでに進化しました。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "殲滅作戦が成功を収めれば、他の個体に情報を伝達する機会などないはず。鑑みるに、奴らは何か他の方法によって啓蒙を受けているのでしょう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイディーア",
+          "text": "シーボーンが人類に対して引き起こした異変のほとんどは、エーギルの堕落者によって後押しされたものよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイディーア",
+          "text": "けれど、シーボーンは結局のところ本当の知能など備えていない。仮に実験室の兵器すべてのプロトタイプをシーボーンの巣穴に投げ入れたところで、奴らはそれを分解して研究しようとはしないわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイディーア",
+          "text": "一方で、深海教会であればシーボーンを率いて軍隊や都市一つに攻撃を仕掛けることはできるかもしれない。それでも、短時間で激しい異変を起こすよう促すことは難しいでしょうね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "――シーボーンが、深海教徒から情報を受け取るのみならず、別の「ファーストボーン」の影響を受けていなければ、ですね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイディーア",
+          "text": "あの随分と遅れてしまった報告書には目を通してもらえたようね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイディーア",
+          "text": "その通り、ウルピアヌスによれば、私たちが殺害したアレは唯一の「ファーストボーン」ではないのだそうよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "グレイディーア。あなたたちは「ファーストボーン」の住処に入った最初で最後のエーギル人です。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "今、シーボーンはにわかには信じがたい狂気的な方法で、あの遺跡を封鎖しています。ですがそれを突破する方法は見つかっていません。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "他方でウルピアヌスは、狩人の中でも誰より長く――例の「真相」を見届けるに十分なほど長く、あの場所に滞在していました。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイディーア",
+          "text": "彼の言葉を信用するか否かで迷っているのね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "……はい。これはエーギルがシーボーンの謎を解く助けとなるかもしれませんが、あるいはエーギルを破滅に導くものかもしれませんので。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "シーボーンの残滓によって数ヶ月命を繋いだ狩人が正気を保つことに成功し、それでいて文明のもとに戻らず、シーボーンに同行しているこの状況……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "ウルピアヌスについても、当時のあの戦いについても、まだ疑問点が多すぎます。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クレメンティア",
+          "text": "ごめんなさい、グレイディーア。エーギルは、評議会の開催を以て狩人たちの帰還を迎えるほかないのです。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "セクンダ",
+          "text": "この場所はすでに、捜査の対象エリアに指定したはずですが――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "セクンダ",
+          "text": "……イベリア使節のアイリーニ殿ですね？",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アイリーニ",
+          "text": "ええ。あなたのお名前を伺っても？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "セクンダ",
+          "text": "セクンダとお呼びください。小官は、海巡隊の指揮官をしております。昨日はミリアリウムへとお越しになる皆様を直接お迎えに上がれず、残念に思っておりました。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "セクンダ",
+          "text": "ですが我々海巡隊は現在、公民の失踪事件の捜査中です。イベリア側に捜査協力の要請は行っておりませんので、速やかにこのエリアを離脱されることをお勧めいたします。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アイリーニ",
+          "text": "これは私が個人的にあなたたちを支援したいと思っての行動です。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "セクンダ",
+          "text": "ご厚意には感謝いたします。しかし、お手を煩わせる必要はありません。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アイリーニ",
+          "text": "私は――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "セクンダ",
+          "text": "他の部隊から情報は届いたか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "海巡隊隊員",
+          "text": "少々お待ちください。映像を取得中です。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アイリーニ",
+          "text": "あの――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "海巡隊隊員",
+          "text": "ポートターミナルでは異常な人員の移動は検知されませんでした。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "セクンダ",
+          "text": "チッ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "セクンダ",
+          "text": "では各隊に、すでに封鎖した民間用水門を確認させろ。都市外縁の循環システムにも留意するよう伝えるんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "海巡隊隊員",
+          "text": "はっ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アイリーニ",
+          "text": "私の前で状況を確認するなんて、機密漏洩が怖くはないの？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "セクンダ",
+          "text": "これは単なる日常業務ですから、機密にする必要はないのですよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アイリーニ",
+          "text": "ついさっきは、リトル・ハンディに人払いをさせていたじゃない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "セクンダ",
+          "text": "それは無関係な方へ不要な被害が及ぶことを避けるためです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "セクンダ",
+          "text": "どうしても残られるという場合、身の安全はご自身で確保していただくしかなくなってしまいますが。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アイリーニ",
+          "text": "そのくらい私にも――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "セクンダ",
+          "text": "行方不明になったのはトゥリアという人です。航路計画の技術者であり、シーボーンの巣のデータの記録と修正を担当していました。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "セクンダ",
+          "text": "30時間前に職場を離れ、その後行方がわからなくなっています。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アイリーニ",
+          "text": "もしかして……深海教会が関係しているの？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "セクンダ",
+          "text": "疑問点はまさに、そこにあるのです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "セクンダ",
+          "text": "トゥリア氏が失踪してからも、航路計画の業務はすべて正常に進行していました。無論データの記録及び修正は重要ではありますが、計画の最重要部分ではありません。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "セクンダ",
+          "text": "仮に、深海教会が関係者を暗殺して航路計画を妨害せんとしているならば、この差し迫った時期に、平凡なデータエンジニアを狙うとは思えません。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "セクンダ",
+          "text": "となれば――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "セクンダ",
+          "text": "トゥリア氏は、知るべきではない秘密を知ったのではないでしょうか。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "セクンダ",
+          "text": "小官はこれより、トゥリア氏の自宅に向かいます。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "セクンダ",
+          "text": "アイリーニ殿。貴殿は鋭い嗅覚をお持ちのようですが、やはり海巡隊に同行するのはお勧めできかねます。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アイリーニ",
+          "text": "私はただ、私たち全員が直面している脅威を、私なりのやり方で調査しているだけよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "セクンダ",
+          "text": "……では、ご自由に。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    }
+  ]
+}

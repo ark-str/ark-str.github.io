@@ -1,0 +1,580 @@
+{
+  "server": "en",
+  "storyId": "main_8_level_spst_08-05",
+  "groupId": "main_8",
+  "stageId": "spst_08-05",
+  "title": "Burnt Fragment 5",
+  "storyCode": "EG-5",
+  "avgTag": "Interlude",
+  "sourcePath": "vendor/ArknightsData/en/gamedata/story/obt/main/level_spst_08-05.txt",
+  "sourceHash": "bd33760c12d10a46d8a4c780bfddb5aba70c6829d7611f57f239d03a40d48c9d",
+  "bodyAvailable": true,
+  "blocks": [
+    {
+      "type": "narration",
+      "text": "第六关（后）"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "text": "Ah.",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "text": "Forgive my presumption. Might you be the Doctor?",
+      "portraitKey": null
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "You're... 12F?",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "I never thought you'd remember me.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "Have we met somewhere before? Or, perhaps, you've previously read my files?",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "And you are...?",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "???",
+              "text": "Ah, my apologies. Could this be the first time we've met? I still haven't introduced myself.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "???",
+              "text": "Hello, Doctor. Call me 12F, let's say. Since I'm no more than an ordinary Detachment Operator, I've had relatively few chances to have met with you face-to-face.",
+              "portraitKey": null
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Don't be so polite!",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "Nay. Once you're familiar with me, you may well come to hate me.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "With some politeness, both sides are left a little leeway. Leeway to advance a step, or to withdraw something.",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "......",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "I'd heard the Doctor was a reticent one. I won't be asking you to say anything further.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "Your experiences and mine are probably nothing alike, and our dispositions are assuredly a gulf apart.",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "You don't need to be so reserved.",
+          "value": "3",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "When going outside, I do tend to be somewhat polite. Once used to speaking like this, it's hard to change.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "I've seen no shortage of rude remarks come to a fight, after all. By and large, we keep at a distance from vulgar people, without any another reason—only that one thing less, perhaps, beats one thing more.",
+              "portraitKey": null
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "12F",
+          "text": "It's truly been a long campaign... and you've endured to the bitter end.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "12F",
+          "text": "Battles like these are only cause to feel fear. Might you feel that way, Doctor?",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "(In turn, ask him whether he's afraid.)",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "If you were to ask...",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "I don't tell lies. I am. Granted, I've already come all this way with the team, but I'm still quite afraid.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "In the wilderness, dying is not much worth mentioning, a trivial thing. This has become a consensus across near to all people.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "I believe that was why we set up nomadic cities. We wished to live on, to not be killed by the wilderness again.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "But the disasters occurring among these cities were a repeated reminder to us that often, when we think we've had the great fortune to escape from somewhere, we'll play new misfortunes upon ourselves.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "Did the people of Chernobog ever imagine they'd go through this? I imagine they didn't. It's no good thing, passing your days trembling in fear.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "Outcomes such as this are too dark. I can't imagine what I'd be like, stuck to this vision and living on.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "But all of this has dropped, unwittingly, right on their heads. We've stopped the Core City. What if something broke out once again within Chernobog?",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "When I consider all we might encounter in future, it leaves me feeling only afraid.",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "(As ever, be silent.)",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "Given you're unwilling to say much, Doctor, I won't ask much more.",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "(Painstakingly, explain to him how you're already used to this.)",
+          "value": "3",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "What is it you're used to?",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "Are you used to fear, or... used to fighting?",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "I'm somewhat saddened.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "Please, be reassured, I'm not prejudiced against you...",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "I suppose you should mean the latter.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "To be used to fighting... many soldiers have said similar things.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "You aren't a soldier, yet you're used to risking life and limb alongside them. You ought to have something you pursue in battle, then?",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "Or alternatively, in your eyes, this conflict is only a means to an end... or perhaps, the blood and glory in every battle makes you feel... excitement?",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "I'm sorry, Doctor, I'm sorry. I seem to have gone somewhat too far.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "Only, I myself hope greatly that you're able to leave the theater of war, Doctor. Perhaps you, in your capacity as a battlefield commander, can stand level against even Dr. Kal'tsit—",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "But just like Dr. Kal'tsit, I believe if you threw even greater energy into your original field of study, your original life, you would bring about even more benefit to others.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "But things often turn out contrary to how you wish. Innocent children pick up weapons, people who brimmed with vigor lose their lives, and families who live life happily shatter apart. We cannot prevent it.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "As for being used to being afraid, I believe that refers much more to people like me.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "I'm hard-pressed to feel that you and I are the same type, Doctor. Ever since you arose, all these battles you've taken part in, I consider you to have fundamentally won.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "Are you possibly afraid of winning? Or are you possibly afraid that if you were unable to achieve victory, you'd lose something?",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "But I'm not fond of battles at all. If I were allowed, I'd run far, far away.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "Perhaps, just maybe, I'm the complete contrary to you. Because I might even be afraid of victory.",
+              "portraitKey": null
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "(Maintain silence.)",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "——",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "It's getting late. My team should be prepared to retreat by now.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "Please take care of yourself. I wish you a pleasant day.",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "(Inquire what his purpose for asking is.)",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "Because I wanted to understand your character. Though, given I could find you here, I can more or less arrive at my own answer.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "Disregarding the people who already knew you well, there are plenty like myself who didn't join Rhodes Island too long ago, who feel some sense of curiosity about you.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "Of Amiya, we all have the same general impression. Everyone knows that beneath her miniscule stature lies a tenacious will, holding her up...",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "Opinions on Dr. Kal'tsit all vary, while I can very much understand her. No matter what Dr. Kal'tsit does, she always has a basis. She's in no way impetuous, and never acts on an impulse.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "That's simply not something the average person can achieve.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "Whereas you...",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "What about you?",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "It's not been too long since you came back to Rhodes Island, and before you'd returned, your name had spread fast.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "But we didn't know who you were. What kind of person were you? What would you bring for us?",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "Before you came, Dr. Kal'tsit pushed the notification to each individual's terminal, letting us all know that you'd be an important member of the Rhodes Island Command Department someday.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "Though plenty of notifications from HR are similar, I was still able to pick up on the information concealed within that short paragraph of text—",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "—You were, to some of us, completely unfamiliar. At the time, at least, that was how it was.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "...It's not just that we don't know what sort of past you had. We weren't even sure of what kind of future you had.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "Where would Rhodes Island lead us? Along the way, you'd be sure to play an important role. I know that was how a lot of people felt.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "But what about you yourself? Might you feel like all of that... is not part of you? You've lost your memories, after all, and this world hides a great many facts from you.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "Doctor, I have some personal experience. Can you hear it out? You may as well, really; you don't have to take it seriously.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "You might feel like, ever since you've woken, you haven't had much right to choose anything, that the road has been paved out entirely by others.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "Personally, in my experience, from the moment I was born up 'til now, ever since I was tossed into this land, I've always had that sort of a feeling. That I can't choose. I can only live upon this great land.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "Putting those great figures who've felt they could change their own fate aside, we ordinary people... please, just allow me to say this! We ordinary people are always pushed along.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "But are we truly allowed no choice?",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "To this Chernobog core city mission, I signed up.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "I knew this was highly dangerous, and I knew it went against what I believed... more than doing anything to shake the world, what I want is to live on.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "And I was very well aware I couldn't help with much myself. Compared to other, far more specialized Operators, it was all I could do not to get in the way.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "But I still chose to do things in this manner. I didn't need to explain to anyone else my reasons, nor did I need to tangle myself in anything after this.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "Before we made our decisions, we wondered why we had to do things this way. And after that, so we did them.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "So, Doctor, you actually had some sort of choice, didn't you?",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "You came with us all the way here.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "You're here.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "...That's my verdict, then.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "Thank you for your time, Doctor. I apologize for talking to myself for so long. But I do understand you a little more now.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "—It's getting late. Preparations for work should be more or less there by now. I've confirmed your safety as well. Following that, our team should be retreating.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "So I'll see you at Rhodes, Doctor.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "Oh, right, Doctor...",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "No matter if it's just in the moment, or just the slightest variance. The future will surely follow with each difference in your choices, and expose a different appearance as time goes by.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "12F",
+              "text": "I trust you will always have a choice.",
+              "portraitKey": null
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": []
+    }
+  ]
+}

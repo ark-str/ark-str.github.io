@@ -1,7 +1,7 @@
 # Arknights Story Reader
 
 Status: active
-Phase: reader shell
+Phase: verification closeout
 
 ## Product Goal
 
@@ -43,10 +43,12 @@ Build a web application that makes Arknights story content easier to read, summa
 
 ## Current Phase
 
-This phase opens the first usable reader routes. It establishes:
+This phase closes the first reader iteration. It establishes:
 
 - canonical locale URLs at `/reader/[locale]` and `/reader/[locale]/[groupId]/[storyId]`
 - generated story detail files under `public/generated/content/stories/`
+- mirrored app-internal generated loaders under `src/generated/content/` for export-safe reads
 - first-pass body rendering for dialogue, narration, scene breaks, and Doctor choice branches
 - local storage reader-session restore for preferred locale and last visited story
 - explicit empty summary state until the summary-generation issue lands
+- gh-pages-safe static export under the `/ark-str/` base path

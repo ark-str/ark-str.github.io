@@ -19,6 +19,7 @@ From the app directory:
 cd ark-str-web-app
 npm run dev
 npm run verify
+npm run export:ghpages
 ```
 
 From the repository root:
@@ -26,6 +27,8 @@ From the repository root:
 ```bash
 npm run app:dev
 npm run app:verify
+npm run app:export
+npm run app:export:ghpages
 npm run content:update
 npm run content:check
 npm run verify
@@ -52,10 +55,11 @@ npm run verify
 
 ## Current Phase
 
-The repository is in the reader-shell phase:
+The repository is in the verification-closeout phase for the first reader iteration:
 
 - nested app scaffold and root harness split are complete
 - editorial archive theme tokens and shared UI primitives are established
-- `vendor/ArknightsData` and `public/generated/content/` now power canonical locale reader routes
-- raw story text is normalized into bundled story detail JSON for first-pass body rendering
+- `vendor/ArknightsData` and `public/generated/content/` power canonical locale reader routes
+- app-internal generated loaders under `ark-str-web-app/src/generated/content/` keep the reader export-safe for gh-pages
+- `npm run verify` now validates the exported site with Playwright against the `/ark-str/` subpath
 - summary generation and character unlock extraction remain follow-up work
