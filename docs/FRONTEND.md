@@ -21,6 +21,7 @@ The app should feel editorial, deliberate, and product-specific rather than like
 - bootstrap home shell inside `ark-str-web-app`
 - locally persisted bootstrap preferences
 - app-level light/dark theme toggle persisted through the preferences feature
+- a generated-content readiness panel sourced from bundled JSON
 - no framework starter copy, remote links, or vendor branding
 - bootstrap shell must use shared UI primitives instead of one-off styled markup
 

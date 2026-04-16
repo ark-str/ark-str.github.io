@@ -1,6 +1,6 @@
 # Design System Foundation
 
-Status: active
+Status: completed
 Owner: Codex
 Started: 2026-04-16
 Parent issue: `#1`
@@ -77,3 +77,4 @@ Commit format:
 - 2026-04-16: Use an editorial archive tone rather than a neutral dashboard style.
 - 2026-04-16: Use shadcn-style shared primitives customized for this repository instead of feature-local one-off components.
 - 2026-04-16: Support both light and dark themes from the foundation phase.
+- 2026-04-16: Completed by merging PR `#5` into `main`.

@@ -1,18 +1,42 @@
 import fs from "node:fs";
-import path from "node:path";
+import {
+  PORTRAIT_SOURCE_PATH,
+  getArknightsDataSubmoduleSha,
+  getGeneratedFilePaths,
+  getRepoRoot,
+  getServerRoots,
+  hasArknightsDataSource,
+  loadGeneratedArtifacts,
+} from "./lib.mjs";
 
-const cwd = process.cwd();
-const vendorRoot = path.join(cwd, "vendor");
-const generatedRoot = path.join(cwd, "ark-str-web-app", "public", "generated");
+const cwd = getRepoRoot();
+const generatedPaths = getGeneratedFilePaths(cwd);
+const generatedExists =
+  fs.existsSync(generatedPaths.index) &&
+  fs.existsSync(generatedPaths.sourceManifest) &&
+  fs.existsSync(generatedPaths.summaryManifest);
+
+const generated = generatedExists ? loadGeneratedArtifacts(cwd) : null;
 
 const status = {
   vendor: {
-    ArknightsData: fs.existsSync(path.join(vendorRoot, "ArknightsData")),
-    PortraitSource: fs.existsSync(path.join(vendorRoot, "PortraitSource")),
+    ArknightsData: hasArknightsDataSource(cwd),
+    PortraitSource: fs.existsSync(`${cwd}/${PORTRAIT_SOURCE_PATH}`),
+    submoduleSha: hasArknightsDataSource(cwd) ? getArknightsDataSubmoduleSha(cwd) : null,
+    servers: getServerRoots(cwd).map(({ server }) => server),
   },
-  generated: {
-    rootExists: fs.existsSync(generatedRoot),
-  },
+  generated: generated
+    ? {
+        rootExists: true,
+        serverCount: generated.index.vendor.servers.length,
+        groupCount: generated.index.groups.length,
+        storyCount: generated.index.stories.length,
+        summaryMissingCount: generated.summaryManifest.items.filter((item) => item.status === "missing").length,
+        submoduleSha: generated.index.vendor.submoduleSha,
+      }
+    : {
+        rootExists: false,
+      },
 };
 
 console.log(JSON.stringify(status, null, 2));
