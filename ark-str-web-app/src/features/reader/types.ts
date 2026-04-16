@@ -1,4 +1,4 @@
-import type { ReaderLocale } from "@/features/content/types";
+export type ReaderLocale = "cn" | "en" | "jp" | "kr" | "tw";
 
 export type LastVisitedGroup = {
   locale: ReaderLocale;

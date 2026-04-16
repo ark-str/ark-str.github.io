@@ -5,7 +5,7 @@ Owner: Codex
 Started: 2026-04-16
 Parent issue: `#1`
 Active child issue: `#8`
-Draft PR: create after first scaffold commit
+Draft PR: `#9`
 
 ## Objective
 
@@ -30,7 +30,7 @@ Implement the first real reader shell so users can open canonical locale story U
 
 - `#8 reader-shell`
   - depends on: `#4`, `#6`
-  - PR: create after scaffold commit
+  - PR: `#9`
 - `verification-and-docs`
   - depends on: `#8`
   - PR: create after prerequisites merge
@@ -51,11 +51,11 @@ Commit format:
 
 ## Tasks
 
-- [ ] add a canonical locale reader session store and migrate locale preference defaults
-- [ ] emit story detail JSON files and augment the generated index with reader body paths
-- [ ] add `/reader/[locale]` and `/reader/[locale]/[groupId]/[storyId]` routes
-- [ ] render first-pass story bodies including dialogue, narration, and Doctor choice branches
-- [ ] update smoke coverage for direct reader URLs and session restore
+- [x] add a canonical locale reader session store and migrate locale preference defaults
+- [x] emit story detail JSON files and augment the generated index with reader body paths
+- [x] add `/reader/[locale]` and `/reader/[locale]/[groupId]/[storyId]` routes
+- [x] render first-pass story bodies including dialogue, narration, and Doctor choice branches
+- [x] update smoke coverage for direct reader URLs and session restore
 
 ## Verification
 
@@ -71,3 +71,5 @@ Commit format:
 - 2026-04-16: Use canonical locale route params `cn`, `en`, `jp`, `kr`, and `tw`; keep `bili` out of public URLs.
 - 2026-04-16: Render summary as an explicit empty state until the summary-generation issue lands.
 - 2026-04-16: Parse choice blocks from raw story files by pairing `Decision` and subsequent `Predicate` sections.
+- 2026-04-16: Keep reader routes dynamic for now; full gh-pages export compatibility stays with the later verification-and-docs issue.
+- 2026-04-16: Root verification passed on the branch after adding reader session restore, story detail generation, and browser smoke coverage.
