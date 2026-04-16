@@ -34,23 +34,17 @@ export function getGeneratedStoriesRoot(cwd = getRepoRoot()) {
   return path.join(getGeneratedContentRoot(cwd), "stories");
 }
 
-export function getGeneratedAppStoriesRoot(cwd = getRepoRoot()) {
-  return path.join(getGeneratedAppContentRoot(cwd), "stories");
-}
-
 export function getGeneratedFilePaths(cwd = getRepoRoot()) {
   const contentRoot = getGeneratedContentRoot(cwd);
   const statusRoot = getGeneratedStatusRoot(cwd);
   const storiesRoot = getGeneratedStoriesRoot(cwd);
   const appContentRoot = getGeneratedAppContentRoot(cwd);
-  const appStoriesRoot = getGeneratedAppStoriesRoot(cwd);
 
   return {
     contentRoot,
     statusRoot,
     storiesRoot,
     appContentRoot,
-    appStoriesRoot,
     index: path.join(contentRoot, "index.json"),
     sourceManifest: path.join(statusRoot, "source-manifest.json"),
     summaryManifest: path.join(statusRoot, "summary-manifest.json"),
@@ -415,18 +409,19 @@ export function loadGeneratedArtifacts(cwd = getRepoRoot()) {
   };
 }
 
-function createGeneratedRegistrySource(storyDetails) {
-  const pathEntries = storyDetails
+function createGeneratedRegistrySource(stories) {
+  const pathEntries = stories
     .slice()
     .sort(
       (left, right) =>
-        left.locale.localeCompare(right.locale) || left.storyId.localeCompare(right.storyId),
+        left.server.localeCompare(right.server) || left.storyId.localeCompare(right.storyId),
     )
+    .filter((story) => story.bodyAvailable && typeof story.bodyPath === "string" && story.bodyPath.length > 0)
     .map(
-      (storyDetail) =>
+      (story) =>
         `  ${JSON.stringify(
-          `${storyDetail.locale}:${storyDetail.storyId}`,
-        )}: ${JSON.stringify(storyDetail.filePath)},`,
+          `${story.server}:${story.storyId}`,
+        )}: ${JSON.stringify(story.bodyPath)},`,
     );
 
   return [
@@ -457,7 +452,6 @@ export function writeGeneratedArtifacts(artifacts, cwd = getRepoRoot()) {
   ensureDirectory(filePaths.storiesRoot);
   fs.rmSync(filePaths.appContentRoot, { recursive: true, force: true });
   ensureDirectory(filePaths.appContentRoot);
-  ensureDirectory(filePaths.appStoriesRoot);
   writeJson(filePaths.index, artifacts.index);
   writeJson(filePaths.sourceManifest, artifacts.sourceManifest);
   writeJson(filePaths.summaryManifest, artifacts.summaryManifest);
@@ -466,12 +460,11 @@ export function writeGeneratedArtifacts(artifacts, cwd = getRepoRoot()) {
 
   for (const storyDetail of artifacts.storyDetails ?? []) {
     writeJson(path.join(filePaths.contentRoot, storyDetail.filePath), storyDetail.detail);
-    writeJson(path.join(filePaths.appContentRoot, storyDetail.filePath), storyDetail.detail);
   }
 
   fs.writeFileSync(
     filePaths.appRegistry,
-    `${createGeneratedRegistrySource(artifacts.storyDetails ?? [])}\n`,
+    `${createGeneratedRegistrySource(artifacts.index.stories ?? [])}\n`,
     "utf8",
   );
 }
