@@ -1,11 +1,11 @@
 # Verification And Docs
 
-Status: active
+Status: completed
 Owner: Codex
 Started: 2026-04-16
 Parent issue: `#1`
 Active child issue: `#10`
-Draft PR: create after scaffold commit
+Draft PR: `#11`
 
 ## Objective
 
@@ -29,7 +29,7 @@ Close the current reader-shell iteration by removing the remaining verification 
 
 - `#10 verification-and-docs`
   - depends on: `#8`
-  - PR: create after first scaffold commit
+  - PR: `#11`
 
 ## Commit Policy
 
@@ -46,10 +46,10 @@ Commit format:
 
 ## Tasks
 
-- [ ] move `reader-shell` to `completed/` and open this active closeout plan
-- [ ] generate app-internal content loaders so reader routes stop scanning `public/generated/content/`
-- [ ] switch the app and smoke tests to gh-pages-friendly static export output
-- [ ] refresh docs and iteration artifacts to match the merged reader-shell state
+- [x] move `reader-shell` to `completed/` and open this active closeout plan
+- [x] generate app-internal content loaders so reader routes stop scanning `public/generated/content/`
+- [x] switch the app and smoke tests to gh-pages-friendly static export output
+- [x] refresh docs and iteration artifacts to match the merged reader-shell state
 
 ## Verification
 
@@ -64,3 +64,5 @@ Commit format:
 
 - 2026-04-16: Keep `public/generated/content/` as the published asset contract, but move app reads to `src/generated/content/`.
 - 2026-04-16: Treat this issue as the final closeout child for parent issue `#1`.
+- 2026-04-16: Use Webpack for export builds because the default Next 16 Turbopack production build attempted a blocked port bind in this environment.
+- 2026-04-16: Verify the gh-pages `/ark-str/` subpath through a dedicated export preview server instead of `next start`.

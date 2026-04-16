@@ -14,6 +14,5 @@ Snapshot date: 2026-04-16
 
 - Summary generation and character unlock extraction are still not implemented.
 - The locale archive route currently renders the full group list without pagination or virtualization.
-- Next.js emits broad file-pattern warnings because reader routes read bundled JSON directly from `public/generated/content/`.
 - Autonomous iteration depends on a logged-in `codex` CLI session.
 - GitHub-backed iteration also depends on an installed, authenticated `gh` CLI.
