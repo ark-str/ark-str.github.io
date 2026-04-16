@@ -6,7 +6,7 @@
   "title": "To be Continued",
   "storyCode": "OF-2",
   "avgTag": "After Operation",
-  "sourcePath": "vendor/ArknightsData/en/gamedata/story/activities/act3d0/level_act3d0_02_end.txt",
+  "sourcePath": "vendor/ArknightsGamedata/en/gamedata/story/activities/act3d0/level_act3d0_02_end.txt",
   "sourceHash": "c8ccb90a64421e43c1fdde0b3fa7e3c21b79634ae76b3fb4bc7b20270edea42a",
   "bodyAvailable": true,
   "blocks": [
@@ -20,33 +20,25 @@
     {
       "type": "dialogue",
       "speakerName": "Ceylon",
-      "speakerToken": "char_348_ceylon_4#7",
-      "operatorId": "char_348_ceylon",
-      "portraitKey": "char_348_ceylon",
+      "speakerId": "char_348_ceylon",
       "text": "Quick! Doctor! Let's head towards the beach!"
     },
     {
       "type": "dialogue",
       "speakerName": "Ceylon",
-      "speakerToken": "char_348_ceylon_4#7",
-      "operatorId": "char_348_ceylon",
-      "portraitKey": "char_348_ceylon",
+      "speakerId": "char_348_ceylon",
       "text": "There are a ton of tourists gathered on the beach, so we'll be able to blend into the crowd and shrug them off!"
     },
     {
       "type": "dialogue",
       "speakerName": "Bodyguard",
-      "speakerToken": "avg_npc_020",
-      "operatorId": null,
-      "portraitKey": null,
+      "speakerId": null,
       "text": "Stand still!"
     },
     {
       "type": "dialogue",
       "speakerName": "Ceylon",
-      "speakerToken": "char_348_ceylon_4#7",
-      "operatorId": "char_348_ceylon",
-      "portraitKey": "char_348_ceylon",
+      "speakerId": "char_348_ceylon",
       "text": "You wish!"
     },
     {
@@ -55,9 +47,7 @@
     {
       "type": "dialogue",
       "speakerName": "Schwarz",
-      "speakerToken": "char_340_shwaz_2#2",
-      "operatorId": "char_340_shwaz",
-      "portraitKey": "char_340_shwaz",
+      "speakerId": "char_340_shwaz",
       "text": "..."
     },
     {
@@ -73,65 +63,49 @@
         {
           "type": "dialogue",
           "speakerName": "Ceylon",
-          "speakerToken": "char_348_ceylon_4#4",
-          "operatorId": "char_348_ceylon",
-          "portraitKey": "char_348_ceylon",
+          "speakerId": "char_348_ceylon",
           "text": "Schwarz! Great! You're finally here!"
         },
         {
           "type": "dialogue",
           "speakerName": "Ceylon",
-          "speakerToken": "char_348_ceylon_4#4",
-          "operatorId": "char_348_ceylon",
-          "portraitKey": "char_348_ceylon",
+          "speakerId": "char_348_ceylon",
           "text": "I'm so glad you're here. What's going on with Cronin?!"
         },
         {
           "type": "dialogue",
           "speakerName": "Ceylon",
-          "speakerToken": "char_348_ceylon_4#4",
-          "operatorId": "char_348_ceylon",
-          "portraitKey": "char_348_ceylon",
+          "speakerId": "char_348_ceylon",
           "text": "Doctor, she's the one I was telling you about..."
         },
         {
           "type": "dialogue",
           "speakerName": "Schwarz",
-          "speakerToken": "char_340_shwaz_2#2",
-          "operatorId": "char_340_shwaz",
-          "portraitKey": "char_340_shwaz",
+          "speakerId": "char_340_shwaz",
           "text": "Milady, Master Doykos is currently out of town. You ought to listen to Cronin."
         },
         {
           "type": "dialogue",
           "speakerName": "Ceylon",
-          "speakerToken": "char_348_ceylon_4#8",
-          "operatorId": "char_348_ceylon",
-          "portraitKey": "char_348_ceylon",
+          "speakerId": "char_348_ceylon",
           "text": "Schwarz? What are you saying...?"
         },
         {
           "type": "dialogue",
           "speakerName": "Schwarz",
-          "speakerToken": "char_340_shwaz_2#2",
-          "operatorId": "char_340_shwaz",
-          "portraitKey": "char_340_shwaz",
+          "speakerId": "char_340_shwaz",
           "text": "Let's head back to Cronin now and hand these people over."
         },
         {
           "type": "dialogue",
           "speakerName": "Schwarz",
-          "speakerToken": "char_340_shwaz_2#2",
-          "operatorId": "char_340_shwaz",
-          "portraitKey": "char_340_shwaz",
+          "speakerId": "char_340_shwaz",
           "text": "I do not wish to resort to violence, milady."
         },
         {
           "type": "dialogue",
           "speakerName": "Ceylon",
-          "speakerToken": "char_348_ceylon_4#8",
-          "operatorId": "char_348_ceylon",
-          "portraitKey": "char_348_ceylon",
+          "speakerId": "char_348_ceylon",
           "text": "...Schwarz?"
         },
         {
@@ -142,23 +116,15 @@
   ],
   "observedOperators": [
     {
-      "operatorId": "char_340_shwaz",
+      "speakerId": "char_340_shwaz",
       "aliases": [
         "Schwarz"
-      ],
-      "speakerTokens": [
-        "char_340_shwaz_2#2"
       ]
     },
     {
-      "operatorId": "char_348_ceylon",
+      "speakerId": "char_348_ceylon",
       "aliases": [
         "Ceylon"
-      ],
-      "speakerTokens": [
-        "char_348_ceylon_4#4",
-        "char_348_ceylon_4#7",
-        "char_348_ceylon_4#8"
       ]
     }
   ]

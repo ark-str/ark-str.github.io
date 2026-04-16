@@ -113,7 +113,7 @@ function resolveFocusedSpeakerToken(rawAttributes) {
   return slots[focusIndex - 1]?.token ?? slots[0].token;
 }
 
-export function normalizeOperatorIdToken(rawToken) {
+export function normalizeSpeakerIdToken(rawToken) {
   if (typeof rawToken !== "string" || !rawToken.startsWith("char_")) {
     return null;
   }
@@ -144,24 +144,28 @@ function resolveDialogueSpeaker(line, parserState) {
   }
 
   const knownSpeakerBinding = parserState.speakerBindings.get(speakerName) ?? null;
-  const speakerToken = parserState.activeSpeakerToken ?? knownSpeakerBinding?.speakerToken ?? null;
-  const operatorId =
-    speakerToken !== null ? normalizeOperatorIdToken(speakerToken) : knownSpeakerBinding?.operatorId ?? null;
+  const activeSpeakerId =
+    parserState.activeSpeakerToken !== null
+      ? normalizeSpeakerIdToken(parserState.activeSpeakerToken)
+      : null;
+  const speakerId =
+    parserState.activeSpeakerToken !== null ? activeSpeakerId : knownSpeakerBinding?.speakerId ?? null;
 
   const block = {
     type: "dialogue",
     speakerName,
-    speakerToken,
-    operatorId,
-    portraitKey: operatorId,
+    speakerId,
     text,
   };
 
-  if (speakerToken !== null) {
-    parserState.speakerBindings.set(speakerName, {
-      speakerToken,
-      operatorId,
-    });
+  if (parserState.activeSpeakerToken !== null) {
+    if (speakerId !== null) {
+      parserState.speakerBindings.set(speakerName, {
+        speakerId,
+      });
+    } else {
+      parserState.speakerBindings.delete(speakerName);
+    }
   }
 
   return [block];
@@ -332,23 +336,18 @@ export function parseStoryText(rawText) {
 function collectObservedOperatorsFromBlocks(blocks, accumulator) {
   for (const block of blocks) {
     if (block.type === "dialogue") {
-      if (!block.operatorId) {
+      if (!block.speakerId) {
         continue;
       }
 
       const current =
-        accumulator.get(block.operatorId) ??
+        accumulator.get(block.speakerId) ??
         {
           aliases: new Set(),
-          speakerTokens: new Set(),
         };
 
       current.aliases.add(block.speakerName);
-      if (block.speakerToken) {
-        current.speakerTokens.add(block.speakerToken);
-      }
-
-      accumulator.set(block.operatorId, current);
+      accumulator.set(block.speakerId, current);
       continue;
     }
 
@@ -369,10 +368,9 @@ export function collectObservedOperators(blocks) {
   collectObservedOperatorsFromBlocks(blocks, accumulator);
 
   return [...accumulator.entries()]
-    .map(([operatorId, value]) => ({
-      operatorId,
+    .map(([speakerId, value]) => ({
+      speakerId,
       aliases: [...value.aliases].sort((left, right) => left.localeCompare(right)),
-      speakerTokens: [...value.speakerTokens].sort((left, right) => left.localeCompare(right)),
     }))
-    .sort((left, right) => left.operatorId.localeCompare(right.operatorId));
+    .sort((left, right) => left.speakerId.localeCompare(right.speakerId));
 }

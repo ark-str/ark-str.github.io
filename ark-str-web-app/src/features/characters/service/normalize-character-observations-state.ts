@@ -15,13 +15,13 @@ function normalizeLocaleEntries(raw: unknown): CharacterObservationLocaleMap {
   }
 
   return Object.fromEntries(
-    Object.entries(raw).flatMap(([operatorId, value]) => {
-      if (typeof operatorId !== "string" || operatorId.length === 0 || !value || typeof value !== "object") {
+    Object.entries(raw).flatMap(([speakerId, value]) => {
+      if (typeof speakerId !== "string" || speakerId.length === 0 || !value || typeof value !== "object") {
         return [];
       }
 
       const aliases = normalizeAliasList((value as { aliases?: unknown }).aliases);
-      return aliases.length > 0 ? [[operatorId, { aliases }]] : [];
+      return aliases.length > 0 ? [[speakerId, { aliases }]] : [];
     }),
   );
 }

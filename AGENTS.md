@@ -72,7 +72,7 @@ Build and maintain an Arknights story reader where:
 - `docs/` - source of truth for specs, plans, and generated harness reports
 - `scripts/` - guards, harness orchestration, and content pipeline entrypoints
 - `tests/` - root harness unit tests and browser smoke tests
-- `vendor/` - indirect GitHub-backed source roots such as `ArknightsData/`
+- `vendor/` - indirect GitHub-backed source roots such as `ArknightsGamedata/` and `ArknightsResource/`
 - `artifacts/` - local verification and harness artifacts
 
 ## Document Map

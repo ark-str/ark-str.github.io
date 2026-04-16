@@ -72,10 +72,8 @@ export type SummaryManifest = {
 export type DialogueBlock = {
   type: "dialogue";
   speakerName: string;
-  speakerToken: string | null;
-  operatorId: string | null;
+  speakerId: string | null;
   text: string;
-  portraitKey: string | null;
 };
 
 export type NarrationBlock = {
@@ -102,9 +100,8 @@ export type ChoiceBlock = {
 export type StoryBlock = DialogueBlock | NarrationBlock | SceneBreakBlock | ChoiceBlock;
 
 export type ObservedOperator = {
-  operatorId: string;
+  speakerId: string;
   aliases: string[];
-  speakerTokens: string[];
 };
 
 export type StoryDetail = {

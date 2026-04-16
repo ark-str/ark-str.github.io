@@ -6,7 +6,7 @@
   "title": "광분",
   "storyCode": "1-3",
   "avgTag": "작전 후",
-  "sourcePath": "vendor/ArknightsData/kr/gamedata/story/obt/main/level_main_01-03_end.txt",
+  "sourcePath": "vendor/ArknightsGamedata/kr/gamedata/story/obt/main/level_main_01-03_end.txt",
   "sourceHash": "a053f0164e27c50122c5ba5629baf05c8fb5c7b0d9fb6269a96874eb3b49c9d5",
   "bodyAvailable": true,
   "blocks": [
@@ -17,41 +17,31 @@
     {
       "type": "dialogue",
       "speakerName": "니어",
-      "speakerToken": "char_148_nearl_1#3",
-      "operatorId": "char_148_nearl",
-      "portraitKey": "char_148_nearl",
+      "speakerId": "char_148_nearl",
       "text": "돌격!!!"
     },
     {
       "type": "dialogue",
       "speakerName": "리유니온 멤버",
-      "speakerToken": "char_1002_nsabr_2",
-      "operatorId": "char_1002_nsabr",
-      "portraitKey": "char_1002_nsabr",
+      "speakerId": "char_1002_nsabr",
       "text": "아니?!"
     },
     {
       "type": "dialogue",
       "speakerName": "리유니온 멤버",
-      "speakerToken": "char_1002_nsabr_2",
-      "operatorId": "char_1002_nsabr",
-      "portraitKey": "char_1002_nsabr",
+      "speakerId": "char_1002_nsabr",
       "text": "…누, 누구냐?!"
     },
     {
       "type": "dialogue",
       "speakerName": "도베르만",
-      "speakerToken": "char_130_doberm_ex",
-      "operatorId": "char_130_doberm",
-      "portraitKey": "char_130_doberm",
+      "speakerId": "char_130_doberm",
       "text": "어디를 보고 있나! 받아라!"
     },
     {
       "type": "dialogue",
       "speakerName": "리유니온 멤버",
-      "speakerToken": "char_1002_nsabr_2",
-      "operatorId": "char_1002_nsabr",
-      "portraitKey": "char_1002_nsabr",
+      "speakerId": "char_1002_nsabr",
       "text": "으악!!"
     },
     {
@@ -60,49 +50,37 @@
     {
       "type": "dialogue",
       "speakerName": "가드 오퍼레이터",
-      "speakerToken": "char_013_riop",
-      "operatorId": "char_013_riop",
-      "portraitKey": "char_013_riop",
+      "speakerId": "char_013_riop",
       "text": "후우…"
     },
     {
       "type": "dialogue",
       "speakerName": "가드 오퍼레이터",
-      "speakerToken": "char_013_riop",
-      "operatorId": "char_013_riop",
-      "portraitKey": "char_013_riop",
+      "speakerId": "char_013_riop",
       "text": "후방에서 리유니온 녀석들이… 공격을 가하기 위해 집결하고 있습니다!"
     },
     {
       "type": "dialogue",
       "speakerName": "니어",
-      "speakerToken": "char_148_nearl_1#3",
-      "operatorId": "char_148_nearl",
-      "portraitKey": "char_148_nearl",
+      "speakerId": "char_148_nearl",
       "text": "우리를 쫓아오지는 못할 거다! 멈추지 마라!"
     },
     {
       "type": "dialogue",
       "speakerName": "도베르만",
-      "speakerToken": "char_130_doberm_ex",
-      "operatorId": "char_130_doberm",
-      "portraitKey": "char_130_doberm",
+      "speakerId": "char_130_doberm",
       "text": "조금만 더 가면 리유니온이 점령한 구역에서 벗어날 수 있다! 계속해서 전진하라!"
     },
     {
       "type": "dialogue",
       "speakerName": "니어",
-      "speakerToken": "char_148_nearl_1#3",
-      "operatorId": "char_148_nearl",
-      "portraitKey": "char_148_nearl",
+      "speakerId": "char_148_nearl",
       "text": "이런 폭도들로……"
     },
     {
       "type": "dialogue",
       "speakerName": "니어",
-      "speakerToken": "char_148_nearl_1#3",
-      "operatorId": "char_148_nearl",
-      "portraitKey": "char_148_nearl",
+      "speakerId": "char_148_nearl",
       "text": "우리의 앞길을 막을 수 있을 것 같으냐!"
     },
     {
@@ -111,39 +89,27 @@
   ],
   "observedOperators": [
     {
-      "operatorId": "char_013_riop",
+      "speakerId": "char_013_riop",
       "aliases": [
         "가드 오퍼레이터"
-      ],
-      "speakerTokens": [
-        "char_013_riop"
       ]
     },
     {
-      "operatorId": "char_1002_nsabr",
+      "speakerId": "char_1002_nsabr",
       "aliases": [
         "리유니온 멤버"
-      ],
-      "speakerTokens": [
-        "char_1002_nsabr_2"
       ]
     },
     {
-      "operatorId": "char_130_doberm",
+      "speakerId": "char_130_doberm",
       "aliases": [
         "도베르만"
-      ],
-      "speakerTokens": [
-        "char_130_doberm_ex"
       ]
     },
     {
-      "operatorId": "char_148_nearl",
+      "speakerId": "char_148_nearl",
       "aliases": [
         "니어"
-      ],
-      "speakerTokens": [
-        "char_148_nearl_1#3"
       ]
     }
   ]

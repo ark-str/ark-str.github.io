@@ -10,6 +10,7 @@
     "guards:all": "npm run docs:check && npm run constraints:check && npm run arch:check && npm run design-system:check",
     "content:sync": "node scripts/content/sync.mjs",
     "content:build-index": "node scripts/content/build-index.mjs",
+    "content:portraits": "node scripts/content/fetch-portraits.mjs",
     "content:check": "node scripts/content/check.mjs",
     "content:status": "node scripts/content/status.mjs",
     "content:update": "node scripts/content/update.mjs",

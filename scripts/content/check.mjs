@@ -4,6 +4,7 @@ import {
   buildContentArtifacts,
   getGeneratedFilePaths,
   hasArknightsDataSource,
+  hasPortraitSource,
   loadGeneratedArtifacts,
 } from "./lib.mjs";
 
@@ -47,6 +48,14 @@ function compareLiveArtifacts(generated, live) {
     );
     invariant(generatedStory.title === liveStory.title, `Generated title drift detected for ${key}`);
   }
+
+  if (hasPortraitSource(process.cwd())) {
+    invariant(
+      JSON.stringify(live.portraitPaths ?? {}) ===
+        JSON.stringify(JSON.parse(fs.readFileSync(getGeneratedFilePaths(process.cwd()).appPortraitManifest, "utf8"))),
+      "Generated portrait manifest does not match live vendor-derived portrait availability",
+    );
+  }
 }
 
 function validateGeneratedArtifacts(generated) {
@@ -58,6 +67,7 @@ function validateGeneratedArtifacts(generated) {
   invariant(Array.isArray(generated.summaryManifest.items), "summary-manifest items must be an array");
   invariant(fs.existsSync(filePaths.appIndex), "app-generated index.json is missing");
   invariant(fs.existsSync(filePaths.appSummaryManifest), "app-generated summary-manifest.json is missing");
+  invariant(fs.existsSync(filePaths.appPortraitManifest), "app-generated portraits.json is missing");
   invariant(fs.existsSync(filePaths.appRegistry), "app-generated registry.js is missing");
   invariant(
     !fs.existsSync(path.join(filePaths.appContentRoot, "stories")),
@@ -66,6 +76,7 @@ function validateGeneratedArtifacts(generated) {
 
   const appIndex = JSON.parse(fs.readFileSync(filePaths.appIndex, "utf8"));
   const appSummaryManifest = JSON.parse(fs.readFileSync(filePaths.appSummaryManifest, "utf8"));
+  const appPortraitManifest = JSON.parse(fs.readFileSync(filePaths.appPortraitManifest, "utf8"));
   invariant(
     JSON.stringify(appIndex) === JSON.stringify(generated.index),
     "app-generated index.json does not match the published generated index",
@@ -74,6 +85,7 @@ function validateGeneratedArtifacts(generated) {
     JSON.stringify(appSummaryManifest) === JSON.stringify(generated.summaryManifest),
     "app-generated summary-manifest.json does not match the published generated summary manifest",
   );
+  invariant(appPortraitManifest && typeof appPortraitManifest === "object", "app-generated portraits.json must be an object");
 
   invariant(
     generated.index.stories.length === generated.sourceManifest.items.length,
@@ -131,6 +143,53 @@ function validateGeneratedArtifacts(generated) {
     invariant(body.storyId === story.storyId, `story detail storyId mismatch for ${story.server}:${story.storyId}`);
     invariant(body.server === story.server, `story detail locale mismatch for ${story.server}:${story.storyId}`);
     invariant(Array.isArray(body.blocks), `story detail blocks must be an array for ${story.server}:${story.storyId}`);
+    invariant(
+      Array.isArray(body.observedOperators),
+      `story detail observedOperators must be an array for ${story.server}:${story.storyId}`,
+    );
+
+    for (const block of body.blocks) {
+      if (block?.type !== "dialogue") {
+        continue;
+      }
+
+      invariant(Object.hasOwn(block, "speakerId"), `dialogue block speakerId is missing for ${story.server}:${story.storyId}`);
+      invariant(!Object.hasOwn(block, "speakerToken"), `legacy speakerToken found for ${story.server}:${story.storyId}`);
+      invariant(!Object.hasOwn(block, "operatorId"), `legacy operatorId found for ${story.server}:${story.storyId}`);
+      invariant(!Object.hasOwn(block, "portraitKey"), `legacy portraitKey found for ${story.server}:${story.storyId}`);
+    }
+
+    for (const observedOperator of body.observedOperators) {
+      invariant(
+        typeof observedOperator?.speakerId === "string" && observedOperator.speakerId.length > 0,
+        `observed operator speakerId is invalid for ${story.server}:${story.storyId}`,
+      );
+      invariant(
+        Array.isArray(observedOperator.aliases),
+        `observed operator aliases must be an array for ${story.server}:${story.storyId}`,
+      );
+      invariant(
+        !Object.hasOwn(observedOperator, "operatorId") && !Object.hasOwn(observedOperator, "speakerTokens"),
+        `legacy observed operator fields found for ${story.server}:${story.storyId}`,
+      );
+    }
+  }
+
+  const observedSpeakerIds = new Set(
+    generated.index.stories
+      .filter((story) => story.bodyAvailable && story.bodyPath)
+      .flatMap((story) => {
+        const bodyFilePath = path.join(process.cwd(), "ark-str-web-app", "public", "generated", "content", story.bodyPath);
+        const body = JSON.parse(fs.readFileSync(bodyFilePath, "utf8"));
+
+        return (body.observedOperators ?? []).map((entry) => entry.speakerId).filter(Boolean);
+      }),
+  );
+
+  for (const speakerId of Object.keys(appPortraitManifest)) {
+    invariant(observedSpeakerIds.has(speakerId), `portrait manifest references an unobserved speakerId: ${speakerId}`);
+    const portraitFilePath = path.join(filePaths.generatedPortraitsRoot, `${speakerId}.png`);
+    invariant(fs.existsSync(portraitFilePath), `portrait file is missing for ${speakerId}`);
   }
 }
 
@@ -139,6 +198,12 @@ validateGeneratedArtifacts(generated);
 
 if (hasArknightsDataSource(process.cwd())) {
   compareLiveArtifacts(generated, buildContentArtifacts(process.cwd()));
+}
+
+if (!hasPortraitSource(process.cwd())) {
+  console.warn(
+    "content check warning: vendor/ArknightsResource portrait cache is not initialized; portrait availability was validated against generated artifacts only.",
+  );
 }
 
 console.log("content check passed");
