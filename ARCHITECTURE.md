@@ -15,6 +15,7 @@ This project intentionally separates the repository harness from the runnable we
 ## Source Layout
 
 - `ark-str-web-app/src/app/` - route shell, metadata, and global styles only
+- `ark-str-web-app/src/components/ui/` - shared UI primitives and design-system building blocks
 - `ark-str-web-app/src/features/` - product features with explicit layer boundaries
 - `ark-str-web-app/public/generated/` - generated static assets consumed at runtime
 - `scripts/guards/` - mechanical repository rules
@@ -46,6 +47,7 @@ Disallowed patterns:
 - ad-hoc `localStorage` access outside `repo` and `runtime`
 - remote resources from component code
 - moving harness logic into `ark-str-web-app/`
+- hard-coded runtime colors outside `ark-str-web-app/src/app/globals.css`
 
 ## Runtime Boundary
 
@@ -54,6 +56,7 @@ Disallowed patterns:
 - `localStorage` access is wrapped by `repo` functions.
 - Persisted state normalization happens in `service` before values reach the UI.
 - Generated story data is read from `ark-str-web-app/public/generated/`, never from runtime network calls.
+- Theme state is owned by the preferences feature and applied through semantic CSS variables.
 
 ## Why This Exists
 

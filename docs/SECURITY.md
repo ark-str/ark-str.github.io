@@ -20,5 +20,6 @@ This application is intentionally local-first and low-trust:
 ## Practical Guardrails
 
 - `scripts/guards/check-constraints.mjs` rejects remote resource patterns inside `ark-str-web-app`.
+- `scripts/guards/check-design-system.mjs` keeps runtime colors centralized in the token source.
 - `ark-str-web-app/src/features/*/repo/` owns browser persistence.
 - `ark-str-web-app/src/features/*/service/` normalizes persisted shapes before UI consumption.

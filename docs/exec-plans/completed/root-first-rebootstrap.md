@@ -1,6 +1,6 @@
 # Harness Root + Nested App Rebootstrap
 
-Status: active
+Status: completed
 Owner: Codex
 Started: 2026-04-16
 Parent issue: `#1`
@@ -75,3 +75,4 @@ Commit format:
 - 2026-04-16: Use a nested `ark-str-web-app` package instead of a root app so the harness and the runnable product stay separated.
 - 2026-04-16: Open the issue branch and draft PR before destructive filesystem changes.
 - 2026-04-16: Link root harness scripts to the app with `npm --prefix ark-str-web-app ...` instead of workspaces.
+- 2026-04-16: Completed by merging PR `#3` into `main`.
