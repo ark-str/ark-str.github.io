@@ -3,8 +3,8 @@ import path from "node:path";
 import { readText, relativePath, walkFiles } from "./lib.mjs";
 
 const codeRoots = [
-  path.join(process.cwd(), "src"),
-  path.join(process.cwd(), "next.config.ts"),
+  path.join(process.cwd(), "ark-str-web-app", "src"),
+  path.join(process.cwd(), "ark-str-web-app", "next.config.ts"),
 ];
 
 const files = [];

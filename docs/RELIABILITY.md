@@ -5,17 +5,15 @@
 Every meaningful change should pass:
 
 1. `npm run guards:all`
-2. `npm run typecheck`
-3. `npm run lint`
-4. `npm run harness:test`
-5. `npm run build`
-6. `npm run smoke`
+2. `npm run harness:test`
+3. `npm run app:verify`
+4. `npm run smoke`
 
-`npm run verify` runs the full sequence.
+`npm run verify` runs the full root sequence.
 
 ## Expectations
 
-- The app must build without network access after dependencies are installed.
+- The app must build without runtime network access after dependencies are installed.
 - The app must render without requiring a server-side data source.
 - Persisted state must survive a refresh and recover safely from malformed `localStorage` values.
 - Browser smoke must complete with no uncaught page errors.

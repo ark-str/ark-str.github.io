@@ -12,7 +12,7 @@ Snapshot date: 2026-04-16
 
 ## Current Gaps
 
-- The repository is only in the root bootstrap phase; Arknights data sync and reader routes are not implemented yet.
+- The repository is still in the bootstrap phase; Arknights data sync and reader routes are not implemented yet.
+- The app and harness split has been established, but content pipeline and shared contracts are still placeholders.
 - Autonomous iteration depends on a logged-in `codex` CLI session.
 - GitHub-backed iteration also depends on an installed, authenticated `gh` CLI.
-- Quality scoring is still manual.

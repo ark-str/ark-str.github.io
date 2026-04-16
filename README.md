@@ -1,63 +1,53 @@
 # ARK STR
 
-Root-first Next.js bootstrap for an Arknights story reader with a GitHub-backed harness.
+Repository harness plus nested Next.js app for an Arknights story reader.
 
-## Current Phase
+## Structure
 
-The repository is in the root bootstrap phase:
-
-- fresh App Router project in the repository root
-- root-level harness docs, guards, tests, and iteration scripts restored
-- local-first onboarding shell in place for the future story-reader product
-- vendor-driven content pipeline reserved under `vendor/` and `scripts/content/`
-
-The actual Arknights data sync, parsing, summaries, and reader routes will land in follow-up child issues after this bootstrap branch is merged.
-
-## Root Structure
-
-- `src/` - root Next.js app and feature code
+- `ark-str-web-app/` - independent Next.js App Router application
 - `docs/` - product spec, execution plans, and generated harness reports
 - `scripts/` - guards, harness orchestration, and content-pipeline commands
-- `tests/` - harness unit tests and browser smoke
-- `vendor/` - indirect GitHub-backed data sources
-- `public/generated/` - generated runtime assets
+- `tests/` - root harness unit tests and browser smoke tests
+- `vendor/` - indirect GitHub-backed source repositories
 
-## Commands
+## Run The App
+
+From the app directory:
 
 ```bash
+cd ark-str-web-app
 npm run dev
 npm run verify
-npm run smoke
-npm run harness:test
-npm run content:status
-npm run harness:iterate -- --goal "Bootstrap the reader shell"
 ```
+
+From the repository root:
+
+```bash
+npm run app:dev
+npm run app:verify
+npm run verify
+```
+
+## Root Harness Commands
+
+- `npm run guards:all`
+- `npm run harness:test`
+- `npm run content:status`
+- `npm run harness:iterate -- --goal "..."`
 
 ## Repository Rules
 
 - bundled runtime resources only
 - no remote runtime calls
 - mutable client state via `localStorage`
-- root-first structure only
-- update specs and plans when behavior changes
+- root repository owns harness and docs
+- `ark-str-web-app/` owns all runnable app code
 
-## Harness Flow
+## Current Phase
 
-`npm run harness:iterate` will:
+The repository is still in the bootstrap phase:
 
-1. check `codex`, `gh`, git status, and the default branch preconditions
-2. ask Codex to decompose the goal into a child-issue DAG
-3. create a parent iteration issue plus one child issue and one branch per feature unit
-4. schedule dependency-free issues in parallel with isolated git worktrees
-5. require milestone commits, strict `npm run verify`, and reset-to-checkpoint recovery when rollback is safer than pushing forward
-6. open one PR per child issue, run `codex review`, apply fix loops, and merge only passing PRs
-7. run a final `npm run verify` on the default branch, close the parent issue, and update `docs/generated/latest-iteration.md`
-
-All harness state is persisted under `artifacts/harness/runs/<timestamp>/iteration.json`.
-
-## Harness Prerequisites
-
-- `codex` CLI installed and authenticated
-- `gh` CLI installed and authenticated
-- clean working tree on the default branch
-- GitHub repository configured as `origin`
+- nested app scaffold created with `create-next-app`
+- root harness retained
+- local-first bootstrap shell restored inside `ark-str-web-app`
+- real Arknights data sync, parsing, summaries, and reader routes are still follow-up work

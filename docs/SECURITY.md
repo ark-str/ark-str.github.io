@@ -19,6 +19,6 @@ This application is intentionally local-first and low-trust:
 
 ## Practical Guardrails
 
-- `scripts/guards/check-constraints.mjs` rejects remote resource patterns.
-- `src/features/*/repo/` owns browser persistence.
-- `src/features/*/service/` normalizes persisted shapes before UI consumption.
+- `scripts/guards/check-constraints.mjs` rejects remote resource patterns inside `ark-str-web-app`.
+- `ark-str-web-app/src/features/*/repo/` owns browser persistence.
+- `ark-str-web-app/src/features/*/service/` normalizes persisted shapes before UI consumption.

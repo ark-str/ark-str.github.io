@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "ARK STR",
-  description: "Root-first bootstrap for the Arknights story reader.",
+  description: "Nested app bootstrap for the Arknights story reader.",
 };
 
 export default function RootLayout({

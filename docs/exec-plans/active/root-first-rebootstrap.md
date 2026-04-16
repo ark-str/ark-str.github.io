@@ -1,4 +1,4 @@
-# Root-First Rebootstrap
+# Harness Root + Nested App Rebootstrap
 
 Status: active
 Owner: Codex
@@ -9,19 +9,19 @@ Draft PR: `#3`
 
 ## Objective
 
-Rebootstrap the repository into a fresh root-level Next.js application while preserving the harness, docs, guards, and tests in the repository root.
+Rebootstrap the repository so the root contains only harness concerns and the runnable Next.js application lives independently in `ark-str-web-app/`.
 
 ## Scope
 
 - clear the pre-existing mixed structure
-- scaffold a fresh root Next.js app
-- restore root-level docs, scripts, and tests
-- replace starter defaults with a local-first bootstrap shell
+- scaffold a fresh nested Next.js app under `ark-str-web-app/`
+- restore root-level docs, scripts, and tests as harness-only assets
+- replace starter defaults with a local-first bootstrap shell inside the nested app
 - document the next issue and PR dependency graph
 
 ## Constraints
 
-- no workspaces or nested app packages
+- no workspaces
 - no remote runtime assets
 - local storage only for mutable browser state
 - GitHub-backed harness flow remains the required iteration mechanism
@@ -57,10 +57,10 @@ Commit format:
 
 ## Tasks
 
-- [x] scaffold fresh root app
-- [x] restore harness docs and scripts
-- [x] replace starter defaults with bootstrap shell
-- [x] restore verify pipeline and smoke gate
+- [x] scaffold fresh nested app
+- [x] restore root harness docs and scripts
+- [x] replace nested app starter defaults with bootstrap shell
+- [x] retarget verify pipeline and smoke gate to `ark-str-web-app`
 - [x] document post-bootstrap dependency order
 
 ## Verification
@@ -72,5 +72,6 @@ Commit format:
 ## Decision Log
 
 - 2026-04-16: Keep all harness settings and entrypoints in the repository root.
-- 2026-04-16: Use a single root Next.js app instead of workspaces so root-bound harness scripts stay reliable.
+- 2026-04-16: Use a nested `ark-str-web-app` package instead of a root app so the harness and the runnable product stay separated.
 - 2026-04-16: Open the issue branch and draft PR before destructive filesystem changes.
+- 2026-04-16: Link root harness scripts to the app with `npm --prefix ark-str-web-app ...` instead of workspaces.

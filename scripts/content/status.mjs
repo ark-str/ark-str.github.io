@@ -3,7 +3,7 @@ import path from "node:path";
 
 const cwd = process.cwd();
 const vendorRoot = path.join(cwd, "vendor");
-const generatedRoot = path.join(cwd, "public", "generated");
+const generatedRoot = path.join(cwd, "ark-str-web-app", "public", "generated");
 
 const status = {
   vendor: {

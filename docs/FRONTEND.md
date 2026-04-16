@@ -2,11 +2,11 @@
 
 ## Intent
 
-The interface should feel editorial, deliberate, and product-specific rather than like a framework starter.
+The app should feel editorial, deliberate, and product-specific rather than like a framework starter.
 
 ## Rules
 
-- Keep the current bootstrap phase to one route until the product spec explicitly expands it.
+- The runnable interface lives entirely in `ark-str-web-app/`.
 - Use CSS variables for color, spacing, and typography tokens.
 - Prefer warm, readable surfaces and high-contrast information blocks over generic dashboard chrome.
 - Avoid remote assets entirely.
@@ -15,7 +15,7 @@ The interface should feel editorial, deliberate, and product-specific rather tha
 
 ## Current UI Contract
 
-- hero that explains the root-first bootstrap state
+- bootstrap home shell inside `ark-str-web-app`
 - locally persisted bootstrap preferences
 - visible dependency graph for the next harness issues
 - no framework starter copy, remote links, or vendor branding
@@ -25,4 +25,4 @@ The interface should feel editorial, deliberate, and product-specific rather tha
 - generic placeholder copy
 - dark-mode-only styling
 - default starter typography
-- hiding business logic inside large JSX files
+- leaking root harness concerns into app UI

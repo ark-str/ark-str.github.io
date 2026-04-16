@@ -1,11 +1,12 @@
 # Architecture
 
-This project intentionally uses a narrow, root-first structure that the harness can inspect without extra workspace indirection.
+This project intentionally separates the repository harness from the runnable web application.
 
 ## Product Shape
 
-- Single Next.js application in the repository root
-- App Router under `src/app`
+- Root repository acts as the project harness and orchestration layer
+- Independent Next.js application lives in `ark-str-web-app/`
+- App Router under `ark-str-web-app/src/app`
 - No backend
 - No remote runtime dependencies
 - User state persisted to `localStorage`
@@ -13,19 +14,19 @@ This project intentionally uses a narrow, root-first structure that the harness 
 
 ## Source Layout
 
-- `src/app/` - route shell, metadata, and global styles only
-- `src/features/` - product features with explicit layer boundaries
+- `ark-str-web-app/src/app/` - route shell, metadata, and global styles only
+- `ark-str-web-app/src/features/` - product features with explicit layer boundaries
+- `ark-str-web-app/public/generated/` - generated static assets consumed at runtime
 - `scripts/guards/` - mechanical repository rules
 - `scripts/harness/` - verification and autonomous iteration entry points
 - `scripts/content/` - build-time content synchronization and generation entry points
-- `tests/` - harness unit tests and browser smoke tests
+- `tests/` - root harness unit tests and browser smoke tests
 - `docs/` - repository-local source of truth
 - `vendor/` - indirect GitHub-backed data sources
-- `public/generated/` - generated static assets consumed at runtime
 
 ## Feature Layers
 
-Each feature follows this dependency direction:
+Each app feature follows this dependency direction:
 
 `types -> config -> repo/service -> runtime -> ui`
 
@@ -44,7 +45,7 @@ Disallowed patterns:
 - `service` importing `runtime` or `ui`
 - ad-hoc `localStorage` access outside `repo` and `runtime`
 - remote resources from component code
-- moving the application into nested workspaces or sub-app packages
+- moving harness logic into `ark-str-web-app/`
 
 ## Runtime Boundary
 
@@ -52,7 +53,7 @@ Disallowed patterns:
 - Browser APIs live in client files only.
 - `localStorage` access is wrapped by `repo` functions.
 - Persisted state normalization happens in `service` before values reach the UI.
-- Generated story data is read from local JSON assets, never from runtime network calls.
+- Generated story data is read from `ark-str-web-app/public/generated/`, never from runtime network calls.
 
 ## Why This Exists
 

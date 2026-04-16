@@ -1,7 +1,7 @@
 # Arknights Story Reader
 
 Status: active
-Phase: root bootstrap
+Phase: root harness + nested app bootstrap
 
 ## Product Goal
 
@@ -29,7 +29,7 @@ Build a web application that makes Arknights story content easier to read, summa
 ## Data and Pipeline Expectations
 
 - upstream raw data comes from GitHub-managed sources under `vendor/`
-- runtime reads only bundled assets generated into `public/generated/`
+- runtime reads only bundled assets generated into `ark-str-web-app/public/generated/`
 - summaries and unlock facts are produced ahead of time through scripts
 - already-summarized stories must be tracked so unchanged stories are skipped
 
@@ -39,13 +39,13 @@ Build a web application that makes Arknights story content easier to read, summa
 - bundled resources only
 - no runtime external fetches
 - local storage only for mutable user state
-- root-first repository layout so the harness can operate from the repo root
+- repository root owns the harness and `ark-str-web-app/` owns the runnable app
 
 ## Current Bootstrap Phase
 
 This issue does not implement the full reader yet. It only establishes:
 
-- a fresh root-level Next.js app
-- root-level docs, scripts, and tests
-- a local-first bootstrap shell that proves the persistence and verification path
+- a fresh nested Next.js app under `ark-str-web-app/`
+- root-level docs, scripts, and tests for the harness
+- a local-first bootstrap shell inside the app that proves the persistence and verification path
 - the issue and PR dependency plan for follow-up reader work

@@ -1,12 +1,12 @@
 import type { NextConfig } from "next";
 
-const rootDir = process.cwd();
+const appDir = process.cwd();
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  outputFileTracingRoot: rootDir,
+  outputFileTracingRoot: appDir,
   turbopack: {
-    root: rootDir,
+    root: appDir,
   },
 };
 

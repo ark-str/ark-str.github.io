@@ -3,11 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint .",
-    "typecheck": "tsc --noEmit",
     "docs:check": "node scripts/guards/check-docs.mjs",
     "constraints:check": "node scripts/guards/check-constraints.mjs",
     "arch:check": "node scripts/guards/check-architecture.mjs",
@@ -16,24 +11,18 @@
     "content:status": "node scripts/content/status.mjs",
     "content:update": "node scripts/content/update.mjs",
     "harness:test": "node --test tests/harness/*.test.mjs",
+    "app:dev": "npm --prefix ark-str-web-app run dev",
+    "app:build": "npm --prefix ark-str-web-app run build",
+    "app:start": "npm --prefix ark-str-web-app run start",
+    "app:lint": "npm --prefix ark-str-web-app run lint",
+    "app:typecheck": "npm --prefix ark-str-web-app run typecheck",
+    "app:verify": "npm --prefix ark-str-web-app run verify",
     "smoke": "playwright test",
     "verify": "node scripts/harness/run-verify.mjs",
     "harness:iterate": "node scripts/harness/run-iteration.mjs"
   },
-  "dependencies": {
-    "next": "16.2.4",
-    "react": "19.2.4",
-    "react-dom": "19.2.4"
-  },
   "devDependencies": {
     "@playwright/test": "^1.59.1",
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.2.4",
-    "tailwindcss": "^4",
     "typescript": "^5"
   }
 }

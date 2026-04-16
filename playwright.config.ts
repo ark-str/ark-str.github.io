@@ -18,7 +18,7 @@ export default defineConfig({
   },
   outputDir: "artifacts/playwright/test-results",
   webServer: {
-    command: `npm run start -- --hostname ${smokeHost} --port ${smokePort}`,
+    command: `npm --prefix ark-str-web-app run start -- --hostname ${smokeHost} --port ${smokePort}`,
     url: smokeBaseUrl,
     reuseExistingServer: false,
     stdout: "pipe",

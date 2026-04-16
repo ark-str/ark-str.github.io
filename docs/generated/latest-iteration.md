@@ -1,6 +1,6 @@
 # Latest Iteration
 
-No root-first harness iteration has completed on the default branch yet.
+No harness-managed iteration has completed on the default branch yet.
 
 Current in-flight work:
 
