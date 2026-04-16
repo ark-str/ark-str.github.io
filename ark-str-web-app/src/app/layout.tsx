@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { AppPreferencesProvider } from "@/features/preferences/runtime/app-preferences-context";
+import { ReaderSessionProvider } from "@/features/reader/runtime/reader-session-context";
 
 export const metadata: Metadata = {
   title: "ARK STR",
@@ -15,7 +16,9 @@ export default function RootLayout({
   return (
     <html lang="ko" className="h-full" data-theme="light">
       <body className="min-h-full">
-        <AppPreferencesProvider>{children}</AppPreferencesProvider>
+        <AppPreferencesProvider>
+          <ReaderSessionProvider>{children}</ReaderSessionProvider>
+        </AppPreferencesProvider>
       </body>
     </html>
   );

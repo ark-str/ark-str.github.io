@@ -1,0 +1,579 @@
+{
+  "server": "jp",
+  "storyId": "main_3_level_main_03-05_beg",
+  "groupId": "main_3",
+  "stageId": "main_03-05",
+  "title": "コール",
+  "storyCode": "3-5",
+  "avgTag": "戦闘前",
+  "sourcePath": "vendor/ArknightsData/jp/gamedata/story/obt/main/level_main_03-05_beg.txt",
+  "sourceHash": "3f46eb87989c4a4bf8e0f6c345542c752ad2dadf7f862cad5f63b213676cab54",
+  "bodyAvailable": true,
+  "blocks": [
+    {
+      "type": "narration",
+      "text": "第二十七关（前）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "text": "……ドク、ター……",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "text": "……わ、たし……そんな、つもりじゃ……",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホシグマ",
+      "text": "――霧が、晴れていく……",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホシグマ",
+      "text": "……近衛局からの通信が入りました。レユニオンの残した痕跡を多数確認したとのことです。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホシグマ",
+      "text": "なお、現在追跡中のターゲットは、白い髪をした女性で――",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "text": "……",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホシグマ",
+      "text": "アーミヤさん、チェン隊長からご伝言が……",
+      "portraitKey": null
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホシグマ",
+      "text": "……",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホシグマ",
+      "text": "――顔色が優れないようですね。",
+      "portraitKey": null
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "この場は任せてほしい。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ホシグマ",
+          "text": "……わかりました。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホシグマ",
+          "text": "お願いします、Dr.{@nickname}。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホシグマ",
+          "text": "可能であれば、5分以内に出立できたらと思っておりますので……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "――ドクター……",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "怖いのか？　アーミヤ。",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "アーミヤ",
+              "text": "わた、しは……",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "アーミヤ",
+              "text": "……何も、怖くなんて……",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "アーミヤ",
+              "text": "…………いえ。ドクターの言う通りです。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "アーミヤ",
+              "text": "……また失うことになったらと思うと、どうしても怖くて……",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "……自分の力が、嫌になったとか？",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "アーミヤ",
+              "text": "……自分でも、よくわかりません……",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "アーミヤ",
+              "text": "どう言えばいいのかも、わからないんですが……それでも……",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "アーミヤ",
+              "text": "この力は……人を傷つけるためだけのものではないんです。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "アーミヤ",
+              "text": "だから……ドクターには、見られたくありませんでした……",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "アーミヤ",
+              "text": "……私が、誰かの命を奪うところなんて。",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "後悔する必要はない。",
+          "value": "3",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "アーミヤ",
+              "text": "……はい。後悔は、していません。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "アーミヤ",
+              "text": "……と、いうより……",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "アーミヤ",
+              "text": "ドクターのためなら、相手が何を背負っていようと、殺めることに後悔はしません。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "アーミヤ",
+              "text": "ですが……本当は、もっといい方法があったはずだとも思います。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "アーミヤ",
+              "text": "……私がそれを見つけ出すことができなかったから、彼の命を奪うことになってしまったんです。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "アーミヤ",
+              "text": "その一点だけは……悔やまずにいられません。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "アーミヤ",
+              "text": "……できることなら……",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "アーミヤ",
+              "text": "ドクターにだけは、こんな姿を見せたくありませんでした。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "アーミヤ",
+              "text": "普段は、この大地に生きる感染者たちを、苦しみから救ってみせると口にしているのに……",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "アーミヤ",
+              "text": "いざ危機的な状況に陥ったときには、いつも自分を無理やり納得させて、彼らの命を奪う選択をしてしまっているんですから。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "アーミヤ",
+              "text": "私は、本当に無力ですね。",
+              "portraitKey": null
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "それでも、君が守ってくれたことは事実だ。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "――――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "……なんだか、わかった気がします。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "それが、私のやるべきことなんですね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "――私は、運命なんて存在しないと思っているんです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "ですが、それでも……この先、何があったとしても。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "私は、あなたを守ってみせます。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "絶対に。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レユニオン構成員",
+          "text": "！　マズい……！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レユニオン構成員",
+          "text": "お前ら、先に行ってろ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レユニオン構成員",
+          "text": "俺はスカルシュレッダーを助けに行く！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レユニオン構成員",
+          "text": "お前なあ……気でも狂ったのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レユニオン構成員",
+          "text": "一人で行くのは自殺みたいなもんだ。……俺たちも行くに決まってんだろ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レユニオン構成員",
+          "text": "……！　すまん、恩に着る！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レユニオン構成員",
+          "text": "あいつを置き去りにするなんて、できやしなくてよ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レユニオン構成員",
+          "text": "そんなの、俺も同じさ。――行くぞ、皆！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホシグマ",
+          "text": "なんだ……？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホシグマ",
+          "text": "レユニオンが……引き返して来る……！？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホシグマ",
+          "text": "一体、何のつもりだ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "ホシグマさん！　撤退しましょう！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホシグマ",
+          "text": "了解です！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホシグマ",
+          "text": "――近衛局各員に告ぐ！　気を抜かず、攻撃に備えろ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レユニオン構成員",
+          "text": "突っ込むぞ！　援護してくれ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レユニオン構成員",
+          "text": "くそっ、この女……！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レユニオン構成員",
+          "text": "ダメだ、こんな盾歯が立たない！　俺たちじゃ相手にならないぞ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レユニオン構成員",
+          "text": "急いで回り込め！　奴らが態勢を整える前に……！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レユニオン構成員",
+          "text": "とにかく、スカルシュレッダーを――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レユニオン構成員",
+          "text": "あいつを取り戻すんだ！！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホシグマ",
+          "text": "ロドスの皆さん！　奴らの目的が変わったようです、注意してください！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "！　危ない！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "ホシグマさん！　右から来ます！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホシグマ",
+          "text": "――ッ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "W",
+          "text": "あら、防がれちゃった。ふふっ――やるじゃない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホシグマ",
+          "text": "爆弾？　――奇襲をかけてきたか！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "W",
+          "text": "あははっ！　もちろん、それで終わりじゃないわよ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "W",
+          "text": "あんたには、じっくり相手してもらうから――よそ見しないでね？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホシグマ",
+          "text": "チッ――また爆発か……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホシグマ",
+          "text": "まったく、どこから潜り込まれたのやら……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホシグマ",
+          "text": "――アーミヤさん！　こちらは、遠距離からの爆撃を受けて動けません！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホシグマ",
+          "text": "ほかのレユニオンがそちらへ向かっていますので、お気をつけて！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "W",
+          "text": "へ～え。その盾、ほんとに頑丈みたいね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "W",
+          "text": "……にしても、うっかり自分から面倒事に首突っ込んじゃったけど……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "W",
+          "text": "まあ、たまにはレユニオンに貢献してあげるとしましょうか。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "W",
+          "text": "――それじゃ、せいぜい楽しませてちょうだいね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "あれは……チェルノボーグで遭遇した、Wです！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "もしかして、近衛局の追跡を振り切ってきたんでしょうか……！？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "とにかく、早くホシグマさんを援護しなくては！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "みなさん、注意して対応してください！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "レユニオンはまだ大勢潜伏しているはずですから、痕跡を頼りに先手を打っていかないと、不利な状況に陥りかねません！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "――ドクター！　各小隊の指揮をお願いします！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2307 @@
+{
+  "server": "jp",
+  "storyId": "act42side_level_act42side_08_beg",
+  "groupId": "act42side",
+  "stageId": "act42side_08",
+  "title": "巡礼",
+  "storyCode": "MT-8",
+  "avgTag": "戦闘前",
+  "sourcePath": "vendor/ArknightsData/jp/gamedata/story/activities/act42side/level_act42side_08_beg.txt",
+  "sourceHash": "9e7dddb29ef84adf452d97cc9f79c2f4a8b8a73cfb7b31df636a574f81936580",
+  "bodyAvailable": true,
+  "blocks": [
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "text": "ドクター、こちらだ。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "text": "もう少し奥に詰めて、このキッチンカーの陰に隠れよう。",
+      "portraitKey": null
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "text": "これでようやく一息つけるな。",
+      "portraitKey": null
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "お疲れ様。",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "このキッチンカーは誰のだろうか？",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "歯の欠けた少女",
+          "text": "ねえ、お姉さんも儀式の噂を聞いて来たんでしょ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "歯の欠けた少女",
+          "text": "よ、よかったら、あたしのアイス食べてみない？",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "断りを入れるより前に、少女は嬉しげにアイスクリームのコーンをMon3trの手中に押し込んだ。"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "歯の欠けた少女",
+          "text": "これね、ラテラーノ以外じゃ絶対食べられない新フレーバーなんだ――",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "（小声）私が彼女を抑えておこう。他の人間の注意を引くわけにはいかないからな。",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "Mon3trは警戒と共にあなたにそう提案しつつ、何の気なしにアイスを一口味見した。"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "おいしい……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "こほん、君のお名前は？",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "歯の欠けた少女",
+          "text": "この子が答えてくれた通りだよ、告解師さん。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イディダ",
+          "text": "ディダディディダ、って。あたし、イディダっていうの。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "キッチンカーからする音にちなんで、自分の名前を付けたのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イディダ",
+          "text": "違う違う。あたしの名前に合わせて、この子の調理完了通知音をカスタマイズしたの！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "イディダ、先ほど通った護衛隊を知っているか――",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "イディダ、このお姉さんが怖くはないのか――",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "イディダ",
+          "text": "わぁ、告解ロボってこんな声が出るの！？　初めて聞いた！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "最新モデルなんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "はぁ……",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "まったく気にしていない様子だな。",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "イディダ、先ほどは私たちを守ってくれたのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イディダ",
+          "text": "うん……だって、ラテラーノが丸ごと変わらなきゃダメだと思うから！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イディダ",
+          "text": "あなたたちもそう思ってるんでしょ！？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "……",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "イディダ",
+          "text": "あ、あれ、あたしだけ？　お姉さんはあたしの無糖炭酸水味アイスを初めておいしいって言ってくれた人だから、てっきり同じこと考えてると思ったのに！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "（……道理でこれほど喉が潤ったのか。）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イディダ",
+          "text": "パパとママの言う通り、確かに険しい道だけど……でも、ようやくちょっとだけ成果を上げられたんだよ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "と……言うと？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イディダ",
+          "text": "「スイーツはラテラーノ人みんなを繋いでくれる」っていうけど……糖分を摂りすぎたら虫歯にもなるし、頭の上の光輪もどんどん虫に食べられちゃうんだって！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イディダ",
+          "text": "うちのパパは歯医者さんなんだ。それで、この話をするたびに、みんなからは診療所の宣伝文句だと思われてたんだけど……",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "最近あたしの光輪が、えっと、抜けたばっかりの虫歯みたいな感じで、なんだか気持ち悪くて……\nだからこれは、きっと主の啓示だと思ったの！"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イディダ",
+          "text": "それで、ラテラーノ人の食事習慣を少しずつ改善するには、あたしが率先して動かなきゃと思ってね。みんなの繋がりを取り戻すために、まずは無糖アイスから始めるんだ！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "とても立派だな、イディダ。",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "そちらの公民、この善良な市民の理想に力を貸す気は？",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "もう少し一緒に歩かないか？　詳しく聞きたいんだ。君が言っていた……光輪と虫歯の関係について。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イディダ",
+          "text": "うん、いいよ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "（小声）この子といれば、しばらくは追っ手を躱せるはずだ。急いでエクシアと連絡を取ろう、ドクター。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "ああ、今やってみている。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "エクシア",
+          "text": "やっほー、リーダー！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エクシア",
+          "text": "通信が繋がったってことは、キミにかけられた情報統制とかいうやつがようやく解けてきてるんだね！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "良いことばかりとは限らないぞ、エクシア。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "それは「夢」のすべてが崩壊し始めた兆しでもある。",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "エクシア",
+              "text": "チッ、まあそうだよね。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "エクシア",
+              "text": "あいつら、サンクタじゃない人をほとんど全員育児聖堂に集めて、もっと大きな降誕の儀式を開こうとしてるみたい。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "エクシア",
+              "text": "手始めに木攀獣の頭に光輪をつけたと思ったら、今度はみんなの頭にまでつけようとしてるし……",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "エクシア",
+              "text": "どうやるつもりかは知らないけど、変化が急速すぎて、ちょっと信じられないくらいだね。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "エクシア",
+              "text": "リーダーの話を聞く限り、この夢の中でどんなことが起きても、最終的には現実になっちゃうんだよね？",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "それは現実の災厄が急激に悪化している証左でもある。",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "エクシア",
+              "text": "チッ、まあそうだよね。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "エクシア",
+              "text": "リーダーの話を聞く限り、このでっかくて不細工な建物がラテラーノの大通りにそびえ立ってるのも、光輪のついた化け物がみんなを追い回してるのも、全部本当に起きてることなんでしょ？",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "エクシア",
+              "text": "そう聞くと、夢よりよっぽど恐ろしいことが起きてるよね……",
+              "portraitKey": null
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "その通りだ、エクシア。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "だが、夢から覚めた人々も次々に現れている。",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "現実の不確定要素を受けて、夢は段階を飛ばしている。",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "エクシア",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エクシア",
+          "text": "あーもう、ややこしい話。じゃあ、最悪の場合はどうなるか教えてくれる？",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "ラテラーノがラテラーノでなくなる。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "エクシア",
+          "text": "うひゃあ！　それは一大事だね！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エクシア",
+          "text": "ま、とりあえずあたしにできるのは、あの一番悪い奴を見つけ出して、みんなをこの偽物の「ラテラーノ」から助け出すことでしょ？",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "こちらは君が正気で動けるようにするので手一杯だ。",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "Mon3trと自分が受けた制限は解除されていない。",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "こちらもMon3trと、別の手掛かりを探している。",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "エクシア",
+          "text": "了解！　ラテラーノの問題は、ラテラーノ人に――あたしに任せてよ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エクシア",
+          "text": "おっと……声を押さえなきゃね。もうちょっとで降誕の儀式が始まるとこなんだ。すんごい大掛かりな儀式でさ、ようやく忍び込めたの。へへっ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "引き続きMon3trと街中で騒ぎを起こしてみよう。",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "引き続きMon3trと共に注意を引き付けてみよう。",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "エクシア",
+          "text": "ところでさ、あたしたちが知り合ったのってどんな時だったっけ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エクシア",
+          "text": "ソラの記者会見？　テキサスのバースデーパーティー？　あるいはペンギン急便が血槌組の悪事を暴いたら連中に追い回される羽目になって、その途中で間違って龍門の事務所に飛び込んだ時だっけ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エクシア",
+          "text": "あっ、それか、傷だらけでこき使われてた競争駄獣を、あたしが盗んで気楽な暮らしをさせてあげようとしてたところにキミが来て、その子を買って引き取ってくれた時かな？",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "いずれにせよ龍門でのことだな。",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "どれも違うように思う。",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "エクシア",
+          "text": "どうあれ……もう五年の付き合いだよね？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エクシア",
+          "text": "今回も華麗なコンビネーションを見せてやろうよ、リーダー。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "ああ、約束だ、エクシア。",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "エクシア、気を付けてくれ。",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "銃騎士",
+          "text": "パトリツィオ殿、全員配置に着きました。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "銃騎士",
+          "text": "これより、聖堂の巡衛と連携を取り、周囲の街道で人払いを行い、各路地を封鎖して、予定外の人の出入りが起こらないよう対応いたします。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "パトリツィオ",
+          "text": "ご苦労。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "銃騎士",
+          "text": "全銃騎士が一堂に会し、弾薬が潤沢に配給され、発砲制限も解かれるだなんて……これほどの大規模動員は、銃騎士隊の設立以来初ですよね？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "パトリツィオ",
+          "text": "此度の降誕の儀式は、ラテラーノにとって意義深いものじゃからのう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "パトリツィオ",
+          "text": "サーミ氷原の黒い雪や、リターニア上空の裂け目、そして海岸に打ち付ける荒波までもが、我らの啓示に記された真なる災厄の訪れを裏付けておる。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "パトリツィオ",
+          "text": "となれば、どれほど恐ろしい災厄となることやら……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "パトリツィオ",
+          "text": "いざそれが訪れた時には、二百人余りの銃騎士を全員戦場に投入したところで……大海に小石を投げ込むようなものじゃろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "パトリツィオ",
+          "text": "千年もの間そびえ立ってきたラテラーノの輝きでさえ、その時には色褪せることになるのやもしれん。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "銃騎士",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "銃騎士",
+          "text": "護衛隊及び公証人役場の人員は、現在もレミュエルとその仲間を追跡しております。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "銃騎士",
+          "text": "加えて、お耳に入れておきたいことが……モスティマとフィアメッタを案内していた保育士が、先ほど襲撃を受けました。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "パトリツィオ",
+          "text": "――！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "銃騎士",
+          "text": "ご自分で出向かれますか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "パトリツィオ",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "パトリツィオ",
+          "text": "……いや。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "パトリツィオ",
+          "text": "ワシの持ち場は……ここじゃからな。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "保育士",
+          "text": "時間です。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "保育士",
+          "text": "同胞たるリーベリの皆様は、啓聖ホールへお進みください。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "緊張気味のシスター",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヒルデガルト",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "パガニーニ",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "保育士",
+          "text": "時間です。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "保育士",
+          "text": "こちらへどうぞ。他種族の方が光輪を授かり終え次第、総主教は堕天使の皆様の壊れた光輪と翼の修復を行い、同胞との共感能力の復元を試みてくださいます。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "保育士",
+          "text": "総主教、始まりました。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "総主教",
+          "text": "ご苦労様です。この聖堂が建てられて以来、あなたたちはほとんど休む間もなく働いてくれていますね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "総主教",
+          "text": "前回の降誕の儀式のあと、予期せぬ事態が相次いだことで、我々は元の計画を前倒しで進めざるを得なくなってしまいました。この聖堂が担う使命を、早急に果たさなければならないのです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "保育士",
+          "text": "これまで共に歩んで参りましたので、覚悟はできております。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "保育士",
+          "text": "そういえば、本日の儀式はサンクタでない人々に光輪を授けるものですが、なぜ「降誕」という名をそのままお使いになられているのですか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "総主教",
+          "text": "それ以上に正確な表現がありますか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "保育士",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "保育士たちは様々な種族の人々を啓聖ホールに招き入れ、中央へと誘導していく。群れを成して移動する獣のような大行列となった彼らの中には、誰一人として声を発する者はいなかった……\nそこではただ、無数のモビールの音色だけが、リズミカルに鳴り響いている。\n総主教は何かを感じ取ったように、顔を上げて群衆のほうを見つめた。"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "総主教",
+          "text": "これより、聖都の庇護を受ける者は皆、運命を分かち合い、本来あるべき姿に――まさしく一つとなるのです。これこそ、新たなラテラーノの「誕生」であり――",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "保育士",
+          "text": "――――！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "ガラスが割れる鋭い音が、穏やかなモビールの合奏を引き裂いた。\nどこからともなく飛んできたのは、狙撃銃から放たれた弾丸だ。総主教の光を失った目に向けて、それはまっすぐに飛んで行き――\nまばゆい陽光が降り注ぐ。"
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "お部屋の入り口に立ってる、あの変わった夫婦……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "公証人役場職員",
+          "text": "今夜の食事をルーレットで決めているみたいよ。面白いでしょ？",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "うん。それで、あの人たちが……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "公証人役場職員",
+          "text": "あなたを引き取りたいって人たちよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "ええと、どうして直接そう言いに来ないのかな……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "あ、わかった。きっと私の気持ちを優先してくれてるのね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "公証人役場職員",
+          "text": "どうしてそう思ったの？",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "だって、銃を回しながらこっちをちらちら見てたから。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "公証人役場職員",
+          "text": "あははっ、ほんとにこのおチビちゃんは何でもお見通しね――二人とは私が話をしておいたわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "公証人役場職員",
+          "text": "あなたのご両親が、例の商隊襲撃事件であんなことになって……この半年、公証人役場もいくつかのご家庭にあなたを紹介してみたんだけど、なかなか話がまとまらなくてね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "公証人役場職員",
+          "text": "レミュアンちゃんは私が見てきた中でも一番強い子だけど、流石にその歳で一人で生きていくわけにもいかないし……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "わかってるわ、お姉さん。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "私も嫌なわけじゃないの……ただ、誰かの好意を受け取るからには私もちゃんと応えて頑張らないといけないでしょ。それがとっても大事なことだと思うから！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "公証人役場職員",
+          "text": "そうね。とにかく、二人からの伝言よ。あなたのこと、すっごく気に入ったって。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "私も、二人のことはすごく……ううん、あと一週間……いいえ、三日だけ待ってもらえない？　ちゃんと考えて決めたいの。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "一度決めたら、もう変えたりしないから！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "パガニーニ",
+          "text": "……こいつにピンと来たんだな？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "はい。",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "へ～、狙撃銃？　あたしならそれは選ばないけど……\nあーでも、あと何年か経ってあたしの番が来たら、目一杯色々選んじゃおっと！"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "ふふっ、そうして。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "パガニーニ",
+          "text": "さて、どう伝えたもんか。こいつはもう何年も前に作ったもんなんだが、誰にも選んでもらえなくてな。よくよく考えたほうが良いと思うぞ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "んー、確かにとっても静かな子ですね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "パガニーニ",
+          "text": "ああいや、つまりな、この銃はほかの奴とは違うのさ。正直、根っから元気なお前らサンクタにはあんまり向いてないと思うがな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "パガニーニ",
+          "text": "実戦では、こいつを撃てるチャンスなんざ多くない。一発一発が貴重になるんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "パガニーニ",
+          "text": "こいつで何かを守るにせよ、壊すにせよ、よく見て、よく考えて、ほかよりもデカいリスクと代償を背負うことになる……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "パガニーニ",
+          "text": "引き金を引くにせよ、指を離すにせよ、その瞬間には躊躇いなんざ許されないからな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "その日は、レミュアンの誕生日だった。そんな日に守護銃を選ぶことは、もとよりサンクタにとって非常に重要な意味を持つその瞬間を、もっと特別なものにしていた。\n製銃士の口ぶりは真剣だ。後ろにいる父母も、付き添いの友達も、誰一人言葉を発さない。いつも落ち着きのないレミュエルでさえ、その時は大人しく口をつぐんでいた。\nそれでも、皆が自分を見つめていることを、レミュアンは知っていた。"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "これにします、パガ先生。他のパーツを選ぶのも手伝っていただけますか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュエル",
+          "text": "やったね！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュエル",
+          "text": "撃てるチャンスが少ないなんて気にする必要ないよ、パガ先生。こんなに銃床が大きかったら殴るのにだって使えるでしょ。姉ちゃんの力はすごいんだから！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "——！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "最も黒き穢れが聖霊の純白によって洗い流されれば、最も獰猛な怪物も心から敬虔になり、泥濘を抜け出すことができる……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "（深呼吸）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "それを放しなさい、隊長。照準はあなたに合わせたわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "今のあなたが、とても不安定な状態にあることは伝わってきてる……だから落ち着いて。それはあなたの感情をかき乱して、ラテラーノへの失望を引き起こしているの。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "出発前、あなたが辞表を出したことは知ってるわ……でも、あなたが本気で荒野へ戻ると決めたのだとしても、今はまだ私たちの仲間でしょう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "発つ前に一緒に食べたチーズフライを思い出して？　それに、フィアメッタがプレゼントした、ふわふわの羽獣帽子のことも……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "ラテラーノへの失望……いいや、そうじゃない。その逆だ！　これは、ラテラーノであればすべての人を救えると私に示してくれた。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "あなたが見たものが現実であり真理なのか、あるいは幻や虚構なのかは誰も断言できないけど……モスティマがすぐに来てくれるわ。あの子ならそれを回収できるはず。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "その後でゆっくり秘密を解き明かせばいいじゃない、ね？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "その後など存在しないんだ。あの光景はすでに消えかけている！　手放すわけにはいかない……レミュアン、あれは幻でも虚構でもないんだ。君にもわかるだろう！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "君も遺跡の中で、あの時の流れが停滞している者たちを――死ぬこともなければ、生きてさえいない者たちを見たはずだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "あの狂ったサルカズが、自らの影に語りかけていた言葉だって聞いただろう——「未来は未知ではなくなった」とそう言っていた。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "それならば、我々が見つけたのは時間そのものの鍵だということが君にもわかるはずだ。私が見たのは啓示であり、最も獰猛な怪物でさえも救われるはずの……未来なんだよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "アーツが漏れ出しているわよ、アンドアイン。奴があなたを侵蝕しているの——",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "そんな未来が本当に存在するのなら、私はその未来へと続く道を見出さなければならない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "手放すわけにはいかないんだ、もっと多くを知らなくては！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "アンドアインが奇妙な形のアーツユニットを握りしめると、その光は実体を持つエネルギーとなり、洞窟全体を包み込んでいった。\n引き金を引くチャンスは幾度もあったと、レミュアンは思った。\nだが、溢れかえっている感情の渦の中に、かすかに残ったアンドアインの理性を、彼女は感じ取っていたのだ。\n出会い、そして知己の友となって以来、二人は互いを理解し合い、命を預け合ってきた。ゆえにその共感は、ほかよりも強く結ばれていた。\nレミュアンは最後の瞬間に、戦友が未知の混沌に飲まれきってはいないことを確かめたのだ。\nそうして、彼女は引き金から指を離した。"
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "モスティマ",
+          "text": "クソッ！　レミュアン、危ない！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "ふぅ——",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "育児聖堂総主教ケファ——命中確認。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "屋上の風が狙撃手の頬に容赦なく吹き付けようとも、彼女はまばたき一つせず、その手は微動だにしない。\n音を聞き、場を見つめ、考え、判断を下す。\nチャンスは限られている。一発一発が貴重なものだ。\n引き金を引くにせよ、指を離すにせよ、その瞬間には躊躇いなど許されない。\nその時まで、彼女とその銃は沈黙を貫き続ける——"
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "「沈黙のレミュアン」。\nレミュアンは再びスコープの向こうの光景を確認した。そこには、彼女が引き金を引いた証があった。"
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "総主教",
+          "text": "ボリバルの山やイベリアの海辺にそびえ立つ、いわゆる「ラテラーノ教像」に比すれば、実のところラテラーノでよく見かける聖像はより理解しがたいものなのですよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "総主教",
+          "text": "楽園はこれまで、我らの信心をどこか歪んだ特殊な形に作り上げてきました。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "総主教",
+          "text": "天災と苦難の中であえぐ命が、生き延びたいと願ったこと……これこそが、信仰の原点なのです。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "違う。そもそも、ラテラーノには型にはまった退屈な彫像など存在していた試しはない。\n信仰とは生活によって形作られるものであり、街角に立つ銃を構えた聖徒像は、災厄や苦難を侮っているわけでは決してない。我々はただ、独自の態度でそうしたものに向き合うことを選んだだけだ。\n十分に離れたこの位置から、スコープ越しに見た時に、レミュアンはようやく気が付いた。聖堂内にある、頭を垂れて両手を合わせた聖像はすべて、あの敬虔な総主教に祈りを捧げていたのだと。"
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "ケファ……彼女が恐ろしい怪物だとすれば、この弾丸でダメージを与えることなんてまず難しいでしょうね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "だけどそれでも、聖堂にいる人たちに彼女はおかしいと気付かせることはできる。それに、あなたのためのチャンスを作ることもね……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "エル、あとは任せたわよ！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "アモスさん？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アモス",
+          "text": "……レミュアンさん、こちらの位置はバレてしまいました。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "すぐ応援に向かうわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アモス",
+          "text": "いえ、来ないでください。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アモス",
+          "text": "聖堂の巡衛が来ているんです。そ、それに銃騎士も……大量に！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アモス",
+          "text": "こちらの通りは私が守ります。完全に包囲される前に、急いでそのビルから脱出してください……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "あなたは？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アモス",
+          "text": "もう間に合いませんよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アモス",
+          "text": "彼らは発砲してきました。やはり、あの推測は間違っていなかったようです。この場所は、子供を産むためだけの施設だとは思えない……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アモス",
+          "text": "そういえば、ターゲットは片付きましたか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "ええ、一撃で命中させたわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アモス",
+          "text": "ははっ、それを聞いて安心しました。これで私は、少なくとも幾人かを救い、いくつか事が起こるのを防げたわけですから、ひどく平凡で無意味な人間からは脱却できたでしょう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アモス",
+          "text": "それでは、また。レミュアンさんは、為すべきことを成してください。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アモス",
+          "text": "――実は一つ、聞きたいことがあるんです……もう聞こえていないでしょうから、口にできることなんですがね。",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "機械が故障しているのか、その通信は途切れてはおらず、彼のつぶやきは彼女に届いていた。\nレミュアンはしばしためらった後、沈黙を選んだ。"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アモス",
+          "text": "私は、役立たずでしたか？",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アモス",
+          "text": "実は、以前まではそんなふうに思いはしなかったんです。一生懸命努力して、何とか第七庁に入って、平凡な調査員として、十年間も同じ仕事をして……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アモス",
+          "text": "ラテラーノ人は普通、こういうことで自分に疑問を抱いたりなんてしないみたいですけどね。みんな生まれつき、人生の楽しみ方や、充実感を得る方法を山ほど持ってますし。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アモス",
+          "text": "たとえば、私の知り合いには、棒付きキャンディーの棒職人がいましてね。彼はいつも、何種類もの紙テープで虹色の棒を作っているんです……大した儲けもないのに、子供たちが喜ぶから、と。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アモス",
+          "text": "ですが私は……アウレラがラテラーノを追放され、自分には何もできないと知った時から、一瞬の充実感を得る方法すら見つけられなくなってしまいました。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アモス",
+          "text": "「アモス、お前は本当に役立たずだな。」――そう思って、忌々しい感情に包まれてしまって……まるで、人生で初めて不味いスイーツを口にした時みたいに、それが頭から離れなくて。ははっ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アモス",
+          "text": "それでも私は、あと何年かすれば、キャリアを積んでレガトゥスになって、ボリバルへ行けるかもしれないと、ずっとそう思って働き続けてきました……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アモス",
+          "text": "私には、ラテラーノの代表として彼女を救う資格なんてないし、彼女の行いを許したわけでもありません。ただもう一度会って、あの時の口ゲンカについて謝れたらって……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アモス",
+          "text": "こんなに待ち続けた挙句、やっと訪れたチャンスなのに……結局それが、ただの夢だったなんて……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アモス",
+          "text": "でも、夢でもいいんです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アモス",
+          "text": "夢なら、何も気にしなくていいわけですから。もしかすると、弾丸を受けても、現実に戻ればなかったことになるかもしれませんし！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アモス",
+          "text": "私、若い頃には、第七庁の新人射撃大会で五位になったこともあるんですよ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アモス",
+          "text": "――アウレラ、私たちもあの日射撃場で出会ったんだったね……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アモス",
+          "text": "お互いの救いになれなかったこと、本当に残念に思うよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "少なくとも、あなたは立派な調査員だったわよ、アモスさん。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アモス",
+          "text": "レミュアンさん、聞こえてたんですね……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レミュアン",
+          "text": "夢から覚める時が来たみたいね。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "保育士",
+          "text": "アンドアイン先輩、葬儀は終わりましたか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "ああ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "保育士",
+          "text": "啓聖ホールはこちらですよ……そちらは反対側です。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "そうかい？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "保育士",
+          "text": "降誕の儀式は始まっています。総主教はあなたをお待ちになっているのですよ。それなのに、こんな時にどこへ行くつもりですか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "保育士",
+          "text": "感情が……ひどく不安定になっているようですね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "いいや、かつてないほど落ち着いているさ。行き先もこちらで間違いない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "保育士",
+          "text": "——",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "保育士",
+          "text": "アンドアイン先輩、総主教の元へご同行ください。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "モスティマ",
+          "text": "これはナイスタイミングかな。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "モスティマ、フィアメッタ、どうして……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フィアメッタ",
+          "text": "なによ。ほかのリーベリみたいに、猛抗議しながら巡衛に押し戻されてたほうがよかったって言いたいの？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フィアメッタ",
+          "text": "あるいは、光輪が与えられたとして、それが四角かそれとも丸かをワクワクしながら待ってるべきだって？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "モスティマ",
+          "text": "そういえば、堕天使の光輪をどう直すつもりなのかには割と興味があるんだよね……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フィアメッタ",
+          "text": "ちょっと、モスティマ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "モスティマ",
+          "text": "はいはい、本題に入ろうか。アンドアイン、説明してくれる？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "モスティマ",
+          "text": "サンクタ以外の人間をみんな集めて、強制的に身体を改造するなんて……こんなこと、クルビアの狂人だらけのテクノロジー企業でもなければやらないと思ってたけど。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フィアメッタ",
+          "text": "あなたが追い求めてる、「未来の可能性」だの「ラテラーノの可能性」だのってこういうこと？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フィアメッタ",
+          "text": "これが、総主教があなたに約束したものなの？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "私は間違った道を歩んでいた。それは否定しないよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "ラテラーノはすべての人に向けて、甘美な夢を織り上げた。私はその深みにはまっていて、目覚めるのが遅すぎたんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フィアメッタ",
+          "text": "この期に及んで、何をくだらないことばっかり言ってるの？",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "他の巡衛たちがすぐに駆けつけてくるだろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フィアメッタ",
+          "text": "ああもう……ねえモスティマ、こいつを人質にとれば、総主教に近づけると思う？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "モスティマ",
+          "text": "可能性はあるかもね。あの人はアンドアインをかなり信頼してるみたいだし。それに、エルだけに全部任せるのはやっぱりちょっと不安だからさ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "感情が、これまで以上に満ちていくのを感じるんだ……それはつまり、この聖堂の中に共感能力を持った人間が増えつつあるということだろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "降誕の儀式は始まっている。今更総主教を押さえたところで、もはや手遅れだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "私たちは、それぞれできることを成すべきなんだよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "この存在すべきでない儀式は、私が何とかしてみせよう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "だがそうすれば、大きな混乱を招きかねない……その時までに、君たちが皆を逃がしてやる程度の猶予はまだ残っているはずだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フィアメッタ",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "モスティマ",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "モスティマ",
+          "text": "どうする気？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フィアメッタ",
+          "text": "私たちがあなたを信じるとでも思うの？　戦友を傷つけて、たわ言ばかり口にする狂人が、すべての人を救おうだなんて言うつもり？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "私を信じなくてもいい。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "憐憫だけでは人は救えないし、私にそんな能力はない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "執念に突き動かされるあまり、道を踏み外した人間に、できることなど一つしかない。それは自分自身を救うことだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "モスティマ",
+          "text": "アンドアイン、待って。これを持っていきなよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "……爆弾？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "モスティマ",
+          "text": "エルがくれたんだ。衛兵の注意を引くのに使えるだろうって。",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "でも、君が本気でこの儀式を止めようとしてるなら……\nこれが必要になるのは君のほうでしょ。"
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "アンドアインは二人のそばを通り過ぎ、育児聖堂の奥へとまっすぐ進んでいった。\nその足取りは決して速くはなかったが、結局フィアメッタは彼を引き留めなかった。"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "モスティマ",
+          "text": "こんなにあっさり行かせちゃっていいの？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フィアメッタ",
+          "text": "あいつって、ぐだぐだ言わずに二言三言で済ませた時は、まあまあ頼りになるのよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "モスティマ",
+          "text": "確かに。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フィアメッタ",
+          "text": "それに、今の状況は異常すぎて、現状私たちにも打つ手はないし。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "モスティマ",
+          "text": "おっと、誰か来たね。それも結構な数だ……多分、アンドアインを追ってるんだろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フィアメッタ",
+          "text": "足止めしてあげましょうか……全部終わったら、借りは返してもらうけど。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "聖堂最初の育児室。\nこの場所で、かつて彼は希望を胸に、不幸な母親の世話を日々続けていた。\nそして今、彼女の遺児はモビールの上で羽づくろいしたばかりの翼を広げている。きらきらとした水滴が、明かりと共にくるくると回り、夢のような光景を描き出していた。\n木攀獣は、自身の養育者が前回演じた失態を気にかけてすらいないようだ。楽しげに鳴き声を上げると、いつも通りアンドアインを遊びに誘ってきた。"
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "総主教",
+          "text": "取るに足らぬことと天地を揺るがす偉業の間には、ほんのわずかな差しかありません。長年の探求を経てここへ辿り着いたあなたが、その無意味な違いのために足を止めることはないのです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "総主教",
+          "text": "これからは、この親子の世話のみならず、より多くのことへ力を尽くしていってください……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "取るに足らない存在である保育士と、天をも覆い尽くさんとする巨大な聖堂。\n前者には、歯を食いしばり、心を鬼にして幼獣の遊びの誘いを断ることはできるが、そんなささやかな抵抗では、後者を揺るがせることなどできはしない。"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "もっと……もっと多くを成さなければ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "だが、この聖堂を揺るがすにはどうすればいい？　すでに起きた奇跡を打ち消すにはどうすべきなんだ？",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "総主教",
+          "text": "この天高くそびえる巨大な育児聖堂は、一日にして成ったわけではありません……その始まりは、ごく普通の育児室に過ぎませんでした。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "私たちの育児室……ですね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "総主教",
+          "text": "我らは初めから、この広大な聖堂の設計図を手にしていたでしょうか？　答えはいいえです。我らはただ、あの母親を休ませるための安全で快適な空間を求めていただけでした……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "総主教",
+          "text": "ですがそれは、止めようもなく今のような姿にまで発展していきました。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "総主教",
+          "text": "となれば、あらゆる人が救われる未来もまた、我らの信仰から始まるはずです。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "ここが聖堂最初の育児室であり、この巨大な建物の原点……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "私たちが信仰を託した場所だ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "ならばケファよ、私は私の信仰を引き裂こう。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "アンドアインはモスティマから手渡された爆弾を見つめた。それは様々な日用品が意外な形で組み合わされてできており、派手な落書きが施されている。\n爆弾を作ったという少女の顔は思い出せない。何度か顔を合わせたことがあるかもしれないし、ないかもしれない。ただレミュアンが彼女の話を何度も飽きずに繰り返していたことだけは覚えていた。"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "……求道の旅は、私一人で背負っていたものではなかったのだろうか？",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "彼はためらうことなく導火線を繋いだ。"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "木攀獣",
+          "text": "（嬉しげな鳴き声）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "坊や、君は悲しみも苦しみも感じてはいないようだな。ここはもうすぐ爆破されるというのに、危険を察知していないのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "……あるいは、それすら気にしていないのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "ラテラーノは、もはや我々が恐怖を感じることさえも必要としていないのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "木攀獣",
+          "text": "（不思議そうな鳴き声）",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "木攀獣は地面に飛び下りると、不思議そうにアンドアインのズボンに身体をこすりつけた。"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "仮に、生きていく中で起こるすべてに、懐かしさも、恐怖も、苦しみも感じないとしたら、どうして人生に畏敬の念など抱けようか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "私は本来、君にそう問いかけるべきだったのだろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "だが、君をここへ連れてきたのは私だ。それどころか君は、私の願いに応えるべく生まれてきたとすら言える。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "……これは我々が共に背負う苦行であり、課題だ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "アンドアインは腰をかがめると、木攀獣を懐に抱いた。"
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "この音は――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "レミュアン。君の銃声を聞けること、嬉しく思うよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "育児室内で爆発音が響き、巨大なモビールがぐらぐらと揺れながら崩れ落ちて、さらなる轟音を立てた。爆発は室内の美しい光も影も飲み込んでいく。"
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "これは果たして夢なのか、あるいは我々の執念の表れか……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "アンドアイン。かつて、お前の後ろには、仲間たちが付き従っていた。疎まれ、傷つけられ、侮辱され、冒涜されてきた彼らは……お前を先導者と呼んで、共に長い道のりを歩んできた。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "だがお前は、ようやく平等で公平な場所になったと信じたこのラテラーノで、彼らのことを忘れてしまった。となれば……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "お前は、集団がどのように形成されることを望む？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "聖都がどのように再建されることを望む？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "アンドアイン、お前が歩むのは、果たしてどのような道で、それはどのような答えに通じている？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "これが夢なら、目を覚ませ。執念であれば、断ち切るんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アンドアイン",
+          "text": "救済について語るのはその後だ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "炎が育児室全体を飲み込んでいく。懸命に羽をはばたかせる木攀獣の目に恐怖はなく、その子はただ踊っているだけのように見えた。\nだが、アンドアインは思わず彼の目をふさいだ。"
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "最後の瞬間、アンドアインは鐘の音をはっきりと耳にした。"
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "総主教",
+          "text": "——！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "保育士",
+          "text": "総主教、ご無事ですか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "総主教",
+          "text": "ううっ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "保育士",
+          "text": "儀式は中断されました。育児聖堂の全体が震えています。先ほどの爆発は……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "総主教",
+          "text": "同胞たちは避難していますか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "保育士",
+          "text": "は、はい……護衛隊の制服を着たリーベリと、堕天使が彼らを誘導しています。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "保育士",
+          "text": "サンクタでない人々のうち、光輪の付与に成功したのは、わずか半数ほどです。ただちに巡衛を組織して、皆を呼び戻させましょう——",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "その時、大きな爆発音が育児聖堂の奥から聞こえて、どこからか鳴り響く鐘の音がモビールの音をかき消した。育児聖堂内は混乱に陥り、無数の人々が外へ出ようと駆け出した。\n天高くそびえ立つ建物が揺れている。爆発の衝撃波は、ついに啓聖ホールを包み込もうとしていた……"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "総主教",
+          "text": "皆を退避させてください。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "総主教",
+          "text": "無理に引き留めてしまえば、取り返しのつかない傷を負わせることになるでしょうから。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "保育士",
+          "text": "総主教、聖堂が崩壊していきます……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "総主教",
+          "text": "崩壊しているのは、この聖堂だけではありません。我々がここで探し求めた答えもまた、崩れ去っているのです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "総主教",
+          "text": "ほかの保育士を呼び集め、すぐにここからお逃げなさい。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "保育士",
+          "text": "まずは巡衛を手配して、あなたを安全にお連れします。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "総主教",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "総主教は啓聖台を降りた。"
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "その時、風の音がした。混沌とした騒ぎの中で、風の音が確かに耳に届いたのだ。それも、祈りを捧げる聖像と清らかなステンドグラスしかないはずの、頭上から。"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "？？？",
+          "text": "へへっ、こっちこっち！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "？？？",
+          "text": "まだ逃がすわけにはいかないよ！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "総主教は顔を上げた。近づいてくる相手の姿は見えなかったが、その声があまりにも訴求力に満ちていたため、彼女は思わずそちらに手を伸ばした。"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エクシア",
+          "text": "こっちはステンドグラスの上に二時間も張り付いてたんだから。キミが啓聖台から降りてくれなかったら、腕が折れちゃうところだったよ！",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "エクシアは総主教の腕をしっかりと掴んだ。天地がひっくり返り、二人は同時に倒れ込む。\nしかし、二人の下にあるのは固い地面ではなく、何やら妙に柔らかく、霧のようでも、水面のようでもある何かだった。\nエクシアは大きな力で外側へと押し出されているのを感じた。それは決して、爆発の衝撃波だけではない。だが、か弱く見えるこの女性に、そんな力などあるのだろうか？\n必死に目を開けると、握り締めていた総主教の腕は、気付けばざらざらとした動物の脚に変わっている。そして彼女の穏やかな顔は、水面の向こうに沈んでいるかのようにぼやけて見えた……\n虚構と真実の狭間で、二人は向かい合う。啓示の石塔の鐘の音が、こちら側で響き渡るのがはっきりと聞こえた。"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エクシア",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エクシア",
+          "text": "キミがろくでもない奴だってことはとっくに知ってたけど、まさかまだ予想を超えてくるなんてね。『洪炉示歳』にだってこんな展開なかったのに！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エクシア",
+          "text": "でもこれで、キミの腕を引きちぎっちゃう心配なんていらないね！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エクシア",
+          "text": "みんなが何とか、力を尽くして作ってくれたチャンスなんだ……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エクシア",
+          "text": "隠れてないで出てきなよ！　夢の中から……あたしたちのラテラーノから！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    }
+  ]
+}

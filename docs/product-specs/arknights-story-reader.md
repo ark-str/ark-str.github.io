@@ -1,7 +1,7 @@
 # Arknights Story Reader
 
 Status: active
-Phase: content pipeline foundation
+Phase: reader shell
 
 ## Product Goal
 
@@ -43,9 +43,10 @@ Build a web application that makes Arknights story content easier to read, summa
 
 ## Current Phase
 
-This phase still does not implement the full reader. It establishes:
+This phase opens the first usable reader routes. It establishes:
 
-- `vendor/ArknightsData` as the upstream source contract
-- generated `index.json`, `source-manifest.json`, and `summary-manifest.json`
-- a bootstrap shell that can surface generated readiness counts
-- verification rules that fail when generated content drifts from the source contract
+- canonical locale URLs at `/reader/[locale]` and `/reader/[locale]/[groupId]/[storyId]`
+- generated story detail files under `public/generated/content/stories/`
+- first-pass body rendering for dialogue, narration, scene breaks, and Doctor choice branches
+- local storage reader-session restore for preferred locale and last visited story
+- explicit empty summary state until the summary-generation issue lands

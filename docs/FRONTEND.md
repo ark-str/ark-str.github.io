@@ -18,12 +18,14 @@ The app should feel editorial, deliberate, and product-specific rather than like
 
 ## Current UI Contract
 
-- bootstrap home shell inside `ark-str-web-app`
-- locally persisted bootstrap preferences
+- reader-focused home shell inside `ark-str-web-app`
+- reader session persistence for preferred locale and last visited story
 - app-level light/dark theme toggle persisted through the preferences feature
-- a generated-content readiness panel sourced from bundled JSON
+- canonical locale archive routes and direct story deep links
+- first-pass story body rendering sourced from bundled story detail JSON
+- a generated-content readiness panel and explicit summary empty state sourced from bundled JSON
 - no framework starter copy, remote links, or vendor branding
-- bootstrap shell must use shared UI primitives instead of one-off styled markup
+- reader shell must use shared UI primitives instead of one-off styled markup
 
 ## Anti-Patterns
 

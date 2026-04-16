@@ -1,0 +1,1415 @@
+{
+  "server": "jp",
+  "storyId": "act19side_level_act19side_07_beg",
+  "groupId": "act19side",
+  "stageId": "act19side_07",
+  "title": "狂えるシグナル",
+  "storyCode": "DV-7",
+  "avgTag": "戦闘前",
+  "sourcePath": "vendor/ArknightsData/jp/gamedata/story/activities/act19side/level_act19side_07_beg.txt",
+  "sourceHash": "bde9ff5c18e7af47839f3dbbfa9ee7b9f990da4bf486421979ddc6967dee1fd2",
+  "bodyAvailable": true,
+  "blocks": [
+    {
+      "type": "dialogue",
+      "speakerName": "ミュルジス",
+      "text": "ここに戻るのはいつぶりだったかしら？　サリア主任。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "text": "……ん？",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ミュルジス",
+      "text": "なあに、ぼーっとしてたの？",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ミュルジス",
+      "text": "珍しいわねえ。……基地のことでも考えてたとか？",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "text": "――ハイドン一号実験室のことは覚えているか？",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ミュルジス",
+      "text": "もちろん。イフリータが育ったところでしょ？　あたしたち二人で現場の調査だってしたじゃない。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "text": "私はあのあと、あれと似たような廃墟を数百箇所見つけたんだ。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "text": "軍との協力は極めてリスクが高い。ゆえに、ライン生命はいくつもの契約の陰に隠れてほかのラボを操ることで、そうした危険な実験を進めてきた。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "text": "だが今回、フェルディナンドは自ら踏み込むことを選んだ。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "text": "これは即ち、注意深く立ち回らなければライン生命そのものが次の廃墟に成り果てることを意味している。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ミュルジス",
+      "text": "実際失敗しちゃったら……フェルディナンドも廃墟に転がる死体の一人になるわけよね。そうなればきっと、本当の死因は新聞にすら載らないでしょう。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "text": "つまり奴には退路がない。今回の実験を成功させるほかないんだ。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ミュルジス",
+      "text": "んー……",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ミュルジス",
+      "text": "サイレンスさんたちが心配だってこと？",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "text": "……",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "text": "リスクを分析しているだけだ。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ミュルジス",
+      "text": "案外意地っ張りなのね。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ミュルジス",
+      "text": "まあまあ、あの人なら大丈夫よ。なんたって、イフのためにここ数年でどんどん逞しくなってるんだから！",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "text": "慰めているつもりか？",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "text": "であれば、必要ない。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "text": "サイレンスとフィリオプシスの能力を疑ったことなどないからな。二人がそうするのと同じように、我々も責務を果たすだけだ。",
+      "portraitKey": null
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "もちろん、こちらも協力する。",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "ミュルジス",
+              "text": "ふふっ、ロドスのやり方にはいつも感心してたのよねえ。",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "オペレーターたちの能力は疑うべくもない。",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "ミュルジス",
+              "text": "あら、いいこと言うじゃない。あたしも転職考えようかしら？",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "サリアはますます人間味が増してきたな。",
+          "value": "3",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "ミュルジス",
+              "text": "やっぱり？　あなたもそう思う？",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "ミュルジス",
+              "text": "これはあたしの勘違いじゃなさそうね！",
+              "portraitKey": null
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "……信号検知。パワードスーツが複数体、こちらに接近している。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "あのリーベリの傭兵が追いついてきたようだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サリア",
+          "text": "あるいは、この付近を警備しているのかもしれないが。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "Dr.{@nickname}、クリステンがここにいるって本当なの？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "サリアの言う通り、フェルディナンドにはあとがない状況だけど……かといって、こっちも試行錯誤してる時間はないわよ？",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "彼は統括を人から隠しておきたがるはず。となれば――",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "一番事態を制御しやすいのはここだ。",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "人目を欺くにはこの場所しかない。",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "……ライン生命本部、か。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "確かに、その条件に合うのはここでしょうね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "クリステンに連絡が取れなくなってから、家も、実験基地も、彼女がよく行く場所なんかも探してみたのよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "っていうのも、ライン生命の社員なら誰でも知ってることだけど――統括がおとなしくオフィスにいることなんて、滅多にないんだもの。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "毎日クリステンを探し回ってる人たちは、統括が頭上にいる可能性なんて考えつきもしないでしょうね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "スキャン完了。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "ドクター。君の予想通り、社内の階段付近は武装した大量の職員で固められている。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サリア",
+          "text": "ライン生命本部は現在、フェルディナンドの管理下にあるようだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サリア",
+          "text": "私とミュルジスを含め全員、行動には慎重を期すべきだな。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命警備課職員",
+          "text": "……奴らを捕らえろ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "まずい……！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "ちょっと、いつまでぼーっとしてるの！？",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命警備課職員",
+          "text": "研究エリア入口でトラブル発生！　開拓者一名及び研究員一名が……うわっ！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "結局、他人を傷つけることになるなんてな……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "……正当防衛だよ。私が証言してあげる。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "さあ、左側の非常口を目指して走るよ！　話は脱出してからで――",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "っ、誰か追いかけてきてるぞ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "わかった、構えて！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "わっ、ストップ！　まさかキミだったなんて……！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイ",
+          "text": "エ、エレナさん……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "ごめんね、怪我してない！？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイ",
+          "text": "大丈夫ですよ。警戒してるだろうと思って、ある程度備えておいたので。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "全員、動かないで。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "えっと、あなたは……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "トリマウンツ保安局のメアリー・バナーよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "誘拐と傷害の罪に問われている容疑者を逮捕しにきたの。ご協力願えるかしら。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "容疑者って……？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "……メアリー。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "あんたを掴まえるのは骨が折れたわ、「リーダー」さん。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "武器を捨てて、両手を上げなさい。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命警備課職員",
+          "text": "右手を出してください。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "開拓隊の隊員",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命警備課職員",
+          "text": "さあ、早く。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "……どうして注射器を……？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "待って。何をするつもり？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命警備課職員",
+          "text": "身体検査ですよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命警備課職員",
+          "text": "危険物質漏洩の可能性がありますので、規定に従い、この場の全員に予防措置を講じないとならないんです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "だったら、注射する薬を確認させて。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命警備課職員",
+          "text": "事態は一刻を争いますので、ご遠慮ください。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フィリオプシス",
+          "text": "警告。提示されたプロセスは、データと一致しません。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "完全に規定違反だと思うけど……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命警備課職員",
+          "text": "あなたはライン生命を追放されているはずです。そんな方に規定を説かれる筋合いはありません。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "ッ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "だったら、私はどうかしら？",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "私からお願いしたら、注射器を渡してくれる？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命警備課職員",
+          "text": "フランクス主任……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "私は359号基地の責任者よ。この対応の目的を今すぐ報告して。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命警備課職員",
+          "text": "……申し訳ありません。この基地での権限はすべて、フェルディナンド主任へ委譲されているのです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命警備課職員",
+          "text": "現責任者の命令がなければ、あなたにも介入権はありません。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "実験プロジェクトの責任者は、統括にしか変えられないはずよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "フェルディナンドはなぜそんな越権行為を？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命警備課職員",
+          "text": "そのご質問には答えられません。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命警備課職員",
+          "text": "――概ね問題なし、と……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命警備課職員",
+          "text": "任務完了。全員、撤退しろ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "……本当に撤退するつもりなの……？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フィリオプシス",
+          "text": "警備課の人員が、基地から急速に離脱していきます。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "開拓者の人たちを連れて行ってしまうとばかり思ってたけど……まさか、私の誤解……？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "フェルディナンドは……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "開拓隊の隊員",
+          "text": "う、ぐっ……あああっ……！！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フィリオプシス",
+          "text": "……注射を打たれた開拓者たちが全員昏睡状態に陥りました。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "……！　すぐに助けないと！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "ドロシー、あなたも応急処置の方法くらいは……っ、ドロシー？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイ",
+          "text": "ほ、保安官……！？　僕たち、サニーさんを助けに来たはずじゃ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "あんな言葉で私の気持ちを変えられるとは思わないでちょうだい！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "……手紙を読んでくれたんだな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "同情を得ようだなんて考えが通じるのは、一回きりよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "あんたを逃さずに済んでよかったわ。でないと、どういう「サプライズ」をされるかわからないもの。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "俺を信じちゃくれないわけか……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "信じられるわけないでしょう！？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "四年前、私はあんたを信じてた。だから収容区に連行されないように隠れる手伝いまでしたのに――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "あんたは恩を仇で返した。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "悪かった……バカなことしたと思ってる……でも、あの時は鉱石病と保険料のことで追い詰められてて……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "窓を壊して部屋へ入って、金目のものを全部寄こせと迫ってきたわよね。あのくだらない保険料を払えば、また弁護士に戻れるって信じてたんでしょう！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "おばあちゃんがどんなに怯えてたかわかってる？　あれから今まで寝たきりになってるのよ！　小さい頃私よりよっぽど可愛がってもらってたくせに、よくもあんな真似ができたわね！？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "私は……っ、あんたがビビって逃げ出したあとも、ほかの保安官に捕まらないかが心配で……仕事を失うリスクまで負って、あんたの残した手がかりを隠して回ってたのよ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "あんたは知らないでしょうけどね！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "……こんな冷血で身勝手な犯罪者に、同情なんかしてやるべきじゃなかったわ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "待って、保安官！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "二人の間で起きたトラブルがどんなものだろうと、今はとにかくここから離れないと――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "あなた……自分を誘拐した男を擁護するつもり？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "お願い、聞いて……！　本当の問題はライン生命にあるの……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイ",
+          "text": "！　この震動は……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "な……中から、なのか……？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "……ドロシーのラボがある方向だ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "みんな、逃げて！！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "ああ……この光景が現実になるなんて……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "何なの、この凄まじい揺れは……範囲が広すぎる……まさか、天災……？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "――いや、違う……震源はラボだ……！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "研究エリアの中央にある、いかにも頑丈そうな建物に一筋の大きなひびが入った。\nしかし、それは振動のせいではない。\nその建物は内側から――内部の奥深くのほうから引き裂かれようとしていた。\n何かが「殻を破り」突き進んでいるのだ。少しずつ、けれどとんでもない速度で。"
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "一瞬のうちに、その半分が飲み込まれ――\n建物だった瓦礫の上、銀色の何かが基地のすべてを抱擁していた。\n生まれたばかりのその巨体が、幾何学的な胴体を軽々と回し、地上の人々すべてを冷たく見つめる。"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "目の前の光景は、彼女の理解を超えるものではなかった。\nドロシーはそれにまつわる原理を知り尽くし、あらゆる可能性を計算してきたからだ。\nしかしそれでも彼女は呼吸を、まばたきを、足元で震える大地を、そして周囲で吹きすさぶ風をも忘れてその光景に見入っていた。\n長年思い描いてきた夢――積み上げられた設計図と一つの約束にすぎなかったそれが、現実のものへと変わったのだ。"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "なんて綺麗なの……",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "けれど、それは同時に格別恐ろしくもあった。"
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "っ、伏せて――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "危なかった……！　あと少し遅かったら、あなたは瓦礫で潰されてた……！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "……間に合わなかったわね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "……何が？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "あなたには、私を止めることはできなかった。あの実験は……成功したのよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命警備課職員",
+          "text": "フェルディナンド主任、研究エリアから出てきたアレは――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "怖いのかね？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命警備課職員",
+          "text": "は……はは、こ、怖くなどありませんよ！　む、むしろ素晴らしいと思います……！　お二人の成し遂げられたこと……ほ、本当に感銘を受けました！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "その割に、震えているようだが。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命警備課職員",
+          "text": "は、はは……はははっ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "それでいいんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "未知なる巨体を恐れるのは、弱者の本能なのだから。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命警備課職員",
+          "text": "お、仰る通りです……！　この功績の前には、我々の……クルビアの敵も皆震えあがること間違いありません！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "……敵を威圧する道具、か。そんなのは軍人が考えることだがな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "彼らは資金を提供し、私は武器を提供する――これはギブアンドテイクの関係だ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "とはいえ、今ので一つ思い出したことがある。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "次のステップへ移行する時が来たようだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命警備課職員",
+          "text": "しかしそうなりますと、アレの怒りを買うのでは……？　基地にいる人たちは……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "尊い犠牲となるだろうな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "彼らの名はしかと覚えておこうとも。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "何しろ真の開拓者として、歴史に刻まれるべきものだからな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "彼らの恐れを知らぬ精神がこの巨大な猛獣を生み出した……我々はそれを掌握し、利用し、我が目と手足とするとしよう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "我らが祖先たる勇敢な開拓者たちが駄獣を駆り立て、荒野を文明で征服したように――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "我々もまた技術が生んだ猛獣を駆り、前人未踏の領域を切り拓く。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "そう――先駆者として、文明の辺境を開拓するんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "これは……あの銀色の化け物か？　ここまででかくなるなんて……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "ッ――",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "普通の攻撃じゃ歯が立たないよ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "チッ――大した怪物ね！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイ",
+          "text": "皆さん、見えますか？　あの矢――",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "次々と放たれた三本の矢が、銀色の何かへと一様に迫るも――どんどんと速度を落としていく。\nそれでいて、地面に落ちることもなく……\nやがて銀色の光に包まれ、一斉に視界から消え去った。"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "……あの怪物、マジックでも使えるわけ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "違うよ、あれは分解されてるの。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "今のところは落ち着いてるみたいでよかったけど……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "避けろ！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "ぐっ……今のはエネルギー弾？　それとも矢？　そもそも、どこから撃ってきたの……？　速すぎてはっきりしないんだけど……！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "アレの動きも攻撃手段も、常識では説明できないものなんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "そもそも、アレにとっては、動き回るのと攻撃するのが同じことっていうか……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "アレが本当に、あの実験の産物なら……基地全体がアレに感知される「領域」に入っちゃってると思うよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "その「領域」の中の物ならなんでも、アレの一存で瞬きの内に物理的な性質を変えられるんだ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "言い換えれば私たちは今、手の付けられない子供に掴まれた粘土みたいな立場ってことかしら？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "……そんな感じかな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "だから攻撃はやめてね、保安官。でないと、数分で基地が更地にされちゃうよ！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "ねえ、これは……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "私が、爆弾を載せたドローンを山ほど持ち込んだんじゃないかって言いたいの？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "そんなわけないでしょ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイ",
+          "text": "それなら、ライン生命の人たちでしょうか……？　救出のためにアレを倒そうとしている……というわけではないですよね？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "もちろん違うよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "今さっき言ったようなことが目的なんじゃないかな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "……基地が更地にされるってやつか？",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "……もう始まってるみたい……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "俺の目が変になったのか？　あそこにあったクレーン……球体みたいにされてるぞ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "このままじゃ居住区のほうも危ない！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "もしこの基地が潰されたら、トリマウンツが……ほかの都市だって飲み込まれかねない……！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "頭のおかしい科学者たちのせいで、何も知らない市民たちが寝てる間に死ぬことになるわ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "今すぐここを離れましょう！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "……知らせないと……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "私たちがみんなに伝えないと。あの人は、こうなることをとっくにわかってたんだって……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "ここまでやろうと企んだ奴は誰なんだ？　ドロシー・フランクスなのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "ううん、違うよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "――犯人は、ずっと私を騙してた人なんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "あの人は、開拓隊のキミたちに起きた出来事を……そして基地で起きたことすべてをもみ消そうとしてる。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "でもきっと、ライン生命の人はほとんど向こうの味方だと思う……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "この分じゃ、保安局も買収されてそうね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "賭けてもいいが、こんなのはどこのメディアも取り上げやしないと思うぜ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイ",
+          "text": "となれば、伝えるべき相手はわかりますよね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "うん……ロドスしかない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイ",
+          "text": "僕はサイレンス先生のところへ行きます。これがこの作戦で一番重要な任務だと思いますし。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "そんなことしたら、閉じ込められることになるんだよ……！？　キミの命まで危なくなっちゃう！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイ",
+          "text": "……僕はドクターを信じています。そして、エレナさん――あなたのことも。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイ",
+          "text": "僕たちなら、絶対できますよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "……私のことも、って……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "私にできることなんか……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "――監視ステーション……あそこに行かないと。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "……だったら足が必要かしら？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "その車……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "ライン生命から拝借したの。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "偶然だけど、私も今回の真犯人に用があるから……どうせ行き先は同じでしょ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "それなら、俺も頭数に入れてくれないか？　保安官。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "俺はまだ、あんたに捕まった容疑者なわけだしさ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "メアリーは何も答えず、ただ手を差し伸べて――\n隣のエレナもまったく同じ動きをした。\nサニーは二人の手を取ると、走り出す車へと飛び乗った。"
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "保安官と開拓者、そして研究員――立場の違う三人は、共に基地の端へと急ぐ。\n背後から追いすがる砂嵐にも、彼らを止めることはできない。"
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    }
+  ]
+}

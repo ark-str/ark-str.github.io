@@ -1,0 +1,276 @@
+{
+  "server": "jp",
+  "storyId": "main_1_level_main_01-03_beg",
+  "groupId": "main_1",
+  "stageId": "main_01-03",
+  "title": "狂奔",
+  "storyCode": "1-3",
+  "avgTag": "戦闘前",
+  "sourcePath": "vendor/ArknightsData/jp/gamedata/story/obt/main/level_main_01-03_beg.txt",
+  "sourceHash": "8cc7c0f21848e6280462c6ab1648a90e95d45f2f1233e14535af8fb340744df7",
+  "bodyAvailable": true,
+  "blocks": [
+    {
+      "type": "narration",
+      "text": "第八关（前）\n時刻不明 / 天候不明 / 視界：低\nチェルノボーグ 行動隊E0現在地\nDr.{@nickname}救出作戦 第三段階"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "text": "天災発生まで、残り一時間を切ったな……ほかのエリアから迂回する余裕はなさそうだ。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "text": "ここまで、随分と時間を浪費する羽目になったからな。もたもたしていると、天災の直撃を受けかねんぞ。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "text": "こうなれば、このエリアを突っ切るしかないんだが……",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "text": "今の人数で固まって動けば、間違いなく敵に見つかってしまうだろうな。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "text": "その上、これほど通りが狭いと、待ち伏せや挟撃を受ける可能性も高くなる……",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "text": "ならば、どうする？",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "text": "……思うに、選択肢は多くない。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "text": "Dr.{@nickname}、まずはお前の考えを聞かせてくれ。",
+      "portraitKey": null
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "やはりここは、正面突破だろうな。",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "ドーベルマン",
+              "text": "ふむ……レユニオンの連中は、個人単位の実力で言えば、我々には遠く及ばんだろうしな。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "ドーベルマン",
+              "text": "あの人数頼りの人海戦術をとらせなければ、こちらの勝機は強まりそうだ。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "ニアール",
+              "text": "となると、速さが重要になるな。一気に突き進んで、接敵を最小限に抑えれば実現可能、か。",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "……彼らの戦力で、我々を止められるとは思えない。",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "ドーベルマン",
+              "text": "確かに、特段防御が堅い場所というわけでもないしな。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "ニアール",
+              "text": "では、奇襲をかけて、封鎖を破れば……",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "ドーベルマン",
+              "text": "ああ。突破は可能だろう。向こうは人数こそ多いものの、今の配置は散開状態だからな。",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "向こうはすぐには動けない。反撃を恐れず前進しよう。",
+          "value": "3",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "ドーベルマン",
+              "text": "言われてみれば……交戦時の状況から察するに、奴らの連絡方法は相当原始的なものだと考えていいだろうしな。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "ニアール",
+              "text": "つまり、我々が封鎖を突破したという連絡を受け、レユニオン側の援軍が到着する頃には……",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "ドーベルマン",
+              "text": "ロドスの人員はすでに、次のエリアへ到達しているというわけだ。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "ニアール",
+              "text": "なるほど、良い考えだ。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "ニアール",
+              "text": "猛攻をかけて陣形をかく乱しつつ、砲火の類いを破壊して、その後素早く離脱する……というわけだな。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "ニアール",
+              "text": "……ときに、ドーベルマン。普段のあなたなら、こうした方針は自分で決めるはずだろう。もしや今のは、私を試したのか？　それとも――",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "ドーベルマン",
+              "text": "――さて、どうだろうな。……何はともあれ、ここで消耗して追い詰められていくよりは、明確な目標を定めて突破するほうがいいというのは確かだ。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "ドーベルマン",
+              "text": "アーミヤ、この方針で行動を開始しても構わんか？",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "アーミヤ",
+              "text": "ええ。状況は明らかですし……私は、ドクターの選択を信じていますから。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "ドーベルマン",
+              "text": "――信頼というのは、一度戦いを共にしただけでは、築きがたいものだ。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "ドーベルマン",
+              "text": "ドクターの能力については、私も認めているが……",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "ドーベルマン",
+              "text": "その知恵に頼り切ってはいけない。あくまで、力を借りるにとどめるべきだ。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "アーミヤ",
+              "text": "……はい。理解しています。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "ドーベルマン",
+              "text": "……と、悪いな、ドクター。今の言葉は単に、彼女が人を頼りすぎないよう指導するためのものだ。あまり深刻に捉えないでもらえると有り難い。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "ドーベルマン",
+              "text": "アーミヤには、より多くの学び、そして成長が必要なんだ。これはその一環として必要なことだと、どうか理解してほしい。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "ドーベルマン",
+              "text": "彼女に教育を行う立場であれば、お前でも同じような指導をするはずだ。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "ドーベルマン",
+              "text": "とはいえ……誤解のないよう、改めて伝えておこう。私はお前の指揮能力を認めている。これは、確かな事実だと思ってくれ。",
+              "portraitKey": null
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "……ありがとう。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "別段、礼を言われるようなことでもない。我々は今や、戦友なのだからな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "少なくとも、戦場で命を預けるくらいには、信用しているということだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "――さあ、話はこのあたりにして、先を急ぐぞ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ニアール",
+          "text": "了解した。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ニアール",
+          "text": "――「死は歩みを止めない」。カジミエーシュには、そんな言葉がある。追いつかれずに生きるには、進み続けるしかないからな。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    }
+  ]
+}

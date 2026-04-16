@@ -1,0 +1,1140 @@
+{
+  "server": "jp",
+  "storyId": "act19side_level_act19side_05_beg",
+  "groupId": "act19side",
+  "stageId": "act19side_05",
+  "title": "ドロシーの約束",
+  "storyCode": "DV-5",
+  "avgTag": "戦闘前",
+  "sourcePath": "vendor/ArknightsData/jp/gamedata/story/activities/act19side/level_act19side_05_beg.txt",
+  "sourceHash": "4071fe83be17e775fb106f40d4f97bde89d7428a80caabf14c28539aa5b7d3f8",
+  "bodyAvailable": true,
+  "blocks": [
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "text": "……ミュルジス。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ミュルジス",
+      "text": "ぅ……うーん……",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "text": "まさかこんなところにいるとはな。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "text": "すまなかった。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ミュルジス",
+      "text": "……え……？",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "text": "ドクターの一声がなければ、そうと知らずにお前をこの手で殺していただろう。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "text": "奴は、君が昔の同僚を殺すところを見たかったのだろうか？",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "text": "とも限らないがな。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "text": "私が手を止められたのは、ドクターの声があったことに加えて……彼女の言葉が気にかかっていたこともある。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "text": "「相手が何だろうと、敵と思い込まないほうがいい」――あれは暗にミュルジスのことを言っていたんだろう。",
+      "portraitKey": null
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "あの奇妙な行動にも説明がつくな。",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "我々にミュルジスを見つけさせたかったのか。",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "では、わざと送り返してきたということか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "それにしては、先ほどの状況は明らかに危険だったがな。ミュルジスが殺されずに済む保証などなかったはず……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "となると……彼女には、ミュルジスの生死などどうでもいいんだろうな。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "彼女にとって、これは単なるテストなんだ。",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "サリア",
+              "text": "……パワードスーツの性能と合わせて、私とロドスの反応をも同時にテストしようというわけか。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "サリア",
+              "text": "であれば、バーでの発言はすべて、私を試す意図があった、と……",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "サリアを急かそうとしているんだろう。",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "サリア",
+              "text": "奴は今も、自らにとって有利なほうへと我々を誘導しているわけだな……",
+              "portraitKey": null
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "う、うう……っ",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サリア",
+          "text": "ミュルジス、大丈夫か？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サリア",
+          "text": "奴らがお前に鎮静剤を打ったのは数時間前のようだ。パワードスーツの中にいる間に、意識はほとんど回復していたことだろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サリア",
+          "text": "今感じているはずのめまいや痺れは、主に酸欠と精神的な恐怖が与えた後遺症だ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サリア",
+          "text": "応急処置はしてあるが、完全な回復まで30分ほどかかるだろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "と……め……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サリア",
+          "text": "……「止めて」、か？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サリア",
+          "text": "一体……誰を？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サリア",
+          "text": "お前をパワードスーツに閉じ込めた――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サリア",
+          "text": "あの人物のことか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "いいえ……",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "不安のあまりにか、ミュルジスの額と手の甲からは玉のような汗が流れていた。\n彼女が突然あなたの手を掴む。そして、その動作に伴い浮き上がった水滴が、次々とあなたの服の胸元を叩いた。\n深い色をした布地に飛んだ水滴は、あるメッセージを浮かび上がらせる。\nそれはバーで会った彼女の名でも、「フェルディナンド」の文字でもなく――"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サリア",
+          "text": "……「359」……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サリア",
+          "text": "359号基地か。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "珍しいな。君が顔を出すとは。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルハイヤ",
+          "text": "別にいいでしょ？　臨時の社員証をくれたのはあなたじゃない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルハイヤ",
+          "text": "「文献学顧問」なんて肩書きで、ね。――ライン生命みたいなテクノロジー企業に、こんな役職必要だとは思えないけど。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルハイヤ",
+          "text": "ともあれ、ご機嫌そうなところを見るに、実験は順調に進んでるみたいね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "今は実験の話などしないでくれ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "――10分……私のような人間には、一日に10分しか自分の時間がないんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "この時間で子供たちとビデオ通話をすることもできれば、エレナや皆と夕食を取ることもできる。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "だが……何もせず、ただここに立ってすべてを眺めるほうが好きなのさ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルハイヤ",
+          "text": "ここから見えるのは通りくらいのものじゃない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "ああ、それ以外に見えるものなどないがね。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "あの通りを歩く彼らは、一日中働いて疲れ果てているに違いない。それなのになぜ、その表情に曇りはなく、足取りも軽快なままでいられるのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "それは「チャンス」があるからだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "自分の苦労が、家族全員により良い暮らしをもたらすチャンスに繋がるはずだと信じているからだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルハイヤ",
+          "text": "……都市の外にいる開拓者たちみたいね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "そう、彼らのようにな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "トリマウンツ、またの名をスリーバーデン……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "かつて、七人の開拓者と三匹の駄獣がこの地に初めて粗末な入植地を築いた。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "それが、今はどうだろうか？　足元に広がる通りを見たまえ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "ここには活力溢れる開拓者とその子孫が集っている。クルビアほどの向上心を持つ国はほかにない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "この国の繁栄は人々に自信を与え、人々の日々の進歩がこの国に活気をもたらしている。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "クルビアが急速な発展を遂げ続ける限り、この地の人々一人一人の生活もまたそうあるはずだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "――君たちが私をどう思っているかくらい知っている。君も、クリステンも、それからサリアも……皆、口を揃えて私のことを「投機家」と呼ぶことだろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルハイヤ",
+          "text": "チャンスをものにできる人は、みんな賢い人間よ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "それはどうもありがとう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "……眼下の通りではなく、この高みに立つほうが好きだということは否定しない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "だが、私は自らが得たチャンスに相応しい人間だ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "私のプロジェクトは富をもたらし、その富が次のプロジェクトを推し進め、その結果技術は向上し続ける――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "我々は、ほかすべての国々の前に立ち、テラ全土を新時代へと導いていく存在なのさ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "時が来れば、後世の人が不朽の記念碑を建て、そこに我々の名が刻まれることになるだろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルハイヤ",
+          "text": "我々っていうと？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "――勝利はすべての開拓者のものだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "もうすぐ10分が過ぎる。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルハイヤ",
+          "text": "まだお喋りする時間をくれてないのに？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "ここへ来た以上、君の伝えたいことはわかっている。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルハイヤ",
+          "text": "へえ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "だが、私は君のことを許そう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルハイヤ",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "クリステン、ミュルジス、サリア、パルヴィス……そして君。それぞれの些末な企みを当て推量している暇はないのでね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "ドロシーの実験は成功まであと一歩に迫っている。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "私が欲しいのは、その最終結果だけだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "さ、サニー……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "ドロシーはここが一番安全だって言ってたじゃない。……どうして武器を構えてるの？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "「安全」だって？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "それは違うな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "最大の危険は、俺たちの目の前にあるんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "危険って……ドロシーのこと？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "キミは話を聞いてくれると思ってたのに……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "……申し訳ない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "あんたとお医者さんたちは離れててくれないか。初めから、俺たちのターゲットはあんたたちじゃないんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "でも……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "エレナ。私たちはこの人に騙されたんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "さっきジョイスを守ろうとしたのだって、単なるパフォーマンスで……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "これまで、怒りやためらい、そして踏み越えてはならない一線を尊重する姿勢を見せてきたのはこのためだったんだと思う。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "彼はずっと、本気で罪を犯すつもりで準備していたんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "マイヤーズがあんなことをするとは思ってなかったよ。だがあんたたちの……特にウビカ博士の信用を得るために、同じようなことをもっと過激な形で、サムにやらせようとは考えてたさ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "……いや、こんなことはもうどうだっていいな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "俺たちは計画通りここへ辿り着いて、問題の原因を見つけたんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "……それって、私のこと？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "誘拐を計画してまでここへ来たのは、私を殺すためだったの？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "どうしてそんなことを……？",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "事ここに至れど、彼女の声はどんなに頑なな心にも染み入りそうな優しい声のままだ。\n少し見開いて潤んだ瞳も――\n驚いて、どこか傷付いたようにすら見える、いかにも罪のないその表情も――\nすべてが、非難されるべきはそちらのほうだと訴えてくる。自衛のために武器を取ったのは彼らのほうであるというのに。"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "どうして、なんてことを俺に聞くのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "決まってるだろ。俺はすべてを見てきたからだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "あんたが生み出した化け物に追い回されて、仲間たちの血を奴らの餌にまでされて……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "あんたは……とんでもない悪人だ……！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "アレは化け物なんかじゃない！　ただの実験の副産物だよ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "神経信号に敏感な特殊物質でできていて――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "……エレナ。これはサニーさんの臆測なんかじゃない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "彼は、前にもあの銀色の何かを見たって言ってることになる。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "それも……今よりたくさん。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "……先生の言った通りだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "三日前、俺は研究エリアに忍び込んで……あんたの元へ行こうとしていた。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "俺は、その時……あんたに訊こうと思ってたんだ。俺も被験者にしてもらえないか、って……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "開拓隊の隊員",
+          "text": "おい、リーダー！　被験者になるのはすごく危険だとか、大企業の連中は俺たちを騙してるかもしれないとか言ったのはあんただぞ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "は、はは……はははっ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "悪かった、サム……俺は一貫性のないクズだ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "それでも、過去の過ちを正したい一心だったんだよ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "――聞いてくれ、みんな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "俺はその夜、銀色の化け物があの女のそばで一つの塊になっていくところを見たんだ。あいつはそれに向かって、ペットを相手にするみたいに話しかけていた。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "ドロシー・フランクスこそ、すべての元凶だ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイ",
+          "text": "僕が言ったこと、信じてもらえないでしょうか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "……あいにく、私はSF映画なんて好きじゃないの。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイ",
+          "text": "それなら、この手紙を読んでみてくれませんか。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "手紙って……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイ",
+          "text": "一緒に電線の点検を終えたあと、サニーさんから預かったんです。恐らく自分の身に危険が及ぶことを想定していたんだと思います。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイ",
+          "text": "あの人は、「万が一俺の身に何かが起きたら、メアリー・バナーにこの手紙を渡してくれ」と言っていました。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイ",
+          "text": "ですが、きっと……その何かが起きる前に手紙を見せても、許してくれるはずですよね？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "……見せてちょうだい。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "…………",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイ",
+          "text": "……何が書かれていたんですか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "あの男、一体どこへ行ったの！？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイ",
+          "text": "うわっ……！？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "あなたはサニー・ロマーノのことを何も知らない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "クソみたいな保険のせいで、あいつの心は恨みでいっぱいなのよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイ",
+          "text": "また「保険」ですか……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "ええ。クルビアの感染者なら誰しも、この言葉が頭に刻み込まれてるの。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "もしかすると……外国人の多くは、クルビアが感染者に優しい国だと思っているかもしれない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "「医療保険に入っていれば、感染者でも普通の生活が保証される」――そう聞くと、まっとうな話に聞こえるものね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "サニーも、病気になってすぐの頃は同じことを言ってたわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "でも、訪れた結果はどうかしら？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイ",
+          "text": "もしかして、その保険料が……高額だったってことですか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "仮に私が一生保安局で働き続けた上で、飲食費のすべてを削ったとしても払いきれないような額なのは確かね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "あれは感染者の命を守るための制度なんかじゃない……巨額の保険料に対して、彼らが受け取る薬は、それに見合うようなものじゃないのよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "あんなのは実質的な罰金だわ。感染者たちに、決められた道を歩かせようとするためのルールでしかない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "それなのに、サニーは……ロマーノの奴は、いつまでも現実を直視しようとしない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "あいつを止めないと、本当に許されない罪を犯すかもしれないわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "サニー、あなたが見たのは化け物でもペットでもないの。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "確かに、私の実験には関係しているけれど。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "……認めたな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "真実はあなたたちの役には立たないわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "逆に、知れば知るほど危険が及ぶことになる。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "……あんたらトップの人間たちは、他人に代わって勝手に何かを決めるのが大好きだからな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "まずは武器を下ろしてもらえない？　ここにある機材はデリケートなの。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "下ろすのが嫌なら、ここを狙って。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "私は……撃たれても構わないから。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "開拓者たちに向かって、彼女は一歩踏み出した。クロスボウの先が身体に触れてしまいそうな距離だ。\nサニーの手が微かに震え、彼はその優しい両目から無理やり視線を外した。\nこれも悪人の策略のうちで、自分たちを服従させるためのアーツみたいなものだ、と自らに言い聞かせながら。"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "死ぬのが怖くないのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "もちろん、怖いわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "だけど、あなたたちが自分を傷つけてしまうことのほうがずっと怖いの。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "サニー。あなたも、あなたの仲間たちも、人殺しなんかじゃない。よりよい暮らしを望んでいるだけの、ごく普通の人たちよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "ねえ、あなたも私の実験に参加したいと思ってくれたんでしょう？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "それならまだチャンスはあるわ。私たちの一員になってくれたら、あなたが何より望んでいるものを手に入れることができるのよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "私は絶対に、あなたたちを拒んだりしないわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "ドロシーは開拓者たちに手を差し伸べた。まるで彼らが握ってくれるのを待っているかのように。\n彼らが彼女を殺しに来たということを理解していないかのように。\nドロシーを見てはいけない。その目も、その手も、彼女のすべては優しすぎる……サニーはそう感じていた。\n荒野を歩むことを余儀なくされたのち、都市やそこに住む人々のほとんどは、彼らを冷たく拒絶してきた。\nそれに対して、彼女は――この態度で、開拓者たちをコントロールしている。彼女はこうして、意志の弱かった可哀想な仲間を操ってきたのだ。\nけれど……「チャンス」という言葉が胸を打つ。\n「俺たちはもう長いこと、そんな言葉自体聞いてやしない……」"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "っ……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "奇妙な形状の物体",
+          "text": "――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "アレは……！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "一体どこから？　気付かなかったよ……！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "……サニーさんは正しかった。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "この実験室こそ、アレが生み出された場所なんだ。……それにあの動き、何か変だと思わない？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "アレは……ドロシーを守ろうとしてるように見える。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "やめて……！　傷つけあってはダメ……！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "奇妙な形状の物体",
+          "text": "――！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "開拓隊の隊員",
+          "text": "来やがった！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "開拓隊の隊員",
+          "text": "リーダー、向こうからもっと来てるぞ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "何とか切り抜けろ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "ドロシー・フランクスを捕まえないと――いや、まずはこのラボを壊してからだな！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "あの化け物を始末するには、悪の温床から破壊するしかない！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "お願い、やめてちょうだい！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "それだけは、許すわけにはいかないの……！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "実験は、続けていかないと――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドロシー",
+          "text": "これは、あなたたちとの……彼らとの約束なんだもの。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    }
+  ]
+}

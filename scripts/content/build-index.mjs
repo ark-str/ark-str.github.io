@@ -10,6 +10,7 @@ console.log(
       serverCount: artifacts.index.vendor.servers.length,
       groupCount: artifacts.index.groups.length,
       storyCount: artifacts.index.stories.length,
+      storyDetailCount: artifacts.storyDetails.length,
       submoduleSha: artifacts.index.vendor.submoduleSha,
     },
     null,

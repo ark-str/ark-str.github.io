@@ -1,4 +1,10 @@
-import { buildContentArtifacts, hasArknightsDataSource, loadGeneratedArtifacts } from "./lib.mjs";
+import fs from "node:fs";
+import path from "node:path";
+import {
+  buildContentArtifacts,
+  hasArknightsDataSource,
+  loadGeneratedArtifacts,
+} from "./lib.mjs";
 
 function invariant(condition, message) {
   if (!condition) {
@@ -67,6 +73,11 @@ function validateGeneratedArtifacts(generated) {
     invariant(typeof story.title === "string" && story.title.length > 0, "story.title must be present");
     invariant(typeof story.sourcePath === "string" && story.sourcePath.length > 0, "story.sourcePath must be present");
     invariant(typeof story.sourceHash === "string" && story.sourceHash.length > 0, "story.sourceHash must be present");
+    invariant(typeof story.bodyAvailable === "boolean", "story.bodyAvailable must be present");
+    invariant(
+      story.bodyPath === null || (typeof story.bodyPath === "string" && story.bodyPath.length > 0),
+      "story.bodyPath must be null or a non-empty string",
+    );
   }
 
   for (const item of generated.sourceManifest.items) {
@@ -74,6 +85,7 @@ function validateGeneratedArtifacts(generated) {
     const story = storyMap.get(key);
     invariant(story, `source-manifest item ${key} is missing from index stories`);
     invariant(item.sourceHash === story.sourceHash, `source-manifest hash mismatch for ${key}`);
+    invariant(item.bodyAvailable === story.bodyAvailable, `source-manifest body availability mismatch for ${key}`);
   }
 
   for (const item of generated.summaryManifest.items) {
@@ -85,6 +97,20 @@ function validateGeneratedArtifacts(generated) {
       item.status === "missing" || item.status === "ready" || item.status === "stale",
       `summary-manifest status is invalid for ${key}`,
     );
+  }
+
+  for (const story of generated.index.stories) {
+    if (!story.bodyPath || !story.bodyAvailable) {
+      continue;
+    }
+
+    const bodyFilePath = path.join(process.cwd(), "ark-str-web-app", "public", "generated", "content", story.bodyPath);
+    invariant(fs.existsSync(bodyFilePath), `story detail file is missing for ${story.server}:${story.storyId}`);
+
+    const body = JSON.parse(fs.readFileSync(bodyFilePath, "utf8"));
+    invariant(body.storyId === story.storyId, `story detail storyId mismatch for ${story.server}:${story.storyId}`);
+    invariant(body.server === story.server, `story detail locale mismatch for ${story.server}:${story.storyId}`);
+    invariant(Array.isArray(body.blocks), `story detail blocks must be an array for ${story.server}:${story.storyId}`);
   }
 }
 

@@ -52,9 +52,10 @@ npm run verify
 
 ## Current Phase
 
-The repository is in the content-pipeline foundation phase:
+The repository is in the reader-shell phase:
 
 - nested app scaffold and root harness split are complete
 - editorial archive theme tokens and shared UI primitives are established
-- `vendor/ArknightsData` and `public/generated/content/` are becoming the first real data contract
-- real Arknights data sync, parsing, summaries, and reader routes remain follow-up work
+- `vendor/ArknightsData` and `public/generated/content/` now power canonical locale reader routes
+- raw story text is normalized into bundled story detail JSON for first-pass body rendering
+- summary generation and character unlock extraction remain follow-up work

@@ -1,0 +1,569 @@
+{
+  "server": "jp",
+  "storyId": "main_0_level_main_00-01_end",
+  "groupId": "main_0",
+  "stageId": "main_00-01",
+  "title": "崩落",
+  "storyCode": "0-1",
+  "avgTag": "戦闘後",
+  "sourcePath": "vendor/ArknightsData/jp/gamedata/story/obt/main/level_main_00-01_end.txt",
+  "sourceHash": "ef6a56ea1a41e6484b916175b69af701e1c7c1707bd83a4830fc8d2c36249bd6",
+  "bodyAvailable": true,
+  "blocks": [
+    {
+      "type": "narration",
+      "text": "第一关（后）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "レユニオン構成員",
+      "text": "ぐ、はっ……",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "レユニオン構成員",
+      "text": "お前ら……よそ者、だろ……どう、して……",
+      "portraitKey": null
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "前衛オペレーター",
+      "text": "はぁ……な、なんとかなった……",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "text": "よし。どうやら、増援を呼ばれずに済んだようだな。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "text": "……よくやった、Dr.{@nickname}。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "text": "客観的に見ても、評価すべき結果だ。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "医療オペレーター",
+      "text": "あれ、ところでアーミヤさんは……？",
+      "portraitKey": null
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "text": "……そちらの方、大丈夫ですか？",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "女性",
+      "text": "え……ええ。ありがとう、ございます……",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "text": "いえ。これも私たちの使命ですから――",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "女性",
+      "text": "――ッ！　ま、待って。まさか……あなたも感染者なの！？",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "女性",
+      "text": "やめて、許して！　お願い……この子にだけは、手を出さないで……",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "text": "…………",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "text": "……どこか、安全な場所を見つけて……状況が落ち着くまで、隠れていてくださいね。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "女性",
+      "text": "……うぅ、助けて……どうか見逃してください……",
+      "portraitKey": null
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "医療オペレーター",
+      "text": "…………",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "text": "……みなさん、休息は取れましたか？",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "医療オペレーター",
+      "text": "あっ、はい……",
+      "portraitKey": null
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "彼女はなぜ、アーミヤを恐れていたんだ？",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "Dr.{@nickname}……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "前にも、同じ質問をされたことがありましたね。",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "......",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "……あの人が怯えていたのは、私の病気のせいなんです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "実は、この病気をわずらっているのは私だけではなくて……ドーベルマンさんもそうですし、ロドスのメンバーはほとんどが同じ病気を抱えています。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "それに、先ほど戦ったレユニオンの構成員たちも……ですね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "……私たちを蝕んでいるのは、重篤な症状を伴う、死に至る病。源石（オリジニウム）と呼ばれる危険な鉱物によって感染し、伝染性もあることから、多くの人に恐れられている――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "「鉱石病（オリパシー）」という病気です。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "……そして、病気と同じく、その患者たちも人々に恐れられているというわけだ。「感染者」と呼ばれて、な。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "ドーベルマンさん……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "……とはいえ、この国……ウルサスは、感染者に対して特に拒絶反応が強い地域と言えるだろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "ここに限らず、どの地域においても感染者への差別や偏見に満ちた態度は似たようなものだが……中でも、この地の姿勢は特別冷酷だと考えていい。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "というのは、ウルサス政府が意図的に、感染者への恐怖を煽る偏向報道を行っているからだ。その結果、市民たちは感染者の排除を当然のことと捉えていてな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "たとえ自らが鉱石病になり、迫害を受ける身となっても、その対応に拍手を送る者すらいるほどだ。……恐らくは、これこそレユニオンがウルサスを襲撃対象に選んだ理由だろうな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "はい。ですが……今回の行動は、最早単なるデモンストレーションの領域を超えていますね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "ああ。これほど大規模な暴動は初めてのことだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "こうなってしまうと……政府が事を収めた暁には、チェルノボーグにおける感染者の扱いはいっそう悪化することになるだろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "……だが、感染者たちの希望が潰えたわけではない。Dr.{@nickname}を奪還したことで、我々ロドスの状況は好転しつつあるのだからな。",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "……自覚がないんだが、その希望と何の関係が？",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "……",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "まさか、自分がそこまでの重要人物だったとは。",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "お前は、鉱石病研究において随一の神経学者だと聞いている。アーミヤからも、ケルシーからもな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "……と言っても、記憶喪失となった今では、思い出せるかもわからない過去の研究成果が、どれほど役に立つかは判然としないが。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "わわっ！　ドーベルマンさん、そんな言い方しなくても……！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "……確かに、先ほどの見事な指揮と同じように、勘を取り戻す機会さえ与えれば、鉱石病関係の理論を把握し直すのも、そう難しいことではないかもしれない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "しかし、今のところは研究者というより、指揮官として前線に立つ姿のほうが様になっているのは事実だろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "正直なところ、神経学者と戦術家、二つの才能を兼ね備えた人物の存在など、にわかには信じがたかったのだが……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "当人の指揮を目の当たりにして、納得した。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "考えてみれば、ロドスという組織の役割自体に、お前の専門分野と似通ったところがあるのだろうな。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "医療オペレーター",
+          "text": "さーて、そろそろ注射の時間ですよー……って、ちょっと、逃げないでください！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "前衛オペレーター",
+          "text": "い、いや、えーっと……ほら、俺こんなに元気だし？　注射してもらう必要とか、なさそうかな～って！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "医療オペレーター",
+          "text": "もう、そんなこと言って！　どんなに元気でも、これは打ってもらいますよ。症状緩和用の定期薬ですから！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "医療オペレーター",
+          "text": "っていうか……あなた、さっき頭がくらくらするとか言ってましたよね？　だったらなおさら必要じゃないですか！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "前衛オペレーター",
+          "text": "そ、それはただの疲れといいますか～……とにかく、病気の症状とは関係ないからさあ……！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "医療オペレーター",
+          "text": "……まったく……少しは考えてもみてください。もし体調が悪化したタイミングで戦うことになってしまったら、どうするつもりなんですか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "医療オペレーター",
+          "text": "全員の安全のためにも、自分の健康状態にはきちんと気を配ってもらわないと。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "前衛オペレーター",
+          "text": "……それは～……まあ、確かに……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "医療オペレーター",
+          "text": "――っと、スキあり！　ふふっ、捕まえました！　それじゃあ早速……チクっとしますよ！　じっとしててくださいね！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "前衛オペレーター",
+          "text": "あっ！？　えっ！？　う、うわーっ！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "――鉱石病の治療法を模索しながら、他方では、感染者が引き起こす問題を解決する……ロドスは、その両面に対応すべく存在する組織でな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "……つまりそれは、治療法の研究と紛争の解消、どちらの役割が欠けても不十分、ということでもあるんです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "――私たちは、感染者が生き抜くチャンスをつかみ取るために……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "感染者にかかわる、すべての問題に立ち向かわなければなりませんから。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "彼女の言う通り――我々は、感染者と非感染者の隔たりが生む争いを解決し、憎しみと疫病の連鎖を断ち切らねばならない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "無論その理由として、私たちも当事者である以上、一般の人々より感染者というものを……その事情や立場を、理解していることもあるがな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "ともあれ、Dr.{@nickname}。こうした責務はいずれ、お前自身の使命にもなりうることだろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "――いや。そうであってほしい、と私が勝手に願っているだけなのかもしれないが。",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "それは、どういう意味なんだ？",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "……",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "慎重に考えさせてくれ。",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "……考える時間は十分にある。ゆっくりと理解を深めてくれたらいいさ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "なんにせよ、我々が無事に撤退を終えてからの話になるがな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "さて……隊員整列！　出発するぞ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "合流地点まで、何が待ち受けているかは未知数だ！　決して警戒を怠るな！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "（小声）……アーミヤ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "（小声）今のチェルノボーグは、少々厄介な状況にある。今、隊員たちを無闇に動揺させるわけにはいかない。……だが――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "（小声）――残された時間は……あと、どのくらいですか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "（小声）……三時間だ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "（小声）それを過ぎたら、天災がこの都市を飲み込むだろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "（小声）その時までに、撤退を完了させなければ……我々は、終わりだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "？？？",
+          "text": "......",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "？？？",
+          "text": "あの集団……不確定要素になりうるな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "？？？",
+          "text": "よし、お前はほかの連中に知らせてこい。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "？？？",
+          "text": "残りのメンバーで、奴らを追跡するぞ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    }
+  ]
+}

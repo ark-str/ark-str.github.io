@@ -1,0 +1,788 @@
+{
+  "server": "cn",
+  "storyId": "main_15_level_main_15-05_end",
+  "groupId": "main_15",
+  "stageId": "main_15-05",
+  "title": "刻骨入髓",
+  "storyCode": "15-6",
+  "avgTag": "行动后",
+  "sourcePath": "vendor/ArknightsData/cn/gamedata/story/obt/main/level_main_15-05_end.txt",
+  "sourceHash": "9090194706751adaffc346e6523700bcd03e8de2fce49a455fa6b6aac86a941c",
+  "bodyAvailable": true,
+  "blocks": [
+    {
+      "type": "dialogue",
+      "speakerName": "阿米娅",
+      "text": "博士，Mantra女士她们也已经回到了本舰。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米娅",
+      "text": "你的猜测没错，的确有人在针对我们的任务。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米娅",
+      "text": "......这个仪器......就来自阿戈尔？",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "损坏的“小帮手”",
+      "text": "......",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米娅",
+      "text": "凯尔希医生，我们能从它剩下的部件里调查出什么吗？",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凯尔希",
+      "text": "不能。阿戈尔的技术院在这个精妙的仪器上倾注了大量的心血，高傲如他们绝不会容许小帮手有被其他研究者破解的可能。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凯尔希",
+      "text": "但小帮手的出现本身就足以说明很多问题了。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凯尔希",
+      "text": "博士，记得海陆联合防线吗？",
+      "portraitKey": null
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "当然。",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "你与阿戈尔执政官接触就是为了促成合作。",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "伊比利亚和雷姆必拓的官方都响应了我们的号召。但问题在于一旦合作达成，后续的事态发展极有可能超出我们的预期。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "近期以来，阿戈尔的舰队不仅在伊比利亚修建了港口，也在雷姆必拓以南方向的海岸线修建了登陆口岸。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "来自深海的阿戈尔人并没有急于登上陆地，而是以技术扶持的名义在短时间内开展了包括水文测绘在内的一系列动作。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "而且他们借助雇佣和官方合作迅速搭建了“陆巡队”，依靠身份更为中立的代理人来更方便地展开与陆地的合作。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "你的意思，袭击者是“陆巡队”。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "仅仅是推论和猜测。但依据目前的线索来看，唯有“陆巡队”符合这么多条件。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "阿米娅",
+          "text": "凯尔希医生，我清楚部分执政官并非完全认可克莱门莎的理念，但这能说明不同地区同时发生的意外都是阿戈尔所为吗？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "不，我更倾向于有人利用了阿戈尔内部的矛盾。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "靠近伊比利亚边境的“陆巡队”，雷姆必拓交接的开采舰，卡兹戴尔边境的佣兵......",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "对方的行动布置涉及范围之广，对罗德岛机密任务了解之深，都足以说明始作俑者绝非阿戈尔。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "阿米娅",
+          "text": "......但罗德岛内部不可能有人叛变。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "我也并不相信。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "博士，除我们之外，你认为罗德岛上还有其他人能做到这一点吗？",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "......",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "没有人。",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "是啊，没有人。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "阿米娅",
+          "text": "凯尔希医生，如今罗德岛面对的威胁极其不可预测。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "阿米娅",
+          "text": "华法琳医生也多次警告我们她照顾的那几位特殊病人的病情演变正在失控。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "阿米娅",
+          "text": "无论是出于救下我们的病人的目的，还是应对潜在的危机，我们都需要更激进的应对手段。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "阿米娅",
+          "text": "我查阅过特蕾西娅小姐留在黑王冠的资料，她也曾通过“文明的存续”取得了巨大的突破。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "阿米娅",
+          "text": "我可以访问“文明的存续”寻找潜在助力，就像特蕾西娅小姐当年一样。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "这其中的风险我们必须慎重评估，阿米娅。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "阿米娅，你是否有把握？",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "阿米娅",
+              "text": "博士，我没法给你肯定的答复。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "阿米娅",
+              "text": "但我不会放弃尝试的可能，我所能争取来的任何一丝优势都有可能协助罗德岛走得更远。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "阿米娅",
+              "text": "我想要试试。",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "凯尔希，目前还有其他更有效的手段吗？",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "凯尔希",
+              "text": "......在局势尚未明朗的当下，我也无法提出更加行之有效的手段。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "凯尔希",
+              "text": "但贸然深入“文明的存续”，结果并不一定完全如我们所愿，博士。",
+              "portraitKey": null
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "我可以陪着阿米娅一同进入。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "阿米娅",
+          "text": "——？！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "博士，我无法同意你如此冒险的举动。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "“文明的存续”能否连接我的思维？",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "阿米娅",
+          "text": "......博士，这太危险了，没人做过这种事！我同意凯尔希医生的意见，你不应冒险。",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "凯尔希想起了那位挚友曾经的经历，那是她并不愿意去回想的经历。"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "“文明的存续”可以做到。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "她做到过。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "阿米娅",
+          "text": "......？！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "......",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "特蕾西娅。",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "博士，你的思维极其复杂。这其中的风险不仅来自于你自身，阿米娅同样可能面对完全未知的冲击。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "我不会赞同这个荒唐的决定。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "阿米娅",
+          "text": "凯尔希医生......",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "阿米娅，这是我的意见。我无法干涉你和博士对于这件事的最终判断，但我希望你们理解我的态度。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "阿米娅，我可以完全向你敞开我的思维。",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "不必强求直接成功，我们可以多尝试几次。",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "阿米娅",
+          "text": "可凯尔希医生......",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "结束之后，我们一起去找她道歉。",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "她反对的并非这个计划本身。",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "阿米娅",
+          "text": "博士，我听你的。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "我将何时中止的判断完全交给你了。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "等我安排完防卫任务就开始吧。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "（低沉的吼叫）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "你在担心我？我并没有生气。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "只是我们终究还是来到了新的转折点。而上一次，巴别塔走向了我最不愿看到的结局。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "事实证明，我无法确保每件事都运行在其理想的轨迹上，Mon3tr。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "（抬起爪子）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "（温柔地蹭蹭）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "我们自身的局限已经开始影响我们在更重要之事上的用处。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "纵然我们能够见证星河蛮荒的演变，但在面临真正的危机时，我们与这片大地上的其他生灵也并无区别。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "（不满的低鸣）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "谢谢你的安慰，我能感知到你的心意。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "（焦躁的低吼）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "是的，想必阿米娅和博士已经开始准备深入“文明的存续”。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "我不会强制干涉阿米娅的决定，她已经足够成熟到作出最正确的判断。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "博士......博士也已经大不一样。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "也许是我的内心依旧保留了一丝侥幸。也许，这一次的结局真的会不一样。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "（低落地俯身）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "......的确，理智仍在不断警告我。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "借助“文明的存续”再次触碰博士的思维绝非稳妥的决定，但阿米娅是对的，留给我们选择的余地并不多。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "（激昂的嘶吼）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "我会保护博士和阿米娅，Mon3tr。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "Mon3tr能感知到凯尔希此时哪怕最细微的情绪。\n自凯尔希再度苏醒以来，Mon3tr便从未离开过她的身边。\nMon3tr是她的同行者，是她亲自引导的共生体......更是她自己。"
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "（亲近的低吟）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "你错了。我并不感到绝望，Mon3tr。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "我为先民推翻神民的统治而欣喜，也为路加萨尔古斯为新生文明定下时间的起点而振奋。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "我也曾因傲慢而犯下错误，也因相遇知己而重拾信心。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "或许你我的基础构造对这片大地而言终属异类，但这并不意味着我们终将踽踽独行。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "我找到了自己的归属，在罗德岛，在这片大地。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "我实现了那个人的期许，Mon3tr，我学会了爱，我找到了自己。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "（困惑地挪动）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "（尾巴缠上凯尔希）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "我需要保护阿米娅和博士。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "保护真正的变数......那是连我都无法完全看清的未来。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "我也曾与“文明的存续”有过沟通，但终究无法突破自我的限制。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "但阿米娅可以，我和特蕾西娅都很清楚。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "我确信她可以从那些庞杂的信息中找到关键点，有特蕾西娅的祝福......她可以做到。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "毕竟，她可是阿米娅。我亲眼看着成长起来的领袖。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "沿着我过去的足迹，她或许能找到那个人留下的只言片语。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "在源石尚未成形的过去，在那个天才们争相与整个时代雄辩的年代，那些以歌颂并拯救生命为起点的奇思妙想从未消失......",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "希望从未断绝，Mon3tr，泰拉依旧有机会延续那渺茫的可能性——",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "（激动的吼叫）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "我？不，Mon3tr，我更擅长记忆，记忆那些我亲眼见证过，但又被时间消磨的历史。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "我并不特殊。",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "凯尔希平静地将重要信息不断刻录进Mon3tr的脊髓之中。"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "如果我最不愿见到的情况真的发生，如果我最不愿见到的那个人重新站在我们面前——",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "保护博士，保护阿米娅。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "我只会将这条指令刻印进你的基本行为策略之中。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "（兴奋的嘶吼）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "来吧，Mon3tr，眼下我们的工作还有很多。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "若威胁真正降临，我得确保罗德岛成为泰拉对抗危机的最前哨。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "凯尔希",
+          "text": "......我会是你们最后的保险。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    }
+  ]
+}
