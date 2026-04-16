@@ -7,7 +7,7 @@ This application is intentionally local-first and low-trust:
 - bundled resources only
 - no remote APIs
 - no secret management in the browser
-- local persistence only for non-sensitive reader preferences and progress
+- local persistence only for non-sensitive reader preferences, progress, and observed operator aliases
 
 ## Rules
 

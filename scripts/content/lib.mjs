@@ -2,7 +2,7 @@ import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
-import { parseStoryText } from "./story-parser.mjs";
+import { collectObservedOperators, parseStoryText } from "./story-parser.mjs";
 
 export const ARKNIGHTS_DATA_SUBMODULE_PATH = "vendor/ArknightsData";
 export const ARKNIGHTS_DATA_REMOTE = "https://github.com/ArknightsAssets/ArknightsGamedata.git";
@@ -322,6 +322,7 @@ export function buildContentArtifacts(cwd = getRepoRoot()) {
 
           if (source.sourceExists) {
             const sourceFilePath = path.join(cwd, source.sourcePath);
+            const parsedBlocks = parseStoryText(fs.readFileSync(sourceFilePath, "utf8"));
             storyDetails.push({
               locale: server,
               storyId: story.storyId,
@@ -337,7 +338,8 @@ export function buildContentArtifacts(cwd = getRepoRoot()) {
                 sourcePath: story.sourcePath,
                 sourceHash: story.sourceHash,
                 bodyAvailable: true,
-                blocks: parseStoryText(fs.readFileSync(sourceFilePath, "utf8")),
+                blocks: parsedBlocks,
+                observedOperators: collectObservedOperators(parsedBlocks),
               },
             });
           }

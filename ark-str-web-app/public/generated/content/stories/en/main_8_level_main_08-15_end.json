@@ -13,20 +13,26 @@
     {
       "type": "dialogue",
       "speakerName": "Ursus Farmer",
-      "text": "...Aaaaaaaaghhh!!!",
-      "portraitKey": null
+      "speakerToken": null,
+      "operatorId": null,
+      "portraitKey": null,
+      "text": "...Aaaaaaaaghhh!!!"
     },
     {
       "type": "dialogue",
       "speakerName": "Ursus Farmer",
-      "text": "Fire! Fire! It burns!!!",
-      "portraitKey": null
+      "speakerToken": null,
+      "operatorId": null,
+      "portraitKey": null,
+      "text": "Fire! Fire! It burns!!!"
     },
     {
       "type": "dialogue",
       "speakerName": "Ursus Farmer",
-      "text": "Help!!!!!",
-      "portraitKey": null
+      "speakerToken": null,
+      "operatorId": null,
+      "portraitKey": null,
+      "text": "Help!!!!!"
     },
     {
       "type": "sceneBreak"
@@ -34,32 +40,42 @@
     {
       "type": "dialogue",
       "speakerName": "Child",
-      "text": "Dad!!",
-      "portraitKey": null
+      "speakerToken": null,
+      "operatorId": null,
+      "portraitKey": null,
+      "text": "Dad!!"
     },
     {
       "type": "dialogue",
       "speakerName": "Sentinel",
-      "text": "What's going on?! Quick! Get out of here!",
-      "portraitKey": null
+      "speakerToken": null,
+      "operatorId": null,
+      "portraitKey": null,
+      "text": "What's going on?! Quick! Get out of here!"
     },
     {
       "type": "dialogue",
       "speakerName": "Old Man",
-      "text": "My son! My son! You... Infected lowlife!!",
-      "portraitKey": null
+      "speakerToken": null,
+      "operatorId": null,
+      "portraitKey": null,
+      "text": "My son! My son! You... Infected lowlife!!"
     },
     {
       "type": "dialogue",
       "speakerName": "Old Man",
-      "text": "Ahhh!! The fire! It's too strong! *Cough* *cough*... *cough*...",
-      "portraitKey": null
+      "speakerToken": null,
+      "operatorId": null,
+      "portraitKey": null,
+      "text": "Ahhh!! The fire! It's too strong! *Cough* *cough*... *cough*..."
     },
     {
       "type": "dialogue",
       "speakerName": "Old Man",
-      "text": "You wretch!!! If I die here... Curse you!!! Curse you!!! My Emperor, I beseech you, lay down your divine punishment on these wretched Infected!!",
-      "portraitKey": null
+      "speakerToken": null,
+      "operatorId": null,
+      "portraitKey": null,
+      "text": "You wretch!!! If I die here... Curse you!!! Curse you!!! My Emperor, I beseech you, lay down your divine punishment on these wretched Infected!!"
     },
     {
       "type": "sceneBreak"
@@ -67,14 +83,18 @@
     {
       "type": "dialogue",
       "speakerName": "Talulah",
-      "text": "......",
-      "portraitKey": null
+      "speakerToken": null,
+      "operatorId": null,
+      "portraitKey": null,
+      "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Talulah",
-      "text": "Ah... ah...",
-      "portraitKey": null
+      "speakerToken": null,
+      "operatorId": null,
+      "portraitKey": null,
+      "text": "Ah... ah..."
     },
     {
       "type": "sceneBreak"
@@ -96,23 +116,49 @@
     {
       "type": "dialogue",
       "speakerName": "Talulah",
-      "text": "——",
-      "portraitKey": null
+      "speakerToken": "char_011_talula_1",
+      "operatorId": "char_011_talula",
+      "portraitKey": "char_011_talula",
+      "text": "——"
     },
     {
       "type": "dialogue",
       "speakerName": "Talulah",
-      "text": "What's a Cautus doing here?",
-      "portraitKey": null
+      "speakerToken": "char_011_talula_1",
+      "operatorId": "char_011_talula",
+      "portraitKey": "char_011_talula",
+      "text": "What's a Cautus doing here?"
     },
     {
       "type": "dialogue",
       "speakerName": "Ch'en",
-      "text": "Amiya!! Watch out!!",
-      "portraitKey": null
+      "speakerToken": "char_010_chen_1#2",
+      "operatorId": "char_010_chen",
+      "portraitKey": "char_010_chen",
+      "text": "Amiya!! Watch out!!"
     },
     {
       "type": "sceneBreak"
+    }
+  ],
+  "observedOperators": [
+    {
+      "operatorId": "char_010_chen",
+      "aliases": [
+        "Ch'en"
+      ],
+      "speakerTokens": [
+        "char_010_chen_1#2"
+      ]
+    },
+    {
+      "operatorId": "char_011_talula",
+      "aliases": [
+        "Talulah"
+      ],
+      "speakerTokens": [
+        "char_011_talula_1"
+      ]
     }
   ]
 }

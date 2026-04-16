@@ -4,6 +4,12 @@ function getAttributeValue(line, attribute) {
   return match ? match[1] : null;
 }
 
+function getLooseAttributeValue(line, attribute) {
+  const match = new RegExp(`${attribute}=(?:"([^"]*)"|([^,\\)]*))`, "i").exec(line);
+
+  return match ? (match[1] ?? match[2] ?? "").trim() : null;
+}
+
 function splitDelimitedList(value) {
   return (value ?? "")
     .split(";")
@@ -62,24 +68,134 @@ function parsePredicateLine(line) {
   };
 }
 
-function extractVisibleBlocks(line) {
+function parseCharacterSlots(rawAttributes) {
+  if (!rawAttributes) {
+    return [];
+  }
+
+  const slots = [];
+  const pattern = /name(\d*)="([^"]*)"/gi;
+  let match = pattern.exec(rawAttributes);
+
+  while (match) {
+    const slotIndex = match[1] ? Number.parseInt(match[1], 10) : 1;
+    if (Number.isFinite(slotIndex) && slotIndex > 0) {
+      slots.push({
+        slotIndex,
+        token: match[2].trim(),
+      });
+    }
+    match = pattern.exec(rawAttributes);
+  }
+
+  return slots
+    .filter((slot) => slot.token.length > 0)
+    .sort((left, right) => left.slotIndex - right.slotIndex);
+}
+
+function resolveFocusedSpeakerToken(rawAttributes) {
+  if (!rawAttributes) {
+    return null;
+  }
+
+  const slots = parseCharacterSlots(rawAttributes);
+  if (slots.length === 0) {
+    return null;
+  }
+
+  if (slots.length === 1) {
+    return slots[0].token;
+  }
+
+  const focusValue = Number.parseInt(getLooseAttributeValue(rawAttributes, "focus") ?? "1", 10);
+  const focusIndex = Number.isFinite(focusValue) && focusValue > 0 ? focusValue : 1;
+
+  return slots[focusIndex - 1]?.token ?? slots[0].token;
+}
+
+export function normalizeOperatorIdToken(rawToken) {
+  if (typeof rawToken !== "string" || !rawToken.startsWith("char_")) {
+    return null;
+  }
+
+  const strippedToken = rawToken.split(/[#$]/, 1)[0]?.trim();
+  if (!strippedToken) {
+    return null;
+  }
+
+  const segments = strippedToken.split("_").filter(Boolean);
+  if (segments[0] !== "char" || segments.length < 3) {
+    return null;
+  }
+
+  return segments.slice(0, Math.min(3, segments.length)).join("_");
+}
+
+function resolveDialogueSpeaker(line, parserState) {
+  const dialogueMatch = /^\[name="([^"]+)"\]\s*(.*)$/i.exec(line);
+  if (!dialogueMatch) {
+    return null;
+  }
+
+  const speakerName = dialogueMatch[1].trim();
+  const text = dialogueMatch[2]?.trim();
+  if (!text) {
+    return [];
+  }
+
+  const lastResolvedSpeaker =
+    parserState.lastDialogue && parserState.lastDialogue.speakerName === speakerName
+      ? parserState.lastDialogue
+      : null;
+
+  const speakerToken = parserState.activeSpeakerToken ?? lastResolvedSpeaker?.speakerToken ?? null;
+  const operatorId = speakerToken ? normalizeOperatorIdToken(speakerToken) : null;
+  const block = {
+    type: "dialogue",
+    speakerName,
+    speakerToken,
+    operatorId,
+    portraitKey: operatorId,
+    text,
+  };
+
+  parserState.lastDialogue = {
+    speakerName,
+    speakerToken,
+    operatorId,
+  };
+
+  return [block];
+}
+
+function consumeCharacterTag(remainder, parserState) {
+  const characterMatch = /^\[(?:Character|character)(?:\(([^\]]*)\))?\]\s*(.*)$/i.exec(remainder);
+  if (!characterMatch) {
+    return null;
+  }
+
+  parserState.activeSpeakerToken = resolveFocusedSpeakerToken(characterMatch[1] ?? null);
+  return characterMatch[2]?.trim() ?? "";
+}
+
+function extractVisibleBlocks(line, parserState) {
   let remainder = line.trim();
   const blocks = [];
 
   while (remainder.startsWith("[")) {
-    const dialogueMatch = /^\[name="([^"]+)"\]\s*(.*)$/i.exec(remainder);
-
-    if (dialogueMatch) {
-      const text = dialogueMatch[2]?.trim();
-      if (text) {
-        blocks.push({
-          type: "dialogue",
-          speakerName: dialogueMatch[1].trim(),
-          text,
-          portraitKey: null,
-        });
-      }
+    const dialogueBlocks = resolveDialogueSpeaker(remainder, parserState);
+    if (dialogueBlocks) {
+      blocks.push(...dialogueBlocks);
       return blocks;
+    }
+
+    const characterRemainder = consumeCharacterTag(remainder, parserState);
+    if (characterRemainder !== null) {
+      remainder = characterRemainder;
+      if (!remainder) {
+        return blocks;
+      }
+      continue;
     }
 
     const dialogBreakMatch = /^\[(?:Dialog|dialog)(?:\([^\]]*\))?\]\s*(.*)$/i.exec(remainder);
@@ -153,6 +269,10 @@ export function parseStoryText(rawText) {
   const blocks = [];
   let currentChoice = null;
   let currentPredicate = null;
+  const parserState = {
+    activeSpeakerToken: null,
+    lastDialogue: null,
+  };
 
   function flushChoice() {
     if (!currentChoice) {
@@ -194,7 +314,7 @@ export function parseStoryText(rawText) {
       continue;
     }
 
-    const visibleBlocks = extractVisibleBlocks(line);
+    const visibleBlocks = extractVisibleBlocks(line, parserState);
     if (visibleBlocks.length === 0) {
       continue;
     }
@@ -208,4 +328,52 @@ export function parseStoryText(rawText) {
   flushChoice();
 
   return blocks;
+}
+
+function collectObservedOperatorsFromBlocks(blocks, accumulator) {
+  for (const block of blocks) {
+    if (block.type === "dialogue") {
+      if (!block.operatorId) {
+        continue;
+      }
+
+      const current =
+        accumulator.get(block.operatorId) ??
+        {
+          aliases: new Set(),
+          speakerTokens: new Set(),
+        };
+
+      current.aliases.add(block.speakerName);
+      if (block.speakerToken) {
+        current.speakerTokens.add(block.speakerToken);
+      }
+
+      accumulator.set(block.operatorId, current);
+      continue;
+    }
+
+    if (block.type !== "choice") {
+      continue;
+    }
+
+    for (const option of block.options) {
+      collectObservedOperatorsFromBlocks(option.blocks, accumulator);
+    }
+
+    collectObservedOperatorsFromBlocks(block.sharedBlocks, accumulator);
+  }
+}
+
+export function collectObservedOperators(blocks) {
+  const accumulator = new Map();
+  collectObservedOperatorsFromBlocks(blocks, accumulator);
+
+  return [...accumulator.entries()]
+    .map(([operatorId, value]) => ({
+      operatorId,
+      aliases: [...value.aliases].sort((left, right) => left.localeCompare(right)),
+      speakerTokens: [...value.speakerTokens].sort((left, right) => left.localeCompare(right)),
+    }))
+    .sort((left, right) => left.operatorId.localeCompare(right.operatorId));
 }

@@ -20,26 +20,34 @@
     {
       "type": "dialogue",
       "speakerName": "錫蘭",
-      "text": "快！博士！我們往沙灘那邊走！",
-      "portraitKey": null
+      "speakerToken": "char_348_ceylon_4#7",
+      "operatorId": "char_348_ceylon",
+      "portraitKey": "char_348_ceylon",
+      "text": "快！博士！我們往沙灘那邊走！"
     },
     {
       "type": "dialogue",
       "speakerName": "錫蘭",
-      "text": "沙灘上有大量遊客聚集，混進人群裡面他們就追不上我們了！",
-      "portraitKey": null
+      "speakerToken": "char_348_ceylon_4#7",
+      "operatorId": "char_348_ceylon",
+      "portraitKey": "char_348_ceylon",
+      "text": "沙灘上有大量遊客聚集，混進人群裡面他們就追不上我們了！"
     },
     {
       "type": "dialogue",
       "speakerName": "保鏢",
-      "text": "站住！",
-      "portraitKey": null
+      "speakerToken": "avg_npc_020",
+      "operatorId": null,
+      "portraitKey": null,
+      "text": "站住！"
     },
     {
       "type": "dialogue",
       "speakerName": "錫蘭",
-      "text": "就憑你們！",
-      "portraitKey": null
+      "speakerToken": "char_348_ceylon_4#7",
+      "operatorId": "char_348_ceylon",
+      "portraitKey": "char_348_ceylon",
+      "text": "就憑你們！"
     },
     {
       "type": "sceneBreak"
@@ -47,8 +55,10 @@
     {
       "type": "dialogue",
       "speakerName": "黑",
-      "text": "......",
-      "portraitKey": null
+      "speakerToken": "char_340_shwaz_2#2",
+      "operatorId": "char_340_shwaz",
+      "portraitKey": "char_340_shwaz",
+      "text": "......"
     },
     {
       "type": "choice",
@@ -63,54 +73,92 @@
         {
           "type": "dialogue",
           "speakerName": "錫蘭",
-          "text": "黑！太好了你終於來了！",
-          "portraitKey": null
+          "speakerToken": "char_348_ceylon_4#4",
+          "operatorId": "char_348_ceylon",
+          "portraitKey": "char_348_ceylon",
+          "text": "黑！太好了你終於來了！"
         },
         {
           "type": "dialogue",
           "speakerName": "錫蘭",
-          "text": "還好有你在，克洛寧這是怎麼了！？",
-          "portraitKey": null
+          "speakerToken": "char_348_ceylon_4#4",
+          "operatorId": "char_348_ceylon",
+          "portraitKey": "char_348_ceylon",
+          "text": "還好有你在，克洛寧這是怎麼了！？"
         },
         {
           "type": "dialogue",
           "speakerName": "錫蘭",
-          "text": "博士，她就是我之前跟你說......",
-          "portraitKey": null
+          "speakerToken": "char_348_ceylon_4#4",
+          "operatorId": "char_348_ceylon",
+          "portraitKey": "char_348_ceylon",
+          "text": "博士，她就是我之前跟你說......"
         },
         {
           "type": "dialogue",
           "speakerName": "黑",
-          "text": "小姐，老爺不在城裡，你得聽克洛寧的。",
-          "portraitKey": null
+          "speakerToken": "char_340_shwaz_2#2",
+          "operatorId": "char_340_shwaz",
+          "portraitKey": "char_340_shwaz",
+          "text": "小姐，老爺不在城裡，你得聽克洛寧的。"
         },
         {
           "type": "dialogue",
           "speakerName": "錫蘭",
-          "text": "黑？你在說什麼？",
-          "portraitKey": null
+          "speakerToken": "char_348_ceylon_4#8",
+          "operatorId": "char_348_ceylon",
+          "portraitKey": "char_348_ceylon",
+          "text": "黑？你在說什麼？"
         },
         {
           "type": "dialogue",
           "speakerName": "黑",
-          "text": "快跟我回去找克洛寧，把這些人都交給他。",
-          "portraitKey": null
+          "speakerToken": "char_340_shwaz_2#2",
+          "operatorId": "char_340_shwaz",
+          "portraitKey": "char_340_shwaz",
+          "text": "快跟我回去找克洛寧，把這些人都交給他。"
         },
         {
           "type": "dialogue",
           "speakerName": "黑",
-          "text": "我不想對小姐動手。",
-          "portraitKey": null
+          "speakerToken": "char_340_shwaz_2#2",
+          "operatorId": "char_340_shwaz",
+          "portraitKey": "char_340_shwaz",
+          "text": "我不想對小姐動手。"
         },
         {
           "type": "dialogue",
           "speakerName": "錫蘭",
-          "text": "......黑？",
-          "portraitKey": null
+          "speakerToken": "char_348_ceylon_4#8",
+          "operatorId": "char_348_ceylon",
+          "portraitKey": "char_348_ceylon",
+          "text": "......黑？"
         },
         {
           "type": "sceneBreak"
         }
+      ]
+    }
+  ],
+  "observedOperators": [
+    {
+      "operatorId": "char_340_shwaz",
+      "aliases": [
+        "黑"
+      ],
+      "speakerTokens": [
+        "char_340_shwaz_2#2"
+      ]
+    },
+    {
+      "operatorId": "char_348_ceylon",
+      "aliases": [
+        "錫蘭"
+      ],
+      "speakerTokens": [
+        "char_348_ceylon_4#4",
+        "char_348_ceylon_4#7",
+        "char_348_ceylon_4#8"
       ]
     }
   ]

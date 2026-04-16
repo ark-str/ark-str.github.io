@@ -1,7 +1,7 @@
 # Arknights Story Reader
 
 Status: active
-Phase: manual Pages deployment enablement
+Phase: operator-aware story parsing and alias observation
 
 ## Product Goal
 
@@ -24,7 +24,7 @@ Build a web application that makes Arknights story content easier to read, summa
 
 - start empty for a new user
 - unlock facts progressively as the user reads stories
-- persist discovered facts and progress in `localStorage`
+- persist discovered facts, observed operator aliases, and progress in `localStorage`
 
 ## Data and Pipeline Expectations
 
@@ -43,13 +43,16 @@ Build a web application that makes Arknights story content easier to read, summa
 
 ## Current Phase
 
-This phase keeps the recovered reader shell stable while adding a repeatable manual GitHub Pages deployment path. It keeps:
+This phase keeps the recovered reader shell and Pages deployment path stable while making story detail data operator-aware. It keeps:
 
 - canonical locale URLs at `/reader/[locale]` and `/reader/[locale]/[groupId]/[storyId]`
 - generated story detail files under `public/generated/content/stories/`
 - metadata-only app-internal generated loaders under `src/generated/content/` for exact-path export-safe reads
 - first-pass body rendering for dialogue, narration, scene breaks, and Doctor choice branches
+- dialogue-level `speakerToken`, `operatorId`, and `portraitKey` derived from `Character(...)` tags
+- story-level `observedOperators` arrays embedded in generated story detail JSON
 - local storage reader-session restore for preferred locale and last visited story
+- locale-scoped character alias observation storage under `ark-str:character-observations:v1`
 - explicit empty summary state until the summary-generation issue lands
 - gh-pages-safe static export under the `/ark-str/` base path
 - isolated `.next-dev` and `.next-export` caches so `npm run verify` does not degrade the next `npm run dev` startup

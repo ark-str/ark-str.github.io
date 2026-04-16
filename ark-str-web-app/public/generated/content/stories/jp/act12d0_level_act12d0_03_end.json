@@ -13,74 +13,98 @@
     {
       "type": "dialogue",
       "speakerName": "アダクリス人A",
-      "text": "あの変なガキったらすげぇな！　もう何人も倒したぞ！",
-      "portraitKey": null
+      "speakerToken": null,
+      "operatorId": null,
+      "portraitKey": null,
+      "text": "あの変なガキったらすげぇな！　もう何人も倒したぞ！"
     },
     {
       "type": "dialogue",
       "speakerName": "アダクリス人B",
-      "text": "わけわかんねぇこと言ってるが、大したヤツだ！",
-      "portraitKey": null
+      "speakerToken": null,
+      "operatorId": null,
+      "portraitKey": null,
+      "text": "わけわかんねぇこと言ってるが、大したヤツだ！"
     },
     {
       "type": "dialogue",
       "speakerName": "アダクリス人C",
-      "text": "あいつが大族長になるのも悪くねぇな！",
-      "portraitKey": null
+      "speakerToken": null,
+      "operatorId": null,
+      "portraitKey": null,
+      "text": "あいつが大族長になるのも悪くねぇな！"
     },
     {
       "type": "dialogue",
       "speakerName": "トミミ",
-      "text": "……ガヴィルさんの仲間、ほんとに強いですね。",
-      "portraitKey": null
+      "speakerToken": "char_411_tomimi_1#2",
+      "operatorId": "char_411_tomimi",
+      "portraitKey": "char_411_tomimi",
+      "text": "……ガヴィルさんの仲間、ほんとに強いですね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ガヴィル",
-      "text": "ああ。戦闘では頼りになる。こういう時の悩みのタネでもあるんだけどな。",
-      "portraitKey": null
+      "speakerToken": "char_187_ccheal_1",
+      "operatorId": "char_187_ccheal",
+      "portraitKey": "char_187_ccheal",
+      "text": "ああ。戦闘では頼りになる。こういう時の悩みのタネでもあるんだけどな。"
     },
     {
       "type": "dialogue",
       "speakerName": "ガヴィル",
-      "text": "ようやく落ち着いてきたな、そろそろアタシがケーちゃんを黙らせるとしよう……",
-      "portraitKey": null
+      "speakerToken": "char_187_ccheal_1",
+      "operatorId": "char_187_ccheal",
+      "portraitKey": "char_187_ccheal",
+      "text": "ようやく落ち着いてきたな、そろそろアタシがケーちゃんを黙らせるとしよう……"
     },
     {
       "type": "dialogue",
       "speakerName": "ケオベ",
-      "text": "なんだ、レユニオンめ、また来たのか！",
-      "portraitKey": null
+      "speakerToken": "char_2013_cerber_1",
+      "operatorId": "char_2013_cerber",
+      "portraitKey": "char_2013_cerber",
+      "text": "なんだ、レユニオンめ、また来たのか！"
     },
     {
       "type": "dialogue",
       "speakerName": "ケオベ",
-      "text": "ドクターを攫ったのはお前たちだったんだな！",
-      "portraitKey": null
+      "speakerToken": "char_2013_cerber_1",
+      "operatorId": "char_2013_cerber",
+      "portraitKey": "char_2013_cerber",
+      "text": "ドクターを攫ったのはお前たちだったんだな！"
     },
     {
       "type": "dialogue",
       "speakerName": "ケオベ",
-      "text": "逃げるなー！",
-      "portraitKey": null
+      "speakerToken": "char_2013_cerber_1",
+      "operatorId": "char_2013_cerber",
+      "portraitKey": "char_2013_cerber",
+      "text": "逃げるなー！"
     },
     {
       "type": "dialogue",
       "speakerName": "ガヴィル",
-      "text": "おいちょっと待て！　どこ行くんだ！",
-      "portraitKey": null
+      "speakerToken": "char_187_ccheal_1#2",
+      "operatorId": "char_187_ccheal",
+      "portraitKey": "char_187_ccheal",
+      "text": "おいちょっと待て！　どこ行くんだ！"
     },
     {
       "type": "dialogue",
       "speakerName": "ガヴィル",
-      "text": "アタシが追う！　トミミ、お前はドクターと一緒に待っててくれ！",
-      "portraitKey": null
+      "speakerToken": "char_187_ccheal_1#2",
+      "operatorId": "char_187_ccheal",
+      "portraitKey": "char_187_ccheal",
+      "text": "アタシが追う！　トミミ、お前はドクターと一緒に待っててくれ！"
     },
     {
       "type": "dialogue",
       "speakerName": "トミミ",
-      "text": "あっ、はい！",
-      "portraitKey": null
+      "speakerToken": "char_411_tomimi_1#2",
+      "operatorId": "char_411_tomimi",
+      "portraitKey": "char_411_tomimi",
+      "text": "あっ、はい！"
     },
     {
       "type": "sceneBreak"
@@ -88,8 +112,10 @@
     {
       "type": "dialogue",
       "speakerName": "トミミ",
-      "text": "……",
-      "portraitKey": null
+      "speakerToken": "char_411_tomimi_1#5",
+      "operatorId": "char_411_tomimi",
+      "portraitKey": "char_411_tomimi",
+      "text": "……"
     },
     {
       "type": "choice",
@@ -104,14 +130,18 @@
         {
           "type": "dialogue",
           "speakerName": "トミミ",
-          "text": "あっ、また次の戦いが始まりましたね。",
-          "portraitKey": null
+          "speakerToken": "char_411_tomimi_1#5",
+          "operatorId": "char_411_tomimi",
+          "portraitKey": "char_411_tomimi",
+          "text": "あっ、また次の戦いが始まりましたね。"
         },
         {
           "type": "dialogue",
           "speakerName": "トミミ",
-          "text": "……ドクター、ガヴィルさんは外ではどんな感じなのか、教えていただけませんか？",
-          "portraitKey": null
+          "speakerToken": "char_411_tomimi_1#5",
+          "operatorId": "char_411_tomimi",
+          "portraitKey": "char_411_tomimi",
+          "text": "……ドクター、ガヴィルさんは外ではどんな感じなのか、教えていただけませんか？"
         }
       ]
     },
@@ -125,14 +155,18 @@
             {
               "type": "dialogue",
               "speakerName": "トミミ",
-              "text": "ガヴィルさん、外でも元気に過ごしているんですね。",
-              "portraitKey": null
+              "speakerToken": "char_411_tomimi_1#5",
+              "operatorId": "char_411_tomimi",
+              "portraitKey": "char_411_tomimi",
+              "text": "ガヴィルさん、外でも元気に過ごしているんですね。"
             },
             {
               "type": "dialogue",
               "speakerName": "トミミ",
-              "text": "……",
-              "portraitKey": null
+              "speakerToken": "char_411_tomimi_1#5",
+              "operatorId": "char_411_tomimi",
+              "portraitKey": "char_411_tomimi",
+              "text": "……"
             }
           ]
         },
@@ -143,20 +177,26 @@
             {
               "type": "dialogue",
               "speakerName": "トミミ",
-              "text": "もしかしてドクターは、ガヴィルさんとはそんなに親しくないんですか？",
-              "portraitKey": null
+              "speakerToken": "char_411_tomimi_1#5",
+              "operatorId": "char_411_tomimi",
+              "portraitKey": "char_411_tomimi",
+              "text": "もしかしてドクターは、ガヴィルさんとはそんなに親しくないんですか？"
             },
             {
               "type": "dialogue",
               "speakerName": "トミミ",
-              "text": "よかったー！　あっ、いえ、すみません。ドクターはガヴィルさんと一緒に来ましたし、ガヴィルさんもドクターのことを気に入ってるようだったので、てっきり仲良しかと……",
-              "portraitKey": null
+              "speakerToken": "char_411_tomimi_1#5",
+              "operatorId": "char_411_tomimi",
+              "portraitKey": "char_411_tomimi",
+              "text": "よかったー！　あっ、いえ、すみません。ドクターはガヴィルさんと一緒に来ましたし、ガヴィルさんもドクターのことを気に入ってるようだったので、てっきり仲良しかと……"
             },
             {
               "type": "dialogue",
               "speakerName": "トミミ",
-              "text": "でも大丈夫です。ガヴィルさんは優しい人ですから、きっとすぐに仲良くなれますよ！",
-              "portraitKey": null
+              "speakerToken": "char_411_tomimi_1#5",
+              "operatorId": "char_411_tomimi",
+              "portraitKey": "char_411_tomimi",
+              "text": "でも大丈夫です。ガヴィルさんは優しい人ですから、きっとすぐに仲良くなれますよ！"
             }
           ]
         },
@@ -167,14 +207,18 @@
             {
               "type": "dialogue",
               "speakerName": "トミミ",
-              "text": "よかった、お医者さんになっても、やっぱりガヴィルさんはガヴィルさんなんですね！",
-              "portraitKey": null
+              "speakerToken": "char_411_tomimi_1#3",
+              "operatorId": "char_411_tomimi",
+              "portraitKey": "char_411_tomimi",
+              "text": "よかった、お医者さんになっても、やっぱりガヴィルさんはガヴィルさんなんですね！"
             },
             {
               "type": "dialogue",
               "speakerName": "トミミ",
-              "text": "昔と全然変わってなくて……なんだか嬉しいな……",
-              "portraitKey": null
+              "speakerToken": "char_411_tomimi_1#3",
+              "operatorId": "char_411_tomimi",
+              "portraitKey": "char_411_tomimi",
+              "text": "昔と全然変わってなくて……なんだか嬉しいな……"
             }
           ]
         }
@@ -183,8 +227,10 @@
         {
           "type": "dialogue",
           "speakerName": "トミミ",
-          "text": "あの、変なことを聞くんですが、もしガヴィルさんがドクターの下から離れると言いだしたら、どう思いますか？",
-          "portraitKey": null
+          "speakerToken": "char_411_tomimi_1",
+          "operatorId": "char_411_tomimi",
+          "portraitKey": "char_411_tomimi",
+          "text": "あの、変なことを聞くんですが、もしガヴィルさんがドクターの下から離れると言いだしたら、どう思いますか？"
         }
       ]
     },
@@ -198,8 +244,10 @@
             {
               "type": "dialogue",
               "speakerName": "トミミ",
-              "text": "やっぱりそうですよね。私もあのときはいっぱい泣きました……",
-              "portraitKey": null
+              "speakerToken": "char_411_tomimi_1",
+              "operatorId": "char_411_tomimi",
+              "portraitKey": "char_411_tomimi",
+              "text": "やっぱりそうですよね。私もあのときはいっぱい泣きました……"
             }
           ]
         },
@@ -210,8 +258,10 @@
             {
               "type": "dialogue",
               "speakerName": "トミミ",
-              "text": "ど、どうして黙るんですか！　ガヴィルさんみたいな素晴らしい方がいなくなる事を想像して、なんで落ち着いていられるんですか！",
-              "portraitKey": null
+              "speakerToken": "char_411_tomimi_1#2",
+              "operatorId": "char_411_tomimi",
+              "portraitKey": "char_411_tomimi",
+              "text": "ど、どうして黙るんですか！　ガヴィルさんみたいな素晴らしい方がいなくなる事を想像して、なんで落ち着いていられるんですか！"
             }
           ]
         },
@@ -222,14 +272,18 @@
             {
               "type": "dialogue",
               "speakerName": "トミミ",
-              "text": "ドクターはすごいですね……私にはできません。",
-              "portraitKey": null
+              "speakerToken": "char_411_tomimi_1#2",
+              "operatorId": "char_411_tomimi",
+              "portraitKey": "char_411_tomimi",
+              "text": "ドクターはすごいですね……私にはできません。"
             },
             {
               "type": "dialogue",
               "speakerName": "トミミ",
-              "text": "私は……ガヴィルさんに帰ってきてほしいって、ずっと願っているんです。",
-              "portraitKey": null
+              "speakerToken": "char_411_tomimi_1#2",
+              "operatorId": "char_411_tomimi",
+              "portraitKey": "char_411_tomimi",
+              "text": "私は……ガヴィルさんに帰ってきてほしいって、ずっと願っているんです。"
             }
           ]
         }
@@ -238,8 +292,10 @@
         {
           "type": "dialogue",
           "speakerName": "トミミ",
-          "text": "ドクター、その、ガヴィルさんに関しては、わ、私、絶対に負けませんから！",
-          "portraitKey": null
+          "speakerToken": "char_411_tomimi_1#2",
+          "operatorId": "char_411_tomimi",
+          "portraitKey": "char_411_tomimi",
+          "text": "ドクター、その、ガヴィルさんに関しては、わ、私、絶対に負けませんから！"
         }
       ]
     },
@@ -277,8 +333,10 @@
         {
           "type": "dialogue",
           "speakerName": "トミミ",
-          "text": "あのときは……",
-          "portraitKey": null
+          "speakerToken": "char_411_tomimi_1",
+          "operatorId": "char_411_tomimi",
+          "portraitKey": "char_411_tomimi",
+          "text": "あのときは……"
         },
         {
           "type": "sceneBreak"
@@ -286,32 +344,42 @@
         {
           "type": "dialogue",
           "speakerName": "ガヴィル",
-          "text": "なんだ、大人も案外大したことないんだな。",
-          "portraitKey": null
+          "speakerToken": "char_187_ccheal_1#3",
+          "operatorId": "char_187_ccheal",
+          "portraitKey": "char_187_ccheal",
+          "text": "なんだ、大人も案外大したことないんだな。"
         },
         {
           "type": "dialogue",
           "speakerName": "ガヴィル",
-          "text": "まだアタシに挑戦したいヤツはいるか！？",
-          "portraitKey": null
+          "speakerToken": "char_187_ccheal_1#3",
+          "operatorId": "char_187_ccheal",
+          "portraitKey": "char_187_ccheal",
+          "text": "まだアタシに挑戦したいヤツはいるか！？"
         },
         {
           "type": "dialogue",
           "speakerName": "アダクリス人A",
-          "text": "大人をこんなにあっさり倒すとは……",
-          "portraitKey": null
+          "speakerToken": null,
+          "operatorId": null,
+          "portraitKey": null,
+          "text": "大人をこんなにあっさり倒すとは……"
         },
         {
           "type": "dialogue",
           "speakerName": "アダクリス人B",
-          "text": "大したもんだな、ガヴィルは！",
-          "portraitKey": null
+          "speakerToken": null,
+          "operatorId": null,
+          "portraitKey": null,
+          "text": "大したもんだな、ガヴィルは！"
         },
         {
           "type": "dialogue",
           "speakerName": "アダクリス人C",
-          "text": "もしかしたら本当に大族長になっちまうんじゃねぇか？",
-          "portraitKey": null
+          "speakerToken": null,
+          "operatorId": null,
+          "portraitKey": null,
+          "text": "もしかしたら本当に大族長になっちまうんじゃねぇか？"
         },
         {
           "type": "sceneBreak"
@@ -319,56 +387,74 @@
         {
           "type": "dialogue",
           "speakerName": "？？？",
-          "text": "私がやる！",
-          "portraitKey": null
+          "speakerToken": "char_416_zumama_1",
+          "operatorId": "char_416_zumama",
+          "portraitKey": "char_416_zumama",
+          "text": "私がやる！"
         },
         {
           "type": "dialogue",
           "speakerName": "ガヴィル",
-          "text": "なんだ、お前かよ、ズゥママ。",
-          "portraitKey": null
+          "speakerToken": "char_187_ccheal_1#3",
+          "operatorId": "char_187_ccheal",
+          "portraitKey": "char_187_ccheal",
+          "text": "なんだ、お前かよ、ズゥママ。"
         },
         {
           "type": "dialogue",
           "speakerName": "ガヴィル",
-          "text": "大好きな機械いじりはもういいのか？　ったく、アタシが訪ねてもいつも無視するくせによ。",
-          "portraitKey": null
+          "speakerToken": "char_187_ccheal_1#3",
+          "operatorId": "char_187_ccheal",
+          "portraitKey": "char_187_ccheal",
+          "text": "大好きな機械いじりはもういいのか？　ったく、アタシが訪ねてもいつも無視するくせによ。"
         },
         {
           "type": "dialogue",
           "speakerName": "ズゥママ",
-          "text": "……最後に、試したくなったんだ。",
-          "portraitKey": null
+          "speakerToken": "char_416_zumama_1",
+          "operatorId": "char_416_zumama",
+          "portraitKey": "char_416_zumama",
+          "text": "……最後に、試したくなったんだ。"
         },
         {
           "type": "dialogue",
           "speakerName": "ガヴィル",
-          "text": "試すってなにを？",
-          "portraitKey": null
+          "speakerToken": "char_187_ccheal_1",
+          "operatorId": "char_187_ccheal",
+          "portraitKey": "char_187_ccheal",
+          "text": "試すってなにを？"
         },
         {
           "type": "dialogue",
           "speakerName": "ズゥママ",
-          "text": "私の拳で、お前を倒せるかどうかを。",
-          "portraitKey": null
+          "speakerToken": "char_416_zumama_1#2",
+          "operatorId": "char_416_zumama",
+          "portraitKey": "char_416_zumama",
+          "text": "私の拳で、お前を倒せるかどうかを。"
         },
         {
           "type": "dialogue",
           "speakerName": "ガヴィル",
-          "text": "なに遺言みたいなこと言ってんだよ。",
-          "portraitKey": null
+          "speakerToken": "char_187_ccheal_1",
+          "operatorId": "char_187_ccheal",
+          "portraitKey": "char_187_ccheal",
+          "text": "なに遺言みたいなこと言ってんだよ。"
         },
         {
           "type": "dialogue",
           "speakerName": "ズゥママ",
-          "text": "黙れ。今日は絶対負けないぞ、ガヴィル。",
-          "portraitKey": null
+          "speakerToken": "char_416_zumama_1#2",
+          "operatorId": "char_416_zumama",
+          "portraitKey": "char_416_zumama",
+          "text": "黙れ。今日は絶対負けないぞ、ガヴィル。"
         },
         {
           "type": "dialogue",
           "speakerName": "ガヴィル",
-          "text": "へっ、やってみりゃいいさ！",
-          "portraitKey": null
+          "speakerToken": "char_187_ccheal_1#3",
+          "operatorId": "char_187_ccheal",
+          "portraitKey": "char_187_ccheal",
+          "text": "へっ、やってみりゃいいさ！"
         },
         {
           "type": "sceneBreak"
@@ -376,20 +462,26 @@
         {
           "type": "dialogue",
           "speakerName": "トミミ",
-          "text": "結局、昼から夜まで戦っても、勝負はつきませんでした。",
-          "portraitKey": null
+          "speakerToken": "char_411_tomimi_1",
+          "operatorId": "char_411_tomimi",
+          "portraitKey": "char_411_tomimi",
+          "text": "結局、昼から夜まで戦っても、勝負はつきませんでした。"
         },
         {
           "type": "dialogue",
           "speakerName": "トミミ",
-          "text": "最後には二人ともそのまま力尽きてしまって、他の人たちに祭典の舞台から放り出されました。",
-          "portraitKey": null
+          "speakerToken": "char_411_tomimi_1",
+          "operatorId": "char_411_tomimi",
+          "portraitKey": "char_411_tomimi",
+          "text": "最後には二人ともそのまま力尽きてしまって、他の人たちに祭典の舞台から放り出されました。"
         },
         {
           "type": "dialogue",
           "speakerName": "トミミ",
-          "text": "これがガヴィルさんが初めて参加した祭典での出来事です。",
-          "portraitKey": null
+          "speakerToken": "char_411_tomimi_1",
+          "operatorId": "char_411_tomimi",
+          "portraitKey": "char_411_tomimi",
+          "text": "これがガヴィルさんが初めて参加した祭典での出来事です。"
         }
       ]
     },
@@ -406,38 +498,50 @@
         {
           "type": "dialogue",
           "speakerName": "トミミ",
-          "text": "ズゥママは、当時は近くに縄張りを持っていた部族の人です。",
-          "portraitKey": null
+          "speakerToken": "char_411_tomimi_1",
+          "operatorId": "char_411_tomimi",
+          "portraitKey": "char_411_tomimi",
+          "text": "ズゥママは、当時は近くに縄張りを持っていた部族の人です。"
         },
         {
           "type": "dialogue",
           "speakerName": "トミミ",
-          "text": "小さい頃、ズゥママは毎日のようにガヴィルさんと喧嘩をしていました。もちろんガヴィルさんのほうが強かったんですが、ズゥママも殴られっぱなしだったわけではありません。",
-          "portraitKey": null
+          "speakerToken": "char_411_tomimi_1",
+          "operatorId": "char_411_tomimi",
+          "portraitKey": "char_411_tomimi",
+          "text": "小さい頃、ズゥママは毎日のようにガヴィルさんと喧嘩をしていました。もちろんガヴィルさんのほうが強かったんですが、ズゥママも殴られっぱなしだったわけではありません。"
         },
         {
           "type": "dialogue",
           "speakerName": "トミミ",
-          "text": "しかしある日を境に、彼女は喧嘩をきっぱりやめて、機械弄りに没頭し始めたそうです。ガヴィルさんがそう言ってました。",
-          "portraitKey": null
+          "speakerToken": "char_411_tomimi_1",
+          "operatorId": "char_411_tomimi",
+          "portraitKey": "char_411_tomimi",
+          "text": "しかしある日を境に、彼女は喧嘩をきっぱりやめて、機械弄りに没頭し始めたそうです。ガヴィルさんがそう言ってました。"
         },
         {
           "type": "dialogue",
           "speakerName": "トミミ",
-          "text": "そして祭典のあの日が、ガヴィルさんとズゥママの最後の喧嘩になりました。",
-          "portraitKey": null
+          "speakerToken": "char_411_tomimi_1",
+          "operatorId": "char_411_tomimi",
+          "portraitKey": "char_411_tomimi",
+          "text": "そして祭典のあの日が、ガヴィルさんとズゥママの最後の喧嘩になりました。"
         },
         {
           "type": "dialogue",
           "speakerName": "トミミ",
-          "text": "その後ズゥママは、みんなに顔を見せることすら稀になりました。それから彼女の部族は引っ越してしまって、以来、私は彼女を見ていません。",
-          "portraitKey": null
+          "speakerToken": "char_411_tomimi_1",
+          "operatorId": "char_411_tomimi",
+          "portraitKey": "char_411_tomimi",
+          "text": "その後ズゥママは、みんなに顔を見せることすら稀になりました。それから彼女の部族は引っ越してしまって、以来、私は彼女を見ていません。"
         },
         {
           "type": "dialogue",
           "speakerName": "トミミ",
-          "text": "ガヴィルさんが出て行く前に乱入した祭典にも、ズゥママはやって来ませんでした。",
-          "portraitKey": null
+          "speakerToken": "char_411_tomimi_1",
+          "operatorId": "char_411_tomimi",
+          "portraitKey": "char_411_tomimi",
+          "text": "ガヴィルさんが出て行く前に乱入した祭典にも、ズゥママはやって来ませんでした。"
         }
       ]
     },
@@ -454,54 +558,115 @@
         {
           "type": "dialogue",
           "speakerName": "ガヴィル",
-          "text": "ただいま。",
-          "portraitKey": null
+          "speakerToken": "char_187_ccheal_1#2",
+          "operatorId": "char_187_ccheal",
+          "portraitKey": "char_187_ccheal",
+          "text": "ただいま。"
         },
         {
           "type": "dialogue",
           "speakerName": "トミミ",
-          "text": "ガヴィルさん！　おかえりなさい。大丈夫でしたか？",
-          "portraitKey": null
+          "speakerToken": "char_411_tomimi_1#2",
+          "operatorId": "char_411_tomimi",
+          "portraitKey": "char_411_tomimi",
+          "text": "ガヴィルさん！　おかえりなさい。大丈夫でしたか？"
         },
         {
           "type": "dialogue",
           "speakerName": "ガヴィル",
-          "text": "ああ。しかし足が速いなぁケーちゃんは。一瞬で消えちまった。",
-          "portraitKey": null
+          "speakerToken": "char_187_ccheal_1#3",
+          "operatorId": "char_187_ccheal",
+          "portraitKey": "char_187_ccheal",
+          "text": "ああ。しかし足が速いなぁケーちゃんは。一瞬で消えちまった。"
         },
         {
           "type": "dialogue",
           "speakerName": "ガヴィル",
-          "text": "でもあれだけ強けりゃ、心配する必要もないだろ。トミミ、ズゥママは来たか？",
-          "portraitKey": null
+          "speakerToken": "char_187_ccheal_1#3",
+          "operatorId": "char_187_ccheal",
+          "portraitKey": "char_187_ccheal",
+          "text": "でもあれだけ強けりゃ、心配する必要もないだろ。トミミ、ズゥママは来たか？"
         },
         {
           "type": "dialogue",
           "speakerName": "トミミ",
-          "text": "まだです。",
-          "portraitKey": null
+          "speakerToken": "char_411_tomimi_1#2",
+          "operatorId": "char_411_tomimi",
+          "portraitKey": "char_411_tomimi",
+          "text": "まだです。"
         },
         {
           "type": "dialogue",
           "speakerName": "アダクリス人",
-          "text": "他に挑戦者はいるか！",
-          "portraitKey": null
+          "speakerToken": "avg_npc_070",
+          "operatorId": null,
+          "portraitKey": null,
+          "text": "他に挑戦者はいるか！"
         },
         {
           "type": "dialogue",
           "speakerName": "？？？",
-          "text": "私が出よう。",
-          "portraitKey": null
+          "speakerToken": null,
+          "operatorId": null,
+          "portraitKey": null,
+          "text": "私が出よう。"
         },
         {
           "type": "dialogue",
           "speakerName": "ガヴィル",
-          "text": "おっ？　ちょうどいいとこに戻ってきたみたいだな。",
-          "portraitKey": null
+          "speakerToken": "char_187_ccheal_1#3",
+          "operatorId": "char_187_ccheal",
+          "portraitKey": "char_187_ccheal",
+          "text": "おっ？　ちょうどいいとこに戻ってきたみたいだな。"
         },
         {
           "type": "sceneBreak"
         }
+      ]
+    }
+  ],
+  "observedOperators": [
+    {
+      "operatorId": "char_187_ccheal",
+      "aliases": [
+        "ガヴィル"
+      ],
+      "speakerTokens": [
+        "char_187_ccheal_1",
+        "char_187_ccheal_1#2",
+        "char_187_ccheal_1#3"
+      ]
+    },
+    {
+      "operatorId": "char_2013_cerber",
+      "aliases": [
+        "ケオベ"
+      ],
+      "speakerTokens": [
+        "char_2013_cerber_1"
+      ]
+    },
+    {
+      "operatorId": "char_411_tomimi",
+      "aliases": [
+        "トミミ"
+      ],
+      "speakerTokens": [
+        "char_411_tomimi_1",
+        "char_411_tomimi_1#2",
+        "char_411_tomimi_1#3",
+        "char_411_tomimi_1#5"
+      ]
+    },
+    {
+      "operatorId": "char_416_zumama",
+      "aliases": [
+        "？？？",
+        "ズゥママ"
+      ],
+      "speakerTokens": [
+        "char_416_zumama_1",
+        "char_416_zumama_1#2"
       ]
     }
   ]
