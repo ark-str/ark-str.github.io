@@ -1,11 +1,11 @@
 # Operator Parser And Alias Ledger
 
-Status: active
+Status: completed
 Owner: Codex
 Started: 2026-04-16
 Parent issue: `#25`
 Active child issue: `#26`
-Draft PR: pending
+Draft PR: `#27`
 
 ## Objective
 
@@ -31,7 +31,7 @@ Upgrade story parsing so dialogue blocks resolve operator IDs from `Character(..
 
 - `#26 operator-story-parser-and-alias-ledger`
   - depends on: none
-  - PR: create from `codex-operator-parser-issue-26`
+  - PR: `#27`
 
 ## Commit Policy
 
@@ -49,12 +49,12 @@ Commit format:
 
 ## Tasks
 
-- [ ] add an active execution plan for issue `#26`
-- [ ] teach the story parser to resolve active speaker tokens from `Character(...)` lines
-- [ ] normalize dialogue operator IDs and emit `observedOperators`
-- [ ] add a locale-scoped character observation store in the app
-- [ ] persist observed aliases when a story is opened
-- [ ] update tests and docs for the new story contract
+- [x] add an active execution plan for issue `#26`
+- [x] teach the story parser to resolve active speaker tokens from `Character(...)` lines
+- [x] normalize dialogue operator IDs and emit `observedOperators`
+- [x] add a locale-scoped character observation store in the app
+- [x] persist observed aliases when a story is opened
+- [x] update tests and docs for the new story contract
 
 ## Verification
 
@@ -68,3 +68,5 @@ Commit format:
 
 - 2026-04-16: Canonical operator IDs will be string-derived rather than table-looked-up: strip `#/$` suffixes, split on `_`, and keep the first three segments.
 - 2026-04-16: Alias observations are locale-scoped and stored separately from reader session state.
+- 2026-04-16: Dialogue speaker reuse falls back to the last resolved speaker only when the visible speaker name stays the same after the active `Character(...)` context is cleared.
+- 2026-04-16: Root verification passed after regenerating story detail files with `observedOperators` and checking browser-side alias persistence in exported smoke tests.

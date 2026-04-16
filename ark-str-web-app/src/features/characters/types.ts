@@ -1,4 +1,4 @@
-import type { ReaderLocale } from "@/features/content/types";
+export type CharacterObservationLocale = "cn" | "en" | "jp" | "kr" | "tw";
 
 export type CharacterObservationRecord = {
   aliases: string[];
@@ -7,5 +7,5 @@ export type CharacterObservationRecord = {
 export type CharacterObservationLocaleMap = Record<string, CharacterObservationRecord>;
 
 export type CharacterObservationsState = {
-  locales: Partial<Record<ReaderLocale, CharacterObservationLocaleMap>>;
+  locales: Partial<Record<CharacterObservationLocale, CharacterObservationLocaleMap>>;
 };
