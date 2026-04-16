@@ -79,6 +79,7 @@ The repository is in the manual Pages deployment enablement phase after the firs
 - editorial archive theme tokens and shared UI primitives are established
 - `vendor/ArknightsGamedata`, the tool-managed `vendor/ArknightsResource` portrait cache, and `public/generated/` power canonical locale reader routes and bundled reader portraits
 - app-internal generated metadata under `ark-str-web-app/src/generated/content/` keep the reader export-safe without mirroring full story payloads into app source
+- bundled reader portraits now come from a blobless local cache of `ArknightsResource/avgs/npcs/`, use the first basename-sorted matching file per `speakerId`, and render as top-aligned full-body crops while only referenced files are materialized and copied into the app bundle
 - `npm run dev` uses an isolated `.next-dev` cache and export verification uses `.next-export`, so verify no longer poisons the next local dev startup
 - `npm run verify` now validates the exported site with Playwright against the `/ark-str/` subpath
 - a manual `Deploy GitHub Pages` workflow can publish the exported artifact through GitHub Actions

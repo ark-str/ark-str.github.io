@@ -12,11 +12,15 @@ export function persistCharacterObservations(
   locale: ReaderLocale,
   observedOperators: ObservedOperator[],
 ) {
-  if (observedOperators.length === 0) {
+  const operatorObservations = observedOperators.filter((observedOperator) =>
+    observedOperator.speakerId.startsWith("char_"),
+  );
+
+  if (operatorObservations.length === 0) {
     return;
   }
 
   const currentState = normalizeCharacterObservationsState(readPersistedCharacterObservationsState());
-  const nextState = mergeObservedOperators(currentState, locale, observedOperators);
+  const nextState = mergeObservedOperators(currentState, locale, operatorObservations);
   writePersistedCharacterObservationsState(nextState);
 }

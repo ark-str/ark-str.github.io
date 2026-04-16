@@ -114,7 +114,7 @@ function resolveFocusedSpeakerToken(rawAttributes) {
 }
 
 export function normalizeSpeakerIdToken(rawToken) {
-  if (typeof rawToken !== "string" || !rawToken.startsWith("char_")) {
+  if (typeof rawToken !== "string") {
     return null;
   }
 
@@ -123,12 +123,16 @@ export function normalizeSpeakerIdToken(rawToken) {
     return null;
   }
 
-  const segments = strippedToken.split("_").filter(Boolean);
-  if (segments[0] !== "char" || segments.length < 3) {
-    return null;
+  if (strippedToken.startsWith("char_")) {
+    const segments = strippedToken.split("_").filter(Boolean);
+    if (segments[0] !== "char" || segments.length < 3) {
+      return null;
+    }
+
+    return segments.slice(0, Math.min(3, segments.length)).join("_");
   }
 
-  return segments.slice(0, Math.min(3, segments.length)).join("_");
+  return strippedToken;
 }
 
 function resolveDialogueSpeaker(line, parserState) {
@@ -172,7 +176,7 @@ function resolveDialogueSpeaker(line, parserState) {
 }
 
 function consumeCharacterTag(remainder, parserState) {
-  const characterMatch = /^\[(?:Character|character)(?:\(([^\]]*)\))?\]\s*(.*)$/i.exec(remainder);
+  const characterMatch = /^\[(?:Character|character|charslot)(?:\(([^\]]*)\))?\]\s*(.*)$/i.exec(remainder);
   if (!characterMatch) {
     return null;
   }
@@ -336,7 +340,7 @@ export function parseStoryText(rawText) {
 function collectObservedOperatorsFromBlocks(blocks, accumulator) {
   for (const block of blocks) {
     if (block.type === "dialogue") {
-      if (!block.speakerId) {
+      if (!block.speakerId || !block.speakerId.startsWith("char_")) {
         continue;
       }
 
