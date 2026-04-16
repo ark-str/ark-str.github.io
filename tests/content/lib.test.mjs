@@ -137,16 +137,25 @@ test("writeGeneratedArtifacts keeps story payloads out of app-internal generated
       },
     ],
     portraitPaths: {
-      char_002_amiya: "/generated/portraits/assistant/char_002_amiya.png",
+      char_002_amiya: "/generated/portraits/speakers/char_002_amiya.png",
+      avg_npc_175: "/generated/portraits/speakers/avg_npc_175.png",
     },
   };
 
-  fs.mkdirSync(path.join(root, "vendor", "ArknightsResource", "avatar", "ASSISTANT"), {
+  fs.mkdirSync(path.join(root, "vendor", "ArknightsResource", "avgs", "npcs"), {
     recursive: true,
   });
   fs.writeFileSync(
-    path.join(root, "vendor", "ArknightsResource", "avatar", "ASSISTANT", "char_002_amiya.png"),
-    "png-fixture",
+    path.join(root, "vendor", "ArknightsResource", "avgs", "npcs", "char_002_amiya_1_2.png"),
+    "char-second",
+  );
+  fs.writeFileSync(
+    path.join(root, "vendor", "ArknightsResource", "avgs", "npcs", "char_002_amiya_1_1.png"),
+    "char-first",
+  );
+  fs.writeFileSync(
+    path.join(root, "vendor", "ArknightsResource", "avgs", "npcs", "avg_npc_175_175.png"),
+    "npc-first",
   );
 
   writeGeneratedArtifacts(artifacts, root);
@@ -160,10 +169,26 @@ test("writeGeneratedArtifacts keeps story payloads out of app-internal generated
     fs.existsSync(path.join(filePaths.generatedPortraitsRoot, "char_002_amiya.png")),
     true,
   );
+  assert.equal(
+    fs.existsSync(path.join(filePaths.generatedPortraitsRoot, "avg_npc_175.png")),
+    true,
+  );
+  assert.equal(
+    fs.readFileSync(path.join(filePaths.generatedPortraitsRoot, "char_002_amiya.png"), "utf8"),
+    "char-first",
+  );
+  assert.equal(
+    fs.readFileSync(path.join(filePaths.generatedPortraitsRoot, "avg_npc_175.png"), "utf8"),
+    "npc-first",
+  );
   assert.equal(fs.existsSync(path.join(filePaths.appContentRoot, "stories")), false);
   assert.match(fs.readFileSync(filePaths.appRegistry, "utf8"), /"en:story-a": "stories\/en\/story-a\.json"/);
   assert.match(
     fs.readFileSync(filePaths.appRegistry, "utf8"),
-    /"char_002_amiya": "\/generated\/portraits\/assistant\/char_002_amiya\.png"/,
+    /"char_002_amiya": "\/generated\/portraits\/speakers\/char_002_amiya\.png"/,
+  );
+  assert.match(
+    fs.readFileSync(filePaths.appRegistry, "utf8"),
+    /"avg_npc_175": "\/generated\/portraits\/speakers\/avg_npc_175\.png"/,
   );
 });

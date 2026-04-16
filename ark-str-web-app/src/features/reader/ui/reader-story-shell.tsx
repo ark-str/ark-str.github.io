@@ -25,7 +25,7 @@ function ReaderPortraitSlot({
 }) {
   return (
     <div
-      className="flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-full border border-[var(--border)] bg-[var(--surface-muted)]"
+      className="flex h-20 w-16 shrink-0 items-start justify-center overflow-hidden rounded-[var(--radius-md)] border border-[var(--border)] bg-[var(--surface-muted)]"
       data-testid="speaker-portrait-slot"
     >
       {portraitPath ? (
@@ -33,11 +33,11 @@ function ReaderPortraitSlot({
         // eslint-disable-next-line @next/next/no-img-element
         <img
           alt={`${speakerName} portrait`}
-          className="block h-full w-full object-cover"
+          className="block h-full w-full object-cover object-top"
           data-testid="speaker-portrait-image"
-          height={56}
+          height={80}
           src={portraitPath}
-          width={56}
+          width={64}
         />
       ) : null}
     </div>

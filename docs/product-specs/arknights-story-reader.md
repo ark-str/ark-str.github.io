@@ -1,7 +1,7 @@
 # Arknights Story Reader
 
 Status: active
-Phase: operator-aware story parsing and alias observation
+Phase: visual speaker portraits and npc portrait coverage
 
 ## Product Goal
 
@@ -43,15 +43,18 @@ Build a web application that makes Arknights story content easier to read, summa
 
 ## Current Phase
 
-This phase keeps the recovered reader shell and Pages deployment path stable while making story detail data operator-aware. It keeps:
+This phase keeps the recovered reader shell and Pages deployment path stable while broadening story portraits to all visual speakers. It keeps:
 
 - canonical locale URLs at `/reader/[locale]` and `/reader/[locale]/[groupId]/[storyId]`
 - generated story detail files under `public/generated/content/stories/`
 - metadata-only app-internal generated loaders under `src/generated/content/` for exact-path export-safe reads
 - first-pass body rendering for dialogue, narration, scene breaks, and Doctor choice branches
-- dialogue-level `speakerId` derived from `Character(...)` tags, with bundled ASSISTANT portraits resolved from `ArknightsResource/avatar/ASSISTANT/<speakerId>.png`
-- `npm run content:portraits` or `npm run content:update` can sparse-download `ArknightsResource/avatar/ASSISTANT/` into `vendor/ArknightsResource/` and copy only referenced portraits into bundled app assets
-- story-level `observedOperators` arrays embedded in generated story detail JSON
+- dialogue-level `speakerId` as the shared visual lookup key for `Character(...)`, `character(...)`, and `charslot(...)` tags
+- `char_` speaker IDs are canonicalized to the first three `_`-delimited segments, while non-`char` speaker IDs keep their stripped raw token for visual portrait lookup
+- `npm run content:portraits` or `npm run content:update` can refresh the blobless `vendor/ArknightsResource/` portrait cache from `ArknightsResource/`, materialize only referenced `avgs/npcs/` portraits, and copy them into bundled app assets
+- portrait selection uses the basename-sorted first matching `avgs/npcs` file for each referenced `speakerId`
+- reader portraits render from bundled `public/generated/portraits/speakers/<speakerId>.png` assets with top-aligned full-body crops
+- story-level `observedOperators` arrays embedded in generated story detail JSON remain limited to `char_` speaker IDs for alias persistence
 - local storage reader-session restore for preferred locale and last visited story
 - locale-scoped character alias observation storage under `ark-str:character-observations:v1`
 - explicit empty summary state until the summary-generation issue lands

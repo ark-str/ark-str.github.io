@@ -10,7 +10,8 @@ export const ARKNIGHTS_DATA_BRANCH = "master";
 export const PORTRAIT_SOURCE_PATH = "vendor/ArknightsResource";
 export const PORTRAIT_SOURCE_REMOTE = "https://github.com/fexli/ArknightsResource.git";
 export const PORTRAIT_SOURCE_BRANCH = "main";
-export const PORTRAIT_ASSISTANT_DIRECTORY = path.join("avatar", "ASSISTANT");
+export const PORTRAIT_NPCS_DIRECTORY = path.join("avgs", "npcs");
+export const PORTRAIT_CACHE_MARKER = ".ark-str-portrait-cache.json";
 export const CANONICAL_READER_LOCALES = ["cn", "en", "jp", "kr", "tw"];
 
 export function getRepoRoot() {
@@ -25,8 +26,12 @@ export function getPortraitSourceRoot(cwd = getRepoRoot()) {
   return path.join(cwd, PORTRAIT_SOURCE_PATH);
 }
 
-export function getPortraitAssistantSourceRoot(cwd = getRepoRoot()) {
-  return path.join(getPortraitSourceRoot(cwd), PORTRAIT_ASSISTANT_DIRECTORY);
+export function getPortraitNpcSourceRoot(cwd = getRepoRoot()) {
+  return path.join(getPortraitSourceRoot(cwd), PORTRAIT_NPCS_DIRECTORY);
+}
+
+export function getPortraitCacheMarkerPath(cwd = getRepoRoot()) {
+  return path.join(getPortraitSourceRoot(cwd), PORTRAIT_CACHE_MARKER);
 }
 
 export function getGeneratedContentRoot(cwd = getRepoRoot()) {
@@ -34,7 +39,7 @@ export function getGeneratedContentRoot(cwd = getRepoRoot()) {
 }
 
 export function getGeneratedPortraitsRoot(cwd = getRepoRoot()) {
-  return path.join(cwd, "ark-str-web-app", "public", "generated", "portraits", "assistant");
+  return path.join(cwd, "ark-str-web-app", "public", "generated", "portraits", "speakers");
 }
 
 export function getGeneratedAppContentRoot(cwd = getRepoRoot()) {
@@ -163,9 +168,11 @@ export function ensurePortraitSourceCache(
   { remote = false } = {},
 ) {
   const portraitRoot = getPortraitSourceRoot(cwd);
-  const assistantRoot = getPortraitAssistantSourceRoot(cwd);
+  const portraitNpcRoot = getPortraitNpcSourceRoot(cwd);
+  const cacheMarkerPath = getPortraitCacheMarkerPath(cwd);
 
-  if (!hasPortraitSource(cwd)) {
+  const rebuildCache = () => {
+    fs.rmSync(portraitRoot, { recursive: true, force: true });
     ensureDirectory(path.dirname(portraitRoot));
     runGit(
       [
@@ -173,63 +180,133 @@ export function ensurePortraitSourceCache(
         "--depth",
         "1",
         "--filter=blob:none",
-        "--sparse",
+        "--no-checkout",
         PORTRAIT_SOURCE_REMOTE,
         portraitRoot,
       ],
       { cwd, stdio: "inherit" },
     );
-  } else if (remote) {
-    runGit(["-C", portraitRoot, "fetch", "origin", PORTRAIT_SOURCE_BRANCH, "--depth", "1"], {
-      cwd,
-      stdio: "inherit",
+    writeJson(cacheMarkerPath, {
+      source: PORTRAIT_SOURCE_REMOTE,
+      branch: PORTRAIT_SOURCE_BRANCH,
+      directory: PORTRAIT_NPCS_DIRECTORY,
     });
-    runGit(["-C", portraitRoot, "checkout", "--force", "FETCH_HEAD"], {
-      cwd,
-      stdio: "inherit",
-    });
-  }
-
-  runGit(["-C", portraitRoot, "sparse-checkout", "set", PORTRAIT_ASSISTANT_DIRECTORY], {
-    cwd,
-    stdio: "inherit",
-  });
-  ensureDirectory(assistantRoot);
-}
-
-function materializePortraitFile(speakerId, cwd = getRepoRoot()) {
-  const portraitRoot = getPortraitSourceRoot(cwd);
-  const relativePortraitPath = path.join(PORTRAIT_ASSISTANT_DIRECTORY, `${speakerId}.png`).replaceAll("\\", "/");
-  const sourceFilePath = path.join(portraitRoot, relativePortraitPath);
-
-  if (fs.existsSync(sourceFilePath)) {
-    return sourceFilePath;
-  }
+  };
 
   if (!hasPortraitSource(cwd)) {
-    return null;
+    rebuildCache();
+    return;
   }
 
-  const trackedFileCheck = spawnSync(
-    "git",
-    ["-C", portraitRoot, "cat-file", "-e", `HEAD:${relativePortraitPath}`],
-    {
-      cwd,
-      stdio: "ignore",
-      shell: false,
-    },
+  if (remote || !fs.existsSync(portraitNpcRoot) || !fs.existsSync(cacheMarkerPath)) {
+    rebuildCache();
+    return;
+  }
+
+  try {
+    const cacheMarker = readJson(cacheMarkerPath);
+    if (
+      cacheMarker?.source !== PORTRAIT_SOURCE_REMOTE ||
+      cacheMarker?.branch !== PORTRAIT_SOURCE_BRANCH ||
+      cacheMarker?.directory !== PORTRAIT_NPCS_DIRECTORY
+    ) {
+      rebuildCache();
+    }
+  } catch {
+    rebuildCache();
+  }
+}
+
+function listTrackedPortraitFiles(cwd = getRepoRoot()) {
+  const portraitNpcRoot = getPortraitNpcSourceRoot(cwd);
+
+  if (!hasPortraitSource(cwd)) {
+    if (!fs.existsSync(portraitNpcRoot)) {
+      return [];
+    }
+
+    return fs
+      .readdirSync(portraitNpcRoot)
+      .filter((fileName) => fileName.endsWith(".png"))
+      .map((fileName) => path.join(PORTRAIT_NPCS_DIRECTORY, fileName).replaceAll("\\", "/"));
+  }
+
+  return runGit(["-C", getPortraitSourceRoot(cwd), "ls-tree", "-r", "--name-only", "HEAD", PORTRAIT_NPCS_DIRECTORY], {
+    cwd,
+  }).stdout
+    .split("\n")
+    .map((line) => line.trim())
+    .filter((line) => line.endsWith(".png"));
+}
+
+function materializePortraitFiles(relativePortraitPaths, cwd = getRepoRoot()) {
+  if (!hasPortraitSource(cwd) || relativePortraitPaths.length === 0) {
+    return;
+  }
+
+  const portraitRoot = getPortraitSourceRoot(cwd);
+  const pendingPaths = [...new Set(relativePortraitPaths)].filter(
+    (relativePath) => !fs.existsSync(path.join(portraitRoot, relativePath)),
   );
 
-  if (trackedFileCheck.status !== 0) {
+  const checkoutChunk = (chunk) => {
+    if (chunk.length === 0) {
+      return;
+    }
+
+    try {
+      runGit(["-C", portraitRoot, "checkout", "--force", "HEAD", "--", ...chunk], {
+        cwd,
+        stdio: "inherit",
+      });
+    } catch (error) {
+      if (chunk.length === 1) {
+        throw error;
+      }
+
+      const midpoint = Math.ceil(chunk.length / 2);
+      checkoutChunk(chunk.slice(0, midpoint));
+      checkoutChunk(chunk.slice(midpoint));
+    }
+  };
+
+  const chunkSize = 32;
+  for (let index = 0; index < pendingPaths.length; index += chunkSize) {
+    checkoutChunk(pendingPaths.slice(index, index + chunkSize));
+  }
+}
+
+function selectPortraitMatch(speakerId, trackedPortraitFiles) {
+  const normalizedSpeakerId =
+    typeof speakerId === "string" && speakerId.trim().length > 0 ? speakerId.trim() : null;
+
+  if (!normalizedSpeakerId) {
     return null;
   }
 
-  runGit(["-C", portraitRoot, "checkout", "--force", "HEAD", "--", relativePortraitPath], {
-    cwd,
-    stdio: "inherit",
+  const matches = trackedPortraitFiles.filter((relativePath) => {
+    const basename = path.basename(relativePath, ".png");
+    return basename === normalizedSpeakerId || basename.startsWith(`${normalizedSpeakerId}_`);
   });
 
-  return fs.existsSync(sourceFilePath) ? sourceFilePath : null;
+  if (matches.length === 0) {
+    return null;
+  }
+
+  return matches.sort((left, right) =>
+    path.basename(left).localeCompare(path.basename(right)),
+  )[0];
+}
+
+function readTrackedPortraitFile(relativePortraitPath, cwd = getRepoRoot()) {
+  const portraitRoot = getPortraitSourceRoot(cwd);
+  const sourceFilePath = path.join(portraitRoot, relativePortraitPath);
+
+  if (!fs.existsSync(sourceFilePath)) {
+    return null;
+  }
+
+  return fs.readFileSync(sourceFilePath);
 }
 
 export function getRequiredExcelPaths(serverRoot) {
@@ -353,25 +430,46 @@ export function resolveStorySource({
   };
 }
 
+function collectSpeakerIdsFromBlocks(blocks, accumulator) {
+  for (const block of blocks) {
+    if (block.type === "dialogue") {
+      if (typeof block.speakerId === "string" && block.speakerId.length > 0) {
+        accumulator.add(block.speakerId);
+      }
+      continue;
+    }
+
+    if (block.type === "choice") {
+      for (const option of block.options) {
+        collectSpeakerIdsFromBlocks(option.blocks, accumulator);
+      }
+      collectSpeakerIdsFromBlocks(block.sharedBlocks, accumulator);
+    }
+  }
+}
+
 function collectReferencedSpeakerIds(storyDetails) {
-  return new Set(
-    storyDetails.flatMap((storyDetail) =>
-      (storyDetail.detail.observedOperators ?? []).map((observedOperator) => observedOperator.speakerId),
-    ),
-  );
+  const speakerIds = new Set();
+
+  for (const storyDetail of storyDetails) {
+    collectSpeakerIdsFromBlocks(storyDetail.detail.blocks ?? [], speakerIds);
+  }
+
+  return speakerIds;
 }
 
 function collectReferencedPortraitPaths(storyDetails, cwd = getRepoRoot()) {
   const portraitPaths = {};
-
   const speakerIds = collectReferencedSpeakerIds(storyDetails);
+  const trackedPortraitFiles = listTrackedPortraitFiles(cwd);
 
   for (const speakerId of [...speakerIds].filter(Boolean).sort((left, right) => left.localeCompare(right))) {
-    if (!materializePortraitFile(speakerId, cwd)) {
+    const portraitMatch = selectPortraitMatch(speakerId, trackedPortraitFiles);
+    if (!portraitMatch) {
       continue;
     }
 
-    portraitPaths[speakerId] = `/generated/portraits/assistant/${speakerId}.png`;
+    portraitPaths[speakerId] = `/generated/portraits/speakers/${speakerId}.png`;
   }
 
   return portraitPaths;
@@ -648,19 +746,33 @@ export function writeGeneratedArtifacts(artifacts, cwd = getRepoRoot()) {
   writeJson(filePaths.appSummaryManifest, artifacts.summaryManifest);
   writeJson(filePaths.appPortraitManifest, artifacts.portraitPaths ?? {});
 
+  const trackedPortraitFiles = listTrackedPortraitFiles(cwd);
+  const portraitSourcePaths = Object.keys(artifacts.portraitPaths ?? {})
+    .map((speakerId) => selectPortraitMatch(speakerId, trackedPortraitFiles))
+    .filter(Boolean);
+  materializePortraitFiles(portraitSourcePaths, cwd);
+
   for (const storyDetail of artifacts.storyDetails ?? []) {
     writeJson(path.join(filePaths.contentRoot, storyDetail.filePath), storyDetail.detail);
   }
 
   for (const [speakerId, publicPath] of Object.entries(artifacts.portraitPaths ?? {})) {
-    const sourceFilePath = path.join(getPortraitAssistantSourceRoot(cwd), `${speakerId}.png`);
-    if (!fs.existsSync(sourceFilePath)) {
+    const relativePortraitPath = selectPortraitMatch(
+      speakerId,
+      trackedPortraitFiles,
+    );
+    if (!relativePortraitPath) {
+      continue;
+    }
+
+    const portraitFileBuffer = readTrackedPortraitFile(relativePortraitPath, cwd);
+    if (!portraitFileBuffer) {
       continue;
     }
 
     const targetFilePath = path.join(cwd, "ark-str-web-app", "public", publicPath.replace(/^\//, ""));
     ensureDirectory(path.dirname(targetFilePath));
-    fs.copyFileSync(sourceFilePath, targetFilePath);
+    fs.writeFileSync(targetFilePath, portraitFileBuffer);
   }
 
   fs.writeFileSync(

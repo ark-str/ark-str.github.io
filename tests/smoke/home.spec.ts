@@ -43,7 +43,7 @@ function hasBundledPortrait(speakerId: string) {
       "public",
       "generated",
       "portraits",
-      "assistant",
+      "speakers",
       `${speakerId}.png`,
     ),
   );

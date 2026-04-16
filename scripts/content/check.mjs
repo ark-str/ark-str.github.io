@@ -18,6 +18,24 @@ function buildStoryMap(items) {
   return new Map(items.map((item) => [`${item.server}:${item.storyId}`, item]));
 }
 
+function collectSpeakerIdsFromBlocks(blocks, accumulator) {
+  for (const block of blocks) {
+    if (block?.type === "dialogue") {
+      if (typeof block.speakerId === "string" && block.speakerId.length > 0) {
+        accumulator.add(block.speakerId);
+      }
+      continue;
+    }
+
+    if (block?.type === "choice") {
+      for (const option of block.options ?? []) {
+        collectSpeakerIdsFromBlocks(option.blocks ?? [], accumulator);
+      }
+      collectSpeakerIdsFromBlocks(block.sharedBlocks ?? [], accumulator);
+    }
+  }
+}
+
 function compareLiveArtifacts(generated, live) {
   invariant(
     generated.index.vendor.submoduleSha === live.index.vendor.submoduleSha,
@@ -165,6 +183,10 @@ function validateGeneratedArtifacts(generated) {
         `observed operator speakerId is invalid for ${story.server}:${story.storyId}`,
       );
       invariant(
+        observedOperator.speakerId.startsWith("char_"),
+        `observed operator speakerId must be char-only for ${story.server}:${story.storyId}`,
+      );
+      invariant(
         Array.isArray(observedOperator.aliases),
         `observed operator aliases must be an array for ${story.server}:${story.storyId}`,
       );
@@ -175,19 +197,20 @@ function validateGeneratedArtifacts(generated) {
     }
   }
 
-  const observedSpeakerIds = new Set(
+  const portraitSpeakerIds = new Set(
     generated.index.stories
       .filter((story) => story.bodyAvailable && story.bodyPath)
       .flatMap((story) => {
         const bodyFilePath = path.join(process.cwd(), "ark-str-web-app", "public", "generated", "content", story.bodyPath);
         const body = JSON.parse(fs.readFileSync(bodyFilePath, "utf8"));
-
-        return (body.observedOperators ?? []).map((entry) => entry.speakerId).filter(Boolean);
+        const speakerIds = new Set();
+        collectSpeakerIdsFromBlocks(body.blocks ?? [], speakerIds);
+        return [...speakerIds];
       }),
   );
 
   for (const speakerId of Object.keys(appPortraitManifest)) {
-    invariant(observedSpeakerIds.has(speakerId), `portrait manifest references an unobserved speakerId: ${speakerId}`);
+    invariant(portraitSpeakerIds.has(speakerId), `portrait manifest references an unobserved speakerId: ${speakerId}`);
     const portraitFilePath = path.join(filePaths.generatedPortraitsRoot, `${speakerId}.png`);
     invariant(fs.existsSync(portraitFilePath), `portrait file is missing for ${speakerId}`);
   }

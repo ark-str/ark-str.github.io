@@ -7,6 +7,7 @@ import type {
   ContentStoryIndexEntry,
   ReaderHomeModel,
   ReaderLocale,
+  StoryBlock,
   StoryDetail,
   SummaryManifest,
   SummaryManifestEntry,
@@ -55,10 +56,32 @@ export function readStoryPortraitPaths(detail: StoryDetail | null): Record<strin
     return {};
   }
 
+  const speakerIds = new Set<string>();
+
+  const collectSpeakerIdsFromBlocks = (blocks: StoryBlock[]) => {
+    for (const block of blocks) {
+      if (block.type === "dialogue") {
+        if (block.speakerId) {
+          speakerIds.add(block.speakerId);
+        }
+        continue;
+      }
+
+      if (block.type === "choice") {
+        for (const option of block.options) {
+          collectSpeakerIdsFromBlocks(option.blocks);
+        }
+        collectSpeakerIdsFromBlocks(block.sharedBlocks);
+      }
+    }
+  };
+
+  collectSpeakerIdsFromBlocks(detail.blocks);
+
   return Object.fromEntries(
-    detail.observedOperators.flatMap((observedOperator) => {
-      const portraitPath = readPortraitPathForSpeakerId(observedOperator.speakerId);
-      return portraitPath ? [[observedOperator.speakerId, portraitPath]] : [];
+    [...speakerIds].sort((left, right) => left.localeCompare(right)).flatMap((speakerId) => {
+      const portraitPath = readPortraitPathForSpeakerId(speakerId);
+      return portraitPath ? [[speakerId, portraitPath]] : [];
     }),
   );
 }

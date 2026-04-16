@@ -67,10 +67,11 @@ test("parseStoryText treats predicates that reference every option as shared", (
   assert.equal(blocks[0].sharedBlocks[0].text, "We understand.");
 });
 
-test("normalizeSpeakerIdToken strips suffixes and keeps the first three underscore segments", () => {
+test("normalizeSpeakerIdToken keeps char ids canonical and preserves non-char visual keys", () => {
   assert.equal(normalizeSpeakerIdToken("char_101_sora_1#4"), "char_101_sora");
   assert.equal(normalizeSpeakerIdToken("char_201_moeshd#2"), "char_201_moeshd");
-  assert.equal(normalizeSpeakerIdToken("avg_npc_175"), null);
+  assert.equal(normalizeSpeakerIdToken("avg_npc_175"), "avg_npc_175");
+  assert.equal(normalizeSpeakerIdToken("avg_npc_262_1#7$1"), "avg_npc_262_1");
 });
 
 test("parseStoryText resolves focused Character slots into operator-aware dialogue blocks", () => {
@@ -124,7 +125,7 @@ test("parseStoryText preserves speaker bindings across effect-only character tag
   assert.equal(blocks[2].speakerId, "char_101_sora");
 });
 
-test("parseStoryText keeps non-operator tokens on dialogue blocks without alias observations", () => {
+test("parseStoryText keeps non-char visual keys on dialogue blocks without alias observations", () => {
   const blocks = parseStoryText(`
 [character(name="avg_npc_175",name2="avg_npc_360_1#1$1",focus=2)]
 [name="Cheery Legatus"]Lady Sharon, we're in the Basilica...
@@ -134,8 +135,24 @@ test("parseStoryText keeps non-operator tokens on dialogue blocks without alias 
     {
       type: "dialogue",
       speakerName: "Cheery Legatus",
-      speakerId: null,
+      speakerId: "avg_npc_360_1",
       text: "Lady Sharon, we're in the Basilica...",
+    },
+  ]);
+});
+
+test("parseStoryText resolves charslot speaker ids for visual portrait lookup", () => {
+  const blocks = parseStoryText(`
+[charslot(slot="m",name="avg_npc_1297_1#1$1")]
+[name="Theresis"]You're watching me, aren't you?
+`);
+
+  assert.deepEqual(blocks, [
+    {
+      type: "dialogue",
+      speakerName: "Theresis",
+      speakerId: "avg_npc_1297_1",
+      text: "You're watching me, aren't you?",
     },
   ]);
 });
@@ -148,6 +165,8 @@ test("collectObservedOperators deduplicates aliases per speakerId", () => {
 [name="Sora"]Keep tempo.
 [Character(name="char_101_sora_2#1")]
 [name="Idol Sora"]The encore is for everyone.
+[Character(name="avg_npc_175")]
+[name="Leithanian"]No alias persistence here.
 `);
 
   assert.deepEqual(collectObservedOperators(blocks), [
