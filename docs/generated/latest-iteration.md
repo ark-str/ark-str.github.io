@@ -1,20 +1,17 @@
 # Latest Iteration
 
-Latest parent iteration: `#18`
+Latest parent iteration: `#25`
 
 Merged child issues:
 
-- `#19` via PR `#20` - fix app-root resolution for root-driven export verification
-- `#21` via PR `#22` - align smoke preview and Pages upload with the actual export artifact
-- `#23` via PR `#24` - close deployment follow-up docs and iteration records
+- `#26` via PR `#27` - resolve operator IDs from `Character(...)` tags and persist locale-scoped alias observations
 
 Current closeout outcome:
 
-- the repository ships a manual `Deploy GitHub Pages` workflow that rebuilds, verifies, and publishes `ark-str-web-app/.next-export`
-- the workflow succeeded on `main` in run `#24504983628`
-- exported-site smoke now reads the real static export directory instead of relying on a stale local `out/` folder
-- deployment instructions and follow-up plan records now match the actual GitHub Pages artifact contract
-- `npm run verify` remains the required gate before any published artifact is uploaded
+- dialogue blocks now carry `speakerToken`, `operatorId`, and `portraitKey` derived from story `Character(...)` tags
+- generated story detail JSON now embeds `observedOperators` so the app can track operator aliases without runtime source parsing
+- the reader persists locale-scoped alias observations in `localStorage` under `ark-str:character-observations:v1`
+- parser, content, app export, and exported-site smoke all passed through `npm run verify`
 
 Remaining product gaps:
 

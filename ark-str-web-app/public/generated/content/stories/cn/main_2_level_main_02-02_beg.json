@@ -17,8 +17,10 @@
     {
       "type": "dialogue",
       "speakerName": "陈",
-      "text": "进来吧。",
-      "portraitKey": null
+      "speakerToken": null,
+      "operatorId": null,
+      "portraitKey": null,
+      "text": "进来吧。"
     },
     {
       "type": "sceneBreak"
@@ -26,26 +28,34 @@
     {
       "type": "dialogue",
       "speakerName": "阿米娅",
-      "text": "......凯尔希医生！",
-      "portraitKey": null
+      "speakerToken": "char_002_amiya_1",
+      "operatorId": "char_002_amiya",
+      "portraitKey": "char_002_amiya",
+      "text": "......凯尔希医生！"
     },
     {
       "type": "dialogue",
       "speakerName": "凯尔希",
-      "text": "——阿米娅......",
-      "portraitKey": null
+      "speakerToken": "char_003_kalts_1",
+      "operatorId": "char_003_kalts",
+      "portraitKey": "char_003_kalts",
+      "text": "——阿米娅......"
     },
     {
       "type": "dialogue",
       "speakerName": "凯尔希",
-      "text": "......{@nickname}。",
-      "portraitKey": null
+      "speakerToken": "char_003_kalts_1#3",
+      "operatorId": "char_003_kalts",
+      "portraitKey": "char_003_kalts",
+      "text": "......{@nickname}。"
     },
     {
       "type": "dialogue",
       "speakerName": "凯尔希",
-      "text": "你来了。",
-      "portraitKey": null
+      "speakerToken": "char_003_kalts_1#3",
+      "operatorId": "char_003_kalts",
+      "portraitKey": "char_003_kalts",
+      "text": "你来了。"
     },
     {
       "type": "choice",
@@ -60,14 +70,18 @@
         {
           "type": "dialogue",
           "speakerName": "陈",
-          "text": "咳咳。",
-          "portraitKey": null
+          "speakerToken": "char_010_chen_1",
+          "operatorId": "char_010_chen",
+          "portraitKey": "char_010_chen",
+          "text": "咳咳。"
         },
         {
           "type": "dialogue",
           "speakerName": "陈",
-          "text": "魏长官，罗德岛的另外两位代表也到了。",
-          "portraitKey": null
+          "speakerToken": "char_010_chen_1",
+          "operatorId": "char_010_chen",
+          "portraitKey": "char_010_chen",
+          "text": "魏长官，罗德岛的另外两位代表也到了。"
         },
         {
           "type": "sceneBreak"
@@ -75,294 +89,431 @@
         {
           "type": "dialogue",
           "speakerName": "魏彦吾",
-          "text": "哦，正好。",
-          "portraitKey": null
+          "speakerToken": "char_2005_weiyw_1",
+          "operatorId": "char_2005_weiyw",
+          "portraitKey": "char_2005_weiyw",
+          "text": "哦，正好。"
         },
         {
           "type": "dialogue",
           "speakerName": "魏彦吾",
-          "text": "请坐。凯尔希小姐正向我说明现在的局势呢。",
-          "portraitKey": null
+          "speakerToken": "char_2005_weiyw_1",
+          "operatorId": "char_2005_weiyw",
+          "portraitKey": "char_2005_weiyw",
+          "text": "请坐。凯尔希小姐正向我说明现在的局势呢。"
         },
         {
           "type": "dialogue",
           "speakerName": "凯尔希",
-          "text": "那我就继续吧。关于现在的局势，我想魏先生也已经很清楚了。",
-          "portraitKey": null
+          "speakerToken": "char_003_kalts_1",
+          "operatorId": "char_003_kalts",
+          "portraitKey": "char_003_kalts",
+          "text": "那我就继续吧。关于现在的局势，我想魏先生也已经很清楚了。"
         },
         {
           "type": "dialogue",
           "speakerName": "凯尔希",
-          "text": "龙门的情报网每天都在搜集大量针对整合运动的信息，想必也对这件事情极为重视。",
-          "portraitKey": null
+          "speakerToken": "char_003_kalts_1",
+          "operatorId": "char_003_kalts",
+          "portraitKey": "char_003_kalts",
+          "text": "龙门的情报网每天都在搜集大量针对整合运动的信息，想必也对这件事情极为重视。"
         },
         {
           "type": "dialogue",
           "speakerName": "凯尔希",
-          "text": "不过仅凭这样，龙门仍然还缺乏一些关键信息。",
-          "portraitKey": null
+          "speakerToken": "char_003_kalts_1",
+          "operatorId": "char_003_kalts",
+          "portraitKey": "char_003_kalts",
+          "text": "不过仅凭这样，龙门仍然还缺乏一些关键信息。"
         },
         {
           "type": "dialogue",
           "speakerName": "陈",
-          "text": "......",
-          "portraitKey": null
+          "speakerToken": "char_010_chen_1",
+          "operatorId": "char_010_chen",
+          "portraitKey": "char_010_chen",
+          "text": "......"
         },
         {
           "type": "dialogue",
           "speakerName": "凯尔希",
-          "text": "简单的感染者检疫是不能对抗整合运动的，想必龙门近卫局再清楚不过。",
-          "portraitKey": null
+          "speakerToken": "char_003_kalts_1",
+          "operatorId": "char_003_kalts",
+          "portraitKey": "char_003_kalts",
+          "text": "简单的感染者检疫是不能对抗整合运动的，想必龙门近卫局再清楚不过。"
         },
         {
           "type": "dialogue",
           "speakerName": "凯尔希",
-          "text": "整合运动不会乖乖过检，更不会等到当局反应过来才行动。所以————",
-          "portraitKey": null
+          "speakerToken": "char_003_kalts_1",
+          "operatorId": "char_003_kalts",
+          "portraitKey": "char_003_kalts",
+          "text": "整合运动不会乖乖过检，更不会等到当局反应过来才行动。所以————"
         },
         {
           "type": "dialogue",
           "speakerName": "凯尔希",
-          "text": "如果没有罗德岛的协助，龙门依靠目前对待感染者的策略，抵挡接下来整合运动的攻击会面临巨大损失。",
-          "portraitKey": null
+          "speakerToken": "char_003_kalts_1",
+          "operatorId": "char_003_kalts",
+          "portraitKey": "char_003_kalts",
+          "text": "如果没有罗德岛的协助，龙门依靠目前对待感染者的策略，抵挡接下来整合运动的攻击会面临巨大损失。"
         },
         {
           "type": "dialogue",
           "speakerName": "陈",
-          "text": "抱歉，我需要插一句。",
-          "portraitKey": null
+          "speakerToken": "char_010_chen_1",
+          "operatorId": "char_010_chen",
+          "portraitKey": "char_010_chen",
+          "text": "抱歉，我需要插一句。"
         },
         {
           "type": "dialogue",
           "speakerName": "陈",
-          "text": "关于龙门的防卫情报，龙门近卫局方面比罗德岛更了解。对于整合运动的渗透，也已经做了相应准备。",
-          "portraitKey": null
+          "speakerToken": "char_010_chen_1",
+          "operatorId": "char_010_chen",
+          "portraitKey": "char_010_chen",
+          "text": "关于龙门的防卫情报，龙门近卫局方面比罗德岛更了解。对于整合运动的渗透，也已经做了相应准备。"
         },
         {
           "type": "dialogue",
           "speakerName": "陈",
-          "text": "只是龙门目前没有将相关机密行动的方针通知罗德岛的义务。",
-          "portraitKey": null
+          "speakerToken": "char_010_chen_1",
+          "operatorId": "char_010_chen",
+          "portraitKey": "char_010_chen",
+          "text": "只是龙门目前没有将相关机密行动的方针通知罗德岛的义务。"
         },
         {
           "type": "dialogue",
           "speakerName": "魏彦吾",
-          "text": "......",
-          "portraitKey": null
+          "speakerToken": "char_2005_weiyw_1",
+          "operatorId": "char_2005_weiyw",
+          "portraitKey": "char_2005_weiyw",
+          "text": "......"
         },
         {
           "type": "dialogue",
           "speakerName": "魏彦吾",
-          "text": "凯尔希小姐，请继续说。",
-          "portraitKey": null
+          "speakerToken": "char_2005_weiyw_1",
+          "operatorId": "char_2005_weiyw",
+          "portraitKey": "char_2005_weiyw",
+          "text": "凯尔希小姐，请继续说。"
         },
         {
           "type": "dialogue",
           "speakerName": "凯尔希",
-          "text": "龙门的确有对付手无寸铁的感染者的经验，但恐怕龙门目前没有面对集团化感染者暴徒的经验，这可能会让龙门造成不必要的损失。",
-          "portraitKey": null
+          "speakerToken": "char_003_kalts_1",
+          "operatorId": "char_003_kalts",
+          "portraitKey": "char_003_kalts",
+          "text": "龙门的确有对付手无寸铁的感染者的经验，但恐怕龙门目前没有面对集团化感染者暴徒的经验，这可能会让龙门造成不必要的损失。"
         },
         {
           "type": "dialogue",
           "speakerName": "凯尔希",
-          "text": "以罗德岛目前的经验来说————只有感染者，才能更好对抗感染者。",
-          "portraitKey": null
+          "speakerToken": "char_003_kalts_1",
+          "operatorId": "char_003_kalts",
+          "portraitKey": "char_003_kalts",
+          "text": "以罗德岛目前的经验来说————只有感染者，才能更好对抗感染者。"
         },
         {
           "type": "dialogue",
           "speakerName": "魏彦吾",
-          "text": "那么，罗德岛是否已经从针对整合运动的行动中获得了有效的经验？",
-          "portraitKey": null
+          "speakerToken": "char_2005_weiyw_1",
+          "operatorId": "char_2005_weiyw",
+          "portraitKey": "char_2005_weiyw",
+          "text": "那么，罗德岛是否已经从针对整合运动的行动中获得了有效的经验？"
         },
         {
           "type": "dialogue",
           "speakerName": "凯尔希",
-          "text": "仅仅是有而已，大概是不敢自称专家的。",
-          "portraitKey": null
+          "speakerToken": "char_003_kalts_1",
+          "operatorId": "char_003_kalts",
+          "portraitKey": "char_003_kalts",
+          "text": "仅仅是有而已，大概是不敢自称专家的。"
         },
         {
           "type": "dialogue",
           "speakerName": "魏彦吾",
-          "text": "哦——？",
-          "portraitKey": null
+          "speakerToken": "char_2005_weiyw_1",
+          "operatorId": "char_2005_weiyw",
+          "portraitKey": "char_2005_weiyw",
+          "text": "哦——？"
         },
         {
           "type": "dialogue",
           "speakerName": "魏彦吾",
-          "text": "我听说，罗德岛曾卷入过切尔诺伯格事件，并且从中也获得了不少整合运动的其他情报。",
-          "portraitKey": null
+          "speakerToken": "char_2005_weiyw_1",
+          "operatorId": "char_2005_weiyw",
+          "portraitKey": "char_2005_weiyw",
+          "text": "我听说，罗德岛曾卷入过切尔诺伯格事件，并且从中也获得了不少整合运动的其他情报。"
         },
         {
           "type": "dialogue",
           "speakerName": "凯尔希",
-          "text": "无论魏先生是从哪里得到这条消息的——",
-          "portraitKey": null
+          "speakerToken": "char_003_kalts_1",
+          "operatorId": "char_003_kalts",
+          "portraitKey": "char_003_kalts",
+          "text": "无论魏先生是从哪里得到这条消息的——"
         },
         {
           "type": "dialogue",
           "speakerName": "凯尔希",
-          "text": "这都不是现阶段能与龙门交换的信息。这只是履历，只是站在这里与魏先生交谈的资格。",
-          "portraitKey": null
+          "speakerToken": "char_003_kalts_1",
+          "operatorId": "char_003_kalts",
+          "portraitKey": "char_003_kalts",
+          "text": "这都不是现阶段能与龙门交换的信息。这只是履历，只是站在这里与魏先生交谈的资格。"
         },
         {
           "type": "dialogue",
           "speakerName": "魏彦吾",
-          "text": "决定是否要和你们进行利益交换的是龙门。如果这种程度的信息罗德岛都无法提供的话——",
-          "portraitKey": null
+          "speakerToken": "char_003_kalts_1",
+          "operatorId": "char_003_kalts",
+          "portraitKey": "char_003_kalts",
+          "text": "决定是否要和你们进行利益交换的是龙门。如果这种程度的信息罗德岛都无法提供的话——"
         },
         {
           "type": "dialogue",
           "speakerName": "魏彦吾",
-          "text": "呵。",
-          "portraitKey": null
+          "speakerToken": "char_003_kalts_1",
+          "operatorId": "char_003_kalts",
+          "portraitKey": "char_003_kalts",
+          "text": "呵。"
         },
         {
           "type": "dialogue",
           "speakerName": "魏彦吾",
-          "text": "龙门将无法信任你们的真实实力。",
-          "portraitKey": null
+          "speakerToken": "char_003_kalts_1",
+          "operatorId": "char_003_kalts",
+          "portraitKey": "char_003_kalts",
+          "text": "龙门将无法信任你们的真实实力。"
         },
         {
           "type": "dialogue",
           "speakerName": "凯尔希",
-          "text": "魏先生，我的言辞可能不够清晰。",
-          "portraitKey": null
+          "speakerToken": "char_003_kalts_1",
+          "operatorId": "char_003_kalts",
+          "portraitKey": "char_003_kalts",
+          "text": "魏先生，我的言辞可能不够清晰。"
         },
         {
           "type": "dialogue",
           "speakerName": "凯尔希",
-          "text": "不过需要强调的是——罗德岛提供的信息，本身就是用实力换来的。",
-          "portraitKey": null
+          "speakerToken": "char_003_kalts_1",
+          "operatorId": "char_003_kalts",
+          "portraitKey": "char_003_kalts",
+          "text": "不过需要强调的是——罗德岛提供的信息，本身就是用实力换来的。"
         },
         {
           "type": "dialogue",
           "speakerName": "陈",
-          "text": "但，无论怎样，龙门都无法信任同样是一群感染者的罗德岛。",
-          "portraitKey": null
+          "speakerToken": "char_010_chen_1",
+          "operatorId": "char_010_chen",
+          "portraitKey": "char_010_chen",
+          "text": "但，无论怎样，龙门都无法信任同样是一群感染者的罗德岛。"
         },
         {
           "type": "dialogue",
           "speakerName": "凯尔希",
-          "text": "如果陈小姐认为龙门的安危，尚不如对感染者进行盲目的惩罚来得重要————",
-          "portraitKey": null
+          "speakerToken": "char_003_kalts_1",
+          "operatorId": "char_003_kalts",
+          "portraitKey": "char_003_kalts",
+          "text": "如果陈小姐认为龙门的安危，尚不如对感染者进行盲目的惩罚来得重要————"
         },
         {
           "type": "dialogue",
           "speakerName": "凯尔希",
-          "text": "那我会立刻服从本地法令，任由陈小姐逮捕我，然后在监牢里看着龙门被整合运动焚烧殆尽，默默惋惜。",
-          "portraitKey": null
+          "speakerToken": "char_003_kalts_1",
+          "operatorId": "char_003_kalts",
+          "portraitKey": "char_003_kalts",
+          "text": "那我会立刻服从本地法令，任由陈小姐逮捕我，然后在监牢里看着龙门被整合运动焚烧殆尽，默默惋惜。"
         },
         {
           "type": "dialogue",
           "speakerName": "凯尔希",
-          "text": "这次，龙门别无选择。",
-          "portraitKey": null
+          "speakerToken": "char_003_kalts_1",
+          "operatorId": "char_003_kalts",
+          "portraitKey": "char_003_kalts",
+          "text": "这次，龙门别无选择。"
         },
         {
           "type": "dialogue",
           "speakerName": "陈",
-          "text": "——龙门既不是因为有人出言不逊就拒绝善意的城市——",
-          "portraitKey": null
+          "speakerToken": "char_010_chen_1#5",
+          "operatorId": "char_010_chen",
+          "portraitKey": "char_010_chen",
+          "text": "——龙门既不是因为有人出言不逊就拒绝善意的城市——"
         },
         {
           "type": "dialogue",
           "speakerName": "陈",
-          "text": "却也不是收留无用说客的慈善机构。",
-          "portraitKey": null
+          "speakerToken": "char_010_chen_1#5",
+          "operatorId": "char_010_chen",
+          "portraitKey": "char_010_chen",
+          "text": "却也不是收留无用说客的慈善机构。"
         },
         {
           "type": "dialogue",
           "speakerName": "魏彦吾",
-          "text": "陈警官。",
-          "portraitKey": null
+          "speakerToken": "char_2005_weiyw_1",
+          "operatorId": "char_2005_weiyw",
+          "portraitKey": "char_2005_weiyw",
+          "text": "陈警官。"
         },
         {
           "type": "dialogue",
           "speakerName": "陈",
-          "text": "魏长官，让外来的感染者参与龙门的机密事务，我认为并不妥当。",
-          "portraitKey": null
+          "speakerToken": "char_010_chen_1#5",
+          "operatorId": "char_010_chen",
+          "portraitKey": "char_010_chen",
+          "text": "魏长官，让外来的感染者参与龙门的机密事务，我认为并不妥当。"
         },
         {
           "type": "dialogue",
           "speakerName": "魏彦吾",
-          "text": "冷静些，陈警官，他们是客人。",
-          "portraitKey": null
+          "speakerToken": "char_2005_weiyw_1",
+          "operatorId": "char_2005_weiyw",
+          "portraitKey": "char_2005_weiyw",
+          "text": "冷静些，陈警官，他们是客人。"
         },
         {
           "type": "dialogue",
           "speakerName": "魏彦吾",
-          "text": "——我的客人。",
-          "portraitKey": null
+          "speakerToken": "char_2005_weiyw_1",
+          "operatorId": "char_2005_weiyw",
+          "portraitKey": "char_2005_weiyw",
+          "text": "——我的客人。"
         },
         {
           "type": "dialogue",
           "speakerName": "陈",
-          "text": ".....",
-          "portraitKey": null
+          "speakerToken": "char_010_chen_1#5",
+          "operatorId": "char_010_chen",
+          "portraitKey": "char_010_chen",
+          "text": "....."
         },
         {
           "type": "dialogue",
           "speakerName": "陈",
-          "text": "是。",
-          "portraitKey": null
+          "speakerToken": "char_010_chen_1#5",
+          "operatorId": "char_010_chen",
+          "portraitKey": "char_010_chen",
+          "text": "是。"
         },
         {
           "type": "dialogue",
           "speakerName": "陈",
-          "text": "在他们违反龙门法律之前，我会容忍，长官。",
-          "portraitKey": null
+          "speakerToken": "char_010_chen_1",
+          "operatorId": "char_010_chen",
+          "portraitKey": "char_010_chen",
+          "text": "在他们违反龙门法律之前，我会容忍，长官。"
         },
         {
           "type": "dialogue",
           "speakerName": "魏彦吾",
-          "text": "啊，不好意思。我想起来了，有这么一句——",
-          "portraitKey": null
+          "speakerToken": "char_2005_weiyw_1",
+          "operatorId": "char_2005_weiyw",
+          "portraitKey": "char_2005_weiyw",
+          "text": "啊，不好意思。我想起来了，有这么一句——"
         },
         {
           "type": "dialogue",
           "speakerName": "魏彦吾",
-          "text": "——没错，呣......",
-          "portraitKey": null
+          "speakerToken": "char_2005_weiyw_1",
+          "operatorId": "char_2005_weiyw",
+          "portraitKey": "char_2005_weiyw",
+          "text": "——没错，呣......"
         },
         {
           "type": "dialogue",
           "speakerName": "魏彦吾",
-          "text": "我所看重的就只有一点。",
-          "portraitKey": null
+          "speakerToken": "char_2005_weiyw_1",
+          "operatorId": "char_2005_weiyw",
+          "portraitKey": "char_2005_weiyw",
+          "text": "我所看重的就只有一点。"
         },
         {
           "type": "dialogue",
           "speakerName": "魏彦吾",
-          "text": "实力。",
-          "portraitKey": null
+          "speakerToken": "char_2005_weiyw_1",
+          "operatorId": "char_2005_weiyw",
+          "portraitKey": "char_2005_weiyw",
+          "text": "实力。"
         },
         {
           "type": "dialogue",
           "speakerName": "魏彦吾",
-          "text": "据我所知，罗德岛也参与清剿了附近的感染者吧？",
-          "portraitKey": null
+          "speakerToken": "char_2005_weiyw_1",
+          "operatorId": "char_2005_weiyw",
+          "portraitKey": "char_2005_weiyw",
+          "text": "据我所知，罗德岛也参与清剿了附近的感染者吧？"
         },
         {
           "type": "dialogue",
           "speakerName": "魏彦吾",
-          "text": "陈警官，以目前确切了解的情报，罗德岛在军事力量的实力如何？",
-          "portraitKey": null
+          "speakerToken": "char_2005_weiyw_1",
+          "operatorId": "char_2005_weiyw",
+          "portraitKey": "char_2005_weiyw",
+          "text": "陈警官，以目前确切了解的情报，罗德岛在军事力量的实力如何？"
         },
         {
           "type": "dialogue",
           "speakerName": "陈",
-          "text": "......请容我简要描述一下我所见的罗德岛的行动情况。",
-          "portraitKey": null
+          "speakerToken": "char_010_chen_1",
+          "operatorId": "char_010_chen",
+          "portraitKey": "char_010_chen",
+          "text": "......请容我简要描述一下我所见的罗德岛的行动情况。"
         },
         {
           "type": "dialogue",
           "speakerName": "陈",
-          "text": "——详情如下——",
-          "portraitKey": null
+          "speakerToken": "char_010_chen_1",
+          "operatorId": "char_010_chen",
+          "portraitKey": "char_010_chen",
+          "text": "——详情如下——"
         },
         {
           "type": "sceneBreak"
         }
+      ]
+    }
+  ],
+  "observedOperators": [
+    {
+      "operatorId": "char_002_amiya",
+      "aliases": [
+        "阿米娅"
+      ],
+      "speakerTokens": [
+        "char_002_amiya_1"
+      ]
+    },
+    {
+      "operatorId": "char_003_kalts",
+      "aliases": [
+        "凯尔希",
+        "魏彦吾"
+      ],
+      "speakerTokens": [
+        "char_003_kalts_1",
+        "char_003_kalts_1#3"
+      ]
+    },
+    {
+      "operatorId": "char_010_chen",
+      "aliases": [
+        "陈"
+      ],
+      "speakerTokens": [
+        "char_010_chen_1",
+        "char_010_chen_1#5"
+      ]
+    },
+    {
+      "operatorId": "char_2005_weiyw",
+      "aliases": [
+        "魏彦吾"
+      ],
+      "speakerTokens": [
+        "char_2005_weiyw_1"
       ]
     }
   ]

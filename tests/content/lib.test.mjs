@@ -132,6 +132,7 @@ test("writeGeneratedArtifacts keeps story payloads out of app-internal generated
           sourceHash: "deadbeef",
           bodyAvailable: true,
           blocks: [],
+          observedOperators: [],
         },
       },
     ],

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { persistCharacterObservations } from "@/features/characters/runtime/persist-character-observations";
 import { READER_LOCALE_LABELS } from "@/features/content/config/canonical-reader-locales";
 import type {
   ContentGroupEntry,
@@ -87,6 +88,28 @@ function ReaderVisitTracker({
 
     syncVisit();
   }, [groupId, isHydrated, locale, storyId, title]);
+
+  return null;
+}
+
+function CharacterObservationTracker({
+  locale,
+  detail,
+}: {
+  locale: ReaderLocale;
+  detail: StoryDetail | null;
+}) {
+  const syncObservations = useEffectEvent(() => {
+    if (!detail || detail.observedOperators.length === 0) {
+      return;
+    }
+
+    persistCharacterObservations(locale, detail.observedOperators);
+  });
+
+  useEffect(() => {
+    syncObservations();
+  }, [detail, locale]);
 
   return null;
 }
@@ -230,6 +253,7 @@ export function ReaderStoryShell({
         storyId={story.storyId}
         title={story.title}
       />
+      <CharacterObservationTracker detail={detail} locale={locale} />
 
       <section className="grid gap-6 xl:grid-cols-[280px_minmax(0,1fr)_320px]">
         <aside className="grid gap-4">

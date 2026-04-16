@@ -6,6 +6,7 @@ import type { Page } from "@playwright/test";
 const appBasePath = process.env.PLAYWRIGHT_APP_BASE_PATH ?? "/ark-str";
 const readerSessionKey = "ark-str:reader-session:v1";
 const preferencesKey = "ark-str:app-preferences:v1";
+const characterObservationsKey = "ark-str:character-observations:v1";
 const legacyBootstrapKey = "ark-str:reader-bootstrap:v1";
 const generatedIndex = JSON.parse(
   fs.readFileSync(
@@ -13,13 +14,53 @@ const generatedIndex = JSON.parse(
     "utf8",
   ),
 );
-const sampleStory =
-  generatedIndex.stories.find((story: { server: string; bodyAvailable?: boolean }) => story.server === "kr" && story.bodyAvailable) ??
-  generatedIndex.stories.find((story: { bodyAvailable?: boolean }) => story.bodyAvailable);
 
-if (!sampleStory) {
-  throw new Error("A sample reader story with bodyAvailable=true is required for smoke tests.");
+function readStoryDetail(story: { bodyPath?: string | null }) {
+  if (!story.bodyPath) {
+    return null;
+  }
+
+  return JSON.parse(
+    fs.readFileSync(
+      path.join(
+        process.cwd(),
+        "ark-str-web-app",
+        "public",
+        "generated",
+        "content",
+        story.bodyPath,
+      ),
+      "utf8",
+    ),
+  ) as { observedOperators?: Array<{ operatorId: string; aliases: string[] }> };
 }
+
+function resolveSampleStory() {
+  const prioritizedStories = [
+    ...generatedIndex.stories.filter(
+      (story: { server: string; bodyAvailable?: boolean }) => story.server === "kr" && story.bodyAvailable,
+    ),
+    ...generatedIndex.stories.filter(
+      (story: { server: string; bodyAvailable?: boolean }) => story.server !== "kr" && story.bodyAvailable,
+    ),
+  ];
+
+  for (const story of prioritizedStories) {
+    const detail = readStoryDetail(story);
+    if (detail?.observedOperators?.length) {
+      return {
+        story,
+        detail,
+      };
+    }
+  }
+
+  throw new Error("A sample reader story with observedOperators is required for smoke tests.");
+}
+
+const sampleStorySelection = resolveSampleStory();
+const sampleStory = sampleStorySelection.story;
+const sampleObservedOperator = sampleStorySelection.detail.observedOperators?.[0];
 
 function toAppPath(route = "") {
   const normalizedRoute = route.replace(/^\/+/, "");
@@ -59,11 +100,12 @@ test.describe("reader shell smoke", () => {
     const browserErrors = trackBrowserErrors(page);
 
     await page.goto(toAppPath());
-    await page.evaluate(([session, prefs, legacy]) => {
+    await page.evaluate(([session, prefs, legacy, characterObservations]) => {
       window.localStorage.removeItem(session);
       window.localStorage.removeItem(prefs);
       window.localStorage.removeItem(legacy);
-    }, [readerSessionKey, preferencesKey, legacyBootstrapKey]);
+      window.localStorage.removeItem(characterObservations);
+    }, [readerSessionKey, preferencesKey, legacyBootstrapKey, characterObservationsKey]);
     await page.reload();
 
     await expect(page.getByTestId("bootstrap-shell")).toBeVisible();
@@ -93,6 +135,44 @@ test.describe("reader shell smoke", () => {
     await expect(page.getByTestId("story-body")).toBeVisible();
     await expect(page.getByTestId("summary-empty-state")).toBeVisible();
 
+    await page.waitForFunction(
+      ([key, locale, operatorId]) => {
+        const stored = window.localStorage.getItem(key);
+        if (!stored) {
+          return false;
+        }
+
+        try {
+          const parsed = JSON.parse(stored);
+          return Boolean(parsed?.locales?.[locale]?.[operatorId]?.aliases?.length);
+        } catch {
+          return false;
+        }
+      },
+      [characterObservationsKey, sampleStory.server, sampleObservedOperator?.operatorId ?? ""],
+    );
+
+    const observedAliases = await page.evaluate(
+      ([key, locale, operatorId]) => {
+        const stored = window.localStorage.getItem(key);
+        if (!stored) {
+          return [];
+        }
+
+        try {
+          const parsed = JSON.parse(stored);
+          return parsed?.locales?.[locale]?.[operatorId]?.aliases ?? [];
+        } catch {
+          return [];
+        }
+      },
+      [characterObservationsKey, sampleStory.server, sampleObservedOperator?.operatorId ?? ""],
+    );
+
+    for (const alias of sampleObservedOperator?.aliases ?? []) {
+      expect(observedAliases).toContain(alias);
+    }
+
     await page.goto(toAppPath());
     await expect(page.getByTestId("last-visited-story")).toContainText(sampleStory.title);
     await expect(page.getByTestId("continue-reading-link")).toHaveAttribute(
@@ -107,10 +187,11 @@ test.describe("reader shell smoke", () => {
     const browserErrors = trackBrowserErrors(page);
 
     await page.goto(toAppPath());
-    await page.evaluate(([session, prefs]) => {
+    await page.evaluate(([session, prefs, characterObservations]) => {
       window.localStorage.setItem(session, "{broken-json");
       window.localStorage.setItem(prefs, "{broken-json");
-    }, [readerSessionKey, preferencesKey]);
+      window.localStorage.setItem(characterObservations, "{broken-json");
+    }, [readerSessionKey, preferencesKey, characterObservationsKey]);
     await page.reload();
 
     await expect(page.getByTestId("bootstrap-shell")).toBeVisible();
