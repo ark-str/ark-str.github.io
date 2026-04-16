@@ -1,6 +1,6 @@
 # Content Pipeline Foundation
 
-Status: active
+Status: completed
 Owner: Codex
 Started: 2026-04-16
 Parent issue: `#1`
@@ -75,3 +75,4 @@ Commit format:
 - 2026-04-16: Use `story_review_table.json`, `story_review_meta_table.json`, `stage_table.json`, and `story_table.json` as the first-stage source set.
 - 2026-04-16: Defer full story parsing and summary generation to later child issues.
 - 2026-04-16: Root verification passed after adding content integrity checks and generated readiness rendering.
+- 2026-04-16: Completed by merging PR `#7` into `main`.
