@@ -5,6 +5,7 @@ import { readText } from "./lib.mjs";
 const requiredFiles = [
   "AGENTS.md",
   "ARCHITECTURE.md",
+  "docs/design-system/README.md",
   "docs/FRONTEND.md",
   "docs/PLANS.md",
   "docs/RELIABILITY.md",

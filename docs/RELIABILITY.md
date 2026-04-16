@@ -18,6 +18,7 @@ Every meaningful change should pass:
 - Persisted state must survive a refresh and recover safely from malformed `localStorage` values.
 - Browser smoke must complete with no uncaught page errors.
 - Browser smoke must complete with no `console.error` output.
+- Design-system guard checks must reject hard-coded runtime colors outside the token source.
 - Harness orchestration logic must pass its unit tests before an iteration can be reported as successful.
 - A harness-driven iteration is not complete until every generated child issue PR is merged and the default branch passes `npm run verify`.
 - Repository rule checks must fail loudly when architecture or asset constraints drift.

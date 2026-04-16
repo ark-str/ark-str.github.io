@@ -8,17 +8,21 @@ The app should feel editorial, deliberate, and product-specific rather than like
 
 - The runnable interface lives entirely in `ark-str-web-app/`.
 - Use CSS variables for color, spacing, and typography tokens.
+- Use semantic tokens rather than page-level hard-coded colors.
 - Prefer warm, readable surfaces and high-contrast information blocks over generic dashboard chrome.
 - Avoid remote assets entirely.
 - Design for both desktop and mobile from the first pass.
 - Keep interactions obvious, testable, and local-first.
+- Shared primitives belong in `ark-str-web-app/src/components/ui/`.
+- Detailed token and component guidance lives in `docs/design-system/README.md`.
 
 ## Current UI Contract
 
 - bootstrap home shell inside `ark-str-web-app`
 - locally persisted bootstrap preferences
-- visible dependency graph for the next harness issues
+- app-level light/dark theme toggle persisted through the preferences feature
 - no framework starter copy, remote links, or vendor branding
+- bootstrap shell must use shared UI primitives instead of one-off styled markup
 
 ## Anti-Patterns
 

@@ -10,10 +10,11 @@ Read these files in order when you begin a new task:
 2. `ARCHITECTURE.md`
 3. `docs/product-specs/index.md`
 4. `docs/FRONTEND.md`
-5. `docs/RELIABILITY.md`
-6. `docs/SECURITY.md`
-7. `docs/PLANS.md`
-8. `docs/QUALITY_SCORE.md`
+5. `docs/design-system/README.md`
+6. `docs/RELIABILITY.md`
+7. `docs/SECURITY.md`
+8. `docs/PLANS.md`
+9. `docs/QUALITY_SCORE.md`
 
 ## Mission
 
@@ -31,6 +32,7 @@ Build and maintain an Arknights story reader where:
 - Persist user-editable state only through the repository layer over `localStorage`.
 - Keep browser-only APIs out of server components. The `ark-str-web-app/src/app` layer renders the shell; feature runtime code owns browser behavior.
 - Follow the layered feature architecture in `ARCHITECTURE.md`.
+- Keep shared UI primitives under `ark-str-web-app/src/components/ui/` and feature-specific composition under `ark-str-web-app/src/features/*/ui/`.
 - If behavior or constraints change, update the matching product spec and active execution plan.
 - End every meaningful change with `npm run verify`.
 
@@ -74,6 +76,7 @@ Build and maintain an Arknights story reader where:
 ## Document Map
 
 - `ARCHITECTURE.md` - code boundaries and allowed dependency flow
+- `docs/design-system/README.md` - design-system principles, tokens, and component map
 - `docs/FRONTEND.md` - visual and interaction constraints
 - `docs/PLANS.md` - execution-plan lifecycle
 - `docs/RELIABILITY.md` - validation flow and release bar

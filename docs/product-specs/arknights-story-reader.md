@@ -1,7 +1,7 @@
 # Arknights Story Reader
 
 Status: active
-Phase: root harness + nested app bootstrap
+Phase: design system foundation
 
 ## Product Goal
 
@@ -41,11 +41,12 @@ Build a web application that makes Arknights story content easier to read, summa
 - local storage only for mutable user state
 - repository root owns the harness and `ark-str-web-app/` owns the runnable app
 
-## Current Bootstrap Phase
+## Current Phase
 
-This issue does not implement the full reader yet. It only establishes:
+This phase still does not implement the full reader. It establishes:
 
-- a fresh nested Next.js app under `ark-str-web-app/`
-- root-level docs, scripts, and tests for the harness
-- a local-first bootstrap shell inside the app that proves the persistence and verification path
-- the issue and PR dependency plan for follow-up reader work
+- root-level design-system docs for principles, tokens, components, and voice
+- semantic light/dark theme tokens in the nested app
+- shared UI primitives under `ark-str-web-app/src/components/ui/`
+- app-owned theme persistence and a bootstrap shell that uses the new primitives
+- mechanical guardrails that keep runtime colors centralized in the token source
