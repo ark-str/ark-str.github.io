@@ -5,7 +5,7 @@ Owner: Codex
 Started: 2026-04-16
 Parent issue: `#15`
 Active child issue: `#16`
-Draft PR: pending
+Draft PR: `#17`
 
 ## Objective
 

@@ -1,7 +1,7 @@
 # Arknights Story Reader
 
 Status: active
-Phase: dev-startup recovery
+Phase: manual Pages deployment enablement
 
 ## Product Goal
 
@@ -43,7 +43,7 @@ Build a web application that makes Arknights story content easier to read, summa
 
 ## Current Phase
 
-This phase removes the dev-startup regression introduced after the first reader iteration. It keeps:
+This phase keeps the recovered reader shell stable while adding a repeatable manual GitHub Pages deployment path. It keeps:
 
 - canonical locale URLs at `/reader/[locale]` and `/reader/[locale]/[groupId]/[storyId]`
 - generated story detail files under `public/generated/content/stories/`
@@ -53,3 +53,4 @@ This phase removes the dev-startup regression introduced after the first reader 
 - explicit empty summary state until the summary-generation issue lands
 - gh-pages-safe static export under the `/ark-str/` base path
 - isolated `.next-dev` and `.next-export` caches so `npm run verify` does not degrade the next `npm run dev` startup
+- a manual GitHub Actions Pages workflow that rebuilds, verifies, and publishes `ark-str-web-app/out`

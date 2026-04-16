@@ -1,17 +1,17 @@
 # Latest Iteration
 
-Latest parent iteration: `#12`
+Latest parent iteration: `#15`
 
 Merged child issues:
 
-- `#13` via PR `#14` - dev-startup regression recovery for generated loaders and cache separation
+- `#16` via PR `#17` - manual GitHub Pages deployment workflow and deployment docs
 
 Current closeout outcome:
 
-- `public/generated/content/` remains the published bundled content contract for full story payloads
-- `ark-str-web-app/src/generated/content/` now contains metadata-only loader artifacts instead of mirroring the full story corpus
-- `npm run dev` uses `.next-dev` and export verification uses `.next-export`, so verify no longer poisons the next local dev startup
-- `npm run verify` still validates the gh-pages `/ark-str/` export path with Playwright
+- the repository ships a manual `Deploy GitHub Pages` workflow that rebuilds, verifies, and publishes `ark-str-web-app/out`
+- the Pages deployment path remains aligned with the `/ark-str/` export-safe app contract
+- deployment instructions now live in the repository docs instead of relying on local knowledge
+- `npm run verify` remains the required gate before any published artifact is uploaded
 
 Remaining product gaps:
 

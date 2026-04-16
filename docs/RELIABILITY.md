@@ -16,12 +16,14 @@ Every meaningful change should pass:
 
 - The app must build without runtime network access after dependencies are installed.
 - The app must export successfully for the gh-pages `/ark-str/` base path.
+- The repository must provide a manual GitHub Pages deployment workflow that rebuilds and verifies before publishing `ark-str-web-app/out`.
 - The app must keep dev-cache and export-cache output isolated so `npm run verify` does not slow the next `npm run dev`.
 - The app must render without requiring a server-side data source.
 - Persisted state must survive a refresh and recover safely from malformed `localStorage` values.
 - Browser smoke must complete with no uncaught page errors.
 - Browser smoke must complete with no `console.error` output.
 - Browser smoke must exercise the exported site, not a `next start` server.
+- Any Pages deployment workflow must publish only an artifact produced after `npm run verify` succeeds.
 - Design-system guard checks must reject hard-coded runtime colors outside the token source.
 - Content integrity checks must reject drift between committed generated outputs and the current vendor source when the submodule is available.
 - Harness orchestration logic must pass its unit tests before an iteration can be reported as successful.

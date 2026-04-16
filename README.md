@@ -34,6 +34,23 @@ npm run content:check
 npm run verify
 ```
 
+## Deploy To GitHub Pages
+
+The repository publishes a static export to project pages at `https://wjlee611.github.io/ark-str/`.
+
+Before the first deployment, set the repository Pages source to `GitHub Actions` in `Settings -> Pages`.
+
+Manual deployment flow:
+
+```bash
+npm run verify
+npm --prefix ark-str-web-app run export:ghpages
+```
+
+Then open the Actions tab and run the `Deploy GitHub Pages` workflow manually from `main`.
+
+The workflow rebuilds the app, runs `npm run verify`, uploads `ark-str-web-app/out`, and deploys that exported artifact to GitHub Pages.
+
 ## Root Harness Commands
 
 - `npm run guards:all`
@@ -55,7 +72,7 @@ npm run verify
 
 ## Current Phase
 
-The repository is in the dev-startup regression-recovery phase after the first reader iteration:
+The repository is in the manual Pages deployment enablement phase after the first reader iteration:
 
 - nested app scaffold and root harness split are complete
 - editorial archive theme tokens and shared UI primitives are established
@@ -63,4 +80,5 @@ The repository is in the dev-startup regression-recovery phase after the first r
 - app-internal generated metadata under `ark-str-web-app/src/generated/content/` keep the reader export-safe without mirroring full story payloads into app source
 - `npm run dev` uses an isolated `.next-dev` cache and export verification uses `.next-export`, so verify no longer poisons the next local dev startup
 - `npm run verify` now validates the exported site with Playwright against the `/ark-str/` subpath
+- a manual `Deploy GitHub Pages` workflow can publish the exported artifact through GitHub Actions
 - summary generation and character unlock extraction remain follow-up work
