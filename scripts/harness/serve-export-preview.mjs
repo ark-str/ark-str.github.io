@@ -6,7 +6,7 @@ const host = process.env.SMOKE_HOST ?? "127.0.0.1";
 const port = Number.parseInt(process.env.SMOKE_PORT ?? "3200", 10);
 const appBasePath = (process.env.PLAYWRIGHT_APP_BASE_PATH ?? "/ark-str").replace(/^\/+|\/+$/g, "");
 const repoRoot = process.cwd();
-const exportRoot = path.join(repoRoot, "ark-str-web-app", "out");
+const exportRoot = path.join(repoRoot, "ark-str-web-app", ".next-export");
 const previewRoot = path.join(
   repoRoot,
   "artifacts",
@@ -17,7 +17,7 @@ const previewAppRoot = path.join(previewRoot, appBasePath);
 
 function ensurePreviewTree() {
   if (!fs.existsSync(exportRoot)) {
-    throw new Error("ark-str-web-app/out is missing. Run `npm run app:verify` before smoke.");
+    throw new Error("ark-str-web-app/.next-export is missing. Run `npm run app:verify` before smoke.");
   }
 
   fs.mkdirSync(path.dirname(previewAppRoot), { recursive: true });
