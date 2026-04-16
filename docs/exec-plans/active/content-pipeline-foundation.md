@@ -54,11 +54,11 @@ Commit format:
 
 ## Tasks
 
-- [ ] attach `vendor/ArknightsData` as a real Git submodule
-- [ ] generate `index.json`, `source-manifest.json`, and `summary-manifest.json`
-- [ ] add `content:check` and include it in root verify
-- [ ] surface generated readiness counts in the bootstrap shell
-- [ ] update the parent issue and stale design-system plan state
+- [x] attach `vendor/ArknightsData` as a real Git submodule
+- [x] generate `index.json`, `source-manifest.json`, and `summary-manifest.json`
+- [x] add `content:check` and include it in root verify
+- [x] surface generated readiness counts in the bootstrap shell
+- [x] update the parent issue and stale design-system plan state
 
 ## Verification
 
@@ -74,3 +74,4 @@ Commit format:
 - 2026-04-16: Treat upstream locale roots (`bili`, `cn`, `en`, `jp`, `kr`, `tw`) as the server scope for the initial index.
 - 2026-04-16: Use `story_review_table.json`, `story_review_meta_table.json`, `stage_table.json`, and `story_table.json` as the first-stage source set.
 - 2026-04-16: Defer full story parsing and summary generation to later child issues.
+- 2026-04-16: Root verification passed after adding content integrity checks and generated readiness rendering.
