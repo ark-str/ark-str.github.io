@@ -56,6 +56,7 @@ The workflow rebuilds the app, runs `npm run verify`, uploads `ark-str-web-app/.
 - `npm run guards:all`
 - `npm run harness:test`
 - `npm run content:update`
+- `npm run content:portraits`
 - `npm run content:check`
 - `npm run content:status`
 - `npm run harness:iterate -- --goal "..."`
@@ -76,7 +77,7 @@ The repository is in the manual Pages deployment enablement phase after the firs
 
 - nested app scaffold and root harness split are complete
 - editorial archive theme tokens and shared UI primitives are established
-- `vendor/ArknightsData` and `public/generated/content/` power canonical locale reader routes
+- `vendor/ArknightsGamedata`, the tool-managed `vendor/ArknightsResource` portrait cache, and `public/generated/` power canonical locale reader routes and bundled reader portraits
 - app-internal generated metadata under `ark-str-web-app/src/generated/content/` keep the reader export-safe without mirroring full story payloads into app source
 - `npm run dev` uses an isolated `.next-dev` cache and export verification uses `.next-export`, so verify no longer poisons the next local dev startup
 - `npm run verify` now validates the exported site with Playwright against the `/ark-str/` subpath
