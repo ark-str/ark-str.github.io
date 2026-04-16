@@ -1,58 +1,53 @@
 # ARK STR
 
-Single-page Next.js starter with a repository-local harness for autonomous, agent-led iteration.
+Repository harness plus nested Next.js app for an Arknights story reader.
 
-## What is in this repo
+## Structure
 
-- Next.js App Router app under `src/app`
-- local-first sample page under `src/features/harness`
-- repository docs that act as the system of record
-- guard scripts that enforce architecture and asset constraints
-- a GitHub-backed Codex harness for issue-by-issue autonomous iterations
+- `ark-str-web-app/` - independent Next.js App Router application
+- `docs/` - product spec, execution plans, and generated harness reports
+- `scripts/` - guards, harness orchestration, and content-pipeline commands
+- `tests/` - root harness unit tests and browser smoke tests
+- `vendor/` - indirect GitHub-backed source repositories
 
-## Commands
+## Run The App
+
+From the app directory:
 
 ```bash
+cd ark-str-web-app
 npm run dev
 npm run verify
-npm run smoke
-npm run harness:test
-npm run harness:iterate -- --goal "Improve the hero and checklist copy"
 ```
 
-## Repository rules
+From the repository root:
 
-- bundled resources only
+```bash
+npm run app:dev
+npm run app:verify
+npm run verify
+```
+
+## Root Harness Commands
+
+- `npm run guards:all`
+- `npm run harness:test`
+- `npm run content:status`
+- `npm run harness:iterate -- --goal "..."`
+
+## Repository Rules
+
+- bundled runtime resources only
 - no remote runtime calls
 - mutable client state via `localStorage`
-- update docs when behavior changes
+- root repository owns harness and docs
+- `ark-str-web-app/` owns all runnable app code
 
-## Harness flow
+## Current Phase
 
-`npm run harness:iterate` will:
+The repository is still in the bootstrap phase:
 
-1. check `codex`, `gh`, git status, and the default branch preconditions
-2. ask Codex to decompose the goal into a child-issue DAG
-3. create a parent iteration issue plus one child issue and one branch per feature unit
-4. schedule dependency-free issues in parallel with isolated git worktrees
-5. require milestone commits, strict `npm run verify`, and reset-to-checkpoint recovery when a rollback is safer than pushing forward
-6. open one PR per child issue, run `codex review`, apply fix loops, and merge only passing PRs
-7. run a final `npm run verify` on the default branch, close the parent issue, and update `docs/generated/latest-iteration.md`
-
-All harness state is persisted under `artifacts/harness/runs/<timestamp>/iteration.json` and per-issue logs live beside it.
-
-`npm run verify` now includes:
-
-1. repository guard checks
-2. typecheck
-3. lint
-4. harness unit tests
-5. production build
-6. Playwright browser smoke with zero console or page errors
-
-## Harness Prerequisites
-
-- `codex` CLI installed and authenticated
-- `gh` CLI installed and authenticated
-- clean working tree on the default branch
-- GitHub repository configured as `origin`
+- nested app scaffold created with `create-next-app`
+- root harness retained
+- local-first bootstrap shell restored inside `ark-str-web-app`
+- real Arknights data sync, parsing, summaries, and reader routes are still follow-up work

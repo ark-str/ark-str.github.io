@@ -1,8 +1,5 @@
 # Harness Artifacts
 
-Runtime harness outputs are written here.
+Harness runs write per-iteration state and logs under `artifacts/harness/runs/`.
 
-- `runs/` contains timestamped JSONL traces and prompt snapshots
-- `latest-message.md` contains the last Codex completion message
-
-These files are ignored by git except for this README.
+This directory is intentionally local and excluded from normal source tracking beyond this placeholder.

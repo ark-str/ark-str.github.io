@@ -1,26 +1,32 @@
 # Architecture
 
-This project intentionally uses a narrow, agent-legible structure.
+This project intentionally separates the repository harness from the runnable web application.
 
 ## Product Shape
 
-- Single-page Next.js application
-- App Router under `src/app`
+- Root repository acts as the project harness and orchestration layer
+- Independent Next.js application lives in `ark-str-web-app/`
+- App Router under `ark-str-web-app/src/app`
 - No backend
 - No remote runtime dependencies
 - User state persisted to `localStorage`
+- Future external game data handled through build-time vendor sources under `vendor/`
 
 ## Source Layout
 
-- `src/app/` - route shell, metadata, and global styles only
-- `src/features/harness/` - business feature for the single-page workspace
+- `ark-str-web-app/src/app/` - route shell, metadata, and global styles only
+- `ark-str-web-app/src/features/` - product features with explicit layer boundaries
+- `ark-str-web-app/public/generated/` - generated static assets consumed at runtime
 - `scripts/guards/` - mechanical repository rules
 - `scripts/harness/` - verification and autonomous iteration entry points
+- `scripts/content/` - build-time content synchronization and generation entry points
+- `tests/` - root harness unit tests and browser smoke tests
 - `docs/` - repository-local source of truth
+- `vendor/` - indirect GitHub-backed data sources
 
 ## Feature Layers
 
-Each feature follows this dependency direction:
+Each app feature follows this dependency direction:
 
 `types -> config -> repo/service -> runtime -> ui`
 
@@ -39,13 +45,15 @@ Disallowed patterns:
 - `service` importing `runtime` or `ui`
 - ad-hoc `localStorage` access outside `repo` and `runtime`
 - remote resources from component code
+- moving harness logic into `ark-str-web-app/`
 
 ## Runtime Boundary
 
-- Server components render static shell and pass control to client UI.
+- Server components render the static shell and pass control to client UI.
 - Browser APIs live in client files only.
 - `localStorage` access is wrapped by `repo` functions.
-- Data shape normalization happens in `service` before state reaches the UI.
+- Persisted state normalization happens in `service` before values reach the UI.
+- Generated story data is read from `ark-str-web-app/public/generated/`, never from runtime network calls.
 
 ## Why This Exists
 

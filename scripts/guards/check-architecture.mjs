@@ -1,7 +1,7 @@
 import path from "node:path";
 import { readText, relativePath, walkFiles } from "./lib.mjs";
 
-const featureRoot = path.join(process.cwd(), "src", "features");
+const featureRoot = path.join(process.cwd(), "ark-str-web-app", "src", "features");
 const importPattern = /from\s+["']([^"']+)["']/g;
 
 const allowedTargets = {
