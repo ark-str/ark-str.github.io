@@ -13,9 +13,17 @@ import type {
 } from "@/features/content/types";
 import {
   contentIndex,
+  getPortraitPathForSpeakerId,
   getStoryDetailPath,
   summaryManifest,
 } from "@/generated/content/registry";
+
+function getConfiguredBasePath() {
+  const configuredBasePath = process.env.ARK_STR_BASE_PATH?.trim() ?? "";
+  return configuredBasePath.length > 0
+    ? `/${configuredBasePath.replace(/^\/+|\/+$/g, "")}`
+    : "";
+}
 
 function getPublishedStoryDetailPath(relativePath: string) {
   return path.join(process.cwd(), "public", "generated", "content", relativePath);
@@ -27,6 +35,32 @@ export function readContentIndex(): ContentIndex {
 
 export function readSummaryManifest(): SummaryManifest {
   return summaryManifest as SummaryManifest;
+}
+
+export function readPortraitPathForSpeakerId(speakerId: string | null): string | null {
+  if (!speakerId) {
+    return null;
+  }
+
+  const portraitPath = getPortraitPathForSpeakerId(speakerId);
+  if (!portraitPath) {
+    return null;
+  }
+
+  return `${getConfiguredBasePath()}${portraitPath}`;
+}
+
+export function readStoryPortraitPaths(detail: StoryDetail | null): Record<string, string> {
+  if (!detail) {
+    return {};
+  }
+
+  return Object.fromEntries(
+    detail.observedOperators.flatMap((observedOperator) => {
+      const portraitPath = readPortraitPathForSpeakerId(observedOperator.speakerId);
+      return portraitPath ? [[observedOperator.speakerId, portraitPath]] : [];
+    }),
+  );
 }
 
 export function getLocaleGroups(index: ContentIndex, locale: ReaderLocale): ContentGroupEntry[] {

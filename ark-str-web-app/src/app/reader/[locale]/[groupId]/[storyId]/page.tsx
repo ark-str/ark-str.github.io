@@ -7,6 +7,7 @@ import {
   getGroupStories,
   getReaderStoryStaticParams,
   readContentIndex,
+  readStoryPortraitPaths,
   readStoryDetail,
   readSummaryManifest,
 } from "@/features/content/service/read-content-index";
@@ -42,6 +43,7 @@ export default async function ReaderStoryPage({
   }
 
   const detail = story.bodyAvailable ? await readStoryDetail(locale, storyId) : null;
+  const portraitPaths = readStoryPortraitPaths(detail);
   const summaryEntry = findSummaryEntry(readSummaryManifest(), locale, storyId);
 
   return (
@@ -49,6 +51,7 @@ export default async function ReaderStoryPage({
       detail={detail}
       group={group}
       locale={locale}
+      portraitPaths={portraitPaths}
       siblingStories={getGroupStories(index, locale, groupId)}
       story={story}
       summaryAvailable={summaryEntry?.status === "ready"}
