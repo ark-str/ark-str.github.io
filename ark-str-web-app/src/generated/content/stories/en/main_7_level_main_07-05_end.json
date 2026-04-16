@@ -1,0 +1,1417 @@
+{
+  "server": "en",
+  "storyId": "main_7_level_main_07-05_end",
+  "groupId": "main_7",
+  "stageId": "main_07-05",
+  "title": "Forgotten Lands",
+  "storyCode": "7-6",
+  "avgTag": "After Operation",
+  "sourcePath": "vendor/ArknightsData/en/gamedata/story/obt/main/level_main_07-05_end.txt",
+  "sourceHash": "2c5daa5f2dd1d649e944bce40ef00a68e7ef2cc894cc62111dee2d9429257295",
+  "bodyAvailable": true,
+  "blocks": [
+    {
+      "type": "narration",
+      "text": "Bloodied. Torn. Pierced."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "This isn't right.",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "narration",
+          "text": "Us. Enemies. People.\nWailing, screaming, groaning."
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "This isn't right!",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "......!",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "I can't take this anymore.",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "......",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "You have a question. Ask.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rhodes Island Operator",
+          "text": "Doctor... is this your first time seeing Rosmontis fight?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rhodes Island Operator",
+          "text": "I know it's hard to watch, but—",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "I'll handle it. You go tend to the wounded enemies who can't fight anymore. Also, among them are communications personnel relaying orders and intelligence.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "If they're allowed to escape, it puts our whole operation at risk.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rhodes Island Operator",
+          "text": "...Roger.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "How old is she?",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Fourteen.",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "And you're letting her...?!",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "People, please... let me through!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "What happened here? I just finished handling the...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Doctor?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "...What?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "Doctor, did you just call me?",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Who sent you out to fight?",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "......",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Who sent you here?!",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Doctor!",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "This is too cruel!",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "...This is terrible...",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "You should not have to suffer through this.",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "...Why would they let you do this?",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Kal'tsit!",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "......!",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "This isn't right.",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "I did.",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "What are you talking about?",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "......",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "You did what...?",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "I did. I chose to fight. I want to fight.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "There are some feelings I can only experience on the battlefield.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "Protecting my friends and family is the only way I can feel complete.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "...Rhodes Island needs me.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "The world is calling my name, to prevent more people like me from coming into it.",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Still though, you can't...",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "You can't—",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "...Does death care that I am a child?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "Would war or disease spare someone because they are a child?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "When Amiya or I stand on the battlefield... who looks at us and thinks 'children?'",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "We're 'monsters,' aren't we, Doctor?",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "No!",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "......",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "That's just how you see yourself.",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "No, Doctor.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "No, Dr. {@nickname}.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "It doesn't matter what I am.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "I just want to make a difference, with my family.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "Do you know Scout?",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "What...?",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "...Do you know Ace?",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Yes.",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "..It's already been a few days since I watched any of their materials.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "I've forgotten a lot.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "But I only forgot. I'm not like you, Doctor, who threw away everything.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Rosmontis.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "No, I didn't mean that. But you get it, Amiya.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "...I get it. But just... don't say it like that.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "Mm... Fine.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "I've lost bits and pieces of things. Lots of pictures and words.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "Those feelings... feelings I can't say, only Amiya can understand...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "But they never truly left me.",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "......",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "Doctor... I feel like you're complicated.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "Even more complicated than they say.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "They say I'm complicated too. Some of them are scared of me. Some of them say I shouldn't be like this.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "But they don't know why I'm like this. They don't know what I've been through.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "Why does my heart suddenly ache? Why do I want to cry, now of all times?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "Even though I can't remember anything... why are my eyes still sore? Why are my lips dry?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "Who left a stain in the corridor, and why hasn't it been cleaned? Why do I feel worried when I break a vase, but also strangely happy?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "Why do I feel disgust from looking at flowers, but wonder from looking at bugs?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "What happened during all that time I can no longer remember? Why do these emotions keep welling up within me?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "Every operator I feel has their own unique differences.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "And when I lose them, those feelings also disappear.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "But why...? Why do we even have emotions?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "Why do my tears keep flowing even when I can't even feel anymore?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "Didn't I already forget everything?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "......",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "But Rosmontis never wanted me to take her feelings away.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "These sudden surges of emotion belong to her, no matter what they are.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "...They belong only to Rosmontis.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "I can't interfere with them. As long as Rosmontis still has hope somewhere inside her... I won't do that.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Because it's up to her to choose what to do. She can also choose to forget.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "To truly forget.",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "What happened to Rosmontis?",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "......",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "I don't know that much about her.",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Dr. {@nickname}... Rhodes Island has a strict screening process for our operators.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Many of them apply for combat roles, and we reject most of those. We look at lots of different metrics to decide if an operator is fit for combat.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Combat ability, tactical aptitude, discipline, and physical fitness are all important parameters, but that barely scratches the surface.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "People often have difficulty trusting one another when they're on an actual mission.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Rosmontis is here because she trusts in our orders and objectives, and we trust in her abilities and judgment.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Please believe in me, Doctor. No, believe in us...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "You'll slowly begin to see... the colors of her emotions.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "......",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "Doctor. Thank you for fighting alongside Blaze.",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Why?",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "......",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "You don't have to thank me.",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "Blaze needs more people fighting alongside her. And I want to see her smile.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "I want to see you too. I want to see the one Ace and Scout always talked about.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Here you are.",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "You found me this time.",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "...She uses heavy machinery to quickly and effectively destroy the enemy, while at the same time exhibiting astonishing self-control and adaptiveness.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Rosmontis is one of Rhodes Island's greatest annihilation specialists.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "As such, the way she treats people and the way she speaks may worry you. The way she fights and its contrast with her appearance, is indeed very cruel.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Blaze running around with her chainsaw may be easier to accept, but the destruction of when Rosmontis takes the field is much harder to stomach.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "If it will help you sleep at night, I can make you a promise. If it will help at all.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "—Rosmontis almost never kills. Though her tactics seems to singularly aim for that outcome, she actually focuses on disabling the enemy's combat abilities.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Take the last battle, for example, all the enemies were disarmed, and not a single one died to Rosmontis's attacks.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "She also has much more control over her weapons than she once did.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Of course, whether or not we can keep the prisoners alive depends entirely on our ability to destroy Reunion's leadership. Only then will we be able to send rescue teams into the core city.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "But sometimes, we must use lethal force in order to accomplish our goals. Some loss of life is inevitable.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "You still look disturbed. Is this all beyond your ability to accept?",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "I can't accept this.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "......",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "It doesn't make sense.",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "You might not be able to accept the truth either.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Her terrifying Originium Arts and incredible perception are not the only reasons why Rosmontis is an elite operator.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "—Rosmontis demonstrates these qualities because she became an elite operator.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "We made our judgment not on whether to send her to battle, but how disastrous the consequences might be if we didn't let her become a fighter like this.",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "What kind of consequences?",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Worst case scenario, her Arts leak out from her body and push her to kill, subconsciously or otherwise.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Humans killing each other has become the normal state of things. Even so, most people still hold their weapons and staves themselves.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Whether or not someone who has lost her sense of self can still be called a person is another topic I'm not interested in discussing. But humanity grapples with the extent and manifestation of this problem.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "'When you deprive a human being of her sentience, what is left? What is created?'",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "'When that creation deprives us of our lives, who is at fault?'",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "The one who created the weapon, the one who used the weapon, or the one we treat as a weapon?",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Another riddle?",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "......",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "I'll figure it out myself.",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "As we move on to the next battle, I may be able to teach you more.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "By the way, on the issue of her age...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Amiya puts on an air of maturity that may have you fooled. Maybe, maybe not.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "A young creature known as a deadly weapon won't be seen as an ordinary child just because she looks young.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "—Not to mention all that they've been through.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "...Take what you need. It's time to head to the surface.",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "What about Amiya? Is she a weapon too?",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "You can ask her yourself.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "This is something you should hear from her.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Warfarin",
+          "text": "Kal'tsit! Stop right there!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Warfarin, I was just leaving. Whatever it is, make it quick.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Warfarin",
+          "text": "You know the prophecy, don't you? Yes, there's nothing you don't know.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Prophecy?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Warfarin",
+          "text": "Is that not why you allowed Amiya to go?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Amiya is the commander of this operation, as well as the one who suggested it.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Warfarin",
+          "text": "But as young as Amiya is, how can she command—",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Warfarin, how long has it been since we left Kazdel?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Warfarin",
+          "text": "......",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Be precise, or I'm leaving.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Warfarin",
+          "text": "...Two months?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Warfarin... stop joking around.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Warfarin",
+          "text": "I know what you mean. She's grown up.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Yes, Warfarin. Time flies.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Age progression in Cautuses and Vampires is radically different. It has been three years since we left Kazdel.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "It may feel like a short time for you, but Amiya has matured a lot.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Warfarin",
+          "text": "Answer my first question. The prophecy.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "...'The last Wendigo will die at the hands of the Lord of Fiends?'",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Warfarin",
+          "text": "Correct. I'm familiar with that guerilla group, and their leader. I'm certain it's him.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "The original phrasing of the prophecy was 'The son of Hor-Tekrz, traitor to Sarkaz and disreputable end of the bloodline, will be executed by the Lord of Sarkaz.'",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Some prophecy. Whether or not there's any extension of their 'bloodline,' there are still many Wendigos living their lives in Columbia and Ursus.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "...That is, if a few dozen can be called 'many.'",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "And, considering the context of the time, you should view it as a threat. Many people did not want to see the Wendigos leave Kazdel.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Warfarin",
+          "text": "It wasn't either of us who said it. And since you still remember it, you must have found it important. No?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Are you getting old? Since when do you believe in 'prophecies' and Sarkaz witchcraft?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Warfarin",
+          "text": "—Old? M-Me?!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "I contracted Oripathy. Death is always here with me, waiting for the right time to strike. Warfarin, my life is no doubt much shorter than you think.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Warfarin",
+          "text": "Hey!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Warfarin",
+          "text": "Must we be so morbid? I'm not your little girl Closure. I won't let you keep skirting the topic.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "The issue you raised is quite morbid.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Warfarin",
+          "text": "...Never mind.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Warfarin",
+          "text": "Hear me, Kal'tsit, the others may not say as much to you, but I will.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Warfarin",
+          "text": "He is one of the very few left among us. I am no bleeding heart, no goodly busybody, but... we are Sarkaz.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Warfarin",
+          "text": "I am a Vampire, and the old man is a Wendigo, but we are the same.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Warfarin",
+          "text": "This world is a tough place for Sarkaz. I hope he can return to Kazdel, if possible. Or come with us.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "——",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "I'm not, Warfarin. I'm not Sarkaz.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Warfarin",
+          "text": "So you refuse?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "No...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "I'll do what I can.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "...Even I remember him, Warfarin.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Warfarin",
+          "text": "Your promise is stronger than anything.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Don't get your hopes up that this will be easy.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Warfarin",
+          "text": "But this time, you'll be there. As long as Dr. Kal'tsit makes her best effort, I'll accept the outcome.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Maybe you haven't heard, but your proposal came too late. Some things have already unfolded, and rather unfortunately.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Some time ago, an Infected clinic in Chernobog called 'Azazel' traded information with us. I learned some more information about the Wendigo in Reunion's service.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "What's more, and you should know this well, anyone who stands against the most brutal blade in Ursus will soon learn whether it tastes of salt or rust.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Nobody should knowingly place our operators in danger.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Warfarin",
+          "text": "Some patients' days are numbered, but that number depends on the doctor treating them. It's all up to us.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "...It's all up to us.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "And I told you before... You may have forgotten.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "I won't discipline you for it, but I may do something to put an end to it once and for all.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "You are not to say I'm frightening, Warfarin. We've been over this.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Do not, under any circumstances, even at Rhodes Island, speak of 'the Lord of Fiends.'",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Ever.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Wait.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "All hands, at ease!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Rosmontis... am I getting this right?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Rosmontis",
+          "text": "Hm. Yes. I felt it too.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Dr. {@nickname}, something unexpected here.",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "What is it?",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "I'm not totally sure, but...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "The core city might be... slowing down?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    }
+  ]
+}

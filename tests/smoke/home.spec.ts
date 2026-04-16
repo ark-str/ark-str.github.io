@@ -3,6 +3,7 @@ import path from "node:path";
 import { expect, test } from "@playwright/test";
 import type { Page } from "@playwright/test";
 
+const appBasePath = process.env.PLAYWRIGHT_APP_BASE_PATH ?? "/ark-str";
 const readerSessionKey = "ark-str:reader-session:v1";
 const preferencesKey = "ark-str:app-preferences:v1";
 const legacyBootstrapKey = "ark-str:reader-bootstrap:v1";
@@ -18,6 +19,15 @@ const sampleStory =
 
 if (!sampleStory) {
   throw new Error("A sample reader story with bodyAvailable=true is required for smoke tests.");
+}
+
+function toAppPath(route = "") {
+  const normalizedRoute = route.replace(/^\/+/, "");
+  const normalizedBasePath = `/${appBasePath.replace(/^\/+|\/+$/g, "")}`;
+
+  return normalizedRoute.length > 0
+    ? `${normalizedBasePath}/${normalizedRoute}`
+    : `${normalizedBasePath}/`;
 }
 
 function trackBrowserErrors(page: Page) {
@@ -48,7 +58,7 @@ test.describe("reader shell smoke", () => {
   }) => {
     const browserErrors = trackBrowserErrors(page);
 
-    await page.goto("/");
+    await page.goto(toAppPath());
     await page.evaluate(([session, prefs, legacy]) => {
       window.localStorage.removeItem(session);
       window.localStorage.removeItem(prefs);
@@ -73,19 +83,21 @@ test.describe("reader shell smoke", () => {
     await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
 
     await page.getByTestId("open-locale-archive-link").click();
-    await expect(page).toHaveURL(/\/reader\/en$/);
+    await expect(page).toHaveURL(/\/ark-str\/reader\/en\/$/);
     await expect(page.getByTestId("reader-shell")).toBeVisible();
 
-    await page.goto(`/reader/${sampleStory.server}/${sampleStory.groupId}/${sampleStory.storyId}`);
+    await page.goto(
+      toAppPath(`reader/${sampleStory.server}/${sampleStory.groupId}/${sampleStory.storyId}`),
+    );
     await expect(page.getByTestId("reader-shell")).toBeVisible();
     await expect(page.getByTestId("story-body")).toBeVisible();
     await expect(page.getByTestId("summary-empty-state")).toBeVisible();
 
-    await page.goto("/");
+    await page.goto(toAppPath());
     await expect(page.getByTestId("last-visited-story")).toContainText(sampleStory.title);
     await expect(page.getByTestId("continue-reading-link")).toHaveAttribute(
       "href",
-      `/reader/${sampleStory.server}/${sampleStory.groupId}/${sampleStory.storyId}`,
+      `/ark-str/reader/${sampleStory.server}/${sampleStory.groupId}/${sampleStory.storyId}/`,
     );
 
     browserErrors.assertClean();
@@ -94,7 +106,7 @@ test.describe("reader shell smoke", () => {
   test("recovers from malformed persisted state without browser errors", async ({ page }) => {
     const browserErrors = trackBrowserErrors(page);
 
-    await page.goto("/");
+    await page.goto(toAppPath());
     await page.evaluate(([session, prefs]) => {
       window.localStorage.setItem(session, "{broken-json");
       window.localStorage.setItem(prefs, "{broken-json");

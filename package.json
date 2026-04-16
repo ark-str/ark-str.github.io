@@ -16,6 +16,8 @@
     "harness:test": "node --test tests/harness/*.test.mjs tests/content/*.test.mjs",
     "app:dev": "npm --prefix ark-str-web-app run dev",
     "app:build": "npm --prefix ark-str-web-app run build",
+    "app:export": "npm --prefix ark-str-web-app run export",
+    "app:export:ghpages": "npm --prefix ark-str-web-app run export:ghpages",
     "app:start": "npm --prefix ark-str-web-app run start",
     "app:lint": "npm --prefix ark-str-web-app run lint",
     "app:typecheck": "npm --prefix ark-str-web-app run typecheck",

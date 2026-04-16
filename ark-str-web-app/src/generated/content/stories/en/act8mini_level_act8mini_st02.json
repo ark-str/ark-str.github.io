@@ -1,0 +1,3113 @@
+{
+  "server": "en",
+  "storyId": "act8mini_level_act8mini_st02",
+  "groupId": "act8mini",
+  "stageId": null,
+  "title": "Memoria",
+  "storyCode": "",
+  "avgTag": "Interlude",
+  "sourcePath": "vendor/ArknightsData/en/gamedata/story/activities/act8mini/level_act8mini_st02.txt",
+  "sourceHash": "263f2d9bde6f8f9bbe4d69e021475ec612b0ced9caf7e792c32e62fc229cf745",
+  "bodyAvailable": true,
+  "blocks": [
+    {
+      "type": "narration",
+      "text": "4:11 P.M. \\ Overcast, Visibility: 10 km\nRhodes Island Landship, Medical Cabin"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "text": "Remove the electrodes.",
+      "portraitKey": null
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "What's the prognosis?",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "No new developments.",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "......",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "No new developments.",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "My head feels hot and distended. Not good.",
+          "value": "3",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "You'll feel better after a quick rest.",
+              "portraitKey": null
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Dr. {@nickname}, I've scanned your brain seven times over the past month or so, and the results are always the same.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "There's nothing wrong with your medial temporal lobe, and the neurons in other brain areas are as active as they are in most young people.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Meaning you don't need to come to Medical for these unpleasant tests so often.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Then, what's wrong with my memory?",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "There's no doubt that you've lost a lot of your memory. Even someone like you wouldn't be able to manipulate the results.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Those memories are episodic, chiefly concerning the subjective awareness of your identity, and even more so about all your experiences before you fell asleep in the Chernobog sarcophagus.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "In contrast, your procedural memory has recovered extremely quickly.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "From my reports or Amiya's and Dobermann's observations, this conclusion is clear.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Your ability to command, as exhibited during the Chernobog incident, is not significantly worse than before.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Why would this happen?",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "There are many reasons for memory loss. Some are force majeure, others are subjective.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "Medical testing can only rule out qualitative pathological changes.",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "......",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "Of course, you don't make as much noise as you used to.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "Considering your language center has not been damaged, I can only guess that the deprivation of episodic memory has caused some changes in your personality.",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "In other words, I'm still useful?",
+          "value": "3",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "To Rhodes Island, you are far more than just 'useful.'",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "Even if you truly lost all your memories and become an ignorant bystander, Amiya would not have regretted saving you, and there will always be a place for you at Rhodes Island.",
+              "portraitKey": null
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "In any case, I believe that the skills you possess will play just as key a role as they did in the past.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "I want to be able to help you.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "I want to be able to help Amiya.",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "I know.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "And I've seen how hard you've been working.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "After leaving Lungmen, we've been making our way through the wastelands for some time. The operators need an opportunity to rest, Amiya in particular.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Likewise, you also need a chance to catch your breath, don't you?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "I just want some time to adjust.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "......",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "I don't want to stop here.",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "With PRTS to help you, it won't take long for you to adapt to your work at Rhodes Island.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "However, I don't want you to push yourself.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Rhodes Island is not the only thing that has just emerged from a terrible disaster. You have as well, Dr. {@nickname}.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Your physical indicators have more or less returned to normal, but your memory is still damaged, and your mental state is unstable.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "As a patient, overwork can only harm you.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "You're also a patient.",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "Me? I appreciate your concern.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "Though I can't say I'm used to Oripathy, I can assure you that I'm the last person you should worry about.",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "Amiya is also a patient.",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "Amiya knows you're concerned about her, and she's been paying more attention to her health lately.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "I have no choice but to admit, there are some areas in which your words hold more weight than mine.",
+              "portraitKey": null
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Dr. {@nickname}, in the span of one short month, you've taken over the staffing of several departments on this ship.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "In addition, I've seen you reviewing past battles together with combat operators to further explore the possibilities of tactical optimization.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "You've even been reading during this entire examination. Are you looking at the briefing submitted by the new operator who just reported in a few days ago?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Furthermore, I've seen your notes.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Those records about even the most trivial of the operators' details, those flashes of tactical inspiration...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Those calculations for determining Rhodes Island's business efficiency, and even those scrawls that I can't make sense of. They are all evidence of your commitment to your duty.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Although most of these tasks can be completed with the assistance of PRTS, I think this is your preferred method.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "It's just a way of organizing my thoughts.",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "As the density of your notes increases, your cognition also improves.",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "PRTS's data lacks a bit of that human touch.",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "PRTS is just a tool. Avoiding overreliance on tools is a good working habit.",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "You didn't see me badmouthing you, did you?!",
+          "value": "3",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "So that was a complaint? I would rather take those words as a compliment.",
+              "portraitKey": null
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "All of your abilities are recovering rapidly, not only due to the retention of your procedural memory, but also due to your extraordinary efforts.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Conscious exercise will help your brain return more quickly to your pre-comatose state, and may even bring back your memory faster than expected.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Do you want me to recover as quickly as possible?",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "I am your doctor. There's not a doctor out there who does not wish for the quick recovery of her patient.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "That said, if you end up collapsing due to overwork, you'll disrupt Amiya's condition as well.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Are you only concerned about Amiya?",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "......",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "I see. You do care about me.",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "These sentiments of yours that occasionally leak through are quite unlike the past you. While this is rather intriguing, if I am the object of your feelings, let's just say we've no need of that.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "I've told you many times over that ensuring your physical and mental well-being has always been one of my duties.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "So, yes, even here, I still care about you. Even without a battle.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "It's strange that you'd talk to me like this.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "......",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "Alright.",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Today's exam is over.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "As I said, you don't need to report back here at the same time next week.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "The regular morning and evening check-ups will continue for a while. Lancet-2 will look after you for me.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "If we ever find that your physical condition does not support your continued work, you must immediately return to Medical.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "As for now, you may return to your work, Doctor.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "4:32 P.M. \\ Overcast, Visibility: 7 km\nRhodes Island Landship, Hallway outside the bridge"
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator A",
+          "text": "Earthspirit? What brings you here?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Earthspirit",
+          "text": "I've updated the geological monitoring report I submitted this morning.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator A",
+          "text": "You needed to make an adjustment so soon? That's unlike you.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Earthspirit",
+          "text": "The numbers changed quickly. Made me miss my afternoon nap.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Earthspirit",
+          "text": "Forward the report to your team leader. My recommendations are at the bottom.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator A",
+          "text": "Sure. Strong winds warning, is it?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator A",
+          "text": "That's no problem. The Engineering Department strengthened the storm shutters two days in advance, and Logistics notified everyone to stay away from the at-risk deck areas.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Earthspirit",
+          "text": "That's not all. Keep reading.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator A",
+          "text": "Huh... There might be a strong windstorm ahead of our route? Should we slow down or make a detour?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator A",
+          "text": "How dangerous is this windstorm you're talking about here?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Earthspirit",
+          "text": "I don't know.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Earthspirit",
+          "text": "I looked at anomalies in the data and made my best call. All I know for sure is there's more than one cyclone forming ahead, and it's far more intense than anyone would expect.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator A",
+          "text": "Sounds pretty vague.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator A",
+          "text": "We set our route a month ago, it's already been approved. We're looking at a big mess if we change it on the fly.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator A",
+          "text": "You were in that meeting, right? We chose the route for its super low risk profile. Over the last decade, caravans from Lungmen to Leithanien have been back and forth over this route dozens of times.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Earthspirit",
+          "text": "Yes. In theory, we've avoided the Catastrophe-prone areas, and the probability of encountering danger is low.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator A",
+          "text": "But you're also not sure?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator A",
+          "text": "The bosses want us as far away from Ursus and Lungmen as soon as possible.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Earthspirit",
+          "text": "Whatever... I just needed to make sure you got my warning.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Earthspirit",
+          "text": "Deciding what to do with it is not in my job description. That's up to you.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator A",
+          "text": "Settle down, Earthspirit, we've got protocols. I'll notify the team leader, and we'll discuss...",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "There's no time for that.",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator A",
+          "text": "Huh, Doctor?! Why are you here?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator A",
+          "text": "Shouldn't you be in your office?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "I was going up onto the bridge.",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator A",
+          "text": "Now that's some coincidence...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator A",
+          "text": "If you're taking the report, are you going to explain the situation to our team leader in person?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "The windstorm is right in front of us. He'll notice soon enough.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "The situation is urgent, I'll let Amiya know.",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator A",
+          "text": "What? It's that serious? Well that's not good...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Earthspirit",
+          "text": "Doctor, you believe me?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "I believe in reality.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "I believe my operators.",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Earthspirit",
+          "text": "Then I'll go to the bridge with you. I'll continue to observe the situation in real time and report to you and Amiya.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Good. That's the best option.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "Not going to ask for overtime?",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Earthspirit",
+          "text": "This is within the scope of my duties.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "4:39 P.M. \\ Overcast, Visibility: 4 km\nRhodes Island Landship, Bridge"
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Central Control Staff",
+          "text": "Warning, the wind speed is increasing rapidly!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Central Control Staff",
+          "text": "At these numbers, our visibility's going to fall under one kilometer within a few minutes!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Did you turn on the assisted driving function for sandstorm mode?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Central Control Staff",
+          "text": "We've had it on for a while, it was part of the itinerary.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Central Control Staff",
+          "text": "But Amiya, this might not be an ordinary sandstorm...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator B",
+          "text": "My god!",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "What is it, Pavel?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator B",
+          "text": "Sensors detecting thunderstorm clouds ahead!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "......",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Open the PA, tell the whole ship that Rhodes Island will pass through a thunderstorm shortly, and raise the alert level by one!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Central command personnel, slow us down right now!",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Ugh... we're rocking a lot...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "What's the situation?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Central Control Staff",
+          "text": "The pressure on the hull side panels is skyrocketing!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Central Control Staff",
+          "text": "70% of the outermost storm shutters have been damaged and are basically failing!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Central Control Staff",
+          "text": "Also... multiple abnormal heat sources detected near the hull, energy amplitude approaching critical threshold!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Does this mean...",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Yes. It's a Catastrophe.",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Ah, Dr. {@nickname}!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "How... can this be?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "No time to explain.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "It's a supercell.",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Alright... I got it.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "All hands, activate code red Catastrophe alert!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Evacuate all personnel on the first deck, bridge excluded. Gather all non-engineering personnel from the second to sixth levels in the central area for safety!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Central control, maintain minimum speed cruising...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Navigator, how long will this desert thunderstorm last?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator B",
+          "text": "These sudden-onset storms usually pass within an hour or two...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator A",
+          "text": "It's hard to say for sure. Doctor? Earthspirit?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Earthspirit, your analysis.",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Earthspirit",
+          "text": "Yes, Doctor.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Earthspirit",
+          "text": "Mr. Pavel, the Doctor gave you the report I completed an hour ago.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator B",
+          "text": "Multiple small cyclones within two kilometers...? This doesn't bode well!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator B",
+          "text": "This Catastrophe is no ordinary desert thunderstorm... we could be looking at a maximum strength windstorm!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Earthspirit",
+          "text": "Can I borrow one of the sensors on the bridge?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator B",
+          "text": "Of course. I should've seen it myself...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Earthspirit",
+          "text": "It's alright, Mr. Pavel. This is an extremely abnormal phenomenon and well beyond the scope of normal Catastrophe prediction. An experienced Catastrophe Messenger would have some trouble spotting all the signs in time.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Earthspirit",
+          "text": "If not for the Doctor's assistance, I would've treated the outliers as errors and glossed over them.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "We still have time to move things in the right direction.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "......",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "I'm getting a real bad feeling about this.",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Earthspirit",
+          "text": "Doctor, Amiya, the small cyclones ahead are converging and intensifying.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Earthspirit",
+          "text": "In other words, the core of the multi-cyclone vortex is about to generate.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Earthspirit",
+          "text": "Once the core forms, I estimate the cyclone will reach two kilometers in diameter and last at least seven to eight hours.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "What happens if Rhodes Island maintains its speed as it approaches the core?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Central Control Staff",
+          "text": "If we come into contact with the vortex, the ship's hull may collide with high-speed active Originium dust, roughly equivalent to the simultaneous detonation of hundreds of maximum-payload Originium bombs across the bulwark.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Central Control Staff",
+          "text": "I'm sure you can guess how that might go for us.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Do we have enough time to change course?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Central Control Staff",
+          "text": "I can try...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator B",
+          "text": "The core of the windstorm changes directions very quickly, and can reach a maximum speed of nearly 1,000 kilometers per hour.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Central Control Staff",
+          "text": "Then there's no point in us trying.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Central Control Staff",
+          "text": "Amiya, even if we try a full speed retreat, if we get unlucky with the direction, Rhodes Island won't escape the storm.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Then it seems like the only thing we can do is stay put.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Mr. Pavel, give me a potential damage assessment.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator B",
+          "text": "If we spend seven hours in a thunderstorm of a similar scale, the first to sixth decks will be damaged maybe 15%...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator B",
+          "text": "Of those, the first deck will take the hardest hits, and casualties are likely.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "It'll be the biggest loss the ship takes in a year.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "But, I don't see any options...",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "There is a way.",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Doctor?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "We won't have to take damage.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "You don't want to have to dock for a month of repairs, right?",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Yes, if we have to stop in the wastelands, we could face other threats.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "We have another choice.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "Since we can't retreat and don't want to stop, what else can we do?",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Doctor, are you suggesting that we continue straight ahead?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Central Control Staff",
+          "text": "That's out of the question, visibility is too low!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Central Control Staff",
+          "text": "Even with assisted driving, I can't navigate. I'm from Sargon, plunging headfirst into a sandstorm like this is suicide!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "I understand your concerns, Mr. Kamal.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "But, I trust the Doctor.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Dr. {@nickname}, are you sure about leading Rhodes Island through the Catastrophe zone?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "I need Earthspirit to keep calculating the real-time coordinates of the vortex.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "Yes.",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "I need PRTS to help me calculate the energy amplitude of the Originium on the surface.",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Good, please cooperate with the Doctor.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Central Control Staff",
+          "text": "Calculating a safe route in such a short time sounds like a bad joke.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "If anyone can do it, it's our Doctor.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Central Control Staff",
+          "text": "I've heard stories of the battles and all... but operating the landship is nothing like field command!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator B",
+          "text": "I don't know about this... Of course, I don't doubt the Doctor's abilities, but I've never heard of this real-time calculation method...",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Earthspirit",
+          "text": "It just might work...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator B",
+          "text": "Earthspirit, can you make sense of the Doctor's formulas?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Earthspirit",
+          "text": "No.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Earthspirit",
+          "text": "But they feel a bit familiar.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Earthspirit",
+          "text": "Right... I heard about a similar formula from some whiz kid a couple days ago, but the Doctor's version is more complicated and varied.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "I've given the route to the navigator.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "Work with the central control staff if you need to change course rapidly.",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "Amiya, we're ready.",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Let's head forward then!",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "I'll help you issue instructions.",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Amiya",
+              "text": "No, Doctor, that would be too inefficient.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Amiya",
+              "text": "Rhodes Island only needs one commander right now.",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "Leave it to me.",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Amiya",
+              "text": "Okay, Doctor, go forward until you're at my position.",
+              "portraitKey": null
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "From the moment I saw you appear on the bridge, I trusted that the situation would definitely turn around.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Attention, everyone on the bridge–",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "From now on, I am transferring command of the Rhodes Island landship to Dr. {@nickname}!",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Notify Closure and have her put all cabins into energy-saving mode!",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "All power to the engines!",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator B",
+          "text": "Got it, Doctor!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Message from Closure: The engine is ready, and she wishes us 'good luck'...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Earthspirit",
+          "text": "There's nothing wrong with going a little crazy every now and then.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Central Control Staff",
+          "text": "If I knew I'd be sailing like this, I would've brought some booze.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Rhodes Island, all ahead full!",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Central Control Staff",
+          "text": "I'm getting a nosebleed from this speed!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator B",
+          "text": "That's because I elbowed your nose... Sorry, but the whole place is shaking so much I can't control my limbs.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Central Control Staff",
+          "text": "Is the seismic damper malfunctioning?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator B",
+          "text": "Looks like it's not just my imagination - the whole ship's falling apart.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator B",
+          "text": "Earthspirit, you haven't taken your eyes off the screen at all...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Earthspirit",
+          "text": "Cyclone number two is continuing to move thirty degrees southeast, cyclone number three... cyclone number four...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Doctor, hold my hand!",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "I've got you, Amiya.",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Doctor, did I step on your foot...?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Don't worry about it. You can hold on even tighter.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "......",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "Your ears are making my face itchy.",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Are we shaking less?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Hard right, now!!",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Central Control Staff",
+          "text": "Haah... I didn't even notice that strong wind just now. If it caught us, there's no telling if we would've been able to stabilize the hull at this speed!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator B",
+          "text": "Did the downburst make contact with the ground?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Earthspirit",
+          "text": "Only two minutes until the core of the storm forms.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Maintain current trajectory and keep moving forward!",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Central Control Staff",
+          "text": "Wait, I see the cyclone!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Central Control Staff",
+          "text": "There's one on the left and another on the right!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Central Control Staff",
+          "text": "We're surrounded. Rhodes Island is going to collide in just two or three more minutes!",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Keep going.",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Central Control Staff",
+          "text": "It's impossible to avoid them! We don't have enough space to maneuver!",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Trust me.",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Central Control Staff",
+          "text": "I'm trying real hard, Doctor!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Central Control Staff",
+          "text": "But I don't trust myself so much!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Central Control Staff",
+          "text": "Forget it, if Amiya's with you, I'm on board too. Even if I have to tie my hand to the steering handle, I'll keep pushing it forward until the very end!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Central Control Staff",
+          "text": "I just regret agreeing to swap shifts with that stinky lad, George...",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Earthspirit",
+          "text": "Seventy-five meters. Fifty meters. Thirty meters...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator B",
+          "text": "(Gulps nervously) I've never seen a Catastrophe-cyclone up close before...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Doctor...",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Amiya, are you afraid?",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Amiya",
+              "text": "I'm a bit nervous, but I'm not afraid.",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "......",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Amiya",
+              "text": "I am a little nervous. But rest assured, Doctor, I'm not afraid.",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "You're hurting my hand.",
+          "value": "3",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Amiya",
+              "text": "Sorry, Doctor, I'm a bit nervous. But I'm not afraid.",
+              "portraitKey": null
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "We've been through times like this together before.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "The closer we might be to despair, the bigger everyone's hopes are, the more incredible the outcome will be.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Doctor, this is what you taught me.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Hope comes from the commitment to never give in, even at the bitter end.",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Yes, Doctor, you once said the exact same words.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "'Red alert, red alert...'\n'Attention everyone, prepare for impact!'"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Just like before, we'll get through this crisis together.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Yes, we survived back then.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "Look.",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "I think my record's looking pretty good.",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "The wind is subsiding... and the color of the sky is changing too.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator B",
+          "text": "Report, Rhodes Island has left the Catastrophe zone!!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator B",
+          "text": "The damage to all deck levels is less than 5%, and nobody was injured!",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Thank goodness...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Central Control Staff",
+          "text": "My nose hurtsssss... Pavel, do you know you hit my nose again?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator B",
+          "text": "So what if I did? We're alive, I say! Alive!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Central Control Staff",
+          "text": "Fine, but you owe me a drink.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator B",
+          "text": "Whatever you want, it's on my tab. I almost made a big mistake.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator B",
+          "text": "Doctor, it's all thanks to you!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Earthspirit",
+          "text": "Absolutely brilliant calculations, Doctor.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Central Control Staff",
+          "text": "Doctor, is your command always so thrilling? Haha, I'd like to get another taste of that sometime!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Navigator A",
+          "text": "Doctor, how in the world did you pull that off? It's like you've got prophetic Arts or something, suddenly showing up on the bridge right before we get hit by a Catastrophe!",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "To be fair, I was pretty anxious through that whole thing.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "......",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "Shouldn't we celebrate?",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Doctor...",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Thank you... Thank you standing by my side.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Not half bad.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "I did what I had to do.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "......",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "Thanks.",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "The relationship between the self-replication speed of Originium and the increase in energy— you applied this knowledge to the calculation of wind-Catastrophe trajectories.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "You demonstrated similar abilities in the past, helping your colleagues at the time mitigate losses from Catastrophes. Some called you a Catastrophe expert.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "But we both know what you really specialize in.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "What do I specialize in?",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "......",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "Look, I really don't know.",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "That formula... You still remember it.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "I didn't remember it before.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "It jumped right into my head.",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "You created that formula yourself.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "You've recovered a lot of information about Originium and Catastrophes over the past month, and you left a lot of calculations in your notes.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Perhaps the sudden crisis dredged up the latent memories from deep inside your consciousness, or perhaps you reinvented it using the knowledge you left behind.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "The fact that you could recall this formula proves that you still retain a basic understanding of the nature of Originium.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "In other words, you've never forgotten your identity as a researcher of Originium.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "I want to continue this line of research.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "This seems to be my duty.",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "You may see the study of Originium as your duty, but know that our actions should never be restricted by duty alone.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Dr. {@nickname}, what drives you to pursue the study of Originium so fervently?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Both you and Amiya have Oripathy.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "The suffering caused by Originium scars our world.",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "I want to bring an end to this calamity.",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "I once heard an answer to this question.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "It was very similar to what you said today, but also completely different.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "The person who uttered those words had an instinctive desire to unravel truths unknown, and also worked hard to save lives.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "But sometimes, salvation also meant destruction— that is what the same person told me.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Do you still harbor that same answer deep within your brain?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Does it still count as being there even if I don't remember it?",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "......",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "Whatever makes you happy.",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Amiya said your performance on the bridge today was much like that of an actual 'prophet.'",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "I did my homework.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "......",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "Why are you staring at me like that?",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "The rational part of me wants to believe in science.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "When the results of your first brain examination came back, I thought I saw some errors in the process, and so there was a second time, a third time... and even a seventh time.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "The rational part of me told me that repeating the same results three times was enough to prove that you weren't lying.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Without a shadow of a doubt, you really did lose a lot of your memories. You don't remember what you did to Theresa, and you forgot why you were standing here in the first place.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "All of this has caused a significant... dichotomy between you and the person I once knew.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "But just like I allowed you to do the seventh test, in this moment, I once again find myself doubting... Who exactly is standing in front of me?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "How much of the past remains, and how much of you blooms anew?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "You're being sentimental again.",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "Perhaps, I won't deny it. Dealing with you always has a tendency to sway my emotions.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "But this is also born of extreme rationality.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "I hope you understand, there can be errors in our measurements. And in your case, I can no longer tolerate any errors.",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "It felt terrible having to sit through seven exams.",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "I would like to apologize to you regarding this matter.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "But taking a better grasp of your memory recuperation will also have real benefits for your body.",
+              "portraitKey": null
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "There's something I've wanted to ask for a long time.",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Setting aside your role as a doctor, do you want me to regain my memories?",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Situations are rarely black and white... and the same is true of human emotions.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "I've not concealed my hatred for you in the past, but... no matter how much I hate to admit it, there's something else there too.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "You want me doing everything I could before.",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "If it's only strength I needed, I believe that you are good enough as you are... Perhaps, you can do even better.",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "Do you miss the person you hate?",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "Do I... 'miss'...?",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "That word is far too simple. The languages of this world have developed over thousands of years, and yet I am still unable to choose the most suitable word to order my thoughts during the many moments I think about you.",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "You're searching for the truth of the past.",
+          "value": "3",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "Without a doubt, I seek that answer.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Kal'tsit",
+              "text": "Ideally, I want to hear the truth from your mouth. But I will not give up looking for that truth in other ways.",
+              "portraitKey": null
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Now, it's my turn to ask you.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Dr. {@nickname}, do you want your memories back?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "I do.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "I don't.",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Your answer doesn't matter. I see your hesitation.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Once your memories come back, many of your questions will be answered. However, not every answer will satisfy you.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "You will know where all the emotions pouring into you come from, whether it is the hatred from me and W, the unconditional trust from Amiya, or... even further back.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Excess memories, intense emotions, will instantly flood your entire brain—",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Trust me, what you will feel at that time will be far greater than exhaustion.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "What you should fear even more is, when the past finally catches up to you, you must decide.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "What if those memories are too strong and engulf all the hard work you've put in recently, and pull you back into the abyss that you failed to crawl out of over countless years?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Once the current you is defeated, everything you've worked so hard to build will collapse, and your will may no longer be your own.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "So, let me ask you once more—",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Dr. {@nickname}, are you ready?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "......",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "If luck is on our side, you won't need to answer this question any time soon.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "I want to thank you. Over the past month or so, you've shown me some new possibilities.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Especially today. I learned that you still remember the formula.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "It turns out, you and I are not the only ones preparing for that day.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "I suspected this long ago, that home-use life functions restoration device was not supposed to have the defect of deleting one's memory—",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "In particular, it's impossible to selectively delete the part of the brain most likely involved in decision-making, but still retaining the parts most meaningful to you.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Dr. {@nickname}......",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "What I think is, she trusted you even more than I could fathom in the past.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "That being the case, we should continue to work hard.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Kal'tsit",
+          "text": "Just as I've said countless times already, I will help you, as long as we continue to stand together.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "7:43 P.M. \\ Overcast\nRhodes Island Landship, Command Center"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "???",
+          "text": "Professor, are you here?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Eyjafjalla? Come in.",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Eyjafjalla",
+          "text": "Professor, they said you wanted to see me...",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "This is for you.",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Eyjafjalla",
+          "text": "Is it about my application to become an operator...? Oh, it's been approved?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eyjafjalla",
+          "text": "That's great news. Everyone said you and Miss Amiya would turn me down because of my condition.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "I convinced her.",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Eyjafjalla",
+          "text": "I see, you even went out of your way to get it approved? Thank you...",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "The briefing you submitted this morning helped Rhodes Island through a crisis.",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Eyjafjalla",
+          "text": "You mean... the Catastrophe this afternoon?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eyjafjalla",
+          "text": "Professor, did you read my analysis?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Your Originium vein expansion observations were incredibly accurate.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "You were able to predict a Catastrophe through an increase in Originium activation on the surface.",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Eyjafjalla",
+          "text": "It was just a hunch.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eyjafjalla",
+          "text": "They said the density of Originium near the surface around here would be very low, but I saw the same situation in a volcano in southern Leithanien...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eyjafjalla",
+          "text": "Even a small amount of Originium proliferates rapidly over a brief period when the conditions are right.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eyjafjalla",
+          "text": "Two days ago, after finishing my daily treatment, I was walking around the dorms as usual when I saw the approaching phenomenon from the dust samples on the porthole.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eyjafjalla",
+          "text": "In sandy terrain, a sudden burst in Originium energy will cause the ground temperature to rise rapidly, leading to a significant increase in the possibility of large-scale wind-Catastrophes.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eyjafjalla",
+          "text": "Um... I'm so sorry... I can go on and on about this stuff...",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Please continue.",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Eyjafjalla",
+          "text": "You've already seen the report, right?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eyjafjalla",
+          "text": "Busy as you are, I never expected you'd read our random notes.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "I also read your thesis.",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Eyjafjalla",
+              "text": "Professor, are you interested in my research?",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "Your research is very interesting.",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Eyjafjalla",
+              "text": "Professor, are you interested in my research?",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "I've said before, I'm a hard worker, but some folks are thinking I can use Arts.",
+          "value": "3",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Eyjafjalla",
+              "text": "Do mystical Originium Arts like that exist?",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Eyjafjalla",
+              "text": "......",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Eyjafjalla",
+              "text": "............",
+              "portraitKey": null
+            },
+            {
+              "type": "sceneBreak"
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Eyjafjalla",
+              "text": "Ah... I understand, you were making a joke.",
+              "portraitKey": null
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Eyjafjalla",
+          "text": "If you're not too busy, I'd love to stay over and have a nice chat with you again.",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "After I get some work done.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "You're welcome to look around.",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Eyjafjalla",
+          "text": "There are so many books on your desk...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eyjafjalla",
+          "text": "Annals of the Great Yan Classics,' 'A Tower Without a Legend,' 'Columbia Judicial Observation Notes,' 'Conquest and Assimilation' ...Professor, are these the books you normally read?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eyjafjalla",
+          "text": "Your interests are so diverse. It's nothing like the bookcases of the other professors I know.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "I think this one will interest you the most.",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Eyjafjalla",
+          "text": "These are your... Catastrophe research notes?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Just something to read over.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "Just some thoughts I jotted down.",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "Just a rough draft.",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Eyjafjalla",
+          "text": "Thank you... Thank you so much! I'll study these thoroughly!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eyjafjalla",
+          "text": "If I have any questions, may I come to talk to you?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Any time.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "You're always welcome.",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "As long as I can finish my other work.",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Eyjafjalla",
+          "text": "Professor... my life has been a series of wonderful surprises since coming to Rhodes Island.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eyjafjalla",
+          "text": "The stability of my Oripathy has given me a lot more confidence about my future, and people like you have given me the hope to keep moving forward.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eyjafjalla",
+          "text": "If you're working so hard, then what reason do any of us have to give up?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eyjafjalla",
+          "text": "—Professor.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eyjafjalla",
+          "text": "Thank you so much for leading Rhodes Island forward, and on into the future.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    }
+  ]
+}

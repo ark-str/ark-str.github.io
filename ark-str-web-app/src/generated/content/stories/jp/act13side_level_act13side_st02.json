@@ -1,0 +1,1437 @@
+{
+  "server": "jp",
+  "storyId": "act13side_level_act13side_st02",
+  "groupId": "act13side",
+  "stageId": "act13side_st02",
+  "title": "権と力",
+  "storyCode": "NL-ST-2",
+  "avgTag": "幕間",
+  "sourcePath": "vendor/ArknightsData/jp/gamedata/story/activities/act13side/level_act13side_st02.txt",
+  "sourceHash": "36b54d9809ee4f17425c06347a1a02359b125d76a258d2c99b429ad2c441f288",
+  "bodyAvailable": true,
+  "blocks": [
+    {
+      "type": "dialogue",
+      "speakerName": "グラベル",
+      "text": "……ドクター？",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "グラベル",
+      "text": "ねえ、ドクター？　レストランから戻ってきてから、ず～っと眉間にしわが寄ってるわよ？",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "グラベル",
+      "text": "もしかして、疲れちゃったの？　それなら、あたしが――",
+      "portraitKey": null
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "今日の夕食会、君から見てどうだった？",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "グラベル",
+              "text": "特に問題なかったわよ。ドクターってば、あの手の交流には慣れているみたいね？",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "グラベル",
+              "text": "常務取締役は顔を出さなかったけど、あの場にいた企業幹部たちはみんな、あなたをお気に召したみたいよ。",
+              "portraitKey": null
+            },
+            {
+              "type": "sceneBreak"
+            }
+          ]
+        },
+        {
+          "label": "君の目に、マルキェヴィッチはどう映っている？",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "グラベル",
+              "text": "……これは前にも話したことだけど、耀騎士の事件の時、その責任を負って、ある代弁者が辞任したの。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "グラベル",
+              "text": "そこで、代わりにそのポジションへ臨時で就くことになったのが、マルキェヴィッチよ。それまでは全く無名の誰とも分からない人物だった。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "グラベル",
+              "text": "そのせいか、洗礼を受けてない人間味みたいなものがまだ残ってるようだけど……今の環境にいたら、どれだけ持つかわからないわ。",
+              "portraitKey": null
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "ロドスの計画は、実行できると思うか？",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "グラベル",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グラベル",
+          "text": "答える前に聞いておきたいんだけど……あたしのこと、本当に信用してくれてる？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グラベル",
+          "text": "――連合会は、組織的な干渉によって人々を掌握しているわけじゃないのよ。彼らが何もしなくても、お金と、変化する社会を前にすれば騎士は資本に傾いていく。だから連合会は手強いの。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グラベル",
+          "text": "監査会がロドスを手厚くもてなすのは、耀騎士の存在があるからこそよ。そうであっても、あなたのような周到な人は、より注意深く監査会に対応しないと、痛い目見るわよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "忠告に感謝するよ。",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "もちろん、わかっているさ。",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "では次に、君の考えを聞かせてもらえるかな？",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "それで、君の意見は？",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "代弁者マルキェヴィッチ",
+          "text": "……錆銅騎士が……復帰、したのですか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "企業職員",
+          "text": "はい……騎士協会は映像やほかの騎士たちの証言に基づいて、あの件は「感染者自身が過度なアーツ使用によって病状悪化を招いた結果」だと国民議会に証明したようです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "企業職員",
+          "text": "死因も「鉱石病」であるため、錆銅騎士に直接の責任はない、とのことで……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "代弁者マルキェヴィッチ",
+          "text": "……っ、だとしても……私たちは……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "代弁者マルキェヴィッチ",
+          "text": "……すみません。先に出ていてもらえますか。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "企業職員",
+          "text": "かしこまりました。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "代弁者マルキェヴィッチ",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "代弁者マルキェヴィッチ",
+          "text": "……国民議会副審官の……プライベート回線に繋いでくれ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "電話の声",
+          "text": "……お待たせしました、代弁者様。お電話いただけたということは……先日の件、結論が出たのですね？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "代弁者マルキェヴィッチ",
+          "text": "……要するに、チャルニー様が二度と証拠を握るような事態が起きないようにすればいいのでしょう？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "電話の声",
+          "text": "仰る通りです。……ただ、一点ご留意いただきたいのですが――このことが明るみに出てしまえば、責任の矛先はあなたと私に向けられます。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "電話の声",
+          "text": "ですから、彼を殺すことこそが最も安全な手段なのですよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "代弁者マルキェヴィッチ",
+          "text": "――保証、いたします。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "代弁者マルキェヴィッチ",
+          "text": "確実に……チャルニー様の口封じをすると、お約束します。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "代弁者マルキェヴィッチ",
+          "text": "ですが、その具体的な手段については口出しをしないでいただけますか。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "電話の声",
+          "text": "いいでしょう……誠意さえ示していただけるのなら、ね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "電話の声",
+          "text": "では明日、オルマー・イングラの再審に着手します。七日以内に、あなたから十分誠意あるご回答をいただけましたら……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "電話の声",
+          "text": "オルマー・イングラは騎士競技から姿を消すことになるでしょう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "代弁者マルキェヴィッチ",
+          "text": "……誠意。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "電話の声",
+          "text": "ええ。あなたには、チャルニー様が確実に、二度と裏切らないということを証明していただかなければなりません。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "代弁者マルキェヴィッチ",
+          "text": "……一つ、ご理解いただかねばならないようですね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "代弁者マルキェヴィッチ",
+          "text": "あなたの発言は、一人の代弁者への挑発にあたります。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "電話の声",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "代弁者マルキェヴィッチ",
+          "text": "確かに、私は急な命令でこの立場にいる人間ですし、理事会に後ろ盾となる人がいるわけでもありません。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "代弁者マルキェヴィッチ",
+          "text": "しかしそれは、あなたが私を軽んじてもいい理由にはなり得ないのです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "代弁者マルキェヴィッチ",
+          "text": "無冑盟の指揮権は、チャルニー様の手に委ねられていましたよね。となれば、今は……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "電話の声",
+          "text": "……！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "電話の声",
+          "text": "どうか誤解なさらないでください。あなたの権力に対して、楯突こうという意図など……滅相もないことです。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "電話の声",
+          "text": "単に、今後の円滑な協力関係のために、と考えてお伝えしただけのことでした。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "電話の声",
+          "text": "ですからそこまで仰るのなら、これ以上強く申し上げる気はありません。そのようなことをすれば、失礼に当たりますし……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "電話の声",
+          "text": "あなたが保証してくださるなら、それだけで結構です。オルマー・イングラのような腐敗した貴族のために、我々が仲たがいする必要はない、そうですよね？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "代弁者マルキェヴィッチ",
+          "text": "……ええ、そうですね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "代弁者マルキェヴィッチ",
+          "text": "さて、それでは――これ以上お話しすることもないようですし、私はこれで。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "電話の声",
+          "text": "――！　マルキェヴィッチ様、お待ちくださ――",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "代弁者マルキェヴィッチ",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "代弁者マルキェヴィッチ",
+          "text": "…………",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "代弁者マッキー",
+          "text": "……笑っているのかい。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "代弁者マルキェヴィッチ",
+          "text": "……！　マッキー様、いつの間にここへ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "代弁者マッキー",
+          "text": "――そんなふうに笑う君は初めて見たよ、マルキェヴィッチ君。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "代弁者マルキェヴィッチ",
+          "text": "ご用があって、いらしたのですよね？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "代弁者マッキー",
+          "text": "ああ、もちろん。無冑盟内の命令は、正式に下されたよ。しかし君も私もまだこの件の関係者だとはいえ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "代弁者マッキー",
+          "text": "……いや、何でもない。仕事に戻ってくれ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "代弁者マルキェヴィッチ",
+          "text": "……わかりました、マッキー様。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "代弁者マッキー",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "代弁者マッキー",
+          "text": "マルキェヴィッチ君。権力というのは、どこまでも甘く、舌に心地いいものだな。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "……夜の街ってのは、散歩にはもってこいだな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "ま、仕事さえなければの話だが。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "無冑盟構成員",
+          "text": "ご報告します。モニーク様が、指定の位置へ隊を率いて到着されました。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "無冑盟構成員",
+          "text": "斥候が本作戦のターゲットを確認いたしました。対象となる感染者たちは現在この地区に潜伏中。約百人前後いるようです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "了解、殺れるだけ殺っといてくれ。上が数に応じて金払うって言ってるからさ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "ああ、いつも通り身内には手ぇ出すんじゃねーぞ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "無冑盟構成員",
+          "text": "わかりました。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士A",
+          "text": "なあ、おい！　無冑盟を見た奴がいるってよ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士B",
+          "text": "う、嘘だろ……！？　ここはカヴァレリエルキのど真ん中だぞ！　こんな場所で大っぴらに殺しをやろうってのか！？",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ユスティナ",
+          "text": "……少なすぎる。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "シェブチック",
+          "text": "お前たちの目論見通り、野鬃が無冑盟の注意を引いているからではないのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ユスティナ",
+          "text": "それにしても、数が少なすぎるよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ユスティナ",
+          "text": "もしかして、見落とした……？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "シェブチック",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "シェブチック",
+          "text": "――最悪の事態に備えておけ、遠牙。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "シェブチック",
+          "text": "無冑盟は侮れん相手だからな。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士A",
+          "text": "急げ、早く逃げろ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士B",
+          "text": "落ち着け、何を見たってんだ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士A",
+          "text": "あ、あお、青い弓だよ……っ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士A",
+          "text": "うわっ、マジかよ！？　嘘だろ！？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士A",
+          "text": "は、早くほかの連中にも伝えるんだ！　散らばって逃げるか、ゴミ捨て場にでも隠れろ、って！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士A",
+          "text": "それから、普通の感染者たちには抵抗もさせちゃダメだ！　絶対に刃向かうなって言っておかないと――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士B",
+          "text": "だだ、誰か、今すぐレッドパイン騎士団に連絡できる奴はいないか……！？　早くこのことを……！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "……フンフフ～ン……♪",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "無冑盟構成員",
+          "text": "ご報告します。感染者三名を発見しました。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "フンフフン……♪　フフ～ン……♪",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "あ。そういや、理事会が提示してきた報酬のこと、伝えたっけ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "お上が仰るには、不法居留感染者一人につき金貨三百枚。それが感染者騎士なら、倍出すってよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "無冑盟構成員",
+          "text": "待て！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士",
+          "text": "……クソッ！　見つかった！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "……感染者一人で、メジャーのチケット一枚分。感染者騎士一人で高級車の半分くらいの額になるわけか。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "だったら……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "固定の値札がついてない特別な相手には、どう対処したもんかな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "無冑盟構成員",
+          "text": "えっ……？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "なあ、お前らってハンドサインは何種類教わってる？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "無冑盟構成員",
+          "text": "ええと……三種類ほど、ですかね……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "ふーん、わかった。そんならそいつは一旦忘れてくれ。もし俺が……そーだなあ……指を鳴らしたら、にしておくか。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "いいか？　俺が指を鳴らしたら即行動しろ。絶対に迷うな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "無冑盟構成員",
+          "text": "了解しました。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "よーしよし。そいじゃ、俺は軽～く挨拶でもしてくるぜ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ムリナール",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ムリナール",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "よ〜お兄さん。いい夜だな！　あんたもそう思うだろ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ムリナール",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "おっと、新聞読むのに夢中だったか？　邪魔して悪かったな。今日の夕刊は耀騎士のニュースで持ちきりだもんなあ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "しっかし、この辺は人っ子一人見当たらねーのな。まったく寒々しい眺めだ。聞いた話じゃ、最近はどうも物騒だっていうし。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ムリナール",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "あ～……こほん。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "ところであんた、一人寂しくこんな所で何やってんだ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ムリナール",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ムリナール",
+          "text": "ロイか。……先ほど仕事を終えたばかりでな。少し休憩していただけだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "うっわあ～……今帰り？　こんな時間に？　遅くまでご苦労なこったな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "けどさあ……ここで何の仕事してたっての？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "この辺にいる連中なんて、感染者か不法移民か……あとはせいぜい闇市の商人くらいだろ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ムリナール",
+          "text": "私がここにいるのは、待ち合わせのためでしかない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ムリナール",
+          "text": "なんだ、その相手まで聞いてくるつもりか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "いやいや、そんなつもりない、ない！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "にしても、待ち合わせ……か。なるほどねえ。相手は美人の姉ちゃんとかか？　なーんつって。ハハッ、冗談よ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "……けどさ、実は俺たち公務があるんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ムリナール",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "あんたとそのお友達には、ちょっとここを退いてもらえないかな～と思ってるんだけど、そこんとこどう？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ムリナール",
+          "text": "……仕事があるのなら好きにしろ。だが、私には私の用がある。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "ふぅん。わかって言ってんだろうな、ムリナール。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ムリナール",
+          "text": "同じことを二度言わせるな。それとも私の言葉がガリア語にでも聞こえたのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "……そういうわけじゃねーけどさ～。あんたがいると、俺の部下たちが緊張でミスっちゃうかもしんねーし、な？　頼むよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ムリナール",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "はぁ～……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "……今あんたを殺ろうとすりゃあ、どんだけ手を焼かされるかは……ご本人様ならよ～く知ってんだろ？",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "ロイがゆっくりと手を上げる。\n暗がりの中で無冑盟の刺客たちは既に準備を整えていた。\nだがこの時、闇に溶け込んだ隠密のプロたちは、奇妙な感覚を覚えていた。『誰かに、見られている』あるいは錯覚に過ぎないかもしれないが、その場にいた全員がみな一様に錯覚に陥っていた。\n目の前にいるのはムリナール・ニアールだ。\n彼らは祈り始める。ロイが合図を出しませんように、と――"
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "――！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ムリナール",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "そこへ、剣を携えた白い角のサルカズが現れた。"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "…………ハハッ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "あれは冗談だってのに……マジで美人の姉ちゃんじゃねーか。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "シャイニング",
+          "text": "もしや、遅刻しましたか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ムリナール",
+          "text": "いいや。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ムリナール",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "シャイニング",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ムリナール",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "シャイニング",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "…………",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ムリナール",
+          "text": "……なぜこちらを見ている？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ムリナール",
+          "text": "仕事があるんだろう、ロイ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "シャイニング",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "…………あー、そうだなあ……",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "ロイの視線が、サルカズのそれと一瞬交差した。\n彼は考える。\nなるべく恥をさらさずに、この場から逃げる方法を。"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "あー、そういや深夜に雨が降るらしいが傘を忘れてきちまったぜ。ハハ、ハハハハ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "……で。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロイ",
+          "text": "ニアール家は、感染者を庇護しようとしていると受け取っていいんだな？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ムリナール",
+          "text": "勝手にしろ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "シャイニング",
+          "text": "……あの……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ムリナール",
+          "text": "また、マーガレットが勝利した。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ムリナール",
+          "text": "お前は彼女を止めるべきだろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "シャイニング",
+          "text": "……申し訳ありません。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "シャイニング",
+          "text": "ですが、これがマーガレットさんの望みなら、私は彼女をお支えします……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ムリナール",
+          "text": "……お前のような一介のサルカズが？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ムリナール",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ムリナール",
+          "text": "感染者の件は、お前に伝達した以上、ロドスに知らせたも同然と捉えておく。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "シャイニング",
+          "text": "はい。ご協力に感謝します……無冑盟は、強敵ですので。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "シャイニング",
+          "text": "彼がこの付近の感染者たちを全員殺すつもりであれば、我々にそれを阻止するすべなどありませんでした。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ムリナール",
+          "text": "……私は何もしていない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ムリナール",
+          "text": "ただ、ここに座っていただけだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "シャイニング",
+          "text": "都市を追われてからのこの数年、マーガレットさんに起こったことを知りたいと望まれるなら、私の知る限りのことをお伝えしますが……いかがでしょうか。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "シャイニング",
+          "text": "無論、本人に直接尋ねたいということであれば……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ムリナール",
+          "text": "……いや、結構。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ムリナール",
+          "text": "マーガレットの目を見た時に理解している。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ムリナール",
+          "text": "あれの両親も、そして過去にはこの私も、今のマーガレットのような輝かしい時代を過ごしたことがある。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "シャイニング",
+          "text": "……あなたは……彼女の本当の家族なのですね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ムリナール",
+          "text": "……お前が知るべきことを知った今、私はこれ以上介入しない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ムリナール",
+          "text": "マーガレットに……ロドスに教えてやるがいい。華やかに見える大騎士領の内情が、どれほど腐りきっているのかをな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ムリナール",
+          "text": "まあ、より現実的なアドバイスをするのなら、一日も早く大騎士領を――カジミエーシュを去ることだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ムリナール",
+          "text": "この時代から全力で脱しろ。それだけが、万人にとって正しい選択なのだから。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "シャイニング",
+          "text": "……本当に複雑な方ですね。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "シャイニング",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士",
+          "text": "く……来るな！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士",
+          "text": "クソが……！　貴様、無冑盟か？　どういうつもりで――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士",
+          "text": "なっ、待て、サルカズだと！？　あんた一体何者だ！？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "シャイニング",
+          "text": "こちらに敵意はありません。無冑盟は既に、ここを去りました。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士",
+          "text": "ほ、本当かよ……？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者難民",
+          "text": "……こ、この人……さっきあの無冑盟たちの前に立ちはだかってたサルカズか……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者難民",
+          "text": "あんた、誰なんだ？　なんでわざわざ無冑盟に立ち向かったりなんて……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "シャイニング",
+          "text": "……私は医者です。普段は、感染者の診療を行っています。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士",
+          "text": "サルカズが感染者を診る、だと？　そんなばかな話が……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者難民",
+          "text": "……現実味がなさすぎて、おとぎ話にすら思えてくるな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士",
+          "text": "確かにな……わかった。それで、何しにきたんだ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "シャイニング",
+          "text": "伺いたいことがあります。カジミエーシュには、感染者への医療提供制度がありますよね。それなのに、あなたたちが、こうした都市の隙間に隠れているのはなぜですか……？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士",
+          "text": "……あんた、カジミエーシュ人じゃないのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士",
+          "text": "いや、カジミエーシュ人でも知ってる奴の方が少ないか……ん？　待てよ、感染者を診る医者だとか言ってたよな……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士",
+          "text": "ま、まさか零号地の……！？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "シャイニング",
+          "text": "私はとある製薬会社から来たのですが、あなたの言う「零号地」とは感染者収容地区のことでしょうか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "シャイニング",
+          "text": "あの場所には、監査会の出資で、感染者騎士の検査と治療を行う収容治療センターが建てられていますが……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "シャイニングは話を急がず、言葉を止める。\n彼女は目の前の感染者たちの目に、疑惑、彼女への不信感、恐れ、そして僅かな期待が宿っているのを見た。"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士",
+          "text": "……あんた、本当にカジミエーシュ人じゃないんだな……まあそれもそうか、連中はサルカズを嫌ってるし……って！　悪い、こんな言い方をして……ただ、これは本当の話で……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士",
+          "text": "……とにかく、だ。あんた、あの場所で感染者を治療してたのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "シャイニング",
+          "text": "ええ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士",
+          "text": "だったら、何かおかしいとは思わなかったか……？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士",
+          "text": "あのでっかい移動式プラットフォームは、感染者騎士の檻みたいなもんだ……知っての通り、感染者騎士はあそこで検査と治療を受けて、あの場所で「生活」することになる。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士",
+          "text": "ま、あれを生活と呼べるならの話だが。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "シャイニング",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士",
+          "text": "なるほど。あんたらよその人間は、こんなことすらはっきり知らないらしいな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "シャイニング",
+          "text": "……ですが、感染者全員をあの場所で生活させるとなると……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士",
+          "text": "スペースが足りない、って思うんだろ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士",
+          "text": "だが、そうはならないのさ。……例えば、まだ金を稼げる感染者なら……治療を終えたら再度競技場に足を踏み入れるか、あるいは……肉体労働をすることになるだろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士",
+          "text": "でもって騎士になれなかった連中は、奴隷同然の違法労働送りになるが……これが採掘業や運搬業ばかりで、その上どれもこれも危険な環境ときてる。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士",
+          "text": "さらにケガでもした日には、そんな仕事すらできなくなって……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士",
+          "text": "……よそ者のあんたでも、ここまで言えばわかるだろ？　そうなっちまった感染者たちが、零号地からどこへ行ったのか……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "シャイニング",
+          "text": "……！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士",
+          "text": "……あんたらはあの場所を病院だと思ってるし、騎士たちはあれを監獄と捉えてるようだが……俺に言わせりゃ、両方ハズレだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士",
+          "text": "あそこに送られた感染者は、尊厳を洗い落とされ、価値を剥ぎ取られて、まな板の上でなされるがまま最期を迎えることになる。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "感染者騎士",
+          "text": "あの場所は見た目だけが綺麗な「屠畜場」なんだよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    }
+  ]
+}

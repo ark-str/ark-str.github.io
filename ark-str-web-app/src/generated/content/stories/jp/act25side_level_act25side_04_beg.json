@@ -1,0 +1,1646 @@
+{
+  "server": "jp",
+  "storyId": "act25side_level_act25side_04_beg",
+  "groupId": "act25side",
+  "stageId": "act25side_04",
+  "title": "荒波再び",
+  "storyCode": "CW-4",
+  "avgTag": "戦闘前",
+  "sourcePath": "vendor/ArknightsData/jp/gamedata/story/activities/act25side/level_act25side_04_beg.txt",
+  "sourceHash": "eee4c0e18bbaa4a20aa47222cb44b912bdf0258fd0acb5eda3b804e6b18392eb",
+  "bodyAvailable": true,
+  "blocks": [
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "text": "あの手紙は、あなたが書いたの？　私に、ここに来てほしかったの……？",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ローキャン",
+      "text": "ああ、そうだとも。これまでずっと、私のほうから君を探しに行きたいとすら思っていたのだが……",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ローキャン",
+      "text": "あまりにも時間がなかったもので、手紙を届けてもらえるよう友人に頼むことしかできなくてね。確かそう……ロドスだったか、そこへ届けてほしいと依頼したんだ。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ローキャン",
+      "text": "あの災難のあと……そのロドスが君を受け入れてくれたそうだが、そこの人たちはよくしてくれているかな？",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "text": "ロドスのみんなは……私の家族だよ。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "text": "ケルシー先生も、アーミヤも、ドクターも、ブレイズも、Raidianも……チームのみんなも、私の家族なの。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ローキャン",
+      "text": "家族……では、君は新しい家を見つけたのだね……げほ、ごほっ……",
+      "portraitKey": null
+    },
+    {
+      "type": "narration",
+      "text": "やせこけた男が激しく咳き込むと、元々曲がっているその背中はさらに折れ曲がって見えた。\n彼はロスモンティスを見つめ、もう少し近付こうとしたが、薄い水の壁がその歩みを阻んだ。\n彼が誰かを思い出したのはミュルジスだけではない。ロスモンティスのプロファイルの中で繰り返し言及されていた彼の名を、あなたもまた覚えていた。\n監獄にいるはずの犯罪者が、まるで仕事帰りに急いで子供に会いに来た保護者のような様子で、突然あなたたちの前に現れたのだ。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "あなたは一人でここへ来たのか？",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "一人で……ロスモンティスに会いに来たのか？",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "これは単なる私の願いであってほかの人間には関係がないからな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "さあ……顔をよく見せておくれ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "……本当に大きくなったものだな、ナルシッサ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "この四年……いや、もう五年近くになるだろうか？　君と離れていたこの長い間、私は事あるごとに君のことを考えていたよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "君との別れを思い出すたびに、いつも……残念に思っていた。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "ごほ、ごほっ……げほ、ごほごほっ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "奴らの手から君を守れなかったことが……残念でならない。表面的な利益しか見えていないあの凡人どもは……本来であれば我々が共にたどり着けた未来を完全に破壊してしまった。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "共にたどり着けた未来？　私たち、一緒に住んでたの？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "でも、あなたのことは覚えてないよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "んん……覚えていなきゃいけなかったのかな？　忘れたくないことは全部端末にメモしてあるのに。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "私を忘れてしまったのか？　まさか記憶を失って、私の犯した過ちまでもをすべて忘れ去ったというのかね？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "あなたは、悪い人なの？　私に何か、悪いことをしたの？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "それは私の口から告げるべきことではない。そうすれば、この再会の意味が失われてしまうだろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "君の記憶障害は……当時の実験によるものではないはずだ。もしやほかの誰か……マイレンダー、あるいはライン生命の仕業か？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "そんなに睨まないでよ、ウィリアムズさん。あたしはただの生態課主任よ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "それに、仮にあのヤギの爺さんがここにいたとしても、彼のぐらぐらな道徳心だってあなたよりはマシだと思うわよ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "これは道徳とは無関係な話だ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "ロドスよ、この子の記憶を消し、感情を操作したのは君たちか？",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "根も葉もない非難を受けるいわれはない。",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "我々はそんな真似はしない。",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "だろうな、君たちであるはずがない。彼女は私の作品だ……あれほど精密にできていれば、彼女の生命機能を通常通り動かしながら、特定の部分をはぎ取ることなど誰にもできはしないんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "わかった……やはり原因は私か？　ただ、当時の観察が足りなかっただけというわけだな……そうだ、我々には時間がなかった……そもそも意識の圧力というものは常人の想像を超えたもので……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "……まさか君は、記憶を君のきょうだいに預けたのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "う……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "わ……私には答えられないよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "考えさせてくれ、きっと方法はあるはずだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "あの件の断片では意味がない。当時の記憶とデータ同様、捨てられて当然のものだ。感情、形、匂い……匂いか……そうだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "お花の……香り？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "この香り……飛び散る、液体が……壁を……手を、汚して……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "い……嫌……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "だめ、考えない！　こんなのいらないよ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "やはりな、やはりそうか！　私の存在は、まだ君の脳裏に残っているんだ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "頼む、ナルシッサ。どうか、今すぐ私に対する憎しみを思い出してくれ！　そうして身体を、脳を、あらゆる場所に偏在するその精神を怒りで満たすんだ！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "っ……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "やめろ。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "出ていってくれ。",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "あなたはロスモンティスを傷つけている。",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "……私がこの子を傷つけている、だと？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "違うな。この子の苦しみは過去に端を発するものであり、決して現在のものではない。私はただ、彼女が待ち望んでいた贈り物を渡してやりたいだけなんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "これは贈り物なんかじゃない。",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "これは拷問だ。",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "君たちはこの子の苦しみを本当に理解しているのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "マイレンダーからこの子に関する情報すべてを受け取った君たちならこの子が経験したすべてを知っているはずだ。ならば彼女には怒り、憎む資格があるとは思わないのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "ハハッ、なるほど。君たちもマイレンダーの連中と同じで、この子をうまくコントロールしたいと思っているんだな。この子を恐れているからだ。この……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "……怒りを取り戻した兵器を。",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "「兵器」。\nロスモンティスと共に経験した、チェルノボーグでのすべての記憶が押し寄せてくる。命を賭して戦ったあの時の決意や、永遠の別れに伴う痛みまで……\nそう、あなたは今そばにいるフェリーンの少女を指して用いられるこの言葉を、幾度となく耳にしてきた。そのたびに苦しい思いをしていたが、今回が一番耐え難く感じた。\nその理由は、それを口にした人物がローキャン・ウィリアムズ――つまり、ロスモンティスの運命を今の状況へと追い込んだ張本人だからだ。\nあなたには反論の言葉などいくらでも思い浮かんでいた。それにもしケルシーがここにいたら、さらに多くの言葉を重ねて彼に反論することができただろう。\nしかし、そうした言葉よりも強烈な衝動が湧き上がっていた。"
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "（ローキャンを殴りたい）",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "ローキャン",
+              "text": "うっ……げほ、ごほっ……ハハ、ハ……",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "ローキャン",
+              "text": "私の言葉に怒りを感じたか。それもいいだろう。君はナルシッサのことを「兵器」だと見なしたくないのだな。だが、よく見てみたまえ……彼女は今君の前に立ち、君のために剣を構えている。",
+              "portraitKey": null
+            },
+            {
+              "type": "sceneBreak"
+            }
+          ]
+        },
+        {
+          "label": "（ローキャンに蹴りを入れたい）",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "ローキャン",
+              "text": "うっ……げほ、ごほっ……ハハ、ハ……",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "ローキャン",
+              "text": "私の言葉に怒りを感じたか。それもいいだろう。君はナルシッサのことを「兵器」だと見なしたくないのだな。だが、よく見てみたまえ……彼女は今君の前に立ち、君のために剣を構えている。",
+              "portraitKey": null
+            },
+            {
+              "type": "sceneBreak"
+            }
+          ]
+        },
+        {
+          "label": "（ローキャンにビンタしてやりたい）",
+          "value": "3",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "ローキャン",
+              "text": "うっ……げほ、ごほっ……ハハ、ハ……",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "ローキャン",
+              "text": "私の言葉に怒りを感じたか。それもいいだろう。君はナルシッサのことを「兵器」だと見なしたくないのだな。だが、よく見てみたまえ……彼女は今君の前に立ち、君のために剣を構えている。",
+              "portraitKey": null
+            },
+            {
+              "type": "sceneBreak"
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "ドクター、私の後ろにいて。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "次は、私の剣が壁を貫くかもしれないから。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "ロスモンティス、君は……",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "……敵が向かってくる。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "急速に近付いてきてるよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "私がドクターを守るね。感覚は……まだ、混乱してるけど。でもケルシー先生とアーミヤが言ってたの。私の精神はすごく安定してきたって。二人は私がドクターを守ることを許してくれた。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "だから絶対にやり遂げてみせるよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "ありがとう。",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "……",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "よくわかっているよ。",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "ロドスの……ドクターよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "君がこの子を本当に大切に思うのなら、この子が真に必要としているものが何かもわかるはずだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "自分に問うてみるといい……今守ろうとしているのは、君のために命の危険を冒す戦士か、はたまた悲惨な経験をした子供か。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "......",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "narration",
+          "text": "その問いに答えることはそう難しくもなかったが、ローキャンが求めているのは明らかにあなたの答えではなかった。\n彼は部屋に踏み入ってきた時から、あなたのそばの白いフェリーンだけを見つめている。老人の濁った瞳に宿るのは情熱と悲哀、そしてある種の期待だった。"
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "敵が来た！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "……残念ながら、今日の面会はここまでだな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "ナルシッサ。君の準備はまだ整っていないようだが……いずれその時が来るだろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "私は「家」で待っているよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "待ちなさい。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "追いついてきた……いや、ここで私を待っていたのか。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "部屋の中にいた寡黙な君と、目の前にいる君、果たしてどちらが本物なのだろうな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "……どうだっていいでしょ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "実に面白いアーツだ。いや、あるいは……まあいい、私にはもう余計な好奇心を抱いていられるほどの時間がないからな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "何の用だね、ライン生命の主任よ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "クリステンはどこ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "……ライン生命の人間は君のほうだろう。本当にそれを私に聞くのかね？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "……だって、あなたを監獄から出したのは彼女でしょう。それ以外ありえないもの。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "そしてあなたがここに来たということは、彼女から任された仕事は終わったということでしょうし……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "クリステンの準備も終わってるってことよね？　じゃあ、彼女は本当に……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "……可哀想にな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "なっ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "三日はシャワーを浴びてなさそうなお爺さんに哀れまれるほど、落ちぶれてないわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "驚きと悔しさ、憂慮が見えるな……君は恐れているんだろう、お嬢さん。信頼する相手に裏切られることを、近しい人間に見捨てられることを恐れているんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "そして、より強いのは戸惑いか……おかげで途方に暮れた君は、私のような「部外者」にまで尋ねずにはいられない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "とても懐かしい目だ……ごほ、ごほっ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "師の手によって研究記録をマイレンダーに引き渡され、学界を追放された時も……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "教え子の手でデータを事前に軍へと渡され、実験プロセスを早めざるを得なくなりついには失敗に至った時も……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "家族にD.C.での全財産を換金され、そのまま失踪された時も……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "私は、鏡に映る自らの顔に、今の君のような眼差しを見た。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "……あたしのクマはあなたほどひどくはないと思うけど。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "ただ、理解できないだけなのよ……どうして彼女はマイレンダーの嫌な女とかあなたのことは信頼するのに、サリアのことは信じようとしないのか……それに……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "あたしにそんな話をして、時間を稼ごうとでもしているの？　ホルハイヤの迎えを待ってるようなら、あたしがあいつに負けるとは限らないわよ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "だが、君は私を敵に回すつもりなどないだろう、お嬢さん。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "……え？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "君が追いかけてきたのは、本当に私とクリステンを止めるためか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "あるいは……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ローキャン",
+          "text": "私に……クリステンについていきたいからではないのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "あたし、は……",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "ミュルジスは呆然とした。ローキャンに背を向けられても、そのまま微動だにしなかった。\nよく知る風があざけるように彼女の顔をはたくまで――そうして目の前の通りにローキャンの影がなくなるまで。"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "見逃しちゃったわね……何やってるんだろ、あたし……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "ミュルジス？",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "聞いているか？",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "あっ、ええ、ドクター。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "大丈夫……ちゃんとここにいたわよ、あなたの言ったこともぜーんぶ聞いてたわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "分身でローキャンを止められたか？",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "君の分身は危険な目に遭っていないか？",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "分身……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "あたしの……えっと、うん……外にいる分身ね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "完全にあなたの推測通りだったわ。あいつらがローキャンみたいな末期患者の爺さんを一人で来させるはずなかった。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "協力者が現れたせいで取り逃がしてしまって、一つしか確かめられなかったの。ローキャン・ウィリアムズは確かに、クリステンの計画に関係しているわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "ローキャンが口にした「家」……",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "マイレンダーと軍が争い合う秘密。",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "パズルのピースが集まってきたな。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "クリステン・ライトの隠れ家はその先にある。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "ドクターの端末に……新しいメッセージが来てるみたい。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "マイレンダーからの連絡だ。",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "マイレンダーが新しい情報を送ってきた。",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "あら偶然、次はいつブリキさんに会えるのかしらって考えていたところなのよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "あなたたちは彼の依頼のせいで軍の人間に狙われたわけだし、埋め合わせしてもらわなきゃね？",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "ロスモンティス、このまま行動して大丈夫か？",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "うん、私は大丈夫。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "ミュルジス。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "……ん？",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "そばにいてくれてありがとう。",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "ロスモンティスを助けてくれてありがとう。",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "ああ……ふふ、あたしたちの協力関係はまだまだこれで終わりじゃないのよ？　いつもそんなにバカ丁寧にしてると、何回も同じことを言い続けるはめになるんじゃない？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "ドクター……本当に、あたしのことをそんなに信じてくれるの？",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "何か言った？",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ミュルジス",
+          "text": "いいえ、何にも。ほらほら、行きましょ！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イフリータ",
+          "text": "この温度で大丈夫かな……暑すぎたりしねーか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "大丈夫、上手にコントロールできてる。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "サリアの体温も安定してきたし、危険な状態は乗り越えたよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "イフリータ、少し休んで。アーツを長時間使い続けると身体の負担が大きいから。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イフリータ",
+          "text": "いや、サリアと一緒にいさせてくれ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イフリータ",
+          "text": "オレサマがまだあの白い部屋に住んでた頃、サリアがよくベッドのそばについててくれたこと、今でもよく覚えててさ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イフリータ",
+          "text": "あの頃はいつも身体はいてーし、頭の中はグチャグチャだし、そのせいであれこれ燃やしてばっかだった。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イフリータ",
+          "text": "サリアがいつ部屋に来たのか、毎回ちゃんと気付けたわけじゃないけどさ。目を開けたらそばにサリアがいてくれるのは、すごく安心することだったんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イフリータ",
+          "text": "だからオレサマも、サリアについててやりたい。まだ目を覚ましてくれねーけど……きっと、ここにいることは伝わると思うから。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "……そうだね。きっと伝わってる。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "今はただ……もう少し眠らないといけないだけ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イフリータ",
+          "text": "んー……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イフリータ",
+          "text": "なんか変な感じだな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "どうしたの？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イフリータ",
+          "text": "こうして見ると、サリアの身長ってオレサマとそこまで変わらねーんだなって思ってさ。それに……手の平は柔らかいし、爪もきれいで、サイレンスの手を握った時と同じような感じだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "……うん。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "サリアだって……普通の人だからね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "？？？",
+          "text": "彼女は「普通」という言葉からは遠いと思うけどね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "ヤラ主任……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "トラブルが起きた時は何も言わずに自分で解決しようとするし、いつも真顔でいるものだから、意見があってもほかの人は言いづらくなってしまうし。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "私が毎年、警備課の職員向けのカウンセリングをどれだけ提供していたと思うの？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "サリアに対して……ご不満があるということですか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "ふふっ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "――あの時私は、本気で科学研究員を警備課の責任者にする気かとクリステンに聞いたの。でね、その話を知ったサリアが一体何をしたと思う？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "三十台以上の盗聴器を私のデスクの上に広げて、それを当時彼女が開発したばかりのアーツで粉々にしてみせたのよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "不幸にもそのうちの大部分は稼働中で、その上我らが尊敬すべき市政府のものだったわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "彼らはただ、急速に頭角を現していたテクノロジー企業に対して若干の警戒心を抱いていただけだし……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "私も特定の規制で融通してもらえるように「コントロール可能な」範囲で情報を共有することには賛同してたのだけどね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "そのおかげで、このトラブルの後始末には多くの時間を費やすことになったけれど……この若きヴイーヴルの決心と手腕を否定できる人間なんていないでしょう？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "お話を聞く限り……サリアはずっと、私の知るサリアだったみたいですね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "ええ。何年も経ったのに、彼女は何一つ進歩していないわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "……彼女は、私が見てきた中で一番意志が固い人ですから。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "そうね。私はサリアとクリステンがここに至るまでの過程をずっと見てきたものだから、彼女がどんなに強い人かは知っているわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "だけど、そんな飛びぬけた能力の持ち主であっても……国全体に抗うことなんてできないの。これ以上背負いきれないものを彼女に持たせても、潰れてしまうだけだわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "これを受け取ってちょうだい。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "これは……車の鍵？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "手遅れになる前に、サリアとイフリータを連れてここを出るのよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "サリアは……絶対に同意しないと思います。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "違うでしょう、お嬢さん。今私が話をしている相手はサリアじゃないわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "「誰かのせいで罪のない命が危険にさらされるべきじゃない」と、あなたはずっと思っているのでしょう？　この子もあなたも巻き込まれるべきじゃない。誰一人ここで死んではならないのよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "少し……考えさせてください。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "ヤラ主任？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "そんな時間はなさそうよ。隠し通路からすぐに出なさい。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "なぜですか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "……古い友人が来たみたいなの。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "……会議室か。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "会議ではいつも、パルヴィスが窓際の席に座り、ミュルジスは中央の席を好み、そして君……ヤラ主任はいつも、クリステンから一番遠くに座っていたな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "あなたのほうも相変わらず、人の席の後ろに立つのが好きなのね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "ふぅ……本当に懐かしいよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "飲み物はいかが？　ワインか、それともシャンパン？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "今それが必要か？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "当然でしょう。転職されたフェルディナンド・クルーニーさんがまた戻ってきたんですもの……祝わないでどうするの？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "私が軍を手引きしたと思っているのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "それは違う。彼らはライン生命に手を出しているようだが私は賛同していない。仮に社内で副大統領に何かあったら、ライン生命自体が終わりだということくらいわかっているしな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "クリステンはライン生命をないがしろにできるようだが、私には無理だ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "あら、私の記憶通りなら今日のイベントはつつがなく終わったはずだけれど。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "とぼけたふりはやめてくれ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "軍の人間がどういう連中か、君は私より詳しいかもしれないくらいだろう。今日のようなことはまたいつ起こるかわからないんだぞ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "あの野蛮人どもが我々の心血を注いだ十数年を台無しにする前に本当のことを教えてくれないか――クリステンは一体何をしているんだ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "ブレイク大佐から聞いていないのかしら？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "ライトさんが失踪したその日のうちに、こちらからは各プロジェクトと統括関係の全資料を提供してるのよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "ちなみに一回じゃ終わらなかったから、何日も残業させられたわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "フッ、「ライトさん」か。まるで君たちはごく普通の同僚でしかないというような言い草だな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "君のオフィスにある引き出しの隠し収納に入っている写真をブレイクに見せてもいいんだぞ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "もしや、我らが親愛なる人事課主任はすでに言い訳を考えてでもいるのかな。二十年前にクリステンが君に宛てて書いた新年のグリーティングカードを今でも取っておいている理由について、ね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "……あれはただの古い紙きれよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "子供は大きくなると言うことも聞かないし、可愛げもなくなるものだと、あなたのほうこそよくわかっているんじゃなくて？　359号基地で受けたパンチはなかなか痛かったんでしょう？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "……ハッ。なんにせよ、クリステンは隠れてしまった。お気に入りのおもちゃを離そうとしない子供のようにな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "だが、彼女が抱えているのはおもちゃではなく、とんでもない絶対兵器で、その背後には誰にも触れることのできない秘密が関わってすらいる。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "まだ彼女を気にかける気持ちがあるのなら、引っ張り出してやるべきだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "彼女が漠然とした理想のために死んでいくのを黙って見ていたいわけじゃないんだろう？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "私も……そんなの見たくないわ。だけど、彼女を止める手立てなど私にあると思って？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "あれはクリステンなのよ。あなたが完敗したのは、ほかでもない彼女のせいでしょう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "あなたたちが本気で私と彼女の関係をクリステンにとっての弱点と見なしているとして――本当にそれが弱点になりうるなら、彼女がそんな大きな弱点を簡単に手が届く範囲に置いておくと思うの？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "……そうか、いいだろう。君は協力を拒むんだな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "それなら、ほかの人間はどうだ？　たとえば……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "サリアだとか。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "君は彼女を助け、この近くに匿っていたはずだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "私の長話にこれだけ付き合ってくれるのも、彼女を逃がすための時間稼ぎだろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "だが、たとえサリアがここから無事に逃げ出せたとして、誰を頼ればいいと思う？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "同じような泥沼に陥っているだろうロドスか、あるいは君と同じように暗躍しているマイレンダーのエージェントか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "……さて、何の話かしら。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "たった今、軍に新しい情報が入った。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "サリアと……彼女の背後についているロドスという企業は、クリステンが国家安全保障に関わる機密情報を盗み出すのを手助けした疑いがあるとのことだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ヤラ",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "もしや、ライン生命で働いてきたこの十数年で、君は……ほかでもない君自身の古巣を正義の味方か何かと勘違いするほどに甘くなったのか。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,693 @@
+{
+  "server": "jp",
+  "storyId": "act12d0_level_act12d0_01_beg",
+  "groupId": "act12d0",
+  "stageId": "act12d0_01",
+  "title": "落下物",
+  "storyCode": "RI-1",
+  "avgTag": "戦闘前",
+  "sourcePath": "vendor/ArknightsData/jp/gamedata/story/activities/act12d0/level_act12d0_01_beg.txt",
+  "sourceHash": "1882cac66f16d0e49f61383ccadfbca947cfee0a925f6d6355533250f9b299ee",
+  "bodyAvailable": true,
+  "blocks": [
+    {
+      "type": "narration",
+      "text": "ここには、君が望むすべてがある。\nひとときの安らぎも、母の抱擁も、戦争のない大地も。\n君はしがらみから解き放たれ、自由になったのだ。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "自由とはなんだ？",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "narration",
+              "text": "一般的に、自由とは相対的な状態であり、束縛がないことを意味している。だが「自分は自由だ」と語る者ほど、己の肉体に縛られているものだ――\nしかし、君の自由は本物だ。"
+            }
+          ]
+        },
+        {
+          "label": "自由だ！",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "narration",
+              "text": "そうだ、親愛なる友よ。君は永遠に、何者にも縛られない。"
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "narration",
+          "text": "君は、時という名の川に落ちた石なのだ。責任や宿命、欲望、絆は水と共に流れていくが、君はずっと、水底に在り続ける。\n君はこの世のすべてと無縁になり、この世のすべては、君を邪魔することはできない。"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "ああ、なんと素晴らしいことだろう！",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "narration",
+              "text": "君はすべてを理解し、未知なる存在と対話している。畏れ敬い、純然たる血を捧げるべき相手と。\nあるいは、君はただ衝撃を受けて意識を失い、妄想の中の自分自身と無意味な会話をしているだけかもしれない。"
+            }
+          ]
+        },
+        {
+          "label": "責任、宿命、欲望、絆……",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "ではここに、王国を創ろう！",
+          "value": "3",
+          "blocks": [
+            {
+              "type": "narration",
+              "text": "それは良い判断だ、我が王よ。ここは大地よりも広い。君が望むすべてを創ることができるだろう。\n国名は「存在国」というのはどうだろう？\n虚無の上に建つ国は、永遠に滅びることはない――\nおっと。どうやら私たちの偉業は、ここで中断しなければならないようだ。\nカーテンの隙間から差し込む一筋の光のような鋭い痺れと痛みが、一瞬にしてあなたの意識を支配した。"
+            }
+          ]
+        },
+        {
+          "label": "いや、自由は困る。苦痛の方が好きなんだ。",
+          "value": "4",
+          "blocks": [
+            {
+              "type": "narration",
+              "text": "その通り。君は痛みが好きだ。献身が好きだ。自分を傷つけるのが好きだ。困難に身を投じるのが好きだ。\n聡明な人は、常に程よく失敗している。多くを失う危険を冒さず、効率よく自分を成長させるために。\nだが、尊大にならないように。我が虚無部第一書記君。\nでは、ひとまず君が大好きな苦痛を与えよう――\n全身の筋肉から、激しい痛みが伝わってくる。"
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "それならば、そろそろ休んでもいいだろう。",
+          "value": "5",
+          "blocks": [
+            {
+              "type": "narration",
+              "text": "そうだ、親愛なる友よ、その通りだ。\nさあ、リラックスするんだ。子守唄を唄ってあげよう。君は永く眠り続け、何にも邪魔されることはない。\nだが眠りに落ちる直前、あなたは強烈な痛みに襲われた。\n続いて、遠くで懐かしい声が聞こえた。"
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "？？？",
+              "text": "……ター、ドクター！",
+              "portraitKey": null
+            },
+            {
+              "type": "narration",
+              "text": "アーミヤ？　……いや、違う。彼女はこんな大人びた声ではない。"
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "？？？",
+              "text": "これだけ寝て、まだ起きねぇのかよ。面倒だなあ。",
+              "portraitKey": null
+            },
+            {
+              "type": "sceneBreak"
+            },
+            {
+              "type": "narration",
+              "text": "……そして突然の暴力。\n頬に何度か衝撃を感じた。どうやら相手は実力行使に出たらしい。"
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "？？？",
+              "text": "これでも起きねぇか。どうする？　アーミヤもいないし、大風車でもやってみるか。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "？？？",
+              "text": "だいふうしゃ？　それ面白い？　おいらもやる！",
+              "portraitKey": null
+            },
+            {
+              "type": "narration",
+              "text": "人を起こす方法にしては、なんとも過激な手段だ。聞こえてきたもう一人の声は、純粋そのものだが――\nだがその純粋さは、彼女が本気であるということを示している。"
+            }
+          ]
+        },
+        {
+          "label": "それはダメだ。待っている人がいる。",
+          "value": "6",
+          "blocks": [
+            {
+              "type": "narration",
+              "text": "ああ、あの子たちか。彼らはいい子だ。それは否定しない。\nだが、君がいなくても、彼らは前に進める。君には彼らの面倒を見る義務はないのだ。\n君の責任、君の宿命、君の欲望……君と彼らの絆は、すべて君の妄想でしかないかもしれないのだから。\n……だが心が決まっているのなら、サプライズをやろう。そう、君が大好きな苦痛を！\n全身の筋肉から、激しい痛みが伝わってくる。\n続いて、遠くで懐かしい声が聞こえた。"
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "？？？",
+              "text": "……ター、ドクター！",
+              "portraitKey": null
+            },
+            {
+              "type": "narration",
+              "text": "アーミヤ？　……いや、違う。彼女はこんな大人びた声ではない。"
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "？？？",
+              "text": "これだけ寝て、まだ起きねぇのかよ。面倒だなあ。",
+              "portraitKey": null
+            },
+            {
+              "type": "sceneBreak"
+            },
+            {
+              "type": "narration",
+              "text": "……そして突然の暴力。\n頬に何度か衝撃を感じた。どうやら相手は実力行使に出たらしい。"
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "？？？",
+              "text": "これでも起きねぇか。どうする？　アーミヤもいないし、大風車でもやってみるか。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "？？？",
+              "text": "だいふうしゃ？　それ面白い？　おいらもやる！",
+              "portraitKey": null
+            },
+            {
+              "type": "narration",
+              "text": "人を起こす方法にしては、なんとも過激な手段だ。聞こえてきたもう一人の声は、純粋そのものだが――\nだがその純粋さは、彼女が本気であるということを示している。"
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "嫌だ、夢に帰りたい！",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "narration",
+              "text": "残念だが、それはできない。君はその一歩を踏み出すチャンスを既に失ってしまっているのだから。\nだが大丈夫。チャンスは一度きりではない。さあ、目を開けて……"
+            }
+          ]
+        },
+        {
+          "label": "（目を開ける）",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ケオベ",
+          "text": "ガヴィル、だいふうしゃってどうやって遊ぶの？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ガヴィル",
+          "text": "ああ、相手の足か腕を掴んで、ぶん回すんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ガヴィル",
+          "text": "んで、ちょうど良いところで投げ飛ばす。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケオベ",
+          "text": "面白そう！　やってみてもいい？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ガヴィル",
+          "text": "いいぜ、アタシがドクターをキャッチしてやるから……ん？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ガヴィル",
+          "text": "やっと起きたか、ドクター。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケオベ",
+          "text": "あ、ほんとだ！　ドクターおはよう！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ガヴィル",
+          "text": "こらケーちゃん、いきなり飛びつくな！　また気絶しちまったらめんどいだろ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケオベ",
+          "text": "わあっ、ごめんね、ドクター！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "二人とも無事か？",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "ガヴィル",
+              "text": "大丈夫だ。これくらいの高さどうってことない。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "ケオベ",
+              "text": "おいらも平気だよ！",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "……",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "ガヴィル",
+              "text": "おいおい、ドクター。まさかまた記憶を失ったのか？",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "さっきビンタしなかったか？",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "き、記憶が……",
+          "value": "4",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "ガヴィル",
+              "text": "アタシが医者だってこと忘れんなよ。騙されねぇよ。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "ガヴィル",
+              "text": "とりあえず、状況を簡単に説明すんぞ。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "ガヴィル",
+              "text": "ざっくり言うと、飛行ユニットが墜落したんだ。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "ケオベ",
+              "text": "空の上の、ものすごーく高いところから落ちたんだよ！　ヒュー！　ドーン！　って。",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "おねーちゃん、だーれ？",
+          "value": "5",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "ガヴィル",
+              "text": "冗談を言える元気があんなら大丈夫だろ。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "ガヴィル",
+              "text": "とりあえず、状況を簡単に説明すんぞ。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "ガヴィル",
+              "text": "ざっくり言うと、飛行ユニットが墜落したんだ。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "ケオベ",
+              "text": "空の上の、ものすごーく高いところから落ちたんだよ！　ヒュー！　ドーン！　って。",
+              "portraitKey": null
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "もっと詳しくお願い。",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "……",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "ざっくりしすぎだ！",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ガヴィル",
+          "text": "チッ、わーったよ。まあドクターはとにかく運が悪かったんだ。攻撃を受けたとき、丁度座席の近くで爆発が起こったんだからな。それでドクターは吹っ飛ばされて、壁にぶつかって気を失った。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ガヴィル",
+          "text": "だけどもうアタシが手当てしてやったから安心していいぞ。つーかロドスに戻ったばっかの頃に比べると、だいぶ丈夫になってんじゃねぇか。やるな、ドクター。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケオベ",
+          "text": "うぅ、ごめんねドクター。おいらがドクターを受け止めればよかったんだけど、爆発の音にびっくりしちゃって……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ガヴィル",
+          "text": "お前は悪くねぇよ。正直アタシも、あの連中が対空武器を持ってるなんて予想外だったし。",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "じゃあ、攻撃されること自体は予想してたってことか？",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ガヴィル",
+          "text": "ああ。言ってなかったか？　ここの連中はみんな気性が荒いんだ。アタシには敵わないけどな。",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "他の人は？",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ガヴィル",
+          "text": "落下速度を抑えるために、みんな先に飛び降りた。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ガヴィル",
+          "text": "アタシとケオベはお前を守るために最後に飛び降りたんだぜ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ガヴィル",
+          "text": "いや違った、まだLancet-2が機内に残ってたな。",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "それで、飛行ユニットはどこに？",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ガヴィル",
+          "text": "たぶんあっちだ。ほら、あの丘のむこう。あれを越えればすぐだ。",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "見に行こう。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ガヴィル",
+          "text": "おう。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ガヴィル",
+          "text": "あった、アタシらの飛行ユニットだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ガヴィル",
+          "text": "うわっ、煙が出てるけど大丈夫かよこれ。この様子じゃもう使い物になんねぇな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ガヴィル",
+          "text": "いや、でもまだ修理できそうな気もするな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケオベ",
+          "text": "ドクター、ガヴィル、飛行ユニットのところに誰かいるよ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ガヴィル",
+          "text": "ん？　あれは……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Lancet-2",
+          "text": "近寄らないでください！　私にはロドスの資産を守る義務があるとは言え、ただの医療ロボットなんです、うぅ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アダクリス人A",
+          "text": "おい、この機械なんか喋ってるぞ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アダクリス人B",
+          "text": "空からすげーモンが落っこちてきたと思ったら、まさか喋る機械まで載ってるなんてな！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アダクリス人C",
+          "text": "なぁオマエら、本当はこの中に人が入ってんじゃねぇか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アダクリス人A",
+          "text": "さあな。なんならこいつも攫っとくか。族長もきっと気に入ってくれるだろうし。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アダクリス人B",
+          "text": "そうするか！　よーし野郎ども、こいつも担いでいくぞ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Lancet-2",
+          "text": "助けて――",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ガヴィル",
+          "text": "やめろ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アダクリス人A",
+          "text": "……&%（なにモンだ！？）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ガヴィル",
+          "text": "アタシらのモンを盗ろうとするなんて、死にてぇらしいな！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アダクリス人A",
+          "text": "……$%%#（お前らのモンって証拠はあんのか！？　これは空から落ちてきたんだ！）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アダクリス人B",
+          "text": "！@#%……&（そうだそうだ！　オレらが先に見つけたんだ！　だからオレらのモンだ！）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ガヴィル",
+          "text": "くそ、一理あんな。",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "ガヴィル、彼らは何を言ってるんだ？",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ガヴィル",
+          "text": "あーわりぃ。アタシらの言葉がわかんねぇんだったな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ガヴィル",
+          "text": "ここは一応サルゴンだけど、まともなサルゴン語を話せる奴なんていないからな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ガヴィル",
+          "text": "だけど全部訳すのもめんどくせ……よし、こうしよう！　お前に伝えたほうがいい内容だけ通訳してやる。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ガヴィル",
+          "text": "他の場合はえーと……感じろ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アダクリス人A",
+          "text": "……&*#（なあにブツブツ言ってやがるんだ、こんにゃろー！）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ガヴィル",
+          "text": "それがお前らのモンってんなら、全員ぶっ倒せばアタシらのモンになるって言ってたんだよ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アダクリス人B",
+          "text": "&&……！＠（なんだと？　生意気な女め！　野郎ども、やれ！）",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    }
+  ]
+}

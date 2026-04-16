@@ -11,41 +11,22 @@ import type {
   SummaryManifest,
   SummaryManifestEntry,
 } from "@/features/content/types";
+import {
+  contentIndex,
+  getStoryDetailPath,
+  summaryManifest,
+} from "@/generated/content/registry";
 
-function getGeneratedPath(fileName: string) {
-  return path.join(process.cwd(), "public", "generated", "content", fileName);
+function getGeneratedStoryDetailPath(relativePath: string) {
+  return path.join(process.cwd(), "src", "generated", "content", relativePath);
 }
 
-function readJson<T>(filePath: string): T {
-  return JSON.parse(fs.readFileSync(filePath, "utf8")) as T;
+export function readContentIndex(): ContentIndex {
+  return contentIndex as ContentIndex;
 }
 
-export function readContentIndex(): ContentIndex | null {
-  const indexPath = getGeneratedPath("index.json");
-
-  if (!fs.existsSync(indexPath)) {
-    return null;
-  }
-
-  try {
-    return readJson<ContentIndex>(indexPath);
-  } catch {
-    return null;
-  }
-}
-
-export function readSummaryManifest(): SummaryManifest | null {
-  const summaryManifestPath = getGeneratedPath(path.join("status", "summary-manifest.json"));
-
-  if (!fs.existsSync(summaryManifestPath)) {
-    return null;
-  }
-
-  try {
-    return readJson<SummaryManifest>(summaryManifestPath);
-  } catch {
-    return null;
-  }
+export function readSummaryManifest(): SummaryManifest {
+  return summaryManifest as SummaryManifest;
 }
 
 export function getLocaleGroups(index: ContentIndex, locale: ReaderLocale): ContentGroupEntry[] {
@@ -86,43 +67,41 @@ export function findStoryEntry(
   );
 }
 
-export function readStoryDetail(
+export async function readStoryDetail(
   locale: ReaderLocale,
   storyId: string,
-): StoryDetail | null {
-  const detailPath = getGeneratedPath(path.join("stories", locale, `${storyId}.json`));
+): Promise<StoryDetail | null> {
+  const storyDetailPath = getStoryDetailPath(locale, storyId);
 
-  if (!fs.existsSync(detailPath)) {
+  if (!storyDetailPath) {
     return null;
   }
 
   try {
-    return readJson<StoryDetail>(detailPath);
+    return JSON.parse(
+      fs.readFileSync(getGeneratedStoryDetailPath(storyDetailPath), "utf8"),
+    ) as StoryDetail;
   } catch {
     return null;
   }
 }
 
 export function findSummaryEntry(
-  summaryManifest: SummaryManifest | null,
+  summaryManifestValue: SummaryManifest | null,
   locale: ReaderLocale,
   storyId: string,
 ): SummaryManifestEntry | null {
-  if (!summaryManifest) {
+  if (!summaryManifestValue) {
     return null;
   }
 
   return (
-    summaryManifest.items.find((item) => item.server === locale && item.storyId === storyId) ?? null
+    summaryManifestValue.items.find((item) => item.server === locale && item.storyId === storyId) ?? null
   );
 }
 
 export function readReaderHomeModel(): ReaderHomeModel {
   const index = readContentIndex();
-
-  if (!index) {
-    return { locales: [] };
-  }
 
   return {
     locales: Object.entries(READER_LOCALE_LABELS).map(([locale, metadata]) => {
@@ -146,4 +125,20 @@ export function readReaderHomeModel(): ReaderHomeModel {
       };
     }),
   };
+}
+
+export function getReaderLocaleStaticParams(): Array<{ locale: ReaderLocale }> {
+  return Object.keys(READER_LOCALE_LABELS).map((locale) => ({ locale: locale as ReaderLocale }));
+}
+
+export function getReaderStoryStaticParams(): Array<{
+  locale: ReaderLocale;
+  groupId: string;
+  storyId: string;
+}> {
+  return readContentIndex().stories.map((story) => ({
+    locale: story.server,
+    groupId: story.groupId,
+    storyId: story.storyId,
+  }));
 }

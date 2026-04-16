@@ -5,11 +5,18 @@ import {
   findStoryEntry,
   findSummaryEntry,
   getGroupStories,
+  getReaderStoryStaticParams,
   readContentIndex,
   readStoryDetail,
   readSummaryManifest,
 } from "@/features/content/service/read-content-index";
 import { ReaderStoryShell } from "@/features/reader/ui/reader-story-shell";
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return getReaderStoryStaticParams();
+}
 
 export default async function ReaderStoryPage({
   params,
@@ -34,7 +41,7 @@ export default async function ReaderStoryPage({
     notFound();
   }
 
-  const detail = story.bodyAvailable ? readStoryDetail(locale, storyId) : null;
+  const detail = story.bodyAvailable ? await readStoryDetail(locale, storyId) : null;
   const summaryEntry = findSummaryEntry(readSummaryManifest(), locale, storyId);
 
   return (

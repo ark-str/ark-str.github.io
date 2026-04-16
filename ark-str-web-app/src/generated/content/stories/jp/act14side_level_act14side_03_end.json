@@ -1,0 +1,665 @@
+{
+  "server": "jp",
+  "storyId": "act14side_level_act14side_03_end",
+  "groupId": "act14side",
+  "stageId": "act14side_03",
+  "title": "測り難きは人心",
+  "storyCode": "BI-3",
+  "avgTag": "戦闘後",
+  "sourcePath": "vendor/ArknightsData/jp/gamedata/story/activities/act14side/level_act14side_03_end.txt",
+  "sourceHash": "3a8c688fb319a2393699fd54b23c2df415b055ced169c200bd34cd0dbaddf4a8",
+  "bodyAvailable": true,
+  "blocks": [
+    {
+      "type": "dialogue",
+      "speakerName": "鈍い戦士",
+      "text": "なぁ、俺たちが監視してるドクターとかいう客、シルバーアッシュ家の奴に襲われたんだって？",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "おせっかいな戦士",
+      "text": "今頃なに言ってんだよ。そんな話とっくにみんな知ってるぞ。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "鈍い戦士",
+      "text": "……そんじゃ教えてくれよ、こいつは一体どういうことなんだ？　ドクターってのはエンシオディスに招かれた客なんじゃねぇのか？",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "おせっかいな戦士",
+      "text": "はぁ……俺が聞いた話によるとその襲撃者たちは、アークトス様がドクターを迎えたついでに買収したと思い込んでいたらしい。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "鈍い戦士",
+      "text": "はぁ？　アークトス様がそんなことするはずねぇだろ！",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "おせっかいな戦士",
+      "text": "ったく、そんなの奴らの妄想に決まってんだろうが！",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "おせっかいな戦士",
+      "text": "アークトス様がドクターを連れて行くと聞いたエンシオディスが、それを逆手に取って旦那様を陥れようとしたんだろうよ。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "おせっかいな戦士",
+      "text": "その襲撃者たちも、エンシオディスの差し金かもしれねぇな。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "鈍い戦士",
+      "text": "確かに言われてみりゃ、そうかもしれねぇ。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "鈍い戦士",
+      "text": "だったらどうして俺たちゃまだそのドクターを監視してるんだ？　あいつはエンシオディス側の奴にゃ見えねぇぞ。",
+      "portraitKey": null
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ヴァレス",
+      "text": "これまでドクターへの理解が足りずに、失礼な点が多々あったかもしれませんわ。どうかお許しを。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ヴァレス",
+      "text": "ドクターはエンシオディス様の大事なお客様ですし、私が言うべきでないかもしれませんが……",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ヴァレス",
+      "text": "今回のドクターに対する襲撃は、どうも何か裏がありそうですわ。",
+      "portraitKey": null
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "確かに何かありそうだ。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "何者かが領民たちを利用している。",
+          "value": "4",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "ヴァレス",
+              "text": "エンシオディス……",
+              "portraitKey": null
+            },
+            {
+              "type": "sceneBreak"
+            }
+          ]
+        },
+        {
+          "label": "だが、その狙いを正確に特定するのは難しい。",
+          "value": "5",
+          "blocks": []
+        },
+        {
+          "label": "領民たちの行為は理にかなっていない。",
+          "value": "6",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "いや、彼がそこから利を得るのは難しい。",
+          "value": "4",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "（より疑わしい人物はわかっている、しかし……）",
+          "value": "4",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "それでは理屈が通らない。",
+          "value": "5",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "職務怠慢よりも襲撃の方が非難されるリスクが大きい。",
+          "value": "5",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "何者かがエンシオディスの計画を予測していた。",
+          "value": "6",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "そしてそれを前提として彼らを扇動した。",
+          "value": "6",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "ヴァレス",
+              "text": "うーん……",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "？？？",
+              "text": "ふん、悪くない。",
+              "portraitKey": null
+            },
+            {
+              "type": "sceneBreak"
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "アークトス",
+              "text": "ヴァレス……皆お前の頭の回転とチェスの腕前を褒めるが、どうやらまだまだこのドクターに学ぶ必要がありそうだな。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "ヴァレス",
+              "text": "旦那様の仰る通りですわね。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "アークトス",
+              "text": "おっと、そうだヴァレス。今後このドクターを見張る必要はないと皆に伝えてくれ。家の番さえしていればいいと。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "アークトス",
+              "text": "ドクターが連れてきた護衛に関しても、今後こちらへの出入りは自由とする。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "ヴァレス",
+              "text": "はい。",
+              "portraitKey": null
+            },
+            {
+              "type": "sceneBreak"
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "アークトス",
+              "text": "お前たちの話は廊下にまで聞こえていたぞ。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "アークトス",
+              "text": "推理ごっこに興味はないが、いくつか手がかりは与えてやれる。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "アークトス",
+              "text": "ドクター、まずはこれまでの当家の非礼をお詫びする──",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "アークトス",
+              "text": "ペイルロッシュ家当主の名の下、ここにイェラガンドに誓う。今回の襲撃は、決して俺が画策したものではない。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "アークトス",
+              "text": "俺の言葉を信用してもらえるのならば、当家の他の者についても、俺に隠れてこんな下卑た真似をすることはないと思っていただきたい。",
+              "portraitKey": null
+            },
+            {
+              "type": "sceneBreak"
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "信頼に感謝する、アークトス。",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "アークトス",
+              "text": "なんだと？　信頼しているとは言っていない。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "アークトス",
+              "text": "だが少なくとも、お前が俺に何かしようと企んでいないことは信じている。",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "手がかりの提供に感謝する、アークトス。",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "アークトス",
+              "text": "ハハハハッ、そうか。",
+              "portraitKey": null
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "アークトス",
+          "text": "ドクター、俺は生来粗雑な人間だが……それでもこのイェラグが異常事態に陥っていることはわかる。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アークトス",
+          "text": "エンシオディスの奴は突然権力を返還すると言い出し、さらにノーシスを追放した上で、お前をそのポジションに置いた。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アークトス",
+          "text": "そしてお前はその主権奉還の対応中に襲撃に遭った。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アークトス",
+          "text": "正直、エンシオディスを疑わざるを得ないが、奴は確かに現時点では何のボロも出していない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アークトス",
+          "text": "だが、イェラガンドが我々にお与えになった土地と人民が危険に晒されているというのに、わけもわからず傍観していることしかできないというのは、いたたまれないものだ……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "では、アークトス……",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "アークトス",
+          "text": "なんだ？",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "我々の和解が示すのはつまり──",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "相手が君の反応をも予測していたのなら――",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "相手は自分を利用する必要がなくなったということだ。",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "相手はもう準備ができている、時間はあまりない。",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "アークトス",
+          "text": "なに！？",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "「ドーン」という、巨大なくぐもった音が遠くから響いた。\n外にいる者は、雷雪でも訪れるのではないかと囁き合う。\n中にいる者は見えない重圧に、うつむいて黙り込んでいる。"
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ラタトス",
+          "text": "ノーシス・エーデルワイス殿。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ノーシス",
+          "text": "ラタトス・ブラウンテイル殿。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ノーシス",
+          "text": "どうやら私は、ようやく君と真正面から言葉を交わせる資格を得たようだな？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ラタトス",
+          "text": "その見せかけの高慢さでは何も隠せはしないよ、ノーシス。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ラタトス",
+          "text": "あんたも賢い人間のはずだ。腹の探り合いは止めにしないか。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ラタトス",
+          "text": "私から何か得ようという魂胆がなければ、あんたがこうして何度も訪れるなんてあり得ないだろ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ノーシス",
+          "text": "フッ、もし自分が主導権を握っていると誇示したいだけであれば、ここで失礼させてもらおう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ラタトス",
+          "text": "そう焦るな、ノーシス……いくつか教えてもらいたいことがある。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ラタトス",
+          "text": "当時エーデルワイス家の者がエンシオディスと共にイェラグに戻ったと聞いた時、私は正直それほど驚かなかった。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ラタトス",
+          "text": "てっきりあんたが、エーデルワイス家がシルバーアッシュ家に危害を加えていない証拠か、あるいはエンシオディスの弱みをつかんだものだと思っていた。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ラタトス",
+          "text": "だがあんたにしろエンシオディスにしろ、当時のことを一切語らないばかりか、シルバーアッシュ家の領民があんたのことを恥知らずと口汚く罵っても気にも留めない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ラタトス",
+          "text": "一体何があんたを支えていたんだ？　私はそれに興味があるんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ノーシス",
+          "text": "……彼は私に未来を約束してくれた。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ラタトス",
+          "text": "未来？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ノーシス",
+          "text": "イェラグの未来だ。研究の中で才能を発揮でき、その成果が盗用、乱用されずに埋没することもない、新興工業科学技術国家となったイェラグを。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ラタトス",
+          "text": "それだけか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ノーシス",
+          "text": "私は最初から君に理解できるとは思っていない……ラタトス。君は永遠に研究者にはなれないだろうな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ノーシス",
+          "text": "君に理解するのは難しいだろう。充分な資源と権力による支援、そして正当な目的があり、一切懸念材料のない条件の下で技術革新や応用を探求できることが、どれほど魅力的であることか。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ラタトス",
+          "text": "だからあんたたちは取引をした――あんたは彼に技術を提供し、彼はあんたに舞台を提供してやったってことか。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ラタトス",
+          "text": "それで？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ラタトス",
+          "text": "まさかエンシオディスは本当に自らの保身のために、あんたに罪をかぶせたなんて言うつもりか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ラタトス",
+          "text": "あんたたちカランド貿易の利害に対する考え方は、そんなレベルのもんじゃないだろ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ノーシス",
+          "text": "君はカランド貿易を随分と高く評価しているようだな。ならばなぜ二年前の招待を受け入れ、エンシオディスに服従しなかった？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ラタトス",
+          "text": "バカ言うな。エンシオディスがいくら優秀でも、私らイェラグ人の骨の髄まで滲み込んだ千年もの信仰を変えることはできない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ラタトス",
+          "text": "カランド貿易は、三家会議と蔓珠院が許容する規模までしか成長はできない。イェラグが工業科学技術国家とやらになるなんてのは、そもそも不可能──",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ラタトス",
+          "text": "──いや、待て。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ラタトス",
+          "text": "ということは、あいつは新たな交渉材料を見つけたのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ノーシス",
+          "text": "その通りだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ノーシス",
+          "text": "いかにエンシオディスといえど、イェラグ人をイェラガンドの教えに背かせることはできない……彼は革新と伝統の均衡点を探し出すしかなかった。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ノーシス",
+          "text": "しかし彼はその均衡点の模索で、あまりにも長い間停滞していた。私が何度彼の背を突き動かそうと試みても、まるで動かなかった。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ノーシス",
+          "text": "ようやく転機が訪れるまでは、な。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ノーシス",
+          "text": "ある時、エンシアの鉱石病の症状が抑えられた。完治には至らなくとも、彼女はすっかり元気な状態でエンシオディスのもとへ帰ってきたのだ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ノーシス",
+          "text": "そして彼女はエンシオディスに、ロドスとの協力体制を強めれば、より低いコストで鉱石病の拡大と脅威を抑えられるかもしれないと語った。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ラタトス",
+          "text": "いや、エンシオディスはこれ以上、外部の技術を引き入れることはしない──",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ノーシス",
+          "text": "いいや、彼はするはずだ。一度開かれたイェラグの門扉が再び完全に閉じることはない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ノーシス",
+          "text": "イェラグの鉱石病感染者が日々増加していくことは、諸国を客観的に分析すれば想像に容易い。イェラグが絶えず発展していく過程において、鉱石病の対応力は最終的に新たな交渉材料となるのだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ノーシス",
+          "text": "彼は信仰に頼るだけでは鉱石病から身を守ることはできないとした上で、イェラグ人に信仰か技術かどちらかを選ばせるだろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ラタトス",
+          "text": "……デタラメだ。何の証拠もない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ノーシス",
+          "text": "……ではその証拠を見せてやろう。腕の立つ部下を揃えて、私についてくるがいい。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    }
+  ]
+}
