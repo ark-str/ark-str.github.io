@@ -1,6 +1,6 @@
 # Pages Deployment Workflow
 
-Status: active
+Status: completed
 Owner: Codex
 Started: 2026-04-16
 Parent issue: `#15`
@@ -29,7 +29,7 @@ Add a manual GitHub Pages deployment workflow that publishes the exported app ar
 
 - `#16 deployment-workflow-and-docs`
   - depends on: none
-  - PR: pending
+  - PR: `#17`
 
 ## Commit Policy
 
@@ -46,10 +46,10 @@ Commit format:
 
 ## Tasks
 
-- [ ] add the active deployment plan and open the child PR
-- [ ] add `.github/workflows/deploy-pages.yml` for manual GitHub Pages deployment
-- [ ] update README and reliability docs with the manual deployment flow
-- [ ] refresh product/quality/iteration docs after verification and merge
+- [x] add the active deployment plan and open the child PR
+- [x] add `.github/workflows/deploy-pages.yml` for manual GitHub Pages deployment
+- [x] update README and reliability docs with the manual deployment flow
+- [x] refresh product/quality/iteration docs after verification and merge
 
 ## Verification
 
@@ -60,3 +60,4 @@ Commit format:
 
 - 2026-04-16: Use GitHub Actions Pages deployment with `workflow_dispatch` only.
 - 2026-04-16: Keep the published base path fixed at `/ark-str/` for project-pages deployment.
+- 2026-04-16: Run the workflow only from `main` so manual dispatch cannot publish a non-default branch by accident.
