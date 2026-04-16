@@ -25,32 +25,33 @@ import { Separator } from "@/components/ui/separator";
 import { Textarea } from "@/components/ui/textarea";
 import { AVAILABLE_LOCALES } from "@/features/bootstrap/config/default-bootstrap-state";
 import { useBootstrapState } from "@/features/bootstrap/runtime/use-bootstrap-state";
+import type { ContentReadinessSnapshot } from "@/features/content/types";
 import { useAppPreferences } from "@/features/preferences/runtime/app-preferences-context";
 
 const foundationPillars = [
   {
-    title: "Semantic tokens",
-    detail: "색상, 타이포, 간격, 반경, 그림자를 역할 중심 토큰으로 고정합니다.",
+    title: "Vendor attachment",
+    detail: "ArknightsData submodule에서 서버 루트와 excel 테이블 구조를 안정적으로 읽습니다.",
     icon: Palette,
   },
   {
-    title: "Shared primitives",
-    detail: "공용 UI는 shadcn 기반 프리미티브에서 시작하고 feature UI는 이를 조합합니다.",
+    title: "Normalized index",
+    detail: "story review와 stage 정보를 앱 전용 group/story 인덱스로 정규화합니다.",
     icon: Boxes,
   },
   {
-    title: "Voice and tone",
-    detail: "UI 카피와 요약문은 차분한 기록 보관소 톤을 유지합니다.",
+    title: "Status manifests",
+    detail: "source hash와 summary readiness를 story 단위 manifest로 추적합니다.",
     icon: ScrollText,
   },
   {
-    title: "Guardrails",
-    detail: "토큰 바깥의 하드코딩 색상과 구조 드리프트는 가드로 막습니다.",
+    title: "Integrity checks",
+    detail: "generated output이 vendor source와 어긋나면 verify에서 바로 실패시킵니다.",
     icon: ShieldCheck,
   },
 ];
 
-export function BootstrapHome() {
+export function BootstrapHome({ readiness }: { readiness: ContentReadinessSnapshot }) {
   const { isHydrated, reset, setNote, setOnboardingAccepted, setPreferredLocale, state } =
     useBootstrapState();
   const {
@@ -69,7 +70,7 @@ export function BootstrapHome() {
         <Card className="overflow-hidden bg-[var(--surface)]/94 backdrop-blur">
           <CardHeader className="gap-4 pb-0">
             <div className="flex flex-wrap items-center justify-between gap-3">
-              <Badge variant="accent">Design System Foundation</Badge>
+              <Badge variant="accent">Content Pipeline Foundation</Badge>
               <Button
                 aria-label="Toggle theme"
                 className="min-w-36 justify-between"
@@ -88,12 +89,13 @@ export function BootstrapHome() {
               </Button>
             </div>
             <CardTitle className="max-w-4xl text-4xl leading-tight md:text-5xl">
-              읽기 중심의 Arknights story archive를 위한 시각 언어를 세우는 중입니다.
+              Arknights vendor 데이터를 읽을 수 있는 첫 번째 generated content contract를 세우는 중입니다.
             </CardTitle>
             <CardDescription className="max-w-3xl text-base leading-8 md:text-lg">
-              지금 단계는 Reader 기능을 확장하기 전에 토큰, 테마, 공용 프리미티브, 보이스
-              앤 톤, 가드를 한 번에 고정하는 작업입니다. 이후 스토리 본문과 인물정보는 이
-              기준 위에서만 구현됩니다.
+              지금 단계는 upstream game data를 `vendor/ArknightsData`에서 읽어, 앱이
+              소비할 수 있는 정규화 index와 상태 manifest를 `public/generated/content`로
+              내보내는 작업입니다. Reader와 Character unlock은 이 계약 위에서만
+              구현됩니다.
             </CardDescription>
           </CardHeader>
           <CardContent className="pt-8">
@@ -104,7 +106,7 @@ export function BootstrapHome() {
                 </p>
                 <p className="mt-2 text-lg font-semibold">Bundled only</p>
                 <p className="mt-1 text-sm leading-6 text-[var(--text-muted)]">
-                  원격 폰트, API, CDN 없이 저장소 안 자산만 사용합니다.
+                  런타임은 generated JSON만 읽고, 외부 GitHub 데이터는 build-time에만 사용합니다.
                 </p>
               </div>
               <div className="rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--surface-muted)] p-4">
@@ -118,11 +120,11 @@ export function BootstrapHome() {
               </div>
               <div className="rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--surface-muted)] p-4">
                 <p className="text-xs uppercase tracking-[0.22em] text-[var(--text-muted)]">
-                  Tone
+                  Data flow
                 </p>
-                <p className="mt-2 text-lg font-semibold">Editorial archive</p>
+                <p className="mt-2 text-lg font-semibold">Vendor → Generated</p>
                 <p className="mt-1 text-sm leading-6 text-[var(--text-muted)]">
-                  문학적 읽기 경험과 기록 보관소 같은 구조감을 함께 가져갑니다.
+                  `story_review_table`, `stage_table`, `story_table`을 읽어 앱 전용 인덱스로 정규화합니다.
                 </p>
               </div>
             </div>
@@ -134,35 +136,42 @@ export function BootstrapHome() {
             <Badge variant="contrast" className="w-fit">
               Working Session
             </Badge>
-            <CardTitle className="text-2xl">Issue #4 / PR #5</CardTitle>
+            <CardTitle className="text-2xl">Content readiness snapshot</CardTitle>
             <CardDescription>
-              디자인 시스템 foundation 이슈는 현재 bootstrap shell을 새 시각 규칙으로
-              재구성하고, 이후 Reader와 Characters가 재사용할 기반을 만듭니다.
+              generated content는 현재 phase의 유일한 runtime 입력입니다. 이 숫자들은
+              build-time 파이프라인 산출물을 기준으로 계산됩니다.
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-5">
-            <dl className="grid gap-4 text-sm">
+            <dl className="grid gap-4 text-sm" data-testid="readiness-panel">
               <div>
-                <dt className="uppercase tracking-[0.18em] text-[var(--text-muted)]">Hydration</dt>
+                <dt className="uppercase tracking-[0.18em] text-[var(--text-muted)]">Servers</dt>
                 <dd className="mt-1 text-base font-semibold">
-                  {isHydrated ? "Recovered from local storage" : "Loading persisted state"}
+                  <span data-testid="server-count">{readiness.serverCount}</span>
                 </dd>
               </div>
               <div>
-                <dt className="uppercase tracking-[0.18em] text-[var(--text-muted)]">Theme</dt>
+                <dt className="uppercase tracking-[0.18em] text-[var(--text-muted)]">Stories</dt>
                 <dd className="mt-1 text-base font-semibold">
-                  Light and dark archive themes share the same semantic tokens.
+                  <span data-testid="story-count">{readiness.storyCount}</span>
+                </dd>
+              </div>
+              <div>
+                <dt className="uppercase tracking-[0.18em] text-[var(--text-muted)]">Missing summaries</dt>
+                <dd className="mt-1 text-base font-semibold">
+                  <span data-testid="summary-missing-count">{readiness.summaryMissingCount}</span>
                 </dd>
               </div>
             </dl>
             <Separator />
             <div className="rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--panel)] p-4">
               <p className="text-xs uppercase tracking-[0.2em] text-[var(--text-muted)]">
-                Dependency note
+                Build snapshot
               </p>
               <p className="mt-2 text-sm leading-7 text-[var(--text-muted)]">
-                `reader-shell`은 `content-pipeline-foundation`과 `design-system-foundation`이
-                모두 merge된 뒤에만 시작합니다.
+                {readiness.generatedAt
+                  ? `Generated at ${readiness.generatedAt}. reader-shell은 이 index contract가 안정화된 뒤에만 시작합니다.`
+                  : "Generated content가 아직 없습니다. content:update를 먼저 실행해야 합니다."}
               </p>
             </div>
           </CardContent>
@@ -239,35 +248,35 @@ export function BootstrapHome() {
         <Card className="bg-[var(--surface)]/92">
           <CardHeader>
             <Badge variant="default" className="w-fit">
-              Design pillars
+              Pipeline pillars
             </Badge>
-            <CardTitle className="text-2xl">Reader가 기대는 공용 언어</CardTitle>
+            <CardTitle className="text-2xl">Reader가 기대는 generated 계약</CardTitle>
             <CardDescription>
-              이 foundation 이슈가 끝나면 다음 구현은 아래 네 축만 재사용합니다.
+              이 foundation 이슈가 끝나면 다음 구현은 아래 네 축을 입력으로 재사용합니다.
             </CardDescription>
           </CardHeader>
           <CardContent>
             <ol className="grid gap-3">
               {foundationPillars.map((step, index) => (
-              <li
-                key={step.title}
-                className="rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--surface-muted)] px-4 py-4"
-              >
-                <div className="flex items-start gap-3">
-                  <div className="mt-1 rounded-full border border-[var(--border)] bg-[var(--surface)] p-2 text-[var(--accent-strong)]">
-                    <step.icon className="h-4 w-4" />
+                <li
+                  key={step.title}
+                  className="rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--surface-muted)] px-4 py-4"
+                >
+                  <div className="flex items-start gap-3">
+                    <div className="mt-1 rounded-full border border-[var(--border)] bg-[var(--surface)] p-2 text-[var(--accent-strong)]">
+                      <step.icon className="h-4 w-4" />
+                    </div>
+                    <div>
+                      <p className="text-xs uppercase tracking-[0.24em] text-[var(--text-muted)]">
+                        Pillar {index + 1}
+                      </p>
+                      <p className="mt-1 text-lg font-semibold">{step.title}</p>
+                      <p className="mt-2 text-sm leading-6 text-[var(--text-muted)]">
+                        {step.detail}
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="text-xs uppercase tracking-[0.24em] text-[var(--text-muted)]">
-                      Pillar {index + 1}
-                    </p>
-                    <p className="mt-1 text-lg font-semibold">{step.title}</p>
-                    <p className="mt-2 text-sm leading-6 text-[var(--text-muted)]">
-                      {step.detail}
-                    </p>
-                  </div>
-                </div>
-              </li>
+                </li>
               ))}
             </ol>
             <div className="mt-5 rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--panel)] p-4">
@@ -276,8 +285,8 @@ export function BootstrapHome() {
                 <p className="text-sm font-semibold">Theme persistence contract</p>
               </div>
               <p className="mt-2 text-sm leading-7 text-[var(--text-muted)]">
-                light/dark 토글은 app-owned preference repo를 통해 저장되며, malformed 값은
-                안전하게 기본 light theme으로 복구됩니다.
+                light/dark 토글은 app-owned preference repo를 통해 저장되고, content
+                readiness는 generated manifest에서 읽습니다.
               </p>
             </div>
           </CardContent>
@@ -289,7 +298,7 @@ export function BootstrapHome() {
           <Badge variant="default" className="w-fit">
             Product direction
           </Badge>
-          <CardTitle className="text-2xl">What this design system optimizes for</CardTitle>
+          <CardTitle className="text-2xl">What this pipeline unlocks next</CardTitle>
         </CardHeader>
         <CardContent className="grid gap-4 md:grid-cols-3">
           <div className="rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--surface-muted)] p-4">
@@ -298,8 +307,8 @@ export function BootstrapHome() {
               <p className="font-semibold">Readable story flow</p>
             </div>
             <p className="mt-2 text-sm leading-7 text-[var(--text-muted)]">
-              대사와 서술의 구분, line length, 정보 위계는 긴 스크립트를 편하게 읽기 위한
-              기준으로 맞춥니다.
+              스토리 본문은 이 이슈에서 구현하지 않지만, 이후 Reader는 정규화된 story index를
+              기준으로 탐색 구조를 만듭니다.
             </p>
           </div>
           <div className="rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--surface-muted)] p-4">
@@ -308,8 +317,8 @@ export function BootstrapHome() {
               <p className="font-semibold">Composable surfaces</p>
             </div>
             <p className="mt-2 text-sm leading-7 text-[var(--text-muted)]">
-              Home, Reader, Characters는 같은 card, rail, badge, divider 언어를 공유해야
-              합니다.
+              Home, Reader, Characters는 같은 UI 언어를 공유하고, generated content
+              contract는 모든 페이지가 같은 인덱스를 참조하게 만듭니다.
             </p>
           </div>
           <div className="rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--surface-muted)] p-4">

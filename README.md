@@ -26,6 +26,8 @@ From the repository root:
 ```bash
 npm run app:dev
 npm run app:verify
+npm run content:update
+npm run content:check
 npm run verify
 ```
 
@@ -33,6 +35,8 @@ npm run verify
 
 - `npm run guards:all`
 - `npm run harness:test`
+- `npm run content:update`
+- `npm run content:check`
 - `npm run content:status`
 - `npm run harness:iterate -- --goal "..."`
 
@@ -48,9 +52,9 @@ npm run verify
 
 ## Current Phase
 
-The repository is in the design-system foundation phase:
+The repository is in the content-pipeline foundation phase:
 
 - nested app scaffold and root harness split are complete
-- editorial archive theme tokens and shared UI primitives are being established
-- the bootstrap shell is the proving ground for theme persistence and design-system rules
+- editorial archive theme tokens and shared UI primitives are established
+- `vendor/ArknightsData` and `public/generated/content/` are becoming the first real data contract
 - real Arknights data sync, parsing, summaries, and reader routes remain follow-up work

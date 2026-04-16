@@ -1,18 +1,43 @@
 import fs from "node:fs";
 import path from "node:path";
+import { spawnSync } from "node:child_process";
+import {
+  ARKNIGHTS_DATA_SUBMODULE_PATH,
+  PORTRAIT_SOURCE_PATH,
+  getArknightsDataRoot,
+  getArknightsDataSubmoduleSha,
+  getRepoRoot,
+  getServerRoots,
+} from "./lib.mjs";
 
-const cwd = process.cwd();
+const cwd = getRepoRoot();
 const vendorRoot = path.join(cwd, "vendor");
-const requiredDirs = ["ArknightsData", "PortraitSource"];
+const useRemote = process.argv.includes("--remote");
 
 fs.mkdirSync(vendorRoot, { recursive: true });
+fs.mkdirSync(path.join(cwd, PORTRAIT_SOURCE_PATH), { recursive: true });
 
-for (const directory of requiredDirs) {
-  fs.mkdirSync(path.join(vendorRoot, directory), { recursive: true });
+const args = ["submodule", "update", "--init", "--recursive"];
+if (useRemote) {
+  args.push("--remote");
+}
+args.push(ARKNIGHTS_DATA_SUBMODULE_PATH);
+
+const result = spawnSync("git", args, {
+  cwd,
+  stdio: "inherit",
+  shell: false,
+});
+
+if (result.status !== 0) {
+  process.exit(result.status ?? 1);
 }
 
-console.log("content sync placeholder complete");
-console.log("vendor roots are ready for future GitHub-backed source attachment:");
-for (const directory of requiredDirs) {
-  console.log(`- vendor/${directory}`);
+console.log("content sync complete");
+console.log(`- submodule SHA: ${getArknightsDataSubmoduleSha(cwd)}`);
+console.log("- detected server roots:");
+for (const { server } of getServerRoots(cwd)) {
+  console.log(`  - ${server}`);
 }
+console.log(`- portrait placeholder: ${path.relative(cwd, path.join(cwd, PORTRAIT_SOURCE_PATH))}`);
+console.log(`- data root: ${path.relative(cwd, getArknightsDataRoot(cwd))}`);

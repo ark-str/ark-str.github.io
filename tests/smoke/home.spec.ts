@@ -37,10 +37,13 @@ test.describe("bootstrap home smoke", () => {
     await page.reload();
 
     await expect(page.getByTestId("bootstrap-shell")).toBeVisible();
+    await expect(page.getByTestId("readiness-panel")).toBeVisible();
     await expect(page.getByTestId("locale-select")).toBeEnabled();
     await expect(page.getByTestId("locale-select")).toHaveValue("ko-KR");
     await expect(page.getByTestId("note-input")).toHaveValue("");
     await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
+    await expect(page.getByTestId("server-count")).not.toHaveText("0");
+    await expect(page.getByTestId("story-count")).not.toHaveText("0");
 
     await page.getByTestId("locale-select").selectOption("en-US");
     await page.getByTestId("note-input").fill("Preserve the root-first harness structure.");
@@ -81,6 +84,7 @@ test.describe("bootstrap home smoke", () => {
     await page.reload();
 
     await expect(page.getByTestId("bootstrap-shell")).toBeVisible();
+    await expect(page.getByTestId("readiness-panel")).toBeVisible();
     await expect(page.getByTestId("locale-select")).toBeEnabled();
     await expect(page.getByTestId("locale-select")).toHaveValue("ko-KR");
     await expect(page.getByTestId("note-input")).toHaveValue("");

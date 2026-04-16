@@ -50,6 +50,8 @@ Build and maintain an Arknights story reader where:
 
 - `npm run app:dev` - run the nested app from the repository root
 - `npm run app:verify` - run the nested app verification from the repository root
+- `npm run content:update` - sync vendor data and rebuild generated content contracts
+- `npm run content:check` - validate generated content integrity
 - `cd ark-str-web-app && npm run dev` - run the app directly
 - `cd ark-str-web-app && npm run verify` - verify the app directly
 - `npm run verify` - root guards, harness tests, app verify, and browser smoke

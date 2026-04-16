@@ -1,7 +1,7 @@
 # Arknights Story Reader
 
 Status: active
-Phase: design system foundation
+Phase: content pipeline foundation
 
 ## Product Goal
 
@@ -45,8 +45,7 @@ Build a web application that makes Arknights story content easier to read, summa
 
 This phase still does not implement the full reader. It establishes:
 
-- root-level design-system docs for principles, tokens, components, and voice
-- semantic light/dark theme tokens in the nested app
-- shared UI primitives under `ark-str-web-app/src/components/ui/`
-- app-owned theme persistence and a bootstrap shell that uses the new primitives
-- mechanical guardrails that keep runtime colors centralized in the token source
+- `vendor/ArknightsData` as the upstream source contract
+- generated `index.json`, `source-manifest.json`, and `summary-manifest.json`
+- a bootstrap shell that can surface generated readiness counts
+- verification rules that fail when generated content drifts from the source contract
