@@ -8,7 +8,7 @@ Single-page Next.js starter with a repository-local harness for autonomous, agen
 - local-first sample page under `src/features/harness`
 - repository docs that act as the system of record
 - guard scripts that enforce architecture and asset constraints
-- a Codex CLI entry point for one-shot autonomous iterations
+- a GitHub-backed Codex harness for issue-by-issue autonomous iterations
 
 ## Commands
 
@@ -16,6 +16,7 @@ Single-page Next.js starter with a repository-local harness for autonomous, agen
 npm run dev
 npm run verify
 npm run smoke
+npm run harness:test
 npm run harness:iterate -- --goal "Improve the hero and checklist copy"
 ```
 
@@ -30,17 +31,28 @@ npm run harness:iterate -- --goal "Improve the hero and checklist copy"
 
 `npm run harness:iterate` will:
 
-1. snapshot a prompt under `artifacts/harness/runs/<timestamp>/prompt.txt`
-2. run `codex exec --full-auto`
-3. write the event log to `artifacts/harness/runs/<timestamp>/events.jsonl`
-4. write the final agent message to `artifacts/harness/latest-message.md`
+1. check `codex`, `gh`, git status, and the default branch preconditions
+2. ask Codex to decompose the goal into a child-issue DAG
+3. create a parent iteration issue plus one child issue and one branch per feature unit
+4. schedule dependency-free issues in parallel with isolated git worktrees
+5. require milestone commits, strict `npm run verify`, and reset-to-checkpoint recovery when a rollback is safer than pushing forward
+6. open one PR per child issue, run `codex review`, apply fix loops, and merge only passing PRs
+7. run a final `npm run verify` on the default branch, close the parent issue, and update `docs/generated/latest-iteration.md`
 
-The Codex run itself is instructed to read the repo docs, implement one coherent change, run `npm run verify`, and update `docs/generated/latest-iteration.md` only after the strict verification gates pass.
+All harness state is persisted under `artifacts/harness/runs/<timestamp>/iteration.json` and per-issue logs live beside it.
 
 `npm run verify` now includes:
 
 1. repository guard checks
 2. typecheck
 3. lint
-4. production build
-5. Playwright browser smoke with zero console or page errors
+4. harness unit tests
+5. production build
+6. Playwright browser smoke with zero console or page errors
+
+## Harness Prerequisites
+
+- `codex` CLI installed and authenticated
+- `gh` CLI installed and authenticated
+- clean working tree on the default branch
+- GitHub repository configured as `origin`

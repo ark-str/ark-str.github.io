@@ -37,18 +37,26 @@ Build and maintain a single-page Next.js application that:
 
 1. Read the current product spec in `docs/product-specs/`.
 2. Check the active execution plan in `docs/exec-plans/active/`.
-3. Implement one coherent slice of work.
+3. Use the GitHub-backed harness flow: issue DAG, one branch per child issue, dependency-safe scheduling, milestone commits, PR review, and merge.
 4. Update docs that became stale because of the change.
 5. Run `npm run verify`.
-6. Only treat the iteration as successful if browser smoke is clean: no uncaught errors, no console errors, and the key UI flow renders.
+6. Only treat the iteration as successful if browser smoke is clean, harness tests are green, every child PR is merged, and no known runtime issues remain.
 7. Record the outcome in `docs/generated/latest-iteration.md` when using the harness.
 
 ## Useful Commands
 
 - `npm run dev` - local development server
-- `npm run verify` - guards, typecheck, lint, build, and browser smoke
-- `npm run harness:iterate -- --goal "..."` - launch a non-interactive Codex iteration
+- `npm run verify` - guards, typecheck, lint, harness tests, build, and browser smoke
+- `npm run harness:iterate -- --goal "..."` - launch a GitHub-backed Codex iteration
+- `npm run harness:iterate -- --goal "..." --dry-run` - validate planning and orchestration without GitHub writes
 - `npm run guards:all` - repository rule checks only
+
+## Harness Prerequisites
+
+- `codex` CLI must be installed and authenticated.
+- `gh` CLI must be installed and authenticated.
+- Start from a clean checkout on the default branch.
+- Treat `.harness-worktrees/` as harness-owned scratch space only.
 
 ## Document Map
 

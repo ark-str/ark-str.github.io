@@ -17,7 +17,7 @@ These notes distill the official OpenAI posts that informed this repository shap
 - `AGENTS.md` is intentionally short and points to deeper docs.
 - `docs/` is the repository-local system of record.
 - `scripts/guards/` encode boundary and asset rules.
-- `scripts/harness/run-iteration.mjs` wraps a full Codex iteration.
+- `scripts/harness/run-iteration.mjs` orchestrates issue planning, dependency-aware execution, PR review, and merge.
 - the sample feature keeps bundled resources and persistence explicit.
 
 ## Official Sources
