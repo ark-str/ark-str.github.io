@@ -2,10 +2,12 @@ import fs from "node:fs";
 import {
   PORTRAIT_SOURCE_PATH,
   getArknightsDataSubmoduleSha,
+  getPortraitSourceRevision,
   getGeneratedFilePaths,
   getRepoRoot,
   getServerRoots,
   hasArknightsDataSource,
+  hasPortraitSource,
   loadGeneratedArtifacts,
 } from "./lib.mjs";
 
@@ -20,9 +22,11 @@ const generated = generatedExists ? loadGeneratedArtifacts(cwd) : null;
 
 const status = {
   vendor: {
-    ArknightsData: hasArknightsDataSource(cwd),
-    PortraitSource: fs.existsSync(`${cwd}/${PORTRAIT_SOURCE_PATH}`),
-    submoduleSha: hasArknightsDataSource(cwd) ? getArknightsDataSubmoduleSha(cwd) : null,
+    ArknightsGamedata: hasArknightsDataSource(cwd),
+    ArknightsResource: hasPortraitSource(cwd),
+    dataSubmoduleSha: hasArknightsDataSource(cwd) ? getArknightsDataSubmoduleSha(cwd) : null,
+    portraitRevision: hasPortraitSource(cwd) ? getPortraitSourceRevision(cwd) : null,
+    portraitPath: PORTRAIT_SOURCE_PATH,
     servers: getServerRoots(cwd).map(({ server }) => server),
   },
       generated: generated
@@ -33,6 +37,9 @@ const status = {
         storyCount: generated.index.stories.length,
         storyDetailCount: generated.index.stories.filter((story) => story.bodyAvailable).length,
         summaryMissingCount: generated.summaryManifest.items.filter((item) => item.status === "missing").length,
+        portraitCount: fs.existsSync(generatedPaths.generatedPortraitsRoot)
+          ? fs.readdirSync(generatedPaths.generatedPortraitsRoot).filter((fileName) => fileName.endsWith(".png")).length
+          : 0,
         submoduleSha: generated.index.vendor.submoduleSha,
       }
     : {

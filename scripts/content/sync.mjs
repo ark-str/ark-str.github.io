@@ -3,11 +3,12 @@ import path from "node:path";
 import { spawnSync } from "node:child_process";
 import {
   ARKNIGHTS_DATA_SUBMODULE_PATH,
-  PORTRAIT_SOURCE_PATH,
   getArknightsDataRoot,
   getArknightsDataSubmoduleSha,
+  getPortraitSourceRoot,
   getRepoRoot,
   getServerRoots,
+  hasPortraitSource,
 } from "./lib.mjs";
 
 const cwd = getRepoRoot();
@@ -15,7 +16,6 @@ const vendorRoot = path.join(cwd, "vendor");
 const useRemote = process.argv.includes("--remote");
 
 fs.mkdirSync(vendorRoot, { recursive: true });
-fs.mkdirSync(path.join(cwd, PORTRAIT_SOURCE_PATH), { recursive: true });
 
 const args = ["submodule", "update", "--init", "--recursive"];
 if (useRemote) {
@@ -34,10 +34,14 @@ if (result.status !== 0) {
 }
 
 console.log("content sync complete");
-console.log(`- submodule SHA: ${getArknightsDataSubmoduleSha(cwd)}`);
+console.log(`- data submodule SHA: ${getArknightsDataSubmoduleSha(cwd)}`);
 console.log("- detected server roots:");
 for (const { server } of getServerRoots(cwd)) {
   console.log(`  - ${server}`);
 }
-console.log(`- portrait placeholder: ${path.relative(cwd, path.join(cwd, PORTRAIT_SOURCE_PATH))}`);
 console.log(`- data root: ${path.relative(cwd, getArknightsDataRoot(cwd))}`);
+if (hasPortraitSource(cwd)) {
+  console.log(`- portrait cache root: ${path.relative(cwd, getPortraitSourceRoot(cwd))}`);
+} else {
+  console.log("- portrait cache: not initialized (run `npm run content:portraits` or `npm run content:update`)");
+}

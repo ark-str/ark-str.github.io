@@ -6,7 +6,7 @@
   "title": "演出继续",
   "storyCode": "OF-2",
   "avgTag": "行动后",
-  "sourcePath": "vendor/ArknightsData/cn/gamedata/story/activities/act3d0/level_act3d0_02_end.txt",
+  "sourcePath": "vendor/ArknightsGamedata/cn/gamedata/story/activities/act3d0/level_act3d0_02_end.txt",
   "sourceHash": "5e2bbb178b9f39eb28881c4083acbc6dd2ce716b2cfe052d03a29509ceec6ba3",
   "bodyAvailable": true,
   "blocks": [
@@ -20,33 +20,25 @@
     {
       "type": "dialogue",
       "speakerName": "锡兰",
-      "speakerToken": "char_348_ceylon_4#7",
-      "operatorId": "char_348_ceylon",
-      "portraitKey": "char_348_ceylon",
+      "speakerId": "char_348_ceylon",
       "text": "快！博士！我们往沙滩那边走！"
     },
     {
       "type": "dialogue",
       "speakerName": "锡兰",
-      "speakerToken": "char_348_ceylon_4#7",
-      "operatorId": "char_348_ceylon",
-      "portraitKey": "char_348_ceylon",
+      "speakerId": "char_348_ceylon",
       "text": "沙滩上有大量游客聚集，混进人群里面他们就追不上我们了！"
     },
     {
       "type": "dialogue",
       "speakerName": "保镖",
-      "speakerToken": "avg_npc_020",
-      "operatorId": null,
-      "portraitKey": null,
+      "speakerId": null,
       "text": "站住！"
     },
     {
       "type": "dialogue",
       "speakerName": "锡兰",
-      "speakerToken": "char_348_ceylon_4#7",
-      "operatorId": "char_348_ceylon",
-      "portraitKey": "char_348_ceylon",
+      "speakerId": "char_348_ceylon",
       "text": "就凭你们！"
     },
     {
@@ -55,9 +47,7 @@
     {
       "type": "dialogue",
       "speakerName": "黑",
-      "speakerToken": "char_340_shwaz_2#2",
-      "operatorId": "char_340_shwaz",
-      "portraitKey": "char_340_shwaz",
+      "speakerId": "char_340_shwaz",
       "text": "......"
     },
     {
@@ -73,65 +63,49 @@
         {
           "type": "dialogue",
           "speakerName": "锡兰",
-          "speakerToken": "char_348_ceylon_4#4",
-          "operatorId": "char_348_ceylon",
-          "portraitKey": "char_348_ceylon",
+          "speakerId": "char_348_ceylon",
           "text": "黑！太好了你终于来了！"
         },
         {
           "type": "dialogue",
           "speakerName": "锡兰",
-          "speakerToken": "char_348_ceylon_4#4",
-          "operatorId": "char_348_ceylon",
-          "portraitKey": "char_348_ceylon",
+          "speakerId": "char_348_ceylon",
           "text": "还好有你在，克洛宁这是怎么了！？"
         },
         {
           "type": "dialogue",
           "speakerName": "锡兰",
-          "speakerToken": "char_348_ceylon_4#4",
-          "operatorId": "char_348_ceylon",
-          "portraitKey": "char_348_ceylon",
+          "speakerId": "char_348_ceylon",
           "text": "博士，她就是我之前跟你说......"
         },
         {
           "type": "dialogue",
           "speakerName": "黑",
-          "speakerToken": "char_340_shwaz_2#2",
-          "operatorId": "char_340_shwaz",
-          "portraitKey": "char_340_shwaz",
+          "speakerId": "char_340_shwaz",
           "text": "小姐，老爷不在城里，你得听克洛宁的。"
         },
         {
           "type": "dialogue",
           "speakerName": "锡兰",
-          "speakerToken": "char_348_ceylon_4#8",
-          "operatorId": "char_348_ceylon",
-          "portraitKey": "char_348_ceylon",
+          "speakerId": "char_348_ceylon",
           "text": "黑？你在说什么？"
         },
         {
           "type": "dialogue",
           "speakerName": "黑",
-          "speakerToken": "char_340_shwaz_2#2",
-          "operatorId": "char_340_shwaz",
-          "portraitKey": "char_340_shwaz",
+          "speakerId": "char_340_shwaz",
           "text": "快跟我回去找克洛宁，把这些人都交给他。"
         },
         {
           "type": "dialogue",
           "speakerName": "黑",
-          "speakerToken": "char_340_shwaz_2#2",
-          "operatorId": "char_340_shwaz",
-          "portraitKey": "char_340_shwaz",
+          "speakerId": "char_340_shwaz",
           "text": "我不想对小姐动手。"
         },
         {
           "type": "dialogue",
           "speakerName": "锡兰",
-          "speakerToken": "char_348_ceylon_4#8",
-          "operatorId": "char_348_ceylon",
-          "portraitKey": "char_348_ceylon",
+          "speakerId": "char_348_ceylon",
           "text": "......黑？"
         },
         {
@@ -142,23 +116,15 @@
   ],
   "observedOperators": [
     {
-      "operatorId": "char_340_shwaz",
+      "speakerId": "char_340_shwaz",
       "aliases": [
         "黑"
-      ],
-      "speakerTokens": [
-        "char_340_shwaz_2#2"
       ]
     },
     {
-      "operatorId": "char_348_ceylon",
+      "speakerId": "char_348_ceylon",
       "aliases": [
         "锡兰"
-      ],
-      "speakerTokens": [
-        "char_348_ceylon_4#4",
-        "char_348_ceylon_4#7",
-        "char_348_ceylon_4#8"
       ]
     }
   ]

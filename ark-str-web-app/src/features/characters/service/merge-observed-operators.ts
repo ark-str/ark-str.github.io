@@ -14,8 +14,8 @@ export function mergeObservedOperators(
   const nextLocaleState = { ...currentLocaleState };
 
   for (const observedOperator of observedOperators) {
-    const currentAliases = nextLocaleState[observedOperator.operatorId]?.aliases ?? [];
-    nextLocaleState[observedOperator.operatorId] = {
+    const currentAliases = nextLocaleState[observedOperator.speakerId]?.aliases ?? [];
+    nextLocaleState[observedOperator.speakerId] = {
       aliases: [
         ...new Set(
           [...currentAliases, ...observedOperator.aliases].filter(

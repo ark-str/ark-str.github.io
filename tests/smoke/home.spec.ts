@@ -32,7 +32,21 @@ function readStoryDetail(story: { bodyPath?: string | null }) {
       ),
       "utf8",
     ),
-  ) as { observedOperators?: Array<{ operatorId: string; aliases: string[] }> };
+  ) as { observedOperators?: Array<{ speakerId: string; aliases: string[] }> };
+}
+
+function hasBundledPortrait(speakerId: string) {
+  return fs.existsSync(
+    path.join(
+      process.cwd(),
+      "ark-str-web-app",
+      "public",
+      "generated",
+      "portraits",
+      "assistant",
+      `${speakerId}.png`,
+    ),
+  );
 }
 
 function resolveSampleStory() {
@@ -47,7 +61,7 @@ function resolveSampleStory() {
 
   for (const story of prioritizedStories) {
     const detail = readStoryDetail(story);
-    if (detail?.observedOperators?.length) {
+    if (detail?.observedOperators?.some((observedOperator) => hasBundledPortrait(observedOperator.speakerId))) {
       return {
         story,
         detail,
@@ -55,12 +69,19 @@ function resolveSampleStory() {
     }
   }
 
-  throw new Error("A sample reader story with observedOperators is required for smoke tests.");
+  throw new Error("A sample reader story with observedOperators and a bundled portrait is required for smoke tests.");
 }
 
 const sampleStorySelection = resolveSampleStory();
 const sampleStory = sampleStorySelection.story;
-const sampleObservedOperator = sampleStorySelection.detail.observedOperators?.[0];
+const sampleObservedOperator =
+  sampleStorySelection.detail.observedOperators?.find((observedOperator) =>
+    hasBundledPortrait(observedOperator.speakerId),
+  ) ?? null;
+const sampleObservedAlias =
+  sampleObservedOperator?.aliases.find((alias) => alias.trim().length > 0 && alias !== "???") ??
+  sampleObservedOperator?.aliases[0] ??
+  null;
 
 function toAppPath(route = "") {
   const normalizedRoute = route.replace(/^\/+/, "");
@@ -136,7 +157,7 @@ test.describe("reader shell smoke", () => {
     await expect(page.getByTestId("summary-empty-state")).toBeVisible();
 
     await page.waitForFunction(
-      ([key, locale, operatorId]) => {
+      ([key, locale, speakerId]) => {
         const stored = window.localStorage.getItem(key);
         if (!stored) {
           return false;
@@ -144,16 +165,16 @@ test.describe("reader shell smoke", () => {
 
         try {
           const parsed = JSON.parse(stored);
-          return Boolean(parsed?.locales?.[locale]?.[operatorId]?.aliases?.length);
+          return Boolean(parsed?.locales?.[locale]?.[speakerId]?.aliases?.length);
         } catch {
           return false;
         }
       },
-      [characterObservationsKey, sampleStory.server, sampleObservedOperator?.operatorId ?? ""],
+      [characterObservationsKey, sampleStory.server, sampleObservedOperator?.speakerId ?? ""],
     );
 
     const observedAliases = await page.evaluate(
-      ([key, locale, operatorId]) => {
+      ([key, locale, speakerId]) => {
         const stored = window.localStorage.getItem(key);
         if (!stored) {
           return [];
@@ -161,16 +182,31 @@ test.describe("reader shell smoke", () => {
 
         try {
           const parsed = JSON.parse(stored);
-          return parsed?.locales?.[locale]?.[operatorId]?.aliases ?? [];
+          return parsed?.locales?.[locale]?.[speakerId]?.aliases ?? [];
         } catch {
           return [];
         }
       },
-      [characterObservationsKey, sampleStory.server, sampleObservedOperator?.operatorId ?? ""],
+      [characterObservationsKey, sampleStory.server, sampleObservedOperator?.speakerId ?? ""],
     );
 
     for (const alias of sampleObservedOperator?.aliases ?? []) {
       expect(observedAliases).toContain(alias);
+    }
+
+    if (sampleObservedOperator?.speakerId && sampleObservedAlias) {
+      const observedSpeakerArticle = page
+        .locator("article")
+        .filter({
+          has: page.getByRole("heading", {
+            name: sampleObservedAlias,
+            exact: true,
+          }),
+        })
+        .first();
+
+      await observedSpeakerArticle.scrollIntoViewIfNeeded();
+      await expect(observedSpeakerArticle.getByTestId("speaker-portrait-image")).toBeVisible();
     }
 
     await page.goto(toAppPath());

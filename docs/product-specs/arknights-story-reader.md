@@ -49,7 +49,8 @@ This phase keeps the recovered reader shell and Pages deployment path stable whi
 - generated story detail files under `public/generated/content/stories/`
 - metadata-only app-internal generated loaders under `src/generated/content/` for exact-path export-safe reads
 - first-pass body rendering for dialogue, narration, scene breaks, and Doctor choice branches
-- dialogue-level `speakerToken`, `operatorId`, and `portraitKey` derived from `Character(...)` tags
+- dialogue-level `speakerId` derived from `Character(...)` tags, with bundled ASSISTANT portraits resolved from `ArknightsResource/avatar/ASSISTANT/<speakerId>.png`
+- `npm run content:portraits` or `npm run content:update` can sparse-download `ArknightsResource/avatar/ASSISTANT/` into `vendor/ArknightsResource/` and copy only referenced portraits into bundled app assets
 - story-level `observedOperators` arrays embedded in generated story detail JSON
 - local storage reader-session restore for preferred locale and last visited story
 - locale-scoped character alias observation storage under `ark-str:character-observations:v1`

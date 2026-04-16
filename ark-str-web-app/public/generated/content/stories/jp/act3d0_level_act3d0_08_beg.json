@@ -6,7 +6,7 @@
   "title": "シエスタ狂想曲",
   "storyCode": "OF-8",
   "avgTag": "戦闘前",
-  "sourcePath": "vendor/ArknightsData/jp/gamedata/story/activities/act3d0/level_act3d0_08_beg.txt",
+  "sourcePath": "vendor/ArknightsGamedata/jp/gamedata/story/activities/act3d0/level_act3d0_08_beg.txt",
   "sourceHash": "37698eec639518bd1bfdcbf0f9cbaa4f0276f203593fb8cd629896c91563cf8b",
   "bodyAvailable": true,
   "blocks": [
@@ -20,33 +20,25 @@
     {
       "type": "dialogue",
       "speakerName": "セイロン",
-      "speakerToken": "char_348_ceylon_4#8",
-      "operatorId": "char_348_ceylon",
-      "portraitKey": "char_348_ceylon",
+      "speakerId": "char_348_ceylon",
       "text": "火山の向こう側に、こんな洞窟があったなんて。"
     },
     {
       "type": "dialogue",
       "speakerName": "プロヴァンス",
-      "speakerToken": "char_145_prove_1",
-      "operatorId": "char_145_prove",
-      "portraitKey": "char_145_prove",
+      "speakerId": "char_145_prove",
       "text": "元々は自然にできたものなんだろうけど、黒曜石の採掘のために掘られ続けて、こんなに深い洞窟になったんだと思う。"
     },
     {
       "type": "dialogue",
       "speakerName": "プロヴァンス",
-      "speakerToken": "char_145_prove_1",
-      "operatorId": "char_145_prove",
-      "portraitKey": "char_145_prove",
+      "speakerId": "char_145_prove",
       "text": "みんな準備はいいかい？　きっとかなり長く歩くことになるよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "プロヴァンス",
-      "speakerToken": "char_145_prove_1",
-      "operatorId": "char_145_prove",
-      "portraitKey": "char_145_prove",
+      "speakerId": "char_145_prove",
       "text": "僕たちの目的地は、この洞窟の一番奥にある。"
     },
     {
@@ -55,153 +47,115 @@
     {
       "type": "dialogue",
       "speakerName": "スカイフレア",
-      "speakerToken": "char_166_skfire_3#1",
-      "operatorId": "char_166_skfire",
-      "portraitKey": "char_166_skfire",
+      "speakerId": "char_166_skfire",
       "text": "研究室にいた頃は夢にも思ったことはありませんでしたわ。まさか休暇中に火山の奥底に足を踏み入れることになるなんて。"
     },
     {
       "type": "dialogue",
       "speakerName": "セイロン",
-      "speakerToken": "char_348_ceylon_4#7",
-      "operatorId": "char_348_ceylon",
-      "portraitKey": "char_348_ceylon",
+      "speakerId": "char_348_ceylon",
       "text": "ではそろそろ詳しく説明をいただけるかしら。先程の通信では曖昧な点が多すぎましたわ。「今回の噴火は阻止できるかもしれない」とは一体？"
     },
     {
       "type": "dialogue",
       "speakerName": "プロヴァンス",
-      "speakerToken": "char_145_prove_1",
-      "operatorId": "char_145_prove",
-      "portraitKey": "char_145_prove",
+      "speakerId": "char_145_prove",
       "text": "うん……説明はスカイフレアに任せるよ、お願い。"
     },
     {
       "type": "dialogue",
       "speakerName": "スカイフレア",
-      "speakerToken": "char_166_skfire_3#1",
-      "operatorId": "char_166_skfire",
-      "portraitKey": "char_166_skfire",
+      "speakerId": "char_166_skfire",
       "text": "ええ、これはわたくしとプロヴァンスが火山内部の探索を行い、その後エイヤフィヤトラが導き出した結論なのですが――"
     },
     {
       "type": "dialogue",
       "speakerName": "スカイフレア",
-      "speakerToken": "char_166_skfire_3#1",
-      "operatorId": "char_166_skfire",
-      "portraitKey": "char_166_skfire",
+      "speakerId": "char_166_skfire",
       "text": "まずはこの場所に生息するオリジムシの生態から説明した方がいいですわね……いえ、あれはカザンオリジムシあるいはヨウガンオリジムシと呼んだほうが良いかもしれませんね。"
     },
     {
       "type": "dialogue",
       "speakerName": "スカイフレア",
-      "speakerToken": "char_166_skfire_3#1",
-      "operatorId": "char_166_skfire",
-      "portraitKey": "char_166_skfire",
+      "speakerId": "char_166_skfire",
       "text": "見た目はオリジムシとほとんど同じですが、火山を巣穴とし、この場所に分布する特別な黒曜石を食料に、火山内部に深く根を張っている存在ですわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "スカイフレア",
-      "speakerToken": "char_166_skfire_3#1",
-      "operatorId": "char_166_skfire",
-      "portraitKey": "char_166_skfire",
+      "speakerId": "char_166_skfire",
       "text": "このオリジムシたちの巣穴は、火山の核に近い場所にあって、そこがまさに特殊な成分が混じった黒曜石が大量に分布する場所になっていますの。"
     },
     {
       "type": "dialogue",
       "speakerName": "スカイフレア",
-      "speakerToken": "char_166_skfire_3#1",
-      "operatorId": "char_166_skfire",
-      "portraitKey": "char_166_skfire",
+      "speakerId": "char_166_skfire",
       "text": "採掘隊はその特性を利用し、オリジムシの後を追うことで黒曜石を採掘していたと推測されますわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "セイロン",
-      "speakerToken": "char_348_ceylon_4#8",
-      "operatorId": "char_348_ceylon",
-      "portraitKey": "char_348_ceylon",
+      "speakerId": "char_348_ceylon",
       "text": "そういうことでしたのね……確かに、一部の地域では生物の特性を利用した資源採掘が行われているという資料を目にしたことがありますわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "プロヴァンス",
-      "speakerToken": "char_145_prove_1",
-      "operatorId": "char_145_prove",
-      "portraitKey": "char_145_prove",
+      "speakerId": "char_145_prove",
       "text": "人々はいつだって生物の行動に規則性を見出そうとするからね。"
     },
     {
       "type": "dialogue",
       "speakerName": "スカイフレア",
-      "speakerToken": "char_166_skfire_3",
-      "operatorId": "char_166_skfire",
-      "portraitKey": "char_166_skfire",
+      "speakerId": "char_166_skfire",
       "text": "問題はこの火山が前に噴火してから相当時間が経っていること、そして黒曜石にも限りがあるということですわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "スカイフレア",
-      "speakerToken": "char_166_skfire_3",
-      "operatorId": "char_166_skfire",
-      "portraitKey": "char_166_skfire",
+      "speakerId": "char_166_skfire",
       "text": "行き過ぎた採掘は人々に影響を与えただけではなく、オリジムシの生息環境まで変化させた。"
     },
     {
       "type": "dialogue",
       "speakerName": "スカイフレア",
-      "speakerToken": "char_166_skfire_3",
-      "operatorId": "char_166_skfire",
-      "portraitKey": "char_166_skfire",
+      "speakerId": "char_166_skfire",
       "text": "それで、オリジムシたちは暴走し始めたの。火山内部の異常は、オリジムシたちが新たな食料を確保するために住処を開拓して暴れまわった結果ですわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "スカイフレア",
-      "speakerToken": "char_166_skfire_3",
-      "operatorId": "char_166_skfire",
-      "portraitKey": "char_166_skfire",
+      "speakerId": "char_166_skfire",
       "text": "オリジムシからすれば、生きるために食料を確保するだけの行為ですが、シエスタ市にとっては災難になりますわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "プロヴァンス",
-      "speakerToken": "char_145_prove_1",
-      "operatorId": "char_145_prove",
-      "portraitKey": "char_145_prove",
+      "speakerId": "char_145_prove",
       "text": "…………「自然からの贈り物に畏敬の念を抱かなければ、自然は必ず人々に懲罰を与えるだろう」。人が欲をかいて生態系を壊すと、必ずしっぺ返しが来るってことだね。"
     },
     {
       "type": "dialogue",
       "speakerName": "セイロン",
-      "speakerToken": "char_348_ceylon_4#7",
-      "operatorId": "char_348_ceylon",
-      "portraitKey": "char_348_ceylon",
+      "speakerId": "char_348_ceylon",
       "text": "では、わたくしたちはこれから何をしますの？"
     },
     {
       "type": "dialogue",
       "speakerName": "セイロン",
-      "speakerToken": "char_348_ceylon_4#7",
-      "operatorId": "char_348_ceylon",
-      "portraitKey": "char_348_ceylon",
+      "speakerId": "char_348_ceylon",
       "text": "まさか無理やり溶岩をせき止めるなんて言わないでしょう？"
     },
     {
       "type": "dialogue",
       "speakerName": "スカイフレア",
-      "speakerToken": "char_166_skfire_3",
-      "operatorId": "char_166_skfire",
-      "portraitKey": "char_166_skfire",
+      "speakerId": "char_166_skfire",
       "text": "まさか。強いて言うなら「この場所の主を落ち着かせる」ってことかしらね。"
     },
     {
       "type": "dialogue",
       "speakerName": "スカイフレア",
-      "speakerToken": "char_166_skfire_3",
-      "operatorId": "char_166_skfire",
-      "portraitKey": "char_166_skfire",
+      "speakerId": "char_166_skfire",
       "text": "急ぎますわよ。さらに奥まで。"
     },
     {
@@ -210,105 +164,79 @@
     {
       "type": "dialogue",
       "speakerName": "セイロン",
-      "speakerToken": "char_348_ceylon_4#7",
-      "operatorId": "char_348_ceylon",
-      "portraitKey": "char_348_ceylon",
+      "speakerId": "char_348_ceylon",
       "text": "ますます暑くなってきましたわ……。"
     },
     {
       "type": "dialogue",
       "speakerName": "プロヴァンス",
-      "speakerToken": "char_145_prove_1",
-      "operatorId": "char_145_prove",
-      "portraitKey": "char_145_prove",
+      "speakerId": "char_145_prove",
       "text": "もうすぐ着くはずだよ……。"
     },
     {
       "type": "dialogue",
       "speakerName": "プロヴァンス",
-      "speakerToken": "char_145_prove_1",
-      "operatorId": "char_145_prove",
-      "portraitKey": "char_145_prove",
+      "speakerId": "char_145_prove",
       "text": "みんな気をつけて！"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
-      "speakerToken": null,
-      "operatorId": null,
-      "portraitKey": null,
+      "speakerId": null,
       "text": "——————————!!!"
     },
     {
       "type": "dialogue",
       "speakerName": "セイロン",
-      "speakerToken": "char_348_ceylon_4#8",
-      "operatorId": "char_348_ceylon",
-      "portraitKey": "char_348_ceylon",
+      "speakerId": "char_348_ceylon",
       "text": "この音はなに？　なんだか……狂暴な何かが……。"
     },
     {
       "type": "dialogue",
       "speakerName": "スカイフレア",
-      "speakerToken": "char_166_skfire_3",
-      "operatorId": "char_166_skfire",
-      "portraitKey": "char_166_skfire",
+      "speakerId": "char_166_skfire",
       "text": "狂暴なのはもちろんですわ。この虫たちの知能では単体で住処を拡張することなど不可能よ。となれば必ず特別な女王オリジムシが存在するはず。"
     },
     {
       "type": "dialogue",
       "speakerName": "スカイフレア",
-      "speakerToken": "char_166_skfire_3",
-      "operatorId": "char_166_skfire",
-      "portraitKey": "char_166_skfire",
+      "speakerId": "char_166_skfire",
       "text": "そう……それが「この場所の主」ですわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "プロヴァンス",
-      "speakerToken": "char_145_prove_1",
-      "operatorId": "char_145_prove",
-      "portraitKey": "char_145_prove",
+      "speakerId": "char_145_prove",
       "text": "……じゃあこんなにたくさんのオリジムシの中からその女王とやらを見つけ出さないといけないの？"
     },
     {
       "type": "dialogue",
       "speakerName": "スカイフレア",
-      "speakerToken": "char_166_skfire_3",
-      "operatorId": "char_166_skfire",
-      "portraitKey": "char_166_skfire",
+      "speakerId": "char_166_skfire",
       "text": "何を言っているの？火山を噴火させるほどのオリジムシですわ、この火山全体を支配していると言っても過言ではないの！　そんな個体、ひと目で分かるに決まっているでしょう！"
     },
     {
       "type": "dialogue",
       "speakerName": "スカイフレア",
-      "speakerToken": "char_166_skfire_3",
-      "operatorId": "char_166_skfire",
-      "portraitKey": "char_166_skfire",
+      "speakerId": "char_166_skfire",
       "text": "恐らく環境の変化によって変異した個体ですわ。可能性は無限に考えられるわよ。重装部隊を一瞬で溶かしてしまうことだってありえるでしょうね。"
     },
     {
       "type": "dialogue",
       "speakerName": "セイロン",
-      "speakerToken": "char_348_ceylon_4#7",
-      "operatorId": "char_348_ceylon",
-      "portraitKey": "char_348_ceylon",
+      "speakerId": "char_348_ceylon",
       "text": "つまり、この岩壁全体に響く音は、一匹の「オリジムシ」が発している音だと言うの……？"
     },
     {
       "type": "dialogue",
       "speakerName": "スカイフレア",
-      "speakerToken": "char_166_skfire_3",
-      "operatorId": "char_166_skfire",
-      "portraitKey": "char_166_skfire",
+      "speakerId": "char_166_skfire",
       "text": "何を慌てていますの。このわたくしがいるのですから安心なさい。オリジムシなんてどんなに変異したところで――"
     },
     {
       "type": "dialogue",
       "speakerName": "セイロン",
-      "speakerToken": "char_348_ceylon_4#8",
-      "operatorId": "char_348_ceylon",
-      "portraitKey": "char_348_ceylon",
+      "speakerId": "char_348_ceylon",
       "text": "こ、これは！？"
     },
     {
@@ -317,17 +245,13 @@
     {
       "type": "dialogue",
       "speakerName": "プロヴァンス",
-      "speakerToken": "char_145_prove_1",
-      "operatorId": "char_145_prove",
-      "portraitKey": "char_145_prove",
+      "speakerId": "char_145_prove",
       "text": "どうしたの……まさか溶岩がもう溢れてきてるの！？"
     },
     {
       "type": "dialogue",
       "speakerName": "セイロン",
-      "speakerToken": "char_348_ceylon_4#8",
-      "operatorId": "char_348_ceylon",
-      "portraitKey": "char_348_ceylon",
+      "speakerId": "char_348_ceylon",
       "text": "いえ、変異したオリジムシですわ！　洞窟の下の方にいます！"
     },
     {
@@ -336,57 +260,43 @@
     {
       "type": "dialogue",
       "speakerName": "巨大なオリジムシ",
-      "speakerToken": null,
-      "operatorId": null,
-      "portraitKey": null,
+      "speakerId": null,
       "text": "――――――――！"
     },
     {
       "type": "dialogue",
       "speakerName": "巨大なオリジムシ",
-      "speakerToken": null,
-      "operatorId": null,
-      "portraitKey": null,
+      "speakerId": null,
       "text": "――――――――！"
     },
     {
       "type": "dialogue",
       "speakerName": "スカイフレア",
-      "speakerToken": "char_166_skfire_3",
-      "operatorId": "char_166_skfire",
-      "portraitKey": "char_166_skfire",
+      "speakerId": "char_166_skfire",
       "text": "さらに温度が上昇していますわ。これだけのエネルギー、一匹のオリジムシとしては確かに規格外ですわね。"
     },
     {
       "type": "dialogue",
       "speakerName": "プロヴァンス",
-      "speakerToken": "char_145_prove_1",
-      "operatorId": "char_145_prove",
-      "portraitKey": "char_145_prove",
+      "speakerId": "char_145_prove",
       "text": "……あれをムシって呼んでいいの？　もう動く火山だよね！？"
     },
     {
       "type": "dialogue",
       "speakerName": "スカイフレア",
-      "speakerToken": "char_166_skfire_3",
-      "operatorId": "char_166_skfire",
-      "portraitKey": "char_166_skfire",
+      "speakerId": "char_166_skfire",
       "text": "ええ……細かな分析と予測なんて、さすがにする余裕はありませんでしたわ。これ……わたくしが予想していた変異とは……少し異なりますわね。"
     },
     {
       "type": "dialogue",
       "speakerName": "プロヴァンス",
-      "speakerToken": "char_145_prove_1",
-      "operatorId": "char_145_prove",
-      "portraitKey": "char_145_prove",
+      "speakerId": "char_145_prove",
       "text": "……なんかエイヤフィヤトラちゃんのことが恋しくなってきたよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "セイロン",
-      "speakerToken": "char_348_ceylon_4#3",
-      "operatorId": "char_348_ceylon",
-      "portraitKey": "char_348_ceylon",
+      "speakerId": "char_348_ceylon",
       "text": "気をつけて！　近づいてきますわ！"
     },
     {
@@ -395,97 +305,73 @@
     {
       "type": "dialogue",
       "speakerName": "巨大なオリジムシ",
-      "speakerToken": null,
-      "operatorId": null,
-      "portraitKey": null,
+      "speakerId": null,
       "text": "――――――――！"
     },
     {
       "type": "dialogue",
       "speakerName": "巨大なオリジムシ",
-      "speakerToken": null,
-      "operatorId": null,
-      "portraitKey": null,
+      "speakerId": null,
       "text": "――――――――――――！"
     },
     {
       "type": "dialogue",
       "speakerName": "セイロン",
-      "speakerToken": "char_348_ceylon_4#8",
-      "operatorId": "char_348_ceylon",
-      "portraitKey": "char_348_ceylon",
+      "speakerId": "char_348_ceylon",
       "text": "じ、地面まで融解させていますの？　い、いや、壁も地面も、みな揺れる波に覆われてしまったかのよう……。"
     },
     {
       "type": "dialogue",
       "speakerName": "プロヴァンス",
-      "speakerToken": "char_145_prove_1",
-      "operatorId": "char_145_prove",
-      "portraitKey": "char_145_prove",
+      "speakerId": "char_145_prove",
       "text": "危ないから離れて！よく見て、あれ全部オリジムシだよ、火山の噴火を起こすには十分な数だ！"
     },
     {
       "type": "dialogue",
       "speakerName": "スカイフレア",
-      "speakerToken": "char_166_skfire_3#1",
-      "operatorId": "char_166_skfire",
-      "portraitKey": "char_166_skfire",
+      "speakerId": "char_166_skfire",
       "text": "ではもう議論の余地もありませんわ。あれが目標に間違いありませんもの。"
     },
     {
       "type": "dialogue",
       "speakerName": "スカイフレア",
-      "speakerToken": "char_166_skfire_3#1",
-      "operatorId": "char_166_skfire",
-      "portraitKey": "char_166_skfire",
+      "speakerId": "char_166_skfire",
       "text": "あれの暴走を食い止め、進行ルートを変えてやれば市民が避難するだけの時間を稼げるはずですわ！"
     },
     {
       "type": "dialogue",
       "speakerName": "プロヴァンス",
-      "speakerToken": "char_145_prove_1",
-      "operatorId": "char_145_prove",
-      "portraitKey": "char_145_prove",
+      "speakerId": "char_145_prove",
       "text": "ちょっと待って！　僕たち三人だけでどうやってあの小型火山に対処するの！？"
     },
     {
       "type": "dialogue",
       "speakerName": "スカイフレア",
-      "speakerToken": "char_166_skfire_3",
-      "operatorId": "char_166_skfire",
-      "portraitKey": "char_166_skfire",
+      "speakerId": "char_166_skfire",
       "text": "戦うんですわ！　他に方法があると思って？"
     },
     {
       "type": "dialogue",
       "speakerName": "プロヴァンス",
-      "speakerToken": "char_145_prove_1",
-      "operatorId": "char_145_prove",
-      "portraitKey": "char_145_prove",
+      "speakerId": "char_145_prove",
       "text": "あんなに巨大なのがこの場で爆発したら、火山もすぐに噴火しちゃうんじゃないの！？"
     },
     {
       "type": "dialogue",
       "speakerName": "スカイフレア",
-      "speakerToken": "char_166_skfire_3",
-      "operatorId": "char_166_skfire",
-      "portraitKey": "char_166_skfire",
+      "speakerId": "char_166_skfire",
       "text": "だから少し痛めつけて、大人しく巣穴に帰らせればいいんですわ！"
     },
     {
       "type": "dialogue",
       "speakerName": "スカイフレア",
-      "speakerToken": "char_166_skfire_3#1",
-      "operatorId": "char_166_skfire",
-      "portraitKey": "char_166_skfire",
+      "speakerId": "char_166_skfire",
       "text": "ええ……。"
     },
     {
       "type": "dialogue",
       "speakerName": "スカイフレア",
-      "speakerToken": "char_166_skfire_3#1",
-      "operatorId": "char_166_skfire",
-      "portraitKey": "char_166_skfire",
+      "speakerId": "char_166_skfire",
       "text": "とにかく一発お見舞いしてやりますわよ！！"
     },
     {
@@ -494,33 +380,21 @@
   ],
   "observedOperators": [
     {
-      "operatorId": "char_145_prove",
+      "speakerId": "char_145_prove",
       "aliases": [
         "プロヴァンス"
-      ],
-      "speakerTokens": [
-        "char_145_prove_1"
       ]
     },
     {
-      "operatorId": "char_166_skfire",
+      "speakerId": "char_166_skfire",
       "aliases": [
         "スカイフレア"
-      ],
-      "speakerTokens": [
-        "char_166_skfire_3",
-        "char_166_skfire_3#1"
       ]
     },
     {
-      "operatorId": "char_348_ceylon",
+      "speakerId": "char_348_ceylon",
       "aliases": [
         "セイロン"
-      ],
-      "speakerTokens": [
-        "char_348_ceylon_4#3",
-        "char_348_ceylon_4#7",
-        "char_348_ceylon_4#8"
       ]
     }
   ]

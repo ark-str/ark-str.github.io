@@ -27,7 +27,7 @@ test("resolveStorySource uses the existing story file when present", () => {
   const storyPath = path.join(
     root,
     "vendor",
-    "ArknightsData",
+    "ArknightsGamedata",
     "en",
     "gamedata",
     "story",
@@ -52,7 +52,7 @@ test("resolveStorySource uses the existing story file when present", () => {
   assert.equal(resolved.sourceBasis, "file");
   assert.equal(
     resolved.sourcePath,
-    "vendor/ArknightsData/en/gamedata/story/activities/test/story.txt",
+    "vendor/ArknightsGamedata/en/gamedata/story/activities/test/story.txt",
   );
 });
 
@@ -81,7 +81,7 @@ test("writeGeneratedArtifacts keeps story payloads out of app-internal generated
       generatedAt: "2026-04-16T00:00:00.000Z",
       vendor: {
         source: "ArknightsAssets/ArknightsGamedata",
-        submodulePath: "vendor/ArknightsData",
+        submodulePath: "vendor/ArknightsGamedata",
         submoduleSha: "abc123",
         servers: [],
       },
@@ -94,7 +94,7 @@ test("writeGeneratedArtifacts keeps story payloads out of app-internal generated
           stageId: null,
           title: "Story A",
           sortKey: 1,
-          sourcePath: "vendor/ArknightsData/en/gamedata/story/story-a.txt",
+          sourcePath: "vendor/ArknightsGamedata/en/gamedata/story/story-a.txt",
           sourceHash: "deadbeef",
           sourceExists: true,
           sourceBasis: "file",
@@ -128,7 +128,7 @@ test("writeGeneratedArtifacts keeps story payloads out of app-internal generated
           title: "Story A",
           storyCode: null,
           avgTag: null,
-          sourcePath: "vendor/ArknightsData/en/gamedata/story/story-a.txt",
+          sourcePath: "vendor/ArknightsGamedata/en/gamedata/story/story-a.txt",
           sourceHash: "deadbeef",
           bodyAvailable: true,
           blocks: [],
@@ -136,7 +136,18 @@ test("writeGeneratedArtifacts keeps story payloads out of app-internal generated
         },
       },
     ],
+    portraitPaths: {
+      char_002_amiya: "/generated/portraits/assistant/char_002_amiya.png",
+    },
   };
+
+  fs.mkdirSync(path.join(root, "vendor", "ArknightsResource", "avatar", "ASSISTANT"), {
+    recursive: true,
+  });
+  fs.writeFileSync(
+    path.join(root, "vendor", "ArknightsResource", "avatar", "ASSISTANT", "char_002_amiya.png"),
+    "png-fixture",
+  );
 
   writeGeneratedArtifacts(artifacts, root);
   const filePaths = getGeneratedFilePaths(root);
@@ -145,6 +156,14 @@ test("writeGeneratedArtifacts keeps story payloads out of app-internal generated
     fs.existsSync(path.join(filePaths.contentRoot, "stories", "en", "story-a.json")),
     true,
   );
+  assert.equal(
+    fs.existsSync(path.join(filePaths.generatedPortraitsRoot, "char_002_amiya.png")),
+    true,
+  );
   assert.equal(fs.existsSync(path.join(filePaths.appContentRoot, "stories")), false);
   assert.match(fs.readFileSync(filePaths.appRegistry, "utf8"), /"en:story-a": "stories\/en\/story-a\.json"/);
+  assert.match(
+    fs.readFileSync(filePaths.appRegistry, "utf8"),
+    /"char_002_amiya": "\/generated\/portraits\/assistant\/char_002_amiya\.png"/,
+  );
 });

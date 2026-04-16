@@ -2,7 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import {
   collectObservedOperators,
-  normalizeOperatorIdToken,
+  normalizeSpeakerIdToken,
   parseStoryText,
 } from "../../scripts/content/story-parser.mjs";
 
@@ -19,10 +19,8 @@ The corridor falls silent.
     {
       type: "dialogue",
       speakerName: "Amiya",
-      speakerToken: null,
-      operatorId: null,
+      speakerId: null,
       text: "Ready, Doctor?",
-      portraitKey: null,
     },
     {
       type: "narration",
@@ -32,10 +30,8 @@ The corridor falls silent.
     {
       type: "dialogue",
       speakerName: "Dobermann",
-      speakerToken: null,
-      operatorId: null,
+      speakerId: null,
       text: "Move out.",
-      portraitKey: null,
     },
   ]);
 });
@@ -71,10 +67,10 @@ test("parseStoryText treats predicates that reference every option as shared", (
   assert.equal(blocks[0].sharedBlocks[0].text, "We understand.");
 });
 
-test("normalizeOperatorIdToken strips suffixes and keeps the first three underscore segments", () => {
-  assert.equal(normalizeOperatorIdToken("char_101_sora_1#4"), "char_101_sora");
-  assert.equal(normalizeOperatorIdToken("char_201_moeshd#2"), "char_201_moeshd");
-  assert.equal(normalizeOperatorIdToken("avg_npc_175"), null);
+test("normalizeSpeakerIdToken strips suffixes and keeps the first three underscore segments", () => {
+  assert.equal(normalizeSpeakerIdToken("char_101_sora_1#4"), "char_101_sora");
+  assert.equal(normalizeSpeakerIdToken("char_201_moeshd#2"), "char_201_moeshd");
+  assert.equal(normalizeSpeakerIdToken("avg_npc_175"), null);
 });
 
 test("parseStoryText resolves focused Character slots into operator-aware dialogue blocks", () => {
@@ -87,9 +83,7 @@ test("parseStoryText resolves focused Character slots into operator-aware dialog
     {
       type: "dialogue",
       speakerName: "Texas",
-      speakerToken: "char_102_texas_1#1",
-      operatorId: "char_102_texas",
-      portraitKey: "char_102_texas",
+      speakerId: "char_102_texas",
       text: "Stand down.",
     },
   ]);
@@ -105,11 +99,11 @@ test("parseStoryText reuses the last resolved speaker only while the name stays 
 `);
 
   assert.equal(blocks[0].type, "dialogue");
-  assert.equal(blocks[0].operatorId, "char_101_sora");
+  assert.equal(blocks[0].speakerId, "char_101_sora");
   assert.equal(blocks[1].type, "dialogue");
-  assert.equal(blocks[1].operatorId, "char_101_sora");
+  assert.equal(blocks[1].speakerId, "char_101_sora");
   assert.equal(blocks[2].type, "dialogue");
-  assert.equal(blocks[2].operatorId, null);
+  assert.equal(blocks[2].speakerId, null);
 });
 
 test("parseStoryText preserves speaker bindings across effect-only character tags", () => {
@@ -123,12 +117,11 @@ test("parseStoryText preserves speaker bindings across effect-only character tag
 `);
 
   assert.equal(blocks[0].type, "dialogue");
-  assert.equal(blocks[0].operatorId, "char_101_sora");
+  assert.equal(blocks[0].speakerId, "char_101_sora");
   assert.equal(blocks[1].type, "dialogue");
-  assert.equal(blocks[1].operatorId, "char_102_texas");
+  assert.equal(blocks[1].speakerId, "char_102_texas");
   assert.equal(blocks[2].type, "dialogue");
-  assert.equal(blocks[2].speakerToken, "char_101_sora_1#4");
-  assert.equal(blocks[2].operatorId, "char_101_sora");
+  assert.equal(blocks[2].speakerId, "char_101_sora");
 });
 
 test("parseStoryText keeps non-operator tokens on dialogue blocks without alias observations", () => {
@@ -141,15 +134,13 @@ test("parseStoryText keeps non-operator tokens on dialogue blocks without alias 
     {
       type: "dialogue",
       speakerName: "Cheery Legatus",
-      speakerToken: "avg_npc_360_1#1$1",
-      operatorId: null,
-      portraitKey: null,
+      speakerId: null,
       text: "Lady Sharon, we're in the Basilica...",
     },
   ]);
 });
 
-test("collectObservedOperators deduplicates aliases and speaker tokens per operator", () => {
+test("collectObservedOperators deduplicates aliases per speakerId", () => {
   const blocks = parseStoryText(`
 [Character(name="char_101_sora_1#4")]
 [name="Sora"]The show starts now.
@@ -161,9 +152,8 @@ test("collectObservedOperators deduplicates aliases and speaker tokens per opera
 
   assert.deepEqual(collectObservedOperators(blocks), [
     {
-      operatorId: "char_101_sora",
+      speakerId: "char_101_sora",
       aliases: ["Idol Sora", "Sora"],
-      speakerTokens: ["char_101_sora_1#4", "char_101_sora_2#1"],
     },
   ]);
 });

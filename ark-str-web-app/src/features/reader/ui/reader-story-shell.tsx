@@ -16,6 +16,34 @@ import type {
 } from "@/features/content/types";
 import { useReaderSession } from "@/features/reader/runtime/reader-session-context";
 
+function ReaderPortraitSlot({
+  portraitPath,
+  speakerName,
+}: {
+  portraitPath: string | null;
+  speakerName: string;
+}) {
+  return (
+    <div
+      className="flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-full border border-[var(--border)] bg-[var(--surface-muted)]"
+      data-testid="speaker-portrait-slot"
+    >
+      {portraitPath ? (
+        // The reader ships fully bundled PNG portraits; plain img keeps exported Pages output simple.
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          alt={`${speakerName} portrait`}
+          className="block h-full w-full object-cover"
+          data-testid="speaker-portrait-image"
+          height={56}
+          src={portraitPath}
+          width={56}
+        />
+      ) : null}
+    </div>
+  );
+}
+
 function ReaderRouteShell({
   locale,
   eyebrow,
@@ -114,7 +142,13 @@ function CharacterObservationTracker({
   return null;
 }
 
-function StoryBlocks({ blocks }: { blocks: StoryBlock[] }) {
+function StoryBlocks({
+  blocks,
+  portraitPaths,
+}: {
+  blocks: StoryBlock[];
+  portraitPaths: Record<string, string>;
+}) {
   return (
     <>
       {blocks.map((block, index) => {
@@ -125,9 +159,10 @@ function StoryBlocks({ blocks }: { blocks: StoryBlock[] }) {
               className="grid gap-4 rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--surface)]/95 p-4 md:grid-cols-[72px_minmax(0,1fr)]"
             >
               <div className="flex items-start gap-3">
-                <div className="flex h-14 w-14 items-center justify-center rounded-full border border-[var(--border)] bg-[var(--accent-soft)] font-[var(--font-display)] text-sm font-semibold uppercase text-[var(--accent-strong)]">
-                  {block.speakerName.slice(0, 2)}
-                </div>
+                <ReaderPortraitSlot
+                  portraitPath={block.speakerId ? (portraitPaths[block.speakerId] ?? null) : null}
+                  speakerName={block.speakerName}
+                />
                 <div className="pt-1">
                   <p className="text-xs uppercase tracking-[0.18em] text-[var(--text-muted)]">
                     Dialogue
@@ -188,7 +223,7 @@ function StoryBlocks({ blocks }: { blocks: StoryBlock[] }) {
                   <p className="text-sm font-semibold text-[var(--accent)]">{option.label}</p>
                   <div className="mt-3 grid gap-3">
                     {option.blocks.length > 0 ? (
-                      <StoryBlocks blocks={option.blocks} />
+                      <StoryBlocks blocks={option.blocks} portraitPaths={portraitPaths} />
                     ) : (
                       <p className="text-sm leading-6 text-[var(--text-muted)]">
                         이 선택지에 매핑된 후속 대사가 아직 정규화되지 않았습니다.
@@ -204,7 +239,7 @@ function StoryBlocks({ blocks }: { blocks: StoryBlock[] }) {
                   Shared response
                 </p>
                 <div className="mt-3 grid gap-3">
-                  <StoryBlocks blocks={block.sharedBlocks} />
+                  <StoryBlocks blocks={block.sharedBlocks} portraitPaths={portraitPaths} />
                 </div>
               </section>
             ) : null}
@@ -215,10 +250,16 @@ function StoryBlocks({ blocks }: { blocks: StoryBlock[] }) {
   );
 }
 
-function StoryBodyRenderer({ blocks }: { blocks: StoryBlock[] }) {
+function StoryBodyRenderer({
+  blocks,
+  portraitPaths,
+}: {
+  blocks: StoryBlock[];
+  portraitPaths: Record<string, string>;
+}) {
   return (
     <div className="grid gap-4" data-testid="story-body">
-      <StoryBlocks blocks={blocks} />
+      <StoryBlocks blocks={blocks} portraitPaths={portraitPaths} />
     </div>
   );
 }
@@ -227,6 +268,7 @@ export function ReaderStoryShell({
   detail,
   group,
   locale,
+  portraitPaths,
   story,
   summaryAvailable,
   siblingStories,
@@ -235,6 +277,7 @@ export function ReaderStoryShell({
   group: ContentGroupEntry;
   story: ContentStoryIndexEntry;
   detail: StoryDetail | null;
+  portraitPaths: Record<string, string>;
   siblingStories: ContentStoryIndexEntry[];
   summaryAvailable: boolean;
 }) {
@@ -303,7 +346,7 @@ export function ReaderStoryShell({
             </CardHeader>
             <CardContent>
               {isBodyAvailable ? (
-                <StoryBodyRenderer blocks={detail.blocks} />
+                <StoryBodyRenderer blocks={detail.blocks} portraitPaths={portraitPaths} />
               ) : (
                 <div className="rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--panel)] p-5 text-sm leading-7 text-[var(--text-muted)]">
                   이 스토리는 generated body JSON이 아직 준비되지 않았습니다. source manifest에는
