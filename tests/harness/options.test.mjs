@@ -7,6 +7,7 @@ test("parseIterationArgs reads defaults", () => {
   assert.equal(options.maxParallel, 3);
   assert.equal(options.reviewLoops, 2);
   assert.equal(options.dryRun, false);
+  assert.equal(options.spec, "docs/product-specs/arknights-story-reader.md");
 });
 
 test("parseIterationArgs reads custom values", () => {

@@ -1,22 +1,11 @@
 # Latest Iteration
 
-Date: 2026-04-16
+No root-first harness iteration has completed on the default branch yet.
 
-## Summary
-- bootstrapped a Next.js 16 App Router project
-- replaced starter content with a local-first harness dashboard
-- added repository docs, guard scripts, and a Codex harness entry point
-- hardened the localStorage store so `useSyncExternalStore` uses stable snapshots
-- added Playwright browser smoke and made it part of strict `npm run verify`
-- made the harness restore the previous iteration report if an iteration fails
-- upgraded the harness to create a GitHub issue DAG, branch/worktree per issue, review loops, and dependency-safe PR merges
+Current in-flight work:
 
-## Verification
-- npm run verify
-- npm run harness:test
-- npm run smoke
+- Parent issue: `#1`
+- Active child issue: `#2`
+- Draft PR: `#3`
 
-## Remaining Risks
-- GitHub-backed harness execution requires `gh` CLI to remain installed and authenticated.
-- autonomous iterations require an authenticated local `codex` CLI session
-- quality scoring is still manual
+This file will be replaced by the harness after a full issue DAG finishes, all child PRs merge, and the default branch passes `npm run verify`.

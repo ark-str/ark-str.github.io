@@ -2,23 +2,23 @@
 
 ## Intent
 
-The page should feel deliberate, editorial, and high-contrast rather than like a default starter.
+The interface should feel editorial, deliberate, and product-specific rather than like a framework starter.
 
 ## Rules
 
-- Keep the app to one route unless the product spec explicitly expands it.
+- Keep the current bootstrap phase to one route until the product spec explicitly expands it.
 - Use CSS variables for color, spacing, and typography tokens.
-- Prefer bold blocks, clear hierarchy, and responsive layouts over decorative complexity.
+- Prefer warm, readable surfaces and high-contrast information blocks over generic dashboard chrome.
 - Avoid remote assets entirely.
 - Design for both desktop and mobile from the first pass.
-- Keep interactions obvious and testable.
+- Keep interactions obvious, testable, and local-first.
 
 ## Current UI Contract
 
-- Hero + system overview
-- bundled resource manifest
-- local-first editable workspace
-- verification checklist that persists locally
+- hero that explains the root-first bootstrap state
+- locally persisted bootstrap preferences
+- visible dependency graph for the next harness issues
+- no framework starter copy, remote links, or vendor branding
 
 ## Anti-Patterns
 

@@ -1,7 +1,7 @@
 export function parseIterationArgs(argv) {
   const options = {
-    goal: "Advance the single-page local-first product by one coherent, verified iteration.",
-    spec: "docs/product-specs/single-page-local-first.md",
+    goal: "Advance the Arknights story reader by one coherent, verified iteration.",
+    spec: "docs/product-specs/arknights-story-reader.md",
     maxParallel: 3,
     reviewLoops: 2,
     dryRun: false,

@@ -15,8 +15,8 @@ Every meaningful change should pass:
 
 ## Expectations
 
-- The page must build without network access.
-- The page must render without requiring a server-side data source.
+- The app must build without network access after dependencies are installed.
+- The app must render without requiring a server-side data source.
 - Persisted state must survive a refresh and recover safely from malformed `localStorage` values.
 - Browser smoke must complete with no uncaught page errors.
 - Browser smoke must complete with no `console.error` output.

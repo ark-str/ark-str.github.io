@@ -1,6 +1,6 @@
 # AGENTS.md
 
-This repository is optimized for agent-led iteration. Read the smallest useful slice of context, then act.
+This repository is optimized for agent-led iteration from the repository root.
 
 ## Start Here
 
@@ -17,9 +17,10 @@ Read these files in order when you begin a new task:
 
 ## Mission
 
-Build and maintain a single-page Next.js application that:
+Build and maintain a root-first Next.js application for an Arknights story reader that:
 
 - runs on the App Router
+- keeps the app, docs, scripts, and tests in the repository root
 - ships with bundled resources only
 - stores mutable user state in `localStorage`
 - can be advanced by an agent in one end-to-end iteration with minimal human steering
@@ -49,6 +50,7 @@ Build and maintain a single-page Next.js application that:
 - `npm run verify` - guards, typecheck, lint, harness tests, build, and browser smoke
 - `npm run harness:iterate -- --goal "..."` - launch a GitHub-backed Codex iteration
 - `npm run harness:iterate -- --goal "..." --dry-run` - validate planning and orchestration without GitHub writes
+- `npm run content:status` - inspect whether vendor sources and generated content outputs are present
 - `npm run guards:all` - repository rule checks only
 
 ## Harness Prerequisites
@@ -57,6 +59,15 @@ Build and maintain a single-page Next.js application that:
 - `gh` CLI must be installed and authenticated.
 - Start from a clean checkout on the default branch.
 - Treat `.harness-worktrees/` as harness-owned scratch space only.
+
+## Root-First Structure
+
+- `src/` - root Next.js app and feature code
+- `docs/` - source of truth for specs, plans, and generated harness reports
+- `scripts/` - guards, harness orchestration, and content pipeline entrypoints
+- `tests/` - harness unit tests and browser smoke tests
+- `vendor/` - indirect GitHub-backed source roots such as `ArknightsData/`
+- `public/generated/` - generated static assets for runtime consumption
 
 ## Document Map
 

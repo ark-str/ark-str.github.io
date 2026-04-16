@@ -1,12 +1,12 @@
-import path from "node:path";
-import { fileURLToPath } from "node:url";
 import type { NextConfig } from "next";
 
-const configDir = path.dirname(fileURLToPath(import.meta.url));
+const rootDir = process.cwd();
 
 const nextConfig: NextConfig = {
+  reactStrictMode: true,
+  outputFileTracingRoot: rootDir,
   turbopack: {
-    root: path.join(configDir),
+    root: rootDir,
   },
 };
 

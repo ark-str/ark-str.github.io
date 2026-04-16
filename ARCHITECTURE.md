@@ -1,22 +1,27 @@
 # Architecture
 
-This project intentionally uses a narrow, agent-legible structure.
+This project intentionally uses a narrow, root-first structure that the harness can inspect without extra workspace indirection.
 
 ## Product Shape
 
-- Single-page Next.js application
+- Single Next.js application in the repository root
 - App Router under `src/app`
 - No backend
 - No remote runtime dependencies
 - User state persisted to `localStorage`
+- Future external game data handled through build-time vendor sources under `vendor/`
 
 ## Source Layout
 
 - `src/app/` - route shell, metadata, and global styles only
-- `src/features/harness/` - business feature for the single-page workspace
+- `src/features/` - product features with explicit layer boundaries
 - `scripts/guards/` - mechanical repository rules
 - `scripts/harness/` - verification and autonomous iteration entry points
+- `scripts/content/` - build-time content synchronization and generation entry points
+- `tests/` - harness unit tests and browser smoke tests
 - `docs/` - repository-local source of truth
+- `vendor/` - indirect GitHub-backed data sources
+- `public/generated/` - generated static assets consumed at runtime
 
 ## Feature Layers
 
@@ -39,13 +44,15 @@ Disallowed patterns:
 - `service` importing `runtime` or `ui`
 - ad-hoc `localStorage` access outside `repo` and `runtime`
 - remote resources from component code
+- moving the application into nested workspaces or sub-app packages
 
 ## Runtime Boundary
 
-- Server components render static shell and pass control to client UI.
+- Server components render the static shell and pass control to client UI.
 - Browser APIs live in client files only.
 - `localStorage` access is wrapped by `repo` functions.
-- Data shape normalization happens in `service` before state reaches the UI.
+- Persisted state normalization happens in `service` before values reach the UI.
+- Generated story data is read from local JSON assets, never from runtime network calls.
 
 ## Why This Exists
 
