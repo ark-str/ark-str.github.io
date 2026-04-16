@@ -49,7 +49,7 @@ npm --prefix ark-str-web-app run export:ghpages
 
 Then open the Actions tab and run the `Deploy GitHub Pages` workflow manually from `main`.
 
-The workflow rebuilds the app, runs `npm run verify`, uploads `ark-str-web-app/out`, and deploys that exported artifact to GitHub Pages.
+The workflow rebuilds the app, runs `npm run verify`, uploads `ark-str-web-app/.next-export`, and deploys that exported artifact to GitHub Pages.
 
 ## Root Harness Commands
 

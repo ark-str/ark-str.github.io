@@ -16,7 +16,7 @@ Every meaningful change should pass:
 
 - The app must build without runtime network access after dependencies are installed.
 - The app must export successfully for the gh-pages `/ark-str/` base path.
-- The repository must provide a manual GitHub Pages deployment workflow that rebuilds and verifies before publishing `ark-str-web-app/out`.
+- The repository must provide a manual GitHub Pages deployment workflow that rebuilds and verifies before publishing `ark-str-web-app/.next-export`.
 - The app must keep dev-cache and export-cache output isolated so `npm run verify` does not slow the next `npm run dev`.
 - The app must render without requiring a server-side data source.
 - Persisted state must survive a refresh and recover safely from malformed `localStorage` values.
