@@ -1,0 +1,4136 @@
+{
+  "server": "jp",
+  "storyId": "main_8_level_st_08-06",
+  "groupId": "main_8",
+  "stageId": "st_08-06",
+  "title": "「終幕」或いは「序章」",
+  "storyCode": "END8-1",
+  "avgTag": "幕間",
+  "sourcePath": "vendor/ArknightsData/jp/gamedata/story/obt/main/level_st_08-06.txt",
+  "sourceHash": "96bd28316d227880b56b0ec155114f44adf951b1cf4c661b757cebe3defb7fb1",
+  "bodyAvailable": true,
+  "blocks": [
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "text": "マズい、アーミヤ！！",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "チェン",
+      "text": "なっ…！　どうした、アーミヤ！？",
+      "portraitKey": null
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "何が起きた！",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "バカな……",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "ケルシー、なんとかしてくれ！",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "……こっちへ連れて来てくれ、Dr.{@nickname}。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "これから私が行うことは、決して口外しないでほしい。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "チェン隊長！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "今はもう隊長ではない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "ひとまず、あの龍の監視を頼みたい。この後、すぐに収監の用意をする。何か質問はあるか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "いや、とにかくまずはアーミヤを診てやってくれ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "よし……ドクター、手を伸ばしてくれ。",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "わかった！",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "（手を伸ばす）",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "嫌がっても無理に引っ張るつもりだろう？",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "痛みはない、だが、余計なことは訊くな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "この注射器を君の腕に刺して、少しばかり血をいただくだけだ。それ以上は答えられない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "自分のためだと思え。",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "これは――",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "訊くな。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "彼女の言う通り、確かに何の痛みもなかった。\nケルシーは、抜き取ったばかりのあなたの血を腰の器具に入れ、数秒後、青い液体となったそれをアーミヤの首筋に注射した。\n荒かったアーミヤの呼吸が穏やかになっていく。"
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "一体どういうことだ！？",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "……うぅっ……！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "効いてきたな。アーミヤ……目を覚ませ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "あっ……テレジア……さん……？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "……いや、違う。私だ、アーミヤ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "ケルシー先生……私……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "大丈夫だ、アーミヤ。無理にしゃべる必要はない。そろそろ行くとしよう、もう大丈夫だ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "はい。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "……はい……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "うっ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "うぅ……あぁ……うぅぅっ……",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "どうして泣いている？",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "アーミヤ……",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "（何も言わずにアーミヤのそばにいる）",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "うぅ……ドクター……うぅっ……ううっ……",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "……大丈夫だ、アーミヤ。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "戦いはもう終わった。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "はい……はい……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "はい。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "……ドクター、私は最後まで涙を……我慢しました……私……約束しましたから……わ……私……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "……ドクター……ドクター……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "……Dr.{@nickname}……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "チェン、間もなく迎えの飛行ユニットが司令塔に着陸する。急いでタルラを連れて、ここを離れるぞ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "本気でロドスに連れ帰るつもりか？　私もまだ……彼女をどうするべきか決められずにいるんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "私たちにはタルラが必要なんだ。ロドスは誰よりも先に彼女を手に入れなければならない。",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "きっと面倒なことになる！",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "……",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "今さら何を言われても驚かない。",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "破滅的な災いを招くのではないかと、懸念しているのだろう？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "心配する必要はない、Dr.{@nickname}。どのみちこの件に介入すると決めた時から、私たちは破滅に瀕しているんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "二本の鋭い刃が我々の首元に突きつけられている。二本のうち一つは龍門、そしてもう一つはウルサスの第三軍が握っている。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "龍門の攻防戦に加担し、チェルノボーグの中枢区画を停止させて、その内幕までをも知った……これだけの理由があれば、奴らは何度ロドスを滅ぼそうと足りないだろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "龍門が我々を攻撃してきたら、第三軍はどうすると思う？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "答えは簡単だ、間違いなく傍観を貫くだろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "制服を着た処刑人共は、私たちの船が荒野で燃え尽きるのを黙って見届けるだろうさ。そうすれば、奴らの頭を煩わせるものが消えて無くなるのだから。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "逆もまた然りだ。龍門に登録されておらず、その庇護下にないただの個人企業が、不明な勢力の襲撃に遭って朽ち果てようと……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "龍門にも炎国にも、何の関わりもないことだろう？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "だがそれらは全て、こちらの手にタルラがない前提だ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "こちらにタルラがいれば、ロドスに手を出した場合、「重要参考人タルラの身柄を奪取する意向である」と、相手に表明することと同義になる。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "「タルラを確保して優位に立ち、劣勢を覆したい」とな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "私たちの生きる道は、奴らがそれぞれどう動くかにかかっている。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "ロドスは……龍門の豪商とウルサスの旧貴族が、向こう百年は手を取り合う可能性がほぼ皆無であるという現実を喜ぶべきだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "タルラが、ロドスの手の内にある限り、奴らは互いに牽制し合い、どちらも容易に手出しはできないだろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "自分にとっても、相手にとっても、重要な生き証人となる存在を、リスクを冒してまで手に入れるよりは、互いにそれと一定の距離を保つ方を選ぶはずだからな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "第三軍と龍門にしてみれば、ちょっとした手違いが破滅に直結する状況だ。結局奴らは自分たちの国を代表することができないというわけだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "第三軍は密かにそれを試みたようだが……己の過ちにより対価を支払うことになるだろう。十分過ぎる対価をな。どちらの陣営にとってもこの賭けは危険すぎるんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "だから、我々は奴らを敢えて追い込む。互いに敵を牽制させつつ、その脅威の傘の下で、陰ながら我々が守られるようにな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "タルラはロドスにとって非常に重要な存在だ。少なくとも今は。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "まだ命のある賢い連中ならば、妥協点を見つけるだろう。そして、タルラを手にしているロドスはその妥協点となるべきだ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "この件が重要視されなくなるまでは。もしくは、連中が次なる嵐に巻き込まれるまではな。",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "ケルシーを説得するのは無理みたいだ。",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "……",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "とっくに決めていたんだな？",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "ふっ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "迎えが来たようだ。行こう、まずはアーミヤとタルラを乗せる。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "私と君は次の機体に乗る。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ傭兵",
+          "text": "このまま続けても無意味だ。遊撃隊の奴らに殺されちまう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ傭兵",
+          "text": "撤退だ！　この街から出るぞ。今回は俺たちの負けだ！　無意味な戦いだったんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "W",
+          "text": "無意味ですって？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ傭兵",
+          "text": "Ｗ！　お前、生きてたのか……？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "W",
+          "text": "そんな簡単に死んでたら、あたしについてきてなんて言えないじゃない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ傭兵",
+          "text": "ついていくにしても、理由が必要だ。お前をボスだと納得できる理由をくれ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "W",
+          "text": "あはっ！　なんだ気づいてないの？　あんた、自由になったのよ、デクの坊さん。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ傭兵",
+          "text": "……なに？　自由？　どういうことだ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "W",
+          "text": "あんたたちはもう殺し屋じゃないってこと。そんであたしも、もうあんたたちのボスじゃない。あたしは、ただ一緒に行かないかって誘ってあげてるだけよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "W",
+          "text": "これ以上誰かのために手を汚す必要はないわ。これからは、自分のために戦うのよ。あっ、でも快楽のために人を殺すっていうなら、あたしが真っ先にそいつの肋骨を内側から吹き飛ばしてやるから。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "W",
+          "text": "これ以上、あたしたちを利用しようとする奴らに従う必要はないって言ってんのよ。奴らはあたしたちを生かそうとしてるんじゃなくて、死ぬ前により多くの命を奪わせようとしてるだけ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "W",
+          "text": "でも！　あたしは違う。あたしはね、お金はいいものだと思うわ。奴らはお金だけはいっぱいくれたしね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "W",
+          "text": "だけど生きてさえいれば、もっと稼げるわ。奴らが約束した報酬が自分の墓穴に撒かれたって嬉しくないでしょ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "W",
+          "text": "あたしたちを見下すような奴はぶっ殺してやる。目障りな奴らや、ゲスいちょっかいを出してくる奴らも、一人残らず始末するのよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "W",
+          "text": "誰かのためじゃなく、レユニオンや魔族なんかのためでもない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "W",
+          "text": "自分の手で生きていくの。炎国の碁を学びたいなら行けばいいわ。好きなことを好きなようにすればいい。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "W",
+          "text": "どう、ついてくる？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ傭兵",
+          "text": "……どうせ行くところもないしな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ傭兵",
+          "text": "ついていこう。でもな、妙な真似はするなよ、Ｗ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "W",
+          "text": "それは無理よ、兄弟。あたし、これからもやりたいことがたーくさんあるんだから。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エリジウム",
+          "text": "もう終わったのかな？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホーク",
+          "text": "あーよかった。これで連中の仲間を装って混乱させるなんてつまらない仕事をしなくて済むな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホーク",
+          "text": "まったく。連中を騙すための偽装だったはずなのに――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レユニオン構成員",
+          "text": "助かったぞ兄弟！　よくやってくれた！　でも今すぐここを離れた方がいい！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホーク",
+          "text": "（ウルサス語）大丈夫だ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホーク",
+          "text": "……今はガチであいつらの手助けをしてるんだからな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エリジウム",
+          "text": "ホーク、戻ったら一緒にコーヒーでもどうだい？　この前クルビアで就いた面白い任務の話を教えてあげてもいいよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホーク",
+          "text": "あの時は、俺もお前と同じ小隊だったけどな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エリジウム",
+          "text": "あれ、そうだったっけ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホーク",
+          "text": "お前さ、毎回小隊のメンバーのこと覚える気ないよな？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エリジウム",
+          "text": "まぁね。だって、常にロドスの小隊として活動してるわけじゃないからさ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホーク",
+          "text": "しかし……今度こそ、胸を張れる良い仕事をしたのかもな。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "盾兵",
+          "text": "待て。あれはお前たちの飛行ユニットか？　あれは何をしている？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "えっと、たぶん……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "タルラを連れに来たんだよ。あっ、もう連れてっちゃったみたい。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "盾兵",
+          "text": "……なに？　タ、タルラを連れて行っただと？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "盾兵",
+          "text": "バカな！　ロドスにそんな権利はないはずだ！！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "盾兵",
+          "text": "あいつは俺たちが裁く！　連れて行かせるわけにはいかん！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "ダメ……それはダメだよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "おじさんたちは復讐がしたいだけでしょ。だからその資格はない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "私たちに、彼女を裁く資格はないの。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "盾兵",
+          "text": "だが、お前たちに彼女を連れ去る資格はあるのか？　俺たちがあいつを殺す機会を、お前たちが奪ったんだ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "盾兵",
+          "text": "誰にも裁く資格がないなどと、誰かの受け売りか……？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "盾兵",
+          "text": "俺たちの身体には恨みが流れている。あいつに殺されたレユニオンと感染者の同胞たちの恨みが俺たちの血を煮えたぎらせる。俺たちにしか、あいつを裁く資格はないんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "盾兵",
+          "text": "他の者たちじゃダメだ。それは許されない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "それなら、あなたたちはちゃんと公正に裁ける？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "盾兵",
+          "text": "我らこそが公正だ。タルラは我らの手から逃げられはしない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "……こうしよう、おじさん。タルラは誰にも渡さないって誓うよ。おじさんたちとレユニオン以外にはね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "盾兵",
+          "text": "ならばその時が来るまで、あいつに何をさせるつもりだ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "私にもわからない。でも、さっき言ったことは誓える。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "私たちがしてることは正しいって信じてるから。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "どうしてもって言うなら、私を殺していいよ。私はロドスのやり方を信じてる。私がタルラの代わりになる。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "盾兵",
+          "text": "……何を言っている！　ふざけたことを言うな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "盾兵",
+          "text": "はぁ……お前のロドスに対するその忠誠は、俺たちの忠誠と何も変わらないようだな……わかった、お前を信じよう。お前はきっと栄誉ある戦士になる。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "盾兵",
+          "text": "行け！　お前に免じて、今回だけはロドスを信じてやる。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "盾兵",
+          "text": "だが、覚えておけ。タルラだろうがあの魔王だろうが、たとえ一度でも、一度でもお前たちが悪事を働いたと知れば――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "盾兵",
+          "text": "お前たちがこの大地で、抑圧と統治を受けている者に、更なる苦痛をもたらしたとわかったら、すぐに探し出し、攻撃し、殺す。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "盾兵",
+          "text": "特にタルラ。あいつを使って何かをやらかそうなんて思わないことだな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "盾兵",
+          "text": "そんなことをすれば、お前たち全員の首を街の最高位に吊るし、大尉への、この地で孤独に死を迎えた偉大な戦士への弔いとする。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "盾兵",
+          "text": "あの人は、こんな結末を迎えるべきではなかった。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "そんなことにはならないよ。ロドスはそんなことしないから。それにもし、しようとしても私が絶対に止めてみせる。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "これからは……私も、あなたたちが言うように、良い人と悪い人を見分けられるようになる。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "これ以上家族を失っていい人なんていない。これが良いことなら、私はやる、私が裁くよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "もう少しで自分の「物差し」ができそうな気がするから。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "盾兵",
+          "text": "お前と、その誓いを信じよう！　お前はまだ子供だが、行動を起こすこともできないような大人より、よっぽど責任感がある。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "盾兵",
+          "text": "約束しよう。少なくともお前がいる間は、ロドスを叩き潰すようなことはしない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "指切りしてくれる？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "盾兵",
+          "text": "ん？　……ははっ！　ああ、指切りだな？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "うん。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "盾兵",
+          "text": "……俺にも娘がいたら、きっとお前くらいだったはずだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "盾兵",
+          "text": "小猫よ……もしもう一人の少女が、あの魔王――あのコータスが、これから本当にうまく歩んでいけるのなら……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "盾兵",
+          "text": "……俺たちのことも信じてくれて構わないぞ。お前たちに困難が降りかかった時は、いつでも助けに行く。大尉も、エレーナも……あの娘のことを選んだからな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "盾兵",
+          "text": "今後、お前たちの選んだ道が正しく、俺たちが間違っていたと証明されることを願う。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "盾兵",
+          "text": "だが、それは不可能だろう。俺たちのやっていることは至極真っ当だからな！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "盾兵",
+          "text": "さぁ、もう行くがいい。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロドスオペレーター",
+          "text": "行きましょう、ロスモンティスさん！　レユニオンの戦士たち……感謝する。我々はロドスに戻る。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "盾兵",
+          "text": "もうレユニオンじゃない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "盾兵",
+          "text": "じゃあな、小猫。早く行け。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "バイバイ、おじさん。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "盾兵",
+          "text": "またな！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "盾兵",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "盾兵",
+          "text": "行ってしまったな……兄弟たち。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "盾兵",
+          "text": "だが、俺たちが去るにはまだ早い。やり残したことがあるからな。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "「皇帝の利刃」",
+          "text": "レユニオンのリーダーからの通信が途絶えた。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "「皇帝の利刃」",
+          "text": "チェルノボーグの中枢区画も停止した。第六、第七、第十二師兵団に連絡せねば。彼らが引き続き計画を実行するつもりなら、今すぐにでも行動に……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "？？？",
+          "text": "止まれ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "？？？",
+          "text": "さもなくば力尽くで制圧することになる。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "？？？",
+          "text": "……だがお前たちを抑えたとて、意味がないことはわかっている。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "？？？",
+          "text": "あの理性なき戦闘兵器の進攻を未然に止められるのは、お前たちだけなのだから。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "「皇帝の利刃」",
+          "text": "お前たちにウルサスの利刃に抗う力はない。今となってはな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "「皇帝の利刃」",
+          "text": "……それに、愚かな君主の手先ごときに、我々に指図する資格などあると思うか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "影衛",
+          "text": "（ガリア語）なぜお前自身、コシチェイに惑わされていないと断言できる？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "「皇帝の利刃」",
+          "text": "その言葉で話しかけるな……ガリアの時代はすでに過去のものだ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "「皇帝の利刃」",
+          "text": "国を跨いでの交流にガリア語が用いられていた時代は、とうの昔に終わったのだ！　今では街一つすら残ってはいない！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "「皇帝の利刃」",
+          "text": "コシチェイはただひたすらに、ウルサスに貢献し続けて来たのだ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "影衛",
+          "text": "以前、ウルサス人にそう称えられていた人間は、お前たちの剣の錆になった。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "影衛",
+          "text": "あまり考えすぎるな。我々なら助けてやることもできる。そして、お前たちにしかできないこともある。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "「皇帝の利刃」",
+          "text": "国を裏切るようそそのかすつもりか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "影衛",
+          "text": "若者よ……このまま頑なに進み続けることこそ、国家への反逆だ。これから起こることはお前自身で選択できるが、それによる結果の責任を負うのはウルサスだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "影衛",
+          "text": "こんなことをしたからには、分かっているはずだ。貴族たちは一つの問題を解決するためだけに戦争を起こす。そして戦争は……戦争というものは何よりも厄介だ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "影衛",
+          "text": "お前たちはどこでウルサスの平和を再建するつもりだ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "影衛",
+          "text": "お前たちは、自らの手であの時代に終止符を打ったのだ。我々よりもはっきりとわかっているはずだろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "「皇帝の利刃」",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "「皇帝の利刃」",
+          "text": "ウェイの手先よ、どうやって我々の居場所を突き止めた？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "影衛",
+          "text": "実力だ。お前たちはまだまだ学ぶべきことが多い。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "「皇帝の利刃」",
+          "text": "俺を脅そうというのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "影衛",
+          "text": "違う、ただ我々は……老いただけだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "影衛",
+          "text": "お前たちは国への忠義を誇らしく思っているのだろう……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "影衛",
+          "text": "しかし、国の意志であろうと、我々には断固としてやらないこともある。お前たちの目には義のない行為に映ろうともな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "「皇帝の利刃」",
+          "text": "義とは何だ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "影衛",
+          "text": "我々には成し得ないことだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "影衛",
+          "text": "（ガリア語）ここは、互いに一歩引こうではないか、若者よ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "影衛",
+          "text": "皇帝の近衛兵団は日々新たな血液を取り込んでいる。お前たちは我らより長く存続することだろう。もし仮に、この行動が間違っていたとしても、お前たちにはそれを正すチャンスがあるのだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "影衛",
+          "text": "もし本当にウルサスのために尽くすつもりならば、同じ過ちに足を踏み入れるな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "「皇帝の利刃」",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "影衛",
+          "text": "さて、どうする？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "「皇帝の利刃」",
+          "text": "……こちらの問題はこちらで解決する。お前たちは自分の仲間を大人しくさせておけ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "「皇帝の利刃」",
+          "text": "それと、老いぼれ……お前たちはもう禁軍じゃないんだ。余計なことに首を突っ込むな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "影衛",
+          "text": "だからこそ、今こうやって無駄話ができるというものだ。長生きはするものだぞ、若者よ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "影衛",
+          "text": "もう会うこともないだろうがな。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レユニオン構成員",
+          "text": "頼む……お願いだ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レユニオン構成員",
+          "text": "殺すなら、楽に死なせてくれ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "迷彩狙撃兵",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レユニオン構成員",
+          "text": "あいつらには捕まりたくないんだ！　きっとひどく痛めつけられるに違いない……あいつらはずっと……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "迷彩狙撃兵",
+          "text": "噂なんて信じるな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "迷彩狙撃兵",
+          "text": "早く行け！　後のことは知らん。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "迷彩狙撃兵",
+          "text": "盾兵には見つかるなよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レユニオン構成員",
+          "text": "……ほ……本当に見逃してくれるのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "迷彩狙撃兵",
+          "text": "隊長もきっとお前たちには生き延びてほしいと思っているはずだ。あの人も迷いの多い人だったからな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "迷彩狙撃兵",
+          "text": "今後は奴らとは関わるなよ。タルラの衛兵だろうと盾兵だろうと。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "迷彩狙撃兵",
+          "text": "迷いの多い人……か。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "迷彩狙撃兵",
+          "text": "残ると決めたのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロドス前衛オペレーター？",
+          "text": "ああ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "迷彩狙撃兵",
+          "text": "だがレユニオンはもう……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロドス前衛オペレーター？",
+          "text": "きっと盾兵でも、レユニオンを代表することはできないだろうな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロドス前衛オペレーター？",
+          "text": "もはや彼ら自身、自分たちをレユニオンと呼んでいない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロドス前衛オペレーター？",
+          "text": "そう……俺たちが変えるしかないんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レユニオン構成員",
+          "text": "レユニオンとして、レユニオンを変える。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "迷彩狙撃兵",
+          "text": "まだそんな幻想を抱いているのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レユニオン構成員",
+          "text": "感染者は、倒れてもまた立ち上がれると信じているんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "その後の三十六時間で、チェルノボーグの中枢区画に潜んでいた第三師兵団所属のウルサス兵は、忽然と姿を消した。\nもちろん、彼らがウルサスの軍人だと証明できる者はいない。\n中枢区画から撤退する直前、盾兵たちは多くのレユニオンの遺体を見つけた。それらの遺体は、身元を証明できるような物は、何一つ携えていなかった。彼らの体の傷を除いて……\nそれらの傷は、どれも同じ投擲武器によるものだった。\nおそらく姿を隠した犯人が潜入者のみを手にかけ、陰に潜んでいる謀略家に向けて無言の警告を発したのだ。\n当然、盾兵たちの警告は更に直接的なものだった。反逆者は血の海に沈む運命だ。"
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "炎国とウルサスの連合調査団は、チェルノボーグに足を踏み入れてから二週間後に、それぞれの機関に報告書を提出した。\n報告書によると、両国のどちらにも、この災害の計画と実施に関与したという確固たる証拠はないというものだった。\nそして最終的には、チェルノボーグ事件は感染者が引き起こした、重大な人災だと結論付けられた。\nしかしその後、政治的な衝突が立て続けに起こったことによって、各大都市で大々的に噂されていた感染者に対する追加法令案も、議会の廃案候補の山に数ヶ月も埋もれることとなった……\n……そして、その後の期末大清掃の際、他の重要書類と共に書記によりシュレッダーにかけられてしまったのだった。\nこうしてチェルノボーグ事件に、音もなくピリオドが打たれた。"
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウルサス民衆",
+          "text": "ひいっ……！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クラウンスレイヤー",
+          "text": "怖がらなくていい。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クラウンスレイヤー",
+          "text": "……私は殺し屋じゃない。行くぞ、ついてこい。ここに留まろうとは考えるな！　ウルサス人に見つかれば、感染者であろうとなかろうとお構いなしに殺されるぞ。この街も廃墟となり果てる運命だ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウルサス民衆",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウルサス民衆",
+          "text": "あんたを信じるしかないってのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クラウンスレイヤー",
+          "text": "お前たちが生き延びたいのならな……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウルサス民衆",
+          "text": "……生き延びたい。どこに向かえばいい？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クラウンスレイヤー",
+          "text": "よし……こっちだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クラウンスレイヤー",
+          "text": "お前たちに私たちを恨むなと言うことはできない。だがこれからは私たちも、お前たちのように故郷を追われた者を……恨まずにいたい。そう思っている。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クラウンスレイヤー",
+          "text": "おい！　こっちだ。彼らも連れて行ってやってくれ。感染していないから、くれぐれも気をつけろ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レユニオン構成員",
+          "text": "クラウンスレイヤー！　お前はどうするんだ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レユニオン構成員",
+          "text": "どこに行くつもりだ……？　俺たちはどうすればいい？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クラウンスレイヤー",
+          "text": "どうしてまだついてくる？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レユニオン構成員",
+          "text": "どうしてって、お前はレユニオンの――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クラウンスレイヤー",
+          "text": "私はもう何者でもない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クラウンスレイヤー",
+          "text": "……シラクーザに帰る。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レユニオン構成員",
+          "text": "どうしてだ？　どうして……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クラウンスレイヤー",
+          "text": "私は弱い。だからもっと強くなる。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クラウンスレイヤー",
+          "text": "シラクーザを離れ、父の復讐を果たすためにウルサスへ旅立とうとしていた時、先生に止められた。弱すぎる私には無理だと。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クラウンスレイヤー",
+          "text": "その言葉は、私に復讐をしてほしくないがために、先生がついた嘘なのだと思っていた。しかし、先生は正しかった。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クラウンスレイヤー",
+          "text": "私にはタルラのような頭脳も、先生のような技能もない。私はあまりにも弱い。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クラウンスレイヤー",
+          "text": "ずっと信じてやってきたことさえ……利用されていたにすぎない。聞いているだろう？　タルラが裏切ったんだ。どんな事情があったかはわからない。だが、レユニオンはもう終わったんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ナイン",
+          "text": "レユニオンがここで終わりだとは、私は思わないがな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クラウンスレイヤー",
+          "text": "……お前は龍門人か？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ナイン",
+          "text": "そうだ。だが、私が何者であろうと関係ない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ナイン",
+          "text": "レユニオンがどうなろうと、タルラがすでに火を灯したことには変わりない。タルラがその行いを認めるか否かを問わずな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ナイン",
+          "text": "この火が簡単に消えるとは思えない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クラウンスレイヤー",
+          "text": "それもまたいいだろう。お前がそう言うなら、彼らはお前について行く方がいいのかもしれない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ナイン",
+          "text": "私に託すという意味か？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クラウンスレイヤー",
+          "text": "信用するという意味だ。お前が嘘をついているかどうかは、私にはわからない。だがここにいる人たちが故郷を失ったのは事実だ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クラウンスレイヤー",
+          "text": "私についてくるよりも、お前について行った方がいい。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ナイン",
+          "text": "ならば、お前たち……私についてくる気はあるか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レユニオン構成員",
+          "text": "クラウンスレイヤー……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クラウンスレイヤー",
+          "text": "みんな……私たち……ウルサス人は……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クラウンスレイヤー",
+          "text": "ウルサスはまだ、私たちのように全てのウルサスの民を平等なものとして扱うまでに至っていないだけだ。いずれきっと……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クラウンスレイヤー",
+          "text": "じゃあな、みんな……私みたいに過ちを犯すなよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ナイン",
+          "text": "では行くか、若者たちよ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "レユニオン構成員",
+          "text": "あんたの名は？　これからどこへ行くんだ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ナイン",
+          "text": "私のことは、「ナイン」と呼ぶがいい。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ナイン",
+          "text": "火が燃えたぎるところに向かうつもりだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "鼠王",
+          "text": "やはり此処におったか。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "お前の目は欺けないな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "鼠王",
+          "text": "お主が此処へ来る理由はただ一つ、あ奴らを悼むためであろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "いや、私たち自身を悼んでいるのかもしれない。未だに死を恐れているこの身を。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "鼠王",
+          "text": "お主の剣はそうは言っておらんかったぞ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "少なくとも、本気でお前の喉を掻き切る真似はしなかったからな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "鼠王",
+          "text": "出過ぎた口はきかぬほうが良いぞ、お坊ちゃま。本気を出せばどちらに軍配が上がるかはわからぬからのう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "皮肉るのはやめろ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "鼠王",
+          "text": "ふんっ、多少の皮肉くらい甘んじて受け入れい、我が友よ。フェイゼがやりおった！　感染者たちがついにやったんじゃから！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "鼠王",
+          "text": "もう一度よく考えるんじゃな……お主の独断で危うく龍門が破滅を迎えるところだったんじゃぞ？　一歩間違えておったら、どれだけの者が戦いに身を投じていたことか。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "必ずしもそうとは限らんさ。龍門が一つの未来を選んだとしても、ほんの些細なことでその未来は滅ぶかもしれない……全ては、縁に導かれた、ただの偶然にすぎない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "鼠王",
+          "text": "この街が彼女を選んだのではないぞ、我が友よ。彼女がこの都市を選んでくれたのじゃ。ワシらはありがたく思うべきじゃろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "どちらだろうと矛盾はしないと思うがな。グレイ、この街も彼女を選んだんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "この都市が、まだ彼女を受け入れる準備ができていなかったとしてもな……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "鼠王",
+          "text": "その言葉は彼女自身に言うんじゃな。ワシは失礼させてもらうぞ、お坊ちゃま。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "……待て、グレイ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "影衛は私を騙したのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "鼠王",
+          "text": "急に何の話じゃ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "鼠王",
+          "text": "――お主の手下のことをワシが知るわけなかろう？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "お前がユーシャと手を組んで、何か企んでいても不思議ではない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "鼠王",
+          "text": "ではこれだけ言っておくかのう。影衛はかつての禁軍の頃と同じではない、今では人間じゃ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "鼠王",
+          "text": "お主がまた罪を犯すのを、彼らが黙って見過ごすとでも思うたか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "つまり、私が彼らに処理を命じた感染者は、ただお前に――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "鼠王",
+          "text": "シーッ……それは神のみぞ知る、じゃ。それに、ワシらがこうすることをわかっておったからこそお主は……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "鼠王",
+          "text": "早う帰るんじゃな。老いたトラがお主を待っておるぞ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "鼠王",
+          "text": "――フェイゼ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "鼠王",
+          "text": "おぉ、もう戻っておったのか。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "リンおじさん。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "鼠王",
+          "text": "その身なりから見るに、すぐにでもここを立つつもりなんじゃな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "鼠王",
+          "text": "フェイゼ、たまには戻ってくるんじゃぞ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "……どうかな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "鼠王",
+          "text": "なら便りだけでもいい。無事だということだけでも知らせてくれ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "あぁ、わかったよ、リンおじさん。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "ここには、タルラの父親と……お前たちの母親が埋葬されている。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "結局二人とも、愛した街で眠ることは叶わなかった。いや、お前の母にしてみれば、愛しいがゆえに恨みも深いというものか。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "フェイゼ、ここの景色を私は永遠に忘れることはない。この景色を一目見れば、全てが昨日のことのように甦る……私の妹、そして血は繋がっていないが、血縁にも勝る関係である私の兄弟。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "彼らはここで眠っている。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "二人の熱意を閉じ込めておくには、こんな棺では小さすぎる。二人の恨みを言い表すには、どんな言葉も軽すぎる。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "だからここは名もなき墓なのか。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "名もなき墓……そうだ。フッ、名前など生きている者にしか意味のない代物だからな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "――この大地では、埋葬などというのはただ、遺された者の理想を押しつけた儀式にすぎない。どんな墓も最終的には消えてしまうのだからな。安らかなる永眠などないのさ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "天災や戦争に見舞われるか、ただ単に打ち捨て去られるだけか……街が消えてしまえば、そこに埋葬されていた死者も塵となる。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "広大な荒野に点在する無数の集落でも、その末裔が祖先の墓を探し出せたなどという話は、聞いたこともない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "墓道などという葬送の方法もある。移動都市の航路上の一部を墓地とみなし、死者の遺品をその道に撒く。そして、幾度もその航路を通ることで参拝とみなす。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "私はどうも忘れっぽいらしい……忘れてしまったことが多すぎる。いや、忘れたいことが多すぎるというべきか。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "だが、二人のことは決して忘れたりはしない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "だから……ここに埋葬することにしたんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "……妹を連れて龍門に入り、ここでフミヅキに出会った。そして、ここまで逃れてきたエドワードにもだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "すぐ意気投合したとは言わんが、彼は知恵も勇気もある奴だった。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "陰で龍門を統治していたコシチェイは、私たちを目の上のたんこぶだと思っていたのだろうが、私たちにもはっきりとわかっていた。奴を追い出して初めて……この都市の未来が開けるとな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "この場所、この墓はかつて龍門が訪れたことのある最果ての地だ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "私たちが力を合わせてコシチェイを打ち負かし、奴を徹底的に龍門から追い出した時、龍門は数十キロ離れたところにあった。希望に満ちた都市は明かりを灯し、未来が我々を待っていた。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "ここで……この地で私たちは、酒を酌み交わし、大いに語り合い、笑い合った。あの時は、移動するための燃料が足りないことなんてすっかり忘れていたさ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "危うくここで干からびるところだったが、幸いにも老いぼれトラのアダムスが、咳き込みながら車でここまで迎えに来てくれたんだ。私もエドワードも相当叱られたがな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "いや……アダムスもあの時はそんなに歳を取ってはいなかったか。病もそこまでではなかったし、今ほど容赦ない奴でもなかったな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "だが、そんなことはどうでもいい。あの場では、誰もが皆笑顔だったのだから。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "グレイは……まるでその手を血に染めたことなんかないような顔で笑うんだ……輝かしい時を過ごしてきた少年のような笑顔さ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "エドワードは、ロンディニウムの最も高貴な血筋の末裔だったが、それは龍門では秘密だった。だが、コシチェイに勘付かれたんだ。恐らく、その時にはすでに奴の計画も形になっていたのだろう……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "奴は……嫉妬の塊のような私の弟と、ロンディニウムの諜報員に、エドワードと妹の関係をバラしたんだ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "私は、エドワードか、妹のお腹にいた子のどちらか一人を選ぶよう迫られた。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "そして、エドワードが死んで十年、私はその死を公表しなかった。私の弟とコシチェイ以外、事実を知る者はいなかった。だが、今やエドワードも妹も、すでにこの世にはいない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "時が経てば、この地にも天災が襲い掛かり全てが無に帰すだろう。悲劇の恋人たちがこの地に眠っていることも、その二人が私のせいで死んでいったことも、忘れ去られてしまう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "……「コシチェイ」に会った。奴は私たちが思っているよりもっと邪悪な存在かもしれない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "そうだろうな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "墓地か……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "……母さん。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "お前の母親がお前に対して愛情が薄かったのは私のせいだ。彼女を守るために、どうしても炎国の貴族に嫁がせる必要があった。だがもっと上手くやれたはずだった……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "全て過ぎたことだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "約束してくれ、ウェイ。これ以上、龍門を墓場にしないと。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "そんなことには二度とならないさ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "口先だけでは信じられないな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "お前に信じてほしいと思ったことはないが、だが、今回だけは信じてくれ。昔に、お前を特訓してやると言った時と同じだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "あの特訓はとても役に立った。あの教えがなければ、おそらく彼女を救うことはできなかっただろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "それは何よりだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "ここ十年のあなたとの会話を足したよりも、今日一日分の方が多いような気がするよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "これまでの言葉では足りなかったか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "チェン・フェイゼに対しての言葉だ。チェン隊長にじゃない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "ははっ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "では、そろそろ行くよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "姉のことはどうするつもりなんだ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "……私は、タルラに親族としての情はない。ただ申し訳ないと思うだけだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "ならば、申し訳ないと思い続けてくれ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "私たちは所詮、この大地に無数に存在する、生き別れた兄弟姉妹の一組にすぎない。その多くは、生きて再会することも叶わない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "それでもタルラは、無罪放免とはいかない。わからないんだ、今の彼女が一体何者なのか……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "罪を犯した者は捕らえられなければならない。ただ、今の龍門ではまだタルラを収容することができない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "私にその場所を作ることはできない。感染者と普通の罪人が、共に収容される近衛局を作ることができるのはお前だけだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "私である必要はない。自分のことは自分でやってくれ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "私は悟ったんだ……どれほど正しいことだとしても、龍門の市民が受け入れなければ何も実現しない。スラム街で嫌というほど思い知らされた。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "それに……本当にそういう場所ができるのなら、まずはロドスと共に作り上げたいと思っている。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "タルラにはどれほど時間がかかろうと、公正な裁きを受けてもらうつもりだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "……本当に成長したな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "そんな言葉はいらない、長官。いい言葉だとも思えないのでな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "龍門に代わって私がお前を引き留めたとしても、無駄なのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "はぁ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "もしも、お前とタルラが戻ってきたのならば、龍門も共にその道を歩むことだろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "私たちにはできないことも多いが、未来の龍門人が成し遂げてくれるはずだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "私はただ、あの時あなたが思い描いていたことを、忘れないでいてくれればそれでいい。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "フミヅキおばさんによろしく伝えてくれ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "後は……そうだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "ええと……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "……伯父さん。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "身体には気をつけて。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "フェイゼ！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "チェンは一瞬躊躇したが、振り返りはしなかった。"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "なんだ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "道は険しく長い。だが、お前ならできるはずだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "チェン",
+          "text": "その言葉、覚えておこう。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フミヅキ",
+          "text": "――それで、ロドスに提示しようとしていた、二つ目の条件というのは何でしたの？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "レユニオンの脅威を排除した後、龍門の感染者たちを連れて行ってもらうことだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "土地と資源――そして研究に必要な資料と、十分な資金を提供するつもりだった。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "彼らは断れないはずだ。その全てを受け入れる代償が、如何に大きかろうとな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "こうした取引は、これまでに何度となくやってきた。そして今後も続けていくつもりだった。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "躊躇も後悔もせずにな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フミヅキ",
+          "text": "今はどうです？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "……ふっ、世が変わったのなら私も変わらねばなるまい。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フミヅキ",
+          "text": "直接お礼を言うのがそんなに難しいですか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フミヅキ",
+          "text": "あなたはもうそんなに損得ばかり考えてはいません。恐らく、その理由は一つしかないでしょう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フミヅキ",
+          "text": "チェンちゃんですね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フミヅキ",
+          "text": "今はもう条件を変えたのでしょう？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "龍門の感染者は龍門のものだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フミヅキ",
+          "text": "ならチェンちゃんは？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "彼女は己の道を行くさ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フミヅキ",
+          "text": "時々会いに行きますか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "龍門の長官たる者、感染者組織と関係を持つようなことはしない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フミヅキ",
+          "text": "もう、器が小さいんですから。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フミヅキ",
+          "text": "それなら私が行きます。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "なら……頼む。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "妹と義理の弟の間で選択を迫られた時、私は妹を選んだ……二度と彼らを苦しませないと誓ったのに、私は――\n誓いを守ることができなかった。\nだが今はもう違う。何かを選ぶような真似はしない。\nコシチェイは間違っている。私には選ぶ余地すらない。私が進む道はただ一つ。\nたとえその道が肉親殺しから連なっているものであっても。\n妹が残した二人の娘のため、そして私が思い描いた理想の龍門のために。たった一つしか道がなくとも……"
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "（フェイゼ……生き抜いてくれ。）",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "――数週間後"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "尊敬するロドスのオペレーターの諸君、ケルシーだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "皆の努力の末、チェルノボーグ事件も、ようやく平和的と言える収束を迎えた。",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "......"
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "痛い？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ブレイズ",
+          "text": "あたっ……突っつかないでよ！　そんなことされたら痛いに決まってるでしょ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "あっ、ごめん。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ブレイズ",
+          "text": "まぁいいけど……どうかした？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "……ううん、なんでもない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ブレイズ",
+          "text": "ええぇっ？　うそでしょ、小猫ちゃん……今までは……今までなら言いたいことは全部口に出してたのに！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "え？　これって……いいこと？　悪いこと？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ブレイズ",
+          "text": "あっ！　うん、もちろんいいことだよ！　Scout、ねぇ、今の見てくれた？　私たちの小猫ちゃん、こんなに成長したよ。この子こんなに成長したんだよ……！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ブレイズ",
+          "text": "成長したんだよ、うぅ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "や、やめてよ……恥ずかしくて忘れたくなっちゃう……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "……ブレイズ、本当に泣いてるの？　どうして？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ブレイズ",
+          "text": "うわあぁぁぁぁん……！！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "……泣かないで、泣かないで……ブレイズ……もう泣かないでよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ブレイズ",
+          "text": "ブリッシュシルバーもAceも、きっと見ててくれたよね？　私たちの小猫ちゃんが……小猫ちゃんが成長したよぉ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "……ブレイズ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ブレイズ",
+          "text": "うわあぁぁぁん……！！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロスモンティス",
+          "text": "もう！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "――多くの真実は、永遠にチェルノボーグの瓦礫の下に、埋もれてしまうだろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "この大地はこんなにも無情だからだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "だが、ロドスは忘れたりはしない。そのためにどれだけ多くのものを背負おうと……忘れてはならない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "ロドスのオペレーターは、決して誰か一人の人間や、何か一つのことのために命を犠牲にしたのではない。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Medic",
+          "text": "わぁ、この塗り薬、本当に効果があるんですね！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Medic",
+          "text": "似たような特許薬はたくさんありますが、特効薬としてなら、きっとこの外用クリームにも需要はあると思いますよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Medic",
+          "text": "効果が非常に大きいというわけではありませんが、一番の長所はコストが限りなく低いことです……成分の分析結果を見ても、どれもよく見かける自然界の植物由来という点が素晴らしいです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Medic",
+          "text": "ただ採集するのが少し面倒なんですよね。西北凍原の西と東、広大な地域の両端に分布しているので……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Medic",
+          "text": "この薬の開発者はおそらく、医学知識よりも根気の方が強かったんでしょうね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Medic",
+          "text": "特許はどこで申請しましょうか、アーミヤさん？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "……ウルサスですかね。それと、すごく安価にしないと。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Medic",
+          "text": "でも、ウルサスなら似たような医療技術には事欠かないのでは？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "ですが、その薬を必要としている人はウルサスにたくさんいます。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Medic",
+          "text": "薬の名前はどうしましょう？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "そうですね……「フロストノヴァ」にしましょう。",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "アーミヤ？　なにか用か？",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "あっ、Dr.{@nickname}！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "Medicさん、あとはワルファリンさんと一緒にお願いします。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Medic",
+          "text": "はい、お任せください！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "ドクター、今行きます！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "私たちが事業に邁進するのは、結果を得るためではない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "何かを行うにしても、決して成果を求めてはいない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "ビジネスの観点から見れば、このような戦略は愚かだろう。しかし私たちの命は、物質的側面しか持たないモノではない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "勇敢なオペレーターたちが、その行動で示してくれたように、命の価値というのは、誰か一人――もしくは多くの者の生存を保証するだけではない、生物学的な意味だけでもない……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "我々は文明的な道徳観の上に立ち、生きて行かねばならない。ロドスは確信している、未来の命には支えが必要だということを。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "我々はこの大地の傷を癒やすという信念のために戦っているのだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "また任務に出るのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ニアール",
+          "text": "あぁ、メテオリーテと一緒にな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "新人を連れて行く余裕はないか？　まだまだ教育が必要な兵士の卵が何人かいるんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ニアール",
+          "text": "いや、厳しいだろう。今回の任務は楽なものではないのでな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メテオリーテ",
+          "text": "ジェシカとフロストリーフが巡回任務に出るらしいわ。そっちの方がいいかもしれないわね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "ジェシカが？　大丈夫なのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メテオリーテ",
+          "text": "ちゃんと成長してるんだから。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ドーベルマン",
+          "text": "それはわかっている。だからこそ、彼女の成長がほかの者に対するプレッシャーになってしまわないか心配なんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メテオリーテ",
+          "text": "そんなこと言ったら私はニアールにぺしゃんこにされちゃうわよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ニアール",
+          "text": "私は……そんなに重くはないと思うが？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メテオリーテ",
+          "text": "そ、そういう意味じゃないわよ、もう。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "その信念のために、我らは犠牲を払ったのだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "――Ace小隊、十三名。Ace、バッドトム、ハードブリック、ケルグ――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "――ウッドスプーン、セブンティーン、ブロンズノーズ、ビーン、ルナシルバー、コンフィデンティ、サンドウォッシュ、バイオレットフレイム、カリエス。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "アーミヤ小隊、十三名。ディムニードル、B-ソフトハンド、チリジミー、キーンイヤー――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "――アンガーネイジング、サンティ、マルコ・スミス、フェード――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "――ディバイド、リーシャ、ワイルドアッシュ、フォイ・インディゴジェイド、フロストノヴァ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "フロストノヴァを死亡者リストに入れることはできない。",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "どうしてだ！？",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "……",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "理由を教えてくれ。",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "君が認めても、我々の正式なオペレーターではないからだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "レユニオンのメンバーを受け入れ、未だ潰えぬ怒りを宿したロドスのオペレーターたちの心を乱すというのか？　そんなことを君がするべきではない。",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "戦う理由はみんな同じなんだ。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "それで十分だと思っているのか？",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "十分だ。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "ロドスは一つの信念のために戦っているのだから。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "……わかった。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "了承しよう。君は自分の責任を背負った。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "……これからの君も、今の君のようにいてくれることを願う。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "――この前のことは謝ろう、Dr.{@nickname}。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "石棺エリアで最後に君が問いかけてきた質問だが、それに答えることはできない。今後、永遠にだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "残念だが、真実を隠そうとしているわけではないんだ。ただ、君の求めている答えを教えることはできない。私もPRTSも君に説明することは難しい。責務を果たせなくて申し訳ない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "だが、その時が来れば、答えは自ずと君の前に現れるはずだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "ドクター……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "真実が明らかになるその日、君がきちんと準備できていると期待してもいいだろうか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "それと、Dr.{@nickname}。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "アーミヤはすでに色々なものを背負ってきた。これ以上……彼女には好ましくない思い出を残してほしくないんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "逆に、私たち自身でもまだ直視できていないようなものは、私たちが彼女のために背負うべきだ。私たちにならできる。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "君がここに留まり、今と変わらずにいてくれればな。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "Scout小隊、十三名。Scout、ムラム、カクテル――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "――スリンカー、ミミ、レイファ、ソラナ、マリー――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "――サムタック、ユラン、ユン、プータル、スコーピオン。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "ロスモンティス小隊、一名。ブリッシュシルバー。Raidian小隊、一名。リクサ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "この度のチェルノボーグ事件での犠牲者は計四十一名。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "我々ロドスは決して彼らを忘れない……彼らの名は永遠にロドスに刻まれる。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "ロドスが消滅してしまったとしても、彼らがロドスのために行ったことはこの大地にその足跡を残す。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "ドクター……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "今はお話をする気分ではありませんか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "……わかります。今日までにあまりにも多くのことが起こりましたから。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "でも、ドクターがここにいてくれて、私は……私は嬉しいです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "一人では、成し得ないこともたくさんあります。",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "だが我々は何かを成し遂げるためにあるわけではない。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "はい！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "……行く先にどれほどの暗雲が立ち込めていようと、ロドスは進み続けます。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "それに、この大地にどれだけ残酷な物語があるとしても――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "――ドクターの心は温もりにあふれていると信じています。",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "もちろん。",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "アーミヤ",
+              "text": "おかえりなさい、ドクター。",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "……",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "アーミヤ",
+              "text": "おかえりなさい、ドクター。",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "本当は悪い人だったらどうする？",
+          "value": "3",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "アーミヤ",
+              "text": "それなら、私がドクターを止めるしかありませんね。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "アーミヤ",
+              "text": "おかえりなさい、ドクター。",
+              "portraitKey": null
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "ただいま、アーミヤ。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "ロドスオペレーター",
+          "text": "彼女、何か話しましたか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クロージャ",
+          "text": "ううん、君たちが連れてきてから今の今まで……だんまりだよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クロージャ",
+          "text": "根気強いよね。ほらあの……チェン、だったっけ？　彼女が来ても何も話さなかったんだよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロドスオペレーター",
+          "text": "じゃあ、どうするつもりなんです？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クロージャ",
+          "text": "どうするつもりって言われてもなぁ、あたしはアスカロンでもないし……それに、今は彼女に話してほしいことも別にないし。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クロージャ",
+          "text": "さらに踏み込んだ情報なんて、使いどころによるでしょ、多分ね。はあ〜頭が痛いよー。あんな子の相手、あたしには無理だよ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロドスオペレーター",
+          "text": "ところで、あの龍門近衛局の人たちは、何をしに来てたんです？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "スワイヤー",
+          "text": "なぁに？　初めてロドスに行ったってわけじゃないでしょうに……何をソワソワしてんのよ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホシグマ",
+          "text": "昇進してから、立場上、ロドスと結託しているのではないかと噂されるのを懸念しているだけです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホシグマ",
+          "text": "お嬢様は全然気にしていないようですね。まるで遊びにでも行ったみたいじゃないですか。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "スワイヤー",
+          "text": "アタシに文句つけられる人なんているわけないでしょ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホシグマ",
+          "text": "ああ、そうですね。金持ちの理屈だと。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "スワイヤー",
+          "text": "あら……？　ウェイ長官のオフィスにいるあの人……誰かしら？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホシグマ",
+          "text": "……青い髪の天使？　それともサルカズですかね？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "スワイヤー",
+          "text": "きゃっ！　……あ、あの人、すごい怪我じゃない！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホシグマ",
+          "text": "お、お待ちを！　入ってはダメです……ウェイ長官がいらっしゃるんですよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "？？？",
+          "text": "Chief、お客様みたいですよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "ここまで入って来られるのは信頼できる者だ。それよりも、自分の怪我の具合を心配した方がいい。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "？？？",
+          "text": "これくらいの怪我はどうってことありませんよ。外にいる二人に、盗み聞きされても良いのであればお気遣いなく。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "ラテラーノのトランスポーターが、今回は何をしに来たのかな？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "？？？",
+          "text": "私はラテラーノの正式なトランスポーターではありませんよ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "？？？",
+          "text": "（まあ、確かに教皇からの言伝はあるのですが。）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "ホシグマ！　スワイヤーを部屋の外へ連れ出せ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホシグマ",
+          "text": "は、はい！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "スワイヤー",
+          "text": "ちょっと！　どうしてアタシだけそういう扱いなのよ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "これでいい。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "さぁ、聞かせてくれ、トランスポーター。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "？？？",
+          "text": "彼は……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "？？？",
+          "text": "「（ラテラーノ語）今朝は何を召し上がりましたか？　夕飯は何を食べるおつもりですか？」と仰っていました。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ウェイ",
+          "text": "……妙だな。彼がなぜ私の考えを知ろうとする？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "？？？",
+          "text": "そうですね……おそらく、あなたこそがChiefだからではないですか、ウェイさん。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クロージャ",
+          "text": "あれって、非公式だよね。あの黄色いトラと緑の鬼……単に視察も兼ねて元同僚を見舞いに来ただけかな？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クロージャ",
+          "text": "でもさぁ……こんな調子じゃ、ウルサスの皇帝近衛兵まで、ロドスに来ちゃうんじゃないの？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロドスオペレーター",
+          "text": "彼女たちが来てから……あの病人に、何か変化はありましたか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クロージャ",
+          "text": "ないんだよねー。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "クロージャ",
+          "text": "ケルシーの出方を窺うしかないかな……あっ、今から監視カメラのテストするよ。そこのカメラの下に立って。ほらほら早く～！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "コシチェイ",
+          "text": "タルラ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "コシチェイ",
+          "text": "人とは弱く、複雑で、利己的な生き物だ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "コシチェイ",
+          "text": "瘤獣ですら人より尊いと言えよう。奴らはこの大地でエサを求め、渡り歩く日々をひたすらに送る。途中で諦めることもない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "コシチェイ",
+          "text": "だが、人は違う。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "コシチェイ",
+          "text": "人は食べるために同類を殺し、欲望のために同類に害を為す。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "コシチェイ",
+          "text": "つまり、人は他者の力を借りて己の価値を見いだし、それを発揮するのだ。お前にはその資質も権力もある。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "コシチェイ",
+          "text": "そして、お前は何をすべきかを理解している。お前に全てを教えたのはこの私だ……お前はどうやって、この連綿と積み重なった歴史を超えていくつもりだ？　人の歴史とは、戦いの歴史だ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "コシチェイ",
+          "text": "知恵、理想、そして方法……その全てを教えたのは私だ。下らない幻想は捨てろ。お前が戻る場所は結局、私のところだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "コシチェイ",
+          "text": "お前の終着点は私でしかない。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "コシチェイ……違う、コシチェイ、絶対に違う。\nお前が与えたものはすでにこの身体に根づいている。これが永遠に傷跡として残ったとしても、全ての過去はもう過ぎたこと……\nもう……終わったことなんだ。\nいや……全てを終わらせなければならない。お前がもたらしたものは全て――\nお前が私にもたらした醜さと恥辱は……全て私の燃料となる。私の未来の燃料となる。\nお前を見つけるまで、この大地が解放されるまで、私は燃やすことを止めない。\nコシチェイ……これ以上、お前を否定はしない。だが私は、お前に反抗する。\n全ての過ちが正され、全ての罪悪が絶えるまで。\n絶対にやり遂げてみせる。たとえ私たちのたどり着く先が同じ場所だろうと、そこを灰にしてやる。自身が燃え尽きようが構わない。"
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "逃げ出してから、どれくらい経っただろうか？\n面倒だからとうの昔に数えるのをやめてしまった。\nだが、これ以上逃げ続けても無駄だろう。\n釘を打つのに、ハンマーの方へ釘を呼び寄せることなどできない。ハンマーの身ならば、それを釘目掛けて打ちつけるだけだ。\nもしかしたら、今がその時なのかもしれない。"
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "ヴィーナ！　こちらへ来てくれ、話がある。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "シージ",
+          "text": "……了解だ、ケルシー先生。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ケルシー",
+          "text": "待て。先に聞いておく、準備はできているのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "シージ",
+          "text": "わからない……と言うよりも、今のままで良いのなら、いつでも準備はできている。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "陛下……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "こちらが事件の全容が記された資料でございます。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フョードル",
+          "text": "――なぜこのようなことが起きたのだ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フョードル",
+          "text": "……近衛兵の中に裏切り者がいるのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フョードル",
+          "text": "ヴィッテ、正直に答えよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フョードル",
+          "text": "余の心は、まるで冬の日に長らく灯されていない暖炉。誠実な言葉のみが、この心臓を再び動かすのだ。たとえ不愉快でしかない事実がこの心を傷つけるとしてもな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "いいえ……近衛兵が陛下を裏切るはずはございません。この大地が炎に呑まれるその日まで、彼らは陛下のために尽くし続けるでしょう――あなた様がウルサスの君主でいる限り。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フョードル",
+          "text": "そのような言葉がただの建前でしかないことはお前もわかっているだろう。もし近衛兵が、あの老いぼれた怪物の死を傍観していただけではなかったとすれば……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フョードル",
+          "text": "……もうよい！　これ以上、社交辞令も言い訳も聞きたくない！　お前は下らぬ愚臣などではないだろう、ヴィッテ？　正直に話せ、ありのままに！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フョードル",
+          "text": "この陰謀の首謀者らは、今どこにいるのだ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "バイカル公爵、第三軍副師団長兼ロジン地区総督、そしてケルク子爵でございます。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "もちろん、今の段階で彼らが首謀者だという確固たる証拠は掴めておりません。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "しかし、これらの罪人に裁きを下し、その首を吊るし上げるため、近衛兵が彼らの屋敷に足を踏み入れた時にはすでに――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "自身の罪に向き合うこと、そして陛下の逆鱗に触れることを恐れ、反逆者全員が自害をした後でございました。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フョードル",
+          "text": "臆病者……この臆病者どもが！　連中には公正な裁判を受ける勇気もないのか。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フョードル",
+          "text": "奴らは分かっていたのだ！　裁判にかけられれば、卑劣極まりない己の欲深さと汚れきった心が全て、ウルサス民の前に曝け出されるということを！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フョードル",
+          "text": "だが我らは……もはや奴らを公開裁判にかけることもできない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "その通りです、陛下。遺憾ではございますが、全て裏で起きたこととして闇に葬るしかないのです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "愚かな駄獣を追い詰めすぎては、草以外のものまで貪り始めます。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "とはいえ、奴らの残されたあの部分……体のあの部分だけは、近衛兵が適切に処理をさせていただきました。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "奴らの遺体は、屋敷の支柱に異臭を放つまで吊るされるでしょう。奴らの腐った遺体を下ろす勇気のある者がいるはずもありません。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "もし奴らの目論みが果たされていれば、ウルサスは戦火に包まれ、権力の強奪や、議会の弱体化などが起こり、そして……さらに多くの都市が食いつぶされていたでしょう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "失敗に終わり、僥倖でございました。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フョードル",
+          "text": "国を裏切った反逆者め！　このような結末で終わらせるなどあまりに手ぬるい！　肉サソリの餌にしてやるべきだ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フョードル",
+          "text": "だが……それではあまりにも恐ろしい光景になってしまう。うむ、それは良くない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フョードル",
+          "text": "許せ、ヴィッテ……今のは意図した発言ではない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フョードル",
+          "text": "同じ過ちを繰り返してはならない。今この時、どれだけ怒りの炎を浴びせてやりたくとも、そのように残虐な行為は私自身許すことができないものだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "たしか、大反乱の時もそのような刑罰を拒んでおられましたね……しかし、私はやはり鮮血による警告以外に、奴らを大人しくさせる方法はないと思います。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "他者を恐怖に陥れようとする者は、更なる恐怖で押さえつけるしかありません。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "たとえ私が、こうした手段に強く反対する立場であろうとも。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フョードル",
+          "text": "しかし、解せぬ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フョードル",
+          "text": "無知なうえに目先のことしか考えておらぬ愚か者を黙らせるには、本当にこのような古典的で暴力的な方法しかないのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フョードル",
+          "text": "我が帝国の剣と盾は、このようなウジ虫どもが握っておるのか？　我らは、連中の腐敗に巻き込まれてしまうほど無力なのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "陛下、残念ながら私にはその問いにお答えすることはできません。法的に見れば、私は帝国の公式諜報官ではありませんので。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フョードル",
+          "text": "ヴィッテ……それよりも問題はあの伝説だ。「不死の黒蛇」とは、真に奴らの言う通り、殺すことのできぬ邪神なのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フョードル",
+          "text": "広大なこの国土にそのような邪神が他にもいたらどうするのだ？　どうすれば我が民をこのような悪夢から解放できる？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フョードル",
+          "text": "ヴィッテ、我らは光の下にいながら、闇に覆われている気分だ……炎でこのウルサスを照らせると思うか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "陛下、一つだけ真実をお伝えしましょう。ここ数十年を振り返って見ても、このような事件に関与した明白な証のある長命者は、コシチェイ公爵ただ一人でございました。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "彼が亡くなった今、その正体は突き止めようがありませんが……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "つまり、もしウルサスの何処かに今もなお邪神がいたとしても……彼らは陛下に畏怖しているということです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "言い換えるなら、陛下と陛下の睨みを恐れているのです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "我々がヒッポグリフの支配を覆してから、すでに千年近くが経とうとしています。ウルサスの民の強靭さは、老いぼれた怪物の一匹や二匹ではどうすることもできませんよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "やりたいようにやらせておけば良いのです。奴らが目的を果たせることはないのですから。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "必ずや奴らをあぶり出し、そしてこの手で滅ぼして見せましょう。ご心配には及びません。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フョードル",
+          "text": "本当にお前の言う通りになるとよいのだがな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フョードル",
+          "text": "感染者の件はどうなっている？　何か進展はあったか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "そう焦る心配はございません。西北の各軍が有する感染者の採掘場を閉じるには、今は時期尚早でございます。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "軍部の財源を削りたいとのお考えだとは思いますが、これは陛下の慈悲なるお心の顕れとも言えるでしょう――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "しかし軍部だけでなく、民もこの件には反発しております。彼らにしてみれば、感染者というのは恐ろしい存在なのです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "今はまだ、民を敵に回してはいけません。大多数の者が、感染者に憎悪を抱いております。軍部との対立は、民との対立を意味すると曲解されてしまうでしょう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "今はまだ、その一歩を踏み出す準備が整っていないのです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フョードル",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フョードル",
+          "text": "それが正しい選択だとしてもか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "左様でございます。感染者に対する陛下の寛大なお心が、逆に彼らを業火に突き落とす行為になりかねません。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "――陛下、そろそろお時間でございます。すでに、扉の向こうでは佯狂者が十五分は待ち続けておりますゆえ、早急にご対処をなされた方がよろしいかと。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フョードル",
+          "text": "ふっ、戯言ばかりの狂人が！　恥辱を味わわせてやろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フョードル",
+          "text": "その前に訊こう……ヴィッテ、我らはやり遂げられると思うか？　再びウルサスを輝かせることは叶うのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "わかりません、陛下。あなた様にその答えを差し上げるのは合理的ではありません。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "少なくとも陛下は御父上様とは違い、この大地を滅ぼすようなことはありません。それだけで良いではありませんか。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "感染者タルラ……でしたか。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "もし、あなたが「不死の黒蛇」の呪いを打ち砕けるのなら、ご自身の抱える他のどんな難局も乗り越えられるでしょう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イスラーム・ヴィッテ",
+          "text": "……いつの日か、我々が本当の意味で先帝のあの国に勝利することを願います。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "タルラ？\nこんな天気の日に見張り番とは、ご苦労なことだな。\nまあ、お前が自ら望んでやっているのはわかっている。"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "タルラ",
+          "text": "いいか、この冬を抜けるまで私の炎が消えることはない。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フロストノヴァ",
+          "text": "（シーッ、声を抑えろ……）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フロストノヴァ",
+          "text": "（この子たちが寝ているんだ。）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "タルラ",
+          "text": "（あぁ……悪い。）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "タルラ",
+          "text": "（一日中、訓練をしていたのか？）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フロストノヴァ",
+          "text": "（ああ。髪色が濃いこの子にはクロスボウが合うかもしれない。）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フロストノヴァ",
+          "text": "（まぁ、それももう少し成長してからだがな。）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "タルラ",
+          "text": "（ゆっくり寝かせてやろう。しかし――）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フロストノヴァ",
+          "text": "（私はもう行く。これ以上いたら気温が下がりすぎて、この子たちが風邪をひいてしまう。）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "タルラ",
+          "text": "（すまないな。）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フロストノヴァ",
+          "text": "（問題ない。この白髪の子は眠りが浅い。歌を歌ってやらないと、夢でうなされてしまうんだ。熟睡するまで歌ってやらないと……一体どんな過去を背負っているのだろうか。）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "タルラ",
+          "text": "（私たちの傷口は時間が癒やしてくれるさ。）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "タルラ",
+          "text": "（お前の父さんはまだ明日の戦略を練っているのか？　近くにあるウルサス感染者の輸送集積所については話してくれたが……）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フロストノヴァ",
+          "text": "（如何にして消耗を減らすか、十分に考える必要があるのだろう。私にも気をつけるようにと、いつも口うるさく言ってくる。）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "タルラ",
+          "text": "（……だが、もうこんな時間だぞ？）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フロストノヴァ",
+          "text": "（父さんの寝ている姿は見たことがない、一度もな。）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "タルラ",
+          "text": "（どれほどの英雄だろうと休息は必要だ。他の兵士たちも大方もう休んでいるだろう。）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フロストノヴァ",
+          "text": "（父さんのことよりも、自分たちのやることについて考えよう……この前聞いた、連絡が取れた者の名は？　どこの人間なんだ？）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "タルラ",
+          "text": "（リュドミラとアレックスだ。チェルノボーグの近くで活動をしていて、あの都市に相当詳しい。）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フロストノヴァ",
+          "text": "（あの大都市か。）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "タルラ",
+          "text": "（あぁ。だがあそこにも感染者が多いと聞く。もしかしたら、彼らを引き入れることができるかもしれない……しっかりとした戦術が練られればな。）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "タルラ",
+          "text": "（リュドミラたちは固い意志を持っている。きっと、頼れる仲間になるだろうさ。今は少しばかり過激だったとしてもな。）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フロストノヴァ",
+          "text": "（毎月ウルサスの軍隊と戦っている私たち以上に、過激な者などいると思うか？）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フロストノヴァ",
+          "text": "（それにしてもチェルノボーグか、遠いな。障害も多い。たどり着くまでに何年かかるだろう。三、四年かけても無理だろうな。）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "タルラ",
+          "text": "（こちらから干渉し、無理に停めようとしなくとも……向こうから近づいてくるのは目に見えている。都市の感染者の協力があれば、本当に自分たちの都市を築き上げることができるかもしれない。）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "タルラ",
+          "text": "（それに、三、四年など……何度か寝て目を覚ませばすぐさ。明日は目の前だ。）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フロストノヴァ",
+          "text": "（その言葉、気に入った。）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フロストノヴァ",
+          "text": "（お前も早く休むといい。）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "タルラ",
+          "text": "（あぁ、おやすみ。）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "タルラ",
+          "text": "（……おやすみ、サーシャ、イーノ。）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フロストノヴァ",
+          "text": "（さあ、戻るといい。子供たちは私が集落に送っておこう。）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "タルラ",
+          "text": "（ああ。）",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "タルラ",
+          "text": "（我らが戦友たち……）",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "おやすみ。"
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    }
+  ]
+}

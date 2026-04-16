@@ -1,0 +1,1693 @@
+{
+  "server": "jp",
+  "storyId": "act19side_level_act19side_01_beg",
+  "groupId": "act19side",
+  "stageId": "act19side_01",
+  "title": "トリマウンツ街道",
+  "storyCode": "DV-1",
+  "avgTag": "戦闘前",
+  "sourcePath": "vendor/ArknightsData/jp/gamedata/story/activities/act19side/level_act19side_01_beg.txt",
+  "sourceHash": "b7ee3f3361e624ed53b25aafe5e885e1a138c127cddb4ad0b5fc0008ea5538d4",
+  "bodyAvailable": true,
+  "blocks": [
+    {
+      "type": "narration",
+      "text": "p.m. 3:56 天気/曇天\nトリマウンツ中心部"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "text": "ドクター、今見ていたのは……フィリオプシスの個人記録か。これでもう三回目だな。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "text": "新しい発見はあったか？",
+      "portraitKey": null
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "彼女の記録はつくづく詳細だな。",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Mechanist",
+              "text": "それは、フィリオプシスの脳に特殊なチップが埋め込まれているからだ。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Mechanist",
+              "text": "メイヤーは『九号デバイス』と呼んでいたが、恐らくライン生命内部でのコード名だろう。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Mechanist",
+              "text": "このチップは、フィリオプシスの脳神経へ直に接続されており、大脳の一部として正常に機能すると同時に、脳内各部位での神経活動データを記録している。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Mechanist",
+              "text": "つまり、君が今見たのはフィリオプシスの視覚処理器官――彼女の両目で観測したすべての記録だ。",
+              "portraitKey": null
+            },
+            {
+              "type": "sceneBreak"
+            }
+          ]
+        },
+        {
+          "label": "開拓隊のリーダーはまともな教育を受けているようだ。",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Mechanist",
+              "text": "クルビア開拓隊の出自は様々だからな。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Mechanist",
+              "text": "生活に不満を抱いた若者や、借金を抱え暮らしが行き詰まった中年夫婦、盗みを働き逮捕され刑務所送りを拒んだ犯罪者――",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Mechanist",
+              "text": "そして、高額な保険料は払えないが、収容区画に閉じ込められたくもないと考える感染者もいる。",
+              "portraitKey": null
+            },
+            {
+              "type": "sceneBreak"
+            }
+          ]
+        },
+        {
+          "label": "エレナのコーヒーが美味しそうだった。",
+          "value": "3",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Mechanist",
+              "text": "私としては、フランクスが使っているカフェイン剤のほうが興味をそそられるがな。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Mechanist",
+              "text": "飲料の摂取は時と場合を選ぶものだ。仕事終わりのアルコールは格別だが、仕事中にカフェイン飲料を飲みすぎると、思考が中断されやすくなる。",
+              "portraitKey": null
+            },
+            {
+              "type": "sceneBreak"
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "ともあれ……フィリオプシスが同期してきた記録によると、彼女のほかに、同じくロドスのオペレーターであるライン生命エネルギー課のエレナと……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "ライン生命アーツ応用課主任のドロシー・フランクスが、開拓者たちに誘拐されたようだな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "またそれとほぼ同時に、サリアからの連絡が入っている。ライン生命生態課主任のミュルジスが救援を求める緊急メッセージを送ったあとに失踪し、現在生死不明とのことだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "ライン生命に何かあったようだ。",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Mechanist",
+              "text": "現状を見るに、そのようだな。",
+              "portraitKey": null
+            },
+            {
+              "type": "sceneBreak"
+            }
+          ]
+        },
+        {
+          "label": "……",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Mechanist",
+              "text": "......",
+              "portraitKey": null
+            },
+            {
+              "type": "sceneBreak"
+            }
+          ]
+        },
+        {
+          "label": "研究者というのはそんなに危険な仕事だったかな。",
+          "value": "3",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Mechanist",
+              "text": "ああ、ここではな。クルビアへようこそ。",
+              "portraitKey": null
+            },
+            {
+              "type": "sceneBreak"
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "サリアがロドスに支援を要請してきた以上、ライン生命は危機に瀕している可能性が高い。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "本艦が付近にいたのは幸いだったな。そうでなければ、迅速な対応は難しかっただろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "さて、この誘拐事件はトリマウンツから100キロ以上離れた新設基地で起きたものだが……ケルシーはこの件に以前中断された例の実験が関わっているのでは、と危惧している。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "その基地の建設目的は？",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Mechanist",
+              "text": "対外的な資料によれば、普通の実験施設だな。現在建設中とある。",
+              "portraitKey": null
+            },
+            {
+              "type": "sceneBreak"
+            }
+          ]
+        },
+        {
+          "label": "源石変異実験、か……",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Mechanist",
+              "text": "トリマウンツに入る前、ケルシーは我々に実験の関連ファイルすべての閲覧権限を与えた。",
+              "portraitKey": null
+            },
+            {
+              "type": "sceneBreak"
+            }
+          ]
+        },
+        {
+          "label": "トリマウンツについて、もう少し詳しく教えてくれ。",
+          "value": "3",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Mechanist",
+              "text": "この都市はクルビアの科学と技術の中心だ。数百ものテクノロジー企業が、本社をトリマウンツに置いている。",
+              "portraitKey": null
+            },
+            {
+              "type": "sceneBreak"
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "――「炎魔事件」、「ローキャン水槽」、そして「伐採場」……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "今口にした言葉はそれぞれ別のオペレーターに関係しており、さらにその背後には数百もの類似実験が存在する。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "その多くが生物細胞に対する源石の変異作用に関するもので、どれも非常に危険な実験だ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "クルビアでは、ライン生命のような大手テクノロジー企業は、その手のハイリスクな実験に直接の関与はしないのが通例だ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "彼らは開拓隊を雇って都市郊外の荒れ地に実験基地を建設させ、実験そのものは小規模な機関に委託して行わせている。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "今回フィリオプシスが向かった359号基地もその一つだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "確か、君の昔の仕事は……",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "似たような基地で仕事をしたことがあるのか？",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "あの経験を「仕事」と呼ぶのは御免こうむる。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "大企業どもは私の作品を「盗用」し、本来用いるべきでない分野に用いたんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "たとえば――50メートル先にあるあの看板が見えるか？　「ヴォルヴォート・コシンスキーの家庭用自動ポップコーンメーカー　速く美味しく高品質」……などと謳う広告だ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "あの機械に使われたエネルギーコアの試作設計図は、今でも私の端末に残っている。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "あの部品は元々、荒れ地向けの自動路面整備機に使う予定だったんだが、当時の上司がそんな製品は売れないに決まっていると言い出してな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "奴はこうも言っていたよ。「開拓者のために良い機材を買いたがる企業なんかどこにある？」……と。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "その後私は、路面整備機のアイデアと共にロドスへとやってきた。そして今、航路障害排除チームのエンジニアが使っているのがその最新型というわけだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "――私には昔からわかっていたことだが、ヴォルヴォート・コシンスキーにせよ、ライン生命にせよ、いわゆるテクノロジー企業というものは最終的には自らの創造物によって破壊される運命にある。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "奴らは創造という行為を尊重したことがないからな。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "ミュルジスも自身の実験の産物に追い詰められたのか？",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "フィリオプシスは凶悪な実験体に攫われたとか……！？",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "......",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "今のは笑ったほうがよかったか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "だが、君の言ったことはSF話にもジョークにもなりえないし――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "なんなら、明日のニュースとして報道されてもおかしくないんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "クロージャが君に敬意と恐れを抱く理由がわかってきた。",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Mechanist",
+              "text": "それは私が時折彼女を新しい武器の実験台にしているからか？",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Mechanist",
+              "text": "くだらんアイデアで私の仕事を邪魔しなければ、恐れを抱く必要などないと思うがな。",
+              "portraitKey": null
+            },
+            {
+              "type": "sceneBreak"
+            }
+          ]
+        },
+        {
+          "label": "……",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Mechanist",
+              "text": "......",
+              "portraitKey": null
+            },
+            {
+              "type": "sceneBreak"
+            }
+          ]
+        },
+        {
+          "label": "Logosと上手くやっているだけのことはあるな。",
+          "value": "3",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Mechanist",
+              "text": "確かに、Logosは悪くないパートナーではある。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Mechanist",
+              "text": "だが……君からも彼に言ってやってくれないか？",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Mechanist",
+              "text": "あの面倒な言い回しを控えてくれたら、任務遂行にかかる時間が少なくとも30パーセントは短縮され、私もより多くの時間を実作業に充てることができるはずだ、とな。",
+              "portraitKey": null
+            },
+            {
+              "type": "sceneBreak"
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "――では、情報整理はこの辺りにしておこう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "今のところ、有益な情報はこの程度だな。最重要ファイルの閲覧優先度は上げておいたし、PRTSを通じていつでも確認可能だ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "現状、連絡はなしか？",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "フィリオプシスの映像記録に関しては、あれ以降同期更新がない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "九号デバイスのデータ通信は、メイヤーの調整後安定傾向にあるとはいえ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "それはフィリオプシスの身体に問題がなければ、の話だからな……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "少し心配だ。",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "サイレンスとグレイが早く合流してくれるといいが。",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "何にせよ、基地内での動向はサイレンスが伝えてくれる手はずだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "それと、サリアからは連絡があった。一時間後にこちらへ合流するとのことだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "ドクター、彼女を待つ間で実行可能なタスクはあるか？",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "ミュルジスが行方をくらませた場所へ行ってみよう。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "……私はメカニックであって探偵助手ではないからな。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "それでもこれは、今できる唯一のことだ。",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "奇遇だな。こちらもただの源石研究者だ。",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "頼れるのは君だけなんだ、Mechanist。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "仕方がない……であれば、すぐに出発するぞ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "願わくば、明日には船に戻って愛しい作業台と再会できるといいんだが。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "p.m. 6:47 天気/曇天\nトリマウンツ郊外 359号実験基地監視ステーション"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "基地内の人から新しい連絡はあった？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命警備課職員",
+          "text": "ありません、保安官。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "そう。フェルディナンドとかいう主任には連絡したんでしょ？　彼は一体いつ来るの？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命警備課職員",
+          "text": "主任は、その……現在会議中でして。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "何ですって？　会議がどうとか悠長なこと言ってる場合！？　部下の命より大事な議題なんかあるわけないでしょ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "ふざけてんじゃないわよ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "はあ……望遠鏡貸して。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命警備課職員",
+          "text": "あっ……はい。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "あなたは開拓隊が本気で何かしでかすとは思ってないわけ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "言っておくけど、あいつらはやるわよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "本当に追い込まれたら何だってやりかねないの。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "それは……基地にいる同僚たちが危ないってことですか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "……あなたは？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "オリヴィア・サイレンス。ライン生命の研究員で、ロドス・アイランド製薬の医療オペレーターです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "こちらはロドスでの同僚、エンジニア部のグレイです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイ",
+          "text": "は、初めまして！　僕はロドスの電気工学エンジニアで……と言っても、まだ実習生なんですが……！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "ロドス？　知らない名前ね。どういう会社なの？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイ",
+          "text": "ええと……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "いえ、忘れて。説明はいらないわ。このトリマウンツでは、新しい会社が一日に何十社と立ち上げられていてもおかしくないから。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "それより、そっちのあなたはライン生命の人なのよね？　社内での発言権はある？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "発言権……？　仰る意味がよくわからないんですが……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "もういいわ、あなたは何かの責任者ってわけでもなさそうだし。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "見た感じ、中にいる人質たちと同じ本の虫でしょ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "あなたたちは連中への対処法なんか知ってそうもないわね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "相手は基地で働く開拓隊の人たちだと聞きましたけど……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "……開拓隊、ね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "そういう聞こえのいい肩書きは、広告上のものでしかないの。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "あいつらがどんな連中かなんて、私が一番よくわかってるわ。犯罪者やギャンブル中毒、医療費を払えない感染者……荒野へと踏み込んだ時点でもはや何も持ってない人間ばかりよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイ",
+          "text": "あの……その人たちと話してみてもいいですか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイ",
+          "text": "お気付きかもしれませんが、僕もサイレンス先生も感染者ですから……彼らの境遇を理解できると思うんです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "そうかしら。ライン生命とそのロドスとかいう会社は、両方相当稼ぎがいいんでしょ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "あなたたちのバックには、保険料を払ってくれる「良心的」な会社がついている――そこが、彼らとの決定的な違いよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "だから、相互理解なんてばかげた夢を見るのはやめなさい。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイ",
+          "text": "今言ってた「保険料」って何のことですか……？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "……クルビアには、感染者に対する特殊政策としてそういうのがあるの。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "――保安官、どうか私たちを信じてもらえませんか。ロドスは感染者問題の解決を専門とする製薬会社なんです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "だったらあなたにクロスボウでも渡せば、誘拐犯たちをとっちめるのを手伝ってくれるわけ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "……私にはできません。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サイレンス",
+          "text": "私は医者ですから。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "なら、彼は？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "グレイ",
+          "text": "僕ですか？　で、できません……というか、今はまだ戦わなければいけない状況にはなっていないと思います……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "メアリー",
+          "text": "じゃあ、あなたたちでは何の力にもならなさそうね。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "開拓隊の隊員",
+          "text": "……誰も来ないな、リーダー。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "ああ。向こうは相当冷静なんだろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "開拓隊の隊員",
+          "text": "もしかすると……大企業の連中は部下の命なんて何とも思ってないんじゃないか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "開拓隊の隊員",
+          "text": "特に、あの二人は感染者だしさ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "そういう言い方はよせ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "感染者だからって、ほかより劣ってるなんてことはない。少なくとも俺たちだけは、お互いをそんなふうに見るべきじゃないだろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "開拓隊の隊員",
+          "text": "そうだな……思えば開拓隊の募集広告にもそう書いてあったっけ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "だったら、その広告の全部が全部嘘だったわけじゃないことに感謝しないとな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "――さて、悪いが通信機を下ろしてもらえるか？　ウビカ博士。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "開拓隊の隊員",
+          "text": "下ろせと言われただろ！　妙な動きはせずに従うんだ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "……わかった。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "ほら……お、下ろしたよ。だから暴力は振るわないでね。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "開拓隊の隊員",
+          "text": "……！　リーダー、こいつ外にメッセージを送ろうとしてたみたいだぞ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "確認する。通信機を持ってきてくれ、サム。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "……まだ途中までしか書かれてないし、送信はされてないな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "これは……現在地の正確な座標か。向こうにドローンでも送り込ませるつもりだったのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "その考えはお勧めしない。それより、真剣に助けを求める文面に変えて、あんたの先生や上司……誰宛てでもいいから送ってくれ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "そいつらに伝えるんだ。俺はここで待っているが、その我慢にも限界がある、ってな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "エレナ",
+          "text": "……一体何がしたいの？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "単純なことさ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サニー",
+          "text": "俺と仲間たちは皆、生きてここから出たいだけだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命研究員",
+          "text": "主任、お待ちしておりました！　少しお時間をいただいてもよろしいでしょうか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "？？？",
+          "text": "君は……構造課のベンだったな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命研究員",
+          "text": "わ、私の名前を覚えてくださっていたのですか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "？？？",
+          "text": "無論だ。ところで、私のことはフェルディナンドと呼びたまえ。ライン生命には九人も主任がいるからな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命研究員",
+          "text": "で……では、フェルディナンド……さん。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "それで、要件は？　あと10分で次の会議が始まる予定でね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "今から7分あげよう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命研究員",
+          "text": "あっ……はい、ありがとうございます。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命研究員",
+          "text": "あの、統括がどちらにいらっしゃるかご存じありませんか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命研究員",
+          "text": "構造課の備品購入申請について、三日前に統括からお返事をいただく予定だったのですが……ずっと連絡が取れないんです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命研究員",
+          "text": "それで今、課内では多くの実験が中断状態でして……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "申請書を見せなさい。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "よろしい、購入を許可しよう。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命研究員",
+          "text": "さ……サインしてくださったんですか？　しかし、マニュアルでは多額の大型設備を購入する際は必ず統括の確認を通すようにと……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "君はライン生命に入ってどのくらいになる？　まだ数ヶ月しないくらいか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命研究員",
+          "text": "は、はい……一ヶ月前入社したばかりです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "そうか。では見たまえ、この先端技術を駆使した建物の数々を。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命研究員",
+          "text": "えっ……？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "実に壮大な光景だと思わんかね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "だが……十五年前、ここは移動区画の一つもないような単なる荒れ地だった。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "その当時、トリマウンツの地図上に「ライン生命」の文字はなかったんだ。それが今ではこの通りさ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命研究員",
+          "text": "ええと……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "詳しく聞いてみたければ、時間がある時にパルヴィスとお茶でもするといい。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "君にはまだ学ぶべきことがたくさんあるということだよ、ベン。その上、それはマニュアルに書いてあるようなことではないんだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ライン生命研究員",
+          "text": "わ、わかりました……覚えておきます。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "よし。あと4分あるな。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "？？？",
+          "text": "明るいうちに連絡してくるなんて珍しいわね、フェルディナンド。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "……ホルハイヤ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "君に依頼した件はすべて片付いたか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルハイヤ",
+          "text": "そうねえ……今日の十課会議は、少なくとも三つ空席があると思うわよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "まだだ、まだ足りん。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルハイヤ",
+          "text": "ふぅん？　それじゃ、お次はどの主任？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルハイヤ",
+          "text": "ついにあの源石嵌合体（かんごうたい）実験にお熱な食えない爺さんヤギにうんざりした？　あるいは基地にいる夢想家に二度と戻ってきてほしくないとか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "……ロドスの人間が基地へ向かったそうだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "実験はもうじき完了する。それまでは、誰にも邪魔をされたくないんだ。わかるな？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルハイヤ",
+          "text": "基地へ向かってほしいの？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "いや、その必要はない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルハイヤ",
+          "text": "本当に薄情な人ね。あのエレナとかいうあなたの助手も誘拐されたんでしょ？　私も一度会ったことがあるけど、とっても可愛くて勤勉な子だったじゃない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルハイヤ",
+          "text": "あなたは彼女をすごく気に入ってるものと思ってたわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "だからこそさ。エレナであれば、エネルギー課の一員として開拓者に対処できるはずだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "それより、君は引き続き、都市内の状況を監視していてくれ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "ロドスのことだ、オペレーター二名を基地に派遣しただけで終わるはずがない。奴らが常にサリアと連絡を取り合っていることを忘れてくれるなよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルハイヤ",
+          "text": "あら、また警備課の主任さんが絡んでるの？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "ああ。彼女のせいで、我々の実験には相当の遅れが出ている……私も大佐も我慢の限界だ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "フェルディナンド",
+          "text": "今回は、奴らに何一つ見つけさせるなよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "着いたぞ、ドクター。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "ミュルジスからサリアへの連絡は、この場所から送られたメッセージを最後に途切れている。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "特に変わったところはなさそうだ。",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Mechanist",
+              "text": "そうだな。トリマウンツには、こういう路地が数百はある。",
+              "portraitKey": null
+            },
+            {
+              "type": "sceneBreak"
+            }
+          ]
+        },
+        {
+          "label": "ライン生命本部からは離れた場所だな。",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Mechanist",
+              "text": "ああ。ここから本部まで行くとなると、車で三十分はかかる。",
+              "portraitKey": null
+            },
+            {
+              "type": "sceneBreak"
+            }
+          ]
+        },
+        {
+          "label": "ここは……商業エリアの近くか。",
+          "value": "3",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Mechanist",
+              "text": "メッセージを受け取った時、サリアは商業エリアにいたそうだ。",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Mechanist",
+              "text": "彼女はミュルジスを待っていた。二人は会う約束をしていたんだ。",
+              "portraitKey": null
+            },
+            {
+              "type": "sceneBreak"
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "ミュルジスはここに追い込まれたと見える。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "でなければ、こんな道に足を踏み入れることはないだろうしな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "誰を相手取るにせよ、街中でやり合うのはリスクが高いものだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "――ミュルジスの能力にはサイレンスが言及していた。",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "確か、サリアがミュルジスの資料をまとめていたな。",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "確認してみよう……検索完了。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "「『水分子を操る能力』――これはエネルギー変換系、あるいは物質再構築系の能力と思われる」……か。どういった原理にしろ、いかにも強力なアーツだな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "「応用として、水で分身を作り出すことができ、それを肉眼で看破するのは不可能」……という記述もある。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "実に興味をそそられるな。実験研究に携わる人間というのは、我々メカニック同様、普段から鋭い観察力を持っているというのに……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "サイレンスやメイヤーまでもが騙されるとなれば、それはもはや相手の知覚に作用するような幻覚とは別物だろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "ミュルジスの戦闘能力は低くない。",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "彼女は自分を守るには十分な力を持っている。",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "戦闘も逃走も得意分野というわけか。",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "……地面に焼け跡が残っている。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "範囲はそう広くないな……ミュルジスを襲撃した人物は、何らかの機材を用いて彼女の周囲の空気を加熱した可能性が高い。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "彼女のアーツが水分子に大きく依存していることを加味すると、その襲撃者はミュルジスをよく理解していると考えていいだろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "我々が彼女を理解しているのと同様にな。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "それはもしや……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "向こうにもライン生命内部の人間がいる、ということか？",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "――ッ、危ない！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "間一髪だったな……",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "焼き肉になるところだった。",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "今のは……エネルギー兵器だな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "30メートルほど先、路地の奥から撃ってきたようだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "……向こうは今も接近してきている。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "ドクター、私の後ろへ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "携帯式防御システムを起動した。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "待ち伏せされたのか？",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "我々だけで対処できるだろうか？",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "？？？",
+          "text": "——",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "......",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "これは……初めて見るパワードスーツだ。恐らく新型だろう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "奴の装備の破壊力を知るには、実際この目で確かめるほかなさそうだな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "つまりは――計画変更だ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mechanist",
+          "text": "脱出システム起動！　ドクター、私の背に乗れ！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    }
+  ]
+}

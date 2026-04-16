@@ -1,0 +1,1217 @@
+{
+  "server": "jp",
+  "storyId": "main_10_level_main_10-02_end",
+  "groupId": "main_10",
+  "stageId": "main_10-02",
+  "title": "うつむく",
+  "storyCode": "10-3",
+  "avgTag": "戦闘後",
+  "sourcePath": "vendor/ArknightsData/jp/gamedata/story/obt/main/level_main_10-02_end.txt",
+  "sourceHash": "b6da4efda8f0a1f1904016b2dcfa37a4586a8c5e613f096072acc72b238f00d1",
+  "bodyAvailable": true,
+  "blocks": [
+    {
+      "type": "dialogue",
+      "speakerName": "ロドスオペレーター",
+      "text": "アーミヤさん、このままだと、トーマスさんがまたダブリンの手に落ちてしまうぞ！",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "text": "……",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロドスオペレーター",
+      "text": "やっぱり俺たちが……",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "インドラ",
+      "text": "うざってぇ奴らだ！",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "インドラ",
+      "text": "俺が連れ戻してくる。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ダグザ",
+      "text": "……ダメ。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "インドラ",
+      "text": "なんで止めるんだよ。あいつは俺たちで助けてやったんだぜ？",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ダグザ",
+      "text": "さっきとは状況が違う。シージを敵前にさらすわけにはいかない。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "インドラ",
+      "text": "見て見ぬ振りしろってのかよ？　そんなんグラスゴーの流儀じゃないぜ！",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "モーガン",
+      "text": "あんたたちさぁ、こんなところで喧嘩しないでよ～。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "モーガン",
+      "text": "ヴィーナ……どうする？",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "シージ",
+      "text": "……ドクターとアーミヤに従う。",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "text": "――",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "text": "狙撃オペレーター、ターゲットを捕らえている敵に照準を合わせてください！",
+      "portraitKey": null
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "あの術師が鍵だ。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "narration",
+          "text": "術師……\nドクター、思い出しました。"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "Miseryさんの情報とバグパイプさんの報告によると、彼女こそロンディニウムにいるこのダブリン部隊のトップです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "……ヒロック郡の事件で多くの犠牲者を出した元凶の一人でもあります。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "ロドスはOutcastさんの犠牲を彼女一人のせいにするつもりはありません。ですがMiseryさんやバグパイプさんだけでなく、多くのオペレーターが彼女に対して強い敵意を抱いています。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "マンドラゴラ。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "バグパイプさんが、彼女は手強いと言っていました。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "ここでダブリンと戦うことで、トーマスさんを救出して、さらにはマンドラゴラという今後の作戦にとって重大な脅威になるであろう敵を排除することができます。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "ですが……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロドスオペレーター",
+          "text": "サルカズ兵が来たぞ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "……その時間がありません。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "各チーム、引き続き身を隠し――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "常に戦闘態勢に移れるように準備をしておいてください。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ戦士",
+          "text": "……なんだ？　騒がしいぞ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロンディニウム市民",
+          "text": "うっ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ダブリン兵士",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ戦士",
+          "text": "へえ、誰かと思えば売国奴たちだったか。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ダブリン兵士",
+          "text": "その言葉を使うな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ダブリン兵士",
+          "text": "俺たちはヴィクトリアとはもう関係ないんだ、魔族。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ戦士",
+          "text": "誰がその呼び方していいって言ったよ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ダブリン兵士",
+          "text": "フンッ……家なしの浮浪者どもが。混乱に乗じて運良く他人の都市を占領したからって、ロンディニウムの主になった白昼夢でも見てんのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ戦士",
+          "text": "ハハッ、俺が貴様らのように、ロンディニウムなんぞを本気で気にかけると思っているのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ戦士",
+          "text": "確かにまあまあ綺麗で、死臭もしないがな。俺からすれば、この都市はむしろぶっ壊しちまった方がすっきりする。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ戦士",
+          "text": "サルカズがここにいるのは、魔王がいるからだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "……魔王？",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "彼が言っているのはテレシスのことか？",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "摂政王はついに待ちきれず自らに戴冠したのか？",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "……その件に関してはまだ情報がきていません。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "ただ、事実としてテラ各地に散らばるサルカズたちが今まさにこの地に集まりつつあります。招集されているのは普通の傭兵だけではありません。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "より古く……より強大な力がこの都市の中心にいます。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "ドクター、私は感じるんです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "ロンディニウムに一歩一歩近付くにつれ、私の心に流れ込んでくる……そして私の思考に絡みついてくる感情がうごめき始めて、より強烈になっています。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "アーミヤ！",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "平気か？",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "大丈夫ですよ、ドクター。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "ただ……先ほどの一瞬……私はどこか……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "このサルカズの戦士たちが「君主」と呼ぶのを聞いた時、感情が……ほんの少しが跳びはねて、私を軽く引っ掻いたんです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "この感覚をどう表現すればより正確に伝わるのかわかりません……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "詳しく話してくれ。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "もっと時間をかけて話したいんですが……今はできません。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "たとえ本当に……ロンディニウムを支配するサルカズの君主が居たとしても、それが私たちの使命を変えることはありません。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "私たちがここに来たのは、戦争を止めるためです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "彼らが今何をしているのか、最終的に何をしようとしているのか、私たちは明らかにしなければなりません。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "――これとテレシスが自分にどんな呼び名を付けているかは、関係ありません。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ戦士",
+          "text": "それで？　長ったらしくて汚い挨拶はもう終わりか、ダブリン？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ戦士",
+          "text": "貴様らが捕らえたそいつを渡せ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ダブリン兵士",
+          "text": "なぜだ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ戦士",
+          "text": "貴様ら祖先の故郷を管理してやっている駄賃にだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ダブリン兵士",
+          "text": "お前――！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "マンドラゴラ",
+          "text": "やめなさい。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ダブリン兵士",
+          "text": "上官……！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "マンドラゴラ",
+          "text": "こいつだけじゃないわ。サルカズ、あんたにも言ってんのよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ戦士",
+          "text": "貴様のことは知っているぞ、フェリーン、こいつらの指揮官だな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ戦士",
+          "text": "なぜこの俺が貴様に従わねばならない？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "マンドラゴラ",
+          "text": "このあたしが前に聖王会西部大広間に行ったことがあるからよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ戦士",
+          "text": "ハハ、聞いているぞ。殿下に謁見しようとしたが、無様に追い出されたんだってな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ戦士",
+          "text": "サルカズの目に貴様なぞが映っていると思っているのか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "マンドラゴラ",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ダブリン兵士",
+          "text": "上官、どうして我々がこんな魔族ごときの侮辱を受けねばならないのですか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ダブリン兵士",
+          "text": "もう耐えられません。ロンディニウムに来てから、毎日毎日こいつら下劣な種族に……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "マンドラゴラ",
+          "text": "黙りなさい。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ダブリン兵士",
+          "text": "リーダーに直訴して……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "マンドラゴラ",
+          "text": "黙りなさいって言ってるでしょ！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "マンドラゴラ",
+          "text": "サルカズ、あんたがどれだけ挑発しても、あたしたちはここを離れないわよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "マンドラゴラ",
+          "text": "あたしたちはサルカズの客人なの。これはあんたたちの殿下とその臣下が認めているわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ戦士",
+          "text": "言うことを聞かない「客人」に対して我らサルカズがどうもてなすか知りたいか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "マンドラゴラ",
+          "text": "少なくとも私はマナーを弁えてるわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "マンドラゴラ",
+          "text": "あんたたちの王と将軍に、ダブリンの部隊はロンディニウムの中央区に足を踏み入れないと約束しているの。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "マンドラゴラ",
+          "text": "だから、サルカズ。あんたはここであたしたちの邪魔をすべきではないわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "マンドラゴラ",
+          "text": "それともあんたたち魔族は常に信義を蔑ろにしてきたから、「約束を守る」っていう言葉すら忘れたのかしら？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ戦士",
+          "text": "フンッ、中身が空っぽでお飾りのフェリーンが……俺がここで貴様を斬り殺さないのはな、お友達になるよう命令を受けているからではない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ戦士",
+          "text": "喧嘩したらすぐに目的を忘れちまうようなサルカズがいたら、そいつはきっと戦場の外のバーでとっくに死んじまってるよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ戦士",
+          "text": "ここへは言うことを聞かねぇ下水道のムシケラどもを追跡しに来たんだ。身の程知らずのクズどもはこの近くに身を隠し、俺たちに面倒事を増やしてやがる――",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "聞く限り、サルカズはトーマスさんを探しているようでもなさそうです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "まさかトランスポーターさんが言っていた、私たちの作戦に協力してくれる仲間のことでしょうか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "もしその方たちのことでしたら、確かにサルカズの敵と見なされる可能性が高いです。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "本当にこの付近にいるのであれば、手を貸せるかもしれません……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルン",
+          "text": "人々の移動が止まったわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルン",
+          "text": "言い争ってるのが聞こえたけど……サルカズ兵は誰かと衝突しているようね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロンディニウム市民？",
+          "text": "中尉、あの制服は……ダブリンです！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルン",
+          "text": "……彼女なのね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロンディニウム市民？",
+          "text": "彼女というのは、あのダブリンの術師のことですか！？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロンディニウム市民？",
+          "text": "あいつは……とても恐ろしい奴です……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロンディニウム市民？",
+          "text": "仲間が何人もあいつに殺されました。どこからともなく生えてきた石柱で人を串刺しにするんです。あいつのやり口はサルカズよりも残酷です！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルン",
+          "text": "知っているわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロンディニウム市民？",
+          "text": "中尉、あなたも戦ったことがあるのですか？　いや……バカなことを訊きました。ダブリンの手から、これだけ多くを救える人です。あなたならきっとあいつを打ち負かしたでしょう……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルン",
+          "text": "私が負けたわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロンディニウム市民？",
+          "text": "それでも……あいつの手にかかっても生き延びたんですね。それだけでもすごいことですよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルン",
+          "text": "彼女がなぜすぐに私を殺さなかったのかはわからないけど……いくつか予想は立てたわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルン",
+          "text": "ロンディニウムの外の兵営で、ある伯爵のトランスポーターと彼女たちが何度か密会していることを知ったの。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルン",
+          "text": "恐らく、この情報は彼女が故意に私に漏らしたものよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルン",
+          "text": "……あるいは彼女ではないのかもしれないけど。件の伯爵の父と私の祖父が、親しい戦友であったことを彼女のような人が知るはずないもの。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルン",
+          "text": "そして伯爵本人は……私の記憶が間違っていなければ、かつて彼はさる公爵の従者だった。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロンディニウム市民？",
+          "text": "中尉……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルン",
+          "text": "ごめんなさい。あなたたちの前で、こんな話をすべきではなかったわね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルン",
+          "text": "長い間都市の……暗がりに隠れていて、話しもできない水道ハガネガニと一緒にいるのに慣れてしまったの。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルン",
+          "text": "その時は誰も居なかったから、こだまする自分の声が他人に不快な思いをさせる心配はしなくてよかったもの。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルン",
+          "text": "忘れないためには、口に出しておくべきことがあったの。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロンディニウム市民？",
+          "text": "中尉、私はあなたの言葉を遮るつもりはありません！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロンディニウム市民？",
+          "text": "むしろもっと聞かせてください。私はずっと知りたかったのです。一体誰が手の届かない場所から盤面を操り、我々をこのような有様にしたのか！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルン",
+          "text": "私の頭に浮かんでいるその公爵だけど、今はロンディニウムにいないわ。さらに言えば……彼はこの都市の空っぽの玉座に興味を向けたことすらないように思うわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルン",
+          "text": "もし彼がダブリンの背後にいる支持者なら、多くの疑問がクリアになるでしょう。でも同時に、私たちの目前にある危機の解決は一層難しくなるわね……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルン",
+          "text": "聞いて。私がこれまで話したことはすべて、まだ形にもなっていない臆測にすぎないわ。もし続きに興味があるのなら、場所を変えましょう。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルン",
+          "text": "……あなたたちがその時になっても、私と一緒に影へと足を踏み入れてくれるならね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロンディニウム市民？",
+          "text": "では今は？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルン",
+          "text": "今は――ここを抜け出すタイミングを見つける必要があるわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルン",
+          "text": "ダブリンはサルカズから何かを見つけ出そうとしているの。数まではわからないけど、目的は人かもしれない。サディアン区にあれだけ多くの拠点を築いたのも、捜索のためなら辻褄が合うわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルン",
+          "text": "ダブリンは、あなたたちのようなサルカズに捕らえられた兵士以外にも、サルカズと関係のある一般人をたくさん連れ去っているわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルン",
+          "text": "マンドラゴラの目的が何であれ……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルン",
+          "text": "ダブリンとサルカズに衝突が起きた今の状況、私たちにとっては有利よ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロンディニウム市民？",
+          "text": "もう計画があるようですね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルン",
+          "text": "ロッベン、あなたに渡したクロスボウはちゃんと袖に隠してある？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロンディニウム市民？",
+          "text": "もちろんです、中尉！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルン",
+          "text": "サルカズに一番近いあのダブリン兵を狙って。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "どうやら、ダブリンは引き下がらないようですね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "サルカズにも我慢の限界があります。彼らは一触即発の状態です。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "ドクター、予備プランを実行しましょう。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ戦士",
+          "text": "おい、貴様らが捕らえた者を渡せ。でなければおとなしく俺たちの手によって死ね――さっさと選択すりゃ互いに楽だ、だろ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ダブリン兵士",
+          "text": "……上官、我々は……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "マンドラゴラ",
+          "text": "……ダメよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ダブリン兵士",
+          "text": "どうしてですか……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "マンドラゴラ",
+          "text": "ダメったらダメなの。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ダブリン兵士",
+          "text": "たとえそれで我々とサルカズの関係が決裂してもですか？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "マンドラゴラ",
+          "text": "あいつの話は聞いたでしょ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "マンドラゴラ",
+          "text": "あたしたち……一体いつお友達になったのかしらね？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ戦士",
+          "text": "その通りだ、だが今の言葉は貴様が言ったのだぞ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ戦士",
+          "text": "――整列！　ダブリン一党を囲め！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "マンドラゴラ",
+          "text": "こいつは、ダブリンにとってどうしても必要なのよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "マンドラゴラ",
+          "text": "連れていけないなら、ここで殺すしかない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロンディニウム市民",
+          "text": "うわぁ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "マンドラゴラ",
+          "text": "黙りなさい、うっさいわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "マンドラゴラ",
+          "text": "いっそのこと、このサルカズたちも全員……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "？？？",
+          "text": "そろそろ俺たちの出番じゃね？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "？？？",
+          "text": "待って、まだ空間座標を修正中だよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "？？？",
+          "text": "でも見ろよ、早くしねぇと、あいつ殺されちまうぜ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "？？？",
+          "text": "もうすぐだから……直線距離十七メートル……十六……十五……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "？？？",
+          "text": "もう少し近づいた方がよくね、狙いつけんのむずいだろ？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "？？？",
+          "text": "ダメだって、これ以上近づいたら気付かれる！",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "いいから聞けって。絶対に成功するからさ、失敗したら俺の頭を釘だと思ってぶっ叩いていいぜ――もうちょい東に寄せろ、ちょうど光の反射で翼が隠れる……\nよし、今だ！"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "？？？",
+          "text": "――ロック五号、攻撃！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルン",
+          "text": "今よ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ホルン",
+          "text": "ロッベン、やって！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ戦士",
+          "text": "ううう――あぁ！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ダブリン兵士",
+          "text": "うぐ……",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ戦士",
+          "text": "貴様らやりやがったな！？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ダブリン兵士",
+          "text": "何言ってる？　先に矢を放ってきたのはお前らだろ――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ戦士",
+          "text": "反撃！　反撃だ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ戦士",
+          "text": "サルカズの血に塗れた輩には、より多くの血で償わせるしかない！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ戦士",
+          "text": "ここにいる奴らは、誰一人として逃すな！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "マンドラゴラ",
+          "text": "先に手を出してきたのはあんたたちよ、いいわね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "マンドラゴラ",
+          "text": "――かかりなさい、ここにいるサルカズを全員ぶち殺して。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "マンドラゴラ",
+          "text": "こいつらを生きて帰らせちゃダメよ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "マンドラゴラ",
+          "text": "今日ここで起きたことは、絶対に魔族のリーダーに知られてはならないわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロンディニウム市民",
+          "text": "わあああ――！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロンディニウム市民",
+          "text": "助けて、助けて！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロドスオペレーター",
+          "text": "アーミヤさん、一般人の逃げ場がない。トーマスさんだけでなく、前方の交戦範囲に人がたくさん残っている！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "ロドスオペレーター",
+          "text": "サルカズもダブリンも一般人の生死なんて気にしちゃいない！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "シージ",
+          "text": "……",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "シージ",
+          "text": "ドクター、アーミヤ。すまないが、私は何もせず傍観していることはできない。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "シージ",
+          "text": "……私にはできない。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "他に選択肢はない。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "わかりました。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "総員、作戦目標――変更！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "アーミヤ",
+          "text": "非戦闘員は引き続き身を隠してください。戦闘員は安全を確保しながら、市民の救出を行います！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ戦士",
+          "text": "……背後から矢だと？",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ戦士",
+          "text": "あの一般人の格好をした奴らだ……禁止されている武器を所持しているぞ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ戦士",
+          "text": "いや、昇降機の辺りにさらに多くが隠れている！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ戦士",
+          "text": "ハッ……ムシケラどもの尻尾をつかんだぞ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ戦士",
+          "text": "やはりここに反乱軍がいたか――",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "サルカズ戦士",
+          "text": "すぐにマンフレッド将軍に報告しろ！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    }
+  ]
+}

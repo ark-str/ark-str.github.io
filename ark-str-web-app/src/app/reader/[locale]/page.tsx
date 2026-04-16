@@ -1,6 +1,11 @@
 import { notFound } from "next/navigation";
 import { isReaderLocale } from "@/features/content/config/canonical-reader-locales";
-import { ReaderRouteShell } from "@/features/reader/ui/reader-route-shell";
+import {
+  getGroupStories,
+  getLocaleGroups,
+  readContentIndex,
+} from "@/features/content/service/read-content-index";
+import { ReaderLocaleArchive } from "@/features/reader/ui/reader-locale-archive";
 
 export default async function ReaderLocalePage({
   params,
@@ -13,11 +18,17 @@ export default async function ReaderLocalePage({
     notFound();
   }
 
+  const index = readContentIndex();
+  if (!index) {
+    notFound();
+  }
+
+  const groups = getLocaleGroups(index, locale).map((group) => ({
+    ...group,
+    stories: getGroupStories(index, locale, group.groupId),
+  }));
+
   return (
-    <ReaderRouteShell
-      description="Canonical locale archive navigation will be rendered here from the generated index contract."
-      locale={locale}
-      title="Locale archive"
-    />
+    <ReaderLocaleArchive groups={groups} locale={locale} />
   );
 }

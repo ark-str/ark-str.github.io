@@ -1,0 +1,221 @@
+{
+  "server": "jp",
+  "storyId": "act3d0_level_act3d0_03_end",
+  "groupId": "act3d0",
+  "stageId": "a003_03",
+  "title": "徒競走",
+  "storyCode": "OF-3",
+  "avgTag": "戦闘後",
+  "sourcePath": "vendor/ArknightsData/jp/gamedata/story/activities/act3d0/level_act3d0_03_end.txt",
+  "sourceHash": "d4ee41b315d1cece9d63e55ee14f7d4cb112a0dfaabfc6da7991d6614e5c025b",
+  "bodyAvailable": true,
+  "blocks": [
+    {
+      "type": "narration",
+      "text": "第五关（后）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "護衛A",
+      "text": "あああ熱い！　焦げちまう！",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "護衛B",
+      "text": "うわ！　俺の髪が！",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "護衛A",
+      "text": "チッ、撤退、撤退だ！",
+      "portraitKey": null
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "イフリータ",
+      "text": "ハハハ、やっぱり喧嘩はおもしれーな、ドクター！",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "イフリータ",
+      "text": "あ、そうだドクター、これはオマエを助けるためにやったことだからな。しかも言われた通りちゃんと手加減もしたんだぜ。だからサイレンスには絶対言うんじゃねーぞ！",
+      "portraitKey": null
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "イフリータ",
+      "text": "もしバレたらまた山程宿題を出されちまう！",
+      "portraitKey": null
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "問題ない。",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "イフリータ",
+              "text": "ヘヘ、やっぱドクターはいいヤツだな！",
+              "portraitKey": null
+            }
+          ]
+        },
+        {
+          "label": "宿題は頑張れ。",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "イフリータ",
+              "text": "フンッ、知らねぇよ！",
+              "portraitKey": null
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "セイロン",
+          "text": "源石を動力にした火炎放射……しかもこの出力、素晴らしい術師ですわね。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イフリータ",
+          "text": "おお、姉ちゃん、見る目あるな。オレサマはすげーんだぜ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "セイロン",
+          "text": "わたくしはセイロン。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "セイロン",
+          "text": "わたくしたちを救っていただき、感謝いたしますわ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イフリータ",
+          "text": "お、おう……別にいいぜ。こ、これはオレサマの仕事だしな。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イフリータ",
+          "text": "おいドクター、この姉ちゃんって、アレだ。「レイギタダシイ」ってやつだよな。お、オレサマはどうすれば良いんだ？",
+          "portraitKey": null
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "微笑む。",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "お辞儀する。",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "踊る。",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "イフリータ",
+          "text": "そうか、じゃあやってみる……。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イフリータ",
+          "text": "あ！肉を焼いてる途中だった！　悪ぃがオレサマはもう行くぜ！",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "イフリータ",
+          "text": "ドクター、それにセイロン、バーベキューを喰いたくなったらオレサマのとこに来るんだぜ！",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "行ってしまった。",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "セイロン",
+          "text": "ドクター、わたくしたちも急ぎ戻りましょう。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "？？？",
+          "text": "ドクター、そしてそこのお嬢さんも無事なようで何よりだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "セイロン",
+          "text": "ご助力、感謝いたしますわ。あの、お名前をお聞かせいただいても……。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "へラグ",
+          "text": "ヘラグだ。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "へラグ",
+          "text": "ドクターと同じロドスに所属している。",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "へラグ",
+          "text": "ドクター、時間がないところすまんが、貴殿に伝えておかなければならないことがある。",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    }
+  ]
+}

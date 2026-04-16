@@ -1,0 +1,1815 @@
+{
+  "server": "en",
+  "storyId": "main_16_level_main_16-01_beg",
+  "groupId": "main_16",
+  "stageId": "main_16-01",
+  "title": "Distant Dawn",
+  "storyCode": "16-2",
+  "avgTag": "Before Operation",
+  "sourcePath": "vendor/ArknightsData/en/gamedata/story/obt/main/level_main_16-01_beg.txt",
+  "sourceHash": "c060763ef9d01a3dbd64c061e6462093e4bc2b201d9add06fb9ebe5d861b4aea",
+  "bodyAvailable": true,
+  "blocks": [
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "We need to find a safe route to the research institute.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "Elysium?",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "narration",
+          "text": "<p=1>Central Far North Mining District, Ursus</>"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Elysium",
+          "text": "Looks like my equipment's not working right, it can't detect the precise range of the contamination.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Elysium",
+          "text": "I think this is the miners' accommodation. The real danger here might be whoever's still around, really. This <i>is</i> demonic contamination we're talking about.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "......",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Elysium",
+          "text": "Captain says there's no trace of any mental activity in the entire mine, human or animal.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Elysium",
+          "text": "At the very least, the contamination hasn't blocked the way to the institute. It's mostly headed south, actually.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Elysium",
+          "text": "We can swing a detour around the north. It'll take us roughly three hours longer than the original plan, but the time loss will be manageable.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mantra",
+          "text": "(Nods)",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "Wow...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "I've been thinking this for a while now, but you two work really well together!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Elysium and Mantra have been working together for many years now.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Elysium",
+          "text": "Hahaha... You could say I'm Rhodes Island's most experienced operator when it comes to working with the captain.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Elysium",
+          "text": "It takes a lot out of her to 'speak', so if it's not an emergency, I get to be the one passing on the message.",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "So, what do you think, Doctor? If we set off now, we should make it before sunset—\nNot that the sun sets in the Ursine Far North this time of year..."
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "We set off right now.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "Get our friend up to speed on our detour.",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Don't fall behind now, Eloysius.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Sorry, was just inspecting the mine equipment, nothing to do with our travels together.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "What's going on? Why did you stop for so long?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "According to the map, we're very close to the institute. Don't tell me you've found some—",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "...thing?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "It's... traces of Dominion.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "The Royal Guard was here.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "You don't seem shocked?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "I hope you're not insinuating I'm hiding something, Gospozha Amiya, or I'd be very hurt.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "I hope you share any pertinent information with us, at least while we are collaborating.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "What do you know about the whereabouts of the Royal Guard?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "First of all, only the Tsar himself has the authority to know the comings and goings of the Royal Guard, let alone a lowly sergeant such as myself.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "But honestly speaking, after the illustrious Grand Duchess of the Far North declared martial law and shut down the mines, the Royal Guard showing up would not be much of a shock.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Then, if they're already conducting an investigation of their own here, where does that leave you?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "You're a clever one, aren't you?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "The news of abnormal Infected miners in Central Far North has made waves, and many are curious.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Naturally, while most Ursine have a right to curiosity, they do not have the same right to information.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Please understand that, as a sergeant, I am limited in what I am allowed to say. I hope my explanation will not cause too much confusion, Gospozha Amiya.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "No, it's fine. I understand the position you are in.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "I've never minced words about how this job could improve the résumé of an Imperial Guardswoman like me.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Though I did imagine it being much easier...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Anyhow, that dream is dead. The Royal Guard being involved is a bad omen, no matter how you look at it.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "If that's the case, are you still set on traveling with us?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Of course. I chose to take on this task, and quitting halfway would hardly be the decent thing to do.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Before we continue onwards, shall we reaffirm our trust in one another?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "I look forward to our continued cooperation.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Just like the time we met...",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "narration",
+          "text": "<p=1>Bresk, Far North, Ursus</><p=2>Three days ago</>"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Elysium! Give us some direction!",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Elysium",
+          "text": "<i>Mierda</i>... The signal's all laggy, it's like there's something interfering with our encrypted frequency!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Elysium",
+          "text": "Whatever, not important... Ten guardsmen to your west, turn right at the next crossing!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "What are you talking about?! The west <i>is</i> on our right!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Elysium",
+          "text": "Did I say right? Gah—",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Elysium",
+          "text": "Do you see the city hall? Go in the opposite direction!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "I see it, but the crossing ahead is where the plates are disconnected—",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Elysium",
+          "text": "What?!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Elysium",
+          "text": "There's nothing like that on this stupid map!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Elysium",
+          "text": "Well, you're practically surrounded by guards, so that's your only way out!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "Got it.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "Can you keep up, Amiya?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "I can!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "Hold on tight, Doctor!",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Doing my best here—",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "Your best isn't good enough. Fine, I'll hold onto you instead!",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "Phew...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "You alright, Doctor?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "I'm good.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "I've gotten pretty used to it by now.",
+          "value": "2",
+          "blocks": []
+        },
+        {
+          "label": "Next time, I can try running by myself.",
+          "value": "3",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "Haha, glad you're doing well! Guess I can relax, then!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "We've arrived at the designated location, Elysium.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Elysium?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Intermittent Noise",
+          "text": "...Don't...*bzzt*...stop...oving...*bzzt*—",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Intermittent Noise",
+          "text": "...There's...*bzzt* *bzzt*...uards...",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "The line cut out.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "The terminal says Elysium's still moving, but we don't have any way to reestablish communication.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "It's like short-range comms have been unstable ever since we entered Bresk.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "There's also no way of telling if it's because of the Far North's extreme weather, or human interference.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "I am curious, though...",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "Why would Bresk send so many guards to detain 'inter-city merchants'?",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "It <i>is</i> rather strange...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "There haven't been any issues with the ID cards Closure forged for us.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Maybe we're not the ones they're watching out for.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "Maybe they're watching us for different reasons.",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "But putting that aside...",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Bresk is supposed to be a quiet city.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "It's strange that it's so fortified.",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "This isn't anything like the intelligence we had... If this goes on, we won't make it into the mining district.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Doctor, shouldn't we rendezvous with Mantra's team and discuss—",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Elysium",
+          "text": "Doctor! Finally got you!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Elysium",
+          "text": "Keep moving! There are guards heading your way!",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "I think I figured that out, thanks...",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "They're fast—",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "Get behind me, Amiya!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "No, don't engage!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Far North Soldier",
+          "text": "Alright, interloping scum, hands up!",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Let's take a deep breath here.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "What laws have we violated to cause such a fuss?",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Far North Soldier",
+          "text": "You trespassed in the industrial zone, and attempted to infiltrate a private factory, violating Bresk's migration regulations and Ursine urban public security measures.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Could I ask you to reconfirm, sir? When we entered the city, I'd never heard anything about a prohibition on foreigners entering the industrial zone—",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Far North Soldier",
+          "text": "It's a new regulation, went into effect just after you reached Bresk.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Far North Soldier",
+          "text": "You will be detained under the law, and then Public Security will decide if you are to be deported or exiled, considering your circumstances.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "If we inadvertently violated Bresk's new regulation, then I deeply apologize.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "We're just here to look for an inter-city merchant. It was stated clearly in the itinerary declaration we submitted upon entry to the city.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Far North Soldier",
+          "text": "Save it for Public Security.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "We didn't mean to offend.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "There may be a way for both of us to save time here.",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "I believe Bresk, <i>Pearl of the Far North,</i> treats its guests well.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "I'm sure the Grand Duchess is as kind as the rumors say.",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Far North Soldier",
+          "text": "Enough of that, I don't give a damn. I'm just doing my job.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Sir...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Far North Soldier",
+          "text": "This way.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "No, sir. We can't delay any longer.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "I'm sorry.",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "You see Amiya shift her body, surreptitiously protecting you. Mon3tr observes your surroundings, looking for a way out."
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Far North Soldier",
+          "text": "You don't know how things work around here.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Far North Soldier",
+          "text": "Get them.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "(Warning roar)",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Hesitant Soldier",
+          "text": "Err... Ah!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Far North Soldier",
+          "text": "What are you standing around for?! Get in there already!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Far North Soldier",
+          "text": "What, can't even handle a little Feline girl?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Hesitant Soldier",
+          "text": "S...Sir, look behind them.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Hesitant Soldier",
+          "text": "That looks like th-th-the—",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Far North Soldier",
+          "text": "Spit it out already!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Hesitant Soldier",
+          "text": "—The Imperial Guard!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Far North Soldier",
+          "text": "<i>Yerunda!</i> Those pretentious bastards should be in Grypherburg, what would they be doing in Bresk?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Hesitant Soldier",
+          "text": "B-But those clothes—",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Imperial Guard?",
+          "text": "I am terribly sorry, sir, but I'm afraid she is right this time.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Far North Soldier",
+          "text": "You...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Imperial Guard?",
+          "text": "Eloysius Gorchekova, Sergeant of the Imperial Guard, Vanguard Battalion, here from Deity Grypherburg.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Far North Soldier",
+          "text": "What are you playing at?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "I have a simple request for you. Overlook this little breach of protocol and release our pitiful guests.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Far North Soldier",
+          "text": "You're with them?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Unfortunately, they are indeed my friends. Since you are now aware of my history with them, surely you'll do me this favor, yes?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Far North Soldier",
+          "text": "We're a long way from Grypherburg, why should I care about that?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Because I stopped by Public Security and filled out all the paperwork?",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "The young Ursus waves some papers in her hand. In the dusky gloom of polar night, none can clearly see what is written on them."
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Far North Soldier",
+          "text": "But—",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "If I were you, sir, I wouldn't play around with my future like that.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "There are many lost travelers, but rarely a chance to curry favor with the Imperial Guard—Ah, yes, may I ask you your name, or your service number?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Far North Soldier",
+          "text": "Alright, Sergeant Gorchekova. I'll report all this to Public Security. You may go.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Far North Soldier",
+          "text": "May your authority be as eternally glorious as the Tsar himself.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Thank you for the kind words, sir.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "But none has as eternal a glory as His Imperial Majesty. The rest of us will have to leave the stage when the time comes.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Well, I'll be off with our guests for now.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Thank you for helping us get out of that sticky situation, ma'am... but, why exactly did you—",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Shh, they're still close by.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Also, my cute little Cautus, you may call me Eloysius.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "'Ma'am' is too formal, while 'Guardswoman' or 'girl' is too crude. I believe names are what's best for our current relationship.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Thank you for the help, Eloysius.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "You really know how to handle those guards.",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "They most likely thought you were ordinary traders, easy to shake down for a quick <i>chervonets</i> or two, same way they treat Columbian sightseers.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "But you're hardly tourists or traders, now, are you?",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Let's cut to the chase.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "Why are you helping us?",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Good, good, I appreciate candor. I will answer your questions, but not here.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Once you have gathered your friends, we can go somewhere far from prying eyes and ears.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "We don't have much time.",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Relax, I won't be wasting your time. This is all in service of your goal.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Well, here we are.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Where is here?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "An abandoned apartment. As far as I know, the guards don't care for these nigh-empty old districts.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "An empty plate may sound wasteful, but it is true. No matter how the <i>Deity Grypherburg Times</i> tries to cover it up, it is a widely-known fact that the population of the Far Northern cities has been dwindling these last few years.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "As time goes by, this place becomes deserted, and the plate will be discarded, left to rust in the wilderness like all the other abandoned plates.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Eloysius, we need to know exactly why you came looking for us. Now, ideally.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Mon3tr",
+          "text": "(Vigilant stare)",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Could I ask everyone to lighten up a little, please?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "There are a lot of you and only one of me. What kind of threat could I possibly pose to people of your caliber?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Could I ask the Phidia lady standing outside the door to tell your friends that I'm not lying?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Elysium",
+          "text": "Captain says there's nobody else here. The district is safe.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Choosing this place to talk means you also need to be covert.",
+          "value": "1",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Eloysius",
+              "text": "A friend of mine used to live here. She had hoped to achieve her dream of completing a saga for the Ursine people, but was defeated by the frigid cold—She is doing very well in Grypherburg, I should add.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Eloysius",
+              "text": "But thanks to her, we have this place to shelter both from the cold wind, and from people snooping around.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Eloysius",
+              "text": "I'm sure I'm not the only one here who wants to stay out of trouble.",
+              "portraitKey": null
+            },
+            {
+              "type": "sceneBreak"
+            }
+          ]
+        },
+        {
+          "label": "I had hoped the Imperial Guard would at least treat us to dinner.",
+          "value": "2",
+          "blocks": [
+            {
+              "type": "dialogue",
+              "speakerName": "Eloysius",
+              "text": "You're a funny one, my hooded friend. It takes a clever mind to grasp humor.",
+              "portraitKey": null
+            },
+            {
+              "type": "dialogue",
+              "speakerName": "Eloysius",
+              "text": "Once we have discussed our important business, I would be happy to entertain you with a meal if you are all still interested.",
+              "portraitKey": null
+            },
+            {
+              "type": "sceneBreak"
+            }
+          ]
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Firstly, since I've already introduced myself, may I have the pleasure of knowing your names?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "We've come from Victoria and—",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Still insisting that you went into the industrial zone to meet with an inter-city merchant, a widow who goes by the name of Olga?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "A very reliable cover story, one that will fool a vast majority of the city's port officials.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "But no matter how you put it, it is rare for a commercial party in a nomadic city to be using military-grade encrypted communications.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Was it you intercepting our communications?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "No, no, I would never do something so crude.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "It may have been the aurora, or the recently upgraded defense equipment. You truly are unlucky, coming to Bresk during the most interesting times it has ever seen.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "......",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "I have been honest on my part. If you still have things you wish to keep hidden, then I am afraid we have to break things off here.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "We're a pharmaceutical company.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "Rhodes Island.",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "See? Honesty isn't so painful, is it?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Rhodes Island... I have heard this name mentioned many times while investigating Infected rumors from all across the land.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Based on what I have pieced together from these tales, you lot are the stuff of legends.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "But no matter how true they are, the most recent instance I have encountered your name was in that paper you published about aberrant changes in the Infected.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "You don't strike me as a colleague in the field.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "I never thought you'd be interested in Oripathy studies.",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Pardon me for letting you down, but not every newly minted Grypherburg noble is an uneducated lout.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "There is not a nation on this land that can overlook the Infected question, though their policies in answering it may differ. Anyone with a modicum of common sense would know just how important this scientific achievement of yours is.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "But there is one thing I am curious about. Despite this groundbreaking discovery, Rhodes Island has kept a low profile, instead of using it to do more business.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "Is that why you came to find us?",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "This doesn't explain how you knew our whereabouts.",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Oh, that can easily be explained. I think anyone who goes into the Far North's Central Mining District right now is doing it for the same reason.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "You mean you also want in?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "What, do you not?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "We... <i>need</i> to get in.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Sure enough.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "You don't have a way into the mining district, and as it turns out, I have need of some Oripathy specialists. The perfect recipe for cooperation.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "So you want us to go into the district with you?",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Of course.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "The authorities here will not look kindly on some Grypherburger sticking her nose into Far Northern affairs, after all.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "As things are, your cover as merchants will do you no good, nor will it help me, so let's forget all the masks and red tape and shake hands right here. That is one solution to all our problems.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "But what is it you want to do in the district? And what do you need from us?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Was I not clear?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "I'm hoping Rhodes Island will accompany me into the mining district to collaborate on an investigation into the Infected affair.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "The 'Infected affair'? What exactly are you referring to...?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Oh, my dear, sweet, naive little Cautus, my patience has its limits, you know. There is no time to be playing dumb.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "No, that's a serious question.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "We lost contact with one of our mobile medical teams in the Far North's Central Mining District, and we need to find them.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "We really have no idea what this 'Infected affair' is, and I hope you will elaborate.",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "You want into the district just for—\nWait, so you really don't know?"
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "That's impossible. To my knowledge, you've built many more medical posts all across Ursus in the past few years—",
+          "portraitKey": null
+        },
+        {
+          "type": "narration",
+          "text": "Simple doubt replaces the suspicion on the young woman's face, before finally shifting to a sudden realization.\nShe understands how her assumptions have led her astray."
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "—No. You just said 'mobile medical team'...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "No fixed offices means no steady access to a network of contacts with the latest intelligence. I don't know what issues Rhodes Island is currently facing, but it seems the information you have is limited.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "And because this is Ursus, you have been unable to do much. Because of your lack of information, you have been blindly running into walls this whole time... Haven't you?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "......",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "<i>Chyort poberi!</i> I was too impatient.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "We really don't know what this 'Infected affair' is.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "Does it have to do with Bresk's current state of affairs?",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Forget it. Forget I said anything. That favor before was free of charge, no need to thank me.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Wait!",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "The very fact that you came looking for us means there is the possibility we can work together on this.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Could you not tell us what exactly happened in the mining district?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "I really... Gah! I really should have thought things through more before making a choice.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "And here I was, thinking you were wracking your brains on how to enter the district upon hearing the news. You should know that this information is worth quite a lot on the black market.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "We're not that kind of organization... but that doesn't matter right now.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "We have a natural reason to be invested in anything to do with the Infected. That's why you came looking for us, wasn't it?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "Please, tell us.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Fine, fine! Since I'm already here, I may as well do something, even if it is just for some Infected.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "The Infected are Ursine citizens, too.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "You are correct, precious little Cautus. The Infected are indeed Ursines, and that is before we mention those miners that the Tsar personally promised 'life, not survival'.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "The miners are the backbone of Ursus, keeping its war machines running. A fact that those corrupt old nobles and their puppets haven't realized yet.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "But even they must know that Ursus must change.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "......",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "My word, what am I even babbling about...? Good thing those sharp-tongued, poison-spitting colleagues of mine aren't here, or they would laugh me into my grave.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "You should not feel ashamed for this.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Spoken words are like spilled cystymilk: they freeze solid in this weather.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "So what is this 'Infected affair'? It sounds like it has to do with the Infected miners?",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Listen, if you dare leak any of this...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "You have my word that no matter what you have to say, we will not disclose it.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "There is no benefit to making an enemy out of Ursus. We know that well.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Give me a moment, I need to figure out where to start...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "You know, of course, that Bresk borders the Far North's Central Mining District, and is also the largest nomadic city in the north of Ursus.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "This means the city administrates a total of thirty thousand square kilometers' worth of mines scattered across the Far North, alongside two hundred thousand Infected.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "......",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "We are familiar with the basic facts of this place.",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "What issues arise in this sort of system?",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Please don't look at me like that... Sorry, I knew this sort of talk would anger you.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "But the Tsar does not wish for these Infected miners to be treated as cheap labor. On the contrary, his decrees have shown a lot of care for the people of Bresk.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Things have been going rather smoothly in the city these past few years, until three months ago...",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Yes, this is where your company's area of expertise comes in, along with that paper.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Three months ago, large numbers of 'abnormal Infected' were discovered in the Central Mining District. Their symptoms were very similar to the ones described in your paper.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Amiya",
+          "text": "(Three months ago? Wasn't that...?)",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "You mean...?",
+          "value": "1",
+          "blocks": []
+        },
+        {
+          "label": "That's the reason why Bresk is under martial law?",
+          "value": "2",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": []
+    },
+    {
+      "type": "choice",
+      "options": [
+        {
+          "label": "How many 'abnormal' Infected are there in the district?",
+          "value": "1",
+          "blocks": []
+        }
+      ],
+      "sharedBlocks": [
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "That's the question.",
+          "portraitKey": null
+        },
+        {
+          "type": "dialogue",
+          "speakerName": "Eloysius",
+          "text": "Right now, nobody knows just how many 'normal' Infected are left in the Central Mining District.",
+          "portraitKey": null
+        },
+        {
+          "type": "sceneBreak"
+        }
+      ]
+    }
+  ]
+}

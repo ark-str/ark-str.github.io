@@ -2,4 +2,4 @@
 
 ## Current Spec
 
-- `arknights-story-reader.md` - active source of truth for the product target and root-first bootstrap phase
+- `arknights-story-reader.md` - active source of truth for the product target and current reader-shell phase

@@ -2,11 +2,13 @@ import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
+import { parseStoryText } from "./story-parser.mjs";
 
 export const ARKNIGHTS_DATA_SUBMODULE_PATH = "vendor/ArknightsData";
 export const ARKNIGHTS_DATA_REMOTE = "https://github.com/ArknightsAssets/ArknightsGamedata.git";
 export const ARKNIGHTS_DATA_BRANCH = "master";
 export const PORTRAIT_SOURCE_PATH = "vendor/PortraitSource";
+export const CANONICAL_READER_LOCALES = ["cn", "en", "jp", "kr", "tw"];
 
 export function getRepoRoot() {
   return process.cwd();
@@ -24,13 +26,19 @@ export function getGeneratedStatusRoot(cwd = getRepoRoot()) {
   return path.join(getGeneratedContentRoot(cwd), "status");
 }
 
+export function getGeneratedStoriesRoot(cwd = getRepoRoot()) {
+  return path.join(getGeneratedContentRoot(cwd), "stories");
+}
+
 export function getGeneratedFilePaths(cwd = getRepoRoot()) {
   const contentRoot = getGeneratedContentRoot(cwd);
   const statusRoot = getGeneratedStatusRoot(cwd);
+  const storiesRoot = getGeneratedStoriesRoot(cwd);
 
   return {
     contentRoot,
     statusRoot,
+    storiesRoot,
     index: path.join(contentRoot, "index.json"),
     sourceManifest: path.join(statusRoot, "source-manifest.json"),
     summaryManifest: path.join(statusRoot, "summary-manifest.json"),
@@ -132,6 +140,14 @@ export function selectStoryTitle(unlockData, stage) {
   return stageName ?? unlockData.storyId;
 }
 
+function isCanonicalReaderLocale(server) {
+  return CANONICAL_READER_LOCALES.includes(server);
+}
+
+function createStoryBodyPath(server, storyId) {
+  return path.join("stories", server, `${storyId}.json`).replaceAll("\\", "/");
+}
+
 export function resolveStorySource({
   cwd = getRepoRoot(),
   server,
@@ -211,6 +227,7 @@ export function buildContentArtifacts(cwd = getRepoRoot()) {
   const storyItems = [];
   const sourceItems = [];
   const summaryItems = [];
+  const storyDetails = [];
 
   for (const { server, root } of serverRoots) {
     const requiredPaths = getRequiredExcelPaths(root);
@@ -222,21 +239,25 @@ export function buildContentArtifacts(cwd = getRepoRoot()) {
     let groupCount = 0;
     let storyCount = 0;
 
+    const isReaderLocale = isCanonicalReaderLocale(server);
+
     for (const [groupId, groupRecord] of Object.entries(storyReviewTable)) {
       const unlockDatas = Array.isArray(groupRecord.infoUnlockDatas) ? groupRecord.infoUnlockDatas : [];
       groupCount += 1;
       storyCount += unlockDatas.length;
 
-      groupItems.push({
-        server,
-        groupId,
-        title: groupRecord.name ?? groupId,
-        entryType: groupRecord.entryType ?? null,
-        actType: groupRecord.actType ?? null,
-        startTime: groupRecord.startTime ?? null,
-        endTime: groupRecord.endTime ?? null,
-        storyCount: unlockDatas.length,
-      });
+      if (isReaderLocale) {
+        groupItems.push({
+          server,
+          groupId,
+          title: groupRecord.name ?? groupId,
+          entryType: groupRecord.entryType ?? null,
+          actType: groupRecord.actType ?? null,
+          startTime: groupRecord.startTime ?? null,
+          endTime: groupRecord.endTime ?? null,
+          storyCount: unlockDatas.length,
+        });
+      }
 
       for (const unlockData of unlockDatas) {
         const stageId = unlockData.requiredStages?.[0]?.stageId ?? null;
@@ -251,6 +272,8 @@ export function buildContentArtifacts(cwd = getRepoRoot()) {
           unlockData,
         });
 
+        const bodyPath = isReaderLocale ? createStoryBodyPath(server, unlockData.storyId) : null;
+
         const story = {
           server,
           storyId: unlockData.storyId,
@@ -264,24 +287,52 @@ export function buildContentArtifacts(cwd = getRepoRoot()) {
           sourceBasis: source.sourceBasis,
           storyCode: unlockData.storyCode ?? stage?.code ?? null,
           avgTag: unlockData.avgTag ?? null,
+          bodyPath,
+          bodyAvailable: isReaderLocale && source.sourceExists,
         };
 
-        storyItems.push(story);
-        sourceItems.push({
-          server,
-          storyId: story.storyId,
-          sourcePath: story.sourcePath,
-          sourceHash: story.sourceHash,
-          sourceExists: story.sourceExists,
-          sourceBasis: story.sourceBasis,
-          generatedAt,
-        });
-        summaryItems.push({
-          server,
-          storyId: story.storyId,
-          sourceHash: story.sourceHash,
-          status: "missing",
-        });
+        if (isReaderLocale) {
+          storyItems.push(story);
+          sourceItems.push({
+            server,
+            storyId: story.storyId,
+            sourcePath: story.sourcePath,
+            sourceHash: story.sourceHash,
+            sourceExists: story.sourceExists,
+            sourceBasis: story.sourceBasis,
+            bodyPath,
+            bodyAvailable: story.bodyAvailable,
+            generatedAt,
+          });
+          summaryItems.push({
+            server,
+            storyId: story.storyId,
+            sourceHash: story.sourceHash,
+            status: "missing",
+          });
+
+          if (source.sourceExists) {
+            const sourceFilePath = path.join(cwd, source.sourcePath);
+            storyDetails.push({
+              locale: server,
+              storyId: story.storyId,
+              filePath: bodyPath,
+              detail: {
+                server,
+                storyId: story.storyId,
+                groupId,
+                stageId,
+                title: story.title,
+                storyCode: story.storyCode,
+                avgTag: story.avgTag,
+                sourcePath: story.sourcePath,
+                sourceHash: story.sourceHash,
+                bodyAvailable: true,
+                blocks: parseStoryText(fs.readFileSync(sourceFilePath, "utf8")),
+              },
+            });
+          }
+        }
       }
     }
 
@@ -335,6 +386,7 @@ export function buildContentArtifacts(cwd = getRepoRoot()) {
       },
       items: summaryItems,
     },
+    storyDetails,
   };
 }
 
@@ -352,7 +404,13 @@ export function writeGeneratedArtifacts(artifacts, cwd = getRepoRoot()) {
   const filePaths = getGeneratedFilePaths(cwd);
   ensureDirectory(filePaths.contentRoot);
   ensureDirectory(filePaths.statusRoot);
+  fs.rmSync(filePaths.storiesRoot, { recursive: true, force: true });
+  ensureDirectory(filePaths.storiesRoot);
   writeJson(filePaths.index, artifacts.index);
   writeJson(filePaths.sourceManifest, artifacts.sourceManifest);
   writeJson(filePaths.summaryManifest, artifacts.summaryManifest);
+
+  for (const storyDetail of artifacts.storyDetails ?? []) {
+    writeJson(path.join(filePaths.contentRoot, storyDetail.filePath), storyDetail.detail);
+  }
 }

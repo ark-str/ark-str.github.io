@@ -9,6 +9,7 @@ import type {
   ReaderLocale,
   StoryDetail,
   SummaryManifest,
+  SummaryManifestEntry,
 } from "@/features/content/types";
 
 function getGeneratedPath(fileName: string) {
@@ -63,6 +64,14 @@ export function getGroupStories(
   return index.stories.filter((story) => story.server === locale && story.groupId === groupId);
 }
 
+export function findGroupEntry(
+  index: ContentIndex,
+  locale: ReaderLocale,
+  groupId: string,
+): ContentGroupEntry | null {
+  return index.groups.find((group) => group.server === locale && group.groupId === groupId) ?? null;
+}
+
 export function findStoryEntry(
   index: ContentIndex,
   locale: ReaderLocale,
@@ -92,6 +101,20 @@ export function readStoryDetail(
   } catch {
     return null;
   }
+}
+
+export function findSummaryEntry(
+  summaryManifest: SummaryManifest | null,
+  locale: ReaderLocale,
+  storyId: string,
+): SummaryManifestEntry | null {
+  if (!summaryManifest) {
+    return null;
+  }
+
+  return (
+    summaryManifest.items.find((item) => item.server === locale && item.storyId === storyId) ?? null
+  );
 }
 
 export function readReaderHomeModel(): ReaderHomeModel {

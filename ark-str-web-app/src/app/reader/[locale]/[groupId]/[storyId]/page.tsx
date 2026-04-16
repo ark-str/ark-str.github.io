@@ -1,6 +1,15 @@
 import { notFound } from "next/navigation";
 import { isReaderLocale } from "@/features/content/config/canonical-reader-locales";
-import { ReaderRouteShell } from "@/features/reader/ui/reader-route-shell";
+import {
+  findGroupEntry,
+  findStoryEntry,
+  findSummaryEntry,
+  getGroupStories,
+  readContentIndex,
+  readStoryDetail,
+  readSummaryManifest,
+} from "@/features/content/service/read-content-index";
+import { ReaderStoryShell } from "@/features/reader/ui/reader-story-shell";
 
 export default async function ReaderStoryPage({
   params,
@@ -13,11 +22,29 @@ export default async function ReaderStoryPage({
     notFound();
   }
 
+  const index = readContentIndex();
+  if (!index) {
+    notFound();
+  }
+
+  const group = findGroupEntry(index, locale, groupId);
+  const story = findStoryEntry(index, locale, groupId, storyId);
+
+  if (!group || !story) {
+    notFound();
+  }
+
+  const detail = story.bodyAvailable ? readStoryDetail(locale, storyId) : null;
+  const summaryEntry = findSummaryEntry(readSummaryManifest(), locale, storyId);
+
   return (
-    <ReaderRouteShell
-      description={`Story route scaffold for ${groupId}/${storyId}. The next milestone will bind generated story detail JSON here.`}
+    <ReaderStoryShell
+      detail={detail}
+      group={group}
       locale={locale}
-      title="Story reader"
+      siblingStories={getGroupStories(index, locale, groupId)}
+      story={story}
+      summaryAvailable={summaryEntry?.status === "ready"}
     />
   );
 }
