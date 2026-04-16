@@ -17,8 +17,8 @@ import {
   summaryManifest,
 } from "@/generated/content/registry";
 
-function getGeneratedStoryDetailPath(relativePath: string) {
-  return path.join(process.cwd(), "src", "generated", "content", relativePath);
+function getPublishedStoryDetailPath(relativePath: string) {
+  return path.join(process.cwd(), "public", "generated", "content", relativePath);
 }
 
 export function readContentIndex(): ContentIndex {
@@ -79,7 +79,7 @@ export async function readStoryDetail(
 
   try {
     return JSON.parse(
-      fs.readFileSync(getGeneratedStoryDetailPath(storyDetailPath), "utf8"),
+      fs.readFileSync(getPublishedStoryDetailPath(storyDetailPath), "utf8"),
     ) as StoryDetail;
   } catch {
     return null;

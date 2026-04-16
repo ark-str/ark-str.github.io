@@ -17,7 +17,7 @@ This project intentionally separates the repository harness from the runnable we
 - `ark-str-web-app/src/app/` - route shell, metadata, and global styles only
 - `ark-str-web-app/src/components/ui/` - shared UI primitives and design-system building blocks
 - `ark-str-web-app/src/features/` - product features with explicit layer boundaries
-- `ark-str-web-app/src/generated/content/` - app-internal generated loader layer mirrored from the published content artifacts
+- `ark-str-web-app/src/generated/content/` - app-internal generated metadata and exact-path loader map derived from the published content artifacts
 - `ark-str-web-app/public/generated/` - generated static assets consumed at runtime
 - `scripts/guards/` - mechanical repository rules
 - `scripts/harness/` - verification and autonomous iteration entry points
@@ -56,7 +56,7 @@ Disallowed patterns:
 - Browser APIs live in client files only.
 - `localStorage` access is wrapped by `repo` functions.
 - Persisted state normalization happens in `service` before values reach the UI.
-- Published story assets live under `ark-str-web-app/public/generated/`, and the app consumes mirrored generated loaders under `ark-str-web-app/src/generated/content/` so export builds do not scan `public/` directly.
+- Published story assets live under `ark-str-web-app/public/generated/`, and the app consumes small generated metadata under `ark-str-web-app/src/generated/content/` so export builds do not scan `public/` directly or mirror the full story corpus into app source.
 - Theme state is owned by the preferences feature and applied through semantic CSS variables.
 
 ## Why This Exists

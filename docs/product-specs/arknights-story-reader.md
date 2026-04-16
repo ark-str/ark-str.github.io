@@ -1,7 +1,7 @@
 # Arknights Story Reader
 
 Status: active
-Phase: verification closeout
+Phase: dev-startup recovery
 
 ## Product Goal
 
@@ -43,12 +43,13 @@ Build a web application that makes Arknights story content easier to read, summa
 
 ## Current Phase
 
-This phase closes the first reader iteration. It establishes:
+This phase removes the dev-startup regression introduced after the first reader iteration. It keeps:
 
 - canonical locale URLs at `/reader/[locale]` and `/reader/[locale]/[groupId]/[storyId]`
 - generated story detail files under `public/generated/content/stories/`
-- mirrored app-internal generated loaders under `src/generated/content/` for export-safe reads
+- metadata-only app-internal generated loaders under `src/generated/content/` for exact-path export-safe reads
 - first-pass body rendering for dialogue, narration, scene breaks, and Doctor choice branches
 - local storage reader-session restore for preferred locale and last visited story
 - explicit empty summary state until the summary-generation issue lands
 - gh-pages-safe static export under the `/ark-str/` base path
+- isolated `.next-dev` and `.next-export` caches so `npm run verify` does not degrade the next `npm run dev` startup

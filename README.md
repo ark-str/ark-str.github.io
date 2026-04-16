@@ -55,11 +55,12 @@ npm run verify
 
 ## Current Phase
 
-The repository is in the verification-closeout phase for the first reader iteration:
+The repository is in the dev-startup regression-recovery phase after the first reader iteration:
 
 - nested app scaffold and root harness split are complete
 - editorial archive theme tokens and shared UI primitives are established
 - `vendor/ArknightsData` and `public/generated/content/` power canonical locale reader routes
-- app-internal generated loaders under `ark-str-web-app/src/generated/content/` keep the reader export-safe for gh-pages
+- app-internal generated metadata under `ark-str-web-app/src/generated/content/` keep the reader export-safe without mirroring full story payloads into app source
+- `npm run dev` uses an isolated `.next-dev` cache and export verification uses `.next-export`, so verify no longer poisons the next local dev startup
 - `npm run verify` now validates the exported site with Playwright against the `/ark-str/` subpath
 - summary generation and character unlock extraction remain follow-up work

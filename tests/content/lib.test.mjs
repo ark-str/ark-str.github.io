@@ -3,7 +3,12 @@ import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 import assert from "node:assert/strict";
-import { resolveStorySource, selectStoryTitle } from "../../scripts/content/lib.mjs";
+import {
+  getGeneratedFilePaths,
+  resolveStorySource,
+  selectStoryTitle,
+  writeGeneratedArtifacts,
+} from "../../scripts/content/lib.mjs";
 
 test("selectStoryTitle prefers storyName then stage name then storyId", () => {
   assert.equal(
@@ -67,4 +72,78 @@ test("resolveStorySource falls back to metadata hashing when the file is missing
   assert.equal(resolved.sourceExists, false);
   assert.equal(resolved.sourceBasis, "metadata");
   assert.match(resolved.sourceHash, /^[0-9a-f]{64}$/);
+});
+
+test("writeGeneratedArtifacts keeps story payloads out of app-internal generated content", () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "ark-str-generated-"));
+  const artifacts = {
+    index: {
+      generatedAt: "2026-04-16T00:00:00.000Z",
+      vendor: {
+        source: "ArknightsAssets/ArknightsGamedata",
+        submodulePath: "vendor/ArknightsData",
+        submoduleSha: "abc123",
+        servers: [],
+      },
+      groups: [],
+      stories: [
+        {
+          server: "en",
+          storyId: "story-a",
+          groupId: "group-a",
+          stageId: null,
+          title: "Story A",
+          sortKey: 1,
+          sourcePath: "vendor/ArknightsData/en/gamedata/story/story-a.txt",
+          sourceHash: "deadbeef",
+          sourceExists: true,
+          sourceBasis: "file",
+          storyCode: null,
+          avgTag: null,
+          bodyPath: "stories/en/story-a.json",
+          bodyAvailable: true,
+        },
+      ],
+    },
+    sourceManifest: {
+      generatedAt: "2026-04-16T00:00:00.000Z",
+      vendor: { submoduleSha: "abc123" },
+      items: [],
+    },
+    summaryManifest: {
+      generatedAt: "2026-04-16T00:00:00.000Z",
+      vendor: { submoduleSha: "abc123" },
+      items: [],
+    },
+    storyDetails: [
+      {
+        locale: "en",
+        storyId: "story-a",
+        filePath: "stories/en/story-a.json",
+        detail: {
+          server: "en",
+          storyId: "story-a",
+          groupId: "group-a",
+          stageId: null,
+          title: "Story A",
+          storyCode: null,
+          avgTag: null,
+          sourcePath: "vendor/ArknightsData/en/gamedata/story/story-a.txt",
+          sourceHash: "deadbeef",
+          bodyAvailable: true,
+          blocks: [],
+        },
+      },
+    ],
+  };
+
+  writeGeneratedArtifacts(artifacts, root);
+  const filePaths = getGeneratedFilePaths(root);
+
+  assert.equal(
+    fs.existsSync(path.join(filePaths.contentRoot, "stories", "en", "story-a.json")),
+    true,
+  );
+  assert.equal(fs.existsSync(path.join(filePaths.appContentRoot, "stories")), false);
+  assert.match(fs.readFileSync(filePaths.appRegistry, "utf8"), /"en:story-a": "stories\/en\/story-a\.json"/);
 });
