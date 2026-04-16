@@ -1,6 +1,8 @@
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import type { NextConfig } from "next";
 
-const appDir = process.cwd();
+const appDir = path.dirname(fileURLToPath(import.meta.url));
 const configuredBasePath = process.env.ARK_STR_BASE_PATH?.trim() ?? "";
 const configuredDistDir = process.env.ARK_STR_DIST_DIR?.trim() ?? "";
 const normalizedBasePath =
