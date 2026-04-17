@@ -1,17 +1,16 @@
 # Latest Iteration
 
-Latest parent iteration: `#49`
+Latest parent iteration: `#52`
 
 Completed child issue:
 
-- `#50` via PR `#51` - normalize generated portrait filenames so GitHub Pages deploys pass on case-sensitive runners
+- `#53` via PR `#54` - rename tracked generated portrait assets so GitHub Pages verify uses the same lowercase paths as the generated portrait manifests
 
 Current closeout outcome:
 
-- generated portrait manifests now keep the original mixed-case `speakerId` keys but point at lowercase bundled filenames
-- portrait artifact writing and `content:check` now share the same filename normalization rule, so Linux CI no longer expects impossible mixed-case files
-- generated content artifacts were rebuilt to remove uppercase portrait paths from the app registry and portrait manifest
-- `npm run verify` passed on branch `codex-pages-portrait-casefix-issue-50`
+- the remaining case-only portrait filename mismatches under `ark-str-web-app/public/generated/portraits/speakers/` were renamed to lowercase tracked paths
+- the earlier manifest/registry hotfix from `#50` now has matching committed public assets, so Linux CI no longer fails on mixed-case portrait filenames
+- `npm run verify` passed on branch `codex-pages-portrait-rename-issue-53`
 
 Remaining product gaps:
 
