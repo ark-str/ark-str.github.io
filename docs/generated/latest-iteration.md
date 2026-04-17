@@ -1,18 +1,17 @@
 # Latest Iteration
 
-Latest parent iteration: `#47`
+Latest parent iteration: `#49`
 
 Completed child issue:
 
-- `#46` via merged PR `#48` - refine the story backdrop fade, story-width balance, and reader card surfaces
+- `#50` - normalize generated portrait filenames so GitHub Pages deploys pass on case-sensitive runners
 
 Current closeout outcome:
 
-- story-only background swaps now use a slower 0.5 second cross-fade instead of the earlier abrupt transition feel
-- the story layout now keeps the left navigation row but gives the main body and summary a broader reading surface that lines up more closely with the floating app bar width
-- in-flow background markers still drive the backdrop, but bundled preview images now preserve their full aspect ratio and the extra status chrome has been removed
-- dialogue cards now use a portrait-plus-header layout with full-width body text, while remote cutins still carry the `Wireless link` indicator in the header
-- `npm run verify` passed on branch `codex-story-surface-refinement-issue-46`
+- generated portrait manifests now keep the original mixed-case `speakerId` keys but point at lowercase bundled filenames
+- portrait artifact writing and `content:check` now share the same filename normalization rule, so Linux CI no longer expects impossible mixed-case files
+- generated content artifacts were rebuilt to remove uppercase portrait paths from the app registry and portrait manifest
+- `npm run verify` passed on branch `codex-pages-portrait-casefix-issue-50`
 
 Remaining product gaps:
 
