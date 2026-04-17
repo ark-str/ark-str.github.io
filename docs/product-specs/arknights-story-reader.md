@@ -1,7 +1,7 @@
 # Arknights Story Reader
 
 Status: active
-Phase: visual speaker portraits and npc portrait coverage
+Phase: speaker frame registry resolution
 
 ## Product Goal
 
@@ -51,6 +51,8 @@ This phase keeps the recovered reader shell and Pages deployment path stable whi
 - first-pass body rendering for dialogue, narration, scene breaks, and Doctor choice branches
 - dialogue-level `speakerId` as the shared visual lookup key for `Character(...)`, `character(...)`, and `charslot(...)` tags
 - `char_` speaker IDs are canonicalized to the first three `_`-delimited segments, while non-`char` speaker IDs keep their stripped raw token for visual portrait lookup
+- mixed `CharacterCutin`, `character` / `Character`, and `charslot` tags can coexist, and each dialogue line chooses exactly one winning active speaker frame by highest priority then most recent update
+- active frames with no resolved `speakerId` suppress lower-priority portrait guesses, while speaker-name bindings are only reused after all active frames have cleared
 - `npm run content:portraits` or `npm run content:update` can refresh the blobless `vendor/ArknightsResource/` portrait cache from `ArknightsResource/`, materialize only referenced `avgs/npcs/` portraits, and copy them into bundled app assets
 - portrait selection uses the basename-sorted first matching `avgs/npcs` file for each referenced `speakerId`
 - reader portraits render from bundled `public/generated/portraits/speakers/<speakerId>.png` assets with top-aligned full-body crops
