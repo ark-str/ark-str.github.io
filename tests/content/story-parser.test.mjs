@@ -90,6 +90,22 @@ test("parseStoryText resolves focused Character slots into operator-aware dialog
   ]);
 });
 
+test("parseStoryText ignores char_empty placeholders when only one real Character speaker remains", () => {
+  const blocks = parseStoryText(`
+[character(name="avg_npc_196_1#1",name2="char_empty",fadetime=1)]
+[name="린 위시아"]찾았다.
+`);
+
+  assert.deepEqual(blocks, [
+    {
+      type: "dialogue",
+      speakerName: "린 위시아",
+      speakerId: "avg_npc_196_1",
+      text: "찾았다.",
+    },
+  ]);
+});
+
 test("parseStoryText reuses the last resolved speaker only while the name stays the same", () => {
   const blocks = parseStoryText(`
 [Character(name="char_101_sora_1#4")]
@@ -143,7 +159,7 @@ test("parseStoryText keeps non-char visual keys on dialogue blocks without alias
 
 test("parseStoryText resolves charslot speaker ids for visual portrait lookup", () => {
   const blocks = parseStoryText(`
-[charslot(slot="m",name="avg_npc_1297_1#1$1")]
+[charslot(slot = "m", name = "avg_npc_1297_1#1$1")]
 [name="Theresis"]You're watching me, aren't you?
 `);
 
@@ -153,6 +169,124 @@ test("parseStoryText resolves charslot speaker ids for visual portrait lookup", 
       speakerName: "Theresis",
       speakerId: "avg_npc_1297_1",
       text: "You're watching me, aren't you?",
+    },
+  ]);
+});
+
+test("parseStoryText resolves spaced charslot attributes from act34side npc exchanges", () => {
+  const blocks = parseStoryText(`
+[charslot(slot = "left", name = "avg_npc_1393_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1395_1#1$1",duration = 1)]
+[charslot(slot = "left",focus="l")]
+[name="에기르 연구원 A"]……지질 조건 상으로는 잠재력이 아주 큰 화산이지만 위치가 그리 좋지는 않아.
+[charslot(slot = "r",focus="r")]
+[name="에기르 연구원 B"]기술원의 보고서를 검토해 봤군요?
+[charslot(slot = "left",focus="l")]
+[name="에기르 연구원 A"]자료에 따르면 탑의 에너지 소모는 현재보다 훨씬 더 많았다더군.
+`);
+
+  assert.deepEqual(blocks, [
+    {
+      type: "dialogue",
+      speakerName: "에기르 연구원 A",
+      speakerId: "avg_npc_1393_1",
+      text: "……지질 조건 상으로는 잠재력이 아주 큰 화산이지만 위치가 그리 좋지는 않아.",
+    },
+    {
+      type: "dialogue",
+      speakerName: "에기르 연구원 B",
+      speakerId: "avg_npc_1395_1",
+      text: "기술원의 보고서를 검토해 봤군요?",
+    },
+    {
+      type: "dialogue",
+      speakerName: "에기르 연구원 A",
+      speakerId: "avg_npc_1393_1",
+      text: "자료에 따르면 탑의 에너지 소모는 현재보다 훨씬 더 많았다더군.",
+    },
+  ]);
+});
+
+test("parseStoryText resolves mixed cutin and character frames with priority and recency", () => {
+  const blocks = parseStoryText(`
+[CharacterCutin(widgetID="1", name="char_2006_weiywfmzuki_1", style="cutin")]
+[character(name2="avg_npc_034",focus=-1)]
+[name="후미즈키"]린 선생님, 후미즈키입니다.
+[character(name2="avg_npc_034",focus=2)]
+[name="래트킹"]후미즈키 부인, 어쩐 일로 나한테 전화까지 주셨나?
+[character(name2="avg_npc_036")]
+[name="린 위시아"]후미즈키 부인 전화? 그럼 난 방해 안 할게요……
+[character(name2="avg_npc_036",focus=-1)]
+[name="후미즈키"]위시아도 있나요? 그럼 같이 받아달라 말씀 전해주실 수 있을까요?
+[CharacterCutin(widgetID="1", block=true)]
+[character]
+[name="후미즈키"]린 선생님도 그 초대장 받으셨죠?
+`);
+
+  assert.deepEqual(
+    blocks.filter((block) => block.type === "dialogue").map((block) => block.speakerId),
+    [
+      "char_2006_weiywfmzuki",
+      "avg_npc_034",
+      "avg_npc_036",
+      "char_2006_weiywfmzuki",
+      "char_2006_weiywfmzuki",
+    ],
+  );
+});
+
+test("parseStoryText resolves charslot and cutin frames together and clears slot registries", () => {
+  const blocks = parseStoryText(`
+[charslot(slot="r",name="avg_npc_175",focus="r")]
+[CharacterCutin(widgetID="1", name="avg_npc_034", style="cutin")]
+[name="Cheery Legatus"]Priority beats neutral cutin.
+[charslot(slot="r",focus="n")]
+[name="Rat King"]Neutral cutin beats de-emphasized slot.
+[CharacterCutin(widgetID="1", block=true)]
+[name="Cheery Legatus"]De-emphasized slot still binds when cutin is gone.
+[charslot]
+[name="Cheery Legatus"]Binding fallback survives after slot clear.
+`);
+
+  assert.deepEqual(
+    blocks.filter((block) => block.type === "dialogue").map((block) => block.speakerId),
+    [
+      "avg_npc_175",
+      "avg_npc_034",
+      "avg_npc_175",
+      "avg_npc_175",
+    ],
+  );
+});
+
+test("parseStoryText neutralizes all active charslot priorities for all-focus updates", () => {
+  const blocks = parseStoryText(`
+[charslot(slot="l",name="avg_369_bena_1#11$1")]
+[charslot(slot="r",name="avg_npc_152")]
+[charslot(slot="l",name="avg_369_bena_1#11$1",focus="l")]
+[name="베나"]그럼……
+[charslot(slot="l",name="avg_369_bena_1#11$1",focus="all")]
+[name="베나&애니"]사과 한 개만 줘.
+`);
+
+  assert.deepEqual(
+    blocks.filter((block) => block.type === "dialogue").map((block) => block.speakerId),
+    ["avg_369_bena_1", "avg_369_bena_1"],
+  );
+});
+
+test("parseStoryText leaves ambiguous multi-slot decimal focus without a speaker portrait", () => {
+  const blocks = parseStoryText(`
+[Character(name="avg_npc_136#4",name2="char_451_robin#3",focus=0.6)]
+[name="로빈"]지금은 움직이면 안 돼.
+`);
+
+  assert.deepEqual(blocks, [
+    {
+      type: "dialogue",
+      speakerName: "로빈",
+      speakerId: null,
+      text: "지금은 움직이면 안 돼.",
     },
   ]);
 });
