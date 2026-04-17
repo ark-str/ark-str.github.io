@@ -11,6 +11,10 @@
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "bg_ibcave"
+    },
+    {
       "type": "narration",
       "text": "ハンターが落ちる――\n――流星の如く。\nそれは深海に棲まう者にとって、滅多に見ることのない光景だ。\n欲望と陰謀に溺れ、一度として空を仰ぎ見たことのない司教が、流星を知ろうはずもない。\nしかし、彼女たちは違った。\n憂鬱と犠牲から逃れるべく、アビサルハンターが懸命に上を目指して泳ぐ時……海面へと浮上し、果てなき星空を静かに眺める時……\nハンターたちは短命の星が背負った運命を心に刻んだものだった。\nそれでも、星は――暗闇を切り開くのだ。"
     },
@@ -21,6 +25,7 @@
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "char_263_skadi",
+      "isRemote": false,
       "text": "――死になさい。"
     },
     {
@@ -34,87 +39,109 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
+      "type": "background",
+      "backgroundId": "32_RL2_cliffday"
+    },
+    {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "まずい状況だな。"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "この都市の周りには、生き物の気配すらない……"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "ここではまともな補給など期待できそうもないぞ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "……みんな、何か発見はあったか？"
     },
     {
       "type": "dialogue",
       "speakerName": "チルチャック",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "……何も。この町のほかの場所にいる連中も、言葉を話せない奴らばかりだった。"
     },
     {
       "type": "dialogue",
       "speakerName": "チルチャック",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "食べ物には反応するが、質問には答えちゃくれない。"
     },
     {
       "type": "dialogue",
       "speakerName": "チルチャック",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "物資に関しちゃ、分けてもらうどころか、こっちが残りの食料をあいつらに渡してやったくらいだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "俺もだ。この町の住居はほとんどが荒れ果ててしまっていて……"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "こんな環境で生きていけるとは思えないほどだった。"
     },
     {
       "type": "dialogue",
       "speakerName": "センシ",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "わしは市場をいくつか回ってみたが、いずれも長らく営業していない様子だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "センシ",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "つまり、この地の住民の大半が、長きにわたりまともな食事を取っていないということになる。"
     },
     {
       "type": "dialogue",
       "speakerName": "センシ",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "本当に心の痛む光景だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "マルシル",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "うーん……"
     },
     {
       "type": "dialogue",
       "speakerName": "マルシル",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "私は海辺のほうへ向かう人を追いかけてみたんだ。何か発見がないかと思ったんだけど――"
     },
     {
@@ -124,6 +151,7 @@
       "type": "dialogue",
       "speakerName": "住民A",
       "speakerId": "avg_npc_187",
+      "isRemote": false,
       "text": "あ……あァ……"
     },
     {
@@ -133,6 +161,7 @@
       "type": "dialogue",
       "speakerName": "マルシル",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "その人も、他の人たちと同じで、あてもなく海辺をさまよったり、砂浜に埋まってる食べ物でも探してるのかなって感じで砂を掘ったりしてて……"
     },
     {
@@ -142,18 +171,21 @@
       "type": "dialogue",
       "speakerName": "住民B",
       "speakerId": "avg_npc_189",
+      "isRemote": false,
       "text": "腹、減った……"
     },
     {
       "type": "dialogue",
       "speakerName": "住民A",
       "speakerId": "avg_npc_187",
+      "isRemote": false,
       "text": "鱗獣、貝、食える。"
     },
     {
       "type": "dialogue",
       "speakerName": "住民A",
       "speakerId": "avg_npc_187",
+      "isRemote": false,
       "text": "食おう、食おう。"
     },
     {
@@ -163,6 +195,7 @@
       "type": "dialogue",
       "speakerName": "センシ",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -176,102 +209,119 @@
       "type": "dialogue",
       "speakerName": "センシ",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "ううむ、なんという……"
     },
     {
       "type": "dialogue",
       "speakerName": "チルチャック",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "悲惨すぎるな……"
     },
     {
       "type": "dialogue",
       "speakerName": "チルチャック",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "役に立ちそうなものもないし、なるべく早く離れるぞ。"
     },
     {
       "type": "dialogue",
       "speakerName": "マルシル",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "この場所、本当に雰囲気が変だよね。みんなあんまり友好的とは言えないし……"
     },
     {
       "type": "dialogue",
       "speakerName": "センシ",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "センシ",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "これは推測だが。"
     },
     {
       "type": "dialogue",
       "speakerName": "センシ",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "思うに、この地の人々は長年まともな食事を取っていないせいで、周囲の物事すべてに対して無感覚になっているのだろう。"
     },
     {
       "type": "dialogue",
       "speakerName": "センシ",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "彼らにも美味いものを食べさせてやれば、感覚を取り戻させてやれるかもしれん。"
     },
     {
       "type": "dialogue",
       "speakerName": "チルチャック",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "そんなことあるか……？"
     },
     {
       "type": "dialogue",
       "speakerName": "センシ",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "うむ。お前には理解できずとも不思議ではないが、長期間にわたる食料不足に陥り、生活環境が圧迫されていくと、人間は少しずつ麻痺していくものだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "チルチャック",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "経験したような言い方だな。"
     },
     {
       "type": "dialogue",
       "speakerName": "センシ",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "センシ",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "できることなら、ここにいる人々にも腹いっぱい食わせてやりたいと思う。"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "……いずれにせよ、自分たちの食料も探さなければ、俺たちも遠くへは行けない。そうだろ、チルチャック。"
     },
     {
       "type": "dialogue",
       "speakerName": "チルチャック",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "……はぁ、そうだな。"
     },
     {
       "type": "dialogue",
       "speakerName": "チルチャック",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "ただし、先に言っておくが、物資を失ったのはお前たちがサーミでイカれて暴走しちまったせいだから、俺を当てにすんじゃねーぞ！"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "それはもちろん。"
     },
     {
@@ -281,309 +331,364 @@
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "彷徨える旅人よ。君たちは食料を探しているのでは？"
     },
     {
       "type": "dialogue",
       "speakerName": "マルシル",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "あれっ、あなた話せるの？"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "ああ。"
     },
     {
       "type": "dialogue",
       "speakerName": "マルシル",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "よかった！　私たちは――"
     },
     {
       "type": "dialogue",
       "speakerName": "チルチャック",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "待て、マルシル。ほかの連中は会話にならないのに、こいつだけ話が通じるなんて、おかしいと思わないか？"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "……そうして警戒するのも当然だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "しかし、どうか安心してほしい。私は、君たちを導くためにここへ来たのだから。"
     },
     {
       "type": "dialogue",
       "speakerName": "チルチャック",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "お前、何者だ？"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "私は、各地を渡り、人々に海の教えをもたらさんとする宣教師。"
     },
     {
       "type": "dialogue",
       "speakerName": "宣教師",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "そちらは？　イベリア人には見えないが、なぜサルヴィエントへ？"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "旅の物資を調達できないかと思って寄ったんだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "宣教師",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "見たところ、上手くいっていないようだな。"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "宣教師",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "だが、大丈夫だ。我らが来たからには、ひもじい思いはさせない。"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "……「我ら」？"
     },
     {
       "type": "dialogue",
       "speakerName": "宣教師",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "そう、我らはこの都市を守る教会の者。教会においては、誰もが皆兄弟姉妹なのだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "宣教師",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "君たちのような外から来た人間であっても、導きを聞き入れるのなら兄弟の一員と見なそう。"
     },
     {
       "type": "dialogue",
       "speakerName": "宣教師",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "我らは決して、兄弟が飢えに苦しむのを黙って見過ごしはしない。"
     },
     {
       "type": "dialogue",
       "speakerName": "マルシル",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "（なんかすごく怪しいんだけど……）"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "導きを聞くだけで飢えが解消されるのなら、素晴らしいことじゃないか？"
     },
     {
       "type": "dialogue",
       "speakerName": "チルチャック",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "その気になるなって！"
     },
     {
       "type": "dialogue",
       "speakerName": "宣教師",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "はっはっは、海の恩恵は尽きせぬものだ。その幾兆分の一ほどの恵みくらい、惜しみなく分け与えてくれるだろう。"
     },
     {
       "type": "dialogue",
       "speakerName": "宣教師",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "だが、それを得られるのは十二分に強大な者のみだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "センシ",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "どういう意味だ？"
     },
     {
       "type": "dialogue",
       "speakerName": "チルチャック",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "……多分、こいつは食べ物の在り処を知っているが、それを生きて手に入れられるとは限らないって言いたいんだろ。"
     },
     {
       "type": "dialogue",
       "speakerName": "宣教師",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "そのように理解してもらって構わない。"
     },
     {
       "type": "dialogue",
       "speakerName": "宣教師",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "リスクを冒せと強制しているわけではないのだ。ただ――"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "教えてくれ、その場所を。俺たちはそれなりに経験を積んだ冒険者だし、多少の危険なら対処できる。"
     },
     {
       "type": "dialogue",
       "speakerName": "宣教師",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "……海岸線沿いに南へ進むと、そこに一つの洞窟がある。"
     },
     {
       "type": "dialogue",
       "speakerName": "宣教師",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "その中に、君たちの望むものがあるだろう。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_ibcave"
+    },
+    {
       "type": "dialogue",
       "speakerName": "チルチャック",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "ライオス、あいつ絶対おかしいぞ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "わかってる。"
     },
     {
       "type": "dialogue",
       "speakerName": "チルチャック",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "それでも言われた通りにするつもりか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "この辺りの雰囲気が妙なのは、彼の言っていた教会と何かしらの関係があるんじゃないかと思うんだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "だから、彼の言う「導き」に従えば、何か発見があるはずだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "それに、何かが待ち伏せしていたとしても、チルチャックなら事前に察知してくれるだろう！"
     },
     {
       "type": "dialogue",
       "speakerName": "チルチャック",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "やめろ、俺に責任を押し付けるな。"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "……ん？　これは――"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "クラーケンか！　大きいなあ。"
     },
     {
       "type": "dialogue",
       "speakerName": "マルシル",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "ライオス、気をつけて！"
     },
     {
       "type": "dialogue",
       "speakerName": "チルチャック",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "大丈夫だ。こいつはもう動かない。"
     },
     {
       "type": "dialogue",
       "speakerName": "マルシル",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "えっ、死んじゃってるの？"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "このクラーケン、なんて巨大なんだ……あの宣教師が言ったことは本当だったのか！"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "見てくれ、この足、それにこの吸盤。イソギンチャクのような器官は――頭部なのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "生きているところを見てみたかったな。ちょっとした塔くらいの大きさはありそうだ。さぞかし立派だったろう。"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "……でも、クラーケンは不味いんだよな……"
     },
     {
       "type": "dialogue",
       "speakerName": "センシ",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "これはクラーケンではない。ただし、起源は共通しているように見える。"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "胃が痛くなってきた……"
     },
     {
       "type": "dialogue",
       "speakerName": "マルシル",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "こんな得体のしれないもの、絶対に食べちゃだめだからね！"
     },
     {
       "type": "dialogue",
       "speakerName": "センシ",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "同感だ。わしもこれは食べるべきではないと思う。"
     },
     {
@@ -593,6 +698,7 @@
       "type": "dialogue",
       "speakerName": "二人",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "えっ？"
     },
     {
@@ -602,12 +708,14 @@
       "type": "dialogue",
       "speakerName": "センシ",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "海洋生物は、死後体内で毒素を分泌することがある。たとえばカニなどは、死んでからそれほど経っていなくとも、病原菌に汚染されている可能性があるのだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "センシ",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "ゆえに、本気で食べようと思うのなら……"
     },
     {
@@ -617,6 +725,7 @@
       "type": "dialogue",
       "speakerName": "センシ&ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "生きた寄生虫をこの中から探すしかない！"
     },
     {
@@ -626,24 +735,28 @@
       "type": "dialogue",
       "speakerName": "マルシル",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "なんでそうなる！"
     },
     {
       "type": "dialogue",
       "speakerName": "チルチャック",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "こいつらにまともな結論を期待しても無駄だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "それにしても何者だろう、これほど巨大な生物を殺したのは。この触腕をいなすのは相当な労力がいるぞ。"
     },
     {
       "type": "dialogue",
       "speakerName": "チルチャック",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "待った、ライオス。何か聞こえる……"
     },
     {
@@ -657,24 +770,28 @@
       "type": "dialogue",
       "speakerName": "マルシル",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "うえ……なんか気持ち悪い。"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "日中でもこんなふうに輝くのか、綺麗だな……"
     },
     {
       "type": "dialogue",
       "speakerName": "マルシル",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "ダメ、これは捨てるから！"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "もったいない……おや、今何かに当たらなかったか？"
     },
     {
@@ -684,12 +801,14 @@
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_1421_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "何だ？"
     },
     {
@@ -699,6 +818,7 @@
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_1421_1",
+      "isRemote": false,
       "text": "！！"
     },
     {
@@ -708,144 +828,168 @@
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "――うわあっ！！"
     },
     {
       "type": "dialogue",
       "speakerName": "マルシル",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "どうしたの？"
     },
     {
       "type": "dialogue",
       "speakerName": "チルチャック",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "ライオス、足元！"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "――ッ！　これは、海草か？"
     },
     {
       "type": "dialogue",
       "speakerName": "センシ",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "気を付けろ。この海草を踏むと、何やら不快な感触がする。"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "ん？言われてみれば……なんだか痺れるような感覚がするな。"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "みんな、海藻は避けろ！"
     },
     {
       "type": "dialogue",
       "speakerName": "チルチャック",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "そんなこと言われたって、足の踏み場がねえよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "となると、洞窟内の植物も全部魔物だったのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "俺たちが今、この巨大なクラーケンのような魔物の巣穴にいることは間違いない。"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "そして、洞窟の中から出てきたこいつらは、どれもそのそばで生活していた共生生物だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "センシ",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "つまり……"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "全部新鮮な食材だ！"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "マルシル、この海草に魔術で火をつけてくれないか？"
     },
     {
       "type": "dialogue",
       "speakerName": "マルシル",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "えっ？"
     },
     {
       "type": "dialogue",
       "speakerName": "チルチャック",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "頭大丈夫か？　こんなとこで火をつけたら、洞窟の中の怪物たちに居場所を教えるようなもんだろ？"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "それが目的なんだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "この海草は洞窟の奥から広がっている。怪物を追って深入りすればこちらが不利になるだけだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "それなら、俺たちがここにいることを教えてやったほうがいい。"
     },
     {
       "type": "dialogue",
       "speakerName": "チルチャック",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "……そりゃあ、さぞかし熟慮の上でお出しになった結論なんでしょうね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "大丈夫、無理はしないさ。食材が十分手に入ったら、さっき来た道から撤退するから、チルチャックは外にいてくれ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "そうすれば、本当に何か起きたとしても、チルチャックが対処できるだろ。"
     },
     {
       "type": "dialogue",
       "speakerName": "チルチャック",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "……くそ、勝手にしろ。"
     },
     {
@@ -855,18 +999,21 @@
       "type": "dialogue",
       "speakerName": "センシ",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "やはり、チルチャックはまだ子供だな。"
     },
     {
       "type": "dialogue",
       "speakerName": "マルシル",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "……ねえ、ところで、ライオスは当然私が言うこと聞いてくれるものと思ってるでしょ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ライオス",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "えっ？"
     },
     {
@@ -880,6 +1027,7 @@
       "type": "dialogue",
       "speakerName": "マルシル",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "はぁ、もういい。じゃあ、耳を塞いで。"
     },
     {

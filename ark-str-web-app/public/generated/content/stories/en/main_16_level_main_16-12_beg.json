@@ -11,27 +11,35 @@
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "66_g3_miningarea"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Ksenia",
       "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
       "text": "Ahead is the tunnel where we first found Oka."
     },
     {
       "type": "dialogue",
       "speakerName": "Ksenia",
       "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
       "text": "It should have been placed under lockdown soon after... but now, it looks completely abandoned."
     },
     {
       "type": "dialogue",
       "speakerName": "Ksenia",
       "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
       "text": "The good news is that Originium particle activity has also dropped after work stopped. Infection risk should be minimal as long as you do not touch the deactivated Originium crystals."
     },
     {
       "type": "dialogue",
       "speakerName": "Mon3tr",
       "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
       "text": "I'm not detecting any other lifeforms. We should be able to get in without a fight."
     },
     {
@@ -50,8 +58,7 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -66,81 +73,93 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "Are you sure this is the right way, Ksenia?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "I don't see anything."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "Sorry. I've only been down here once before..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "Let me find the emergency power switch."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "Here it is."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "Ok, looks like this is the right way. All we need to do is to go in the opposite direction from the mine carts."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "Opposite direction? I thought we're going deeper."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "It leads to somewhere other than the mine tunnels. I don't know what it's actually for, but the carts only carry goods, not people."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "What about the cart? Can we use it?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "There are no structural issues, but it's been abandoned for so long that there's only enough emergency power for the lights. I don't think it's a good idea."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "Are you sure this is the right way, Ksenia?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "I don't see anything."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "Sorry. I've only been down here once before..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "Let me find the emergency power switch."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "Here it is."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "66_g5_deepmine"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "Ok, looks like this is the right way. All we need to do is to go in the opposite direction from the mine carts."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "Opposite direction? I thought we're going deeper."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "It leads to somewhere other than the mine tunnels. I don't know what it's actually for, but the carts only carry goods, not people."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "What about the cart? Can we use it?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "There are no structural issues, but it's been abandoned for so long that there's only enough emergency power for the lights. I don't think it's a good idea."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -155,30 +174,31 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "Mm."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "You two, get on the cart."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "What?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "Mm."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "You two, get on the cart."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "What?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -193,36 +213,38 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "Get on, Doctor. We can save time that way."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "But it won't start—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "I'll take care of it."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "Do you need me to lift you up, Doctor?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "Get on, Doctor. We can save time that way."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "But it won't start—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "I'll take care of it."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "Do you need me to lift you up, Doctor?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -232,33 +254,34 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "Are you ready?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "What are you planning—"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "—Whoa?!"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "Are you ready?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "What are you planning—"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "—Whoa?!"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -273,51 +296,55 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "It'll be fine. Just sit tight."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "Here we go!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "Thank goodness the tunnels look intact."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "But we should have started a fire before coming down... it's a lot wetter than the outside. The difference is almost as great as the Iberian coast compared to inland Ursus."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "Of course, there is a dramatic difference in temperature as well... are you alright?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "I'm fine. What about you, Doctor?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "It'll be fine. Just sit tight."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "Here we go!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "Thank goodness the tunnels look intact."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "But we should have started a fire before coming down... it's a lot wetter than the outside. The difference is almost as great as the Iberian coast compared to inland Ursus."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "Of course, there is a dramatic difference in temperature as well... are you alright?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "I'm fine. What about you, Doctor?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -332,30 +359,31 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": null,
-          "text": "I kept the speed steady."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": null,
-          "text": "Mon3tr is a very good cart driver. Or cart pusher."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": null,
-          "text": "Sounds like the problem's not on my end."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "I kept the speed steady."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Mon3tr is a very good cart driver. Or cart pusher."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Sounds like the problem's not on my end."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -370,24 +398,24 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "I'm not sure exactly when. The first sample arrived at the lab a month ago."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "That was when I learned of the appearance of this heretofore unheard-of substance in the Originium mines."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "I'm not sure exactly when. The first sample arrived at the lab a month ago."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "That was when I learned of the appearance of this heretofore unheard-of substance in the Originium mines."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -397,8 +425,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -413,36 +440,38 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": null,
-          "text": "Infected exposed to Oka in this tunnel were subject to unusual mutations."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": null,
-          "text": "Their infection readings soared, but their vital signs remained stable, 'healthy' even..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": null,
-          "text": "That sounds familiar."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": null,
-          "text": "Have you encountered other patients like this? Have they come into contact with Oka?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Infected exposed to Oka in this tunnel were subject to unusual mutations."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Their infection readings soared, but their vital signs remained stable, 'healthy' even..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "That sounds familiar."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Have you encountered other patients like this? Have they come into contact with Oka?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -457,24 +486,24 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": null,
-          "text": "In any case... the Ursine government wanted to replicate the 'miracle'."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": null,
-          "text": "I suppose they wanted a docile labor force that did not fear illness or pain... perhaps even employ them in combat."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "In any case... the Ursine government wanted to replicate the 'miracle'."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "I suppose they wanted a docile labor force that did not fear illness or pain... perhaps even employ them in combat."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -489,45 +518,49 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "I think we're getting close."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "This is as far as the rail goes. We'll have to proceed on foot."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "The three of you move forward in the darkness."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "You hear before you see. It is the heavy sound of water."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "The three of you look up and slowly open your eyes.\nYou soon realize that the light in the tunnel is not coming from outside. It is coming from the stationary liquid in front of you on the ground—and the 'waterfall' at the very end.\nIt glitters like obsidian, refracting light from a crack high above as it falls, making the cave bright as early morning after a shower."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "I think we're getting close."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "This is as far as the rail goes. We'll have to proceed on foot."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "The three of you move forward in the darkness."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "You hear before you see. It is the heavy sound of water."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "66_g6_magnetofluidwaterfall"
+    },
+    {
+      "type": "narration",
+      "text": "The three of you look up and slowly open your eyes.\nYou soon realize that the light in the tunnel is not coming from outside. It is coming from the stationary liquid in front of you on the ground—and the 'waterfall' at the very end.\nIt glitters like obsidian, refracting light from a crack high above as it falls, making the cave bright as early morning after a shower."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -537,48 +570,52 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "You can tell?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "Yes. Like an obsequent river, the Oka cannot flow outwards along the dip, so it can only flow backwards, until it lies 'still' like this."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "But it continues to flow in a way, even without external forces acting on it. That's why they named it 'Oka'—river."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "The liquid is everywhere."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "It's like a natural karst cave. You can't even tell that it used to be a mine."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "Even stranger, Oka itself is almost like water."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "You can tell?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "Yes. Like an obsequent river, the Oka cannot flow outwards along the dip, so it can only flow backwards, until it lies 'still' like this."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "But it continues to flow in a way, even without external forces acting on it. That's why they named it 'Oka'—river."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "The liquid is everywhere."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "It's like a natural karst cave. You can't even tell that it used to be a mine."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "Even stranger, Oka itself is almost like water."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -593,43 +630,45 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "Well... in a manner of speaking."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "Oka becomes highly stable after it is allowed to stand still for a while. It can even be used as a universal solvent."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "Wait! We still shouldn't touch it with bare hands—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "Oh..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "Mon3tr bends over and collects some liquid with a test tube. She is not wearing gloves, or any other form of protection.\nHer expression grows solemn as she shakes the liquid in the test tube with wet hands."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "Well... in a manner of speaking."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "Oka becomes highly stable after it is allowed to stand still for a while. It can even be used as a universal solvent."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "Wait! We still shouldn't touch it with bare hands—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "Oh..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "Mon3tr bends over and collects some liquid with a test tube. She is not wearing gloves, or any other form of protection.\nHer expression grows solemn as she shakes the liquid in the test tube with wet hands."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -639,30 +678,31 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "You should not touch it directly—I have protective equipment. You can tell me if you want a sample, and I'll collect it!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "(Whisper) Doctor... I know what this is."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "What?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "You should not touch it directly—I have protective equipment. You can tell me if you want a sample, and I'll collect it!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "(Whisper) Doctor... I know what this is."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "What?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -672,8 +712,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -688,39 +727,41 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "Oh, okay."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "Wait here. I'll be back soon."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "...Be careful."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "This liquid that they call Oka... it's Originium."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "Oh, okay."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "Wait here. I'll be back soon."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "...Be careful."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "This liquid that they call Oka... it's Originium."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -735,24 +776,24 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "It's complicated."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "Do you remember the 'Transmitter' that Rhine Lab was studying, or the 'Corazonix' that is often mentioned in Iberian alchemy?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "It's complicated."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "Do you remember the 'Transmitter' that Rhine Lab was studying, or the 'Corazonix' that is often mentioned in Iberian alchemy?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -767,18 +808,17 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "This is their prototype... or perhaps I should say, the original form."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "This is their prototype... or perhaps I should say, the original form."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -793,18 +833,17 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "Yes. A medium that reacts directly with the human body, or to store information."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "Yes. A medium that reacts directly with the human body, or to store information."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -814,60 +853,66 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "I think so..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "You understand, Doctor, that Originium is both a vehicle for information, and a vehicle for energy."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "Both the Transmitter and Corazonix re-record Originium energy through specific means, in order to record different types of information."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "The Oka here is the remnant of Originium, after its energy was extracted in an even more effective manner."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "So it's really a form of 'universal solvent', and this explains why the Infected who came into contact with Oka became 'mutated'."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "Because of its nature as drained Originium, Oka neutralize the Originium activity inside the Infected, while creating perfect conditions for the continued growth of Originium."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "It allowed the Infected to retain their vital functions temporarily, but does not change the fact that death would inevitably follow soon."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "Meanwhile, all the uninfected individuals injected with Oka died of severe rejection, due to the lack of active Originium in their bodies..."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "I think so..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "You understand, Doctor, that Originium is both a vehicle for information, and a vehicle for energy."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "Both the Transmitter and Corazonix re-record Originium energy through specific means, in order to record different types of information."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "The Oka here is the remnant of Originium, after its energy was extracted in an even more effective manner."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "So it's really a form of 'universal solvent', and this explains why the Infected who came into contact with Oka became 'mutated'."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "Because of its nature as drained Originium, Oka neutralize the Originium activity inside the Infected, while creating perfect conditions for the continued growth of Originium."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "It allowed the Infected to retain their vital functions temporarily, but does not change the fact that death would inevitably follow soon."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "Meanwhile, all the uninfected individuals injected with Oka died of severe rejection, due to the lack of active Originium in their bodies..."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -882,24 +927,24 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "This is what we feared the most..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "The Kolossal Prime Vein is drying up."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "This is what we feared the most..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "The Kolossal Prime Vein is drying up."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -919,30 +964,31 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "The rumors we heard, that Ursus is accelerating the extraction of Originium... it's all to hide the exhaustion of the ore vein."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "It began here in the northmost parts of Ursus, and it will only accelerate."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "Within four months, the Originium deposits in Ursus will drop to thirty percent of previous levels."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "The rumors we heard, that Ursus is accelerating the extraction of Originium... it's all to hide the exhaustion of the ore vein."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "It began here in the northmost parts of Ursus, and it will only accelerate."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "Within four months, the Originium deposits in Ursus will drop to thirty percent of previous levels."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -957,16 +1003,14 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "narration",
-          "text": "You did not need to ask the question. One gaze exchanged with Mon3tr, and both of you have the same name in mind.\nThe only one who could have done this—"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "narration",
+      "text": "You did not need to ask the question. One gaze exchanged with Mon3tr, and both of you have the same name in mind.\nThe only one who could have done this—"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -976,18 +1020,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "There's no one else."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "There's no one else."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -997,24 +1040,24 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "The exhaustion of the ore vein cannot be stopped or reversed."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "Ursus will collapse."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "The exhaustion of the ore vein cannot be stopped or reversed."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "Ursus will collapse."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1024,8 +1067,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1035,8 +1077,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1046,36 +1087,38 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "I have an idea!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "Oka is also a relic of the old civilization... a by-product of your experiments."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "If she caused the exhaustion of the ore vein, then there might be some useful information left within."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "See if you can read it."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "I have an idea!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "Oka is also a relic of the old civilization... a by-product of your experiments."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "If she caused the exhaustion of the ore vein, then there might be some useful information left within."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "See if you can read it."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1085,31 +1128,31 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "Our means are limited. You'll have to insert your hand, like I did when I collected the sample."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "Don't worry, it won't harm you."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "Following Mon3tr's instructions, you crouch down and immerse your hands into the liquid Oka.\nYou wait."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "Our means are limited. You'll have to insert your hand, like I did when I collected the sample."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "Don't worry, it won't harm you."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "Following Mon3tr's instructions, you crouch down and immerse your hands into the liquid Oka.\nYou wait."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1119,16 +1162,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "narration",
-          "text": "You await some kind of change, or response, like the 'miracles' that happened so many times before.\nNothing happened.\nThe product of a previous civilization seems to reject you, denying your connection to it."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "narration",
+      "text": "You await some kind of change, or response, like the 'miracles' that happened so many times before.\nNothing happened.\nThe product of a previous civilization seems to reject you, denying your connection to it."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1143,57 +1184,62 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "It's possible."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "Mon3tr! Doctor!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "Come! I found something!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "There's a hole behind the waterfall. When I climbed up and stood there—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "I heard a sound of an unusual frequency from the cave. It didn't seem natural—no, it definitely isn't natural!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "It's like... it's trying to communicate some sort of information through audio waves!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "Huh?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "It's possible."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "Mon3tr! Doctor!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "Come! I found something!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "There's a hole behind the waterfall. When I climbed up and stood there—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "I heard a sound of an unusual frequency from the cave. It didn't seem natural—no, it definitely isn't natural!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "It's like... it's trying to communicate some sort of information through audio waves!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "Huh?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1203,24 +1249,28 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "This is—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "This space was hidden behind the waterfall?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "This is—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "This space was hidden behind the waterfall?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1230,49 +1280,52 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "Listen carefully to the sound of the liquid impacting the rocks! Some of the sounds are of a particular frequency, like it's trying to draw attention to itself. It's very different, and you can definitely tell."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "I tried to decipher the ones I heard. It took a while to record the various pitches—"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "There! Did you hear that?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "All I hear is the rain! I can't even hear you speak—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "Doctor?"
-        },
-        {
-          "type": "narration",
-          "text": "You close your eyes and allow yourself to be immersed in sound.\nUntil you identify the sound that is constantly changing in frequency."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "Listen carefully to the sound of the liquid impacting the rocks! Some of the sounds are of a particular frequency, like it's trying to draw attention to itself. It's very different, and you can definitely tell."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "I tried to decipher the ones I heard. It took a while to record the various pitches—"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "There! Did you hear that?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "All I hear is the rain! I can't even hear you speak—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "Doctor?"
+    },
+    {
+      "type": "narration",
+      "text": "You close your eyes and allow yourself to be immersed in sound.\nUntil you identify the sound that is constantly changing in frequency."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1282,8 +1335,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1293,71 +1345,88 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "—Did you say you hear it—"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "The sound rushes into your consciousness. Sometimes it is formed from several high frequencies, sometimes it is short and sharp, like a meticulous music score.\nYou soon realize that it represents some sort of code, or perhaps language.\nYou try to recall all the languages that you know, categorizing them in your mind, and you soon realize that you are hearing the same word, just in different languages."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "I've copied it down..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "It's just a hunch, but if we decipher it using the standard encoding for communication between nomadic cities..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "I think it's referring to the same word, in many different languages. I could identify Ursine and Gaulish from it! I think they both mean—"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "......"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "......"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "......\nUpon the rocks, the liquid in the mine is communicating the same word at you—"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "Yes, Dr. {@nickname}.\nIf you still believe you made the right choice.\nIf you still believe in the future you described.\nThen refute me with reality, and prove to me...\nThat thing which you hold so firm..."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "—Did you say you hear it—"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "The sound rushes into your consciousness. Sometimes it is formed from several high frequencies, sometimes it is short and sharp, like a meticulous music score.\nYou soon realize that it represents some sort of code, or perhaps language.\nYou try to recall all the languages that you know, categorizing them in your mind, and you soon realize that you are hearing the same word, just in different languages."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "I've copied it down..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "It's just a hunch, but if we decipher it using the standard encoding for communication between nomadic cities..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "I think it's referring to the same word, in many different languages. I could identify Ursine and Gaulish from it! I think they both mean—"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
+      "type": "narration",
+      "text": "......"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "......"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "......\nUpon the rocks, the liquid in the mine is communicating the same word at you—"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_white"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_0_rhodes3"
+    },
+    {
+      "type": "narration",
+      "text": "Yes, Dr. {@nickname}.\nIf you still believe you made the right choice.\nIf you still believe in the future you described.\nThen refute me with reality, and prove to me...\nThat thing which you hold so firm..."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1367,18 +1436,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "What?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "What?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1388,8 +1456,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1399,18 +1466,21 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "(Whisper) You think it's a message from Priestess?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "background",
+      "backgroundId": "66_g6_magnetofluidwaterfall"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "(Whisper) You think it's a message from Priestess?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1425,8 +1495,7 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1436,24 +1505,24 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "We'll go back to the lab once Ksenia has gathered her samples."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "We must try to contact Amiya..."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "We'll go back to the lab once Ksenia has gathered her samples."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "We must try to contact Amiya..."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1468,8 +1537,7 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1479,18 +1547,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "What sound?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "What sound?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1500,39 +1567,41 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "The waterfall is pretty loud."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "Are you sure it's not just your ears ringing? Perhaps lingering effects from having to process too much information just now..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "Wait."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "Ksenia? Is that you?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "The waterfall is pretty loud."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "Are you sure it's not just your ears ringing? Perhaps lingering effects from having to process too much information just now..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "Wait."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "Ksenia? Is that you?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1542,25 +1611,28 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "What's... that—"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "Frenzied crying, frenetic breathing, thick mucous liquid dripping from the fangs.\nIts entire body is covered in a hard layer of dark-red Originium, forcing it to stand on its two hind legs.\nYou see it raise its front paws—\nNot paws. A pair of withered hands, indistinguishable from that of a human."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "What's... that—"
+    },
+    {
+      "type": "background",
+      "backgroundId": "66_g6_magnetofluidwaterfall"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "Frenzied crying, frenetic breathing, thick mucous liquid dripping from the fangs.\nIts entire body is covered in a hard layer of dark-red Originium, forcing it to stand on its two hind legs.\nYou see it raise its front paws—\nNot paws. A pair of withered hands, indistinguishable from that of a human."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1570,28 +1642,28 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": null,
-          "text": "I have the samples!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": null,
-          "text": "Why are you just standing there?"
-        },
-        {
-          "type": "narration",
-          "text": "The strange manglerbeast, which seems so removed from reality, is right behind her."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "I have the samples!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Why are you just standing there?"
+    },
+    {
+      "type": "narration",
+      "text": "The strange manglerbeast, which seems so removed from reality, is right behind her."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1601,52 +1673,56 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": null,
-          "text": "Run, Ksenia! Don't look back!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": null,
-          "text": "I'll get her. Go to the mine cart, Doctor, and we'll meet you there!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": null,
-          "text": "Go!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": null,
-          "text": "What—"
-        },
-        {
-          "type": "narration",
-          "text": "The researcher cannot help but look back as she starts running.\nShe hardly has the time to swallow her scream."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": null,
-          "text": "<i>Gosudar-batyushka</i>—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": null,
-          "text": "What is that thing?!"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Run, Ksenia! Don't look back!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "I'll get her. Go to the mine cart, Doctor, and we'll meet you there!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Go!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "What—"
+    },
+    {
+      "type": "narration",
+      "text": "The researcher cannot help but look back as she starts running.\nShe hardly has the time to swallow her scream."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "<i>Gosudar-batyushka</i>—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "What is that thing?!"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": []

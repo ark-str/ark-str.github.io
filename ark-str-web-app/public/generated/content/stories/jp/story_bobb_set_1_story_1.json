@@ -11,6 +11,10 @@
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "bg_offce"
+    },
+    {
       "type": "narration",
       "text": "面接官さんは、なぜ私が御社を選んだのかとお尋ねでしたね。でしたら、私がある町でソーシャルワーカーをしていた頃に、旧友と再会した時のことをお話しさせてください。"
     },
@@ -21,84 +25,98 @@
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "次の方、健康診断の結果はこちらへ。お名前は？"
     },
     {
       "type": "dialogue",
       "speakerName": "落ち着かない患者",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "……フリオ・ブランコ・アントニオ。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "フリオ？　あなただったのですね！"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "よかった。エリシオ、まだ俺のこと、覚えててくれたんだな。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "もちろんです。中学時代にまともに話せる友達なんて、そういませんでしたから。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "あの件の後、あなたと連絡が取れなくなって、ずっと心配していたのですよ。あれからどこへ行ったのです？　今は何を？"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "……はは。あの件って、俺たちが学校のトイレであの連中に囲まれて、俺がそのうちの一人の鼻をへし折ってやった時のことか。"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "その、折れて当然の鼻の骨一本のために、俺は退学させられそうになった。けどお前が嘆願し続けて、校長にまで直談判してくれたおかげで、退学処分を通常の処分にまで引き下げてくれたんだよな。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "だけど、結局あなたは学校を辞めることを選んだ……"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "許してくれ、エリシオ。あの時の俺は、俺たちみたいな難民の子供は学校でいじめられるだけの存在で、奴らの顔色をうかがってまであそこにいる必要はないって思い込んでたんだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "ハハ……バカだよな。学校にいれば、少なくとも成績だけは奴らと張り合えたっていうのに。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "フリオ……今はどうしているのですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "……正直に言うと、俺たちがトイレで奴らに囲まれても、手を出そうとせず話し合おうとしたお前のことを、俺は心の中では見下してた。"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "でも、お前が俺のためにしてくれたことを知ってから、お前のことを見直したんだ。ほらな、今のお前はこの町の人たちみんなを助けてる。けど、俺は相変わらず足手まといのままだ。"
     },
     {
@@ -112,18 +130,21 @@
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "病状は……かなり深刻なのですね。"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "ここではな、貧困が一番重い病気なんだ。鉱石病よりよっぽど恐ろしいぜ、友よ。"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "これにハンコを押してくれ。保険金を受け取る時に必要だって聞いた。ここは保険会社の提携機関で、ここの検査結果なら認めてくれるんだろ？"
     },
     {
@@ -133,102 +154,119 @@
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "俺の健康診断の報告書に……何か問題でも？"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "初診でこれほど病状が深刻な患者は、私もあまり見たことがありません。治療に消極的だったか……あるいは診断がかなり遅れた方でもない限り。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "最後に健康診断を受けたのはいつです？　場所は？　その時の結果を見せてもらえますか？"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "ああ、持ってる。これだ……前の何回かは、家の近くの施設で受けたんだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "これは……薬は時間通りに服用していますか？"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "おい、適当なこと言うなよ！　薬は一回も欠かさず飲んでるって、保証する！"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "ただ、薬の効き目には個人差があるだろ。そ、そうだよな？　もし万病に効く特効薬があるんなら、とっくにこの世から鉱石病はなくなってるはずだ！"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "そんなにまじまじと見なくてもいいだろう？　ただの報告書なんだから。問題ないならハンコを押してくれよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "ですが、この四半期だけであなたの源石融合率は1%近くも上昇しています。たった四半期で、です。このままでは……"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "もし基礎的な薬剤が効かないのであれば、さらなる治療プランを検討する必要があります。"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "アドバイスありがとう。考えておくよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "フリオ……もしかして、金の問題なんですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "……それ以外に何がある？　基本保険料を支払うだけで、うちはもういっぱいいっぱいなんだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "ナディが妊娠して……ああ、俺は結婚したんだ、エリシオ。病気になる前は、彼女と出会えたことが、このクソみたいな国で唯一手にした幸運だと思ってた。"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "でも今は、俺が家のお荷物になってる。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "言葉が見つかりません……フリオ。"
     },
     {
@@ -239,72 +277,84 @@
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "なあ、ここに誰もいらない薬とかないか？　余ったやつとか、保険会社からもらったサンプルとか、期限切れのとか。"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "もし本当に助けてくれる気があるなら、一箱か二箱、俺にくれないか……"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "すみません、それはできません。うちでは薬剤の受け渡しはすべて正式に記録する必要があるのです。"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "……エリシオ、昔俺たちの仲が良かった時も、俺はお前に何か頼んだりしなかっただろ？　俺は……あのクルビアの連中にだって頭を下げなかった。人に頼み事するのが一番嫌いなんだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "……すみません、フリオ。"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "わかった！　気にするな、冗談だ。自分の分の薬を受け取ったら帰るから。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "この用紙に記入してください。私たちは毎月、町で資金を募り、経済的に困難な患者さんが無料で治療を受けられるよう支援をしています……"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "お前が言うその支援とやらを受けられた奴はいるのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "います。……ごく少数ですが。"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "俺たちみたいな人間に、ただで幸運が降ってくるわけがない。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "ひとまず、この用紙に記入をしておいてください、フリオ。あなたの今四半期分の薬を取ってきますので、少々お待ちを。"
     },
     {
@@ -315,16 +365,22 @@
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "フリオ……あなたの薬です。報告書にもハンコを押しておきました。あなたの問題は、私も解決できる方法を考えます。必ず、全力を尽くしますので。"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "ああ……とにかく、ありがとな、エリシオ。ありがとう……じゃあな。"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_warehouse"
     },
     {
       "type": "narration",
@@ -334,58 +390,71 @@
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "四十五、四十六……本当に薬が一箱足りません。昨日の退勤前に私が数えた時は、数は合ってたはずです。ミックさん、もう一度薬を数え直そうと言い出すなんて、何かあったのですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "迂闊なソーシャルワーカー",
       "speakerId": "avg_npc_223",
+      "isRemote": false,
       "text": "足りないのは一箱だけか？　なあ、実は……オフィスに泥棒が入ったんじゃないかと思うんだ。昨日社員証が見つからなくなって、今朝、廊下でそれを見つけちまって。"
     },
     {
       "type": "dialogue",
       "speakerName": "迂闊なソーシャルワーカー",
       "speakerId": "avg_npc_223",
+      "isRemote": false,
       "text": "……そんな目で見ないでくれ、あんたが何度も注意してくれてたのはわかってるよ……"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "社員証を安易に机の上に置いておけば、手続きで出入りする住民の目につきます。そして社員証がなくなれば、彼らの仕業だと疑わざるを得なくなる。これはどちらにとっても無責任な行為です。"
     },
     {
       "type": "dialogue",
       "speakerName": "迂闊なソーシャルワーカー",
       "speakerId": "avg_npc_223",
+      "isRemote": false,
       "text": "はい、はい、あんたの言う通りだよ。で、最近誰か怪しい人に会ったか？"
     },
     {
       "type": "dialogue",
       "speakerName": "迂闊なソーシャルワーカー",
       "speakerId": "avg_npc_223",
+      "isRemote": false,
       "text": "ほら、本当に手続きしに来るついでに社員証を盗んで、薬を一箱盗んで、それから社員証を捨てて逃げた人がいるかもしれないだろ？"
     },
     {
       "type": "dialogue",
       "speakerName": "迂闊なソーシャルワーカー",
       "speakerId": "avg_npc_223",
+      "isRemote": false,
       "text": "でもそう考えると、なんだか不自然だな。なぜ一箱しか盗まないんだ？　まさか違う可能性があるとか？"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "根拠もなく誰かを疑うのはやめましょう。あなたは社員証をしっかり管理してください。なくなった薬のことは私がなんとかします。"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_indoor_u"
     },
     {
       "type": "narration",
@@ -398,54 +467,63 @@
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "（声を潜めて）エリシオ……？　どうしてここに……！"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "あなたの登録資料に住所が書いてありました。突然の訪問をお許しください。少し心配になりまして。あなたと奥さんは問題なく生活できていますか？"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "（声を潜めて）ああ……ああ、見ての通りだ。昨日はお前に話しかけるべきじゃなかったのかもな……とにかく、俺たちのことは心配しないでくれ。"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "（声を潜めて）家の中は散らかっているし、ろくな食い物もない。コーヒーだって出がらしを何度も淹れ直してるくらいだ。だから中に入れてやれないが、許してくれ。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "せめて、奥さんにご挨拶させていただくだけでも……"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "（声を潜めて）彼女は妊娠がわかったばかりで、医者からは安静にしてろって言われてるんだ。帰ってくれ、エリシオ。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "女性の声",
       "speakerId": null,
+      "isRemote": false,
       "text": "あなた、聞き覚えのある名前が聞こえたけど、もしかして例の同級生？"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "ナディ、安静にしてろって言っただろう！？　エリシオは……もう帰るところだ、俺が見送る。いや、お前はこっちに来なくていい……"
     },
     {
@@ -455,18 +533,21 @@
       "type": "dialogue",
       "speakerName": "ナディ",
       "speakerId": "avg_npc_1043_1",
+      "isRemote": false,
       "text": "こんにちは、エリシオさん。ナディです。あなたのことは、フリオからいつも聞いてるわ。ありがとう、私たちのことを助けてくれて。中でコーヒーでもどうかしら？"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "いや……"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "それじゃあ、お言葉に甘えて。"
     },
     {
@@ -476,24 +557,28 @@
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "俺がお湯を入れるよ、ナディ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ナディ",
       "speakerId": "avg_npc_1043_1",
+      "isRemote": false,
       "text": "いいえ、休むべきなのは、あなたのほうよ。私はそこまで弱ってないわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "……自分でやりますので、お構いなく。"
     },
     {
@@ -507,42 +592,49 @@
       "type": "dialogue",
       "speakerName": "ナディ",
       "speakerId": "avg_npc_1043_1",
+      "isRemote": false,
       "text": "フリオは、あなたによくしてもらったことをずっと覚えてるの。外で何か嫌なことがあると、いつも中学時代を懐かしんで。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "こちらこそ、あの頃はずいぶんお世話になりましたよ。彼は自分の身を挺するような人でした。"
     },
     {
       "type": "dialogue",
       "speakerName": "ナディ",
       "speakerId": "avg_npc_1043_1",
+      "isRemote": false,
       "text": "そうね、自分の身を挺して……そういえば、あなたが助けてくれたこと、ちゃんとお礼を言わないと。昨日……"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "コホン！　昨日、ナディが妊娠してる話をエリシオにしたから、わざわざ様子を見に来てくれたんだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ナディ",
       "speakerId": "avg_npc_1043_1",
+      "isRemote": false,
       "text": "あなた、話を遮らないで。大事なことなんだから、ちゃんとお礼しないと。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "大事なこととは？"
     },
     {
       "type": "dialogue",
       "speakerName": "ナディ",
       "speakerId": "avg_npc_1043_1",
+      "isRemote": false,
       "text": "薬のことよ。あなたがくれた、あの薬。"
     },
     {
@@ -553,151 +645,183 @@
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "……薬。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "……いえ、大したことではありません。お気になさらず。"
     },
     {
       "type": "dialogue",
       "speakerName": "ナディ",
       "speakerId": "avg_npc_1043_1",
+      "isRemote": false,
       "text": "それは社交辞令だってわかってるわ。薬一箱は、あなたにとっても些細なことじゃないはずよ。でも、私たちには本当にそれが必要なの。"
     },
     {
       "type": "dialogue",
       "speakerName": "ナディ",
       "speakerId": "avg_npc_1043_1",
+      "isRemote": false,
       "text": "子供が生まれるまで、あと半年。私たち夫婦は、子供に父親の顔を見せてあげたいの。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "フリオが積極的に治療を受ければ……"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "……もう遅い時間だ、エリシオ。駅まで送るよ。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "29_g8_alley_n"
+    },
+    {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "薬が必要なのは、あと半年生きないといけないからだというのは、どういうことですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "勘弁してくれ、エリシオ……"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "一体何があったのです？"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "（顔を覆って泣き出す）お前は、そんなに俺を追い詰めたいのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "フリオ……"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "ナディも……感染したんだ……俺たちは同じラインで働いてて、同じ事故で感染したんだよ……"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "……！"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "保険の契約書を読み込んだんだ。感染者が稼げる金じゃ、保険料を払ったらほとんど何も残らない……"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "俺のほうが病状は重いが、彼女は妊娠してる。あまり衰弱させるわけにはいかない。"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "話し合った結果、これが一番割に合う選択だったんだ――保険は俺一人の分だけ加入して、薬は彼女が飲む。そうすれば彼女は感染したことを隠したまま、普通の、もっと報酬の高い仕事を探せる。"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "そして俺は……"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "……死亡保険金。患者が一年以内に鉱石病で死亡した場合、一時金が支払われる……"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "母親が薬を服用し、子供の出産を確実なものにする。そして自分は一年以内に死ぬことで、彼女らに治療費と生活費を残す。それが、あなたたちの計画だったのですね。"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "でも、このままじゃ俺は半年ももたないかもしれない。だからお前がちょうど近くで働いてるって聞いた時、お前に助けてもらおうって考えが浮かんだんだ……"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "病状の悪化がこんなに早けりゃ、他の奴ならハンコを押してくれないだろう。それに、もしお前が薬を一箱都合つけてくれたら、俺ももう少し長くもつかもしれないと思って……"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "でも、お前に迷惑はかけたくなかったから、他の奴の社員証を盗んだんだ……"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "全部話しちまった。ああなんてこった、本当に全部……俺はなんてバカなことをやっちまったんだ……エリシオ、通報しないでくれ、な？　頼むよ……"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_offce"
     },
     {
       "type": "narration",
@@ -717,87 +841,105 @@
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "エリシオさんでいらっしゃいますか？　こんにちは、私はスコット議員の補佐官です。スコット議員があなたの記事をお読みになり、ご友人の病状を大変心配され、援助をしたいと申しております。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "こんにちは……あの、スコット議員というのは、あのスコット議員のことでしょうか？　確か、以前に援助をお願いするメールをお送りしたと思いますが。"
     },
     {
       "type": "dialogue",
       "speakerName": "議院の助手",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "ハハッ……議員は毎日大量のメールを受け取るので、すぐご返信できなかったことはご容赦ください。これからは同じ目標に向かって努力するのですから、結果としては良かったではありませんか。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "（長いため息をつく）はい。それで、私は何をすればよろしいのでしょうか？"
     },
     {
       "type": "dialogue",
       "speakerName": "議院の助手",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "あなたがこれ以上何かをする必要はありません。こちらとしては、先方の連絡先をご提供いただければと。以降は、我々が直接先方とやり取りします。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "スコット議員がどのような援助をしてくださるのか、お伺いしてもよろしいですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "議院の助手",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "バラエティ番組です。スコット議員は、テレビのバラエティ番組で彼の救済計画を発表されるのです。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_indoor_u"
+    },
+    {
       "type": "dialogue",
       "speakerName": "司会者",
       "speakerId": null,
+      "isRemote": false,
       "text": "ここが、フリオとナディの家です。"
     },
     {
       "type": "dialogue",
       "speakerName": "司会者",
       "speakerId": null,
+      "isRemote": false,
       "text": "親の世代がボリバル出身である多くの人々と同じように、フリオ夫婦は三十年間も修繕されていない家に住みながら、来る日も来る日も低賃金の労働に明け暮れてきました。"
     },
     {
       "type": "dialogue",
       "speakerName": "司会者",
       "speakerId": null,
+      "isRemote": false,
       "text": "しかし、その夜はいつもとは違いました。源石ボイラーの爆発音と共に、この若い夫婦の運命もまた変えられてしまったのです。"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "（大げさな口調で）ナディ、ナディ……なんてことだ、お前も感染してしまったのか。大丈夫、二人で支え合えば、きっとこの苦難を乗り越えられるさ！"
     },
     {
       "type": "dialogue",
       "speakerName": "ナディ",
       "speakerId": "avg_npc_1043_1",
+      "isRemote": false,
       "text": "コホン……あなた、実は今日、あなたに良い知らせを伝えたかったの……でも今となっては、それが良い知らせなのか悪い知らせなのか、私にはわからないわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ナディ",
       "speakerId": "avg_npc_1043_1",
+      "isRemote": false,
       "text": "私、妊娠したの。"
     },
     {
       "type": "dialogue",
       "speakerName": "フリオ",
       "speakerId": "avg_npc_523_1",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -808,6 +950,10 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "38_g13_trimountlivingroom"
+    },
+    {
       "type": "narration",
       "text": "スコット議員のオフィスの外では、その回のバラエティ番組が流れている。病人は病んだ体を引きずり、自らが経験した苦痛をカメラの前で演じる。\n彼らは自らの弱さと無力さを万人の前に晒さなければならない。そうして初めて、彼らの恩人は視聴者の前で「舞い降り」、彼らに救いの手を差し伸べることができるのだ……\n私はそれについてコメントするつもりはない。彼らは助けを得た。私が与えることのできなかった助けを。だからこそ、私はスコット議員のオフィスへと向かった。"
     },
@@ -815,195 +961,238 @@
       "type": "dialogue",
       "speakerName": "議院の助手",
       "speakerId": "avg_npc_222",
+      "isRemote": false,
       "text": "ええっと、エリ……シオさん、ですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "以前ご連絡をいただいた者です。フリオとナディへの援助を求める記事を書きました。"
     },
     {
       "type": "dialogue",
       "speakerName": "議院の助手",
       "speakerId": "avg_npc_222",
+      "isRemote": false,
       "text": "ああ、あなたでしたか。本日はどのようなご用件で？"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "フリオが出演した番組を拝見しました。番組の最後で、スコット議員が感染者たちの負担を軽減するため、地域社会と協力すると宣言されていました。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "私はちょうど関連業務を担当しておりまして、本日はその協力についてお話し合いをしに参りました。"
     },
     {
       "type": "dialogue",
       "speakerName": "議院の助手",
       "speakerId": "avg_npc_222",
+      "isRemote": false,
       "text": "なるほど、それは素晴らしい……失礼ですが、ご予約は？"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "しておりません。"
     },
     {
       "type": "dialogue",
       "speakerName": "議院の助手",
       "speakerId": "avg_npc_222",
+      "isRemote": false,
       "text": "それでしたら、また日を改めてお越しください。残念ながらスコット議員のスケジュールは、本日もう一杯で。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "38_g13_trimountlivingroom"
+    },
+    {
       "type": "dialogue",
       "speakerName": "議院の助手",
       "speakerId": "avg_npc_222",
+      "isRemote": false,
       "text": "エリシオさん、またいらっしゃったんですね。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "面会の予約をメールでいたしましたが、ご返信をいただけなかったので。"
     },
     {
       "type": "dialogue",
       "speakerName": "議院の助手",
       "speakerId": "avg_npc_222",
+      "isRemote": false,
       "text": "以前申し上げました通り、スコット議員は普段大変お忙しく、すべてのメールに目を通されるとは限りません。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "でしたら、私が観察した感染者たちが現在直面している困難をまとめた文書を作成しましたので、スコット議員にお渡しいただけますでしょうか。"
     },
     {
       "type": "dialogue",
       "speakerName": "議院の助手",
       "speakerId": "avg_npc_222",
+      "isRemote": false,
       "text": "問題ありません。もちろんお渡しいたします。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "議員にお伝えください。メールの返信をお待ちしています、と。"
     },
     {
       "type": "dialogue",
       "speakerName": "議院の助手",
       "speakerId": "avg_npc_222",
+      "isRemote": false,
       "text": "承知しました。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "38_g13_trimountlivingroom"
+    },
+    {
       "type": "dialogue",
       "speakerName": "議院の助手",
       "speakerId": "avg_npc_222",
+      "isRemote": false,
       "text": "エリシオさん、またあなたですか。この数ヶ月、毎週のように来ていますね。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "私が彼らのためにできることは、「粘り続ける」ことだけです。ですが、スコット議員にはもっと多くのことができるはずです。"
     },
     {
       "type": "dialogue",
       "speakerName": "議院の助手",
       "speakerId": "avg_npc_222",
+      "isRemote": false,
       "text": "全く同感です。スコット議員には、あなたがまとめられた文書に目を通すよう、改めてお伝えします。議員は本日、オフィスにおりませんので、この場はお引き取りください。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "……また来ます。"
     },
     {
       "type": "dialogue",
       "speakerName": "議院の助手",
       "speakerId": "avg_npc_222",
+      "isRemote": false,
       "text": "……エリシオさん、あなたも本当はわかっているでしょう？　一度のショーは彼に多くのものをもたらしますが、これ以上介入したとして――「あの層」が議員に何をもたらせるというのですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "……ご忠告感謝します。仰ることは理解できました……もう来ることはありません。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "38_g2_colombiaoffice"
+    },
+    {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "以上が御社を志望した理由です。"
     },
     {
       "type": "dialogue",
       "speakerName": "赤心社人事",
       "speakerId": "avg_npc_1260_1",
+      "isRemote": false,
       "text": "お話しいただき、ありがとうございます。しかし、あなたはまだ、なぜ赤心社を志望されたのかという問いにはお答えになっていません。"
     },
     {
       "type": "dialogue",
       "speakerName": "赤心社人事",
       "speakerId": "avg_npc_1260_1",
+      "isRemote": false,
       "text": "先ほどのお話は、あなたは現実を認識し、名声のみを追う議員にこれ以上時間を浪費することはないと決めた、と。そう話しているだけのように聞こえます。"
     },
     {
       "type": "dialogue",
       "speakerName": "赤心社人事",
       "speakerId": "avg_npc_1260_1",
+      "isRemote": false,
       "text": "では、なぜ私たちを選ばれたのですか？　当時、あなたの訴えに応えたのが私たちだけだったからですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "私の友人は特別なショーのおかげで援助を得られましたが、私が目にしてきた感染者たちの境遇は、それによって何一つ変わっていません。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "家族全員で一つの薬を分け合う患者。病状の進行を隠すために血液検査で不正をする患者。経済的なプレッシャーと周囲の視線から逃げるために、自ら命を絶つことを選ぶ患者……"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "私には、彼ら一人ひとりのためにショーを用意し、資金を提供してくれるスポンサーを見つけることなどできません……"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "それどころか、私の提案が有効かどうかさえ、知ることができません。誰もそれに目を通さなければ、批判も肯定もされることはないのですから。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "私がここへ来たのは、協力を求めるためです。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリシオ",
       "speakerId": "avg_487_bobb_1",
+      "isRemote": false,
       "text": "一人や二人では変えられないことも、同じ目標を持つ人々がもっと多く集まって努力すれば、結果は変わるのではないでしょうか？　私は試してみたいのです。"
     },
     {

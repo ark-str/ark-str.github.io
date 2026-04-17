@@ -11,6 +11,10 @@
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "60_g13_rhodesdeck_origin"
+    },
+    {
       "type": "narration",
       "text": "たった今起きた出来事を理解する間もなく、ケルシーはあなたの視界から完全に消え去った……\n甲板には、ただ彼女の外套だけがぽつんと残されていた。"
     },
@@ -18,6 +22,7 @@
       "type": "dialogue",
       "speakerName": "Mon3tr",
       "speakerId": null,
+      "isRemote": false,
       "text": "（苦しげな雄たけび）"
     },
     {
@@ -31,12 +36,14 @@
       "type": "dialogue",
       "speakerName": "プリースティス",
       "speakerId": "avg_npc_1718_1",
+      "isRemote": false,
       "text": "AMa-10も、私にとって自慢の作品だったわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "プリースティス",
       "speakerId": "avg_npc_1718_1",
+      "isRemote": false,
       "text": "これは決して私の期待していた結果ではないの。"
     },
     {
@@ -55,47 +62,48 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "プリースティス",
-          "speakerId": "avg_npc_1718_1",
-          "text": "すでにコードネームがあるでしょう。さらに名前を付けることに意味があるとは思えないわ。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "プリースティスが甲板に残された繭状の物体に近付く。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "――ドクター下がってください！　Mon3trは私が守ります！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "糸がアーミヤのアーツユニットから散り、プリースティスの歩みを阻もうとする……\nしかし地面の源石がおかしな角度から生えてきて、アーミヤのあらゆるアーツを吸収する。\nあなたにはアーミヤが非常に苦しんでいるのが見て取れた。\n目の前に二つの存在があった。あまりにも強大で抗う術も見当たらないプリースティスと、そしてケルシーが唯一残したもの――"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "プリースティス",
-          "speakerId": "avg_npc_1718_1",
-          "text": "AMa-10を助けたいの？"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "プリースティス",
+      "speakerId": "avg_npc_1718_1",
+      "isRemote": false,
+      "text": "すでにコードネームがあるでしょう。さらに名前を付けることに意味があるとは思えないわ。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "プリースティスが甲板に残された繭状の物体に近付く。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "――ドクター下がってください！　Mon3trは私が守ります！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "糸がアーミヤのアーツユニットから散り、プリースティスの歩みを阻もうとする……\nしかし地面の源石がおかしな角度から生えてきて、アーミヤのあらゆるアーツを吸収する。\nあなたにはアーミヤが非常に苦しんでいるのが見て取れた。\n目の前に二つの存在があった。あまりにも強大で抗う術も見当たらないプリースティスと、そしてケルシーが唯一残したもの――"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "プリースティス",
+      "speakerId": "avg_npc_1718_1",
+      "isRemote": false,
+      "text": "AMa-10を助けたいの？"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -105,38 +113,39 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "プリースティス",
-          "speakerId": "avg_npc_1718_1",
-          "text": "私もあれを直したいわ。あなたと同じようにね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "プリースティス",
-          "speakerId": "avg_npc_1718_1",
-          "text": "AMa-10は、私たち二人の期待を背負っていたのに加えて、私にとって極めて重要な記録も保存していたから。"
-        },
-        {
-          "type": "narration",
-          "text": "先ほどの衝撃は強く、あなたはまだ回復していない。\n目の前の脅威に対して、悲しむ余力すら残っていない。\nプリースティスはこれからどのような行動を取るのだろうか？　そして、あなたはアーミヤを守るためにどうするべきか……\nプリースティスがあなたの心中を察しているのは明らかだ――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "プリースティス",
-          "speakerId": "avg_npc_1718_1",
-          "text": "ねえDr.{@nickname}、どうして……私を恐れているの？"
-        },
-        {
-          "type": "narration",
-          "text": "彼女があなたに近付いてくる。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "プリースティス",
+      "speakerId": "avg_npc_1718_1",
+      "isRemote": false,
+      "text": "私もあれを直したいわ。あなたと同じようにね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "プリースティス",
+      "speakerId": "avg_npc_1718_1",
+      "isRemote": false,
+      "text": "AMa-10は、私たち二人の期待を背負っていたのに加えて、私にとって極めて重要な記録も保存していたから。"
+    },
+    {
+      "type": "narration",
+      "text": "先ほどの衝撃は強く、あなたはまだ回復していない。\n目の前の脅威に対して、悲しむ余力すら残っていない。\nプリースティスはこれからどのような行動を取るのだろうか？　そして、あなたはアーミヤを守るためにどうするべきか……\nプリースティスがあなたの心中を察しているのは明らかだ――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "プリースティス",
+      "speakerId": "avg_npc_1718_1",
+      "isRemote": false,
+      "text": "ねえDr.{@nickname}、どうして……私を恐れているの？"
+    },
+    {
+      "type": "narration",
+      "text": "彼女があなたに近付いてくる。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -151,16 +160,18 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "narration",
-          "text": "あなたとアーミヤは足元に広がる源石のせいで身動きが取れない。\nプリ―スティスが近付いてくる。これほどの至近距離から彼女を見るのは初めてだった。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "narration",
+      "text": "あなたとアーミヤは足元に広がる源石のせいで身動きが取れない。\nプリ―スティスが近付いてくる。これほどの至近距離から彼女を見るのは初めてだった。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_graduate"
     },
     {
       "type": "choice",
@@ -170,42 +181,45 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "……君を守る。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "私が約束したように。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "私はアーミヤを守る、そして君を守ると約束した。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "君の命が尽きるまで守り抜くことが私の責務だ、ドクター。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "しかし、私は君を恨み続ける。私にはロスモンティスを教育する資格はない……ましてや批判するなどもっての外だ。私自身、いずれ耐えきれなくなり君に復讐してしまう可能性を恐れているからだ。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "……君を守る。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "私が約束したように。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "私はアーミヤを守る、そして君を守ると約束した。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "君の命が尽きるまで守り抜くことが私の責務だ、ドクター。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "しかし、私は君を恨み続ける。私にはロスモンティスを教育する資格はない……ましてや批判するなどもっての外だ。私自身、いずれ耐えきれなくなり君に復讐してしまう可能性を恐れているからだ。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -215,35 +229,35 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "narration",
-          "text": "同じような光景、同じような言葉……しかし今とは異なる感情、時代が、あなたの記憶の空白に橋を架けた。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "何を……思い出した？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "「プリースティス」。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "narration",
+      "text": "同じような光景、同じような言葉……しかし今とは異なる感情、時代が、あなたの記憶の空白に橋を架けた。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "何を……思い出した？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "「プリースティス」。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -253,42 +267,50 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "narration",
-          "text": "いいや。今回、あなたがまず思い出したのはケルシーだ。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "あなたが信頼する医者は、まだここにいるような気がする。\nあなたは、ケルシーが残した手がかりを「文明の存続」の中で探索していた時のことを思い出した――\n全ての鍵を繋げた後に明かされた、ケルシーがあなた宛てに残した言葉を――\n「私は忘れたことがない。」"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "オラクル",
-          "speakerId": null,
-          "text": "（小声の未知の言語）君が宙の果てのどの地域からの来訪者かはわからないが、その時にこの文明が眠りについていたなら、自分の代わりに我々の残したビーコンを見に行ってくれ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "オラクル",
-          "speakerId": null,
-          "text": "（小声の未知の言語）それは我々の祝福……そして最後に贈る希望となるかもしれない。"
-        },
-        {
-          "type": "narration",
-          "text": "あなたは今や確信を抱いている――あの人物は、確かに時を超えてあなたのことを見つめていたのだ。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "narration",
+      "text": "いいや。今回、あなたがまず思い出したのはケルシーだ。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "あなたが信頼する医者は、まだここにいるような気がする。\nあなたは、ケルシーが残した手がかりを「文明の存続」の中で探索していた時のことを思い出した――\n全ての鍵を繋げた後に明かされた、ケルシーがあなた宛てに残した言葉を――\n「私は忘れたことがない。」"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "60_g1_rhodescorridor_bc"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "オラクル",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "（小声の未知の言語）君が宙の果てのどの地域からの来訪者かはわからないが、その時にこの文明が眠りについていたなら、自分の代わりに我々の残したビーコンを見に行ってくれ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "オラクル",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "（小声の未知の言語）それは我々の祝福……そして最後に贈る希望となるかもしれない。"
+    },
+    {
+      "type": "narration",
+      "text": "あなたは今や確信を抱いている――あの人物は、確かに時を超えてあなたのことを見つめていたのだ。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "60_g13_rhodesdeck_origin"
     },
     {
       "type": "choice",
@@ -303,8 +325,7 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -314,24 +335,24 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "公式――！？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "ケルシー先生が、あれは特殊媒体の伝送時におけるメタ情報のロスを減らすものだと言っていました……"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "公式――！？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "ケルシー先生が、あれは特殊媒体の伝送時におけるメタ情報のロスを減らすものだと言っていました……"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -341,8 +362,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -352,18 +372,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "私は何をすればいいんでか？"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "私は何をすればいいんでか？"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -373,16 +392,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "narration",
-          "text": "躊躇っている暇などはない。アーミヤはその言葉を聞いた瞬間に行動に出ていた。\nあなたは再びアーミヤと思考を共有した。あなたがかつて行った全ての研究が、再び脳内に浮かび上がる。\n直感と、すでに得た研究成果を頼りに、あなたは例の公式たちを分解し、変換し、そして逆転させた……\nその行為が問題を完全に解決するものではないと知っていてなお、今この瞬間、あなたはそれが役に立つと祈るしかなかった――\nケルシーのために。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "narration",
+      "text": "躊躇っている暇などはない。アーミヤはその言葉を聞いた瞬間に行動に出ていた。\nあなたは再びアーミヤと思考を共有した。あなたがかつて行った全ての研究が、再び脳内に浮かび上がる。\n直感と、すでに得た研究成果を頼りに、あなたは例の公式たちを分解し、変換し、そして逆転させた……\nその行為が問題を完全に解決するものではないと知っていてなお、今この瞬間、あなたはそれが役に立つと祈るしかなかった――\nケルシーのために。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -392,53 +409,56 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "わかりました、ドクター！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "Logosさんから教わったように、ドクターの頭の中にあるものを私のアーツの中に編み込んで――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "それから――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "止まって！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "アーミヤのアーツの余波があなたたちを封じ込めようとする源石を弾いた。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "プリースティス",
-          "speakerId": "avg_npc_1718_1",
-          "text": "これは……？"
-        },
-        {
-          "type": "narration",
-          "text": "あなたたちの動きを再び制限すべく迫ってきていた源石がアーツに阻まれる。結晶の無数の面が、アーミヤの姿を映し出した。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "わかりました、ドクター！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "Logosさんから教わったように、ドクターの頭の中にあるものを私のアーツの中に編み込んで――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "それから――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "止まって！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "アーミヤのアーツの余波があなたたちを封じ込めようとする源石を弾いた。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "プリースティス",
+      "speakerId": "avg_npc_1718_1",
+      "isRemote": false,
+      "text": "これは……？"
+    },
+    {
+      "type": "narration",
+      "text": "あなたたちの動きを再び制限すべく迫ってきていた源石がアーツに阻まれる。結晶の無数の面が、アーミヤの姿を映し出した。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -448,40 +468,42 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "……できるだけ持ちこたえます――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "ですが源石が押し寄せてくるスピードが上がっています……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "もっと、頑張ればきっと！　私ならできます！"
-        },
-        {
-          "type": "narration",
-          "text": "あなたはアーミヤの揺るぎない眼差しを見たが、それでも心には大きな懸念があった。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "プリースティス",
-          "speakerId": "avg_npc_1718_1",
-          "text": "あなたは、自分がどのような力を扱っているのかをわかっていないわ。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "……できるだけ持ちこたえます――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "ですが源石が押し寄せてくるスピードが上がっています……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "もっと、頑張ればきっと！　私ならできます！"
+    },
+    {
+      "type": "narration",
+      "text": "あなたはアーミヤの揺るぎない眼差しを見たが、それでも心には大きな懸念があった。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "プリースティス",
+      "speakerId": "avg_npc_1718_1",
+      "isRemote": false,
+      "text": "あなたは、自分がどのような力を扱っているのかをわかっていないわ。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -491,45 +513,48 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "私のアーツは源石の進攻を抑えるだけではなく、彼女の状態も感知できるようです……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "彼女は想像していたほど無敵の存在ではありません――"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "プリースティス",
-          "speakerId": "avg_npc_1718_1",
-          "text": "確かに私は早く目覚めすぎたわ。源石がこの星を同化する速度が私の当初の想定よりも遅かったの。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "プリースティス",
-          "speakerId": "avg_npc_1718_1",
-          "text": "加えてあの二人のテラ人の無謀な行動のせいで、予想通りに源石を扱うこともできないし……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "プリースティス",
-          "speakerId": "avg_npc_1718_1",
-          "text": "とはいえ、私たちが開発した技術が軽率に使われたところで、すでに定まった事実を変えられるわけではないけれど。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "私のアーツは源石の進攻を抑えるだけではなく、彼女の状態も感知できるようです……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "彼女は想像していたほど無敵の存在ではありません――"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "プリースティス",
+      "speakerId": "avg_npc_1718_1",
+      "isRemote": false,
+      "text": "確かに私は早く目覚めすぎたわ。源石がこの星を同化する速度が私の当初の想定よりも遅かったの。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "プリースティス",
+      "speakerId": "avg_npc_1718_1",
+      "isRemote": false,
+      "text": "加えてあの二人のテラ人の無謀な行動のせいで、予想通りに源石を扱うこともできないし……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "プリースティス",
+      "speakerId": "avg_npc_1718_1",
+      "isRemote": false,
+      "text": "とはいえ、私たちが開発した技術が軽率に使われたところで、すでに定まった事実を変えられるわけではないけれど。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -539,16 +564,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "narration",
-          "text": "ピンク色の糸がアーミヤのアーツユニットから噴き出し、源石に封じられた空間の中で舞う。\nあなたには、アーミヤが今まさに大きな圧力に耐えていることが手に取るように理解できる。\nプリースティスの姿も源石に完全に遮られた……\n源石の欠片一つ一つに、そして源石結晶の面一つ一つに、はっきりとプリースティスの目が映っている。\nまるで……"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "narration",
+      "text": "ピンク色の糸がアーミヤのアーツユニットから噴き出し、源石に封じられた空間の中で舞う。\nあなたには、アーミヤが今まさに大きな圧力に耐えていることが手に取るように理解できる。\nプリースティスの姿も源石に完全に遮られた……\n源石の欠片一つ一つに、そして源石結晶の面一つ一つに、はっきりとプリースティスの目が映っている。\nまるで……"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -558,61 +581,66 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "ドクター、新しいアーツをより効率的に使う方法をテレジアさんが教えてくれています！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "一時的に彼女の源石に対する支配を弱めることができていると思います。もうしばらくは足止めできるはずです――"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "アーミヤのアーツが出力全開で解き放たれた瞬間、あなたを奮い立たせる声が脳内で響いた。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mantra",
-          "speakerId": null,
-          "text": "ドクター、アーミヤ、我々はすでにAbyssに入っている。今、我々に対する源石の干渉が瞬きにも満たぬ間だけ弱まった。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "……今ので……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mantra",
-          "speakerId": null,
-          "text": "Raidianが我々の間の接続を迅速に再確立したが、油断ならない状況であり、今は辛うじてアーツでRaidianをサポートしている。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mantra",
-          "speakerId": null,
-          "text": "それと、彼女がケルシー医師の生体反応を検知できないらしい。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mantra",
-          "speakerId": null,
-          "text": "今どこにいる？　そちらはどういった状況だ？"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "ドクター、新しいアーツをより効率的に使う方法をテレジアさんが教えてくれています！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "一時的に彼女の源石に対する支配を弱めることができていると思います。もうしばらくは足止めできるはずです――"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "アーミヤのアーツが出力全開で解き放たれた瞬間、あなたを奮い立たせる声が脳内で響いた。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mantra",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "ドクター、アーミヤ、我々はすでにAbyssに入っている。今、我々に対する源石の干渉が瞬きにも満たぬ間だけ弱まった。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "……今ので……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mantra",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Raidianが我々の間の接続を迅速に再確立したが、油断ならない状況であり、今は辛うじてアーツでRaidianをサポートしている。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mantra",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "それと、彼女がケルシー医師の生体反応を検知できないらしい。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mantra",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "今どこにいる？　そちらはどういった状況だ？"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -622,8 +650,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -633,8 +660,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -644,8 +670,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -655,60 +680,74 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ワルファリン",
-          "speakerId": "avg_171_bldsk_1",
-          "text": "ドクターの話は聞こえたな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ワルファリン",
-          "speakerId": "avg_171_bldsk_1",
-          "text": "恐れるでない、Lancet-2がそなたらのデータ測定を支援する。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Lancet-2",
-          "speakerId": "char_285_medic2",
-          "text": "かしこまりました、ワルファリン先生！　ご期待に沿えるよう努めます！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ワルファリン",
-          "speakerId": "avg_171_bldsk_1",
-          "text": "忘れるでないぞ。艦外に退避した後は、ケルシーの当初の計画に従い周囲に新たな隔離帯を設けるのだ！　決してよく分からぬものが外に漏れ出すことのないようにな！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Lancet-2",
-          "speakerId": "char_285_medic2",
-          "text": "ワルファリン先生は一緒に行かれないのですか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ワルファリン",
-          "speakerId": "avg_171_bldsk_1",
-          "text": "妾の患者はまだここにおる。妾自ら彼らを率いて撤退する。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ワルファリン",
-          "speakerId": "avg_171_bldsk_1",
-          "text": "こちらの心配はいらぬ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ワルファリン",
-          "speakerId": "avg_171_bldsk_1",
-          "text": "（ケルシー、なぜそなたの消息がないのだ……）"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_infirmary"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ワルファリン",
+      "speakerId": "avg_171_bldsk_1",
+      "isRemote": false,
+      "text": "ドクターの話は聞こえたな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ワルファリン",
+      "speakerId": "avg_171_bldsk_1",
+      "isRemote": false,
+      "text": "恐れるでない、Lancet-2がそなたらのデータ測定を支援する。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Lancet-2",
+      "speakerId": "char_285_medic2",
+      "isRemote": false,
+      "text": "かしこまりました、ワルファリン先生！　ご期待に沿えるよう努めます！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ワルファリン",
+      "speakerId": "avg_171_bldsk_1",
+      "isRemote": false,
+      "text": "忘れるでないぞ。艦外に退避した後は、ケルシーの当初の計画に従い周囲に新たな隔離帯を設けるのだ！　決してよく分からぬものが外に漏れ出すことのないようにな！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Lancet-2",
+      "speakerId": "char_285_medic2",
+      "isRemote": false,
+      "text": "ワルファリン先生は一緒に行かれないのですか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ワルファリン",
+      "speakerId": "avg_171_bldsk_1",
+      "isRemote": false,
+      "text": "妾の患者はまだここにおる。妾自ら彼らを率いて撤退する。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ワルファリン",
+      "speakerId": "avg_171_bldsk_1",
+      "isRemote": false,
+      "text": "こちらの心配はいらぬ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ワルファリン",
+      "speakerId": "avg_171_bldsk_1",
+      "isRemote": false,
+      "text": "（ケルシー、なぜそなたの消息がないのだ……）"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_rhodesengineeringroom"
     },
     {
       "type": "choice",
@@ -718,8 +757,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -729,66 +767,73 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "クロージャ",
-          "speakerId": "avg_npc_1723_1",
-          "text": "もうやってるって。あとほんのちょっと時間が必要なだけ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "クロージャ",
-          "speakerId": "avg_npc_1723_1",
-          "text": "それと、もういっこ大事なことだけど、PRTSを停止させたら必ずコアデータをダウンロードして――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "クロージャ",
-          "speakerId": "avg_npc_1723_1",
-          "text": "ケルシーが事前にPRTSにバックドアを設置してるから。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "クロージャ",
-          "speakerId": "avg_npc_1723_1",
-          "text": "それが本艦を脅かすものを完全に断ち切る鍵になるはず。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mantra",
-          "speakerId": "avg_npc_1723_1",
-          "text": "その件はMechanistが承知した。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mantra",
-          "speakerId": "avg_npc_1723_1",
-          "text": "我々は目下Abyssにて行動している。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "クロージャ",
-          "speakerId": "avg_npc_1723_1",
-          "text": "頼んだよ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "クロージャ",
-          "speakerId": "avg_npc_1723_1",
-          "text": "ドクター、ケルシーは？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "クロージャ",
-          "speakerId": "avg_npc_1723_1",
-          "text": "声が聞こえないけど、怪我でもしたの？"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クロージャ",
+      "speakerId": "avg_npc_1723_1",
+      "isRemote": false,
+      "text": "もうやってるって。あとほんのちょっと時間が必要なだけ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クロージャ",
+      "speakerId": "avg_npc_1723_1",
+      "isRemote": false,
+      "text": "それと、もういっこ大事なことだけど、PRTSを停止させたら必ずコアデータをダウンロードして――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クロージャ",
+      "speakerId": "avg_npc_1723_1",
+      "isRemote": false,
+      "text": "ケルシーが事前にPRTSにバックドアを設置してるから。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クロージャ",
+      "speakerId": "avg_npc_1723_1",
+      "isRemote": false,
+      "text": "それが本艦を脅かすものを完全に断ち切る鍵になるはず。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mantra",
+      "speakerId": "avg_npc_1723_1",
+      "isRemote": false,
+      "text": "その件はMechanistが承知した。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mantra",
+      "speakerId": "avg_npc_1723_1",
+      "isRemote": false,
+      "text": "我々は目下Abyssにて行動している。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クロージャ",
+      "speakerId": "avg_npc_1723_1",
+      "isRemote": false,
+      "text": "頼んだよ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クロージャ",
+      "speakerId": "avg_npc_1723_1",
+      "isRemote": false,
+      "text": "ドクター、ケルシーは？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クロージャ",
+      "speakerId": "avg_npc_1723_1",
+      "isRemote": false,
+      "text": "声が聞こえないけど、怪我でもしたの？"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -803,8 +848,7 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -814,8 +858,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -825,8 +868,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -836,249 +878,284 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "narration",
-          "text": "<p=1>Abyss内</><p=2>同時刻</>"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Raidian",
-          "speakerId": "avg_npc_1730_1",
-          "text": "ドクターとの通信はすでに回復したよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Raidian",
-          "speakerId": "avg_npc_1730_1",
-          "text": "当初の計画通り行動を続けよう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_391_rosmon_1",
-          "text": "ほかに敵は感知できないよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Raidian",
-          "speakerId": "avg_npc_1730_1",
-          "text": "こちらもPRTSのコアが新たにデータ伝送を行った形跡は捉えていない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_4133_logos_1",
-          "text": "静かすぎる。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アスカロン",
-          "speakerId": "avg_4132_ascln_1",
-          "text": "Raidian、コアの位置を共有してくれ。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Raidian",
-          "speakerId": "avg_npc_1730_1",
-          "text": "共有してあるよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アスカロン",
-          "speakerId": "avg_4132_ascln_1",
-          "text": "このままコアの位置へと進もう。稼働の解除を試みる。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "avg_017_huang_1",
-          "text": "私が前を歩くよ！　PRTSはきっと新たな敵を使って私たちを阻むはず。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "コアの解析作業は私に任せてくれ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_4133_logos_1",
-          "text": "「極光」。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_4133_logos_1",
-          "text": "微かな光が進む先を照らさん――"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_4133_logos_1",
-          "text": "――？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "どうした、Logos？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_4133_logos_1",
-          "text": "あれは我の光ではない……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "暗闇の中、高い位置に懸かる菱形の光の輪がわずかに揺れ動いている。\nまるで冷ややかな目が、この場にいる全員を見下ろしているかのようだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アスカロン",
-          "speakerId": "avg_4132_ascln_1",
-          "text": "警戒しろ……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "avg_017_huang_1",
-          "text": "……ケルシー先生が言ってた「プリースティス」なの？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Raidian",
-          "speakerId": "avg_npc_1730_1",
-          "text": "恐らく違うね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Raidian",
-          "speakerId": "avg_npc_1730_1",
-          "text": "つい今しがた急に、乱雑だけどよく知る信号を大量に探知した。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Raidian",
-          "speakerId": "avg_npc_1730_1",
-          "text": "この信号はロドスそのものから発せられている。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Misery",
-          "speakerId": null,
-          "text": "これは……何だ？"
-        },
-        {
-          "type": "narration",
-          "text": "終わりのないホワイトノイズが辺りを包む中で、巨大な機械構造物が皆の前にゆっくりと姿を現した――\nその主要部分を構成する部品は、その場の全員がよく知っていた。\nクロージャはかつて何度も、ロドスの様々なモジュールを改造する際に使用した部品を皆に見せたことがある。その中には、エリートオペレーターによって作られた特殊な部品まであった。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Touch",
-          "speakerId": null,
-          "text": "PRTSがロドスの設備を武器として再構築したのです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Touch",
-          "speakerId": null,
-          "text": "ですが……これらの部品はどこから？　Abyssの中にあるはずが……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アスカロン",
-          "speakerId": "avg_4132_ascln_1",
-          "text": "源石だ。"
-        },
-        {
-          "type": "narration",
-          "text": "源石のクラスターがこの独特な形状の機械に不規則に散らばっている。\n源石はもはや呑み込むだけではなく、創造を始めたのだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Misery",
-          "speakerId": null,
-          "text": "待ってくれ、源石はロドスのものを複製できるのか？"
-        },
-        {
-          "type": "narration",
-          "text": "Logosは内なる宇宙でのあの塔を、そして殿下を思い出した。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_4133_logos_1",
-          "text": "そう単純な話ではない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_4133_logos_1",
-          "text": "PRTSに源石データを解析する能力はなく、何者かによる介入があるのは間違いない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アスカロン",
-          "speakerId": "avg_4132_ascln_1",
-          "text": "プリースティスだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Raidian",
-          "speakerId": "avg_npc_1730_1",
-          "text": "この機械のデータは私には理解できない方法でPRTSのコアと接続している。これまでの源石結晶体とは違うよ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "avg_017_huang_1",
-          "text": "何にせよ、やり合うしかないみたいだね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Stormeye",
-          "speakerId": null,
-          "text": "確かにほかに方法はないようです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Stormeye",
-          "speakerId": null,
-          "text": "では皆さん？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_391_rosmon_1",
-          "text": "いけるよ。"
-        },
-        {
-          "type": "narration",
-          "text": "その瞬間、菱形の目がさらに輝きを増した。\nPRTSにより作成された擬態機械がエネルギーをチャージし始める……"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "background",
+      "backgroundId": "60_g15_rhodesabyss_off"
+    },
+    {
+      "type": "narration",
+      "text": "<p=1>Abyss内</><p=2>同時刻</>"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Raidian",
+      "speakerId": "avg_npc_1730_1",
+      "isRemote": false,
+      "text": "ドクターとの通信はすでに回復したよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Raidian",
+      "speakerId": "avg_npc_1730_1",
+      "isRemote": false,
+      "text": "当初の計画通り行動を続けよう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_391_rosmon_1",
+      "isRemote": false,
+      "text": "ほかに敵は感知できないよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Raidian",
+      "speakerId": "avg_npc_1730_1",
+      "isRemote": false,
+      "text": "こちらもPRTSのコアが新たにデータ伝送を行った形跡は捉えていない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_4133_logos_1",
+      "isRemote": false,
+      "text": "静かすぎる。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アスカロン",
+      "speakerId": "avg_4132_ascln_1",
+      "isRemote": false,
+      "text": "Raidian、コアの位置を共有してくれ。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Raidian",
+      "speakerId": "avg_npc_1730_1",
+      "isRemote": false,
+      "text": "共有してあるよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アスカロン",
+      "speakerId": "avg_4132_ascln_1",
+      "isRemote": false,
+      "text": "このままコアの位置へと進もう。稼働の解除を試みる。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "avg_017_huang_1",
+      "isRemote": false,
+      "text": "私が前を歩くよ！　PRTSはきっと新たな敵を使って私たちを阻むはず。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "コアの解析作業は私に任せてくれ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_4133_logos_1",
+      "isRemote": false,
+      "text": "「極光」。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_4133_logos_1",
+      "isRemote": false,
+      "text": "微かな光が進む先を照らさん――"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_4133_logos_1",
+      "isRemote": false,
+      "text": "――？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "どうした、Logos？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_4133_logos_1",
+      "isRemote": false,
+      "text": "あれは我の光ではない……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "暗闇の中、高い位置に懸かる菱形の光の輪がわずかに揺れ動いている。\nまるで冷ややかな目が、この場にいる全員を見下ろしているかのようだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アスカロン",
+      "speakerId": "avg_4132_ascln_1",
+      "isRemote": false,
+      "text": "警戒しろ……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "avg_017_huang_1",
+      "isRemote": false,
+      "text": "……ケルシー先生が言ってた「プリースティス」なの？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Raidian",
+      "speakerId": "avg_npc_1730_1",
+      "isRemote": false,
+      "text": "恐らく違うね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Raidian",
+      "speakerId": "avg_npc_1730_1",
+      "isRemote": false,
+      "text": "つい今しがた急に、乱雑だけどよく知る信号を大量に探知した。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Raidian",
+      "speakerId": "avg_npc_1730_1",
+      "isRemote": false,
+      "text": "この信号はロドスそのものから発せられている。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Misery",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "これは……何だ？"
+    },
+    {
+      "type": "narration",
+      "text": "終わりのないホワイトノイズが辺りを包む中で、巨大な機械構造物が皆の前にゆっくりと姿を現した――\nその主要部分を構成する部品は、その場の全員がよく知っていた。\nクロージャはかつて何度も、ロドスの様々なモジュールを改造する際に使用した部品を皆に見せたことがある。その中には、エリートオペレーターによって作られた特殊な部品まであった。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Touch",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "PRTSがロドスの設備を武器として再構築したのです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Touch",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "ですが……これらの部品はどこから？　Abyssの中にあるはずが……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アスカロン",
+      "speakerId": "avg_4132_ascln_1",
+      "isRemote": false,
+      "text": "源石だ。"
+    },
+    {
+      "type": "narration",
+      "text": "源石のクラスターがこの独特な形状の機械に不規則に散らばっている。\n源石はもはや呑み込むだけではなく、創造を始めたのだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Misery",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "待ってくれ、源石はロドスのものを複製できるのか？"
+    },
+    {
+      "type": "narration",
+      "text": "Logosは内なる宇宙でのあの塔を、そして殿下を思い出した。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_4133_logos_1",
+      "isRemote": false,
+      "text": "そう単純な話ではない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_4133_logos_1",
+      "isRemote": false,
+      "text": "PRTSに源石データを解析する能力はなく、何者かによる介入があるのは間違いない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アスカロン",
+      "speakerId": "avg_4132_ascln_1",
+      "isRemote": false,
+      "text": "プリースティスだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Raidian",
+      "speakerId": "avg_npc_1730_1",
+      "isRemote": false,
+      "text": "この機械のデータは私には理解できない方法でPRTSのコアと接続している。これまでの源石結晶体とは違うよ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "avg_017_huang_1",
+      "isRemote": false,
+      "text": "何にせよ、やり合うしかないみたいだね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Stormeye",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "確かにほかに方法はないようです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Stormeye",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "では皆さん？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_391_rosmon_1",
+      "isRemote": false,
+      "text": "いけるよ。"
+    },
+    {
+      "type": "narration",
+      "text": "その瞬間、菱形の目がさらに輝きを増した。\nPRTSにより作成された擬態機械がエネルギーをチャージし始める……"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": [

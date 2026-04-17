@@ -11,6 +11,10 @@
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "bg_outcounty"
+    },
+    {
       "type": "narration",
       "text": "卻說那東國雲遊僧嵯峨，這日離了百灶，向西南悠悠而行。\n行出百餘里，回首已不見炎都城影轍痕。又天色漸暮，忽見南方隱有房屋掩映。\n行到近處，只見得荒村一座，屋舍坍圮，草木蔓生，井渠淤塞，門前苔深。"
     },
@@ -18,21 +22,28 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_yanshabbyroom"
+    },
+    {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "這間房子還算完整……還有個小園呢。"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "村子雖然荒了，但看得出原本道路和房子井井有條，應當也曾是富庶的村落……"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "不知道又是為什麼荒廢了……天災、航線、馳道，還是別的呢……"
     },
     {
@@ -46,18 +57,21 @@
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "哦……光顧著看這房子，忘了自己的五臟廟。"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "百灶人對食物真是講究，乾糧都有這麼多花樣，貪圖新鮮買多了，先吃哪一樣好呢……"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "最普通的調味乾糧聞起來就很香，還有五色穀物粗粉、真空豆腐捲餅、自煮脫水雜菌飯……"
     },
     {
@@ -71,12 +85,14 @@
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": null,
+      "isRemote": false,
       "text": "打、打擾了……"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "——不打擾、不打擾，這屋子的門窗就剩個框了，施主既然願意與小僧交談，還請現身便是。"
     },
     {
@@ -93,6 +109,7 @@
       "type": "dialogue",
       "speakerName": "菲林少女",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "這位……小僧姐姐，是自百灶而來？"
     },
     {
@@ -103,247 +120,295 @@
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "施主……是這裡的主人嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "菲林少女",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "咦？……這院落一眼便知荒廢多時，我怎麼可能住在這裡呢。"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "小僧也正想呢，一般不是該有些障眼法，把瓦礫變成殿閣，露水變成菜餚，風聲變成樂聲嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "菲林少女",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "什麼障眼……"
     },
     {
       "type": "dialogue",
       "speakerName": "菲林少女",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "等等，你把我當成什麼了？！我、我是正經人家女兒，只是路過這裡，跟你一樣借宿一晚而已！"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_yanshabbyroom"
+    },
+    {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "……原來施主是尚蜀人士，前往百灶途中迷路，才在這裡徘徊嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "不錯，我家姓袁，世居攥江峰下。我單名為玉，小僧姐姐喚我小玉便是。"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "這番上京，是想前往天師府尋一位……有恩於我家的天師。"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "這麼說，小玉施主上京是為了報恩？"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "報恩……也談不上。只是……嗯，我家因為家資豐厚，曾被盜匪盯上，是那位天師路過出手，救下家人性命……"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "父親母親都是重義之人，感激天師的恩情，又……恰逢新歲，便寄去了書信和土產問候。"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "然而……包裹寄去後便杳無音信，不知是不是寄丟了。父母年邁，我不願見父母為此牽掛憂心……便想自己走一趟百灶，拜謝天師。"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "沒承想到了百灶近處，卻不見城影……"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "原來如此。本月百灶正在巡航，小玉施主找不到方位，大概是搞錯了停駐點吧？小僧去姜齊時也犯過這個錯。"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "巡航……？唔，小僧姐姐剛離了百灶，我原不該有此冒昧一問，只是……只是我初次離鄉，憑我一人，實難尋到百灶所在……"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "若不耽擱小僧姐姐的行程，可否領我至百灶，拜謁天師府……只要能抵達百灶，小玉必當傾囊以謝……"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "（小玉施主不愧是尚蜀閨秀，說起話來文縐縐的……幸好不是剛到炎國那陣子了，不然還真怕聽不懂……）"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "這有什麼耽誤的，小僧四方雲遊，並沒有固定的去處。離開百灶才幾天，回去追上也不難，小僧護送你上京便是，不用酬謝什麼。"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "這怎麼好呢？從小父親母親便教我知恩須圖報，若非小僧姐姐願攜我同往，我迷失於荒野，性命也不知能不能保全……"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "如此恩情，當然要誠心報答。"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "小僧姐姐可有喜愛之物？抑或行旅之中可有需要的物品？"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "小僧行李很齊全，並沒有什麼需要——"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "小僧姐姐一再推辭，是不相信我是誠心報答的嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "啊呀，並非、並非如此，只是小僧向來孑然一身，該有的也都有了……"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "（……怎麼覺得，小玉施主還是有些奇怪……）"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "難道說，小僧姐姐不信我，仍當我是山野精怪嗎……"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "——"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "施主哪裡話，小僧這是、小僧並未……"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "嗚……那小僧姐姐是怪我多心了……"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "小僧、小僧——啊呀，那、那待到了百灶，小玉施主請小僧吃一頓齋飯……就可以了……"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "原來小僧姐姐喜歡美食啊，是了，剛才便聽你數那百灶帶出來的乾糧呢。"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "那是因為聽見了小玉施主饑腸轆……"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "原、原來你聽到了！那也不好當著我面說出來啊，唉呀……"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "小僧姐姐，怎麼不說話了？"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "……小僧只怕又說錯話。"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "……噗。對不起，是我不好，自小便愛接著旁人的話題說話，鄰家妹妹也常怪我，有次被我說得急了，差點丟掉我的……丟掉什麼呢……"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "說遠了……總之，我給小僧姐姐賠罪啦。"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "這，唉呀……"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "……那小玉施主，要吃乾糧嗎？"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_outcounty"
     },
     {
       "type": "narration",
@@ -353,12 +418,14 @@
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "小僧姐姐，我的腳有點痛……"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "不妨事，也快到中午了，我們休息一下再走吧。"
     },
     {
@@ -368,135 +435,161 @@
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "嗯……不知到了百灶，能不能順利入訪天師府呢……"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "小玉施主既有正當事由，按規矩登記通報便是。聽小玉施主講的，那位天師也是熱心好義之人，想來不會拒人於門外。"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "……是。只是我怕通傳不便，又或者我這點瑣屑事務，根本不予通傳呢……"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "若我有小僧姐姐這般本領就好了……幾日同行，才知小僧姐姐不僅心地仁慈，更兼武藝高強，教人欽羨。"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "……武藝只為防身。世間多有繁難事，並非武勇能夠解決。"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "如小僧姐姐這般有武藝之人，自然可以這樣說。但我們尋常人，只盼多一分力量，遇事才多一點辦法。"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "若我不是那般年幼，自己能有一身本領，又怎麼……又怎麼需要倚仗天師偶發善心，才能護得家人周全呢。"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "（小玉施主家遭盜匪，原來是年幼時的事……？）"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "聽小玉施主這樣說，小僧忽然有一個想法。"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "既然小玉施主與那位天師有緣，又嚮往天師的本領，何不去應天師府之試？學成天師之藝，能護下的便不只是家人。"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "——我、我？我怎麼可能去……"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "失禮……小僧姐姐金玉良言，我會用心思量的……"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "唔，水壺空了，左右是在歇腳，燒點水再走如何？"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "能求小僧姐姐幫忙生火嗎？說來不好意思，野外奔波，原本離不得火，我卻總有些畏火……"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "我呢……就去打水吧，記得方才路過了溪流。"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "小玉施主的腳不痛了嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "那，小僧姐姐的耳朵借我摸一下？小時和兄長踏青，我走累了哭鬧，他就讓我摸摸耳朵，好像真的有用哦？"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "呃，這恐怕有些……"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "呵呵，真不經逗呢。我去啦。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_forest"
+    },
+    {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "這溪流邊還有蒲公英……不如採一些回去。火都生了，幹嘛只燒個水呢。"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "對岸也有……"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "唔，那處窄，還有塊石頭可以踏……"
     },
     {
@@ -506,6 +599,7 @@
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "這塊石頭……這塊石頭怎麼會動？！"
     },
     {
@@ -515,6 +609,7 @@
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "啊？這麼大的鉗獸？！"
     },
     {
@@ -524,6 +619,7 @@
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "救、救命……小僧姐姐……！"
     },
     {
@@ -533,18 +629,21 @@
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "姑娘莫慌！！"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "……等等、你……？"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "不管了！先——"
     },
     {
@@ -554,123 +653,147 @@
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "啊啊啊我的腳————"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "啊啊啊牠牠牠在夾你的腳——"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_outcounty"
+    },
+    {
       "type": "dialogue",
       "speakerName": "陌生少年",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "多謝這位師父相救……"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "舉手之勞。不過，小兄弟怎麼把那鉗獸的屍身拖過來了……？"
     },
     {
       "type": "dialogue",
       "speakerName": "陌生少年",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "嗯？趁還新鮮，快點把腹肉螯肉拆出來吃掉，不然多浪費啊！哈哈！"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "啊？這麼大的鉗獸……能吃？"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "當然能了——啊，還未報上姓名，我姓李，是名天師學徒，在天師府讀農科。"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "這隻鉗獸體型雖大，但鉗獸結構都差不多，小的能拆殼取肉，大的當然也能。"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "你們這不是水都燒上了——我就是看到你們生火的煙氣才走近來，沒想到正好碰到……這位姑娘遇險。"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "天、天師……？！"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "原來是小李天師，失敬。小僧名叫嵯峨，自東國而來，正在大炎雲遊。"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "我……姓袁名玉，是尚蜀人士，上京途中迷路了，幸賴小僧姐姐攜我同行。"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "哦……"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "小李天師……現下也是要去百灶？可是要回天師府……？"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "呃……正是正是，我出京取一份很珍貴的樣株，正要返程。反正……你們也是去百灶，我們，結個伴？"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "小玉施主，真是好運。你憂心的事，不如就拜託小李天師……"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "嗯？什麼事……"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "啊……沒什麼，一點小事情。到了百灶再說吧！"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "小李天師剛才說的“養朱”，可是天師法寶嗎？我從小聽話本，都說天師們有千般神通，百般法寶，只是從沒親眼見過……"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "哈哈，談不上法寶，只是我在天師府這麼多年，也從沒見養得這麼完美的……我拿給你們看看吧！"
     },
     {
@@ -680,6 +803,7 @@
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "唉呀，我、我只是想瞧瞧天師的法寶，失禮了……"
     },
     {
@@ -689,117 +813,140 @@
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "少見小玉施主這麼冒失啊。"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "沒事沒事！這包裡確實沒什麼法寶。只有這個，這是好東西哇——"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "這，這不是發霉的橘子嗎……？"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "對啊！你看這菌，長得多茁壯，多漂亮……"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "師兄的論文有救了呢……"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_campsite_n"
+    },
+    {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "……小玉施主。"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "——呃，我、我……"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "小玉施主手上，是小李天師的包吧？"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "我不是要盜他錢財，只是……想借一樣東西，之後會好好還回去的……"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "小玉施主，是想“借”天師府的出入憑證？"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "先前小僧便思索，小玉施主為何不願對小李天師道出此行目的呢？若擔心無人通傳，託小李天師尋人，不是正好嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "小玉施主，似乎一直都想親身進入天師府，甚至不惜要偷小李天師的行李……"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "敢問，小玉施主去天師府，究竟是要做什麼？"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "小玉施主要找的那位天師，又到底是你的什麼人？"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "……小僧姐姐既然這樣問，便是知道了……那又何須再問？"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "……世間事，能教人奮不顧身至此的，無非那麼幾樁。"
     },
     {
@@ -810,6 +957,7 @@
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -820,237 +968,280 @@
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "施主慎之。"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "……我知道小僧姐姐慈悲心腸，必定要阻攔我。但我全家都被那個天師所害，此生只餘下這一個念頭，必要仇人償命，使家人瞑目！"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "小玉施主，大炎律法甚嚴，若確是天師害人，何不向三法司報案，炎律定會給你個交代，何苦要將自己搭進去？"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "我……但我其實，連那天師姓甚名誰都不知道，如何報案……"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "況且，官是官，民是民，話本子裡那麼多懸案，若非結識奇人英雄、青天賢臣，我一個孤女，怎麼告得贏天師呢？"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "小玉施主此言差矣。一家遇害，定是一樁大案，即使不知兇手姓名，三法司也不可能姑息，只要拿出證據，天師也不能不伏法。"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "證據……但我沒有證據……"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "那小玉施主為什麼認定是天師所為？"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "我……我記得！我記得她的樣子……"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "還有……遍地的血……流過我膝下……"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "我醒來……就在重重瓦礫下，家破樓空，連家人屍身都尋不見……這都是在她……我見到她之後……"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "若不是天師，誰有這樣的神通？若不是她害了我全家，還能是誰？！"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "……小玉施主說不知天師姓名，那你是在何時何地遇見她的，是年幼時？是成人後？是廢墟？是家中？"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "是……是……應當是……"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "但我知道是她！我就是……知道！"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "你親眼見她殺人嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "但我分明就是尋著她去的……我還看見了……很多死人……只剩下我一個……"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "小玉施主方才不是說，沒有找到家人的屍身？"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "屍身……對了……不、不對……"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "……唉。小玉施主莫慌，小僧不該問得這麼急，人受了大驚嚇，記憶混亂也是常有的事……"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "……我家，有幾口人？"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "十一……"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "……還是五百？"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_campsite_n"
+    },
+    {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "小玉施主……你呆坐半晌，想清楚了嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "我……"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "恕小僧冒昧，小玉施主……究竟是什麼出身？"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "……你是不是，又在當我是精怪了？"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "我、我姓袁，家住攥江峰下，有父母雙親，有兄嫂姐姐……窗下的芭蕉長了幾片葉子，我都一一記得清楚！我來歷分明，怎麼會是……"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "但那片血沼荒野……到底又是……"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "小僧姐姐！你捏捏我，你碰碰我，我是熱的，心還在跳，會飢會渴，我……我不可能是話本子裡的鬼吧？"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "……小僧這些年，也有諸多奇遇，可志怪故事裡那樣的荒魂幽鬼，一個也不曾見過。想來這大地之上確實沒有鬼魂。"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "小玉施主……你一直說你記得分明，究竟是記得些什麼？"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "……我記得，我像是，和家中失散……追著他們而去……只找到一片血腥之地……"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "我記得……我生在攥江峰下，家人都疼愛我，自小無憂無慮……"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "我愛聽話本故事……常與東鄰妹妹玩耍……她梳兩個角髻，九歲那年五月五，我送了她一條五色髮繩……"
     },
     {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "我有一樣珍愛之物……就養在西窗之下，案台之上，妝鏡之……側……乃是……是……"
     },
     {
@@ -1060,28 +1251,36 @@
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "唉。"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "是一粒豆子嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "“小玉”",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_campsite_n"
     },
     {
       "type": "narration",
@@ -1091,22 +1290,29 @@
       "type": "dialogue",
       "speakerName": "“小玉”",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "這……這是何意？"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "靈符既驗，你確實是天師府之物。"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "乃是……一粒豆兵。"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_yanshabbyroom"
     },
     {
       "type": "narration",
@@ -1116,6 +1322,10 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "25_g05_mountaincity_d"
+    },
+    {
       "type": "narration",
       "text": "“攥江峰”下。"
     },
@@ -1123,384 +1333,462 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_yanshabbyroom"
+    },
+    {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "……自小便愛接著旁人的話題說話，鄰家妹妹也常怪我，有次被我說得急了，差點丟掉我的……丟掉什麼呢……"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_outcounty"
+    },
+    {
       "type": "dialogue",
       "speakerName": "小玉",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "……我卻總有些畏火……"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_campsite_n"
+    },
+    {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "……小僧是覺得前後有些可疑，但……“豆兵”……"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "此乃天師所使的“撒豆成兵”之法。農院至忙時，偶爾便會點一隊豆兵來幫忙。"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "但話說回來……豆兵通常都長得一個樣子，無知無識，行動時間也不長，更不會自以為有家人來歷。"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "雖然符紙檢測無疑，但……小玉姑娘恐怕是另有奇遇，才會是如今這般形象，並有了這些駁雜記憶。"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "“駁雜記憶”……？小玉施主的記憶確實有些混亂，但我原以為只是……或許只是，受了些刺激……"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "……你們的動靜實在不小，我早醒了，事情我也聽了個七七八八。"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "農業天師用豆兵是做農活沒錯，但這術法既然叫“撒豆成兵”，原本自然是用於干戈之事……"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "我聽小玉姑娘所言，那“與家中失散”之事，恐怕是在施術天師點兵時被漏下了，憑著本能追去……"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "所謂血沼，大約就是應到的戰場吧。大概是到得晚了，只見到一地狼藉……又被戰場血氣一激，便化回了豆形吧。"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "按常理，幾天後術法散盡，豆兵也就委於塵泥了。"
     },
     {
       "type": "dialogue",
       "speakerName": "“小玉”",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "卻不知道為何到了那袁姓小姑娘手裡……或許是被打掃戰場的人撿走送人了？"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "不知那小姑娘怎麼養護你的，讓那豆中術法餘波殘存不絕，還影響了你的意識……"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "我聽你一直說話本裡如何如何，是那小袁姑娘愛聽話本，天天說與你聽？"
     },
     {
       "type": "dialogue",
       "speakerName": "“小玉”",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "我猜你一心想上京，是因為話本裡的故事常常如此吧？"
     },
     {
       "type": "dialogue",
       "speakerName": "“小玉”",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "……不。應當是因為……小玉後來嫁給鄰家，丈夫過了考校，她隨丈夫上京去了……"
     },
     {
       "type": "dialogue",
       "speakerName": "“小玉”",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "我只是一直……忘了這件事。"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "噢噢噢！說得通說得通。小玉姑娘你還蠻能編的，雖說記憶零散，這繞來繞去，還是把這麼多事都串起來了嘛！"
     },
     {
       "type": "dialogue",
       "speakerName": "“小玉”",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "“小玉”",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "那我……為什麼現在會成了小玉的樣子？豆兵……不是無知無識嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "我倒是更奇怪你都化回豆了，只憑一個小姑娘的供養，怎麼還能再化人形？還能活動這麼久，有這種強度的自我意識……"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "若不是符紙確認了你是天師術法產物，只看外表言行，你倒更像是……"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "呃，沒什麼沒什麼，這個說不得。"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "（……“攥江峰”，要是記得不錯，上回在羅德島遇到夕和鯉先生他們，說起的就是這個地方……）"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "總而言之，你恐怕是把自己當成了那名小袁姑娘，又把那諸多記憶混成了一個奇情故事，以為自己身負血仇，才一心只想上京報仇吧。"
     },
     {
       "type": "dialogue",
       "speakerName": "“小玉”",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "我……"
     },
     {
       "type": "dialogue",
       "speakerName": "“小玉”",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "……原來我……果真不是……怎麼會……"
     },
     {
       "type": "dialogue",
       "speakerName": "“小玉”",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "……這仇，根本就報無可報？"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "這不是好事嘛！"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "小李天師，小僧……另有一事求問。"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "既然小玉施主是這樣的來歷……天師府要怎麼安排她？"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "……嵯峨師父，我知道你想說什麼。但這畢竟是天師府之物，又有種種特異，絕無可能讓它在外遊蕩。"
     },
     {
       "type": "dialogue",
       "speakerName": "“小玉”",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "“小玉”",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "……李天師，我……能不能再求一件事？"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "你還想求什麼？你那套故事……剛才不是都幫你搞清楚了嗎？就沒有那麼回事，只是你拼湊補綴，想當然而已。"
     },
     {
       "type": "dialogue",
       "speakerName": "“小玉”",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "我並無他意，只是想，能不能在去天師府之前，先見一個人……？"
     },
     {
       "type": "dialogue",
       "speakerName": "“小玉”",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "雖是我想當然……卻也不是無中生有。"
     },
     {
       "type": "dialogue",
       "speakerName": "“小玉”",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "李天師不是也說，若不是那人養護我，我早就是血污之中一團泥了……既然我現在站在這裡，此事總不會有假……"
     },
     {
       "type": "dialogue",
       "speakerName": "“小玉”",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "但我……都沒跟她說過一句話。"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "你用這個樣子去見她，也不太好吧……何必執著這些呢？"
     },
     {
       "type": "dialogue",
       "speakerName": "“小玉”",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "我可以遮掩形貌，也不會跟她講我是什麼，只是……想謝謝她。"
     },
     {
       "type": "dialogue",
       "speakerName": "“小玉”",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "……“知恩須圖報”的……"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "小李天師，常言“人非草木，孰能無情”，小玉施主現今唯有此願……人，總不至比草木更無情？"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "小僧也求你。"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "唉……你們這……"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "唉！"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "31_g1_luo_park"
+    },
+    {
       "type": "dialogue",
       "speakerName": "“小玉”",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "“小玉”",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "“顯妣袁玉之墓”……"
     },
     {
       "type": "dialogue",
       "speakerName": "“小玉”",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "原來……已經過去這麼久了……"
     },
     {
       "type": "dialogue",
       "speakerName": "“小玉”",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "難怪醒來的時候，宅院都荒敗成那樣了……"
     },
     {
       "type": "dialogue",
       "speakerName": "“小玉”",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "我還以為，至少有一樣不是我妄自編成的夢幻……"
     },
     {
       "type": "dialogue",
       "speakerName": "“小玉”",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "原來，也早就成空了啊。"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "小玉施主……"
     },
     {
       "type": "dialogue",
       "speakerName": "“小玉”",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "小僧姐姐，多謝。"
     },
     {
       "type": "dialogue",
       "speakerName": "“小玉”",
       "speakerId": "avg_npc_141",
+      "isRemote": false,
       "text": "我終究……報答不了誰的恩情。"
     },
     {
@@ -1514,120 +1802,140 @@
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "小李天師，小僧還有一問。"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "我們……當真是偶遇嗎？天師學徒，個個都會隨身攜帶那種符紙？"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "……唉。它一個天師術法產物，貿然靠近百灶，天師府豈能毫無所察？"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "我本來想，你們偶然相遇，你又全不知情，不如就穩妥走完這一程。等你們道了別，我悄悄把它帶回天師府就是……"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "這位袁玉之事，你也早就知曉？"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "那倒不是。我只是知道，它不能如願。"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "上一次尚蜀有戰事，還有天師出征的，早是百年前了。"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "豆兵原本無知無識，但這一粒，有了這點意識，一番奇遇，一番掙扎……"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "只徒然從尚蜀走了一趟百灶，千難萬難，不過是發現自己一切成空。"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "何苦呢。"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "……曾有人對小僧說，我看畫中人，自以為“真人”看“假人”，焉知我輩不是畫中人，一生行路，不過是某個執筆之人的一時興起……"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "小僧時時憶起這番話……今日亦然。"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "小李天師，你說小玉施主徒然受苦，到頭不過發現自己是一場空。"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "小僧卻在想……"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "未必是空。"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "……不論如何周折，這個結局都不會變。"
     },
     {
       "type": "dialogue",
       "speakerName": "天師學徒",
       "speakerId": "avg_npc_1626_1",
+      "isRemote": false,
       "text": "你又能做什麼呢？"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "小玉施主給了自己一個故事，為了這故事跋涉千里，小僧既然陪伴了她一程，便為她……"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "avg_362_saga_1",
+      "isRemote": false,
       "text": "記下這個故事吧。"
     },
     {

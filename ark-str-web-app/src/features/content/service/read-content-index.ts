@@ -13,6 +13,7 @@ import type {
   SummaryManifestEntry,
 } from "@/features/content/types";
 import {
+  getBackgroundPathForBackgroundId,
   contentIndex,
   getPortraitPathForSpeakerId,
   getStoryDetailPath,
@@ -51,6 +52,19 @@ export function readPortraitPathForSpeakerId(speakerId: string | null): string |
   return `${getConfiguredBasePath()}${portraitPath}`;
 }
 
+export function readBackgroundPathForBackgroundId(backgroundId: string | null): string | null {
+  if (!backgroundId) {
+    return null;
+  }
+
+  const backgroundPath = getBackgroundPathForBackgroundId(backgroundId);
+  if (!backgroundPath) {
+    return null;
+  }
+
+  return `${getConfiguredBasePath()}${backgroundPath}`;
+}
+
 export function readStoryPortraitPaths(detail: StoryDetail | null): Record<string, string> {
   if (!detail) {
     return {};
@@ -71,7 +85,6 @@ export function readStoryPortraitPaths(detail: StoryDetail | null): Record<strin
         for (const option of block.options) {
           collectSpeakerIdsFromBlocks(option.blocks);
         }
-        collectSpeakerIdsFromBlocks(block.sharedBlocks);
       }
     }
   };
@@ -82,6 +95,38 @@ export function readStoryPortraitPaths(detail: StoryDetail | null): Record<strin
     [...speakerIds].sort((left, right) => left.localeCompare(right)).flatMap((speakerId) => {
       const portraitPath = readPortraitPathForSpeakerId(speakerId);
       return portraitPath ? [[speakerId, portraitPath]] : [];
+    }),
+  );
+}
+
+export function readStoryBackgroundPaths(detail: StoryDetail | null): Record<string, string> {
+  if (!detail) {
+    return {};
+  }
+
+  const backgroundIds = new Set<string>();
+
+  const collectBackgroundIdsFromBlocks = (blocks: StoryBlock[]) => {
+    for (const block of blocks) {
+      if (block.type === "background") {
+        backgroundIds.add(block.backgroundId);
+        continue;
+      }
+
+      if (block.type === "choice") {
+        for (const option of block.options) {
+          collectBackgroundIdsFromBlocks(option.blocks);
+        }
+      }
+    }
+  };
+
+  collectBackgroundIdsFromBlocks(detail.blocks);
+
+  return Object.fromEntries(
+    [...backgroundIds].sort((left, right) => left.localeCompare(right)).flatMap((backgroundId) => {
+      const backgroundPath = readBackgroundPathForBackgroundId(backgroundId);
+      return backgroundPath ? [[backgroundId, backgroundPath]] : [];
     }),
   );
 }

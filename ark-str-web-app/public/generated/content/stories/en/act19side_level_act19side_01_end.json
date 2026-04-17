@@ -11,6 +11,10 @@
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "29_g8_alley_n"
+    },
+    {
       "type": "narration",
       "text": "//战斗音乐\n//预约替换沉重的机器脚步"
     },
@@ -18,24 +22,28 @@
       "type": "dialogue",
       "speakerName": "Strange Power Armor",
       "speakerId": "avg_npc_526_1",
+      "isRemote": false,
       "text": "—"
     },
     {
       "type": "dialogue",
       "speakerName": "Mechanist",
       "speakerId": "avg_npc_521_1",
+      "isRemote": false,
       "text": "I... can't believe it."
     },
     {
       "type": "dialogue",
       "speakerName": "Mechanist",
       "speakerId": "avg_npc_521_1",
+      "isRemote": false,
       "text": "I had signal interference active and everything. Even Closure's own latest drone gen wouldn't detect our location."
     },
     {
       "type": "dialogue",
       "speakerName": "Mechanist",
       "speakerId": "avg_npc_521_1",
+      "isRemote": false,
       "text": "What sensory tech is this power armor using?"
     },
     {
@@ -49,175 +57,193 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "I don't want to draw attention..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "Hold on tight, Doctor."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "10% power, aim—"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "Bingo."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Strange Power Armor",
-          "speakerId": "avg_npc_526_1",
-          "text": "—"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "Clear damage to right arm plating detected."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "No reduction in speed. Showed no signs of slowing when hit, either."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "Who's in that suit? Do they not feel pain?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Strange Power Armor",
-          "speakerId": "avg_npc_526_1",
-          "text": "—"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Strange Power Armor",
-          "speakerId": "avg_npc_526_1",
-          "text": "—"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "Damage to left arm."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "Damage to lower right leg."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "Doctor, it's not reacting to the damage at all."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "If we want to stop it, I'll need to paralyze its power core in one shot—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "Come on, this makes no sense."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "Even the most well-trained soldier wouldn't have this much tolerance."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_532_1",
-          "text": "You're right."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_532_1",
-          "text": "By mere fact of living, no individual can wholly suppress their most basic nervous responses."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Strange Power Armor",
-          "speakerId": null,
-          "text": "—"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "//机械倒地的声音\nA hand smashes through the power armor's core. Countless mechanical fragments burst out like fireworks, just as the blood of a fellow lifeform would.\nWith no time to waste, that hand pulls out.\nThe mecha-fragment extracted by her sheer force turns into dust, together with the pure white plating covering her five digits. It all drifts down to the floor, where it forms a paper-thin calcium crystal layer.\nThe power armor lies on the ground, the heat of its energy snuffed, a clean hole left through its torso."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "You—pierced that power armor's core barehanded?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "That's a might of mights. And definitely a lot quieter than my defensive cannon."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "Doctor, looks like the Bureau of, uh... Originium whatever won't be taking us in for attempted bombing today."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "I don't want to draw attention..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "Hold on tight, Doctor."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "10% power, aim—"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "Bingo."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Strange Power Armor",
+      "speakerId": "avg_npc_526_1",
+      "isRemote": false,
+      "text": "—"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "Clear damage to right arm plating detected."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "No reduction in speed. Showed no signs of slowing when hit, either."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "Who's in that suit? Do they not feel pain?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Strange Power Armor",
+      "speakerId": "avg_npc_526_1",
+      "isRemote": false,
+      "text": "—"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Strange Power Armor",
+      "speakerId": "avg_npc_526_1",
+      "isRemote": false,
+      "text": "—"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "Damage to left arm."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "Damage to lower right leg."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "Doctor, it's not reacting to the damage at all."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "If we want to stop it, I'll need to paralyze its power core in one shot—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "Come on, this makes no sense."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "Even the most well-trained soldier wouldn't have this much tolerance."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_532_1",
+      "isRemote": false,
+      "text": "You're right."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_532_1",
+      "isRemote": false,
+      "text": "By mere fact of living, no individual can wholly suppress their most basic nervous responses."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Strange Power Armor",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "—"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "//机械倒地的声音\nA hand smashes through the power armor's core. Countless mechanical fragments burst out like fireworks, just as the blood of a fellow lifeform would.\nWith no time to waste, that hand pulls out.\nThe mecha-fragment extracted by her sheer force turns into dust, together with the pure white plating covering her five digits. It all drifts down to the floor, where it forms a paper-thin calcium crystal layer.\nThe power armor lies on the ground, the heat of its energy snuffed, a clean hole left through its torso."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "You—pierced that power armor's core barehanded?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "That's a might of mights. And definitely a lot quieter than my defensive cannon."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "Doctor, looks like the Bureau of, uh... Originium whatever won't be taking us in for attempted bombing today."
     },
     {
       "type": "sceneBreak"
@@ -235,8 +261,7 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -246,1218 +271,1448 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Saria",
-          "speakerId": "avg_npc_532_1",
-          "text": "No need, Doctor, Mechanist."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Saria",
-          "speakerId": "avg_npc_532_1",
-          "text": "I'm the one getting Rhodes Island involved in Rhine's internal affairs—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Saria",
-          "speakerId": "avg_npc_532_1",
-          "text": "I have a duty to ensure you don't come to any harm."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ho'olheyak",
-          "speakerId": "avg_npc_536_1",
-          "text": "Ferdinand was right on the money."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ho'olheyak",
-          "speakerId": "avg_npc_536_1",
-          "text": "Rhodes Island's people have already found Saria."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Columbian Mercenary",
-          "speakerId": "avg_npc_399_1",
-          "text": "Should we maintain pursuit, ma'am?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ho'olheyak",
-          "speakerId": "avg_npc_536_1",
-          "text": "If I stuffed you inside that power armor just now, do you think you'd survive?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Columbian Mercenary",
-          "speakerId": "avg_npc_399_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ho'olheyak",
-          "speakerId": "avg_npc_536_1",
-          "text": "Relax."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ho'olheyak",
-          "speakerId": "avg_npc_536_1",
-          "text": "Just a hypothetical."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Columbian Mercenary",
-          "speakerId": "avg_npc_399_1",
-          "text": "Ma'am, no matter how powerful Saria is, there's only three of them."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Columbian Mercenary",
-          "speakerId": "avg_npc_399_1",
-          "text": "We've got them way outnumbered, and outgunned with our secret weapon."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ho'olheyak",
-          "speakerId": "avg_npc_536_1",
-          "text": "Underestimate the enemy at your own peril."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ho'olheyak",
-          "speakerId": "avg_npc_536_1",
-          "text": "Haven't you been around Rhine Lab enough to learn? The punier a scientist looks, the harder she might just pulverize you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Columbian Mercenary",
-          "speakerId": "avg_npc_399_1",
-          "text": "Y-You mean that mechanist, or the professor-looking one with the hidden face? They can't be stronger than Rhine's Defense Director, right?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ho'olheyak",
-          "speakerId": "avg_npc_536_1",
-          "text": "Rhodes Island... they've got talent for days."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ho'olheyak",
-          "speakerId": "avg_npc_536_1",
-          "text": "Let's go. I'm in love with that hypothetical just now, and I've got a few new ideas I want to try out."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ferdinand",
-          "speakerId": "avg_npc_522_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ferdinand",
-          "speakerId": "avg_npc_522_1",
-          "text": "Good evening, Colonel."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Colonel's Voice",
-          "speakerId": "avg_npc_522_1",
-          "text": "Clooney..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Colonel's Voice",
-          "speakerId": "avg_npc_522_1",
-          "text": "Give me a rundown of what's going on at the site."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ferdinand",
-          "speakerId": "avg_npc_522_1",
-          "text": "Just minor boat-rocking... You know how hard it is for Pioneers to be satisfied, no matter how generous you get with their terms."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ferdinand",
-          "speakerId": "avg_npc_522_1",
-          "text": "Initiative is their strong point, and it forms the basis of Columbia's endless expansion, but sometimes it carries with it a little... hassle."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Colonel's Voice",
-          "speakerId": "avg_npc_522_1",
-          "text": "So it's hassle. Unhassle it, then."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Colonel's Voice",
-          "speakerId": "avg_npc_522_1",
-          "text": "I want to see the results you promised, not Rhine Lab in the gossip rags."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Colonel's Voice",
-          "speakerId": "avg_npc_522_1",
-          "text": "Remember, you aren't the only tech company in Columbia."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ferdinand",
-          "speakerId": "avg_npc_522_1",
-          "text": "Understood."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ferdinand",
-          "speakerId": "avg_npc_522_1",
-          "text": "Rest assured, Colonel."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ferdinand",
-          "speakerId": "avg_npc_522_1",
-          "text": "Rhine Lab's products will not let you down."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Frontier Team Member",
-          "speakerId": "avg_npc_534_1",
-          "text": "Sir, got a whole crew wanting out of this now."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Frontier Team Member",
-          "speakerId": "avg_npc_534_1",
-          "text": "They say your plan's hopeless, that nobody's gonna listen to us. We can try everything we want, we'll never get our voices out."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Frontier Team Member",
-          "speakerId": "avg_npc_534_1",
-          "text": "They're also asking who cares what Rhine Lab's up to."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Frontier Team Member",
-          "speakerId": "avg_npc_534_1",
-          "text": "Like, we just need to get this work done sooner, get our money, move onto the next place and keep going."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Frontier Team Member",
-          "speakerId": "avg_npc_534_1",
-          "text": "As for the guys who... went missing, well, their luck just ran out. The Pioneer Teams out in the deep wastes see a lot more dead every year than we do, anyway."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "I get it."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "Tell them to just hold on a little longer. I'll bring our people back."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Frontier Team Member",
-          "speakerId": "avg_npc_534_1",
-          "text": "So what's your plan?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "I'm gonna head out for a bit."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Frontier Team Member",
-          "speakerId": "avg_npc_534_1",
-          "text": "Out? Isn't... isn't that too dangerous?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Frontier Team Member",
-          "speakerId": "avg_npc_534_1",
-          "text": "If the cops sent sharpshooters, they might just be waiting for you to come out."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "Sounds like a good deal to me."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Frontier Team Member",
-          "speakerId": "avg_npc_534_1",
-          "text": "Wh-What? You're keeping your head together, right?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "A police sharpshooter, right? Might just be an old friend of mine. Crack shot with a crossbow. If this is how it's gotta be, it's not gonna hurt too bad."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Frontier Team Member",
-          "speakerId": "avg_npc_534_1",
-          "text": "Sonny..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "Dr. Urbica, Doc Moore—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "I need you to come out for a walk."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ptilopsis",
-          "speakerId": "avg_128_plosis_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Elena",
-          "speakerId": "avg_135_halo_1",
-          "text": "You can drop the pretense. Do we have a choice here?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "Afraid not. Keep your chin up."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "Once the folks outside get to see the score, maybe they'll change their minds, open up to taking our demands seriously."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rhine Defense Member",
-          "speakerId": "avg_npc_528_1",
-          "text": "Officer, we've got movement!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rhine Defense Member",
-          "speakerId": "avg_npc_528_1",
-          "text": "Drones, prepare to fire—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "No. Hold your fire."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rhine Defense Member",
-          "speakerId": "avg_npc_528_1",
-          "text": "Officer...?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "We can't hurt the hostages."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "You, uh... Dr. Silence, over here."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "Is there a development, ma'am?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "Take a look through the binoculars. Are those your two colleagues behind S... the Pioneer?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Frontier Team Member",
-          "speakerId": "avg_npc_534_1",
-          "text": "Sir—th—the comm lit up!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "Give it."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "Knew it'd be you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "I could say the same thing."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "You, uh... you made rank, right? Didn't get the chance to congratulate you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "Who knew you'd stay at that precinct so long... You keep getting all this hassle from the frontier."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "And I never thought you'd end up so... depraved."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "You still remember any of the classes you took? Your law courses?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "You still remember... the shit you said to me, the day I joined the force?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "'That's great! We'll be partners again. It'll be just like all those games we played as kids. We'll protect Columbia's peace, bring the bad guys to justice—'"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "Hah... how's that irony? You're bad guy number one right here and now."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "Mary..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "What's all that crap your boys are holding? Homemade weapons?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "Drop those things before you embarrass yourselves any more."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "You degraded yourself this far, but you still have an option. One final option."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "Let those two innocent ladies next to you go."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "No. That's not in the cards for now."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "Dammit. You're inching over the cliff here."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "Sure, the government lets a criminal join the Pioneers if he doesn't want to do hard time."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "But if... you break the law again out on the frontier? What charges does that buy you?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "Answer me, counsel!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "Don't call me that, Mary, I'm begging you..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "You're trying to guilt-trip me."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "Yeah, I feel guilty now... guilty I let you go when you broke into my house. I should've hauled your ass straight to the station."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "That was a long time ago. I mean, I'd only just..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "...I'm sorry. I've always been sorry about that."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "But this time, I have a reason for doing all this. You have to hear me out, please."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Frontier Team Member",
-          "speakerId": "avg_npc_534_1",
-          "text": "Sir!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "What?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Frontier Team Member",
-          "speakerId": "avg_npc_534_1",
-          "text": "The doc, the doc, she..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "Doc Moore?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ptilopsis",
-          "speakerId": "avg_128_plosis_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ptilopsis",
-          "speakerId": "avg_128_plosis_1",
-          "text": "Configuration... error... entering... power save mode..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Elena",
-          "speakerId": "avg_135_halo_1",
-          "text": "Oh, shoot. Joyce..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "What's happening to her, Doctor?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Elena",
-          "speakerId": "avg_135_halo_1",
-          "text": "You can tell. She's having an attack."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Frontier Team Member",
-          "speakerId": "avg_npc_534_1",
-          "text": "What?! I—Is it Oripathy?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Frontier Team Member",
-          "speakerId": "avg_npc_534_1",
-          "text": "C'mon, I got her! There's drugs for her, right? I... I can't do injections..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ptilopsis",
-          "speakerId": "avg_128_plosis_1",
-          "text": "Ngh..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Frontier Team Member",
-          "speakerId": "avg_npc_534_1",
-          "text": "C'mon, she looks like hell!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Frontier Team Member",
-          "speakerId": "avg_npc_534_1",
-          "text": "I... I got this first-aid treatment band Rhine gave us. This does something for Oripathy flare-ups, right?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Frontier Team Member",
-          "speakerId": "avg_npc_534_1",
-          "text": "I'll put it on her..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Elena",
-          "speakerId": "avg_135_halo_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Elena",
-          "speakerId": "avg_135_halo_1",
-          "text": "You're willing to give your own emergency care device to Joyce?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Elena",
-          "speakerId": "avg_135_halo_1",
-          "text": "If you hand her that band, your odds of survival go down significantly on the off-chance you get a sudden attack."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Frontier Team Member",
-          "speakerId": "avg_npc_534_1",
-          "text": "The doc's been good to us all this time!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Frontier Team Member",
-          "speakerId": "avg_npc_534_1",
-          "text": "I don't want anything to happen to her..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Elena",
-          "speakerId": "avg_135_halo_1",
-          "text": "You say as the ones who kidnapped me and Joyce."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "We never wanted to do you dirty."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "I'm sorry... We're just a bunch of selfish nobodies."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "Are the comms still going?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "Ma'am, would you mind giving me permission to talk to the Pioneers?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "The Liberi experiencing an attack is my colleague, and my good friend."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "And more important still, I am her attending physician."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "I want to gather her situation from the Pioneers. Judging by their reactions, they clearly aren't unconcerned for her."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "Go nuts."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "But you don't have much time."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "I just got orders from on high. If the Pioneers refuse to cooperate for another ten minutes, we'll cut all comms to the test site... along with all power to their living quarters."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Greyy",
-          "speakerId": "avg_1027_greyy2_1",
-          "text": "Y—You'll cut the electricity?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Greyy",
-          "speakerId": "avg_1027_greyy2_1",
-          "text": "Day-night temperature swings are massive in the barrens... They'll be freezing by midnight!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Greyy",
-          "speakerId": "avg_1027_greyy2_1",
-          "text": "And there's several late-stage Oripathy patients among the Pioneers..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Greyy",
-          "speakerId": "avg_1027_greyy2_1",
-          "text": "They need medical facilities to live!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "I know."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "That's what makes this a warning."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "They need to know how serious Rhine and the police are here."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "All their protests and demands have to be founded on a legal basis... Once they take the criminal route, nobody's going to hear them out."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Greyy",
-          "speakerId": "avg_1027_greyy2_1",
-          "text": "But... aren't you friends with that Pioneer leader?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "Friends?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "The moment he abandoned himself, there was nothing left to say."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ptilopsis",
-          "speakerId": "avg_128_plosis_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "How is she?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Elena",
-          "speakerId": "avg_135_halo_1",
-          "text": "Real-time blood-crystal density's dropping. Eye movement indices are still highly irregular."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "Eye movement indices?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": null,
-          "text": "Due to her Oripathy's focus lying in the brain."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": null,
-          "text": "Any fluctuation in her condition will impact her nervous system, cause her to fall into deep sleep, and go so far as to trigger epileptic attacks."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "Huh? Who's there?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Elena",
-          "speakerId": "avg_135_halo_1",
-          "text": "The comms are still open."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "Hello, sir."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "I'm Joyce Moore's attending physician. My name is Silence."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "Doc Silence."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "Firstly, I'd like to offer you my thanks."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "Joyce's condition has only stabilized so quickly with your aid, and that of the other Pioneers."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "You're gonna thank us kidnappers, huh?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "In return, and please trust me when I say this, we really, truly wish to assist you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "We still have five minutes before your comms, and power to your living quarters, are simultaneously cut—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Frontier Team Member",
-          "speakerId": "avg_108_silent_1",
-          "text": "Sir—w—we've got a blackout!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "It seems they've acted ahead of schedule."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "Don't sweat it. I gotta appreciate you being willing to warn us."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "I gathered from ma'am Mary that you'd like a dialogue with Rhine Lab's upper management."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "Can I ask why that is?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "I wanna beg them to stop the experiments they're doing here."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "To what?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "You're a good doc, same as Doc Moore here. But something tells me stopping a project this big's out of your hands."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "Can you tell the Rhine Lab boss that this experiment is seriously, wicked dangerous?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "Sir, do you have any proof?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "Even if I did, would you believe me...? A lone Pioneer at the end of his rope?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rhine Defense Member",
-          "speakerId": "avg_npc_528_1",
-          "text": "Officer, we're all set. We can cut the site's comms at any time."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "Wait for Doc Silence to finish."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rhine Defense Member",
-          "speakerId": "avg_npc_528_1",
-          "text": "But the Director's demanding immediate..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "Sorry, what police rank does your director hold? Remind me."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "Tell fricking Ferdinand that saving people is my job. I'm not taking him on a ride-along here!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rhine Defense Member",
-          "speakerId": "avg_npc_528_1",
-          "text": "The Director's been in contact with the commissioner, Officer. They drew up this plan together."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "Director... Ferdinand?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "I never imagined Defense would fall under Energy's purview."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rhine Defense Member",
-          "speakerId": "avg_npc_528_1",
-          "text": "Er..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "If Ferdinand feels that Structural is his to rule too, then I would not mind resigning from Rhine Lab, effective immediately."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ptilopsis",
-          "speakerId": "avg_128_plosis_1",
-          "text": "......"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Elena",
-          "speakerId": "avg_135_halo_1",
-          "text": "Joyce... Joyce!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "Is she... asleep?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Elena",
-          "speakerId": "avg_135_halo_1",
-          "text": "She's lost consciousness."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Elena",
-          "speakerId": "avg_135_halo_1",
-          "text": "If we don't get her treatment in time, she... she'll experience brain death before long."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sonny",
-          "speakerId": "avg_npc_535_1",
-          "text": "......"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "Sir, I am preparing to enter the site now."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "I understand your concerns, so I would like to reassure you, I will not be carrying any weapons."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mary",
-          "speakerId": "avg_npc_527_1",
-          "text": "Don't do anything stupid, Doctor!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "I know full well what I am doing."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "Sir, I will not allow any police officers... nor Defense personnel to follow me."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rhine Defense Member",
-          "speakerId": "avg_npc_528_1",
-          "text": "Researcher Silence, I will report your conduct to the Director... Director Parvis."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "I am entering Test Site 359 under my status as a Rhodes Island Operator—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Greyy",
-          "speakerId": "avg_1027_greyy2_1",
-          "text": "Me too..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "—And my electrical engineering colleague will accompany me."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "We will provide medical services, free of charge, to the Oripathy patients on-site."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "Not just for my friend, but for all of you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "I do not care what choices Rhine Lab makes in the wake of this."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "I only know this—treating the Infected is constant to the Rhodes Island code of conduct."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Saria",
+      "speakerId": "avg_npc_532_1",
+      "isRemote": false,
+      "text": "No need, Doctor, Mechanist."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Saria",
+      "speakerId": "avg_npc_532_1",
+      "isRemote": false,
+      "text": "I'm the one getting Rhodes Island involved in Rhine's internal affairs—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Saria",
+      "speakerId": "avg_npc_532_1",
+      "isRemote": false,
+      "text": "I have a duty to ensure you don't come to any harm."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "29_g7_mainstreet_n"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ho'olheyak",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "Ferdinand was right on the money."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ho'olheyak",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "Rhodes Island's people have already found Saria."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Columbian Mercenary",
+      "speakerId": "avg_npc_399_1",
+      "isRemote": false,
+      "text": "Should we maintain pursuit, ma'am?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ho'olheyak",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "If I stuffed you inside that power armor just now, do you think you'd survive?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Columbian Mercenary",
+      "speakerId": "avg_npc_399_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ho'olheyak",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "Relax."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ho'olheyak",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "Just a hypothetical."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Columbian Mercenary",
+      "speakerId": "avg_npc_399_1",
+      "isRemote": false,
+      "text": "Ma'am, no matter how powerful Saria is, there's only three of them."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Columbian Mercenary",
+      "speakerId": "avg_npc_399_1",
+      "isRemote": false,
+      "text": "We've got them way outnumbered, and outgunned with our secret weapon."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ho'olheyak",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "Underestimate the enemy at your own peril."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ho'olheyak",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "Haven't you been around Rhine Lab enough to learn? The punier a scientist looks, the harder she might just pulverize you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Columbian Mercenary",
+      "speakerId": "avg_npc_399_1",
+      "isRemote": false,
+      "text": "Y-You mean that mechanist, or the professor-looking one with the hidden face? They can't be stronger than Rhine's Defense Director, right?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ho'olheyak",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "Rhodes Island... they've got talent for days."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ho'olheyak",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "Let's go. I'm in love with that hypothetical just now, and I've got a few new ideas I want to try out."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "29_g9_headquarter"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ferdinand",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ferdinand",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "Good evening, Colonel."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Colonel's Voice",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "Clooney..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Colonel's Voice",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "Give me a rundown of what's going on at the site."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ferdinand",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "Just minor boat-rocking... You know how hard it is for Pioneers to be satisfied, no matter how generous you get with their terms."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ferdinand",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "Initiative is their strong point, and it forms the basis of Columbia's endless expansion, but sometimes it carries with it a little... hassle."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Colonel's Voice",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "So it's hassle. Unhassle it, then."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Colonel's Voice",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "I want to see the results you promised, not Rhine Lab in the gossip rags."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Colonel's Voice",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "Remember, you aren't the only tech company in Columbia."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ferdinand",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "Understood."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ferdinand",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "Rest assured, Colonel."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ferdinand",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "Rhine Lab's products will not let you down."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "29_g3_cottage"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Frontier Team Member",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "Sir, got a whole crew wanting out of this now."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Frontier Team Member",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "They say your plan's hopeless, that nobody's gonna listen to us. We can try everything we want, we'll never get our voices out."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Frontier Team Member",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "They're also asking who cares what Rhine Lab's up to."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Frontier Team Member",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "Like, we just need to get this work done sooner, get our money, move onto the next place and keep going."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Frontier Team Member",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "As for the guys who... went missing, well, their luck just ran out. The Pioneer Teams out in the deep wastes see a lot more dead every year than we do, anyway."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "I get it."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "Tell them to just hold on a little longer. I'll bring our people back."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Frontier Team Member",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "So what's your plan?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "I'm gonna head out for a bit."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Frontier Team Member",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "Out? Isn't... isn't that too dangerous?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Frontier Team Member",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "If the cops sent sharpshooters, they might just be waiting for you to come out."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "Sounds like a good deal to me."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Frontier Team Member",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "Wh-What? You're keeping your head together, right?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "A police sharpshooter, right? Might just be an old friend of mine. Crack shot with a crossbow. If this is how it's gotta be, it's not gonna hurt too bad."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Frontier Team Member",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "Sonny..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "Dr. Urbica, Doc Moore—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "I need you to come out for a walk."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ptilopsis",
+      "speakerId": "avg_128_plosis_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Elena",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "You can drop the pretense. Do we have a choice here?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "Afraid not. Keep your chin up."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "Once the folks outside get to see the score, maybe they'll change their minds, open up to taking our demands seriously."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "29_g2_edgeofbase"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rhine Defense Member",
+      "speakerId": "avg_npc_528_1",
+      "isRemote": false,
+      "text": "Officer, we've got movement!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rhine Defense Member",
+      "speakerId": "avg_npc_528_1",
+      "isRemote": false,
+      "text": "Drones, prepare to fire—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "No. Hold your fire."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rhine Defense Member",
+      "speakerId": "avg_npc_528_1",
+      "isRemote": false,
+      "text": "Officer...?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "We can't hurt the hostages."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "You, uh... Dr. Silence, over here."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "Is there a development, ma'am?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "Take a look through the binoculars. Are those your two colleagues behind S... the Pioneer?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "29_g1_outdoorbase"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Frontier Team Member",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "Sir—th—the comm lit up!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "Give it."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": true,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "Knew it'd be you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": true,
+      "text": "I could say the same thing."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "You, uh... you made rank, right? Didn't get the chance to congratulate you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "Who knew you'd stay at that precinct so long... You keep getting all this hassle from the frontier."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": true,
+      "text": "And I never thought you'd end up so... depraved."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": true,
+      "text": "You still remember any of the classes you took? Your law courses?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": true,
+      "text": "You still remember... the shit you said to me, the day I joined the force?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": true,
+      "text": "'That's great! We'll be partners again. It'll be just like all those games we played as kids. We'll protect Columbia's peace, bring the bad guys to justice—'"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": true,
+      "text": "Hah... how's that irony? You're bad guy number one right here and now."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "Mary..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": true,
+      "text": "What's all that crap your boys are holding? Homemade weapons?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": true,
+      "text": "Drop those things before you embarrass yourselves any more."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": true,
+      "text": "You degraded yourself this far, but you still have an option. One final option."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": true,
+      "text": "Let those two innocent ladies next to you go."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "No. That's not in the cards for now."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": true,
+      "text": "Dammit. You're inching over the cliff here."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": true,
+      "text": "Sure, the government lets a criminal join the Pioneers if he doesn't want to do hard time."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": true,
+      "text": "But if... you break the law again out on the frontier? What charges does that buy you?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": true,
+      "text": "Answer me, counsel!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "Don't call me that, Mary, I'm begging you..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": true,
+      "text": "You're trying to guilt-trip me."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": true,
+      "text": "Yeah, I feel guilty now... guilty I let you go when you broke into my house. I should've hauled your ass straight to the station."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "That was a long time ago. I mean, I'd only just..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "...I'm sorry. I've always been sorry about that."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "But this time, I have a reason for doing all this. You have to hear me out, please."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Frontier Team Member",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "Sir!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "What?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Frontier Team Member",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "The doc, the doc, she..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "Doc Moore?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ptilopsis",
+      "speakerId": "avg_128_plosis_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ptilopsis",
+      "speakerId": "avg_128_plosis_1",
+      "isRemote": false,
+      "text": "Configuration... error... entering... power save mode..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Elena",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "Oh, shoot. Joyce..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "What's happening to her, Doctor?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Elena",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "You can tell. She's having an attack."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Frontier Team Member",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "What?! I—Is it Oripathy?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Frontier Team Member",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "C'mon, I got her! There's drugs for her, right? I... I can't do injections..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ptilopsis",
+      "speakerId": "avg_128_plosis_1",
+      "isRemote": false,
+      "text": "Ngh..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Frontier Team Member",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "C'mon, she looks like hell!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Frontier Team Member",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "I... I got this first-aid treatment band Rhine gave us. This does something for Oripathy flare-ups, right?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Frontier Team Member",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "I'll put it on her..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Elena",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Elena",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "You're willing to give your own emergency care device to Joyce?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Elena",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "If you hand her that band, your odds of survival go down significantly on the off-chance you get a sudden attack."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Frontier Team Member",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "The doc's been good to us all this time!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Frontier Team Member",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "I don't want anything to happen to her..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Elena",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "You say as the ones who kidnapped me and Joyce."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "We never wanted to do you dirty."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "I'm sorry... We're just a bunch of selfish nobodies."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "29_g2_edgeofbase"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "Are the comms still going?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "Ma'am, would you mind giving me permission to talk to the Pioneers?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "The Liberi experiencing an attack is my colleague, and my good friend."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "And more important still, I am her attending physician."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "I want to gather her situation from the Pioneers. Judging by their reactions, they clearly aren't unconcerned for her."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "Go nuts."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "But you don't have much time."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "I just got orders from on high. If the Pioneers refuse to cooperate for another ten minutes, we'll cut all comms to the test site... along with all power to their living quarters."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Greyy",
+      "speakerId": "avg_1027_greyy2_1",
+      "isRemote": false,
+      "text": "Y—You'll cut the electricity?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Greyy",
+      "speakerId": "avg_1027_greyy2_1",
+      "isRemote": false,
+      "text": "Day-night temperature swings are massive in the barrens... They'll be freezing by midnight!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Greyy",
+      "speakerId": "avg_1027_greyy2_1",
+      "isRemote": false,
+      "text": "And there's several late-stage Oripathy patients among the Pioneers..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Greyy",
+      "speakerId": "avg_1027_greyy2_1",
+      "isRemote": false,
+      "text": "They need medical facilities to live!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "I know."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "That's what makes this a warning."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "They need to know how serious Rhine and the police are here."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "All their protests and demands have to be founded on a legal basis... Once they take the criminal route, nobody's going to hear them out."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Greyy",
+      "speakerId": "avg_1027_greyy2_1",
+      "isRemote": false,
+      "text": "But... aren't you friends with that Pioneer leader?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "Friends?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "The moment he abandoned himself, there was nothing left to say."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "29_g1_outdoorbase"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ptilopsis",
+      "speakerId": "avg_128_plosis_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "How is she?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Elena",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "Real-time blood-crystal density's dropping. Eye movement indices are still highly irregular."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "Eye movement indices?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Due to her Oripathy's focus lying in the brain."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Any fluctuation in her condition will impact her nervous system, cause her to fall into deep sleep, and go so far as to trigger epileptic attacks."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "Huh? Who's there?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Elena",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "The comms are still open."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": true,
+      "text": "Hello, sir."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": true,
+      "text": "I'm Joyce Moore's attending physician. My name is Silence."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "Doc Silence."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": true,
+      "text": "Firstly, I'd like to offer you my thanks."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": true,
+      "text": "Joyce's condition has only stabilized so quickly with your aid, and that of the other Pioneers."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "You're gonna thank us kidnappers, huh?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": true,
+      "text": "In return, and please trust me when I say this, we really, truly wish to assist you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": true,
+      "text": "We still have five minutes before your comms, and power to your living quarters, are simultaneously cut—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Frontier Team Member",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": true,
+      "text": "Sir—w—we've got a blackout!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": true,
+      "text": "It seems they've acted ahead of schedule."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "Don't sweat it. I gotta appreciate you being willing to warn us."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": true,
+      "text": "I gathered from ma'am Mary that you'd like a dialogue with Rhine Lab's upper management."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": true,
+      "text": "Can I ask why that is?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "I wanna beg them to stop the experiments they're doing here."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": true,
+      "text": "To what?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "You're a good doc, same as Doc Moore here. But something tells me stopping a project this big's out of your hands."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "Can you tell the Rhine Lab boss that this experiment is seriously, wicked dangerous?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": true,
+      "text": "Sir, do you have any proof?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "Even if I did, would you believe me...? A lone Pioneer at the end of his rope?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "29_g2_edgeofbase"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rhine Defense Member",
+      "speakerId": "avg_npc_528_1",
+      "isRemote": false,
+      "text": "Officer, we're all set. We can cut the site's comms at any time."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "Wait for Doc Silence to finish."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rhine Defense Member",
+      "speakerId": "avg_npc_528_1",
+      "isRemote": false,
+      "text": "But the Director's demanding immediate..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "Sorry, what police rank does your director hold? Remind me."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "Tell fricking Ferdinand that saving people is my job. I'm not taking him on a ride-along here!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rhine Defense Member",
+      "speakerId": "avg_npc_528_1",
+      "isRemote": false,
+      "text": "The Director's been in contact with the commissioner, Officer. They drew up this plan together."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "Director... Ferdinand?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "I never imagined Defense would fall under Energy's purview."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rhine Defense Member",
+      "speakerId": "avg_npc_528_1",
+      "isRemote": false,
+      "text": "Er..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "If Ferdinand feels that Structural is his to rule too, then I would not mind resigning from Rhine Lab, effective immediately."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "29_g3_cottage"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ptilopsis",
+      "speakerId": "avg_128_plosis_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Elena",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "Joyce... Joyce!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "Is she... asleep?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Elena",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "She's lost consciousness."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Elena",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "If we don't get her treatment in time, she... she'll experience brain death before long."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sonny",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": true,
+      "text": "Sir, I am preparing to enter the site now."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": true,
+      "text": "I understand your concerns, so I would like to reassure you, I will not be carrying any weapons."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "29_g2_edgeofbase"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mary",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "Don't do anything stupid, Doctor!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "I know full well what I am doing."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "Sir, I will not allow any police officers... nor Defense personnel to follow me."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rhine Defense Member",
+      "speakerId": "avg_npc_528_1",
+      "isRemote": false,
+      "text": "Researcher Silence, I will report your conduct to the Director... Director Parvis."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "I am entering Test Site 359 under my status as a Rhodes Island Operator—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Greyy",
+      "speakerId": "avg_1027_greyy2_1",
+      "isRemote": false,
+      "text": "Me too..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "—And my electrical engineering colleague will accompany me."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "We will provide medical services, free of charge, to the Oripathy patients on-site."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "Not just for my friend, but for all of you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "I do not care what choices Rhine Lab makes in the wake of this."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "I only know this—treating the Infected is constant to the Rhodes Island code of conduct."
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": []

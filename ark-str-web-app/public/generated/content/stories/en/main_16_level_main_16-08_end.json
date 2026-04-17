@@ -11,6 +11,13 @@
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "66_g3_miningarea"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
       "type": "narration",
       "text": "<p=1>Central Far North Mining District, Ursus</>"
     },
@@ -18,6 +25,7 @@
       "type": "dialogue",
       "speakerName": "Mon3tr",
       "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
       "text": "......"
     },
     {
@@ -27,12 +35,14 @@
       "type": "dialogue",
       "speakerName": "Ksenia",
       "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Ksenia",
       "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
       "text": "......"
     },
     {
@@ -46,24 +56,24 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "Huh? Oh... uh, no."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "I just..."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "Huh? Oh... uh, no."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "I just..."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -78,167 +88,189 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "(Shakes head)"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "I chose to be your guide. Besides, I want to know the truth about Oka too."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "Worst case scenario, I guess they exile me..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "The path ahead seems to be safe, Doctor. I do not detect any lifeforms—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "Huh?"
-        },
-        {
-          "type": "narration",
-          "text": "Ksenia glances at Mon3tr, then quickly and awkwardly looks away.\nYou notice the researcher has been following Mon3tr quietly, looking to her from time to time. Even Mon3tr has noticed it now."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "You keep glancing at me, Ksenia... do I look weird?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "What? No, no!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "It's just, seeing you brings back memories."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "What memories?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "You see... the problem is that I don't remember them clearly."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "It's so distant that it's become faded and indistinct, like ink on a piece of paper that's been submerged in water..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "But... may I ask you a couple of questions?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "Of course! I only hope I can answer them."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "You said your name is Mon3tr?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "Yes, that's what they call me."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "Mon3tr... Mon3tr."
-        },
-        {
-          "type": "narration",
-          "text": "She chews on the unfamiliar name."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "Mon3tr, do you—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "Do you feel cold...?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "Huh?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "Wh-What I mean is, you're quite lightly dressed."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "I can give you my jacket, if you need it. It'll at least keep the wind off you before we enter the mines."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "I guess it might be a little too old—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "I-I get it! There's no need!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "It took me a little while to process it because you're the first one to ask me this question. But no, I'm really not cold!"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "(Shakes head)"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "I chose to be your guide. Besides, I want to know the truth about Oka too."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "Worst case scenario, I guess they exile me..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "The path ahead seems to be safe, Doctor. I do not detect any lifeforms—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "Huh?"
+    },
+    {
+      "type": "narration",
+      "text": "Ksenia glances at Mon3tr, then quickly and awkwardly looks away.\nYou notice the researcher has been following Mon3tr quietly, looking to her from time to time. Even Mon3tr has noticed it now."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "You keep glancing at me, Ksenia... do I look weird?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "What? No, no!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "It's just, seeing you brings back memories."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "What memories?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "You see... the problem is that I don't remember them clearly."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "It's so distant that it's become faded and indistinct, like ink on a piece of paper that's been submerged in water..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "But... may I ask you a couple of questions?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "Of course! I only hope I can answer them."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "You said your name is Mon3tr?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "Yes, that's what they call me."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "Mon3tr... Mon3tr."
+    },
+    {
+      "type": "narration",
+      "text": "She chews on the unfamiliar name."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "Mon3tr, do you—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "Do you feel cold...?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "Huh?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "Wh-What I mean is, you're quite lightly dressed."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "I can give you my jacket, if you need it. It'll at least keep the wind off you before we enter the mines."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "I guess it might be a little too old—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "I-I get it! There's no need!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "It took me a little while to process it because you're the first one to ask me this question. But no, I'm really not cold!"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -251,12 +283,14 @@
               "type": "dialogue",
               "speakerName": "Mon3tr",
               "speakerId": "avg_4179_monstr_1",
+              "isRemote": false,
               "text": "No, I'm not cold. But thank you for the offer!"
             },
             {
               "type": "dialogue",
               "speakerName": "Mon3tr",
               "speakerId": "avg_4179_monstr_1",
+              "isRemote": false,
               "text": "Were you about to say something, Doctor?"
             },
             {
@@ -269,8 +303,7 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -283,36 +316,42 @@
               "type": "dialogue",
               "speakerName": "Mon3tr",
               "speakerId": "avg_4179_monstr_1",
+              "isRemote": false,
               "text": "It's alright, Ksenia. You can trust us."
             },
             {
               "type": "dialogue",
               "speakerName": "Mon3tr",
               "speakerId": "avg_4179_monstr_1",
+              "isRemote": false,
               "text": "We'll be walking together for a while. Feel free to ask any questions."
             },
             {
               "type": "dialogue",
               "speakerName": "Ksenia",
               "speakerId": "avg_4208_wintim_1",
+              "isRemote": false,
               "text": "Right..."
             },
             {
               "type": "dialogue",
               "speakerName": "Ksenia",
               "speakerId": "avg_4208_wintim_1",
+              "isRemote": false,
               "text": "You said you were colleagues of Director Kal'tsit..."
             },
             {
               "type": "dialogue",
               "speakerName": "Ksenia",
               "speakerId": "avg_4208_wintim_1",
+              "isRemote": false,
               "text": "Is... is Director Kal'tsit well?"
             },
             {
               "type": "dialogue",
               "speakerName": "Mon3tr",
               "speakerId": "avg_4179_monstr_1",
+              "isRemote": false,
               "text": "Um..."
             },
             {
@@ -320,8 +359,7 @@
             }
           ]
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -336,8 +374,7 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -347,231 +384,271 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "I... I wouldn't say that."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "I was Professor Ilia's assistant. I didn't have much interaction with Director Kal'tsit personally."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "All I remember is a few..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ilia",
-          "speakerId": null,
-          "text": "Ksenia! Ksenia!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "Y-Yes, Professor!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ilia",
-          "speakerId": null,
-          "text": "Why isn't the experiment data from this morning on my desk?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "I'm sorry! I'll go get it right now!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ilia",
-          "speakerId": null,
-          "text": "How many times do I have to tell you? You need to be able to keep up with the pacing, if you want to be part of the project. If all I wanted was someone to copy instrument readings onto paper, my three-year-old daughter could do it."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ilia",
-          "speakerId": null,
-          "text": "And what are these scribbles? Energy conversion equations?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ilia",
-          "speakerId": null,
-          "text": "Do your job first, Ksenia, before you try anything new."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "What is this?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ilia",
-          "speakerId": "avg_003_kalts_1",
-          "text": "D-Director Kal'tsit. It's nothing, nothing to waste your time on."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ilia",
-          "speakerId": "avg_003_kalts_1",
-          "text": "Ksenia is still young. It'll take time for her to get used to working on an active project. I'll take responsibility for any mistakes..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "Did you come up with this equation yourself?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_003_kalts_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_003_kalts_1",
-          "text": "Yes..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "The theoretical model is quite creative, and the simulation model is sound. The equation would form the basis of highly efficient power supplies, if it can be successfully established."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "Kinetic energy loss has not been taken into account, however, and more validation of the data is necessary."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ilia",
-          "speakerId": "avg_003_kalts_1",
-          "text": "Good grief..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_003_kalts_1",
-          "text": "I... I'm sorry, Director Kal'tsit."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "There's no need to apologize. You took initiative, you wanted to be a part of what's going on."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "You can listen in on the next report session, if you want."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_003_kalts_1",
-          "text": "R-Really?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "And don't be so hard on her, Ilia. One should encourage the enthusiasm of youth appropriately."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "You made worse mistakes when you were her age."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ilia",
-          "speakerId": "avg_003_kalts_1",
-          "text": "You're right. I understand."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_003_kalts_1",
-          "text": "Th-Thank you..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "It's true that Director Kal'tsit inspired me at one point."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "Like many who were there, I had hoped that research into the Sarcophagus would yield a new form of clean energy that could benefit everyone."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "That way, miners would be liberated from the dangers of the mines, and the lives of the Infected would no longer be needed to fuel this monstrosity by the name of Ursus."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "I was young, naive... it never occurred to me that a country's character, like the character of a person, is not so easily shaken or changed."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "Regardless, I was very happy I got to hear Director Kal'tsit's name after the accident."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "I thought, maybe I would have a chance to..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "See her again?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "I... I wouldn't say that."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "I was Professor Ilia's assistant. I didn't have much interaction with Director Kal'tsit personally."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "All I remember is a few..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_graduate"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ilia",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Ksenia! Ksenia!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "Y-Yes, Professor!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ilia",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Why isn't the experiment data from this morning on my desk?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "I'm sorry! I'll go get it right now!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ilia",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "How many times do I have to tell you? You need to be able to keep up with the pacing, if you want to be part of the project. If all I wanted was someone to copy instrument readings onto paper, my three-year-old daughter could do it."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ilia",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "And what are these scribbles? Energy conversion equations?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ilia",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Do your job first, Ksenia, before you try anything new."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "What is this?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ilia",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "D-Director Kal'tsit. It's nothing, nothing to waste your time on."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ilia",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "Ksenia is still young. It'll take time for her to get used to working on an active project. I'll take responsibility for any mistakes..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "Did you come up with this equation yourself?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "Yes..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "The theoretical model is quite creative, and the simulation model is sound. The equation would form the basis of highly efficient power supplies, if it can be successfully established."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "Kinetic energy loss has not been taken into account, however, and more validation of the data is necessary."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ilia",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "Good grief..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "I... I'm sorry, Director Kal'tsit."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "There's no need to apologize. You took initiative, you wanted to be a part of what's going on."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "You can listen in on the next report session, if you want."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "R-Really?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "And don't be so hard on her, Ilia. One should encourage the enthusiasm of youth appropriately."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "You made worse mistakes when you were her age."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ilia",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "You're right. I understand."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "Th-Thank you..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "66_g3_miningarea"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "It's true that Director Kal'tsit inspired me at one point."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "Like many who were there, I had hoped that research into the Sarcophagus would yield a new form of clean energy that could benefit everyone."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "That way, miners would be liberated from the dangers of the mines, and the lives of the Infected would no longer be needed to fuel this monstrosity by the name of Ursus."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "I was young, naive... it never occurred to me that a country's character, like the character of a person, is not so easily shaken or changed."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "Regardless, I was very happy I got to hear Director Kal'tsit's name after the accident."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "I thought, maybe I would have a chance to..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "See her again?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -581,66 +658,73 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "Sorry! Forget I ever said anything. I assume it's something you may not answer."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "I just thought... you look like you might know the Director. Perhaps you knew her, knew where she went, and if she's doing well."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "But I suppose it was never my place to know..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "Ksenia."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "Yes?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "You'll see Kal'tsit again. I promise."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "Oh, so you mean she is still..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "I am delighted to hear that."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "avg_4179_monstr_1",
-          "text": "We'll see Kal'tsit again, won't we, Doctor?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "Sorry! Forget I ever said anything. I assume it's something you may not answer."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "I just thought... you look like you might know the Director. Perhaps you knew her, knew where she went, and if she's doing well."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "But I suppose it was never my place to know..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "Ksenia."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "Yes?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "You'll see Kal'tsit again. I promise."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "Oh, so you mean she is still..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "I am delighted to hear that."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "avg_4179_monstr_1",
+      "isRemote": false,
+      "text": "We'll see Kal'tsit again, won't we, Doctor?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -650,45 +734,48 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "I look forward to it..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "Should I get the chance, I would like to go to this 'Rhodes Island' that Director Kal'tsit founded, and which Serafina has mentioned..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "One moment... something's not right..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "We didn't see anyone on the way, did we?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "No miners, and even though we're very near the mine shafts, we haven't seen a single guard, a single Patrol Unit."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "I look forward to it..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "Should I get the chance, I would like to go to this 'Rhodes Island' that Director Kal'tsit founded, and which Serafina has mentioned..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "One moment... something's not right..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "We didn't see anyone on the way, did we?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "No miners, and even though we're very near the mine shafts, we haven't seen a single guard, a single Patrol Unit."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -703,30 +790,31 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "I know about the lockdown. But the transfer—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "No... What I know is completely different."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ksenia",
-          "speakerId": "avg_4208_wintim_1",
-          "text": "I thought the only problem was the failure of the Oka experiments. I never heard anything about the mining district being cleaned up."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "I know about the lockdown. But the transfer—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "No... What I know is completely different."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ksenia",
+      "speakerId": "avg_4208_wintim_1",
+      "isRemote": false,
+      "text": "I thought the only problem was the failure of the Oka experiments. I never heard anything about the mining district being cleaned up."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -736,8 +824,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -752,8 +839,7 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -768,967 +854,1141 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "narration",
-          "text": "<p=1>Far North Tundra, Ursus</>\nRankin puts the finishing touches by carving on the door of the carriage, then throws away the rock."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Calm Miner",
-          "speakerId": "avg_npc_1970_1",
-          "text": "I know how to draw the symbol now. I'll help next time."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "Sure. You can do it next time."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "I'm done over here. Have we gotten the stuff out of the other containers?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Calm Miner",
-          "speakerId": "avg_npc_1970_1",
-          "text": "Pavel's side is done. The last two containers didn't have much in the way of useful supplies. Should we remove the mechanical components and take them with us?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "You said you used to work in the machine factories in the city?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Calm Miner",
-          "speakerId": "avg_npc_1970_1",
-          "text": "Yes."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "Take a few parts that can be used on other machines. Maybe we can sell them for money."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "Assuming anyone would buy them..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Raidian",
-          "speakerId": "avg_npc_1730_1",
-          "text": "We must also take the injured into account."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "Gospozha Serafina."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Raidian",
-          "speakerId": "avg_npc_1730_1",
-          "text": "We have too many injured. It's not realistic to immediately continue the journey on foot."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Raidian",
-          "speakerId": "avg_npc_1730_1",
-          "text": "We need rest."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Excited Miner",
-          "speakerId": "avg_npc_1969_1",
-          "text": "Rankin! We took inventory and we should have enough food to last two or three days if we ration it. It should last us until the next village."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "I thought there would be more... but I suppose we should be glad to have what we have."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Excited Miner",
-          "speakerId": "avg_npc_1969_1",
-          "text": "Vetochki found some nuts stockpiled by musbeasts. It'll sate the hunger for a while, and it doesn't spoil easily."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Excited Miner",
-          "speakerId": "avg_npc_1969_1",
-          "text": "Right now, we need medical supplies more than we need food—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Calm Miner",
-          "speakerId": "avg_npc_1970_1",
-          "text": "Where do we find it?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "Only way is the nomadic cities, or a mobile medical post. If we can contact one..."
-        },
-        {
-          "type": "narration",
-          "text": "Rankin looks towards Raidian."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Raidian",
-          "speakerId": "avg_npc_1730_1",
-          "text": "I can attempt to contact a nearby mobile medical post."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "Thank you, Gospozha Serafina."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Raidian",
-          "speakerId": "avg_npc_1730_1",
-          "text": "Don't thank me so soon. I have a condition."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Excited Miner",
-          "speakerId": "avg_npc_1969_1",
-          "text": "We appreciate what you and your team have done for us, but in our current circumstances—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Raidian",
-          "speakerId": "avg_npc_1730_1",
-          "text": "The injured must stay put while I attempt to contact the mobile medical posts."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Raidian",
-          "speakerId": "avg_npc_1730_1",
-          "text": "It's my judgment as a medical professional that they need rest."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Raidian",
-          "speakerId": "avg_npc_1730_1",
-          "text": "The kind of rest that isn't bumpy."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nikto",
-          "speakerId": "avg_npc_1967_1",
-          "text": "Who are you taking?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "Lidiya, Pavel, and a few sweet talkers who could coax coins out of their supervisors."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nikto",
-          "speakerId": "avg_npc_1967_1",
-          "text": "You didn't like those slick talkers from the ore-washing plant."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "It has nothing to do with my preferences."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nikto",
-          "speakerId": "avg_npc_1967_1",
-          "text": "Why not me? Because I might argue with you?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "We're seeking help from a nearby village, not soliciting donations from a noble banquet in Grypherburg, <i>barin</i>. Your way won't work with farmers who can't even write their own name."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nikto",
-          "speakerId": "avg_npc_1967_1",
-          "text": "Call me that again, and I'll break your nose."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "You'll break your knuckles on it."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nikto",
-          "speakerId": "avg_npc_1967_1",
-          "text": "You don't think seeking help from the village is a good idea."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "...Right."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "Until Gospozha Serafina makes contact with a mobile medical post, however, we can't sit around doing nothing."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "We're not injured."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nikto",
-          "speakerId": "avg_npc_1967_1",
-          "text": "We've sat around doing nothing. We sang and danced—you played the accordion!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "All past tense. Our supplies will run out soon. I must do what I can before that happens."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "While we're gone... I need you to stay here and take care of those staying behind."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nikto",
-          "speakerId": "avg_npc_1967_1",
-          "text": "I doubt the villagers would be charitable this time."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "Of course. Few people are glad to open their door and see an Infected standing in it. We've already learned that."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Excited Miner",
-          "speakerId": "avg_npc_1969_1",
-          "text": "How long has Rankin been in there? Should we check it out?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Calm Miner",
-          "speakerId": "avg_npc_1970_1",
-          "text": "Calm down. Rankin told us to wait."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Excited Miner",
-          "speakerId": "avg_npc_1969_1",
-          "text": "But last time—"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Calm Miner",
-          "speakerId": "avg_npc_1970_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Calm Miner",
-          "speakerId": "avg_npc_1970_1",
-          "text": "Come out, Vetochki. I know you were following us. Rankin must have known, too. He just chose not to say anything."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Calm Miner",
-          "speakerId": "avg_npc_1970_1",
-          "text": "Why didn't you stay behind with Nikto and the others? You need to take care of your <i>babushka</i>, don't you?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vetochki",
-          "speakerId": "avg_4207_branch_1",
-          "text": "Babushka said, it's alright..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vetochki",
-          "speakerId": "avg_4207_branch_1",
-          "text": "I wanted to, help. So I, came. I can, h-help!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Calm Miner",
-          "speakerId": "avg_npc_1970_1",
-          "text": "Did Nikto know that you came with us? He might have thought that you went missing."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vetochki",
-          "speakerId": "avg_4207_branch_1",
-          "text": "I left, a... note."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Calm Miner",
-          "speakerId": "avg_npc_1970_1",
-          "text": "That works. You know, I thought you could be useful with us, but Rankin wouldn't have it."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vetochki",
-          "speakerId": "avg_4207_branch_1",
-          "text": "Wh-Where has, <i>uchitel</i>, gone?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Calm Miner",
-          "speakerId": "avg_npc_1970_1",
-          "text": "He's going to negotiate with them, see if we can get some food."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vetochki",
-          "speakerId": "avg_4207_branch_1",
-          "text": "Wh-What do we, have to t-trade?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Calm Miner",
-          "speakerId": "avg_npc_1970_1",
-          "text": "Parts from the vehicles."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Excited Miner",
-          "speakerId": "avg_npc_1969_1",
-          "text": "But he went over empty-handed!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Calm Miner",
-          "speakerId": "avg_npc_1970_1",
-          "text": "Maybe he wanted to show that he means no harm. People might get the wrong idea if he was holding a weapon or a chunk of metal."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Excited Miner",
-          "speakerId": "avg_npc_1969_1",
-          "text": "But he didn't take anything the last time either, and those people stalled for time while they sneaked someone out to call for the Patrol Units—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Excited Miner",
-          "speakerId": "avg_npc_1969_1",
-          "text": "I have to help him!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Calm Miner",
-          "speakerId": "avg_npc_1970_1",
-          "text": "Pavel!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Calm Miner",
-          "speakerId": "avg_npc_1970_1",
-          "text": "<i>Chyort</i>... wait up!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Calm Miner",
-          "speakerId": "avg_npc_1970_1",
-          "text": "(Hushed) Stop it!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Excited Miner",
-          "speakerId": "avg_npc_1969_1",
-          "text": "Rankin is inside—"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "The miner covers his colleague's mouth with his hand and pulls him to one side.\nThey can hear the indistinct sound of talking coming from inside the house."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Voice from Inside",
-          "speakerId": null,
-          "text": "...Understood..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Voice from Inside",
-          "speakerId": null,
-          "text": "(Sound of metal grinding)"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Voice from Inside",
-          "speakerId": null,
-          "text": "...We've... informed..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Voice from Inside",
-          "speakerId": null,
-          "text": "(Sound of impact)"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Calm Miner",
-          "speakerId": "avg_npc_1970_1",
-          "text": "(Whisper) Something doesn't sound right."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Excited Miner",
-          "speakerId": "avg_npc_1969_1",
-          "text": "Mmmpppphhh—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Calm Miner",
-          "speakerId": "avg_npc_1970_1",
-          "text": "(Whisper) Promise you won't just kick down the door, and I'll let go."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Excited Miner",
-          "speakerId": "avg_npc_1969_1",
-          "text": "(Nods)"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "As soon as he can breathe again, the miner points towards the back door of the house.\nThere, clear as day on the snow, is a row of footprints leading away from the house."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Calm Miner",
-          "speakerId": "avg_npc_1970_1",
-          "text": "(Whisper) ...<i>Govno.</i>"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Calm Miner",
-          "speakerId": "avg_npc_1970_1",
-          "text": "(Whisper) One of you, go knock on the door. Act anxious and spin a story when they answer the door."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Slick Miner",
-          "speakerId": null,
-          "text": "(Whisper) Why don't YOU go? If they've got Rankin, whoever knocks on the door is next, isn't it?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vetochki",
-          "speakerId": "avg_4207_branch_1",
-          "text": "(Whisper) I-I'll go."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Calm Miner",
-          "speakerId": "avg_npc_1970_1",
-          "text": "(Whisper) No, Vetochki—"
-        },
-        {
-          "type": "narration",
-          "text": "Vetochki taps lightly on the door with her knuckles.\nThe sound from inside ceases."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Voice from Inside",
-          "speakerId": null,
-          "text": "Who's there?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Calm Miner",
-          "speakerId": "avg_npc_1970_1",
-          "text": "(Whisper) ...Keep knocking."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vetochki",
-          "speakerId": "avg_4207_branch_1",
-          "text": "(Knocks)"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Voice from Inside",
-          "speakerId": null,
-          "text": "Back so soon..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Villager",
-          "speakerId": "avg_npc_092",
-          "text": "Argh!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "What's going on—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "Sir!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Calm Miner",
-          "speakerId": "avg_npc_1970_1",
-          "text": "Are you alright, Rankin?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "Lidiya? I thought I told you to wait outside—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "...Vetochki?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "What are you doing here?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Friendly Villager",
-          "speakerId": "avg_npc_092",
-          "text": "So you're all miners who came out under orders to find supplies."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Calm Miner",
-          "speakerId": "avg_npc_1970_1",
-          "text": "Yes, sir! I must apologize for what that fool did. He spends so much time underground that he's forgotten how to tell a good person from a bad one."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Excited Miner",
-          "speakerId": "avg_npc_1969_1",
-          "text": "I'm sorry, I'm so sorry. We had a bad experience when we tried to seek help from another village, and I thought this would be the same—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "Pavel."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Friendly Villager",
-          "speakerId": "avg_npc_092",
-          "text": "You're honest about things. I have a fair idea how people from other villages treat the Infected... most of Ursus is like that."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Friendly Villager",
-          "speakerId": "avg_npc_092",
-          "text": "But you're not those Infected that don't care about authority and just want to cause trouble. You're miners, right?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Calm Miner",
-          "speakerId": "avg_npc_1970_1",
-          "text": "Yes! You know, of course, that we can't leave the mining district without permission from up high."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Calm Miner",
-          "speakerId": "avg_npc_1970_1",
-          "text": "This is our foreman right here. They told him not to go back until he's found supplies."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Friendly Villager",
-          "speakerId": "avg_npc_092",
-          "text": "Would the bosses leave you to starve if you don't find it?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Calm Miner",
-          "speakerId": "avg_npc_1970_1",
-          "text": "Yes. It's not so bad for adults like us, but kids like Vetochki over here, how are they supposed to grow without eating?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Friendly Villager",
-          "speakerId": "avg_npc_092",
-          "text": "Vetochki? This girl? She's a miner too?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Friendly Villager",
-          "speakerId": "avg_npc_092",
-          "text": "How old are you...?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vetochki",
-          "speakerId": "avg_4207_branch_1",
-          "text": "I-I'm—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Friendly Villager",
-          "speakerId": "avg_npc_092",
-          "text": "Let me guess. Ten?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vetochki",
-          "speakerId": "avg_4207_branch_1",
-          "text": "Fifteen."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Friendly Villager",
-          "speakerId": "avg_npc_092",
-          "text": "Haha. You're shy, like my daughter... she might have a child your age now, if she's still alive."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Friendly Villager",
-          "speakerId": "avg_npc_092",
-          "text": "She went to the mines after she got the Stone Disease. Not around these parts, to the east, the Northern Tundra? It's further away, anyhow."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vetochki",
-          "speakerId": "avg_4207_branch_1",
-          "text": "Th-The mines, are good. D-Don't worry... <i>dedushka</i>."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Friendly Villager",
-          "speakerId": "avg_npc_092",
-          "text": "<i>Dedushka</i>... grandpa, huh...?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Friendly Villager",
-          "speakerId": "avg_npc_092",
-          "text": "I don't even know how and when she got sick. She wouldn't say. I haven't heard from her for a long time."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Friendly Villager",
-          "speakerId": "avg_npc_092",
-          "text": "Let's not talk about that! Sounds like you have people running your mining district. Some places don't care about their miners at all, giving them nothing to eat, and they don't give them any other way out either."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Friendly Villager",
-          "speakerId": "avg_npc_092",
-          "text": "I heard some miners got so desperate they ran away. They'd rather risk the Patrol Units."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Calm Miner",
-          "speakerId": "avg_npc_1970_1",
-          "text": "Can you help us?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Friendly Villager",
-          "speakerId": "avg_npc_092",
-          "text": "My wife went out to discuss things with the others before you came in."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Calm Miner",
-          "speakerId": "avg_npc_1970_1",
-          "text": "So those footprints were..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "You have the parts, Lidiya?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Calm Miner",
-          "speakerId": "avg_npc_1970_1",
-          "text": "Right here."
-        },
-        {
-          "type": "narration",
-          "text": "Rankin takes the cloth package and gives it to the old man."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "Here, you should be able to replace the aging parts on your harvester with it."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "In exchange for the food you shared with us."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Friendly Villager",
-          "speakerId": "avg_npc_092",
-          "text": "Sure, sure... honestly, I don't know anything about harvesters other than that it's been broken for a while. Do you mind helping me fit the part on if you want to help?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Calm Miner",
-          "speakerId": "avg_npc_1970_1",
-          "text": "I'll take a look. I used to work in a machine factory."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Friendly Villager",
-          "speakerId": "avg_npc_092",
-          "text": "That's great."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nikto",
-          "speakerId": "avg_npc_1967_1",
-          "text": "You really managed to get food. A fair bit of it, too."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "Gennady says it was a good year for crops, but his harvester was broken. They managed to harvest the mossoat by hand, only to have surplus grain sitting around in granaries because the caravans didn't come this year."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "Life is hard for everyone without cash. Still, they were willing to barter with us, rather than waiting until spring to sell."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nikto",
-          "speakerId": "avg_npc_1967_1",
-          "text": "Lidiya said those parts are worth more than mossoat."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "As far as we're concerned, food is priceless."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Friendly Villager",
-          "speakerId": "avg_npc_092",
-          "text": "Must you go so soon?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "Yes. We've accomplished our mission. It's time to go back."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Friendly Villager",
-          "speakerId": "avg_npc_092",
-          "text": "I had hoped that you would fill your bellies before you go."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Friendly Villager",
-          "speakerId": "avg_npc_092",
-          "text": "If you want, there are a few houses on the west end of the village that have been empty since the previous inhabitants left. Your group can take shelter there, make a fire, get warm and make some food."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "Spasibo..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "I can't tell you how grateful I am."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Friendly Villager",
-          "speakerId": "avg_npc_092",
-          "text": "There's no need. The girl helped us repair the harvester for next year. We're the ones who should thank you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Friendly Villager",
-          "speakerId": "avg_npc_092",
-          "text": "Besides, it's not like we did much."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Friendly Villager",
-          "speakerId": "avg_npc_092",
-          "text": "Normally, we don't touch the collective food stores for winter. Patrol Units are less frequent these days, but it's a chore when the tax collectors come around."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Friendly Villager",
-          "speakerId": "avg_npc_092",
-          "text": "All we old folks did was to take a little grain out of our own reserves, so that you can go back and say you've done your job."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Friendly Villager",
-          "speakerId": "avg_npc_092",
-          "text": "Not like there's anything else we can help with—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "Maybe you can tell us your daughter's name. We can try to ask when we—uh, return to the mining district."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Friendly Villager",
-          "speakerId": "avg_npc_092",
-          "text": "Oh, she's not here in the Far North! She's in the Northern Tundra, far to the east..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rankin",
-          "speakerId": "avg_npc_1963_1",
-          "text": "Just tell me."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Friendly Villager",
-          "speakerId": "avg_npc_092",
-          "text": "Well, I suppose it can do no harm."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Friendly Villager",
-          "speakerId": "avg_npc_092",
-          "text": "Her name is Milana..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "A pair of blank, soulless eyes gaze out from the darkness.\nThe cracking of the bonfire hides his indistinct mutter."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hawley",
-          "speakerId": "avg_npc_1971_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hawley",
-          "speakerId": "avg_npc_1971_1",
-          "text": "Achieve..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hawley",
-          "speakerId": "avg_npc_1971_1",
-          "text": "Salvation."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "background",
+      "backgroundId": "66_g7_farnorthtundra"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "<p=1>Far North Tundra, Ursus</>\nRankin puts the finishing touches by carving on the door of the carriage, then throws away the rock."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Calm Miner",
+      "speakerId": "avg_npc_1970_1",
+      "isRemote": false,
+      "text": "I know how to draw the symbol now. I'll help next time."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "Sure. You can do it next time."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "I'm done over here. Have we gotten the stuff out of the other containers?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Calm Miner",
+      "speakerId": "avg_npc_1970_1",
+      "isRemote": false,
+      "text": "Pavel's side is done. The last two containers didn't have much in the way of useful supplies. Should we remove the mechanical components and take them with us?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "You said you used to work in the machine factories in the city?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Calm Miner",
+      "speakerId": "avg_npc_1970_1",
+      "isRemote": false,
+      "text": "Yes."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "Take a few parts that can be used on other machines. Maybe we can sell them for money."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "Assuming anyone would buy them..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Raidian",
+      "speakerId": "avg_npc_1730_1",
+      "isRemote": false,
+      "text": "We must also take the injured into account."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "Gospozha Serafina."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Raidian",
+      "speakerId": "avg_npc_1730_1",
+      "isRemote": false,
+      "text": "We have too many injured. It's not realistic to immediately continue the journey on foot."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Raidian",
+      "speakerId": "avg_npc_1730_1",
+      "isRemote": false,
+      "text": "We need rest."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Excited Miner",
+      "speakerId": "avg_npc_1969_1",
+      "isRemote": false,
+      "text": "Rankin! We took inventory and we should have enough food to last two or three days if we ration it. It should last us until the next village."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "I thought there would be more... but I suppose we should be glad to have what we have."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Excited Miner",
+      "speakerId": "avg_npc_1969_1",
+      "isRemote": false,
+      "text": "Vetochki found some nuts stockpiled by musbeasts. It'll sate the hunger for a while, and it doesn't spoil easily."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Excited Miner",
+      "speakerId": "avg_npc_1969_1",
+      "isRemote": false,
+      "text": "Right now, we need medical supplies more than we need food—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Calm Miner",
+      "speakerId": "avg_npc_1970_1",
+      "isRemote": false,
+      "text": "Where do we find it?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "Only way is the nomadic cities, or a mobile medical post. If we can contact one..."
+    },
+    {
+      "type": "narration",
+      "text": "Rankin looks towards Raidian."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Raidian",
+      "speakerId": "avg_npc_1730_1",
+      "isRemote": false,
+      "text": "I can attempt to contact a nearby mobile medical post."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "Thank you, Gospozha Serafina."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Raidian",
+      "speakerId": "avg_npc_1730_1",
+      "isRemote": false,
+      "text": "Don't thank me so soon. I have a condition."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Excited Miner",
+      "speakerId": "avg_npc_1969_1",
+      "isRemote": false,
+      "text": "We appreciate what you and your team have done for us, but in our current circumstances—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Raidian",
+      "speakerId": "avg_npc_1730_1",
+      "isRemote": false,
+      "text": "The injured must stay put while I attempt to contact the mobile medical posts."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Raidian",
+      "speakerId": "avg_npc_1730_1",
+      "isRemote": false,
+      "text": "It's my judgment as a medical professional that they need rest."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Raidian",
+      "speakerId": "avg_npc_1730_1",
+      "isRemote": false,
+      "text": "The kind of rest that isn't bumpy."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nikto",
+      "speakerId": "avg_npc_1967_1",
+      "isRemote": false,
+      "text": "Who are you taking?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "Lidiya, Pavel, and a few sweet talkers who could coax coins out of their supervisors."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nikto",
+      "speakerId": "avg_npc_1967_1",
+      "isRemote": false,
+      "text": "You didn't like those slick talkers from the ore-washing plant."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "It has nothing to do with my preferences."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nikto",
+      "speakerId": "avg_npc_1967_1",
+      "isRemote": false,
+      "text": "Why not me? Because I might argue with you?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "We're seeking help from a nearby village, not soliciting donations from a noble banquet in Grypherburg, <i>barin</i>. Your way won't work with farmers who can't even write their own name."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nikto",
+      "speakerId": "avg_npc_1967_1",
+      "isRemote": false,
+      "text": "Call me that again, and I'll break your nose."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "You'll break your knuckles on it."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nikto",
+      "speakerId": "avg_npc_1967_1",
+      "isRemote": false,
+      "text": "You don't think seeking help from the village is a good idea."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "...Right."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "Until Gospozha Serafina makes contact with a mobile medical post, however, we can't sit around doing nothing."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "We're not injured."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nikto",
+      "speakerId": "avg_npc_1967_1",
+      "isRemote": false,
+      "text": "We've sat around doing nothing. We sang and danced—you played the accordion!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "All past tense. Our supplies will run out soon. I must do what I can before that happens."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "While we're gone... I need you to stay here and take care of those staying behind."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nikto",
+      "speakerId": "avg_npc_1967_1",
+      "isRemote": false,
+      "text": "I doubt the villagers would be charitable this time."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "Of course. Few people are glad to open their door and see an Infected standing in it. We've already learned that."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "66_g14_ursusvillage"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Excited Miner",
+      "speakerId": "avg_npc_1969_1",
+      "isRemote": false,
+      "text": "How long has Rankin been in there? Should we check it out?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Calm Miner",
+      "speakerId": "avg_npc_1970_1",
+      "isRemote": false,
+      "text": "Calm down. Rankin told us to wait."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Excited Miner",
+      "speakerId": "avg_npc_1969_1",
+      "isRemote": false,
+      "text": "But last time—"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Calm Miner",
+      "speakerId": "avg_npc_1970_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Calm Miner",
+      "speakerId": "avg_npc_1970_1",
+      "isRemote": false,
+      "text": "Come out, Vetochki. I know you were following us. Rankin must have known, too. He just chose not to say anything."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Calm Miner",
+      "speakerId": "avg_npc_1970_1",
+      "isRemote": false,
+      "text": "Why didn't you stay behind with Nikto and the others? You need to take care of your <i>babushka</i>, don't you?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vetochki",
+      "speakerId": "avg_4207_branch_1",
+      "isRemote": false,
+      "text": "Babushka said, it's alright..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vetochki",
+      "speakerId": "avg_4207_branch_1",
+      "isRemote": false,
+      "text": "I wanted to, help. So I, came. I can, h-help!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Calm Miner",
+      "speakerId": "avg_npc_1970_1",
+      "isRemote": false,
+      "text": "Did Nikto know that you came with us? He might have thought that you went missing."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vetochki",
+      "speakerId": "avg_4207_branch_1",
+      "isRemote": false,
+      "text": "I left, a... note."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Calm Miner",
+      "speakerId": "avg_npc_1970_1",
+      "isRemote": false,
+      "text": "That works. You know, I thought you could be useful with us, but Rankin wouldn't have it."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vetochki",
+      "speakerId": "avg_4207_branch_1",
+      "isRemote": false,
+      "text": "Wh-Where has, <i>uchitel</i>, gone?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Calm Miner",
+      "speakerId": "avg_npc_1970_1",
+      "isRemote": false,
+      "text": "He's going to negotiate with them, see if we can get some food."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vetochki",
+      "speakerId": "avg_4207_branch_1",
+      "isRemote": false,
+      "text": "Wh-What do we, have to t-trade?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Calm Miner",
+      "speakerId": "avg_npc_1970_1",
+      "isRemote": false,
+      "text": "Parts from the vehicles."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Excited Miner",
+      "speakerId": "avg_npc_1969_1",
+      "isRemote": false,
+      "text": "But he went over empty-handed!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Calm Miner",
+      "speakerId": "avg_npc_1970_1",
+      "isRemote": false,
+      "text": "Maybe he wanted to show that he means no harm. People might get the wrong idea if he was holding a weapon or a chunk of metal."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Excited Miner",
+      "speakerId": "avg_npc_1969_1",
+      "isRemote": false,
+      "text": "But he didn't take anything the last time either, and those people stalled for time while they sneaked someone out to call for the Patrol Units—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Excited Miner",
+      "speakerId": "avg_npc_1969_1",
+      "isRemote": false,
+      "text": "I have to help him!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Calm Miner",
+      "speakerId": "avg_npc_1970_1",
+      "isRemote": false,
+      "text": "Pavel!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Calm Miner",
+      "speakerId": "avg_npc_1970_1",
+      "isRemote": false,
+      "text": "<i>Chyort</i>... wait up!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "66_g14_ursusvillage"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Calm Miner",
+      "speakerId": "avg_npc_1970_1",
+      "isRemote": false,
+      "text": "(Hushed) Stop it!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Excited Miner",
+      "speakerId": "avg_npc_1969_1",
+      "isRemote": false,
+      "text": "Rankin is inside—"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "The miner covers his colleague's mouth with his hand and pulls him to one side.\nThey can hear the indistinct sound of talking coming from inside the house."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Voice from Inside",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "...Understood..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Voice from Inside",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "(Sound of metal grinding)"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Voice from Inside",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "...We've... informed..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Voice from Inside",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "(Sound of impact)"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Calm Miner",
+      "speakerId": "avg_npc_1970_1",
+      "isRemote": false,
+      "text": "(Whisper) Something doesn't sound right."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Excited Miner",
+      "speakerId": "avg_npc_1969_1",
+      "isRemote": false,
+      "text": "Mmmpppphhh—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Calm Miner",
+      "speakerId": "avg_npc_1970_1",
+      "isRemote": false,
+      "text": "(Whisper) Promise you won't just kick down the door, and I'll let go."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Excited Miner",
+      "speakerId": "avg_npc_1969_1",
+      "isRemote": false,
+      "text": "(Nods)"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "66_g14_ursusvillage"
+    },
+    {
+      "type": "narration",
+      "text": "As soon as he can breathe again, the miner points towards the back door of the house.\nThere, clear as day on the snow, is a row of footprints leading away from the house."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Calm Miner",
+      "speakerId": "avg_npc_1970_1",
+      "isRemote": false,
+      "text": "(Whisper) ...<i>Govno.</i>"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Calm Miner",
+      "speakerId": "avg_npc_1970_1",
+      "isRemote": false,
+      "text": "(Whisper) One of you, go knock on the door. Act anxious and spin a story when they answer the door."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Slick Miner",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "(Whisper) Why don't YOU go? If they've got Rankin, whoever knocks on the door is next, isn't it?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vetochki",
+      "speakerId": "avg_4207_branch_1",
+      "isRemote": false,
+      "text": "(Whisper) I-I'll go."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Calm Miner",
+      "speakerId": "avg_npc_1970_1",
+      "isRemote": false,
+      "text": "(Whisper) No, Vetochki—"
+    },
+    {
+      "type": "narration",
+      "text": "Vetochki taps lightly on the door with her knuckles.\nThe sound from inside ceases."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Voice from Inside",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Who's there?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Calm Miner",
+      "speakerId": "avg_npc_1970_1",
+      "isRemote": false,
+      "text": "(Whisper) ...Keep knocking."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vetochki",
+      "speakerId": "avg_4207_branch_1",
+      "isRemote": false,
+      "text": "(Knocks)"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Voice from Inside",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Back so soon..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Villager",
+      "speakerId": "avg_npc_092",
+      "isRemote": false,
+      "text": "Argh!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "What's going on—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "Sir!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Calm Miner",
+      "speakerId": "avg_npc_1970_1",
+      "isRemote": false,
+      "text": "Are you alright, Rankin?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "Lidiya? I thought I told you to wait outside—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "...Vetochki?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "What are you doing here?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_snowconutryinside"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Friendly Villager",
+      "speakerId": "avg_npc_092",
+      "isRemote": false,
+      "text": "So you're all miners who came out under orders to find supplies."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Calm Miner",
+      "speakerId": "avg_npc_1970_1",
+      "isRemote": false,
+      "text": "Yes, sir! I must apologize for what that fool did. He spends so much time underground that he's forgotten how to tell a good person from a bad one."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Excited Miner",
+      "speakerId": "avg_npc_1969_1",
+      "isRemote": false,
+      "text": "I'm sorry, I'm so sorry. We had a bad experience when we tried to seek help from another village, and I thought this would be the same—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "Pavel."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Friendly Villager",
+      "speakerId": "avg_npc_092",
+      "isRemote": false,
+      "text": "You're honest about things. I have a fair idea how people from other villages treat the Infected... most of Ursus is like that."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Friendly Villager",
+      "speakerId": "avg_npc_092",
+      "isRemote": false,
+      "text": "But you're not those Infected that don't care about authority and just want to cause trouble. You're miners, right?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Calm Miner",
+      "speakerId": "avg_npc_1970_1",
+      "isRemote": false,
+      "text": "Yes! You know, of course, that we can't leave the mining district without permission from up high."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Calm Miner",
+      "speakerId": "avg_npc_1970_1",
+      "isRemote": false,
+      "text": "This is our foreman right here. They told him not to go back until he's found supplies."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Friendly Villager",
+      "speakerId": "avg_npc_092",
+      "isRemote": false,
+      "text": "Would the bosses leave you to starve if you don't find it?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Calm Miner",
+      "speakerId": "avg_npc_1970_1",
+      "isRemote": false,
+      "text": "Yes. It's not so bad for adults like us, but kids like Vetochki over here, how are they supposed to grow without eating?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Friendly Villager",
+      "speakerId": "avg_npc_092",
+      "isRemote": false,
+      "text": "Vetochki? This girl? She's a miner too?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Friendly Villager",
+      "speakerId": "avg_npc_092",
+      "isRemote": false,
+      "text": "How old are you...?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vetochki",
+      "speakerId": "avg_4207_branch_1",
+      "isRemote": false,
+      "text": "I-I'm—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Friendly Villager",
+      "speakerId": "avg_npc_092",
+      "isRemote": false,
+      "text": "Let me guess. Ten?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vetochki",
+      "speakerId": "avg_4207_branch_1",
+      "isRemote": false,
+      "text": "Fifteen."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Friendly Villager",
+      "speakerId": "avg_npc_092",
+      "isRemote": false,
+      "text": "Haha. You're shy, like my daughter... she might have a child your age now, if she's still alive."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Friendly Villager",
+      "speakerId": "avg_npc_092",
+      "isRemote": false,
+      "text": "She went to the mines after she got the Stone Disease. Not around these parts, to the east, the Northern Tundra? It's further away, anyhow."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vetochki",
+      "speakerId": "avg_4207_branch_1",
+      "isRemote": false,
+      "text": "Th-The mines, are good. D-Don't worry... <i>dedushka</i>."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Friendly Villager",
+      "speakerId": "avg_npc_092",
+      "isRemote": false,
+      "text": "<i>Dedushka</i>... grandpa, huh...?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Friendly Villager",
+      "speakerId": "avg_npc_092",
+      "isRemote": false,
+      "text": "I don't even know how and when she got sick. She wouldn't say. I haven't heard from her for a long time."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Friendly Villager",
+      "speakerId": "avg_npc_092",
+      "isRemote": false,
+      "text": "Let's not talk about that! Sounds like you have people running your mining district. Some places don't care about their miners at all, giving them nothing to eat, and they don't give them any other way out either."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Friendly Villager",
+      "speakerId": "avg_npc_092",
+      "isRemote": false,
+      "text": "I heard some miners got so desperate they ran away. They'd rather risk the Patrol Units."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Calm Miner",
+      "speakerId": "avg_npc_1970_1",
+      "isRemote": false,
+      "text": "Can you help us?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Friendly Villager",
+      "speakerId": "avg_npc_092",
+      "isRemote": false,
+      "text": "My wife went out to discuss things with the others before you came in."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Calm Miner",
+      "speakerId": "avg_npc_1970_1",
+      "isRemote": false,
+      "text": "So those footprints were..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "You have the parts, Lidiya?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Calm Miner",
+      "speakerId": "avg_npc_1970_1",
+      "isRemote": false,
+      "text": "Right here."
+    },
+    {
+      "type": "narration",
+      "text": "Rankin takes the cloth package and gives it to the old man."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "Here, you should be able to replace the aging parts on your harvester with it."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "In exchange for the food you shared with us."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Friendly Villager",
+      "speakerId": "avg_npc_092",
+      "isRemote": false,
+      "text": "Sure, sure... honestly, I don't know anything about harvesters other than that it's been broken for a while. Do you mind helping me fit the part on if you want to help?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Calm Miner",
+      "speakerId": "avg_npc_1970_1",
+      "isRemote": false,
+      "text": "I'll take a look. I used to work in a machine factory."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Friendly Villager",
+      "speakerId": "avg_npc_092",
+      "isRemote": false,
+      "text": "That's great."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "66_g14_ursusvillage"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nikto",
+      "speakerId": "avg_npc_1967_1",
+      "isRemote": false,
+      "text": "You really managed to get food. A fair bit of it, too."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "Gennady says it was a good year for crops, but his harvester was broken. They managed to harvest the mossoat by hand, only to have surplus grain sitting around in granaries because the caravans didn't come this year."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "Life is hard for everyone without cash. Still, they were willing to barter with us, rather than waiting until spring to sell."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nikto",
+      "speakerId": "avg_npc_1967_1",
+      "isRemote": false,
+      "text": "Lidiya said those parts are worth more than mossoat."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "As far as we're concerned, food is priceless."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Friendly Villager",
+      "speakerId": "avg_npc_092",
+      "isRemote": false,
+      "text": "Must you go so soon?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "Yes. We've accomplished our mission. It's time to go back."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Friendly Villager",
+      "speakerId": "avg_npc_092",
+      "isRemote": false,
+      "text": "I had hoped that you would fill your bellies before you go."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Friendly Villager",
+      "speakerId": "avg_npc_092",
+      "isRemote": false,
+      "text": "If you want, there are a few houses on the west end of the village that have been empty since the previous inhabitants left. Your group can take shelter there, make a fire, get warm and make some food."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "Spasibo..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "I can't tell you how grateful I am."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Friendly Villager",
+      "speakerId": "avg_npc_092",
+      "isRemote": false,
+      "text": "There's no need. The girl helped us repair the harvester for next year. We're the ones who should thank you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Friendly Villager",
+      "speakerId": "avg_npc_092",
+      "isRemote": false,
+      "text": "Besides, it's not like we did much."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Friendly Villager",
+      "speakerId": "avg_npc_092",
+      "isRemote": false,
+      "text": "Normally, we don't touch the collective food stores for winter. Patrol Units are less frequent these days, but it's a chore when the tax collectors come around."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Friendly Villager",
+      "speakerId": "avg_npc_092",
+      "isRemote": false,
+      "text": "All we old folks did was to take a little grain out of our own reserves, so that you can go back and say you've done your job."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Friendly Villager",
+      "speakerId": "avg_npc_092",
+      "isRemote": false,
+      "text": "Not like there's anything else we can help with—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "Maybe you can tell us your daughter's name. We can try to ask when we—uh, return to the mining district."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Friendly Villager",
+      "speakerId": "avg_npc_092",
+      "isRemote": false,
+      "text": "Oh, she's not here in the Far North! She's in the Northern Tundra, far to the east..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rankin",
+      "speakerId": "avg_npc_1963_1",
+      "isRemote": false,
+      "text": "Just tell me."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Friendly Villager",
+      "speakerId": "avg_npc_092",
+      "isRemote": false,
+      "text": "Well, I suppose it can do no harm."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Friendly Villager",
+      "speakerId": "avg_npc_092",
+      "isRemote": false,
+      "text": "Her name is Milana..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "66_g14_ursusvillage"
+    },
+    {
+      "type": "narration",
+      "text": "A pair of blank, soulless eyes gaze out from the darkness.\nThe cracking of the bonfire hides his indistinct mutter."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hawley",
+      "speakerId": "avg_npc_1971_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hawley",
+      "speakerId": "avg_npc_1971_1",
+      "isRemote": false,
+      "text": "Achieve..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hawley",
+      "speakerId": "avg_npc_1971_1",
+      "isRemote": false,
+      "text": "Salvation."
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": []

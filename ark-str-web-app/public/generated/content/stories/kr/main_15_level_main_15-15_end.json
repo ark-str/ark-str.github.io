@@ -11,15 +11,21 @@
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "60_g13_rhodesdeck_origin"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Mon3tr",
       "speakerId": "npc_10002",
+      "isRemote": false,
       "text": "(흥분한 듯) 크르르르르……"
     },
     {
       "type": "dialogue",
       "speakerName": "프리스티스",
       "speakerId": "avg_npc_1718_1",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -47,154 +53,178 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "프리스티스",
-          "speakerId": "avg_npc_1718_1",
-          "text": "놀라웠어, AMa-10."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "프리스티스",
-          "speakerId": "avg_npc_1718_1",
-          "text": "쌍생 순환 시스템을 끊어내는 대가로 내 통제를 벗어났구나. 그게 네 생명을 취약하게 만들지라도."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "프리스티스",
-          "speakerId": "avg_npc_1718_1",
-          "text": "그런데 있잖아, 정말 그런 방법으로 나를 죽일 생각인 거야?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "켈시",
-          "speakerId": "avg_003_kalts_1",
-          "text": "나도 알아. 아주 오래전, 넌 네 의식을 오리지늄 속 정보의 바다에 동기화했어."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "켈시",
-          "speakerId": "avg_003_kalts_1",
-          "text": "그러니까 너를 죽인다는 건 사실상 불가능한 일이겠지."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "켈시",
-          "speakerId": "avg_003_kalts_1",
-          "text": "하지만 테레시아와 테레시스가 해낸 일을 보고, 나도 확신한 게 있어."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "켈시",
-          "speakerId": "avg_003_kalts_1",
-          "text": "너는 오리지늄을 완벽하게 통제하고 있는 게 아니야. 너의 권한을 제한할 방법은 아직도 존재해."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "프리스티스",
-          "speakerId": "avg_npc_1718_1",
-          "text": "네가 말한 그 두 사람, 확실히 오리지늄 안에서 만났어."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "프리스티스",
-          "speakerId": "avg_npc_1718_1",
-          "text": "그 둘의 노력은 정말 예상 밖이었지, 놀라울 정도로 치열한 몸부림이었어."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "프리스티스",
-          "speakerId": "avg_npc_1718_1",
-          "text": "근데 그게 왜? 여기서 나를 죽인다는 게 헛수고가 아니라는 건 어떻게 장담할 수 있는데?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "켈시",
-          "speakerId": "avg_003_kalts_1",
-          "text": "Mon3tr가 공격했을 때, 너는 방어를 선택했어."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "프리스티스",
-          "speakerId": "avg_npc_1718_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "프리스티스",
-          "speakerId": "avg_npc_1718_1",
-          "text": "……어떻게 한 거지?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "켈시",
-          "speakerId": "avg_003_kalts_1",
-          "text": "이미 눈치챈 것 같네."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "켈시",
-          "speakerId": "avg_003_kalts_1",
-          "text": "테레시아가 진행한 오리지늄 연구를 바탕으로, 네가 {@nickname} 박사를 상대로 함정을 만들었던 것처럼, 나도 네가 있는 각성실에 똑같이 손을 써뒀거든."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "켈시",
-          "speakerId": "avg_003_kalts_1",
-          "text": "네가 그곳에서 깨어나기만 하면, 네 의식도 그 육체에 갇혀 버리지. 다시는 오리지늄 속 정보의 바다로 돌아갈 수 없을 거다."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "프리스티스",
-          "speakerId": "avg_npc_1718_1",
-          "text": "……?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "켈시",
-          "speakerId": "avg_003_kalts_1",
-          "text": "어쩌면 넌 언젠가 이 한계를 벗어날지도 모르고, 오리지늄을 다룰 권한 역시 계속 갖고 있을지도 몰라. 하지만 적어도, 지금의 너는 그냥 인간일 뿐이야."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "프리스티스",
-          "speakerId": "avg_npc_1718_1",
-          "text": "나에게 저항하려고 이렇게까지 하다니……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "켈시",
-          "speakerId": "avg_003_kalts_1",
-          "text": "프리스티스, 너는 테라의 창조주가 아니야. 이 대지의 모든 생명은 네 뜻에 따를 의무 따윈 없어."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "켈시",
-          "speakerId": "avg_003_kalts_1",
-          "text": "……이게 내 복수이자, 마지막 저항이다."
-        },
-        {
-          "type": "narration",
-          "text": "당신은 맞은편에 있는 여자의 얼굴에서 잠시 망설임이 스치는 것을 보았다. 하지만 곧 오리지늄이 그녀를 맴돌기 시작했다."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "켈시",
-          "speakerId": "avg_003_kalts_1",
-          "text": "……이미 늦었어."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "프리스티스",
+      "speakerId": "avg_npc_1718_1",
+      "isRemote": false,
+      "text": "놀라웠어, AMa-10."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "프리스티스",
+      "speakerId": "avg_npc_1718_1",
+      "isRemote": false,
+      "text": "쌍생 순환 시스템을 끊어내는 대가로 내 통제를 벗어났구나. 그게 네 생명을 취약하게 만들지라도."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "프리스티스",
+      "speakerId": "avg_npc_1718_1",
+      "isRemote": false,
+      "text": "그런데 있잖아, 정말 그런 방법으로 나를 죽일 생각인 거야?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "켈시",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "나도 알아. 아주 오래전, 넌 네 의식을 오리지늄 속 정보의 바다에 동기화했어."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "60_g13_rhodesdeck_origin"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "켈시",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "그러니까 너를 죽인다는 건 사실상 불가능한 일이겠지."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "켈시",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "하지만 테레시아와 테레시스가 해낸 일을 보고, 나도 확신한 게 있어."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "켈시",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "너는 오리지늄을 완벽하게 통제하고 있는 게 아니야. 너의 권한을 제한할 방법은 아직도 존재해."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "프리스티스",
+      "speakerId": "avg_npc_1718_1",
+      "isRemote": false,
+      "text": "네가 말한 그 두 사람, 확실히 오리지늄 안에서 만났어."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "프리스티스",
+      "speakerId": "avg_npc_1718_1",
+      "isRemote": false,
+      "text": "그 둘의 노력은 정말 예상 밖이었지, 놀라울 정도로 치열한 몸부림이었어."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "프리스티스",
+      "speakerId": "avg_npc_1718_1",
+      "isRemote": false,
+      "text": "근데 그게 왜? 여기서 나를 죽인다는 게 헛수고가 아니라는 건 어떻게 장담할 수 있는데?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "켈시",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "Mon3tr가 공격했을 때, 너는 방어를 선택했어."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "프리스티스",
+      "speakerId": "avg_npc_1718_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "프리스티스",
+      "speakerId": "avg_npc_1718_1",
+      "isRemote": false,
+      "text": "……어떻게 한 거지?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "켈시",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "이미 눈치챈 것 같네."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "켈시",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "테레시아가 진행한 오리지늄 연구를 바탕으로, 네가 {@nickname} 박사를 상대로 함정을 만들었던 것처럼, 나도 네가 있는 각성실에 똑같이 손을 써뒀거든."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "켈시",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "네가 그곳에서 깨어나기만 하면, 네 의식도 그 육체에 갇혀 버리지. 다시는 오리지늄 속 정보의 바다로 돌아갈 수 없을 거다."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "프리스티스",
+      "speakerId": "avg_npc_1718_1",
+      "isRemote": false,
+      "text": "……?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "켈시",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "어쩌면 넌 언젠가 이 한계를 벗어날지도 모르고, 오리지늄을 다룰 권한 역시 계속 갖고 있을지도 몰라. 하지만 적어도, 지금의 너는 그냥 인간일 뿐이야."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "프리스티스",
+      "speakerId": "avg_npc_1718_1",
+      "isRemote": false,
+      "text": "나에게 저항하려고 이렇게까지 하다니……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "켈시",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "프리스티스, 너는 테라의 창조주가 아니야. 이 대지의 모든 생명은 네 뜻에 따를 의무 따윈 없어."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "켈시",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "……이게 내 복수이자, 마지막 저항이다."
+    },
+    {
+      "type": "narration",
+      "text": "당신은 맞은편에 있는 여자의 얼굴에서 잠시 망설임이 스치는 것을 보았다. 하지만 곧 오리지늄이 그녀를 맴돌기 시작했다."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "켈시",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "……이미 늦었어."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -204,133 +234,153 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "(격앙된 듯) 크르르르르……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "아미야",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "켈시 선생님…… 이번엔 제가 지켜드릴게요……"
-        },
-        {
-          "type": "narration",
-          "text": "검은 아츠의 난류가 오리지늄 결정 군집을 부쉈고, Mon3tr는 그곳을 필사적으로 벗어나 단 하나의 목표를 향해 다시 돌진했다.\n오리지늄 결정 군집이 다시 모여들기 시작했지만, 이미 Mon3tr의 발톱을 막아낼 만한 보호막을 만들기엔 늦었다.\n당신은 프리스티스의 긴장한 표정을 보았다. 창조주가 자신의 피조물을 두려워하고 있었다."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "프리스티스",
-          "speakerId": "avg_npc_1718_1",
-          "text": "……!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "프리스티스가 마침내 자신에게 닥친 위협을 인정하기라도 한 듯, 갑판 위의 오리지늄이 모두 그녀의 의식에 반응하여 급격히 자라나기 시작했다.\n그리고 Mon3tr는 사냥감에 점점 가까워졌다."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "메커니스트",
-          "speakerId": "avg_npc_521_1",
-          "text": "우측 5명, 빈사 상태 확인."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "로고스",
-          "speakerId": "avg_4133_logos_1",
-          "text": "'몰망'."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "블레이즈",
-          "speakerId": "avg_017_huang_1",
-          "text": "뭐 엄청난 것처럼 굴더니, 결국은 우리가 쓰러뜨린 적을 다시 내오는 것뿐이잖아. 별거 아니네."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "블레이즈",
-          "speakerId": "avg_017_huang_1",
-          "text": "내 공격을 받아라!!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "블레이즈",
-          "speakerId": "avg_017_huang_1",
-          "text": "기분 탓인가? 어째 적이 다시 생겨나는 속도가 느려진 것 같은데?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "라이디언",
-          "speakerId": "avg_npc_1730_1",
-          "text": "여긴 PRTS의 핵심 시스템이야. 애초부터 우리가 싸웠던 적들의 데이터를 읽고 복제하고 있었어."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "라이디언",
-          "speakerId": "avg_npc_1730_1",
-          "text": "그런데 지금 데이터베이스를 읽는 속도가 느려졌어. 뭔가 방해라도 받았나 봐……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "라이디언",
-          "speakerId": "avg_npc_1730_1",
-          "text": "아무래도 박사 쪽 작전이 통한 거 같아."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "아스카론",
-          "speakerId": "avg_4132_ascln_1",
-          "text": "이 기회에 단숨에 해치우자."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "아스카론",
-          "speakerId": "avg_4132_ascln_1",
-          "text": "우리는 어비스의 깊은 곳으로 가야 해…… 아직 우리를 기다리는 사람들이 있어."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "켈시",
-          "speakerId": "avg_003_kalts_1",
-          "text": "Mon3tr, 용해!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "검은 아츠와 레이저가 차례대로 전방의 거대한 오리지늄 결정 군집을 향했고, 그 맹렬한 공격은 오리지늄의 확산세를 억누르기까지 했다.\n그리고 아츠의 빛이 프리스티스의 형체를 집어삼켰다."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "연기와 먼지가 걷힌 뒤, 바닥에 남은 건 오리지늄 파편뿐이었다.\n그리고 찢겨버린 하얀색 겉옷도 있었다."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "(격앙된 듯) 크르르르르……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "아미야",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "켈시 선생님…… 이번엔 제가 지켜드릴게요……"
+    },
+    {
+      "type": "narration",
+      "text": "검은 아츠의 난류가 오리지늄 결정 군집을 부쉈고, Mon3tr는 그곳을 필사적으로 벗어나 단 하나의 목표를 향해 다시 돌진했다.\n오리지늄 결정 군집이 다시 모여들기 시작했지만, 이미 Mon3tr의 발톱을 막아낼 만한 보호막을 만들기엔 늦었다.\n당신은 프리스티스의 긴장한 표정을 보았다. 창조주가 자신의 피조물을 두려워하고 있었다."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "프리스티스",
+      "speakerId": "avg_npc_1718_1",
+      "isRemote": false,
+      "text": "……!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "프리스티스가 마침내 자신에게 닥친 위협을 인정하기라도 한 듯, 갑판 위의 오리지늄이 모두 그녀의 의식에 반응하여 급격히 자라나기 시작했다.\n그리고 Mon3tr는 사냥감에 점점 가까워졌다."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "60_g15_rhodesabyss_off"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "메커니스트",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "우측 5명, 빈사 상태 확인."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "로고스",
+      "speakerId": "avg_4133_logos_1",
+      "isRemote": false,
+      "text": "'몰망'."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "블레이즈",
+      "speakerId": "avg_017_huang_1",
+      "isRemote": false,
+      "text": "뭐 엄청난 것처럼 굴더니, 결국은 우리가 쓰러뜨린 적을 다시 내오는 것뿐이잖아. 별거 아니네."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "블레이즈",
+      "speakerId": "avg_017_huang_1",
+      "isRemote": false,
+      "text": "내 공격을 받아라!!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "블레이즈",
+      "speakerId": "avg_017_huang_1",
+      "isRemote": false,
+      "text": "기분 탓인가? 어째 적이 다시 생겨나는 속도가 느려진 것 같은데?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "라이디언",
+      "speakerId": "avg_npc_1730_1",
+      "isRemote": false,
+      "text": "여긴 PRTS의 핵심 시스템이야. 애초부터 우리가 싸웠던 적들의 데이터를 읽고 복제하고 있었어."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "라이디언",
+      "speakerId": "avg_npc_1730_1",
+      "isRemote": false,
+      "text": "그런데 지금 데이터베이스를 읽는 속도가 느려졌어. 뭔가 방해라도 받았나 봐……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "라이디언",
+      "speakerId": "avg_npc_1730_1",
+      "isRemote": false,
+      "text": "아무래도 박사 쪽 작전이 통한 거 같아."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "아스카론",
+      "speakerId": "avg_4132_ascln_1",
+      "isRemote": false,
+      "text": "이 기회에 단숨에 해치우자."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "아스카론",
+      "speakerId": "avg_4132_ascln_1",
+      "isRemote": false,
+      "text": "우리는 어비스의 깊은 곳으로 가야 해…… 아직 우리를 기다리는 사람들이 있어."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "켈시",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "Mon3tr, 용해!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "검은 아츠와 레이저가 차례대로 전방의 거대한 오리지늄 결정 군집을 향했고, 그 맹렬한 공격은 오리지늄의 확산세를 억누르기까지 했다.\n그리고 아츠의 빛이 프리스티스의 형체를 집어삼켰다."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "60_g13_rhodesdeck_origin"
+    },
+    {
+      "type": "narration",
+      "text": "연기와 먼지가 걷힌 뒤, 바닥에 남은 건 오리지늄 파편뿐이었다.\n그리고 찢겨버린 하얀색 겉옷도 있었다."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -340,40 +390,42 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "켈시",
-          "speakerId": "avg_003_kalts_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "아미야",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "생명의 흔적도…… 어떤 감정도 느껴지지 않아요……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "아미야",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "어쩌면……"
-        },
-        {
-          "type": "narration",
-          "text": "너무나 갑작스러운 상황에 당신은 눈앞에 일어난 모든 변화가 아직 실감 나지 않았다.\n당신은 매우 위협적이던 적이 눈앞에서 한순간에 사라지는 걸 직접 목격했다.\n하지만 안도감이 전혀 들지 않았다."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": null,
-          "text": "장난은 여기까지만 할까?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "켈시",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "아미야",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "생명의 흔적도…… 어떤 감정도 느껴지지 않아요……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "아미야",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "어쩌면……"
+    },
+    {
+      "type": "narration",
+      "text": "너무나 갑작스러운 상황에 당신은 눈앞에 일어난 모든 변화가 아직 실감 나지 않았다.\n당신은 매우 위협적이던 적이 눈앞에서 한순간에 사라지는 걸 직접 목격했다.\n하지만 안도감이 전혀 들지 않았다."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "장난은 여기까지만 할까?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -383,143 +435,160 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "아미야",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "이게 대체……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "켈시",
-          "speakerId": "avg_003_kalts_1",
-          "text": "박사, 아미야, 물러나!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "프리스티스",
-          "speakerId": "avg_npc_1718_1",
-          "text": "꽤 괜찮은 반항이었어, AMa-10. 네 계획도 효과적이었고."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "프리스티스",
-          "speakerId": "avg_npc_1718_1",
-          "text": "네 말대로, 지금이 바로 날 죽일 기회겠지……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "프리스티스",
-          "speakerId": "avg_npc_1718_1",
-          "text": "하지만, 고작 오리지늄으로 만든 대역 때문에 이렇게까지 허둥대는 거야?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "켈시",
-          "speakerId": "avg_003_kalts_1",
-          "text": "……!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "프리스티스",
-          "speakerId": "avg_npc_1718_1",
-          "text": "AMa-10, 나는 네가 믿는 가치에 대해 너와 토론할 생각이 없어."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "프리스티스",
-          "speakerId": "avg_npc_1718_1",
-          "text": "네가 계속 고집했던 것은 너무나도 하찮아서, 그 의미를 평가할 만한 설득력 있는 논리조차 찾을 수 없거든."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "프리스티스",
-          "speakerId": "avg_npc_1718_1",
-          "text": "하지만 실험 과정에서는 확실히 이런 일이 자주 발생하지. 작은 오류가 결과적으로 큰 걸림돌이 되는 경우 말이야. 그리고 난 이런 결과를 받아들일 수밖에 없어."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "프리스티스",
-          "speakerId": "avg_npc_1718_1",
-          "text": "안타깝지만, 너라는 오류를 제거해야겠어."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "프리스티스가 손을 들어 올렸다.\n오리지늄이 다시 자라나기 시작하더니, 결정으로 만들어진 날카로운 가지들이 순식간에 당신들을 집어삼킬 것처럼 당신과 아미야의 주변을 빼곡히 감쌌다.\n아미야는 온 힘을 다해 아츠로 주변의 오리지늄을 부쉈지만, 결정이 자라나는 속도가 훨씬 더 빨랐다."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "아미야",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "박사님! 제 뒤에 숨으세요……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "켈시",
-          "speakerId": "avg_003_kalts_1",
-          "text": "……!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "켈시",
-          "speakerId": "avg_003_kalts_1",
-          "text": "Mon3tr……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "모든 일은 순식간에 일어났다.\n당신은 오리지늄 결정 군집이 가까운 곳에서 폭발하는 걸 보았다. 아미야가 당신을 지키려 했으나, 시간은 그녀에게 어떤 반응도 허락하지 않았다.\n그 순간 검은 괴물이 당신과 아미야의 곁으로 다가와, 거대하고 단단한 몸으로 당신들과 오리지늄 결정 군집 사이를 가로막았다.\n당신은 켈시를 보았다……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "프리스티스",
-          "speakerId": "avg_npc_1718_1",
-          "text": "아쉽네."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "박사, 너는 자신의 존재 의의를 의심해 본 적이 있나? 나는 있어.\n나는 내 사명을 잘 알고 있어. 비록 힘들지만, 그 의미도 인정하고 있고.\n미래에 대해, 너라면 답을 찾을 수 있을 거다…… 난 그렇게 계속 바랄 수밖에 없어.\n로도스 아일랜드는 누구 하나 빠진다고 멈춰서는 안 되니까, 나에 관한 거는 너무 신경 쓰지 말도록 해."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "내 소원?\n그건 너와 아미야의 소원을 지키는 거다.\n내 맹세를 저버리는 일은 하지 않아. '지킨다'는 말을 어떻게 정의할지는 각자 다르겠지만, 나는 마지막까지 여기에 있을 거다.\n우리는 과거를 망각할 수는 없지만, 네게는 또 다른 미래가 기다리고 있을 거야."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "나는 이미 내 생명의 의미를 찾았어.\n부디, 로도스 아일랜드를 이끌고……\n계속 나아가줘.\n{@nickname}."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "아미야",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "켈시 선생님……!"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "아미야",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "이게 대체……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "켈시",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "박사, 아미야, 물러나!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "프리스티스",
+      "speakerId": "avg_npc_1718_1",
+      "isRemote": false,
+      "text": "꽤 괜찮은 반항이었어, AMa-10. 네 계획도 효과적이었고."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "프리스티스",
+      "speakerId": "avg_npc_1718_1",
+      "isRemote": false,
+      "text": "네 말대로, 지금이 바로 날 죽일 기회겠지……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "프리스티스",
+      "speakerId": "avg_npc_1718_1",
+      "isRemote": false,
+      "text": "하지만, 고작 오리지늄으로 만든 대역 때문에 이렇게까지 허둥대는 거야?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "켈시",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "……!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "프리스티스",
+      "speakerId": "avg_npc_1718_1",
+      "isRemote": false,
+      "text": "AMa-10, 나는 네가 믿는 가치에 대해 너와 토론할 생각이 없어."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "프리스티스",
+      "speakerId": "avg_npc_1718_1",
+      "isRemote": false,
+      "text": "네가 계속 고집했던 것은 너무나도 하찮아서, 그 의미를 평가할 만한 설득력 있는 논리조차 찾을 수 없거든."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "프리스티스",
+      "speakerId": "avg_npc_1718_1",
+      "isRemote": false,
+      "text": "하지만 실험 과정에서는 확실히 이런 일이 자주 발생하지. 작은 오류가 결과적으로 큰 걸림돌이 되는 경우 말이야. 그리고 난 이런 결과를 받아들일 수밖에 없어."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "프리스티스",
+      "speakerId": "avg_npc_1718_1",
+      "isRemote": false,
+      "text": "안타깝지만, 너라는 오류를 제거해야겠어."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "프리스티스가 손을 들어 올렸다.\n오리지늄이 다시 자라나기 시작하더니, 결정으로 만들어진 날카로운 가지들이 순식간에 당신들을 집어삼킬 것처럼 당신과 아미야의 주변을 빼곡히 감쌌다.\n아미야는 온 힘을 다해 아츠로 주변의 오리지늄을 부쉈지만, 결정이 자라나는 속도가 훨씬 더 빨랐다."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "아미야",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "박사님! 제 뒤에 숨으세요……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "켈시",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "……!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "켈시",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "Mon3tr……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "모든 일은 순식간에 일어났다.\n당신은 오리지늄 결정 군집이 가까운 곳에서 폭발하는 걸 보았다. 아미야가 당신을 지키려 했으나, 시간은 그녀에게 어떤 반응도 허락하지 않았다.\n그 순간 검은 괴물이 당신과 아미야의 곁으로 다가와, 거대하고 단단한 몸으로 당신들과 오리지늄 결정 군집 사이를 가로막았다.\n당신은 켈시를 보았다……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "프리스티스",
+      "speakerId": "avg_npc_1718_1",
+      "isRemote": false,
+      "text": "아쉽네."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "박사, 너는 자신의 존재 의의를 의심해 본 적이 있나? 나는 있어.\n나는 내 사명을 잘 알고 있어. 비록 힘들지만, 그 의미도 인정하고 있고.\n미래에 대해, 너라면 답을 찾을 수 있을 거다…… 난 그렇게 계속 바랄 수밖에 없어.\n로도스 아일랜드는 누구 하나 빠진다고 멈춰서는 안 되니까, 나에 관한 거는 너무 신경 쓰지 말도록 해."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "내 소원?\n그건 너와 아미야의 소원을 지키는 거다.\n내 맹세를 저버리는 일은 하지 않아. '지킨다'는 말을 어떻게 정의할지는 각자 다르겠지만, 나는 마지막까지 여기에 있을 거다.\n우리는 과거를 망각할 수는 없지만, 네게는 또 다른 미래가 기다리고 있을 거야."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "나는 이미 내 생명의 의미를 찾았어.\n부디, 로도스 아일랜드를 이끌고……\n계속 나아가줘.\n{@nickname}."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "60_g13_rhodesdeck_origin"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "아미야",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "켈시 선생님……!"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -529,16 +598,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "narration",
-          "text": "예상치 못한 일이 너무나 갑작스레 일어났지만, 당신에게 이 사실의 잔혹함을 깨닫게 하기엔 충분했다.\n당신들이 맞선 상대는 상식으로 이해할 수 있는 적이 아니었다. 그녀는 모든 오리지늄을 조종할 수 있는 권한을 가지고 있었다.\n켈시의 오른쪽 어깨에 있던 그 작은 오리지늄 결정은 그녀가 인간으로 태어났다는 증거이자, 그녀의 생명을 앗아간 근원이기도 했다.\n오리지늄 결정이 퍼져 나가기 시작하더니, 순식간에 그녀의 온몸을 집어삼켰고, 산산이 부서져 바람에 흩어졌다…… 그리고 이 모든 과정은 육안으로 포착할 새도 없이 순식간에 벌어졌다.\n강할수록, 더 약하다.\n장생한 자의 삶은 이렇게 끝났다.\n그녀는 이미 자신의 약속을 지켰다."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "narration",
+      "text": "예상치 못한 일이 너무나 갑작스레 일어났지만, 당신에게 이 사실의 잔혹함을 깨닫게 하기엔 충분했다.\n당신들이 맞선 상대는 상식으로 이해할 수 있는 적이 아니었다. 그녀는 모든 오리지늄을 조종할 수 있는 권한을 가지고 있었다.\n켈시의 오른쪽 어깨에 있던 그 작은 오리지늄 결정은 그녀가 인간으로 태어났다는 증거이자, 그녀의 생명을 앗아간 근원이기도 했다.\n오리지늄 결정이 퍼져 나가기 시작하더니, 순식간에 그녀의 온몸을 집어삼켰고, 산산이 부서져 바람에 흩어졌다…… 그리고 이 모든 과정은 육안으로 포착할 새도 없이 순식간에 벌어졌다.\n강할수록, 더 약하다.\n장생한 자의 삶은 이렇게 끝났다.\n그녀는 이미 자신의 약속을 지켰다."
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": []

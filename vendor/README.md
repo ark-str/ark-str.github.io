@@ -10,4 +10,4 @@ Runtime code must not read from `vendor/` directly. Build-time pipeline scripts 
 Current state:
 
 - `vendor/ArknightsGamedata/` is the upstream game-data submodule
-- `vendor/ArknightsResource/` is a tool-managed blobless portrait cache downloaded from the upstream portrait repository, recreated automatically when stale, and only referenced `avgs/npcs/` files materialized before copying them into bundled reader assets
+- `vendor/ArknightsResource/` is a tool-managed blobless media cache downloaded from the upstream resource repository, recreated automatically when stale, and only referenced `avgs/npcs/` speaker portraits plus `avgs/bg/` background images materialized before copying them into bundled reader assets

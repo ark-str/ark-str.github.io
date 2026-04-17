@@ -11,6 +11,10 @@
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "bg_corridor"
+    },
+    {
       "type": "narration",
       "text": "6:30 p.m."
     },
@@ -21,18 +25,21 @@
       "type": "dialogue",
       "speakerName": "PRTS",
       "speakerId": null,
+      "isRemote": false,
       "text": "Number 00000-00002, Clearance Level-8."
     },
     {
       "type": "dialogue",
       "speakerName": "PRTS",
       "speakerId": null,
+      "isRemote": false,
       "text": "Dr. {@nickname}, thank you for visiting the Rhodes Island Integrated Bioprocessing Unit. Your intentions have been determined through analysis of available biological data."
     },
     {
       "type": "dialogue",
       "speakerName": "PRTS",
       "speakerId": null,
+      "isRemote": false,
       "text": "In addition, the system detects that you are in a bad mood."
     },
     {
@@ -46,12 +53,14 @@
               "type": "dialogue",
               "speakerName": "PRTS",
               "speakerId": null,
+              "isRemote": false,
               "text": "Dr. {@nickname} is displaying aggression."
             },
             {
               "type": "dialogue",
               "speakerName": "PRTS",
               "speakerId": null,
+              "isRemote": false,
               "text": "Rest assured the system will not electrocute you. There is no need to fear these tests."
             }
           ]
@@ -64,18 +73,21 @@
               "type": "dialogue",
               "speakerName": "PRTS",
               "speakerId": null,
+              "isRemote": false,
               "text": "Dr. {@nickname} fell silent."
             },
             {
               "type": "dialogue",
               "speakerName": "PRTS",
               "speakerId": null,
+              "isRemote": false,
               "text": "Whether silent protest or refusal to communicate, I believe it is an expression of an autism spectrum disorder."
             },
             {
               "type": "dialogue",
               "speakerName": "PRTS",
               "speakerId": null,
+              "isRemote": false,
               "text": "Please, by all means. The system treats all equally."
             }
           ]
@@ -88,55 +100,61 @@
               "type": "dialogue",
               "speakerName": "PRTS",
               "speakerId": null,
+              "isRemote": false,
               "text": "Good and bad are subjective judgments."
             },
             {
               "type": "dialogue",
               "speakerName": "PRTS",
               "speakerId": null,
+              "isRemote": false,
               "text": "However, this system has collected nearly all documented states of mental activity, as well as hormonal criteria for various types of neurological excitement."
             },
             {
               "type": "dialogue",
               "speakerName": "PRTS",
               "speakerId": null,
+              "isRemote": false,
               "text": "So you could argue that the system's subjective judgment is substantially closer to objective truth."
             },
             {
               "type": "dialogue",
               "speakerName": "PRTS",
               "speakerId": null,
+              "isRemote": false,
               "text": "Therefore, no matter what action Dr. {@nickname} may take, the system will be able to process it to some degree."
             },
             {
               "type": "dialogue",
               "speakerName": "PRTS",
               "speakerId": null,
+              "isRemote": false,
               "text": "Which is to say: you may do as you wish."
             },
             {
               "type": "dialogue",
               "speakerName": "PRTS",
               "speakerId": null,
+              "isRemote": false,
               "text": "PRTS is equipped with a nonlethal pacification function."
             },
             {
               "type": "dialogue",
               "speakerName": "PRTS",
               "speakerId": null,
+              "isRemote": false,
               "text": "Should you take unreasonable action, you will lose consciousness for 3.55 working hours, ensuring you maintain a behavioral standard close to normal."
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "PRTS",
-          "speakerId": null,
-          "text": "Welcome home, Doctor."
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "PRTS",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Welcome home, Doctor."
     },
     {
       "type": "choice",
@@ -146,15 +164,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_042",
-          "text": "Are you Dr. {@nickname}?"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "Are you Dr. {@nickname}?"
     },
     {
       "type": "choice",
@@ -174,33 +191,35 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_042",
-          "text": "It's you. I'm sure of it."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_042",
-          "text": "I can feel it... you're a little different."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_042",
-          "text": "But... the person you're holding, that uniform..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_042",
-          "text": "Can I ask who's that you're holding?"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "It's you. I'm sure of it."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "I can feel it... you're a little different."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "But... the person you're holding, that uniform..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "Can I ask who's that you're holding?"
     },
     {
       "type": "choice",
@@ -213,18 +232,21 @@
               "type": "dialogue",
               "speakerName": "???",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "Fighter?"
             },
             {
               "type": "dialogue",
               "speakerName": "???",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "Oh... she wounded you. Were you fighting?"
             },
             {
               "type": "dialogue",
               "speakerName": "???",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "No, you weren't... This isn't a lethal wound."
             }
           ]
@@ -237,18 +259,21 @@
               "type": "dialogue",
               "speakerName": "???",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "Is she Infected too...?"
             },
             {
               "type": "dialogue",
               "speakerName": "???",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "No, that's not what you meant."
             },
             {
               "type": "dialogue",
               "speakerName": "???",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "Dr. {@nickname}, you seem like you lost something."
             }
           ]
@@ -261,24 +286,26 @@
               "type": "dialogue",
               "speakerName": "???",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "She's your friend?"
             },
             {
               "type": "dialogue",
               "speakerName": "???",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "But... you barely know her at all."
             },
             {
               "type": "dialogue",
               "speakerName": "???",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "I don't know... this might disappear soon."
             }
           ]
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -288,28 +315,28 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_042",
-          "text": "Traces of people communicating with each other. Smell, warmth, shape."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_042",
-          "text": "I'm not sure, but she..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "The girl reaches out to FrostNova."
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "Traces of people communicating with each other. Smell, warmth, shape."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "I'm not sure, but she..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "The girl reaches out to FrostNova."
     },
     {
       "type": "choice",
@@ -322,36 +349,42 @@
               "type": "dialogue",
               "speakerName": "???",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "Hm."
             },
             {
               "type": "dialogue",
               "speakerName": "???",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "No."
             },
             {
               "type": "dialogue",
               "speakerName": "???",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "You don't want me to do that?"
             },
             {
               "type": "dialogue",
               "speakerName": "???",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "No. I'm an outsider. I don't know her."
             },
             {
               "type": "dialogue",
               "speakerName": "???",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "I can't do this, can I?"
             },
             {
               "type": "dialogue",
               "speakerName": "???",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "I'm sorry."
             }
           ]
@@ -361,8 +394,7 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -375,12 +407,14 @@
               "type": "dialogue",
               "speakerName": "???",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "No, I can't..."
             },
             {
               "type": "dialogue",
               "speakerName": "???",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "Amiya is special. I know Amiya's Arts... and I think she suffers a lot."
             }
           ]
@@ -393,18 +427,21 @@
               "type": "dialogue",
               "speakerName": "???",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "I... I can't touch her, and I can't feel her."
             },
             {
               "type": "dialogue",
               "speakerName": "???",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "Her connection to this world has no connection to me."
             },
             {
               "type": "dialogue",
               "speakerName": "???",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "I... I have no right to touch her."
             }
           ]
@@ -417,18 +454,19 @@
               "type": "dialogue",
               "speakerName": "???",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "The other operators say that too."
             },
             {
               "type": "dialogue",
               "speakerName": "???",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "There are a lot of big personalities at Rhodes Island... But I might be weird, even for them."
             }
           ]
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -441,12 +479,14 @@
               "type": "dialogue",
               "speakerName": "???",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "No, it's fine. I'm used to it."
             },
             {
               "type": "dialogue",
               "speakerName": "???",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "Did you want... to use this machine?"
             }
           ]
@@ -459,18 +499,21 @@
               "type": "dialogue",
               "speakerName": "???",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "P-please don't be mad..."
             },
             {
               "type": "dialogue",
               "speakerName": "???",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "When you don't speak, I... I don't know what to say."
             },
             {
               "type": "dialogue",
               "speakerName": "???",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "Did you want... to use this machine?"
             }
           ]
@@ -483,24 +526,26 @@
               "type": "dialogue",
               "speakerName": "???",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "I'm fine."
             },
             {
               "type": "dialogue",
               "speakerName": "???",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "I'd much rather someone be straight with me than be scared of me. So I'm fine."
             },
             {
               "type": "dialogue",
               "speakerName": "???",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "Did you want... to use this machine?"
             }
           ]
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -510,33 +555,35 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_042",
-          "text": "...it is."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_042",
-          "text": "Just a second. Let me check the log."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_042",
-          "text": "Yes, they cleaned this cabin already. Put her on this slab. Easy now. There."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_042",
-          "text": "Then the slab will slide in there, and... wait for it to close, and finally press this button."
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "...it is."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "Just a second. Let me check the log."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "Yes, they cleaned this cabin already. Put her on this slab. Easy now. There."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "Then the slab will slide in there, and... wait for it to close, and finally press this button."
     },
     {
       "type": "choice",
@@ -546,15 +593,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_042",
-          "text": "Oh, I've had to use it a lot."
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "Oh, I've had to use it a lot."
     },
     {
       "type": "choice",
@@ -564,27 +610,28 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_042",
-          "text": "This is where all of Rhodes Island's Infected end up."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_042",
-          "text": "And if I knew them, if I felt them, if they were my teammates, I always take care of them myself."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_042",
-          "text": "The original manual was really complicated, but I wrote down how to use it in my terminal. Just a quick look and I can feel it."
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "This is where all of Rhodes Island's Infected end up."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "And if I knew them, if I felt them, if they were my teammates, I always take care of them myself."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "The original manual was really complicated, but I wrote down how to use it in my terminal. Just a quick look and I can feel it."
     },
     {
       "type": "choice",
@@ -594,15 +641,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_042",
-          "text": "Hmm... it's like a chain."
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "Hmm... it's like a chain."
     },
     {
       "type": "choice",
@@ -612,27 +658,28 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_042",
-          "text": "Or I could say it's like seeing the links between people."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_042",
-          "text": "Sending off the people tied to you means untangling the lines around them. The other ends of the threads are still tied to us, but even when the one side is gone, the threads don't hang down."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_042",
-          "text": "It feels like you've lost something inside yourself. Something you didn't know was there, but knowing it won't come back."
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "Or I could say it's like seeing the links between people."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "Sending off the people tied to you means untangling the lines around them. The other ends of the threads are still tied to us, but even when the one side is gone, the threads don't hang down."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "It feels like you've lost something inside yourself. Something you didn't know was there, but knowing it won't come back."
     },
     {
       "type": "choice",
@@ -642,15 +689,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_042",
-          "text": "Because if you know the feeling, it won't suddenly sting you, right?"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "Because if you know the feeling, it won't suddenly sting you, right?"
     },
     {
       "type": "choice",
@@ -660,69 +706,77 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "PRTS",
-          "speakerId": null,
-          "text": "Excuse me."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "PRTS",
-          "speakerId": null,
-          "text": "Identifier for Rosmontis, elite operator present in Rhodes Island Integrated Infected Bioprocessing Unit, will expire in fifteen minutes."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "PRTS",
-          "speakerId": null,
-          "text": "I will update you momentarily. Stand in place for about fifteen seconds."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "PRTS",
-          "speakerId": null,
-          "text": "In addition, there is a skirmish taking place by the starboard hull. If possible, please assist after updating your identification code, in order to reduce resource consumption."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rosmontis",
-          "speakerId": "avg_npc_042",
-          "text": "Oh, okay. I'll go do that."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rosmontis",
-          "speakerId": "avg_npc_042",
-          "text": "I'm making a note of it in my terminal."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "PRTS",
-          "speakerId": null,
-          "text": "Reminding you for the sixth time, if you would allow access to this system, it could send the information directly to..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rosmontis",
-          "speakerId": "avg_npc_042",
-          "text": "No."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rosmontis",
-          "speakerId": "avg_npc_042",
-          "text": "I'm... the only one who can use this."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "PRTS",
-          "speakerId": null,
-          "text": "Understood."
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "PRTS",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Excuse me."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "PRTS",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Identifier for Rosmontis, elite operator present in Rhodes Island Integrated Infected Bioprocessing Unit, will expire in fifteen minutes."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "PRTS",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "I will update you momentarily. Stand in place for about fifteen seconds."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "PRTS",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "In addition, there is a skirmish taking place by the starboard hull. If possible, please assist after updating your identification code, in order to reduce resource consumption."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rosmontis",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "Oh, okay. I'll go do that."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rosmontis",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "I'm making a note of it in my terminal."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "PRTS",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Reminding you for the sixth time, if you would allow access to this system, it could send the information directly to..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rosmontis",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "No."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rosmontis",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "I'm... the only one who can use this."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "PRTS",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Understood."
     },
     {
       "type": "choice",
@@ -732,15 +786,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Rosmontis",
-          "speakerId": "avg_npc_042",
-          "text": "PRTS means me."
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rosmontis",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "PRTS means me."
     },
     {
       "type": "choice",
@@ -750,27 +803,28 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Rosmontis",
-          "speakerId": "avg_npc_042",
-          "text": "Yes... Rosmontis."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rosmontis",
-          "speakerId": "avg_npc_042",
-          "text": "What... about her?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rosmontis",
-          "speakerId": "avg_npc_042",
-          "text": "I think... I should at least know her name."
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rosmontis",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "Yes... Rosmontis."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rosmontis",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "What... about her?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rosmontis",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "I think... I should at least know her name."
     },
     {
       "type": "choice",
@@ -780,36 +834,38 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Rosmontis",
-          "speakerId": "avg_npc_042",
-          "text": "FrostNova..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rosmontis",
-          "speakerId": "avg_npc_042",
-          "text": "A good name."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rosmontis",
-          "speakerId": "avg_npc_042",
-          "text": "Hello, FrostNova."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rosmontis",
-          "speakerId": "avg_npc_042",
-          "text": "...Bye bye."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rosmontis",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "FrostNova..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rosmontis",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "A good name."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rosmontis",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "Hello, FrostNova."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rosmontis",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "...Bye bye."
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": []

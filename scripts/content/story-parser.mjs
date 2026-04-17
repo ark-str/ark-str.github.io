@@ -38,6 +38,15 @@ function pushVisibleBlock(target, block) {
   target.push(block);
 }
 
+function normalizeBackgroundId(rawBackgroundId) {
+  const backgroundId = typeof rawBackgroundId === "string" ? rawBackgroundId.trim() : "";
+  if (!backgroundId) {
+    return null;
+  }
+
+  return backgroundId.replace(/\.(png|jpe?g|webp)$/i, "");
+}
+
 function parseDecisionLine(line) {
   if (!line.startsWith("[Decision(")) {
     return null;
@@ -57,7 +66,6 @@ function parseDecisionLine(line) {
       value: values[index] ?? String(index + 1),
       blocks: [],
     })),
-    sharedBlocks: [],
   };
 }
 
@@ -281,6 +289,7 @@ function resolveDialogueSpeaker(line, parserState) {
     type: "dialogue",
     speakerName,
     speakerId,
+    isRemote: winningFrame?.source === "cutin",
     text,
   };
 
@@ -289,6 +298,28 @@ function resolveDialogueSpeaker(line, parserState) {
   }
 
   return [block];
+}
+
+function consumeBackgroundTag(remainder) {
+  const backgroundMatch = /^\[Background(?:\(([^\]]*)\))?\]\s*(.*)$/i.exec(remainder);
+  if (!backgroundMatch) {
+    return null;
+  }
+
+  const rawAttributes = backgroundMatch[1] ?? null;
+  const backgroundId = normalizeBackgroundId(getLooseAttributeValue(rawAttributes, "image"));
+
+  return {
+    blocks: backgroundId
+      ? [
+          {
+            type: "background",
+            backgroundId,
+          },
+        ]
+      : [],
+    remainder: backgroundMatch[2]?.trim() ?? "",
+  };
 }
 
 function consumeCharacterCutinTag(remainder, parserState) {
@@ -437,6 +468,16 @@ function extractVisibleBlocks(line, parserState) {
       continue;
     }
 
+    const backgroundResult = consumeBackgroundTag(remainder);
+    if (backgroundResult) {
+      blocks.push(...backgroundResult.blocks);
+      remainder = backgroundResult.remainder;
+      if (!remainder) {
+        return blocks;
+      }
+      continue;
+    }
+
     const dialogBreakMatch = /^\[(?:Dialog|dialog)(?:\([^\]]*\))?\]\s*(.*)$/i.exec(remainder);
     if (dialogBreakMatch) {
       blocks.push({ type: "sceneBreak" });
@@ -470,11 +511,11 @@ function extractVisibleBlocks(line, parserState) {
 
 function flushPredicate(currentChoice, predicateCollector) {
   if (!currentChoice || !predicateCollector) {
-    return null;
+    return [];
   }
 
   if (predicateCollector.blocks.length === 0) {
-    return null;
+    return [];
   }
 
   const optionValues = currentChoice.options.map((option) => option.value);
@@ -484,10 +525,7 @@ function flushPredicate(currentChoice, predicateCollector) {
     uniqueReferences.every((reference) => optionValues.includes(reference));
 
   if (isShared) {
-    for (const block of predicateCollector.blocks) {
-      pushVisibleBlock(currentChoice.sharedBlocks, block);
-    }
-    return null;
+    return predicateCollector.blocks;
   }
 
   for (const option of currentChoice.options) {
@@ -500,7 +538,7 @@ function flushPredicate(currentChoice, predicateCollector) {
     }
   }
 
-  return null;
+  return [];
 }
 
 export function parseStoryText(rawText) {
@@ -508,6 +546,7 @@ export function parseStoryText(rawText) {
   const blocks = [];
   let currentChoice = null;
   let currentPredicate = null;
+  let currentChoiceContinuationBlocks = [];
   const parserState = {
     frameClock: 0,
     cutins: new Map(),
@@ -521,10 +560,17 @@ export function parseStoryText(rawText) {
       return;
     }
 
-    flushPredicate(currentChoice, currentPredicate);
+    const continuationBlocks = flushPredicate(currentChoice, currentPredicate);
+    for (const block of continuationBlocks) {
+      pushVisibleBlock(currentChoiceContinuationBlocks, block);
+    }
     currentPredicate = null;
     blocks.push(currentChoice);
+    for (const block of currentChoiceContinuationBlocks) {
+      pushVisibleBlock(blocks, block);
+    }
     currentChoice = null;
+    currentChoiceContinuationBlocks = [];
   }
 
   for (const rawLine of lines) {
@@ -539,6 +585,7 @@ export function parseStoryText(rawText) {
       flushChoice();
       currentChoice = decision;
       currentPredicate = null;
+      currentChoiceContinuationBlocks = [];
       continue;
     }
 
@@ -548,7 +595,10 @@ export function parseStoryText(rawText) {
         continue;
       }
 
-      flushPredicate(currentChoice, currentPredicate);
+      const continuationBlocks = flushPredicate(currentChoice, currentPredicate);
+      for (const block of continuationBlocks) {
+        pushVisibleBlock(currentChoiceContinuationBlocks, block);
+      }
       currentPredicate = {
         references: predicate.references,
         blocks: [],
@@ -597,8 +647,6 @@ function collectObservedOperatorsFromBlocks(blocks, accumulator) {
     for (const option of block.options) {
       collectObservedOperatorsFromBlocks(option.blocks, accumulator);
     }
-
-    collectObservedOperatorsFromBlocks(block.sharedBlocks, accumulator);
   }
 }
 

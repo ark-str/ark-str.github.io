@@ -25,16 +25,18 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "narration",
-          "text": "敵。味方。人間。\n叫び。嘆き。呻き。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "narration",
+      "text": "敵。味方。人間。\n叫び。嘆き。呻き。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_cherunder"
     },
     {
       "type": "choice",
@@ -54,54 +56,59 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "…………"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "質問があるようだな。聞いてやろう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "オペレーター",
-          "speakerId": "avg_npc_012",
-          "text": "ドクター……もしかして、ロスモンティスの戦闘を見たのは初めてですか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "オペレーター",
-          "speakerId": "avg_npc_012",
-          "text": "見るに耐えないのはわかります……ですが――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "ここは私に任せておけ。君には戦闘能力を失った敵負傷者の確認を頼む。あの中には伝令兵もいるはずだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "もし彼らに逃げられたら、我々の作戦に支障が出る。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "オペレーター",
-          "speakerId": "avg_npc_012",
-          "text": "……わかりました。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "…………"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "質問があるようだな。聞いてやろう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "オペレーター",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "ドクター……もしかして、ロスモンティスの戦闘を見たのは初めてですか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "オペレーター",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "見るに耐えないのはわかります……ですが――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "ここは私に任せておけ。君には戦闘能力を失った敵負傷者の確認を頼む。あの中には伝令兵もいるはずだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "もし彼らに逃げられたら、我々の作戦に支障が出る。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "オペレーター",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "……わかりました。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -111,15 +118,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "14歳だ。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "14歳だ。"
     },
     {
       "type": "choice",
@@ -129,39 +135,42 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "皆さん、通してください！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "今、現場の処理が終わったところです……何かあったんですか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "ドクター？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "……どうしたの？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "ドクター、さっき私を呼んだ？"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "皆さん、通してください！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "今、現場の処理が終わったところです……何かあったんですか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ドクター？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "……どうしたの？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "ドクター、さっき私を呼んだ？"
     },
     {
       "type": "choice",
@@ -171,18 +180,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "…………"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "…………"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -192,18 +200,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "ドクター！"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ドクター！"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -223,8 +230,7 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -234,8 +240,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -255,15 +260,14 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "私自身。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "私自身。"
     },
     {
       "type": "choice",
@@ -283,39 +287,42 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "自分で戦うことを選んだの。戦いたいから。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "戦場でしか見つけられない感情がある。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "友達や家族を守れた時に、満足感が得られるの。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "……ロドスには私が必要だから。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "私のような人を増やさないために、この大地が私の名前を呼ぶの。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "自分で戦うことを選んだの。戦いたいから。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "戦場でしか見つけられない感情がある。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "友達や家族を守れた時に、満足感が得られるの。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "……ロドスには私が必要だから。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "私のような人を増やさないために、この大地が私の名前を呼ぶの。"
     },
     {
       "type": "choice",
@@ -325,8 +332,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -336,33 +342,35 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "……死の前では、子供も大人も同じ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "戦争や鉱石病は、相手が子供だからって、見逃してくれるなんてことあるの？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "敵が私とアーミヤの戦いを見たとき、まず最初に「子供」だなんて思う人はいないよね？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "ドクター、私たちは「怪物」でしょ？"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "……死の前では、子供も大人も同じ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "戦争や鉱石病は、相手が子供だからって、見逃してくれるなんてことあるの？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "敵が私とアーミヤの戦いを見たとき、まず最初に「子供」だなんて思う人はいないよね？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "ドクター、私たちは「怪物」でしょ？"
     },
     {
       "type": "choice",
@@ -382,39 +390,42 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "違うの、ドクター。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "Dr.{@nickname}、違うの。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "自分が何者かは、別にどうでもいいの。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "私はただ家族と一緒に、意義のあることをしたいだけ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "Scoutを知ってる？"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "違うの、ドクター。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "Dr.{@nickname}、違うの。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "自分が何者かは、別にどうでもいいの。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "私はただ家族と一緒に、意義のあることをしたいだけ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "Scoutを知ってる？"
     },
     {
       "type": "choice",
@@ -424,15 +435,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "……じゃあ、Aceのことは？"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "……じゃあ、Aceのことは？"
     },
     {
       "type": "choice",
@@ -442,69 +452,77 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "……彼らのことを何日も見てないの。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "私はたくさんのことを忘れちゃった。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "でも、私は忘れただけ。何もかも捨てたドクターとは違うの。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "ロスモンティスさん。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "……違う、そういう意味じゃないの。わかるよね、アーミヤ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "……わかってます。でも……そんな言い方はして欲しくないです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "うん……わかった。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "私が失くしたのは、バラバラの記憶。どこかで見た光景や、何かに書き記した言葉……それらの抜け殻みたいなぼやけた輪郭は、それが確かに在ったということだけしか教えてはくれない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "でもその時々の感情は……うまく言えないけど、アーミヤ以外の人にはわからない感情が……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "ずっと頭から離れないでいる。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "……彼らのことを何日も見てないの。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "私はたくさんのことを忘れちゃった。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "でも、私は忘れただけ。何もかも捨てたドクターとは違うの。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ロスモンティスさん。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "……違う、そういう意味じゃないの。わかるよね、アーミヤ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "……わかってます。でも……そんな言い方はして欲しくないです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "うん……わかった。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "私が失くしたのは、バラバラの記憶。どこかで見た光景や、何かに書き記した言葉……それらの抜け殻みたいなぼやけた輪郭は、それが確かに在ったということだけしか教えてはくれない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "でもその時々の感情は……うまく言えないけど、アーミヤ以外の人にはわからない感情が……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "ずっと頭から離れないでいる。"
     },
     {
       "type": "choice",
@@ -514,135 +532,154 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "ドクターは……変わった人だと思う。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "みんなが言うよりもずっと……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "私も変わった人と言われることがある。私を見て怯える人もいる。そうあるべきじゃないと言ってくる人もいる。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "でも彼らは、どうして私がこんなふうになったかっていう理由や、私が経験したり感じてきたことを知らない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "どうしてこんな時に胸が痛くなるの？　どうして泣きたくなるの？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "何が起こったのか思い出せないのに……どうして目が痛くて、唇が乾いてしまうの？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "廊下のあの汚れは誰が残したの？　どうして拭き取られてないの？　花瓶を割ってしまった時、どうして不安を感じながら、ちょっと嬉しさも感じるの？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "花を見ると嫌な気分になって、虫を見ると興味が湧いてくるのは、どうして？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "私が失くした記憶の中で、一体何が起きたの？　どうしてこんなにたくさんの感情が湧き上がってくるの？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "これまで私が「感じ」たオペレーターたちは、みんないろんな特徴を持っていた。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "そしてみんなを失った時、その「感じ」も、一緒に消えちゃった。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "でもどうして……どうして感情だけは残っているの？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "もう感じられないのに、どうして涙がずっと流れてるの？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "もう全部、忘れたはずなのに……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "…………"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "ロスモンティスさんは、それらの感情を取り除く処置をずっと拒んでいます。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "その湧き上がる感情は、どんな形であれ、ロスモンティスさん自身のものですから。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "……ロスモンティスさんだけのものですから。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "私はそれに干渉しません。ロスモンティスさんの中に、まだ希望がある限り……私はそうしません。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "どうするかはロスモンティスさん自身が決めることです。忘れるという選択は、彼女自身の意志で為されるべきです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "本当に忘れられる時が来たら……"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "ドクターは……変わった人だと思う。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "みんなが言うよりもずっと……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "私も変わった人と言われることがある。私を見て怯える人もいる。そうあるべきじゃないと言ってくる人もいる。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "でも彼らは、どうして私がこんなふうになったかっていう理由や、私が経験したり感じてきたことを知らない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "どうしてこんな時に胸が痛くなるの？　どうして泣きたくなるの？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "何が起こったのか思い出せないのに……どうして目が痛くて、唇が乾いてしまうの？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "廊下のあの汚れは誰が残したの？　どうして拭き取られてないの？　花瓶を割ってしまった時、どうして不安を感じながら、ちょっと嬉しさも感じるの？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "花を見ると嫌な気分になって、虫を見ると興味が湧いてくるのは、どうして？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "私が失くした記憶の中で、一体何が起きたの？　どうしてこんなにたくさんの感情が湧き上がってくるの？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "これまで私が「感じ」たオペレーターたちは、みんないろんな特徴を持っていた。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "そしてみんなを失った時、その「感じ」も、一緒に消えちゃった。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "でもどうして……どうして感情だけは残っているの？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "もう感じられないのに、どうして涙がずっと流れてるの？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "もう全部、忘れたはずなのに……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "…………"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ロスモンティスさんは、それらの感情を取り除く処置をずっと拒んでいます。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "その湧き上がる感情は、どんな形であれ、ロスモンティスさん自身のものですから。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "……ロスモンティスさんだけのものですから。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "私はそれに干渉しません。ロスモンティスさんの中に、まだ希望がある限り……私はそうしません。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "どうするかはロスモンティスさん自身が決めることです。忘れるという選択は、彼女自身の意志で為されるべきです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "本当に忘れられる時が来たら……"
     },
     {
       "type": "choice",
@@ -662,63 +699,70 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "Dr.{@nickname}……ロドスのオペレーター選抜は厳しいものです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "戦闘への参加を申請してくるオペレーターはたくさんいますが、その多くを私たちは断っています。ロドスは様々な面から、その人の戦闘適性を判断しますので。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "作戦遂行能力、戦術立案能力、フィジカルにメンタル、全てが判断材料になります。でもこれは予備段階での選抜条件に過ぎません。難しいのは次の段階の、「自然かつ絶対的な信頼度」です。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "実際の任務においては、どうやってお互いを信頼すべきかを心得ていない人がたくさんいます。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "ロスモンティスさんがここにいるのは、私たちの目的と采配を信じているからであり、そして同じように私たちが彼女の能力と判断を信じているからです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "だから私を……いえ、私たちを信じてください、ドクター。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "そうすればきっと彼女の……感情の色が見えてきますから。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "…………"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "ドクター。ブレイズと一緒に戦ってくれてありがとう。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Dr.{@nickname}……ロドスのオペレーター選抜は厳しいものです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "戦闘への参加を申請してくるオペレーターはたくさんいますが、その多くを私たちは断っています。ロドスは様々な面から、その人の戦闘適性を判断しますので。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "作戦遂行能力、戦術立案能力、フィジカルにメンタル、全てが判断材料になります。でもこれは予備段階での選抜条件に過ぎません。難しいのは次の段階の、「自然かつ絶対的な信頼度」です。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "実際の任務においては、どうやってお互いを信頼すべきかを心得ていない人がたくさんいます。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ロスモンティスさんがここにいるのは、私たちの目的と采配を信じているからであり、そして同じように私たちが彼女の能力と判断を信じているからです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "だから私を……いえ、私たちを信じてください、ドクター。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "そうすればきっと彼女の……感情の色が見えてきますから。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "…………"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "ドクター。ブレイズと一緒に戦ってくれてありがとう。"
     },
     {
       "type": "choice",
@@ -738,30 +782,35 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "ブレイズにはもっと一緒に戦う人が必要なんだよ。あの人の笑った顔を、私は見たいから。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "あなたのことも、見てみたかった。AceとScoutがずっと話してたドクターが、どんな人なのか見てみたかったの。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "ここにいたのか。ずいぶんと探したぞ。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "ブレイズにはもっと一緒に戦う人が必要なんだよ。あの人の笑った顔を、私は見たいから。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "あなたのことも、見てみたかった。AceとScoutがずっと話してたドクターが、どんな人なのか見てみたかったの。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_cherunder"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "ここにいたのか。ずいぶんと探したぞ。"
     },
     {
       "type": "choice",
@@ -771,75 +820,84 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "……高火力で迅速かつ効果的に敵を無力化することができ、優れた自制心と臨機応変さを併せ持つ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "ロスモンティスは、ロドスで最も優秀な殲滅戦要員の一人だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "対人コミュニケーションにはやや難がある上、戦闘スタイルも外見に反して容赦無く見える。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "彼女と比べれば、チェーンソーを振り回すブレイズの方がまだ受け入れやすいかもしれないな。ロスモンティスの戦闘中に飛び散る破片には確かに不安を覚えるが……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "私の保証で君の不安が少しでも和らぐのならそうしよう。君に私の言葉が信じられるのであれば、だが。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "――ロスモンティスが敵を殺してしまうことは実は少ない。戦い方は衝撃的に見えるが、彼女の目的は相手の戦闘能力を奪うことだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "その証拠に、先ほどの戦闘では、全ての敵の武装が解除されたが、誰一人死んではいない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "彼女の武器コントロール精度は、以前よりかなり向上している。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "もちろん、敵の重症者が助かるかどうかは、中枢区画を完全制圧するまでの時間にかかっている。その時になって初めて、ここに医療班を送らせることが可能になるからな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "だが当然、致命的なダメージを与えることが、目的を達成する条件になる時もある。その際に死傷者が出るのは避けられないことだと覚えておいてくれ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "……まだ不満そうだ。目の当たりにした事実に耐えられないのか？"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "……高火力で迅速かつ効果的に敵を無力化することができ、優れた自制心と臨機応変さを併せ持つ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "ロスモンティスは、ロドスで最も優秀な殲滅戦要員の一人だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "対人コミュニケーションにはやや難がある上、戦闘スタイルも外見に反して容赦無く見える。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "彼女と比べれば、チェーンソーを振り回すブレイズの方がまだ受け入れやすいかもしれないな。ロスモンティスの戦闘中に飛び散る破片には確かに不安を覚えるが……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "私の保証で君の不安が少しでも和らぐのならそうしよう。君に私の言葉が信じられるのであれば、だが。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "――ロスモンティスが敵を殺してしまうことは実は少ない。戦い方は衝撃的に見えるが、彼女の目的は相手の戦闘能力を奪うことだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "その証拠に、先ほどの戦闘では、全ての敵の武装が解除されたが、誰一人死んではいない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "彼女の武器コントロール精度は、以前よりかなり向上している。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "もちろん、敵の重症者が助かるかどうかは、中枢区画を完全制圧するまでの時間にかかっている。その時になって初めて、ここに医療班を送らせることが可能になるからな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "だが当然、致命的なダメージを与えることが、目的を達成する条件になる時もある。その際に死傷者が出るのは避けられないことだと覚えておいてくれ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "……まだ不満そうだ。目の当たりにした事実に耐えられないのか？"
     },
     {
       "type": "choice",
@@ -859,33 +917,35 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "現実は君の想像をはるかに超えるものだろう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "恐ろしいほどのアーツの才能や精神感応能力を持っていたことが、彼女をエリートオペレーターに抜擢した理由ではない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "逆に、エリートオペレーターになったからこそ、このような素質を開花させたと言える。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "「実力を鑑みて彼女を戦場に送るべき」という理屈ではなく、「彼女を戦士にしなければ、恐ろしい結果が待っている」と我々は判断したのだ。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "現実は君の想像をはるかに超えるものだろう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "恐ろしいほどのアーツの才能や精神感応能力を持っていたことが、彼女をエリートオペレーターに抜擢した理由ではない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "逆に、エリートオペレーターになったからこそ、このような素質を開花させたと言える。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "「実力を鑑みて彼女を戦場に送るべき」という理屈ではなく、「彼女を戦士にしなければ、恐ろしい結果が待っている」と我々は判断したのだ。"
     },
     {
       "type": "choice",
@@ -895,45 +955,49 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "端的に言えば、彼女の身体からにじみ出るアーツは、放っておくと他人の命を奪ってしまう。彼女が望むと望まざるとに拘らず、な。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "人間同士の殺し合いは普遍であり、この大地では途切れることなく発生しているが、多くの人は自らの意志で武器を振るっているはずだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "自我を失った人が人と呼べるかという問題について議論するつもりはない。だが我々が向き合わなければならないのは、まさにこの問題の延長だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "「人間から自我が奪われた後、そこに残った個体をいったいどう定義するのか？」"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "「その個体が兵器となり、それによって他者の命が奪われた時、咎められるべきは誰なのか？」"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "その兵器を生み出した者か、その兵器を利用した者か、それとも兵器にされた張本人か？"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "端的に言えば、彼女の身体からにじみ出るアーツは、放っておくと他人の命を奪ってしまう。彼女が望むと望まざるとに拘らず、な。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "人間同士の殺し合いは普遍であり、この大地では途切れることなく発生しているが、多くの人は自らの意志で武器を振るっているはずだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "自我を失った人が人と呼べるかという問題について議論するつもりはない。だが我々が向き合わなければならないのは、まさにこの問題の延長だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "「人間から自我が奪われた後、そこに残った個体をいったいどう定義するのか？」"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "「その個体が兵器となり、それによって他者の命が奪われた時、咎められるべきは誰なのか？」"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "その兵器を生み出した者か、その兵器を利用した者か、それとも兵器にされた張本人か？"
     },
     {
       "type": "choice",
@@ -953,45 +1017,49 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "そのうち説明してやれる時間があるかもしれないが、今は少し自分の頭で考えてみてくれ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "ちなみにもう一つ……年齢のことだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "アーミヤが背伸びをしている姿を見て、君が勘違いをしている……かどうかはわからないが——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "戦場で兵器として恐れられる子供は、たとえ外見が幼くても普通の子供として見られることはまずない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "――ましてや、多くのことを経験したあの二人なら尚のこと。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "少しお喋りが過ぎたな……さて、そろそろ地表に向けて出発する頃合だ。もう一度自分の装備をチェックしてくれ。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "そのうち説明してやれる時間があるかもしれないが、今は少し自分の頭で考えてみてくれ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "ちなみにもう一つ……年齢のことだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "アーミヤが背伸びをしている姿を見て、君が勘違いをしている……かどうかはわからないが——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "戦場で兵器として恐れられる子供は、たとえ外見が幼くても普通の子供として見られることはまずない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "――ましてや、多くのことを経験したあの二人なら尚のこと。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "少しお喋りが過ぎたな……さて、そろそろ地表に向けて出発する頃合だ。もう一度自分の装備をチェックしてくれ。"
     },
     {
       "type": "choice",
@@ -1001,390 +1069,458 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "……本人に訊けばいい。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "むしろ、それは本人の口から聞くべきことだ。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ワルファリン",
-          "speakerId": "char_171_bldsk",
-          "text": "ケルシー！　待つのだ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "ワルファリンか。もうすぐ出発だ。言いたいことがあれば要点だけにしろ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ワルファリン",
-          "speakerId": "char_171_bldsk",
-          "text": "あの預言は知っておるな？　いや、そなたが知らぬはずはない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "預言？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ワルファリン",
-          "speakerId": "char_171_bldsk",
-          "text": "そうだ。あれのためにアーミヤを連れて行こうというのか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "……アーミヤこそがこの作戦の発起人であり、総指揮なのだが。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ワルファリン",
-          "speakerId": "char_171_bldsk",
-          "text": "まだ幼子である彼女に総指揮など務まるはずが——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "ワルファリン。私たちがカズデルを離れてから、どれほど経っていると思う？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ワルファリン",
-          "speakerId": "char_171_bldsk",
-          "text": "…………"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "話は終わりだな。それでは行くぞ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ワルファリン",
-          "speakerId": "char_171_bldsk",
-          "text": "2ヶ月ほどか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "冗談に付き合ってる暇はない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ワルファリン",
-          "speakerId": "char_171_bldsk",
-          "text": "わかっておる。あの子はもう成長したと言いたいのであろう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "そうだ、ワルファリン。時が経つのは早い。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "そもそもコータスとブラッドブルードとでは、成長速度に天地ほどの開きがある……私たちがカズデルを出てから今日までで既に3年が経過している。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "君にとっては一瞬かもしれないが、アーミヤが成長するには十分な時間だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ワルファリン",
-          "speakerId": "char_171_bldsk",
-          "text": "それについてはもういい……まずは妾の質問に答えろ。預言だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "……「最後のウェンディゴは魔王の手によって死ぬ」？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ワルファリン",
-          "speakerId": "char_171_bldsk",
-          "text": "それだ。妾はあの遊撃隊もそのリーダーのこともよく知っておる。預言が示しておるのは奴のことに違いない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "預言の原文は「ホルテクツの仔、サルカズに背きし者、及び其の不義の血脈に連なる末裔は、サルカズ君主の手ずから断絶せらる」というものだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "あれは預言とは呼べない。彼らの純粋な——いわゆる「血脈」が生き延びていようがいまいが、今でもウルサスやクルビアには多くのウェンディゴが生存している。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "……数十人を「多く」と言って差し支えないのであれば、な。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "それに、当時の状況を考えれば、あれは威嚇や牽制として見るのが妥当だろう。ウェンディゴがカズデルから離れることを望まない者は大勢いた。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ワルファリン",
-          "speakerId": "char_171_bldsk",
-          "text": "しかし、最初にこの預言を問題視し始めたのは妾たちではないぞ。そなたもなんだかんだと言いながらもしっかり記憶しておるのは、それが重要だと思ってるゆえではないのか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "……君も歳を取ったな。サルカズ巫術の「預言」などという戯言を信じるとは。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ワルファリン",
-          "speakerId": "char_171_bldsk",
-          "text": "歳？　そ、そなたに言われとうないわ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "私は鉱石病に感染している。その時が来るまでは常に死と隣り合わせだ。ワルファリン、私の命はきっと君の想像よりも短いだろう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ワルファリン",
-          "speakerId": "char_171_bldsk",
-          "text": "なっ！？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ワルファリン",
-          "speakerId": "char_171_bldsk",
-          "text": "狡いぞ！　そのような深刻めいた話にすり替えて誤魔化す気か！？　妾があのクロージャの小娘のように、軽く受け流すことなどできぬと知っておろうが！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "深刻な話を始めたのは君の方だろうに。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ワルファリン",
-          "speakerId": "char_171_bldsk",
-          "text": "……まあよい。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ワルファリン",
-          "speakerId": "char_171_bldsk",
-          "text": "ケルシー、よく聞け。他の者はそなたに遠慮して言えぬだろうが、妾は言うてやる。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ワルファリン",
-          "speakerId": "char_171_bldsk",
-          "text": "あやつは妾たち同様、数少ない生き残りの一人だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ワルファリン",
-          "speakerId": "char_171_bldsk",
-          "text": "妾がブラッドブルードで、あの老いぼれがウェンディゴでも、それは関係ない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ワルファリン",
-          "speakerId": "char_171_bldsk",
-          "text": "……この大地で、サルカズは不遇の日々を送っている。妾は慈善家でもお人好しでもないが、可能なら、あやつにはカズデルに戻ってほしいのだ。無論、我々ロドスに来てもよいが。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "…………"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "私は違うのだ、ワルファリン。私はサルカズではない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ワルファリン",
-          "speakerId": "char_171_bldsk",
-          "text": "……つまり、妾の頼みは聞けぬということか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "いや……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "わかった、ベストを尽くそう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "……ワルファリン、私も彼のことはよく覚えている。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ワルファリン",
-          "speakerId": "char_171_bldsk",
-          "text": "そなたの約束があれば何よりも心強い。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "そううまく行くとは思わないことだな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ワルファリン",
-          "speakerId": "char_171_bldsk",
-          "text": "だが今回はそなた自らが出動するのであろう？　それなら、どんな結果でも受け入れよう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "……君の忠告は遅過ぎた。君のところにはまだ伝わっていないかもしれないが、不吉なことが既に起きている。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "先日、チェルノボーグの感染者診療所「アザゼル」より最新の情報が入った。判明したのは彼がレユニオンに協力しているということだけではない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "それから、彼と敵対するなら、ウルサスで最も凶悪な太刀筋を味わうことになると、君も知っているはずだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "ロドスのオペレーターをそんな危険に晒すべきではない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ワルファリン",
-          "speakerId": "char_171_bldsk",
-          "text": "患者の治療には限界があるが、その上限値は医者にかかっている。つまり事の成否は人の努力次第だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "……努力次第、か。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "もう一つ注意しておこう。前にも言ったことがある……君は忘れたかもしれないが。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "今回、それを理由に君を咎めるようなことはしない。しかし万が一の時には、何か強制的な手段を取る用意はある。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "横暴だとは言わせない、ワルファリン。これは掟だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "「いかなる場合でも――たとえロドスの中にいても――『魔王』という言葉を口にすることは一切禁ずる。」"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "絶対にだ。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "……これは。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "総員、休め！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "ロスモンティスさん……私の気のせいでしょうか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "ううん。私も感じた。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "Dr.{@nickname}、想定外の状況が起きたかも知れません。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "……本人に訊けばいい。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "むしろ、それは本人の口から聞くべきことだ。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_corridor"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ワルファリン",
+      "speakerId": "char_171_bldsk",
+      "isRemote": false,
+      "text": "ケルシー！　待つのだ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "ワルファリンか。もうすぐ出発だ。言いたいことがあれば要点だけにしろ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ワルファリン",
+      "speakerId": "char_171_bldsk",
+      "isRemote": false,
+      "text": "あの預言は知っておるな？　いや、そなたが知らぬはずはない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "預言？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ワルファリン",
+      "speakerId": "char_171_bldsk",
+      "isRemote": false,
+      "text": "そうだ。あれのためにアーミヤを連れて行こうというのか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "……アーミヤこそがこの作戦の発起人であり、総指揮なのだが。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ワルファリン",
+      "speakerId": "char_171_bldsk",
+      "isRemote": false,
+      "text": "まだ幼子である彼女に総指揮など務まるはずが——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "ワルファリン。私たちがカズデルを離れてから、どれほど経っていると思う？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ワルファリン",
+      "speakerId": "char_171_bldsk",
+      "isRemote": false,
+      "text": "…………"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "話は終わりだな。それでは行くぞ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ワルファリン",
+      "speakerId": "char_171_bldsk",
+      "isRemote": false,
+      "text": "2ヶ月ほどか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "冗談に付き合ってる暇はない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ワルファリン",
+      "speakerId": "char_171_bldsk",
+      "isRemote": false,
+      "text": "わかっておる。あの子はもう成長したと言いたいのであろう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "そうだ、ワルファリン。時が経つのは早い。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "そもそもコータスとブラッドブルードとでは、成長速度に天地ほどの開きがある……私たちがカズデルを出てから今日までで既に3年が経過している。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "君にとっては一瞬かもしれないが、アーミヤが成長するには十分な時間だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ワルファリン",
+      "speakerId": "char_171_bldsk",
+      "isRemote": false,
+      "text": "それについてはもういい……まずは妾の質問に答えろ。預言だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "……「最後のウェンディゴは魔王の手によって死ぬ」？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ワルファリン",
+      "speakerId": "char_171_bldsk",
+      "isRemote": false,
+      "text": "それだ。妾はあの遊撃隊もそのリーダーのこともよく知っておる。預言が示しておるのは奴のことに違いない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "預言の原文は「ホルテクツの仔、サルカズに背きし者、及び其の不義の血脈に連なる末裔は、サルカズ君主の手ずから断絶せらる」というものだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "あれは預言とは呼べない。彼らの純粋な——いわゆる「血脈」が生き延びていようがいまいが、今でもウルサスやクルビアには多くのウェンディゴが生存している。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "……数十人を「多く」と言って差し支えないのであれば、な。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "それに、当時の状況を考えれば、あれは威嚇や牽制として見るのが妥当だろう。ウェンディゴがカズデルから離れることを望まない者は大勢いた。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ワルファリン",
+      "speakerId": "char_171_bldsk",
+      "isRemote": false,
+      "text": "しかし、最初にこの預言を問題視し始めたのは妾たちではないぞ。そなたもなんだかんだと言いながらもしっかり記憶しておるのは、それが重要だと思ってるゆえではないのか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "……君も歳を取ったな。サルカズ巫術の「預言」などという戯言を信じるとは。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ワルファリン",
+      "speakerId": "char_171_bldsk",
+      "isRemote": false,
+      "text": "歳？　そ、そなたに言われとうないわ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "私は鉱石病に感染している。その時が来るまでは常に死と隣り合わせだ。ワルファリン、私の命はきっと君の想像よりも短いだろう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ワルファリン",
+      "speakerId": "char_171_bldsk",
+      "isRemote": false,
+      "text": "なっ！？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ワルファリン",
+      "speakerId": "char_171_bldsk",
+      "isRemote": false,
+      "text": "狡いぞ！　そのような深刻めいた話にすり替えて誤魔化す気か！？　妾があのクロージャの小娘のように、軽く受け流すことなどできぬと知っておろうが！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "深刻な話を始めたのは君の方だろうに。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ワルファリン",
+      "speakerId": "char_171_bldsk",
+      "isRemote": false,
+      "text": "……まあよい。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ワルファリン",
+      "speakerId": "char_171_bldsk",
+      "isRemote": false,
+      "text": "ケルシー、よく聞け。他の者はそなたに遠慮して言えぬだろうが、妾は言うてやる。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ワルファリン",
+      "speakerId": "char_171_bldsk",
+      "isRemote": false,
+      "text": "あやつは妾たち同様、数少ない生き残りの一人だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ワルファリン",
+      "speakerId": "char_171_bldsk",
+      "isRemote": false,
+      "text": "妾がブラッドブルードで、あの老いぼれがウェンディゴでも、それは関係ない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ワルファリン",
+      "speakerId": "char_171_bldsk",
+      "isRemote": false,
+      "text": "……この大地で、サルカズは不遇の日々を送っている。妾は慈善家でもお人好しでもないが、可能なら、あやつにはカズデルに戻ってほしいのだ。無論、我々ロドスに来てもよいが。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "…………"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "私は違うのだ、ワルファリン。私はサルカズではない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ワルファリン",
+      "speakerId": "char_171_bldsk",
+      "isRemote": false,
+      "text": "……つまり、妾の頼みは聞けぬということか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "いや……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "わかった、ベストを尽くそう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "……ワルファリン、私も彼のことはよく覚えている。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ワルファリン",
+      "speakerId": "char_171_bldsk",
+      "isRemote": false,
+      "text": "そなたの約束があれば何よりも心強い。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "そううまく行くとは思わないことだな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ワルファリン",
+      "speakerId": "char_171_bldsk",
+      "isRemote": false,
+      "text": "だが今回はそなた自らが出動するのであろう？　それなら、どんな結果でも受け入れよう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "……君の忠告は遅過ぎた。君のところにはまだ伝わっていないかもしれないが、不吉なことが既に起きている。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "先日、チェルノボーグの感染者診療所「アザゼル」より最新の情報が入った。判明したのは彼がレユニオンに協力しているということだけではない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "それから、彼と敵対するなら、ウルサスで最も凶悪な太刀筋を味わうことになると、君も知っているはずだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "ロドスのオペレーターをそんな危険に晒すべきではない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ワルファリン",
+      "speakerId": "char_171_bldsk",
+      "isRemote": false,
+      "text": "患者の治療には限界があるが、その上限値は医者にかかっている。つまり事の成否は人の努力次第だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "……努力次第、か。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "もう一つ注意しておこう。前にも言ったことがある……君は忘れたかもしれないが。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "今回、それを理由に君を咎めるようなことはしない。しかし万が一の時には、何か強制的な手段を取る用意はある。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "横暴だとは言わせない、ワルファリン。これは掟だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "「いかなる場合でも――たとえロドスの中にいても――『魔王』という言葉を口にすることは一切禁ずる。」"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "絶対にだ。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_cherunder"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "……これは。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "総員、休め！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ロスモンティスさん……私の気のせいでしょうか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "ううん。私も感じた。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Dr.{@nickname}、想定外の状況が起きたかも知れません。"
     },
     {
       "type": "choice",
@@ -1394,24 +1530,24 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "まだ確信はできませんが……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "この都市の移動速度が……落ちている？"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "まだ確信はできませんが……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "この都市の移動速度が……落ちている？"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": [

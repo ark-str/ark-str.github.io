@@ -11,6 +11,10 @@
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
       "type": "narration",
       "text": "p.m. 2:18 天気/晴天\nイベリア以北 海に面する荒れ果てた都市\n予定の座標に到着。\n目標建造物の外見は事前調査報告書の内容と一致。\nこれより小隊が建物内に進入し初期調査を実施。その間、おそらく通信途絶と予想。緊急時には信号弾を使用。ご注意くださいまし。\n報告はアズリウス、オーヴァー。"
     },
@@ -18,321 +22,385 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_barracks"
+    },
+    {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "ここに入り口がありますわ。うーん、元々あったものではなさそうですわね。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "お粗末な仕事ですこと。縁を斧か何かで無理やりこじ開けたような跡ですわ。バウンティハンターかしら？　この辺りへ「宝探し」に来る輩もいると耳にしましたわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "彼らのほとんどは、イベリア人ではありませんからね……"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "そうですわね。何とか逃げ出した人々にとっては、このような遺跡は「毒性」が強いでしょうし。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "残った人々……教会と、裁判所。彼らもここへ来ることはおそらくないでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "彼らは、やるべきことを多く抱えていますし、そもそもこういったものを見たくはないはずです。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "……子供の頃の私が、自分の足を見たくなかったのと同じように。どれだけ強く踏ん張っても、走ることができない――今のイベリアは、こうした「壊れた部品」から目を背けています。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "グラウがそうやって自分に喩えたりすると、思わずイベリアに同情しそうになりますわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "うーん、今のは冗談だってよくわかりました。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_barracks"
+    },
+    {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "電磁パルスアンテナ、解放。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "で、上へ向かいますの？　それとも下へ？"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "あなたに従います。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "私は上に行きたいですわね。なぜかはわかりませんが、上へ行くべきだと思いますの。ここはまるで……塔のようですから。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "塔ですか？　それほど高くありませんよ？　地上に見えているのはせいぜい三階程度です。こんな高さで何の役に立つでしょうか。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "では、下へ行きましょうか。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "え？"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "あなたの意見は的確ですわ。下はどれほど深いのか、わかりませんもの。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "では下へ向かいましょう。アズリウスさんについていきます、背中は任せてください。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "あら、グラウにそう言ってもらえると安心ですわね。もちろん戦う必要がなければそれが一番ですけど。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_cherunder_2"
+    },
+    {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "うーん、中はとても暗いですわね。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "照明システムが完全に壊れています。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "あなたでも直せませんの？"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "これは数十年前のイベリアの技術です。レイジアン工業の設計とは構想の方向性が大きく異なります。数日頂ければもしかしたら……"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "ならやめましょう。修理できるかどうかは、クロージャさんや後続のエンジニアチームにお任せすればよろしいですわ。私たちがこの地下の墓穴にとどまる必要はありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "墓穴？"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "ものの喩えですわ、あるいは事実なのかもしれません。この建物の中は死の臭いが充満していますもの。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "何十年も海水に浸り、土に埋もれ、荒れっぱなしで――"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "シーッ。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "え？"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "静かになさって……幽霊の声が聴こえませんこと？"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "ゆ、幽霊……？"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "思った通り可愛らしい反応ですわね。冗談ですわよ、そんなに強くつかまないでくださるかしら？　この新しい服、結構気に入ってますのよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "……。やはり携帯源石灯を点けましょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "これで明るくなりましたわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "ふむ……"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "この遺跡の技術が随分気になっているようですわね。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "海辺の古い都市にしかない技術です。現在のイベリアには、見たことがある人すらほとんどいないでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "一体……何の目的で使っていたのでしょうか。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "展望台？　信号の中継？　エネルギーの生産？　それとも……ただの観光用？"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "人を監禁するための場所かもしれませんわね。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "……たしかにそれもありえます。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "過去のイベリアに思いを馳せている方々は、失われた技術や、埃をかぶった黄金にしか目を向けませんわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "でも、あの最も輝かしい時代の――黄金都市の下には、たくさんの骨が埋まっているんですのよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "ごめんなさい……"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "なぜグラウが謝るんですの？　私の祖先を捕らえてイベリアに連れて行ったエーギルたちは、波で腐食してとっくに骨すら残っていませんわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "私は、イベリアのこともエーギルのことも嫌ってなんかいません。それどころか今の私は、自分のこともさほど嫌いではなくなったんですのよ。これもすべて、ドクターとグラウのおかげですわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "これらの技術は……あなたに嫌な記憶を思い出させませんか？"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "私が関心を持っているのは、この場所がロドスにとって有用であるか否か、それだけですわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "つまるところ、それこそが私たちがここにやって来た目的ですわ。そうじゃありませんこと？"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "……その通りです。環境調査とデータ解析を行い、回収可能部分を特定するのが任務ではありますが――"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "うーん、バラバラにされていますね。ただ単に老朽化や環境による影響なら、部品がここまで徹底的に破壊されることはありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "これを見てください、すっかり吹き飛ばされています……あっ。"
     },
     {
@@ -342,24 +410,28 @@
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "どうなさいました？　突然フランカーを構えたりして……"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "ゆ……幽霊がいます！"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "幽霊？　……前の通路に見えるあの人影のことかしら？"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "動きませんわ、どうやら生きてはいないようですわね。"
     },
     {
@@ -369,90 +441,105 @@
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "あの格好……バウンティハンターかしら。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "入り口からそう遠くありませんわ。扉をこじ開けて中に入った後、ここで死んだのかもしれませんわね。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "ああ、なるほど。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "お待ちになって。近づかない方が無難ですことよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "え？"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "彼がどうやって死んだのか、確認できていませんもの。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "何か危険があると？"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "バウンティハンターともあろうものが、入り口からこれほど近い場所で死んでいますのよ？"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "彼の命を奪ったのは、厄介な代物かもしれませんわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "うん……"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "もう少しお下がりになって。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "これは……海水の匂いですわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "海水？　海岸はここから近いとは言えない距離ですが。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "まさか……"
     },
     {
@@ -469,24 +556,28 @@
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "……ただの海草ですわね。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "骨は揃っていますわ。噛まれた跡もなく、致命的な外傷も見当たりませんわね。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "（クンクン）"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "一般的な毒物の痕跡もありませんわ。"
     },
     {
@@ -496,487 +587,575 @@
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "この体勢から判断するに、海草に絡まって溺死したようですわね。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "でも水なんて見当たりませんよ、どこも乾いています。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "壁に海水による腐食の跡がありますでしょう？"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "ええと……程度が異なる腐食の痕跡が二種類あります。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "つまりここは、二度浸水した？"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "おそらく第一波でこの建物は海水によって破壊され、すべての機能を失った。そして第二波で海水が押し寄せた際、完全に水に沈んだのですわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "そしてこの不運な方は、ちょうどその第二波の浸水のタイミングでここへと押し入り、一儲けできると喜びながら壁の装飾品などを取り外していたのでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "水が満ち始めた時には、もう逃げる暇がなく、さらには手足が海草に絡まり、もがいた末に命を落としたというわけですわね。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "彼の不注意だと責められませんわね。クランタですもの。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "……可哀想に。彼らは海の恐ろしさを全く知りません。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "ドクターがおっしゃっていましたけれど、海に関する研究は、少数の海洋学者にしかなされておらず、内陸のほとんどの国々において研究の主題として好まれないものらしいですわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "でも、それも不思議なことではありませんわね。人々は目に見える範囲で、かつ征服可能なものにしか興味がありませんもの。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "……かつてのイベリアを除いては、ですけれど。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "それも過去の話です。私ですら海は見たことがありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "ですから……あなたがなぜそこまで海の匂いに敏感なのか、私にはよく理解できません。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "そうですね……あの噂を聴いたことはあるかしら？"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "あの噂……？"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "例の、「災い」についてですわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "私たちは……それについて話すことはありません。イベリアでは、禁忌とされていますから。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "あなた方は、口をつぐむことが染み付いておりますのね。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "慣習を変えるのは難しいことです。ロドスでも、私たちが……故郷の話をすることはほとんどありません。それに、あの出来事やあの場所に対する思いは、みんなそれぞれに違いますから。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "時々、ウィーディと話すことがあります。私たちは共にイベリアで生まれ育ったエーギルですが、彼女にとってのイベリアは、私の目に映るものとは完全に異なります。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "それは当然じゃありませんこと？　語り合うことを禁止されてしまえば、人々は自分の目に映った物事の断片しか、記憶として残せませんもの。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "彼らは……人々がその断片を繋ぎ合わせる機会を故意に断ち切ったのですわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "……今は私たち二人しかいませんし、普通なら話せるのでしょうけど……でも私はできません。話そうとするとなぜか喉が詰まるんです。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "それを話した瞬間に、この通路に映っている影が襲ってくるのではないかと、恐怖を感じてしまうんです。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "……ただの源石灯の影であることくらいわかっているのに。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "影……言い得て妙、ですわね。彼らは人々の視線を巧みに逸らし、影を恐れさせたのですわ。その背後にある巨大な真相ではなく。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "ここは寒いはずなのに……汗が滲んできました。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "以前の私なら、自分がこの場所に立って、あなたとこんな話をすることなど想像もしませんでした。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "私もですわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "きっと、この真っ暗で閉鎖的な建物が、私たちを守ってくれているんですのよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "ここには死体が一つ、通路の先に何があるかはわかりませんわ。でもここはなぜか、ひらけた場所なんかよりずっと……安心させてくれますわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "壁が近くにあることで、目に見える範囲すべてを掌握している錯覚を私たちが得ているからですわね。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "そうですね。少なくともここには、こちらを見つめるような第三の目がないということがわかります。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "あら、そうとは限りませんわよ？"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "もうこれ以上からかわないでください……"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "まあ、冗談はさておき、話を戻しますわ。実際の話、これらのことについて話さぬよう定めたのは、裁判所ではありませんわ。陸に上がってきたエーギルが決めたことですのよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "え？"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "最初はおそらく、ただの自己防衛のためだったのでしょうね。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "自己……防衛？"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "あなたは、なぜエーギルが陸に上がってきたかご存じ？"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "いいえ……知りません。私たちは最初からイベリアにいたと思っていましたから。すべてのイベリア人がそう思っているわけではないのでしょうけど。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "実は、私もよくわからないんですのよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "そうですか……でもあなたは私たちよりも多くを知っています。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "おかしな話ですわね。こうした歴史がエーギルたちの間から徐々に消え去っても、私たちはまだしっかり覚えているだなんて。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "私の祖先は百年以上も前に、エーギルに連れて行かれましたのよ。彼らが当時欲していたのは、私たちに生まれつき備わる「毒物」の能力ですわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "それは……どうしてですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "彼らは、この陸地の奥深くからやってきた私たちの毒素を、武器として利用できないかと考えたのですわ……私たちの体からひたすら毒を抽出し、実験を繰り返したんですのよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "それを使って、彼らは何に立ち向かおうとしていたんですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "知りませんわ。見たことがありませんもの。けれど、私たちの祖先によれば、それはこの上なく巨大で、陸地には存在しない恐ろしい生物らしいですわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "海に存在する生物……"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "その可能性は大いにある、とだけ申し上げておきますわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "ドクターやケルシー先生、あるいは……彼女たちに直接問おうかと考えたこともありますわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "前に一度、廊下でスカジにばったり会ったことがありましたの。その瞬間、心の奥底に潜んでいたこれらの疑問が浮かび上がってきましたの。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "彼女はきっと答えてくれないでしょうね……"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "ええ。でも訊くことはできたでしょうね。私が質問しなかっただけですわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "……真実を覗き見る勇気が自分にあるかどうか、わかりませんでしたから。陸に上がったエーギルと同じようには参りませんわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "彼らは、数百年という長い時間をかけて、恐怖を忘れ去ることに成功したのですわ……だからこそ彼らは安心して陸地に根を下ろし、ゆっくりとイベリアに馴染んでいきましたのよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "やっと手にした新生活を手放し、再び終わりのない争いに身を投じるなんて誰ができますの？　「災い」がいつ来るかわからないし、来たとしても、どんなに抗っても無駄になるかもしれませんのよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "この私ですら、ドクターから多くのことを教えてもらってからは、新たな人生を送れることを願っていますのよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "では私たちは……ここで引き返すべきでしょうか？"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "まだ間に合います。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "かもしれませんわね。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "……でもあなたはそれでも進もうとしています。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "ええ、そうですわ。私はそれでも進みますわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "今思うと、これだけの歳月が経っても、私は一度だって自分の毒の能力を捨て去ろうとしたことはありませんわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "もしかすると私はずっと、先祖を奴隷のように扱ったエーギルの亡霊に、取り憑かれているのかもしれませんわね。心の奥底で、いつの日か私の毒が倒すべき宿敵に出会う日を信じているのかも。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_cherunder_2"
+    },
+    {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "どれほど下りてきましたっけ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "……覚えていませんわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "私もです。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "この塔は想像よりも深い……いえ、高いですわね。閉鎖的な空間が私たちの神経を狂わせますわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "あっ、何か見えた気が……幻覚でしょうか？"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "何が見えましたの？"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "（まばたきをする）"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "光が見えました。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "それが、ゆっくりと上へと浮かんでいきました。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "――！"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "（声を抑えて）明かりを消して！"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
     },
     {
       "type": "narration",
@@ -989,30 +1168,35 @@
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "（ゆっくりと近づきますわよ。不用意に動かぬよう。）"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "（敵でしょうか？）"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "（戦闘の準備を。）"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "（フランカーの用意はできています。）"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "（よろしくてよ。もうすぐ接敵いたしますわ。前に曲がり角があります。私の手に注意しておいてくださるかしら？　三回ノック致しますわ。三度目で――）"
     },
     {
@@ -1029,6 +1213,7 @@
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "フランカー、出力最大！"
     },
     {
@@ -1038,108 +1223,126 @@
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "ま、待ってください！"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "マイクロ波増幅――"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "私は敵ではありません！"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "え？"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "ゴホッ、ゴホゴホッ……痛い。背中に当たりました……すごい衝撃波です……"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "これ以上は勘弁してください……"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "本当にやめてほしいのなら、まずはそちらから術を解いてくださるかしら、名も知らぬ術師さん。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "えっ、この光のことですか？　ち、違います。誤解です。この光はただ照明代わりに使っているだけです……"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "さっきも無意識に防御しただけです。信じてください、私にあなたたちを攻撃するつもりは全くありません！"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "たしかにこの光……暖かくて、明るくて、嫌な感じはしません。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "グラウ、そう簡単に警戒を解くものではありませんわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "この女性のアーツは決して弱くはありませんことよ。しかも、特殊なものですわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "えっ……そうなんですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "ぶ、武器を向けないでください！　それと、お願いですからこの矢を首から少し離してくださいませんか……少しだけで構いませんので……"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "い……息が詰まりそうで……ううっ……"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "武器を下ろして差しあげてもいいですわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "でも、まずはあなたもアーツユニットを捨てていただけるかしら。もし何か妙な真似をしたら……分かりますわよね？　あなたが動くよりも私の矢の方が速いですわよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "わかりました……"
     },
     {
@@ -1156,45 +1359,56 @@
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "源石灯をつけてくださる？"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "わかりました。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_cherunder_2"
+    },
+    {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "その光はあなたたちだったんですね……"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "あなたの目当ては私たちなんですの？"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "違います、そういう意味ではありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "元々、ここから下には私のほかに誰もいません。光が見えたので、誰かが訪ねて来たのだと思い、あいさつをしようと上がってきたんです……"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "こんな場所に一人でいるなんて、あなたは何者ですの？"
     },
     {
@@ -1204,663 +1418,784 @@
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "あっ、自己紹介がまだでした……えっと、私はアリアと言います。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "アリアさん、あなたはイベリア人かしら？"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "はい。そんなにわかりやすいですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "当てずっぽうですわ。違ったなら、クルビア、ヴィクトリアと順番に訊くつもりでした。いずれにしても口を割らせる方法などいくらでもございますわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "急に寒気がしてきました……"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "あなたはイベリア人、そして術師ですわね。その照明のようなアーツ……あなたは裁判所と関係ありますの？"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "裁判所？　いいえ、違います。私は裁判所の方たちなんて会ったことすらありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "ではあなたは、何をしにここへ来ましたの？"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "（何だか尋問してるみたいじゃないですか？　私たちだってここには調査に来ただけですよ？）"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "（直接尋ねるのが最も有効ですわ。それに彼女も、あまり不快には感じていない様子ですわよ。）"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "うーん……私が何しにここへ来たか、ですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "実は私もよくわからないんです……"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "え？　アリアさん、あなたは記憶障害か何かかしら？"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "そんなことはありません。私がどうやってここまで来て、何日過ごしたかは、全部覚えていますよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "二日前、地元の方に何かこの近くで仕事はないかと尋ねたんです。お金を稼ぐ必要があって……飢えてしまいますから。"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "その人は、私の持っていた最後の硬貨を受け取ると、ここに来れば財宝を見つけることができるって教えてくれたんです。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "（この人、騙されたみたいですね……）"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "あなた、バウンティハンターと間違えられたんじゃないかしら？　この一帯は、多くのバウンティハンターが訪れる場所ですから。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "あなたはアーツユニットを持っていますし、見た目も……えっと、裕福な家の出っぽいですもの。冒険を味わってみたいどこかのお嬢様と思われたのかもしれませんわね。"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "えっ……そうですか？　そんな、私のことを誤解して……"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "（多分誤解じゃありません……ただ単に、騙しやすいと思われただけですよ。）"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "（微笑む）"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "そ、そんなにおかしいですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "いいえ。こちらは私の友人で少し人見知りなんですけど、あなたをとても気にかけているようですわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "ゴホンッ……"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "え？　そんな……ご心配してくださってありがとうございます！　大丈夫です、私はただ迷っただけですから。ここにも灯台があるのを見て、思わず休みたくなってしまって……"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "今、何とおっしゃいました？"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "ま、迷っただけって……"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "そうではありませんわ。この建物が灯台だとおっしゃいました？"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "そうですよ。灯台はイベリアではよく見かけるものです。見たことありませんか？"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "（首を横に振る）"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "うーん……きっと海辺でしか見かけないものなんでしょうね。外で半年ほど過ごしてきましたが、たしかに海から離れた都市には灯台はありませんでした。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "あなたは海辺で育ったんですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "はい。ここからそう遠くはありません。小さな町で、きっと二人は聞いたことがないと思います。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "その町は……今どのような状況ですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "それなりにうまくやってる……と思いますけど？"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "町の人口は多くはありませんが、みんな仲が良いんです。先生が、私たちは幸運だったと言ってました。海がもたらした「災い」は、ひとまず私たちの家を見逃してくれたようです。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "そう……それは良かったですね。"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "まぁ灯台を除いて……ですけど。あの日以来、私たちの町の灯台は明かりを灯さなくなりました。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "あの日？"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "ええ。数十年前、最大の「災い」が訪れた……あの日です。"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "瞬きをするあいだに、イベリア全土の海岸線が一斉に闇に包まれました。"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "それ以来……光は消え失せました。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_cherunder_2"
+    },
+    {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "アリアさん、あなたは灯台にお詳しいようですわね。"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "幼い頃から灯台で過ごしてきましたから。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "……この灯台と似たものですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "違います。私たちの町の灯台は、ここよりもずっといい場所です。あまり損害は受けていなくて、ただ信号灯が点かなくなってしまっただけです。"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "角度調整モジュールに、システム管理センター、エネルギー供給ライン、自動演算コア、外壁用映像投影装置、無線通信装置、どれも問題ありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "私は先生と一緒に、毎日規則通り、すべてのチェックとメンテナンスをしていました。外壁まで定期的に清掃や修復をしていたんですよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "やむを得ない経年劣化を除けば、私たちの灯台は、数十年前の状態と変わりない……胸を張ってそう言えます。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "すごいですね……"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "灯台の話をしている時、アリアさんの目は輝いて見えます……きっと私がフランカーの手入れをしている時と同じです。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "あなたとあなたの先生は、お二人とも灯台の管理人ですの？"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "あら、言ってませんでした？　すみません、私の先生はまさに栄誉ある灯台の守り人です。"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "一つの灯台につき正式な守り人は一人しかありません。私の方はまだ……えっと、ただの見習いなんです……"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "それに今の私は……えーっと、外に出てしまったので、見習いとも言えませんね……はぁ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "外に出て随分と経つようですのに、灯台での仕事内容についてよく覚えていらっしゃいますわね……"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "毎晩、寝る前に暗唱していますから！"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "アリアさんは、本当にそのお仕事がお好きなようですわね。"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "私は先生の思い描いた光景を見たいんです。それは先生の先生が、彼女に伝えた光景なんですけどね。"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "夜の海で、灯台一つ一つが縦横に巡らされた航路を照らすんです。"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "遠くには壮大な掘削場や海上要塞の灯火が瞬いて、昼間よりも明るく煌々としていて、近くでは大小様々な船が自由に行き来して、どんな陸地の都市よりも賑わう……"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "海岸近くまで来れば、イベリアのエーギルが大陸棚近くに建設した水中都市も見られるんですよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "――"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "これらのすべてが、イベリアの海岸線にそびえ立った何千もの灯台によって見守られているんです。"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "ですが、「災い」によってエネルギーシステムが破壊されてしまいました。今は以前のように光を放つ灯台は一つもありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "しかし、先生と私はそれでも灯台を守り続けています。"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "先生は、灯台に明かりを灯そうと毎晩試みています。信号灯がその機能を失ったなら、私たちは新たな光源を作り出すだけです。"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "私たちの光では、かつての灯台のように海域全体を照らすことはできません。大きな海のほんの少しにしか届かないんです。"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "そして海上を行き来する船などとっくの昔になくなってしまいました――"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "ですが私たちは灯台を守り続けています。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "あなた方がどれだけ見守ろうとも、この海岸は永遠に静まり返ったままではありませんの？"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "ええ。たとえそうであっても私たちは灯台に留まります。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_towerinside"
+    },
+    {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "ここが塔のてっぺんです。"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "二日前には既に調べてみました。この灯台はひどく破壊されていて……ほとんど何も残ってません。"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "残っているのはこれだけです。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "これは……？"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "イベリアの灯台のエネルギーコアです。最先端の技術であり、最初に破壊された部分でもあります。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "使えないんですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "基礎となる技術が……失われているんです。先生と私でもその設計を復元することはできません。エネルギーシステムが失われては、どんな代替技術でも、コアを元通り稼働させることはできません。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "うーん……可能なら、これをロドスに持ち帰り、クロージャさんと調べてみたいです。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "あ、確実な復元の見込みがあるわけではなくて……当時のイベリアの技術は特殊ですからね……このコアも、源石エネルギー技術を基礎として設計されたものではないということだけは分かります。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "……源石をエネルギーとしていない？"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "とも言い切れません。エネルギーはやはり源石から来ていると思います。でも技術の原理が違います。もっと言えば、この装置を動かすのに、源石類のエネルギーが最善の選択には思えないんです。"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "あのっ！"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "ど、どうしました？　もしかして私の話が退屈すぎましたか……？"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "いえ。あなたたちは本当に、灯台にまた明かりを灯せるんですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "試す価値があるというだけです。それでもおそらくは、かなりの時間が必要です。"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "わ……私も入りたいです。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "え？"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "あなたの言うそのロドスには、私みたいな人は要りませんか？　私にできることは多くないですが……が、頑張りますので。"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "うーん……"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "まずは履歴書が必要ですわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "履歴書って何ですか？　私……"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "うっ……あれ、なんだか頭がクラクラする……"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "えっ？"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "急に倒れてしまいました。どうしたんでしょう？"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "（肩をすくめる）"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "あっ……毒の影響ですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "彼女のようなフィディアには、あなたと同様に私の神経毒に対して免疫があるのではないかと疑ってしまいましたわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "この状態を見るに、ただ発作が起こるのが遅かっただけですわね。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "（どう捉えればいいのかしら？　特異体質というわけではなさそうですわね。単に……鈍いだけかしら？）"
     },
     {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "（とりあえず分析するのは後にしてください！　げ、解毒剤は……用意してませんよね？　私と二人だけの任務ですし……）"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "焦る必要はありません。短時間の麻痺状態にすぎませんわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "まずは塔から連れて出ますわよ。冷たい風に当たれば、すぐ意識を取り戻すはずですわ。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_barracks"
+    },
+    {
       "type": "dialogue",
       "speakerName": "グラウコス",
       "speakerId": "avg_326_glacus_1",
+      "isRemote": false,
       "text": "電磁パルス、解除。"
     },
     {
@@ -1870,36 +2205,42 @@
       "type": "dialogue",
       "speakerName": "エリジウム",
       "speakerId": "char_401_elysm",
+      "isRemote": true,
       "text": "――ああ、ようやく繋がったね。お嬢さんたち、危険な目には遭わなかったかい？"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "ええ。ちょっとしたハプニング以外は……"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "ゴホッゴホッ……"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "あら、お目覚めですこと？"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "ごめんなさい、急に眠くなったみたいで……"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "回復も予想より早いですわね。"
     },
     {
@@ -1909,126 +2250,147 @@
       "type": "dialogue",
       "speakerName": "エリジウム",
       "speakerId": "char_401_elysm",
+      "isRemote": true,
       "text": "――"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "ああ、心配ありませんわ。調査任務は滞りなく終えましたから。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリジウム",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "それで、どうして君たち以外の声が聞こえるんだい？　知らない若いお嬢さんの声みたいだけど……"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "アリアさんですわ。任務中に偶然出会いましたの。彼女は私たちに重要な情報を提供してくれましたわ。それで、これから彼女と一緒にロドスへと戻り、人事部に履歴書を提出いたしますわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリジウム",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "ああそうなのか。じゃあ先に歓迎しておくよ。ようこそロドスへ！"
     },
     {
       "type": "dialogue",
       "speakerName": "アリア",
       "speakerId": "avg_469_indigo_1",
+      "isRemote": false,
       "text": "こ、こんにちは……"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "そうだ、まず結論を言っておきますわ。ここは――灯台ですわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリジウム",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "うん？　灯台？　聞き間違いじゃないよね？　情報提供者が言っていた「見る限りとても複雑」ていう情報とあまり一致しないけど。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリジウム",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "（何か重要な施設じゃないかと思ってたのにな……）"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "あの「災い」以前の建造物ですわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリジウム",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "……なるほどね。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "内部の構造は問題ありませんが、関連機器がひどく損傷していて、どれだけ回収できるかは不明ですわ。けれど――"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "後続のエンジニアチームに、一言申し送りしていただけますこと？"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "ここはロドスの新しい事務所になる可能性がありますわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリジウム",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "……了解。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリジウム",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "はぁ……もし本当に新しい事務所になったら、今後はしょっちゅうここに戻ってくることになるのかな？"
     },
     {
       "type": "dialogue",
       "speakerName": "エリジウム",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "例の場所からかなり近いよ……"
     },
     {
       "type": "dialogue",
       "speakerName": "エリジウム",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "まあでも、仕方ないね。僕たちだけの都合じゃないし。情報提供者によると、最近南方の崩壊した都市からまた難民たちが逃げ出したらしいよ。流浪の旅は大変だし、誰かが助けてあげないとね。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "そうですわ、この灯台が……重要になるかもしれませんのよ？"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "付近の感染者のために医療サービスを提供し、助けが必要な方々に手を差し伸べる……そして、日毎に大地に迫る潮汐を観察するのに役立ちますわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アズリウス",
       "speakerId": "avg_129_bluep_1",
+      "isRemote": false,
       "text": "以前のように、灯せば明確に照らしてくれる光をもたらすことは簡単にできなくても……引き続きこの海岸を見守ることはできるかもしれませんわ。"
     },
     {

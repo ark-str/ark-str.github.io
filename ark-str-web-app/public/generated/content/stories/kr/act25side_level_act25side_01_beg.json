@@ -11,9 +11,14 @@
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "29_g6_mainstreet"
+    },
+    {
       "type": "dialogue",
       "speakerName": "오올헤약",
       "speakerId": "avg_npc_536_1",
+      "isRemote": false,
       "text": "음, 시간 딱 맞췄네."
     },
     {
@@ -27,30 +32,35 @@
       "type": "dialogue",
       "speakerName": "오올헤약",
       "speakerId": "avg_npc_536_1",
+      "isRemote": false,
       "text": "어디 보자, 이 '별'은 과연 트리마운츠 어디에 떨어질까?"
     },
     {
       "type": "dialogue",
       "speakerName": "오올헤약",
       "speakerId": "avg_npc_536_1",
+      "isRemote": false,
       "text": "3구역과 5구역은 주택가, 11구역의 새 공업 단지는 아직 시공 중이고……"
     },
     {
       "type": "dialogue",
       "speakerName": "오올헤약",
       "speakerId": "avg_npc_536_1",
+      "isRemote": false,
       "text": "중앙 구역은 안 되겠네. 빌딩들이 마트에 쌓인 통조림처럼 빼곡한 데다, 오늘은 평일이라 사람도 많으니까……"
     },
     {
       "type": "dialogue",
       "speakerName": "오올헤약",
       "speakerId": "avg_npc_536_1",
+      "isRemote": false,
       "text": "당신은 낙하지점까지 이미 계산했을 텐데……"
     },
     {
       "type": "dialogue",
       "speakerName": "오올헤약",
       "speakerId": "avg_npc_536_1",
+      "isRemote": false,
       "text": "아니면, 저게 얼마나 큰 소동을 일으키든 전혀 신경 쓰지 않겠다는 건가?"
     },
     {
@@ -60,6 +70,7 @@
       "type": "dialogue",
       "speakerName": "오올헤약",
       "speakerId": "avg_npc_536_1",
+      "isRemote": false,
       "text": "뭐가 됐든 당신의 계획이 여기까지 진행된 걸 보니 점점 더 흥미로워지네…… 크리스틴."
     },
     {
@@ -69,6 +80,7 @@
       "type": "dialogue",
       "speakerName": "오올헤약",
       "speakerId": "avg_npc_536_1",
+      "isRemote": false,
       "text": "13구역의 트리톤 공장…… 확인 완료."
     },
     {
@@ -82,6 +94,10 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "38_g13_trimountlivingroom"
+    },
+    {
       "type": "choice",
       "options": [
         {
@@ -92,6 +108,7 @@
               "type": "dialogue",
               "speakerName": "뮤엘시스",
               "speakerId": "avg_249_mlyss_1",
+              "isRemote": false,
               "text": "입이 찢어지게 하품하는 걸 보니 잠을 제대로 못 잤나 보네?"
             },
             {
@@ -107,6 +124,7 @@
               "type": "dialogue",
               "speakerName": "뮤엘시스",
               "speakerId": "avg_249_mlyss_1",
+              "isRemote": false,
               "text": "당신도 깨어나면 천장을 멍하니 보고 있나 보네."
             },
             {
@@ -122,6 +140,7 @@
               "type": "dialogue",
               "speakerName": "뮤엘시스",
               "speakerId": "avg_249_mlyss_1",
+              "isRemote": false,
               "text": "지금 시간이면 라인 랩 직원들은 이미 출근한 지 한 시간은 지났을걸."
             },
             {
@@ -129,8 +148,7 @@
             }
           ]
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -145,30 +163,31 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "뮤엘시스",
-          "speakerId": "avg_249_mlyss_1",
-          "text": "그냥 보고 싶어서 왔어."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "뮤엘시스",
-          "speakerId": "avg_249_mlyss_1",
-          "text": "당신이 기동 장갑에서 날 구해줬으니 아침이라도 챙겨주려고 온 건데, 그렇게 이상해?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "뮤엘시스",
-          "speakerId": "avg_249_mlyss_1",
-          "text": "라인 랩 1층 카페에서 파는 아침 메뉴야. 매일 100인분 한정이라고."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "뮤엘시스",
+      "speakerId": "avg_249_mlyss_1",
+      "isRemote": false,
+      "text": "그냥 보고 싶어서 왔어."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "뮤엘시스",
+      "speakerId": "avg_249_mlyss_1",
+      "isRemote": false,
+      "text": "당신이 기동 장갑에서 날 구해줬으니 아침이라도 챙겨주려고 온 건데, 그렇게 이상해?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "뮤엘시스",
+      "speakerId": "avg_249_mlyss_1",
+      "isRemote": false,
+      "text": "라인 랩 1층 카페에서 파는 아침 메뉴야. 매일 100인분 한정이라고."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -178,18 +197,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "뮤엘시스",
-          "speakerId": "avg_249_mlyss_1",
-          "text": "그래, 알았으니까, 그렇게 쳐다보지 말아 줄래? 아침부터 웬 짜증이야."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "뮤엘시스",
+      "speakerId": "avg_249_mlyss_1",
+      "isRemote": false,
+      "text": "그래, 알았으니까, 그렇게 쳐다보지 말아 줄래? 아침부터 웬 짜증이야."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -199,57 +217,62 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "뮤엘시스",
-          "speakerId": "avg_249_mlyss_1",
-          "text": "사리아 씨랑 연락이 끊긴 건 사실이지만, 사리아가 없으면 당신한테 부탁해도 마찬가지잖아……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "뮤엘시스",
-          "speakerId": "avg_249_mlyss_1",
-          "text": "일단 이것부터 봐."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "뉴스",
-          "speakerId": null,
-          "text": "시민 여러분, 오늘 아침 13구역에 있는 트리톤 제3화학 공장에서 폭발 사고가 일어났습니다."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "뉴스",
-          "speakerId": null,
-          "text": "폭발의 구체적인 원인은 아직 확인되지 않았으나, 관련 부서는 연구원의 오조작으로 인한 시공 기계의 폭발로 판단하고 있습니다."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "뉴스",
-          "speakerId": null,
-          "text": "트리톤 제3화학 공장에는 대량의 촉매제와 중간제품이 저장되어 있습니다. 이러한 화학 원료의 누출로 인한 추가 피해를 막기 위해, 군부는 정부와 협력하여 현장에 대한 긴급 정리를 진행한 상태입니다."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "뉴스",
-          "speakerId": null,
-          "text": "현재, 13구역 전체가 임시 통제로 출입이 엄격히 제한되오니, 이 점 참고하시기 바랍니다."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "뉴스",
-          "speakerId": null,
-          "text": "또한 13구역의 임시 통제가 트리마운츠에서 이어지는 잭슨 부통령의 일정에 미치는 영향에 대해 유관 부서에 문의했으나, 아직 답변은 받지 못한 상태입니다."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "뮤엘시스",
+      "speakerId": "avg_249_mlyss_1",
+      "isRemote": false,
+      "text": "사리아 씨랑 연락이 끊긴 건 사실이지만, 사리아가 없으면 당신한테 부탁해도 마찬가지잖아……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "뮤엘시스",
+      "speakerId": "avg_249_mlyss_1",
+      "isRemote": false,
+      "text": "일단 이것부터 봐."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "뉴스",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "시민 여러분, 오늘 아침 13구역에 있는 트리톤 제3화학 공장에서 폭발 사고가 일어났습니다."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "뉴스",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "폭발의 구체적인 원인은 아직 확인되지 않았으나, 관련 부서는 연구원의 오조작으로 인한 시공 기계의 폭발로 판단하고 있습니다."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "뉴스",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "트리톤 제3화학 공장에는 대량의 촉매제와 중간제품이 저장되어 있습니다. 이러한 화학 원료의 누출로 인한 추가 피해를 막기 위해, 군부는 정부와 협력하여 현장에 대한 긴급 정리를 진행한 상태입니다."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "뉴스",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "현재, 13구역 전체가 임시 통제로 출입이 엄격히 제한되오니, 이 점 참고하시기 바랍니다."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "뉴스",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "또한 13구역의 임시 통제가 트리마운츠에서 이어지는 잭슨 부통령의 일정에 미치는 영향에 대해 유관 부서에 문의했으나, 아직 답변은 받지 못한 상태입니다."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -264,33 +287,34 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "뮤엘시스",
-          "speakerId": "avg_249_mlyss_1",
-          "text": "자세한 건 나도 잘 몰라."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "뮤엘시스",
-          "speakerId": "avg_249_mlyss_1",
-          "text": "하지만 박사 당신, 또는 로도스 아일랜드가 트리마운츠에 있는 이상, 이렇게 큰 뉴스를 놓치고 싶지는 않을 거야. 사리아 씨는 당신들을 엄청 믿고 있으니까."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "뮤엘시스",
-          "speakerId": "avg_249_mlyss_1",
-          "text": "아무튼, 박사, 새로운 손님이 왔어…… 우리 곧 다시 만나게 될 거야."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "뮤엘시스",
+      "speakerId": "avg_249_mlyss_1",
+      "isRemote": false,
+      "text": "자세한 건 나도 잘 몰라."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "뮤엘시스",
+      "speakerId": "avg_249_mlyss_1",
+      "isRemote": false,
+      "text": "하지만 박사 당신, 또는 로도스 아일랜드가 트리마운츠에 있는 이상, 이렇게 큰 뉴스를 놓치고 싶지는 않을 거야. 사리아 씨는 당신들을 엄청 믿고 있으니까."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "뮤엘시스",
+      "speakerId": "avg_249_mlyss_1",
+      "isRemote": false,
+      "text": "아무튼, 박사, 새로운 손님이 왔어…… 우리 곧 다시 만나게 될 거야."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -305,18 +329,17 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "이프리트",
-          "speakerId": "avg_npc_895_1",
-          "text": "박사, 해가 중천에 떴어!"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "이프리트",
+      "speakerId": "avg_npc_895_1",
+      "isRemote": false,
+      "text": "박사, 해가 중천에 떴어!"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -326,30 +349,31 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "켈시",
-          "speakerId": "char_003_kalts",
-          "text": "오랜만이야, {@nickname} 박사."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "켈시",
-          "speakerId": "char_003_kalts",
-          "text": "프틸롭시스는 엘레나와 함께 본함으로 돌아가서 기능 검사와 치료를 받고 있고, 메커니스트는 새로운 임무를 진행 중이야. 앞으로, 너는 나랑 함께 움직인다."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "이프리트",
-          "speakerId": "avg_npc_895_1",
-          "text": "나도! 나도 있어! 그리고……"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "켈시",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "오랜만이야, {@nickname} 박사."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "켈시",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "프틸롭시스는 엘레나와 함께 본함으로 돌아가서 기능 검사와 치료를 받고 있고, 메커니스트는 새로운 임무를 진행 중이야. 앞으로, 너는 나랑 함께 움직인다."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "이프리트",
+      "speakerId": "avg_npc_895_1",
+      "isRemote": false,
+      "text": "나도! 나도 있어! 그리고……"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -364,46 +388,48 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "narration",
-          "text": "구름처럼 몽실몽실한 필라인 소녀가 어느새 방에 들어왔고, 홀로 창가에 조용히 서서 당신과 당신의 방을 훑어보고 있었다.\n그리고 소녀 뒤의 창밖에는 새하얀 구름이 트리마운츠의 맑은 하늘을 날고 있었다."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "로즈몬티스",
-          "speakerId": "avg_npc_042",
-          "text": "박사, 화내지 마."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "로즈몬티스",
-          "speakerId": "avg_npc_042",
-          "text": "내가 닥터 켈시한테 데려가 달라고 부탁한 거야. 어떤 사람한테서…… 초대를 받았어."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "켈시",
-          "speakerId": "char_003_kalts",
-          "text": "자세한 건 나중에 설명하지…… TV를 켠 걸 보니 13구역의 상황은 이미 알고 있겠네."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "켈시",
-          "speakerId": "char_003_kalts",
-          "text": "그 폭발의 원인은 연구원의 오조작이 아니라, 하늘에서 떨어진 낙하물 때문이다."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "narration",
+      "text": "구름처럼 몽실몽실한 필라인 소녀가 어느새 방에 들어왔고, 홀로 창가에 조용히 서서 당신과 당신의 방을 훑어보고 있었다.\n그리고 소녀 뒤의 창밖에는 새하얀 구름이 트리마운츠의 맑은 하늘을 날고 있었다."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "로즈몬티스",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "박사, 화내지 마."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "로즈몬티스",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "내가 닥터 켈시한테 데려가 달라고 부탁한 거야. 어떤 사람한테서…… 초대를 받았어."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "켈시",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "자세한 건 나중에 설명하지…… TV를 켠 걸 보니 13구역의 상황은 이미 알고 있겠네."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "켈시",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "그 폭발의 원인은 연구원의 오조작이 아니라, 하늘에서 떨어진 낙하물 때문이다."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -418,866 +444,1025 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "켈시",
-          "speakerId": "char_003_kalts",
-          "text": "맞아. 사리아는 조사를 위해 먼저 사고 현장으로 갔다."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "켈시",
-          "speakerId": "char_003_kalts",
-          "text": "그리고 네가 지금 해야 할 일은, 당장 일어나서 씻고 오는 거지."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "분노한 시민",
-          "speakerId": "avg_npc_524_1",
-          "text": "우리 집이 이 안에 있는데 왜 못 들어가게 하는 거야?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "분노한 시민",
-          "speakerId": "avg_npc_524_1",
-          "text": "아니, 이렇게 멋대로 봉쇄하는 게 어디 있어. 이거 합법적인 거 맞아? 공문서 있어? 너희들이 긴급 사태라고 하면 다야?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "초조한 시민",
-          "speakerId": "avg_npc_524_1",
-          "text": "10분만 들어갔다 나올게요!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "초조한 시민",
-          "speakerId": "avg_npc_524_1",
-          "text": "프로젝트 계획서를 가져와야 해요. 고객이 회의실에서 기다리고 있다고요!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "컬럼비아 병사",
-          "speakerId": "avg_npc_901_1",
-          "text": "죄송하지만, 임시 전자 통행증을 보여주십시오."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "시민?",
-          "speakerId": "avg_npc_901_1",
-          "text": "……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "오올헤약",
-          "speakerId": "avg_npc_536_1",
-          "text": "재미있네. 남아서 사리아의 움직임이나 살펴볼까 했는데, 예기치 못한 작은 새가 날아 들어왔는걸."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "오올헤약",
-          "speakerId": "avg_npc_536_1",
-          "text": "……그러고 보니, 저 아이는 '다이아볼릭 사태'의 그 연구원이지."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "오올헤약",
-          "speakerId": "avg_npc_536_1",
-          "text": "드론은 사각지대에서 정찰시키면서, 정작 본인은 인파에 섞여 기회를 노린다…… 제법인데."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "오올헤약",
-          "speakerId": "avg_npc_536_1",
-          "text": "하지만 군부가 길목마다 병사를 잔뜩 깔아놨는데, 어디 그 통제선이 쉽게 뚫리겠어?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "오올헤약",
-          "speakerId": "avg_npc_536_1",
-          "text": "음……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "오올헤약",
-          "speakerId": "avg_npc_536_1",
-          "text": "네가 뭘 하고 싶은지는 모르겠지만, 저 나쁜 녀석들을 성가시게 할 수 있을 것 같으니 내가 좀 도와줄게."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_901_1",
-          "text": "뭘 그렇게 중얼거려?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "오올헤약",
-          "speakerId": "avg_npc_536_1",
-          "text": "아무것도 아니야. 물건을 회수했으니 바로 배달해야지."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "컬럼비아 병사",
-          "speakerId": "avg_npc_901_1",
-          "text": "다들 방송은 들었잖습니까……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "분노한 시민",
-          "speakerId": "avg_npc_901_1",
-          "text": "사고가 난 건 공장인데 왜 13구역 전체를 봉쇄해?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "분노한 시민",
-          "speakerId": "avg_npc_901_1",
-          "text": "정말 화학 원료 누출이 걱정된다면, 왜 방독 장비를 착용하지 않아? 왜 너희들만 들어갈 수 있는데! 그런 말을 누가 믿겠냐!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "초조한 시민",
-          "speakerId": "avg_npc_524_1",
-          "text": "이 프로젝트는 첨단 기술 공업 단지 전체의 업그레이드 계획과 연관되어 있는데, 일을 그르치면 당신들이 책임질 거예요?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "초조한 시민",
-          "speakerId": "avg_npc_524_1",
-          "text": "빨리 들여보내 줘요!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "컬럼비아 병사",
-          "speakerId": "avg_npc_901_1",
-          "text": "밀지 마십시오!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "컬럼비아 병사",
-          "speakerId": "avg_npc_901_1",
-          "text": "어, 내 팔이, 왜 갑자기 안 움직이지……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "컬럼비아 병사",
-          "speakerId": "avg_npc_901_1",
-          "text": "통제선을 뚫고 들어온 자가 있다…… 왜 통신도 먹통이야?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "시민?",
-          "speakerId": "avg_108_silent_1",
-          "text": "……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "컬럼비아 병사",
-          "speakerId": "avg_npc_901_1",
-          "text": "통행증을 보여주십시오, 사리아 씨."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사리아",
-          "speakerId": "avg_npc_896_1",
-          "text": "날 아나?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "컬럼비아 병사",
-          "speakerId": "avg_npc_901_1",
-          "text": "라인 랩 전 방위과 주임, 트리마운츠에서 모르는 사람이 없죠."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사리아",
-          "speakerId": "avg_npc_896_1",
-          "text": "그래서 나도 13구역에 못 들어간다는 건가?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "컬럼비아 병사",
-          "speakerId": "avg_npc_901_1",
-          "text": "당신만 그런 게 아닙니다."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "컬럼비아 병사",
-          "speakerId": "avg_npc_901_1",
-          "text": "통행증이 없다면 이만 돌아가십시오."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "컬럼비아 병사",
-          "speakerId": "avg_npc_901_1",
-          "text": "당신……!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "틴맨",
-          "speakerId": "avg_npc_900_1",
-          "text": "진정하시고, 무기를 내려놓으세요."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "컬럼비아 병사",
-          "speakerId": "avg_npc_901_1",
-          "text": "당신 얼굴이, 손이, 당신……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "틴맨",
-          "speakerId": "avg_npc_900_1",
-          "text": "다른 부위도 마찬가지입니다. 무섭게 보여도 그냥 외골격일 뿐이에요."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "틴맨",
-          "speakerId": "avg_npc_900_1",
-          "text": "저는 메이랜더 역사 협회에서 일합니다. 지금은 잭슨 부통령의 수행 비서를 맡고 있죠. 이건 제 아이디고."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "틴맨",
-          "speakerId": "avg_npc_900_1",
-          "text": "사리아 씨는 우리가 초청한 전문가죠."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사리아",
-          "speakerId": "avg_npc_896_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "컬럼비아 병사",
-          "speakerId": "avg_npc_901_1",
-          "text": "메이랜더 재단. 그쪽 사람들은 다들 하나같이 이상하네요."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "틴맨",
-          "speakerId": "avg_npc_900_1",
-          "text": "상급자에게 확인해 주세요. 우리는 13구역에 들어가서 상황을 살피려는 겁니다."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "컬럼비아 병사",
-          "speakerId": "avg_npc_901_1",
-          "text": "잠시만 기다리십시오."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "틴맨",
-          "speakerId": "avg_npc_900_1",
-          "text": "이 차림은…… 슬슬 방패를 포기하려나 보네요?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사리아",
-          "speakerId": "avg_npc_896_1",
-          "text": "아니, 이제부터 더 과감하게 움직여야 한다고 판단했을 뿐이다."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "틴맨",
-          "speakerId": "avg_npc_900_1",
-          "text": "과감하게 움직인다…… 라인 랩 전 방위과 주임 입에서 그런 말이 나오니 뭔가 박력이 넘치는군요. 역시 일반인과는 천지 차이예요."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "틴맨",
-          "speakerId": "avg_npc_900_1",
-          "text": "제가 타이밍을 잘 맞춰서 왔나 봅니다."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사리아",
-          "speakerId": "avg_npc_896_1",
-          "text": "마지막으로 만난 건 하이든 제약 때였지? 틴맨 탐정."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "틴맨",
-          "speakerId": "avg_npc_900_1",
-          "text": "그때는 일 얘기만 하느라 당신과 뮤엘시스한테 생맥주를 대접하는 것도 깜빡했네요."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사리아",
-          "speakerId": "avg_npc_896_1",
-          "text": "메이랜더 재단이 불가사의한 힘을 가진 건 알고 있었지만, 켈시의 메시지를 받고 확실히 놀랐어…… 두 사람은 어떻게 알게 된 거지?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "틴맨",
-          "speakerId": "avg_npc_900_1",
-          "text": "그냥 오랜 친구입니다."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사리아",
-          "speakerId": "avg_npc_896_1",
-          "text": "이번 일에서 메이랜더 재단은 무슨 역할이지?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "틴맨",
-          "speakerId": "avg_npc_900_1",
-          "text": "사리아 씨, 정치를 좋아하십니까?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사리아",
-          "speakerId": "avg_npc_896_1",
-          "text": "……좋아한다 할 정도는 아니야."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "틴맨",
-          "speakerId": "avg_npc_900_1",
-          "text": "그렇다면 제가 그 질문에 꼭 대답할 필요가 있을까요?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "컬럼비아 병사",
-          "speakerId": "avg_npc_901_1",
-          "text": "대령님은 부통령님을 만나러 가셨습니다. 신분이 확인되어 대령님께서 두 분의 13구역 진입에 동의하셨습니다."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "컬럼비아 병사",
-          "speakerId": "avg_npc_901_1",
-          "text": "그러나 현재 화학 원료의 누출 위험을 긴급 조사하는 중이라, 두 분은 사고의 핵심 구역인 트리톤 제3화학 공장에는 접근할 수 없습니다."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "컬럼비아 병사",
-          "speakerId": "avg_npc_901_1",
-          "text": "또한, 저희 쪽에서 두 분께 사람을 붙여서 필요한 도움을 드릴 겁니다."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사리아",
-          "speakerId": "avg_npc_901_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "틴맨",
-          "speakerId": "avg_npc_900_1",
-          "text": "그래요, 협조하겠습니다."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사일런스",
-          "speakerId": "avg_108_silent_1",
-          "text": "후우…… 들어왔다."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사일런스",
-          "speakerId": "avg_108_silent_1",
-          "text": "이제, 드론 2대를 100미터 정도 띄워서 정찰시켜야겠네."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사일런스",
-          "speakerId": "avg_108_silent_1",
-          "text": "저 앞쪽은 트리톤 공장 같은데. 로도스 아일랜드에서 배운 잠입 작전이 유용하길 바라야지. 천천히 접근해 보자……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사일런스",
-          "speakerId": "avg_108_silent_1",
-          "text": "그런데 여기에 정말 전달물질의 단서가 있을까?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사일런스",
-          "speakerId": "avg_npc_901_1",
-          "text": "전달물질 일부가 행방불명이랬나?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "도로시",
-          "speakerId": "avg_4048_doroth_1",
-          "text": "맞아. 정확히 말하자면 전달물질이 포함된 실험 물자야. 원래는 다른 물질과 같이 본부로 운반됐어야 했는데."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사일런스",
-          "speakerId": "avg_108_silent_1",
-          "text": "누군가 중간에서 가로챘구나."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "도로시",
-          "speakerId": "avg_4048_doroth_1",
-          "text": "게다가 라인 랩 내부 사람일 가능성이 매우 커."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "도로시",
-          "speakerId": "avg_4048_doroth_1",
-          "text": "사일런스 씨가 트리마운츠에 가서 이 일을 조사해 줬으면 좋겠어."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사일런스",
-          "speakerId": "avg_108_silent_1",
-          "text": "내가?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "도로시",
-          "speakerId": "avg_4048_doroth_1",
-          "text": "난 359호 기지에 남아서 군부 조사에 협조해야 하니까, 당분간은 여길 떠날 수 없어."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사일런스",
-          "speakerId": "avg_108_silent_1",
-          "text": "군부랑 교섭하려고?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "도로시",
-          "speakerId": "avg_4048_doroth_1",
-          "text": "걱정하지 마. 내가 이런 거 싫어하지만, 그렇다고 못 한다는 건 아니야. 이래 봐도 라인 랩의 주임이잖아."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "도로시",
-          "speakerId": "avg_4048_doroth_1",
-          "text": "그것보다 전달물질이 다른 사람의 야망을 자극할까 봐 더 걱정이야."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "도로시",
-          "speakerId": "avg_4048_doroth_1",
-          "text": "그래서, 도와줄 수 있어?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사일런스",
-          "speakerId": "avg_108_silent_1",
-          "text": "하지만……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "도로시",
-          "speakerId": "avg_4048_doroth_1",
-          "text": "사일런스 씨, 당신은 파르비스 주임의 제자였지만, 359호 기지에 나타났어."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "도로시",
-          "speakerId": "avg_4048_doroth_1",
-          "text": "처음에는 조금 의아했지만, 이제야 알았어. 당신은 내 도움이 필요해서 찾아온 거야."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "도로시",
-          "speakerId": "avg_4048_doroth_1",
-          "text": "아니면, 오리지늄 아츠 응용과 주임이 믿을만한 사람인지 알고 싶은 거겠지."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사일런스",
-          "speakerId": "avg_108_silent_1",
-          "text": "……미안."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "도로시",
-          "speakerId": "avg_4048_doroth_1",
-          "text": "사과할 거 없어. 내가 하마터면 큰 사고를 낼 뻔한 것도 사실이니까. 오히려 난 당신에게 고마워하고 있어, 사일런스 씨."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "도로시",
-          "speakerId": "avg_4048_doroth_1",
-          "text": "그래서 당신에게 부탁하는 거기도 해. 당신은 자신의 원칙을 고수하며 자신만의 답을 찾고 있으니까."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사일런스",
-          "speakerId": "avg_108_silent_1",
-          "text": "그래도……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "도로시",
-          "speakerId": "avg_4048_doroth_1",
-          "text": "내가 부탁하지 않더라도, 어차피 당신은 트리마운츠에 돌아갈 생각이잖아?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사일런스",
-          "speakerId": "avg_108_silent_1",
-          "text": "……맞아."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사일런스",
-          "speakerId": "avg_108_silent_1",
-          "text": "……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사일런스",
-          "speakerId": "avg_108_silent_1",
-          "text": "젠장, 왜 갑자기 순찰대가 한 팀 더 늘었지?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "컬럼비아 병사 A",
-          "speakerId": "avg_npc_901_1",
-          "text": "빌어먹을, 그쪽엔 있어?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "컬럼비아 병사 B",
-          "speakerId": "avg_npc_901_1",
-          "text": "여기 두 골목을 다 뒤져 봤는데 안 보여."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "컬럼비아 병사 A",
-          "speakerId": "avg_npc_901_1",
-          "text": "부통령님과 관계가 틀어지면 안 되니 그 두 사람을 들여보내긴 했어도, 반드시 꼭 붙어있어야 했는데. 어쩌다 놓친 거지?!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "컬럼비아 병사 B",
-          "speakerId": "avg_npc_901_1",
-          "text": "그 두 사람은 계속 한가롭게 돌아다녔어. 그런데 담장을 지나면서 신발 끈을 묶고 있는 사이에 사라져 버렸지."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "컬럼비아 병사 A",
-          "speakerId": "avg_npc_901_1",
-          "text": "아까 그 깡통 녀석을 너무 얕본 거 같아. 메이랜더 사람은 다 신출귀몰하잖아."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "컬럼비아 병사 B",
-          "speakerId": "avg_npc_901_1",
-          "text": "내가 위에 상황을 보고할 테니까 넌 계속 찾아봐."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "컬럼비아 병사 B",
-          "speakerId": "avg_npc_901_1",
-          "text": "맞다, 공장 근처로 병력을 더 지원해."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사리아",
-          "speakerId": "avg_npc_896_1",
-          "text": "탐정 씨의 순발력과 은폐 수단은 실로 놀랍군."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "틴맨",
-          "speakerId": "avg_npc_900_1",
-          "text": "과찬입니다. 따돌릴 방법이 있다면, 굳이 직접 손볼 필요는 없으니까요."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사리아",
-          "speakerId": "avg_npc_896_1",
-          "text": "도착했다. 앞쪽이 바로 트리톤 제3화학 공장이야."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "틴맨",
-          "speakerId": "avg_npc_900_1",
-          "text": "주변에 통제선을 치고 완전 무장한 병사들이 지키고 있어서, 더 이상 접근은 어려울 것 같군요."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사리아",
-          "speakerId": "avg_npc_896_1",
-          "text": "이 정도면 충분하다. 아주 잘 보여."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "사리아의 시선은 병사들을 넘고 바리케이드를 넘어 뒤에 있는 공장으로 향했다.\n반듯했던 공장은 이미 초토화됐고, 바닥에는 까맣게 탄 흔적이 수두룩했다. 연속된 폭발로 벽이 전부 날아갔는지, 공장 건물은 기본적인 골격만 남아 오히려 더 잘 보였다……\n그리고 그 건물의 한가운데는, 무슨 커다란 설치 미술을 방불케 하는, 거대한 고리 모양의 기계가 지면을 비스듬히 파고 들어가 있었다.\n그게 바로 폭발의 근원이었다."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "틴맨",
-          "speakerId": "avg_npc_900_1",
-          "text": "뭐 알아낸 게 있습니까?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사리아",
-          "speakerId": "avg_npc_896_1",
-          "text": "낙하물의 외형으로도 역학 구조로도, 저것의 용도를 밝힐 수는 없겠지만, 지상 시설에 쓰는 장치는 아닌 것 같군."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "틴맨",
-          "speakerId": "avg_npc_900_1",
-          "text": "하늘에서 떨어진 겁니다."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사리아",
-          "speakerId": "avg_npc_896_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사리아",
-          "speakerId": "avg_npc_896_1",
-          "text": "너무 멀어서 자세한 파악은 어렵지만, 한 가지 확실한 건…… 저기에 라인 기술의 흔적이 있다는 거다."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사리아",
-          "speakerId": "avg_npc_896_1",
-          "text": "정확히 말하자면, 크리스틴이 참여했다고 해도…… 과언이 아니겠지."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "틴맨",
-          "speakerId": "avg_npc_900_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "틴맨",
-          "speakerId": "avg_npc_900_1",
-          "text": "'프로젝트 호라이즌 아크'군요."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사리아",
-          "speakerId": "avg_npc_896_1",
-          "text": "뭐라고?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "틴맨",
-          "speakerId": "avg_npc_900_1",
-          "text": "라인 랩에서 당신의 지위와, 크리스틴과의 관계를 생각하면, 이 이름을 모른다는 게 놀랍군요."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사리아",
-          "speakerId": "avg_npc_896_1",
-          "text": "……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사일런스",
-          "speakerId": "avg_108_silent_1",
-          "text": "안 들켜서 다행이다……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사일런스",
-          "speakerId": "avg_108_silent_1",
-          "text": "……진짜 여기에 전달물질이!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사일런스",
-          "speakerId": "avg_108_silent_1",
-          "text": "사라졌네……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사일런스",
-          "speakerId": "avg_108_silent_1",
-          "text": "도로시의 말이 맞아. 전달물질은 서로 반응해. 나한테 준 전달물질로 잡으면 어렵지 않겠어."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사일런스",
-          "speakerId": "avg_108_silent_1",
-          "text": "하지만 수량이 너무 적은데. 도로시가 얘기한 거랑 전혀 안 맞아. 주변에 더 있나?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사일런스",
-          "speakerId": "avg_108_silent_1",
-          "text": "잠깐……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사일런스",
-          "speakerId": "avg_108_silent_1",
-          "text": "여기는…… 트리톤 공장?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "거대한 폐허.\n이곳에서 얼마나 많은 사상자가 나왔을까? 하지만 사일런스는 뉴스에서 관련 수치를 언급하지 않은 것을 기억하고 있었다.\n359호 기지 사건이 또 떠올랐다. 눈앞에 보이는 것처럼 그때도 이런 처참한 모습이었다."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사일런스",
-          "speakerId": "avg_108_silent_1",
-          "text": "저건, 사리아? 옆에는 누구지……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사일런스",
-          "speakerId": "avg_108_silent_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "사일런스",
-          "speakerId": "avg_108_silent_1",
-          "text": "사리아…… 이번 일에도 관련이 있는 거야?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "이프리트",
-          "speakerId": "avg_npc_895_1",
-          "text": "우리 어디로 가는지 알아?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "로즈몬티스",
-          "speakerId": "avg_npc_042",
-          "text": "(고개를 젓는다)"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "켈시",
-          "speakerId": "char_003_kalts",
-          "text": "트리마운츠에 있는 사리아의 거점으로 갈 거다. 이미 약속된 사항이야."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "이프리트",
-          "speakerId": "avg_npc_895_1",
-          "text": "사리아! 못 본 지 정말 오래됐는데."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "이프리트",
-          "speakerId": "avg_npc_895_1",
-          "text": "그런데 켈시가 사리아랑 만나면 엄청 바빠서 나랑 얘기할 시간도 없으려나?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "켈시",
-          "speakerId": "char_003_kalts",
-          "text": "너랑 로즈몬티스는 박사 곁에서 얌전히 있어."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "이프리트",
-          "speakerId": "avg_npc_895_1",
-          "text": "……"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "켈시",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "맞아. 사리아는 조사를 위해 먼저 사고 현장으로 갔다."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "켈시",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "그리고 네가 지금 해야 할 일은, 당장 일어나서 씻고 오는 거지."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "29_g6_mainstreet"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "분노한 시민",
+      "speakerId": "avg_npc_524_1",
+      "isRemote": false,
+      "text": "우리 집이 이 안에 있는데 왜 못 들어가게 하는 거야?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "분노한 시민",
+      "speakerId": "avg_npc_524_1",
+      "isRemote": false,
+      "text": "아니, 이렇게 멋대로 봉쇄하는 게 어디 있어. 이거 합법적인 거 맞아? 공문서 있어? 너희들이 긴급 사태라고 하면 다야?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "초조한 시민",
+      "speakerId": "avg_npc_524_1",
+      "isRemote": false,
+      "text": "10분만 들어갔다 나올게요!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "초조한 시민",
+      "speakerId": "avg_npc_524_1",
+      "isRemote": false,
+      "text": "프로젝트 계획서를 가져와야 해요. 고객이 회의실에서 기다리고 있다고요!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "컬럼비아 병사",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "죄송하지만, 임시 전자 통행증을 보여주십시오."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "시민?",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "오올헤약",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "재미있네. 남아서 사리아의 움직임이나 살펴볼까 했는데, 예기치 못한 작은 새가 날아 들어왔는걸."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "오올헤약",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "……그러고 보니, 저 아이는 '다이아볼릭 사태'의 그 연구원이지."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "오올헤약",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "드론은 사각지대에서 정찰시키면서, 정작 본인은 인파에 섞여 기회를 노린다…… 제법인데."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "오올헤약",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "하지만 군부가 길목마다 병사를 잔뜩 깔아놨는데, 어디 그 통제선이 쉽게 뚫리겠어?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "오올헤약",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "음……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "오올헤약",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "네가 뭘 하고 싶은지는 모르겠지만, 저 나쁜 녀석들을 성가시게 할 수 있을 것 같으니 내가 좀 도와줄게."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "뭘 그렇게 중얼거려?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "오올헤약",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "아무것도 아니야. 물건을 회수했으니 바로 배달해야지."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "29_g6_mainstreet"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "컬럼비아 병사",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "다들 방송은 들었잖습니까……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "분노한 시민",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "사고가 난 건 공장인데 왜 13구역 전체를 봉쇄해?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "분노한 시민",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "정말 화학 원료 누출이 걱정된다면, 왜 방독 장비를 착용하지 않아? 왜 너희들만 들어갈 수 있는데! 그런 말을 누가 믿겠냐!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "초조한 시민",
+      "speakerId": "avg_npc_524_1",
+      "isRemote": false,
+      "text": "이 프로젝트는 첨단 기술 공업 단지 전체의 업그레이드 계획과 연관되어 있는데, 일을 그르치면 당신들이 책임질 거예요?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "초조한 시민",
+      "speakerId": "avg_npc_524_1",
+      "isRemote": false,
+      "text": "빨리 들여보내 줘요!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "컬럼비아 병사",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "밀지 마십시오!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "컬럼비아 병사",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "어, 내 팔이, 왜 갑자기 안 움직이지……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "컬럼비아 병사",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "통제선을 뚫고 들어온 자가 있다…… 왜 통신도 먹통이야?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "시민?",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "29_g6_mainstreet"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "컬럼비아 병사",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "통행증을 보여주십시오, 사리아 씨."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사리아",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "날 아나?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "컬럼비아 병사",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "라인 랩 전 방위과 주임, 트리마운츠에서 모르는 사람이 없죠."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사리아",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "그래서 나도 13구역에 못 들어간다는 건가?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "컬럼비아 병사",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "당신만 그런 게 아닙니다."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "컬럼비아 병사",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "통행증이 없다면 이만 돌아가십시오."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "컬럼비아 병사",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "당신……!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "틴맨",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "진정하시고, 무기를 내려놓으세요."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "컬럼비아 병사",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "당신 얼굴이, 손이, 당신……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "틴맨",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "다른 부위도 마찬가지입니다. 무섭게 보여도 그냥 외골격일 뿐이에요."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "틴맨",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "저는 메이랜더 역사 협회에서 일합니다. 지금은 잭슨 부통령의 수행 비서를 맡고 있죠. 이건 제 아이디고."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "틴맨",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "사리아 씨는 우리가 초청한 전문가죠."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사리아",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "컬럼비아 병사",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "메이랜더 재단. 그쪽 사람들은 다들 하나같이 이상하네요."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "틴맨",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "상급자에게 확인해 주세요. 우리는 13구역에 들어가서 상황을 살피려는 겁니다."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "컬럼비아 병사",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "잠시만 기다리십시오."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "틴맨",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "이 차림은…… 슬슬 방패를 포기하려나 보네요?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사리아",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "아니, 이제부터 더 과감하게 움직여야 한다고 판단했을 뿐이다."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "틴맨",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "과감하게 움직인다…… 라인 랩 전 방위과 주임 입에서 그런 말이 나오니 뭔가 박력이 넘치는군요. 역시 일반인과는 천지 차이예요."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "틴맨",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "제가 타이밍을 잘 맞춰서 왔나 봅니다."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사리아",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "마지막으로 만난 건 하이든 제약 때였지? 틴맨 탐정."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "틴맨",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "그때는 일 얘기만 하느라 당신과 뮤엘시스한테 생맥주를 대접하는 것도 깜빡했네요."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사리아",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "메이랜더 재단이 불가사의한 힘을 가진 건 알고 있었지만, 켈시의 메시지를 받고 확실히 놀랐어…… 두 사람은 어떻게 알게 된 거지?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "틴맨",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "그냥 오랜 친구입니다."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사리아",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "이번 일에서 메이랜더 재단은 무슨 역할이지?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "틴맨",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "사리아 씨, 정치를 좋아하십니까?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사리아",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "……좋아한다 할 정도는 아니야."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "틴맨",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "그렇다면 제가 그 질문에 꼭 대답할 필요가 있을까요?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "컬럼비아 병사",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "대령님은 부통령님을 만나러 가셨습니다. 신분이 확인되어 대령님께서 두 분의 13구역 진입에 동의하셨습니다."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "컬럼비아 병사",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "그러나 현재 화학 원료의 누출 위험을 긴급 조사하는 중이라, 두 분은 사고의 핵심 구역인 트리톤 제3화학 공장에는 접근할 수 없습니다."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "컬럼비아 병사",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "또한, 저희 쪽에서 두 분께 사람을 붙여서 필요한 도움을 드릴 겁니다."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사리아",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "틴맨",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "그래요, 협조하겠습니다."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "29_g8_alley_n"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사일런스",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "후우…… 들어왔다."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사일런스",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "이제, 드론 2대를 100미터 정도 띄워서 정찰시켜야겠네."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사일런스",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "저 앞쪽은 트리톤 공장 같은데. 로도스 아일랜드에서 배운 잠입 작전이 유용하길 바라야지. 천천히 접근해 보자……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사일런스",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "그런데 여기에 정말 전달물질의 단서가 있을까?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "29_g5_laboratory"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사일런스",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "전달물질 일부가 행방불명이랬나?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "도로시",
+      "speakerId": "avg_4048_doroth_1",
+      "isRemote": false,
+      "text": "맞아. 정확히 말하자면 전달물질이 포함된 실험 물자야. 원래는 다른 물질과 같이 본부로 운반됐어야 했는데."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사일런스",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "누군가 중간에서 가로챘구나."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "도로시",
+      "speakerId": "avg_4048_doroth_1",
+      "isRemote": false,
+      "text": "게다가 라인 랩 내부 사람일 가능성이 매우 커."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "도로시",
+      "speakerId": "avg_4048_doroth_1",
+      "isRemote": false,
+      "text": "사일런스 씨가 트리마운츠에 가서 이 일을 조사해 줬으면 좋겠어."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사일런스",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "내가?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "도로시",
+      "speakerId": "avg_4048_doroth_1",
+      "isRemote": false,
+      "text": "난 359호 기지에 남아서 군부 조사에 협조해야 하니까, 당분간은 여길 떠날 수 없어."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사일런스",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "군부랑 교섭하려고?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "도로시",
+      "speakerId": "avg_4048_doroth_1",
+      "isRemote": false,
+      "text": "걱정하지 마. 내가 이런 거 싫어하지만, 그렇다고 못 한다는 건 아니야. 이래 봐도 라인 랩의 주임이잖아."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "도로시",
+      "speakerId": "avg_4048_doroth_1",
+      "isRemote": false,
+      "text": "그것보다 전달물질이 다른 사람의 야망을 자극할까 봐 더 걱정이야."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "도로시",
+      "speakerId": "avg_4048_doroth_1",
+      "isRemote": false,
+      "text": "그래서, 도와줄 수 있어?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사일런스",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "하지만……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "도로시",
+      "speakerId": "avg_4048_doroth_1",
+      "isRemote": false,
+      "text": "사일런스 씨, 당신은 파르비스 주임의 제자였지만, 359호 기지에 나타났어."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "도로시",
+      "speakerId": "avg_4048_doroth_1",
+      "isRemote": false,
+      "text": "처음에는 조금 의아했지만, 이제야 알았어. 당신은 내 도움이 필요해서 찾아온 거야."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "도로시",
+      "speakerId": "avg_4048_doroth_1",
+      "isRemote": false,
+      "text": "아니면, 오리지늄 아츠 응용과 주임이 믿을만한 사람인지 알고 싶은 거겠지."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사일런스",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "……미안."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "도로시",
+      "speakerId": "avg_4048_doroth_1",
+      "isRemote": false,
+      "text": "사과할 거 없어. 내가 하마터면 큰 사고를 낼 뻔한 것도 사실이니까. 오히려 난 당신에게 고마워하고 있어, 사일런스 씨."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "도로시",
+      "speakerId": "avg_4048_doroth_1",
+      "isRemote": false,
+      "text": "그래서 당신에게 부탁하는 거기도 해. 당신은 자신의 원칙을 고수하며 자신만의 답을 찾고 있으니까."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사일런스",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "그래도……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "도로시",
+      "speakerId": "avg_4048_doroth_1",
+      "isRemote": false,
+      "text": "내가 부탁하지 않더라도, 어차피 당신은 트리마운츠에 돌아갈 생각이잖아?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사일런스",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "……맞아."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "29_g8_alley_n"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사일런스",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사일런스",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "젠장, 왜 갑자기 순찰대가 한 팀 더 늘었지?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "컬럼비아 병사 A",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "빌어먹을, 그쪽엔 있어?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "컬럼비아 병사 B",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "여기 두 골목을 다 뒤져 봤는데 안 보여."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "컬럼비아 병사 A",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "부통령님과 관계가 틀어지면 안 되니 그 두 사람을 들여보내긴 했어도, 반드시 꼭 붙어있어야 했는데. 어쩌다 놓친 거지?!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "컬럼비아 병사 B",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "그 두 사람은 계속 한가롭게 돌아다녔어. 그런데 담장을 지나면서 신발 끈을 묶고 있는 사이에 사라져 버렸지."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "컬럼비아 병사 A",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "아까 그 깡통 녀석을 너무 얕본 거 같아. 메이랜더 사람은 다 신출귀몰하잖아."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "컬럼비아 병사 B",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "내가 위에 상황을 보고할 테니까 넌 계속 찾아봐."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "컬럼비아 병사 B",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "맞다, 공장 근처로 병력을 더 지원해."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사리아",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "탐정 씨의 순발력과 은폐 수단은 실로 놀랍군."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "틴맨",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "과찬입니다. 따돌릴 방법이 있다면, 굳이 직접 손볼 필요는 없으니까요."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사리아",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "도착했다. 앞쪽이 바로 트리톤 제3화학 공장이야."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "27_g8_jail"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "틴맨",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "주변에 통제선을 치고 완전 무장한 병사들이 지키고 있어서, 더 이상 접근은 어려울 것 같군요."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사리아",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "이 정도면 충분하다. 아주 잘 보여."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "사리아의 시선은 병사들을 넘고 바리케이드를 넘어 뒤에 있는 공장으로 향했다.\n반듯했던 공장은 이미 초토화됐고, 바닥에는 까맣게 탄 흔적이 수두룩했다. 연속된 폭발로 벽이 전부 날아갔는지, 공장 건물은 기본적인 골격만 남아 오히려 더 잘 보였다……\n그리고 그 건물의 한가운데는, 무슨 커다란 설치 미술을 방불케 하는, 거대한 고리 모양의 기계가 지면을 비스듬히 파고 들어가 있었다.\n그게 바로 폭발의 근원이었다."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "틴맨",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "뭐 알아낸 게 있습니까?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사리아",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "낙하물의 외형으로도 역학 구조로도, 저것의 용도를 밝힐 수는 없겠지만, 지상 시설에 쓰는 장치는 아닌 것 같군."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "틴맨",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "하늘에서 떨어진 겁니다."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사리아",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사리아",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "너무 멀어서 자세한 파악은 어렵지만, 한 가지 확실한 건…… 저기에 라인 기술의 흔적이 있다는 거다."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사리아",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "정확히 말하자면, 크리스틴이 참여했다고 해도…… 과언이 아니겠지."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "틴맨",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "틴맨",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "'프로젝트 호라이즌 아크'군요."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사리아",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "뭐라고?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "틴맨",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "라인 랩에서 당신의 지위와, 크리스틴과의 관계를 생각하면, 이 이름을 모른다는 게 놀랍군요."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사리아",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "27_g8_jail"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사일런스",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "안 들켜서 다행이다……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사일런스",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "……진짜 여기에 전달물질이!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사일런스",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "사라졌네……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사일런스",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "도로시의 말이 맞아. 전달물질은 서로 반응해. 나한테 준 전달물질로 잡으면 어렵지 않겠어."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사일런스",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "하지만 수량이 너무 적은데. 도로시가 얘기한 거랑 전혀 안 맞아. 주변에 더 있나?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사일런스",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "잠깐……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사일런스",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "여기는…… 트리톤 공장?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "거대한 폐허.\n이곳에서 얼마나 많은 사상자가 나왔을까? 하지만 사일런스는 뉴스에서 관련 수치를 언급하지 않은 것을 기억하고 있었다.\n359호 기지 사건이 또 떠올랐다. 눈앞에 보이는 것처럼 그때도 이런 처참한 모습이었다."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사일런스",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "저건, 사리아? 옆에는 누구지……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사일런스",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "사일런스",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "사리아…… 이번 일에도 관련이 있는 거야?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "29_g7_mainstreet_n"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "이프리트",
+      "speakerId": "avg_npc_895_1",
+      "isRemote": false,
+      "text": "우리 어디로 가는지 알아?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "로즈몬티스",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "(고개를 젓는다)"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "켈시",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "트리마운츠에 있는 사리아의 거점으로 갈 거다. 이미 약속된 사항이야."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "이프리트",
+      "speakerId": "avg_npc_895_1",
+      "isRemote": false,
+      "text": "사리아! 못 본 지 정말 오래됐는데."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "이프리트",
+      "speakerId": "avg_npc_895_1",
+      "isRemote": false,
+      "text": "그런데 켈시가 사리아랑 만나면 엄청 바빠서 나랑 얘기할 시간도 없으려나?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "켈시",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "너랑 로즈몬티스는 박사 곁에서 얌전히 있어."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "이프리트",
+      "speakerId": "avg_npc_895_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1292,30 +1477,31 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "이프리트",
-          "speakerId": "avg_npc_895_1",
-          "text": "아, 맞다…… 그 별이 떨어질 때, 예전에 사일런스가 들려줬던 이야기를 로즈몬티스한테 해주고 있었어."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "이프리트",
-          "speakerId": "avg_npc_895_1",
-          "text": "잊어버린 거 아니지? 그땐 기록 안 했잖아……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "로즈몬티스",
-          "speakerId": "avg_npc_042",
-          "text": "응, 기억하고 있어."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "이프리트",
+      "speakerId": "avg_npc_895_1",
+      "isRemote": false,
+      "text": "아, 맞다…… 그 별이 떨어질 때, 예전에 사일런스가 들려줬던 이야기를 로즈몬티스한테 해주고 있었어."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "이프리트",
+      "speakerId": "avg_npc_895_1",
+      "isRemote": false,
+      "text": "잊어버린 거 아니지? 그땐 기록 안 했잖아……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "로즈몬티스",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "응, 기억하고 있어."
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": [

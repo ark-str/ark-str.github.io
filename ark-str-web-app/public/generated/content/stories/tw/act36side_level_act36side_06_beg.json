@@ -11,6 +11,10 @@
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "bg_ibcave"
+    },
+    {
       "type": "narration",
       "text": "獵人墜落的樣子彷彿——\n——流星。\n身在深海中的人甚少看見這種奇景。\n那沉迷慾望和陰謀、從不抬頭仰望的主教，更不可能知曉這等景色。\n但他們不一樣。\n當深海獵人們拼命向上游去，想從陰鬱與犧牲中掙脫時，當他們躋身海面，靜靜欣賞無邊星空時……\n獵人們都在心中記錄了這些短命星辰的命運。\n即使如此，也會劃破黑暗。"
     },
@@ -21,6 +25,7 @@
       "type": "dialogue",
       "speakerName": "斯卡蒂",
       "speakerId": "char_263_skadi",
+      "isRemote": false,
       "text": "現在，死吧。"
     },
     {
@@ -34,87 +39,109 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
+      "type": "background",
+      "backgroundId": "32_RL2_cliffday"
+    },
+    {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "情況不太妙啊。"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "這個城市周圍沒有絲毫活物的氣息……"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "看起來在這裡很難蒐集到像樣的補給。"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "各位，有什麼發現嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "奇爾查克",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "……沒什麼變化，這座城裡其他地方也都是一句話都不會說的傢伙。"
     },
     {
       "type": "dialogue",
       "speakerName": "奇爾查克",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "他們看到食物倒是會有反應，但還是不會回答我的問題。"
     },
     {
       "type": "dialogue",
       "speakerName": "奇爾查克",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "至於補給，別說讓他們分我們一些了，我甚至把身上僅剩的口糧分了一點給他們。"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "我也是，這座城市的大部分民居只能用淒涼來形容……"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "真難以想像，這裡的人能在這種環境下生存。"
     },
     {
       "type": "dialogue",
       "speakerName": "先西",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "老夫找遍了好幾個市場，看起來都很久沒營業了。"
     },
     {
       "type": "dialogue",
       "speakerName": "先西",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "也就是說這裡的大部分人已經很久沒有好好吃過東西了。"
     },
     {
       "type": "dialogue",
       "speakerName": "先西",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "老夫看在眼裡實在是心痛。"
     },
     {
       "type": "dialogue",
       "speakerName": "瑪露希爾",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "嗯……"
     },
     {
       "type": "dialogue",
       "speakerName": "瑪露希爾",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "我跟著一個人一路來到海邊，本來以為能發現什麼，結果——"
     },
     {
@@ -124,6 +151,7 @@
       "type": "dialogue",
       "speakerName": "居民A",
       "speakerId": "avg_npc_187",
+      "isRemote": false,
       "text": "喝……喝……"
     },
     {
@@ -133,6 +161,7 @@
       "type": "dialogue",
       "speakerName": "瑪露希爾",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "他就這樣和其他人一樣，漫無目的地在海邊遊蕩，有的時候挖一挖沙，好像沙灘上會有吃的長出來一樣……"
     },
     {
@@ -142,18 +171,21 @@
       "type": "dialogue",
       "speakerName": "居民B",
       "speakerId": "avg_npc_189",
+      "isRemote": false,
       "text": "餓……"
     },
     {
       "type": "dialogue",
       "speakerName": "居民A",
       "speakerId": "avg_npc_187",
+      "isRemote": false,
       "text": "鱗、殼，可以吃。"
     },
     {
       "type": "dialogue",
       "speakerName": "居民A",
       "speakerId": "avg_npc_187",
+      "isRemote": false,
       "text": "吃吧，吃吧。"
     },
     {
@@ -163,6 +195,7 @@
       "type": "dialogue",
       "speakerName": "先西",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -176,102 +209,119 @@
       "type": "dialogue",
       "speakerName": "先西",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "唔，這實在是……"
     },
     {
       "type": "dialogue",
       "speakerName": "奇爾查克",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "這也太淒慘了……"
     },
     {
       "type": "dialogue",
       "speakerName": "奇爾查克",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "既然這裡沒什麼能幫我們的東西，我們還是儘快離開這裡吧。"
     },
     {
       "type": "dialogue",
       "speakerName": "瑪露希爾",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "這裡的民風民俗實在是太奇怪了，人們感覺也不太友善的樣子……"
     },
     {
       "type": "dialogue",
       "speakerName": "先西",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "先西",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "這是老夫的猜測。"
     },
     {
       "type": "dialogue",
       "speakerName": "先西",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "這裡的人很可能是長時間沒有吃過正常的食物，導致他們對周圍的一切都逐漸麻木。"
     },
     {
       "type": "dialogue",
       "speakerName": "先西",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "如果這時候讓他們吃到一頓美食，或許可以讓他們恢復一點知覺。"
     },
     {
       "type": "dialogue",
       "speakerName": "奇爾查克",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "真的假的……"
     },
     {
       "type": "dialogue",
       "speakerName": "先西",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "嗯，你不清楚也不奇怪，長時間的食物匱乏，還有生活環境的壓縮，是會讓人一點一點麻木的。"
     },
     {
       "type": "dialogue",
       "speakerName": "奇爾查克",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "你聽起來很有經驗。"
     },
     {
       "type": "dialogue",
       "speakerName": "先西",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "先西",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "如果可以的話，老夫也希望讓這裡的人吃上一頓飽飯。"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "……不管怎麼說，我們也要為自己找食物，不然的話，我們也走不了多遠，對吧，奇爾查克。"
     },
     {
       "type": "dialogue",
       "speakerName": "奇爾查克",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "……唉，說得也是。"
     },
     {
       "type": "dialogue",
       "speakerName": "奇爾查克",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "不過，事先說好，補給不見了是你們在薩米亂跑搞出來的事情，所以別指望靠我！"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "那當然。"
     },
     {
@@ -281,309 +331,364 @@
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "遊蕩的旅行者，你們是否在尋找食物？"
     },
     {
       "type": "dialogue",
       "speakerName": "瑪露希爾",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "咦，你聽得懂我們的話嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "是的。"
     },
     {
       "type": "dialogue",
       "speakerName": "瑪露希爾",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "太好了！我們——"
     },
     {
       "type": "dialogue",
       "speakerName": "奇爾查克",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "等等，瑪露希爾，其他人都聽不懂我們說話，他卻聽得懂，你不覺得奇怪嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "……你們會有所警惕也很正常。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "但是，不用擔心，我是為了提供指引給你們而來的。"
     },
     {
       "type": "dialogue",
       "speakerName": "奇爾查克",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "你到底是誰？"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "我是一名教士，四處行走，為人們帶去大海的教誨。"
     },
     {
       "type": "dialogue",
       "speakerName": "教士",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "你們呢？你們不像是伊比利亞人，為什麼會來到這座鹽風城？"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "我們正在籌集旅行的補給。"
     },
     {
       "type": "dialogue",
       "speakerName": "教士",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "看起來進展不太順利？"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "教士",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "不過，沒有關係，既然我們來了，就不會讓你們挨餓。"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "……“我們”？"
     },
     {
       "type": "dialogue",
       "speakerName": "教士",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "是的，我們是庇護這座城市的教會，在教會之中，人人都是兄弟手足。"
     },
     {
       "type": "dialogue",
       "speakerName": "教士",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "縱使你們是外來者，若願意聽從指引，便是我們的手足。"
     },
     {
       "type": "dialogue",
       "speakerName": "教士",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "我們肯定不會眼看手足受餓。"
     },
     {
       "type": "dialogue",
       "speakerName": "瑪露希爾",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "（聽起來有點詭異……）"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "如果我們能跟著他找到食物，城裡那些人也能吃到一頓正常的飯吧？"
     },
     {
       "type": "dialogue",
       "speakerName": "奇爾查克",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "別自顧自地說出好像要入教一樣的話啊！"
     },
     {
       "type": "dialogue",
       "speakerName": "教士",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "哈哈哈，大海的恩澤無窮無盡，不會吝惜與你們分享萬億分之一。"
     },
     {
       "type": "dialogue",
       "speakerName": "教士",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "但，只有足夠強大的人才能獲得。"
     },
     {
       "type": "dialogue",
       "speakerName": "先西",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "什麼意思？"
     },
     {
       "type": "dialogue",
       "speakerName": "奇爾查克",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "……我猜他的意思是，他知道哪裡有食物，但是人們不一定有命去拿。"
     },
     {
       "type": "dialogue",
       "speakerName": "教士",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "你們可以這樣理解。"
     },
     {
       "type": "dialogue",
       "speakerName": "教士",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "我不勉強你們涉險，只是——"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "告訴我們吧，我們都是有經驗的冒險者，一些危險我們還是能夠處理的。"
     },
     {
       "type": "dialogue",
       "speakerName": "教士",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "……沿著海岸線往南走，那裡有一座洞窟。"
     },
     {
       "type": "dialogue",
       "speakerName": "教士",
       "speakerId": "avg_npc_454_1",
+      "isRemote": false,
       "text": "洞窟裡，有你們想要的東西。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_ibcave"
+    },
+    {
       "type": "dialogue",
       "speakerName": "奇爾查克",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "萊歐斯，那個人有問題。"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "我知道。"
     },
     {
       "type": "dialogue",
       "speakerName": "奇爾查克",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "那你還聽他說的話？"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "這裡的氛圍這麼奇怪，總覺得和那個人說的教會多少有點關係。"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "跟著他所謂的“指引”，總能發現點什麼吧。"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "而且，如果有埋伏的話，奇爾查克一定能提前察覺到的吧！"
     },
     {
       "type": "dialogue",
       "speakerName": "奇爾查克",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "嗯，也是啦……"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "……嗯？這是——"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "克拉肯！好大！"
     },
     {
       "type": "dialogue",
       "speakerName": "瑪露希爾",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "萊歐斯，小心！"
     },
     {
       "type": "dialogue",
       "speakerName": "奇爾查克",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "沒關係，牠已經不會動彈了。"
     },
     {
       "type": "dialogue",
       "speakerName": "瑪露希爾",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "欸！已經死掉了嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "哇！這麼巨大的克拉肯……那個教士果然沒有騙我們！"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "看這腕足，看這吸盤，看這海葵一樣的器官——這應該是牠的……頭部？"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "真想看看牠還活著的時候的樣子，應該跟一座塔的大小差不多，一定超級威風。"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "……但是克拉肯很難吃呢……"
     },
     {
       "type": "dialogue",
       "speakerName": "先西",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "這不是克拉肯，但似乎也是有著共同淵源的種族。"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "我的胃開始痛了……"
     },
     {
       "type": "dialogue",
       "speakerName": "瑪露希爾",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "這種來路不明的東西，絕對不能吃！"
     },
     {
       "type": "dialogue",
       "speakerName": "先西",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "老夫也同意，不能吃牠。"
     },
     {
@@ -593,6 +698,7 @@
       "type": "dialogue",
       "speakerName": "奇爾查克&瑪露希爾",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "欸？"
     },
     {
@@ -602,12 +708,14 @@
       "type": "dialogue",
       "speakerName": "先西",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "海裡的生物在死後身體內可能會分泌毒素。比如螃蟹，即使死了沒有多久，也可能被病菌污染。"
     },
     {
       "type": "dialogue",
       "speakerName": "先西",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "要是真的想吃的話……"
     },
     {
@@ -617,6 +725,7 @@
       "type": "dialogue",
       "speakerName": "先西&萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "可以看看裡面還有沒有活著的寄生蟲！"
     },
     {
@@ -626,24 +735,28 @@
       "type": "dialogue",
       "speakerName": "瑪露希爾",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "啊我真的是多嘴——！！"
     },
     {
       "type": "dialogue",
       "speakerName": "奇爾查克",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "都說了這種時候最好別說話啦。"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "但這麼龐大的生物究竟是被誰殺死的呢？想要躲開這些腕足的攻擊應該不太容易……"
     },
     {
       "type": "dialogue",
       "speakerName": "奇爾查克",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "等等，萊歐斯，我聽到了什麼聲音……"
     },
     {
@@ -657,24 +770,28 @@
       "type": "dialogue",
       "speakerName": "瑪露希爾",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "呃……看起來有點噁心。"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "在白天也閃爍著螢光，好美麗……"
     },
     {
       "type": "dialogue",
       "speakerName": "瑪露希爾",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "不行啦，我要丟掉它了！"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "真浪費……咦，丟到什麼東西上了？"
     },
     {
@@ -684,12 +801,14 @@
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_1421_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "這是什麼？"
     },
     {
@@ -699,6 +818,7 @@
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_1421_1",
+      "isRemote": false,
       "text": "！！"
     },
     {
@@ -708,144 +828,168 @@
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "——啊！！"
     },
     {
       "type": "dialogue",
       "speakerName": "瑪露希爾",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "怎麼了？"
     },
     {
       "type": "dialogue",
       "speakerName": "奇爾查克",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "萊歐斯，注意腳下！"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "——啊！這是海草？"
     },
     {
       "type": "dialogue",
       "speakerName": "先西",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "小心，萊歐斯，踩在這些海草上的感覺不太舒服。"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "嗯？這麼一說……身體的確有點麻耶。"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "你們都小心一點，不要踩在這些海草上！"
     },
     {
       "type": "dialogue",
       "speakerName": "奇爾查克",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "要是按你這麼說，我們能站的地方可就不多了。"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "原來這個洞穴裡面的這些植物，也全都是魔物嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "毫無疑問，我們正身處這個巨大克拉肯魔物的巢穴之中。"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "而正從洞穴裡湧出來的這些，都是生活在牠身邊的伴生生物。"
     },
     {
       "type": "dialogue",
       "speakerName": "先西",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "也就是說……"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "都是新鮮食材！"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "瑪露希爾，你能對著這些海草使用你的魔法嗎？放個火什麼的？"
     },
     {
       "type": "dialogue",
       "speakerName": "瑪露希爾",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "啊？"
     },
     {
       "type": "dialogue",
       "speakerName": "奇爾查克",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "你瘋了？在這裡放火，不就等於告訴洞裡的那些怪物，我們來了嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "……我就是這個意思。"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "海草是從洞窟深處蔓延過來的，追著怪物進入深處的話，只會對我們更加不利。"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "不如用一把火告訴牠們，我們來了。"
     },
     {
       "type": "dialogue",
       "speakerName": "奇爾查克",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "……聽起來真的像是經過了深思熟慮之後得出的結論呢。"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "放心，我們不會硬來的，你就留在外面，只要打到了足夠多的食材，我們就原路撤回。"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "真的出了什麼事，你也可以接應我們。"
     },
     {
       "type": "dialogue",
       "speakerName": "奇爾查克",
       "speakerId": "avg_4144_chilc_1",
+      "isRemote": false,
       "text": "……嘖，隨你的便。"
     },
     {
@@ -855,18 +999,21 @@
       "type": "dialogue",
       "speakerName": "先西",
       "speakerId": "avg_4143_sensi_1",
+      "isRemote": false,
       "text": "果然還只是個孩子啊，奇爾查克。"
     },
     {
       "type": "dialogue",
       "speakerName": "瑪露希爾",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "……話說回來，你就這麼理所當然地覺得我會聽你的啊。"
     },
     {
       "type": "dialogue",
       "speakerName": "萊歐斯",
       "speakerId": "avg_4142_laios_1",
+      "isRemote": false,
       "text": "欸？"
     },
     {
@@ -880,6 +1027,7 @@
       "type": "dialogue",
       "speakerName": "瑪露希爾",
       "speakerId": "avg_4141_marcil_1",
+      "isRemote": false,
       "text": "唉，好吧，摀住耳朵。"
     },
     {

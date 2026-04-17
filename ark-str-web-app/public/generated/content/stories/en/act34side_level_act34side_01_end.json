@@ -11,9 +11,14 @@
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "51_g1_beaconsquare"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Skadi",
       "speakerId": "char_263_skadi",
+      "isRemote": false,
       "text": "Did you think we were touring a museum? You were looking at the instruments like they were exhibits."
     },
     {
@@ -27,8 +32,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -48,24 +52,24 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Skadi",
-          "speakerId": "char_263_skadi",
-          "text": "There are some things even I can't explain."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Skadi",
-          "speakerId": "char_263_skadi",
-          "text": "Technology has advanced a lot in five years."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Skadi",
+      "speakerId": "char_263_skadi",
+      "isRemote": false,
+      "text": "There are some things even I can't explain."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Skadi",
+      "speakerId": "char_263_skadi",
+      "isRemote": false,
+      "text": "Technology has advanced a lot in five years."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -75,8 +79,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -86,30 +89,31 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Specter",
-          "speakerId": "avg_1023_ghost2_1",
-          "text": "Good eye, Doctor, that's a beacon launcher. One with plenty of history."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Skadi",
-          "speakerId": "char_263_skadi",
-          "text": "You know about it, Shark?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Specter",
-          "speakerId": "avg_1023_ghost2_1",
-          "text": "My parents took me around the home territories when I was little. There are similar structures in many cities."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Specter",
+      "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
+      "text": "Good eye, Doctor, that's a beacon launcher. One with plenty of history."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Skadi",
+      "speakerId": "char_263_skadi",
+      "isRemote": false,
+      "text": "You know about it, Shark?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Specter",
+      "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
+      "text": "My parents took me around the home territories when I was little. There are similar structures in many cities."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -119,36 +123,38 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Skadi",
-          "speakerId": "char_263_skadi",
-          "text": "I was, but Shark has a special relationship with her biological parents."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Specter",
-          "speakerId": "avg_1023_ghost2_1",
-          "text": "They're more like friends than parents."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Specter",
-          "speakerId": "avg_1023_ghost2_1",
-          "text": "They reached a consensus with the Institute of Incubation to bring me along whenever they worked on a new dome project."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Specter",
-          "speakerId": "avg_1023_ghost2_1",
-          "text": "I spent most my time in the Institute of Incubation, but I was able to see the cities, learn, and even work alongside them."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Skadi",
+      "speakerId": "char_263_skadi",
+      "isRemote": false,
+      "text": "I was, but Shark has a special relationship with her biological parents."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Specter",
+      "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
+      "text": "They're more like friends than parents."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Specter",
+      "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
+      "text": "They reached a consensus with the Institute of Incubation to bring me along whenever they worked on a new dome project."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Specter",
+      "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
+      "text": "I spent most my time in the Institute of Incubation, but I was able to see the cities, learn, and even work alongside them."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -158,18 +164,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Specter",
-          "speakerId": "avg_1023_ghost2_1",
-          "text": "Exactly what it sounds like: it launches beacons to mark the Waterway."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Specter",
+      "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
+      "text": "Exactly what it sounds like: it launches beacons to mark the Waterway."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -184,30 +189,31 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Specter",
-          "speakerId": "avg_1023_ghost2_1",
-          "text": "Ægir had almost mastered the oceans around 300 years ago, efficiently using natural energy in its various forms and recording every seafloor trench in our navigational charts."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Specter",
-          "speakerId": "avg_1023_ghost2_1",
-          "text": "Then we cast our sights on another ocean, one brimming with stars."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Specter",
-          "speakerId": "avg_1023_ghost2_1",
-          "text": "Our fleets and even our cities were meant to cross that boundary that should never have existed, and light the fires of civilization beyond the barrier."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Specter",
+      "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
+      "text": "Ægir had almost mastered the oceans around 300 years ago, efficiently using natural energy in its various forms and recording every seafloor trench in our navigational charts."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Specter",
+      "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
+      "text": "Then we cast our sights on another ocean, one brimming with stars."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Specter",
+      "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
+      "text": "Our fleets and even our cities were meant to cross that boundary that should never have existed, and light the fires of civilization beyond the barrier."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -217,106 +223,119 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "The Preserver was right, Doctor. Kristen's achievement is not beyond Ægir's reach."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "The sea and the sky are closer than we thought."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Specter",
-          "speakerId": "avg_1023_ghost2_1",
-          "text": "People back then tried plenty of things: surveying and deciphering the electron clouds, developing new technologies and materials, exploring forms of life that can adapt to space..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Specter",
-          "speakerId": "avg_1023_ghost2_1",
-          "text": "This beacon launcher is a product of that era."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Specter",
-          "speakerId": "avg_1023_ghost2_1",
-          "text": "It was intended to capture even the faintest signals from the stars, and plant beacons that would never fade from our star charts."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Specter",
-          "speakerId": "avg_1023_ghost2_1",
-          "text": "Nanomachine swarms would form networks between the beacons, allowing us to traverse vast distances in an instant... or so we dreamed."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Skadi",
-          "speakerId": "char_263_skadi",
-          "text": "You never told me any of this before."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Specter",
-          "speakerId": "avg_1023_ghost2_1",
-          "text": "Lucid moments were hard to come by on land."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Specter",
-          "speakerId": "avg_1023_ghost2_1",
-          "text": "But yesterday, I dreamt once again of walking from the Sophontheatrum straight into that epoch."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Specter",
-          "speakerId": "avg_1023_ghost2_1",
-          "text": "Then, I saw Laurentina dance."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Specter",
-          "speakerId": "avg_1023_ghost2_1",
-          "text": "She leaped from the waves to the stars, stirring up star dust that trailed the hems of her dress. From afar, the voice of the Master of All Creation answered her in song."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Specter",
-          "speakerId": "avg_1023_ghost2_1",
-          "text": "The universe and imagination know no bounds, and Laurentina's dances will never cease."
-        },
-        {
-          "type": "narration",
-          "text": "Specter closes her eyes, as though sinking back into the dream."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Skadi",
-          "speakerId": "char_263_skadi",
-          "text": "Mm..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Specter",
-          "speakerId": "avg_1023_ghost2_1",
-          "text": "What is it?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Skadi",
-          "speakerId": "char_263_skadi",
-          "text": "Just trying to picture it."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "The Preserver was right, Doctor. Kristen's achievement is not beyond Ægir's reach."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "The sea and the sky are closer than we thought."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Specter",
+      "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
+      "text": "People back then tried plenty of things: surveying and deciphering the electron clouds, developing new technologies and materials, exploring forms of life that can adapt to space..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Specter",
+      "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
+      "text": "This beacon launcher is a product of that era."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Specter",
+      "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
+      "text": "It was intended to capture even the faintest signals from the stars, and plant beacons that would never fade from our star charts."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Specter",
+      "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
+      "text": "Nanomachine swarms would form networks between the beacons, allowing us to traverse vast distances in an instant... or so we dreamed."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Skadi",
+      "speakerId": "char_263_skadi",
+      "isRemote": false,
+      "text": "You never told me any of this before."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Specter",
+      "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
+      "text": "Lucid moments were hard to come by on land."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Specter",
+      "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
+      "text": "But yesterday, I dreamt once again of walking from the Sophontheatrum straight into that epoch."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Specter",
+      "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
+      "text": "Then, I saw Laurentina dance."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Specter",
+      "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
+      "text": "She leaped from the waves to the stars, stirring up star dust that trailed the hems of her dress. From afar, the voice of the Master of All Creation answered her in song."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Specter",
+      "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
+      "text": "The universe and imagination know no bounds, and Laurentina's dances will never cease."
+    },
+    {
+      "type": "narration",
+      "text": "Specter closes her eyes, as though sinking back into the dream."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Skadi",
+      "speakerId": "char_263_skadi",
+      "isRemote": false,
+      "text": "Mm..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Specter",
+      "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
+      "text": "What is it?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Skadi",
+      "speakerId": "char_263_skadi",
+      "isRemote": false,
+      "text": "Just trying to picture it."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -331,30 +350,31 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Specter",
-          "speakerId": "avg_1023_ghost2_1",
-          "text": "Before pushing open the door to the stars, they wanted to prepare themselves for any threats beyond the barrier... That is, until the Seaborn appeared and interrupted the dream."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Specter",
-          "speakerId": "avg_1023_ghost2_1",
-          "text": "We poured all our efforts into studying them, setting aside all else: art, science, and previous visions for the future..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Specter",
-          "speakerId": "avg_1023_ghost2_1",
-          "text": "The Seaborn fundamentally changed Ægir."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Specter",
+      "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
+      "text": "Before pushing open the door to the stars, they wanted to prepare themselves for any threats beyond the barrier... That is, until the Seaborn appeared and interrupted the dream."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Specter",
+      "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
+      "text": "We poured all our efforts into studying them, setting aside all else: art, science, and previous visions for the future..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Specter",
+      "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
+      "text": "The Seaborn fundamentally changed Ægir."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -367,24 +387,28 @@
               "type": "dialogue",
               "speakerName": "Skadi",
               "speakerId": "char_263_skadi",
+              "isRemote": false,
               "text": "Me?"
             },
             {
               "type": "dialogue",
               "speakerName": "Skadi",
               "speakerId": "char_263_skadi",
+              "isRemote": false,
               "text": "I was the best technician at the Institute of Facility Management. I could keep an entire city's underwater lighting array running on my own."
             },
             {
               "type": "dialogue",
               "speakerName": "Skadi",
               "speakerId": "char_263_skadi",
+              "isRemote": false,
               "text": "The Institute of Development Planning's career proposal was pretty much what I was thinking, so I accepted."
             },
             {
               "type": "dialogue",
               "speakerName": "Skadi",
               "speakerId": "char_263_skadi",
+              "isRemote": false,
               "text": "Working by yourself can be lonely, but it's not such a bad thing playing with the giant fins in the reefs, or lighting up the ocean while daydreaming."
             }
           ]
@@ -397,34 +421,36 @@
               "type": "dialogue",
               "speakerName": "Specter",
               "speakerId": "avg_1023_ghost2_1",
+              "isRemote": false,
               "text": "I was just an apprentice sculptor."
             },
             {
               "type": "dialogue",
               "speakerName": "Specter",
               "speakerId": "avg_1023_ghost2_1",
+              "isRemote": false,
               "text": "The Institute of Development Planning provides tailored career proposals for each citizen, which are usually in line with our wishes."
             },
             {
               "type": "dialogue",
               "speakerName": "Specter",
               "speakerId": "avg_1023_ghost2_1",
+              "isRemote": false,
               "text": "I suppose I would have gone into dome design, sculpting, or dance."
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Specter",
-          "speakerId": "avg_1023_ghost2_1",
-          "text": "Say, Kal'tsit and Doctor, we've shared a lot of info during our time together, but we've never talked about our old lives."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Specter",
+      "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
+      "text": "Say, Kal'tsit and Doctor, we've shared a lot of info during our time together, but we've never talked about our old lives."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -434,620 +460,726 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Specter",
-          "speakerId": "avg_1023_ghost2_1",
-          "text": "I guess you're right. Sorry for bringing up something so heavy on a tour."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Specter",
-          "speakerId": "avg_1023_ghost2_1",
-          "text": "We have all the waves in the world hanging above our heads. Would you care to share a dance before dealing with all this bother, Doctor?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kind Woman",
-          "speakerId": "avg_npc_1382_1",
-          "text": "Gladiia."
-        },
-        {
-          "type": "narration",
-          "text": "Gladiia's hand instinctively goes to her weapon as the woman approaches with a ceremonial sword in hand.\nBut all she does is put her arms around Gladiia's shoulders. Gladiia smells stimulants in the air.\nÆgir do not make a habit of greeting each other with physical contact. She could not remember even her mother ever doing so.\nBut this woman's action felt completely natural."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Gladiia",
-          "speakerId": "avg_474_gladiia_1",
-          "text": "Consul Clementia?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Gladiia",
-          "speakerId": "avg_474_gladiia_1",
-          "text": "I was not aware that this was the standard salute between Chief Designers of Warfare."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "Nothing makes me happier than seeing the Hunters return as lucid as ever."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Gladiia",
-          "speakerId": "avg_474_gladiia_1",
-          "text": "Your soldiers' reactions when they first saw me suggested otherwise."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "The operation to eliminate the Firstborn cost Ægir all of its Abyssal Hunters."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "Secunda made many rescue attempts, but was unable to penetrate the rampaging mass of Seaborn that guard the region after the death of the Firstborn."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "Your mother, Horatia, had no choice but to publicly declare you dead."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "But I know her. She doesn't really believe that."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Gladiia",
-          "speakerId": "avg_474_gladiia_1",
-          "text": "Or perhaps Consul Horatia, foremost of the Institute of Scientific Development Planning, simply could not accept that I had died for nothing."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Gladiia",
-          "speakerId": "avg_474_gladiia_1",
-          "text": "I know her, too."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Gladiia",
-          "speakerId": "avg_474_gladiia_1",
-          "text": "But I don't think it is appropriate for a meeting between two Chief Designers of Warfare to revolve around a complicated mother-daughter relationship."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "Of course, of course."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "Look at the city."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "The Consul's Pensivarium sits high in the city. The seawater hangs just above their heads.\nThe transparent dome serves as a gentle mirror, warding off the deep and foreboding void while granting the Ægir the solace of introspection.\nBeneath the dome, the entire city is bathed in a blue hue. The beacon launchpad stands tall at its center, while ships glide in and out of the distant docks like schools of fins."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "The sea itself has no color, only darkness. Milliarium stands in its murky depths like the vigilant eye of civilization, solitary and luminous."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "We once had many such cities. One by one, the stars in the sea went out, becoming sustenance for the Seaborn."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "All that's left on the seafloor are their colorful, eerie nests."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Gladiia",
-          "speakerId": "avg_474_gladiia_1",
-          "text": "I won't deny that the Abyssal Hunter project was a failed gambit. The death of the Firstborn did not stop their evolution."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Gladiia",
-          "speakerId": "avg_474_gladiia_1",
-          "text": "So I want to know what solution Ægir has come up with next. What you have come up with."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Gladiia",
-          "speakerId": "avg_474_gladiia_1",
-          "text": "What is this Waterway Program?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "Gladiia, I didn't mean..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "I'm simply part of an even bigger gambit, one with even higher stakes."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "The weapon classification scheme remains nothing more than a strict control over weapon usage to delay the evolution of the Seaborn."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "This time, however, we have taken into account every weapon at our disposal or under development."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "A mix of conventional ballistics and Class I weapons initially proved highly effective. The Seaborn were unable to comprehend why they were being burned by the seawater around them."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "But it took them only a year to adapt. 11 months in, we accelerated the adoption of Class II weapons, which operated on completely different principles."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "Et cetera, et cetera."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Gladiia",
-          "speakerId": "avg_474_gladiia_1",
-          "text": "Until their evolution outpaced the ability of the Academy of Technology to innovate."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "Yes. At day's end, all we're doing is merely buying time. Ægir has committed vast resources to study the Seaborn. To eradicate them at their origin, we must first comprehend them at their source."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "The information you've brought back is highly valuable, and Breogan's discovery on land corroborates the Academy of Science's research."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Gladiia",
-          "speakerId": "avg_474_gladiia_1",
-          "text": "The Seaborn and the Feranmuts share the same genesis."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Gladiia",
-          "speakerId": "avg_474_gladiia_1",
-          "text": "Is Ægir coming ashore to seek memories even more ancient?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "Not just that. The Seaborn share a common genesis with the Feranmuts, but much about them is very different. Unnatural, one might say."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "Their recent activity demonstrates a clear sense of purpose. They have quickly abandoned their reliance on the sea and begun to migrate towards land en masse."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "Left unchecked, it is not out of the question that all of Terra could become infested with Seaborn."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Gladiia",
-          "speakerId": "avg_474_gladiia_1",
-          "text": "We already saw hints of that in Iberia."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "Thus, for Ægir, the land is both a source of answers and a solemn responsibility."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "Horatia has issued new war orders on behalf of the Institute of Development Planning, and Milliarium has come bearing new Class IV weapons from the Academy of Technology."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "They are a form of biological weapon, very different from all previous ones. Designed to induce death in nearby Seaborn nests and newborns, while driving away adults from the area."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "We have successfully located most of the nests in the target region. The ones near Iberia are the only ones yet unmarked."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "Once the beacons have been placed and the weapons activated, we will finally have cleared an entire region of Seaborn, and established a route back to Ægir's home territories."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Gladiia",
-          "speakerId": "avg_474_gladiia_1",
-          "text": "Consul Horatia would not have permitted the possibility of failure. Yet all I see is a city under siege, teetering on the brink."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "Yes, she did tell me herself that 'the Waterway Program will not fail.'"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "I do not know how many other possibilities she considered, and I hope I never do. For me, this city has always been the entirety of the Waterway Program."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "But that is no longer true. The changes in the past month necessitate a review of our plans."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "The Seaborn have rapidly adapted to our new weapons, even evolving measures to protect their kindred from Class III."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "But a successful extermination operation should have left no opportunity for them to communicate with other individuals. They seem to have obtained their inspiration elsewhere."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Gladiia",
-          "speakerId": "avg_474_gladiia_1",
-          "text": "Almost every mutation of the Seaborn against humanity has been abetted by the twisted efforts of corrupted Ægir."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Gladiia",
-          "speakerId": "avg_474_gladiia_1",
-          "text": "Yet, the Seaborn lack true intelligence. We could toss all our prototype weapons into their nest, and they wouldn't dismantle or study them."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Gladiia",
-          "speakerId": "avg_474_gladiia_1",
-          "text": "The Church of the Deep may be able to train them to attack an army or a city, but bringing about rapid biological changes is another matter entirely."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "Unless they're not being influenced by the Church of the Deep, but by another Firstborn."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Gladiia",
-          "speakerId": "avg_474_gladiia_1",
-          "text": "I see you've read my belated report."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Gladiia",
-          "speakerId": "avg_474_gladiia_1",
-          "text": "Indeed. Ulpianus claims that the one we eliminated was not the only one."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "The Abyssal Hunters were the first and last Ægir to enter the Firstborn's lair."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "Even now, the Seaborn defend the ruins with a frenzied fury. We have not found a way to get through."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "Amongst the Hunters, Ulpianus spent the longest time there, enough for him to witness the 'truth.'"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Gladiia",
-          "speakerId": "avg_474_gladiia_1",
-          "text": "You're still deliberating on whether to believe him."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "Yes. It could be the key to solving the mystery of the Seaborn. Or the path that leads us to destruction."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "Could a Hunter survive for months on Seaborn remains and remain lucid? Would a lucid hunter willingly stay with them, rather than returning to civilization?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "There are too many unanswered questions about Ulpianus and that fateful operation."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Clementia",
-          "speakerId": "avg_npc_1382_1",
-          "text": "And so, I regret to inform you that Ægir has no choice but to welcome its Hunters home with a tribunal."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Secunda",
-          "speakerId": "avg_4137_udflow_1",
-          "text": "I thought we had designated this area for investigation."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Secunda",
-          "speakerId": "avg_4137_udflow_1",
-          "text": "Madam Irene? From Iberia?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Irene",
-          "speakerId": "avg_4009_irene_1",
-          "text": "May I ask to whom I am speaking?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Secunda",
-          "speakerId": "avg_4137_udflow_1",
-          "text": "Secunda, Praefecta of the Sea Patrol. I regret not being able to greet you personally upon your arrival yesterday."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Secunda",
-          "speakerId": "avg_4137_udflow_1",
-          "text": "The Sea Patrol is currently investigating the disappearance of a citizen. We have not requested assistance from Iberia, and respectfully request that you exit this area as soon as possible."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Irene",
-          "speakerId": "avg_4009_irene_1",
-          "text": "I would like to assist as myself, not as an envoy."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Secunda",
-          "speakerId": "avg_4137_udflow_1",
-          "text": "Your offer is appreciated, but unnecessary."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Irene",
-          "speakerId": "avg_4009_irene_1",
-          "text": "I want to—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Secunda",
-          "speakerId": "avg_4137_udflow_1",
-          "text": "Any news from the other teams?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sea Patroller",
-          "speakerId": "avg_npc_1391_1",
-          "text": "One moment, getting the video feed now."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Irene",
-          "speakerId": "avg_4009_irene_1",
-          "text": "Ma'am—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sea Patroller",
-          "speakerId": "avg_npc_1391_1",
-          "text": "No unusual movements at the port."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Secunda",
-          "speakerId": "avg_4137_udflow_1",
-          "text": "Tsk."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Secunda",
-          "speakerId": "avg_4137_udflow_1",
-          "text": "Alert the other teams to monitor the closed civilian gates and keep a close watch on the circulation system around town."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sea Patroller",
-          "speakerId": "avg_npc_1391_1",
-          "text": "Roger."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Irene",
-          "speakerId": "avg_4009_irene_1",
-          "text": "You're okay with talking about this in front of me?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Secunda",
-          "speakerId": "avg_4137_udflow_1",
-          "text": "This is part of our regular duties. There's no need for confidentiality."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Irene",
-          "speakerId": "avg_4009_irene_1",
-          "text": "But you had your Little Handies clear the place out."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Secunda",
-          "speakerId": "avg_4137_udflow_1",
-          "text": "Only to prevent unnecessary harm to civilians."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Secunda",
-          "speakerId": "avg_4137_udflow_1",
-          "text": "If you insist on staying, you'll be responsible for your own safety."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Irene",
-          "speakerId": "avg_4009_irene_1",
-          "text": "I'll—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Secunda",
-          "speakerId": "avg_4137_udflow_1",
-          "text": "The missing civilian is Tullia, a scientist from the Waterway Program, responsible for recording and calibrating data on Seaborn nests."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Secunda",
-          "speakerId": "avg_4137_udflow_1",
-          "text": "She went AWOL 30 hours ago and hasn't been seen since."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Irene",
-          "speakerId": "avg_4009_irene_1",
-          "text": "Could it be... the Church of the Deep?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Secunda",
-          "speakerId": "avg_4137_udflow_1",
-          "text": "That's what we intend to find out."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Secunda",
-          "speakerId": "avg_4137_udflow_1",
-          "text": "Her disappearance has not affected the overall progress of the project. As important as recording and calibrating the nest data is, her role was by no means irreplaceable."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Secunda",
-          "speakerId": "avg_4137_udflow_1",
-          "text": "If the Church's goal was to assassinate someone to disrupt our plans, they would not have picked an ordinary data scientist."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Secunda",
-          "speakerId": "avg_4137_udflow_1",
-          "text": "Unless—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Secunda",
-          "speakerId": "avg_4137_udflow_1",
-          "text": "She learned something she wasn't supposed to."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Secunda",
-          "speakerId": "avg_4137_udflow_1",
-          "text": "I need to inspect her home."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Secunda",
-          "speakerId": "avg_4137_udflow_1",
-          "text": "You're sharp, Madam Irene, but I would recommend against coming with us."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Irene",
-          "speakerId": "avg_4009_irene_1",
-          "text": "I'm simply investigating our common enemy in my own way."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Secunda",
-          "speakerId": "avg_4137_udflow_1",
-          "text": "...Suit yourself."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Specter",
+      "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
+      "text": "I guess you're right. Sorry for bringing up something so heavy on a tour."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Specter",
+      "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
+      "text": "We have all the waves in the world hanging above our heads. Would you care to share a dance before dealing with all this bother, Doctor?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "51_g7_consuloffice"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kind Woman",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "Gladiia."
+    },
+    {
+      "type": "narration",
+      "text": "Gladiia's hand instinctively goes to her weapon as the woman approaches with a ceremonial sword in hand.\nBut all she does is put her arms around Gladiia's shoulders. Gladiia smells stimulants in the air.\nÆgir do not make a habit of greeting each other with physical contact. She could not remember even her mother ever doing so.\nBut this woman's action felt completely natural."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Gladiia",
+      "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
+      "text": "Consul Clementia?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Gladiia",
+      "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
+      "text": "I was not aware that this was the standard salute between Chief Designers of Warfare."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "Nothing makes me happier than seeing the Hunters return as lucid as ever."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Gladiia",
+      "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
+      "text": "Your soldiers' reactions when they first saw me suggested otherwise."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "The operation to eliminate the Firstborn cost Ægir all of its Abyssal Hunters."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "Secunda made many rescue attempts, but was unable to penetrate the rampaging mass of Seaborn that guard the region after the death of the Firstborn."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "Your mother, Horatia, had no choice but to publicly declare you dead."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "But I know her. She doesn't really believe that."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Gladiia",
+      "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
+      "text": "Or perhaps Consul Horatia, foremost of the Institute of Scientific Development Planning, simply could not accept that I had died for nothing."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Gladiia",
+      "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
+      "text": "I know her, too."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Gladiia",
+      "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
+      "text": "But I don't think it is appropriate for a meeting between two Chief Designers of Warfare to revolve around a complicated mother-daughter relationship."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "Of course, of course."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "Look at the city."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "The Consul's Pensivarium sits high in the city. The seawater hangs just above their heads.\nThe transparent dome serves as a gentle mirror, warding off the deep and foreboding void while granting the Ægir the solace of introspection.\nBeneath the dome, the entire city is bathed in a blue hue. The beacon launchpad stands tall at its center, while ships glide in and out of the distant docks like schools of fins."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "The sea itself has no color, only darkness. Milliarium stands in its murky depths like the vigilant eye of civilization, solitary and luminous."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "We once had many such cities. One by one, the stars in the sea went out, becoming sustenance for the Seaborn."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "All that's left on the seafloor are their colorful, eerie nests."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Gladiia",
+      "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
+      "text": "I won't deny that the Abyssal Hunter project was a failed gambit. The death of the Firstborn did not stop their evolution."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Gladiia",
+      "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
+      "text": "So I want to know what solution Ægir has come up with next. What you have come up with."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Gladiia",
+      "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
+      "text": "What is this Waterway Program?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "Gladiia, I didn't mean..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "I'm simply part of an even bigger gambit, one with even higher stakes."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "The weapon classification scheme remains nothing more than a strict control over weapon usage to delay the evolution of the Seaborn."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "This time, however, we have taken into account every weapon at our disposal or under development."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "A mix of conventional ballistics and Class I weapons initially proved highly effective. The Seaborn were unable to comprehend why they were being burned by the seawater around them."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "But it took them only a year to adapt. 11 months in, we accelerated the adoption of Class II weapons, which operated on completely different principles."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "Et cetera, et cetera."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Gladiia",
+      "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
+      "text": "Until their evolution outpaced the ability of the Academy of Technology to innovate."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "Yes. At day's end, all we're doing is merely buying time. Ægir has committed vast resources to study the Seaborn. To eradicate them at their origin, we must first comprehend them at their source."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "The information you've brought back is highly valuable, and Breogan's discovery on land corroborates the Academy of Science's research."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Gladiia",
+      "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
+      "text": "The Seaborn and the Feranmuts share the same genesis."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Gladiia",
+      "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
+      "text": "Is Ægir coming ashore to seek memories even more ancient?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "Not just that. The Seaborn share a common genesis with the Feranmuts, but much about them is very different. Unnatural, one might say."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "Their recent activity demonstrates a clear sense of purpose. They have quickly abandoned their reliance on the sea and begun to migrate towards land en masse."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "Left unchecked, it is not out of the question that all of Terra could become infested with Seaborn."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Gladiia",
+      "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
+      "text": "We already saw hints of that in Iberia."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "Thus, for Ægir, the land is both a source of answers and a solemn responsibility."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "Horatia has issued new war orders on behalf of the Institute of Development Planning, and Milliarium has come bearing new Class IV weapons from the Academy of Technology."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "They are a form of biological weapon, very different from all previous ones. Designed to induce death in nearby Seaborn nests and newborns, while driving away adults from the area."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "We have successfully located most of the nests in the target region. The ones near Iberia are the only ones yet unmarked."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "Once the beacons have been placed and the weapons activated, we will finally have cleared an entire region of Seaborn, and established a route back to Ægir's home territories."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "51_g7_consuloffice"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Gladiia",
+      "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
+      "text": "Consul Horatia would not have permitted the possibility of failure. Yet all I see is a city under siege, teetering on the brink."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "Yes, she did tell me herself that 'the Waterway Program will not fail.'"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "I do not know how many other possibilities she considered, and I hope I never do. For me, this city has always been the entirety of the Waterway Program."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "But that is no longer true. The changes in the past month necessitate a review of our plans."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "The Seaborn have rapidly adapted to our new weapons, even evolving measures to protect their kindred from Class III."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "But a successful extermination operation should have left no opportunity for them to communicate with other individuals. They seem to have obtained their inspiration elsewhere."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Gladiia",
+      "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
+      "text": "Almost every mutation of the Seaborn against humanity has been abetted by the twisted efforts of corrupted Ægir."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Gladiia",
+      "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
+      "text": "Yet, the Seaborn lack true intelligence. We could toss all our prototype weapons into their nest, and they wouldn't dismantle or study them."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Gladiia",
+      "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
+      "text": "The Church of the Deep may be able to train them to attack an army or a city, but bringing about rapid biological changes is another matter entirely."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "Unless they're not being influenced by the Church of the Deep, but by another Firstborn."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Gladiia",
+      "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
+      "text": "I see you've read my belated report."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Gladiia",
+      "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
+      "text": "Indeed. Ulpianus claims that the one we eliminated was not the only one."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "The Abyssal Hunters were the first and last Ægir to enter the Firstborn's lair."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "Even now, the Seaborn defend the ruins with a frenzied fury. We have not found a way to get through."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "Amongst the Hunters, Ulpianus spent the longest time there, enough for him to witness the 'truth.'"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Gladiia",
+      "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
+      "text": "You're still deliberating on whether to believe him."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "Yes. It could be the key to solving the mystery of the Seaborn. Or the path that leads us to destruction."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "Could a Hunter survive for months on Seaborn remains and remain lucid? Would a lucid hunter willingly stay with them, rather than returning to civilization?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "There are too many unanswered questions about Ulpianus and that fateful operation."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Clementia",
+      "speakerId": "avg_npc_1382_1",
+      "isRemote": false,
+      "text": "And so, I regret to inform you that Ægir has no choice but to welcome its Hunters home with a tribunal."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "51_g4_aegirstreet_1"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Secunda",
+      "speakerId": "avg_4137_udflow_1",
+      "isRemote": false,
+      "text": "I thought we had designated this area for investigation."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Secunda",
+      "speakerId": "avg_4137_udflow_1",
+      "isRemote": false,
+      "text": "Madam Irene? From Iberia?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Irene",
+      "speakerId": "avg_4009_irene_1",
+      "isRemote": false,
+      "text": "May I ask to whom I am speaking?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Secunda",
+      "speakerId": "avg_4137_udflow_1",
+      "isRemote": false,
+      "text": "Secunda, Praefecta of the Sea Patrol. I regret not being able to greet you personally upon your arrival yesterday."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Secunda",
+      "speakerId": "avg_4137_udflow_1",
+      "isRemote": false,
+      "text": "The Sea Patrol is currently investigating the disappearance of a citizen. We have not requested assistance from Iberia, and respectfully request that you exit this area as soon as possible."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Irene",
+      "speakerId": "avg_4009_irene_1",
+      "isRemote": false,
+      "text": "I would like to assist as myself, not as an envoy."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Secunda",
+      "speakerId": "avg_4137_udflow_1",
+      "isRemote": false,
+      "text": "Your offer is appreciated, but unnecessary."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Irene",
+      "speakerId": "avg_4009_irene_1",
+      "isRemote": false,
+      "text": "I want to—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Secunda",
+      "speakerId": "avg_4137_udflow_1",
+      "isRemote": false,
+      "text": "Any news from the other teams?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sea Patroller",
+      "speakerId": "avg_npc_1391_1",
+      "isRemote": false,
+      "text": "One moment, getting the video feed now."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Irene",
+      "speakerId": "avg_4009_irene_1",
+      "isRemote": false,
+      "text": "Ma'am—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sea Patroller",
+      "speakerId": "avg_npc_1391_1",
+      "isRemote": false,
+      "text": "No unusual movements at the port."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Secunda",
+      "speakerId": "avg_4137_udflow_1",
+      "isRemote": false,
+      "text": "Tsk."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Secunda",
+      "speakerId": "avg_4137_udflow_1",
+      "isRemote": false,
+      "text": "Alert the other teams to monitor the closed civilian gates and keep a close watch on the circulation system around town."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sea Patroller",
+      "speakerId": "avg_npc_1391_1",
+      "isRemote": false,
+      "text": "Roger."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Irene",
+      "speakerId": "avg_4009_irene_1",
+      "isRemote": false,
+      "text": "You're okay with talking about this in front of me?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Secunda",
+      "speakerId": "avg_4137_udflow_1",
+      "isRemote": false,
+      "text": "This is part of our regular duties. There's no need for confidentiality."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Irene",
+      "speakerId": "avg_4009_irene_1",
+      "isRemote": false,
+      "text": "But you had your Little Handies clear the place out."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Secunda",
+      "speakerId": "avg_4137_udflow_1",
+      "isRemote": false,
+      "text": "Only to prevent unnecessary harm to civilians."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Secunda",
+      "speakerId": "avg_4137_udflow_1",
+      "isRemote": false,
+      "text": "If you insist on staying, you'll be responsible for your own safety."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Irene",
+      "speakerId": "avg_4009_irene_1",
+      "isRemote": false,
+      "text": "I'll—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Secunda",
+      "speakerId": "avg_4137_udflow_1",
+      "isRemote": false,
+      "text": "The missing civilian is Tullia, a scientist from the Waterway Program, responsible for recording and calibrating data on Seaborn nests."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Secunda",
+      "speakerId": "avg_4137_udflow_1",
+      "isRemote": false,
+      "text": "She went AWOL 30 hours ago and hasn't been seen since."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Irene",
+      "speakerId": "avg_4009_irene_1",
+      "isRemote": false,
+      "text": "Could it be... the Church of the Deep?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Secunda",
+      "speakerId": "avg_4137_udflow_1",
+      "isRemote": false,
+      "text": "That's what we intend to find out."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Secunda",
+      "speakerId": "avg_4137_udflow_1",
+      "isRemote": false,
+      "text": "Her disappearance has not affected the overall progress of the project. As important as recording and calibrating the nest data is, her role was by no means irreplaceable."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Secunda",
+      "speakerId": "avg_4137_udflow_1",
+      "isRemote": false,
+      "text": "If the Church's goal was to assassinate someone to disrupt our plans, they would not have picked an ordinary data scientist."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Secunda",
+      "speakerId": "avg_4137_udflow_1",
+      "isRemote": false,
+      "text": "Unless—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Secunda",
+      "speakerId": "avg_4137_udflow_1",
+      "isRemote": false,
+      "text": "She learned something she wasn't supposed to."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Secunda",
+      "speakerId": "avg_4137_udflow_1",
+      "isRemote": false,
+      "text": "I need to inspect her home."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Secunda",
+      "speakerId": "avg_4137_udflow_1",
+      "isRemote": false,
+      "text": "You're sharp, Madam Irene, but I would recommend against coming with us."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Irene",
+      "speakerId": "avg_4009_irene_1",
+      "isRemote": false,
+      "text": "I'm simply investigating our common enemy in my own way."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Secunda",
+      "speakerId": "avg_4137_udflow_1",
+      "isRemote": false,
+      "text": "...Suit yourself."
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": [

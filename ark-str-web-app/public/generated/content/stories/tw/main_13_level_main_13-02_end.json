@@ -11,6 +11,10 @@
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "bg_warehouse"
+    },
+    {
       "type": "choice",
       "options": [
         {
@@ -28,51 +32,55 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "崩潰的市民",
-          "speakerId": null,
-          "text": "讓讓，讓讓！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "啼哭的市民",
-          "speakerId": null,
-          "text": "他們，那些怪物就快要過來了！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "崩潰的市民",
-          "speakerId": null,
-          "text": "戴兜帽的傢伙，別擋住路！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "啼哭的市民",
-          "speakerId": null,
-          "text": "別過來！你身上有血！和那些怪物一樣沾上了血！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": null,
-          "text": "博士！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": null,
-          "text": "博士，我在這裡，抓住我！"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "崩潰的市民",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "讓讓，讓讓！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "啼哭的市民",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "他們，那些怪物就快要過來了！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "崩潰的市民",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "戴兜帽的傢伙，別擋住路！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "啼哭的市民",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "別過來！你身上有血！和那些怪物一樣沾上了血！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "博士！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "博士，我在這裡，抓住我！"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -82,18 +90,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_npc_394_1",
-          "text": "博士，抓住我的手。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "博士，抓住我的手。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -113,8 +120,7 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -124,33 +130,34 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭？",
-          "speakerId": "avg_npc_394_1",
-          "text": "……為什麼？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭？",
-          "speakerId": "avg_npc_394_1",
-          "text": "“魔王”，應該是什麼樣子？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "變形者集群",
-          "speakerId": "avg_npc_426_1",
-          "text": "……"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭？",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "……為什麼？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭？",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "“魔王”，應該是什麼樣子？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "變形者集群",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -170,129 +177,145 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "變形者集群",
-          "speakerId": "avg_npc_426_1",
-          "text": "眾魂依然拒斥了我們。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "變形者集群",
-          "speakerId": "avg_npc_426_1",
-          "text": "但……變化已經發生，我們的另一部分……已經離我們而去。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "變形者集群",
-          "speakerId": "avg_npc_426_1",
-          "text": "我們需要做出選擇……我們不可停滯不前。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_npc_394_1",
-          "text": "博士！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "變形者集群",
-          "speakerId": "avg_npc_426_1",
-          "text": "……“魔王”。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "變形者集群",
-          "speakerId": "avg_npc_426_1",
-          "text": "我們剛才試圖扮演你，但是失敗了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_npc_394_1",
-          "text": "……新的變形者。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_npc_394_1",
-          "text": "這就是你的選擇？你決定真正與我們為敵。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "變形者集群",
-          "speakerId": "avg_npc_426_1",
-          "text": "……我們只是做出嘗試。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_npc_394_1",
-          "text": "唔——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "變形者集群",
-          "speakerId": "avg_npc_426_1",
-          "text": "“魔王”，我們的意義能否在和你的戰鬥中得出？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "變形者集群",
-          "speakerId": "avg_npc_426_1",
-          "text": "我們的路到底通向哪裡？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_npc_394_1",
-          "text": "……我曾經詢問上一位變形者我該怎麼做。他告訴我，我需跨越所有的猶豫和迷茫。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_npc_394_1",
-          "text": "既然新生的你仍稱呼我為“魔王”，那麼——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_npc_394_1",
-          "text": "自己去找吧，在我這裡，你得不出答案。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "哎呀，我弄痛你了？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "那個叫阿斯卡綸的女人真討厭，她對所有人都那麼糾纏不休？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_npc_394_1",
-          "text": "博士！"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "變形者集群",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "眾魂依然拒斥了我們。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "變形者集群",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "但……變化已經發生，我們的另一部分……已經離我們而去。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "變形者集群",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "我們需要做出選擇……我們不可停滯不前。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "博士！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "變形者集群",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "……“魔王”。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "變形者集群",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "我們剛才試圖扮演你，但是失敗了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "……新的變形者。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "這就是你的選擇？你決定真正與我們為敵。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "變形者集群",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "……我們只是做出嘗試。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "唔——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "變形者集群",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "“魔王”，我們的意義能否在和你的戰鬥中得出？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "變形者集群",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "我們的路到底通向哪裡？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "……我曾經詢問上一位變形者我該怎麼做。他告訴我，我需跨越所有的猶豫和迷茫。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "既然新生的你仍稱呼我為“魔王”，那麼——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "自己去找吧，在我這裡，你得不出答案。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "哎呀，我弄痛你了？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "那個叫阿斯卡綸的女人真討厭，她對所有人都那麼糾纏不休？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "博士！"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -302,8 +325,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -313,138 +335,154 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_npc_394_1",
-          "text": "怎、怎麼——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "小小的魔王啊，我早就迫不及待想要翻撿你的情感與記憶了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "我原以為死魂靈會讓你吃點苦頭，可你的狀況似乎比我預想的要好上一些。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "卡特斯，不，奇美拉。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "你終究不是特蕾西婭呀。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "赦罪師直屬衛兵",
-          "speakerId": "avg_npc_425_1",
-          "text": "……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_npc_394_1",
-          "text": "放開我——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "你是個被人賦予王冠的幸運孩子，但你真的了解你的力量嗎？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "而我們，已經探究了魔王數個千年了。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "至於你——"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_npc_394_1",
-          "text": "別打博士的……主意！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "哦？被赦罪師的巫術環繞，你居然還能調動魔王的力量？我開始有些想念麗茲了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "算了，這對我們的實驗大有裨益。我會先留這位博士一命，我也會教你利用自己的情感。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "不過在把你交給首領之前，我得保證你比現在更乖一些，小兔子。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "變形者閣下，那個討厭的女人就快追過來了，後續就交給您了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "變形者集群",
-          "speakerId": "avg_npc_426_1",
-          "text": "……好吧。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "變形者集群",
-          "speakerId": "avg_npc_426_1",
-          "text": "也許，她能砥礪我們。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_npc_394_1",
-          "text": "博……士……"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "怎、怎麼——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "小小的魔王啊，我早就迫不及待想要翻撿你的情感與記憶了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "我原以為死魂靈會讓你吃點苦頭，可你的狀況似乎比我預想的要好上一些。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "卡特斯，不，奇美拉。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "你終究不是特蕾西婭呀。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "赦罪師直屬衛兵",
+      "speakerId": "avg_npc_425_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "放開我——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "你是個被人賦予王冠的幸運孩子，但你真的了解你的力量嗎？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "而我們，已經探究了魔王數個千年了。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "至於你——"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "別打博士的……主意！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "哦？被赦罪師的巫術環繞，你居然還能調動魔王的力量？我開始有些想念麗茲了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "算了，這對我們的實驗大有裨益。我會先留這位博士一命，我也會教你利用自己的情感。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "不過在把你交給首領之前，我得保證你比現在更乖一些，小兔子。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "變形者閣下，那個討厭的女人就快追過來了，後續就交給您了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "變形者集群",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "……好吧。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "變形者集群",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "也許，她能砥礪我們。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "博……士……"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -454,24 +492,31 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "阿斯卡綸",
-          "speakerId": "avg_npc_395_1",
-          "text": "博士！待在原地！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿斯卡綸",
-          "speakerId": "avg_npc_395_1",
-          "text": "第一優先級是——"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿斯卡綸",
+      "speakerId": "avg_npc_395_1",
+      "isRemote": false,
+      "text": "博士！待在原地！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿斯卡綸",
+      "speakerId": "avg_npc_395_1",
+      "isRemote": false,
+      "text": "第一優先級是——"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_warehouse"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -486,8 +531,7 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -497,8 +541,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_laccolith"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -508,8 +558,11 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_cave_4"
     },
     {
       "type": "choice",
@@ -519,8 +572,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -530,8 +582,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -546,18 +597,17 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": null,
-          "text": "很頑強，“博士”，我很敬佩你。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "很頑強，“博士”，我很敬佩你。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -567,48 +617,52 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "你醒了？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "如此孱弱的身體，是如何跟隨我來到這裡的？我嘗試檢查你的身體，但是一無所獲。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "不……也不是一無所獲。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "你的構造……很特殊。和我所知的所有樣本都不一樣，我想要研究你。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "“仔細研究”。可惜這裡很久之前就被首領廢棄了，實驗設施不完整，我不想損壞你這麼珍貴的實驗體。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "還是得帶回倫蒂尼姆嗎？可是特雷西斯好像對你格外關注……"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "你醒了？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "如此孱弱的身體，是如何跟隨我來到這裡的？我嘗試檢查你的身體，但是一無所獲。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "不……也不是一無所獲。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "你的構造……很特殊。和我所知的所有樣本都不一樣，我想要研究你。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "“仔細研究”。可惜這裡很久之前就被首領廢棄了，實驗設施不完整，我不想損壞你這麼珍貴的實驗體。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "還是得帶回倫蒂尼姆嗎？可是特雷西斯好像對你格外關注……"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -618,24 +672,24 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "你瞧啊，“博士”——她正看著什麼呢？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "她在顫抖呢。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "你瞧啊，“博士”——她正看著什麼呢？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "她在顫抖呢。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -645,18 +699,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "“魔王賜予偉大的幻境”。小兔子只是稍——微感受了一下她自己的力量。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "“魔王賜予偉大的幻境”。小兔子只是稍——微感受了一下她自己的力量。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -669,6 +722,7 @@
               "type": "dialogue",
               "speakerName": "薩盧斯",
               "speakerId": "avg_npc_653_1",
+              "isRemote": false,
               "text": "可笑的拉攏。"
             }
           ]
@@ -681,6 +735,7 @@
               "type": "dialogue",
               "speakerName": "薩盧斯",
               "speakerId": "avg_npc_653_1",
+              "isRemote": false,
               "text": "無意義的談判。"
             }
           ]
@@ -693,55 +748,60 @@
               "type": "dialogue",
               "speakerName": "薩盧斯",
               "speakerId": "avg_npc_653_1",
+              "isRemote": false,
               "text": "帶著顫抖的威脅。"
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "瞧你那一籌莫展、想抓住一切可能的樣子，看上去真令人心疼。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "你的幹員不在你的身邊，你的指揮派不上用場，現在，就連你所侍奉的“魔王”都在離你而去。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "你還能做得到什麼呢？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "我總是請教首領，權柄為何總被庸人把持？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "這些被歷史遺忘的魔王，給我們帶來的，除了顛沛流離的生活，還有什麼呢？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "而你，“博士”，你會是這次苦難的源頭之一嗎？"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "瞧你那一籌莫展、想抓住一切可能的樣子，看上去真令人心疼。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "你的幹員不在你的身邊，你的指揮派不上用場，現在，就連你所侍奉的“魔王”都在離你而去。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "你還能做得到什麼呢？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "我總是請教首領，權柄為何總被庸人把持？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "這些被歷史遺忘的魔王，給我們帶來的，除了顛沛流離的生活，還有什麼呢？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "而你，“博士”，你會是這次苦難的源頭之一嗎？"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -761,36 +821,38 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "我不討厭你的智慧。但說實在話，聰明人從來都不缺。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "任何東西都換不來這次機會，都換不來我們數千年的追尋。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "那麼……既然她能把王冠強行戴上這個小兔子的腦袋——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "它也應該能被抽取出來才對呀。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "我不討厭你的智慧。但說實在話，聰明人從來都不缺。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "任何東西都換不來這次機會，都換不來我們數千年的追尋。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "那麼……既然她能把王冠強行戴上這個小兔子的腦袋——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "它也應該能被抽取出來才對呀。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -800,69 +862,75 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "偷？不不，這頂王冠不是個遺落在戰場上的鐵環，任人拾取。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "你不會明白。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "瞧瞧，這是什麼，一枚——石頭？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "令人感動，但我必須提醒你，擋在她面前毫無意義。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "既然你如此執著，我想到了一個更好的辦法來處理你，“博士”。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "也許你隱藏在兜帽下的腦袋裡，同樣也藏著不少有助於我們實驗的秘密。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "就這樣，不要抵抗我的巫術。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "向我分享你的記憶——"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "偷？不不，這頂王冠不是個遺落在戰場上的鐵環，任人拾取。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "你不會明白。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "瞧瞧，這是什麼，一枚——石頭？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "令人感動，但我必須提醒你，擋在她面前毫無意義。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "既然你如此執著，我想到了一個更好的辦法來處理你，“博士”。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "也許你隱藏在兜帽下的腦袋裡，同樣也藏著不少有助於我們實驗的秘密。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "就這樣，不要抵抗我的巫術。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "向我分享你的記憶——"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -872,33 +940,34 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "……什麼？什麼力量能這麼徹底地排斥赦罪師的……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "是“魔王”……？可她的精神應該受到了巨大的限制……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_npc_394_1",
-          "text": "*古老的薩卡茲語*。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "……什麼？什麼力量能這麼徹底地排斥赦罪師的……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "是“魔王”……？可她的精神應該受到了巨大的限制……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "*古老的薩卡茲語*。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -908,36 +977,38 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "誕生自眾魂的枷鎖可沒那麼容易掙脫，她還停留在眾魂之間。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "她在潛意識中依然選擇保護你，呵。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "……等等。不僅如此？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "她和王冠的聯繫在加深……？"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "誕生自眾魂的枷鎖可沒那麼容易掙脫，她還停留在眾魂之間。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "她在潛意識中依然選擇保護你，呵。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "……等等。不僅如此？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "她和王冠的聯繫在加深……？"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -947,45 +1018,48 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "啊，如此濃烈的情感。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "特蕾西婭當年會選擇你，好像不完全是走投無路，小兔子。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "既然如此，那我們乾脆略過無聊的前奏吧。希望你的小腦袋瓜不會因此毀掉，那樣就太可惜了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "赦罪師在這座洞窟裡留下的，可不止是雕像。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "*薩卡茲咒語*。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "啊，如此濃烈的情感。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "特蕾西婭當年會選擇你，好像不完全是走投無路，小兔子。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "既然如此，那我們乾脆略過無聊的前奏吧。希望你的小腦袋瓜不會因此毀掉，那樣就太可惜了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "赦罪師在這座洞窟裡留下的，可不止是雕像。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "*薩卡茲咒語*。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -995,8 +1069,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1006,8 +1079,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1017,129 +1089,148 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "呿——"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿斯卡綸",
-          "speakerId": "avg_npc_395_1",
-          "text": "博士，你的行動太過魯莽，如果不是我遇到了——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": null,
-          "text": "小心。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "血魔的法術……你們對自己的……“血脈”擺弄到了何種地步？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "無法想像，你們是使徒閃靈的血親。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "那樣一位優異之人，卻要時刻為你們的污穢而懺悔。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "咳，咳咳——女妖之主。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "虧你們能進入這裡。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "聽說如今的女妖之主相當叛逆，我真該再小心一點。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿斯卡綸",
-          "speakerId": "avg_npc_395_1",
-          "text": "……你比我們預期的更危險。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿斯卡綸",
-          "speakerId": "avg_npc_395_1",
-          "text": "沒有審訊的餘力，情況緊急，殺了她，離開。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "我明白。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "喔，這就是如今的女妖之主？“王庭喪鐘”？確實了得，這些咒文的精細程度不亞於你的英雄母親。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "可，你知道嗎？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "這樣精巧的符文——精巧的源石技藝，絕非薩卡茲最本初的心態。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "阿斯卡綸！"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "呿——"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿斯卡綸",
+      "speakerId": "avg_npc_395_1",
+      "isRemote": false,
+      "text": "博士，你的行動太過魯莽，如果不是我遇到了——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "小心。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "血魔的法術……你們對自己的……“血脈”擺弄到了何種地步？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "無法想像，你們是使徒閃靈的血親。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "那樣一位優異之人，卻要時刻為你們的污穢而懺悔。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "咳，咳咳——女妖之主。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "虧你們能進入這裡。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "聽說如今的女妖之主相當叛逆，我真該再小心一點。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿斯卡綸",
+      "speakerId": "avg_npc_395_1",
+      "isRemote": false,
+      "text": "……你比我們預期的更危險。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿斯卡綸",
+      "speakerId": "avg_npc_395_1",
+      "isRemote": false,
+      "text": "沒有審訊的餘力，情況緊急，殺了她，離開。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "我明白。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "喔，這就是如今的女妖之主？“王庭喪鐘”？確實了得，這些咒文的精細程度不亞於你的英雄母親。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "可，你知道嗎？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "這樣精巧的符文——精巧的源石技藝，絕非薩卡茲最本初的心態。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "阿斯卡綸！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_coldforest"
     },
     {
       "type": "choice",
@@ -1149,30 +1240,31 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "博士。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "我們已經離開了洞窟，阿斯卡綸在勘察附近的地形。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "你的右臂橈骨被折斷了，我正在為你做基本的處理。我不是醫療幹員，只能做到這個程度。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "博士。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "我們已經離開了洞窟，阿斯卡綸在勘察附近的地形。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "你的右臂橈骨被折斷了，我正在為你做基本的處理。我不是醫療幹員，只能做到這個程度。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1182,39 +1274,41 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "……她還在昏迷。“受困於眾魂”，儘管赦罪師表露出類似含義，但……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "至少，她性命無礙。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "我理解阿斯卡綸對你行事的不滿，博士。她所擔心的，不僅有你的安全。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "但你確實為我們爭取了時間，如果不是你的拖延，赦罪師恐怕已經帶著阿米婭躲藏進了倫蒂尼姆的高牆之後。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "……她還在昏迷。“受困於眾魂”，儘管赦罪師表露出類似含義，但……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "至少，她性命無礙。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "我理解阿斯卡綸對你行事的不滿，博士。她所擔心的，不僅有你的安全。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "但你確實為我們爭取了時間，如果不是你的拖延，赦罪師恐怕已經帶著阿米婭躲藏進了倫蒂尼姆的高牆之後。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1224,30 +1318,31 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "讓她逃了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "土石，鮮血，還有……女妖之嘯。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "這就是赦罪師所期望的薩卡茲的模樣？執迷於……所謂的血統和巫術？"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "讓她逃了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "土石，鮮血，還有……女妖之嘯。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "這就是赦罪師所期望的薩卡茲的模樣？執迷於……所謂的血統和巫術？"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1257,8 +1352,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1268,30 +1362,31 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "……等等。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "這些氤氳的水氣……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "……不可能。博士，小心點。我們未必離開了敵人的陷阱。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "……等等。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "這些氤氳的水氣……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "……不可能。博士，小心點。我們未必離開了敵人的陷阱。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1306,24 +1401,24 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "這裡……不是維多利亞。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "這裡是女妖的河谷。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "這裡……不是維多利亞。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "這裡是女妖的河谷。"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": []

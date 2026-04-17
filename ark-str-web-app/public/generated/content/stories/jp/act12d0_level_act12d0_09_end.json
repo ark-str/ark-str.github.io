@@ -11,63 +11,77 @@
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "bg_village_2"
+    },
+    {
       "type": "dialogue",
       "speakerName": "ガヴィル",
       "speakerId": "char_187_ccheal",
+      "isRemote": false,
       "text": "片付いたぜ、トミミ。"
     },
     {
       "type": "dialogue",
       "speakerName": "トミミ",
       "speakerId": "char_411_tomimi",
+      "isRemote": false,
       "text": "……ま、まだです！"
     },
     {
       "type": "dialogue",
       "speakerName": "トミミ",
       "speakerId": "char_411_tomimi",
+      "isRemote": false,
       "text": "ヌール、ペータ！"
     },
     {
       "type": "dialogue",
       "speakerName": "ディラン",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "ドクター！"
     },
     {
       "type": "dialogue",
       "speakerName": "Lancet-2",
       "speakerId": "char_285_medic2",
+      "isRemote": false,
       "text": "ドクター様！"
     },
     {
       "type": "dialogue",
       "speakerName": "トミミ",
       "speakerId": "char_411_tomimi",
+      "isRemote": false,
       "text": "な、仲間を傷つけられたくなければ……"
     },
     {
       "type": "dialogue",
       "speakerName": "ガヴィル",
       "speakerId": "char_187_ccheal",
+      "isRemote": false,
       "text": "アタシを怒らせるんじゃねぇぞ、トミミ！"
     },
     {
       "type": "dialogue",
       "speakerName": "トミミ",
       "speakerId": "char_411_tomimi",
+      "isRemote": false,
       "text": "……ガヴィルさんが残ってくれると言うまで、絶対にやめません！"
     },
     {
       "type": "dialogue",
       "speakerName": "ディラン",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "助けてくれ、ドクター！"
     },
     {
       "type": "dialogue",
       "speakerName": "Lancet-2",
       "speakerId": "char_285_medic2",
+      "isRemote": false,
       "text": "ドクター様、怖いですううぅ……"
     },
     {
@@ -81,12 +95,14 @@
               "type": "dialogue",
               "speakerName": "ディラン",
               "speakerId": "avg_npc_012",
+              "isRemote": false,
               "text": "ちょっとドクター、空気を読んでくれよ。こんな健気なお嬢ちゃんなんだから、少しくらい乗ってやっても死にゃしねぇだろうよ。"
             },
             {
               "type": "dialogue",
               "speakerName": "Lancet-2",
               "speakerId": "char_285_medic2",
+              "isRemote": false,
               "text": "はぁ、ここの人たちは本当に純粋ですから、正直彼らを騙すのは良心が痛みます。私に心はありませんが。"
             }
           ]
@@ -99,12 +115,14 @@
               "type": "dialogue",
               "speakerName": "ディラン",
               "speakerId": "avg_npc_012",
+              "isRemote": false,
               "text": "おいおい、そんな目で見るなよ、ドクター。"
             },
             {
               "type": "dialogue",
               "speakerName": "ディラン",
               "speakerId": "avg_npc_012",
+              "isRemote": false,
               "text": "安心してくれ、こんなんでもロドスのオペレーターだからな。このくらい自分でどうにかできるぜ。"
             }
           ]
@@ -117,12 +135,12 @@
               "type": "dialogue",
               "speakerName": "Lancet-2",
               "speakerId": "char_285_medic2",
+              "isRemote": false,
               "text": "ドクター様あああ！"
             }
           ]
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -135,43 +153,47 @@
               "type": "dialogue",
               "speakerName": "トミミ",
               "speakerId": "char_411_tomimi",
+              "isRemote": false,
               "text": "えっ？"
             },
             {
               "type": "dialogue",
               "speakerName": "アダクリス人",
               "speakerId": "avg_npc_073",
+              "isRemote": false,
               "text": "いつの間に縄を！"
             },
             {
               "type": "dialogue",
               "speakerName": "ディラン",
               "speakerId": "avg_npc_012",
+              "isRemote": false,
               "text": "ははっ、わりぃな、最初から縛られてねぇんだ。"
             },
             {
               "type": "dialogue",
               "speakerName": "ガヴィル",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "ドクター、まさか最初からトミミの企みを見抜いてたのか？"
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Lancet-2",
-          "speakerId": "char_285_medic2",
-          "text": "ドクター様あああ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ディラン",
-          "speakerId": "avg_npc_012",
-          "text": "うわっ、二人とも俺よりノリノリで演技してんな。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Lancet-2",
+      "speakerId": "char_285_medic2",
+      "isRemote": false,
+      "text": "ドクター様あああ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ディラン",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "うわっ、二人とも俺よりノリノリで演技してんな。"
     },
     {
       "type": "choice",
@@ -191,15 +213,14 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "トミミ",
-          "speakerId": "char_411_tomimi",
-          "text": "な、なんでわかったんですか！？"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "トミミ",
+      "speakerId": "char_411_tomimi",
+      "isRemote": false,
+      "text": "な、なんでわかったんですか！？"
     },
     {
       "type": "choice",
@@ -209,15 +230,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "えっ？　そうだったっけ？"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "えっ？　そうだったっけ？"
     },
     {
       "type": "choice",
@@ -227,15 +247,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "トミミ",
-          "speakerId": "char_411_tomimi",
-          "text": "……"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "トミミ",
+      "speakerId": "char_411_tomimi",
+      "isRemote": false,
+      "text": "……"
     },
     {
       "type": "choice",
@@ -245,138 +264,157 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ディラン",
-          "speakerId": "avg_npc_012",
-          "text": "おう、Lancet-2に積んであるぜ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Lancet-2",
-          "speakerId": "char_285_medic2",
-          "text": "うう……私の身体に物を入れさせるなんて、ドクター様の為でなければ絶対にしませんからね。本当ですよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ユーネクテス",
-          "speakerId": "char_416_zumama",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "これは……ロケットランチャーか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ディラン",
-          "speakerId": "avg_npc_012",
-          "text": "そうだ、トミミの部族で見つけたんだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "まさか……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ディラン",
-          "speakerId": "avg_npc_012",
-          "text": "そのまさかだ。俺たちを撃ち墜としたのは、このお嬢ちゃんってわけさ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "トミミ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "トミミ",
-          "speakerId": "char_411_tomimi",
-          "text": "ううう、ごめんなさい、ガヴィルさん。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "こっち来い。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "トミミ",
-          "speakerId": "char_411_tomimi",
-          "text": "うううぅ……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "アタシの脚の上に伏せろ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "トミミ",
-          "speakerId": "char_411_tomimi",
-          "text": "ガヴィルさん、ぶたないでください。反省しますから……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "ダメだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "言うこと聞かない悪ガキは、お尻尾ペンペンだ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "トミミ",
-          "speakerId": "char_411_tomimi",
-          "text": "ううう……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケオベ",
-          "speakerId": "char_2013_cerber",
-          "text": "お尻尾ペンペン、なんか痛そう……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "これで懲りたか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "トミミ",
-          "speakerId": "char_411_tomimi",
-          "text": "懲りました、ううう……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "それならよろしい。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "とりあえずこれで一件落着だ、ドクター。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ディラン",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "おう、Lancet-2に積んであるぜ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Lancet-2",
+      "speakerId": "char_285_medic2",
+      "isRemote": false,
+      "text": "うう……私の身体に物を入れさせるなんて、ドクター様の為でなければ絶対にしませんからね。本当ですよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ユーネクテス",
+      "speakerId": "char_416_zumama",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "これは……ロケットランチャーか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ディラン",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "そうだ、トミミの部族で見つけたんだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "まさか……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ディラン",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "そのまさかだ。俺たちを撃ち墜としたのは、このお嬢ちゃんってわけさ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "トミミ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "トミミ",
+      "speakerId": "char_411_tomimi",
+      "isRemote": false,
+      "text": "ううう、ごめんなさい、ガヴィルさん。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "こっち来い。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "トミミ",
+      "speakerId": "char_411_tomimi",
+      "isRemote": false,
+      "text": "うううぅ……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "アタシの脚の上に伏せろ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "トミミ",
+      "speakerId": "char_411_tomimi",
+      "isRemote": false,
+      "text": "ガヴィルさん、ぶたないでください。反省しますから……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "ダメだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "言うこと聞かない悪ガキは、お尻尾ペンペンだ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "トミミ",
+      "speakerId": "char_411_tomimi",
+      "isRemote": false,
+      "text": "ううう……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケオベ",
+      "speakerId": "char_2013_cerber",
+      "isRemote": false,
+      "text": "お尻尾ペンペン、なんか痛そう……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "これで懲りたか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "トミミ",
+      "speakerId": "char_411_tomimi",
+      "isRemote": false,
+      "text": "懲りました、ううう……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "それならよろしい。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "とりあえずこれで一件落着だ、ドクター。"
     },
     {
       "type": "choice",
@@ -389,6 +427,7 @@
               "type": "dialogue",
               "speakerName": "ガヴィル",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "ははは、確かに災難の連続だったな。"
             }
           ]
@@ -401,6 +440,7 @@
               "type": "dialogue",
               "speakerName": "ガヴィル",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "おい、ドクター、立ったまま寝てんじゃねぇだろうな。"
             }
           ]
@@ -413,247 +453,292 @@
               "type": "dialogue",
               "speakerName": "ガヴィル",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "トミミをケガさせるわけにもいかねぇからな。しっかし、さすがのアタシも疲れたぜ。"
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Lancet-2",
-          "speakerId": "char_285_medic2",
-          "text": "この大きなロボット……一見不格好に見えますが、この角々しさや粗削りな造形、雑然としながらも理に適った配線など、よく見れば独特の美が感じ取れます。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Lancet-2",
-          "speakerId": "char_285_medic2",
-          "text": "これは結婚向きのタイプですね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "おい、Lancet-2、エンジンが使えるか見てやってくれ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Lancet-2",
-          "speakerId": "char_285_medic2",
-          "text": "え？　まさかエンジンはこの巨人さんの中に！？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "ああそうさ。アタシらがボコボコにしてやったけどな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Lancet-2",
-          "speakerId": "char_285_medic2",
-          "text": "ああ、可哀想なエンジンちゃん、可哀想な巨人さん。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Lancet-2",
-          "speakerId": "char_285_medic2",
-          "text": "ディランさん、手伝っていただけませんか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ディラン",
-          "speakerId": "avg_npc_012",
-          "text": "おうよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ユーネクテス",
-          "speakerId": "char_416_zumama",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "おい、ズゥママ、どうしたんだ、ボケーっとして。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ユーネクテス",
-          "speakerId": "char_416_zumama",
-          "text": "ガッ、ガヴィル！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "あぁ？　なんだよ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ユーネクテス",
-          "speakerId": "char_416_zumama",
-          "text": "あれ、あれ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "どれだよ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ユーネクテス",
-          "speakerId": "char_416_zumama",
-          "text": "あれ、あの自分で動いたり話したりする機械はなんだ！？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "ああ、Lancet-2のことだな。あいつもアタシらの仲間さ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ユーネクテス",
-          "speakerId": "char_416_zumama",
-          "text": "は、話しかけてもいいか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "好きにしたらいいじゃねぇか。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ユーネクテス",
-          "speakerId": "char_416_zumama",
-          "text": "や、やあ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Lancet-2",
-          "speakerId": "char_285_medic2",
-          "text": "はい、こんにちは。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ユーネクテス",
-          "speakerId": "char_416_zumama",
-          "text": "お前は機械なのか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Lancet-2",
-          "speakerId": "char_285_medic2",
-          "text": "私の製品名は「レイジアンイグジスターシリーズS-Typer62六輪作業プラットフォーム」です。ロドス所属で、コードネームはLancet-2です。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ユーネクテス",
-          "speakerId": "char_416_zumama",
-          "text": "おお！　し、質問してもいいか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Lancet-2",
-          "speakerId": "char_285_medic2",
-          "text": "私には一定の知能が備わっておりますので、そこまで難しくないご質問であれば、回答可能かと。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Lancet-2",
-          "speakerId": "char_285_medic2",
-          "text": "ちなみに、私は医療用の作業プラットフォームのため、提供可能な知識は医療方面に偏ったものとなります。ご了承ください。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ユーネクテス",
-          "speakerId": "char_416_zumama",
-          "text": "^%&$*#(#……！！！！！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Lancet-2",
-          "speakerId": "char_285_medic2",
-          "text": "何でしょうか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ユーネクテス",
-          "speakerId": "char_416_zumama",
-          "text": "だ、抱っこしてもいいか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Lancet-2",
-          "speakerId": "char_285_medic2",
-          "text": "はい？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "何やってんだあいつ、おかしくなったのか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "大祭司",
-          "speakerId": "avg_npc_074",
-          "text": "見ればわかるじゃろ。あの機械に衝撃を受けたんじゃよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "あぁ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "大祭司",
-          "speakerId": "avg_npc_074",
-          "text": "自らの意思で動き、喋る機械から受けた衝撃は、初めて移動都市を目にしたとき以上のものじゃった。つまりそういうことじゃ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "大祭司",
-          "speakerId": "avg_npc_074",
-          "text": "わしも同じくらい、興奮しておるがな！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "大祭司",
-          "speakerId": "avg_npc_074",
-          "text": "のう、美しいお嬢様、わしとのデートに付き合ってもらうことはできんかの？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "大祭司",
-          "speakerId": "avg_npc_074",
-          "text": "このジャングル一番の景色を知っとるんじゃ。そこで素晴らしい午後のひとときを共に過ごすのはどうじゃ！？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Lancet-2",
-          "speakerId": "char_285_medic2",
-          "text": "ええ？　わ、私、誘われました！？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Lancet-2",
-          "speakerId": "char_285_medic2",
-          "text": "どうしましょう、ちょっと嬉しいような……ドクター様、これは受けるべきでしょうか？"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Lancet-2",
+      "speakerId": "char_285_medic2",
+      "isRemote": false,
+      "text": "この大きなロボット……一見不格好に見えますが、この角々しさや粗削りな造形、雑然としながらも理に適った配線など、よく見れば独特の美が感じ取れます。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Lancet-2",
+      "speakerId": "char_285_medic2",
+      "isRemote": false,
+      "text": "これは結婚向きのタイプですね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "おい、Lancet-2、エンジンが使えるか見てやってくれ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Lancet-2",
+      "speakerId": "char_285_medic2",
+      "isRemote": false,
+      "text": "え？　まさかエンジンはこの巨人さんの中に！？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "ああそうさ。アタシらがボコボコにしてやったけどな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Lancet-2",
+      "speakerId": "char_285_medic2",
+      "isRemote": false,
+      "text": "ああ、可哀想なエンジンちゃん、可哀想な巨人さん。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Lancet-2",
+      "speakerId": "char_285_medic2",
+      "isRemote": false,
+      "text": "ディランさん、手伝っていただけませんか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ディラン",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "おうよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ユーネクテス",
+      "speakerId": "char_416_zumama",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "おい、ズゥママ、どうしたんだ、ボケーっとして。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ユーネクテス",
+      "speakerId": "char_416_zumama",
+      "isRemote": false,
+      "text": "ガッ、ガヴィル！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "あぁ？　なんだよ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ユーネクテス",
+      "speakerId": "char_416_zumama",
+      "isRemote": false,
+      "text": "あれ、あれ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "どれだよ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ユーネクテス",
+      "speakerId": "char_416_zumama",
+      "isRemote": false,
+      "text": "あれ、あの自分で動いたり話したりする機械はなんだ！？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "ああ、Lancet-2のことだな。あいつもアタシらの仲間さ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ユーネクテス",
+      "speakerId": "char_416_zumama",
+      "isRemote": false,
+      "text": "は、話しかけてもいいか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "好きにしたらいいじゃねぇか。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_village_2"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ユーネクテス",
+      "speakerId": "char_416_zumama",
+      "isRemote": false,
+      "text": "や、やあ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Lancet-2",
+      "speakerId": "char_285_medic2",
+      "isRemote": false,
+      "text": "はい、こんにちは。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ユーネクテス",
+      "speakerId": "char_416_zumama",
+      "isRemote": false,
+      "text": "お前は機械なのか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Lancet-2",
+      "speakerId": "char_285_medic2",
+      "isRemote": false,
+      "text": "私の製品名は「レイジアンイグジスターシリーズS-Typer62六輪作業プラットフォーム」です。ロドス所属で、コードネームはLancet-2です。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ユーネクテス",
+      "speakerId": "char_416_zumama",
+      "isRemote": false,
+      "text": "おお！　し、質問してもいいか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Lancet-2",
+      "speakerId": "char_285_medic2",
+      "isRemote": false,
+      "text": "私には一定の知能が備わっておりますので、そこまで難しくないご質問であれば、回答可能かと。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Lancet-2",
+      "speakerId": "char_285_medic2",
+      "isRemote": false,
+      "text": "ちなみに、私は医療用の作業プラットフォームのため、提供可能な知識は医療方面に偏ったものとなります。ご了承ください。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ユーネクテス",
+      "speakerId": "char_416_zumama",
+      "isRemote": false,
+      "text": "^%&$*#(#……！！！！！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Lancet-2",
+      "speakerId": "char_285_medic2",
+      "isRemote": false,
+      "text": "何でしょうか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ユーネクテス",
+      "speakerId": "char_416_zumama",
+      "isRemote": false,
+      "text": "だ、抱っこしてもいいか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Lancet-2",
+      "speakerId": "char_285_medic2",
+      "isRemote": false,
+      "text": "はい？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_village_2"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "何やってんだあいつ、おかしくなったのか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "大祭司",
+      "speakerId": "avg_npc_074",
+      "isRemote": false,
+      "text": "見ればわかるじゃろ。あの機械に衝撃を受けたんじゃよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "あぁ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "大祭司",
+      "speakerId": "avg_npc_074",
+      "isRemote": false,
+      "text": "自らの意思で動き、喋る機械から受けた衝撃は、初めて移動都市を目にしたとき以上のものじゃった。つまりそういうことじゃ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "大祭司",
+      "speakerId": "avg_npc_074",
+      "isRemote": false,
+      "text": "わしも同じくらい、興奮しておるがな！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "大祭司",
+      "speakerId": "avg_npc_074",
+      "isRemote": false,
+      "text": "のう、美しいお嬢様、わしとのデートに付き合ってもらうことはできんかの？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "大祭司",
+      "speakerId": "avg_npc_074",
+      "isRemote": false,
+      "text": "このジャングル一番の景色を知っとるんじゃ。そこで素晴らしい午後のひとときを共に過ごすのはどうじゃ！？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Lancet-2",
+      "speakerId": "char_285_medic2",
+      "isRemote": false,
+      "text": "ええ？　わ、私、誘われました！？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Lancet-2",
+      "speakerId": "char_285_medic2",
+      "isRemote": false,
+      "text": "どうしましょう、ちょっと嬉しいような……ドクター様、これは受けるべきでしょうか？"
     },
     {
       "type": "choice",
@@ -666,6 +751,7 @@
               "type": "dialogue",
               "speakerName": "ユーネクテス",
               "speakerId": "char_416_zumama",
+              "isRemote": false,
               "text": "じいやは引っ込んでいろ。でないと長年のよしみを捨てることになるぞ。"
             }
           ]
@@ -678,12 +764,14 @@
               "type": "dialogue",
               "speakerName": "ブレイズ",
               "speakerId": "char_017_homura",
+              "isRemote": false,
               "text": "……多分私もドクターと同じ気持ち。"
             },
             {
               "type": "dialogue",
               "speakerName": "ブレイズ",
               "speakerId": "char_017_homura",
+              "isRemote": false,
               "text": "吹き出しそう。"
             }
           ]
@@ -696,97 +784,110 @@
               "type": "dialogue",
               "speakerName": "Lancet-2",
               "speakerId": "char_285_medic2",
+              "isRemote": false,
               "text": "えっ、そんなドクター様、急にそう言われましても、心の準備が……"
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ユーネクテス",
-          "speakerId": "char_416_zumama",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ユーネクテス",
-          "speakerId": "char_416_zumama",
-          "text": "ガヴィル、お前たちが住んでいるところは、こういう機械も造れるのか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "ん？　あー、まぁクロージャなら造れるかもな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ユーネクテス",
-          "speakerId": "char_416_zumama",
-          "text": "そうか……よし、決めたぞ、ガヴィル。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ユーネクテス",
-          "speakerId": "char_416_zumama",
-          "text": "そのロドスというところだが、人手は足りているか？　私も加入したい。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "あぁ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ユーネクテス",
-          "speakerId": "char_416_zumama",
-          "text": "そこで機械の技術を学びたいんだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "ハァ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ユーネクテス",
-          "speakerId": "char_416_zumama",
-          "text": "実はこれまでも外に出て勉強したい気持ちはあったが、部族のこともあって真剣に考えていなかった。だが今はいい機会だと思っている。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "トミミ",
-          "speakerId": "char_411_tomimi",
-          "text": "じゃ、じゃあ私も行きます！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "なんだって！？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "トミミ",
-          "speakerId": "char_411_tomimi",
-          "text": "こうなったら予備プランを実行して……私がガヴィルさんについていけばいいんです！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "トミミ",
-          "speakerId": "char_411_tomimi",
-          "text": "ガヴィルさん、私だって戦えます。きっとガヴィルさんの役に立ってみせます！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "えーっと、ドクター、どうすりゃいいんだこれ？"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ユーネクテス",
+      "speakerId": "char_416_zumama",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ユーネクテス",
+      "speakerId": "char_416_zumama",
+      "isRemote": false,
+      "text": "ガヴィル、お前たちが住んでいるところは、こういう機械も造れるのか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "ん？　あー、まぁクロージャなら造れるかもな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ユーネクテス",
+      "speakerId": "char_416_zumama",
+      "isRemote": false,
+      "text": "そうか……よし、決めたぞ、ガヴィル。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ユーネクテス",
+      "speakerId": "char_416_zumama",
+      "isRemote": false,
+      "text": "そのロドスというところだが、人手は足りているか？　私も加入したい。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "あぁ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ユーネクテス",
+      "speakerId": "char_416_zumama",
+      "isRemote": false,
+      "text": "そこで機械の技術を学びたいんだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "ハァ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ユーネクテス",
+      "speakerId": "char_416_zumama",
+      "isRemote": false,
+      "text": "実はこれまでも外に出て勉強したい気持ちはあったが、部族のこともあって真剣に考えていなかった。だが今はいい機会だと思っている。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "トミミ",
+      "speakerId": "char_411_tomimi",
+      "isRemote": false,
+      "text": "じゃ、じゃあ私も行きます！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "なんだって！？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "トミミ",
+      "speakerId": "char_411_tomimi",
+      "isRemote": false,
+      "text": "こうなったら予備プランを実行して……私がガヴィルさんについていけばいいんです！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "トミミ",
+      "speakerId": "char_411_tomimi",
+      "isRemote": false,
+      "text": "ガヴィルさん、私だって戦えます。きっとガヴィルさんの役に立ってみせます！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "えーっと、ドクター、どうすりゃいいんだこれ？"
     },
     {
       "type": "choice",
@@ -799,6 +900,7 @@
               "type": "dialogue",
               "speakerName": "ガヴィル",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "そうだな。オペレーター適性試験自体は誰でも受けれるしな。"
             }
           ]
@@ -811,6 +913,7 @@
               "type": "dialogue",
               "speakerName": "ガヴィル",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "おい、ドクター。あんまりいじめてやるなよ。"
             }
           ]
@@ -823,79 +926,89 @@
               "type": "dialogue",
               "speakerName": "ガヴィル",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "ドーークーーターー！"
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "まあいいや。とりあえずドクターから色々勉強すりゃいい。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "トミミ",
-          "speakerId": "char_411_tomimi",
-          "text": "はい！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "それよりガヴィル、この子が言ってることも通訳してくれない？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フリント",
-          "speakerId": "char_415_flint",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "あぁ？　クマールか。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フリント",
-          "speakerId": "char_415_flint",
-          "text": "この人についていきたい。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "お前についていきたいってさ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "ふーん、いいよ。腕も立つし、きっとオペレーターとして認められるはず。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "いいってよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フリント",
-          "speakerId": "char_415_flint",
-          "text": "よし。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "……いやちょっと待て。ズゥママがいなくなって、トミミもクマールもいなくなっちまったら、ここの部族のヤツらはどうすんだよ？"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "まあいいや。とりあえずドクターから色々勉強すりゃいい。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "トミミ",
+      "speakerId": "char_411_tomimi",
+      "isRemote": false,
+      "text": "はい！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "それよりガヴィル、この子が言ってることも通訳してくれない？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フリント",
+      "speakerId": "char_415_flint",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "あぁ？　クマールか。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フリント",
+      "speakerId": "char_415_flint",
+      "isRemote": false,
+      "text": "この人についていきたい。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "お前についていきたいってさ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "ふーん、いいよ。腕も立つし、きっとオペレーターとして認められるはず。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "いいってよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フリント",
+      "speakerId": "char_415_flint",
+      "isRemote": false,
+      "text": "よし。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "……いやちょっと待て。ズゥママがいなくなって、トミミもクマールもいなくなっちまったら、ここの部族のヤツらはどうすんだよ？"
     },
     {
       "type": "choice",
@@ -905,210 +1018,245 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "アハハ、あのときはカッとなってたからノーカウントだ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ユーネクテス",
-          "speakerId": "char_416_zumama",
-          "text": "確かに……部族を放っておくわけにはいかないか。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "大祭司",
-          "speakerId": "avg_npc_074",
-          "text": "うむ、それに関しては心配無用じゃろう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アダクリス人A",
-          "speakerId": null,
-          "text": "ガヴィルにゃ負けるが、やっぱビッグ・アグリーもつえーな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アダクリス人B",
-          "speakerId": null,
-          "text": "そうだそうだ、オレもああいうのを造ってみてぇな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アダクリス人C",
-          "speakerId": null,
-          "text": "どうせ霊殿は壊されちまったんだし、いっそ機械造りで勝負して、すげぇモンを造ったヤツが大族長になるってのはどうだ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アダクリス人D",
-          "speakerId": null,
-          "text": "いやいや、やっぱり喧嘩の方が気持ちいいぜ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アダクリス人C",
-          "speakerId": null,
-          "text": "うーん、一理ある、喧嘩も捨てがたいな。どうすりゃいいんだ……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アダクリス人A",
-          "speakerId": null,
-          "text": "ったく、アホかお前らは。喧嘩しながら機械造りの勝負もやる。それでいいだろ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アダクリス人たち",
-          "speakerId": null,
-          "text": "それだ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "大祭司",
-          "speakerId": "avg_npc_074",
-          "text": "ほれ、心配するだけ時間の無駄じゃて。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "大祭司",
-          "speakerId": "avg_npc_074",
-          "text": "わしの経験則じゃが、人々は想像を超える早さで環境に適応していくものじゃ。統率者が未来のことで頭を悩ませていようがお構いなしでの。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "大祭司",
-          "speakerId": "avg_npc_074",
-          "text": "例えばじゃ、二百年前にとあるティアカウが勝手に初代大族長を名乗り始めて、それから自然と大族長選挙の習慣が生まれた……とわしが言ったら、お前さんたちはどう思う？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ユーネクテス",
-          "speakerId": "char_416_zumama",
-          "text": "そうなのか！？　じいや、なぜ今まで教えてくれなかったんだ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "大祭司",
-          "speakerId": "avg_npc_074",
-          "text": "そんなこと、今のお前さんたちにとっては重要じゃないからじゃ。人は想像以上に逞しい。急に伝統が一つ途絶えたからといって、死ぬことはない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "大祭司",
-          "speakerId": "avg_npc_074",
-          "text": "伝統など、元々は人々の団結力を高めるための決めごとに過ぎん。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "大祭司",
-          "speakerId": "avg_npc_074",
-          "text": "じゃがその決めごとが数十年も続けば、なぜかそれは「伝統」に変わり、不可侵なもの、破ってはいかんものになる。全くもって理解に苦しむわい。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "大祭司",
-          "speakerId": "avg_npc_074",
-          "text": "実際そんなことは毛頭ないんじゃよ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "大祭司",
-          "speakerId": "avg_npc_074",
-          "text": "じゃからこそ、お前さんが霊殿をぶっ壊すと言ったとき、わしは両手を挙げて……いや、両手両足と尻尾を挙げて賛成したのじゃ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "大祭司",
-          "speakerId": "avg_npc_074",
-          "text": "むむ、両手両足を挙げたら尻尾を挙げられんか……うーむ？　うつ伏せになればできるかの？　試してみるぞい！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ユーネクテス",
-          "speakerId": "char_416_zumama",
-          "text": "……そうか、わかった。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "二百年前がどうとかって、お前は一体何歳なんだ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "大祭司",
-          "speakerId": "avg_npc_074",
-          "text": "ハハッ、さあのぅ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "大祭司",
-          "speakerId": "avg_npc_074",
-          "text": "歳なんて、お前さんたちが時間を記録するために作った概念じゃ。わしには関係ない！　まぁいつ生まれたか忘れただけなんじゃが！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "そうかよ……でもいずれにしても、やっぱ誰かに大族長になってもらわねぇとな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "イナム",
-          "speakerId": "avg_npc_075",
-          "text": "ねぇ、ガヴィルとズゥママがもうひと試合やるって話を聞いたんだけど、それはどうなったの？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "おっ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "イナム",
-          "speakerId": "avg_npc_075",
-          "text": "何見つめてんのよ、気持ち悪い。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "イナム、お前大族長になる気はねぇか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "イナム",
-          "speakerId": "avg_npc_075",
-          "text": "はい？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "つまり、一連の事件を経て、エンジンを取り戻した後に、緊急処置を施してなんとか帰途についたと。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "そ、そういうこと！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "ドクター、確か私は君に、飛行ユニットは貴重な乗り物だと言ったはずだが。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "アハハ、あのときはカッとなってたからノーカウントだ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ユーネクテス",
+      "speakerId": "char_416_zumama",
+      "isRemote": false,
+      "text": "確かに……部族を放っておくわけにはいかないか。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "大祭司",
+      "speakerId": "avg_npc_074",
+      "isRemote": false,
+      "text": "うむ、それに関しては心配無用じゃろう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アダクリス人A",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "ガヴィルにゃ負けるが、やっぱビッグ・アグリーもつえーな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アダクリス人B",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "そうだそうだ、オレもああいうのを造ってみてぇな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アダクリス人C",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "どうせ霊殿は壊されちまったんだし、いっそ機械造りで勝負して、すげぇモンを造ったヤツが大族長になるってのはどうだ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アダクリス人D",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "いやいや、やっぱり喧嘩の方が気持ちいいぜ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アダクリス人C",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "うーん、一理ある、喧嘩も捨てがたいな。どうすりゃいいんだ……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アダクリス人A",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "ったく、アホかお前らは。喧嘩しながら機械造りの勝負もやる。それでいいだろ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アダクリス人たち",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "それだ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "大祭司",
+      "speakerId": "avg_npc_074",
+      "isRemote": false,
+      "text": "ほれ、心配するだけ時間の無駄じゃて。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "大祭司",
+      "speakerId": "avg_npc_074",
+      "isRemote": false,
+      "text": "わしの経験則じゃが、人々は想像を超える早さで環境に適応していくものじゃ。統率者が未来のことで頭を悩ませていようがお構いなしでの。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "大祭司",
+      "speakerId": "avg_npc_074",
+      "isRemote": false,
+      "text": "例えばじゃ、二百年前にとあるティアカウが勝手に初代大族長を名乗り始めて、それから自然と大族長選挙の習慣が生まれた……とわしが言ったら、お前さんたちはどう思う？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ユーネクテス",
+      "speakerId": "char_416_zumama",
+      "isRemote": false,
+      "text": "そうなのか！？　じいや、なぜ今まで教えてくれなかったんだ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "大祭司",
+      "speakerId": "avg_npc_074",
+      "isRemote": false,
+      "text": "そんなこと、今のお前さんたちにとっては重要じゃないからじゃ。人は想像以上に逞しい。急に伝統が一つ途絶えたからといって、死ぬことはない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "大祭司",
+      "speakerId": "avg_npc_074",
+      "isRemote": false,
+      "text": "伝統など、元々は人々の団結力を高めるための決めごとに過ぎん。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "大祭司",
+      "speakerId": "avg_npc_074",
+      "isRemote": false,
+      "text": "じゃがその決めごとが数十年も続けば、なぜかそれは「伝統」に変わり、不可侵なもの、破ってはいかんものになる。全くもって理解に苦しむわい。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "大祭司",
+      "speakerId": "avg_npc_074",
+      "isRemote": false,
+      "text": "実際そんなことは毛頭ないんじゃよ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "大祭司",
+      "speakerId": "avg_npc_074",
+      "isRemote": false,
+      "text": "じゃからこそ、お前さんが霊殿をぶっ壊すと言ったとき、わしは両手を挙げて……いや、両手両足と尻尾を挙げて賛成したのじゃ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "大祭司",
+      "speakerId": "avg_npc_074",
+      "isRemote": false,
+      "text": "むむ、両手両足を挙げたら尻尾を挙げられんか……うーむ？　うつ伏せになればできるかの？　試してみるぞい！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ユーネクテス",
+      "speakerId": "char_416_zumama",
+      "isRemote": false,
+      "text": "……そうか、わかった。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "二百年前がどうとかって、お前は一体何歳なんだ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "大祭司",
+      "speakerId": "avg_npc_074",
+      "isRemote": false,
+      "text": "ハハッ、さあのぅ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "大祭司",
+      "speakerId": "avg_npc_074",
+      "isRemote": false,
+      "text": "歳なんて、お前さんたちが時間を記録するために作った概念じゃ。わしには関係ない！　まぁいつ生まれたか忘れただけなんじゃが！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "そうかよ……でもいずれにしても、やっぱ誰かに大族長になってもらわねぇとな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "イナム",
+      "speakerId": "avg_npc_075",
+      "isRemote": false,
+      "text": "ねぇ、ガヴィルとズゥママがもうひと試合やるって話を聞いたんだけど、それはどうなったの？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "おっ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "イナム",
+      "speakerId": "avg_npc_075",
+      "isRemote": false,
+      "text": "何見つめてんのよ、気持ち悪い。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "イナム、お前大族長になる気はねぇか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "イナム",
+      "speakerId": "avg_npc_075",
+      "isRemote": false,
+      "text": "はい？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_corridor"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "つまり、一連の事件を経て、エンジンを取り戻した後に、緊急処置を施してなんとか帰途についたと。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "そ、そういうこと！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "ドクター、確か私は君に、飛行ユニットは貴重な乗り物だと言ったはずだが。"
     },
     {
       "type": "choice",
@@ -1128,93 +1276,105 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "飛行装置の被害が修理可能な範疇に収まってる以上、私もとやかく言うつもりはない。ただし修理の費用は君とブレイズの給料から差し引かせてもらう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "えっ、私も？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "エリートオペレーターは多くの責任を担うものだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "はぁ、わかったよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "連れてきたあの三人については、オペレーターになる素質があると君たちが判断したのであれば、ドクターに任せておけばいい。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "ガヴィル、今回の里帰りは満足のいくものだったか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "そりゃあ満足さ。アタシの予想を上回る出来事の連続で、楽しかったよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "ドクターが君を置いてきた場合のことも考えていたのだがな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "どういうことだ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "君が故郷に残る可能性も考えていたということだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "あぁ？　水くせぇこと言わないでくれよケルシー先生。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "君がまだ外の生活に馴染んでいないことは明白だ。君は相変わらず自分のやり方で、毎日この大地に起きる出来事と激しい衝突を繰り返しているからな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "言い方を変えれば、君がある日突然、休職や脱退の申請を出しても私は驚かないということだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "なあドクター、よくわかんねぇけど、ケルシー先生はアタシのことを気にかけてくれてんのか？"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "飛行装置の被害が修理可能な範疇に収まってる以上、私もとやかく言うつもりはない。ただし修理の費用は君とブレイズの給料から差し引かせてもらう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "えっ、私も？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "エリートオペレーターは多くの責任を担うものだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "はぁ、わかったよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "連れてきたあの三人については、オペレーターになる素質があると君たちが判断したのであれば、ドクターに任せておけばいい。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "ガヴィル、今回の里帰りは満足のいくものだったか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "そりゃあ満足さ。アタシの予想を上回る出来事の連続で、楽しかったよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "ドクターが君を置いてきた場合のことも考えていたのだがな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "どういうことだ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "君が故郷に残る可能性も考えていたということだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "あぁ？　水くせぇこと言わないでくれよケルシー先生。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "君がまだ外の生活に馴染んでいないことは明白だ。君は相変わらず自分のやり方で、毎日この大地に起きる出来事と激しい衝突を繰り返しているからな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "言い方を変えれば、君がある日突然、休職や脱退の申請を出しても私は驚かないということだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "なあドクター、よくわかんねぇけど、ケルシー先生はアタシのことを気にかけてくれてんのか？"
     },
     {
       "type": "choice",
@@ -1227,6 +1387,7 @@
               "type": "dialogue",
               "speakerName": "ケルシー",
               "speakerId": "char_003_kalts",
+              "isRemote": false,
               "text": "Dr.{@nickname}、ほかに用がなければ、もう退出して構わない。"
             }
           ]
@@ -1239,12 +1400,14 @@
               "type": "dialogue",
               "speakerName": "ガヴィル",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "チッ。お前はこういうとき黙ってばっかだな。"
             },
             {
               "type": "dialogue",
               "speakerName": "ガヴィル",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "まぁ、ケルシー先生の言葉は良心的に解釈しとくぜ。"
             }
           ]
@@ -1257,223 +1420,260 @@
               "type": "dialogue",
               "speakerName": "ガヴィル",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "ドクターでもよくわからないのか。さすがケルシー先生。"
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "ケルシー先生、アタシはここを出ていくつもりはないぜ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "あのとき故郷を離れたのは、医者になりたいって思ったからだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "まぁ当時のアタシは、本当に医者になれるとまでは思ってなかったがな。だけど今となっては、あのときの自分の決定に感謝してる。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "現代医学の見地に立ってみれば、アタシの故郷は医者がいないのと同じだ。何かを治療するにしても、簡単な民間療法くらいしか打つ手はない。病気になったら命を天に任せるしかねぇんだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "あそこを出なかったら、アタシは、この大地がどんなもんかだって知ることはできなかった。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "多くの病人は救えるってことも、鉱石病がこれほど忌み嫌われる病気だってことも知り得なかった。……人を救うのは、殴るのと同じくらい楽しいってこともな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "外は確かに複雑なところだ。目的のわかんねぇヤツらも多いし、なんで戦ってんのかわかんねぇこともある。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "だが今のアタシは医者だ。どんなヤツが現れようが、理解できないことがあろうが、全員の鉱石病を治してやるってのがアタシの理想さ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "アタシが医学に励むなら、ロドス以上にふさわしい場所はあると思うか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "おそらくないだろう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "だからアタシはここにいる。つーかケルシー先生たちの方が、毎日アタシの何倍も疲れてんだろ。アタシのことなんか気にかけなくていいよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "むしろこっちがケルシー先生のことを気にかけといてやりたいくらいさ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "アタシがいない間、無理してアタシの仕事まで引き受けたりしてないよな？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "していないさ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "それならよし。じゃあアタシはズゥママたちの鉱石病検査に行ってくるぜ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "じゃあ私もクマールの様子を見に行こうっと。あ、今はフリントって名前だっけ。あの子言葉が通じないから、また誰かと喧嘩になってるかも……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "ドクター、トミミは一般常識の授業を受けてるはずだ。もうすぐ終わると思うから、様子を見に行ってやってくれ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "ガヴィル。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "ん、なんだ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "おかえり。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_003_kalts",
-          "text": "ハハッ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "あれ、私には！？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "君の次の任務は先週から決まっている。本当は、もうかなり遅延しているんだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "ええ……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "君にとって、今回はいささか常識外れな旅だっただろう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "だが今回の出来事は、この大地が活力に満ちている証明でもある。ガヴィルの性格と同じようにな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "長い年月の中で、多くの物事は摩耗し本来の色を失っていく。かつての当たり前は、今となっては得難いものになっている。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "我々は、人混みの隙間から漏れ出す光を探りながら、それを常日頃から意識しておかねばならない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "手が届かないと思っているものも、目を凝らせば、案外近くにあるものだ。そのことに、君や、今回の旅に同行したオペレーターたちが気付いてくれれば、と思う。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "クロージャ",
-          "speakerId": null,
-          "text": "ケルシー、会議の時間だよー！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "ああ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "Dr.{@nickname}、君にはまだ多くの仕事が残っている。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "今回の休暇で十分癒されただろう君が、今まで以上に尽力してくれることを期待している。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "ケルシー先生、アタシはここを出ていくつもりはないぜ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "あのとき故郷を離れたのは、医者になりたいって思ったからだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "まぁ当時のアタシは、本当に医者になれるとまでは思ってなかったがな。だけど今となっては、あのときの自分の決定に感謝してる。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "現代医学の見地に立ってみれば、アタシの故郷は医者がいないのと同じだ。何かを治療するにしても、簡単な民間療法くらいしか打つ手はない。病気になったら命を天に任せるしかねぇんだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "あそこを出なかったら、アタシは、この大地がどんなもんかだって知ることはできなかった。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "多くの病人は救えるってことも、鉱石病がこれほど忌み嫌われる病気だってことも知り得なかった。……人を救うのは、殴るのと同じくらい楽しいってこともな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "外は確かに複雑なところだ。目的のわかんねぇヤツらも多いし、なんで戦ってんのかわかんねぇこともある。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "だが今のアタシは医者だ。どんなヤツが現れようが、理解できないことがあろうが、全員の鉱石病を治してやるってのがアタシの理想さ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "アタシが医学に励むなら、ロドス以上にふさわしい場所はあると思うか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "おそらくないだろう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "だからアタシはここにいる。つーかケルシー先生たちの方が、毎日アタシの何倍も疲れてんだろ。アタシのことなんか気にかけなくていいよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "むしろこっちがケルシー先生のことを気にかけといてやりたいくらいさ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "アタシがいない間、無理してアタシの仕事まで引き受けたりしてないよな？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "していないさ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "それならよし。じゃあアタシはズゥママたちの鉱石病検査に行ってくるぜ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "じゃあ私もクマールの様子を見に行こうっと。あ、今はフリントって名前だっけ。あの子言葉が通じないから、また誰かと喧嘩になってるかも……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "ドクター、トミミは一般常識の授業を受けてるはずだ。もうすぐ終わると思うから、様子を見に行ってやってくれ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "ガヴィル。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "ん、なんだ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "おかえり。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "ハハッ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "あれ、私には！？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "君の次の任務は先週から決まっている。本当は、もうかなり遅延しているんだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "ええ……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_corridor"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "君にとって、今回はいささか常識外れな旅だっただろう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "だが今回の出来事は、この大地が活力に満ちている証明でもある。ガヴィルの性格と同じようにな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "長い年月の中で、多くの物事は摩耗し本来の色を失っていく。かつての当たり前は、今となっては得難いものになっている。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "我々は、人混みの隙間から漏れ出す光を探りながら、それを常日頃から意識しておかねばならない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "手が届かないと思っているものも、目を凝らせば、案外近くにあるものだ。そのことに、君や、今回の旅に同行したオペレーターたちが気付いてくれれば、と思う。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クロージャ",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "ケルシー、会議の時間だよー！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "ああ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "Dr.{@nickname}、君にはまだ多くの仕事が残っている。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "今回の休暇で十分癒されただろう君が、今まで以上に尽力してくれることを期待している。"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": [

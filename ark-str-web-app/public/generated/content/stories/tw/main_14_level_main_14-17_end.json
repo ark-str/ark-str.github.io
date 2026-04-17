@@ -11,11 +11,19 @@
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "bg_corridor"
+    },
+    {
       "type": "narration",
       "text": "我回到了這裡。\n自己好像已經離開了很久，很久都沒有回到這艘船上，睡過一個好覺。\n博士，凱爾希醫生，推進之王小姐……\n外面的戰爭停止了嗎？終於，可以休息一會了。\n可以去餐廳喝一碗熱乎乎的蔬菜湯，然後回到宿舍躺在自己的床上。\n特蕾西婭小姐呢？這個時候，她應該——\n……\n不……不對……\n特蕾西婭小姐已經離開了。"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_room_2"
     },
     {
       "type": "narration",
@@ -25,36 +33,49 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
       "type": "dialogue",
       "speakerName": "遙遠的聲音",
       "speakerId": null,
+      "isRemote": false,
       "text": "……博士！"
     },
     {
       "type": "dialogue",
       "speakerName": "變近的聲音",
       "speakerId": null,
+      "isRemote": false,
       "text": "你能聽到我的聲音嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "凱爾希",
       "speakerId": null,
+      "isRemote": false,
       "text": "博士！"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_corridor"
+    },
+    {
       "type": "dialogue",
       "speakerName": "凱爾希",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "博士……"
     },
     {
       "type": "dialogue",
       "speakerName": "凱爾希",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "你果然，在這裡……"
     },
     {
@@ -78,44 +99,45 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "你看起來身體狀況不是很好。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "我可能沒有辦法在這裡對你進行身體檢查，博士，請保持清醒，看著我。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "你……有沒有回想起什麼？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "你聽到女性嚴厲但關懷的話語，努力地睁大眼睛。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "視野漸漸清晰，身體的部分機能也正在逐漸恢復。\n你緩緩開口——"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "你看起來身體狀況不是很好。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "我可能沒有辦法在這裡對你進行身體檢查，博士，請保持清醒，看著我。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "你……有沒有回想起什麼？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "你聽到女性嚴厲但關懷的話語，努力地睁大眼睛。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "視野漸漸清晰，身體的部分機能也正在逐漸恢復。\n你緩緩開口——"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -130,25 +152,24 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "——！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "破碎的意識拼湊起來，斷裂的思緒恢復條理，你現在可以確信，自己正站在堅實的地面上。\n你環顧四周，你很確定這就是你熟悉的環境，你在這裡度過了很長一段時光。\n而眼前的女性看向你的眼神變得陌生，甚至是，帶有敵意。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "——！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "破碎的意識拼湊起來，斷裂的思緒恢復條理，你現在可以確信，自己正站在堅實的地面上。\n你環顧四周，你很確定這就是你熟悉的環境，你在這裡度過了很長一段時光。\n而眼前的女性看向你的眼神變得陌生，甚至是，帶有敵意。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -168,16 +189,25 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "narration",
-          "text": "我是羅德島的Dr.{@nickname}。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
+      "type": "narration",
+      "text": "我是羅德島的Dr.{@nickname}。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_corridor"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -192,30 +222,31 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "你……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "……看上去，你還記得你是誰。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "阿米婭不在我們身邊，可以確定的是，這一定不是原本的羅德島。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "你……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "……看上去，你還記得你是誰。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "阿米婭不在我們身邊，可以確定的是，這一定不是原本的羅德島。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -230,24 +261,24 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "來到這裡後我見到的只有你。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "你對這一切，真的毫無頭緒？"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "來到這裡後我見到的只有你。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "你對這一切，真的毫無頭緒？"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -257,18 +288,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "……"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -283,87 +313,101 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "……一定程度的戒備在這種情況下是必要的。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "小心，博士。無論如何，我們要離開這件事。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "這裡不是我們熟悉的環境，不知道會遇到什麼意外狀況。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "我還是會盡量保護你，不要離我太遠。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "克洛絲",
-          "speakerId": "char_124_kroos",
-          "text": "不……不行了……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "克洛絲",
-          "speakerId": "char_124_kroos",
-          "text": "連下個月的運動量都要用光了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "芬",
-          "speakerId": "char_123_fang",
-          "text": "不可以這樣，克洛絲！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "芬",
-          "speakerId": "char_123_fang",
-          "text": "現在是實戰演習，要把訓練室當作戰場！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "米格魯",
-          "speakerId": "char_122_beagle",
-          "text": "隊長打人好狠……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "芬",
-          "speakerId": "char_123_fang",
-          "text": "都打起精神來，教官給我們安排的訓練任務還有很多。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "克洛絲",
-          "speakerId": "char_124_kroos",
-          "text": "有什麼關係嘛……反正教官又不在——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "克洛絲",
-          "speakerId": "char_124_kroos",
-          "text": "啊，是博士！"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "……一定程度的戒備在這種情況下是必要的。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "小心，博士。無論如何，我們要離開這件事。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "這裡不是我們熟悉的環境，不知道會遇到什麼意外狀況。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "我還是會盡量保護你，不要離我太遠。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_trainingcom"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "克洛絲",
+      "speakerId": "char_124_kroos",
+      "isRemote": false,
+      "text": "不……不行了……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "克洛絲",
+      "speakerId": "char_124_kroos",
+      "isRemote": false,
+      "text": "連下個月的運動量都要用光了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "芬",
+      "speakerId": "char_123_fang",
+      "isRemote": false,
+      "text": "不可以這樣，克洛絲！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "芬",
+      "speakerId": "char_123_fang",
+      "isRemote": false,
+      "text": "現在是實戰演習，要把訓練室當作戰場！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "米格魯",
+      "speakerId": "char_122_beagle",
+      "isRemote": false,
+      "text": "隊長打人好狠……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "芬",
+      "speakerId": "char_123_fang",
+      "isRemote": false,
+      "text": "都打起精神來，教官給我們安排的訓練任務還有很多。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "克洛絲",
+      "speakerId": "char_124_kroos",
+      "isRemote": false,
+      "text": "有什麼關係嘛……反正教官又不在——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "克洛絲",
+      "speakerId": "char_124_kroos",
+      "isRemote": false,
+      "text": "啊，是博士！"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -378,105 +422,115 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "芬",
-          "speakerId": "char_123_fang",
-          "text": "克洛絲！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "克洛絲",
-          "speakerId": "char_124_kroos",
-          "text": "沒關係的，博士一定不會跟教官打小報告的。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "克洛絲",
-          "speakerId": "char_124_kroos",
-          "text": "先在這裡，舒服的躺上一會——"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嚴厲的聲音",
-          "speakerId": null,
-          "text": "我記得給你們安排的訓練任務不是潛行偽裝吧？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "芬",
-          "speakerId": "char_123_fang",
-          "text": "……完了。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "A1小隊全體都有，立正！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "小隊眾人",
-          "speakerId": null,
-          "text": "是！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "每個人，繞場地跑一百圈，然後體能訓練組合五十次，現在！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "小隊眾人",
-          "speakerId": null,
-          "text": "是……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "讓你見笑了，博士。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "羅德島確實有太長時間沒有經歷過戰事，這些年輕的戰士們有些懈怠了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "我會負責讓她們緊張起來。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "芬",
+      "speakerId": "char_123_fang",
+      "isRemote": false,
+      "text": "克洛絲！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "克洛絲",
+      "speakerId": "char_124_kroos",
+      "isRemote": false,
+      "text": "沒關係的，博士一定不會跟教官打小報告的。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "克洛絲",
+      "speakerId": "char_124_kroos",
+      "isRemote": false,
+      "text": "先在這裡，舒服的躺上一會——"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嚴厲的聲音",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "我記得給你們安排的訓練任務不是潛行偽裝吧？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "芬",
+      "speakerId": "char_123_fang",
+      "isRemote": false,
+      "text": "……完了。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "A1小隊全體都有，立正！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "小隊眾人",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "是！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "每個人，繞場地跑一百圈，然後體能訓練組合五十次，現在！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "小隊眾人",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "是……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "讓你見笑了，博士。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "羅德島確實有太長時間沒有經歷過戰事，這些年輕的戰士們有些懈怠了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "我會負責讓她們緊張起來。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -486,8 +540,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -497,36 +550,38 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "當然，但也必須為可能到來的危險做準備。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "沒事的，這裡的訓練不勞你費心，我會處理好的。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "這段時間你辛苦了，博士，去休息吧。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "放心，我們都會守在這裡。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "當然，但也必須為可能到來的危險做準備。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "沒事的，這裡的訓練不勞你費心，我會處理好的。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "這段時間你辛苦了，博士，去休息吧。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "放心，我們都會守在這裡。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -541,24 +596,24 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "我看到的畫面與你一致，他們確實存在於此。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "不會有這樣清晰的夢境，這也並非你的回憶。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "我看到的畫面與你一致，他們確實存在於此。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "不會有這樣清晰的夢境，這也並非你的回憶。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -573,39 +628,45 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "保持清醒，博士。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "我們還要繼續向前走。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Outcast",
-          "speakerId": "avg_npc_245_1",
-          "text": "稀客，博士。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Outcast",
-          "speakerId": "avg_npc_245_1",
-          "text": "有時間坐下來喝一杯嗎？今晚所有的酒都算在我的帳上。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "保持清醒，博士。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "我們還要繼續向前走。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_bar_1"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Outcast",
+      "speakerId": "avg_npc_245_1",
+      "isRemote": false,
+      "text": "稀客，博士。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Outcast",
+      "speakerId": "avg_npc_245_1",
+      "isRemote": false,
+      "text": "有時間坐下來喝一杯嗎？今晚所有的酒都算在我的帳上。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -620,33 +681,34 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Touch",
-          "speakerId": "avg_npc_249_1",
-          "text": "你忘了嗎博士，今天舉辦的是Outcast的退休儀式。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sharp",
-          "speakerId": "avg_npc_252",
-          "text": "敬我們尊敬的老前輩。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Outcast",
-          "speakerId": "avg_npc_245_1",
-          "text": "夠了Sharp，你也沒比我小多少。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Touch",
+      "speakerId": "avg_npc_249_1",
+      "isRemote": false,
+      "text": "你忘了嗎博士，今天舉辦的是Outcast的退休儀式。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sharp",
+      "speakerId": "avg_npc_252",
+      "isRemote": false,
+      "text": "敬我們尊敬的老前輩。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Outcast",
+      "speakerId": "avg_npc_245_1",
+      "isRemote": false,
+      "text": "夠了Sharp，你也沒比我小多少。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -661,183 +723,211 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Pith",
-          "speakerId": "avg_npc_095",
-          "text": "我們會記得你的事蹟和精湛的射術的，敬你。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "煌",
-          "speakerId": "char_017_homura",
-          "text": "Outcast也要走了……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "煌",
-          "speakerId": "char_017_homura",
-          "text": "以後再也沒有人，在週末晚上陪我……嗝……喝酒了……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Outcast",
-          "speakerId": "avg_npc_245_1",
-          "text": "嘿，我只是退休，拉特蘭的追悼會都不會這麼傷感。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Outcast",
-          "speakerId": "avg_npc_245_1",
-          "text": "再說，就算我今晚醉過去，明天一早再也沒有醒來，我這一生也已經足夠精彩了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Outcast",
-          "speakerId": "avg_npc_245_1",
-          "text": "與大家同行的時光是我最珍貴的寶物，我會把這段回憶連我的守護銃一起帶到墳墓裡去。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Outcast",
-          "speakerId": "avg_npc_245_1",
-          "text": "只是以後教年輕人射擊的工作就交給巡林者了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "煌",
-          "speakerId": "char_017_homura",
-          "text": "你醉了Outcast，他用的是銃，怎麼能教——嗝——薩科塔的弩。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Pith",
-          "speakerId": "avg_npc_095",
-          "text": "少喝點，都說傻話了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Outcast",
-          "speakerId": "avg_npc_245_1",
-          "text": "不都是睜一隻眼閉一隻眼，沒太大差別。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Outcast",
-          "speakerId": "avg_npc_245_1",
-          "text": "哦，今晚酒吧的客人不止我們呢。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "因陀羅",
-          "speakerId": "avg_155_tiger_1",
-          "text": "認真點達格達！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "因陀羅",
-          "speakerId": "avg_155_tiger_1",
-          "text": "讓我瞧瞧，接受冊封的塔樓騎士的拳頭到底有多重！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "達格達",
-          "speakerId": "avg_npc_396_1",
-          "text": "……這是你自找的。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "貝爾德",
-          "speakerId": "avg_npc_863_1",
-          "text": "嘿！這裡不是拳館，我們是來羅德島做客的，別太過分！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿勒黛",
-          "speakerId": "avg_npc_397_1",
-          "text": "我也有過這樣的時候。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "維娜",
-          "speakerId": "avg_npc_407_1",
-          "text": "正式成為蒸汽騎士，就要和我們這些街頭混混決裂了？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿勒黛",
-          "speakerId": "avg_npc_397_1",
-          "text": "別打趣我……你真的想好了，維娜？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "維娜",
-          "speakerId": "avg_npc_407_1",
-          "text": "沒什麼好猶豫的，在諾伯特區的這段日子是我有生以來最開心的時光，我沒有必要再回到那座宮殿裡去。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "維娜",
-          "speakerId": "avg_npc_407_1",
-          "text": "亞歷山德莉娜·維娜·維多利亞是王室後裔，也是一名普通的、光榮的維多利亞人。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "維娜",
-          "speakerId": "avg_npc_407_1",
-          "text": "阿勒黛，今後你就是光榮的蒸汽騎士，而我則是光榮的“推進之王”。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "維娜",
-          "speakerId": "avg_npc_407_1",
-          "text": "我相信現在這樣的生活，就是最好的安排。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿勒黛",
-          "speakerId": "avg_npc_397_1",
-          "text": "和平的生活，彌足珍貴。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "維娜",
-          "speakerId": "avg_npc_407_1",
-          "text": "敬生活。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿勒黛",
-          "speakerId": "avg_npc_397_1",
-          "text": "敬維多利亞。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "維娜",
-          "speakerId": "avg_npc_407_1",
-          "text": "等你有心情的時候，我們到處走走吧。比如說，一起去拿石頭丟那些公爵家的窗戶怎麼樣？"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Pith",
+      "speakerId": "avg_npc_095",
+      "isRemote": false,
+      "text": "我們會記得你的事蹟和精湛的射術的，敬你。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "煌",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "Outcast也要走了……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "煌",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "以後再也沒有人，在週末晚上陪我……嗝……喝酒了……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Outcast",
+      "speakerId": "avg_npc_245_1",
+      "isRemote": false,
+      "text": "嘿，我只是退休，拉特蘭的追悼會都不會這麼傷感。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Outcast",
+      "speakerId": "avg_npc_245_1",
+      "isRemote": false,
+      "text": "再說，就算我今晚醉過去，明天一早再也沒有醒來，我這一生也已經足夠精彩了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Outcast",
+      "speakerId": "avg_npc_245_1",
+      "isRemote": false,
+      "text": "與大家同行的時光是我最珍貴的寶物，我會把這段回憶連我的守護銃一起帶到墳墓裡去。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Outcast",
+      "speakerId": "avg_npc_245_1",
+      "isRemote": false,
+      "text": "只是以後教年輕人射擊的工作就交給巡林者了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "煌",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "你醉了Outcast，他用的是銃，怎麼能教——嗝——薩科塔的弩。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Pith",
+      "speakerId": "avg_npc_095",
+      "isRemote": false,
+      "text": "少喝點，都說傻話了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Outcast",
+      "speakerId": "avg_npc_245_1",
+      "isRemote": false,
+      "text": "不都是睜一隻眼閉一隻眼，沒太大差別。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Outcast",
+      "speakerId": "avg_npc_245_1",
+      "isRemote": false,
+      "text": "哦，今晚酒吧的客人不止我們呢。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_bar_1"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "因陀羅",
+      "speakerId": "avg_155_tiger_1",
+      "isRemote": false,
+      "text": "認真點達格達！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "因陀羅",
+      "speakerId": "avg_155_tiger_1",
+      "isRemote": false,
+      "text": "讓我瞧瞧，接受冊封的塔樓騎士的拳頭到底有多重！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "達格達",
+      "speakerId": "avg_npc_396_1",
+      "isRemote": false,
+      "text": "……這是你自找的。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "貝爾德",
+      "speakerId": "avg_npc_863_1",
+      "isRemote": false,
+      "text": "嘿！這裡不是拳館，我們是來羅德島做客的，別太過分！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿勒黛",
+      "speakerId": "avg_npc_397_1",
+      "isRemote": false,
+      "text": "我也有過這樣的時候。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "維娜",
+      "speakerId": "avg_npc_407_1",
+      "isRemote": false,
+      "text": "正式成為蒸汽騎士，就要和我們這些街頭混混決裂了？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿勒黛",
+      "speakerId": "avg_npc_397_1",
+      "isRemote": false,
+      "text": "別打趣我……你真的想好了，維娜？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "維娜",
+      "speakerId": "avg_npc_407_1",
+      "isRemote": false,
+      "text": "沒什麼好猶豫的，在諾伯特區的這段日子是我有生以來最開心的時光，我沒有必要再回到那座宮殿裡去。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "維娜",
+      "speakerId": "avg_npc_407_1",
+      "isRemote": false,
+      "text": "亞歷山德莉娜·維娜·維多利亞是王室後裔，也是一名普通的、光榮的維多利亞人。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "維娜",
+      "speakerId": "avg_npc_407_1",
+      "isRemote": false,
+      "text": "阿勒黛，今後你就是光榮的蒸汽騎士，而我則是光榮的“推進之王”。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "維娜",
+      "speakerId": "avg_npc_407_1",
+      "isRemote": false,
+      "text": "我相信現在這樣的生活，就是最好的安排。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿勒黛",
+      "speakerId": "avg_npc_397_1",
+      "isRemote": false,
+      "text": "和平的生活，彌足珍貴。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "維娜",
+      "speakerId": "avg_npc_407_1",
+      "isRemote": false,
+      "text": "敬生活。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿勒黛",
+      "speakerId": "avg_npc_397_1",
+      "isRemote": false,
+      "text": "敬維多利亞。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "維娜",
+      "speakerId": "avg_npc_407_1",
+      "isRemote": false,
+      "text": "等你有心情的時候，我們到處走走吧。比如說，一起去拿石頭丟那些公爵家的窗戶怎麼樣？"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -850,12 +940,14 @@
               "type": "dialogue",
               "speakerName": "凱爾希",
               "speakerId": "avg_003_kalts_1",
+              "isRemote": false,
               "text": "你還記得他們每個人，你真切地為他們的遭遇感到遺憾。"
             },
             {
               "type": "dialogue",
               "speakerName": "凱爾希",
               "speakerId": "avg_003_kalts_1",
+              "isRemote": false,
               "text": "否則你不會看到這些畫面。"
             }
           ]
@@ -868,12 +960,14 @@
               "type": "dialogue",
               "speakerName": "凱爾希",
               "speakerId": "avg_003_kalts_1",
+              "isRemote": false,
               "text": "你現在心情如何，博士？"
             },
             {
               "type": "dialogue",
               "speakerName": "凱爾希",
               "speakerId": "avg_003_kalts_1",
+              "isRemote": false,
               "text": "欣慰，困惑還是憤怒？"
             }
           ]
@@ -886,18 +980,19 @@
               "type": "dialogue",
               "speakerName": "凱爾希",
               "speakerId": "avg_003_kalts_1",
+              "isRemote": false,
               "text": "這些都是你的潛意識中你所期待的畫面。"
             },
             {
               "type": "dialogue",
               "speakerName": "凱爾希",
               "speakerId": "avg_003_kalts_1",
+              "isRemote": false,
               "text": "你希望這一切都是真的，對嗎？"
             }
           ]
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -907,39 +1002,45 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "只有你自己會知道。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "繼續走吧，博士。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "無論你看到什麼，直面它，跨過它。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "塔露拉",
-          "speakerId": "avg_npc_078",
-          "text": "博士，好久不見，我回來了。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "只有你自己會知道。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "繼續走吧，博士。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "無論你看到什麼，直面它，跨過它。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_corridor"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "塔露拉",
+      "speakerId": "avg_npc_078",
+      "isRemote": false,
+      "text": "博士，好久不見，我回來了。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -954,30 +1055,31 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "塔露拉",
-          "speakerId": "avg_npc_078",
-          "text": "呵呵，只是一段時間不見，不認識我了？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "塔露拉",
-          "speakerId": "avg_npc_078",
-          "text": "這次去烏薩斯北邊建立感染者收治中心，還是花了不少功夫。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "塔露拉",
-          "speakerId": "avg_npc_078",
-          "text": "還好城鎮的工人很支持我們，當地的領主不得不妥協，我們爭取到了足夠的土地。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "塔露拉",
+      "speakerId": "avg_npc_078",
+      "isRemote": false,
+      "text": "呵呵，只是一段時間不見，不認識我了？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "塔露拉",
+      "speakerId": "avg_npc_078",
+      "isRemote": false,
+      "text": "這次去烏薩斯北邊建立感染者收治中心，還是花了不少功夫。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "塔露拉",
+      "speakerId": "avg_npc_078",
+      "isRemote": false,
+      "text": "還好城鎮的工人很支持我們，當地的領主不得不妥協，我們爭取到了足夠的土地。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -987,24 +1089,24 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "塔露拉",
-          "speakerId": "avg_npc_078",
-          "text": "博士，你又在開玩笑了，還是沒有睡醒？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "塔露拉",
-          "speakerId": "avg_npc_078",
-          "text": "整合運動不存在的話，和羅德島合作，在烏薩斯幫助治療感染者的又是誰？"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "塔露拉",
+      "speakerId": "avg_npc_078",
+      "isRemote": false,
+      "text": "博士，你又在開玩笑了，還是沒有睡醒？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "塔露拉",
+      "speakerId": "avg_npc_078",
+      "isRemote": false,
+      "text": "整合運動不存在的話，和羅德島合作，在烏薩斯幫助治療感染者的又是誰？"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1014,33 +1116,34 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "塔露拉",
-          "speakerId": "avg_npc_078",
-          "text": "怎麼突然提起那條死掉的“黑蛇”？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "塔露拉",
-          "speakerId": "avg_npc_078",
-          "text": "是又想讓我說謝謝嗎？行啊。畢竟，是羅德島幫我和烏薩斯永遠擺脫了那個禍首，給無數人的未來起了個好頭。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "冰冷的聲音",
-          "speakerId": null,
-          "text": "博士。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "塔露拉",
+      "speakerId": "avg_npc_078",
+      "isRemote": false,
+      "text": "怎麼突然提起那條死掉的“黑蛇”？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "塔露拉",
+      "speakerId": "avg_npc_078",
+      "isRemote": false,
+      "text": "是又想讓我說謝謝嗎？行啊。畢竟，是羅德島幫我和烏薩斯永遠擺脫了那個禍首，給無數人的未來起了個好頭。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "冰冷的聲音",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "博士。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1055,18 +1158,17 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "霜星",
-          "speakerId": "avg_1505_frstar_1",
-          "text": "博士？"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "霜星",
+      "speakerId": "avg_1505_frstar_1",
+      "isRemote": false,
+      "text": "博士？"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1076,8 +1178,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1087,8 +1188,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1098,24 +1198,24 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "霜星",
-          "speakerId": "avg_1505_frstar_1",
-          "text": "……為什麼？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "霜星",
-          "speakerId": "avg_1505_frstar_1",
-          "text": "不是你要我完成任務之後，立刻來找你報告的嗎？"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "霜星",
+      "speakerId": "avg_1505_frstar_1",
+      "isRemote": false,
+      "text": "……為什麼？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "霜星",
+      "speakerId": "avg_1505_frstar_1",
+      "isRemote": false,
+      "text": "不是你要我完成任務之後，立刻來找你報告的嗎？"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1125,18 +1225,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "霜星",
-          "speakerId": "avg_1505_frstar_1",
-          "text": "當然是羅德島的任務。我一直都是羅德島的一員。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "霜星",
+      "speakerId": "avg_1505_frstar_1",
+      "isRemote": false,
+      "text": "當然是羅德島的任務。我一直都是羅德島的一員。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1146,18 +1245,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "霜星",
-          "speakerId": "avg_1505_frstar_1",
-          "text": "你看起來很奇怪。我離太近，讓你覺得冷了？"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "霜星",
+      "speakerId": "avg_1505_frstar_1",
+      "isRemote": false,
+      "text": "你看起來很奇怪。我離太近，讓你覺得冷了？"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1177,16 +1275,18 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "narration",
-          "text": "一個個鮮活的人褪去了真實的外表，化為漆黑模糊的影子。\n它們看上去並不危險，只是圍繞在你身邊，緩緩遊蕩。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "background",
+      "backgroundId": "50_g14_rhodescorridor_ex"
+    },
+    {
+      "type": "narration",
+      "text": "一個個鮮活的人褪去了真實的外表，化為漆黑模糊的影子。\n它們看上去並不危險，只是圍繞在你身邊，緩緩遊蕩。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1196,24 +1296,24 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "這並非幻境，或是夢境。在某種意義上講，這一切同樣是真實存在的。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "存在於你的想像中，是你過去遇到過的人與事，按你最期待的樣子發展出的幻景。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "這並非幻境，或是夢境。在某種意義上講，這一切同樣是真實存在的。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "存在於你的想像中，是你過去遇到過的人與事，按你最期待的樣子發展出的幻景。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1228,42 +1328,45 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "這些畫面對我的觸動並不比你弱，博士。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "但是歸根結底，這些還是由你自己創造的畫面。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "是源石，按照你潛意識深處的期待和想要彌補某些遺憾的想法，“複製”出的景象。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "你依然深刻地記得與羅德島同行經歷過的一切，你同樣擺脫了美好謊言的欺瞞。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "我現在才可以確信，現在的你，還是羅德島的博士。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "這些畫面對我的觸動並不比你弱，博士。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "但是歸根結底，這些還是由你自己創造的畫面。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "是源石，按照你潛意識深處的期待和想要彌補某些遺憾的想法，“複製”出的景象。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "你依然深刻地記得與羅德島同行經歷過的一切，你同樣擺脫了美好謊言的欺瞞。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "我現在才可以確信，現在的你，還是羅德島的博士。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1278,8 +1381,7 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1289,30 +1391,31 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "你果然已經……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "博士，我曾經對你說過，關於你自身的謎題，無法透過他人之口告訴你，只有靠你自己來解開。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "或許我們現在離那個終點很近了。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "你果然已經……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "博士，我曾經對你說過，關於你自身的謎題，無法透過他人之口告訴你，只有靠你自己來解開。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "或許我們現在離那個終點很近了。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1325,6 +1428,7 @@
               "type": "dialogue",
               "speakerName": "凱爾希",
               "speakerId": "avg_003_kalts_1",
+              "isRemote": false,
               "text": "我以為你與我相處的經驗足以讓你做出準確的判斷。"
             }
           ]
@@ -1337,12 +1441,12 @@
               "type": "dialogue",
               "speakerName": "凱爾希",
               "speakerId": "avg_003_kalts_1",
+              "isRemote": false,
               "text": "我希望讓你做出這個判斷的，是你的理智，而不是其他。"
             }
           ]
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1352,8 +1456,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1363,33 +1466,34 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "我無法確定特蕾西婭身在何處，又在做些什麼。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "但我們所處的環境，一定與她有關。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "溫柔的聲音",
-          "speakerId": null,
-          "text": "博士。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "我無法確定特蕾西婭身在何處，又在做些什麼。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "但我們所處的環境，一定與她有關。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "溫柔的聲音",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "博士。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1399,8 +1503,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1410,18 +1513,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "博士，凱爾希醫生。太好了，你們都在。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "博士，凱爾希醫生。太好了，你們都在。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1434,6 +1536,7 @@
               "type": "dialogue",
               "speakerName": "阿米婭",
               "speakerId": "avg_1037_amiya3_1",
+              "isRemote": false,
               "text": "放心吧，博士，我是阿米婭，貨真價實。"
             }
           ]
@@ -1446,12 +1549,12 @@
               "type": "dialogue",
               "speakerName": "阿米婭",
               "speakerId": "avg_1037_amiya3_1",
+              "isRemote": false,
               "text": "嗚……博士，我一直在找你。"
             }
           ]
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1466,18 +1569,17 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "這是特蕾西婭小姐留給我的衣服。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "這是特蕾西婭小姐留給我的衣服。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1487,18 +1589,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "我沒有見到她。這艘“羅德島”上也並沒有她的氣息。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "我沒有見到她。這艘“羅德島”上也並沒有她的氣息。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1508,46 +1609,49 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "我很好。"
-        },
-        {
-          "type": "narration",
-          "text": "很多回憶流向了我……\n唔，不只是回憶，還有情感，各種各樣的，豐富情感。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "我想，我們見到的這些人，他們確實是活著的。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "可這種形式的“活著”，令我……悲傷。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "穿過這條走廊，見到你之後，我明白了過來。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "博士，我觸碰到的情感，有著同一個源頭。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "我很好。"
+    },
+    {
+      "type": "narration",
+      "text": "很多回憶流向了我……\n唔，不只是回憶，還有情感，各種各樣的，豐富情感。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "我想，我們見到的這些人，他們確實是活著的。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "可這種形式的“活著”，令我……悲傷。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "穿過這條走廊，見到你之後，我明白了過來。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "博士，我觸碰到的情感，有著同一個源頭。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1557,67 +1661,73 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "嗯。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "我……“碰”到你了，博士。以前都沒過……"
-        },
-        {
-          "type": "narration",
-          "text": "女孩牽住了你的手，和過去一樣，或許更小心、更用力。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "我知道的。博士和過去相比有了很多變化。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "但我們一起經歷了這麼多，我更確信的是……站在我面前的，一直都是我最信任的你。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "回憶說不定會騙人，情感絕不可能作假。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "還有許多事情……可能我現在也無法弄清楚。有些疑問，可能要等到再次見到特蕾西婭小姐才能得到解答。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "無論接下來將會發生什麼，無論我們會面臨多麼悲傷的結局……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "博士，你會和我站在一起，對吧？"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "嗯。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "我……“碰”到你了，博士。以前都沒過……"
+    },
+    {
+      "type": "narration",
+      "text": "女孩牽住了你的手，和過去一樣，或許更小心、更用力。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "我知道的。博士和過去相比有了很多變化。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "但我們一起經歷了這麼多，我更確信的是……站在我面前的，一直都是我最信任的你。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "回憶說不定會騙人，情感絕不可能作假。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "還有許多事情……可能我現在也無法弄清楚。有些疑問，可能要等到再次見到特蕾西婭小姐才能得到解答。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "無論接下來將會發生什麼，無論我們會面臨多麼悲傷的結局……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "博士，你會和我站在一起，對吧？"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1627,8 +1737,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1638,106 +1747,121 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "嗯……好的，現在這樣就好。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "那我們先去找到特蕾西婭小姐吧。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "我們先想辦法離開這裡。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "答案不在這裡。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_4133_logos_1",
-          "text": "雖說並非幻術所致，但天與地，生與死……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_4133_logos_1",
-          "text": "無一不是虛假。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "呵呵，就算走出那悶死人的假畫廊，也只能待在一個更大的舞台上兜兜轉轉嗎？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "誰給我們裝上這層幕布？這品味可一點都說不上好。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "唷，主角們可算到場啦。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "老女人，快，動一下妳那無所不知的腦子，先回答那個最關鍵的問題——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "我們，現在，到底，在哪？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "一葉小舟，漂泊在漫無邊際的金色海洋上。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "這裡是，“源石”的內部。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "凱爾希",
-          "speakerId": "avg_003_kalts_1",
-          "text": "“源石”的內部，存在著一個“宇宙”。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "嗯……好的，現在這樣就好。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "那我們先去找到特蕾西婭小姐吧。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "我們先想辦法離開這裡。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "答案不在這裡。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "50_g11_rhodesdeck_ex"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_4133_logos_1",
+      "isRemote": false,
+      "text": "雖說並非幻術所致，但天與地，生與死……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_4133_logos_1",
+      "isRemote": false,
+      "text": "無一不是虛假。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "呵呵，就算走出那悶死人的假畫廊，也只能待在一個更大的舞台上兜兜轉轉嗎？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "誰給我們裝上這層幕布？這品味可一點都說不上好。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "唷，主角們可算到場啦。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "老女人，快，動一下妳那無所不知的腦子，先回答那個最關鍵的問題——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "我們，現在，到底，在哪？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "一葉小舟，漂泊在漫無邊際的金色海洋上。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "這裡是，“源石”的內部。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "凱爾希",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "“源石”的內部，存在著一個“宇宙”。"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": [

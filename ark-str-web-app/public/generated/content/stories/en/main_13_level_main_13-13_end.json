@@ -11,6 +11,20 @@
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_battlefield"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
       "type": "choice",
       "options": [
         {
@@ -18,1320 +32,1539 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "Stop the car. There's something strange up ahead."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "All units, prepare for battle."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "What is that—"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "'Driver'",
-          "speakerId": "avg_npc_935_1",
-          "text": "Hngh—!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "'Driver'",
-          "speakerId": "avg_npc_935_1",
-          "text": "—This feeling, it's the same one that came when we were inspecting those Arts Circles."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "'Driver'",
-          "speakerId": "avg_npc_935_1",
-          "text": "Banshee, Your Lordship, what is this...?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "When the war started, no one expected the land to be drenched in so much blood so quickly."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "'Modern warfare' is it? Hah."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "I'm afraid the Vampire has all the prerequisites he needs for the ritual to fall into place."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "The crystals on the other battlefields were just nodes resonating with the ritual. All this time, I've been looking for its center."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "Brentwood, this little town, has a special place in the Vampire's wicked design."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Can you handle it, Logos?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "This is an ancient Royal Court method, and they have completed the preparations for it."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "I need time."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "We haven't exposed our position yet, so we might be able to buy some time, but... Wait—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "What's that?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "...Fire?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "There's a firefight in the town there... but who is it?"
-        },
-        {
-          "type": "narration",
-          "text": "Looks like they beat us here.\nA rather choppy meeting."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "'Miner'",
-          "speakerId": "avg_npc_054",
-          "text": "Lord Banshee, what... are you going to do? You'll take care of the enemy, won't you?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "'Miner'",
-          "speakerId": "avg_npc_054",
-          "text": "This, this power... it's a blessing from His Highness the Prince of Blood, is it?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "'Miner'",
-          "speakerId": "avg_npc_054",
-          "text": "The Sanguinarch... he's blessed the Sarkaz bloodline."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Paprika",
-          "speakerId": "avg_4071_peper_1",
-          "text": "Um... Lord Banshee, I also feel a bit... stronger... a little."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Paprika",
-          "speakerId": "avg_4071_peper_1",
-          "text": "Is it arm strength? Or my brains? I can't tell for sure, but I just feel kinda..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "...It's a strengthening altar, witchcraft. We've seen this before. But this one is on a larger scale, and it feels different."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Logos, could this have any adverse...?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "Quite unexpected."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "It does not demand a price of us, at least not one drawn from our own bodies."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Paprika",
-          "speakerId": "avg_4071_peper_1",
-          "text": "Then why—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Paprika",
-          "speakerId": "avg_4071_peper_1",
-          "text": "......"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "Paprika, was it?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "What do you hope to use this power for?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Paprika",
-          "speakerId": "avg_4071_peper_1",
-          "text": "Well..."
-        },
-        {
-          "type": "narration",
-          "text": "The more skilled a Sarkaz becomes in war, the more efficient he spills blood on the battlefield. Doesn't matter if it's his enemies' blood or his own.\nThe ritual can continue.\nThe Sanguinarch has prepared for this decisive battle, but their... Theresis's plan was just for this ritual?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "The Arts Circles seem to have come under attack, and the Vampiric creatures are going out of control."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Leave this to us, Logos."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Please look into the ritual for us."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "Amiya, you and the Doctor could accompany me."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Let's be quick."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "...Roger."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Paprika",
-          "speakerId": "avg_4071_peper_1",
-          "text": "Um—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Paprika",
-          "speakerId": "avg_4071_peper_1",
-          "text": "What are you going to do with us?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "What do you mean?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Paprika",
-          "speakerId": "avg_4071_peper_1",
-          "text": "I realized a while ago that, well, the ones who've been captured... are us, right?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Paprika",
-          "speakerId": "avg_4071_peper_1",
-          "text": "I know the Royal Court guys pretty well, and you give off a totally different vibe."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Paprika",
-          "speakerId": "avg_4071_peper_1",
-          "text": "Your name is Amiya, right? You and this Doctor are in charge."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Paprika",
-          "speakerId": "avg_4071_peper_1",
-          "text": "I think... you're about the same age as me."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Paprika",
-          "speakerId": "avg_4071_peper_1",
-          "text": "And I can tell that Banshee is a pretty big deal, I can feel it, you can't fake that. But he's working for you?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Paprika",
-          "speakerId": "avg_4071_peper_1",
-          "text": "A few days ago, I met a Caprinae lady who called herself a Sarkaz... is she with you too?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Paprika",
-          "speakerId": "avg_4071_peper_1",
-          "text": "Just who the heck are you guys?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Do you intend to fight us, Paprika?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Paprika",
-          "speakerId": "avg_4071_peper_1",
-          "text": "Well..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Paprika",
-          "speakerId": "avg_4071_peper_1",
-          "text": "I... don't know."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "'Shopkeep'",
-          "speakerId": null,
-          "text": "Captain, how did the Banshee get away? What do we do now? The cracks in the earth are spreading toward us!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "'Driver'",
-          "speakerId": "avg_npc_935_1",
-          "text": "Why did they leave those two prisoners behind? Do the big shots from the Royal Court trust us so much?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Paprika",
-          "speakerId": "avg_4071_peper_1",
-          "text": "Um... yeah! Be on guard for threats from that direction!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Paprika",
-          "speakerId": "avg_4071_peper_1",
-          "text": "I'll keep an eye on these two!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "You may be stronger, but you still don't know war."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Or I guess, none of you are ready to fight this war."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Paprika",
-          "speakerId": "avg_4071_peper_1",
-          "text": "...Yeah. After all this time, how could we not know?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Paprika",
-          "speakerId": "avg_4071_peper_1",
-          "text": "I'm the captain of the transport team! If you're going to do something to us, you have to start with me."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Paprika",
-          "speakerId": "avg_4071_peper_1",
-          "text": "They're just regular people who answered His Highness's call to arms across Terra."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Paprika",
-          "speakerId": "avg_4071_peper_1",
-          "text": "They don't even know what they're doing. They just transport the stuff General Manfred says to move—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "The instant they answered that call... the Victorians would cease to call them regular people."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "And that's got nothing to do with what they've actually done."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Paprika",
-          "speakerId": "avg_4071_peper_1",
-          "text": "They're units put under my control by the General. No matter what happens, I have to guarantee their safety."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Paprika",
-          "speakerId": "avg_4071_peper_1",
-          "text": "I swore as much to General Manfred."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "The General, huh?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Then first thing's first, let's deal with these out-of-control blood worms together."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Tell your team to fall back. Don't take any chances, these creatures will suck dry any blood they can find."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Doctor, stick close to me."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "I will use my power to clear the way for us, and for them."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": null,
-          "text": "Hey little bunny, there's a faster way to seal those cracks, you know?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "W?!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_npc_412_1",
-          "text": "'Bang, bang, bang!'"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Paprika",
-          "speakerId": "avg_4071_peper_1",
-          "text": "It-It's..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Paprika",
-          "speakerId": "avg_4071_peper_1",
-          "text": "Sarkaz mercenaries?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_npc_412_1",
-          "text": "Watch your footing, Yarnball, that's not a great place to stand."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Paprika",
-          "speakerId": "avg_4071_peper_1",
-          "text": "Huh—"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ines",
-          "speakerId": "avg_4087_ines_1",
-          "text": "My advice is to give that lunatic a wide berth when she's tossing bombs around. W's not the type a sweet little Sarkaz baby oughta be close to."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Paprika",
-          "speakerId": "avg_4071_peper_1",
-          "text": "Oh, Ines?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Paprika",
-          "speakerId": "avg_4071_peper_1",
-          "text": "Thanks, and, err, Ami—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Paprika",
-          "speakerId": "avg_4071_peper_1",
-          "text": "Wait, over your head there, that's..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Paprika",
-          "speakerId": "avg_4071_peper_1",
-          "text": "The Black Crown? You're the one General Manfred was talking about..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoederer",
-          "speakerId": "avg_4088_hodrer_1",
-          "text": "I heard Manfred picked up a kid, guess that was you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoederer",
-          "speakerId": "avg_4088_hodrer_1",
-          "text": "These Sarkaz are under my control. You're their captain, right?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "'Miner'",
-          "speakerId": "avg_npc_054",
-          "text": "Hey, let go of me! Who... who are you? What do you want?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "'Driver'",
-          "speakerId": "avg_npc_935_1",
-          "text": "We're on a mission for the Military Commission and all the big shots from the Royal Court!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoederer",
-          "speakerId": "avg_4088_hodrer_1",
-          "text": "Great, I'm here to enforce their discipline."
-        },
-        {
-          "type": "narration",
-          "text": "Hey there, Amiya. And, of course...\nDoctor."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Hoederer..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_npc_412_1",
-          "text": "What's wrong, your first face-to-face meeting got you feeling disappointed?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_npc_412_1",
-          "text": "He did spend more time playing the antagonist than working our side. I'm not used to it either."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "No."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Thank you for your help, Hoederer. We can talk about the other stuff later."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "As you can see, this little town is quickly becoming a war zone."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoederer",
-          "speakerId": "avg_4088_hodrer_1",
-          "text": "Yeah, I do see. And we've got some important intel to share with you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoederer",
-          "speakerId": "avg_4088_hodrer_1",
-          "text": "About this town and the 'Lifeline' hidden in its shadows."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ines",
-          "speakerId": "avg_4087_ines_1",
-          "text": "There are two forces attacking the town's Sarkaz garrison. One is the Self-Salvation Corps that Closure brought out from Londinium."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_npc_412_1",
-          "text": "Hmph, looks like my safehouse got trashed. I hope that old hag doesn't go peacefully."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ines",
-          "speakerId": "avg_4087_ines_1",
-          "text": "The other is a force made up of soldiers who once fought for different dukes... along with some workers and refugees."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ines",
-          "speakerId": "avg_4087_ines_1",
-          "text": "It's a pretty disorganized group, led by—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ines",
-          "speakerId": "avg_4087_ines_1",
-          "text": "The Siege."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "'Shopkeep'",
-          "speakerId": "avg_npc_932_1",
-          "text": "Urk—Help—Hngh—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "'Driver'",
-          "speakerId": "avg_npc_935_1",
-          "text": "Shh!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "'Miner'",
-          "speakerId": "avg_npc_054",
-          "text": "Quiet down, *Sarkaz profanity*."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "'Shopkeep'",
-          "speakerId": "avg_npc_932_1",
-          "text": "Where are we...?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "'Shopkeep'",
-          "speakerId": "avg_npc_932_1",
-          "text": "Victorians?! And... Sarkaz mercenaries?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Paprika",
-          "speakerId": "avg_4071_peper_1",
-          "text": "It's okay, I'm still here."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Paprika",
-          "speakerId": "avg_4071_peper_1",
-          "text": "The situation is, um, a little bit complicated. But you can trust me on this."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_npc_412_1",
-          "text": "You aren't actually gonna carry this dead weight around for the next phase of the plan, are you?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "'Shopkeep'",
-          "speakerId": "avg_npc_932_1",
-          "text": "Who are you calling dead weight?!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "W, I promised Paprika that no harm would come to them."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_npc_412_1",
-          "text": "Ugh, Rhodes Island, same as it ever was."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_npc_412_1",
-          "text": "Then let's have them stick with my mercs. They've had it too easy for too long, might as well bring some new blood in to have some fun."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_npc_412_1",
-          "text": "Hey you, blue-haired Feline, what's on your mind? You've been staring at us for a while."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_npc_412_1",
-          "text": "Feel like killing us? Go ahead, draw your sword."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_npc_412_1",
-          "text": "Not gonna do it? Pfft."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_npc_412_1",
-          "text": "If all you want is a Bolívarian standoff, I'm gonna pass. Me and my men oughta hit the road."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_npc_412_1",
-          "text": "You can stay here and stay mad."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_npc_412_1",
-          "text": "Oh, by the way, Ines, if you're gonna fight the Victorians, make sure you let me know ahead of time. Wouldn't wanna miss the show."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Lady Delphine..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "Amiya."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "You..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "You're alright. I'm glad. I was worried."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "I... Amiya, I'm sorry."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "I'm willing to trust Rhodes Island's processes in choosing collaboration partners."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "It's just... I mean... I'm an intelligence officer myself. It's not as if I've never heard of this 'Hoederer' gentleman."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "I just... No, it's not just him, even Misery, and Ines, I can't help but think..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "I can't accept it, not at the moment."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "...No, maybe I can't ever accept it."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "But for now, as I said, I'll trust Vina's judgment."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "If this is what we have to do, then let's do it."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoederer",
-          "speakerId": "avg_4088_hodrer_1",
-          "text": "These scars won't be forgotten, nor should they be."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoederer",
-          "speakerId": "avg_4088_hodrer_1",
-          "text": "The Sarkaz Wars have never ended, Feline."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Siege",
-          "speakerId": "avgnew_112_siege_1",
-          "text": "Cut the Military Commission's supply lines, indeed, this has been our goal all along."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Siege",
-          "speakerId": "avgnew_112_siege_1",
-          "text": "In any case, this is a way to end the war quickly."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Siege",
-          "speakerId": "avgnew_112_siege_1",
-          "text": "And as for this 'Feranmut'..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoederer",
-          "speakerId": "avg_4088_hodrer_1",
-          "text": "...I know what you're thinking."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoederer",
-          "speakerId": "avg_4088_hodrer_1",
-          "text": "Now that no base is safe, this skeleton can become our key to counterattacking Londinium."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoederer",
-          "speakerId": "avg_4088_hodrer_1",
-          "text": "We can't take any of these armies head-on, and we can't work around the essentially unbeatable firepower of that airship..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoederer",
-          "speakerId": "avg_4088_hodrer_1",
-          "text": "So, this 'elusive' Feranmut is the best vehicle we could hope for. And, at the same time, it's a fortress, and a spear aimed right at the heart."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoederer",
-          "speakerId": "avg_4088_hodrer_1",
-          "text": "In that case, if we succeed, it'll be thanks to the leaders of this counterattack, and not... 'Sarkaz mercenaries'."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Siege",
-          "speakerId": "avgnew_112_siege_1",
-          "text": "It seems we have no grounds on which to refuse cooperation."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoederer",
-          "speakerId": "avg_4088_hodrer_1",
-          "text": "'However...'"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Siege",
-          "speakerId": "avgnew_112_siege_1",
-          "text": "However..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Siege",
-          "speakerId": "avgnew_112_siege_1",
-          "text": "From a rational point of view, I understand that there are differences among the Sarkaz, that the Exemplars appears to function seamlessly with Misery, but... we're talking about individual friendship."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Siege",
-          "speakerId": "avgnew_112_siege_1",
-          "text": "We may be able to respect, trust, and even love a few select individuals. But now, we stand before a war where all sides have blood-soaked hands."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Siege",
-          "speakerId": "avgnew_112_siege_1",
-          "text": "Given enough time, we may be able to determine one-by-one who has committed war crimes and who is innocent, but we do not have that time."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Siege",
-          "speakerId": "avgnew_112_siege_1",
-          "text": "We are at an impasse, Hoederer. Our cooperation will not be so smooth."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "And that is why we are here."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Rhodes Island will serve as a mediator between the two parties."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Such that we can end the suffering of the Victorian people that this war has wrought, and such that we can prevent the Sarkaz of Kazdel from being dragged back into the abyss."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "We're not here to force handshakes and reconciliation, we can leave that to the end of this ridiculous war."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Platitudes mean nothing. It's actions that will put an end to all this."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Siege",
-          "speakerId": "avgnew_112_siege_1",
-          "text": "This is all very Rhodes Island, indeed... I've heard Hoederer has been in contact with Rhodes Island in the past?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoederer",
-          "speakerId": "avg_4088_hodrer_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Siege",
-          "speakerId": "avgnew_112_siege_1",
-          "text": "You've mentioned the place where the Feranmut is docked, among a large number of Sarkaz garrisons."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoederer",
-          "speakerId": "avg_4088_hodrer_1",
-          "text": "But if we're talking about the plan rationally, a small number of elites would do better than..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Siege",
-          "speakerId": "avgnew_112_siege_1",
-          "text": "Better than sending workers and street thugs to their deaths, yes? You can speak openly, I won't mind."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Siege",
-          "speakerId": "avgnew_112_siege_1",
-          "text": "But my boys won't miss a chance to strike at the Sarkaz."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Siege",
-          "speakerId": "avgnew_112_siege_1",
-          "text": "Our armor can draw the garrison's fire."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoederer",
-          "speakerId": "avg_4088_hodrer_1",
-          "text": "That'll do, thanks."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoederer",
-          "speakerId": "avg_4088_hodrer_1",
-          "text": "...Amiya."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoederer",
-          "speakerId": "avg_4088_hodrer_1",
-          "text": "This is our first formal cooperation with <i>Rhodes Island.</i>"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Yes, it is."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "But, if I might ask you a question..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoederer",
-          "speakerId": "avg_4088_hodrer_1",
-          "text": "Sure."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "You didn't express your worries or concerns just now. Your innermost thoughts..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Are to save lives, to put an end to war and hate. Isn't that right?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoederer",
-          "speakerId": "avg_4088_hodrer_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoederer",
-          "speakerId": "avg_4088_hodrer_1",
-          "text": "I've heard that the King of Sarkaz can see into people's hearts. It's different from the ambiguous feeling Ines gets. I probably can't hide it from you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "I can respect a Sarkaz who has struggled since the Babel days."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "I hope you can answer from your own free will."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoederer",
-          "speakerId": "avg_4088_hodrer_1",
-          "text": "So that's how it is."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoederer",
-          "speakerId": "avg_4088_hodrer_1",
-          "text": "Yeah."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoederer",
-          "speakerId": "avg_4088_hodrer_1",
-          "text": "I'm... fighting for that future."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Very good."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Thank you for your answer, and your trust."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Logos, Dr. Kal'tsit, you're back!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "I've analyzed the Vampiric ritual. The results are worrying."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "It is indeed a blood blessing, using ancient and very fine techniques."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "The Sanguinarch borrows the witchcraft's power, collecting blood spilled in the war to activate the bloodline within the Sarkaz warriors."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "He is giving the Sarkaz a constant reminder of our fundamental differences with the other races. It's less amplification and more incitement."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "But most importantly... I'm afraid he's using only a small part of the power he's collected for this purpose."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "More energy is going somewhere else, somewhere I don't know. I tried to track it, but the structure of the Arts is complex and chaotic. It only points to Londinium."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Siege",
-          "speakerId": "avgnew_112_siege_1",
-          "text": "What is he playing at?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "And that reminded me..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "At this very moment, at the center of the battlefield stands a Sarkaz leader even better at absorbing and exploiting death than the Vampire."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "If it was really just about strengthening the warriors, why would they bother using the witchcraft of the Crimson Court? And why use an Arts Circle? Such that even the towns on the edge of this war get roped in?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoederer",
-          "speakerId": "avg_4088_hodrer_1",
-          "text": "Do you have a theory?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "The airship, the Feranmut, The Shard, and the witchcraft device right here."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "The Doctor's concerns are justified."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "As you said, the Feranmut will be our most important breakthrough, and we must take action as soon as possible."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "Whether Vampire or Nachzehrer, even the Confessarii, they are all exposed to Nightingale in a most unusual way, they are taking risks."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "There is a reason why the war is being fought at this particular point in time."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "...Theresis is preparing his final trump card in Londinium. Sure, seizing the capital of an empire is already unheard of..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "But, what could it be?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "Let me start with a fundamental question."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "A question so fundamental that even the Sarkaz have forgotten it."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "'Why are the Sarkaz so uniquely susceptible to Oripathy?'"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_battlefield"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "Stop the car. There's something strange up ahead."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "All units, prepare for battle."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "What is that—"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "'Driver'",
+      "speakerId": "avg_npc_935_1",
+      "isRemote": false,
+      "text": "Hngh—!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "'Driver'",
+      "speakerId": "avg_npc_935_1",
+      "isRemote": false,
+      "text": "—This feeling, it's the same one that came when we were inspecting those Arts Circles."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "'Driver'",
+      "speakerId": "avg_npc_935_1",
+      "isRemote": false,
+      "text": "Banshee, Your Lordship, what is this...?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "When the war started, no one expected the land to be drenched in so much blood so quickly."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "'Modern warfare' is it? Hah."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "I'm afraid the Vampire has all the prerequisites he needs for the ritual to fall into place."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "The crystals on the other battlefields were just nodes resonating with the ritual. All this time, I've been looking for its center."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "Brentwood, this little town, has a special place in the Vampire's wicked design."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Can you handle it, Logos?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "This is an ancient Royal Court method, and they have completed the preparations for it."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "I need time."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "We haven't exposed our position yet, so we might be able to buy some time, but... Wait—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "What's that?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "...Fire?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "There's a firefight in the town there... but who is it?"
+    },
+    {
+      "type": "narration",
+      "text": "Looks like they beat us here.\nA rather choppy meeting."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "'Miner'",
+      "speakerId": "avg_npc_054",
+      "isRemote": false,
+      "text": "Lord Banshee, what... are you going to do? You'll take care of the enemy, won't you?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "'Miner'",
+      "speakerId": "avg_npc_054",
+      "isRemote": false,
+      "text": "This, this power... it's a blessing from His Highness the Prince of Blood, is it?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "'Miner'",
+      "speakerId": "avg_npc_054",
+      "isRemote": false,
+      "text": "The Sanguinarch... he's blessed the Sarkaz bloodline."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Paprika",
+      "speakerId": "avg_4071_peper_1",
+      "isRemote": false,
+      "text": "Um... Lord Banshee, I also feel a bit... stronger... a little."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Paprika",
+      "speakerId": "avg_4071_peper_1",
+      "isRemote": false,
+      "text": "Is it arm strength? Or my brains? I can't tell for sure, but I just feel kinda..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "...It's a strengthening altar, witchcraft. We've seen this before. But this one is on a larger scale, and it feels different."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Logos, could this have any adverse...?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "Quite unexpected."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "It does not demand a price of us, at least not one drawn from our own bodies."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Paprika",
+      "speakerId": "avg_4071_peper_1",
+      "isRemote": false,
+      "text": "Then why—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Paprika",
+      "speakerId": "avg_4071_peper_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "Paprika, was it?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "What do you hope to use this power for?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Paprika",
+      "speakerId": "avg_4071_peper_1",
+      "isRemote": false,
+      "text": "Well..."
+    },
+    {
+      "type": "narration",
+      "text": "The more skilled a Sarkaz becomes in war, the more efficient he spills blood on the battlefield. Doesn't matter if it's his enemies' blood or his own.\nThe ritual can continue.\nThe Sanguinarch has prepared for this decisive battle, but their... Theresis's plan was just for this ritual?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "The Arts Circles seem to have come under attack, and the Vampiric creatures are going out of control."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Leave this to us, Logos."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Please look into the ritual for us."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "Amiya, you and the Doctor could accompany me."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Let's be quick."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "...Roger."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Paprika",
+      "speakerId": "avg_4071_peper_1",
+      "isRemote": false,
+      "text": "Um—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Paprika",
+      "speakerId": "avg_4071_peper_1",
+      "isRemote": false,
+      "text": "What are you going to do with us?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "What do you mean?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Paprika",
+      "speakerId": "avg_4071_peper_1",
+      "isRemote": false,
+      "text": "I realized a while ago that, well, the ones who've been captured... are us, right?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Paprika",
+      "speakerId": "avg_4071_peper_1",
+      "isRemote": false,
+      "text": "I know the Royal Court guys pretty well, and you give off a totally different vibe."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Paprika",
+      "speakerId": "avg_4071_peper_1",
+      "isRemote": false,
+      "text": "Your name is Amiya, right? You and this Doctor are in charge."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Paprika",
+      "speakerId": "avg_4071_peper_1",
+      "isRemote": false,
+      "text": "I think... you're about the same age as me."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Paprika",
+      "speakerId": "avg_4071_peper_1",
+      "isRemote": false,
+      "text": "And I can tell that Banshee is a pretty big deal, I can feel it, you can't fake that. But he's working for you?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Paprika",
+      "speakerId": "avg_4071_peper_1",
+      "isRemote": false,
+      "text": "A few days ago, I met a Caprinae lady who called herself a Sarkaz... is she with you too?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Paprika",
+      "speakerId": "avg_4071_peper_1",
+      "isRemote": false,
+      "text": "Just who the heck are you guys?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Do you intend to fight us, Paprika?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Paprika",
+      "speakerId": "avg_4071_peper_1",
+      "isRemote": false,
+      "text": "Well..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Paprika",
+      "speakerId": "avg_4071_peper_1",
+      "isRemote": false,
+      "text": "I... don't know."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "'Shopkeep'",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Captain, how did the Banshee get away? What do we do now? The cracks in the earth are spreading toward us!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "'Driver'",
+      "speakerId": "avg_npc_935_1",
+      "isRemote": false,
+      "text": "Why did they leave those two prisoners behind? Do the big shots from the Royal Court trust us so much?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Paprika",
+      "speakerId": "avg_4071_peper_1",
+      "isRemote": false,
+      "text": "Um... yeah! Be on guard for threats from that direction!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Paprika",
+      "speakerId": "avg_4071_peper_1",
+      "isRemote": false,
+      "text": "I'll keep an eye on these two!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "You may be stronger, but you still don't know war."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Or I guess, none of you are ready to fight this war."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Paprika",
+      "speakerId": "avg_4071_peper_1",
+      "isRemote": false,
+      "text": "...Yeah. After all this time, how could we not know?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Paprika",
+      "speakerId": "avg_4071_peper_1",
+      "isRemote": false,
+      "text": "I'm the captain of the transport team! If you're going to do something to us, you have to start with me."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Paprika",
+      "speakerId": "avg_4071_peper_1",
+      "isRemote": false,
+      "text": "They're just regular people who answered His Highness's call to arms across Terra."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Paprika",
+      "speakerId": "avg_4071_peper_1",
+      "isRemote": false,
+      "text": "They don't even know what they're doing. They just transport the stuff General Manfred says to move—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "The instant they answered that call... the Victorians would cease to call them regular people."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "And that's got nothing to do with what they've actually done."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Paprika",
+      "speakerId": "avg_4071_peper_1",
+      "isRemote": false,
+      "text": "They're units put under my control by the General. No matter what happens, I have to guarantee their safety."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Paprika",
+      "speakerId": "avg_4071_peper_1",
+      "isRemote": false,
+      "text": "I swore as much to General Manfred."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "The General, huh?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Then first thing's first, let's deal with these out-of-control blood worms together."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Tell your team to fall back. Don't take any chances, these creatures will suck dry any blood they can find."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Doctor, stick close to me."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "I will use my power to clear the way for us, and for them."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Hey little bunny, there's a faster way to seal those cracks, you know?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "W?!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_npc_412_1",
+      "isRemote": false,
+      "text": "'Bang, bang, bang!'"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Paprika",
+      "speakerId": "avg_4071_peper_1",
+      "isRemote": false,
+      "text": "It-It's..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Paprika",
+      "speakerId": "avg_4071_peper_1",
+      "isRemote": false,
+      "text": "Sarkaz mercenaries?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_npc_412_1",
+      "isRemote": false,
+      "text": "Watch your footing, Yarnball, that's not a great place to stand."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Paprika",
+      "speakerId": "avg_4071_peper_1",
+      "isRemote": false,
+      "text": "Huh—"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ines",
+      "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
+      "text": "My advice is to give that lunatic a wide berth when she's tossing bombs around. W's not the type a sweet little Sarkaz baby oughta be close to."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Paprika",
+      "speakerId": "avg_4071_peper_1",
+      "isRemote": false,
+      "text": "Oh, Ines?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Paprika",
+      "speakerId": "avg_4071_peper_1",
+      "isRemote": false,
+      "text": "Thanks, and, err, Ami—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Paprika",
+      "speakerId": "avg_4071_peper_1",
+      "isRemote": false,
+      "text": "Wait, over your head there, that's..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Paprika",
+      "speakerId": "avg_4071_peper_1",
+      "isRemote": false,
+      "text": "The Black Crown? You're the one General Manfred was talking about..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoederer",
+      "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
+      "text": "I heard Manfred picked up a kid, guess that was you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoederer",
+      "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
+      "text": "These Sarkaz are under my control. You're their captain, right?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "'Miner'",
+      "speakerId": "avg_npc_054",
+      "isRemote": false,
+      "text": "Hey, let go of me! Who... who are you? What do you want?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "'Driver'",
+      "speakerId": "avg_npc_935_1",
+      "isRemote": false,
+      "text": "We're on a mission for the Military Commission and all the big shots from the Royal Court!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoederer",
+      "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
+      "text": "Great, I'm here to enforce their discipline."
+    },
+    {
+      "type": "narration",
+      "text": "Hey there, Amiya. And, of course...\nDoctor."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Hoederer..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_npc_412_1",
+      "isRemote": false,
+      "text": "What's wrong, your first face-to-face meeting got you feeling disappointed?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_npc_412_1",
+      "isRemote": false,
+      "text": "He did spend more time playing the antagonist than working our side. I'm not used to it either."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "No."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Thank you for your help, Hoederer. We can talk about the other stuff later."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "As you can see, this little town is quickly becoming a war zone."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoederer",
+      "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
+      "text": "Yeah, I do see. And we've got some important intel to share with you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoederer",
+      "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
+      "text": "About this town and the 'Lifeline' hidden in its shadows."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ines",
+      "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
+      "text": "There are two forces attacking the town's Sarkaz garrison. One is the Self-Salvation Corps that Closure brought out from Londinium."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_npc_412_1",
+      "isRemote": false,
+      "text": "Hmph, looks like my safehouse got trashed. I hope that old hag doesn't go peacefully."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ines",
+      "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
+      "text": "The other is a force made up of soldiers who once fought for different dukes... along with some workers and refugees."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ines",
+      "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
+      "text": "It's a pretty disorganized group, led by—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ines",
+      "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
+      "text": "The Siege."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_indoor_u"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "'Shopkeep'",
+      "speakerId": "avg_npc_932_1",
+      "isRemote": false,
+      "text": "Urk—Help—Hngh—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "'Driver'",
+      "speakerId": "avg_npc_935_1",
+      "isRemote": false,
+      "text": "Shh!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "'Miner'",
+      "speakerId": "avg_npc_054",
+      "isRemote": false,
+      "text": "Quiet down, *Sarkaz profanity*."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "'Shopkeep'",
+      "speakerId": "avg_npc_932_1",
+      "isRemote": false,
+      "text": "Where are we...?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "'Shopkeep'",
+      "speakerId": "avg_npc_932_1",
+      "isRemote": false,
+      "text": "Victorians?! And... Sarkaz mercenaries?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Paprika",
+      "speakerId": "avg_4071_peper_1",
+      "isRemote": false,
+      "text": "It's okay, I'm still here."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Paprika",
+      "speakerId": "avg_4071_peper_1",
+      "isRemote": false,
+      "text": "The situation is, um, a little bit complicated. But you can trust me on this."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_npc_412_1",
+      "isRemote": false,
+      "text": "You aren't actually gonna carry this dead weight around for the next phase of the plan, are you?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "'Shopkeep'",
+      "speakerId": "avg_npc_932_1",
+      "isRemote": false,
+      "text": "Who are you calling dead weight?!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "W, I promised Paprika that no harm would come to them."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_npc_412_1",
+      "isRemote": false,
+      "text": "Ugh, Rhodes Island, same as it ever was."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_npc_412_1",
+      "isRemote": false,
+      "text": "Then let's have them stick with my mercs. They've had it too easy for too long, might as well bring some new blood in to have some fun."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_npc_412_1",
+      "isRemote": false,
+      "text": "Hey you, blue-haired Feline, what's on your mind? You've been staring at us for a while."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_npc_412_1",
+      "isRemote": false,
+      "text": "Feel like killing us? Go ahead, draw your sword."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_npc_412_1",
+      "isRemote": false,
+      "text": "Not gonna do it? Pfft."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_npc_412_1",
+      "isRemote": false,
+      "text": "If all you want is a Bolívarian standoff, I'm gonna pass. Me and my men oughta hit the road."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_npc_412_1",
+      "isRemote": false,
+      "text": "You can stay here and stay mad."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_npc_412_1",
+      "isRemote": false,
+      "text": "Oh, by the way, Ines, if you're gonna fight the Victorians, make sure you let me know ahead of time. Wouldn't wanna miss the show."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Lady Delphine..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "Amiya."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "You..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "You're alright. I'm glad. I was worried."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "I... Amiya, I'm sorry."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "I'm willing to trust Rhodes Island's processes in choosing collaboration partners."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "It's just... I mean... I'm an intelligence officer myself. It's not as if I've never heard of this 'Hoederer' gentleman."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "I just... No, it's not just him, even Misery, and Ines, I can't help but think..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "I can't accept it, not at the moment."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "...No, maybe I can't ever accept it."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "But for now, as I said, I'll trust Vina's judgment."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "If this is what we have to do, then let's do it."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoederer",
+      "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
+      "text": "These scars won't be forgotten, nor should they be."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoederer",
+      "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
+      "text": "The Sarkaz Wars have never ended, Feline."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Siege",
+      "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
+      "text": "Cut the Military Commission's supply lines, indeed, this has been our goal all along."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Siege",
+      "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
+      "text": "In any case, this is a way to end the war quickly."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Siege",
+      "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
+      "text": "And as for this 'Feranmut'..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoederer",
+      "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
+      "text": "...I know what you're thinking."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoederer",
+      "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
+      "text": "Now that no base is safe, this skeleton can become our key to counterattacking Londinium."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoederer",
+      "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
+      "text": "We can't take any of these armies head-on, and we can't work around the essentially unbeatable firepower of that airship..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoederer",
+      "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
+      "text": "So, this 'elusive' Feranmut is the best vehicle we could hope for. And, at the same time, it's a fortress, and a spear aimed right at the heart."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoederer",
+      "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
+      "text": "In that case, if we succeed, it'll be thanks to the leaders of this counterattack, and not... 'Sarkaz mercenaries'."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Siege",
+      "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
+      "text": "It seems we have no grounds on which to refuse cooperation."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoederer",
+      "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
+      "text": "'However...'"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Siege",
+      "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
+      "text": "However..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Siege",
+      "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
+      "text": "From a rational point of view, I understand that there are differences among the Sarkaz, that the Exemplars appears to function seamlessly with Misery, but... we're talking about individual friendship."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Siege",
+      "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
+      "text": "We may be able to respect, trust, and even love a few select individuals. But now, we stand before a war where all sides have blood-soaked hands."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Siege",
+      "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
+      "text": "Given enough time, we may be able to determine one-by-one who has committed war crimes and who is innocent, but we do not have that time."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Siege",
+      "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
+      "text": "We are at an impasse, Hoederer. Our cooperation will not be so smooth."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "And that is why we are here."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Rhodes Island will serve as a mediator between the two parties."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Such that we can end the suffering of the Victorian people that this war has wrought, and such that we can prevent the Sarkaz of Kazdel from being dragged back into the abyss."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "We're not here to force handshakes and reconciliation, we can leave that to the end of this ridiculous war."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Platitudes mean nothing. It's actions that will put an end to all this."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Siege",
+      "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
+      "text": "This is all very Rhodes Island, indeed... I've heard Hoederer has been in contact with Rhodes Island in the past?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoederer",
+      "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Siege",
+      "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
+      "text": "You've mentioned the place where the Feranmut is docked, among a large number of Sarkaz garrisons."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoederer",
+      "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
+      "text": "But if we're talking about the plan rationally, a small number of elites would do better than..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Siege",
+      "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
+      "text": "Better than sending workers and street thugs to their deaths, yes? You can speak openly, I won't mind."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Siege",
+      "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
+      "text": "But my boys won't miss a chance to strike at the Sarkaz."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Siege",
+      "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
+      "text": "Our armor can draw the garrison's fire."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoederer",
+      "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
+      "text": "That'll do, thanks."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoederer",
+      "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
+      "text": "...Amiya."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoederer",
+      "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
+      "text": "This is our first formal cooperation with <i>Rhodes Island.</i>"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Yes, it is."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "But, if I might ask you a question..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoederer",
+      "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
+      "text": "Sure."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "You didn't express your worries or concerns just now. Your innermost thoughts..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Are to save lives, to put an end to war and hate. Isn't that right?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoederer",
+      "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoederer",
+      "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
+      "text": "I've heard that the King of Sarkaz can see into people's hearts. It's different from the ambiguous feeling Ines gets. I probably can't hide it from you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "I can respect a Sarkaz who has struggled since the Babel days."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "I hope you can answer from your own free will."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoederer",
+      "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
+      "text": "So that's how it is."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoederer",
+      "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
+      "text": "Yeah."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoederer",
+      "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
+      "text": "I'm... fighting for that future."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Very good."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Thank you for your answer, and your trust."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Logos, Dr. Kal'tsit, you're back!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "I've analyzed the Vampiric ritual. The results are worrying."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "It is indeed a blood blessing, using ancient and very fine techniques."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "The Sanguinarch borrows the witchcraft's power, collecting blood spilled in the war to activate the bloodline within the Sarkaz warriors."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "He is giving the Sarkaz a constant reminder of our fundamental differences with the other races. It's less amplification and more incitement."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "But most importantly... I'm afraid he's using only a small part of the power he's collected for this purpose."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "More energy is going somewhere else, somewhere I don't know. I tried to track it, but the structure of the Arts is complex and chaotic. It only points to Londinium."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Siege",
+      "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
+      "text": "What is he playing at?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "And that reminded me..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "At this very moment, at the center of the battlefield stands a Sarkaz leader even better at absorbing and exploiting death than the Vampire."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "If it was really just about strengthening the warriors, why would they bother using the witchcraft of the Crimson Court? And why use an Arts Circle? Such that even the towns on the edge of this war get roped in?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoederer",
+      "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
+      "text": "Do you have a theory?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "The airship, the Feranmut, The Shard, and the witchcraft device right here."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "The Doctor's concerns are justified."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "As you said, the Feranmut will be our most important breakthrough, and we must take action as soon as possible."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "Whether Vampire or Nachzehrer, even the Confessarii, they are all exposed to Nightingale in a most unusual way, they are taking risks."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "There is a reason why the war is being fought at this particular point in time."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "...Theresis is preparing his final trump card in Londinium. Sure, seizing the capital of an empire is already unheard of..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "But, what could it be?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "Let me start with a fundamental question."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "A question so fundamental that even the Sarkaz have forgotten it."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "'Why are the Sarkaz so uniquely susceptible to Oripathy?'"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": [

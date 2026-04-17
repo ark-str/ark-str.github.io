@@ -11,51 +11,63 @@
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "bg_ceo"
+    },
+    {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
       "text": "ドクター、Mantraさんたちも本艦に帰ってきました。"
     },
     {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
       "text": "ドクターの予想通り、何者かが私たちの任務を標的に行動しているようです。"
     },
     {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
       "text": "……この機械は……壊れていますね。エーギルのものですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "「リトル・ハンディ」",
       "speakerId": "avg_npc_1401_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
       "text": "ケルシー先生、残った部品から何か調べられませんか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "不可能だ。この精密な機械は、エーギルの技術アカデミーが多大な心血を注いだ代物だからな。彼らほど傲慢な者たちが、他の研究者にリトル・ハンディを解析される可能性を残すはずがない。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "しかし、リトル・ハンディを解析することはできずとも、この機械の出現自体が多くの問題を説明している。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "ドクター、陸海共同防衛線を覚えているか？"
     },
     {
@@ -74,36 +86,38 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "イベリアとレム・ビリトンの政府はいずれも我々の呼びかけに応じた。しかし問題は一度協力が成立すると、その後の展開については我々の予想を超える可能性が極めて高いということだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "最近ではエーギルの艦隊はイベリアに港を建設しただけでなく、レム・ビリトン南方の海岸線にも上陸港を建設した。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "深海からやってきたエーギルは、陸へ上がることを急がず、まずは技術支援の名目で短期間で水路測量を含む一連の行動をとった。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "彼らはさらに、雇用や公的機関との連携を通じて迅速に「陸巡隊」を設立し、より中立的な立場を持つ代理人を介して陸とうまく協力をしている。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "イベリアとレム・ビリトンの政府はいずれも我々の呼びかけに応じた。しかし問題は一度協力が成立すると、その後の展開については我々の予想を超える可能性が極めて高いということだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "最近ではエーギルの艦隊はイベリアに港を建設しただけでなく、レム・ビリトン南方の海岸線にも上陸港を建設した。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "深海からやってきたエーギルは、陸へ上がることを急がず、まずは技術支援の名目で短期間で水路測量を含む一連の行動をとった。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "彼らはさらに、雇用や公的機関との連携を通じて迅速に「陸巡隊」を設立し、より中立的な立場を持つ代理人を介して陸とうまく協力をしている。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -113,48 +127,52 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "あくまで推論と臆測にすぎない。しかし現時点で我々が保有する手がかりから考えた時に、対象となる相手の条件を満たしているのは「陸巡隊」だけだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "ケルシー先生、クレメンティアさんの理念に賛同していない執政官がいるのは知っています。ですが、だからと言って同時多発的に起きた事件が全てエーギルの仕業であると言い切れるのでしょうか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "いいや、エーギル内部の対立を利用している者がいると考えた方が妥当だろう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "イベリア国境近くの「陸巡隊」、レム・ビリトンに渡した採掘艦、カズデル国境の傭兵……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "相手の行動が広範囲にわたること、またロドスの極秘任務の内容をかなり詳細に了解していることからも、首謀者が決してエーギルではないのは明らかだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "……ですがロドス内部に裏切り者がいるはずありません。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "あくまで推論と臆測にすぎない。しかし現時点で我々が保有する手がかりから考えた時に、対象となる相手の条件を満たしているのは「陸巡隊」だけだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "ケルシー先生、クレメンティアさんの理念に賛同していない執政官がいるのは知っています。ですが、だからと言って同時多発的に起きた事件が全てエーギルの仕業であると言い切れるのでしょうか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "いいや、エーギル内部の対立を利用している者がいると考えた方が妥当だろう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "イベリア国境近くの「陸巡隊」、レム・ビリトンに渡した採掘艦、カズデル国境の傭兵……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "相手の行動が広範囲にわたること、またロドスの極秘任務の内容をかなり詳細に了解していることからも、首謀者が決してエーギルではないのは明らかだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "……ですがロドス内部に裏切り者がいるはずありません。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -164,18 +182,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "ドクター、我々以外の誰かで、ロドスにこれを成せる者がいると思うか？"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "ドクター、我々以外の誰かで、ロドスにこれを成せる者がいると思うか？"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -190,57 +207,62 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "そうだ、いない。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "ケルシー先生、今ロドスが直面している脅威は全く予測が立たないものです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "ワルファリン先生も、担当されている特殊な患者さんたちの病状のコントロールが上手くいかなくなっていると何度も警告していました。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "患者さんを救うためにも、あるいは潜在的な危険に対処するためにも、私たちは今よりもリスクの高い手段をとらねばなりません。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "テレジアさんが黒い王冠に残した資料を見ましたが、彼女もかつて「文明の存続」によって大きな突破口を得たようです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "テレジアさんが当時行ったように、私も「文明の存続」を訪ねて潜在的な助力を求めることができます。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "その手段をとる場合のリスクは慎重に評価する必要がある、アーミヤ。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "そうだ、いない。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "ケルシー先生、今ロドスが直面している脅威は全く予測が立たないものです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "ワルファリン先生も、担当されている特殊な患者さんたちの病状のコントロールが上手くいかなくなっていると何度も警告していました。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "患者さんを救うためにも、あるいは潜在的な危険に対処するためにも、私たちは今よりもリスクの高い手段をとらねばなりません。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "テレジアさんが黒い王冠に残した資料を見ましたが、彼女もかつて「文明の存続」によって大きな突破口を得たようです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "テレジアさんが当時行ったように、私も「文明の存続」を訪ねて潜在的な助力を求めることができます。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "その手段をとる場合のリスクは慎重に評価する必要がある、アーミヤ。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -253,18 +275,21 @@
               "type": "dialogue",
               "speakerName": "アーミヤ",
               "speakerId": "avg_1037_amiya3_1",
+              "isRemote": false,
               "text": "ドクター、今ははっきりと頷くことはできません。"
             },
             {
               "type": "dialogue",
               "speakerName": "アーミヤ",
               "speakerId": "avg_1037_amiya3_1",
+              "isRemote": false,
               "text": "ですが、やってみる前に諦めるつもりもありません。王冠からほんの少しでも何かを得られれば、それはロドスがより遠くへと歩む力になるかもしれませんから。"
             },
             {
               "type": "dialogue",
               "speakerName": "アーミヤ",
               "speakerId": "avg_1037_amiya3_1",
+              "isRemote": false,
               "text": "試してみたいんです。"
             }
           ]
@@ -277,18 +302,19 @@
               "type": "dialogue",
               "speakerName": "ケルシー",
               "speakerId": "avg_003_kalts_1",
+              "isRemote": false,
               "text": "……状況が不透明な現時点において、私はアーミヤの提案よりも有効な手段を提示することはできない。"
             },
             {
               "type": "dialogue",
               "speakerName": "ケルシー",
               "speakerId": "avg_003_kalts_1",
+              "isRemote": false,
               "text": "しかし、不用意に「文明の存続」へと踏み込むのであれば、その先にあるものは、必ずしも我々の望む結末であるとは限らない。"
             }
           ]
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -298,24 +324,24 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "――！？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "ドクター、君がそのように危険な行為に及ぶのは同意しかねる。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "――！？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "ドクター、君がそのように危険な行為に及ぶのは同意しかねる。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -325,40 +351,42 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "……ドクター、危険すぎます。誰もそんなことをしたことがありません！　ケルシー先生の意見に同意です、ドクターが危険を冒すべきではありません。"
-        },
-        {
-          "type": "narration",
-          "text": "ケルシーは親友のかつての経験を思い出した。それは彼女が思い出したくない記憶だった。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "「文明の存続」を個人の思考に繋げることは可能だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "彼女が以前、やったことがある。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "……！？"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "……ドクター、危険すぎます。誰もそんなことをしたことがありません！　ケルシー先生の意見に同意です、ドクターが危険を冒すべきではありません。"
+    },
+    {
+      "type": "narration",
+      "text": "ケルシーは親友のかつての経験を思い出した。それは彼女が思い出したくない記憶だった。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "「文明の存続」を個人の思考に繋げることは可能だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "彼女が以前、やったことがある。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "……！？"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -373,36 +401,38 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "ドクター、君の思考は極めて複雑だ。「文明の存続」を接続した際のリスクは君自身から生じるだけではない。アーミヤも同様に全く未知の衝撃に直面する可能性がある。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "繰り返すが、そのような危険な行動に賛同はできない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "ケルシー先生……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "アーミヤ、これは私の意見だ。君とドクターが最終的に下す判断に干渉することはできないが、私が本件をどう捉えているかだけは理解してほしい。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "ドクター、君の思考は極めて複雑だ。「文明の存続」を接続した際のリスクは君自身から生じるだけではない。アーミヤも同様に全く未知の衝撃に直面する可能性がある。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "繰り返すが、そのような危険な行動に賛同はできない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "ケルシー先生……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "アーミヤ、これは私の意見だ。君とドクターが最終的に下す判断に干渉することはできないが、私が本件をどう捉えているかだけは理解してほしい。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -417,18 +447,17 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "ですがケルシー先生が……"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "ですがケルシー先生が……"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -443,18 +472,17 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "わかりました。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "わかりました。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -464,8 +492,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -475,314 +502,364 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "（低い雄たけび）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "心配してくれているのか？　私は怒っているわけではない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "結局のところ、我々は新たな転換点へとやってきたのだ。前回の転換点では、バベルは私の最も見たくなかった結末に向かってしまった。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "全ての出来事を理想的な軌道の上に乗せることはできない。それは事実が証明しているんだ、Mon3tr。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "（爪を寄せる）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "（優しくすりすりする）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "我々の限界が、より重要な事柄において我々が持つ役割に影響を与え始めている。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "星の海が荒野と化すまでの推移を見届けることができる我々であっても、本当の危機の前では、この大地の他の生命と同じ立場でしかない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "（不満そうに低く唸る）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "慰めてくれて感謝する。君の気持ちは受け取った。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "（焦ったように低く唸る）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "その通りだ。きっとアーミヤとドクターはすでに「文明の存続」の奥深くへと入る準備をしている。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "私はアーミヤの決定に強く干渉するつもりはない。彼女はすでに最も正しい判断を下せるほどに成長した。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "ドクターは……ドクターも以前とは違う。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "あるいは……私は心のどこかでまだ一縷の望みを捨てきれずにいるのかもしれない。あるいは、今回の結末は本当に異なるのかもしれない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "（落ち込んだように伏せる）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "……確かにな、理性は依然として私に警告し続けている。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "「文明の存続」の力を借りて再びドクターの思考に触れるという決断は、穏当とは程遠いものだ。しかしアーミヤは正しい。我々に残された選択の余地は多くない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "（激高した雄たけび）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "Mon3tr、私がドクターとアーミヤを守る。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "Mon3trは、この瞬間ケルシーの内で揺れる感情を仔細に感じ取ることができた。\nケルシーが再び目覚めて以来、Mon3trは彼女のそばを離れたことがない。\nMon3trは彼女の同行者であり、彼女が導く共生体であり……彼女自身である。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "（親密そうに低く唸る）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "違う、Mon3tr。私は絶望を感じているわけではない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "私は先民が神民の統治を覆したことに喜び、ルガサルグスが新たな文明に時間の起点を定めたことにも奮い立った。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "かつて自分の傲慢さから過ちを犯したことがある。そして、友との出会いによって自信を取り戻したことも。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "君と私の基礎的な構造は、この大地にとっては異質であるかもしれないが、それは我々の歩む果てに待つものが孤独であると決定付ける要素にはならない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "私は、自らの居場所を見つけたんだ。このロドスで、この大地で。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "Mon3tr、私はあの人の期待に応えたんだ。今や私は愛することを学び、自分自身を見つけた。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "（困惑しつつ動く）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "（尻尾をケルシーに絡ませる）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "私は、アーミヤとドクターを守らねばならない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "二人を、本当の変数を……私ですら完全には見通すことのできない未来を守る。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "私もかつて「文明の存続」にアクセスをしたことはあるが、結局は自身の制限を突破することができなかった。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "だがアーミヤであれば、それが可能だ。それは私もテレジアも理解していた。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "彼女ならば、膨大で無秩序な情報の中から鍵となるものを見つけることができると確信している。テレジアの祝福を受けた彼女なら……きっと成し遂げられる。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "何せ、彼女はアーミヤなのだ。私がこの目でずっと成長を見届けてきたリーダーだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "私の過去の足跡をたどれば、アーミヤはあの人が残したわずかな言葉を見つけられるかもしれない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "源石がいまだ形を成していなかった頃、天才たちが時代そのものと論争を繰り広げたあの時代においても、命を讃え、救おうという意識から生まれる発想は決して途絶えることはなかった……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "希望は、一度も途絶えたことはないんだ、Mon3tr。テラは依然僅かな可能性を存続させるチャンスがある――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "（高ぶった雄たけび）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "私か？　いや、Mon3tr、私は記憶する能力の方が高い。かつてこの目で見届けながらも、時の流れの中で風化していった歴史は全て記憶している。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "私は決して特別ではない。"
-        },
-        {
-          "type": "narration",
-          "text": "ケルシーは、重要な情報をMon3trの脊髄へと静かに刻み込み続ける。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "もしも決して見たくない状況が本当に発生したら、会いたくないあの人が再び我々の前に立ったら――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "ドクターを、アーミヤを守るんだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "私はこの指令を、君の基本的な行動ポリシーに刻み込むだけだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "（興奮した雄たけび）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "さあ、Mon3tr、我々には目下のところ、果たすべき仕事が数多くある。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "脅威が本当に訪れたなら、このロドスを、テラが危機に対抗するための最前線にせねばならない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "……私が、君たちの最後の保険になるだろう。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_rhodescom"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "（低い雄たけび）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "心配してくれているのか？　私は怒っているわけではない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "結局のところ、我々は新たな転換点へとやってきたのだ。前回の転換点では、バベルは私の最も見たくなかった結末に向かってしまった。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "全ての出来事を理想的な軌道の上に乗せることはできない。それは事実が証明しているんだ、Mon3tr。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "（爪を寄せる）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "（優しくすりすりする）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "我々の限界が、より重要な事柄において我々が持つ役割に影響を与え始めている。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "星の海が荒野と化すまでの推移を見届けることができる我々であっても、本当の危機の前では、この大地の他の生命と同じ立場でしかない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "（不満そうに低く唸る）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "慰めてくれて感謝する。君の気持ちは受け取った。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "（焦ったように低く唸る）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "その通りだ。きっとアーミヤとドクターはすでに「文明の存続」の奥深くへと入る準備をしている。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "私はアーミヤの決定に強く干渉するつもりはない。彼女はすでに最も正しい判断を下せるほどに成長した。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "ドクターは……ドクターも以前とは違う。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "あるいは……私は心のどこかでまだ一縷の望みを捨てきれずにいるのかもしれない。あるいは、今回の結末は本当に異なるのかもしれない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "（落ち込んだように伏せる）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "……確かにな、理性は依然として私に警告し続けている。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "「文明の存続」の力を借りて再びドクターの思考に触れるという決断は、穏当とは程遠いものだ。しかしアーミヤは正しい。我々に残された選択の余地は多くない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "（激高した雄たけび）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "Mon3tr、私がドクターとアーミヤを守る。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "Mon3trは、この瞬間ケルシーの内で揺れる感情を仔細に感じ取ることができた。\nケルシーが再び目覚めて以来、Mon3trは彼女のそばを離れたことがない。\nMon3trは彼女の同行者であり、彼女が導く共生体であり……彼女自身である。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "（親密そうに低く唸る）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "違う、Mon3tr。私は絶望を感じているわけではない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "私は先民が神民の統治を覆したことに喜び、ルガサルグスが新たな文明に時間の起点を定めたことにも奮い立った。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "かつて自分の傲慢さから過ちを犯したことがある。そして、友との出会いによって自信を取り戻したことも。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "君と私の基礎的な構造は、この大地にとっては異質であるかもしれないが、それは我々の歩む果てに待つものが孤独であると決定付ける要素にはならない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "私は、自らの居場所を見つけたんだ。このロドスで、この大地で。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "Mon3tr、私はあの人の期待に応えたんだ。今や私は愛することを学び、自分自身を見つけた。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "（困惑しつつ動く）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "（尻尾をケルシーに絡ませる）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "私は、アーミヤとドクターを守らねばならない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "二人を、本当の変数を……私ですら完全には見通すことのできない未来を守る。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "私もかつて「文明の存続」にアクセスをしたことはあるが、結局は自身の制限を突破することができなかった。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "だがアーミヤであれば、それが可能だ。それは私もテレジアも理解していた。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "彼女ならば、膨大で無秩序な情報の中から鍵となるものを見つけることができると確信している。テレジアの祝福を受けた彼女なら……きっと成し遂げられる。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "何せ、彼女はアーミヤなのだ。私がこの目でずっと成長を見届けてきたリーダーだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "私の過去の足跡をたどれば、アーミヤはあの人が残したわずかな言葉を見つけられるかもしれない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "源石がいまだ形を成していなかった頃、天才たちが時代そのものと論争を繰り広げたあの時代においても、命を讃え、救おうという意識から生まれる発想は決して途絶えることはなかった……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "希望は、一度も途絶えたことはないんだ、Mon3tr。テラは依然僅かな可能性を存続させるチャンスがある――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "（高ぶった雄たけび）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "私か？　いや、Mon3tr、私は記憶する能力の方が高い。かつてこの目で見届けながらも、時の流れの中で風化していった歴史は全て記憶している。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "私は決して特別ではない。"
+    },
+    {
+      "type": "narration",
+      "text": "ケルシーは、重要な情報をMon3trの脊髄へと静かに刻み込み続ける。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "もしも決して見たくない状況が本当に発生したら、会いたくないあの人が再び我々の前に立ったら――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "ドクターを、アーミヤを守るんだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "私はこの指令を、君の基本的な行動ポリシーに刻み込むだけだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "（興奮した雄たけび）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "さあ、Mon3tr、我々には目下のところ、果たすべき仕事が数多くある。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "脅威が本当に訪れたなら、このロドスを、テラが危機に対抗するための最前線にせねばならない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "……私が、君たちの最後の保険になるだろう。"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": []

@@ -18,6 +18,10 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_kxstreet"
+    },
+    {
       "type": "narration",
       "text": "学生時代を無事に終え――\n私、セントーレアは今、人生の岐路に立っている。\nカジミエーシュでは、学業を修めた学生たちに与えられる、人生の選択肢は多種多様だ。\nたとえば、年一回の大企業説明会に参加して、国中の優秀なライバルとしのぎを削って、己の寿命と引き換えに糊口をしのぐ程度の賃金を与えられる職に就く。\nもしくは軍隊に入って、地獄のような訓練を一年経験した後、派遣された国境地帯で戦争が起こらないように祈る。\nああ、もちろん監査会のために働くのもとても将来性がある。でも私はあんな仕事内容にはこれっぽっちも興味がない。\nだから……"
     },
@@ -28,6 +32,7 @@
       "type": "dialogue",
       "speakerName": "騎士スカウト",
       "speakerId": "avg_npc_223",
+      "isRemote": false,
       "text": "セントーレアさん、弊社の騎士オーディションにご興味はありませんか？"
     },
     {
@@ -38,6 +43,10 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_23_G09"
+    },
+    {
       "type": "narration",
       "text": "最終的に、私はローズ新聞グループの騎士オーディションで準優勝を果たし、夢にまで見た騎士契約を見事に勝ち取った。\nその時の優勝者は、あの全身から眩いオーラを放つブロンドヘアーの男……\n何というか……彼はカジミエーシュ人が抱くクランタのイメージにあまりにもピッタリだった。生まれも悪くないし、ローズはきっと最初から彼を優勝者として決めてたんだと思う。\nたとえ決まってなかったとしても、あのオーディションの場で彼を打ち負かすのは、やっぱり難しいと思う。\n少なくとも観衆の投票では絶対に勝てない。\nまあいいや、文句を言っても仕方ないし。\n道のりはまだまだ長い。もしかしたら、彼よりも私が先に騎士称号を得られるかもしれないしね。"
     },
@@ -45,33 +54,42 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_arena_1"
+    },
+    {
       "type": "dialogue",
       "speakerName": "マネージャー",
       "speakerId": "avg_npc_222",
+      "isRemote": false,
       "text": "ご安心ください、セントーレアさん。今度は確実に称号を得られますよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "マネージャー",
       "speakerId": "avg_npc_222",
+      "isRemote": false,
       "text": "すでに本部に確認済みです。今最も優先度が高い契約独立騎士は、あなただと。"
     },
     {
       "type": "dialogue",
       "speakerName": "マネージャー",
       "speakerId": "avg_npc_222",
+      "isRemote": false,
       "text": "しばらくは試合数が減るかもしれませんが、メディアへの露出は増えることになります。"
     },
     {
       "type": "dialogue",
       "speakerName": "マネージャー",
       "speakerId": "avg_npc_222",
+      "isRemote": false,
       "text": "あと数ヶ月もすれば称号を獲得し、あなたはローズの新人の中でも一推しの称号騎士になりますよ！"
     },
     {
       "type": "dialogue",
       "speakerName": "セントーレア",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "うん、わかった。ありがと。"
     },
     {
@@ -82,11 +100,19 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_hotel"
+    },
+    {
       "type": "narration",
       "text": "今日の対戦相手のクランタ、いったいどういうつもり？\n体力が尽きて降参したふりをして、審判にも合図したのに、なんで攻撃を続けたの？\nそれが勝者としての権利だっていうの？　勝利が自分の手にあることを確信しておきながら、私をペットの羽獣みたいに追いかけ回して、恥をかかせたの？\nもし……もしわざと攻撃を受けてたことが観客にバレちゃいけないなんて状況じゃなければ、絶対に――\n......\nお父さんの言う通りだったのかも。騎士であることは、競技場で辱めを受けることだって。\n辱めを受けたくなければ、このルールに縛られた競技場で最強になるか、それとも逃れて名を消されるか――\nニュースでの報道後に消息不明になるかのどちらかしかない。"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_arena_1"
     },
     {
       "type": "narration",
@@ -110,6 +136,10 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_hotel"
+    },
+    {
       "type": "narration",
       "text": "――その騒ぎが発生してまもなく、私は一本の電話を受け取った。"
     },
@@ -127,36 +157,42 @@
       "type": "dialogue",
       "speakerName": "セントーレア",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "はい……もしもし。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "こんにちは、独立騎士セントーレア。もうすぐ称号騎士になるらしいね、おめでとう。"
     },
     {
       "type": "dialogue",
       "speakerName": "セントーレア",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "……アンタが誰で、どうやってこの番号を手に入れたかは知らないけど、業務提携の話なら、マネージャーを通してもらえる？"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "君は今の仕事にあまり情熱を持っていないようだね。疲れ果てた声をしているよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "私ならもっと君に合う仕事を提供してあげられるんだけど、興味はある？"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "テストはあるけど、簡単なものさ。それにパスさえすれば、君はこの仕事を手に入れられる。"
     },
     {
@@ -167,30 +203,35 @@
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "競技場は君には狭すぎるように見えるよ、セントーレア。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "君が軽く弓をはじくだけで、競技場の端から端まで届いてしまう。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "だけれど、私が提供するこの仕事に、そんなつまらないことはないんだ。報酬は同程度、加えて騎士とは比較にならない自由度を約束しよう。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "セントーレア、もし君が望むのなら、君の放つ矢は、大騎士領におりた夜の帳をも貫くことができる。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "いい返事を期待しているよ。"
     },
     {
@@ -201,11 +242,19 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_23_G07"
+    },
+    {
       "type": "narration",
       "text": "送られてきた住所にたどり着くと、そこは花屋だった。店主は私を見るなり、店の中から花束を持ってきた。\n花束にはメモがついていて、住所、いくつかの情報、そして一人の名前が書かれていた。\nその名前には見覚えがあった。こないだの試合相手――あの無礼なクランタ騎士の名前だ。\n花束の中には一本の矢も隠されていた。軍用規格の矢で、メーカー名も製品番号もない。\nこれらのことから、すでに組織の第一段階のテストが始まっているのがわかった。\nだがそれはまた、私に選択の余地がないことも意味していた。\n「彼ら」の招待を受けて、再び騎士に戻ることなどできはしない。\nテストを終わらせるか、翌日の新聞に載るか。\n新聞の見出しも簡単に想像できる――「独立騎士セントーレア、自宅で不慮の事故死」。\nフンッ、そもそも選択にすらなってないし……"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_23_G05"
     },
     {
       "type": "narration",
@@ -232,64 +281,78 @@
       "type": "dialogue",
       "speakerName": "セントーレア",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "もしもし。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "よくやった、セントーレア。事前の情報収集から、任務遂行場所の選択、実行のタイミング、すべて完璧だ。遂行方法についても、君の年齢と能力からすれば、上々だと言える。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "これで、晴れて君は無冑盟の一員だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "ローズ新聞との交渉も今しがた終わったばかりだ。向こうは、君との契約の破棄に合意して、慰謝料も払ってくれるよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "明日の午前、商業連合会本部のビルに来てくれ。迎えを行かせるからね。君の今後の仕事を手配しよう。"
     },
     {
       "type": "dialogue",
       "speakerName": "セントーレア",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "わかった。"
     },
     {
       "type": "dialogue",
       "speakerName": "セントーレア",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "で、アンタのことはなんて呼べばいい？"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "私のことは――"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "「プラチナ」と呼んでくれ。"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_23_G03"
     },
     {
       "type": "narration",
@@ -299,6 +362,10 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_23_G03"
+    },
+    {
       "type": "narration",
       "text": "三ヶ月後、セントーレアという名の独立騎士がいたことを、人々は既に忘れ去っていた。\n彼女の元マネージャーは、新たにオーディションに合格した騎士のマネージャーになっていた。\n彼女のファンも、他の騎士の輝きに目を奪われていった。\n当時一番熱狂的だったファン、彼女に一目会おうと毎日家の玄関で出待ちをしていた女の子ですら、今では別の騎士のファンクラブに入っている。\nたとえ街ですれ違っても、その子はもはや、かつて憧れた相手に気付くことすらないだろう。\n輝き続けなければ――忘れ去られる。\n――初めから存在していなかったみたいに。\nこれが、騎士というものの宿命なのかもしれない。\nでも無冑盟は違う。騎士たちの生死は無冑盟次第。どんなに傲慢な騎士であろうと、無冑盟の前では震えて縮こまる。\nそうあるためには、上から言いつけられた任務をきちんと遂行する必要があるけど。\nだって……商業連合会の重役たちは報告書に記された「任務失敗」の四文字を見るのが一番嫌いだもの。\nそうなると、たとえプラチナの立場でも、叱られる羽目になる。"
     },
@@ -306,69 +373,84 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_23_G03"
+    },
+    {
       "type": "dialogue",
       "speakerName": "代弁者",
       "speakerId": "avg_npc_216",
+      "isRemote": false,
       "text": "これがお前たち無冑盟の働きぶりか？"
     },
     {
       "type": "dialogue",
       "speakerName": "無冑盟メンバー",
       "speakerId": "avg_npc_216",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "代弁者",
       "speakerId": "avg_npc_216",
+      "isRemote": false,
       "text": "強く言っておいたはずだ。最も重要なのは情報、情報なのだと！"
     },
     {
       "type": "dialogue",
       "speakerName": "代弁者",
       "speakerId": "avg_npc_216",
+      "isRemote": false,
       "text": "あの騎士が死のうが生きようがどうだっていい。だがあいつに情報をリークされただと？"
     },
     {
       "type": "dialogue",
       "speakerName": "セントーレア",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "代弁者",
       "speakerId": "avg_npc_216",
+      "isRemote": false,
       "text": "「ターゲットは、偽の発信装置を使用することで我々の目を欺き、同時に別の遺体でマイクロ発信機を隠ぺいし、情報を送った」？"
     },
     {
       "type": "dialogue",
       "speakerName": "代弁者",
       "speakerId": "avg_npc_216",
+      "isRemote": false,
       "text": "もっと頭を使えないのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "代弁者",
       "speakerId": "avg_npc_216",
+      "isRemote": false,
       "text": "ターゲットは始末したと言うが、肝心の問題はどうなんだ！？"
     },
     {
       "type": "dialogue",
       "speakerName": "代弁者",
       "speakerId": "avg_npc_216",
+      "isRemote": false,
       "text": "俺が解決しろと言った問題を、お前たちは片づけたのか！？"
     },
     {
       "type": "dialogue",
       "speakerName": "無冑盟メンバー",
       "speakerId": "avg_npc_216",
+      "isRemote": false,
       "text": "（黙り込む）"
     },
     {
       "type": "dialogue",
       "speakerName": "セントーレア",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "（プラチナを見る）"
     },
     {
@@ -377,6 +459,10 @@
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_23_G07"
     },
     {
       "type": "narration",
@@ -389,78 +475,91 @@
       "type": "dialogue",
       "speakerName": "「ラズライト」",
       "speakerId": "avg_npc_209_1",
+      "isRemote": false,
       "text": "よぉ、プラチナを探してるんだけど、見なかったか？"
     },
     {
       "type": "dialogue",
       "speakerName": "セントーレア",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "師匠は任務に出てるよ、ラズライト。"
     },
     {
       "type": "dialogue",
       "speakerName": "「ラズライト」",
       "speakerId": "avg_npc_209_1",
+      "isRemote": false,
       "text": "そっか、ハハッ。"
     },
     {
       "type": "dialogue",
       "speakerName": "「ラズライト」",
       "speakerId": "avg_npc_209_1",
+      "isRemote": false,
       "text": "どんな任務だ？"
     },
     {
       "type": "dialogue",
       "speakerName": "セントーレア",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "知らされてない。"
     },
     {
       "type": "dialogue",
       "speakerName": "「ラズライト」",
       "speakerId": "avg_npc_209_1",
+      "isRemote": false,
       "text": "ふーん……じゃあ、今回のターゲットに対して疑問を抱いてるとかいう話はしてなかったか？"
     },
     {
       "type": "dialogue",
       "speakerName": "セントーレア",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "別に話はしてなかった、でも疑問は抱いていたと思う。そんな感じがしてた。"
     },
     {
       "type": "dialogue",
       "speakerName": "「ラズライト」",
       "speakerId": "avg_npc_209_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "「ラズライト」",
       "speakerId": "avg_npc_209_1",
+      "isRemote": false,
       "text": "お前は正直な奴だな。"
     },
     {
       "type": "dialogue",
       "speakerName": "「ラズライト」",
       "speakerId": "avg_npc_209_1",
+      "isRemote": false,
       "text": "フッ……プラチナの秘密を教えてくれた礼に、いい情報をやるよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "「ラズライト」",
       "speakerId": "avg_npc_209_1",
+      "isRemote": false,
       "text": "プラチナは死んだ。裏切って逃げる途中でな。"
     },
     {
       "type": "dialogue",
       "speakerName": "セントーレア",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "！"
     },
     {
       "type": "dialogue",
       "speakerName": "セントーレア",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -471,18 +570,21 @@
       "type": "dialogue",
       "speakerName": "「ラズライト」",
       "speakerId": "avg_npc_209_1",
+      "isRemote": false,
       "text": "そのせいで、奴のポジションが突然空いた。俺だけじゃなくて、クロガネたちや商業連合会の重役もみんな困るだろうな。"
     },
     {
       "type": "dialogue",
       "speakerName": "「ラズライト」",
       "speakerId": "avg_npc_209_1",
+      "isRemote": false,
       "text": "だからこうしようぜ。"
     },
     {
       "type": "dialogue",
       "speakerName": "「ラズライト」",
       "speakerId": "avg_npc_209_1",
+      "isRemote": false,
       "text": "お前が新しい「プラチナ」になる……どうだ？"
     },
     {
@@ -493,12 +595,14 @@
       "type": "dialogue",
       "speakerName": "「ラズライト」",
       "speakerId": "avg_npc_209_1",
+      "isRemote": false,
       "text": "何も言わないってことは、承諾したと解釈するぜ。"
     },
     {
       "type": "dialogue",
       "speakerName": "「ラズライト」",
       "speakerId": "avg_npc_209_1",
+      "isRemote": false,
       "text": "新しい仕事頑張れよ、プラチナ。"
     },
     {
@@ -512,11 +616,19 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_23_G03"
+    },
+    {
       "type": "narration",
       "text": "プラチナになってから、私はようやく彼の苦労を理解した。\n商業連合会の重役たちは、毎日のように無冑盟に難題を持ちかけてくる。\nラズライトは最優先の任務を自ら担当する。プラチナはそのサポートをしながら、人員を派遣して重役たちの難題をも処理しなければならない。\n管理もしなきゃいけない、指導だって欠かしちゃいけないし、必要があれば自分が動いて解決もしなきゃいけない。これ以上骨の折れる仕事はカジミエーシュには存在しない。\n幸いなことに、彼が教えてくれたスキルが役に立った。\n何度か小さなミスを犯して、その度に代弁者数名に叱られた後、この仕事を少しずつ理解できるようになった。今はどうにかプラチナとしての職責を果たせている。\nもし辞められるというなら、私はきっとすぐさま商業連合会に辞表を提出する。\nこんなに苦しくて、負担が大きくて、リスクの高い仕事、やりたいという人にやらせればいい。\nでも残念ながら、私に選択権はない。\nはぁ……"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_23_G07"
     },
     {
       "type": "narration",
@@ -529,84 +641,98 @@
       "type": "dialogue",
       "speakerName": "プラチナ",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "はい。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "やあ、プラチナ。君に頼みたい極秘任務があってね、すぐに動いてもらいたい。"
     },
     {
       "type": "dialogue",
       "speakerName": "プラチナ",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "はぁ……どんな。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "明日、商業連合会の取締役会議があるんだが、グローリーシールド工業の取締役が出席できないようにしてほしいんだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "プラチナ",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "え、それって！？"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "そう。グローリーシールド工業グループのいかなる関連業務にも、今後一切、彼に関わってほしくないんだよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "プラチナ",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "重役に手を下すなんて、私にそこまでの執行権はないはずだけど。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "この任務は元々ラズライトに与えるつもりだったんだが、彼らが君を推薦してね。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "そこで、君の電話を鳴らしたというわけだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "任務権限のパスワードを言うよ――"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "照合してくれ。"
     },
     {
       "type": "dialogue",
       "speakerName": "プラチナ",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "照合完了……問題なし。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "よし。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "我々を失望させないでくれよ。"
     },
     {
@@ -620,11 +746,19 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_23_G07"
+    },
+    {
       "type": "narration",
       "text": "ターゲットの退路を断つため、本社ビルへ向かう前に、無冑盟の小隊を彼の子供がいる家の周辺に配置した。\nそれから私は、正面玄関からビルに入っていった。\nラズライトが言ったように、ビル全体がすでに今夜起こるであろう出来事に備え、静まり返っていた。\n本社ビルの玄関は開け放たれ、警備員もいない。関連センサーは、すべて点検中になっていた。臨時のカードキーが受付の最も目立つ位置に置かれ、そしてそれには――\n最上階にある取締役休憩室への直通権限を持つ。"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_ltroom"
     },
     {
       "type": "narration",
@@ -634,8 +768,19 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_23_G07"
+    },
+    {
       "type": "narration",
       "text": "まだ学生だった頃、私は騎士に憧れた。\nそして騎士になった後、騎士殺したちの秘密を知った。\n無冑盟にスカウトされて、騎士殺しの幹部になっても、今度は商業連合会の重役の言いなりでしかなかった。\nそして今日、運命のいたずらで、一人の重役が私の手に掛かった。\n両親は言ってた。私の鋭い目はきっと一族に栄光をもたらすって。\n今、私は何を見ているの？\n大騎士領の外の漆黒の荒野が見える。\n大騎士領全体の隅の隅までめぐらされた、ネオンライトが見える。\n都市の中央に高くそびえ立った、商業連合会のビルが見える。\nそしてそれらの全ての上におりた夜と輝く星空。\nこの目で捉えたものなら、私は理解できる。\nだけど……\nこの高く積み重なったビジネスの塔の上や、都市が均してきた地面の下には、重役たちすら操る見えない手がある。\n彼らを使って、建物の頂上にレンガや瓦を乗せ、カジミエーシュという名の高い塔を建設し続ける手だ。\n彼らも、ただの操り人形であり、下僕だ。お気に召さなければ、使い捨てられる運命だから。\n彼は最初の一人ではないし、決して最後の一人でもない。\n不可視の手は商業連合会を通して、カジミエーシュ全土へと伸びている。\nこの大地にいる限り、この手からは逃れられない。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_ltroom"
     },
     {
       "type": "sceneBreak"
@@ -644,24 +789,28 @@
       "type": "dialogue",
       "speakerName": "プラチナ",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "フンッ……"
     },
     {
       "type": "dialogue",
       "speakerName": "プラチナ",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "はぁ……ちょっとくらいボーっとさせてくれないかな……"
     },
     {
       "type": "dialogue",
       "speakerName": "プラチナ",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "疲れたよ……"
     },
     {
       "type": "dialogue",
       "speakerName": "プラチナ",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "あ～あ、休暇が欲しいなぁ……"
     },
     {

@@ -56,6 +56,44 @@ test("resolveStorySource uses the existing story file when present", () => {
   );
 });
 
+test("resolveStorySource keeps vendor-relative paths when called from a harness worktree", () => {
+  const hostRoot = fs.mkdtempSync(path.join(os.tmpdir(), "ark-str-host-"));
+  const worktreeRoot = path.join(hostRoot, ".harness-worktrees", "issue-38");
+  fs.mkdirSync(worktreeRoot, { recursive: true });
+  fs.mkdirSync(path.join(hostRoot, "vendor", "ArknightsGamedata"), { recursive: true });
+  fs.writeFileSync(path.join(hostRoot, "vendor", "ArknightsGamedata", ".git"), "gitdir: mocked");
+
+  const storyPath = path.join(
+    hostRoot,
+    "vendor",
+    "ArknightsGamedata",
+    "en",
+    "gamedata",
+    "story",
+    "activities",
+    "test",
+    "story.txt",
+  );
+  fs.mkdirSync(path.dirname(storyPath), { recursive: true });
+  fs.writeFileSync(storyPath, "story-body");
+
+  const resolved = resolveStorySource({
+    cwd: worktreeRoot,
+    server: "en",
+    storyInfo: "info/activities/test/story",
+    storyTableEntry: null,
+    storyTxt: "activities/test/story",
+    storyId: "story-id",
+    unlockData: { storyId: "story-id" },
+  });
+
+  assert.equal(resolved.sourceExists, true);
+  assert.equal(
+    resolved.sourcePath,
+    "vendor/ArknightsGamedata/en/gamedata/story/activities/test/story.txt",
+  );
+});
+
 test("resolveStorySource falls back to metadata hashing when the file is missing", () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "ark-str-content-"));
 

@@ -143,9 +143,11 @@ function CharacterObservationTracker({
 }
 
 function StoryBlocks({
+  backgroundPaths,
   blocks,
   portraitPaths,
 }: {
+  backgroundPaths: Record<string, string>;
   blocks: StoryBlock[];
   portraitPaths: Record<string, string>;
 }) {
@@ -156,7 +158,11 @@ function StoryBlocks({
           return (
             <article
               key={`dialogue-${index}`}
-              className="grid gap-4 rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--surface)]/95 p-4 md:grid-cols-[72px_minmax(0,1fr)]"
+              className={`grid gap-4 rounded-[var(--radius-lg)] border bg-[var(--surface)]/95 p-4 md:grid-cols-[72px_minmax(0,1fr)] ${
+                block.isRemote
+                  ? "border-[var(--accent)] border-dashed shadow-[var(--shadow-sm)]"
+                  : "border-[var(--border)]"
+              }`}
             >
               <div className="flex items-start gap-3">
                 <ReaderPortraitSlot
@@ -164,9 +170,16 @@ function StoryBlocks({
                   speakerName={block.speakerName}
                 />
                 <div className="pt-1">
-                  <p className="text-xs uppercase tracking-[0.18em] text-[var(--text-muted)]">
-                    Dialogue
-                  </p>
+                  <div className="flex flex-wrap items-center gap-2">
+                    <p className="text-xs uppercase tracking-[0.18em] text-[var(--text-muted)]">
+                      Dialogue
+                    </p>
+                    {block.isRemote ? (
+                      <Badge variant="accent" className="text-[10px] uppercase tracking-[0.18em]">
+                        Wireless link
+                      </Badge>
+                    ) : null}
+                  </div>
                   <h3 className="text-lg font-semibold text-[var(--text)]">{block.speakerName}</h3>
                 </div>
               </div>
@@ -202,6 +215,42 @@ function StoryBlocks({
           );
         }
 
+        if (block.type === "background") {
+          const backgroundPath = backgroundPaths[block.backgroundId] ?? null;
+          return (
+            <article
+              key={`background-${index}`}
+              className="overflow-hidden rounded-[var(--radius-xl)] border border-[var(--border)] bg-[var(--surface)]/96"
+              data-testid="background-block"
+            >
+              <div className="flex items-center justify-between gap-3 border-b border-[var(--border)] px-4 py-3">
+                <div>
+                  <p className="text-xs uppercase tracking-[0.18em] text-[var(--text-muted)]">
+                    Background
+                  </p>
+                  <p className="text-sm font-semibold text-[var(--text)]">{block.backgroundId}</p>
+                </div>
+                {backgroundPath ? <Badge variant="default">Bundled image</Badge> : null}
+              </div>
+              <div className="bg-[var(--surface-muted)]">
+                {backgroundPath ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    alt={`${block.backgroundId} background`}
+                    className="block aspect-[16/9] w-full object-cover object-center"
+                    data-testid="background-image"
+                    src={backgroundPath}
+                  />
+                ) : (
+                  <div className="flex aspect-[16/9] items-center justify-center px-6 text-sm text-[var(--text-muted)]">
+                    Bundled background image not found for this transition.
+                  </div>
+                )}
+              </div>
+            </article>
+          );
+        }
+
         return (
           <article
             key={`choice-${index}`}
@@ -221,28 +270,18 @@ function StoryBlocks({
                   className="rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--panel)] p-4"
                 >
                   <p className="text-sm font-semibold text-[var(--accent)]">{option.label}</p>
-                  <div className="mt-3 grid gap-3">
-                    {option.blocks.length > 0 ? (
-                      <StoryBlocks blocks={option.blocks} portraitPaths={portraitPaths} />
-                    ) : (
-                      <p className="text-sm leading-6 text-[var(--text-muted)]">
-                        이 선택지에 매핑된 후속 대사가 아직 정규화되지 않았습니다.
-                      </p>
-                    )}
-                  </div>
+                  {option.blocks.length > 0 ? (
+                    <div className="mt-3 grid gap-3">
+                      <StoryBlocks
+                        backgroundPaths={backgroundPaths}
+                        blocks={option.blocks}
+                        portraitPaths={portraitPaths}
+                      />
+                    </div>
+                  ) : null}
                 </section>
               ))}
             </div>
-            {block.sharedBlocks.length > 0 ? (
-              <section className="mt-4 rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--surface-muted)] p-4">
-                <p className="text-xs uppercase tracking-[0.18em] text-[var(--text-muted)]">
-                  Shared response
-                </p>
-                <div className="mt-3 grid gap-3">
-                  <StoryBlocks blocks={block.sharedBlocks} portraitPaths={portraitPaths} />
-                </div>
-              </section>
-            ) : null}
           </article>
         );
       })}
@@ -251,20 +290,23 @@ function StoryBlocks({
 }
 
 function StoryBodyRenderer({
+  backgroundPaths,
   blocks,
   portraitPaths,
 }: {
+  backgroundPaths: Record<string, string>;
   blocks: StoryBlock[];
   portraitPaths: Record<string, string>;
 }) {
   return (
     <div className="grid gap-4" data-testid="story-body">
-      <StoryBlocks blocks={blocks} portraitPaths={portraitPaths} />
+      <StoryBlocks backgroundPaths={backgroundPaths} blocks={blocks} portraitPaths={portraitPaths} />
     </div>
   );
 }
 
 export function ReaderStoryShell({
+  backgroundPaths,
   detail,
   group,
   locale,
@@ -277,6 +319,7 @@ export function ReaderStoryShell({
   group: ContentGroupEntry;
   story: ContentStoryIndexEntry;
   detail: StoryDetail | null;
+  backgroundPaths: Record<string, string>;
   portraitPaths: Record<string, string>;
   siblingStories: ContentStoryIndexEntry[];
   summaryAvailable: boolean;
@@ -344,9 +387,13 @@ export function ReaderStoryShell({
                 {story.sourcePath}
               </CardDescription>
             </CardHeader>
-            <CardContent>
+              <CardContent>
               {isBodyAvailable ? (
-                <StoryBodyRenderer blocks={detail.blocks} portraitPaths={portraitPaths} />
+                <StoryBodyRenderer
+                  backgroundPaths={backgroundPaths}
+                  blocks={detail.blocks}
+                  portraitPaths={portraitPaths}
+                />
               ) : (
                 <div className="rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--panel)] p-5 text-sm leading-7 text-[var(--text-muted)]">
                   이 스토리는 generated body JSON이 아직 준비되지 않았습니다. source manifest에는

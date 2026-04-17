@@ -11,6 +11,10 @@
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
       "type": "narration",
       "text": "……アラデル、盗み聞きは良くないぞ。お父さんの話をよく聞きなさい。\n暗がりで他人の生死について計略を巡らせるのは卑しい者だけだ。\nそういった者たちは、利益を得られるかもしれないが、盗んだ勝利が長続きすることは絶対にないのだ。"
     },
@@ -18,12 +22,14 @@
       "type": "dialogue",
       "speakerName": "アラデル",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "（うーん……あの人たちは卑しい人たち……）"
     },
     {
       "type": "dialogue",
       "speakerName": "アラデル",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "（お父様……）"
     },
     {
@@ -34,15 +40,21 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_towerinside"
+    },
+    {
       "type": "dialogue",
       "speakerName": "顔の見えない将校",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "急いで下に行かなければならない。"
     },
     {
       "type": "dialogue",
       "speakerName": "顔の見えない将校",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "兵士たちが人数を数えているところだ。混乱しているうちに紛れ込もう。そうすれば、我々が離れていたことに気付く者はいないだろう。"
     },
     {
@@ -52,18 +64,21 @@
       "type": "dialogue",
       "speakerName": "顔の見えない商人",
       "speakerId": "avg_npc_177",
+      "isRemote": false,
       "text": "……何か音がしなかったかね？"
     },
     {
       "type": "dialogue",
       "speakerName": "顔の見えない将校",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "何かの小動物だろう。考え過ぎるな、こんな狭い部屋に人が隠れられるはずがないだろう？"
     },
     {
       "type": "dialogue",
       "speakerName": "アラデル",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "ふぅ……"
     },
     {
@@ -77,6 +92,7 @@
       "type": "dialogue",
       "speakerName": "アラデル",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "あっ！"
     },
     {
@@ -115,45 +131,56 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "32_g2_dukegarden"
+    },
+    {
       "type": "dialogue",
       "speakerName": "ヴィクトリア士官",
       "speakerId": "avg_npc_409_1",
+      "isRemote": false,
       "text": "見ろ、あ……あれは……"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィクトリア士官",
       "speakerId": "avg_npc_409_1",
+      "isRemote": false,
       "text": "アレクサンドリナ殿下だ！"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィクトリア士官",
       "speakerId": "avg_npc_409_1",
+      "isRemote": false,
       "text": "すぐに陛下に報告を！　殿下を見つけた、今庭園におられると――"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィクトリア士官",
       "speakerId": "avg_npc_409_1",
+      "isRemote": false,
       "text": "待て、私の見間違いか？　あれはもしや……失われた……"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィクトリア士官",
       "speakerId": "avg_npc_409_1",
+      "isRemote": false,
       "text": "我らの殿下が――殿下が「諸王の息」を発見なされた！"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィクトリア士官",
       "speakerId": "avg_npc_409_1",
+      "isRemote": false,
       "text": "ヴィクトリアにご加護を！"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィクトリア士官",
       "speakerId": "avg_npc_409_1",
+      "isRemote": false,
       "text": "我が王にご加護を！"
     },
     {
@@ -170,6 +197,7 @@
       "type": "dialogue",
       "speakerName": "侍女エルシー",
       "speakerId": "avg_npc_663_1",
+      "isRemote": false,
       "text": "アラデルお嬢様……どうしてこちらに？"
     },
     {
@@ -179,375 +207,448 @@
       "type": "dialogue",
       "speakerName": "アラデル",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "……エルシー。"
     },
     {
       "type": "dialogue",
       "speakerName": "アラデル",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "あなたにも、彼らは見えないの？"
     },
     {
       "type": "dialogue",
       "speakerName": "侍女エルシー",
       "speakerId": "avg_npc_663_1",
+      "isRemote": false,
       "text": "彼ら？　何を指していらっしゃるのですか？　アレクサンドリナ殿下のことですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "侍女エルシー",
       "speakerId": "avg_npc_663_1",
+      "isRemote": false,
       "text": "殿下は一人だけですよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アラデル",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "違うよ、あの、金色の……"
     },
     {
       "type": "dialogue",
       "speakerName": "アラデル",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "さっき私に話しかけてきたんだよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "侍女エルシー",
       "speakerId": "avg_npc_663_1",
+      "isRemote": false,
       "text": "何かあったのですか？　なぜドレスがこんなに汚れて……ご無事ですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "アラデル",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "あの……よくわからない。"
     },
     {
       "type": "dialogue",
       "speakerName": "アラデル",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "星……星が上の階の部屋に落ちたの。"
     },
     {
       "type": "dialogue",
       "speakerName": "アラデル",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "蒸気騎士……甲冑……あの卑しい人たちをやっつけるんだ！"
     },
     {
       "type": "dialogue",
       "speakerName": "侍女エルシー",
       "speakerId": "avg_npc_663_1",
+      "isRemote": false,
       "text": "お嬢様、どういう意味でしょうか。おっしゃっていることがよく……"
     },
     {
       "type": "dialogue",
       "speakerName": "アラデル",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "エルシー、頭がくらくらするの。"
     },
     {
       "type": "dialogue",
       "speakerName": "侍女エルシー",
       "speakerId": "avg_npc_663_1",
+      "isRemote": false,
       "text": "お嬢様には休息が必要です。この光景を見てめまいがしない人はいません。今日はあまりに多くのことが起きました。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_manorindoor"
+    },
+    {
       "type": "dialogue",
       "speakerName": "女性貴族",
       "speakerId": "avg_npc_175",
+      "isRemote": false,
       "text": "ご覧になりましたかしら？　アレクサンドリナ殿下が失われた「諸王の息」を抱いて戻られましたわ！"
     },
     {
       "type": "dialogue",
       "speakerName": "男性貴族",
       "speakerId": "avg_npc_176",
+      "isRemote": false,
       "text": "庭園の歓声で窓や壁が壊れるかと思ったな。誰も彼も己の目が信じられない様子だった。無理もない。あのアレクサンドリナ殿下だぞ――まだあんなに幼いというのに！"
     },
     {
       "type": "dialogue",
       "speakerName": "女性貴族",
       "speakerId": "avg_npc_175",
+      "isRemote": false,
       "text": "「奇跡」、皆様こう言っていますわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "男性貴族",
       "speakerId": "avg_npc_176",
+      "isRemote": false,
       "text": "そうだ、奇跡、これはまさしく奇跡だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "男性貴族",
       "speakerId": "avg_npc_176",
+      "isRemote": false,
       "text": "奇跡と偶然の最大の違い――それは、奇跡の方は理由もなくその時その場所に訪れないことにある。"
     },
     {
       "type": "dialogue",
       "speakerName": "男性貴族",
       "speakerId": "avg_npc_176",
+      "isRemote": false,
       "text": "陛下のお誕生日はまもなくだ……この奇跡的な出来事を素晴らしい先触れと見なさずにいられようか？"
     },
     {
       "type": "dialogue",
       "speakerName": "女性貴族",
       "speakerId": "avg_npc_175",
+      "isRemote": false,
       "text": "何をおっしゃっていますの。このような自作自演の芝居は、見ていて愉快ですわね。"
     },
     {
       "type": "dialogue",
       "speakerName": "女性貴族",
       "speakerId": "avg_npc_175",
+      "isRemote": false,
       "text": "公爵様方が、今の陛下とカンバーランド公爵をどう評価されていたかを思い出しますわ……"
     },
     {
       "type": "dialogue",
       "speakerName": "男性貴族",
       "speakerId": "avg_npc_176",
+      "isRemote": false,
       "text": "この話はこれまでだ。心配事はすべて忘れてしまおう、まもなく宴が始まるぞ。"
     },
     {
       "type": "dialogue",
       "speakerName": "女性貴族",
       "speakerId": "avg_npc_175",
+      "isRemote": false,
       "text": "そうですわね。今は、目の前のすべてを楽しむといたしましょう――"
     },
     {
       "type": "dialogue",
       "speakerName": "男性貴族＆女性貴族",
       "speakerId": null,
+      "isRemote": false,
       "text": "ヴィクトリアにご加護を！"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "27_g11_lentinobleroom_indoor"
+    },
+    {
       "type": "dialogue",
       "speakerName": "激高する声",
       "speakerId": null,
+      "isRemote": false,
       "text": "……アレクサンドリナの冒険の旅に皆が気付いたようだな。"
     },
     {
       "type": "dialogue",
       "speakerName": "低く沈んだ声",
       "speakerId": null,
+      "isRemote": false,
       "text": "陛下……陛下は殿下が地下に行かれることを、とうにご存じだったのですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "激高する声",
       "speakerId": null,
+      "isRemote": false,
       "text": "良い機会であるからな。私が王宮にいなければ、忠実な衛兵たちも雑談に興じたり昼寝をして、地下通路の小さな侵入者を見逃すだろうと思った。"
     },
     {
       "type": "dialogue",
       "speakerName": "低く沈んだ声",
       "speakerId": null,
+      "isRemote": false,
       "text": "では、これも全て陛下のご計画でしたか。"
     },
     {
       "type": "dialogue",
       "speakerName": "激高する声",
       "speakerId": null,
+      "isRemote": false,
       "text": "半分はあの方の思いつきだ。あの方は時々人間に対して、他愛ない悪戯を行うのが好きだからな。"
     },
     {
       "type": "dialogue",
       "speakerName": "低く沈んだ声",
       "speakerId": null,
+      "isRemote": false,
       "text": "あの方が付き合ってくださっているならば、これも必要なことだと考えておられると？"
     },
     {
       "type": "dialogue",
       "speakerName": "激高する声",
       "speakerId": null,
+      "isRemote": false,
       "text": "……ロンディニウムには、まもなく夏が訪れる。ここ最近はひどく蒸して、大雨が降ることもしばしばある。お前もアラデルと夫人を事前に都市から送り出すつもりなのであろう？"
     },
     {
       "type": "dialogue",
       "speakerName": "低く沈んだ声",
       "speakerId": null,
+      "isRemote": false,
       "text": "陛下！　私は決して妙な腹積りをしているわけでは、ただ……"
     },
     {
       "type": "dialogue",
       "speakerName": "激高する声",
       "speakerId": null,
+      "isRemote": false,
       "text": "ロバート、お前は娘を愛しているのだろう、私とて同じだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "激高する声",
       "speakerId": null,
+      "isRemote": false,
       "text": "我々は、ヴィクトリアの現在のためにすべてを懸ける。そして彼女たちこそヴィクトリアの未来なのだ。万一我々が本当に失敗すれば……"
     },
     {
       "type": "dialogue",
       "speakerName": "低く沈んだ声",
       "speakerId": null,
+      "isRemote": false,
       "text": "そんなことはさせません、陛下。私がこの命を賭してでも、恐るべき事態が起こることを必ずや防ぎます。"
     },
     {
       "type": "dialogue",
       "speakerName": "激高する声",
       "speakerId": null,
+      "isRemote": false,
       "text": "我らの前途に対して、私には十分な自信がある。その道をつかみ取る覚悟もある。だがそれは、私がアレクサンドリナのために逃げ道を用意してやることとは矛盾しない。"
     },
     {
       "type": "dialogue",
       "speakerName": "激高する声",
       "speakerId": null,
+      "isRemote": false,
       "text": "あの子はいずれヴィクトリアの王になるのだ。少しばかり早く自分の都市を知ってもらっても、悪いことではなかろう？"
     },
     {
       "type": "dialogue",
       "speakerName": "激高する声",
       "speakerId": null,
+      "isRemote": false,
       "text": "それにこうした茶番も、このうつうつとした午後にとって、多少のスパイスにはなるであろう。"
     },
     {
       "type": "dialogue",
       "speakerName": "激高する声",
       "speakerId": null,
+      "isRemote": false,
       "text": "人々は、大きな精神的圧力を受ける中で、励ましを必要としているのだ。これこそ我々がここに集っている意味である。"
     },
     {
       "type": "dialogue",
       "speakerName": "激高する声",
       "speakerId": null,
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "激高する声",
       "speakerId": null,
+      "isRemote": false,
       "text": "もちろん……我々にはすでに予感がある。ゆえにこのような計画を立てるのだ、そうであろう？"
     },
     {
       "type": "dialogue",
       "speakerName": "低く沈んだ声",
       "speakerId": null,
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "激高する声",
       "speakerId": null,
+      "isRemote": false,
       "text": "さぁ、ロバートよ。この茶を飲み終えたら、我々も下へと行くとしよう。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "32_g2_dukegarden"
+    },
+    {
       "type": "dialogue",
       "speakerName": "アラデル",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "音楽が聞こえる。これってお父様が陛下のために呼び寄せた音楽団でしょ？"
     },
     {
       "type": "dialogue",
       "speakerName": "侍女エルシー",
       "speakerId": "avg_npc_663_1",
+      "isRemote": false,
       "text": "そうですよ、アラデルお嬢様。宴会がまもなく始まります。"
     },
     {
       "type": "dialogue",
       "speakerName": "アラデル",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "みんな楽しそうだね。"
     },
     {
       "type": "dialogue",
       "speakerName": "侍女エルシー",
       "speakerId": "avg_npc_663_1",
+      "isRemote": false,
       "text": "お嬢様は楽しくないのですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "アラデル",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "ねぇ、エルシー……これからも、こんな日々がずっと続いていくんだよね？"
     },
     {
       "type": "dialogue",
       "speakerName": "アラデル",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "私とあなた、それにお父様、お母様……いつまでも一緒だよね？"
     },
     {
       "type": "dialogue",
       "speakerName": "侍女エルシー",
       "speakerId": "avg_npc_663_1",
+      "isRemote": false,
       "text": "それはわかりません、アラデルお嬢様。ですが私は、変わらないものなど存在しないと思っております、この庭園の花のように。"
     },
     {
       "type": "dialogue",
       "speakerName": "アラデル",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "アラデル",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "違うよ、エルシー、きっと変わらないものはあるよ！"
     },
     {
       "type": "dialogue",
       "speakerName": "アラデル",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "例えば、私は大きくなったら蒸気騎士になるの。あのリンチさんみたいに！　ううん、リンチさんよりもすごい騎士になる！"
     },
     {
       "type": "dialogue",
       "speakerName": "アラデル",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "私があなたたちを守ってあげるの。悪者をみんな追い出すよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アラデル",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "ひいひいひいひいおばあ様みたいに、カンバーランドの名前をいつまでも輝かせるの。"
     },
     {
       "type": "dialogue",
       "speakerName": "アラデル",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "エルシー、約束する。あなたに見せてあげるんだから！"
     },
     {
       "type": "dialogue",
       "speakerName": "侍女エルシー",
       "speakerId": "avg_npc_663_1",
+      "isRemote": false,
       "text": "お嬢様……"
     },
     {
       "type": "dialogue",
       "speakerName": "アラデル",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "……私はロンディニウムを離れないよ。だからエルシー、あなたも離れちゃダメ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アラデル",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "私はお父様に言うわ――"
     },
     {
       "type": "dialogue",
       "speakerName": "アラデル",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "ここが私のおうちだって。これまでのカンバーランドが、一人残らずそうしてきたように、私が受け継いで、守るんだ。私の命に終わりが来るまで。"
     },
     {
       "type": "dialogue",
       "speakerName": "アラデル",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "そう誓うよ。"
     },
     {
