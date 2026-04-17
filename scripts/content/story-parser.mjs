@@ -165,8 +165,7 @@ function resolveUniformSpeakerId(slots) {
     return null;
   }
 
-  const [speakerId] = uniqueSpeakerIds;
-  return normalizedSpeakerIds.every((candidate) => candidate === speakerId) ? speakerId : null;
+  return uniqueSpeakerIds[0] ?? null;
 }
 
 function resolveCharacterSpeakerId(rawAttributes) {
@@ -216,6 +215,14 @@ function resolveCharslotPriority(rawFocusValue, slotKey) {
   }
 
   return normalizedFocus === slotKey ? 1 : -1;
+}
+
+function isNeutralCharslotFocus(rawFocusValue) {
+  if (typeof rawFocusValue !== "string") {
+    return false;
+  }
+
+  return ["n", "none", "all"].includes(rawFocusValue.trim().toLowerCase());
 }
 
 function createFrame(parserState, source, key, speakerId, priority) {
@@ -370,6 +377,19 @@ function consumeCharslotTag(remainder, parserState) {
       : speakerToken !== null
         ? 0
         : existingFrame?.priority ?? 0;
+
+  if (isNeutralCharslotFocus(rawFocusValue)) {
+    for (const [activeSlotKey, activeFrame] of parserState.charslots.entries()) {
+      if (activeSlotKey === slotKey) {
+        continue;
+      }
+
+      parserState.charslots.set(activeSlotKey, {
+        ...activeFrame,
+        priority: -1,
+      });
+    }
+  }
 
   parserState.charslots.set(
     slotKey,

@@ -90,6 +90,22 @@ test("parseStoryText resolves focused Character slots into operator-aware dialog
   ]);
 });
 
+test("parseStoryText ignores char_empty placeholders when only one real Character speaker remains", () => {
+  const blocks = parseStoryText(`
+[character(name="avg_npc_196_1#1",name2="char_empty",fadetime=1)]
+[name="린 위시아"]찾았다.
+`);
+
+  assert.deepEqual(blocks, [
+    {
+      type: "dialogue",
+      speakerName: "린 위시아",
+      speakerId: "avg_npc_196_1",
+      text: "찾았다.",
+    },
+  ]);
+});
+
 test("parseStoryText reuses the last resolved speaker only while the name stays the same", () => {
   const blocks = parseStoryText(`
 [Character(name="char_101_sora_1#4")]
@@ -240,6 +256,22 @@ test("parseStoryText resolves charslot and cutin frames together and clears slot
       "avg_npc_175",
       "avg_npc_175",
     ],
+  );
+});
+
+test("parseStoryText neutralizes all active charslot priorities for all-focus updates", () => {
+  const blocks = parseStoryText(`
+[charslot(slot="l",name="avg_369_bena_1#11$1")]
+[charslot(slot="r",name="avg_npc_152")]
+[charslot(slot="l",name="avg_369_bena_1#11$1",focus="l")]
+[name="베나"]그럼……
+[charslot(slot="l",name="avg_369_bena_1#11$1",focus="all")]
+[name="베나&애니"]사과 한 개만 줘.
+`);
+
+  assert.deepEqual(
+    blocks.filter((block) => block.type === "dialogue").map((block) => block.speakerId),
+    ["avg_369_bena_1", "avg_369_bena_1"],
   );
 });
 
