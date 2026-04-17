@@ -1,19 +1,18 @@
 # Latest Iteration
 
-Latest parent iteration: `#44`
+Latest parent iteration: `#47`
 
 Completed child issue:
 
-- `#43` via merged PR `#45` - refresh the reader background previews, backdrop transitions, and shared chrome styling
+- `#46` via merged PR `#48` - refine the story backdrop fade, story-width balance, and reader card surfaces
 
 Current closeout outcome:
 
-- story background cards now show bundled image previews while staying in the reading flow as transition markers
-- story-only blurred backdrops now cross-fade between active background images instead of hard switching
-- the shared chrome moved to a sans-first type system with tighter radius and shadow tokens, reducing the earlier overly rounded feel
-- the floating app bar, story cards, navigation surfaces, and summary section now share the same restrained card language across home, archive, group, and story routes
-- exported-site smoke now asserts that a real background preview image is visible on a story with bundled backgrounds
-- `npm run verify` passed on branch `codex-reader-visual-refresh-issue-43`
+- story-only background swaps now use a slower 0.5 second cross-fade instead of the earlier abrupt transition feel
+- the story layout now keeps the left navigation row but gives the main body and summary a broader reading surface that lines up more closely with the floating app bar width
+- in-flow background markers still drive the backdrop, but bundled preview images now preserve their full aspect ratio and the extra status chrome has been removed
+- dialogue cards now use a portrait-plus-header layout with full-width body text, while remote cutins still carry the `Wireless link` indicator in the header
+- `npm run verify` passed on branch `codex-story-surface-refinement-issue-46`
 
 Remaining product gaps:
 

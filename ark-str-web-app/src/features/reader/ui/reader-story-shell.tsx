@@ -20,6 +20,8 @@ import type {
 } from "@/features/content/types";
 import { useReaderSession } from "@/features/reader/runtime/reader-session-context";
 
+const STORY_BACKDROP_FADE_MS = 500;
+
 function formatMetric(value: number) {
   return new Intl.NumberFormat("ko-KR").format(value);
 }
@@ -33,7 +35,7 @@ function ReaderPortraitSlot({
 }) {
   return (
     <div
-      className="flex h-20 w-16 shrink-0 items-start justify-center overflow-hidden rounded-[var(--radius-sm)] border border-[var(--border)] bg-[var(--surface-muted)]"
+      className="flex h-24 w-20 shrink-0 items-start justify-center overflow-hidden rounded-[var(--radius-sm)] border border-[var(--border)] bg-[var(--surface-muted)]"
       data-testid="speaker-portrait-slot"
     >
       {portraitPath ? (
@@ -42,9 +44,9 @@ function ReaderPortraitSlot({
           alt={`${speakerName} portrait`}
           className="block h-full w-full object-cover object-top"
           data-testid="speaker-portrait-image"
-          height={80}
+          height={96}
           src={portraitPath}
-          width={64}
+          width={80}
         />
       ) : null}
     </div>
@@ -123,69 +125,84 @@ function collectBackgroundSequenceFromBlocks(blocks: StoryBlock[], accumulator: 
 }
 
 function StoryBackdrop({ backgroundPath }: { backgroundPath: string | null }) {
-  const [committedPath, setCommittedPath] = useState<string | null>(backgroundPath);
-  const [incomingPath, setIncomingPath] = useState<string | null>(null);
+  const [currentPath, setCurrentPath] = useState<string | null>(backgroundPath);
+  const [previousPath, setPreviousPath] = useState<string | null>(null);
+  const [isTransitionArmed, setIsTransitionArmed] = useState(false);
+  const currentPathRef = useRef<string | null>(backgroundPath);
 
   useEffect(() => {
+    currentPathRef.current = currentPath;
+  }, [currentPath]);
+
+  useEffect(() => {
+    const committedPath = currentPathRef.current;
+
     if (backgroundPath === committedPath) {
       return;
     }
 
+    let settleRafId: number | null = null;
     let timeoutId: number | null = null;
     const rafId = window.requestAnimationFrame(() => {
       if (!backgroundPath) {
-        setCommittedPath(null);
-        setIncomingPath(null);
+        setCurrentPath(null);
+        setPreviousPath(null);
+        setIsTransitionArmed(false);
         return;
       }
 
       if (!committedPath) {
-        setCommittedPath(backgroundPath);
-        setIncomingPath(null);
+        setCurrentPath(backgroundPath);
+        setPreviousPath(null);
+        setIsTransitionArmed(false);
         return;
       }
 
-      setIncomingPath(backgroundPath);
+      setPreviousPath(committedPath);
+      setCurrentPath(backgroundPath);
+      setIsTransitionArmed(true);
+
+      settleRafId = window.requestAnimationFrame(() => {
+        setIsTransitionArmed(false);
+      });
       timeoutId = window.setTimeout(() => {
-        setCommittedPath(backgroundPath);
-        setIncomingPath(null);
-      }, 320);
+        setPreviousPath(null);
+      }, STORY_BACKDROP_FADE_MS);
     });
 
     return () => {
       window.cancelAnimationFrame(rafId);
+      if (settleRafId !== null) {
+        window.cancelAnimationFrame(settleRafId);
+      }
       if (timeoutId !== null) {
         window.clearTimeout(timeoutId);
       }
     };
-  }, [backgroundPath, committedPath]);
-
-  const resolvedPath = incomingPath ?? committedPath;
+  }, [backgroundPath]);
 
   return (
     <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden" data-testid="story-backdrop">
-      {resolvedPath ? (
+      {currentPath ? (
         <>
-          {committedPath ? (
+          {previousPath ? (
             // eslint-disable-next-line @next/next/no-img-element
             <img
               alt=""
               aria-hidden="true"
               className="story-backdrop-media absolute inset-0 h-full w-full object-cover object-center blur-xl"
-              data-state={incomingPath ? "inactive" : "active"}
-              src={committedPath}
+              style={{ opacity: isTransitionArmed ? 1 : 0 }}
+              src={previousPath}
             />
           ) : null}
-          {incomingPath ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
-              alt=""
-              aria-hidden="true"
-              className="story-backdrop-media absolute inset-0 h-full w-full object-cover object-center blur-xl"
-              data-state="active"
-              src={incomingPath}
-            />
-          ) : null}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            alt=""
+            aria-hidden="true"
+            className="story-backdrop-media absolute inset-0 h-full w-full object-cover object-center blur-xl"
+            style={{ opacity: isTransitionArmed ? 0 : 1 }}
+            src={currentPath}
+          />
           <div className="story-backdrop-overlay absolute inset-0" />
           <div className="story-backdrop-highlight absolute inset-0" />
         </>
@@ -245,55 +262,20 @@ function StoryBackgroundMarker({
       data-testid="background-block"
     >
       {backgroundPath ? (
-        <div className="relative overflow-hidden rounded-[var(--radius-md)] border border-[var(--border)] bg-[var(--surface-muted)]">
+        <div className="overflow-hidden rounded-[var(--radius-md)] border border-[var(--border)] bg-[var(--surface-muted)] p-3">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             alt={`${backgroundId} background preview`}
-            className="h-36 w-full object-cover object-center"
+            className="max-h-[22rem] w-full object-contain object-center"
             data-testid="background-preview-image"
             src={backgroundPath}
           />
-          <div
-            className="absolute inset-0"
-            style={{
-              background:
-                "linear-gradient(180deg, transparent 0%, color-mix(in srgb, var(--bg) 18%, transparent) 42%, color-mix(in srgb, var(--bg) 92%, transparent) 100%)",
-            }}
-          />
-          <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-3 p-4">
-            <div>
-              <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--text-muted)]">
-                Background shift
-              </p>
-              <p className="mt-2 text-base font-semibold tracking-[-0.02em] text-[var(--text)]">
-                {backgroundId}
-              </p>
-            </div>
-            <div className="flex items-center gap-2">
-              <Badge variant="default">Preview ready</Badge>
-              {isActive ? <Badge variant="accent">Active</Badge> : null}
-            </div>
-          </div>
         </div>
       ) : (
-        <div className="flex flex-wrap items-center justify-between gap-3">
-          <div>
-            <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--text-muted)]">
-              Background shift
-            </p>
-            <p className="mt-2 text-sm font-semibold tracking-[-0.02em] text-[var(--text)]">
-              {backgroundId}
-            </p>
-          </div>
-          {isActive ? <Badge variant="accent">Active</Badge> : null}
+        <div className="rounded-[var(--radius-md)] border border-dashed border-[var(--border)] bg-[var(--surface-muted)]/60 px-4 py-5 text-sm text-[var(--text-muted)]">
+          {backgroundId}
         </div>
       )}
-      <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
-        <p className="text-sm leading-6 text-[var(--text-muted)]">
-          스크롤이 이 지점을 통과하면 story backdrop이 이 장면의 배경으로 전환됩니다.
-        </p>
-        {!backgroundPath ? <Badge variant="default">No bundled image</Badge> : null}
-      </div>
     </article>
   );
 }
@@ -348,34 +330,31 @@ function StoryBlocks({
           return (
             <article
               key={`dialogue-${index}`}
-              className={`grid gap-4 rounded-[var(--radius-lg)] border bg-[var(--surface)]/94 p-4 shadow-[var(--shadow-sm)] md:grid-cols-[72px_minmax(0,1fr)] ${
+              className={`flex flex-col gap-4 rounded-[var(--radius-lg)] border bg-[var(--surface)]/94 p-4 shadow-[var(--shadow-sm)] ${
                 block.isRemote
                   ? "border-[var(--accent)] border-dashed"
                   : "border-[var(--border)]"
               }`}
             >
-              <div className="flex items-start gap-3">
+              <div className="flex items-start gap-4">
                 <ReaderPortraitSlot
                   portraitPath={block.speakerId ? (portraitPaths[block.speakerId] ?? null) : null}
                   speakerName={block.speakerName}
                 />
-                <div className="pt-1">
+                <div className="min-w-0 flex-1 pt-1">
                   <div className="flex flex-wrap items-center gap-2">
-                    <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--text-muted)]">
-                      Dialogue
-                    </p>
+                    <h3 className="text-lg font-semibold tracking-[-0.02em] text-[var(--text)]">
+                      {block.speakerName}
+                    </h3>
                     {block.isRemote ? (
                       <Badge variant="accent" className="text-[10px] uppercase tracking-[0.14em]">
                         Wireless link
                       </Badge>
                     ) : null}
                   </div>
-                  <h3 className="text-lg font-semibold tracking-[-0.02em] text-[var(--text)]">
-                    {block.speakerName}
-                  </h3>
                 </div>
               </div>
-              <p className="max-w-[72ch] whitespace-pre-wrap text-base leading-8 text-[var(--text)]">
+              <p className="whitespace-pre-wrap text-[1.02rem] leading-8 text-[var(--text)]">
                 {block.text}
               </p>
             </article>
@@ -388,7 +367,7 @@ function StoryBlocks({
               key={`narration-${index}`}
               className="rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--panel)]/95 p-5 shadow-[var(--shadow-sm)]"
             >
-              <p className="max-w-[72ch] whitespace-pre-wrap text-[1.02rem] leading-8 text-[var(--text)]">
+              <p className="whitespace-pre-wrap text-[1.02rem] leading-8 text-[var(--text)]">
                 {block.text}
               </p>
             </article>
@@ -540,7 +519,7 @@ export function ReaderStoryShell({
             <h1 className="font-[var(--font-display)] text-4xl font-semibold leading-tight tracking-[-0.03em] md:text-5xl">
               {story.title}
             </h1>
-            <p className="max-w-3xl text-sm leading-7 text-[var(--text-muted)] md:text-base">
+            <p className="max-w-5xl text-sm leading-7 text-[var(--text-muted)] md:text-base">
               {story.sourcePath}
             </p>
           </div>
@@ -562,45 +541,45 @@ export function ReaderStoryShell({
       <CharacterObservationTracker detail={detail} locale={locale} />
       <StoryBackdrop backgroundPath={activeBackgroundPath} />
 
-      <section className="relative z-10 grid gap-6 xl:grid-cols-[280px_minmax(0,1fr)]">
-        <aside className="grid gap-4 self-start xl:sticky xl:top-28">
-          <Card className="bg-[var(--surface)]/90 backdrop-blur-sm">
-            <CardHeader>
-              <Badge variant="default" className="w-fit">
-                Group
-              </Badge>
-              <CardTitle>{group.title}</CardTitle>
-              <CardDescription>
-                {group.storyCount} stories · {formatMetric(group.totalVisibleCharacterCount)} chars · 약{" "}
-                {formatMetric(group.estimatedMinutes)}분
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="grid gap-2">
-              {siblingStories.map((entry) => (
-                <Link
-                  key={entry.storyId}
-                  className={`rounded-[var(--radius-md)] border px-3 py-3 text-sm transition duration-[var(--motion-fast)] ease-out ${
-                    entry.storyId === story.storyId
-                      ? "border-[var(--accent)] bg-[var(--accent-soft)] text-[var(--accent-strong)]"
-                      : "border-[var(--border)] bg-[var(--panel)]/90 text-[var(--text)] hover:border-[var(--accent)] hover:bg-[var(--surface-muted)]"
-                  }`}
-                  href={getReaderStoryHref(locale, entry.groupId, entry.storyId)}
-                >
-                  <span className="block font-semibold">{entry.title}</span>
-                  <span className="mt-1 block text-[10px] uppercase tracking-[0.14em] text-[var(--text-muted)]">
-                    {entry.storyCode ?? entry.storyId}
-                  </span>
-                  <span className="mt-1 block text-xs text-[var(--text-muted)]">
-                    {formatMetric(entry.visibleCharacterCount)} chars · 약{" "}
-                    {formatMetric(entry.estimatedMinutes)}분
-                  </span>
-                </Link>
-              ))}
-            </CardContent>
-          </Card>
-        </aside>
+      <section className="relative z-10 grid gap-6">
+        <div className="grid gap-6 xl:grid-cols-[260px_minmax(0,1fr)]">
+          <aside className="grid gap-4 self-start xl:sticky xl:top-28">
+            <Card className="bg-[var(--surface)]/90 backdrop-blur-sm">
+              <CardHeader>
+                <Badge variant="default" className="w-fit">
+                  Group
+                </Badge>
+                <CardTitle>{group.title}</CardTitle>
+                <CardDescription>
+                  {group.storyCount} stories · {formatMetric(group.totalVisibleCharacterCount)} chars · 약{" "}
+                  {formatMetric(group.estimatedMinutes)}분
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="grid gap-2">
+                {siblingStories.map((entry) => (
+                  <Link
+                    key={entry.storyId}
+                    className={`rounded-[var(--radius-md)] border px-3 py-3 text-sm transition duration-[var(--motion-fast)] ease-out ${
+                      entry.storyId === story.storyId
+                        ? "border-[var(--accent)] bg-[var(--accent-soft)] text-[var(--accent-strong)]"
+                        : "border-[var(--border)] bg-[var(--panel)]/90 text-[var(--text)] hover:border-[var(--accent)] hover:bg-[var(--surface-muted)]"
+                    }`}
+                    href={getReaderStoryHref(locale, entry.groupId, entry.storyId)}
+                  >
+                    <span className="block font-semibold">{entry.title}</span>
+                    <span className="mt-1 block text-[10px] uppercase tracking-[0.14em] text-[var(--text-muted)]">
+                      {entry.storyCode ?? entry.storyId}
+                    </span>
+                    <span className="mt-1 block text-xs text-[var(--text-muted)]">
+                      {formatMetric(entry.visibleCharacterCount)} chars · 약{" "}
+                      {formatMetric(entry.estimatedMinutes)}분
+                    </span>
+                  </Link>
+                ))}
+              </CardContent>
+            </Card>
+          </aside>
 
-        <div className="grid gap-6">
           <section className="grid gap-4">
             {isBodyAvailable ? (
               <StoryBodyRenderer
@@ -619,37 +598,37 @@ export function ReaderStoryShell({
               </Card>
             )}
           </section>
-
-          <section className="xl:col-span-2" data-testid="story-summary-section">
-            <Card className="bg-[var(--surface)]/92 backdrop-blur-sm">
-              <CardHeader>
-                <Badge variant="default" className="w-fit">
-                  Summary
-                </Badge>
-                <CardTitle>Story summary</CardTitle>
-                <CardDescription>
-                  summary는 스토리 본문 아래 전체폭 영역에서 제공합니다.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                {summaryAvailable ? (
-                  <p className="text-sm leading-7 text-[var(--text)]">
-                    summary contract is marked available, but summary rendering is not implemented in
-                    this issue.
-                  </p>
-                ) : (
-                  <div
-                    className="rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--panel)] p-4 text-sm leading-7 text-[var(--text-muted)]"
-                    data-testid="summary-empty-state"
-                  >
-                    이 스토리의 summary는 아직 생성되지 않았습니다. 후속 파이프라인 이슈에서
-                    summary와 character unlock fact가 추가됩니다.
-                  </div>
-                )}
-              </CardContent>
-            </Card>
-          </section>
         </div>
+
+        <section data-testid="story-summary-section">
+          <Card className="bg-[var(--surface)]/92 backdrop-blur-sm">
+            <CardHeader>
+              <Badge variant="default" className="w-fit">
+                Summary
+              </Badge>
+              <CardTitle>Story summary</CardTitle>
+              <CardDescription>
+                summary는 스토리 본문 아래 전체폭 영역에서 제공합니다.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              {summaryAvailable ? (
+                <p className="text-sm leading-7 text-[var(--text)]">
+                  summary contract is marked available, but summary rendering is not implemented in this
+                  issue.
+                </p>
+              ) : (
+                <div
+                  className="rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--panel)] p-4 text-sm leading-7 text-[var(--text-muted)]"
+                  data-testid="summary-empty-state"
+                >
+                  이 스토리의 summary는 아직 생성되지 않았습니다. 후속 파이프라인 이슈에서 summary와
+                  character unlock fact가 추가됩니다.
+                </div>
+              )}
+            </CardContent>
+          </Card>
+        </section>
       </section>
 
       <StoryFloatingTopButton />
