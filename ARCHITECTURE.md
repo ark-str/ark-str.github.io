@@ -57,6 +57,7 @@ Disallowed patterns:
 - `localStorage` access is wrapped by `repo` functions.
 - Persisted state normalization happens in `service` before values reach the UI.
 - Published story assets live under `ark-str-web-app/public/generated/`, and the app consumes small generated metadata under `ark-str-web-app/src/generated/content/` so export builds do not scan `public/` directly or mirror the full story corpus into app source.
+- Reader route shells compose shared chrome and story/group metadata on the server, while story-only dynamic background switching stays in client UI components.
 - Theme state is owned by the preferences feature and applied through semantic CSS variables.
 
 ## Why This Exists

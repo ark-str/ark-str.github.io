@@ -150,11 +150,19 @@ test.describe("reader shell smoke", () => {
     await expect(page.getByTestId("reader-shell")).toBeVisible();
 
     await page.goto(
+      toAppPath(`reader/${sampleStory.server}/${sampleStory.groupId}`),
+    );
+    await expect(page.getByTestId("group-shell")).toBeVisible();
+    await expect(page.getByTestId("group-stats")).toBeVisible();
+
+    await page.goto(
       toAppPath(`reader/${sampleStory.server}/${sampleStory.groupId}/${sampleStory.storyId}`),
     );
     await expect(page.getByTestId("reader-shell")).toBeVisible();
+    await expect(page.getByTestId("story-backdrop")).toBeVisible();
+    await expect(page.getByTestId("chrome-story-select")).toBeVisible();
     await expect(page.getByTestId("story-body")).toBeVisible();
-    await expect(page.getByTestId("summary-empty-state")).toBeVisible();
+    await expect(page.getByTestId("story-summary-section")).toBeVisible();
 
     await page.waitForFunction(
       ([key, locale, speakerId]) => {

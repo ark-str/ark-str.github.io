@@ -1,11 +1,18 @@
 import { notFound } from "next/navigation";
-import { isReaderLocale } from "@/features/content/config/canonical-reader-locales";
 import {
+  CANONICAL_READER_LOCALES,
+  READER_LOCALE_LABELS,
+  isReaderLocale,
+} from "@/features/content/config/canonical-reader-locales";
+import {
+  buildLocaleSwitchHref,
   findGroupEntry,
   findStoryEntry,
   findSummaryEntry,
   getGroupStories,
+  getReaderGroupHref,
   getReaderStoryStaticParams,
+  getReaderStoryHref,
   readStoryBackgroundPaths,
   readContentIndex,
   readStoryPortraitPaths,
@@ -47,15 +54,37 @@ export default async function ReaderStoryPage({
   const backgroundPaths = readStoryBackgroundPaths(detail);
   const portraitPaths = readStoryPortraitPaths(detail);
   const summaryEntry = findSummaryEntry(readSummaryManifest(), locale, storyId);
+  const siblingStories = getGroupStories(index, locale, groupId);
 
   return (
     <ReaderStoryShell
+      appBar={{
+        currentLocale: locale,
+        localeOptions: CANONICAL_READER_LOCALES.map((targetLocale) => ({
+          locale: targetLocale,
+          label: READER_LOCALE_LABELS[targetLocale].label,
+          href: buildLocaleSwitchHref(index, targetLocale, groupId, storyId),
+        })),
+        storyRootHref: getReaderGroupHref(locale, groupId),
+        groupCrumb: {
+          label: group.title,
+          href: getReaderGroupHref(locale, groupId),
+        },
+        storySelect: {
+          currentStoryId: story.storyId,
+          options: siblingStories.map((entry) => ({
+            storyId: entry.storyId,
+            label: [entry.storyCode, entry.title, entry.avgTag].filter(Boolean).join(" · "),
+            href: getReaderStoryHref(locale, entry.groupId, entry.storyId),
+          })),
+        },
+      }}
       detail={detail}
       backgroundPaths={backgroundPaths}
       group={group}
       locale={locale}
       portraitPaths={portraitPaths}
-      siblingStories={getGroupStories(index, locale, groupId)}
+      siblingStories={siblingStories}
       story={story}
       summaryAvailable={summaryEntry?.status === "ready"}
     />

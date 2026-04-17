@@ -1,7 +1,7 @@
 # Arknights Story Reader
 
 Status: active
-Phase: backgrounds, radio cutins, and choice cleanup
+Phase: reader IA and layout refresh
 
 ## Product Goal
 
@@ -43,9 +43,9 @@ Build a web application that makes Arknights story content easier to read, summa
 
 ## Current Phase
 
-This phase keeps the recovered reader shell and Pages deployment path stable while broadening bundled story media and simplifying choice rendering. It keeps:
+This phase keeps the recovered reader shell and Pages deployment path stable while upgrading the information architecture and reading surface. It keeps:
 
-- canonical locale URLs at `/reader/[locale]` and `/reader/[locale]/[groupId]/[storyId]`
+- canonical locale URLs at `/reader/[locale]`, `/reader/[locale]/[groupId]`, and `/reader/[locale]/[groupId]/[storyId]`
 - generated story detail files under `public/generated/content/stories/`
 - metadata-only app-internal generated loaders under `src/generated/content/` for exact-path export-safe reads
 - first-pass body rendering for dialogue, narration, background changes, scene breaks, and Doctor choice branches
@@ -63,7 +63,13 @@ This phase keeps the recovered reader shell and Pages deployment path stable whi
 - story-level `observedOperators` arrays embedded in generated story detail JSON remain limited to `char_` speaker IDs for alias persistence
 - local storage reader-session restore for preferred locale and last visited story
 - locale-scoped character alias observation storage under `ark-str:character-observations:v1`
-- explicit empty summary state until the summary-generation issue lands
+- explicit empty summary state until the summary-generation issue lands, rendered below the story body instead of in a side rail
+- a floating rounded app bar shared by home, locale archive, group, and story pages
+- locale archives route into dedicated group overview pages before story routes
+- generated group and story metrics for total visible characters and estimated reading time
+- story pages keep the global archive feel, but only story pages add a dynamic fixed background backdrop sourced from in-flow `background` blocks
+- story pages keep `background` blocks in the flow as transition markers while the backdrop updates on scroll
+- story pages place group story navigation on the left and a floating scroll-to-top action at the lower right
 - Doctor choice normalization no longer renders a nested "Shared response" section; predicates that reference every option are treated as post-choice continuation
 - gh-pages-safe static export under the `/ark-str/` base path
 - isolated `.next-dev` and `.next-export` caches so `npm run verify` does not degrade the next `npm run dev` startup

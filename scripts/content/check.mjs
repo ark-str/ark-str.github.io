@@ -14,6 +14,14 @@ function invariant(condition, message) {
   }
 }
 
+function estimateReadingMinutes(visibleCharacterCount) {
+  if (!Number.isFinite(visibleCharacterCount) || visibleCharacterCount <= 0) {
+    return 0;
+  }
+
+  return Math.max(1, Math.ceil(visibleCharacterCount / 450));
+}
+
 function buildStoryMap(items) {
   return new Map(items.map((item) => [`${item.server}:${item.storyId}`, item]));
 }
@@ -81,6 +89,32 @@ function compareLiveArtifacts(generated, live) {
       `Generated source path drift detected for ${key}`,
     );
     invariant(generatedStory.title === liveStory.title, `Generated title drift detected for ${key}`);
+    invariant(
+      generatedStory.visibleCharacterCount === liveStory.visibleCharacterCount,
+      `Generated visible character count drift detected for ${key}`,
+    );
+    invariant(
+      generatedStory.estimatedMinutes === liveStory.estimatedMinutes,
+      `Generated estimated minutes drift detected for ${key}`,
+    );
+  }
+
+  const generatedGroups = new Map(
+    generated.index.groups.map((group) => [`${group.server}:${group.groupId}`, group]),
+  );
+  for (const liveGroup of live.index.groups) {
+    const key = `${liveGroup.server}:${liveGroup.groupId}`;
+    const generatedGroup = generatedGroups.get(key);
+
+    invariant(generatedGroup, `Missing generated group entry for ${key}`);
+    invariant(
+      generatedGroup.totalVisibleCharacterCount === liveGroup.totalVisibleCharacterCount,
+      `Generated group visible character count drift detected for ${key}`,
+    );
+    invariant(
+      generatedGroup.estimatedMinutes === liveGroup.estimatedMinutes,
+      `Generated group estimated minutes drift detected for ${key}`,
+    );
   }
 
   if (hasPortraitSource(process.cwd())) {
@@ -153,8 +187,31 @@ function validateGeneratedArtifacts(generated) {
     invariant(typeof story.sourceHash === "string" && story.sourceHash.length > 0, "story.sourceHash must be present");
     invariant(typeof story.bodyAvailable === "boolean", "story.bodyAvailable must be present");
     invariant(
+      Number.isInteger(story.visibleCharacterCount) && story.visibleCharacterCount >= 0,
+      "story.visibleCharacterCount must be a non-negative integer",
+    );
+    invariant(
+      Number.isInteger(story.estimatedMinutes) && story.estimatedMinutes >= 0,
+      "story.estimatedMinutes must be a non-negative integer",
+    );
+    invariant(
       story.bodyPath === null || (typeof story.bodyPath === "string" && story.bodyPath.length > 0),
       "story.bodyPath must be null or a non-empty string",
+    );
+  }
+
+  for (const group of generated.index.groups) {
+    invariant(
+      Number.isInteger(group.totalVisibleCharacterCount) && group.totalVisibleCharacterCount >= 0,
+      "group.totalVisibleCharacterCount must be a non-negative integer",
+    );
+    invariant(
+      Number.isInteger(group.estimatedMinutes) && group.estimatedMinutes >= 0,
+      "group.estimatedMinutes must be a non-negative integer",
+    );
+    invariant(
+      group.estimatedMinutes === estimateReadingMinutes(group.totalVisibleCharacterCount),
+      "group.estimatedMinutes must match the generated visible character total",
     );
   }
 
