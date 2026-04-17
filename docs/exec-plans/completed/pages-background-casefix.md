@@ -37,3 +37,4 @@ Finish the Pages deployment fix by making generated background filenames and tra
 
 - background manifest keys remain the original background IDs, but bundled background filenames are normalized to lowercase
 - the stale portrait-rename active plan is removed because that iteration has already merged
+- the Pages redeploy runs only after the branch merges so GitHub Actions picks up the lowercase tracked assets and manifest changes together
