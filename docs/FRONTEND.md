@@ -23,9 +23,11 @@ The app should feel editorial, deliberate, and product-specific rather than like
 - app-level light/dark theme toggle persisted through the preferences feature
 - canonical locale archive routes, group overview routes, and direct story deep links
 - first-pass story body rendering sourced from bundled story detail JSON
-- a rounded floating app bar shared by home, archive, group, and story routes
+- a restrained floating app bar shared by home, archive, group, and story routes
 - story pages with left-side group navigation, main reading column, bottom summary section, and a floating top button
 - story-only dynamic backdrop transitions driven by bundled background blocks, while non-story pages keep the archive base background
+- in-flow background blocks keep their own bundled image previews even while they drive the fixed story backdrop
+- the UI uses a sans-first type system and a tighter radius scale for more consistent modern chrome
 - a generated-content readiness panel and explicit summary empty state sourced from bundled JSON
 - gh-pages-safe reader routes rendered from exported static files under the `/ark-str/` base path
 - no framework starter copy, remote links, or vendor branding

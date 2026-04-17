@@ -9,7 +9,7 @@ function Select({ className, children, ...props }: SelectProps) {
     <div className="relative" data-slot="select-root">
       <select
         className={cn(
-          "h-12 w-full appearance-none rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--surface)] px-4 pr-11 text-sm text-[var(--text)] shadow-[var(--shadow-sm)] outline-none transition duration-[var(--motion-fast)] ease-out focus-visible:border-[var(--accent)] focus-visible:ring-2 focus-visible:ring-[var(--ring)] disabled:cursor-not-allowed disabled:opacity-60",
+          "h-11 w-full appearance-none rounded-[var(--radius-md)] border border-[var(--border)] bg-[var(--surface)] px-4 pr-11 text-sm tracking-[-0.012em] text-[var(--text)] shadow-[var(--shadow-sm)] outline-none transition duration-[var(--motion-fast)] ease-out focus-visible:border-[var(--accent)] focus-visible:ring-2 focus-visible:ring-[var(--ring)] disabled:cursor-not-allowed disabled:opacity-60",
           className,
         )}
         data-slot="select"

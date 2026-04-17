@@ -29,7 +29,7 @@ export function ReaderLocaleArchive({
             <Badge variant="accent" className="w-fit">
               Locale archive
             </Badge>
-            <h1 className="font-[var(--font-display)] text-4xl leading-tight md:text-5xl">
+            <h1 className="font-[var(--font-display)] text-4xl font-semibold leading-tight tracking-[-0.03em] md:text-5xl">
               {READER_LOCALE_LABELS[locale].label}
             </h1>
             <p className="max-w-3xl text-sm leading-7 text-[var(--text-muted)] md:text-base">
@@ -38,7 +38,9 @@ export function ReaderLocaleArchive({
           </div>
           <Card className="min-w-48 bg-[var(--surface)]/90">
             <CardContent className="px-5 py-4 text-right">
-              <p className="text-xs uppercase tracking-[0.2em] text-[var(--text-muted)]">Groups</p>
+              <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--text-muted)]">
+                Groups
+              </p>
               <p className="mt-2 text-3xl font-semibold text-[var(--text)]">{groups.length}</p>
             </CardContent>
           </Card>
@@ -50,17 +52,17 @@ export function ReaderLocaleArchive({
         {groups.map((group) => (
           <Card key={group.groupId} className="bg-[var(--surface)]/95">
             <CardHeader>
-              <p className="text-xs uppercase tracking-[0.18em] text-[var(--text-muted)]">
+              <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--text-muted)]">
                 {group.entryType ?? "GROUP"}
               </p>
-              <CardTitle className="font-[var(--font-display)] text-3xl">{group.title}</CardTitle>
+              <CardTitle className="text-3xl">{group.title}</CardTitle>
               <CardDescription>
                 {group.storyCount} stories{group.actType ? ` · ${group.actType}` : ""}
               </CardDescription>
             </CardHeader>
             <CardContent className="grid gap-4">
               <div className="rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--panel)] p-4">
-                <p className="text-xs uppercase tracking-[0.18em] text-[var(--text-muted)]">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--text-muted)]">
                   Group preview
                 </p>
                 {group.stories[0] ? (

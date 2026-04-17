@@ -24,6 +24,8 @@ This v1 does not include:
 ## Foundations
 
 - visual tone: editorial archive
+- typography: sans-first, with display and body tokens kept in the same modern family
+- surface language: restrained radii and compact chrome instead of pill-heavy cards
 - implementation base: shadcn-style shared primitives customized for this project
 - theme strategy: light and dark from the start
 - runtime rule: no remote fonts, assets, or scripts

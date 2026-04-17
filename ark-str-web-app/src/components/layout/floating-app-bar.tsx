@@ -44,7 +44,7 @@ export function FloatingAppBar({ model }: FloatingAppBarProps) {
 
   return (
     <div
-      className="sticky top-4 z-40 rounded-[calc(var(--radius-xl)+0.25rem)] border border-[var(--border)] bg-[var(--surface)]/82 px-3 py-3 shadow-[var(--shadow-lg)] backdrop-blur-xl"
+      className="sticky top-4 z-40 rounded-[var(--radius-xl)] border border-[var(--border)] bg-[var(--surface)]/78 px-4 py-3 shadow-[var(--shadow-md)] backdrop-blur-xl"
       data-testid="floating-app-bar"
     >
       <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
@@ -78,7 +78,7 @@ export function FloatingAppBar({ model }: FloatingAppBarProps) {
               <span className="px-1 text-sm text-[var(--text-muted)]">&gt;</span>
               <div className="min-w-[15rem] flex-1 lg:min-w-[20rem]">
                 <Select
-                  className="h-9 rounded-[var(--radius-md)] bg-[var(--surface)]/92 py-0 text-sm shadow-none"
+                  className="h-10 rounded-[var(--radius-md)] bg-[var(--surface)]/92 py-0 text-sm shadow-none"
                   data-testid="chrome-story-select"
                   onChange={handleStoryChange}
                   value={model.storySelect.currentStoryId}
@@ -97,7 +97,7 @@ export function FloatingAppBar({ model }: FloatingAppBarProps) {
         <div className="flex flex-wrap items-center gap-2 lg:justify-end">
           <div className="min-w-[10rem]">
             <Select
-              className="h-9 rounded-[var(--radius-md)] bg-[var(--surface)]/92 py-0 text-sm shadow-none"
+              className="h-10 rounded-[var(--radius-md)] bg-[var(--surface)]/92 py-0 text-sm shadow-none"
               data-testid="locale-select"
               disabled={!isSessionHydrated}
               onChange={handleLocaleChange}

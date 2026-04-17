@@ -33,7 +33,7 @@ function ReaderPortraitSlot({
 }) {
   return (
     <div
-      className="flex h-20 w-16 shrink-0 items-start justify-center overflow-hidden rounded-[var(--radius-md)] border border-[var(--border)] bg-[var(--surface-muted)]"
+      className="flex h-20 w-16 shrink-0 items-start justify-center overflow-hidden rounded-[var(--radius-sm)] border border-[var(--border)] bg-[var(--surface-muted)]"
       data-testid="speaker-portrait-slot"
     >
       {portraitPath ? (
@@ -123,17 +123,69 @@ function collectBackgroundSequenceFromBlocks(blocks: StoryBlock[], accumulator: 
 }
 
 function StoryBackdrop({ backgroundPath }: { backgroundPath: string | null }) {
+  const [committedPath, setCommittedPath] = useState<string | null>(backgroundPath);
+  const [incomingPath, setIncomingPath] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (backgroundPath === committedPath) {
+      return;
+    }
+
+    let timeoutId: number | null = null;
+    const rafId = window.requestAnimationFrame(() => {
+      if (!backgroundPath) {
+        setCommittedPath(null);
+        setIncomingPath(null);
+        return;
+      }
+
+      if (!committedPath) {
+        setCommittedPath(backgroundPath);
+        setIncomingPath(null);
+        return;
+      }
+
+      setIncomingPath(backgroundPath);
+      timeoutId = window.setTimeout(() => {
+        setCommittedPath(backgroundPath);
+        setIncomingPath(null);
+      }, 320);
+    });
+
+    return () => {
+      window.cancelAnimationFrame(rafId);
+      if (timeoutId !== null) {
+        window.clearTimeout(timeoutId);
+      }
+    };
+  }, [backgroundPath, committedPath]);
+
+  const resolvedPath = incomingPath ?? committedPath;
+
   return (
     <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden" data-testid="story-backdrop">
-      {backgroundPath ? (
+      {resolvedPath ? (
         <>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            alt=""
-            aria-hidden="true"
-            className="absolute inset-0 h-full w-full scale-105 object-cover object-center blur-xl"
-            src={backgroundPath}
-          />
+          {committedPath ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              alt=""
+              aria-hidden="true"
+              className="story-backdrop-media absolute inset-0 h-full w-full object-cover object-center blur-xl"
+              data-state={incomingPath ? "inactive" : "active"}
+              src={committedPath}
+            />
+          ) : null}
+          {incomingPath ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              alt=""
+              aria-hidden="true"
+              className="story-backdrop-media absolute inset-0 h-full w-full object-cover object-center blur-xl"
+              data-state="active"
+              src={incomingPath}
+            />
+          ) : null}
           <div className="story-backdrop-overlay absolute inset-0" />
           <div className="story-backdrop-highlight absolute inset-0" />
         </>
@@ -183,26 +235,64 @@ function StoryBackgroundMarker({
   return (
     <article
       ref={markerRef}
-      className={`rounded-[var(--radius-lg)] border p-4 ${
+      className={`overflow-hidden rounded-[var(--radius-lg)] border p-4 shadow-[var(--shadow-sm)] ${
         isActive
-          ? "border-[var(--accent)] bg-[var(--accent-soft)]/70"
-          : "border-[var(--border)] bg-[var(--surface)]/90"
+          ? "border-[var(--accent)] bg-[var(--surface)]/96"
+          : "border-[var(--border)] bg-[var(--surface)]/92"
       }`}
       data-active={isActive ? "true" : "false"}
       data-background-id={backgroundId}
       data-testid="background-block"
     >
-      <div className="flex flex-wrap items-center justify-between gap-3">
-        <div>
-          <p className="text-xs uppercase tracking-[0.18em] text-[var(--text-muted)]">
-            Background shift
-          </p>
-          <p className="mt-2 text-sm font-semibold text-[var(--text)]">{backgroundId}</p>
+      {backgroundPath ? (
+        <div className="relative overflow-hidden rounded-[var(--radius-md)] border border-[var(--border)] bg-[var(--surface-muted)]">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            alt={`${backgroundId} background preview`}
+            className="h-36 w-full object-cover object-center"
+            data-testid="background-preview-image"
+            src={backgroundPath}
+          />
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(180deg, transparent 0%, color-mix(in srgb, var(--bg) 18%, transparent) 42%, color-mix(in srgb, var(--bg) 92%, transparent) 100%)",
+            }}
+          />
+          <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-3 p-4">
+            <div>
+              <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--text-muted)]">
+                Background shift
+              </p>
+              <p className="mt-2 text-base font-semibold tracking-[-0.02em] text-[var(--text)]">
+                {backgroundId}
+              </p>
+            </div>
+            <div className="flex items-center gap-2">
+              <Badge variant="default">Preview ready</Badge>
+              {isActive ? <Badge variant="accent">Active</Badge> : null}
+            </div>
+          </div>
         </div>
-        <div className="flex items-center gap-2">
-          {backgroundPath ? <Badge variant="default">Backdrop ready</Badge> : null}
+      ) : (
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--text-muted)]">
+              Background shift
+            </p>
+            <p className="mt-2 text-sm font-semibold tracking-[-0.02em] text-[var(--text)]">
+              {backgroundId}
+            </p>
+          </div>
           {isActive ? <Badge variant="accent">Active</Badge> : null}
         </div>
+      )}
+      <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
+        <p className="text-sm leading-6 text-[var(--text-muted)]">
+          스크롤이 이 지점을 통과하면 story backdrop이 이 장면의 배경으로 전환됩니다.
+        </p>
+        {!backgroundPath ? <Badge variant="default">No bundled image</Badge> : null}
       </div>
     </article>
   );
@@ -227,7 +317,7 @@ function StoryFloatingTopButton() {
 
   return (
     <Button
-      className="fixed bottom-6 right-6 z-40 h-12 rounded-full px-4"
+      className="fixed bottom-6 right-6 z-40 h-11 rounded-[var(--radius-md)] px-4"
       data-testid="scroll-top-button"
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       variant="accent"
@@ -271,16 +361,18 @@ function StoryBlocks({
                 />
                 <div className="pt-1">
                   <div className="flex flex-wrap items-center gap-2">
-                    <p className="text-xs uppercase tracking-[0.18em] text-[var(--text-muted)]">
+                    <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--text-muted)]">
                       Dialogue
                     </p>
                     {block.isRemote ? (
-                      <Badge variant="accent" className="text-[10px] uppercase tracking-[0.18em]">
+                      <Badge variant="accent" className="text-[10px] uppercase tracking-[0.14em]">
                         Wireless link
                       </Badge>
                     ) : null}
                   </div>
-                  <h3 className="text-lg font-semibold text-[var(--text)]">{block.speakerName}</h3>
+                  <h3 className="text-lg font-semibold tracking-[-0.02em] text-[var(--text)]">
+                    {block.speakerName}
+                  </h3>
                 </div>
               </div>
               <p className="max-w-[72ch] whitespace-pre-wrap text-base leading-8 text-[var(--text)]">
@@ -296,7 +388,7 @@ function StoryBlocks({
               key={`narration-${index}`}
               className="rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--panel)]/95 p-5 shadow-[var(--shadow-sm)]"
             >
-              <p className="max-w-[72ch] whitespace-pre-wrap font-[var(--font-display)] text-lg leading-8 text-[var(--text)]">
+              <p className="max-w-[72ch] whitespace-pre-wrap text-[1.02rem] leading-8 text-[var(--text)]">
                 {block.text}
               </p>
             </article>
@@ -334,10 +426,12 @@ function StoryBlocks({
             data-testid="choice-block"
           >
             <div className="space-y-2">
-              <p className="text-xs uppercase tracking-[0.2em] text-[var(--accent-strong)]">
+              <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--accent-strong)]">
                 Doctor choice
               </p>
-              <h3 className="text-2xl font-semibold text-[var(--text)]">Available responses</h3>
+              <h3 className="text-2xl font-semibold tracking-[-0.02em] text-[var(--text)]">
+                Available responses
+              </h3>
             </div>
             <div className="mt-5 grid gap-4">
               {block.options.map((option) => (
@@ -443,7 +537,7 @@ export function ReaderStoryShell({
             <Badge variant="default">{story.storyId}</Badge>
           </div>
           <div className="space-y-2">
-            <h1 className="font-[var(--font-display)] text-4xl leading-tight md:text-5xl">
+            <h1 className="font-[var(--font-display)] text-4xl font-semibold leading-tight tracking-[-0.03em] md:text-5xl">
               {story.title}
             </h1>
             <p className="max-w-3xl text-sm leading-7 text-[var(--text-muted)] md:text-base">
@@ -493,7 +587,7 @@ export function ReaderStoryShell({
                   href={getReaderStoryHref(locale, entry.groupId, entry.storyId)}
                 >
                   <span className="block font-semibold">{entry.title}</span>
-                  <span className="mt-1 block text-xs uppercase tracking-[0.16em] text-[var(--text-muted)]">
+                  <span className="mt-1 block text-[10px] uppercase tracking-[0.14em] text-[var(--text-muted)]">
                     {entry.storyCode ?? entry.storyId}
                   </span>
                   <span className="mt-1 block text-xs text-[var(--text-muted)]">

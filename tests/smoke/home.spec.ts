@@ -72,6 +72,26 @@ function resolveSampleStory() {
   throw new Error("A sample reader story with observedOperators and a bundled portrait is required for smoke tests.");
 }
 
+function resolveBackgroundStory() {
+  const prioritizedStories = [
+    ...generatedIndex.stories.filter(
+      (story: { server: string; bodyAvailable?: boolean }) => story.server === "kr" && story.bodyAvailable,
+    ),
+    ...generatedIndex.stories.filter(
+      (story: { server: string; bodyAvailable?: boolean }) => story.server !== "kr" && story.bodyAvailable,
+    ),
+  ];
+
+  for (const story of prioritizedStories) {
+    const detail = readStoryDetail(story);
+    if (detail?.blocks?.some((block: { type?: string }) => block.type === "background")) {
+      return story;
+    }
+  }
+
+  throw new Error("A sample reader story with a background block is required for smoke tests.");
+}
+
 const sampleStorySelection = resolveSampleStory();
 const sampleStory = sampleStorySelection.story;
 const sampleObservedOperator =
@@ -82,6 +102,7 @@ const sampleObservedAlias =
   sampleObservedOperator?.aliases.find((alias) => alias.trim().length > 0 && alias !== "???") ??
   sampleObservedOperator?.aliases[0] ??
   null;
+const sampleBackgroundStory = resolveBackgroundStory();
 
 function toAppPath(route = "") {
   const normalizedRoute = route.replace(/^\/+/, "");
@@ -216,6 +237,14 @@ test.describe("reader shell smoke", () => {
       await observedSpeakerArticle.scrollIntoViewIfNeeded();
       await expect(observedSpeakerArticle.getByTestId("speaker-portrait-image")).toBeVisible();
     }
+
+    await page.goto(
+      toAppPath(
+        `reader/${sampleBackgroundStory.server}/${sampleBackgroundStory.groupId}/${sampleBackgroundStory.storyId}`,
+      ),
+    );
+    await expect(page.getByTestId("background-block").first()).toBeVisible();
+    await expect(page.getByTestId("background-preview-image").first()).toBeVisible();
 
     await page.goto(toAppPath());
     await expect(page.getByTestId("last-visited-story")).toContainText(sampleStory.title);
