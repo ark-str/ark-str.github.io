@@ -1,20 +1,19 @@
 # Latest Iteration
 
-Latest parent iteration: `#40`
+Latest parent iteration: `#44`
 
 Completed child issue:
 
-- `#41` via merged PR `#42` - refresh the reader information architecture with a floating app bar, group overview routes, generated reading metrics, and story-only dynamic backdrops
+- `#43` via merged PR `#45` - refresh the reader background previews, backdrop transitions, and shared chrome styling
 
 Current closeout outcome:
 
-- home, locale archive, group overview, and story routes now share a rounded floating app bar with locale switching, theme toggle, and in-group story navigation
-- the reader now has a first-class `/reader/[locale]/[groupId]` route that shows story counts, total visible characters, and estimated reading time for each group
-- story pages keep bundled `background` blocks in the reading flow while also driving a fixed blurred backdrop that updates as the reader scrolls
-- story layouts now use left-side group navigation, a central reading column, a full-width summary section below the body, and a floating scroll-to-top action
-- generated content index entries now include visible character counts and reading-time estimates for both stories and groups, with integrity checks enforcing the calculation contract
-- exported-site smoke now covers the home shell, locale archive, group route, story backdrop, story summary section, and reader session recovery under the `/ark-str/` base path
-- `npm run verify` passed on branch `codex-reader-ia-layout-refresh-issue-41` after the group reading-time calculation was corrected to use the generated character total instead of summing per-story minimums
+- story background cards now show bundled image previews while staying in the reading flow as transition markers
+- story-only blurred backdrops now cross-fade between active background images instead of hard switching
+- the shared chrome moved to a sans-first type system with tighter radius and shadow tokens, reducing the earlier overly rounded feel
+- the floating app bar, story cards, navigation surfaces, and summary section now share the same restrained card language across home, archive, group, and story routes
+- exported-site smoke now asserts that a real background preview image is visible on a story with bundled backgrounds
+- `npm run verify` passed on branch `codex-reader-visual-refresh-issue-43`
 
 Remaining product gaps:
 
