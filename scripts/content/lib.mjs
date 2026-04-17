@@ -117,6 +117,24 @@ export function getGeneratedBackgroundsRoot(cwd = getRepoRoot()) {
   return path.join(cwd, "ark-str-web-app", "public", "generated", "backgrounds");
 }
 
+export function getNormalizedBackgroundFileName(backgroundId) {
+  if (typeof backgroundId !== "string") {
+    return null;
+  }
+
+  const normalizedBackgroundId = backgroundId.trim();
+  if (normalizedBackgroundId.length === 0) {
+    return null;
+  }
+
+  return `${normalizedBackgroundId.toLowerCase()}.png`;
+}
+
+export function getGeneratedBackgroundPublicPath(backgroundId) {
+  const normalizedFileName = getNormalizedBackgroundFileName(backgroundId);
+  return normalizedFileName ? `/generated/backgrounds/${normalizedFileName}` : null;
+}
+
 export function getGeneratedAppContentRoot(cwd = getRepoRoot()) {
   return path.join(cwd, "ark-str-web-app", "src", "generated", "content");
 }
@@ -648,7 +666,12 @@ function collectReferencedBackgroundPaths(storyDetails, cwd = getRepoRoot()) {
       continue;
     }
 
-    backgroundPaths[backgroundId] = `/generated/backgrounds/${backgroundId}.png`;
+    const publicPath = getGeneratedBackgroundPublicPath(backgroundId);
+    if (!publicPath) {
+      continue;
+    }
+
+    backgroundPaths[backgroundId] = publicPath;
   }
 
   return backgroundPaths;

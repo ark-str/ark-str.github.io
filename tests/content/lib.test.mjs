@@ -5,6 +5,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import {
   getGeneratedFilePaths,
+  getGeneratedBackgroundPublicPath,
   getGeneratedPortraitPublicPath,
   resolveStorySource,
   selectStoryTitle,
@@ -290,5 +291,61 @@ test("writeGeneratedArtifacts normalizes portrait filenames for mixed-case speak
   assert.equal(
     portraitManifest.avg_4081_warmy_1,
     "/generated/portraits/speakers/avg_4081_warmy_1.png",
+  );
+});
+
+test("writeGeneratedArtifacts normalizes background filenames for mixed-case background ids", () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "ark-str-generated-"));
+  const artifacts = {
+    index: {
+      generatedAt: "2026-04-18T00:00:00.000Z",
+      vendor: {
+        source: "ArknightsAssets/ArknightsGamedata",
+        submodulePath: "vendor/ArknightsGamedata",
+        submoduleSha: "abc123",
+        servers: [],
+      },
+      groups: [],
+      stories: [],
+    },
+    sourceManifest: {
+      generatedAt: "2026-04-18T00:00:00.000Z",
+      vendor: { submoduleSha: "abc123" },
+      items: [],
+    },
+    summaryManifest: {
+      generatedAt: "2026-04-18T00:00:00.000Z",
+      vendor: { submoduleSha: "abc123" },
+      items: [],
+    },
+    storyDetails: [],
+    portraitPaths: {},
+    backgroundPaths: {
+      "38_g21_skyStarry_R1": getGeneratedBackgroundPublicPath("38_g21_skyStarry_R1"),
+      "38_g21_skystarry_r1": getGeneratedBackgroundPublicPath("38_g21_skystarry_r1"),
+    },
+  };
+
+  fs.mkdirSync(path.join(root, "vendor", "ArknightsResource", "avgs", "bg"), {
+    recursive: true,
+  });
+  fs.writeFileSync(
+    path.join(root, "vendor", "ArknightsResource", "avgs", "bg", "38_g21_skyStarry_R1.png"),
+    "bg",
+  );
+
+  writeGeneratedArtifacts(artifacts, root);
+  const filePaths = getGeneratedFilePaths(root);
+  const backgroundManifest = JSON.parse(fs.readFileSync(filePaths.appBackgroundManifest, "utf8"));
+  const generatedBackgroundFileNames = fs.readdirSync(filePaths.generatedBackgroundsRoot).sort();
+
+  assert.deepEqual(generatedBackgroundFileNames, ["38_g21_skystarry_r1.png"]);
+  assert.equal(
+    backgroundManifest["38_g21_skyStarry_R1"],
+    "/generated/backgrounds/38_g21_skystarry_r1.png",
+  );
+  assert.equal(
+    backgroundManifest["38_g21_skystarry_r1"],
+    "/generated/backgrounds/38_g21_skystarry_r1.png",
   );
 });
