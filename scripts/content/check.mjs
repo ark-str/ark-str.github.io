@@ -14,6 +14,14 @@ function invariant(condition, message) {
   }
 }
 
+function estimateReadingMinutes(visibleCharacterCount) {
+  if (!Number.isFinite(visibleCharacterCount) || visibleCharacterCount <= 0) {
+    return 0;
+  }
+
+  return Math.max(1, Math.ceil(visibleCharacterCount / 450));
+}
+
 function buildStoryMap(items) {
   return new Map(items.map((item) => [`${item.server}:${item.storyId}`, item]));
 }
@@ -200,6 +208,10 @@ function validateGeneratedArtifacts(generated) {
     invariant(
       Number.isInteger(group.estimatedMinutes) && group.estimatedMinutes >= 0,
       "group.estimatedMinutes must be a non-negative integer",
+    );
+    invariant(
+      group.estimatedMinutes === estimateReadingMinutes(group.totalVisibleCharacterCount),
+      "group.estimatedMinutes must match the generated visible character total",
     );
   }
 

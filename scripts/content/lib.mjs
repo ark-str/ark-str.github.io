@@ -694,7 +694,6 @@ export function buildContentArtifacts(
       groupCount += 1;
       storyCount += unlockDatas.length;
       let totalVisibleCharacterCount = 0;
-      let totalEstimatedMinutes = 0;
 
       for (const unlockData of unlockDatas) {
         const stageId = unlockData.requiredStages?.[0]?.stageId ?? null;
@@ -759,7 +758,6 @@ export function buildContentArtifacts(
             story.visibleCharacterCount = visibleCharacterCount;
             story.estimatedMinutes = estimatedMinutes;
             totalVisibleCharacterCount += visibleCharacterCount;
-            totalEstimatedMinutes += estimatedMinutes;
             storyDetails.push({
               locale: server,
               storyId: story.storyId,
@@ -796,7 +794,7 @@ export function buildContentArtifacts(
           endTime: groupRecord.endTime ?? null,
           storyCount: unlockDatas.length,
           totalVisibleCharacterCount,
-          estimatedMinutes: totalEstimatedMinutes,
+          estimatedMinutes: estimateReadingMinutes(totalVisibleCharacterCount),
         });
       }
     }
