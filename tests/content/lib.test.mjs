@@ -140,6 +140,8 @@ test("writeGeneratedArtifacts keeps story payloads out of app-internal generated
           avgTag: null,
           bodyPath: "stories/en/story-a.json",
           bodyAvailable: true,
+          visibleCharacterCount: 180,
+          estimatedMinutes: 1,
         },
       ],
     },
