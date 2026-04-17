@@ -19,6 +19,14 @@ import {
   getStoryDetailPath,
   summaryManifest,
 } from "@/generated/content/registry";
+export {
+  buildLocaleSwitchHref,
+  findGroupEntry,
+  findStoryEntry,
+  getReaderGroupHref,
+  getReaderLocaleHref,
+  getReaderStoryHref,
+} from "@/features/content/config/reader-routes";
 
 function getConfiguredBasePath() {
   const configuredBasePath = process.env.ARK_STR_BASE_PATH?.trim() ?? "";
@@ -147,28 +155,6 @@ export function getGroupStories(
   return index.stories.filter((story) => story.server === locale && story.groupId === groupId);
 }
 
-export function findGroupEntry(
-  index: ContentIndex,
-  locale: ReaderLocale,
-  groupId: string,
-): ContentGroupEntry | null {
-  return index.groups.find((group) => group.server === locale && group.groupId === groupId) ?? null;
-}
-
-export function findStoryEntry(
-  index: ContentIndex,
-  locale: ReaderLocale,
-  groupId: string,
-  storyId: string,
-): ContentStoryIndexEntry | null {
-  return (
-    index.stories.find(
-      (story) =>
-        story.server === locale && story.groupId === groupId && story.storyId === storyId,
-    ) ?? null
-  );
-}
-
 export async function readStoryDetail(
   locale: ReaderLocale,
   storyId: string,
@@ -231,6 +217,16 @@ export function readReaderHomeModel(): ReaderHomeModel {
 
 export function getReaderLocaleStaticParams(): Array<{ locale: ReaderLocale }> {
   return Object.keys(READER_LOCALE_LABELS).map((locale) => ({ locale: locale as ReaderLocale }));
+}
+
+export function getReaderGroupStaticParams(): Array<{
+  locale: ReaderLocale;
+  groupId: string;
+}> {
+  return readContentIndex().groups.map((group) => ({
+    locale: group.server,
+    groupId: group.groupId,
+  }));
 }
 
 export function getReaderStoryStaticParams(): Array<{

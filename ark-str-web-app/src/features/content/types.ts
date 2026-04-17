@@ -23,6 +23,8 @@ export type ContentGroupEntry = {
   startTime: number | null;
   endTime: number | null;
   storyCount: number;
+  totalVisibleCharacterCount: number;
+  estimatedMinutes: number;
 };
 
 export type ContentStoryIndexEntry = {
@@ -40,6 +42,8 @@ export type ContentStoryIndexEntry = {
   avgTag: string | null;
   bodyPath: string | null;
   bodyAvailable: boolean;
+  visibleCharacterCount: number;
+  estimatedMinutes: number;
 };
 
 export type ContentIndex = {

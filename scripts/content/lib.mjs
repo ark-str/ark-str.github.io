@@ -631,6 +631,33 @@ function collectReferencedBackgroundPaths(storyDetails, cwd = getRepoRoot()) {
   return backgroundPaths;
 }
 
+function countVisibleCharactersFromBlocks(blocks) {
+  let total = 0;
+
+  for (const block of blocks ?? []) {
+    if (block?.type === "dialogue" || block?.type === "narration") {
+      total += typeof block.text === "string" ? block.text.length : 0;
+      continue;
+    }
+
+    if (block?.type === "choice") {
+      for (const option of block.options ?? []) {
+        total += countVisibleCharactersFromBlocks(option.blocks ?? []);
+      }
+    }
+  }
+
+  return total;
+}
+
+function estimateReadingMinutes(visibleCharacterCount) {
+  if (!Number.isFinite(visibleCharacterCount) || visibleCharacterCount <= 0) {
+    return 0;
+  }
+
+  return Math.max(1, Math.ceil(visibleCharacterCount / 450));
+}
+
 export function buildContentArtifacts(
   cwd = getRepoRoot(),
   { ensurePortraitSource = false, remotePortraitSource = false } = {},
@@ -666,19 +693,8 @@ export function buildContentArtifacts(
       const unlockDatas = Array.isArray(groupRecord.infoUnlockDatas) ? groupRecord.infoUnlockDatas : [];
       groupCount += 1;
       storyCount += unlockDatas.length;
-
-      if (isReaderLocale) {
-        groupItems.push({
-          server,
-          groupId,
-          title: groupRecord.name ?? groupId,
-          entryType: groupRecord.entryType ?? null,
-          actType: groupRecord.actType ?? null,
-          startTime: groupRecord.startTime ?? null,
-          endTime: groupRecord.endTime ?? null,
-          storyCount: unlockDatas.length,
-        });
-      }
+      let totalVisibleCharacterCount = 0;
+      let totalEstimatedMinutes = 0;
 
       for (const unlockData of unlockDatas) {
         const stageId = unlockData.requiredStages?.[0]?.stageId ?? null;
@@ -694,6 +710,8 @@ export function buildContentArtifacts(
         });
 
         const bodyPath = isReaderLocale ? createStoryBodyPath(server, unlockData.storyId) : null;
+        let visibleCharacterCount = 0;
+        let estimatedMinutes = 0;
 
         const story = {
           server,
@@ -710,10 +728,11 @@ export function buildContentArtifacts(
           avgTag: unlockData.avgTag ?? null,
           bodyPath,
           bodyAvailable: isReaderLocale && source.sourceExists,
+          visibleCharacterCount,
+          estimatedMinutes,
         };
 
         if (isReaderLocale) {
-          storyItems.push(story);
           sourceItems.push({
             server,
             storyId: story.storyId,
@@ -735,6 +754,12 @@ export function buildContentArtifacts(
           if (source.sourceExists) {
             const sourceFilePath = resolveWorkspacePath(cwd, source.sourcePath);
             const parsedBlocks = parseStoryText(fs.readFileSync(sourceFilePath, "utf8"));
+            visibleCharacterCount = countVisibleCharactersFromBlocks(parsedBlocks);
+            estimatedMinutes = estimateReadingMinutes(visibleCharacterCount);
+            story.visibleCharacterCount = visibleCharacterCount;
+            story.estimatedMinutes = estimatedMinutes;
+            totalVisibleCharacterCount += visibleCharacterCount;
+            totalEstimatedMinutes += estimatedMinutes;
             storyDetails.push({
               locale: server,
               storyId: story.storyId,
@@ -755,7 +780,24 @@ export function buildContentArtifacts(
               },
             });
           }
+
+          storyItems.push(story);
         }
+      }
+
+      if (isReaderLocale) {
+        groupItems.push({
+          server,
+          groupId,
+          title: groupRecord.name ?? groupId,
+          entryType: groupRecord.entryType ?? null,
+          actType: groupRecord.actType ?? null,
+          startTime: groupRecord.startTime ?? null,
+          endTime: groupRecord.endTime ?? null,
+          storyCount: unlockDatas.length,
+          totalVisibleCharacterCount,
+          estimatedMinutes: totalEstimatedMinutes,
+        });
       }
     }
 
