@@ -95,6 +95,24 @@ export function getGeneratedPortraitsRoot(cwd = getRepoRoot()) {
   return path.join(cwd, "ark-str-web-app", "public", "generated", "portraits", "speakers");
 }
 
+export function getNormalizedPortraitFileName(speakerId) {
+  if (typeof speakerId !== "string") {
+    return null;
+  }
+
+  const normalizedSpeakerId = speakerId.trim();
+  if (normalizedSpeakerId.length === 0) {
+    return null;
+  }
+
+  return `${normalizedSpeakerId.toLowerCase()}.png`;
+}
+
+export function getGeneratedPortraitPublicPath(speakerId) {
+  const normalizedFileName = getNormalizedPortraitFileName(speakerId);
+  return normalizedFileName ? `/generated/portraits/speakers/${normalizedFileName}` : null;
+}
+
 export function getGeneratedBackgroundsRoot(cwd = getRepoRoot()) {
   return path.join(cwd, "ark-str-web-app", "public", "generated", "backgrounds");
 }
@@ -608,7 +626,12 @@ function collectReferencedPortraitPaths(storyDetails, cwd = getRepoRoot()) {
       continue;
     }
 
-    portraitPaths[speakerId] = `/generated/portraits/speakers/${speakerId}.png`;
+    const publicPath = getGeneratedPortraitPublicPath(speakerId);
+    if (!publicPath) {
+      continue;
+    }
+
+    portraitPaths[speakerId] = publicPath;
   }
 
   return portraitPaths;
