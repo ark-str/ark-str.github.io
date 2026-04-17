@@ -146,6 +146,10 @@ function validateGeneratedArtifacts(generated) {
     invariant(typeof story.groupId === "string" && story.groupId.length > 0, "story.groupId must be present");
     invariant(typeof story.title === "string" && story.title.length > 0, "story.title must be present");
     invariant(typeof story.sourcePath === "string" && story.sourcePath.length > 0, "story.sourcePath must be present");
+    invariant(
+      story.sourcePath.startsWith("vendor/ArknightsGamedata/"),
+      "story.sourcePath must stay repository-relative under vendor/ArknightsGamedata/",
+    );
     invariant(typeof story.sourceHash === "string" && story.sourceHash.length > 0, "story.sourceHash must be present");
     invariant(typeof story.bodyAvailable === "boolean", "story.bodyAvailable must be present");
     invariant(

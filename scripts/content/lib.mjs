@@ -25,6 +25,10 @@ function getHarnessHostRoot(cwd = getRepoRoot()) {
   return markerIndex === -1 ? cwd : cwd.slice(0, markerIndex);
 }
 
+function toRepoRelativePath(absolutePath, cwd = getRepoRoot()) {
+  return path.relative(getHarnessHostRoot(cwd), absolutePath).replaceAll("\\", "/");
+}
+
 function hasGitWorkingTree(rootPath) {
   return fs.existsSync(path.join(rootPath, ".git"));
 }
@@ -333,9 +337,14 @@ function selectPortraitMatch(speakerId, trackedPortraitFiles) {
     return null;
   }
 
+  const normalizedSpeakerIdLower = normalizedSpeakerId.toLowerCase();
   const matches = trackedPortraitFiles.filter((relativePath) => {
     const basename = path.basename(relativePath, ".png");
-    return basename === normalizedSpeakerId || basename.startsWith(`${normalizedSpeakerId}_`);
+    const basenameLower = basename.toLowerCase();
+    return (
+      basenameLower === normalizedSpeakerIdLower ||
+      basenameLower.startsWith(`${normalizedSpeakerIdLower}_`)
+    );
   });
 
   if (matches.length === 0) {
@@ -392,9 +401,14 @@ function selectBackgroundMatch(backgroundId, trackedBackgroundFiles) {
     return null;
   }
 
+  const normalizedBackgroundIdLower = normalizedBackgroundId.toLowerCase();
   const matches = trackedBackgroundFiles.filter((relativePath) => {
     const basename = path.basename(relativePath, ".png");
-    return basename === normalizedBackgroundId || basename.startsWith(`${normalizedBackgroundId}_`);
+    const basenameLower = basename.toLowerCase();
+    return (
+      basenameLower === normalizedBackgroundIdLower ||
+      basenameLower.startsWith(`${normalizedBackgroundIdLower}_`)
+    );
   });
 
   if (matches.length === 0) {
@@ -504,7 +518,7 @@ export function resolveStorySource({
   }
 
   const existingPath = candidatePaths.find((candidatePath) => fs.existsSync(candidatePath)) ?? null;
-  const sourcePath = path.relative(cwd, existingPath ?? candidatePaths[0]).replaceAll("\\", "/");
+  const sourcePath = toRepoRelativePath(existingPath ?? candidatePaths[0], cwd);
 
   if (existingPath) {
     return {
