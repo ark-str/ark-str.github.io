@@ -26,8 +26,10 @@ The app should feel editorial, deliberate, and product-specific rather than like
 - a restrained floating app bar shared by home, archive, group, and story routes
 - story pages with left-side group navigation, main reading column, bottom summary section, and a floating top button
 - story-only dynamic backdrop transitions driven by bundled background blocks, while non-story pages keep the archive base background
-- in-flow background blocks keep their own bundled image previews even while they drive the fixed story backdrop
+- in-flow background blocks keep their own bundled image previews without cropping and still drive the fixed story backdrop
+- story backdrop swaps on story pages use a slower 0.5 second cross-fade instead of a hard cut
 - the UI uses a sans-first type system and a tighter radius scale for more consistent modern chrome
+- dialogue cards prioritize a vertical reading layout with portrait and speaker meta in the header and the body text spanning the full card width
 - a generated-content readiness panel and explicit summary empty state sourced from bundled JSON
 - gh-pages-safe reader routes rendered from exported static files under the `/ark-str/` base path
 - no framework starter copy, remote links, or vendor branding
