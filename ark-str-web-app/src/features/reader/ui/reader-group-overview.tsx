@@ -31,7 +31,7 @@ export function ReaderGroupOverview({
             <Badge variant="accent" className="w-fit">
               Group overview
             </Badge>
-            <h1 className="font-[var(--font-display)] text-4xl leading-tight md:text-5xl">
+            <h1 className="font-[var(--font-display)] text-4xl font-semibold leading-tight tracking-[-0.03em] md:text-5xl">
               {group.title}
             </h1>
             <p className="max-w-3xl text-sm leading-7 text-[var(--text-muted)] md:text-base">

@@ -82,7 +82,7 @@ export function BootstrapHome({
             <CardHeader className="gap-4 pb-0">
               <div className="flex flex-wrap items-center justify-between gap-3">
                 <Badge variant="accent">Reader shell</Badge>
-                <p className="text-xs uppercase tracking-[0.18em] text-[var(--text-muted)]">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--text-muted)]">
                   Editorial archive surface
                 </p>
               </div>
@@ -97,7 +97,7 @@ export function BootstrapHome({
             <CardContent className="grid gap-6 pt-6">
               <div className="grid gap-4 lg:grid-cols-3">
                 <div className="rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--surface-muted)] p-4">
-                  <p className="text-xs uppercase tracking-[0.22em] text-[var(--text-muted)]">
+                  <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--text-muted)]">
                     Continue
                   </p>
                   <p className="mt-2 text-lg font-semibold">
@@ -108,14 +108,16 @@ export function BootstrapHome({
                   </p>
                 </div>
                 <div className="rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--surface-muted)] p-4">
-                  <p className="text-xs uppercase tracking-[0.22em] text-[var(--text-muted)]">Scope</p>
+                  <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--text-muted)]">
+                    Scope
+                  </p>
                   <p className="mt-2 text-lg font-semibold">Body-first reader</p>
                   <p className="mt-1 text-sm leading-6 text-[var(--text-muted)]">
                     summary는 아직 생성되지 않았으므로, 하단 section에서 explicit empty state로만 노출합니다.
                   </p>
                 </div>
                 <div className="rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--surface-muted)] p-4">
-                  <p className="text-xs uppercase tracking-[0.22em] text-[var(--text-muted)]">
+                  <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--text-muted)]">
                     Locale set
                   </p>
                   <p className="mt-2 text-lg font-semibold">cn / en / jp / kr / tw</p>
@@ -147,7 +149,7 @@ export function BootstrapHome({
                 className="rounded-[var(--radius-xl)] border border-[var(--border)] bg-[var(--panel)] p-5"
                 data-testid="last-visited-story"
               >
-                <p className="text-xs uppercase tracking-[0.18em] text-[var(--text-muted)]">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--text-muted)]">
                   Last visited
                 </p>
                 {state.lastVisitedStory ? (
@@ -182,19 +184,19 @@ export function BootstrapHome({
             <CardContent className="grid gap-5">
               <dl className="grid gap-4 sm:grid-cols-3">
                 <div>
-                  <dt className="uppercase tracking-[0.18em] text-[var(--text-muted)]">Vendor servers</dt>
+                  <dt className="uppercase tracking-[0.14em] text-[var(--text-muted)]">Vendor servers</dt>
                   <dd className="mt-1 text-base font-semibold">
                     <span data-testid="server-count">{readiness.serverCount}</span>
                   </dd>
                 </div>
                 <div>
-                  <dt className="uppercase tracking-[0.18em] text-[var(--text-muted)]">Reader stories</dt>
+                  <dt className="uppercase tracking-[0.14em] text-[var(--text-muted)]">Reader stories</dt>
                   <dd className="mt-1 text-base font-semibold">
                     <span data-testid="story-count">{readiness.storyCount}</span>
                   </dd>
                 </div>
                 <div>
-                  <dt className="uppercase tracking-[0.18em] text-[var(--text-muted)]">Missing summaries</dt>
+                  <dt className="uppercase tracking-[0.14em] text-[var(--text-muted)]">Missing summaries</dt>
                   <dd className="mt-1 text-base font-semibold">
                     <span data-testid="summary-missing-count">{readiness.summaryMissingCount}</span>
                   </dd>
@@ -202,7 +204,7 @@ export function BootstrapHome({
               </dl>
               <Separator />
               <div className="rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--panel)] p-4">
-                <p className="text-xs uppercase tracking-[0.2em] text-[var(--text-muted)]">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--text-muted)]">
                   Build snapshot
                 </p>
                 <p className="mt-2 text-sm leading-7 text-[var(--text-muted)]">
@@ -306,7 +308,7 @@ export function BootstrapHome({
                   className="grid gap-3 rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--panel)] p-4"
                 >
                   <div className="flex items-center gap-3">
-                    <span className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[var(--border)] bg-[var(--surface)]">
+                    <span className="inline-flex h-10 w-10 items-center justify-center rounded-[var(--radius-sm)] border border-[var(--border)] bg-[var(--surface)]">
                       <step.icon className="h-4 w-4 text-[var(--accent)]" />
                     </span>
                     <div>

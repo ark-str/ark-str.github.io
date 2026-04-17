@@ -1,7 +1,7 @@
 # Arknights Story Reader
 
 Status: active
-Phase: reader IA and layout refresh
+Phase: reader visual refresh
 
 ## Product Goal
 
@@ -68,9 +68,11 @@ This phase keeps the recovered reader shell and Pages deployment path stable whi
 - locale archives route into dedicated group overview pages before story routes
 - generated group and story metrics for total visible characters and estimated reading time
 - story pages keep the global archive feel, but only story pages add a dynamic fixed background backdrop sourced from in-flow `background` blocks
-- story pages keep `background` blocks in the flow as transition markers while the backdrop updates on scroll
+- story pages keep `background` blocks in the flow as transition markers with bundled preview images while the backdrop updates on scroll
+- story-page backdrop transitions fade between active images instead of switching instantly
 - story pages place group story navigation on the left and a floating scroll-to-top action at the lower right
 - Doctor choice normalization no longer renders a nested "Shared response" section; predicates that reference every option are treated as post-choice continuation
 - gh-pages-safe static export under the `/ark-str/` base path
 - isolated `.next-dev` and `.next-export` caches so `npm run verify` does not degrade the next `npm run dev` startup
 - a manual GitHub Actions Pages workflow that rebuilds, verifies, and publishes `ark-str-web-app/out`
+- the visual system uses a sans-first type stack and a more restrained radius scale while keeping the archive background mood
