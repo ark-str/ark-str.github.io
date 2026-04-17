@@ -6,14 +6,19 @@
   "title": "Dense Fog",
   "storyCode": "CW-1",
   "avgTag": "Before Operation",
-  "sourcePath": "vendor/ArknightsGamedata/en/gamedata/story/activities/act25side/level_act25side_01_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/en/gamedata/story/activities/act25side/level_act25side_01_beg.txt",
   "sourceHash": "86a76103196c9cdb327d2c18ea646d44177fc5e6d91ae5e52763f5ad085a3c34",
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "29_g6_mainstreet"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Ho'olheyak",
       "speakerId": "avg_npc_536_1",
+      "isRemote": false,
       "text": "Hm, right on time."
     },
     {
@@ -27,30 +32,35 @@
       "type": "dialogue",
       "speakerName": "Ho'olheyak",
       "speakerId": "avg_npc_536_1",
+      "isRemote": false,
       "text": "Now, let's see... Just where will this 'star' land in Trimounts?"
     },
     {
       "type": "dialogue",
       "speakerName": "Ho'olheyak",
       "speakerId": "avg_npc_536_1",
+      "isRemote": false,
       "text": "Districts 2 and 5 are primarily residential. 11's new industrial campus is under construction..."
     },
     {
       "type": "dialogue",
       "speakerName": "Ho'olheyak",
       "speakerId": "avg_npc_536_1",
+      "isRemote": false,
       "text": "Let's hope it won't be Central. That place is packed with office buildings like the dime a dozen canned fins you get at the supermarket. And it's a work day. Those offices are gonna be full of people... Hmph."
     },
     {
       "type": "dialogue",
       "speakerName": "Ho'olheyak",
       "speakerId": "avg_npc_536_1",
+      "isRemote": false,
       "text": "Well, you really figured out where to land this experiment of yours..."
     },
     {
       "type": "dialogue",
       "speakerName": "Ho'olheyak",
       "speakerId": "avg_npc_536_1",
+      "isRemote": false,
       "text": "Or maybe you just never cared how much of a racket this might cause?"
     },
     {
@@ -60,6 +70,7 @@
       "type": "dialogue",
       "speakerName": "Ho'olheyak",
       "speakerId": "avg_npc_536_1",
+      "isRemote": false,
       "text": "Either way, you planned this far ahead. Things are getting more and more interesting... Kristen."
     },
     {
@@ -69,6 +80,7 @@
       "type": "dialogue",
       "speakerName": "Ho'olheyak",
       "speakerId": "avg_npc_536_1",
+      "isRemote": false,
       "text": "Confirmed—the Triton factory in District 13."
     },
     {
@@ -82,6 +94,10 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "38_g13_trimountlivingroom"
+    },
+    {
       "type": "choice",
       "options": [
         {
@@ -92,6 +108,7 @@
               "type": "dialogue",
               "speakerName": "Muelsyse",
               "speakerId": "avg_249_mlyss_1",
+              "isRemote": false,
               "text": "That's a big yawn. Didn't sleep well?"
             },
             {
@@ -107,6 +124,7 @@
               "type": "dialogue",
               "speakerName": "Muelsyse",
               "speakerId": "avg_249_mlyss_1",
+              "isRemote": false,
               "text": "Do you usually stare at the ceiling for a while after you wake up?"
             },
             {
@@ -122,6 +140,7 @@
               "type": "dialogue",
               "speakerName": "Muelsyse",
               "speakerId": "avg_249_mlyss_1",
+              "isRemote": false,
               "text": "Look at the time. The Rhiners have been at work for an hour already."
             },
             {
@@ -129,8 +148,7 @@
             }
           ]
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -145,30 +163,31 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Muelsyse",
-          "speakerId": "avg_249_mlyss_1",
-          "text": "I wanted to see you; that's why I'm here."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Muelsyse",
-          "speakerId": "avg_249_mlyss_1",
-          "text": "You saved me from the power armor, and I brought you breakfast. Fair's fair, right?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Muelsyse",
-          "speakerId": "avg_249_mlyss_1",
-          "text": "That's the breakfast combo from the cafe at Rhine Lab HQ. They only sell a hundred of those a day."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Muelsyse",
+      "speakerId": "avg_249_mlyss_1",
+      "isRemote": false,
+      "text": "I wanted to see you; that's why I'm here."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Muelsyse",
+      "speakerId": "avg_249_mlyss_1",
+      "isRemote": false,
+      "text": "You saved me from the power armor, and I brought you breakfast. Fair's fair, right?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Muelsyse",
+      "speakerId": "avg_249_mlyss_1",
+      "isRemote": false,
+      "text": "That's the breakfast combo from the cafe at Rhine Lab HQ. They only sell a hundred of those a day."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -178,18 +197,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Muelsyse",
-          "speakerId": "avg_249_mlyss_1",
-          "text": "Okay, okay, don't give me that look. You're a Grumpy Gus in the morning, huh?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Muelsyse",
+      "speakerId": "avg_249_mlyss_1",
+      "isRemote": false,
+      "text": "Okay, okay, don't give me that look. You're a Grumpy Gus in the morning, huh?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -199,57 +217,62 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Muelsyse",
-          "speakerId": "avg_249_mlyss_1",
-          "text": "Well, I haven't been able to contact her, but if she isn't here, then coming to you won't help."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Muelsyse",
-          "speakerId": "avg_249_mlyss_1",
-          "text": "Anyway, take a look at this."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "News",
-          "speakerId": null,
-          "text": "This just in, Trimountians. An explosion occurred this morning at the Triton Chemical Plant No. 3 in District 13."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "News",
-          "speakerId": null,
-          "text": "The specific cause of the explosion is still unknown, but the authorities' preliminary conclusion is that laboratory staff made a fatal error leading to the construction machinery on site exploding."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "News",
-          "speakerId": null,
-          "text": "A large stockpile of catalysts and reagents are stored at Triton Chemical Plant No. 3 , and to keep the chemicals from leaking out and causing more catastrophic damage, the military and government authorities are currently cleaning up the site."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "News",
-          "speakerId": null,
-          "text": "As of right now, all of District 13 is under temporary lockdown. Entry and exit from the district is being heavily restricted. Citizens are asked to cooperate with the ongoing work there."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "News",
-          "speakerId": null,
-          "text": "The government has not responded to request for comment, and it is not known at this time whether the lockdown in District 13 will affect Vice President Jackson's time in Trimounts."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Muelsyse",
+      "speakerId": "avg_249_mlyss_1",
+      "isRemote": false,
+      "text": "Well, I haven't been able to contact her, but if she isn't here, then coming to you won't help."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Muelsyse",
+      "speakerId": "avg_249_mlyss_1",
+      "isRemote": false,
+      "text": "Anyway, take a look at this."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "News",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "This just in, Trimountians. An explosion occurred this morning at the Triton Chemical Plant No. 3 in District 13."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "News",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "The specific cause of the explosion is still unknown, but the authorities' preliminary conclusion is that laboratory staff made a fatal error leading to the construction machinery on site exploding."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "News",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "A large stockpile of catalysts and reagents are stored at Triton Chemical Plant No. 3 , and to keep the chemicals from leaking out and causing more catastrophic damage, the military and government authorities are currently cleaning up the site."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "News",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "As of right now, all of District 13 is under temporary lockdown. Entry and exit from the district is being heavily restricted. Citizens are asked to cooperate with the ongoing work there."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "News",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "The government has not responded to request for comment, and it is not known at this time whether the lockdown in District 13 will affect Vice President Jackson's time in Trimounts."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -264,33 +287,34 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Muelsyse",
-          "speakerId": "avg_249_mlyss_1",
-          "text": "I don't know the specifics."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Muelsyse",
-          "speakerId": "avg_249_mlyss_1",
-          "text": "But if you, or should I say Rhodes Island, are here, considering how much Saria trusts you, there's no way you would ignore big news like this."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Muelsyse",
-          "speakerId": "avg_249_mlyss_1",
-          "text": "Okay, Doctor, you've got some new visitors... I'll see you very soon."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Muelsyse",
+      "speakerId": "avg_249_mlyss_1",
+      "isRemote": false,
+      "text": "I don't know the specifics."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Muelsyse",
+      "speakerId": "avg_249_mlyss_1",
+      "isRemote": false,
+      "text": "But if you, or should I say Rhodes Island, are here, considering how much Saria trusts you, there's no way you would ignore big news like this."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Muelsyse",
+      "speakerId": "avg_249_mlyss_1",
+      "isRemote": false,
+      "text": "Okay, Doctor, you've got some new visitors... I'll see you very soon."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -305,18 +329,17 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Ifrit",
-          "speakerId": "avg_npc_895_1",
-          "text": "Rise and shine, Dr. {@nickname}, ya big dumbass! Rise and shine!"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ifrit",
+      "speakerId": "avg_npc_895_1",
+      "isRemote": false,
+      "text": "Rise and shine, Dr. {@nickname}, ya big dumbass! Rise and shine!"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -326,30 +349,31 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "Long time no see, Dr. {@nickname}."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "Ptilopsis has already returned to the landship with Elena for checkup and treatment. Mechanist is currently on a new mission. From here on, I will be accompanying you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ifrit",
-          "speakerId": "avg_npc_895_1",
-          "text": "And me! And also..."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "Long time no see, Dr. {@nickname}."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "Ptilopsis has already returned to the landship with Elena for checkup and treatment. Mechanist is currently on a new mission. From here on, I will be accompanying you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ifrit",
+      "speakerId": "avg_npc_895_1",
+      "isRemote": false,
+      "text": "And me! And also..."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -364,46 +388,48 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "narration",
-          "text": "The floaty Feline girl apparently entered the room at some point. She stands next to the window and listens quietly to your conversation.\nShe gazes at you and your room. Behind her, there are pure white clouds floating gently across the clear Trimountian sky."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rosmontis",
-          "speakerId": "avg_npc_042",
-          "text": "Don't be mad, Doctor."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rosmontis",
-          "speakerId": "avg_npc_042",
-          "text": "I asked Dr. Kal'tsit to bring me along. I was... invited by someone."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "I will explain more about what's going on later... Seeing as you have the TV on, it seems you already know about District 13."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "The explosion wasn't caused by some careless lab technician. Something fell from the sky."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "narration",
+      "text": "The floaty Feline girl apparently entered the room at some point. She stands next to the window and listens quietly to your conversation.\nShe gazes at you and your room. Behind her, there are pure white clouds floating gently across the clear Trimountian sky."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rosmontis",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "Don't be mad, Doctor."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rosmontis",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "I asked Dr. Kal'tsit to bring me along. I was... invited by someone."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "I will explain more about what's going on later... Seeing as you have the TV on, it seems you already know about District 13."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "The explosion wasn't caused by some careless lab technician. Something fell from the sky."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -418,866 +444,1025 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "Yes. Saria has already gone to investigate."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "As for you, I need you to get out of bed and wash up."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Angry Citizen",
-          "speakerId": "avg_npc_524_1",
-          "text": "I live there. Who the hell are you to stop me from going home?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Angry Citizen",
-          "speakerId": "avg_npc_524_1",
-          "text": "What gives you the right to lock the place down, anyway? Is this even legal? Do you have anything in writing? I'm supposed to take your word that this is an emergency?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Anxious Citizen",
-          "speakerId": "avg_npc_524_1",
-          "text": "I'll be out in ten minutes!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Anxious Citizen",
-          "speakerId": "avg_npc_524_1",
-          "text": "I just need to head back for some documents. Our clients are waiting in the conference room!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Columbian Soldier",
-          "speakerId": "avg_npc_901_1",
-          "text": "Sorry, but I need to see your clearance."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Citizen?",
-          "speakerId": "avg_npc_901_1",
-          "text": "......"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ho'olheyak",
-          "speakerId": "avg_npc_536_1",
-          "text": "Interesting. I was going to watch Saria, to see what she's up to. I never expected to find this little bird making her way here."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ho'olheyak",
-          "speakerId": "avg_npc_536_1",
-          "text": "Right... That's the little researcher from the 'Diαbolic Crisis.'"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ho'olheyak",
-          "speakerId": "avg_npc_536_1",
-          "text": "Scouting the area with a drone from a dead angle while hiding in the crowd, waiting for an opportunity. Not bad."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ho'olheyak",
-          "speakerId": "avg_npc_536_1",
-          "text": "But the army has soldiers watching every single alley. It won't be so easy for you to break through their checkpoints."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ho'olheyak",
-          "speakerId": "avg_npc_536_1",
-          "text": "That said..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ho'olheyak",
-          "speakerId": "avg_npc_536_1",
-          "text": "I haven't the slightest idea what you can do, but you might just be able to give these baddies a little trouble, so I'll give you a hand."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_901_1",
-          "text": "What are you blabbing about?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ho'olheyak",
-          "speakerId": "avg_npc_536_1",
-          "text": "Nothing. The package's recovered. It'll be delivered right away."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Columbian Soldier",
-          "speakerId": "avg_npc_901_1",
-          "text": "As you've no doubt heard on the news..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Angry Citizen",
-          "speakerId": "avg_npc_901_1",
-          "text": "It's just one factory that had an accident. Why is the entire district on lockdown?!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Angry Citizen",
-          "speakerId": "avg_npc_901_1",
-          "text": "If you guys are actually worried about the chemicals, why aren't you wearing protective equipment? Why are you people still allowed to come and go? No one is buying your beastshit!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Anxious Citizen",
-          "speakerId": "avg_npc_524_1",
-          "text": "This is about the whole industrial campus upgrade project! If it falls through, who's gonna pay?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Anxious Citizen",
-          "speakerId": "avg_npc_524_1",
-          "text": "Hurry up and let me by!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Columbian Soldier",
-          "speakerId": "avg_npc_901_1",
-          "text": "No pushing!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Columbian Soldier",
-          "speakerId": "avg_npc_901_1",
-          "text": "My arm. Why can't I move...?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Columbian Soldier",
-          "speakerId": "avg_npc_901_1",
-          "text": "Somebody broke through the cordon... How come the comms aren't working, either?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Citizen?",
-          "speakerId": "avg_108_silent_1",
-          "text": "......"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Columbian Soldier",
-          "speakerId": "avg_npc_901_1",
-          "text": "Your clearance, Miss Saria?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Saria",
-          "speakerId": "avg_npc_896_1",
-          "text": "You know me?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Columbian Soldier",
-          "speakerId": "avg_npc_901_1",
-          "text": "Former Defense Director of Rhine Lab. Your reputation precedes you here in Trimounts."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Saria",
-          "speakerId": "avg_npc_896_1",
-          "text": "So I can't enter District 13?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Columbian Soldier",
-          "speakerId": "avg_npc_901_1",
-          "text": "Not just you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Columbian Soldier",
-          "speakerId": "avg_npc_901_1",
-          "text": "If you don't have clearance, please leave."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Columbian Soldier",
-          "speakerId": "avg_npc_901_1",
-          "text": "You—!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Tin Man",
-          "speakerId": "avg_npc_900_1",
-          "text": "Relax. Stow your weapon."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Columbian Soldier",
-          "speakerId": "avg_npc_901_1",
-          "text": "Your face... Your hands... you..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Tin Man",
-          "speakerId": "avg_npc_900_1",
-          "text": "It's the same all over. I may look scary, but it's just an exoskeleton."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Tin Man",
-          "speakerId": "avg_npc_900_1",
-          "text": "I work for the Maylander Historical Association, currently part of the vice president's entourage as his secretary. Here's my authorization."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Tin Man",
-          "speakerId": "avg_npc_900_1",
-          "text": "Miss Saria here is the subject-matter expert we invited along."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Saria",
-          "speakerId": "avg_npc_896_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Columbian Soldier",
-          "speakerId": "avg_npc_901_1",
-          "text": "Maylander, huh? You people are always so strange."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Tin Man",
-          "speakerId": "avg_npc_900_1",
-          "text": "Go talk to your superiors. We want to get a better grasp of the situation."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Columbian Soldier",
-          "speakerId": "avg_npc_901_1",
-          "text": "Give me a minute."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Tin Man",
-          "speakerId": "avg_npc_900_1",
-          "text": "Looking at your attire... It seems you don't plan on bringing your shield along?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Saria",
-          "speakerId": "avg_npc_896_1",
-          "text": "No, I just determined that I might need to apply full force to whatever is coming next."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Tin Man",
-          "speakerId": "avg_npc_900_1",
-          "text": "Full force, huh...? That phrase carries a weight far heavier than usual coming from the former director of the Rhine Lab Defense Section."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Tin Man",
-          "speakerId": "avg_npc_900_1",
-          "text": "Seems like I did make it in time."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Saria",
-          "speakerId": "avg_npc_896_1",
-          "text": "Our last meeting must have been at Haydn Pharmaceuticals, Detective."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Tin Man",
-          "speakerId": "avg_npc_900_1",
-          "text": "We talked so much that I forgot to slide you and Muelsyse a free pint of draft beer on your last visit."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Saria",
-          "speakerId": "avg_npc_896_1",
-          "text": "I know just how powerful the Maylander Foundation is, but I was still surprised when I heard the news from Kal'tsit... how do the two of you know each other?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Tin Man",
-          "speakerId": "avg_npc_900_1",
-          "text": "We're just old friends."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Saria",
-          "speakerId": "avg_npc_896_1",
-          "text": "So, what role is the Maylander Foundation playing in our current situation?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Tin Man",
-          "speakerId": "avg_npc_900_1",
-          "text": "Saria, are you interested in politics?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Saria",
-          "speakerId": "avg_npc_896_1",
-          "text": "Decidedly not."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Tin Man",
-          "speakerId": "avg_npc_900_1",
-          "text": "So do I really need to answer that question?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Columbian Soldier",
-          "speakerId": "avg_npc_901_1",
-          "text": "The Colonel is en-route to his meeting with the Vice President. Your identities have been verified, and the Colonel has authorized your entry to District 13."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Columbian Soldier",
-          "speakerId": "avg_npc_901_1",
-          "text": "But we're conducting an emergency investigation to evaluate the hazard posed by the chemical leaks, so you won't be allowed near Triton Chemical Plant No. 3. That's where this all went down."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Columbian Soldier",
-          "speakerId": "avg_npc_901_1",
-          "text": "We'll also arrange an escort party to go with you, to provide any necessary help."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Saria",
-          "speakerId": "avg_npc_901_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Tin Man",
-          "speakerId": "avg_npc_900_1",
-          "text": "No problem. We will go with your arrangements."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "Phew—made it in."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "Next, I keep two drones up in the air a hundred meters apart to survey the situation."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "The Triton factory should be right up ahead. I hope the stealth combat tactics I learned at Rhodes Island will come in handy here, let's take it slow..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "Will I really find any leads on the Transmitter here?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_npc_901_1",
-          "text": "A batch of Transmitter has gone missing?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Dorothy",
-          "speakerId": "avg_4048_doroth_1",
-          "text": "That's right. To be more precise, it was a batch of experimental materials with said Transmitter included that was supposed to be shipped together to HQ. For disposal."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "So someone stole it."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Dorothy",
-          "speakerId": "avg_4048_doroth_1",
-          "text": "And it's very likely to be someone within Rhine Lab."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Dorothy",
-          "speakerId": "avg_4048_doroth_1",
-          "text": "Silence, I'd like you to head to Trimounts and help me investigate this."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "Me?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Dorothy",
-          "speakerId": "avg_4048_doroth_1",
-          "text": "I need to remain at Site 359 to cooperate with the military investigation, so I'll be stuck here for the time being."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "Are you going to negotiate with them?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Dorothy",
-          "speakerId": "avg_4048_doroth_1",
-          "text": "Don't worry, as much as I don't enjoy this stuff, I'm still capable of it. I'm a Rhine Lab director, after all."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Dorothy",
-          "speakerId": "avg_4048_doroth_1",
-          "text": "I'm more worried about this batch of missing Transmitter becoming the catalyst of someone else's ambitions."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Dorothy",
-          "speakerId": "avg_4048_doroth_1",
-          "text": "So, can you do it?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "Well..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Dorothy",
-          "speakerId": "avg_4048_doroth_1",
-          "text": "Silence, you're a student of Director Parvis, and yet you showed up here at Site 359."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Dorothy",
-          "speakerId": "avg_4048_doroth_1",
-          "text": "I had some doubts, but now I get it: You came here to ask for my help."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Dorothy",
-          "speakerId": "avg_4048_doroth_1",
-          "text": "Or maybe you wanted to know if the Director of Originium Art is trustworthy."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "...I'm sorry."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Dorothy",
-          "speakerId": "avg_4048_doroth_1",
-          "text": "No need for apologies. I did come close to doing something awful. I should be thanking you, Silence."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Dorothy",
-          "speakerId": "avg_4048_doroth_1",
-          "text": "But at the same time, this is why I'm asking for your help. You are beholden only to your own standards, and looking for your own answers."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "But..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Dorothy",
-          "speakerId": "avg_4048_doroth_1",
-          "text": "Even if I hadn't asked you, you still would've returned to Trimounts, right?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "...Yes."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "Oh no. Why are there suddenly a lot more men on patrol?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Columbian Soldier A",
-          "speakerId": "avg_npc_901_1",
-          "text": "Shit. Find anything over there?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Columbian Soldier B",
-          "speakerId": "avg_npc_901_1",
-          "text": "I searched a couple alleyways over on the side. Nothing."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Columbian Soldier A",
-          "speakerId": "avg_npc_901_1",
-          "text": "The Colonel is about to meet the Vice President, so we had to play nice and let those two in. We were supposed to stick close to them. How did they lose us so quickly?!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Columbian Soldier B",
-          "speakerId": "avg_npc_901_1",
-          "text": "They were walking so leisurely the whole time, then they vanished behind a fence when I blinked."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Columbian Soldier A",
-          "speakerId": "avg_npc_901_1",
-          "text": "We really underestimated that fella all covered in iron. Maylander's people are always so tricky."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Columbian Soldier B",
-          "speakerId": "avg_npc_901_1",
-          "text": "I'll go report the situation to the brass. Take the boys with you and continue the search."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Columbian Soldier B",
-          "speakerId": "avg_npc_901_1",
-          "text": "Right, send more hands over to the factory too."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Saria",
-          "speakerId": "avg_npc_896_1",
-          "text": "Your reflexes and stealth skills are admirable, Mr. Detective"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Tin Man",
-          "speakerId": "avg_npc_900_1",
-          "text": "You flatter me. Even if we could manage them, it's better to shake them off our tail than to outright knock these sycophants out."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Saria",
-          "speakerId": "avg_npc_896_1",
-          "text": "We're here. Triton Chemical Plant No. 3 is right up front."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Tin Man",
-          "speakerId": "avg_npc_900_1",
-          "text": "They've already cordoned off the perimeter, and deployed heavily armed soldiers at every possible location. Quite the impossible task to get any closer."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Saria",
-          "speakerId": "avg_npc_896_1",
-          "text": "We're close enough for a clear view."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "Saria's gaze travels over the throng of people and past the striking yellow barriers, landing on the factory behind.\nThe once-smooth factory building has been demolished beyond recognition, with scorch marks scrawled by heaps of debris scattered all over. A series of explosions have eroded the facade, leaving only the interior foundations that give her a clear view—\nIn the center of the factory lies a huge ring-like mechanical structure, diagonally embedded into the ground like an outrageous art installation.\nThe source of the explosion."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Tin Man",
-          "speakerId": "avg_npc_900_1",
-          "text": "What have you found?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Saria",
-          "speakerId": "avg_npc_896_1",
-          "text": "Neither the shape nor the mechanical structure of the object hints at its purpose, but it is clearly a device not meant to be used on land."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Tin Man",
-          "speakerId": "avg_npc_900_1",
-          "text": "It fell from the sky."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Saria",
-          "speakerId": "avg_npc_896_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Saria",
-          "speakerId": "avg_npc_896_1",
-          "text": "We're too far away to discern any concrete details. But what can be confirmed at the very least is... this thing has the mark of Rhine technology."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Saria",
-          "speakerId": "avg_npc_896_1",
-          "text": "To be precise, it has Kristen's handwriting all over it... I'm sure of that."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Tin Man",
-          "speakerId": "avg_npc_900_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Tin Man",
-          "speakerId": "avg_npc_900_1",
-          "text": "'Horizon Arc Project'."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Saria",
-          "speakerId": "avg_npc_896_1",
-          "text": "What?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Tin Man",
-          "speakerId": "avg_npc_900_1",
-          "text": "I'm surprised you've not heard the name, given your position at Rhine and your relationship with Kristen."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Saria",
-          "speakerId": "avg_npc_896_1",
-          "text": "......"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "I'm glad I didn't get spotted..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "There really was one here!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "It's gone..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "Dorothy was right. Transmitters react to each other, and it wasn't too difficult to catch them with the one she gave me."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "But there's too few of them, Dorothy said there were more... could they be nearby?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "Wait..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "This is... the Triton Factory?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "A colossal ruin lies before her.\nJust how many injuries or casualties happened in there? Silence recalls the news not mentioning any numbers relevant to that question.\nShe recalls the destruction at Site 359, it was difficult for her to even picture what it looked like before the ruins."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "Was that Saria? Who was that with her...?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silence",
-          "speakerId": "avg_108_silent_1",
-          "text": "Saria, do you have something to do with this, too?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ifrit",
-          "speakerId": "avg_npc_895_1",
-          "text": "Do you know where we're going?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rosmontis",
-          "speakerId": "avg_npc_042",
-          "text": "(Shakes head)"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "We're heading to Saria's stronghold in Trimounts as part of our arrangement with her."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ifrit",
-          "speakerId": "avg_npc_895_1",
-          "text": "Saria! It's been ages since I saw her."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ifrit",
-          "speakerId": "avg_npc_895_1",
-          "text": "But if you need to talk to Saria, you two are gonna be busy, right? I guess she won't have time to talk to me?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "You and Rosmontis will stay with the Doctor."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ifrit",
-          "speakerId": "avg_npc_895_1",
-          "text": "......"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "Yes. Saria has already gone to investigate."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "As for you, I need you to get out of bed and wash up."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "29_g6_mainstreet"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Angry Citizen",
+      "speakerId": "avg_npc_524_1",
+      "isRemote": false,
+      "text": "I live there. Who the hell are you to stop me from going home?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Angry Citizen",
+      "speakerId": "avg_npc_524_1",
+      "isRemote": false,
+      "text": "What gives you the right to lock the place down, anyway? Is this even legal? Do you have anything in writing? I'm supposed to take your word that this is an emergency?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Anxious Citizen",
+      "speakerId": "avg_npc_524_1",
+      "isRemote": false,
+      "text": "I'll be out in ten minutes!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Anxious Citizen",
+      "speakerId": "avg_npc_524_1",
+      "isRemote": false,
+      "text": "I just need to head back for some documents. Our clients are waiting in the conference room!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Columbian Soldier",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "Sorry, but I need to see your clearance."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Citizen?",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ho'olheyak",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "Interesting. I was going to watch Saria, to see what she's up to. I never expected to find this little bird making her way here."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ho'olheyak",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "Right... That's the little researcher from the 'Diαbolic Crisis.'"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ho'olheyak",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "Scouting the area with a drone from a dead angle while hiding in the crowd, waiting for an opportunity. Not bad."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ho'olheyak",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "But the army has soldiers watching every single alley. It won't be so easy for you to break through their checkpoints."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ho'olheyak",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "That said..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ho'olheyak",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "I haven't the slightest idea what you can do, but you might just be able to give these baddies a little trouble, so I'll give you a hand."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "What are you blabbing about?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ho'olheyak",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "Nothing. The package's recovered. It'll be delivered right away."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "29_g6_mainstreet"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Columbian Soldier",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "As you've no doubt heard on the news..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Angry Citizen",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "It's just one factory that had an accident. Why is the entire district on lockdown?!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Angry Citizen",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "If you guys are actually worried about the chemicals, why aren't you wearing protective equipment? Why are you people still allowed to come and go? No one is buying your beastshit!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Anxious Citizen",
+      "speakerId": "avg_npc_524_1",
+      "isRemote": false,
+      "text": "This is about the whole industrial campus upgrade project! If it falls through, who's gonna pay?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Anxious Citizen",
+      "speakerId": "avg_npc_524_1",
+      "isRemote": false,
+      "text": "Hurry up and let me by!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Columbian Soldier",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "No pushing!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Columbian Soldier",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "My arm. Why can't I move...?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Columbian Soldier",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "Somebody broke through the cordon... How come the comms aren't working, either?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Citizen?",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "29_g6_mainstreet"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Columbian Soldier",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "Your clearance, Miss Saria?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Saria",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "You know me?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Columbian Soldier",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "Former Defense Director of Rhine Lab. Your reputation precedes you here in Trimounts."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Saria",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "So I can't enter District 13?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Columbian Soldier",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "Not just you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Columbian Soldier",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "If you don't have clearance, please leave."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Columbian Soldier",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "You—!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tin Man",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "Relax. Stow your weapon."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Columbian Soldier",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "Your face... Your hands... you..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tin Man",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "It's the same all over. I may look scary, but it's just an exoskeleton."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tin Man",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "I work for the Maylander Historical Association, currently part of the vice president's entourage as his secretary. Here's my authorization."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tin Man",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "Miss Saria here is the subject-matter expert we invited along."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Saria",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Columbian Soldier",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "Maylander, huh? You people are always so strange."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tin Man",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "Go talk to your superiors. We want to get a better grasp of the situation."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Columbian Soldier",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "Give me a minute."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tin Man",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "Looking at your attire... It seems you don't plan on bringing your shield along?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Saria",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "No, I just determined that I might need to apply full force to whatever is coming next."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tin Man",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "Full force, huh...? That phrase carries a weight far heavier than usual coming from the former director of the Rhine Lab Defense Section."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tin Man",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "Seems like I did make it in time."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Saria",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "Our last meeting must have been at Haydn Pharmaceuticals, Detective."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tin Man",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "We talked so much that I forgot to slide you and Muelsyse a free pint of draft beer on your last visit."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Saria",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "I know just how powerful the Maylander Foundation is, but I was still surprised when I heard the news from Kal'tsit... how do the two of you know each other?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tin Man",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "We're just old friends."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Saria",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "So, what role is the Maylander Foundation playing in our current situation?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tin Man",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "Saria, are you interested in politics?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Saria",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "Decidedly not."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tin Man",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "So do I really need to answer that question?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Columbian Soldier",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "The Colonel is en-route to his meeting with the Vice President. Your identities have been verified, and the Colonel has authorized your entry to District 13."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Columbian Soldier",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "But we're conducting an emergency investigation to evaluate the hazard posed by the chemical leaks, so you won't be allowed near Triton Chemical Plant No. 3. That's where this all went down."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Columbian Soldier",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "We'll also arrange an escort party to go with you, to provide any necessary help."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Saria",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tin Man",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "No problem. We will go with your arrangements."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "29_g8_alley_n"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "Phew—made it in."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "Next, I keep two drones up in the air a hundred meters apart to survey the situation."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "The Triton factory should be right up ahead. I hope the stealth combat tactics I learned at Rhodes Island will come in handy here, let's take it slow..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "Will I really find any leads on the Transmitter here?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "29_g5_laboratory"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "A batch of Transmitter has gone missing?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Dorothy",
+      "speakerId": "avg_4048_doroth_1",
+      "isRemote": false,
+      "text": "That's right. To be more precise, it was a batch of experimental materials with said Transmitter included that was supposed to be shipped together to HQ. For disposal."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "So someone stole it."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Dorothy",
+      "speakerId": "avg_4048_doroth_1",
+      "isRemote": false,
+      "text": "And it's very likely to be someone within Rhine Lab."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Dorothy",
+      "speakerId": "avg_4048_doroth_1",
+      "isRemote": false,
+      "text": "Silence, I'd like you to head to Trimounts and help me investigate this."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "Me?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Dorothy",
+      "speakerId": "avg_4048_doroth_1",
+      "isRemote": false,
+      "text": "I need to remain at Site 359 to cooperate with the military investigation, so I'll be stuck here for the time being."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "Are you going to negotiate with them?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Dorothy",
+      "speakerId": "avg_4048_doroth_1",
+      "isRemote": false,
+      "text": "Don't worry, as much as I don't enjoy this stuff, I'm still capable of it. I'm a Rhine Lab director, after all."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Dorothy",
+      "speakerId": "avg_4048_doroth_1",
+      "isRemote": false,
+      "text": "I'm more worried about this batch of missing Transmitter becoming the catalyst of someone else's ambitions."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Dorothy",
+      "speakerId": "avg_4048_doroth_1",
+      "isRemote": false,
+      "text": "So, can you do it?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "Well..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Dorothy",
+      "speakerId": "avg_4048_doroth_1",
+      "isRemote": false,
+      "text": "Silence, you're a student of Director Parvis, and yet you showed up here at Site 359."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Dorothy",
+      "speakerId": "avg_4048_doroth_1",
+      "isRemote": false,
+      "text": "I had some doubts, but now I get it: You came here to ask for my help."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Dorothy",
+      "speakerId": "avg_4048_doroth_1",
+      "isRemote": false,
+      "text": "Or maybe you wanted to know if the Director of Originium Art is trustworthy."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "...I'm sorry."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Dorothy",
+      "speakerId": "avg_4048_doroth_1",
+      "isRemote": false,
+      "text": "No need for apologies. I did come close to doing something awful. I should be thanking you, Silence."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Dorothy",
+      "speakerId": "avg_4048_doroth_1",
+      "isRemote": false,
+      "text": "But at the same time, this is why I'm asking for your help. You are beholden only to your own standards, and looking for your own answers."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "But..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Dorothy",
+      "speakerId": "avg_4048_doroth_1",
+      "isRemote": false,
+      "text": "Even if I hadn't asked you, you still would've returned to Trimounts, right?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "...Yes."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "29_g8_alley_n"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "Oh no. Why are there suddenly a lot more men on patrol?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Columbian Soldier A",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "Shit. Find anything over there?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Columbian Soldier B",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "I searched a couple alleyways over on the side. Nothing."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Columbian Soldier A",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "The Colonel is about to meet the Vice President, so we had to play nice and let those two in. We were supposed to stick close to them. How did they lose us so quickly?!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Columbian Soldier B",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "They were walking so leisurely the whole time, then they vanished behind a fence when I blinked."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Columbian Soldier A",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "We really underestimated that fella all covered in iron. Maylander's people are always so tricky."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Columbian Soldier B",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "I'll go report the situation to the brass. Take the boys with you and continue the search."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Columbian Soldier B",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "Right, send more hands over to the factory too."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Saria",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "Your reflexes and stealth skills are admirable, Mr. Detective"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tin Man",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "You flatter me. Even if we could manage them, it's better to shake them off our tail than to outright knock these sycophants out."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Saria",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "We're here. Triton Chemical Plant No. 3 is right up front."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "27_g8_jail"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tin Man",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "They've already cordoned off the perimeter, and deployed heavily armed soldiers at every possible location. Quite the impossible task to get any closer."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Saria",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "We're close enough for a clear view."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "Saria's gaze travels over the throng of people and past the striking yellow barriers, landing on the factory behind.\nThe once-smooth factory building has been demolished beyond recognition, with scorch marks scrawled by heaps of debris scattered all over. A series of explosions have eroded the facade, leaving only the interior foundations that give her a clear view—\nIn the center of the factory lies a huge ring-like mechanical structure, diagonally embedded into the ground like an outrageous art installation.\nThe source of the explosion."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tin Man",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "What have you found?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Saria",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "Neither the shape nor the mechanical structure of the object hints at its purpose, but it is clearly a device not meant to be used on land."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tin Man",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "It fell from the sky."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Saria",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Saria",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "We're too far away to discern any concrete details. But what can be confirmed at the very least is... this thing has the mark of Rhine technology."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Saria",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "To be precise, it has Kristen's handwriting all over it... I'm sure of that."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tin Man",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tin Man",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "'Horizon Arc Project'."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Saria",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "What?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tin Man",
+      "speakerId": "avg_npc_900_1",
+      "isRemote": false,
+      "text": "I'm surprised you've not heard the name, given your position at Rhine and your relationship with Kristen."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Saria",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "27_g8_jail"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "I'm glad I didn't get spotted..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "There really was one here!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "It's gone..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "Dorothy was right. Transmitters react to each other, and it wasn't too difficult to catch them with the one she gave me."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "But there's too few of them, Dorothy said there were more... could they be nearby?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "Wait..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "This is... the Triton Factory?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "A colossal ruin lies before her.\nJust how many injuries or casualties happened in there? Silence recalls the news not mentioning any numbers relevant to that question.\nShe recalls the destruction at Site 359, it was difficult for her to even picture what it looked like before the ruins."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "Was that Saria? Who was that with her...?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silence",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "Saria, do you have something to do with this, too?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "29_g7_mainstreet_n"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ifrit",
+      "speakerId": "avg_npc_895_1",
+      "isRemote": false,
+      "text": "Do you know where we're going?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rosmontis",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "(Shakes head)"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "We're heading to Saria's stronghold in Trimounts as part of our arrangement with her."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ifrit",
+      "speakerId": "avg_npc_895_1",
+      "isRemote": false,
+      "text": "Saria! It's been ages since I saw her."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ifrit",
+      "speakerId": "avg_npc_895_1",
+      "isRemote": false,
+      "text": "But if you need to talk to Saria, you two are gonna be busy, right? I guess she won't have time to talk to me?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "You and Rosmontis will stay with the Doctor."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ifrit",
+      "speakerId": "avg_npc_895_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1292,30 +1477,31 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Ifrit",
-          "speakerId": "avg_npc_895_1",
-          "text": "Oh, right... When the star came falling down, I was telling Rosmontis a story that Silence told me before."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ifrit",
-          "speakerId": "avg_npc_895_1",
-          "text": "You still remember it, right? You weren't writing any of it down..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rosmontis",
-          "speakerId": "avg_npc_042",
-          "text": "Yep, I still remember."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ifrit",
+      "speakerId": "avg_npc_895_1",
+      "isRemote": false,
+      "text": "Oh, right... When the star came falling down, I was telling Rosmontis a story that Silence told me before."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ifrit",
+      "speakerId": "avg_npc_895_1",
+      "isRemote": false,
+      "text": "You still remember it, right? You weren't writing any of it down..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rosmontis",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "Yep, I still remember."
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": [

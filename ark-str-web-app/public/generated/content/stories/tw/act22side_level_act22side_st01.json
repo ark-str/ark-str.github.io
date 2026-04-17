@@ -6,10 +6,14 @@
   "title": "荒地鐘聲",
   "storyCode": "FC-ST-1",
   "avgTag": "幕間",
-  "sourcePath": "vendor/ArknightsGamedata/tw/gamedata/story/activities/act22side/level_act22side_st01.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/tw/gamedata/story/activities/act22side/level_act22side_st01.txt",
   "sourceHash": "11f536175cd6d9c585ae965354cb76c6c553901e71ee5c519f014463c048378f",
   "bodyAvailable": true,
   "blocks": [
+    {
+      "type": "background",
+      "backgroundId": "bg_manorindoor"
+    },
     {
       "type": "narration",
       "text": "八年前\n1090年\n橡林郡"
@@ -21,78 +25,91 @@
       "type": "dialogue",
       "speakerName": "風趣的貴族",
       "speakerId": "avg_npc_175",
+      "isRemote": false,
       "text": "伯爵閣下，不少人都在打聽您，想要瞭解我們下一步的行動計劃。"
     },
     {
       "type": "dialogue",
       "speakerName": "風趣的貴族",
       "speakerId": "avg_npc_175",
+      "isRemote": false,
       "text": "多虧了您的支持，我們的劇目大獲成功。"
     },
     {
       "type": "dialogue",
       "speakerName": "風趣的貴族",
       "speakerId": "avg_npc_175",
+      "isRemote": false,
       "text": "塔拉人自己的劇院，塔拉人自己的歷史，首場演出就有兩百人前來觀看，多麼令人歡欣鼓舞。"
     },
     {
       "type": "dialogue",
       "speakerName": "風趣的貴族",
       "speakerId": "avg_npc_175",
+      "isRemote": false,
       "text": "接下來，我們可以尋求與麥卡內尼男爵領地上的數家工廠合作，或者接受這幾名銀行家的聯合邀約......"
     },
     {
       "type": "dialogue",
       "speakerName": "沃里克伯爵",
       "speakerId": "avg_npc_727_1",
+      "isRemote": false,
       "text": "這些事情請在宴會後再談吧，珀斯爵士。或者，您交給一個打字員去安排，也不會出太多差錯。"
     },
     {
       "type": "dialogue",
       "speakerName": "沃里克伯爵",
       "speakerId": "avg_npc_727_1",
+      "isRemote": false,
       "text": "今天的宴會上，我們最好只談論剛結束的演出，談論塔拉的文明，拋下那些維多利亞人的繁文縟節和奔走鑽營。"
     },
     {
       "type": "dialogue",
       "speakerName": "沃里克伯爵",
       "speakerId": "avg_npc_727_1",
+      "isRemote": false,
       "text": "各位，這些身份和禮儀，這些高雅的語句，我們賴以交流思想的體面詞彙，全都是維多利亞人教給我們的。"
     },
     {
       "type": "dialogue",
       "speakerName": "沃里克伯爵",
       "speakerId": "avg_npc_727_1",
+      "isRemote": false,
       "text": "這些東西就和維多利亞人的機器一樣，讓塔拉人的身心都染上了現代病。"
     },
     {
       "type": "dialogue",
       "speakerName": "沃里克伯爵",
       "speakerId": "avg_npc_727_1",
+      "isRemote": false,
       "text": "原本我們只知道我們天性裡的高潔與勇毅，我們那繼承自蓋爾王的血液只要聽到戰鬥的號令就激動不已......"
     },
     {
       "type": "dialogue",
       "speakerName": "沃里克伯爵",
       "speakerId": "avg_npc_727_1",
+      "isRemote": false,
       "text": "但現在，我們學會了維多利亞人的精明與虛榮，以至於面對一項正確的事業，一種理想的感召，許多人卻只能在其中進行利益的博弈。"
     },
     {
       "type": "dialogue",
       "speakerName": "沃里克伯爵",
       "speakerId": "avg_npc_727_1",
+      "isRemote": false,
       "text": "不僅我們自身如此，我們在大街上時常看到的，小市民中的塔拉人，也是如此。"
     },
     {
       "type": "dialogue",
       "speakerName": "沃里克伯爵",
       "speakerId": "avg_npc_727_1",
+      "isRemote": false,
       "text": "他們因為沾染了維多利亞人的惡德，而變成礦石病人，變成無賴與暴徒。"
     },
     {
       "type": "dialogue",
       "speakerName": "風趣的貴族",
       "speakerId": "avg_npc_175",
+      "isRemote": false,
       "text": "您說得真好，伯爵閣下——"
     },
     {
@@ -102,6 +119,7 @@
       "type": "dialogue",
       "speakerName": "衣著樸素的詩人",
       "speakerId": "avg_npc_239",
+      "isRemote": false,
       "text": "——抱歉，我失手打碎了酒杯。"
     },
     {
@@ -111,130 +129,155 @@
       "type": "dialogue",
       "speakerName": "沃里克伯爵",
       "speakerId": "avg_npc_727_1",
+      "isRemote": false,
       "text": "看來您的杯子有話要說。"
     },
     {
       "type": "dialogue",
       "speakerName": "衣著樸素的詩人",
       "speakerId": "avg_npc_239",
+      "isRemote": false,
       "text": "我也想問問您的看法，伯爵閣下。"
     },
     {
       "type": "dialogue",
       "speakerName": "沃里克伯爵",
       "speakerId": "avg_npc_727_1",
+      "isRemote": false,
       "text": "......原諒我這記性吧，請問您是......？"
     },
     {
       "type": "dialogue",
       "speakerName": "衣著樸素的詩人",
       "speakerId": "avg_npc_239",
+      "isRemote": false,
       "text": "威廉姆斯，詩人，今晚那一齣戲劇的執筆人。但您不必費心記住我的名字，我在文壇還不能說有什麼建樹。"
     },
     {
       "type": "dialogue",
       "speakerName": "沃里克伯爵",
       "speakerId": "avg_npc_727_1",
+      "isRemote": false,
       "text": "威廉姆斯先生，別客氣。我說過，我最不喜歡維多利亞人的繁文縟節。"
     },
     {
       "type": "dialogue",
       "speakerName": "沃里克伯爵",
       "speakerId": "avg_npc_727_1",
+      "isRemote": false,
       "text": "請問吧。"
     },
     {
       "type": "dialogue",
       "speakerName": "衣著樸素的詩人",
       "speakerId": "avg_npc_239",
+      "isRemote": false,
       "text": "......您將塔拉人比作染病之人，那您認為，我們要如何自愈？要怎麼去救治其他塔拉人？"
     },
     {
       "type": "dialogue",
       "speakerName": "沃里克伯爵",
       "speakerId": "avg_npc_727_1",
+      "isRemote": false,
       "text": "恐怕我們無論多麼努力，都不能根治我們身上的疾病，就像已經渾濁的水不能再將自己洗淨。"
     },
     {
       "type": "dialogue",
       "speakerName": "衣著樸素的詩人",
       "speakerId": "avg_npc_239",
+      "isRemote": false,
       "text": "所以您認為，那些無賴與暴徒，我們是不可能救助的。"
     },
     {
       "type": "dialogue",
       "speakerName": "衣著樸素的詩人",
       "speakerId": "avg_npc_239",
+      "isRemote": false,
       "text": "您不相信他們其實缺少知識和教育，而我們的筆能夠幫助他們嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "沃里克伯爵",
       "speakerId": "avg_npc_727_1",
+      "isRemote": false,
       "text": "唉，太過精緻的知識正是我們的敵人。"
     },
     {
       "type": "dialogue",
       "speakerName": "沃里克伯爵",
       "speakerId": "avg_npc_727_1",
+      "isRemote": false,
       "text": "當然，我們寫，我們呐喊，我們夢想一個塔拉的理想國......我們試圖喚醒血脈中沉睡的，關於塔拉的記憶。"
     },
     {
       "type": "dialogue",
       "speakerName": "沃里克伯爵",
       "speakerId": "avg_npc_727_1",
+      "isRemote": false,
       "text": "但你我將是不得不留在這個舊時代的人。"
     },
     {
       "type": "dialogue",
       "speakerName": "沃里克伯爵",
       "speakerId": "avg_npc_727_1",
+      "isRemote": false,
       "text": "您看，我很喜歡您的劇作，只是，我們都不得不使用維多利亞的語言。"
     },
     {
       "type": "dialogue",
       "speakerName": "衣著樸素的詩人",
       "speakerId": "avg_npc_239",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "沃里克伯爵",
       "speakerId": "avg_npc_727_1",
+      "isRemote": false,
       "text": "“我放下戰士的榮譽，只為以後塔拉的土地不必再被鮮血浸泡，德拉克的同族不必再刀劍相向。”"
     },
     {
       "type": "dialogue",
       "speakerName": "沃里克伯爵",
       "speakerId": "avg_npc_727_1",
+      "isRemote": false,
       "text": "“除非有朝一日，紅龍的火焰能令死去的戰士從熔爐中復生。”"
     },
     {
       "type": "dialogue",
       "speakerName": "衣著樸素的詩人",
       "speakerId": "avg_npc_239",
+      "isRemote": false,
       "text": "承蒙您的謬愛，這些只是民間歌謠的記錄，我做的最多不過是音韻上的潤色。"
     },
     {
       "type": "dialogue",
       "speakerName": "沃里克伯爵",
       "speakerId": "avg_npc_727_1",
+      "isRemote": false,
       "text": "不，我只是在想......"
     },
     {
       "type": "dialogue",
       "speakerName": "沃里克伯爵",
       "speakerId": "avg_npc_727_1",
+      "isRemote": false,
       "text": "塔拉未必不會再有下一條紅龍。"
     },
     {
       "type": "dialogue",
       "speakerName": "沃里克伯爵",
       "speakerId": "avg_npc_727_1",
+      "isRemote": false,
       "text": "畢竟，如今我們誰也沒見過德拉克，又怎麼知道自己身邊走過的人其實不是瓦伊凡呢？"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "25_mini02_victoria_street_n"
     },
     {
       "type": "narration",
@@ -247,12 +290,14 @@
       "type": "dialogue",
       "speakerName": "葦草",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "巡邏隊隊員",
       "speakerId": "avg_npc_727_1",
+      "isRemote": false,
       "text": "找到了，在大街上活動的人就這兩個。剛才砸碎窗戶玻璃的聲音一定是他們弄出來的。"
     },
     {
@@ -262,42 +307,49 @@
       "type": "dialogue",
       "speakerName": "巡邏隊隊員",
       "speakerId": "avg_npc_248",
+      "isRemote": false,
       "text": "喂，你們老實點，不然下次繩子就不是套在你們的手腕上了。"
     },
     {
       "type": "dialogue",
       "speakerName": "塔拉流民",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "呸！"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "哎，你怎麼還這麼凶......！"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "對、對不起！軍官老爺們！我們錯了！"
     },
     {
       "type": "dialogue",
       "speakerName": "巡邏隊隊長",
       "speakerId": "avg_npc_241",
+      "isRemote": false,
       "text": "是通緝令上跟深池串通的那一批人嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "巡邏隊隊員",
       "speakerId": "avg_npc_248",
+      "isRemote": false,
       "text": "有一個在通緝令上，另一個之前沒見過。"
     },
     {
       "type": "dialogue",
       "speakerName": "巡邏隊隊長",
       "speakerId": "avg_npc_241",
+      "isRemote": false,
       "text": "呵，我就知道，這些塔拉人都是串通一氣的，沒幾個好東西。"
     },
     {
@@ -307,12 +359,14 @@
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "哎呀！求您別動手......"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "我們拿的東西就這些，您都已經搜出來了......您要問什麼，我們一定老老實實交代......"
     },
     {
@@ -322,24 +376,28 @@
       "type": "dialogue",
       "speakerName": "巡邏隊隊長",
       "speakerId": "avg_npc_241",
+      "isRemote": false,
       "text": "少廢話。你們那些同夥呢？去哪了？去給深池通風報信了？"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "這、這個我真的不知道......"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "我們根本沒有什麼同夥，也沒見過深池的人！"
     },
     {
       "type": "dialogue",
       "speakerName": "塔拉流民",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "你們不就是想隨便抓幾個人打死，給上面的貴族交差？"
     },
     {
@@ -349,6 +407,7 @@
       "type": "dialogue",
       "speakerName": "塔拉流民",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "呸！你們......你們這些維多利亞的混帳東西！"
     },
     {
@@ -358,36 +417,42 @@
       "type": "dialogue",
       "speakerName": "巡邏隊隊長",
       "speakerId": "avg_npc_241",
+      "isRemote": false,
       "text": "還嘴硬？"
     },
     {
       "type": "dialogue",
       "speakerName": "巡邏隊隊長",
       "speakerId": "avg_npc_241",
+      "isRemote": false,
       "text": "帶到屋子裡去，別讓這些惡棍在大街上鬧，吵到其他人休息。"
     },
     {
       "type": "dialogue",
       "speakerName": "巡邏隊隊長",
       "speakerId": "avg_npc_241",
+      "isRemote": false,
       "text": "先問那個挎著包的。他要是老實，就讓他少受點苦。"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "我、我就是老實人啊，我什麼都不知道......"
     },
     {
       "type": "dialogue",
       "speakerName": "巡邏隊隊員",
       "speakerId": "avg_npc_248",
+      "isRemote": false,
       "text": "等等，隊長。"
     },
     {
       "type": "dialogue",
       "speakerName": "巡邏隊隊員",
       "speakerId": "avg_npc_248",
+      "isRemote": false,
       "text": "附近好像還有其他人。"
     },
     {
@@ -397,30 +462,35 @@
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "啊，那、那個......"
     },
     {
       "type": "dialogue",
       "speakerName": "巡邏隊隊員",
       "speakerId": "avg_npc_248",
+      "isRemote": false,
       "text": "那個挎包的在叫什麼？"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "......火！"
     },
     {
       "type": "dialogue",
       "speakerName": "巡邏隊隊員",
       "speakerId": "avg_npc_248",
+      "isRemote": false,
       "text": "閉嘴，別想給你的同伴打掩護——"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "——可是你們背後起火了！"
     },
     {
@@ -430,12 +500,14 @@
       "type": "dialogue",
       "speakerName": "巡邏隊隊員",
       "speakerId": "avg_npc_248",
+      "isRemote": false,
       "text": "......是庫房那邊！"
     },
     {
       "type": "dialogue",
       "speakerName": "巡邏隊隊長",
       "speakerId": "avg_npc_241",
+      "isRemote": false,
       "text": "*維多利亞粗口*，把一隊的人叫起來！先救火！"
     },
     {
@@ -445,18 +517,21 @@
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "欸，他們把我們扔下啦？"
     },
     {
       "type": "dialogue",
       "speakerName": "塔拉流民",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "維恩，快幫我把繩子解了！"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "我、我怎麼幫你？我也被捆著......"
     },
     {
@@ -466,69 +541,84 @@
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "......你是誰？"
     },
     {
       "type": "dialogue",
       "speakerName": "葦草",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "......快走。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "34_g4_swamp_n"
+    },
+    {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "唉，明明沒有你什麼事，結果害得你跟我們一起逃跑。"
     },
     {
       "type": "dialogue",
       "speakerName": "葦草",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "......沒事，我們甩掉那些人了。"
     },
     {
       "type": "dialogue",
       "speakerName": "塔拉流民",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "喂，維恩，收音機呢？"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "在這，應該還能用，就是聲音有點小。"
     },
     {
       "type": "dialogue",
       "speakerName": "塔拉流民",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "聲音小也好，免得被發現。"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "唉，你聽聽消息吧，我去水塘邊洗把臉，冷靜一下。"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "那邊的瓦伊凡，你如果覺得危險，可以先走。我給你指個路。"
     },
     {
       "type": "dialogue",
       "speakerName": "葦草",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "不用......我可以在這裡等你們，幫你們放哨。"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "......好，謝謝。你真是個好心人。"
     },
     {
@@ -538,30 +628,35 @@
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "（深呼吸）"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "別緊張，維恩，別緊張。你看不見，你就不會害怕。"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "你摸到的不是血，真的不是血，就是沼澤地的泥巴，洗洗就乾淨了......"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "......嘶。"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "唉。"
     },
     {
@@ -571,18 +666,21 @@
       "type": "dialogue",
       "speakerName": "塔拉流民",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "見鬼......喂！這玩意真的還能用？"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_727_1",
+      "isRemote": false,
       "text": "......求你小聲點！當兵的肯定還沒走遠！"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_727_1",
+      "isRemote": false,
       "text": "多敲兩下，再搖一搖！"
     },
     {
@@ -592,12 +690,14 @@
       "type": "dialogue",
       "speakerName": "廣播的聲音",
       "speakerId": "avg_npc_727_1",
+      "isRemote": false,
       "text": "......晚九點三十分左右......"
     },
     {
       "type": "dialogue",
       "speakerName": "塔拉流民",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "行了。"
     },
     {
@@ -607,30 +707,35 @@
       "type": "dialogue",
       "speakerName": "廣播的聲音",
       "speakerId": "avg_npc_727_1",
+      "isRemote": false,
       "text": "特倫特郡附近聚落發生縱火事件......手法與深池叛亂份子相似......"
     },
     {
       "type": "dialogue",
       "speakerName": "廣播的聲音",
       "speakerId": "avg_npc_727_1",
+      "isRemote": false,
       "text": "......嫌疑人三名，仍在逃跑中......"
     },
     {
       "type": "dialogue",
       "speakerName": "廣播的聲音",
       "speakerId": "avg_npc_727_1",
+      "isRemote": false,
       "text": "如有......深池叛亂份子線索，隱瞞不報者......視為與叛亂份子同罪......"
     },
     {
       "type": "dialogue",
       "speakerName": "廣播的聲音",
       "speakerId": "avg_npc_727_1",
+      "isRemote": false,
       "text": "......再次警告......熄火鐘響後，禁止外出。礦場、工廠以外地區，禁止一切燈火......"
     },
     {
       "type": "dialogue",
       "speakerName": "廣播的聲音",
       "speakerId": "avg_npc_727_1",
+      "isRemote": false,
       "text": "杜絕......一切與叛亂者勾結的活動......"
     },
     {
@@ -640,84 +745,98 @@
       "type": "dialogue",
       "speakerName": "廣播的聲音",
       "speakerId": "avg_npc_727_1",
+      "isRemote": false,
       "text": "（無信號的雜音）"
     },
     {
       "type": "dialogue",
       "speakerName": "塔拉流民",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "*塔拉粗口*。晚九點一過，真沒有其他廣播了。"
     },
     {
       "type": "dialogue",
       "speakerName": "塔拉流民",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "這都是*塔拉粗口*的什麼規矩？"
     },
     {
       "type": "dialogue",
       "speakerName": "葦草",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "塔拉流民",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "......不好意思。我用塔拉語說髒話，你聽得懂？"
     },
     {
       "type": "dialogue",
       "speakerName": "葦草",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "嗯......但沒事。"
     },
     {
       "type": "dialogue",
       "speakerName": "塔拉流民",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "塔拉流民",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "還是不好意思。把你這個外人捲進來了。"
     },
     {
       "type": "dialogue",
       "speakerName": "葦草",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "沒關係......塔拉人，在哪裡都是一樣的。"
     },
     {
       "type": "dialogue",
       "speakerName": "葦草",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "以前，我也來過石高原野。不過，那時候還沒有熄火鐘的規定。"
     },
     {
       "type": "dialogue",
       "speakerName": "塔拉流民",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "哎，那你應該是住在移動城市上面的人吧？"
     },
     {
       "type": "dialogue",
       "speakerName": "塔拉流民",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "這個敲鐘的規矩，本來也有許多年啦，只有荒野上才聽得到，用來管著那些半夜偷偷鑽進什麼伯爵什麼子爵的獵場打獵的人。"
     },
     {
       "type": "dialogue",
       "speakerName": "塔拉流民",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "鐘聲一響，我們就把燈熄了，火也滅了。這時候荒野上如果有人點火把驅趕野獸，隔著老遠就能看得清清楚楚。"
     },
     {
       "type": "dialogue",
       "speakerName": "塔拉流民",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "只是新規定變嚴了，才有今天這樣的麻煩事。那些半夜巡邏的傢伙，在街上看到一個就抓一個。"
     },
     {
@@ -727,234 +846,273 @@
       "type": "dialogue",
       "speakerName": "塔拉流民",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "哎，維恩，你冷靜啦？"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "算是吧......"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "......呃，我們的藥呢？是不是一點也沒剩下？"
     },
     {
       "type": "dialogue",
       "speakerName": "塔拉流民",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "你說呢？"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "......唉。可惜了我的鋼筆，現在我連帳都沒法記了。"
     },
     {
       "type": "dialogue",
       "speakerName": "塔拉流民",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "咱們就是去搶的，你就不該想著拿自己的東西去抵。"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "我們出來多少天了？"
     },
     {
       "type": "dialogue",
       "speakerName": "塔拉流民",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "要是還沒過午夜，這是第十二天。"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "好吧。十二天了，我們根本沒走多遠。我總覺得要是天氣放晴，我還能看見村子的炊煙。"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "我們就這麼被當兵的追著，在這一帶兜圈子......"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "你說，我們真的能逃出去嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "葦草",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "......你們遇到什麼事了？"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "我們跟巡邏隊起了點衝突，被通緝了。"
     },
     {
       "type": "dialogue",
       "speakerName": "塔拉流民",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "維恩！"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "讓我說吧，費加爾，我感覺得出來，這位女士是個好心人。"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "當時巡邏隊來我們這裡抓人，把犯過事的人都叫出來了。然後他們動手打人，我們就打回去了......"
     },
     {
       "type": "dialogue",
       "speakerName": "塔拉流民",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "你沒打，維恩。別給自己邀功。"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "呃，好吧。"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "其實我們也沒犯多大事，有家人交不上稅金跑了，巡邏隊揪著他們的親戚問情況。費加爾是釀了點自己喝的酒，我是賣東西的手續不齊。"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "唉，以往大家都是老老實實認錯的，那天沒忍住。"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "跟巡邏隊打起來之後，跑出來的也不止我們兩個。我們有十幾個人，但凡那天被當兵的叫到名字的，都一起跑了。"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "一旦那些當兵的想抓人，誰都逃不掉。我們靠一張嘴說自己清白，他們是不會信的。"
     },
     {
       "type": "dialogue",
       "speakerName": "葦草",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "你們打死了人？"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "塔拉流民",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "是，我們幹倒了兩個，一個是一開始趁他們沒防備用鋤頭砸倒的，另一個是混戰裡趁機放倒的。"
     },
     {
       "type": "dialogue",
       "speakerName": "塔拉流民",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "可惜，還是讓剩下那個跑了，不然當兵的哪知道我們幹了什麼事。"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "唉！要是能多一夜的時間逃走，我們都不會這麼慘。"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "......費加爾，我們有沒有可能，去跟當兵的自首？我自己去自首也行。這逃亡的日子我撐不下去了。"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "我們沒弄到藥，只能看著奧蘭的傷口慢慢爛掉，人也......我受不了這個。"
     },
     {
       "type": "dialogue",
       "speakerName": "塔拉流民",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "你別想著什麼自首，你以為當兵的會給你個痛快？"
     },
     {
       "type": "dialogue",
       "speakerName": "塔拉流民",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "才不會。他們會先折磨你，威脅你。"
     },
     {
       "type": "dialogue",
       "speakerName": "塔拉流民",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "你這種人呢，只要兩分鐘，就會把我們的事情全說出來。"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "唉，可我們沒有藥，被傷病折磨，不也一樣是折磨嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "葦草",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "......你們，很缺藥？"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "哈哈......我們確實是被其他人派來弄點藥的，他們還在挺遠的地方等著我們呢。"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "本來是來買藥的，真的。"
     },
     {
       "type": "dialogue",
       "speakerName": "塔拉流民",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "但我們心裡都知道，熄火鐘一敲，商鋪都會關門。我們肯定來不及在鐘聲響起之前趕到。"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "所以我們估計了一下巡邏隊的換班時間，呃，砸了藥鋪的窗戶玻璃......我還以為那個時候他們注意不到呢。"
     },
     {
@@ -964,84 +1122,98 @@
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "......算啦。"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "......你呢，你像是城市裡來的，為什麼要跑到這麼荒涼的地方？"
     },
     {
       "type": "dialogue",
       "speakerName": "葦草",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "......我在找一些東西。"
     },
     {
       "type": "dialogue",
       "speakerName": "葦草",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "你們，瞭解“深池”嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "塔拉流民",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "葦草",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "......嗯，我知道了。"
     },
     {
       "type": "dialogue",
       "speakerName": "葦草",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "止血劑和繃帶，我其實帶了一些。"
     },
     {
       "type": "dialogue",
       "speakerName": "葦草",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "維恩先生，我看見你受傷了......處理一下吧。"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "唉，被你發現了？其實也不是大事......"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "不過，你願意分我一點藥品的話，那就太好了。"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "我們的同伴傷得很重，我想帶給他們。"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "......呃，被鉗獸咬的。"
     },
     {
       "type": "dialogue",
       "speakerName": "葦草",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "那，我可以跟你們一起......"
     },
     {
@@ -1051,42 +1223,49 @@
       "type": "dialogue",
       "speakerName": "巡邏隊隊員",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "那邊！泥巴上有腳印，往那個方向去了！"
     },
     {
       "type": "dialogue",
       "speakerName": "巡邏隊隊員",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "那幾個放火的塔拉渣滓！一定在附近！"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "——快、快躲起來！"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "有......一整隊，半打人，手電筒往這邊照過來了！"
     },
     {
       "type": "dialogue",
       "speakerName": "塔拉流民",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "快點，彎下腰，這邊走！這裡的地是實的！"
     },
     {
       "type": "dialogue",
       "speakerName": "葦草",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "沒關係的......那些士兵在沼澤地也不敢走得太快。"
     },
     {
       "type": "dialogue",
       "speakerName": "葦草",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "——噓。"
     },
     {
@@ -1096,18 +1275,21 @@
       "type": "dialogue",
       "speakerName": "塔拉流民",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "（維恩，我都能聽到你牙齒在打顫！）"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "（我......唔......）"
     },
     {
       "type": "dialogue",
       "speakerName": "葦草",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "......"
     },
     {
@@ -1124,6 +1306,7 @@
       "type": "dialogue",
       "speakerName": "深池士兵？",
       "speakerId": "avg_npc_724_1",
+      "isRemote": false,
       "text": "嘁！憑什麼你們能打手電筒！看著就來氣！"
     },
     {
@@ -1133,18 +1316,21 @@
       "type": "dialogue",
       "speakerName": "巡邏隊隊員",
       "speakerId": "avg_npc_248",
+      "isRemote": false,
       "text": "深池？！"
     },
     {
       "type": "dialogue",
       "speakerName": "巡邏隊隊員",
       "speakerId": "avg_npc_248",
+      "isRemote": false,
       "text": "抓住她！她身上一定能挖出情報！"
     },
     {
       "type": "dialogue",
       "speakerName": "深池士兵？",
       "speakerId": "avg_npc_724_1",
+      "isRemote": false,
       "text": "抓我？想都別想！"
     },
     {
@@ -1154,18 +1340,21 @@
       "type": "dialogue",
       "speakerName": "巡邏隊隊員",
       "speakerId": "avg_npc_248",
+      "isRemote": false,
       "text": "呸！怎麼扔泥巴？"
     },
     {
       "type": "dialogue",
       "speakerName": "巡邏隊隊員",
       "speakerId": "avg_npc_248",
+      "isRemote": false,
       "text": "唔——"
     },
     {
       "type": "dialogue",
       "speakerName": "塔拉流民",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "走，維恩，我們得去幫她！別當膽小鬼！"
     },
     {
@@ -1175,6 +1364,7 @@
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "哎，哎，好......"
     },
     {
@@ -1184,6 +1374,7 @@
       "type": "dialogue",
       "speakerName": "巡邏隊隊員",
       "speakerId": "avg_npc_248",
+      "isRemote": false,
       "text": "呃——！"
     },
     {
@@ -1193,24 +1384,28 @@
       "type": "dialogue",
       "speakerName": "深池士兵？",
       "speakerId": "avg_npc_724_1",
+      "isRemote": false,
       "text": "哈，這幾個新兵，處理起來不費什麼勁。"
     },
     {
       "type": "dialogue",
       "speakerName": "深池士兵？",
       "speakerId": "avg_npc_724_1",
+      "isRemote": false,
       "text": "喂，維恩，費加爾！你們到底把事情辦成什麼樣子了？要是我不出來找你們，你們是不是得死在這？"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "唉，是啊。多虧了你，撿回一條命。"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "我早就跟你說了，這種打砸搶燒的事我可能做不好......"
     },
     {
@@ -1220,36 +1415,42 @@
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "......等等，塞爾蒙，你要幹什麼？把他們打昏過去就夠了，你難道還要全都殺了？"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "那樣的話，我們身上的罪名得多重？！"
     },
     {
       "type": "dialogue",
       "speakerName": "塞爾蒙",
       "speakerId": "avg_npc_724_1",
+      "isRemote": false,
       "text": "有什麼區別？只要他們想抓塔拉人，罪名輕重都無所謂，抓到了人，他們就不會活著放走。"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "唉，可是自己心裡輕重還是有區別的。"
     },
     {
       "type": "dialogue",
       "speakerName": "塞爾蒙",
       "speakerId": "avg_npc_724_1",
+      "isRemote": false,
       "text": "膽小鬼。你看好了，我就是要把這些維多利亞的混帳——"
     },
     {
       "type": "dialogue",
       "speakerName": "葦草",
       "speakerId": "avg_npc_724_1",
+      "isRemote": false,
       "text": "......住手。別這麼做。"
     },
     {
@@ -1259,96 +1460,112 @@
       "type": "dialogue",
       "speakerName": "塞爾蒙",
       "speakerId": "avg_npc_724_1",
+      "isRemote": false,
       "text": "你又是什麼人？"
     },
     {
       "type": "dialogue",
       "speakerName": "葦草",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "塞爾蒙",
       "speakerId": "avg_npc_724_1",
+      "isRemote": false,
       "text": "哈，盯著我幹嘛？準備打小報告？試試看啊。"
     },
     {
       "type": "dialogue",
       "speakerName": "葦草",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "舉報？不，你根本不是深池的人。為什麼......要穿成這樣？"
     },
     {
       "type": "dialogue",
       "speakerName": "葦草",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "為什麼要模仿鬼魂部隊的做事方法？"
     },
     {
       "type": "dialogue",
       "speakerName": "塞爾蒙",
       "speakerId": "avg_npc_724_1",
+      "isRemote": false,
       "text": "——你憑什麼這麼說？你很瞭解深池？"
     },
     {
       "type": "dialogue",
       "speakerName": "葦草",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "呃，冷靜點，塞爾蒙。"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "她只是個醫生，剛剛跟我們一起逃出來的......"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "......我覺得她是個好人。我把我們的事情都告訴她了。"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "對，那個，醫生......你說跟我們一起去看看傷患的事，還算數嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "維恩",
       "speakerId": "avg_npc_725_1",
+      "isRemote": false,
       "text": "塞爾蒙，你真的得冷靜點......我們把事情搞砸了，沒拿到藥。這位好心的醫生說她能幫我們，現在我們只能靠她了。"
     },
     {
       "type": "dialogue",
       "speakerName": "塞爾蒙",
       "speakerId": "avg_npc_724_1",
+      "isRemote": false,
       "text": "......嘁，我說了不算。是這位醫生看起來認識我這身衣服。"
     },
     {
       "type": "dialogue",
       "speakerName": "葦草",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "葦草",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "......抱歉，我不是醫生。"
     },
     {
       "type": "dialogue",
       "speakerName": "葦草",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "但我還是想，試著幫助你們。"
     },
     {

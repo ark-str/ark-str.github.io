@@ -6,62 +6,75 @@
   "title": "パイはいかが？",
   "storyCode": null,
   "avgTag": "幕間",
-  "sourcePath": "vendor/ArknightsGamedata/jp/gamedata/story/obt/memory/story_savage_2_2.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/jp/gamedata/story/obt/memory/story_savage_2_2.txt",
   "sourceHash": "59fcf827e06535c82ce0966e44de16bf0d3b9cfdadd2e6c6e65aae33957f7bc1",
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "bg_canteen"
+    },
+    {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "ふぅ……ドクター、ちょうど試食の時間に間に合ったみたいです。私たちも仲間に入れてもらいましょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "サベージ",
       "speakerId": "char_230_savage",
+      "isRemote": false,
       "text": "食べて食べて！"
     },
     {
       "type": "dialogue",
       "speakerName": "サベージ",
       "speakerId": "char_230_savage",
+      "isRemote": false,
       "text": "お味はどう？　ロドスに来てから、本格的にこれを作ったのは初めてだから……"
     },
     {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "はふっ……はふっ……ふー、ふー……"
     },
     {
       "type": "dialogue",
       "speakerName": "サベージ",
       "speakerId": "char_230_savage",
+      "isRemote": false,
       "text": "アーミヤちゃん、気を付けてね。急いで食べると火傷しちゃうよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "お……おいしいです。もちもちした食感のチーズ、サクサクのパイ生地に甘くてシャキシャキのニンジン……昔食べたものと全く同じ味です！"
     },
     {
       "type": "dialogue",
       "speakerName": "サベージ",
       "speakerId": "char_230_savage",
+      "isRemote": false,
       "text": "ふぅ……よかった。"
     },
     {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "ドクター、早く食べてみてください――"
     },
     {
       "type": "dialogue",
       "speakerName": "サベージ",
       "speakerId": "char_230_savage",
+      "isRemote": false,
       "text": "あ、待って。ドクターの分はこっちだよ。"
     },
     {
@@ -75,18 +88,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "これはドクターの好みに合わせて味付けを少し変えてるんだ。こっちの方がドクターの口に合うと思うよ。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "これはドクターの好みに合わせて味付けを少し変えてるんだ。こっちの方がドクターの口に合うと思うよ。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -106,18 +118,17 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "ふふん！　やっぱり好きな味だったでしょ？　伝統的な作り方を少しアレンジすれば、ドクターの好みにだって合わせられるんだよ。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "ふふん！　やっぱり好きな味だったでしょ？　伝統的な作り方を少しアレンジすれば、ドクターの好みにだって合わせられるんだよ。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -127,24 +138,24 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "わたし、記憶力はとってもいいんだ。昔のドクターが一番好きだったパイの味はこういう……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "……あ。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "わたし、記憶力はとってもいいんだ。昔のドクターが一番好きだったパイの味はこういう……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "……あ。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -164,24 +175,24 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "ご、ごめん。ドクターは覚えてないんだよね？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "ごめんなさい、つ、つい無神経なことを……"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "ご、ごめん。ドクターは覚えてないんだよね？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "ごめんなさい、つ、つい無神経なことを……"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -191,84 +202,94 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "ありがとう、ドクター……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "ドクターもこう言ってますし、大丈夫ですよ。それより、今日のパイは昔食べたのと同じように美味しかったです！　しかも、ニンジンがなんだかより一層香り高くなったような気がします。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "ここ数年ずっと練習してたからね。ずっと独り身だし、一人で黙々とね……あは、あはは……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "試作したパイは、家族や同僚、ご近所さんたちに味見してもらってたんだよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "サベージさんのお世話好きなところは、変わっていませんね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "うーん、この甘み……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "さすがレム・ビリトン産のニンジンは違いますね……仕入れるのは大変でしたが、買って大正解でした。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "そうそう、大変だったよ……あー、思い出したらムカついてきた。あのいけ好かない商人ときたら……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "え？　何か問題があったんですか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "うん。ロドスに来てから、みんなにキャロットパイを作ってあげようとずっと考えてたんだけど、まさかレム・ビリトンのニンジン缶が手に入らないとは思わなくって……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "一ヶ月前、家族にニンジンフルコースを作ったばかりだってのに、ここに来たらニンジン一缶すら買えないなんて、おかしいでしょ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "だから、「商売の専門家」っていう人に聞きに行ったんだよ……"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "ありがとう、ドクター……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ドクターもこう言ってますし、大丈夫ですよ。それより、今日のパイは昔食べたのと同じように美味しかったです！　しかも、ニンジンがなんだかより一層香り高くなったような気がします。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "ここ数年ずっと練習してたからね。ずっと独り身だし、一人で黙々とね……あは、あはは……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "試作したパイは、家族や同僚、ご近所さんたちに味見してもらってたんだよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "サベージさんのお世話好きなところは、変わっていませんね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "うーん、この甘み……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "さすがレム・ビリトン産のニンジンは違いますね……仕入れるのは大変でしたが、買って大正解でした。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "そうそう、大変だったよ……あー、思い出したらムカついてきた。あのいけ好かない商人ときたら……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "え？　何か問題があったんですか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "うん。ロドスに来てから、みんなにキャロットパイを作ってあげようとずっと考えてたんだけど、まさかレム・ビリトンのニンジン缶が手に入らないとは思わなくって……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "一ヶ月前、家族にニンジンフルコースを作ったばかりだってのに、ここに来たらニンジン一缶すら買えないなんて、おかしいでしょ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "だから、「商売の専門家」っていう人に聞きに行ったんだよ……"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -278,102 +299,115 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "（クロワッサンさんのことだろうな……）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "それで知ったんだけど、あるヴィクトリアの商人が値をつり上げてるらしいんだ。レム・ビリトンのニンジンには若さや健康を保つ特別な効果があって、美肌ケアにも効く「霊薬」だなんてうたって……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "ええっ？　ニンジンが身体にいいのは有名ですが、特別な効果や美肌ケアに効くなんて話は……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "さすがに誇張しすぎだよね。だけど、商人たちが取り上げたことで顧客はそれをすっかり信じてるって「専門家」が言ってたよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "特にレム・ビリトンのニンジンだけが突出した効能を持ってるって商人たちが吹聴し始めてから、すぐに缶詰の需要が高まって、値段もつり上がっちゃったんだって……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "今回なんとか送ってもらったニンジンはね、ご近所さんだった農家の人が自家用に保存してたものを、特別に缶詰にして送ってもらったものなんだよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "まったく……一体どうしてこういった怪しげな商売が成功しちゃうんだろうね――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "本当に不思議です……でも、商人たちが消費者心理を利用するのは……何というか、理に適っているような気もします。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "最初にこの話を聞いたときはすごく腹が立ったよ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "商人たちは、まるまる一年分の生産量を事前に買い込んでから、デマでニンジン缶の価格をつり上げたもんだから、一時はレム・ビリトンに住む現地の人さえも缶詰が手に入らなくなったんだ……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "「専門家」はさらにこう言ってたよ。他の商人たちもそれを商機と見て、レム・ビリトンの農家に他の作物をニンジンに変えるよう言葉巧みに迫ったりなんてしたら……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "需給バランスが崩れて価格は急落し、その頃にはブームも去って、ニンジンは売れなくなるだろうって。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "元々、自給自足で成り立っていた農家の作付け計画をかき乱して、大損害を与えてしまったら、怒った農夫たちは余所者の商人と対立する……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "そしたらまた「フェンス事件」みたいな危機が発生しちゃう可能性があるじゃない！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "たしかに、このデマをそのままにしておくのはとても危険ですね。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "（クロワッサンさんのことだろうな……）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "それで知ったんだけど、あるヴィクトリアの商人が値をつり上げてるらしいんだ。レム・ビリトンのニンジンには若さや健康を保つ特別な効果があって、美肌ケアにも効く「霊薬」だなんてうたって……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ええっ？　ニンジンが身体にいいのは有名ですが、特別な効果や美肌ケアに効くなんて話は……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "さすがに誇張しすぎだよね。だけど、商人たちが取り上げたことで顧客はそれをすっかり信じてるって「専門家」が言ってたよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "特にレム・ビリトンのニンジンだけが突出した効能を持ってるって商人たちが吹聴し始めてから、すぐに缶詰の需要が高まって、値段もつり上がっちゃったんだって……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "今回なんとか送ってもらったニンジンはね、ご近所さんだった農家の人が自家用に保存してたものを、特別に缶詰にして送ってもらったものなんだよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "まったく……一体どうしてこういった怪しげな商売が成功しちゃうんだろうね――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "本当に不思議です……でも、商人たちが消費者心理を利用するのは……何というか、理に適っているような気もします。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "最初にこの話を聞いたときはすごく腹が立ったよ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "商人たちは、まるまる一年分の生産量を事前に買い込んでから、デマでニンジン缶の価格をつり上げたもんだから、一時はレム・ビリトンに住む現地の人さえも缶詰が手に入らなくなったんだ……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "「専門家」はさらにこう言ってたよ。他の商人たちもそれを商機と見て、レム・ビリトンの農家に他の作物をニンジンに変えるよう言葉巧みに迫ったりなんてしたら……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "需給バランスが崩れて価格は急落し、その頃にはブームも去って、ニンジンは売れなくなるだろうって。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "元々、自給自足で成り立っていた農家の作付け計画をかき乱して、大損害を与えてしまったら、怒った農夫たちは余所者の商人と対立する……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "そしたらまた「フェンス事件」みたいな危機が発生しちゃう可能性があるじゃない！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "たしかに、このデマをそのままにしておくのはとても危険ですね。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -383,60 +417,66 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "あ、ドクターも他の人から聞いたことがありますか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "過去にレム・ビリトンの三都市間で発生した、現地の人々にとってはとても重要な事件です。あれはレム・ビリトンのエウレカ自治州が成立する契機にもなりました。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "食事しながらじゃ、うまく説明できないかも……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "かいつまんで言えば、ヴィクトリアの商人たちが、二つの地区間の小型移動都市を利用して、レム・ビリトンの鉱石資源を大量に採掘しようとしたんだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "そいつらは街の住民を利用して、レム・ビリトン地区の鉱物資源を奪い取り、ヴィクトリアに持ち込んで荒稼ぎをした。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "それに反発した現地の民衆が先頭に立って、ヴィクトリア商人たちが作り上げた「フェンス」から抜け出した……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "その後、より自主路線なエウレカ自治州が成立して、街の統治権は再びレム・ビリトンに戻されたの。すごく立派な市民運動だよ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "その際、サベージさんは現地の方々が権利を取り戻すのを助けるために多くの努力をしたんです。だからレム・ビリトンではちょっとした有名人なんですよ。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "あ、ドクターも他の人から聞いたことがありますか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "過去にレム・ビリトンの三都市間で発生した、現地の人々にとってはとても重要な事件です。あれはレム・ビリトンのエウレカ自治州が成立する契機にもなりました。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "食事しながらじゃ、うまく説明できないかも……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "かいつまんで言えば、ヴィクトリアの商人たちが、二つの地区間の小型移動都市を利用して、レム・ビリトンの鉱石資源を大量に採掘しようとしたんだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "そいつらは街の住民を利用して、レム・ビリトン地区の鉱物資源を奪い取り、ヴィクトリアに持ち込んで荒稼ぎをした。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "それに反発した現地の民衆が先頭に立って、ヴィクトリア商人たちが作り上げた「フェンス」から抜け出した……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "その後、より自主路線なエウレカ自治州が成立して、街の統治権は再びレム・ビリトンに戻されたの。すごく立派な市民運動だよ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "その際、サベージさんは現地の方々が権利を取り戻すのを助けるために多くの努力をしたんです。だからレム・ビリトンではちょっとした有名人なんですよ。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -456,18 +496,17 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "コホン……大したことじゃないよ。ドクターくらいの知識と能力があれば、あの程度の問題を解決するのはきっと朝飯前だろうね。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "コホン……大したことじゃないよ。ドクターくらいの知識と能力があれば、あの程度の問題を解決するのはきっと朝飯前だろうね。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -487,255 +526,293 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "ですが、「フェンス事件」でレム・ビリトンの人たちは誇れる故郷を自らの手で守れるということが証明されたのに、どうしてまたそんな……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "そうなんだよ！　平和になってまだ何年も経ってないっていうのに……くそっ！　あいつら商人どもは貿易条例に基づいて正規に事を運ぶ気なんかないんだ。わたしは最初からわかってたよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "……サベージさんのその反応を見る限り、すでに何か考えが有るんですね？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "ふふん……さすがはアーミヤちゃん、わたしのことをよく分かってるよね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "トランスポーターにお願いして、故郷の人たちに手紙を送ってあるんだ。うっかり商人たちの誘いに乗らないようにって。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "みんなが一斉にニンジンを植え始めたら、商人の思うつぼだもん。絶対に農業組合と相談しなきゃダメだって。彼らはこの事態を傍観したりしないはずだよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "不当に暴利を貪ろうとする連中のせいで本来の生活がかき乱されるなんてことはあっちゃいけない……とにかく、もう二度と商人なんかに騙されないんだから！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "ふふっ、サベージさんらしいですね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "素早く的確に対応する手腕は、昔とちっとも変わってません！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "もちろん！　人はそんなに簡単に変わらないからね。今回だって、あなたとドクターのことが心配だったから、約束通り仕事を置いてすぐにあなたたちのとこへ駆けつけたでしょ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "はい……！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "とにかく……レム・ビリトンのニンジン缶を買ってくれるお客さんには、わたしたちの自慢の味を楽しく味わってもらいたいの。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "グルメは人に喜びを与えるものであって、捏造された「霊薬」なんかであるべきじゃないんだから！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "絶対に余所の勢力につけ込まれないようにしないと。前回は源石の鉱山資源、今回はニンジン……次は何なんだろうね？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "しかもあいつらは資源を奪うだけじゃなくて、自分たちの利益のためなら、現地の人の命をなんとも思わない……わたしは――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "たとえレム・ビリトンを離れても、あいつらがレム・ビリトンから大事なものを奪い去ろうとするのを黙って見てるわけにはいかないんだよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "サベージさん……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "ああ、そんな顔しないの。大丈夫、心配しないでよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "いえ、今のサベージさんはキラキラ輝いてるなって思ったんです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "……偉そうに語っちゃったけど、実際わたしにできることは本当に少ないよ……わたしは自分の理想を言葉にして、多くの人の信念を強めるようなタイプじゃないし。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "……だけどさ、アーミヤちゃん。わたしもたくさんの事を経験してきた大人だからわかるんだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "わたしたちができることは小さなことばかりだけど、それでも行動を起こすことは、状況の悪化を傍観しているよりずっとマシだってね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "何か危機を察知したらすぐに行動しないといけないんだ。状況が悪くなってから全力で動いても、すでに発生しちゃった損失は挽回できないからね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "……とまあ、それだけ。これは、わたしが身をもって経験したことにすぎないけど、自分がやるべきことのために奔走し続けるのは、価値があることだと思う。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "分かります。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "アーミヤちゃん……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "分かります、サベージさん。ロドスも同じですから。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "え、ロドスも？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "はい……ロドスが、これまでやってきたことも、自分たちの力の及ぶ範囲の小さなことばかりです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "私は、小さな争いを平定することも、すべては私たちの最終目標のための努力なんだと信じています。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "その通り！　はぁ……ううっ、アーミヤちゃんの口からそんな言葉を聞けるなんて……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "えっ？　あの、わ、私何か変なこと言いましたか？　サベージさん泣かないで、泣かないでください！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "ううん、違うよ！　いい言葉だった！　ただ、良すぎてちょっと感動しちゃっただけ……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "ううっ、前に別れたときは、あんなにちっちゃかったのに……今はもう、こんなに素晴らしい人に――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "わっ！　落ち着いて、落ち着いてくださいサベージさん。そんなにきつく抱きしめないでください……ううっ……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "でも本当は、初めとっても心配だったんですよ。サベージさんとは長い間会ってなかったから、私の変化をどう思うのかなって……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "ふふ、それについては心配いらないよ、アーミヤちゃん。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "わたしからすれば、今レム・ビリトンのパイを美味しそうに食べてるロドスのリーダーは、昔バベルでわたしにまとわりついてた少女と変わらないよ。善良で、可愛くて、謙虚で、他人に優しくて――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "お互い一番信頼し合える……喜んで自分の力と時間を分け与えたくなるような友だちだよ。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "――サベージさん、ごちそうさまでした。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ですが、「フェンス事件」でレム・ビリトンの人たちは誇れる故郷を自らの手で守れるということが証明されたのに、どうしてまたそんな……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "そうなんだよ！　平和になってまだ何年も経ってないっていうのに……くそっ！　あいつら商人どもは貿易条例に基づいて正規に事を運ぶ気なんかないんだ。わたしは最初からわかってたよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "……サベージさんのその反応を見る限り、すでに何か考えが有るんですね？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "ふふん……さすがはアーミヤちゃん、わたしのことをよく分かってるよね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "トランスポーターにお願いして、故郷の人たちに手紙を送ってあるんだ。うっかり商人たちの誘いに乗らないようにって。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "みんなが一斉にニンジンを植え始めたら、商人の思うつぼだもん。絶対に農業組合と相談しなきゃダメだって。彼らはこの事態を傍観したりしないはずだよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "不当に暴利を貪ろうとする連中のせいで本来の生活がかき乱されるなんてことはあっちゃいけない……とにかく、もう二度と商人なんかに騙されないんだから！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ふふっ、サベージさんらしいですね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "素早く的確に対応する手腕は、昔とちっとも変わってません！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "もちろん！　人はそんなに簡単に変わらないからね。今回だって、あなたとドクターのことが心配だったから、約束通り仕事を置いてすぐにあなたたちのとこへ駆けつけたでしょ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "はい……！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "とにかく……レム・ビリトンのニンジン缶を買ってくれるお客さんには、わたしたちの自慢の味を楽しく味わってもらいたいの。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "グルメは人に喜びを与えるものであって、捏造された「霊薬」なんかであるべきじゃないんだから！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "絶対に余所の勢力につけ込まれないようにしないと。前回は源石の鉱山資源、今回はニンジン……次は何なんだろうね？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "しかもあいつらは資源を奪うだけじゃなくて、自分たちの利益のためなら、現地の人の命をなんとも思わない……わたしは――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "たとえレム・ビリトンを離れても、あいつらがレム・ビリトンから大事なものを奪い去ろうとするのを黙って見てるわけにはいかないんだよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "サベージさん……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "ああ、そんな顔しないの。大丈夫、心配しないでよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "いえ、今のサベージさんはキラキラ輝いてるなって思ったんです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "……偉そうに語っちゃったけど、実際わたしにできることは本当に少ないよ……わたしは自分の理想を言葉にして、多くの人の信念を強めるようなタイプじゃないし。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "……だけどさ、アーミヤちゃん。わたしもたくさんの事を経験してきた大人だからわかるんだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "わたしたちができることは小さなことばかりだけど、それでも行動を起こすことは、状況の悪化を傍観しているよりずっとマシだってね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "何か危機を察知したらすぐに行動しないといけないんだ。状況が悪くなってから全力で動いても、すでに発生しちゃった損失は挽回できないからね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "……とまあ、それだけ。これは、わたしが身をもって経験したことにすぎないけど、自分がやるべきことのために奔走し続けるのは、価値があることだと思う。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "分かります。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "アーミヤちゃん……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "分かります、サベージさん。ロドスも同じですから。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "え、ロドスも？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "はい……ロドスが、これまでやってきたことも、自分たちの力の及ぶ範囲の小さなことばかりです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "私は、小さな争いを平定することも、すべては私たちの最終目標のための努力なんだと信じています。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "その通り！　はぁ……ううっ、アーミヤちゃんの口からそんな言葉を聞けるなんて……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "えっ？　あの、わ、私何か変なこと言いましたか？　サベージさん泣かないで、泣かないでください！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "ううん、違うよ！　いい言葉だった！　ただ、良すぎてちょっと感動しちゃっただけ……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "ううっ、前に別れたときは、あんなにちっちゃかったのに……今はもう、こんなに素晴らしい人に――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "わっ！　落ち着いて、落ち着いてくださいサベージさん。そんなにきつく抱きしめないでください……ううっ……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "でも本当は、初めとっても心配だったんですよ。サベージさんとは長い間会ってなかったから、私の変化をどう思うのかなって……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "ふふ、それについては心配いらないよ、アーミヤちゃん。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "わたしからすれば、今レム・ビリトンのパイを美味しそうに食べてるロドスのリーダーは、昔バベルでわたしにまとわりついてた少女と変わらないよ。善良で、可愛くて、謙虚で、他人に優しくて――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "お互い一番信頼し合える……喜んで自分の力と時間を分け与えたくなるような友だちだよ。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "――サベージさん、ごちそうさまでした。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -745,36 +822,38 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "よかった。ニンジン缶の賞味期限は長いから、残りの缶は保管しておいて、また時間があるときにパーティーでみんなに振る舞うよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "一ヶ月に一回、レム・ビリトン料理の試食会をやるのはどうかな？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "えへへ、もう待ちきれません。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "そうだ、ドクター。さっきのことだけど……"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "よかった。ニンジン缶の賞味期限は長いから、残りの缶は保管しておいて、また時間があるときにパーティーでみんなに振る舞うよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "一ヶ月に一回、レム・ビリトン料理の試食会をやるのはどうかな？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "えへへ、もう待ちきれません。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "そうだ、ドクター。さっきのことだけど……"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -784,30 +863,31 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "うん……つまり、過去のあなたについてなんだけど……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "……あ、先に食器を片付けますね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "私はちょっと少し急ぎの仕事があるので、ドクターはここに残ってサベージさんのお片付けを手伝ってもらえますか？"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "うん……つまり、過去のあなたについてなんだけど……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "……あ、先に食器を片付けますね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "私はちょっと少し急ぎの仕事があるので、ドクターはここに残ってサベージさんのお片付けを手伝ってもらえますか？"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -822,39 +902,41 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "はい。じゃあお先に失礼します。ドクター、ついでにサベージさんとたくさんお話してくださいね。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "あっ、アーミヤちゃん。わざわざそんな気を使わなくても――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "……行っちゃった。まったくあの子ったら、相変わらず他人のことばかり考えて。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "ごめんね、ドクター。少し時間をもらってもいい？　他にもアンセルとロープを試食に誘ったんだけど、少し遅くなるんだって。だから二人用に、そろそろパイを焼き始めようと思って。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "はい。じゃあお先に失礼します。ドクター、ついでにサベージさんとたくさんお話してくださいね。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "あっ、アーミヤちゃん。わざわざそんな気を使わなくても――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "……行っちゃった。まったくあの子ったら、相変わらず他人のことばかり考えて。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "ごめんね、ドクター。少し時間をもらってもいい？　他にもアンセルとロープを試食に誘ったんだけど、少し遅くなるんだって。だから二人用に、そろそろパイを焼き始めようと思って。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -864,24 +946,24 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "うん、ありがとう、ドクター。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "……あなたに話したいことも、料理をしながらゆっくり話すね。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "うん、ありがとう、ドクター。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "……あなたに話したいことも、料理をしながらゆっくり話すね。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -891,60 +973,66 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "ほんの少しだけだよ。わたしの目に映ってたドクターは……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "あっ、ダメダメ！　ケルシーの機密保持契約にサインしたの、だから言えないよ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "……でも実際ね、ドクターに何を言ってよくて、何を言っちゃダメなのかはよく分かってないんだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "事前にケルシーと話して、ドクターのおおよその状況はわたしも理解してる。だから、余計なことを言っちゃったらどうしようって心配してたんだけど……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "だけどアーミヤちゃんは昔みたいにドクターと仲良くしてたし……ドクターと話してたら、昔のことだって普通に話しちゃいそう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "実際問題、ドクターに教えられない秘密なんて何もないと思うんだけどね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "ドクターは性格がちょっと変わったみたいだけど、ドクターとアーミヤちゃんの関係や、わたしとアーミヤちゃんの関係は変わってない。だから、わたしとドクターもやっぱり前の関係と一緒だよ。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "ほんの少しだけだよ。わたしの目に映ってたドクターは……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "あっ、ダメダメ！　ケルシーの機密保持契約にサインしたの、だから言えないよ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "……でも実際ね、ドクターに何を言ってよくて、何を言っちゃダメなのかはよく分かってないんだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "事前にケルシーと話して、ドクターのおおよその状況はわたしも理解してる。だから、余計なことを言っちゃったらどうしようって心配してたんだけど……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "だけどアーミヤちゃんは昔みたいにドクターと仲良くしてたし……ドクターと話してたら、昔のことだって普通に話しちゃいそう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "実際問題、ドクターに教えられない秘密なんて何もないと思うんだけどね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "ドクターは性格がちょっと変わったみたいだけど、ドクターとアーミヤちゃんの関係や、わたしとアーミヤちゃんの関係は変わってない。だから、わたしとドクターもやっぱり前の関係と一緒だよ。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -954,48 +1042,52 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "とってもすごい人だよ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "知らないことはほとんどなくて、何を質問しても答えてくれた。予想したことも最終的にすべてその通りになったし、作戦の指揮中はさらに……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "ああ、ダメダメ――これ以上は言えない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "ゴホン！　とにかく……ドクターは、アーミヤちゃんやわたしに、それからたくさんの人たちに「知識」を与えてくれた。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "わたしはアーミヤちゃんに教えられることはあまりなかったから、幼い彼女のそばにいることしかできなかった……だけどドクター、あなたは他人を導ける人だったよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "そうだ！　ドクターに関することはこれ以上話せないから、わたしがドクターたちと別れた後にどんなことがあったか話そうか？"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "とってもすごい人だよ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "知らないことはほとんどなくて、何を質問しても答えてくれた。予想したことも最終的にすべてその通りになったし、作戦の指揮中はさらに……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "ああ、ダメダメ――これ以上は言えない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "ゴホン！　とにかく……ドクターは、アーミヤちゃんやわたしに、それからたくさんの人たちに「知識」を与えてくれた。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "わたしはアーミヤちゃんに教えられることはあまりなかったから、幼い彼女のそばにいることしかできなかった……だけどドクター、あなたは他人を導ける人だったよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "そうだ！　ドクターに関することはこれ以上話せないから、わたしがドクターたちと別れた後にどんなことがあったか話そうか？"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1005,138 +1097,157 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "よかった。ありがとう、ドクター。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "アーミヤちゃんやドクターと別れてから、わたしは一度レム・ビリトンに戻ったんだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "以前と同じく鉱員の安全を守るため、警備と救援の任務に就いて、ほとんどの時間を採掘場で過ごしてた。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "レム・ビリトンに戻ってからは、バベルの消息について聞くことはなくなった。だけどアーミヤちゃんは、きっとドクターに助けられながら、すくすく成長しているはずだって信じてたよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "仮にロドスのことを知る機会がなくて、アーミヤちゃんとドクターに再会できなかったとしても、わたしはきっとレム・ビリトン鉱業に長く留まることはなかったと思うんだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "この数年、レム・ビリトンではいろんな事が起こったよ……さっき話したニンジン缶の値段つり上げみたいな、おかしな事件はどんどん増えてる。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "他のエリアから目をつけられてるだけじゃなくて、今まで比較的穏健だった大型都市も、鉱山事故の頻発の影響で、感染者数の増加を抑制できなくなってきた……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "しかもそんな感染者に与えられる待遇は、何の保証もないものだったの。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "本当は分かってた……わたしや仲間たちが怒りを覚える事件はどんどん増えてる。このまま採掘会社で働き続けても、この不合理な問題を解決することはできないって。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "改めてレム・ビリトンに戻って、更にはっきりと理解した。たとえ故郷でささやかな一生を過ごすことを夢見たとしても、この大地がそれを許してはくれないって。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "だから、変えるって決めたんだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "それでまずは他の場所で起きていることを知らなきゃいけないって考えたんだ。そうじゃなきゃ、レム・ビリトンに待ち受けてる運命も、どうやって故郷の平和を守るかもわからないから。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "ほんとはね、他の会社からの誘いもたくさんあったんだ。わたしがそこそこ有名人だったからかな？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "だけど……ロドスのリーダーがアーミヤちゃんだって知って、何の迷いもなくここへ来るって決めた。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "ロドスに来てからは、この大地で起こっている、さらに多くの変化を見る機会が得られた……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "レム・ビリトンだけじゃない。この大地中のあらゆる場所が変化を必要としてるってことを知ったんだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "もしかしたら他の場所でも、誰かが何かを変えようと努力しているかもしれない。だけど今、わたしの側でそんな風に頑張ってるのは……アーミヤちゃんとドクターなんだよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "ここには目に見える希望がある。だから、わたしはドクターたちのために自分の全力を尽くすつもりだよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "レム・ビリトンを去るのは、簡単な決断じゃなかったよ。あそこで生まれ育ったわたしたちにとって、故郷を離れるのは、開拓者になるのと同じくらいの勇気が必要なんだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "平穏な環境から飛び出すわたしを支えてくれたのは、自らの決心、そしてアーミヤちゃんの決心だった……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "次は、あなたが決心する番だよ、ドクター。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "よかった。ありがとう、ドクター。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "アーミヤちゃんやドクターと別れてから、わたしは一度レム・ビリトンに戻ったんだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "以前と同じく鉱員の安全を守るため、警備と救援の任務に就いて、ほとんどの時間を採掘場で過ごしてた。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "レム・ビリトンに戻ってからは、バベルの消息について聞くことはなくなった。だけどアーミヤちゃんは、きっとドクターに助けられながら、すくすく成長しているはずだって信じてたよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "仮にロドスのことを知る機会がなくて、アーミヤちゃんとドクターに再会できなかったとしても、わたしはきっとレム・ビリトン鉱業に長く留まることはなかったと思うんだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "この数年、レム・ビリトンではいろんな事が起こったよ……さっき話したニンジン缶の値段つり上げみたいな、おかしな事件はどんどん増えてる。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "他のエリアから目をつけられてるだけじゃなくて、今まで比較的穏健だった大型都市も、鉱山事故の頻発の影響で、感染者数の増加を抑制できなくなってきた……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "しかもそんな感染者に与えられる待遇は、何の保証もないものだったの。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "本当は分かってた……わたしや仲間たちが怒りを覚える事件はどんどん増えてる。このまま採掘会社で働き続けても、この不合理な問題を解決することはできないって。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "改めてレム・ビリトンに戻って、更にはっきりと理解した。たとえ故郷でささやかな一生を過ごすことを夢見たとしても、この大地がそれを許してはくれないって。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "だから、変えるって決めたんだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "それでまずは他の場所で起きていることを知らなきゃいけないって考えたんだ。そうじゃなきゃ、レム・ビリトンに待ち受けてる運命も、どうやって故郷の平和を守るかもわからないから。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "ほんとはね、他の会社からの誘いもたくさんあったんだ。わたしがそこそこ有名人だったからかな？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "だけど……ロドスのリーダーがアーミヤちゃんだって知って、何の迷いもなくここへ来るって決めた。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "ロドスに来てからは、この大地で起こっている、さらに多くの変化を見る機会が得られた……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "レム・ビリトンだけじゃない。この大地中のあらゆる場所が変化を必要としてるってことを知ったんだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "もしかしたら他の場所でも、誰かが何かを変えようと努力しているかもしれない。だけど今、わたしの側でそんな風に頑張ってるのは……アーミヤちゃんとドクターなんだよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "ここには目に見える希望がある。だから、わたしはドクターたちのために自分の全力を尽くすつもりだよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "レム・ビリトンを去るのは、簡単な決断じゃなかったよ。あそこで生まれ育ったわたしたちにとって、故郷を離れるのは、開拓者になるのと同じくらいの勇気が必要なんだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "平穏な環境から飛び出すわたしを支えてくれたのは、自らの決心、そしてアーミヤちゃんの決心だった……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "次は、あなたが決心する番だよ、ドクター。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1151,24 +1262,24 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "今までドクターたちが何を経験してきて、これから何に立ち向かうとしても――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サベージ",
-          "speakerId": "char_230_savage",
-          "text": "わたしは、あなたたちと共に進むよ。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "今までドクターたちが何を経験してきて、これから何に立ち向かうとしても――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サベージ",
+      "speakerId": "char_230_savage",
+      "isRemote": false,
+      "text": "わたしは、あなたたちと共に進むよ。"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": [

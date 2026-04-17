@@ -6,10 +6,14 @@
   "title": "トリマウンツ街道",
   "storyCode": "DV-1",
   "avgTag": "戦闘前",
-  "sourcePath": "vendor/ArknightsGamedata/jp/gamedata/story/activities/act19side/level_act19side_01_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/jp/gamedata/story/activities/act19side/level_act19side_01_beg.txt",
   "sourceHash": "b7ee3f3361e624ed53b25aafe5e885e1a138c127cddb4ad0b5fc0008ea5538d4",
   "bodyAvailable": true,
   "blocks": [
+    {
+      "type": "background",
+      "backgroundId": "29_g6_mainstreet"
+    },
     {
       "type": "narration",
       "text": "p.m. 3:56 天気/曇天\nトリマウンツ中心部"
@@ -18,12 +22,14 @@
       "type": "dialogue",
       "speakerName": "Mechanist",
       "speakerId": "avg_npc_521_1",
+      "isRemote": false,
       "text": "ドクター、今見ていたのは……フィリオプシスの個人記録か。これでもう三回目だな。"
     },
     {
       "type": "dialogue",
       "speakerName": "Mechanist",
       "speakerId": "avg_npc_521_1",
+      "isRemote": false,
       "text": "新しい発見はあったか？"
     },
     {
@@ -40,24 +46,28 @@
               "type": "dialogue",
               "speakerName": "Mechanist",
               "speakerId": "avg_npc_521_1",
+              "isRemote": false,
               "text": "それは、フィリオプシスの脳に特殊なチップが埋め込まれているからだ。"
             },
             {
               "type": "dialogue",
               "speakerName": "Mechanist",
               "speakerId": "avg_npc_521_1",
+              "isRemote": false,
               "text": "メイヤーは『九号デバイス』と呼んでいたが、恐らくライン生命内部でのコード名だろう。"
             },
             {
               "type": "dialogue",
               "speakerName": "Mechanist",
               "speakerId": "avg_npc_521_1",
+              "isRemote": false,
               "text": "このチップは、フィリオプシスの脳神経へ直に接続されており、大脳の一部として正常に機能すると同時に、脳内各部位での神経活動データを記録している。"
             },
             {
               "type": "dialogue",
               "speakerName": "Mechanist",
               "speakerId": "avg_npc_521_1",
+              "isRemote": false,
               "text": "つまり、君が今見たのはフィリオプシスの視覚処理器官――彼女の両目で観測したすべての記録だ。"
             },
             {
@@ -73,18 +83,21 @@
               "type": "dialogue",
               "speakerName": "Mechanist",
               "speakerId": "avg_npc_521_1",
+              "isRemote": false,
               "text": "クルビア開拓隊の出自は様々だからな。"
             },
             {
               "type": "dialogue",
               "speakerName": "Mechanist",
               "speakerId": "avg_npc_521_1",
+              "isRemote": false,
               "text": "生活に不満を抱いた若者や、借金を抱え暮らしが行き詰まった中年夫婦、盗みを働き逮捕され刑務所送りを拒んだ犯罪者――"
             },
             {
               "type": "dialogue",
               "speakerName": "Mechanist",
               "speakerId": "avg_npc_521_1",
+              "isRemote": false,
               "text": "そして、高額な保険料は払えないが、収容区画に閉じ込められたくもないと考える感染者もいる。"
             },
             {
@@ -100,12 +113,14 @@
               "type": "dialogue",
               "speakerName": "Mechanist",
               "speakerId": "avg_npc_521_1",
+              "isRemote": false,
               "text": "私としては、フランクスが使っているカフェイン剤のほうが興味をそそられるがな。"
             },
             {
               "type": "dialogue",
               "speakerName": "Mechanist",
               "speakerId": "avg_npc_521_1",
+              "isRemote": false,
               "text": "飲料の摂取は時と場合を選ぶものだ。仕事終わりのアルコールは格別だが、仕事中にカフェイン飲料を飲みすぎると、思考が中断されやすくなる。"
             },
             {
@@ -113,30 +128,31 @@
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "ともあれ……フィリオプシスが同期してきた記録によると、彼女のほかに、同じくロドスのオペレーターであるライン生命エネルギー課のエレナと……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "ライン生命アーツ応用課主任のドロシー・フランクスが、開拓者たちに誘拐されたようだな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "またそれとほぼ同時に、サリアからの連絡が入っている。ライン生命生態課主任のミュルジスが救援を求める緊急メッセージを送ったあとに失踪し、現在生死不明とのことだ。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "ともあれ……フィリオプシスが同期してきた記録によると、彼女のほかに、同じくロドスのオペレーターであるライン生命エネルギー課のエレナと……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "ライン生命アーツ応用課主任のドロシー・フランクスが、開拓者たちに誘拐されたようだな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "またそれとほぼ同時に、サリアからの連絡が入っている。ライン生命生態課主任のミュルジスが救援を求める緊急メッセージを送ったあとに失踪し、現在生死不明とのことだ。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -149,6 +165,7 @@
               "type": "dialogue",
               "speakerName": "Mechanist",
               "speakerId": "avg_npc_521_1",
+              "isRemote": false,
               "text": "現状を見るに、そのようだな。"
             },
             {
@@ -164,6 +181,7 @@
               "type": "dialogue",
               "speakerName": "Mechanist",
               "speakerId": "avg_npc_521_1",
+              "isRemote": false,
               "text": "......"
             },
             {
@@ -179,6 +197,7 @@
               "type": "dialogue",
               "speakerName": "Mechanist",
               "speakerId": "avg_npc_521_1",
+              "isRemote": false,
               "text": "ああ、ここではな。クルビアへようこそ。"
             },
             {
@@ -186,30 +205,31 @@
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "サリアがロドスに支援を要請してきた以上、ライン生命は危機に瀕している可能性が高い。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "本艦が付近にいたのは幸いだったな。そうでなければ、迅速な対応は難しかっただろう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "さて、この誘拐事件はトリマウンツから100キロ以上離れた新設基地で起きたものだが……ケルシーはこの件に以前中断された例の実験が関わっているのでは、と危惧している。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "サリアがロドスに支援を要請してきた以上、ライン生命は危機に瀕している可能性が高い。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "本艦が付近にいたのは幸いだったな。そうでなければ、迅速な対応は難しかっただろう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "さて、この誘拐事件はトリマウンツから100キロ以上離れた新設基地で起きたものだが……ケルシーはこの件に以前中断された例の実験が関わっているのでは、と危惧している。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -222,6 +242,7 @@
               "type": "dialogue",
               "speakerName": "Mechanist",
               "speakerId": "avg_npc_521_1",
+              "isRemote": false,
               "text": "対外的な資料によれば、普通の実験施設だな。現在建設中とある。"
             },
             {
@@ -237,6 +258,7 @@
               "type": "dialogue",
               "speakerName": "Mechanist",
               "speakerId": "avg_npc_521_1",
+              "isRemote": false,
               "text": "トリマウンツに入る前、ケルシーは我々に実験の関連ファイルすべての閲覧権限を与えた。"
             },
             {
@@ -252,6 +274,7 @@
               "type": "dialogue",
               "speakerName": "Mechanist",
               "speakerId": "avg_npc_521_1",
+              "isRemote": false,
               "text": "この都市はクルビアの科学と技術の中心だ。数百ものテクノロジー企業が、本社をトリマウンツに置いている。"
             },
             {
@@ -259,48 +282,52 @@
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "――「炎魔事件」、「ローキャン水槽」、そして「伐採場」……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "今口にした言葉はそれぞれ別のオペレーターに関係しており、さらにその背後には数百もの類似実験が存在する。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "その多くが生物細胞に対する源石の変異作用に関するもので、どれも非常に危険な実験だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "クルビアでは、ライン生命のような大手テクノロジー企業は、その手のハイリスクな実験に直接の関与はしないのが通例だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "彼らは開拓隊を雇って都市郊外の荒れ地に実験基地を建設させ、実験そのものは小規模な機関に委託して行わせている。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "今回フィリオプシスが向かった359号基地もその一つだ。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "――「炎魔事件」、「ローキャン水槽」、そして「伐採場」……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "今口にした言葉はそれぞれ別のオペレーターに関係しており、さらにその背後には数百もの類似実験が存在する。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "その多くが生物細胞に対する源石の変異作用に関するもので、どれも非常に危険な実験だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "クルビアでは、ライン生命のような大手テクノロジー企業は、その手のハイリスクな実験に直接の関与はしないのが通例だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "彼らは開拓隊を雇って都市郊外の荒れ地に実験基地を建設させ、実験そのものは小規模な機関に委託して行わせている。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "今回フィリオプシスが向かった359号基地もその一つだ。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -315,66 +342,73 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "あの経験を「仕事」と呼ぶのは御免こうむる。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "大企業どもは私の作品を「盗用」し、本来用いるべきでない分野に用いたんだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "たとえば――50メートル先にあるあの看板が見えるか？　「ヴォルヴォート・コシンスキーの家庭用自動ポップコーンメーカー　速く美味しく高品質」……などと謳う広告だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "あの機械に使われたエネルギーコアの試作設計図は、今でも私の端末に残っている。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "あの部品は元々、荒れ地向けの自動路面整備機に使う予定だったんだが、当時の上司がそんな製品は売れないに決まっていると言い出してな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "奴はこうも言っていたよ。「開拓者のために良い機材を買いたがる企業なんかどこにある？」……と。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "その後私は、路面整備機のアイデアと共にロドスへとやってきた。そして今、航路障害排除チームのエンジニアが使っているのがその最新型というわけだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "――私には昔からわかっていたことだが、ヴォルヴォート・コシンスキーにせよ、ライン生命にせよ、いわゆるテクノロジー企業というものは最終的には自らの創造物によって破壊される運命にある。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "奴らは創造という行為を尊重したことがないからな。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "あの経験を「仕事」と呼ぶのは御免こうむる。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "大企業どもは私の作品を「盗用」し、本来用いるべきでない分野に用いたんだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "たとえば――50メートル先にあるあの看板が見えるか？　「ヴォルヴォート・コシンスキーの家庭用自動ポップコーンメーカー　速く美味しく高品質」……などと謳う広告だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "あの機械に使われたエネルギーコアの試作設計図は、今でも私の端末に残っている。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "あの部品は元々、荒れ地向けの自動路面整備機に使う予定だったんだが、当時の上司がそんな製品は売れないに決まっていると言い出してな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "奴はこうも言っていたよ。「開拓者のために良い機材を買いたがる企業なんかどこにある？」……と。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "その後私は、路面整備機のアイデアと共にロドスへとやってきた。そして今、航路障害排除チームのエンジニアが使っているのがその最新型というわけだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "――私には昔からわかっていたことだが、ヴォルヴォート・コシンスキーにせよ、ライン生命にせよ、いわゆるテクノロジー企業というものは最終的には自らの創造物によって破壊される運命にある。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "奴らは創造という行為を尊重したことがないからな。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -389,36 +423,38 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "今のは笑ったほうがよかったか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "だが、君の言ったことはSF話にもジョークにもなりえないし――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "なんなら、明日のニュースとして報道されてもおかしくないんだ。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "今のは笑ったほうがよかったか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "だが、君の言ったことはSF話にもジョークにもなりえないし――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "なんなら、明日のニュースとして報道されてもおかしくないんだ。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -431,12 +467,14 @@
               "type": "dialogue",
               "speakerName": "Mechanist",
               "speakerId": "avg_npc_521_1",
+              "isRemote": false,
               "text": "それは私が時折彼女を新しい武器の実験台にしているからか？"
             },
             {
               "type": "dialogue",
               "speakerName": "Mechanist",
               "speakerId": "avg_npc_521_1",
+              "isRemote": false,
               "text": "くだらんアイデアで私の仕事を邪魔しなければ、恐れを抱く必要などないと思うがな。"
             },
             {
@@ -452,6 +490,7 @@
               "type": "dialogue",
               "speakerName": "Mechanist",
               "speakerId": "avg_npc_521_1",
+              "isRemote": false,
               "text": "......"
             },
             {
@@ -467,18 +506,21 @@
               "type": "dialogue",
               "speakerName": "Mechanist",
               "speakerId": "avg_npc_521_1",
+              "isRemote": false,
               "text": "確かに、Logosは悪くないパートナーではある。"
             },
             {
               "type": "dialogue",
               "speakerName": "Mechanist",
               "speakerId": "avg_npc_521_1",
+              "isRemote": false,
               "text": "だが……君からも彼に言ってやってくれないか？"
             },
             {
               "type": "dialogue",
               "speakerName": "Mechanist",
               "speakerId": "avg_npc_521_1",
+              "isRemote": false,
               "text": "あの面倒な言い回しを控えてくれたら、任務遂行にかかる時間が少なくとも30パーセントは短縮され、私もより多くの時間を実作業に充てることができるはずだ、とな。"
             },
             {
@@ -486,24 +528,24 @@
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "――では、情報整理はこの辺りにしておこう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "今のところ、有益な情報はこの程度だな。最重要ファイルの閲覧優先度は上げておいたし、PRTSを通じていつでも確認可能だ。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "――では、情報整理はこの辺りにしておこう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "今のところ、有益な情報はこの程度だな。最重要ファイルの閲覧優先度は上げておいたし、PRTSを通じていつでも確認可能だ。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -513,30 +555,31 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "フィリオプシスの映像記録に関しては、あれ以降同期更新がない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "九号デバイスのデータ通信は、メイヤーの調整後安定傾向にあるとはいえ……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "それはフィリオプシスの身体に問題がなければ、の話だからな……"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "フィリオプシスの映像記録に関しては、あれ以降同期更新がない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "九号デバイスのデータ通信は、メイヤーの調整後安定傾向にあるとはいえ……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "それはフィリオプシスの身体に問題がなければ、の話だからな……"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -551,30 +594,31 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "何にせよ、基地内での動向はサイレンスが伝えてくれる手はずだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "それと、サリアからは連絡があった。一時間後にこちらへ合流するとのことだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "ドクター、彼女を待つ間で実行可能なタスクはあるか？"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "何にせよ、基地内での動向はサイレンスが伝えてくれる手はずだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "それと、サリアからは連絡があった。一時間後にこちらへ合流するとのことだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "ドクター、彼女を待つ間で実行可能なタスクはあるか？"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -584,18 +628,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "……私はメカニックであって探偵助手ではないからな。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "……私はメカニックであって探偵助手ではないからな。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -610,8 +653,7 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -621,754 +663,885 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "仕方がない……であれば、すぐに出発するぞ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "願わくば、明日には船に戻って愛しい作業台と再会できるといいんだが。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "p.m. 6:47 天気/曇天\nトリマウンツ郊外 359号実験基地監視ステーション"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "メアリー",
-          "speakerId": "avg_npc_527_1",
-          "text": "基地内の人から新しい連絡はあった？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ライン生命警備課職員",
-          "speakerId": "avg_npc_528_1",
-          "text": "ありません、保安官。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "メアリー",
-          "speakerId": "avg_npc_527_1",
-          "text": "そう。フェルディナンドとかいう主任には連絡したんでしょ？　彼は一体いつ来るの？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ライン生命警備課職員",
-          "speakerId": "avg_npc_528_1",
-          "text": "主任は、その……現在会議中でして。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "メアリー",
-          "speakerId": "avg_npc_527_1",
-          "text": "何ですって？　会議がどうとか悠長なこと言ってる場合！？　部下の命より大事な議題なんかあるわけないでしょ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "メアリー",
-          "speakerId": "avg_npc_527_1",
-          "text": "ふざけてんじゃないわよ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "メアリー",
-          "speakerId": "avg_npc_527_1",
-          "text": "はあ……望遠鏡貸して。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ライン生命警備課職員",
-          "speakerId": "avg_npc_528_1",
-          "text": "あっ……はい。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "メアリー",
-          "speakerId": "avg_npc_527_1",
-          "text": "あなたは開拓隊が本気で何かしでかすとは思ってないわけ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "メアリー",
-          "speakerId": "avg_npc_527_1",
-          "text": "言っておくけど、あいつらはやるわよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "メアリー",
-          "speakerId": "avg_npc_527_1",
-          "text": "本当に追い込まれたら何だってやりかねないの。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "それは……基地にいる同僚たちが危ないってことですか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "メアリー",
-          "speakerId": "avg_npc_527_1",
-          "text": "……あなたは？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "オリヴィア・サイレンス。ライン生命の研究員で、ロドス・アイランド製薬の医療オペレーターです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "こちらはロドスでの同僚、エンジニア部のグレイです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "グレイ",
-          "speakerId": "avg_1027_greyy2_1",
-          "text": "は、初めまして！　僕はロドスの電気工学エンジニアで……と言っても、まだ実習生なんですが……！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "メアリー",
-          "speakerId": "avg_npc_527_1",
-          "text": "ロドス？　知らない名前ね。どういう会社なの？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "グレイ",
-          "speakerId": "avg_1027_greyy2_1",
-          "text": "ええと……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "メアリー",
-          "speakerId": "avg_npc_527_1",
-          "text": "いえ、忘れて。説明はいらないわ。このトリマウンツでは、新しい会社が一日に何十社と立ち上げられていてもおかしくないから。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "メアリー",
-          "speakerId": "avg_npc_527_1",
-          "text": "それより、そっちのあなたはライン生命の人なのよね？　社内での発言権はある？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "発言権……？　仰る意味がよくわからないんですが……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "メアリー",
-          "speakerId": "avg_npc_527_1",
-          "text": "もういいわ、あなたは何かの責任者ってわけでもなさそうだし。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "メアリー",
-          "speakerId": "avg_npc_527_1",
-          "text": "見た感じ、中にいる人質たちと同じ本の虫でしょ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "メアリー",
-          "speakerId": "avg_npc_527_1",
-          "text": "あなたたちは連中への対処法なんか知ってそうもないわね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "相手は基地で働く開拓隊の人たちだと聞きましたけど……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "メアリー",
-          "speakerId": "avg_npc_527_1",
-          "text": "……開拓隊、ね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "メアリー",
-          "speakerId": "avg_npc_527_1",
-          "text": "そういう聞こえのいい肩書きは、広告上のものでしかないの。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "メアリー",
-          "speakerId": "avg_npc_527_1",
-          "text": "あいつらがどんな連中かなんて、私が一番よくわかってるわ。犯罪者やギャンブル中毒、医療費を払えない感染者……荒野へと踏み込んだ時点でもはや何も持ってない人間ばかりよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "グレイ",
-          "speakerId": "avg_1027_greyy2_1",
-          "text": "あの……その人たちと話してみてもいいですか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "グレイ",
-          "speakerId": "avg_1027_greyy2_1",
-          "text": "お気付きかもしれませんが、僕もサイレンス先生も感染者ですから……彼らの境遇を理解できると思うんです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "メアリー",
-          "speakerId": "avg_npc_527_1",
-          "text": "そうかしら。ライン生命とそのロドスとかいう会社は、両方相当稼ぎがいいんでしょ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "メアリー",
-          "speakerId": "avg_npc_527_1",
-          "text": "あなたたちのバックには、保険料を払ってくれる「良心的」な会社がついている――そこが、彼らとの決定的な違いよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "メアリー",
-          "speakerId": "avg_npc_527_1",
-          "text": "だから、相互理解なんてばかげた夢を見るのはやめなさい。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "グレイ",
-          "speakerId": "avg_1027_greyy2_1",
-          "text": "今言ってた「保険料」って何のことですか……？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "……クルビアには、感染者に対する特殊政策としてそういうのがあるの。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "――保安官、どうか私たちを信じてもらえませんか。ロドスは感染者問題の解決を専門とする製薬会社なんです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "メアリー",
-          "speakerId": "avg_npc_527_1",
-          "text": "だったらあなたにクロスボウでも渡せば、誘拐犯たちをとっちめるのを手伝ってくれるわけ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "……私にはできません。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "私は医者ですから。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "メアリー",
-          "speakerId": "avg_npc_527_1",
-          "text": "なら、彼は？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "グレイ",
-          "speakerId": "avg_1027_greyy2_1",
-          "text": "僕ですか？　で、できません……というか、今はまだ戦わなければいけない状況にはなっていないと思います……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "メアリー",
-          "speakerId": "avg_npc_527_1",
-          "text": "じゃあ、あなたたちでは何の力にもならなさそうね。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サニー",
-          "speakerId": "avg_npc_535_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "開拓隊の隊員",
-          "speakerId": "avg_npc_534_1",
-          "text": "……誰も来ないな、リーダー。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サニー",
-          "speakerId": "avg_npc_535_1",
-          "text": "ああ。向こうは相当冷静なんだろう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "開拓隊の隊員",
-          "speakerId": "avg_npc_534_1",
-          "text": "もしかすると……大企業の連中は部下の命なんて何とも思ってないんじゃないか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "開拓隊の隊員",
-          "speakerId": "avg_npc_534_1",
-          "text": "特に、あの二人は感染者だしさ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サニー",
-          "speakerId": "avg_npc_535_1",
-          "text": "そういう言い方はよせ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サニー",
-          "speakerId": "avg_npc_535_1",
-          "text": "感染者だからって、ほかより劣ってるなんてことはない。少なくとも俺たちだけは、お互いをそんなふうに見るべきじゃないだろう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "開拓隊の隊員",
-          "speakerId": "avg_npc_534_1",
-          "text": "そうだな……思えば開拓隊の募集広告にもそう書いてあったっけ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サニー",
-          "speakerId": "avg_npc_535_1",
-          "text": "だったら、その広告の全部が全部嘘だったわけじゃないことに感謝しないとな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サニー",
-          "speakerId": "avg_npc_535_1",
-          "text": "――さて、悪いが通信機を下ろしてもらえるか？　ウビカ博士。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エレナ",
-          "speakerId": "avg_135_halo_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "開拓隊の隊員",
-          "speakerId": "avg_npc_534_1",
-          "text": "下ろせと言われただろ！　妙な動きはせずに従うんだ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エレナ",
-          "speakerId": "avg_135_halo_1",
-          "text": "……わかった。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エレナ",
-          "speakerId": "avg_135_halo_1",
-          "text": "ほら……お、下ろしたよ。だから暴力は振るわないでね。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "開拓隊の隊員",
-          "speakerId": "avg_npc_534_1",
-          "text": "……！　リーダー、こいつ外にメッセージを送ろうとしてたみたいだぞ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サニー",
-          "speakerId": "avg_npc_535_1",
-          "text": "確認する。通信機を持ってきてくれ、サム。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サニー",
-          "speakerId": "avg_npc_535_1",
-          "text": "……まだ途中までしか書かれてないし、送信はされてないな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エレナ",
-          "speakerId": "avg_135_halo_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サニー",
-          "speakerId": "avg_npc_535_1",
-          "text": "これは……現在地の正確な座標か。向こうにドローンでも送り込ませるつもりだったのか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サニー",
-          "speakerId": "avg_npc_535_1",
-          "text": "その考えはお勧めしない。それより、真剣に助けを求める文面に変えて、あんたの先生や上司……誰宛てでもいいから送ってくれ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サニー",
-          "speakerId": "avg_npc_535_1",
-          "text": "そいつらに伝えるんだ。俺はここで待っているが、その我慢にも限界がある、ってな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エレナ",
-          "speakerId": "avg_135_halo_1",
-          "text": "……一体何がしたいの？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サニー",
-          "speakerId": "avg_npc_535_1",
-          "text": "単純なことさ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サニー",
-          "speakerId": "avg_npc_535_1",
-          "text": "俺と仲間たちは皆、生きてここから出たいだけだ。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ライン生命研究員",
-          "speakerId": "avg_npc_530_1",
-          "text": "主任、お待ちしておりました！　少しお時間をいただいてもよろしいでしょうか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_522_1",
-          "text": "君は……構造課のベンだったな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ライン生命研究員",
-          "speakerId": "avg_npc_530_1",
-          "text": "わ、私の名前を覚えてくださっていたのですか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_522_1",
-          "text": "無論だ。ところで、私のことはフェルディナンドと呼びたまえ。ライン生命には九人も主任がいるからな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ライン生命研究員",
-          "speakerId": "avg_npc_530_1",
-          "text": "で……では、フェルディナンド……さん。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_522_1",
-          "text": "それで、要件は？　あと10分で次の会議が始まる予定でね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_522_1",
-          "text": "今から7分あげよう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ライン生命研究員",
-          "speakerId": "avg_npc_530_1",
-          "text": "あっ……はい、ありがとうございます。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ライン生命研究員",
-          "speakerId": "avg_npc_530_1",
-          "text": "あの、統括がどちらにいらっしゃるかご存じありませんか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ライン生命研究員",
-          "speakerId": "avg_npc_530_1",
-          "text": "構造課の備品購入申請について、三日前に統括からお返事をいただく予定だったのですが……ずっと連絡が取れないんです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ライン生命研究員",
-          "speakerId": "avg_npc_530_1",
-          "text": "それで今、課内では多くの実験が中断状態でして……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_522_1",
-          "text": "申請書を見せなさい。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_522_1",
-          "text": "――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_522_1",
-          "text": "よろしい、購入を許可しよう。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ライン生命研究員",
-          "speakerId": "avg_npc_530_1",
-          "text": "さ……サインしてくださったんですか？　しかし、マニュアルでは多額の大型設備を購入する際は必ず統括の確認を通すようにと……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_522_1",
-          "text": "君はライン生命に入ってどのくらいになる？　まだ数ヶ月しないくらいか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ライン生命研究員",
-          "speakerId": "avg_npc_530_1",
-          "text": "は、はい……一ヶ月前入社したばかりです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_522_1",
-          "text": "そうか。では見たまえ、この先端技術を駆使した建物の数々を。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ライン生命研究員",
-          "speakerId": "avg_npc_530_1",
-          "text": "えっ……？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_522_1",
-          "text": "実に壮大な光景だと思わんかね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_522_1",
-          "text": "だが……十五年前、ここは移動区画の一つもないような単なる荒れ地だった。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_522_1",
-          "text": "その当時、トリマウンツの地図上に「ライン生命」の文字はなかったんだ。それが今ではこの通りさ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ライン生命研究員",
-          "speakerId": "avg_npc_530_1",
-          "text": "ええと……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_522_1",
-          "text": "詳しく聞いてみたければ、時間がある時にパルヴィスとお茶でもするといい。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_522_1",
-          "text": "君にはまだ学ぶべきことがたくさんあるということだよ、ベン。その上、それはマニュアルに書いてあるようなことではないんだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ライン生命研究員",
-          "speakerId": "avg_npc_530_1",
-          "text": "わ、わかりました……覚えておきます。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_522_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_522_1",
-          "text": "よし。あと4分あるな。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_536_1",
-          "text": "明るいうちに連絡してくるなんて珍しいわね、フェルディナンド。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_522_1",
-          "text": "……ホルハイヤ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_522_1",
-          "text": "君に依頼した件はすべて片付いたか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルハイヤ",
-          "speakerId": "avg_npc_536_1",
-          "text": "そうねえ……今日の十課会議は、少なくとも三つ空席があると思うわよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_522_1",
-          "text": "まだだ、まだ足りん。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルハイヤ",
-          "speakerId": "avg_npc_536_1",
-          "text": "ふぅん？　それじゃ、お次はどの主任？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルハイヤ",
-          "speakerId": "avg_npc_536_1",
-          "text": "ついにあの源石嵌合体（かんごうたい）実験にお熱な食えない爺さんヤギにうんざりした？　あるいは基地にいる夢想家に二度と戻ってきてほしくないとか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_522_1",
-          "text": "……ロドスの人間が基地へ向かったそうだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_522_1",
-          "text": "実験はもうじき完了する。それまでは、誰にも邪魔をされたくないんだ。わかるな？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルハイヤ",
-          "speakerId": "avg_npc_536_1",
-          "text": "基地へ向かってほしいの？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_522_1",
-          "text": "いや、その必要はない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルハイヤ",
-          "speakerId": "avg_npc_536_1",
-          "text": "本当に薄情な人ね。あのエレナとかいうあなたの助手も誘拐されたんでしょ？　私も一度会ったことがあるけど、とっても可愛くて勤勉な子だったじゃない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルハイヤ",
-          "speakerId": "avg_npc_536_1",
-          "text": "あなたは彼女をすごく気に入ってるものと思ってたわ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_522_1",
-          "text": "だからこそさ。エレナであれば、エネルギー課の一員として開拓者に対処できるはずだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_522_1",
-          "text": "それより、君は引き続き、都市内の状況を監視していてくれ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_522_1",
-          "text": "ロドスのことだ、オペレーター二名を基地に派遣しただけで終わるはずがない。奴らが常にサリアと連絡を取り合っていることを忘れてくれるなよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルハイヤ",
-          "speakerId": "avg_npc_536_1",
-          "text": "あら、また警備課の主任さんが絡んでるの？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_522_1",
-          "text": "ああ。彼女のせいで、我々の実験には相当の遅れが出ている……私も大佐も我慢の限界だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_522_1",
-          "text": "今回は、奴らに何一つ見つけさせるなよ。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "着いたぞ、ドクター。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "ミュルジスからサリアへの連絡は、この場所から送られたメッセージを最後に途切れている。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "仕方がない……であれば、すぐに出発するぞ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "願わくば、明日には船に戻って愛しい作業台と再会できるといいんだが。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "29_g2_edgeofbase"
+    },
+    {
+      "type": "narration",
+      "text": "p.m. 6:47 天気/曇天\nトリマウンツ郊外 359号実験基地監視ステーション"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "メアリー",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "基地内の人から新しい連絡はあった？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ライン生命警備課職員",
+      "speakerId": "avg_npc_528_1",
+      "isRemote": false,
+      "text": "ありません、保安官。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "メアリー",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "そう。フェルディナンドとかいう主任には連絡したんでしょ？　彼は一体いつ来るの？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ライン生命警備課職員",
+      "speakerId": "avg_npc_528_1",
+      "isRemote": false,
+      "text": "主任は、その……現在会議中でして。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "メアリー",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "何ですって？　会議がどうとか悠長なこと言ってる場合！？　部下の命より大事な議題なんかあるわけないでしょ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "メアリー",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "ふざけてんじゃないわよ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "メアリー",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "はあ……望遠鏡貸して。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ライン生命警備課職員",
+      "speakerId": "avg_npc_528_1",
+      "isRemote": false,
+      "text": "あっ……はい。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "メアリー",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "あなたは開拓隊が本気で何かしでかすとは思ってないわけ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "メアリー",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "言っておくけど、あいつらはやるわよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "メアリー",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "本当に追い込まれたら何だってやりかねないの。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "それは……基地にいる同僚たちが危ないってことですか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "メアリー",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "……あなたは？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "オリヴィア・サイレンス。ライン生命の研究員で、ロドス・アイランド製薬の医療オペレーターです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "こちらはロドスでの同僚、エンジニア部のグレイです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "グレイ",
+      "speakerId": "avg_1027_greyy2_1",
+      "isRemote": false,
+      "text": "は、初めまして！　僕はロドスの電気工学エンジニアで……と言っても、まだ実習生なんですが……！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "メアリー",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "ロドス？　知らない名前ね。どういう会社なの？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "グレイ",
+      "speakerId": "avg_1027_greyy2_1",
+      "isRemote": false,
+      "text": "ええと……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "メアリー",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "いえ、忘れて。説明はいらないわ。このトリマウンツでは、新しい会社が一日に何十社と立ち上げられていてもおかしくないから。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "メアリー",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "それより、そっちのあなたはライン生命の人なのよね？　社内での発言権はある？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "発言権……？　仰る意味がよくわからないんですが……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "メアリー",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "もういいわ、あなたは何かの責任者ってわけでもなさそうだし。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "メアリー",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "見た感じ、中にいる人質たちと同じ本の虫でしょ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "メアリー",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "あなたたちは連中への対処法なんか知ってそうもないわね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "相手は基地で働く開拓隊の人たちだと聞きましたけど……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "メアリー",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "……開拓隊、ね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "メアリー",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "そういう聞こえのいい肩書きは、広告上のものでしかないの。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "メアリー",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "あいつらがどんな連中かなんて、私が一番よくわかってるわ。犯罪者やギャンブル中毒、医療費を払えない感染者……荒野へと踏み込んだ時点でもはや何も持ってない人間ばかりよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "グレイ",
+      "speakerId": "avg_1027_greyy2_1",
+      "isRemote": false,
+      "text": "あの……その人たちと話してみてもいいですか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "グレイ",
+      "speakerId": "avg_1027_greyy2_1",
+      "isRemote": false,
+      "text": "お気付きかもしれませんが、僕もサイレンス先生も感染者ですから……彼らの境遇を理解できると思うんです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "メアリー",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "そうかしら。ライン生命とそのロドスとかいう会社は、両方相当稼ぎがいいんでしょ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "メアリー",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "あなたたちのバックには、保険料を払ってくれる「良心的」な会社がついている――そこが、彼らとの決定的な違いよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "メアリー",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "だから、相互理解なんてばかげた夢を見るのはやめなさい。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "グレイ",
+      "speakerId": "avg_1027_greyy2_1",
+      "isRemote": false,
+      "text": "今言ってた「保険料」って何のことですか……？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "……クルビアには、感染者に対する特殊政策としてそういうのがあるの。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "――保安官、どうか私たちを信じてもらえませんか。ロドスは感染者問題の解決を専門とする製薬会社なんです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "メアリー",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "だったらあなたにクロスボウでも渡せば、誘拐犯たちをとっちめるのを手伝ってくれるわけ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "……私にはできません。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "私は医者ですから。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "メアリー",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "なら、彼は？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "グレイ",
+      "speakerId": "avg_1027_greyy2_1",
+      "isRemote": false,
+      "text": "僕ですか？　で、できません……というか、今はまだ戦わなければいけない状況にはなっていないと思います……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "メアリー",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "じゃあ、あなたたちでは何の力にもならなさそうね。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "29_g3_cottage"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サニー",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "開拓隊の隊員",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "……誰も来ないな、リーダー。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サニー",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "ああ。向こうは相当冷静なんだろう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "開拓隊の隊員",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "もしかすると……大企業の連中は部下の命なんて何とも思ってないんじゃないか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "開拓隊の隊員",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "特に、あの二人は感染者だしさ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サニー",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "そういう言い方はよせ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サニー",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "感染者だからって、ほかより劣ってるなんてことはない。少なくとも俺たちだけは、お互いをそんなふうに見るべきじゃないだろう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "開拓隊の隊員",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "そうだな……思えば開拓隊の募集広告にもそう書いてあったっけ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サニー",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "だったら、その広告の全部が全部嘘だったわけじゃないことに感謝しないとな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サニー",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "――さて、悪いが通信機を下ろしてもらえるか？　ウビカ博士。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エレナ",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "開拓隊の隊員",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "下ろせと言われただろ！　妙な動きはせずに従うんだ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エレナ",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "……わかった。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エレナ",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "ほら……お、下ろしたよ。だから暴力は振るわないでね。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "開拓隊の隊員",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "……！　リーダー、こいつ外にメッセージを送ろうとしてたみたいだぞ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サニー",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "確認する。通信機を持ってきてくれ、サム。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サニー",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "……まだ途中までしか書かれてないし、送信はされてないな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エレナ",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サニー",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "これは……現在地の正確な座標か。向こうにドローンでも送り込ませるつもりだったのか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サニー",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "その考えはお勧めしない。それより、真剣に助けを求める文面に変えて、あんたの先生や上司……誰宛てでもいいから送ってくれ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サニー",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "そいつらに伝えるんだ。俺はここで待っているが、その我慢にも限界がある、ってな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エレナ",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "……一体何がしたいの？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サニー",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "単純なことさ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サニー",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "俺と仲間たちは皆、生きてここから出たいだけだ。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "29_g7_mainstreet_n"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ライン生命研究員",
+      "speakerId": "avg_npc_530_1",
+      "isRemote": false,
+      "text": "主任、お待ちしておりました！　少しお時間をいただいてもよろしいでしょうか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "君は……構造課のベンだったな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ライン生命研究員",
+      "speakerId": "avg_npc_530_1",
+      "isRemote": false,
+      "text": "わ、私の名前を覚えてくださっていたのですか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "無論だ。ところで、私のことはフェルディナンドと呼びたまえ。ライン生命には九人も主任がいるからな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ライン生命研究員",
+      "speakerId": "avg_npc_530_1",
+      "isRemote": false,
+      "text": "で……では、フェルディナンド……さん。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "それで、要件は？　あと10分で次の会議が始まる予定でね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "今から7分あげよう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ライン生命研究員",
+      "speakerId": "avg_npc_530_1",
+      "isRemote": false,
+      "text": "あっ……はい、ありがとうございます。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ライン生命研究員",
+      "speakerId": "avg_npc_530_1",
+      "isRemote": false,
+      "text": "あの、統括がどちらにいらっしゃるかご存じありませんか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ライン生命研究員",
+      "speakerId": "avg_npc_530_1",
+      "isRemote": false,
+      "text": "構造課の備品購入申請について、三日前に統括からお返事をいただく予定だったのですが……ずっと連絡が取れないんです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ライン生命研究員",
+      "speakerId": "avg_npc_530_1",
+      "isRemote": false,
+      "text": "それで今、課内では多くの実験が中断状態でして……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "申請書を見せなさい。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "よろしい、購入を許可しよう。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ライン生命研究員",
+      "speakerId": "avg_npc_530_1",
+      "isRemote": false,
+      "text": "さ……サインしてくださったんですか？　しかし、マニュアルでは多額の大型設備を購入する際は必ず統括の確認を通すようにと……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "君はライン生命に入ってどのくらいになる？　まだ数ヶ月しないくらいか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ライン生命研究員",
+      "speakerId": "avg_npc_530_1",
+      "isRemote": false,
+      "text": "は、はい……一ヶ月前入社したばかりです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "そうか。では見たまえ、この先端技術を駆使した建物の数々を。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ライン生命研究員",
+      "speakerId": "avg_npc_530_1",
+      "isRemote": false,
+      "text": "えっ……？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "実に壮大な光景だと思わんかね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "だが……十五年前、ここは移動区画の一つもないような単なる荒れ地だった。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "その当時、トリマウンツの地図上に「ライン生命」の文字はなかったんだ。それが今ではこの通りさ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ライン生命研究員",
+      "speakerId": "avg_npc_530_1",
+      "isRemote": false,
+      "text": "ええと……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "詳しく聞いてみたければ、時間がある時にパルヴィスとお茶でもするといい。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "君にはまだ学ぶべきことがたくさんあるということだよ、ベン。その上、それはマニュアルに書いてあるようなことではないんだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ライン生命研究員",
+      "speakerId": "avg_npc_530_1",
+      "isRemote": false,
+      "text": "わ、わかりました……覚えておきます。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "よし。あと4分あるな。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": true,
+      "text": "明るいうちに連絡してくるなんて珍しいわね、フェルディナンド。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "……ホルハイヤ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "君に依頼した件はすべて片付いたか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルハイヤ",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": true,
+      "text": "そうねえ……今日の十課会議は、少なくとも三つ空席があると思うわよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "まだだ、まだ足りん。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルハイヤ",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": true,
+      "text": "ふぅん？　それじゃ、お次はどの主任？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルハイヤ",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": true,
+      "text": "ついにあの源石嵌合体（かんごうたい）実験にお熱な食えない爺さんヤギにうんざりした？　あるいは基地にいる夢想家に二度と戻ってきてほしくないとか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "……ロドスの人間が基地へ向かったそうだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "実験はもうじき完了する。それまでは、誰にも邪魔をされたくないんだ。わかるな？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルハイヤ",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": true,
+      "text": "基地へ向かってほしいの？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "いや、その必要はない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルハイヤ",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": true,
+      "text": "本当に薄情な人ね。あのエレナとかいうあなたの助手も誘拐されたんでしょ？　私も一度会ったことがあるけど、とっても可愛くて勤勉な子だったじゃない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルハイヤ",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": true,
+      "text": "あなたは彼女をすごく気に入ってるものと思ってたわ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "だからこそさ。エレナであれば、エネルギー課の一員として開拓者に対処できるはずだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "それより、君は引き続き、都市内の状況を監視していてくれ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "ロドスのことだ、オペレーター二名を基地に派遣しただけで終わるはずがない。奴らが常にサリアと連絡を取り合っていることを忘れてくれるなよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルハイヤ",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": true,
+      "text": "あら、また警備課の主任さんが絡んでるの？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "ああ。彼女のせいで、我々の実験には相当の遅れが出ている……私も大佐も我慢の限界だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "今回は、奴らに何一つ見つけさせるなよ。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "29_g8_alley_n"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "着いたぞ、ドクター。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "ミュルジスからサリアへの連絡は、この場所から送られたメッセージを最後に途切れている。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1381,6 +1554,7 @@
               "type": "dialogue",
               "speakerName": "Mechanist",
               "speakerId": "avg_npc_521_1",
+              "isRemote": false,
               "text": "そうだな。トリマウンツには、こういう路地が数百はある。"
             },
             {
@@ -1396,6 +1570,7 @@
               "type": "dialogue",
               "speakerName": "Mechanist",
               "speakerId": "avg_npc_521_1",
+              "isRemote": false,
               "text": "ああ。ここから本部まで行くとなると、車で三十分はかかる。"
             },
             {
@@ -1411,12 +1586,14 @@
               "type": "dialogue",
               "speakerName": "Mechanist",
               "speakerId": "avg_npc_521_1",
+              "isRemote": false,
               "text": "メッセージを受け取った時、サリアは商業エリアにいたそうだ。"
             },
             {
               "type": "dialogue",
               "speakerName": "Mechanist",
               "speakerId": "avg_npc_521_1",
+              "isRemote": false,
               "text": "彼女はミュルジスを待っていた。二人は会う約束をしていたんだ。"
             },
             {
@@ -1424,8 +1601,7 @@
             }
           ]
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1435,24 +1611,24 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "でなければ、こんな道に足を踏み入れることはないだろうしな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "誰を相手取るにせよ、街中でやり合うのはリスクが高いものだ。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "でなければ、こんな道に足を踏み入れることはないだろうしな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "誰を相手取るにせよ、街中でやり合うのはリスクが高いものだ。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1467,42 +1643,45 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "確認してみよう……検索完了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "「『水分子を操る能力』――これはエネルギー変換系、あるいは物質再構築系の能力と思われる」……か。どういった原理にしろ、いかにも強力なアーツだな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "「応用として、水で分身を作り出すことができ、それを肉眼で看破するのは不可能」……という記述もある。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "実に興味をそそられるな。実験研究に携わる人間というのは、我々メカニック同様、普段から鋭い観察力を持っているというのに……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "サイレンスやメイヤーまでもが騙されるとなれば、それはもはや相手の知覚に作用するような幻覚とは別物だろう。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "確認してみよう……検索完了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "「『水分子を操る能力』――これはエネルギー変換系、あるいは物質再構築系の能力と思われる」……か。どういった原理にしろ、いかにも強力なアーツだな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "「応用として、水で分身を作り出すことができ、それを肉眼で看破するのは不可能」……という記述もある。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "実に興味をそそられるな。実験研究に携わる人間というのは、我々メカニック同様、普段から鋭い観察力を持っているというのに……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "サイレンスやメイヤーまでもが騙されるとなれば、それはもはや相手の知覚に作用するような幻覚とは別物だろう。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1522,30 +1701,31 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "……地面に焼け跡が残っている。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "範囲はそう広くないな……ミュルジスを襲撃した人物は、何らかの機材を用いて彼女の周囲の空気を加熱した可能性が高い。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "彼女のアーツが水分子に大きく依存していることを加味すると、その襲撃者はミュルジスをよく理解していると考えていいだろう。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "……地面に焼け跡が残っている。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "範囲はそう広くないな……ミュルジスを襲撃した人物は、何らかの機材を用いて彼女の周囲の空気を加熱した可能性が高い。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "彼女のアーツが水分子に大きく依存していることを加味すると、その襲撃者はミュルジスをよく理解していると考えていいだろう。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1555,33 +1735,34 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "それはもしや……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "向こうにもライン生命内部の人間がいる、ということか？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "――ッ、危ない！"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "それはもしや……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "向こうにもライン生命内部の人間がいる、ということか？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "――ッ、危ない！"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1596,42 +1777,45 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "今のは……エネルギー兵器だな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "30メートルほど先、路地の奥から撃ってきたようだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "……向こうは今も接近してきている。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "ドクター、私の後ろへ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "携帯式防御システムを起動した。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "今のは……エネルギー兵器だな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "30メートルほど先、路地の奥から撃ってきたようだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "……向こうは今も接近してきている。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "ドクター、私の後ろへ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "携帯式防御システムを起動した。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1646,48 +1830,52 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_526_1",
-          "text": "——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "これは……初めて見るパワードスーツだ。恐らく新型だろう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "奴の装備の破壊力を知るには、実際この目で確かめるほかなさそうだな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "つまりは――計画変更だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "脱出システム起動！　ドクター、私の背に乗れ！"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_526_1",
+      "isRemote": false,
+      "text": "——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "これは……初めて見るパワードスーツだ。恐らく新型だろう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "奴の装備の破壊力を知るには、実際この目で確かめるほかなさそうだな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "つまりは――計画変更だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "脱出システム起動！　ドクター、私の背に乗れ！"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": []

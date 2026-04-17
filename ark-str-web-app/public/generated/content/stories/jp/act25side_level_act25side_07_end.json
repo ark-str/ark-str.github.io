@@ -6,32 +6,40 @@
   "title": "空に浮かぶ城",
   "storyCode": "CW-7",
   "avgTag": "戦闘後",
-  "sourcePath": "vendor/ArknightsGamedata/jp/gamedata/story/activities/act25side/level_act25side_07_end.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/jp/gamedata/story/activities/act25side/level_act25side_07_end.txt",
   "sourceHash": "c86546f04b76d926a86c8aced1ef3835da109a41f29b0bc24024f234e1cd5773",
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "29_g7_mainstreet_n"
+    },
+    {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "char_003_kalts",
+      "isRemote": false,
       "text": "ドクター、すぐにこの場を離脱するぞ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "char_003_kalts",
+      "isRemote": false,
       "text": "クリステンのエネルギー供給源を見つけた。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "char_003_kalts",
+      "isRemote": false,
       "text": "すべてが取り返しのつかない事態に至る前に……そして、想定しうる最悪の可能性が実現してしまう前に……"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "char_003_kalts",
+      "isRemote": false,
       "text": "彼女を止めなければならない。まだチャンスは残っている。"
     },
     {
@@ -45,18 +53,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "クリステンの計画には膨大なエネルギーが必要なのだが、その規模と純度はどちらも、現代のテラ人では掌握することはおろか、想像することさえもできない量でな。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "クリステンの計画には膨大なエネルギーが必要なのだが、その規模と純度はどちらも、現代のテラ人では掌握することはおろか、想像することさえもできない量でな。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -66,18 +73,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "ここまで膨大なエネルギーとなると、およそ一つの石棺では賄えないだろう。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "ここまで膨大なエネルギーとなると、およそ一つの石棺では賄えないだろう。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -87,42 +93,45 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "私は、「一つの」石棺では賄えないと言ったんだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "しかし……私も、クルビアにあるとは思いもしていなかった。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "まさかこの荒野の下に眠っているとは。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "――ドクター、君の助けが必要だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "私に助力をできるのも……君くらいしかいない。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "私は、「一つの」石棺では賄えないと言ったんだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "しかし……私も、クルビアにあるとは思いもしていなかった。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "まさかこの荒野の下に眠っているとは。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "――ドクター、君の助けが必要だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "私に助力をできるのも……君くらいしかいない。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -137,953 +146,1118 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "戦闘はすでに収束し、彼女は危機を脱した。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "ロスモンティスを信じてやれ。彼女はまだ子供ではあるが、他方でロドスのエリートオペレーターでもある。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "どうか……彼女と過ごした歳月を信じてほしい。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "チェルノボーグでの作戦行動にせよ、ロドスで彼女が過ごした日々にせよ、その時間はいずれも有用だ。ああいった経験もまた、彼女を形作るものとなっている。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "ロスモンティスは、自らの意思で選択をすることだろう。我々はそれを尊重するしかない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "ただ……今は我々にも同様に、選択の時が来ているがな。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "p.m.7:45 フォーカスジェネレーターがエネルギーウェル上空に到達"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": null,
-          "text": "お見事。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": null,
-          "text": "前々から気になっていたんだよ。君が一体どうやって、あの山のような研究プロジェクトに取り組みながら、これほど優れた戦闘技術を身に着けたのか。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": null,
-          "text": "私はこれでも、時間を有効活用できているほうだと思っていたんだが……もしや君は不眠不休で動いているのかな？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_896_1",
-          "text": "なぜここにいる？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_896_1",
-          "text": "フェルディナンド。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "それはこっちのセリフだ。軍の特殊作戦室に侵入して、何をするつもりかな？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_896_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "大方、空に浮いたあれに追いつく手段でも探しているんだろう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "たとえば、軍用大型ドローンを奪い、それに身体を括り付けて飛ぶとか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "いやはや、随分考えが甘すぎないか？　サリア主任はそう感情的な人間ではないと思っていたのだがね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_896_1",
-          "text": "退け、フェルディナンド。今は無駄話をしている時間などない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "どうだい、まったく哀れだな。たった三人の……いや、科学考察課の主任殿は除くとしようか。ともあれ、統括の壮大な計画に関わらせてもらえなかった、ただ二人の主任がここで出会うとはね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_896_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "で、君は何がしたいんだ？　あの狂人を止めたいのか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "それとも……彼女を救いたいのか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_896_1",
-          "text": "お前への報告義務はない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "安心したまえ、君とクリステンの関係についてとやかく言うつもりなどないさ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "私はここで、君を待っていたんだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "まあ聞け、サリア。君を邪魔しに来たわけじゃない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_896_1",
-          "text": "退け、と言っただろう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "そちらこそ、「聞け」と言っているだろう。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_890_1",
-          "text": "……飛行ユニットの稼働音だな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_890_1",
-          "text": "フェルディナンド、この飛行ユニットはどこで調達したんだ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "「ホライズンアーク計画」は、クリステンが空に浮かべた絶対兵器の建造を指すだけでなく、一つの戦略計画でもあってね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "ちょっとしたコネを使って「アーク・ワン」の点検用飛行ユニットを拝借し、ついでに残りはすべて爆破しておいたのさ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "阻隔層付近の高度まで安全に近付ける有人飛行ユニットは、クルビア全土を見ても多くはないからな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "あの連中がD.C.から新たに高空飛行ユニットを配備するだけならそれほどかからないだろうが、君や私にとっては十分な時間になる。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_890_1",
-          "text": "協力を申し出ているわけか。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_890_1",
-          "text": "本気で自分にその資格があると思っているのか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "君は相変わらずだな、サリア。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "私の助けなどなくとも、自力ですべての問題を解決できると言わんばかりの顔だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "だが、私もそれを疑うつもりはまったくないよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "それでも、先ほど言った通り、我々が争い合う必要はないはずだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "フォーカスジェネレーターはすでに、エネルギーウェルの上空に到達し、そのエネルギーを集め始めている。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "このまま放っておけば、クリステンの目的が何だろうと、この件の顛末がどうなろうと、国防部は必ず責任を問われることになるだろう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "そして「共犯者」であるライン生命の行く末は想像に難くない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_890_1",
-          "text": "そうなればお前も終わりだ。悪事に手を染める軍の手先としても、ライン生命の元主任としても。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "ああ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "だが、これは「放っておけば」の話だ。私にそのつもりはない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "まだ時間は残っている。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "充填されたエネルギーが励起する前に、フォーカスジェネレーターを着陸させれば、すべてはまだ挽回の余地があるんだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_890_1",
-          "text": "お前が挽回したいのは、己の命か？　それともライン生命か？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "……それは重要なことか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_890_1",
-          "text": "正直に話せ、フェルディナンド。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_890_1",
-          "text": "お前はこの飛行ユニットを早くから準備していた。クリステンがこうすることを予想していたのだろう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "……警備課での仕事を経て、君は研究者としての洞察力を失ったとばかり思っていたよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "だが、君が思うほど早くから準備していたわけではないんだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_890_1",
-          "text": "本当に、この危険を冒せば何かを救えると思っているのか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "……そうでないなら、君はなぜここに来た？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "このところ、私が一番深く感じたことは何か、わかるかね？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "それは、ライン生命の看板を誰も気にかけていないということだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "ほかの人間は皆、ライン生命がもたらしてくれる研究リソースや、クリステンの動向にしか興味を持っていない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "君もそうだ。クリステンの末路については考えたことがあるかもしれないが、ライン生命の未来について考えたことがあるのか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_896_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "ああ、わかっているとも。君たちは皆、彼女の人間的な魅力に惹かれているのだろう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "そういう自分はどうなんだ、と自問してみれば、答えはイエスだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "けれど、ライン生命は我々が心血を注いで育んできたものであることもまた事実。そんなものが彼女に焼き払われてしまうのは受け入れられないんだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "それがどんな理由であれね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "だから軍の牙獣に成り下がろうと、ライン生命をこの崖っぷちから引き戻したいんだよ。私の考えは間違っているか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_896_1",
-          "text": "お前が私にそんなことを言うとは思わなかった。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "いかにも警備課主任が言いそうなセリフだろう？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "正直なところ、君の分の給料も私がもらうべきだと思ってるよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_896_1",
-          "text": "私はもう警備課主任ではない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "それなら、事が済んだらヤラに昇給の相談をしてみよう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_896_1",
-          "text": "その前に、まずは再入社の話からだろう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "――まあ、何はともあれ、君の言ったことも正しくはある。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "ライン生命を救うことだけが私の目的というわけではない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "私にはライン生命が必要であり、またライン生命にも私が必要だ。これは理性と感性に基づいて下した判断だよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "しかし――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "率直に言えば、私も興味があるんだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "何しろあれは、我々の知るあのクリステンだ。軍は彼女がどこぞの爆破を企んでいると考えているが、そんなことはありえない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "我々は彼女とあれほど長く働いてきて、その人物像など皆よく知っている。無論、君は誰よりも彼女を知っていることだろう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "正直に答えてほしいんだが、彼女は一体何がしたいんだ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "そして、どこまでやるつもりなんだ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_896_1",
-          "text": "推測ならばある。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "推測か。随分と慎重な言葉選びだな。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "それで、君は来るのか、来ないのか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_896_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_896_1",
-          "text": "今攻撃を行っているドローンは、現状フォーカスジェネレーターの装甲を貫くことも、その停滞高度に達することもできない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_896_1",
-          "text": "だが、お前が調達してきた点検用の飛行ユニットを撃ち落とすだけなら、容易く実現してみせるだろう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_896_1",
-          "text": "そして恐らく軍もマイレンダーも、より高火力で高高度に対応した特殊ドローンや、兵力輸送用の船を配備しているところだ。となれば、それが前線に駆り出されるのも時間の問題だろう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_896_1",
-          "text": "つまり、我々はこの装甲に乏しく、何の武器も搭載されていない小さな飛行ユニットで、ドローンの砲火を潜り抜けねばならない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "確かに少し危険そうだな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_896_1",
-          "text": "私が操縦しよう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "わかった、好きにしてくれ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_890_1",
-          "text": "だが、本当に操縦できるのか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_896_1",
-          "text": "……大学の頃に学んだことはある。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "p.m.7:50 フォーカスジェネレーターが高度3000メートルに到達"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_1031_slent2_1",
-          "text": "っ……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_1031_slent2_1",
-          "text": "さっきから、伝達物質の反応がますます強くなってる。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_1031_slent2_1",
-          "text": "多分……この近くのはず。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "研究員",
-          "speakerId": "avg_npc_530_1",
-          "text": "やはりダメです！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "研究員",
-          "speakerId": "avg_npc_530_1",
-          "text": "エネルギーメーターでの計測が不能になりました！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "クルビア兵",
-          "speakerId": "avg_npc_901_1",
-          "text": "止まったのか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "研究員",
-          "speakerId": "avg_npc_530_1",
-          "text": "違います！　表示できる最大値を超えてしまっているんですよ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "研究員",
-          "speakerId": "avg_npc_530_1",
-          "text": "マニュアルにはこんな状況への対処法なんて書いてありません！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "クルビア兵",
-          "speakerId": "avg_npc_901_1",
-          "text": "その*クルビアスラング*なマニュアルなんかどうでもいいから、何とかしろ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "研究員",
-          "speakerId": "avg_npc_530_1",
-          "text": "ですが……施設自体のエネルギー供給ラインはすべて切断済みですし……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "研究員",
-          "speakerId": "avg_npc_530_1",
-          "text": "このエネルギーは一体どこから来ているのやら……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "クルビア兵",
-          "speakerId": "avg_npc_901_1",
-          "text": "じゃあお前は、このちょっと触っただけでも灰にされちまうような量のエネルギーが、どこからともなく勝手に湧いてきたとでも言うつもりか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "研究員",
-          "speakerId": "avg_npc_530_1",
-          "text": "ううん、その推測にはまだ論証の必要がありますが――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "クルビア兵",
-          "speakerId": "avg_npc_901_1",
-          "text": "ええいうるさい、とにかく何とかしろ！　でないとこの中に放り込んでやるぞ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "研究員",
-          "speakerId": "avg_npc_530_1",
-          "text": "もう一度一通りチェックしてみます。パイプに……スイッチ……それからエネルギーノード……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "クルビア兵",
-          "speakerId": "avg_npc_901_1",
-          "text": "これ……爆発したりしないだろうな？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "研究員",
-          "speakerId": "avg_npc_530_1",
-          "text": "マニュアル上では……ええと、恐らく今集まっているエネルギーはすでに理論上の安全値を超えているものかと。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "クルビア兵",
-          "speakerId": "avg_npc_901_1",
-          "text": "仮に爆発したらどうなるんだ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "研究員",
-          "speakerId": "avg_npc_530_1",
-          "text": "わ……わかりません……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "クルビア兵",
-          "speakerId": "avg_npc_901_1",
-          "text": "……なあ、そう言わずに考えてみてくれって。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "クルビア兵",
-          "speakerId": "avg_npc_901_1",
-          "text": "本当に何か起きたら……ヨークタウンへの影響はありそうか？　ここから近いしさ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "研究員",
-          "speakerId": "avg_npc_530_1",
-          "text": "よ、ヨークタウンですか？　すみません、わかりません……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "クルビア兵",
-          "speakerId": "avg_npc_901_1",
-          "text": "ああもう、爆発の範囲がどのくらいかを教えてくれよ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "クルビア兵",
-          "speakerId": "avg_npc_901_1",
-          "text": "クソッ……だから義兄さんには言ったのに！　トリマウンツの近くまで開拓に来るのはやめとけ、ここに住んでるのはイカレた奴ばっかりだぞって！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "研究員",
-          "speakerId": "avg_npc_530_1",
-          "text": "け、計算中ですから、お待ちを！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "クルビア兵",
-          "speakerId": "avg_npc_901_1",
-          "text": "*クルビアスラング*！　この狂った科学者どもめ！　お前らときたらどいつもこいつも……！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "クルビア兵",
-          "speakerId": "avg_npc_901_1",
-          "text": "揃いも揃って頭のネジが足りねえのか？　毎日御大層なプロジェクトの話をする割には、万が一のことは考えてねえじゃねえか！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "クルビア兵",
-          "speakerId": "avg_npc_901_1",
-          "text": "お前らの言うトリマウンツの科学の精神ってのは、こうやって勝手に起動して止めようもない爆弾を作ることなのか！？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "研究員",
-          "speakerId": "avg_npc_530_1",
-          "text": "そんなことを言われても！　これは私のプロジェクトではないんですよ！　そもそも、私はそちらの大佐に臨時の応援を頼まれて派遣されてきただけですし！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "研究員",
-          "speakerId": "avg_npc_530_1",
-          "text": "私だったら、必ずもっと実験を行って……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "クルビア兵",
-          "speakerId": "avg_npc_901_1",
-          "text": "うぬぼれんな！　お前らのことはよくわかってるんだぞ！　少しでも成功が見えてきたら、すぐ見境なくすだろうが！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "研究員",
-          "speakerId": "avg_npc_530_1",
-          "text": "ですが……これは国防部主導のプロジェクトなんですよね？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "クルビア兵",
-          "speakerId": "avg_npc_901_1",
-          "text": "だったら、あいつら全員狂ってるよ！　チッ、昔ばあちゃんがクルビアでやっていこうって言った時、俺は警告したんだぞ！　クルビアは頭のおかしい連中の国だって！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "クルビア兵",
-          "speakerId": "avg_npc_901_1",
-          "text": "おい、まだ計算結果出ないのか！　もうダメだ、急いで電話しないと……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "クルビア兵",
-          "speakerId": "avg_npc_901_1",
-          "text": "なんで繋がらないんだ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "研究員",
-          "speakerId": "avg_npc_530_1",
-          "text": "エネルギー密度が高すぎるので、信号の伝達に影響しているのかも……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "クルビア兵",
-          "speakerId": "avg_npc_901_1",
-          "text": "クソッ、クソッ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "クルビア兵",
-          "speakerId": "avg_npc_901_1",
-          "text": "どこなら通話できるんだ？　違う廊下まで行けばいいのか？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_1031_slent2_1",
-          "text": "……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_1031_slent2_1",
-          "text": "この場所は完全に混乱状態だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_1031_slent2_1",
-          "text": "エネルギーの伝達が止められないと言ってたけど……クリステンは一体何をしようとしてるんだろう？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_1031_slent2_1",
-          "text": "うーん……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_1031_slent2_1",
-          "text": "伝達物質の反応がさらに強まってきてる……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_1031_slent2_1",
-          "text": "先生が調整した伝達物質は、すべてフォーカスジェネレーターにあるはず。それなら、どうしてここにもこんなに激しい反応があるんだろう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_1031_slent2_1",
-          "text": "っ……私は、必ず……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_1031_slent2_1",
-          "text": "――通路を探そう。もっと下に行かないと。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ヤラ",
-          "speakerId": "avg_npc_893_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ヤラ",
-          "speakerId": "avg_npc_893_1",
-          "text": "はぁ……サイレンス……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ヤラ",
-          "speakerId": "avg_npc_893_1",
-          "text": "来てしまったのね。あなたが選んだのはやっぱりこの方向だった。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ヤラ",
-          "speakerId": "avg_npc_893_1",
-          "text": "人材採用を検討する時、パルヴィスが最も重視する資質は、その研究員の「前進」を貫こうとする意志だと常々聞いていたけれど……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ヤラ",
-          "speakerId": "avg_npc_893_1",
-          "text": "彼があなたを高く評価したのも納得だわ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ヤラ",
-          "speakerId": "avg_npc_893_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ヤラ",
-          "speakerId": "avg_npc_893_1",
-          "text": "ねえ……あなたは今、何を考えているの？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ヤラ",
-          "speakerId": "avg_npc_893_1",
-          "text": "クリステン。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "戦闘はすでに収束し、彼女は危機を脱した。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "ロスモンティスを信じてやれ。彼女はまだ子供ではあるが、他方でロドスのエリートオペレーターでもある。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "どうか……彼女と過ごした歳月を信じてほしい。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "チェルノボーグでの作戦行動にせよ、ロドスで彼女が過ごした日々にせよ、その時間はいずれも有用だ。ああいった経験もまた、彼女を形作るものとなっている。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "ロスモンティスは、自らの意思で選択をすることだろう。我々はそれを尊重するしかない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "ただ……今は我々にも同様に、選択の時が来ているがな。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "p.m.7:45 フォーカスジェネレーターがエネルギーウェル上空に到達"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "38_g2_colombiaoffice"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "お見事。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "前々から気になっていたんだよ。君が一体どうやって、あの山のような研究プロジェクトに取り組みながら、これほど優れた戦闘技術を身に着けたのか。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "私はこれでも、時間を有効活用できているほうだと思っていたんだが……もしや君は不眠不休で動いているのかな？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "なぜここにいる？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "フェルディナンド。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "それはこっちのセリフだ。軍の特殊作戦室に侵入して、何をするつもりかな？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "大方、空に浮いたあれに追いつく手段でも探しているんだろう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "たとえば、軍用大型ドローンを奪い、それに身体を括り付けて飛ぶとか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "いやはや、随分考えが甘すぎないか？　サリア主任はそう感情的な人間ではないと思っていたのだがね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "退け、フェルディナンド。今は無駄話をしている時間などない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "どうだい、まったく哀れだな。たった三人の……いや、科学考察課の主任殿は除くとしようか。ともあれ、統括の壮大な計画に関わらせてもらえなかった、ただ二人の主任がここで出会うとはね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "で、君は何がしたいんだ？　あの狂人を止めたいのか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "それとも……彼女を救いたいのか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "お前への報告義務はない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "安心したまえ、君とクリステンの関係についてとやかく言うつもりなどないさ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "私はここで、君を待っていたんだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "まあ聞け、サリア。君を邪魔しに来たわけじゃない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "退け、と言っただろう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "そちらこそ、「聞け」と言っているだろう。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "……飛行ユニットの稼働音だな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "フェルディナンド、この飛行ユニットはどこで調達したんだ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "「ホライズンアーク計画」は、クリステンが空に浮かべた絶対兵器の建造を指すだけでなく、一つの戦略計画でもあってね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "ちょっとしたコネを使って「アーク・ワン」の点検用飛行ユニットを拝借し、ついでに残りはすべて爆破しておいたのさ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "阻隔層付近の高度まで安全に近付ける有人飛行ユニットは、クルビア全土を見ても多くはないからな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "あの連中がD.C.から新たに高空飛行ユニットを配備するだけならそれほどかからないだろうが、君や私にとっては十分な時間になる。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "協力を申し出ているわけか。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "本気で自分にその資格があると思っているのか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "君は相変わらずだな、サリア。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "私の助けなどなくとも、自力ですべての問題を解決できると言わんばかりの顔だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "だが、私もそれを疑うつもりはまったくないよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "それでも、先ほど言った通り、我々が争い合う必要はないはずだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "フォーカスジェネレーターはすでに、エネルギーウェルの上空に到達し、そのエネルギーを集め始めている。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "このまま放っておけば、クリステンの目的が何だろうと、この件の顛末がどうなろうと、国防部は必ず責任を問われることになるだろう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "そして「共犯者」であるライン生命の行く末は想像に難くない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "そうなればお前も終わりだ。悪事に手を染める軍の手先としても、ライン生命の元主任としても。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "ああ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "だが、これは「放っておけば」の話だ。私にそのつもりはない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "まだ時間は残っている。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "充填されたエネルギーが励起する前に、フォーカスジェネレーターを着陸させれば、すべてはまだ挽回の余地があるんだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "お前が挽回したいのは、己の命か？　それともライン生命か？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "……それは重要なことか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "正直に話せ、フェルディナンド。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "お前はこの飛行ユニットを早くから準備していた。クリステンがこうすることを予想していたのだろう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "……警備課での仕事を経て、君は研究者としての洞察力を失ったとばかり思っていたよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "だが、君が思うほど早くから準備していたわけではないんだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "本当に、この危険を冒せば何かを救えると思っているのか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "……そうでないなら、君はなぜここに来た？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "38_g2_colombiaoffice"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "このところ、私が一番深く感じたことは何か、わかるかね？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "それは、ライン生命の看板を誰も気にかけていないということだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "ほかの人間は皆、ライン生命がもたらしてくれる研究リソースや、クリステンの動向にしか興味を持っていない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "君もそうだ。クリステンの末路については考えたことがあるかもしれないが、ライン生命の未来について考えたことがあるのか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "ああ、わかっているとも。君たちは皆、彼女の人間的な魅力に惹かれているのだろう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "そういう自分はどうなんだ、と自問してみれば、答えはイエスだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "けれど、ライン生命は我々が心血を注いで育んできたものであることもまた事実。そんなものが彼女に焼き払われてしまうのは受け入れられないんだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "それがどんな理由であれね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "だから軍の牙獣に成り下がろうと、ライン生命をこの崖っぷちから引き戻したいんだよ。私の考えは間違っているか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "お前が私にそんなことを言うとは思わなかった。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "いかにも警備課主任が言いそうなセリフだろう？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "正直なところ、君の分の給料も私がもらうべきだと思ってるよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "私はもう警備課主任ではない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "それなら、事が済んだらヤラに昇給の相談をしてみよう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "その前に、まずは再入社の話からだろう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "――まあ、何はともあれ、君の言ったことも正しくはある。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "ライン生命を救うことだけが私の目的というわけではない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "私にはライン生命が必要であり、またライン生命にも私が必要だ。これは理性と感性に基づいて下した判断だよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "しかし――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "率直に言えば、私も興味があるんだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "何しろあれは、我々の知るあのクリステンだ。軍は彼女がどこぞの爆破を企んでいると考えているが、そんなことはありえない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "我々は彼女とあれほど長く働いてきて、その人物像など皆よく知っている。無論、君は誰よりも彼女を知っていることだろう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "正直に答えてほしいんだが、彼女は一体何がしたいんだ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "そして、どこまでやるつもりなんだ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "推測ならばある。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "推測か。随分と慎重な言葉選びだな。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "それで、君は来るのか、来ないのか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "今攻撃を行っているドローンは、現状フォーカスジェネレーターの装甲を貫くことも、その停滞高度に達することもできない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "だが、お前が調達してきた点検用の飛行ユニットを撃ち落とすだけなら、容易く実現してみせるだろう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "そして恐らく軍もマイレンダーも、より高火力で高高度に対応した特殊ドローンや、兵力輸送用の船を配備しているところだ。となれば、それが前線に駆り出されるのも時間の問題だろう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "つまり、我々はこの装甲に乏しく、何の武器も搭載されていない小さな飛行ユニットで、ドローンの砲火を潜り抜けねばならない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "確かに少し危険そうだな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "私が操縦しよう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "わかった、好きにしてくれ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_890_1",
+      "isRemote": false,
+      "text": "だが、本当に操縦できるのか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_896_1",
+      "isRemote": false,
+      "text": "……大学の頃に学んだことはある。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "p.m.7:50 フォーカスジェネレーターが高度3000メートルに到達"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "38_g14_energywell"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_1031_slent2_1",
+      "isRemote": false,
+      "text": "っ……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_1031_slent2_1",
+      "isRemote": false,
+      "text": "さっきから、伝達物質の反応がますます強くなってる。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_1031_slent2_1",
+      "isRemote": false,
+      "text": "多分……この近くのはず。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "研究員",
+      "speakerId": "avg_npc_530_1",
+      "isRemote": false,
+      "text": "やはりダメです！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "研究員",
+      "speakerId": "avg_npc_530_1",
+      "isRemote": false,
+      "text": "エネルギーメーターでの計測が不能になりました！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クルビア兵",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "止まったのか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "研究員",
+      "speakerId": "avg_npc_530_1",
+      "isRemote": false,
+      "text": "違います！　表示できる最大値を超えてしまっているんですよ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "研究員",
+      "speakerId": "avg_npc_530_1",
+      "isRemote": false,
+      "text": "マニュアルにはこんな状況への対処法なんて書いてありません！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クルビア兵",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "その*クルビアスラング*なマニュアルなんかどうでもいいから、何とかしろ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "研究員",
+      "speakerId": "avg_npc_530_1",
+      "isRemote": false,
+      "text": "ですが……施設自体のエネルギー供給ラインはすべて切断済みですし……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "研究員",
+      "speakerId": "avg_npc_530_1",
+      "isRemote": false,
+      "text": "このエネルギーは一体どこから来ているのやら……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クルビア兵",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "じゃあお前は、このちょっと触っただけでも灰にされちまうような量のエネルギーが、どこからともなく勝手に湧いてきたとでも言うつもりか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "研究員",
+      "speakerId": "avg_npc_530_1",
+      "isRemote": false,
+      "text": "ううん、その推測にはまだ論証の必要がありますが――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クルビア兵",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "ええいうるさい、とにかく何とかしろ！　でないとこの中に放り込んでやるぞ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "研究員",
+      "speakerId": "avg_npc_530_1",
+      "isRemote": false,
+      "text": "もう一度一通りチェックしてみます。パイプに……スイッチ……それからエネルギーノード……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クルビア兵",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "これ……爆発したりしないだろうな？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "研究員",
+      "speakerId": "avg_npc_530_1",
+      "isRemote": false,
+      "text": "マニュアル上では……ええと、恐らく今集まっているエネルギーはすでに理論上の安全値を超えているものかと。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クルビア兵",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "仮に爆発したらどうなるんだ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "研究員",
+      "speakerId": "avg_npc_530_1",
+      "isRemote": false,
+      "text": "わ……わかりません……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クルビア兵",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "……なあ、そう言わずに考えてみてくれって。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クルビア兵",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "本当に何か起きたら……ヨークタウンへの影響はありそうか？　ここから近いしさ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "研究員",
+      "speakerId": "avg_npc_530_1",
+      "isRemote": false,
+      "text": "よ、ヨークタウンですか？　すみません、わかりません……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クルビア兵",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "ああもう、爆発の範囲がどのくらいかを教えてくれよ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クルビア兵",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "クソッ……だから義兄さんには言ったのに！　トリマウンツの近くまで開拓に来るのはやめとけ、ここに住んでるのはイカレた奴ばっかりだぞって！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "研究員",
+      "speakerId": "avg_npc_530_1",
+      "isRemote": false,
+      "text": "け、計算中ですから、お待ちを！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クルビア兵",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "*クルビアスラング*！　この狂った科学者どもめ！　お前らときたらどいつもこいつも……！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クルビア兵",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "揃いも揃って頭のネジが足りねえのか？　毎日御大層なプロジェクトの話をする割には、万が一のことは考えてねえじゃねえか！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クルビア兵",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "お前らの言うトリマウンツの科学の精神ってのは、こうやって勝手に起動して止めようもない爆弾を作ることなのか！？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "研究員",
+      "speakerId": "avg_npc_530_1",
+      "isRemote": false,
+      "text": "そんなことを言われても！　これは私のプロジェクトではないんですよ！　そもそも、私はそちらの大佐に臨時の応援を頼まれて派遣されてきただけですし！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "研究員",
+      "speakerId": "avg_npc_530_1",
+      "isRemote": false,
+      "text": "私だったら、必ずもっと実験を行って……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クルビア兵",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "うぬぼれんな！　お前らのことはよくわかってるんだぞ！　少しでも成功が見えてきたら、すぐ見境なくすだろうが！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "研究員",
+      "speakerId": "avg_npc_530_1",
+      "isRemote": false,
+      "text": "ですが……これは国防部主導のプロジェクトなんですよね？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クルビア兵",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "だったら、あいつら全員狂ってるよ！　チッ、昔ばあちゃんがクルビアでやっていこうって言った時、俺は警告したんだぞ！　クルビアは頭のおかしい連中の国だって！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クルビア兵",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "おい、まだ計算結果出ないのか！　もうダメだ、急いで電話しないと……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クルビア兵",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "なんで繋がらないんだ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "研究員",
+      "speakerId": "avg_npc_530_1",
+      "isRemote": false,
+      "text": "エネルギー密度が高すぎるので、信号の伝達に影響しているのかも……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クルビア兵",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "クソッ、クソッ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クルビア兵",
+      "speakerId": "avg_npc_901_1",
+      "isRemote": false,
+      "text": "どこなら通話できるんだ？　違う廊下まで行けばいいのか？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_1031_slent2_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_1031_slent2_1",
+      "isRemote": false,
+      "text": "この場所は完全に混乱状態だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_1031_slent2_1",
+      "isRemote": false,
+      "text": "エネルギーの伝達が止められないと言ってたけど……クリステンは一体何をしようとしてるんだろう？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_1031_slent2_1",
+      "isRemote": false,
+      "text": "うーん……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_1031_slent2_1",
+      "isRemote": false,
+      "text": "伝達物質の反応がさらに強まってきてる……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_1031_slent2_1",
+      "isRemote": false,
+      "text": "先生が調整した伝達物質は、すべてフォーカスジェネレーターにあるはず。それなら、どうしてここにもこんなに激しい反応があるんだろう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_1031_slent2_1",
+      "isRemote": false,
+      "text": "っ……私は、必ず……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_1031_slent2_1",
+      "isRemote": false,
+      "text": "――通路を探そう。もっと下に行かないと。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ヤラ",
+      "speakerId": "avg_npc_893_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ヤラ",
+      "speakerId": "avg_npc_893_1",
+      "isRemote": false,
+      "text": "はぁ……サイレンス……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ヤラ",
+      "speakerId": "avg_npc_893_1",
+      "isRemote": false,
+      "text": "来てしまったのね。あなたが選んだのはやっぱりこの方向だった。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ヤラ",
+      "speakerId": "avg_npc_893_1",
+      "isRemote": false,
+      "text": "人材採用を検討する時、パルヴィスが最も重視する資質は、その研究員の「前進」を貫こうとする意志だと常々聞いていたけれど……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ヤラ",
+      "speakerId": "avg_npc_893_1",
+      "isRemote": false,
+      "text": "彼があなたを高く評価したのも納得だわ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ヤラ",
+      "speakerId": "avg_npc_893_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ヤラ",
+      "speakerId": "avg_npc_893_1",
+      "isRemote": false,
+      "text": "ねえ……あなたは今、何を考えているの？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ヤラ",
+      "speakerId": "avg_npc_893_1",
+      "isRemote": false,
+      "text": "クリステン。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_cave_2"
     },
     {
       "type": "choice",
@@ -1098,46 +1272,48 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "私はこのところ、以前ライン生命がトリマウンツで調査していたという多数の地点を調べていた。そうして見つけたのがこの場所だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "事実は私の想像と大差ないものだった。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "ケルシーがそばの岩壁を軽く叩く。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "「ホライズンアーク計画」のエネルギーウェルは、現在地からたった数百メートルの位置にある。観光を望むのなら、恐らくクリステンはそのための道まで用意していることだろう。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "私はこのところ、以前ライン生命がトリマウンツで調査していたという多数の地点を調べていた。そうして見つけたのがこの場所だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "事実は私の想像と大差ないものだった。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "ケルシーがそばの岩壁を軽く叩く。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "「ホライズンアーク計画」のエネルギーウェルは、現在地からたった数百メートルの位置にある。観光を望むのなら、恐らくクリステンはそのための道まで用意していることだろう。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1147,24 +1323,24 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": null,
-          "text": "……Dr.{@nickname}。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": null,
-          "text": "すでに察しているだろうが、ロドスがこれほど積極的にトリマウンツでの事件に介入している理由は、そのすべてが君の見てきた人や物事にあるわけではない。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "……Dr.{@nickname}。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "すでに察しているだろうが、ロドスがこれほど積極的にトリマウンツでの事件に介入している理由は、そのすべてが君の見てきた人や物事にあるわけではない。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1179,54 +1355,59 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": null,
-          "text": "サイレンス、イフリータ、サリア、ローキャンにロスモンティス――さらにはブリキと名乗るレヴァナントですらも、真相からはほど遠い常人にすぎない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": null,
-          "text": "ライン生命の騒動、そしてクリステンの暴走に関して、軍とマイレンダー基金はもう片方の天秤に乗せられた分銅の如くバランスを保ち、文明国家としての表層を維持しようとしている。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": null,
-          "text": "……だがそれはいずれも、最重要事項でもなければ、最も懸念すべきことでもない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": null,
-          "text": "クリステンは初めから人々の想像をはるかに超えたものに触れ、それを基にして、空への挑戦を開始した。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": null,
-          "text": "私の懸念は、彼女の行動がテラに予期せぬ事態をもたらすのではないかということだ。本来ならその前に彼女を止めたかったのだが……一足遅かったな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": null,
-          "text": "今のテラでは、こうした問題に干渉するのはもはや簡単なことではない。文明は私の想像よりはるかに発展しているようだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": null,
-          "text": "人々はいずれ、この地点まで到達するだろう。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "サイレンス、イフリータ、サリア、ローキャンにロスモンティス――さらにはブリキと名乗るレヴァナントですらも、真相からはほど遠い常人にすぎない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "ライン生命の騒動、そしてクリステンの暴走に関して、軍とマイレンダー基金はもう片方の天秤に乗せられた分銅の如くバランスを保ち、文明国家としての表層を維持しようとしている。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "……だがそれはいずれも、最重要事項でもなければ、最も懸念すべきことでもない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "クリステンは初めから人々の想像をはるかに超えたものに触れ、それを基にして、空への挑戦を開始した。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "私の懸念は、彼女の行動がテラに予期せぬ事態をもたらすのではないかということだ。本来ならその前に彼女を止めたかったのだが……一足遅かったな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "今のテラでは、こうした問題に干渉するのはもはや簡単なことではない。文明は私の想像よりはるかに発展しているようだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "人々はいずれ、この地点まで到達するだろう。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1239,54 +1420,63 @@
               "type": "dialogue",
               "speakerName": "ケルシー",
               "speakerId": null,
+              "isRemote": false,
               "text": "そうしたことがないわけでもない。ただ、結果は往々にしてあまり良くないものになった。"
             },
             {
               "type": "dialogue",
               "speakerName": "ケルシー",
               "speakerId": null,
+              "isRemote": false,
               "text": "現在のロドスにおいて、アーミヤとクロージャ、そしてエーギルと関係の深いハンターたちが……すでに多くを知り、それを自らの問題解決の手助けとしていても。"
             },
             {
               "type": "dialogue",
               "speakerName": "ケルシー",
               "speakerId": null,
+              "isRemote": false,
               "text": "たとえば畑を耕すとして、空で雲や雨や稲妻が形成される理由は気にならないが、次の嵐がいつ訪れるかは知りたいと思うかもしれない。"
             },
             {
               "type": "dialogue",
               "speakerName": "ケルシー",
               "speakerId": null,
+              "isRemote": false,
               "text": "しかし本来生活の根底にある問題は、為政者の傲慢な振る舞い、頻発する天災、農作物の収穫量や新たな税制などだろう。だというのに、実際には多くの人間がそんなことを気にもしていない。"
             },
             {
               "type": "dialogue",
               "speakerName": "ケルシー",
               "speakerId": null,
+              "isRemote": false,
               "text": "彼らは他人の運命に目を向けてなどいないのだ。"
             },
             {
               "type": "dialogue",
               "speakerName": "ケルシー",
               "speakerId": null,
+              "isRemote": false,
               "text": "テラ人の視点に立ってみれば、はるか遠くにある知識や情報を信じることにしたとして、それに何ができ、何の役に立つ？"
             },
             {
               "type": "dialogue",
               "speakerName": "ケルシー",
               "speakerId": null,
+              "isRemote": false,
               "text": "そんな中で思考を保っているのは、周囲のすべてに関心を持つごく一部の知者に限られる。"
             },
             {
               "type": "dialogue",
               "speakerName": "ケルシー",
               "speakerId": null,
+              "isRemote": false,
               "text": "残りの人々は、己が理解を超える物事に直面した時に無知という居心地の良い空間を守るため、嘲笑や迫害を選択し続けるのだ。"
             },
             {
               "type": "dialogue",
               "speakerName": "ケルシー",
               "speakerId": null,
+              "isRemote": false,
               "text": "彼らは「哀れ」なだけだ。しかし、それゆえに真理から遠ざかっている。"
             },
             {
@@ -1302,42 +1492,49 @@
               "type": "dialogue",
               "speakerName": "ケルシー",
               "speakerId": null,
+              "isRemote": false,
               "text": "「突き破る」か。この表現自体は深い意味を持つものではないが、君の潜在意識はやはり「空」に限界などあるはずがないと認識しているようだな。"
             },
             {
               "type": "dialogue",
               "speakerName": "ケルシー",
               "speakerId": null,
+              "isRemote": false,
               "text": "この大地のいかなる学者にとっても、空で起こることはすべて天災や海と同じく、説明のつかない自然現象だ。"
             },
             {
               "type": "dialogue",
               "speakerName": "ケルシー",
               "speakerId": null,
+              "isRemote": false,
               "text": "疑問を抱いた人々は探求を重ね、知識や哲学を駆使してそれを分析する――「空はこうあるべきではない」と考えるのではなく、空で起こる種々の現象を研究するのだ。"
             },
             {
               "type": "dialogue",
               "speakerName": "ケルシー",
               "speakerId": null,
+              "isRemote": false,
               "text": "多くの子供たちが空を飛ぶことを夢見ながらも、空は自由に飛び回れる場所ではないことをすぐに認識する。"
             },
             {
               "type": "dialogue",
               "speakerName": "ケルシー",
               "speakerId": null,
+              "isRemote": false,
               "text": "ドローンと飛行ユニットの高度は厳しく制限されており、すべての羽獣は本能的に限界を超えぬよう翼を広げている。"
             },
             {
               "type": "dialogue",
               "speakerName": "ケルシー",
               "speakerId": null,
+              "isRemote": false,
               "text": "これが今の大地における人々の常識というものだ。日が昇り月が沈むことに疑問を抱く者もいなければ、万物の成長に疑問を抱く者もいない。"
             },
             {
               "type": "dialogue",
               "speakerName": "ケルシー",
               "speakerId": null,
+              "isRemote": false,
               "text": "だがクリステンは、夢が偽りであることを信じようとしない詩人の如く、頑なに「信じない」ことを選び続けた。"
             },
             {
@@ -1345,8 +1542,7 @@
             }
           ]
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1366,18 +1562,21 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "一つ約束してくれ、ドクター。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_cave_2"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "一つ約束してくれ、ドクター。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1397,36 +1596,38 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "この先何に遭遇し、何を思い出しても動じるな。私がそばにいる。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "仮に君が選ぶのが……いや。決してそうはならない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "アーミヤと、ロドスと共に今日まで歩んできた君を信じよう。君はもう心構えができているはずだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "……とにかく、今は時間がない。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "この先何に遭遇し、何を思い出しても動じるな。私がそばにいる。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "仮に君が選ぶのが……いや。決してそうはならない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "アーミヤと、ロドスと共に今日まで歩んできた君を信じよう。君はもう心構えができているはずだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "……とにかく、今は時間がない。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1436,126 +1637,139 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "――待て。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "下がれ、ドクター。話はまた後程としよう。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "ケルシーの視線の先に目を向けると、漆黒の岩壁の上方に危険な銀色が見えた。\n彼女は尻尾を鍾乳石の壁に巻きつけて身体を支え、宙に浮かぶような形で興味深げに二人を見つめている。\nあなたはその時、不安を感じた。\nそれはホルハイヤが突然目の前に現れたからではなく、機械の如く精確で慎重なケルシーが、珍しくケアレスミスをしたことに気付いたからだ。\nゆっくりと二人のそばに着地してくるホルハイヤの興味津々な笑顔があなたの心臓を刺す。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルハイヤ",
-          "speakerId": "avg_npc_536_1",
-          "text": "あなたはもっと慎重な人だと思ってたわ、お医者様。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルハイヤ",
-          "speakerId": "avg_npc_536_1",
-          "text": "ふふっ、だけど……まさか、あなたたちにこの場所が見つかるなんてね。クリステン本人も具体的な位置までは教えてくれなかったのに。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "ククルカン……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルハイヤ",
-          "speakerId": "avg_npc_536_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "マイレンダー基金を裏切れば、クルビアにおける君の未来は葬り去られるに等しい。となれば、クリステンの約束したものは、恐らくマイレンダー基金が君にもたらすものより豊かなのだろう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "君とその一族は、引き返すことのできない道を選択した。そして君はクリステンとローキャンの研究から、種族の力の源を見つけようとしているのだな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "だが、手を引くことを勧めよう。それは古の己を追及する行為ではなく、単なる自滅だ。神民は長い時を経て神の如き力を失って久しく、ほかの先民種族と何ら――"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "ケルシーの言葉は遮られた。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "ホルハイヤの尻尾が、いつの間にかあなたの喉元に当てられていたのだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルハイヤ",
-          "speakerId": "avg_npc_536_1",
-          "text": "確かに、あなたの冷静な表情と口ぶりには威圧感があるわね。そこにそのデータベースみたいな頭脳を合わせることで、言葉を武器に変えているんでしょう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルハイヤ",
-          "speakerId": "avg_npc_536_1",
-          "text": "だけど……そういう話術も、何の効果も発揮しないことだってあるのよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルハイヤ",
-          "speakerId": "avg_npc_536_1",
-          "text": "ローキャンの残した石棺と、クリステンのもたらした出所不明の資料があれば、私たちの長年の夢を――力と権威に満ちたあの夢を実現させるには十分なんだもの。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルハイヤ",
-          "speakerId": "avg_npc_536_1",
-          "text": "ほら、見て……私を。この髪も、この身体も、この尻尾も、すべてが私の本来あるべき高貴な血、ククルカンの血統によるものだって記憶が私に言ってるの。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルハイヤ",
-          "speakerId": "avg_npc_536_1",
-          "text": "私、とっても強いでしょう？　「ドクター」。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "――待て。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "下がれ、ドクター。話はまた後程としよう。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "ケルシーの視線の先に目を向けると、漆黒の岩壁の上方に危険な銀色が見えた。\n彼女は尻尾を鍾乳石の壁に巻きつけて身体を支え、宙に浮かぶような形で興味深げに二人を見つめている。\nあなたはその時、不安を感じた。\nそれはホルハイヤが突然目の前に現れたからではなく、機械の如く精確で慎重なケルシーが、珍しくケアレスミスをしたことに気付いたからだ。\nゆっくりと二人のそばに着地してくるホルハイヤの興味津々な笑顔があなたの心臓を刺す。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルハイヤ",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "あなたはもっと慎重な人だと思ってたわ、お医者様。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルハイヤ",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "ふふっ、だけど……まさか、あなたたちにこの場所が見つかるなんてね。クリステン本人も具体的な位置までは教えてくれなかったのに。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "ククルカン……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルハイヤ",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "マイレンダー基金を裏切れば、クルビアにおける君の未来は葬り去られるに等しい。となれば、クリステンの約束したものは、恐らくマイレンダー基金が君にもたらすものより豊かなのだろう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "君とその一族は、引き返すことのできない道を選択した。そして君はクリステンとローキャンの研究から、種族の力の源を見つけようとしているのだな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "だが、手を引くことを勧めよう。それは古の己を追及する行為ではなく、単なる自滅だ。神民は長い時を経て神の如き力を失って久しく、ほかの先民種族と何ら――"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "ケルシーの言葉は遮られた。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "ホルハイヤの尻尾が、いつの間にかあなたの喉元に当てられていたのだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルハイヤ",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "確かに、あなたの冷静な表情と口ぶりには威圧感があるわね。そこにそのデータベースみたいな頭脳を合わせることで、言葉を武器に変えているんでしょう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルハイヤ",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "だけど……そういう話術も、何の効果も発揮しないことだってあるのよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルハイヤ",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "ローキャンの残した石棺と、クリステンのもたらした出所不明の資料があれば、私たちの長年の夢を――力と権威に満ちたあの夢を実現させるには十分なんだもの。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルハイヤ",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "ほら、見て……私を。この髪も、この身体も、この尻尾も、すべてが私の本来あるべき高貴な血、ククルカンの血統によるものだって記憶が私に言ってるの。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルハイヤ",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "私、とっても強いでしょう？　「ドクター」。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1570,90 +1784,101 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ホルハイヤ",
-          "speakerId": "avg_npc_536_1",
-          "text": "アハッ……あなたの冷静さは嫌いじゃないわ。でも、本気であなたを絞め殺そうと思ったら、力を入れなくたってできるのよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルハイヤ",
-          "speakerId": "avg_npc_536_1",
-          "text": "この光景、あの時を思い出すわね。妙な設備を持ってない時のクリステンなら、普通の人とそう変わらないし、こうして簡単に絞め殺せるはずだった。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルハイヤ",
-          "speakerId": "avg_npc_536_1",
-          "text": "でも、彼女は何でもないような顔で「力」を否定したの。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルハイヤ",
-          "speakerId": "avg_npc_536_1",
-          "text": "頭のおかしな科学者たちは好きじゃないけど、彼女が気付かせてくれたのよ――この血のほかに、私のアイデンティティはあるのかってこと。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルハイヤ",
-          "speakerId": "avg_npc_536_1",
-          "text": "とっても皮肉な話よね。……彼女の言葉は、背中に棘が刺さるような感覚を与えるものだった。受け継いできた使命と記憶を侮辱した彼女を、苦しませてやりたいとさえ思ったけど――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルハイヤ",
-          "speakerId": "avg_npc_536_1",
-          "text": "――彼女はまさに完璧に見えたの。人生のすべてを手に入れたみたいに堂々としていた。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルハイヤ",
-          "speakerId": "avg_npc_536_1",
-          "text": "その姿が……人の嫉妬心を煽り、苦しいくらいに不安にさせるの。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "君は……彼女に説得されたのか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "では、君の望みは何だ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルハイヤ",
-          "speakerId": "avg_npc_536_1",
-          "text": "クリステンの結末を見届け、その意図を推測して、遺産を掘り下げるつもりでいるわ。そうして、彼女が私を皮肉った時の考えをすべて暴いて持ち去ってやるの。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルハイヤ",
-          "speakerId": "avg_npc_536_1",
-          "text": "だって、そうすれば答えを得られるかもしれないから。ククルカンがこの上なく強大だったあの時代へ戻ろうとする前に、知りたいのよ。この現代において、それにどんな価値があり――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルハイヤ",
-          "speakerId": "avg_npc_536_1",
-          "text": "――私にどんな価値があるのかを。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルハイヤ",
-          "speakerId": "avg_npc_536_1",
-          "text": "これがホルハイヤの望みよ。だから邪魔しないでちょうだい、「ドクター」とケルシーさん。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルハイヤ",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "アハッ……あなたの冷静さは嫌いじゃないわ。でも、本気であなたを絞め殺そうと思ったら、力を入れなくたってできるのよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルハイヤ",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "この光景、あの時を思い出すわね。妙な設備を持ってない時のクリステンなら、普通の人とそう変わらないし、こうして簡単に絞め殺せるはずだった。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルハイヤ",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "でも、彼女は何でもないような顔で「力」を否定したの。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルハイヤ",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "頭のおかしな科学者たちは好きじゃないけど、彼女が気付かせてくれたのよ――この血のほかに、私のアイデンティティはあるのかってこと。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルハイヤ",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "とっても皮肉な話よね。……彼女の言葉は、背中に棘が刺さるような感覚を与えるものだった。受け継いできた使命と記憶を侮辱した彼女を、苦しませてやりたいとさえ思ったけど――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルハイヤ",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "――彼女はまさに完璧に見えたの。人生のすべてを手に入れたみたいに堂々としていた。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルハイヤ",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "その姿が……人の嫉妬心を煽り、苦しいくらいに不安にさせるの。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "君は……彼女に説得されたのか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "では、君の望みは何だ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルハイヤ",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "クリステンの結末を見届け、その意図を推測して、遺産を掘り下げるつもりでいるわ。そうして、彼女が私を皮肉った時の考えをすべて暴いて持ち去ってやるの。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルハイヤ",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "だって、そうすれば答えを得られるかもしれないから。ククルカンがこの上なく強大だったあの時代へ戻ろうとする前に、知りたいのよ。この現代において、それにどんな価値があり――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルハイヤ",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "――私にどんな価値があるのかを。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルハイヤ",
+      "speakerId": "avg_npc_536_1",
+      "isRemote": false,
+      "text": "これがホルハイヤの望みよ。だから邪魔しないでちょうだい、「ドクター」とケルシーさん。"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": [

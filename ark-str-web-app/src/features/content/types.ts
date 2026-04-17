@@ -73,7 +73,13 @@ export type DialogueBlock = {
   type: "dialogue";
   speakerName: string;
   speakerId: string | null;
+  isRemote: boolean;
   text: string;
+};
+
+export type BackgroundBlock = {
+  type: "background";
+  backgroundId: string;
 };
 
 export type NarrationBlock = {
@@ -94,10 +100,14 @@ export type ChoiceOption = {
 export type ChoiceBlock = {
   type: "choice";
   options: ChoiceOption[];
-  sharedBlocks: StoryBlock[];
 };
 
-export type StoryBlock = DialogueBlock | NarrationBlock | SceneBreakBlock | ChoiceBlock;
+export type StoryBlock =
+  | DialogueBlock
+  | NarrationBlock
+  | SceneBreakBlock
+  | BackgroundBlock
+  | ChoiceBlock;
 
 export type ObservedOperator = {
   speakerId: string;

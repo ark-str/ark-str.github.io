@@ -6,30 +6,41 @@
   "title": "小雪崩",
   "storyCode": "TA-4",
   "avgTag": "行动前",
-  "sourcePath": "vendor/ArknightsGamedata/cn/gamedata/story/activities/act49side/level_act49side_04_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/cn/gamedata/story/activities/act49side/level_act49side_04_beg.txt",
   "sourceHash": "1cd31c3f572d96af213a41474ebf4ccf66e7c93cdbada31a23506863962adb5f",
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "70_g7_suilingcore"
+    },
+    {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "若是没有一个意志，没有一个主体，没有一个愿意为时间定下刻度的人，那么光阴只是无谓的轮转......"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "一如你在陵中度过的岁月。"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "无知无觉的你，又有何资格定义这段时间？"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "70_g9_oldbattlefield"
     },
     {
       "type": "narration",
@@ -39,6 +50,7 @@
       "type": "dialogue",
       "speakerName": "决绝的山海众成员",
       "speakerId": "avg_npc_794_1",
+      "isRemote": false,
       "text": "山海八荒，尽归其主！"
     },
     {
@@ -48,6 +60,7 @@
       "type": "dialogue",
       "speakerName": "大炎边军",
       "speakerId": "avg_npc_2133_1",
+      "isRemote": false,
       "text": "妖言惑众！"
     },
     {
@@ -57,63 +70,77 @@
       "type": "dialogue",
       "speakerName": "决绝的山海众成员",
       "speakerId": "avg_npc_794_1",
+      "isRemote": false,
       "text": "呼、呼......"
     },
     {
       "type": "dialogue",
       "speakerName": "大炎边军",
       "speakerId": "avg_npc_2133_1",
+      "isRemote": false,
       "text": "放下武器，还能饶你不死！"
     },
     {
       "type": "dialogue",
       "speakerName": "决绝的山海众成员",
       "speakerId": "avg_npc_794_1",
+      "isRemote": false,
       "text": "放下武器？"
     },
     {
       "type": "dialogue",
       "speakerName": "决绝的山海众成员",
       "speakerId": "avg_npc_794_1",
+      "isRemote": false,
       "text": "我们就是要让炎氏一脉知道，矩兽已醒，他自以为可以千秋万代的江山，和这无限天地相比，终究不过黄粱一梦！"
     },
     {
       "type": "dialogue",
       "speakerName": "决绝的山海众成员",
       "speakerId": "avg_npc_794_1",
+      "isRemote": false,
       "text": "山海八荒，尽归——"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "35_g7_zuosroom"
+    },
+    {
       "type": "dialogue",
       "speakerName": "略带酒意的钦差",
       "speakerId": null,
+      "isRemote": false,
       "text": "来，喝！"
     },
     {
       "type": "dialogue",
       "speakerName": "受宠若惊的士兵",
       "speakerId": "avg_npc_2133_1",
+      "isRemote": false,
       "text": "怎么敢让大人为我斟酒——"
     },
     {
       "type": "dialogue",
       "speakerName": "略带酒意的钦差",
       "speakerId": "avg_npc_2133_1",
+      "isRemote": false,
       "text": "切不可妄自菲薄！"
     },
     {
       "type": "dialogue",
       "speakerName": "略带酒意的钦差",
       "speakerId": "avg_npc_2133_1",
+      "isRemote": false,
       "text": "时隔数百年，我辈终于诛杀了那场狩猎最后的遗害，经此一役，大炎疆域彻底无忧矣！"
     },
     {
       "type": "dialogue",
       "speakerName": "略带酒意的钦差",
       "speakerId": "avg_npc_2133_1",
+      "isRemote": false,
       "text": "这一杯酒，我敬诸位！"
     },
     {
@@ -123,6 +150,7 @@
       "type": "dialogue",
       "speakerName": "受宠若惊的士兵",
       "speakerId": "avg_npc_2133_1",
+      "isRemote": false,
       "text": "谢大人赐酒！"
     },
     {
@@ -132,24 +160,28 @@
       "type": "dialogue",
       "speakerName": "略带酒意的钦差",
       "speakerId": null,
+      "isRemote": false,
       "text": "当然，还有二位先生。"
     },
     {
       "type": "dialogue",
       "speakerName": "略带酒意的钦差",
       "speakerId": null,
+      "isRemote": false,
       "text": "朔先生身先士卒以一当千，大振军心；望先生排兵布阵更是算无遗策。"
     },
     {
       "type": "dialogue",
       "speakerName": "略带酒意的钦差",
       "speakerId": null,
+      "isRemote": false,
       "text": "今日诛杀矩兽，二位先生才当居首功。"
     },
     {
       "type": "dialogue",
       "speakerName": "略带酒意的钦差",
       "speakerId": null,
+      "isRemote": false,
       "text": "这一杯酒，我敬二位。"
     },
     {
@@ -159,69 +191,84 @@
       "type": "dialogue",
       "speakerName": "朔",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "......多谢。"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "略带酒意的钦差",
       "speakerId": null,
+      "isRemote": false,
       "text": "望先生，机会难得，有些话我须得直言。"
     },
     {
       "type": "dialogue",
       "speakerName": "略带酒意的钦差",
       "speakerId": null,
+      "isRemote": false,
       "text": "我很清楚，朝中曾有不少对先生的流言中伤。大多是质疑先生非我族类，心有不轨。"
     },
     {
       "type": "dialogue",
       "speakerName": "略带酒意的钦差",
       "speakerId": null,
+      "isRemote": false,
       "text": "但先生却是安耐毁誉，为大炎立下不世之功。如此高风亮节，着实令人敬佩。"
     },
     {
       "type": "dialogue",
       "speakerName": "略带酒意的钦差",
       "speakerId": null,
+      "isRemote": false,
       "text": "我知道，如今司岁台对各位的限制的确不能说松懈，甚至连你们手足团聚也要干涉，未免不近人情。"
     },
     {
       "type": "dialogue",
       "speakerName": "略带酒意的钦差",
       "speakerId": null,
+      "isRemote": false,
       "text": "我这次回去，一定请奏陛下，特准诸位合家欢聚......"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "70_g11_oldpavilion"
+    },
+    {
       "type": "dialogue",
       "speakerName": "酩酊大醉的钦差",
       "speakerId": null,
+      "isRemote": false,
       "text": "今天确实高兴，我自觉酒量不错，也已经不胜酒力了......"
     },
     {
       "type": "dialogue",
       "speakerName": "酩酊大醉的钦差",
       "speakerId": null,
+      "isRemote": false,
       "text": "说实话，出征之前，上面是吩咐过，让我......看着两位，别出什么岔子的。"
     },
     {
       "type": "dialogue",
       "speakerName": "酩酊大醉的钦差",
       "speakerId": null,
+      "isRemote": false,
       "text": "可今天一战下来，二位都......证明了自己，忠心不二，令人......敬佩！"
     },
     {
       "type": "dialogue",
       "speakerName": "酩酊大醉的钦差",
       "speakerId": null,
+      "isRemote": false,
       "text": "那就......送二位到这儿了！二位......保重！"
     },
     {
@@ -238,234 +285,273 @@
       "type": "dialogue",
       "speakerName": "朔",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "......他是个好人，也是个不称职的探子。"
     },
     {
       "type": "dialogue",
       "speakerName": "朔",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "你有没有想过，如果他察觉了你做下的事，我们一家会面对什么样的麻烦？"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "大哥醉了。"
     },
     {
       "type": "dialogue",
       "speakerName": "朔",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "我倒希望我看到的，只是我醉后的一场梦。"
     },
     {
       "type": "dialogue",
       "speakerName": "朔",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "......你究竟为什么要私自放走矩兽？"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "留一手伏兵，好过毫无底牌。"
     },
     {
       "type": "dialogue",
       "speakerName": "朔",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "这一次，你又是在与谁争胜？"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "你一定感觉得到，我们所有人都能感觉到......祂正在醒来，祂苏醒的速度，比预测的千年更快，快得多。"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "我们必须要找到别的助力。"
     },
     {
       "type": "dialogue",
       "speakerName": "朔",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "是矩兽同意帮你除岁？"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "祂太过虚弱，连山海众都无力庇护，我们也并未聊到这一步。时候未到。"
     },
     {
       "type": "dialogue",
       "speakerName": "朔",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "我与你说过，想要摆脱祂的影响，明明还有其他手段——"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "我知道你要说什么。你终于理清了你自己和祂之间的纠缠，你也想让“我”不再是“我们”，而“我们”也不再是“祂”......"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "于是你把“自己”封在了那柄剑里，了不起......"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "然后又当如何？呵，司岁台把剑还你了吗？"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "我们还是要活在这一层桎梏当中......"
     },
     {
       "type": "dialogue",
       "speakerName": "朔",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "桎梏不在外物——"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "你真的相信，所有人都能达到像你这样的境界？"
     },
     {
       "type": "dialogue",
       "speakerName": "朔",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "一切你都记得，一切你都关心，几百年的人、事、物，毕竟都如江水东流，唯独朔还是朔。"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "但不是谁都能像你一样......"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "你想让夕花多长时间变得像你一样？余呢？迫使余变得和你一样，真的是好事吗？"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "一千年已经太短，而我们甚至没有一千年可以挥霍。"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "我们没有更多时间了。"
     },
     {
       "type": "dialogue",
       "speakerName": "朔",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "棋道上我不如你，可我也知道，即便一时看不见制胜奇招，堂堂正正的本手，也好过激进的无理手。"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "所以大哥是觉得这局棋已经下不赢了？因为下不赢了，只要姿态堂堂正正，哪怕输了也问心无愧？"
     },
     {
       "type": "dialogue",
       "speakerName": "朔",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "我何曾这么说过......"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "依你的计策，到头来不会有别的结果。"
     },
     {
       "type": "dialogue",
       "speakerName": "朔",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "......那你说，我们该怎么办？"
     },
     {
       "type": "dialogue",
       "speakerName": "朔",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "若你真计算出了一条行得通的路，那就告诉我，我情愿和你同去，胜算还大一些。"
     },
     {
       "type": "dialogue",
       "speakerName": "朔",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "只要你告诉我，你究竟有几成胜算。我可以任你差遣，哪怕要我的命我也绝无怨言。"
     },
     {
       "type": "dialogue",
       "speakerName": "朔",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "......可你知道自己在做什么吗？"
     },
     {
       "type": "dialogue",
       "speakerName": "朔",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "你是不是心里只装着自己的胜负，完全不顾风险，也不曾想过会招致什么样的后果？"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "朔",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "告诉我。"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "朔",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "说话。"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "......"
     },
     {
@@ -475,6 +561,7 @@
       "type": "dialogue",
       "speakerName": "朔",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "你究竟想没想过？！"
     },
     {
@@ -491,36 +578,42 @@
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "朔",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "望，我——"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "兄长自己铸就的这具“人”的躯体，依然有开碑裂石之能，着实令人佩服。"
     },
     {
       "type": "dialogue",
       "speakerName": "朔",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "......你听我说！"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "免了。"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "我们当中谁都比不上兄长境界之高，我们的死活，也不劳兄长担心了。"
     },
     {
@@ -530,93 +623,112 @@
       "type": "dialogue",
       "speakerName": "朔",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "望！"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "70_g13_oldyanstreet"
+    },
+    {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "......你怎么来了？"
     },
     {
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "一脸怨怼。和大哥吵架了？"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "果然。我不过在路上浅醉片刻，你们就能闹出事来。"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "你有什么事要和他说，自己去便是。"
     },
     {
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "这又是何苦呢？"
     },
     {
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "我知道你和他会为了什么吵——除岁，对吧。"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "可你们也不是头一回因为这件事起争执了，求同存异，怎么就做不到？"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "事关生死，不是一句求同存异就能带过去的事。"
     },
     {
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "难道真到大难当头那一刻，你们还能兄弟阋墙？"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "别在该把话说清的时候躲着。拖得久了，小事也拖成了疙瘩。"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "今天还是免了。"
     },
     {
@@ -626,6 +738,7 @@
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "二哥......别这样，你先回来——"
     },
     {
@@ -635,6 +748,7 @@
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "臭棋篓子！你今年到底多大？在妹妹面前耍小孩子脾气，你不害臊？"
     },
     {
@@ -644,10 +758,15 @@
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "70_g11_oldpavilion"
     },
     {
       "type": "narration",
@@ -660,36 +779,42 @@
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "大哥。"
     },
     {
       "type": "dialogue",
       "speakerName": "朔",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "令妹......"
     },
     {
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "我早说了，“令妹”听起来倒像是在叫我的妹妹，不像在叫我，你也不改改。"
     },
     {
       "type": "dialogue",
       "speakerName": "朔",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "抱歉，习惯了，多少有点积习难改。"
     },
     {
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "我看也是积习难改。"
     },
     {
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "啧，这棋枰......吵架就吵架，还动手砸起东西来了。三岁小孩？"
     },
     {
@@ -699,96 +824,112 @@
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "朔",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "朔",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "过些时日，我去找块好些的木料，帮你新做一张。"
     },
     {
       "type": "dialogue",
       "speakerName": "朔",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "还是说，你更喜欢现在这张棋盘？那也没关系，等年或者易在的时候，我请他们帮忙修好，你看......？"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "......不必。"
     },
     {
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "唉......简直感觉像是回到我刚踏足人间的那段日子了。隔三岔五就能看见你们两个争斗不休。"
     },
     {
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "当时那位秉烛人还惴惴不安地问我呢......"
     },
     {
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "“等后面的弟弟妹妹全都出世，你们到底得打成什么样？您能不能预估一下，我得上奏朝廷，方便安排避难呐！”"
     },
     {
       "type": "dialogue",
       "speakerName": "朔",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "......咳。"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "这样吧，大哥今天就先回去，我自己和二哥聊聊。"
     },
     {
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "我就当一回传话筒，省得你们在气头上，再吵起来不知道还要砸坏什么东西。"
     },
     {
       "type": "dialogue",
       "speakerName": "朔",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "......也好。"
     },
     {
       "type": "dialogue",
       "speakerName": "朔",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "那这棋枰......"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "......放这儿吧，我自己修。兄长不用再替这东西操心了。"
     },
     {
       "type": "dialogue",
       "speakerName": "朔",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "好。"
     },
     {
@@ -798,30 +939,35 @@
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "你还是没消气。"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "哪有。"
     },
     {
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "你心平气和的时候，当着他的面，从来不会叫他什么“兄长”。"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "所以，说说吧，你们到底聊什么了？"
     },
     {
@@ -831,78 +977,91 @@
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "......和我想的一点不差。"
     },
     {
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "他的法子堂堂正正，可要说快慢，那自然是慢的。要是哪天祂突然苏醒，一切就都来不及了。"
     },
     {
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "至于你......唉。"
     },
     {
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "可你要是真想这么顶撞他，自己总该有个良策，才好跟他大呼小叫吧？"
     },
     {
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "他为了替我们自证清白，连最要紧的剑都借出去了，你当真一点也不领情？"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "你该不会真的在气他砸坏了你的棋盘？"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "何至于......"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "只是看他不紧不慢的，令人恼火。"
     },
     {
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "兄弟姐妹，哪个不是在找一条能走通的路？小夕不是更加没主意，你看她难道也要生气不成？"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "那倒也......不至于。"
     },
     {
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "祂的苏醒的确正在加速，大家心里都着急，一时说错了话，起了争执，都是情有可原。"
     },
     {
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "可祂的醒来至少也要以百年为尺度，若是和大炎闹翻了脸，搞出乱子就是朝夕之间的事了。"
     },
     {
@@ -912,54 +1071,63 @@
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "怎么，也嫌我慢性子了？那就尽管说。"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "......并无此意。"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "你刚刚说，我们都在找一条路。"
     },
     {
       "type": "dialogue",
       "speakerName": "望",
       "speakerId": "avg_2027_wang_1",
+      "isRemote": false,
       "text": "你在找的，是什么？"
     },
     {
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "你耳朵也忒灵。"
     },
     {
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "说到底，祂也好，我也罢，无非是大梦一场罢了。"
     },
     {
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "事先说好，这只是个极不完整的想法，我自己也不知道究竟能做到哪一分。"
     },
     {
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "但我的确想......留下一个梦。"
     },
     {
       "type": "dialogue",
       "speakerName": "令",
       "speakerId": "avg_2023_ling_1",
+      "isRemote": false,
       "text": "一个哪怕祂彻底苏醒也没法惊扰的梦。"
     },
     {

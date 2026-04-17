@@ -6,14 +6,19 @@
   "title": "恨みの果て",
   "storyCode": "10-12",
   "avgTag": "戦闘後",
-  "sourcePath": "vendor/ArknightsGamedata/jp/gamedata/story/obt/main/level_main_10-11_end.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/jp/gamedata/story/obt/main/level_main_10-11_end.txt",
   "sourceHash": "8ac8da37aaa73addb41f3bb7dba970c5c4df0944caa8938e1e7ef7d1e39684c8",
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "27_g10_lightinduarea_street_n"
+    },
+    {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "avg_npc_394_1",
+      "isRemote": false,
       "text": "おかしいです、ドクター、サルカズ兵たちを撒いたはずなのに……"
     },
     {
@@ -32,1309 +37,1530 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_npc_394_1",
-          "text": "クロージャさん、通信信号が傍受されていたりしませんか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "クロージャ",
-          "speakerId": "avg_npc_411_1",
-          "text": "ありえないよ、アーミヤちゃん！　信号送信機には三重処理も施してるんだから。もしサルカズたちにこんな技術があれば、ロドスはテレシスに百回は攻め落とされてるよ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_npc_394_1",
-          "text": "……ドクター、私はクロージャさんを信じています。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_npc_394_1",
-          "text": "彼らはきっと別の方法を使ってるんです……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェイスト",
-          "speakerId": "avg_npc_402_1",
-          "text": "アーミヤさん、もうすぐ合流地点に着くよ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェイスト",
-          "speakerId": "avg_npc_402_1",
-          "text": "第六隊と合流さえできれば、地下の応援部隊と連絡を取ることができる。地下に戻ったら、サルカズは俺たちを追えなくなるはずだ……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "シージ",
-          "speakerId": "avg_npc_407_1",
-          "text": "……止めろ。そっちの道は駄目だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェイスト",
-          "speakerId": "avg_npc_402_1",
-          "text": "は？　どうしてだ……って待て、シージさん、どうしてあんたたちがいるんだ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェイスト",
-          "speakerId": "avg_npc_402_1",
-          "text": "地下にいたはずじゃ……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "シージ",
-          "speakerId": "avg_npc_407_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "シージ",
-          "speakerId": "avg_npc_407_1",
-          "text": "第六隊の者たちは……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェイスト",
-          "speakerId": "avg_npc_402_1",
-          "text": "第六隊がどうした？　どうしてそんな顔してるんだ……って、インドラさん、手に血が！？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "インドラ",
-          "speakerId": "avg_155_tiger_1",
-          "text": "お前らの戦士は、あいつらは……全員犠牲になった。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェイスト",
-          "speakerId": "avg_npc_402_1",
-          "text": "そ……そんなバカな！　第六隊は俺たちより前にいんだ。どうしてサルカズに襲われるんだよ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "シージ",
-          "speakerId": "avg_npc_407_1",
-          "text": "原因を分析している時間はない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "シージ",
-          "speakerId": "avg_npc_407_1",
-          "text": "ドクター、第六隊の者たちは……我々を追っているサルカズ兵たちによって殺されたわけではない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_npc_394_1",
-          "text": "それはつまり……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "シージ",
-          "speakerId": "avg_npc_407_1",
-          "text": "彼らが遭遇した人物は、非常に恐ろしいアーツを扱っている。彼らが死んだ現場は……まるで虐殺だった。多くの戦士は武器すら抜けずに絶命した。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "インドラ",
-          "speakerId": "avg_155_tiger_1",
-          "text": "あれはほんとにアーツなのか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "インドラ",
-          "speakerId": "avg_155_tiger_1",
-          "text": "俺は信じないぜ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "インドラ",
-          "speakerId": "avg_155_tiger_1",
-          "text": "赤い虫みたいなのが戦士たちの胸を引き裂いたんだ。ヴィーナ、お前も見ただろ、あれは本物の化け物だ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "シージ",
-          "speakerId": "avg_npc_407_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_npc_394_1",
-          "text": "……普通のサルカズの仕業ではありません。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_npc_394_1",
-          "text": "方向を変える必要があります。フェイストさん、他に使える道はありますか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェイスト",
-          "speakerId": "avg_npc_402_1",
-          "text": "あるよ。でもその道には迎えがいない、万一サルカズに遭遇すれば……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "シージ",
-          "speakerId": "avg_npc_407_1",
-          "text": "また苦戦を強いられるな。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルン",
-          "speakerId": "avg_4039_horn_1",
-          "text": "物陰に隠れて！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロッベン",
-          "speakerId": "avg_npc_413_1",
-          "text": "ホルンさん、これは一体何です！？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロッベン",
-          "speakerId": "avg_npc_413_1",
-          "text": "サルカズがこちらに投げてきたのは爆弾ですか？　しかし全然見えな――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルン",
-          "speakerId": "avg_4039_horn_1",
-          "text": "……アーツよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルン",
-          "speakerId": "avg_4039_horn_1",
-          "text": "上に注意して！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロッベン",
-          "speakerId": "avg_npc_413_1",
-          "text": "み……見えました……血の色をしたものが宙に一瞬現れました！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルン",
-          "speakerId": "avg_4039_horn_1",
-          "text": "下がって！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロッベン",
-          "speakerId": "avg_npc_413_1",
-          "text": "こんな落雷のようなものが、アーツだというんですか！？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロッベン",
-          "speakerId": "avg_npc_413_1",
-          "text": "魔族の化け物め……！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "まだかくれんぼを続ける気なのか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "君の言う「戦う」とは、地べたを無様に転げ回ることではないだろうな、白狼？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロッベン",
-          "speakerId": "avg_npc_413_1",
-          "text": "空に……真っ赤な光が五本も……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロッベン",
-          "speakerId": "avg_npc_413_1",
-          "text": "ホルンさん、これじゃまったくチャンスがありませんよ――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルン",
-          "speakerId": "avg_4039_horn_1",
-          "text": "いいえ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルン",
-          "speakerId": "avg_4039_horn_1",
-          "text": "どれほど強力なアーツでも……相手は一人よ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルン",
-          "speakerId": "avg_4039_horn_1",
-          "text": "ヴィクトリアがどのようにしてサルカズに勝利してきたか、知っているでしょう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロッベン",
-          "speakerId": "avg_npc_413_1",
-          "text": "つまりホルンさんは……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルン",
-          "speakerId": "avg_4039_horn_1",
-          "text": "クロスボウの矢はどれだけ残っている？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルン",
-          "speakerId": "avg_4039_horn_1",
-          "text": "援護して。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロッベン",
-          "speakerId": "avg_npc_413_1",
-          "text": "わかりました！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "まったく、児戯に等しい――"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルン",
-          "speakerId": "avg_4039_horn_1",
-          "text": "今が……チャンスよ。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "アーツに紛れて逃げるつもりか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "そうはさせぬ。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "――！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルン",
-          "speakerId": "avg_4039_horn_1",
-          "text": "……言ったはずよ。一人でも私の兵士が残っている限り、私が逃げることはないと。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "やはり君は素晴らしい、白狼。ここで私に向かってくる勇敢さは並みの者には持ちえない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "だからこそ残念だ……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルン",
-          "speakerId": "avg_4039_horn_1",
-          "text": "――くっ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "サルカズならばアーツだけで戦うと思っていたか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "剣だけでも――君たちをまとめて相手するのには十分だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルン",
-          "speakerId": "avg_4039_horn_1",
-          "text": "私に勝つのは……難しいことではないかもしれない……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルン",
-          "speakerId": "avg_4039_horn_1",
-          "text": "でも私を打ち倒す気なら……そう、簡単にはいかないわよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "それでこそ白狼というべきか。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "君が勇敢であるからこそ、この戦いに時間をかけずにすむ――"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "鋭い刺突が繰り出された。剣の切っ先が今まさに彼女に突き刺さろうという瞬間、目の前にいた兵士は忽然と消えた。\nまるで背後の壁に溶け込んだかのように、小さな気配一つ残さず跡形もなく消失した。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "未知のアーツ……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "警戒せよ！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "っ……短刀がひとりでに現れただと？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "いや、違う……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_404_1",
-          "text": "反応が早いな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "生憎と、みすみす体に穴を開ける趣味はないのでね。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サルカズ戦士",
-          "speakerId": "avg_npc_419_1",
-          "text": "ターゲット発見！　奴を狙え！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サルカズ戦士",
-          "speakerId": "avg_npc_419_1",
-          "text": "どういうことだ？　消えた！？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サルカズ戦士",
-          "speakerId": "avg_npc_419_1",
-          "text": "は、速すぎる！　当たらない！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サルカズ戦士",
-          "speakerId": "avg_npc_419_1",
-          "text": "盾を構えろ、早く、*スラング*、瞬間移動でもしてるのか？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "瞬間移動だと？　そんなアーツがあるはず……術を放った痕跡すらない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "あるいは……まやかしか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "皆の者、謀られるな！　とにかく攻撃を放て！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "姿は見えずとも、敵が我らの前にいる限り逃してはならない！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "当たった……か？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サルカズ戦士",
-          "speakerId": "avg_npc_419_1",
-          "text": "将軍、奴の身体が見当たりません。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サルカズ戦士",
-          "speakerId": "avg_npc_419_1",
-          "text": "ですが地面がめちゃくちゃになるほどの、面状攻撃でした……一体どうやったらあれから逃れられるのか。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サルカズ戦士",
-          "speakerId": "avg_npc_419_1",
-          "text": "将軍、後ろです！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "度胸があるなら姿を現すといい。苦しまずに逝かせてやろう。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_235",
-          "text": "そうか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_235",
-          "text": "マンフレッド、さっきの言葉は悪くなかった。だが……正しいのは半分だけだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "半分だと？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_235",
-          "text": "サルカズの武器はアーツだけではない――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_235",
-          "text": "――しかし、剣だけがサルカズの武器でもない。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サルカズ戦士",
-          "speakerId": "avg_npc_419_1",
-          "text": "あああ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サルカズ戦士",
-          "speakerId": "avg_npc_419_1",
-          "text": "な、んだこれ。沈む！　地面が、地面が急に柔らかく――空気に飲み込まれる！　きゅ、急に剣が握れなくなった！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サルカズ戦士",
-          "speakerId": "avg_npc_419_1",
-          "text": "将軍、あなたも沈んでいますよ！？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "……皆の者、動くな。そして慌てるな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "短刀が彼のアーツユニットだ。これは強力なアーツだが、所詮アーツにすぎない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_235",
-          "text": "冷静なのはいいことだ……部下の命を救ったな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_235",
-          "text": "だが……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "……くっ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "地面が……胸まで来ている……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "剣が……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_235",
-          "text": "お前の剣の腕なら、俺の攻撃を防ぐのは容易い。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_235",
-          "text": "だがお前が力むほど、地面に飲み込まれるのも早くなる。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_235",
-          "text": "この終わりを望むのか？　……こんな自滅の結末を？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "くっ……ゴホゴホッ……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サルカズ戦士",
-          "speakerId": "avg_npc_419_1",
-          "text": "将軍――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "来るな！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_235",
-          "text": "あるいは、お前も部下と同じように、動きを止めればいい。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "……心臓に刃が刺さるのを黙って待っていろと？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_235",
-          "text": "お前を殺すのも、容易いことではない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "ゴホゴホ……ハッ……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "……なるほど、本気で私の命を奪うつもりはないか。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "思ってもみなかったな。アスカロンの他にも、これほど凄腕のサルカズ暗殺者をロドスが抱えていたとは。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_235",
-          "text": "俺は暗殺者ではない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_235",
-          "text": "必要に迫られない限り、俺はいかなるサルカズであろうと傷つけたくはない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "だが君は我々の敵のために働いているのだぞ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_235",
-          "text": "ヴィクトリア人は……敵なのか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_235",
-          "text": "俺が目にしたのは、傷だらけの兵士たちが故郷の土地で、生きるためにもがき苦しむ姿だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_235",
-          "text": "そしてお前とテレシス、お前たちはサルカズをあらゆる者にとっての敵に仕立て上げている。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "以前から、機会があれば君たちとは語らいたいと思っていた。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "しかし残念だ。我々の初めての出会いが、戦場であるとはな――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "――ロドスのエリートオペレーター。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サルカズ戦士",
-          "speakerId": "avg_npc_419_1",
-          "text": "また消えた？　うっ、地面が元に戻ったぞ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "あとわずかだったな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "もう少しで彼を捕らえられるところであった。あのアーツは特殊だ……神経に影響を与えて幻覚を見せているわけではなかったが……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "……エネルギー変換の痕跡が地面に残っているな。もしや……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サルカズ戦士",
-          "speakerId": "avg_npc_419_1",
-          "text": "将軍、奴らが全員消えました！　あのヴィクトリア兵たちが――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "フッ……彼が私に付き合って時間稼ぎをしていたのは、あの重傷の兵士たちを一人残らず救い出すためか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サルカズ戦士",
-          "speakerId": "avg_npc_419_1",
-          "text": "では……追いかけますか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "追いつけると思うか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "あとわずかとは言ったが――あのレベルの術師を相手にした「わずかな差」とは、「不可能」と同義だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サルカズ戦士",
-          "speakerId": "avg_npc_419_1",
-          "text": "クソッ！　今日ここで反対勢力たちを一網打尽にできる予定だったのに、傭兵が裏切って、謎の術師まで邪魔しにしゃしゃり出てくるなんて！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "ロドスの所業よ……これがロドスか。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "我々は敵を一網打尽にするチャンスを失ったが、奴らも損失が少ないと言えまい。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "奴らは本来暗がりに身を隠す機会があった。しかし一人一人表立った行動を余儀なくされた。戦力を明かすことは奴らにとって、戦術上大きな敗北と言えよう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "暗殺者、空間幻術に長けた術師、それとあのいまだ姿を現していないバンシー……さてロドスの切り札は、あとどれほど残っているのだろうな？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サルカズ戦士",
-          "speakerId": "avg_npc_419_1",
-          "text": "将軍、もう対策を？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "……ひとまずここを離れるとしよう。ロドスに対処する前に、本分をわきまえぬ小物を片づけねば。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_235",
-          "text": "とりあえずはここでいい。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルン",
-          "speakerId": "avg_4039_horn_1",
-          "text": "ここは……工場の外の通り？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルン",
-          "speakerId": "avg_4039_horn_1",
-          "text": "あ……あなたは短刀で空間を切り裂いたのですか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_235",
-          "text": "自分の感覚を簡単に信じないことだ。相手の両目に誤った認識を刷り込む方が、空間に影響を与えるよりはるかに容易だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルン",
-          "speakerId": "avg_4039_horn_1",
-          "text": "あなたは……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルン",
-          "speakerId": "avg_4039_horn_1",
-          "text": "私を救ってくださいました、しかも今回だけではありません。目は正しい答えを教えてくれないかもしれませんが、私の感覚は嘘をつかないはずです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルン",
-          "speakerId": "avg_4039_horn_1",
-          "text": "あなたは一体何者ですか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_235",
-          "text": "Misery。俺はロドスのMiseryだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルン",
-          "speakerId": "avg_4039_horn_1",
-          "text": "ロドス？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルン",
-          "speakerId": "avg_4039_horn_1",
-          "text": "申し訳ありませんが……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Misery",
-          "speakerId": "avg_npc_235",
-          "text": "後々バグパイプから話を聞く機会があるさ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルン",
-          "speakerId": "avg_4039_horn_1",
-          "text": "バグパイプ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Misery",
-          "speakerId": "avg_npc_235",
-          "text": "今現在の彼女は俺の同僚のようなものだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Misery",
-          "speakerId": "avg_npc_235",
-          "text": "それに……俺の最も親しい友人が、最後に友誼を結んだ相手でもあるんだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルン",
-          "speakerId": "avg_4039_horn_1",
-          "text": "どうやら私は随分と情報が遅れているようです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルン",
-          "speakerId": "avg_4039_horn_1",
-          "text": "バグパイプのために喜ぶ前に、もう一度あなたとロドスに感謝を申し上げます。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Misery",
-          "speakerId": "avg_npc_235",
-          "text": "今後も顔を合わせる機会はある。礼はいい、急ぎこの場を離れろ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Misery",
-          "speakerId": "avg_npc_235",
-          "text": "マンフレッドは俺のアーツの真実を解明しかけていた。いつ追いついてきてもおかしくはない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルン",
-          "speakerId": "avg_4039_horn_1",
-          "text": "……いいえ。恐らく、彼は今別件の処理で忙しいはずです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Misery",
-          "speakerId": "avg_npc_235",
-          "text": "ダブリンのことか。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Misery",
-          "speakerId": "avg_npc_235",
-          "text": "ヒロック郡のマンドラゴラ……あいつはこの工場から逃れられはしないだろう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルン",
-          "speakerId": "avg_4039_horn_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Misery",
-          "speakerId": "avg_npc_235",
-          "text": "……自らの手で戦友の仇を討てないことを惜しんでいるか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルン",
-          "speakerId": "avg_4039_horn_1",
-          "text": "私は……ただ哀れに思うだけです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルン",
-          "speakerId": "avg_4039_horn_1",
-          "text": "救い出された身で、彼女を殺す機会を逃したことを後悔して立ち尽くす自分を……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ホルン",
-          "speakerId": "avg_4039_horn_1",
-          "text": "そして、とっくに救いのない彼女を。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンドラゴラ",
-          "speakerId": "avg_npc_233_1",
-          "text": "おかしい、あんたあいつらに言ってあったのよね？　どうしてここに迎えが来てないのよ？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ダブリン兵士",
-          "speakerId": "avg_npc_244",
-          "text": "私は――うっ！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンドラゴラ",
-          "speakerId": "avg_npc_233_1",
-          "text": "何――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ダブリン兵士",
-          "speakerId": "avg_npc_244",
-          "text": "サルカズ！　サルカズです！　すぐに逃げ――"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンドラゴラ",
-          "speakerId": "avg_npc_233_1",
-          "text": "……見つかったの？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンドラゴラ",
-          "speakerId": "avg_npc_233_1",
-          "text": "ダメ、ダメよ、「スパイ」、行くわよ――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンドラゴラ",
-          "speakerId": "avg_npc_233_1",
-          "text": "あの扉から出るわよ！　ほんの十メートル、十メートル先の扉に着けば、あたしたちはすぐに……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ターラーのスパイ",
-          "speakerId": "avg_npc_421_1",
-          "text": "わ……わかった、行こう……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンドラゴラ",
-          "speakerId": "avg_npc_233_1",
-          "text": "昔みたいに走るの。あんたがあたしの手を引っ張って、二人で走ったら、貴族のガキどもは誰もあたしたちに追いつけなかった……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンドラゴラ",
-          "speakerId": "avg_npc_233_1",
-          "text": "石像！　止めろ、あいつらを止めなさい！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンドラゴラ",
-          "speakerId": "avg_npc_233_1",
-          "text": "っ、このバカ！！！　こんな時に、なんであんたたちまで使えないのよ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ターラーのスパイ",
-          "speakerId": "avg_npc_421_1",
-          "text": "マンドラゴラ……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンドラゴラ",
-          "speakerId": "avg_npc_233_1",
-          "text": "何？　今は話しかけないでって言ったでしょ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ターラーのスパイ",
-          "speakerId": "avg_npc_421_1",
-          "text": "俺はここまでだ。行け。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンドラゴラ",
-          "speakerId": "avg_npc_233_1",
-          "text": "あんた何言ってんの……？　あたしが今までやったのは、全部……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ターラーのスパイ",
-          "speakerId": "avg_npc_421_1",
-          "text": "……俺を救うためか、それともリーダーから褒美をもらうためか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンドラゴラ",
-          "speakerId": "avg_npc_233_1",
-          "text": "どっちだって同じでしょ。「スパイ」、あんた何バカなこと言ってんの？　あと五メートル、もうちょっとだよ！　ここから出れば仲間が外にいんのよ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ターラーのスパイ",
-          "speakerId": "avg_npc_421_1",
-          "text": "いないよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンドラゴラ",
-          "speakerId": "avg_npc_233_1",
-          "text": "は？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ターラーのスパイ",
-          "speakerId": "avg_npc_421_1",
-          "text": "マンドラゴラ……リーダーは……とっくに俺を見捨てている……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンドラゴラ",
-          "speakerId": "avg_npc_233_1",
-          "text": "「スパイ」！！！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンドラゴラ",
-          "speakerId": "avg_npc_233_1",
-          "text": "クソっ、クソ――石よ、あいつらを突き刺せ、サルカズどもを刺し尽くせ！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンドラゴラ",
-          "speakerId": "avg_npc_233_1",
-          "text": "「スパイ」、安心して。あんたは矢を一発受けたくらいじゃ絶対死なないわ。あと三メートルよ、あんたを担いででも――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ターラーのスパイ",
-          "speakerId": "avg_npc_421_1",
-          "text": "……もう行け。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンドラゴラ",
-          "speakerId": "avg_npc_233_1",
-          "text": "いや……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ターラーのスパイ",
-          "speakerId": "avg_npc_421_1",
-          "text": "もし逃げ延びても……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ターラーのスパイ",
-          "speakerId": "avg_npc_421_1",
-          "text": "リーダー……リーダーの所には戻るな。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンドラゴラ",
-          "speakerId": "avg_npc_233_1",
-          "text": "……っ。死んだの？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンドラゴラ",
-          "speakerId": "avg_npc_233_1",
-          "text": "なんで。……あんたなにこんな簡単に死んでんのよ……あたしは……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンドラゴラ",
-          "speakerId": "avg_npc_233_1",
-          "text": "キリアン、キリアン……このバカ！　こんなとこで死ぬなんて、絶対に許さないんだから！　キリアン、起きなさい、起きろっつってんでしょ！　目を開けなさいよ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "焦る必要はない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "君に残された時間もわずかだ、マンドラゴラ。ターラーの友人とはすぐにまた会える。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンドラゴラ",
-          "speakerId": "avg_npc_233_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンドラゴラ",
-          "speakerId": "avg_npc_233_1",
-          "text": "ハ……ハハハハッ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンドラゴラ",
-          "speakerId": "avg_npc_233_1",
-          "text": "マンフレッド、あんたまたあたしから十一人の命を奪ったわね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンドラゴラ",
-          "speakerId": "avg_npc_233_1",
-          "text": "やっとの思いで……やっとの思いでサルカズをあんなにたくさんぶち殺してやったのに。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンフレッド",
-          "speakerId": "avg_npc_404_1",
-          "text": "……それがここで君が死なねばならぬ理由だ。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンドラゴラ",
-          "speakerId": "avg_npc_233_1",
-          "text": "ちょうどよかった……あんたたちの方から来てくれるなんてね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マンドラゴラ",
-          "speakerId": "avg_npc_233_1",
-          "text": "一人残らず、泥になるまで全員つぶしてやるわ。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "クロージャさん、通信信号が傍受されていたりしませんか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クロージャ",
+      "speakerId": "avg_npc_411_1",
+      "isRemote": false,
+      "text": "ありえないよ、アーミヤちゃん！　信号送信機には三重処理も施してるんだから。もしサルカズたちにこんな技術があれば、ロドスはテレシスに百回は攻め落とされてるよ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "……ドクター、私はクロージャさんを信じています。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "彼らはきっと別の方法を使ってるんです……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェイスト",
+      "speakerId": "avg_npc_402_1",
+      "isRemote": false,
+      "text": "アーミヤさん、もうすぐ合流地点に着くよ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェイスト",
+      "speakerId": "avg_npc_402_1",
+      "isRemote": false,
+      "text": "第六隊と合流さえできれば、地下の応援部隊と連絡を取ることができる。地下に戻ったら、サルカズは俺たちを追えなくなるはずだ……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "シージ",
+      "speakerId": "avg_npc_407_1",
+      "isRemote": false,
+      "text": "……止めろ。そっちの道は駄目だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェイスト",
+      "speakerId": "avg_npc_402_1",
+      "isRemote": false,
+      "text": "は？　どうしてだ……って待て、シージさん、どうしてあんたたちがいるんだ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェイスト",
+      "speakerId": "avg_npc_402_1",
+      "isRemote": false,
+      "text": "地下にいたはずじゃ……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "シージ",
+      "speakerId": "avg_npc_407_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "シージ",
+      "speakerId": "avg_npc_407_1",
+      "isRemote": false,
+      "text": "第六隊の者たちは……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェイスト",
+      "speakerId": "avg_npc_402_1",
+      "isRemote": false,
+      "text": "第六隊がどうした？　どうしてそんな顔してるんだ……って、インドラさん、手に血が！？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "インドラ",
+      "speakerId": "avg_155_tiger_1",
+      "isRemote": false,
+      "text": "お前らの戦士は、あいつらは……全員犠牲になった。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェイスト",
+      "speakerId": "avg_npc_402_1",
+      "isRemote": false,
+      "text": "そ……そんなバカな！　第六隊は俺たちより前にいんだ。どうしてサルカズに襲われるんだよ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "シージ",
+      "speakerId": "avg_npc_407_1",
+      "isRemote": false,
+      "text": "原因を分析している時間はない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "シージ",
+      "speakerId": "avg_npc_407_1",
+      "isRemote": false,
+      "text": "ドクター、第六隊の者たちは……我々を追っているサルカズ兵たちによって殺されたわけではない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "それはつまり……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "シージ",
+      "speakerId": "avg_npc_407_1",
+      "isRemote": false,
+      "text": "彼らが遭遇した人物は、非常に恐ろしいアーツを扱っている。彼らが死んだ現場は……まるで虐殺だった。多くの戦士は武器すら抜けずに絶命した。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "インドラ",
+      "speakerId": "avg_155_tiger_1",
+      "isRemote": false,
+      "text": "あれはほんとにアーツなのか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "インドラ",
+      "speakerId": "avg_155_tiger_1",
+      "isRemote": false,
+      "text": "俺は信じないぜ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "インドラ",
+      "speakerId": "avg_155_tiger_1",
+      "isRemote": false,
+      "text": "赤い虫みたいなのが戦士たちの胸を引き裂いたんだ。ヴィーナ、お前も見ただろ、あれは本物の化け物だ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "シージ",
+      "speakerId": "avg_npc_407_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "……普通のサルカズの仕業ではありません。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "方向を変える必要があります。フェイストさん、他に使える道はありますか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェイスト",
+      "speakerId": "avg_npc_402_1",
+      "isRemote": false,
+      "text": "あるよ。でもその道には迎えがいない、万一サルカズに遭遇すれば……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "シージ",
+      "speakerId": "avg_npc_407_1",
+      "isRemote": false,
+      "text": "また苦戦を強いられるな。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "27_g8_jail"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルン",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "物陰に隠れて！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロッベン",
+      "speakerId": "avg_npc_413_1",
+      "isRemote": false,
+      "text": "ホルンさん、これは一体何です！？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロッベン",
+      "speakerId": "avg_npc_413_1",
+      "isRemote": false,
+      "text": "サルカズがこちらに投げてきたのは爆弾ですか？　しかし全然見えな――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルン",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "……アーツよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルン",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "上に注意して！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロッベン",
+      "speakerId": "avg_npc_413_1",
+      "isRemote": false,
+      "text": "み……見えました……血の色をしたものが宙に一瞬現れました！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルン",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "下がって！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロッベン",
+      "speakerId": "avg_npc_413_1",
+      "isRemote": false,
+      "text": "こんな落雷のようなものが、アーツだというんですか！？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロッベン",
+      "speakerId": "avg_npc_413_1",
+      "isRemote": false,
+      "text": "魔族の化け物め……！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "まだかくれんぼを続ける気なのか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "君の言う「戦う」とは、地べたを無様に転げ回ることではないだろうな、白狼？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロッベン",
+      "speakerId": "avg_npc_413_1",
+      "isRemote": false,
+      "text": "空に……真っ赤な光が五本も……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロッベン",
+      "speakerId": "avg_npc_413_1",
+      "isRemote": false,
+      "text": "ホルンさん、これじゃまったくチャンスがありませんよ――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルン",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "いいえ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルン",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "どれほど強力なアーツでも……相手は一人よ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルン",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "ヴィクトリアがどのようにしてサルカズに勝利してきたか、知っているでしょう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロッベン",
+      "speakerId": "avg_npc_413_1",
+      "isRemote": false,
+      "text": "つまりホルンさんは……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルン",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "クロスボウの矢はどれだけ残っている？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルン",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "援護して。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロッベン",
+      "speakerId": "avg_npc_413_1",
+      "isRemote": false,
+      "text": "わかりました！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "まったく、児戯に等しい――"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルン",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "今が……チャンスよ。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "アーツに紛れて逃げるつもりか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "そうはさせぬ。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "――！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルン",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "……言ったはずよ。一人でも私の兵士が残っている限り、私が逃げることはないと。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "やはり君は素晴らしい、白狼。ここで私に向かってくる勇敢さは並みの者には持ちえない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "だからこそ残念だ……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルン",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "――くっ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "サルカズならばアーツだけで戦うと思っていたか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "剣だけでも――君たちをまとめて相手するのには十分だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルン",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "私に勝つのは……難しいことではないかもしれない……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルン",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "でも私を打ち倒す気なら……そう、簡単にはいかないわよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "それでこそ白狼というべきか。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "君が勇敢であるからこそ、この戦いに時間をかけずにすむ――"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "鋭い刺突が繰り出された。剣の切っ先が今まさに彼女に突き刺さろうという瞬間、目の前にいた兵士は忽然と消えた。\nまるで背後の壁に溶け込んだかのように、小さな気配一つ残さず跡形もなく消失した。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "未知のアーツ……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "警戒せよ！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "っ……短刀がひとりでに現れただと？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "いや、違う……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "反応が早いな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "生憎と、みすみす体に穴を開ける趣味はないのでね。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サルカズ戦士",
+      "speakerId": "avg_npc_419_1",
+      "isRemote": false,
+      "text": "ターゲット発見！　奴を狙え！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サルカズ戦士",
+      "speakerId": "avg_npc_419_1",
+      "isRemote": false,
+      "text": "どういうことだ？　消えた！？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サルカズ戦士",
+      "speakerId": "avg_npc_419_1",
+      "isRemote": false,
+      "text": "は、速すぎる！　当たらない！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サルカズ戦士",
+      "speakerId": "avg_npc_419_1",
+      "isRemote": false,
+      "text": "盾を構えろ、早く、*スラング*、瞬間移動でもしてるのか？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "瞬間移動だと？　そんなアーツがあるはず……術を放った痕跡すらない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "あるいは……まやかしか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "皆の者、謀られるな！　とにかく攻撃を放て！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "姿は見えずとも、敵が我らの前にいる限り逃してはならない！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "当たった……か？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サルカズ戦士",
+      "speakerId": "avg_npc_419_1",
+      "isRemote": false,
+      "text": "将軍、奴の身体が見当たりません。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サルカズ戦士",
+      "speakerId": "avg_npc_419_1",
+      "isRemote": false,
+      "text": "ですが地面がめちゃくちゃになるほどの、面状攻撃でした……一体どうやったらあれから逃れられるのか。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サルカズ戦士",
+      "speakerId": "avg_npc_419_1",
+      "isRemote": false,
+      "text": "将軍、後ろです！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "度胸があるなら姿を現すといい。苦しまずに逝かせてやろう。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "そうか？"
+    },
+    {
+      "type": "background",
+      "backgroundId": "27_g8_jail"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "マンフレッド、さっきの言葉は悪くなかった。だが……正しいのは半分だけだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "半分だと？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "サルカズの武器はアーツだけではない――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "――しかし、剣だけがサルカズの武器でもない。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サルカズ戦士",
+      "speakerId": "avg_npc_419_1",
+      "isRemote": false,
+      "text": "あああ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サルカズ戦士",
+      "speakerId": "avg_npc_419_1",
+      "isRemote": false,
+      "text": "な、んだこれ。沈む！　地面が、地面が急に柔らかく――空気に飲み込まれる！　きゅ、急に剣が握れなくなった！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サルカズ戦士",
+      "speakerId": "avg_npc_419_1",
+      "isRemote": false,
+      "text": "将軍、あなたも沈んでいますよ！？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "27_g8_jail"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "……皆の者、動くな。そして慌てるな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "短刀が彼のアーツユニットだ。これは強力なアーツだが、所詮アーツにすぎない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "冷静なのはいいことだ……部下の命を救ったな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "だが……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "……くっ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "地面が……胸まで来ている……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "剣が……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "お前の剣の腕なら、俺の攻撃を防ぐのは容易い。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "だがお前が力むほど、地面に飲み込まれるのも早くなる。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "この終わりを望むのか？　……こんな自滅の結末を？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "くっ……ゴホゴホッ……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サルカズ戦士",
+      "speakerId": "avg_npc_419_1",
+      "isRemote": false,
+      "text": "将軍――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "来るな！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "あるいは、お前も部下と同じように、動きを止めればいい。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "……心臓に刃が刺さるのを黙って待っていろと？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "お前を殺すのも、容易いことではない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "ゴホゴホ……ハッ……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "……なるほど、本気で私の命を奪うつもりはないか。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "思ってもみなかったな。アスカロンの他にも、これほど凄腕のサルカズ暗殺者をロドスが抱えていたとは。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "俺は暗殺者ではない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "必要に迫られない限り、俺はいかなるサルカズであろうと傷つけたくはない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "だが君は我々の敵のために働いているのだぞ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "ヴィクトリア人は……敵なのか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "俺が目にしたのは、傷だらけの兵士たちが故郷の土地で、生きるためにもがき苦しむ姿だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "そしてお前とテレシス、お前たちはサルカズをあらゆる者にとっての敵に仕立て上げている。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "以前から、機会があれば君たちとは語らいたいと思っていた。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "しかし残念だ。我々の初めての出会いが、戦場であるとはな――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "――ロドスのエリートオペレーター。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サルカズ戦士",
+      "speakerId": "avg_npc_419_1",
+      "isRemote": false,
+      "text": "また消えた？　うっ、地面が元に戻ったぞ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "あとわずかだったな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "もう少しで彼を捕らえられるところであった。あのアーツは特殊だ……神経に影響を与えて幻覚を見せているわけではなかったが……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "……エネルギー変換の痕跡が地面に残っているな。もしや……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サルカズ戦士",
+      "speakerId": "avg_npc_419_1",
+      "isRemote": false,
+      "text": "将軍、奴らが全員消えました！　あのヴィクトリア兵たちが――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "フッ……彼が私に付き合って時間稼ぎをしていたのは、あの重傷の兵士たちを一人残らず救い出すためか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サルカズ戦士",
+      "speakerId": "avg_npc_419_1",
+      "isRemote": false,
+      "text": "では……追いかけますか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "追いつけると思うか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "あとわずかとは言ったが――あのレベルの術師を相手にした「わずかな差」とは、「不可能」と同義だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サルカズ戦士",
+      "speakerId": "avg_npc_419_1",
+      "isRemote": false,
+      "text": "クソッ！　今日ここで反対勢力たちを一網打尽にできる予定だったのに、傭兵が裏切って、謎の術師まで邪魔しにしゃしゃり出てくるなんて！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "ロドスの所業よ……これがロドスか。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "我々は敵を一網打尽にするチャンスを失ったが、奴らも損失が少ないと言えまい。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "奴らは本来暗がりに身を隠す機会があった。しかし一人一人表立った行動を余儀なくされた。戦力を明かすことは奴らにとって、戦術上大きな敗北と言えよう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "暗殺者、空間幻術に長けた術師、それとあのいまだ姿を現していないバンシー……さてロドスの切り札は、あとどれほど残っているのだろうな？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サルカズ戦士",
+      "speakerId": "avg_npc_419_1",
+      "isRemote": false,
+      "text": "将軍、もう対策を？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "……ひとまずここを離れるとしよう。ロドスに対処する前に、本分をわきまえぬ小物を片づけねば。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "27_g10_lightinduarea_street_n"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "とりあえずはここでいい。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルン",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "ここは……工場の外の通り？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルン",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "あ……あなたは短刀で空間を切り裂いたのですか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "自分の感覚を簡単に信じないことだ。相手の両目に誤った認識を刷り込む方が、空間に影響を与えるよりはるかに容易だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルン",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "あなたは……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルン",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "私を救ってくださいました、しかも今回だけではありません。目は正しい答えを教えてくれないかもしれませんが、私の感覚は嘘をつかないはずです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルン",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "あなたは一体何者ですか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "Misery。俺はロドスのMiseryだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルン",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "ロドス？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルン",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "申し訳ありませんが……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Misery",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "後々バグパイプから話を聞く機会があるさ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルン",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "バグパイプ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Misery",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "今現在の彼女は俺の同僚のようなものだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Misery",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "それに……俺の最も親しい友人が、最後に友誼を結んだ相手でもあるんだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルン",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "どうやら私は随分と情報が遅れているようです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルン",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "バグパイプのために喜ぶ前に、もう一度あなたとロドスに感謝を申し上げます。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Misery",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "今後も顔を合わせる機会はある。礼はいい、急ぎこの場を離れろ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Misery",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "マンフレッドは俺のアーツの真実を解明しかけていた。いつ追いついてきてもおかしくはない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルン",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "……いいえ。恐らく、彼は今別件の処理で忙しいはずです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Misery",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "ダブリンのことか。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Misery",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "ヒロック郡のマンドラゴラ……あいつはこの工場から逃れられはしないだろう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルン",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Misery",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "……自らの手で戦友の仇を討てないことを惜しんでいるか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルン",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "私は……ただ哀れに思うだけです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルン",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "救い出された身で、彼女を殺す機会を逃したことを後悔して立ち尽くす自分を……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ホルン",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "そして、とっくに救いのない彼女を。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "27_g8_jail"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンドラゴラ",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "おかしい、あんたあいつらに言ってあったのよね？　どうしてここに迎えが来てないのよ？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ダブリン兵士",
+      "speakerId": "avg_npc_244",
+      "isRemote": false,
+      "text": "私は――うっ！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンドラゴラ",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "何――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ダブリン兵士",
+      "speakerId": "avg_npc_244",
+      "isRemote": false,
+      "text": "サルカズ！　サルカズです！　すぐに逃げ――"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンドラゴラ",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "……見つかったの？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンドラゴラ",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "ダメ、ダメよ、「スパイ」、行くわよ――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンドラゴラ",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "あの扉から出るわよ！　ほんの十メートル、十メートル先の扉に着けば、あたしたちはすぐに……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ターラーのスパイ",
+      "speakerId": "avg_npc_421_1",
+      "isRemote": false,
+      "text": "わ……わかった、行こう……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンドラゴラ",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "昔みたいに走るの。あんたがあたしの手を引っ張って、二人で走ったら、貴族のガキどもは誰もあたしたちに追いつけなかった……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンドラゴラ",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "石像！　止めろ、あいつらを止めなさい！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンドラゴラ",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "っ、このバカ！！！　こんな時に、なんであんたたちまで使えないのよ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ターラーのスパイ",
+      "speakerId": "avg_npc_421_1",
+      "isRemote": false,
+      "text": "マンドラゴラ……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンドラゴラ",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "何？　今は話しかけないでって言ったでしょ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ターラーのスパイ",
+      "speakerId": "avg_npc_421_1",
+      "isRemote": false,
+      "text": "俺はここまでだ。行け。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンドラゴラ",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "あんた何言ってんの……？　あたしが今までやったのは、全部……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ターラーのスパイ",
+      "speakerId": "avg_npc_421_1",
+      "isRemote": false,
+      "text": "……俺を救うためか、それともリーダーから褒美をもらうためか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンドラゴラ",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "どっちだって同じでしょ。「スパイ」、あんた何バカなこと言ってんの？　あと五メートル、もうちょっとだよ！　ここから出れば仲間が外にいんのよ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ターラーのスパイ",
+      "speakerId": "avg_npc_421_1",
+      "isRemote": false,
+      "text": "いないよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンドラゴラ",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "は？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ターラーのスパイ",
+      "speakerId": "avg_npc_421_1",
+      "isRemote": false,
+      "text": "マンドラゴラ……リーダーは……とっくに俺を見捨てている……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンドラゴラ",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "「スパイ」！！！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンドラゴラ",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "クソっ、クソ――石よ、あいつらを突き刺せ、サルカズどもを刺し尽くせ！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンドラゴラ",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "「スパイ」、安心して。あんたは矢を一発受けたくらいじゃ絶対死なないわ。あと三メートルよ、あんたを担いででも――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ターラーのスパイ",
+      "speakerId": "avg_npc_421_1",
+      "isRemote": false,
+      "text": "……もう行け。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンドラゴラ",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "いや……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ターラーのスパイ",
+      "speakerId": "avg_npc_421_1",
+      "isRemote": false,
+      "text": "もし逃げ延びても……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ターラーのスパイ",
+      "speakerId": "avg_npc_421_1",
+      "isRemote": false,
+      "text": "リーダー……リーダーの所には戻るな。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンドラゴラ",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "……っ。死んだの？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンドラゴラ",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "なんで。……あんたなにこんな簡単に死んでんのよ……あたしは……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンドラゴラ",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "キリアン、キリアン……このバカ！　こんなとこで死ぬなんて、絶対に許さないんだから！　キリアン、起きなさい、起きろっつってんでしょ！　目を開けなさいよ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "焦る必要はない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "君に残された時間もわずかだ、マンドラゴラ。ターラーの友人とはすぐにまた会える。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンドラゴラ",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンドラゴラ",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "ハ……ハハハハッ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンドラゴラ",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "マンフレッド、あんたまたあたしから十一人の命を奪ったわね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンドラゴラ",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "やっとの思いで……やっとの思いでサルカズをあんなにたくさんぶち殺してやったのに。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンフレッド",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "……それがここで君が死なねばならぬ理由だ。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンドラゴラ",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "ちょうどよかった……あんたたちの方から来てくれるなんてね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マンドラゴラ",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "一人残らず、泥になるまで全員つぶしてやるわ。"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": []

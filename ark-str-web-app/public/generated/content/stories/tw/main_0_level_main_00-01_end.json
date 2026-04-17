@@ -6,7 +6,7 @@
   "title": "坍塌",
   "storyCode": "0-1",
   "avgTag": "行動後",
-  "sourcePath": "vendor/ArknightsGamedata/tw/gamedata/story/obt/main/level_main_00-01_end.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/tw/gamedata/story/obt/main/level_main_00-01_end.txt",
   "sourceHash": "84d26a1cec32a58600e4bdaeecc707928d981786d41ae650ff29e2df38d24e00",
   "bodyAvailable": true,
   "blocks": [
@@ -15,15 +15,21 @@
       "text": "第一关（后）"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_cher_1"
+    },
+    {
       "type": "dialogue",
       "speakerName": "整合運動成員",
       "speakerId": "char_1002_nsabr",
+      "isRemote": false,
       "text": "呃 ......"
     },
     {
       "type": "dialogue",
       "speakerName": "整合運動成員",
       "speakerId": "char_1002_nsabr",
+      "isRemote": false,
       "text": "你們不是......烏薩斯......人......"
     },
     {
@@ -33,30 +39,35 @@
       "type": "dialogue",
       "speakerName": "近衛幹員",
       "speakerId": "char_013_riop",
+      "isRemote": false,
       "text": "呼，呼......"
     },
     {
       "type": "dialogue",
       "speakerName": "杜賓",
       "speakerId": "char_130_doberm",
+      "isRemote": false,
       "text": "看來，他們沒來得及聯絡同伙。"
     },
     {
       "type": "dialogue",
       "speakerName": "杜賓",
       "speakerId": "char_130_doberm",
+      "isRemote": false,
       "text": "......做得不錯，Dr.{@nickname}。"
     },
     {
       "type": "dialogue",
       "speakerName": "杜賓",
       "speakerId": "char_130_doberm",
+      "isRemote": false,
       "text": "是該客觀評價你的能力了。"
     },
     {
       "type": "dialogue",
       "speakerName": "醫療幹員",
       "speakerId": "char_016_medic",
+      "isRemote": false,
       "text": "咦，阿米婭......她去......"
     },
     {
@@ -66,48 +77,56 @@
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "沒事吧？"
     },
     {
       "type": "dialogue",
       "speakerName": "女性",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "啊？謝，謝......"
     },
     {
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "沒事的，這是我們......"
     },
     {
       "type": "dialogue",
       "speakerName": "女性",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "......你，你也是感染者？"
     },
     {
       "type": "dialogue",
       "speakerName": "女性",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "你們要做什麼！我，我的孩子......別傷害我們，求你了，我......"
     },
     {
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "去找個安全的地方藏身。"
     },
     {
       "type": "dialogue",
       "speakerName": "女性",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "嗚，嗚......寬恕我們......饒了我......"
     },
     {
@@ -117,18 +136,21 @@
       "type": "dialogue",
       "speakerName": "醫療幹員",
       "speakerId": "char_016_medic",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "各位休息好了嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "醫療幹員",
       "speakerId": "char_016_medic",
+      "isRemote": false,
       "text": "啊，沒事......"
     },
     {
@@ -139,27 +161,28 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "Dr.{@nickname}......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "類似的問題，你以前也問過呢。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Dr.{@nickname}......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "類似的問題，你以前也問過呢。"
     },
     {
       "type": "choice",
@@ -169,99 +192,112 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "因為我，得了病。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "我，還有杜賓，羅德島的大多數人，都得了病。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "就連剛才那些整合運動的成員也是......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "我們得了很重的病，讓人害怕的病......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "“礦石病”。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "杜賓",
-          "speakerId": "char_130_doberm",
-          "text": "......得了礦石病的人，就是感染者。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "杜賓......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "杜賓",
-          "speakerId": "char_130_doberm",
-          "text": "烏薩斯向來對感染者十分嚴苛。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "杜賓",
-          "speakerId": "char_130_doberm",
-          "text": "說起來，誰又不是呢。只是烏薩斯在這方面的舉措，尤為冷酷罷了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "杜賓",
-          "speakerId": "char_130_doberm",
-          "text": "宣傳上讓民眾恐懼感染者，到了抓捕感染者的時候，民眾自然就習以為常，甚至拍手稱快。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "杜賓",
-          "speakerId": "char_130_doberm",
-          "text": "所以，整合運動才選擇了這裡......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "只是......這次，似乎不再是簡單的示威遊行了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "杜賓",
-          "speakerId": "char_130_doberm",
-          "text": "這一次，他們開始大規模地使用暴力。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "杜賓",
-          "speakerId": "char_130_doberm",
-          "text": "等到烏薩斯政府平息了事件，切爾諾伯格的感染者，只會遭到更殘酷的對待。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "杜賓",
-          "speakerId": "char_130_doberm",
-          "text": "......與之相反，有了Dr.{@nickname}你，羅德島的處境，也許能有所改善。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "因為我，得了病。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "我，還有杜賓，羅德島的大多數人，都得了病。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "就連剛才那些整合運動的成員也是......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "我們得了很重的病，讓人害怕的病......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "“礦石病”。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜賓",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "......得了礦石病的人，就是感染者。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "杜賓......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜賓",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "烏薩斯向來對感染者十分嚴苛。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜賓",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "說起來，誰又不是呢。只是烏薩斯在這方面的舉措，尤為冷酷罷了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜賓",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "宣傳上讓民眾恐懼感染者，到了抓捕感染者的時候，民眾自然就習以為常，甚至拍手稱快。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜賓",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "所以，整合運動才選擇了這裡......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "只是......這次，似乎不再是簡單的示威遊行了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜賓",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "這一次，他們開始大規模地使用暴力。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜賓",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "等到烏薩斯政府平息了事件，切爾諾伯格的感染者，只會遭到更殘酷的對待。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜賓",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "......與之相反，有了Dr.{@nickname}你，羅德島的處境，也許能有所改善。"
     },
     {
       "type": "choice",
@@ -281,177 +317,202 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "杜賓",
-          "speakerId": "char_130_doberm",
-          "text": "凱爾希和阿米婭都和我說過，你是最頂尖的礦石病研究學者。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "杜賓",
-          "speakerId": "char_130_doberm",
-          "text": "......現在，你陷入了記憶喪失的困境，我很懷疑，你還能不能再派上用場。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "唔唔，杜賓教官，這麼說好過分！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "杜賓",
-          "speakerId": "char_130_doberm",
-          "text": "......也許就和指揮一樣，等你稍作複習，說不定就能重新掌握那些理論？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "杜賓",
-          "speakerId": "char_130_doberm",
-          "text": "畢竟你還是前線指揮官......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "杜賓",
-          "speakerId": "char_130_doberm",
-          "text": "其實之前，我怎麼也沒法把神經學博士和戰術家聯繫在一起......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "杜賓",
-          "speakerId": "char_130_doberm",
-          "text": "看到你本人後，似乎好理解了一些。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "杜賓",
-          "speakerId": "char_130_doberm",
-          "text": "畢竟羅德島本身就很像你的專業。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "醫療幹員",
-          "speakerId": "char_016_medic",
-          "text": "喂！你！別跑！該注射藥劑了！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "近衛幹員",
-          "speakerId": "char_013_riop",
-          "text": "啊？啊？我沒事，我沒事呀！我，我還不需要治療！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "醫療幹員",
-          "speakerId": "char_016_medic",
-          "text": "是定量藥劑，延緩感染症狀的！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "醫療幹員",
-          "speakerId": "char_016_medic",
-          "text": "你剛才不是還說頭暈嗎！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "近衛幹員",
-          "speakerId": "char_013_riop",
-          "text": "那不是同一種症狀吧！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "醫療幹員",
-          "speakerId": "char_016_medic",
-          "text": "要是一會兒你的身體又出了問題，再碰上戰鬥怎麼辦？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "醫療幹員",
-          "speakerId": "char_016_medic",
-          "text": "為了大家的安全你也該好好注意！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "近衛幹員",
-          "speakerId": "char_013_riop",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "醫療幹員",
-          "speakerId": "char_016_medic",
-          "text": "別動！我要扎了！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "近衛幹員",
-          "speakerId": "char_013_riop",
-          "text": "啊！！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "杜賓",
-          "speakerId": "char_130_doberm",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "杜賓",
-          "speakerId": "char_130_doberm",
-          "text": "......羅德島就是這樣，既要找出治療感染者的辦法，又要減少感染者帶來的問題。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "——是的。光是研究治療方法，或者僅僅去平息種種爭端，都是不夠的。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "我們必須直面感染者帶來的所有問題。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "只有這樣，羅德島才能替感染者爭取到一線生機......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "杜賓",
-          "speakerId": "char_130_doberm",
-          "text": "作為感染者，我們也比普通人更能理解感染者。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "杜賓",
-          "speakerId": "char_130_doberm",
-          "text": "無論是普通人還是感染者，無論是和平還是紛爭，羅德島想要解決問題，而不是任由仇恨和疾病蔓延肆虐。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "杜賓",
-          "speakerId": "char_130_doberm",
-          "text": "Dr.{@nickname}，這可能也會是你職責的一部分。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "杜賓",
-          "speakerId": "char_130_doberm",
-          "text": "......至少，這是我粗淺的請求。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜賓",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "凱爾希和阿米婭都和我說過，你是最頂尖的礦石病研究學者。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜賓",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "......現在，你陷入了記憶喪失的困境，我很懷疑，你還能不能再派上用場。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "唔唔，杜賓教官，這麼說好過分！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜賓",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "......也許就和指揮一樣，等你稍作複習，說不定就能重新掌握那些理論？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜賓",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "畢竟你還是前線指揮官......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜賓",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "其實之前，我怎麼也沒法把神經學博士和戰術家聯繫在一起......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜賓",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "看到你本人後，似乎好理解了一些。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜賓",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "畢竟羅德島本身就很像你的專業。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "醫療幹員",
+      "speakerId": "char_016_medic",
+      "isRemote": false,
+      "text": "喂！你！別跑！該注射藥劑了！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "近衛幹員",
+      "speakerId": "char_013_riop",
+      "isRemote": false,
+      "text": "啊？啊？我沒事，我沒事呀！我，我還不需要治療！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "醫療幹員",
+      "speakerId": "char_016_medic",
+      "isRemote": false,
+      "text": "是定量藥劑，延緩感染症狀的！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "醫療幹員",
+      "speakerId": "char_016_medic",
+      "isRemote": false,
+      "text": "你剛才不是還說頭暈嗎！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "近衛幹員",
+      "speakerId": "char_013_riop",
+      "isRemote": false,
+      "text": "那不是同一種症狀吧！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "醫療幹員",
+      "speakerId": "char_016_medic",
+      "isRemote": false,
+      "text": "要是一會兒你的身體又出了問題，再碰上戰鬥怎麼辦？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "醫療幹員",
+      "speakerId": "char_016_medic",
+      "isRemote": false,
+      "text": "為了大家的安全你也該好好注意！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "近衛幹員",
+      "speakerId": "char_013_riop",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "醫療幹員",
+      "speakerId": "char_016_medic",
+      "isRemote": false,
+      "text": "別動！我要扎了！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "近衛幹員",
+      "speakerId": "char_013_riop",
+      "isRemote": false,
+      "text": "啊！！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜賓",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜賓",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "......羅德島就是這樣，既要找出治療感染者的辦法，又要減少感染者帶來的問題。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "——是的。光是研究治療方法，或者僅僅去平息種種爭端，都是不夠的。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "我們必須直面感染者帶來的所有問題。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "只有這樣，羅德島才能替感染者爭取到一線生機......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜賓",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "作為感染者，我們也比普通人更能理解感染者。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜賓",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "無論是普通人還是感染者，無論是和平還是紛爭，羅德島想要解決問題，而不是任由仇恨和疾病蔓延肆虐。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜賓",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "Dr.{@nickname}，這可能也會是你職責的一部分。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜賓",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "......至少，這是我粗淺的請求。"
     },
     {
       "type": "choice",
@@ -471,99 +532,115 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "杜賓",
-          "speakerId": "char_130_doberm",
-          "text": "我們會留給你很多時間的，你可以慢慢理解。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "杜賓",
-          "speakerId": "char_130_doberm",
-          "text": "只不過，給我們的時間卻不多了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "杜賓",
-          "speakerId": "char_130_doberm",
-          "text": "整頓隊伍，出發！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "杜賓",
-          "speakerId": "char_130_doberm",
-          "text": "前往會合點的路上，還不知道有什麼等著我們！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "杜賓",
-          "speakerId": "char_130_doberm",
-          "text": "（阿米婭......）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "杜賓",
-          "speakerId": "char_130_doberm",
-          "text": "（切爾諾伯格現在的情況非常複雜，我們不能給整支救援隊伍帶去心理壓力。但是......）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "（我們......還有多長時間？）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "杜賓",
-          "speakerId": "char_130_doberm",
-          "text": "（......三小時。）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "杜賓",
-          "speakerId": "char_130_doberm",
-          "text": "（三小時之後，天災將會吞沒這個城市。）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "杜賓",
-          "speakerId": "char_130_doberm",
-          "text": "（等到天災降臨，一切就都完了。）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "char_1502_crowns",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "char_1502_crowns",
-          "text": "不確定因素。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "char_1502_crowns",
-          "text": "去，通知其他人。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "char_1502_crowns",
-          "text": "我們追。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜賓",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "我們會留給你很多時間的，你可以慢慢理解。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜賓",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "只不過，給我們的時間卻不多了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜賓",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "整頓隊伍，出發！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜賓",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "前往會合點的路上，還不知道有什麼等著我們！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜賓",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "（阿米婭......）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜賓",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "（切爾諾伯格現在的情況非常複雜，我們不能給整支救援隊伍帶去心理壓力。但是......）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "（我們......還有多長時間？）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜賓",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "（......三小時。）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜賓",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "（三小時之後，天災將會吞沒這個城市。）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜賓",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "（等到天災降臨，一切就都完了。）"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_cher_1"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "char_1502_crowns",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "char_1502_crowns",
+      "isRemote": false,
+      "text": "不確定因素。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "char_1502_crowns",
+      "isRemote": false,
+      "text": "去，通知其他人。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "char_1502_crowns",
+      "isRemote": false,
+      "text": "我們追。"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": [

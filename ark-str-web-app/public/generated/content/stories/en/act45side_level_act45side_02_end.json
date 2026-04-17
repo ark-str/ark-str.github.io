@@ -6,14 +6,19 @@
   "title": "Quiet Hallway's End",
   "storyCode": "SS-2",
   "avgTag": "After Operation",
-  "sourcePath": "vendor/ArknightsGamedata/en/gamedata/story/activities/act45side/level_act45side_02_end.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/en/gamedata/story/activities/act45side/level_act45side_02_end.txt",
   "sourceHash": "363e03d1e1614b0a4a11960152e2491fa9fbf8b9a653596c1f32e24f2a26ece7",
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "65_g8_interviewstage"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Host",
       "speakerId": null,
+      "isRemote": false,
       "text": "Ladies and gentlemen, may I now introduce our celebrity guest tonight—Sora!"
     },
     {
@@ -23,12 +28,14 @@
       "type": "dialogue",
       "speakerName": "Sora",
       "speakerId": "char_101_sora",
+      "isRemote": false,
       "text": "Hi there on the left! Hi there on the right! And hi there down the middle!"
     },
     {
       "type": "dialogue",
       "speakerName": "Sora",
       "speakerId": "char_101_sora",
+      "isRemote": false,
       "text": "Hi, all! I'm everyone's idol, Sora from Monster Siren Records!"
     },
     {
@@ -38,18 +45,21 @@
       "type": "dialogue",
       "speakerName": "Host",
       "speakerId": null,
+      "isRemote": false,
       "text": "Just look at how excited they are!"
     },
     {
       "type": "dialogue",
       "speakerName": "Sora",
       "speakerId": "char_101_sora",
+      "isRemote": false,
       "text": "I really am glad you love me so much!"
     },
     {
       "type": "dialogue",
       "speakerName": "Sora",
       "speakerId": "char_101_sora",
+      "isRemote": false,
       "text": "But I'm sure you're all expecting our other guest who's joining us last-minute tonight, because I know I am! I'm a huge fan of hers!"
     },
     {
@@ -66,39 +76,49 @@
       "type": "dialogue",
       "speakerName": "Nyamu Yūtenji",
       "speakerId": "avg_4185_amoris_1",
+      "isRemote": false,
       "text": "Good even-nyamu-nyamu~!"
     },
     {
       "type": "dialogue",
       "speakerName": "Nyamu Yūtenji",
       "speakerId": "avg_4185_amoris_1",
+      "isRemote": false,
       "text": "Hello to all my fans, Nyamu here~! I'm so happy to see you all!"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_lmstreet_1"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Busy Security Guard",
       "speakerId": "avg_npc_020",
+      "isRemote": false,
       "text": "Show me your pass! No entry without one!"
     },
     {
       "type": "dialogue",
       "speakerName": "Busy Security Guard",
       "speakerId": "avg_npc_020",
+      "isRemote": false,
       "text": "If you're not staff or registered, stand outside and stop squeezing through!"
     },
     {
       "type": "dialogue",
       "speakerName": "Busy Security Guard",
       "speakerId": "avg_npc_020",
+      "isRemote": false,
       "text": "<i>Diu</i>, there's just too many people!"
     },
     {
       "type": "dialogue",
       "speakerName": "Excited Fan",
       "speakerId": "avg_npc_033",
+      "isRemote": false,
       "text": "Sora...! Nyamu! I love you!!"
     },
     {
@@ -108,6 +128,7 @@
       "type": "dialogue",
       "speakerName": "Busy Security Guard",
       "speakerId": "avg_npc_020",
+      "isRemote": false,
       "text": "Hey, stop that guy—don't let him get inside!"
     },
     {
@@ -117,78 +138,91 @@
       "type": "dialogue",
       "speakerName": "Sakiko Togawa",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "...This place is an utter mess."
     },
     {
       "type": "dialogue",
       "speakerName": "Sakiko Togawa",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "Why are there so many people...?"
     },
     {
       "type": "dialogue",
       "speakerName": "Sakiko Togawa",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "...I don't see any chance of infiltrating inside."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "Hey, little lady. Wanna head inside and see the stars?"
     },
     {
       "type": "dialogue",
       "speakerName": "Sakiko Togawa",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "Huh?"
     },
     {
       "type": "dialogue",
       "speakerName": "Strange Man",
       "speakerId": "avg_npc_305_1",
+      "isRemote": false,
       "text": "Whose fan are you? Sora's, or Nyamu's?"
     },
     {
       "type": "dialogue",
       "speakerName": "Strange Man",
       "speakerId": "avg_npc_305_1",
+      "isRemote": false,
       "text": "Whichever it is, I've got methods. I can get you in to see her."
     },
     {
       "type": "dialogue",
       "speakerName": "Sakiko Togawa",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "...Why are you assisting me?"
     },
     {
       "type": "dialogue",
       "speakerName": "Strange Man",
       "speakerId": "avg_npc_305_1",
+      "isRemote": false,
       "text": "Hey, no need to be nervous now."
     },
     {
       "type": "dialogue",
       "speakerName": "Strange Man",
       "speakerId": "avg_npc_305_1",
+      "isRemote": false,
       "text": "It won't cost you that much... Yeah, here's the price."
     },
     {
       "type": "dialogue",
       "speakerName": "Sakiko Togawa",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "...I don't have the money."
     },
     {
       "type": "dialogue",
       "speakerName": "Strange Man",
       "speakerId": "avg_npc_305_1",
+      "isRemote": false,
       "text": "Hey, this is a bargain price as is! No haggling!"
     },
     {
       "type": "dialogue",
       "speakerName": "Sakiko Togawa",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "That doesn't change the fact that I don't..."
     },
     {
@@ -198,87 +232,105 @@
       "type": "dialogue",
       "speakerName": "Sakiko Togawa",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "(Dubious doesn't begin to describe this man... but I really don't see any alternative right now. If I don't seize this chance...)"
     },
     {
       "type": "dialogue",
       "speakerName": "Sakiko Togawa",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "(I'll just have to trust him for now.)"
     },
     {
       "type": "dialogue",
       "speakerName": "Sakiko Togawa",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "(Digs through her pockets)"
     },
     {
       "type": "dialogue",
       "speakerName": "Sakiko Togawa",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "Here, this is it... all the money I have on me. What do you make of that?"
     },
     {
       "type": "dialogue",
       "speakerName": "Strange Man",
       "speakerId": "avg_npc_305_1",
+      "isRemote": false,
       "text": "Deal! Follow me."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_indoor_3"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Sakiko Togawa",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "Staff-only access...?"
     },
     {
       "type": "dialogue",
       "speakerName": "Strange Man",
       "speakerId": "avg_npc_305_1",
+      "isRemote": false,
       "text": "Yeah. We'll head in through here."
     },
     {
       "type": "dialogue",
       "speakerName": "Sakiko Togawa",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "What about the visitor's pass?"
     },
     {
       "type": "dialogue",
       "speakerName": "Strange Man",
       "speakerId": "avg_npc_305_1",
+      "isRemote": false,
       "text": "Don't have any."
     },
     {
       "type": "dialogue",
       "speakerName": "Sakiko Togawa",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "So you're a staff member?"
     },
     {
       "type": "dialogue",
       "speakerName": "Strange Man",
       "speakerId": "avg_npc_305_1",
+      "isRemote": false,
       "text": "Nope."
     },
     {
       "type": "dialogue",
       "speakerName": "Sakiko Togawa",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "Then how do we get in? What do you intend to do if someone catches us?!"
     },
     {
       "type": "dialogue",
       "speakerName": "Strange Man",
       "speakerId": "avg_npc_305_1",
+      "isRemote": false,
       "text": "I said I've got methods! You want to see the stars up close or not?"
     },
     {
       "type": "dialogue",
       "speakerName": "Strange Man",
       "speakerId": "avg_npc_305_1",
+      "isRemote": false,
       "text": "(Whisper) <i>Puk gaai</i>, he heard us..."
     },
     {
@@ -288,12 +340,14 @@
       "type": "dialogue",
       "speakerName": "Sakiko Togawa",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "(Whisper) He's coming this way! We have to hurry before he—"
     },
     {
       "type": "dialogue",
       "speakerName": "Strange Man",
       "speakerId": "avg_npc_305_1",
+      "isRemote": false,
       "text": "Hey! What the hell are you doing here?!"
     },
     {
@@ -303,6 +357,7 @@
       "type": "dialogue",
       "speakerName": "Patrolling Guard & Sakiko Togawa",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "Wargh—!"
     },
     {
@@ -312,42 +367,49 @@
       "type": "dialogue",
       "speakerName": "Strange Man",
       "speakerId": "avg_npc_305_1",
+      "isRemote": false,
       "text": "I told you to be on standby with the backup equipment!"
     },
     {
       "type": "dialogue",
       "speakerName": "Strange Man",
       "speakerId": "avg_npc_305_1",
+      "isRemote": false,
       "text": "Oh, stagehands don't matter, huh, is that your opinion? What's your plan when the prop crew needs backups and you're sitting on them, huh?!"
     },
     {
       "type": "dialogue",
       "speakerName": "Sakiko Togawa",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Strange Man",
       "speakerId": "avg_npc_305_1",
+      "isRemote": false,
       "text": "You little punk, skiving off like that."
     },
     {
       "type": "dialogue",
       "speakerName": "Patrolling Guard",
       "speakerId": "avg_npc_020",
+      "isRemote": false,
       "text": "Hey. No need to be so harsh. Look at her, she's scared so bad she can't even talk."
     },
     {
       "type": "dialogue",
       "speakerName": "Strange Man",
       "speakerId": "avg_npc_305_1",
+      "isRemote": false,
       "text": "Don't just stand there, then! Get back to the set!"
     },
     {
       "type": "dialogue",
       "speakerName": "Sakiko Togawa",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "...Understood."
     },
     {
@@ -357,30 +419,35 @@
       "type": "dialogue",
       "speakerName": "Patrolling Guard",
       "speakerId": "avg_npc_020",
+      "isRemote": false,
       "text": "Young lady, the set's that way..."
     },
     {
       "type": "dialogue",
       "speakerName": "Strange Man",
       "speakerId": "avg_npc_305_1",
+      "isRemote": false,
       "text": "Don't tell her!"
     },
     {
       "type": "dialogue",
       "speakerName": "Strange Man",
       "speakerId": "avg_npc_305_1",
+      "isRemote": false,
       "text": "Let's see her come back and beg when she can't find it! I'll dock her pay for any losses from holding us up!"
     },
     {
       "type": "dialogue",
       "speakerName": "Patrolling Guard",
       "speakerId": "avg_npc_020",
+      "isRemote": false,
       "text": "You gotta do your best!"
     },
     {
       "type": "dialogue",
       "speakerName": "Sakiko Togawa",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "O-Okay..."
     },
     {
@@ -390,6 +457,7 @@
       "type": "dialogue",
       "speakerName": "Strange Man",
       "speakerId": "avg_npc_305_1",
+      "isRemote": false,
       "text": "Well, go! Move it!"
     },
     {
@@ -399,6 +467,7 @@
       "type": "dialogue",
       "speakerName": "Patrolling Guard",
       "speakerId": "avg_npc_020",
+      "isRemote": false,
       "text": "Whoof. Hard to make a living these days, isn't it..."
     },
     {
@@ -408,27 +477,35 @@
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "Hey, hey. How's the sitch over there?"
     },
     {
       "type": "dialogue",
       "speakerName": "Patrolling Guard",
       "speakerId": "avg_npc_020",
+      "isRemote": false,
       "text": "All good here."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_pgbase_1"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Patrolling Guard",
       "speakerId": "avg_201_moeshd_1",
+      "isRemote": false,
       "text": "All good here."
     },
     {
       "type": "dialogue",
       "speakerName": "Croissant",
       "speakerId": "avg_201_moeshd_1",
+      "isRemote": false,
       "text": "Good. Keep on truckin'."
     },
     {
@@ -438,84 +515,98 @@
       "type": "dialogue",
       "speakerName": "Croissant",
       "speakerId": "avg_201_moeshd_1",
+      "isRemote": false,
       "text": "Argh—job's got me so damn busy my head's explodin'!"
     },
     {
       "type": "dialogue",
       "speakerName": "Croissant",
       "speakerId": "avg_201_moeshd_1",
+      "isRemote": false,
       "text": "Nyamu's just too damn popular! Got a Nyamu fan on every corner..."
     },
     {
       "type": "dialogue",
       "speakerName": "Penguin Logistics Employee",
       "speakerId": "avg_npc_329_1",
+      "isRemote": false,
       "text": "Nyamu must be having a tough time too..."
     },
     {
       "type": "dialogue",
       "speakerName": "Penguin Logistics Employee",
       "speakerId": "avg_npc_329_1",
+      "isRemote": false,
       "text": "You know how Miss Sora gets up before the sun's risen to practice? And how she's running around place to place to repay her fans' love. She always looks beat when I see her after dark."
     },
     {
       "type": "dialogue",
       "speakerName": "Penguin Logistics Employee",
       "speakerId": "avg_npc_329_1",
+      "isRemote": false,
       "text": "Miss Nyamu rose to stardom so quickly. Got her own channel, her acting commitments, her show bookings..."
     },
     {
       "type": "dialogue",
       "speakerName": "Penguin Logistics Employee",
       "speakerId": "avg_npc_329_1",
+      "isRemote": false,
       "text": "She used to post videos of drum practice, but lately she hasn't been uploading them at all..."
     },
     {
       "type": "dialogue",
       "speakerName": "Croissant",
       "speakerId": "avg_201_moeshd_1",
+      "isRemote": false,
       "text": "You're a Nyamu-chan fan, huh?"
     },
     {
       "type": "dialogue",
       "speakerName": "Penguin Logistics Employee",
       "speakerId": "avg_npc_329_1",
+      "isRemote": false,
       "text": "Yeah... I got into drums in the first place because of her videos."
     },
     {
       "type": "dialogue",
       "speakerName": "Penguin Logistics Employee",
       "speakerId": "avg_npc_329_1",
+      "isRemote": false,
       "text": "Sometimes I watch the old uploads when I'm feeling like giving up."
     },
     {
       "type": "dialogue",
       "speakerName": "Penguin Logistics Employee",
       "speakerId": "avg_npc_329_1",
+      "isRemote": false,
       "text": "I wonder if she can still make music with joy these days. Like she did in <i>The Drummer Girl</i>."
     },
     {
       "type": "dialogue",
       "speakerName": "Croissant",
       "speakerId": "avg_201_moeshd_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Penguin Logistics Employee",
       "speakerId": "avg_npc_329_1",
+      "isRemote": false,
       "text": "Uh! Sorry, I got carried away talking."
     },
     {
       "type": "dialogue",
       "speakerName": "Penguin Logistics Employee",
       "speakerId": "avg_npc_329_1",
+      "isRemote": false,
       "text": "The most important thing is to keep Sora safe! Let's get back to work and keep our eyes sharp."
     },
     {
       "type": "dialogue",
       "speakerName": "Croissant",
       "speakerId": "avg_201_moeshd_1",
+      "isRemote": false,
       "text": "Easy there, ain't all <i>that</i> much stress. I got some new toys here. These babies can automatically identify unauthorized visitors—"
     },
     {
@@ -525,16 +616,22 @@
       "type": "dialogue",
       "speakerName": "Croissant",
       "speakerId": "avg_201_moeshd_1",
+      "isRemote": false,
       "text": "You're kiddin' me..."
     },
     {
       "type": "dialogue",
       "speakerName": "Croissant",
       "speakerId": "avg_201_moeshd_1",
+      "isRemote": false,
       "text": "Two suspicious figures in Area A! Drones out!"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_indoor_3"
     },
     {
       "type": "narration",
@@ -544,18 +641,21 @@
       "type": "dialogue",
       "speakerName": "Sakiko Togawa",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "I should never... have trusted you!!"
     },
     {
       "type": "dialogue",
       "speakerName": "Strange Man",
       "speakerId": "avg_npc_305_1",
+      "isRemote": false,
       "text": "I'm just as lost as you! This never happened to anyone I sneaked in before!"
     },
     {
       "type": "dialogue",
       "speakerName": "Strange Man",
       "speakerId": "avg_npc_305_1",
+      "isRemote": false,
       "text": "When'd they get all this surveillance and dronepower?!"
     },
     {
@@ -565,27 +665,35 @@
       "type": "dialogue",
       "speakerName": "Strange Man",
       "speakerId": "avg_npc_305_1",
+      "isRemote": false,
       "text": "Shoot, the drones are catching up! Run! Runnn!"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_indoor_3"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Strange Man",
       "speakerId": "avg_npc_305_1",
+      "isRemote": false,
       "text": "(Strange sound)"
     },
     {
       "type": "dialogue",
       "speakerName": "Strange Man",
       "speakerId": "avg_npc_305_1",
+      "isRemote": false,
       "text": "Heheheh-heh-heh.... hah-hahahahah!!"
     },
     {
       "type": "dialogue",
       "speakerName": "Sakiko Togawa",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "—!"
     },
     {
@@ -602,54 +710,63 @@
       "type": "dialogue",
       "speakerName": "Morpheus",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "Hahahahah-hah! This is so much fun!!"
     },
     {
       "type": "dialogue",
       "speakerName": "Corettons",
       "speakerId": "avg_npc_1937_1",
+      "isRemote": false,
       "text": "(Joyful cry)"
     },
     {
       "type": "dialogue",
       "speakerName": "Morpheus",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "Well? Are you enjoying this girl's sweet dream?"
     },
     {
       "type": "dialogue",
       "speakerName": "Morpheus",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "She seems SMITTEN with all the love being showered on her. I don't think she eeeever wants to leave!"
     },
     {
       "type": "dialogue",
       "speakerName": "Sakiko Togawa",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "You're responsible for all this?!"
     },
     {
       "type": "dialogue",
       "speakerName": "Morpheus",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "I thought I made it clear when you challenged me—this was never going to be easy."
     },
     {
       "type": "dialogue",
       "speakerName": "Sakiko Togawa",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "I demand you let me see her!"
     },
     {
       "type": "dialogue",
       "speakerName": "Morpheus",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "Well, that's not hard. Just go straight down the corridor, aaaaall the way down, and you'll find her!"
     },
     {
       "type": "dialogue",
       "speakerName": "Morpheus",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "If I were you, though, I'd want to see about losing these things behind you first!"
     },
     {
@@ -659,6 +776,7 @@
       "type": "dialogue",
       "speakerName": "Corettons",
       "speakerId": "avg_npc_1937_1",
+      "isRemote": false,
       "text": "(Chirping in agreement)"
     },
     {
@@ -668,15 +786,21 @@
       "type": "dialogue",
       "speakerName": "Croissant",
       "speakerId": "avg_201_moeshd_1",
+      "isRemote": false,
       "text": "She's runnin' towards the set! Sora's in danger! Stop her!"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_indoor_3"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Sakiko Togawa",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "...Dammit!"
     },
     {
@@ -690,21 +814,28 @@
       "type": "dialogue",
       "speakerName": "Sakiko Togawa",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "Yūtenji, I want you to wake up!!"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Voice from the Communicator",
       "speakerId": null,
+      "isRemote": false,
       "text": "Track her motions, zoom in—"
     },
     {
       "type": "dialogue",
       "speakerName": "Voice from the Communicator",
       "speakerId": null,
+      "isRemote": false,
       "text": "Good, a little closer, focus her face, pan over those pale lips."
     },
     {
@@ -725,15 +856,21 @@
       "type": "dialogue",
       "speakerName": "Voice from the Communicator",
       "speakerId": "avg_4185_amoris_1",
+      "isRemote": false,
       "text": "...Perfect."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "65_g8_interviewstage"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Sora",
       "speakerId": "char_101_sora",
+      "isRemote": false,
       "text": "A-Amazing..."
     },
     {
@@ -743,18 +880,21 @@
       "type": "dialogue",
       "speakerName": "Host",
       "speakerId": null,
+      "isRemote": false,
       "text": "I can't believe it! You were born to act!!"
     },
     {
       "type": "dialogue",
       "speakerName": "Nyamu Yūtenji",
       "speakerId": "avg_4185_amoris_1",
+      "isRemote": false,
       "text": "Heheh. I only really got a hang of this one recently."
     },
     {
       "type": "dialogue",
       "speakerName": "Nyamu Yūtenji",
       "speakerId": "avg_4185_amoris_1",
+      "isRemote": false,
       "text": "I practiced in front of a mirror night after night, trying to understand the thoughts of a doll."
     },
     {
@@ -764,24 +904,28 @@
       "type": "dialogue",
       "speakerName": "Host",
       "speakerId": null,
+      "isRemote": false,
       "text": "Understanding a doll? Wow, now that sounds pretty out there, haha..."
     },
     {
       "type": "dialogue",
       "speakerName": "Sora",
       "speakerId": "char_101_sora",
+      "isRemote": false,
       "text": "It must have taken so much hard work to nail the performance, Miss Nyamu!"
     },
     {
       "type": "dialogue",
       "speakerName": "Nyamu Yūtenji",
       "speakerId": "avg_4185_amoris_1",
+      "isRemote": false,
       "text": "...Well, I always think I've still got a long way to go."
     },
     {
       "type": "dialogue",
       "speakerName": "Nyamu Yūtenji",
       "speakerId": "avg_4185_amoris_1",
+      "isRemote": false,
       "text": "Everyone around me is blessed with these incredible abilities."
     },
     {
@@ -791,48 +935,56 @@
       "type": "dialogue",
       "speakerName": "Nyamu Yūtenji",
       "speakerId": "avg_4185_amoris_1",
+      "isRemote": false,
       "text": "There's famous child actors who were born with a silver spoon in their mouth."
     },
     {
       "type": "dialogue",
       "speakerName": "Nyamu Yūtenji",
       "speakerId": "avg_4185_amoris_1",
+      "isRemote": false,
       "text": "There's people who fall into the deepest pits and still carry on shining bright."
     },
     {
       "type": "dialogue",
       "speakerName": "Nyamu Yūtenji",
       "speakerId": "avg_4185_amoris_1",
+      "isRemote": false,
       "text": "I run until I can't run anymore, just to barely catch up to them..."
     },
     {
       "type": "dialogue",
       "speakerName": "Nyamu Yūtenji",
       "speakerId": "avg_4185_amoris_1",
+      "isRemote": false,
       "text": "I have a trick or two up my sleeve, but in front of their talent, really, I have nothing."
     },
     {
       "type": "dialogue",
       "speakerName": "Nyamu Yūtenji",
       "speakerId": "avg_4185_amoris_1",
+      "isRemote": false,
       "text": "So when so many people love me, love someone so mediocre and ordinary like me, I have to work ten times harder just to answer their appreciation."
     },
     {
       "type": "dialogue",
       "speakerName": "Sora",
       "speakerId": "char_101_sora",
+      "isRemote": false,
       "text": "Miss Nyamu... you're incredible as is."
     },
     {
       "type": "dialogue",
       "speakerName": "Sora",
       "speakerId": "char_101_sora",
+      "isRemote": false,
       "text": "I'm sure everyone here will agree with me when I say—we all love you."
     },
     {
       "type": "dialogue",
       "speakerName": "Nyamu Yūtenji",
       "speakerId": "avg_4185_amoris_1",
+      "isRemote": false,
       "text": "Yeah... thank you, everybody."
     },
     {
@@ -842,28 +994,36 @@
       "type": "dialogue",
       "speakerName": "Host",
       "speakerId": null,
+      "isRemote": false,
       "text": "What an emotional scene, folks. It's been wonderful having our two incredible guests on set this evening."
     },
     {
       "type": "dialogue",
       "speakerName": "Host",
       "speakerId": null,
+      "isRemote": false,
       "text": "Say, while we're in the mood, I just had a little idea—"
     },
     {
       "type": "dialogue",
       "speakerName": "Host",
       "speakerId": null,
+      "isRemote": false,
       "text": "Will the two of you do us the honor of reenacting that classic scene from <i>The Drummer Girl</i>?"
     },
     {
       "type": "dialogue",
       "speakerName": "Nyamu Yūtenji & Sora",
       "speakerId": "char_101_sora",
+      "isRemote": false,
       "text": "Sure!"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
     },
     {
       "type": "narration",
@@ -873,6 +1033,10 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "53_g16_sunnyday_R2"
+    },
+    {
       "type": "narration",
       "text": "The skies are blue. The summer breeze carries the scent of afar.\nThe cry of the fowlbeasts.\nThe sound of breathing."
     },
@@ -880,12 +1044,14 @@
       "type": "dialogue",
       "speakerName": "Sora",
       "speakerId": "char_101_sora",
+      "isRemote": false,
       "text": "—Come down from the roof!"
     },
     {
       "type": "dialogue",
       "speakerName": "Nyamu Yūtenji",
       "speakerId": "avg_4185_amoris_1",
+      "isRemote": false,
       "text": "No! These are my dreams! I'll shout them at the top of my voice from the highest point around!"
     },
     {
@@ -899,18 +1065,21 @@
       "type": "dialogue",
       "speakerName": "Sora",
       "speakerId": "char_101_sora",
+      "isRemote": false,
       "text": "But—but—you only just decided to buy a drum set!"
     },
     {
       "type": "dialogue",
       "speakerName": "Sora",
       "speakerId": "char_101_sora",
+      "isRemote": false,
       "text": "What if you end up giving up on drums? People will laugh at you!"
     },
     {
       "type": "dialogue",
       "speakerName": "Nyamu Yūtenji",
       "speakerId": "avg_4185_amoris_1",
+      "isRemote": false,
       "text": "I've made up my mind! I'll play drums the rest of my life! I'll play until my hands won't move anymore!"
     },
     {
@@ -921,6 +1090,7 @@
       "type": "dialogue",
       "speakerName": "Nyamu Yūtenji",
       "speakerId": "avg_4185_amoris_1",
+      "isRemote": false,
       "text": "My dream's to be the best drummer in Lungmen—"
     },
     {
@@ -931,6 +1101,7 @@
       "type": "dialogue",
       "speakerName": "Nyamu Yūtenji",
       "speakerId": "avg_4185_amoris_1",
+      "isRemote": false,
       "text": "No, in all of Terra!"
     },
     {
@@ -948,6 +1119,10 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
       "type": "narration",
       "text": "The night's breeze is cold and indifferent, yet the mind is still murky as to all that is happening."
     },
@@ -955,30 +1130,35 @@
       "type": "dialogue",
       "speakerName": "Nyamu Yūtenji",
       "speakerId": "avg_4185_amoris_1",
+      "isRemote": false,
       "text": "...Huh?"
     },
     {
       "type": "dialogue",
       "speakerName": "Sakiko Togawa",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Host",
       "speakerId": null,
+      "isRemote": false,
       "text": "W-What happened?"
     },
     {
       "type": "dialogue",
       "speakerName": "Sora",
       "speakerId": "char_101_sora",
+      "isRemote": false,
       "text": "Miss Nyamu??"
     },
     {
       "type": "dialogue",
       "speakerName": "Croissant",
       "speakerId": "avg_201_moeshd_1",
+      "isRemote": false,
       "text": "Y'all guard Sora! Someone's kidnapped Nyamu! I'm after them!"
     },
     {
@@ -992,30 +1172,35 @@
       "type": "dialogue",
       "speakerName": "Sakiko Togawa",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "What kind of 'sweet dream' is this?"
     },
     {
       "type": "dialogue",
       "speakerName": "Sakiko Togawa",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "You lost your drums, you lost your friends, you lost yourself. Even if countless people adore you now, can you still call this <i>your</i> dream?"
     },
     {
       "type": "dialogue",
       "speakerName": "Sakiko Togawa",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "Where is my sharp-witted, silver-tongued Yūtenji-san?"
     },
     {
       "type": "dialogue",
       "speakerName": "Nyamu Yūtenji",
       "speakerId": "avg_4185_amoris_1",
+      "isRemote": false,
       "text": "But—but..."
     },
     {
       "type": "dialogue",
       "speakerName": "Sakiko Togawa",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "Nyamu. It's time to wake up."
     },
     {

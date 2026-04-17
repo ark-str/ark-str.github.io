@@ -6,7 +6,7 @@
   "title": "Relit",
   "storyCode": "9-21",
   "avgTag": "Interlude",
-  "sourcePath": "vendor/ArknightsGamedata/en/gamedata/story/obt/main/level_st_09-04.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/en/gamedata/story/obt/main/level_st_09-04.txt",
   "sourceHash": "bc76d2f76914125abee56981e9022e0af727bad88e2a93b0b024bc539ff337f8",
   "bodyAvailable": true,
   "blocks": [
@@ -16,6 +16,10 @@
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_motorroom"
     },
     {
       "type": "narration",
@@ -28,12 +32,14 @@
       "type": "dialogue",
       "speakerName": "Logistics Operator",
       "speakerId": "avg_npc_088",
+      "isRemote": false,
       "text": "Good morning, Closure. Here's your breakfast."
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "Oh, thanks!"
     },
     {
@@ -43,78 +49,91 @@
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "There's no mold or anything, right...?"
     },
     {
       "type": "dialogue",
       "speakerName": "Logistics Operator",
       "speakerId": "avg_npc_088",
+      "isRemote": false,
       "text": "Uh, probably not, I guess."
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "*Sigh*... We've been stuck here for days thanks to this shitty weather... Who knows how bad this'll throw off our schedule... Hmm, this flavor..."
     },
     {
       "type": "dialogue",
       "speakerName": "Logistics Operator",
       "speakerId": "avg_npc_088",
+      "isRemote": false,
       "text": "I mean, a Catastrophe caused this thick fog... It's not going to be good if we end up coming head to head with an aftershock."
     },
     {
       "type": "dialogue",
       "speakerName": "Logistics Operator",
       "speakerId": "avg_npc_088",
+      "isRemote": false,
       "text": "Should I turn in the environmental Originium monitoring report for last night right now?"
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "Where's Kal'tsit? Is she still in the operating theater?"
     },
     {
       "type": "dialogue",
       "speakerName": "Logistics Operator",
       "speakerId": "avg_npc_088",
+      "isRemote": false,
       "text": "Yes, she's been there since last night."
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "Don't worry about it right now, then."
     },
     {
       "type": "dialogue",
       "speakerName": "Logistics Operator",
       "speakerId": "avg_npc_088",
+      "isRemote": false,
       "text": "Thank you."
     },
     {
       "type": "dialogue",
       "speakerName": "Logistics Operator",
       "speakerId": "avg_npc_088",
+      "isRemote": false,
       "text": "Can I help you with anything else?"
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "Hm... Let's see. Wanna finish this health food for me? I mean it. This stuff's got a real funny taste."
     },
     {
       "type": "dialogue",
       "speakerName": "Logistics Operator",
       "speakerId": "avg_npc_088",
+      "isRemote": false,
       "text": "Eh?! You want me to eat all that?"
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "Haha, calm down. Just kidding."
     },
     {
@@ -124,36 +143,42 @@
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "Huh?"
     },
     {
       "type": "dialogue",
       "speakerName": "Logistics Operator",
       "speakerId": "avg_npc_088",
+      "isRemote": false,
       "text": "What's the matter?"
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "New mail? Out in the wasteland?"
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "Is there a town or a Messenger Outpost close by?"
     },
     {
       "type": "dialogue",
       "speakerName": "Logistics Operator",
       "speakerId": "avg_npc_088",
+      "isRemote": false,
       "text": "No... If there was, we would've been in contact with them a couple days ago..."
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "That's weird. Let's see..."
     },
     {
@@ -163,51 +188,63 @@
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "The sender's Dijkstra... What, Dijkstra?! I thought he was in Columbia!"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_infirmary"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "char_003_kalts",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "char_003_kalts",
+      "isRemote": false,
       "text": "Acute lesions successfully removed."
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "char_003_kalts",
+      "isRemote": false,
       "text": "Keep the infusion going."
     },
     {
       "type": "dialogue",
       "speakerName": "Medic Operator",
       "speakerId": "char_016_medic",
+      "isRemote": false,
       "text": "Okay!"
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "char_003_kalts",
+      "isRemote": false,
       "text": "Wound is clean..."
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "char_003_kalts",
+      "isRemote": false,
       "text": "Hold on, confirm the patient's vitals."
     },
     {
       "type": "dialogue",
       "speakerName": "Medic Operator",
       "speakerId": "char_016_medic",
+      "isRemote": false,
       "text": "Okay...!"
     },
     {
@@ -217,114 +254,151 @@
       "type": "dialogue",
       "speakerName": "Medic Operator",
       "speakerId": "char_016_medic",
+      "isRemote": false,
       "text": "Doctor! The patient's heart rate is abnormal... Body... body temperature is dropping!"
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "char_003_kalts",
+      "isRemote": false,
       "text": "Calm down."
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "char_003_kalts",
+      "isRemote": false,
       "text": "Adjust transmural pressure. I need an injection intervention right now."
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "char_003_kalts",
+      "isRemote": false,
       "text": "Prepare to stop the bleeding."
     },
     {
       "type": "dialogue",
       "speakerName": "Medic Operator",
       "speakerId": "char_016_medic",
+      "isRemote": false,
       "text": "Okay!"
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "char_003_kalts",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_bridge"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "Hey, everyone... It's time to change shift."
     },
     {
       "type": "dialogue",
       "speakerName": "Guard Operator",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "Blaze!"
     },
     {
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "Did something happen?"
     },
     {
       "type": "dialogue",
       "speakerName": "Guard Operator",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "Nope... Well, given this visibility, the surveillance equipment's about the only thing we can trust."
     },
     {
       "type": "dialogue",
       "speakerName": "Guard Operator",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "I doubt even the sniper operators on lookout can see anything in this weather..."
     },
     {
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "Eh, you're right. All this fog is a major buzzkill..."
     },
     {
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "Stormeye wouldn't have much trouble with the fog. If only he had left just two weeks later. Too bad."
     },
     {
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "It's been a few days since we stopped, though. If anything's gonna happen, it should already have happened by now."
     },
     {
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "You guys should head back and get some rest."
     },
     {
       "type": "dialogue",
       "speakerName": "Guard Operator",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "Yeah, sure."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_motorroom"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "An Infected organization...?"
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "Hmm... So this guy got caught up with the Infected too?"
     },
     {
@@ -334,18 +408,21 @@
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "'That's why I decided to help them. Columbia, Kazimierz, and the Sarkaz homeland you told me all about—'"
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "'That's what we've always been doing. Always, even—'"
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "'—Now.'"
     },
     {
@@ -355,12 +432,14 @@
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "...That's it?"
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "Is that supposed to be it? Hold on, what do you mean, 'Now?'"
     },
     {
@@ -370,33 +449,42 @@
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "Whoa! What just happened?!"
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "The tremor... came from below. It was huge, too—An explosion?!"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_infirmary"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Medic Operator",
       "speakerId": "char_016_medic",
+      "isRemote": false,
       "text": "Ahh! Wh-What's going on?!"
     },
     {
       "type": "dialogue",
       "speakerName": "Medic Operator",
       "speakerId": "char_016_medic",
+      "isRemote": false,
       "text": "We told everyone ahead of time how difficult this surgery was going to be. We told them we needed absolute silence!"
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "char_003_kalts",
+      "isRemote": false,
       "text": "......"
     },
     {
@@ -406,93 +494,112 @@
       "type": "dialogue",
       "speakerName": "Medic Operator",
       "speakerId": "char_016_medic",
+      "isRemote": false,
       "text": "Uh, this is the operating theater... What?"
     },
     {
       "type": "dialogue",
       "speakerName": "Medic Operator",
       "speakerId": "char_016_medic",
+      "isRemote": false,
       "text": "The security door's been... What?! All the bulkheads are locked? Huh? That's..."
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "char_003_kalts",
+      "isRemote": false,
       "text": "Stay calm."
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "char_003_kalts",
+      "isRemote": false,
       "text": "Contact all the operators we can. Tell them to head to confinement immediately."
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "char_003_kalts",
+      "isRemote": false,
       "text": "Also, tell Blaze that she may damage the ship's facilities as necessary."
     },
     {
       "type": "dialogue",
       "speakerName": "Medic Operator",
       "speakerId": "char_016_medic",
+      "isRemote": false,
       "text": "R-Right!"
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "char_003_kalts",
+      "isRemote": false,
       "text": "Everyone else, continue the operation."
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "char_003_kalts",
+      "isRemote": false,
       "text": "We'll leave what's going on outside to the other operators."
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "char_003_kalts",
+      "isRemote": false,
       "text": "There is nothing more important than the patient's life in the operating room. Don't get distracted."
     },
     {
       "type": "dialogue",
       "speakerName": "Medic Operator",
       "speakerId": "char_016_medic",
+      "isRemote": false,
       "text": "Ah, I'm truly sorry! I'll get ready right away!"
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "char_003_kalts",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "char_003_kalts",
+      "isRemote": false,
       "text": "............"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_lock_1"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "I thought this would've been more difficult."
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "But this must be our first formal meeting, 'Leader' of Reunion."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": null,
+      "isRemote": false,
       "text": "......"
     },
     {
@@ -502,42 +609,49 @@
       "type": "dialogue",
       "speakerName": "Talulah",
       "speakerId": "char_011_talula",
+      "isRemote": false,
       "text": "You are... Reunion."
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "You don't seem very surprised."
     },
     {
       "type": "dialogue",
       "speakerName": "Talulah",
       "speakerId": "char_011_talula",
+      "isRemote": false,
       "text": "I simply know better than anyone that the fires of Infected fury cannot be extinguished so easily."
     },
     {
       "type": "dialogue",
       "speakerName": "Talulah",
       "speakerId": "char_011_talula",
+      "isRemote": false,
       "text": "It's just..."
     },
     {
       "type": "dialogue",
       "speakerName": "Reunion Soldier",
       "speakerId": "avg_npc_080",
+      "isRemote": false,
       "text": "—It's been a while, 'Leader.'"
     },
     {
       "type": "dialogue",
       "speakerName": "Talulah",
       "speakerId": "char_011_talula",
+      "isRemote": false,
       "text": "...!"
     },
     {
       "type": "dialogue",
       "speakerName": "Talulah",
       "speakerId": "char_011_talula",
+      "isRemote": false,
       "text": "It's you...!"
     },
     {
@@ -547,54 +661,63 @@
       "type": "dialogue",
       "speakerName": "Reunion Soldier",
       "speakerId": "avg_npc_080",
+      "isRemote": false,
       "text": "Don't remember me? Ha, of course you don't! I was just a nameless pawn, someone lucky enough to avoid letting you kill me back in Chernobog!"
     },
     {
       "type": "dialogue",
       "speakerName": "Reunion Soldier",
       "speakerId": "avg_npc_080",
+      "isRemote": false,
       "text": "But you, Talulah, our 'Leader!' I will never forget your damned face!"
     },
     {
       "type": "dialogue",
       "speakerName": "Talulah",
       "speakerId": "char_011_talula",
+      "isRemote": false,
       "text": "You joined us when our team passed through the village that was destroyed by the taxmen. Your name is... Valiya."
     },
     {
       "type": "dialogue",
       "speakerName": "Reunion Soldier",
       "speakerId": "avg_npc_080",
+      "isRemote": false,
       "text": "You remember my name, huh...? So, what about Leontyev, Denis, and Arseny? Do you remember them? Do you know what happened to them?"
     },
     {
       "type": "dialogue",
       "speakerName": "Reunion Soldier",
       "speakerId": "avg_npc_080",
+      "isRemote": false,
       "text": "I'm here because I want to ask you myself: Why did you do what you did?! Who gave you the right?! How could you betray us?!"
     },
     {
       "type": "dialogue",
       "speakerName": "Talulah",
       "speakerId": "char_011_talula",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "Let go of her collar."
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "Now's not the time. We need to leave this place first."
     },
     {
       "type": "dialogue",
       "speakerName": "Reunion Soldier",
       "speakerId": "avg_npc_080",
+      "isRemote": false,
       "text": "Hmph."
     },
     {
@@ -604,63 +727,77 @@
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "You heard him, Leader of the Infected."
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "We all want answers. Many of us have suffered waiting for this chance. The chance to get them from you."
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "Don't forget. Those who most deserve to judge you, to hear out your defense, and to determine your fate, are the Infected who rose and died for you."
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "Talulah, you need to come with us."
     },
     {
       "type": "dialogue",
       "speakerName": "Talulah",
       "speakerId": "char_011_talula",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_motorroom"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Logistics Operator",
       "speakerId": "avg_npc_088",
+      "isRemote": false,
       "text": "Closure! Are you okay?! What was that just now?"
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "What kind of sick joke is this?"
     },
     {
       "type": "dialogue",
       "speakerName": "Logistics Operator",
       "speakerId": "avg_npc_088",
+      "isRemote": false,
       "text": "Closure?"
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "You've gotta be kidding me! He's definitely somewhere close by. He paralyzed Rhodes Island's systems!"
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "The surveillance... and observation systems... Hah, not bad..."
     },
     {
@@ -670,24 +807,28 @@
       "type": "dialogue",
       "speakerName": "Logistics Operator",
       "speakerId": "avg_npc_088",
+      "isRemote": false,
       "text": "I got a transmission from Logistics! Some of the operators have been ambushed by... R-Reunion!"
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "No way! Reunion?!"
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "No, no, no—Hurry! Tell Amiya right now. They might be here for Talulah! I'll get these systems back up. We need to act fast!"
     },
     {
       "type": "dialogue",
       "speakerName": "Logistics Operator",
       "speakerId": "avg_npc_088",
+      "isRemote": false,
       "text": "Y-Yes, ma'am!"
     },
     {
@@ -697,12 +838,14 @@
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "Why am I getting a message now, of all times?!"
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "Argh! My control screen's locked?!"
     },
     {
@@ -712,30 +855,35 @@
       "type": "dialogue",
       "speakerName": "Dijkstra",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "Good morning. Good morning?"
     },
     {
       "type": "dialogue",
       "speakerName": "Dijkstra",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "Hard at work fixing your system, Closure? You're kinda mad right now, aren't you?"
     },
     {
       "type": "dialogue",
       "speakerName": "Dijkstra",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "Oh, I should probably mention this video's prerecorded. You don't have to waste time tracing me."
     },
     {
       "type": "dialogue",
       "speakerName": "Dijkstra",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "Oh, also, I went through the trouble of keeping your Medical Department's system modules separate when I did all the prep work overnight. Spares the innocent, you know? I'm a stand-up guy, aren't I?"
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "Dijkstra—!"
     },
     {
@@ -745,54 +893,63 @@
       "type": "dialogue",
       "speakerName": "Dijkstra",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "Sorry about this, Closure. I know it's pretty unchill to nail you with this hookup you so graciously gave me. But still..."
     },
     {
       "type": "dialogue",
       "speakerName": "Dijkstra",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "I'd do it again. You know me. No regrets."
     },
     {
       "type": "dialogue",
       "speakerName": "Dijkstra",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "When you gave me the prototype back then, you said it was, at the time, the best option for taking down Columbian network programs. You called it your trump card."
     },
     {
       "type": "dialogue",
       "speakerName": "Dijkstra",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "And doing my wetwork the past couple days, I realized you weren't lying. Rhodes Island's security system works very similar to the logic you handed me."
     },
     {
       "type": "dialogue",
       "speakerName": "Dijkstra",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "So yeah, I abused your trust, no doubt about that. But you've got your position, I got my judgment. That's how it goes."
     },
     {
       "type": "dialogue",
       "speakerName": "Dijkstra",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "I still remember how I met you, just a Sarkaz back then, and how we became friends."
     },
     {
       "type": "dialogue",
       "speakerName": "Dijkstra",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "I hope we're still friends... Or, like before, war buddies."
     },
     {
       "type": "dialogue",
       "speakerName": "Dijkstra",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "—That said, Closure."
     },
     {
       "type": "dialogue",
       "speakerName": "Dijkstra",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "First and foremost, I'm a rebel. We've always been rebels. Always will be."
     },
     {
@@ -802,39 +959,49 @@
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "Where do you get off... c'mon, so damned full of yourself!"
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "No... Now's not the time to worry about this. Is the comm system still working?"
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "All stations!"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_corridor"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "Grr, if Ascalon and Logos were here, you wouldn't be running around like you own the place—"
     },
     {
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "—Hey! Get out here!"
     },
     {
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "I know you're hiding on both sides of the hallway, but this is Rhodes Island, and you aren't fooling me!"
     },
     {
@@ -844,114 +1011,133 @@
       "type": "dialogue",
       "speakerName": "Guard",
       "speakerId": "avg_npc_059",
+      "isRemote": false,
       "text": "Right, Blaze, this is Rhodes Island."
     },
     {
       "type": "dialogue",
       "speakerName": "Guard",
       "speakerId": "avg_npc_059",
+      "isRemote": false,
       "text": "It was this very same corridor where I first saw you and the other elite operators come home after a triumphant victory."
     },
     {
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "—"
     },
     {
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "Guard...?"
     },
     {
       "type": "dialogue",
       "speakerName": "Guard",
       "speakerId": "avg_npc_059",
+      "isRemote": false,
       "text": "I hesitated. When I first learned about the plan to attack Rhodes Island. Of course I hesitated."
     },
     {
       "type": "dialogue",
       "speakerName": "Guard",
       "speakerId": "avg_npc_059",
+      "isRemote": false,
       "text": "I'm not going to justify it, but I think this is exactly why I have to come back. Both to take responsibility and to bear witness to this plan's execution."
     },
     {
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "'Responsibility...' huh?"
     },
     {
       "type": "dialogue",
       "speakerName": "Guard",
       "speakerId": "avg_npc_059",
+      "isRemote": false,
       "text": "Right. If I'm here, I can't make excuses."
     },
     {
       "type": "dialogue",
       "speakerName": "Guard",
       "speakerId": "avg_npc_059",
+      "isRemote": false,
       "text": "If there's even a single operator who thinks it, then I am indeed a 'traitor.'"
     },
     {
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "So you're with Reunion now... what are you doing back here?"
     },
     {
       "type": "dialogue",
       "speakerName": "Guard",
       "speakerId": "avg_npc_059",
+      "isRemote": false,
       "text": "The few survivors who managed to make it out of Ursus drifted out in the borderless barrenlands."
     },
     {
       "type": "dialogue",
       "speakerName": "Guard",
       "speakerId": "avg_npc_059",
+      "isRemote": false,
       "text": "First we got to Columbia, then Leithanien, and then Siracusa, Victoria... All these countries... there were Infected trying to get in touch with us."
     },
     {
       "type": "dialogue",
       "speakerName": "Guard",
       "speakerId": "avg_npc_059",
+      "isRemote": false,
       "text": "Reunion managed to set a fire, and from the tundra all across the world."
     },
     {
       "type": "dialogue",
       "speakerName": "Guard",
       "speakerId": "avg_npc_059",
+      "isRemote": false,
       "text": "But... what are we supposed to tell the Infected who chose to stand up for our cause because of Talulah, and to the Infected who chose to stand up against fate because of the Ursus Reunion Movement—"
     },
     {
       "type": "dialogue",
       "speakerName": "Guard",
       "speakerId": "avg_npc_059",
+      "isRemote": false,
       "text": "How do we break it to them that we failed in Chernobog, and that Reunion was yet another pawn, tossed away by the great powers once it exhausted its usefulness?"
     },
     {
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Guard",
       "speakerId": "avg_npc_059",
+      "isRemote": false,
       "text": "There are way too many Infected left in the dark, Infected who lost friends and loved ones."
     },
     {
       "type": "dialogue",
       "speakerName": "Guard",
       "speakerId": "avg_npc_059",
+      "isRemote": false,
       "text": "That's why Reunion needs that truth. They need the 'leader' to answer to them."
     },
     {
       "type": "dialogue",
       "speakerName": "Guard",
       "speakerId": "avg_npc_059",
+      "isRemote": false,
       "text": "And then..."
     },
     {
@@ -961,117 +1147,140 @@
       "type": "dialogue",
       "speakerName": "Guerrilla Sarkaz",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "Then, we will start all over."
     },
     {
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "—Sarkaz?"
     },
     {
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "No, you're no ordinary mercenaries—"
     },
     {
       "type": "dialogue",
       "speakerName": "Guerrilla Sarkaz",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "Damned straight."
     },
     {
       "type": "dialogue",
       "speakerName": "Guerrilla Sarkaz",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "I heard that nutjob W started chumming with you guys after that? Well, whatever."
     },
     {
       "type": "dialogue",
       "speakerName": "Guerrilla Sarkaz",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "After the Captain died, not all of the guerrilla fighters decided to part ways with Reunion..."
     },
     {
       "type": "dialogue",
       "speakerName": "Guerrilla Sarkaz",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "Hand Talulah over. If Reunion still exists, then she belongs to us."
     },
     {
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "...Hah."
     },
     {
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "You think we're gonna talk this over and come to a nice agreement?"
     },
     {
       "type": "dialogue",
       "speakerName": "Guerrilla Sarkaz",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "Yeah, that's not gonna happen."
     },
     {
       "type": "dialogue",
       "speakerName": "Guerrilla Sarkaz",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "Talulah's got Lungmenite and Rhodes Islander blood on her hands, but let's not forget there's blood on your hands too. The Captain's, and Yelena's."
     },
     {
       "type": "dialogue",
       "speakerName": "Guerrilla Sarkaz",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "Don't you think for a second we'll go easy on you."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_bridge"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Reunion Soldier",
       "speakerId": "char_1002_nsabr",
+      "isRemote": false,
       "text": "Nine, the barriers have been activated. This whole area's sealed off. We just need to deal with the hostiles in here ASAP."
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "Good. Get the team ready for rendezvous and exfiltration."
     },
     {
       "type": "dialogue",
       "speakerName": "Reunion Soldier",
       "speakerId": "char_1002_nsabr",
+      "isRemote": false,
       "text": "Sure thing."
     },
     {
       "type": "dialogue",
       "speakerName": "Reunion Caster",
       "speakerId": "char_1011_wizard",
+      "isRemote": false,
       "text": "The enemies are fighting back. We don't have enough manpower—"
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "We're not fighting for the sake of fighting here. Prioritize the evacuation!"
     },
     {
       "type": "dialogue",
       "speakerName": "Guard Operator",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "In your dreams! You aren't getting away that easily!"
     },
     {
       "type": "dialogue",
       "speakerName": "Sniper Operator",
       "speakerId": "avg_npc_089",
+      "isRemote": false,
       "text": "Don't even think about it!"
     },
     {
@@ -1081,12 +1290,14 @@
       "type": "dialogue",
       "speakerName": "Reunion Caster",
       "speakerId": "char_1011_wizard",
+      "isRemote": false,
       "text": "Ugh, why can't this ever be easy."
     },
     {
       "type": "dialogue",
       "speakerName": "Reunion Caster",
       "speakerId": "char_1011_wizard",
+      "isRemote": false,
       "text": "Boss, you go on ahead!"
     },
     {
@@ -1096,30 +1307,35 @@
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "Right. Be sure to catch up. I'll see you later."
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "Confirm the exfiltration route!"
     },
     {
       "type": "dialogue",
       "speakerName": "Reunion Soldier",
       "speakerId": "char_1002_nsabr",
+      "isRemote": false,
       "text": "Confirmed. No trouble at all! We'll make it out of here without a hitch if we keep to the plan!"
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "Good, contact the team outside. The plan is a go!"
     },
     {
       "type": "dialogue",
       "speakerName": "Reunion Soldier",
       "speakerId": "char_1002_nsabr",
+      "isRemote": false,
       "text": "Roger!"
     },
     {
@@ -1129,18 +1345,21 @@
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": null,
+      "isRemote": false,
       "text": "Hold it!"
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": null,
+      "isRemote": false,
       "text": "—Stop. You are not leaving."
     },
     {
@@ -1150,222 +1369,266 @@
       "type": "dialogue",
       "speakerName": "Amiya",
       "speakerId": null,
+      "isRemote": false,
       "text": "I won't let you through."
     },
     {
       "type": "dialogue",
       "speakerName": "Amiya",
       "speakerId": null,
+      "isRemote": false,
       "text": "Talulah, you should not have left that room."
     },
     {
       "type": "dialogue",
       "speakerName": "Amiya",
       "speakerId": null,
+      "isRemote": false,
       "text": "Are these—Reunion? Are they here to rescue you?"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_bridge"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Talulah",
       "speakerId": "char_011_talula",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "The leader of Rhodes Island herself. Well, the word 'rescue' isn't very appropriate here, not that it matters."
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "Now I do hope you'll understand. She's coming with us, and she doesn't have a choice."
     },
     {
       "type": "dialogue",
       "speakerName": "Amiya",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "No, she's staying here."
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "Ursus and Lungmen both have a right to prosecute Talulah, and naturally Rhodes Island has a reason to imprison her."
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "But Talulah also owes us an explanation. To Reunion... and to the Infected."
     },
     {
       "type": "dialogue",
       "speakerName": "Amiya",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "—In that case, why not trust Rhodes Island, and wait until Talulah can give you that explanation?"
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "That's the same thing Guard said to us, he wanted us to trust you."
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "And Ch'en... Lungmen's Superintendent Ch'en once said she wanted to create fair terms by which an Infected like her could be judged."
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "But what even counts as fair?"
     },
     {
       "type": "dialogue",
       "speakerName": "Amiya",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "Chernobog and Lungmen have seen so much sacrifice, so much needless death. Even if she had a thousand excuses, she's still guilty."
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "Rhodes Island is welcome to forge that future, to wait for it to come, but... Reunion, the ones she betrayed... they don't get a say?"
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "Answer me, as Rhodes Island's leader."
     },
     {
       "type": "dialogue",
       "speakerName": "Amiya",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "In that case, we can wait together."
     },
     {
       "type": "dialogue",
       "speakerName": "Amiya",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "The Shieldguards are willing to believe... and so do Rhodes Island's operators... that there will come a day we give everyone an answer..."
     },
     {
       "type": "dialogue",
       "speakerName": "Amiya",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "But, right now, Reunion is trying to snatch her away from Rhodes Island through violence. How is anyone supposed to trust in Reunion?"
     },
     {
       "type": "dialogue",
       "speakerName": "Amiya",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "I don't want the Infected to see any more bloodshed. I don't want to fight the Reunion Movement again. But why must you—"
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "Even if I'm willing to wait, and there are others who are... 'Reunion' cannot wait."
     },
     {
       "type": "dialogue",
       "speakerName": "Amiya",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "What?"
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "That's all I have to say."
     },
     {
       "type": "dialogue",
       "speakerName": "Reunion Soldier",
       "speakerId": "char_1002_nsabr",
+      "isRemote": false,
       "text": "Nine! We have to move! We can't waste any more time with her!"
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "Let's go, Talulah."
     },
     {
       "type": "dialogue",
       "speakerName": "Talulah",
       "speakerId": "char_011_talula",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Amiya",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "Wait, you can't—"
     },
     {
       "type": "dialogue",
       "speakerName": "Reunion Soldier",
       "speakerId": "char_1002_nsabr",
+      "isRemote": false,
       "text": "That's not for you to decide!"
     },
     {
       "type": "dialogue",
       "speakerName": "Reunion Soldier",
       "speakerId": "char_1002_nsabr",
+      "isRemote": false,
       "text": "Everyone, stop the Cautus! Watch her Arts!"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_corridor"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Guerrilla Sarkaz",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "You're strong, Rhodes Island Infected! There's no way I could stop you alone!"
     },
     {
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "Heh, I'll take that as a compliment. That mean you're letting me by?"
     },
     {
       "type": "dialogue",
       "speakerName": "Guerrilla Sarkaz",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "No, I was just thinking that at least Yelena gave her life fighting a true warrior!"
     },
     {
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "Aw, too bad. I'm in a hurry, though. So you guys are in for a hard time!"
     },
     {
       "type": "dialogue",
       "speakerName": "Guard",
       "speakerId": "avg_npc_059",
+      "isRemote": false,
       "text": "—Crossbowman, stop her!"
     },
     {
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "There's more of you—?!"
     },
     {
@@ -1375,81 +1638,98 @@
       "type": "dialogue",
       "speakerName": "Phantom Crossbowman",
       "speakerId": "avg_npc_016",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "Wait—You—? What's that you're holding?"
     },
     {
       "type": "dialogue",
       "speakerName": "Phantom Crossbowman",
       "speakerId": "avg_npc_016",
+      "isRemote": false,
       "text": "The captain's crossbow. You've been taking good care of it."
     },
     {
       "type": "dialogue",
       "speakerName": "Phantom Crossbowman",
       "speakerId": "avg_npc_016",
+      "isRemote": false,
       "text": "Thank you."
     },
     {
       "type": "dialogue",
       "speakerName": "Phantom Crossbowman",
       "speakerId": "avg_npc_016",
+      "isRemote": false,
       "text": "But as long as we choose to stand up, it's too early for that crossbow to be sealed away as a mere memento of the dead."
     },
     {
       "type": "dialogue",
       "speakerName": "Phantom Crossbowman",
       "speakerId": "avg_npc_016",
+      "isRemote": false,
       "text": "All hands, ready."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_bridge"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Reunion Warrior",
       "speakerId": "char_1002_nsabr",
+      "isRemote": false,
       "text": "This rabbit... She's so young. How is she this powerful?!"
     },
     {
       "type": "dialogue",
       "speakerName": "Amiya",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "*Pant*... *pant*..."
     },
     {
       "type": "dialogue",
       "speakerName": "Amiya",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "Out of... the way!"
     },
     {
       "type": "dialogue",
       "speakerName": "Reunion Warrior",
       "speakerId": "char_1002_nsabr",
+      "isRemote": false,
       "text": "Heh... I signed up for this ambush ready to sacrifice myself."
     },
     {
       "type": "dialogue",
       "speakerName": "Reunion Warrior",
       "speakerId": "char_1002_nsabr",
+      "isRemote": false,
       "text": "Come, Cautus. I saw your battle at the core city. Honestly, I admire you people."
     },
     {
       "type": "dialogue",
       "speakerName": "Reunion Warrior",
       "speakerId": "char_1002_nsabr",
+      "isRemote": false,
       "text": "But I won't give in. Even if the Infected have to die here."
     },
     {
       "type": "dialogue",
       "speakerName": "Amiya",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "I—"
     },
     {
@@ -1459,12 +1739,14 @@
       "type": "dialogue",
       "speakerName": "Amiya",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "...!"
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "It's flowering season."
     },
     {
@@ -1474,30 +1756,35 @@
       "type": "dialogue",
       "speakerName": "Amiya",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "A-Are those... flowers? When did—"
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "You take nonlethal shots, even at a time like this."
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "You're a worthy leader, Rhodes Island, but it's about time you got some sleep."
     },
     {
       "type": "dialogue",
       "speakerName": "Amiya",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "...No..."
     },
     {
       "type": "dialogue",
       "speakerName": "Amiya",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "(You... can't...)"
     },
     {
@@ -1507,12 +1794,14 @@
       "type": "dialogue",
       "speakerName": "Reunion Warrior",
       "speakerId": "char_1002_nsabr",
+      "isRemote": false,
       "text": "Um, can your Arts work a little faster...? I mean, how much time is this going to buy us?"
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "Enough. Have all teams move to our current position. The aircraft will be here—"
     },
     {
@@ -1522,18 +1811,21 @@
       "type": "dialogue",
       "speakerName": "Reunion Warrior",
       "speakerId": "char_1002_nsabr",
+      "isRemote": false,
       "text": "Wait! Nine! Dijkstra says he's got something approaching us fast on the camera feed!"
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "Are there other operators...?"
     },
     {
       "type": "dialogue",
       "speakerName": "Reunion Warrior",
       "speakerId": "char_1002_nsabr",
+      "isRemote": false,
       "text": "No, no! That's not human!"
     },
     {
@@ -1543,24 +1835,28 @@
       "type": "dialogue",
       "speakerName": "Mon3tr",
       "speakerId": "npc_10002",
+      "isRemote": false,
       "text": "(Elated roar)"
     },
     {
       "type": "dialogue",
       "speakerName": "Reunion Warrior",
       "speakerId": "char_1002_nsabr",
+      "isRemote": false,
       "text": "S-Stop that thing! It's after Nine and Talulah—"
     },
     {
       "type": "dialogue",
       "speakerName": "Mon3tr",
       "speakerId": "npc_10002",
+      "isRemote": false,
       "text": "(Relaxedly stretches its limbs)"
     },
     {
       "type": "dialogue",
       "speakerName": "Mon3tr",
       "speakerId": "npc_10002",
+      "isRemote": false,
       "text": "(Howls)"
     },
     {
@@ -1570,6 +1866,7 @@
       "type": "dialogue",
       "speakerName": "Reunion Warrior",
       "speakerId": "char_1002_nsabr",
+      "isRemote": false,
       "text": "Woah!"
     },
     {
@@ -1579,57 +1876,70 @@
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "Just what... is that—?"
     },
     {
       "type": "dialogue",
       "speakerName": "Mon3tr",
       "speakerId": "npc_10002",
+      "isRemote": false,
       "text": "(Roars)"
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "(Crap! My Arts can't—)"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_bridge"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Talulah",
       "speakerId": "char_011_talula",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Mon3tr",
       "speakerId": "npc_10002",
+      "isRemote": false,
       "text": "(Taunting roar)"
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "...You..."
     },
     {
       "type": "dialogue",
       "speakerName": "Talulah",
       "speakerId": "char_011_talula",
+      "isRemote": false,
       "text": "Silence isn't an answer, Reunion."
     },
     {
       "type": "dialogue",
       "speakerName": "Talulah",
       "speakerId": "char_011_talula",
+      "isRemote": false,
       "text": "Now, here's my answer. Not that I am given a choice, as you said."
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "......"
     },
     {
@@ -1639,72 +1949,84 @@
       "type": "dialogue",
       "speakerName": "Guerrilla Sarkaz",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "Nine! We don't have the time! We can't hold that Feline and the monster for very long!"
     },
     {
       "type": "dialogue",
       "speakerName": "Mon3tr",
       "speakerId": "npc_10002",
+      "isRemote": false,
       "text": "(Roars)"
     },
     {
       "type": "dialogue",
       "speakerName": "Guerrilla Sarkaz",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "Ugh—Dammit!"
     },
     {
       "type": "dialogue",
       "speakerName": "Nine",
       "speakerId": "avg_npc_043_1",
+      "isRemote": false,
       "text": "30 seconds more..."
     },
     {
       "type": "dialogue",
       "speakerName": "Amiya",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "Hngh.... Mmm...?"
     },
     {
       "type": "dialogue",
       "speakerName": "Mon3tr",
       "speakerId": "npc_10002",
+      "isRemote": false,
       "text": "(Agitated roars)"
     },
     {
       "type": "dialogue",
       "speakerName": "Guerrilla Sarkaz",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "It's charging you again, Nine—"
     },
     {
       "type": "dialogue",
       "speakerName": "Talulah",
       "speakerId": "char_011_talula",
+      "isRemote": false,
       "text": "Rhodes Island."
     },
     {
       "type": "dialogue",
       "speakerName": "Talulah",
       "speakerId": "char_011_talula",
+      "isRemote": false,
       "text": "I'm not going to convince anyone, nor will I force anyone to accept what I think."
     },
     {
       "type": "dialogue",
       "speakerName": "Talulah",
       "speakerId": "char_011_talula",
+      "isRemote": false,
       "text": "But it's not over yet."
     },
     {
       "type": "dialogue",
       "speakerName": "Talulah",
       "speakerId": "char_011_talula",
+      "isRemote": false,
       "text": "I will wait for that day to come. Whether it's the day she spoke of, or the day you did. I will wait for my so-called judgment."
     },
     {
       "type": "dialogue",
       "speakerName": "Talulah",
       "speakerId": "char_011_talula",
+      "isRemote": false,
       "text": "But until then—"
     },
     {
@@ -1718,12 +2040,14 @@
       "type": "dialogue",
       "speakerName": "Mon3tr",
       "speakerId": "npc_10002",
+      "isRemote": false,
       "text": "—(Brief timid moans)!"
     },
     {
       "type": "dialogue",
       "speakerName": "Talulah",
       "speakerId": "char_011_talula",
+      "isRemote": false,
       "text": "I will live."
     },
     {
@@ -1742,8 +2066,7 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1758,49 +2081,52 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "narration",
-          "text": "You step in front of Amiya, shielding her.\nThe suffocatingly high temperature briefly dazes you, though the fire's sparks continue to dance in the air, leaving you two unharmed."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "Relax, I made sure the flames went around her."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "You still have a long road ahead. I can only hope... nothing will cloud your hearts."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Guard",
-          "speakerId": "avg_npc_059",
-          "text": "It's time! Nine! We can't wait any longer!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "I know."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "Well, then... We'll meet again, Rhodes Island."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "narration",
+      "text": "You step in front of Amiya, shielding her.\nThe suffocatingly high temperature briefly dazes you, though the fire's sparks continue to dance in the air, leaving you two unharmed."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "Relax, I made sure the flames went around her."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "You still have a long road ahead. I can only hope... nothing will cloud your hearts."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Guard",
+      "speakerId": "avg_npc_059",
+      "isRemote": false,
+      "text": "It's time! Nine! We can't wait any longer!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "I know."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "Well, then... We'll meet again, Rhodes Island."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1810,8 +2136,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1821,33 +2146,34 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "Take that thing down."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "(Howls)"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "......"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "Take that thing down."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "(Howls)"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1862,24 +2188,24 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "A Columbian low-altitude aircraft. They've been waiting for foggy weather."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "Set Amiya down on the floor. Quick."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "A Columbian low-altitude aircraft. They've been waiting for foggy weather."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "Set Amiya down on the floor. Quick."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1889,78 +2215,97 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "......"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "So that's Kal'tsit."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "Guard said that if, including Kal'tsit, there were just three elite operators around, our ambush wouldn't have worked."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "That's why today... that was our only chance."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "How long have you been preparing for this?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "A long time."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "So? Where are we going?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "Where it all started."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Mmgh..."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_aircraft"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "So that's Kal'tsit."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "Guard said that if, including Kal'tsit, there were just three elite operators around, our ambush wouldn't have worked."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "That's why today... that was our only chance."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "How long have you been preparing for this?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "A long time."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "So? Where are we going?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "Where it all started."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_bridge"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Mmgh..."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1980,168 +2325,191 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "Calm down... She passed out. That's all."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "It's no mere Arts, though. It might be plant toxins... Blaze."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Blaze",
-          "speakerId": "char_017_homura",
-          "text": "......"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "Take Amiya to Medical."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Blaze",
-          "speakerId": "char_017_homura",
-          "text": "Alright..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "I can see it on your face. Don't blame yourself. That Sarkaz was no run-of-the-mill fighter."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Blaze",
-          "speakerId": "char_017_homura",
-          "text": "But I still let them get away."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Blaze",
-          "speakerId": "char_017_homura",
-          "text": "If... If only I had gotten more answers out of Guard—!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "Guard..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "They came prepared, and we weren't."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "H-Hey, everybody? How's everything—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "A—Amiya..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "Let's get a damage report and take care of the wounded first. We'll talk about the rest later."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "That guy played me like a fiddle... This ambush could've been avoided."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "Dammit...! I gave him that thing because I trusted him—!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "Dr. Kal'tsit!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "I am listening."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "This ship... Rhodes Island might be finding itself under frequent, direct threats, just like we used to!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "I want to hold an emergency meeting right now."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "We'll be entering Victoria soon..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "We don't have many operators at your disposal."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "I know."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "Well then... Doctor."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "I'll have you assist Closure. That look on her face... it's seldom seen."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "Calm down... She passed out. That's all."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "It's no mere Arts, though. It might be plant toxins... Blaze."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Blaze",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "Take Amiya to Medical."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Blaze",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "Alright..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "I can see it on your face. Don't blame yourself. That Sarkaz was no run-of-the-mill fighter."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Blaze",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "But I still let them get away."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Blaze",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "If... If only I had gotten more answers out of Guard—!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "Guard..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "They came prepared, and we weren't."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "H-Hey, everybody? How's everything—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "A—Amiya..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "Let's get a damage report and take care of the wounded first. We'll talk about the rest later."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "That guy played me like a fiddle... This ambush could've been avoided."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "Dammit...! I gave him that thing because I trusted him—!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "Dr. Kal'tsit!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "I am listening."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "This ship... Rhodes Island might be finding itself under frequent, direct threats, just like we used to!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "I want to hold an emergency meeting right now."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "We'll be entering Victoria soon..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "We don't have many operators at your disposal."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "I know."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "Well then... Doctor."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "I'll have you assist Closure. That look on her face... it's seldom seen."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -2161,210 +2529,251 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "At least you stood up and shielded Amiya in the end."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "Thank you."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "What's this...?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "Your new cuffs."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "They track your position in real time. And if you try to use your Arts again, you aren't going to enjoy it."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "Talulah, you are our prisoner."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "When did you join Reunion, Lungmenite?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "Every soul who walks this world is fated to die, let alone the Infected, and let alone me."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "That said, the humiliation the Infected have faced and the fury of the enslaved have not been answered for."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "That's why I can't die for nothing."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "When this comes to an end, you will die."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "Then let our brethren tear down the banners of the old era and set all injustice and tyranny ablaze. Then, and only then, scatter their ashes on my grave."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "But I know, of course, what you and your followers seek first is the truth."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "It's like you and Ch'en were cut from the same cloth."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "You know her."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "I do. And not just Superintendent Ch'en. I know Ch'en Hui-chieh. So I can tell you two are alike."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "That's for another time, though."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Sorry, everyone... I made you worry."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "Amiya! Are you okay?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Yeah..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "I... I couldn't stop Talulah."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "Reunion has been tracking our ship under cover of fog and Catastrophe for at least a dozen days, and they had infiltrated our systems long before that... They didn't make their move right away, and instead waited until we were least prepared."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "We will get Talulah back, but it's not necessarily a bad thing that Lungmen and Ursus no longer have a reason to keep track of the Rhodes Island landship."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "We're getting closer and closer to Victoria, Amiya."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "We are..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "If he managed to take my systems down... then I can trace him too."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "He couldn't wipe all the records in time. There's gotta be some clues he left behind, like an origin terminal, geolocation info, and how he forged everything—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "Just watch! I will find them!"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "At least you stood up and shielded Amiya in the end."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "Thank you."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_aircraft"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "What's this...?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "Your new cuffs."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "They track your position in real time. And if you try to use your Arts again, you aren't going to enjoy it."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "Talulah, you are our prisoner."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "When did you join Reunion, Lungmenite?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "Every soul who walks this world is fated to die, let alone the Infected, and let alone me."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "That said, the humiliation the Infected have faced and the fury of the enslaved have not been answered for."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "That's why I can't die for nothing."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "When this comes to an end, you will die."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "Then let our brethren tear down the banners of the old era and set all injustice and tyranny ablaze. Then, and only then, scatter their ashes on my grave."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "But I know, of course, what you and your followers seek first is the truth."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "It's like you and Ch'en were cut from the same cloth."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "You know her."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "I do. And not just Superintendent Ch'en. I know Ch'en Hui-chieh. So I can tell you two are alike."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "That's for another time, though."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_infirmary"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Sorry, everyone... I made you worry."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "Amiya! Are you okay?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Yeah..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "I... I couldn't stop Talulah."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "Reunion has been tracking our ship under cover of fog and Catastrophe for at least a dozen days, and they had infiltrated our systems long before that... They didn't make their move right away, and instead waited until we were least prepared."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "We will get Talulah back, but it's not necessarily a bad thing that Lungmen and Ursus no longer have a reason to keep track of the Rhodes Island landship."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "We're getting closer and closer to Victoria, Amiya."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "We are..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "If he managed to take my systems down... then I can trace him too."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "He couldn't wipe all the records in time. There's gotta be some clues he left behind, like an origin terminal, geolocation info, and how he forged everything—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "Just watch! I will find them!"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -2384,24 +2793,24 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "It's okay..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "It's strange... Dr. Kal'tsit, Closure, Doctor. I'm getting a weird feeling about this turn of events."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "It's okay..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "It's strange... Dr. Kal'tsit, Closure, Doctor. I'm getting a weird feeling about this turn of events."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -2421,596 +2830,701 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Maybe... certain things are fated to happen, and we, sooner or later, have to face them."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "I think..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "...this isn't the end."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "—We will meet again, Talulah."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ch'en",
-          "speakerId": "char_010_chen",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Bagpipe",
-          "speakerId": "avg_222_bpipe_1",
-          "text": "—I found a Messenger who can help! It's one of my old—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Bagpipe",
-          "speakerId": "avg_222_bpipe_1",
-          "text": "Chenchen? Are you spaced off?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ch'en",
-          "speakerId": "char_010_chen",
-          "text": "No."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ch'en",
-          "speakerId": "char_010_chen",
-          "text": "It's just... I'm getting this weird feeling... Whatever."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Bagpipe",
-          "speakerId": "avg_222_bpipe_1",
-          "text": "Hm? Is everyone from Yan that sensitive? Got some kind of sixth sense?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ch'en",
-          "speakerId": "char_010_chen",
-          "text": "Exactly. We solve cases with nothing but intuition alone."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Bagpipe",
-          "speakerId": "avg_222_bpipe_1",
-          "text": "Eh?! Can you really?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ch'en",
-          "speakerId": "char_010_chen",
-          "text": "...Heh."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ch'en",
-          "speakerId": "char_010_chen",
-          "text": "Stop being an idiot. Let's go."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "It's cold.\nThis cold wind and snow used to be a familiar sight, yet it all feels so foreign now.\nThe snow breeze carries with it many tiny grains of rock, pricking away at the Draco's face.\nUrsus's tundras are so much harsher and livelier than what she faintly remembers in her fading memories."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "It's cold.\nHow long has it been since I last felt such cold?\nA few months? Half a year? A year?\n......\nHas it really...\nHas it really been so long?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Reunion Warrior",
-          "speakerId": "char_1002_nsabr",
-          "text": "Like I said, why are we still keeping her alive like she did nothing wrong?!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Phantom Crossbowman",
-          "speakerId": "avg_npc_016",
-          "text": "Nobody wants to see Talulah hanged more than us."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Reunion Warrior",
-          "speakerId": "char_1002_nsabr",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Phantom Crossbowman",
-          "speakerId": "avg_npc_016",
-          "text": "We've been through it all, over the years, from our beginnings in the tundras all the way to the end in Chernobog... how do you think we stomach her betrayal?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Phantom Crossbowman",
-          "speakerId": "avg_npc_016",
-          "text": "She used to... She... *sigh*."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Phantom Crossbowman",
-          "speakerId": "avg_npc_016",
-          "text": "We don't know the whole story of Chernobog... but it's fishy, and we need a more concrete answer."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Reunion Warrior",
-          "speakerId": "char_1002_nsabr",
-          "text": "Why should we even trust her?!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Phantom Crossbowman",
-          "speakerId": "avg_npc_016",
-          "text": "Leave it to Nine."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Phantom Crossbowman",
-          "speakerId": "avg_npc_016",
-          "text": "The captain wouldn't want to see Infected morale fall to rock bottom either... but Nine is a bit more calm when it comes to this mess."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Reunion Warrior",
-          "speakerId": "char_1002_nsabr",
-          "text": "Of course she is! She's a Lungmenite who joined us halfway through! She doesn't know what it means to be part of Reunion—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Phantom Crossbowman",
-          "speakerId": "avg_npc_016",
-          "text": "—Watch your mouth!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Phantom Crossbowman",
-          "speakerId": "avg_npc_016",
-          "text": "Where did you think our comrades who left for the other countries started their journey?!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Phantom Crossbowman",
-          "speakerId": "avg_npc_016",
-          "text": "They started from the snowfields beneath your feet and made their way across the world under the watchful eyes of that disgusting traitor!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Phantom Crossbowman",
-          "speakerId": "avg_npc_016",
-          "text": "Do you think hanging her will solve the whole thing?!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Reunion Warrior",
-          "speakerId": "char_1002_nsabr",
-          "text": "I... Sorry."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Reunion Warrior",
-          "speakerId": "char_1002_nsabr",
-          "text": "I'll... cool off."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "It's the Infected workmen from Londinium. They keep looking for help, trying to build relationships with other Infected."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "Victoria... They rose because of you, Talulah. And that's before we even say... you are a Draco."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "Just as you said, you don't have the right to die as you please. If all Reunion across the world rose up in arms because of you, then—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "—Either the resistance thus far has been futile or... we will need some new tinder for our fire to crackle loud again."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "That's why your next destination is Victoria."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "It's more than that, Talulah."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "You still want to stay in Ursus?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "I'm looking for someone."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "Someone I should've burned to ashes."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "Who?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "An evil god who calls himself immortal."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "Why?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "To resist him."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "You know how big this country is, don't you? You have only a few months. It's like a needle in a haystack."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "That's enough time."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "I will find him."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "You've gone quiet again, all of a sudden."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "I... remembered something."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "Here we are. This is it."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "This place..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "This used to be Reunion's stronghold."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "Of course, I only heard about it from the survivors. I have no idea what it was like back then."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "What about you? Do you remember?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "......"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "The silent warrior stops in her tracks.\nAmid the vast white blanket brought forth by the Ursus winter, the abandoned stronghold is almost entirely covered in snow, leaving not a trace of its former appearance.\nEven Talulah finds this strange. It is as though she can see those scenes unfolding before her. She can immediately tell where the campfire used to be.\nThe walk was difficult, but the team was as hardened as they could have been. The soldiers once gathered here to sing together and warm their ever-starving stomachs with a soup that had only a hint of salt for taste.\nAnd now, where the campfire once burned, there stands solemnly a misshapen stone slab."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "That's..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "A cenotaph. It's like a monument."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "It was built by the warriors who survived."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "No matter how the living judge you, no matter what the future holds, you must return here first."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "You need to question yourself."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Reunion Caster",
-          "speakerId": "char_1011_wizard",
-          "text": "Nine, we've scouted the road ahead."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Reunion Caster",
-          "speakerId": "char_1011_wizard",
-          "text": "We'll go around the village to the west. We'll rendezvous with some fighters there."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "We don't have time. Have everyone go on the double. We need to make it back to the stronghold sooner than planned."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Reunion Caster",
-          "speakerId": "char_1011_wizard",
-          "text": "Okay..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "—Is something the matter?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Reunion Caster",
-          "speakerId": "char_1011_wizard",
-          "text": "I will never forget what you said to us in Chernobog, Talulah."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Reunion Caster",
-          "speakerId": "char_1011_wizard",
-          "text": "And I definitely won't forget what you did in the core city. Everything you did, every decision you made, I will have you answer for them."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Reunion Caster",
-          "speakerId": "char_1011_wizard",
-          "text": "Don't even think about running away."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "You heard him. You're not safe here."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "We'll meet up with you up ahead, but you don't have much time."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "Go."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "See for yourself the sacrifices you trampled and hold them in your heart. Etch them into your brain forever."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Nine",
-          "speakerId": "avg_npc_043_1",
-          "text": "Remember them."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "......"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "The Draco begins to walk in silence. Her footsteps alone remain on the white snowfields. With each step on the thick snow, the mud below is imprinted with her weight.\nTalulah walks tall with her back perfectly straight.\nAside from that one winter, when the slowly fading warmth behind her drained her of breath, she has never once slouched her back.\nThe names etched on the crude cenotaph appear to have been scrubbed often; they are starting to fade."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "............"
-        },
-        {
-          "type": "narration",
-          "text": "It feels as though only a brief moment has passed. At the same time, it also feels like an eternity, to the point that the world itself falls still, and that the weight of emotions falling on the mud amidst the snow can only be borne by the land.\nFrom afar, the warrior appears as both a solemn statue and a tree growing in the snowstorm.\nHer roots must dig deep into the earth. Her figure can only expose itself above the snow ever so slightly. Beneath the hidden soil, the massive roots trickling out of the Draco continue to expand and steadily take hold.\nAt this moment, even the silence itself is engulfed by the snowstorm.\nThe warrior raises her head. A snowflake flutters downward onto her cheek, dried up before it can dissolve.\nThe snow ended long ago, in actuality. It's hard to believe that the northern wind granted her this bit of kindness, with the clouds dispersed and the sun shining down brightly.\nThe weather is fine today. A rare occurrence here in the tundra."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "It's cold."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "Looks like I need to get used to this weather all by myself again."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "Sorry, I can't take too long. I need to go now. There are many to whom I owe an explanation."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "One day, we will make it through this snowstorm and reach that end we must ultimately reach..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "But, right now, it looks like this place needs a flame to awaken it."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Talulah",
-          "speakerId": "char_011_talula",
-          "text": "—I'd better hurry and start a fire."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Maybe... certain things are fated to happen, and we, sooner or later, have to face them."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "I think..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "...this isn't the end."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "—We will meet again, Talulah."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "21_G7_decisivebattlealley_d"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ch'en",
+      "speakerId": "char_010_chen",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Bagpipe",
+      "speakerId": "avg_222_bpipe_1",
+      "isRemote": false,
+      "text": "—I found a Messenger who can help! It's one of my old—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Bagpipe",
+      "speakerId": "avg_222_bpipe_1",
+      "isRemote": false,
+      "text": "Chenchen? Are you spaced off?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ch'en",
+      "speakerId": "char_010_chen",
+      "isRemote": false,
+      "text": "No."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ch'en",
+      "speakerId": "char_010_chen",
+      "isRemote": false,
+      "text": "It's just... I'm getting this weird feeling... Whatever."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Bagpipe",
+      "speakerId": "avg_222_bpipe_1",
+      "isRemote": false,
+      "text": "Hm? Is everyone from Yan that sensitive? Got some kind of sixth sense?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ch'en",
+      "speakerId": "char_010_chen",
+      "isRemote": false,
+      "text": "Exactly. We solve cases with nothing but intuition alone."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Bagpipe",
+      "speakerId": "avg_222_bpipe_1",
+      "isRemote": false,
+      "text": "Eh?! Can you really?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ch'en",
+      "speakerId": "char_010_chen",
+      "isRemote": false,
+      "text": "...Heh."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ch'en",
+      "speakerId": "char_010_chen",
+      "isRemote": false,
+      "text": "Stop being an idiot. Let's go."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_snowconutry_4"
+    },
+    {
+      "type": "narration",
+      "text": "It's cold.\nThis cold wind and snow used to be a familiar sight, yet it all feels so foreign now.\nThe snow breeze carries with it many tiny grains of rock, pricking away at the Draco's face.\nUrsus's tundras are so much harsher and livelier than what she faintly remembers in her fading memories."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "It's cold.\nHow long has it been since I last felt such cold?\nA few months? Half a year? A year?\n......\nHas it really...\nHas it really been so long?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Reunion Warrior",
+      "speakerId": "char_1002_nsabr",
+      "isRemote": false,
+      "text": "Like I said, why are we still keeping her alive like she did nothing wrong?!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Phantom Crossbowman",
+      "speakerId": "avg_npc_016",
+      "isRemote": false,
+      "text": "Nobody wants to see Talulah hanged more than us."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Reunion Warrior",
+      "speakerId": "char_1002_nsabr",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Phantom Crossbowman",
+      "speakerId": "avg_npc_016",
+      "isRemote": false,
+      "text": "We've been through it all, over the years, from our beginnings in the tundras all the way to the end in Chernobog... how do you think we stomach her betrayal?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Phantom Crossbowman",
+      "speakerId": "avg_npc_016",
+      "isRemote": false,
+      "text": "She used to... She... *sigh*."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Phantom Crossbowman",
+      "speakerId": "avg_npc_016",
+      "isRemote": false,
+      "text": "We don't know the whole story of Chernobog... but it's fishy, and we need a more concrete answer."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Reunion Warrior",
+      "speakerId": "char_1002_nsabr",
+      "isRemote": false,
+      "text": "Why should we even trust her?!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Phantom Crossbowman",
+      "speakerId": "avg_npc_016",
+      "isRemote": false,
+      "text": "Leave it to Nine."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Phantom Crossbowman",
+      "speakerId": "avg_npc_016",
+      "isRemote": false,
+      "text": "The captain wouldn't want to see Infected morale fall to rock bottom either... but Nine is a bit more calm when it comes to this mess."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Reunion Warrior",
+      "speakerId": "char_1002_nsabr",
+      "isRemote": false,
+      "text": "Of course she is! She's a Lungmenite who joined us halfway through! She doesn't know what it means to be part of Reunion—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Phantom Crossbowman",
+      "speakerId": "avg_npc_016",
+      "isRemote": false,
+      "text": "—Watch your mouth!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Phantom Crossbowman",
+      "speakerId": "avg_npc_016",
+      "isRemote": false,
+      "text": "Where did you think our comrades who left for the other countries started their journey?!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Phantom Crossbowman",
+      "speakerId": "avg_npc_016",
+      "isRemote": false,
+      "text": "They started from the snowfields beneath your feet and made their way across the world under the watchful eyes of that disgusting traitor!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Phantom Crossbowman",
+      "speakerId": "avg_npc_016",
+      "isRemote": false,
+      "text": "Do you think hanging her will solve the whole thing?!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Reunion Warrior",
+      "speakerId": "char_1002_nsabr",
+      "isRemote": false,
+      "text": "I... Sorry."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Reunion Warrior",
+      "speakerId": "char_1002_nsabr",
+      "isRemote": false,
+      "text": "I'll... cool off."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_snowconutryinside"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "It's the Infected workmen from Londinium. They keep looking for help, trying to build relationships with other Infected."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "Victoria... They rose because of you, Talulah. And that's before we even say... you are a Draco."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "Just as you said, you don't have the right to die as you please. If all Reunion across the world rose up in arms because of you, then—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "—Either the resistance thus far has been futile or... we will need some new tinder for our fire to crackle loud again."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "That's why your next destination is Victoria."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "It's more than that, Talulah."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "You still want to stay in Ursus?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "I'm looking for someone."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "Someone I should've burned to ashes."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "Who?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "An evil god who calls himself immortal."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "Why?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "To resist him."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "You know how big this country is, don't you? You have only a few months. It's like a needle in a haystack."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "That's enough time."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "I will find him."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_snow_2"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "You've gone quiet again, all of a sudden."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "I... remembered something."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "Here we are. This is it."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "This place..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "This used to be Reunion's stronghold."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "Of course, I only heard about it from the survivors. I have no idea what it was like back then."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "What about you? Do you remember?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "The silent warrior stops in her tracks.\nAmid the vast white blanket brought forth by the Ursus winter, the abandoned stronghold is almost entirely covered in snow, leaving not a trace of its former appearance.\nEven Talulah finds this strange. It is as though she can see those scenes unfolding before her. She can immediately tell where the campfire used to be.\nThe walk was difficult, but the team was as hardened as they could have been. The soldiers once gathered here to sing together and warm their ever-starving stomachs with a soup that had only a hint of salt for taste.\nAnd now, where the campfire once burned, there stands solemnly a misshapen stone slab."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "That's..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "A cenotaph. It's like a monument."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "It was built by the warriors who survived."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "No matter how the living judge you, no matter what the future holds, you must return here first."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "You need to question yourself."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Reunion Caster",
+      "speakerId": "char_1011_wizard",
+      "isRemote": false,
+      "text": "Nine, we've scouted the road ahead."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Reunion Caster",
+      "speakerId": "char_1011_wizard",
+      "isRemote": false,
+      "text": "We'll go around the village to the west. We'll rendezvous with some fighters there."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "We don't have time. Have everyone go on the double. We need to make it back to the stronghold sooner than planned."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Reunion Caster",
+      "speakerId": "char_1011_wizard",
+      "isRemote": false,
+      "text": "Okay..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "—Is something the matter?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Reunion Caster",
+      "speakerId": "char_1011_wizard",
+      "isRemote": false,
+      "text": "I will never forget what you said to us in Chernobog, Talulah."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Reunion Caster",
+      "speakerId": "char_1011_wizard",
+      "isRemote": false,
+      "text": "And I definitely won't forget what you did in the core city. Everything you did, every decision you made, I will have you answer for them."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Reunion Caster",
+      "speakerId": "char_1011_wizard",
+      "isRemote": false,
+      "text": "Don't even think about running away."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "You heard him. You're not safe here."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "We'll meet up with you up ahead, but you don't have much time."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "Go."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "See for yourself the sacrifices you trampled and hold them in your heart. Etch them into your brain forever."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Nine",
+      "speakerId": "avg_npc_043_1",
+      "isRemote": false,
+      "text": "Remember them."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "The Draco begins to walk in silence. Her footsteps alone remain on the white snowfields. With each step on the thick snow, the mud below is imprinted with her weight.\nTalulah walks tall with her back perfectly straight.\nAside from that one winter, when the slowly fading warmth behind her drained her of breath, she has never once slouched her back.\nThe names etched on the crude cenotaph appear to have been scrubbed often; they are starting to fade."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "............"
+    },
+    {
+      "type": "narration",
+      "text": "It feels as though only a brief moment has passed. At the same time, it also feels like an eternity, to the point that the world itself falls still, and that the weight of emotions falling on the mud amidst the snow can only be borne by the land.\nFrom afar, the warrior appears as both a solemn statue and a tree growing in the snowstorm.\nHer roots must dig deep into the earth. Her figure can only expose itself above the snow ever so slightly. Beneath the hidden soil, the massive roots trickling out of the Draco continue to expand and steadily take hold.\nAt this moment, even the silence itself is engulfed by the snowstorm.\nThe warrior raises her head. A snowflake flutters downward onto her cheek, dried up before it can dissolve.\nThe snow ended long ago, in actuality. It's hard to believe that the northern wind granted her this bit of kindness, with the clouds dispersed and the sun shining down brightly.\nThe weather is fine today. A rare occurrence here in the tundra."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "It's cold."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "Looks like I need to get used to this weather all by myself again."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "Sorry, I can't take too long. I need to go now. There are many to whom I owe an explanation."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "One day, we will make it through this snowstorm and reach that end we must ultimately reach..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "But, right now, it looks like this place needs a flame to awaken it."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Talulah",
+      "speakerId": "char_011_talula",
+      "isRemote": false,
+      "text": "—I'd better hurry and start a fire."
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": [

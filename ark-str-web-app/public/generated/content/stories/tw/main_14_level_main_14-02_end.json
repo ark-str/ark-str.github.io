@@ -6,10 +6,14 @@
   "title": "破解錘砧戰術",
   "storyCode": "14-3",
   "avgTag": "行動後",
-  "sourcePath": "vendor/ArknightsGamedata/tw/gamedata/story/obt/main/level_main_14-02_end.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/tw/gamedata/story/obt/main/level_main_14-02_end.txt",
   "sourceHash": "8076abe619f5ca178961115db12bfd3fe3ba7f3238b4f408de3072032d3b092a",
   "bodyAvailable": true,
   "blocks": [
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
     {
       "type": "narration",
       "text": "行動開始後二十三小時"
@@ -18,9 +22,14 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "50_g25_wildbattlefield_ex"
+    },
+    {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "前進路線清掃完畢。"
     },
     {
@@ -30,6 +39,7 @@
       "type": "dialogue",
       "speakerName": "Misery",
       "speakerId": "avg_npc_235",
+      "isRemote": true,
       "text": "我正在偵察薩卡茲的動向，暫時沒有發現他們留下的痕跡。"
     },
     {
@@ -39,12 +49,14 @@
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "感謝你，Misery先生，請繼續布置哨位。"
     },
     {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "摩根，你那邊有沒有發現活著的維多利亞士兵？"
     },
     {
@@ -54,18 +66,21 @@
       "type": "dialogue",
       "speakerName": "摩根",
       "speakerId": "avg_npc_405_1",
+      "isRemote": true,
       "text": "沒有。"
     },
     {
       "type": "dialogue",
       "speakerName": "摩根",
       "speakerId": "avg_npc_405_1",
+      "isRemote": true,
       "text": "除了源石結晶，什麼都沒有。"
     },
     {
       "type": "dialogue",
       "speakerName": "摩根",
       "speakerId": "avg_npc_405_1",
+      "isRemote": true,
       "text": "在進入西途林地以後，我們沒有遇到哪怕一支維多利亞人的隊伍，連屍體和載具殘骸都幾乎見不到。"
     },
     {
@@ -75,36 +90,42 @@
       "type": "dialogue",
       "speakerName": "因陀羅",
       "speakerId": "avg_155_tiger_1",
+      "isRemote": false,
       "text": "見鬼！明明看起來打得這麼激烈，人都上哪去了？"
     },
     {
       "type": "dialogue",
       "speakerName": "達格達",
       "speakerId": "avg_npc_396_1",
+      "isRemote": false,
       "text": "這裡的地形還在一刻不停地變化，也許是……大地吃掉了一切。"
     },
     {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "我們不能低估人們的頑強。正因為有不願放棄的人，才會有典範軍。"
     },
     {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "我們也才會在這裡。"
     },
     {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "希勒少尉，請繼續讓醫療兵做好接收殘軍和平民的準備。"
     },
     {
@@ -114,54 +135,63 @@
       "type": "dialogue",
       "speakerName": "希勒少尉",
       "speakerId": "avg_npc_1070_1",
+      "isRemote": true,
       "text": "我們的物資還算是有些富餘，這方面可以放心。"
     },
     {
       "type": "dialogue",
       "speakerName": "希勒少尉",
       "speakerId": "avg_npc_1070_1",
+      "isRemote": true,
       "text": "但，壞消息是，鑒於現在隊伍裡感染者的數量，我們就快區分不了感染者士兵和非感染者士兵了。"
     },
     {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "我需要你的專業意見。登記感染者還能不能幫到我們的人？"
     },
     {
       "type": "dialogue",
       "speakerName": "希勒少尉",
       "speakerId": "avg_npc_1070_1",
+      "isRemote": true,
       "text": "哈哈。“登記感染者”……這幾乎是我在軍校學到的第一課。"
     },
     {
       "type": "dialogue",
       "speakerName": "希勒少尉",
       "speakerId": "avg_npc_1070_1",
+      "isRemote": true,
       "text": "但情況擺在這裡了。我得說，意義不大。"
     },
     {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "好。那就別再登記了。"
     },
     {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "所有人，無論是否已經感染，都盡量按照羅德島的建議做好防護。"
     },
     {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "剩下的……就不是我們當前能決定的了。"
     },
     {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "先活著打贏眼前這場仗。未來的仗，未來再說。"
     },
     {
@@ -171,6 +201,7 @@
       "type": "dialogue",
       "speakerName": "洛洛",
       "speakerId": "avg_4040_rockr_1",
+      "isRemote": false,
       "text": "啊，我的無人機回來了。"
     },
     {
@@ -180,6 +211,7 @@
       "type": "dialogue",
       "speakerName": "洛克十八",
       "speakerId": "avg_npc_424_1",
+      "isRemote": false,
       "text": "——"
     },
     {
@@ -189,6 +221,7 @@
       "type": "dialogue",
       "speakerName": "洛洛",
       "speakerId": "avg_4040_rockr_1",
+      "isRemote": false,
       "text": "……糟透了，整個動力系統裡都卡滿了結晶粉塵。"
     },
     {
@@ -198,12 +231,14 @@
       "type": "dialogue",
       "speakerName": "洛洛",
       "speakerId": "avg_4040_rockr_1",
+      "isRemote": false,
       "text": "看監測儀的數據，環境中源石濃度的漲落還是非常劇烈。"
     },
     {
       "type": "dialogue",
       "speakerName": "可露希爾",
       "speakerId": "avg_npc_411_1",
+      "isRemote": false,
       "text": "洛洛，把最新的數據發給我，我們又更新了一版活性化源石發展趨勢的模型，看看這次的演算結果能不能擬合得上。"
     },
     {
@@ -213,42 +248,49 @@
       "type": "dialogue",
       "speakerName": "可露希爾",
       "speakerId": "avg_npc_411_1",
+      "isRemote": false,
       "text": "嘖，看來數據量還是不夠，這個曲線的走勢……等維克多他們那裡衍射儀的分析報告出來，我們應該就能即時計算出安全區的位置了。"
     },
     {
       "type": "dialogue",
       "speakerName": "可露希爾",
       "speakerId": "avg_npc_411_1",
+      "isRemote": false,
       "text": "這片鬼地方，也許上一秒看起來風平浪靜，下一秒就會從地裡長出什麼恐怖的源石大山。安全區的位置一直在變化。"
     },
     {
       "type": "dialogue",
       "speakerName": "可露希爾",
       "speakerId": "avg_npc_411_1",
+      "isRemote": false,
       "text": "現在雖然短距離的通訊已經勉強恢復，但是距離稍微長一點，通訊還是會有干擾。"
     },
     {
       "type": "dialogue",
       "speakerName": "可露希爾",
       "speakerId": "avg_npc_411_1",
+      "isRemote": false,
       "text": "多虧我有先見之明，在來倫蒂尼姆之前，找Raidian討了她的施術單元，稍微仿製了一下……效果雖然不如正版，但夠幫上忙了。"
     },
     {
       "type": "dialogue",
       "speakerName": "可露希爾",
       "speakerId": "avg_npc_411_1",
+      "isRemote": false,
       "text": "等到我們的幾座便攜通訊塔都豎起來，安全區的地點就能發送給戰場上每一個有需要的人。"
     },
     {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "這個訊息能救很多人的命。"
     },
     {
       "type": "dialogue",
       "speakerName": "可露希爾",
       "speakerId": "avg_npc_411_1",
+      "isRemote": false,
       "text": "當然，我們羅德島就是幹這個的。"
     },
     {
@@ -258,48 +300,56 @@
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "號角小姐，情況怎麼樣？"
     },
     {
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": true,
       "text": "我們已經成功登陸吉布森鎮。這裡是我們進入銀石崖前線之前的最後一個補給點。"
     },
     {
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": true,
       "text": "偵察小隊進行了初步的探索，確認有公爵聯軍殘留的痕跡，他們應該是在數天前途經這裡開赴前線的。"
     },
     {
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": true,
       "text": "“灰禮帽”之前同步給我們的行進方向確實是安全的。"
     },
     {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "鎮上有停留人員嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": true,
       "text": "街道上是空的，但我能察覺到晃動的人影和食物的氣息。"
     },
     {
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": true,
       "text": "我們沒有貿然接觸，以免產生不必要的誤會。"
     },
     {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "知道了，我們會盡快與你們會合。"
     },
     {
@@ -309,48 +359,56 @@
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "天快黑了。"
     },
     {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "看來，如果一切順利，我們的戰士還能稍作休息，喝上一碗熱湯。"
     },
     {
       "type": "dialogue",
       "speakerName": "可露希爾",
       "speakerId": "avg_npc_411_1",
+      "isRemote": false,
       "text": "記得給我的人留點，他們忙完再趕回來還要點時間。洛洛和我也還得去費斯特那裡一趟……"
     },
     {
       "type": "dialogue",
       "speakerName": "可露希爾",
       "speakerId": "avg_npc_411_1",
+      "isRemote": false,
       "text": "今天晚上說不定能把通訊範圍再擴大一倍，我們想辦法盡早完工。"
     },
     {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "放心，我們一定把最好的菜留給你們。"
     },
     {
       "type": "dialogue",
       "speakerName": "可露希爾",
       "speakerId": "avg_npc_411_1",
+      "isRemote": false,
       "text": "……反正也就是罐頭軍糧吧。"
     },
     {
       "type": "dialogue",
       "speakerName": "洛洛",
       "speakerId": "avg_4040_rockr_1",
+      "isRemote": false,
       "text": "要不要抽點戰車裡的機油給你當佐料？"
     },
     {
       "type": "dialogue",
       "speakerName": "可露希爾",
       "speakerId": "avg_npc_411_1",
+      "isRemote": false,
       "text": "喂！"
     },
     {
@@ -360,57 +418,70 @@
       "type": "dialogue",
       "speakerName": "推進之王＆洛洛",
       "speakerId": "avg_4040_rockr_1",
+      "isRemote": false,
       "text": "哈哈哈哈哈。"
     },
     {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "各隊伍注意，繼續前進，進入吉布森鎮。"
     },
     {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "希望這一夜……可以和現在一樣平靜。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "21_G6_decisivebattlealley_n"
+    },
+    {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "所有的房子看起來都沒人，原本的居民都躲起來了嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "戴菲恩",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "吉布森鎮離公爵們的防線不遠，應該沒有被薩卡茲完全佔領過，更何況聯軍幾天前才通過了這裡。"
     },
     {
       "type": "dialogue",
       "speakerName": "戴菲恩",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "但號角小姐的謹慎是對的，也許有之前掉隊的公爵殘部因為想追上大部隊而進入這裡。"
     },
     {
       "type": "dialogue",
       "speakerName": "戴菲恩",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "我們雖然收到了“灰禮帽”的建議，但維多利亞向來不是鐵板一塊。"
     },
     {
       "type": "dialogue",
       "speakerName": "戴菲恩",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "而且，典範軍內部的情況還相當複雜，有些古板的軍事貴族未必能容忍我們的存在。"
     },
     {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "展示出我們的規模能讓居心叵測的人先掂量掂量自己，也能讓需要援助的人知道我們來了。"
     },
     {
@@ -424,12 +495,14 @@
       "type": "dialogue",
       "speakerName": "戴菲恩",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "看來他們不想主動與我們接觸。"
     },
     {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "也好，如果能相安無事……"
     },
     {
@@ -439,34 +512,43 @@
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": false,
       "text": "等等，有聲音，左前方的建築裡。"
     },
     {
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": false,
       "text": "是炮彈彈殼落地的聲音！"
     },
     {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "埋伏？"
     },
     {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "大家戒備，我帶人去探路。"
     },
     {
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": false,
       "text": "第一、第二小隊，跟上！"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "27_g13_lightinduarea_indoor"
     },
     {
       "type": "narration",
@@ -476,24 +558,28 @@
       "type": "dialogue",
       "speakerName": "戴菲恩",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "號角小姐，你確定那是彈殼落地的聲音嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": false,
       "text": "我很確定，而且，那是維多利亞精銳部隊才會配給的特殊型號。"
     },
     {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "這裡沒有發現有人生活的痕跡——"
     },
     {
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": false,
       "text": "推進之王，停步。"
     },
     {
@@ -507,42 +593,49 @@
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": false,
       "text": "藏得很好，這條絆線剛好被管道擋住，很難發現。"
     },
     {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "詭雷？"
     },
     {
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": false,
       "text": "不……沒有連接爆炸裝置，是個簡易的報警系統。但看設置的手法，是專業的軍事人員。"
     },
     {
       "type": "dialogue",
       "speakerName": "戴菲恩",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "嘗試交流看看？"
     },
     {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "嗯，站在我們後面，其他人，做好作戰準備。"
     },
     {
       "type": "dialogue",
       "speakerName": "戴菲恩",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "你好，我們沒有惡意——"
     },
     {
       "type": "dialogue",
       "speakerName": "戴菲恩",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "我們這支部隊的番號是——"
     },
     {
@@ -552,12 +645,14 @@
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": false,
       "text": "暗門！"
     },
     {
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": false,
       "text": "準備進入，跟住盾牌！"
     },
     {
@@ -567,42 +662,56 @@
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": false,
       "text": "站住！"
     },
     {
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": false,
       "text": "我們不是……"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
       "type": "dialogue",
       "speakerName": "維多利亞士兵？",
       "speakerId": null,
+      "isRemote": false,
       "text": "——"
     },
     {
       "type": "dialogue",
       "speakerName": "維多利亞士兵？",
       "speakerId": null,
+      "isRemote": false,
       "text": "幫、幫幫我！"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_cherunder_2"
+    },
+    {
       "type": "dialogue",
       "speakerName": "受傷的士兵",
       "speakerId": "avg_npc_423_1",
+      "isRemote": false,
       "text": "我就是在觀察的時候不小心碰掉了樓上的廢彈殼，這他們都聽得到！你設置的報警器他們也沒撞上！"
     },
     {
       "type": "dialogue",
       "speakerName": "受傷的士兵",
       "speakerId": "avg_npc_423_1",
+      "isRemote": false,
       "text": "這支隊伍，恐怕不是那些一般的——"
     },
     {
@@ -612,6 +721,7 @@
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -621,6 +731,7 @@
       "type": "dialogue",
       "speakerName": "受傷的士兵",
       "speakerId": "avg_npc_423_1",
+      "isRemote": false,
       "text": "她……她能擋開你的破城矛？"
     },
     {
@@ -630,18 +741,21 @@
       "type": "dialogue",
       "speakerName": "風笛",
       "speakerId": "avg_222_bpipe_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "風笛",
       "speakerId": "avg_222_bpipe_1",
+      "isRemote": false,
       "text": "隊長？還有推進之王？"
     },
     {
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": false,
       "text": "……菲奧娜，真的是你。"
     },
     {
@@ -655,12 +769,14 @@
       "type": "dialogue",
       "speakerName": "風笛",
       "speakerId": "avg_222_bpipe_1",
+      "isRemote": false,
       "text": "原來，你們都還活著……"
     },
     {
       "type": "dialogue",
       "speakerName": "風笛",
       "speakerId": "avg_222_bpipe_1",
+      "isRemote": false,
       "text": "太好了，真的太好了……"
     },
     {
@@ -674,36 +790,42 @@
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": false,
       "text": "還好，沒受傷，也沒瘦多少。"
     },
     {
       "type": "dialogue",
       "speakerName": "風笛",
       "speakerId": "avg_222_bpipe_1",
+      "isRemote": false,
       "text": "報、報告隊長！我做到了，我把鬼魂部隊的情報帶了出去，我還查清楚了他們到底想幹什麼！"
     },
     {
       "type": "dialogue",
       "speakerName": "風笛",
       "speakerId": "avg_222_bpipe_1",
+      "isRemote": false,
       "text": "我活了下來，帶著記憶，帶著真相，一直活著！"
     },
     {
       "type": "dialogue",
       "speakerName": "風笛",
       "speakerId": "avg_222_bpipe_1",
+      "isRemote": false,
       "text": "你的命令……我一個字都沒忘。"
     },
     {
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": false,
       "text": "很好，我知道你能做到，從來都知道。"
     },
     {
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": false,
       "text": "——風笛，歡迎歸隊。"
     },
     {
@@ -713,12 +835,14 @@
       "type": "dialogue",
       "speakerName": "受傷的士兵",
       "speakerId": "avg_npc_423_1",
+      "isRemote": false,
       "text": "這是……？你們到底——"
     },
     {
       "type": "dialogue",
       "speakerName": "戴菲恩",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "各位，都請出來吧，我們沒有惡意。"
     },
     {
@@ -732,63 +856,77 @@
       "type": "dialogue",
       "speakerName": "受傷的士兵",
       "speakerId": "avg_npc_423_1",
+      "isRemote": false,
       "text": "你們不是公爵的部隊？"
     },
     {
       "type": "dialogue",
       "speakerName": "受傷的士兵",
       "speakerId": "avg_npc_423_1",
+      "isRemote": false,
       "text": "你、你們不少人沒穿維多利亞的軍裝，怎麼還有工人打扮的？"
     },
     {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "是的，我們不隸屬於任何一位公爵。"
     },
     {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "這支部隊的番號是，“典範軍”。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "21_G2_opera_room"
+    },
+    {
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": false,
       "text": "希勒少尉正在統計藏在工廠裡的平民的人數和身體情況。只能說，比我們預計的要好。"
     },
     {
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": false,
       "text": "除了和你一起過來的那些法夫公爵的感染者殘兵，還有一小隊諾曼底公爵的工兵，其他都是本地的平民，沒跑得掉的那些。"
     },
     {
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": false,
       "text": "明明公爵的聯軍前幾天剛經過這裡，他們卻寧願放棄可能被救援的機會，也不願意尋求大公爵們的幫助。"
     },
     {
       "type": "dialogue",
       "speakerName": "達格達",
       "speakerId": "avg_npc_396_1",
+      "isRemote": false,
       "text": "軍人們還好理解，無論是擔心自己的感染狀況，還是擔心軍事條令的處罰，都算是有個理由。可是平民們……"
     },
     {
       "type": "dialogue",
       "speakerName": "達格達",
       "speakerId": "avg_npc_396_1",
+      "isRemote": false,
       "text": "這一年，也許倫蒂尼姆周圍的人們，被迫重新認識了自己的國家和那些掛著勛章的上位者們。"
     },
     {
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": false,
       "text": "風笛，你是怎麼獲得他們的信任——"
     },
     {
@@ -798,30 +936,35 @@
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": false,
       "text": "……你在聽嗎，風笛？"
     },
     {
       "type": "dialogue",
       "speakerName": "風笛",
       "speakerId": "avg_222_bpipe_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "風笛",
       "speakerId": "avg_222_bpipe_1",
+      "isRemote": false,
       "text": "啊，隊長！"
     },
     {
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": false,
       "text": "開戰術會議的時候需要聚精會神。地圖在那裡，不在我臉上。"
     },
     {
       "type": "dialogue",
       "speakerName": "風笛",
       "speakerId": "avg_222_bpipe_1",
+      "isRemote": false,
       "text": "抱歉，隊長！"
     },
     {
@@ -835,165 +978,196 @@
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": false,
       "text": "……唉，這問題我不該問，畢竟你可是菲奧娜。"
     },
     {
       "type": "dialogue",
       "speakerName": "風笛",
       "speakerId": "avg_222_bpipe_1",
+      "isRemote": false,
       "text": "嘿嘿。"
     },
     {
       "type": "dialogue",
       "speakerName": "風笛",
       "speakerId": "avg_222_bpipe_1",
+      "isRemote": false,
       "text": "我就是……有點高興。"
     },
     {
       "type": "dialogue",
       "speakerName": "風笛",
       "speakerId": "avg_222_bpipe_1",
+      "isRemote": false,
       "text": "“典範軍”，風暴突擊隊的前身。原來那些傳言是真的。"
     },
     {
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": false,
       "text": "……我比較驚訝的是，你居然沒忘記軍史課的內容。"
     },
     {
       "type": "dialogue",
       "speakerName": "風笛",
       "speakerId": "avg_222_bpipe_1",
+      "isRemote": false,
       "text": "當然啦！以前在駐地受訓的時候，三角鐵可是監督我把這條罰抄了好多遍呢！"
     },
     {
       "type": "dialogue",
       "speakerName": "風笛",
       "speakerId": "avg_222_bpipe_1",
+      "isRemote": false,
       "text": "駐地的操場邊上，岩槭長得很茂密，擋太陽正好，外面崖壁上的石頭很硬，磨得手疼。"
     },
     {
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": false,
       "text": "我記得，有一回大提琴和雙簧管打賭，誰能更快完成攀岩訓練，輸的人做一百個單手伏地挺身。"
     },
     {
       "type": "dialogue",
       "speakerName": "風笛",
       "speakerId": "avg_222_bpipe_1",
+      "isRemote": false,
       "text": "雙簧管太傻了，誰會跟大提琴打這種賭啊！"
     },
     {
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": false,
       "text": "你那時候可沒提醒他。他做伏地挺身的時候，你還坐他背上了。"
     },
     {
       "type": "dialogue",
       "speakerName": "風笛",
       "speakerId": "avg_222_bpipe_1",
+      "isRemote": false,
       "text": "嘿嘿。我那是，幫他加練。效果不是還不錯嗎？他後來差點就打敗大提琴了！"
     },
     {
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "風笛",
       "speakerId": "avg_222_bpipe_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": false,
       "text": "早在風暴突擊隊成立的時候，那支四國戰爭時期的傳奇部隊就連一個空番號都不剩了。"
     },
     {
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": false,
       "text": "但是現在，它又回到了這片戰場上。"
     },
     {
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": false,
       "text": "風笛，我們現在都是典範軍的一員了。"
     },
     {
       "type": "dialogue",
       "speakerName": "號角",
       "speakerId": "avg_npc_229_1",
+      "isRemote": false,
       "text": "我們的隊伍還在，我們就不會停止戰鬥。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "21_G6_decisivebattlealley_n"
+    },
+    {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "戴菲恩",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "裡面不是在開作戰會議嗎？你怎麼在外面的冷風裡站著？"
     },
     {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "嗯……不差這幾分鐘。"
     },
     {
       "type": "dialogue",
       "speakerName": "戴菲恩",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "……想起誰了？"
     },
     {
       "type": "dialogue",
       "speakerName": "戴菲恩",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "貝爾德，還是……"
     },
     {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "誰都沒想。"
     },
     {
       "type": "dialogue",
       "speakerName": "戴菲恩",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "我信你。要是這夜霧裡突然走過來一個人，我也並不會有什麼期待。"
     },
     {
       "type": "dialogue",
       "speakerName": "戴菲恩",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "不是誰都有號角小姐那麼幸運，還能和自己最想見的人……重逢。"
     },
     {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "“幸運”嗎？真是個奢侈的詞啊。"
     },
     {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "……傷感的時間到此為止，我們也該進去了。"
     },
     {
@@ -1003,6 +1177,7 @@
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "……等等。"
     },
     {
@@ -1012,24 +1187,28 @@
       "type": "dialogue",
       "speakerName": "戴菲恩",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "維多利亞的軍人？是留在這裡的殘兵嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "戴菲恩",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "不，不對，在他們接近之前，我居然都沒發現。"
     },
     {
       "type": "dialogue",
       "speakerName": "戴菲恩",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "這種素質……精銳中的精銳。"
     },
     {
       "type": "dialogue",
       "speakerName": "戴菲恩",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "開斯特的人？"
     },
     {
@@ -1039,18 +1218,21 @@
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "……呵——真冷啊，手都凍僵了。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "這天啊，真是越來越冷。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "只是散了這一下子步，披肩就差不多濕了一半。"
     },
     {
@@ -1060,6 +1242,7 @@
       "type": "dialogue",
       "speakerName": "高多汀公爵",
       "speakerId": "avg_npc_1068_1",
+      "isRemote": false,
       "text": "年輕的朋友們，真的不準備邀請我進去暖和一下嗎？"
     },
     {
@@ -1069,30 +1252,35 @@
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "……既然您願意親自出馬，那我們也該有些禮貌。"
     },
     {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "戴菲恩——"
     },
     {
       "type": "dialogue",
       "speakerName": "戴菲恩",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "維娜小姐？"
     },
     {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "推進之王",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "我們來為公爵大人引路。"
     },
     {

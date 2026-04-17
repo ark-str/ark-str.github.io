@@ -6,10 +6,14 @@
   "title": "過去に別れを",
   "storyCode": "AS-9",
   "avgTag": "戦闘後",
-  "sourcePath": "vendor/ArknightsGamedata/jp/gamedata/story/activities/act35side/level_act35side_09_end.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/jp/gamedata/story/activities/act35side/level_act35side_09_end.txt",
   "sourceHash": "211223560d9fc13651f55a6c12b6cf071cb516aba96707a992310fe1a9d54cdb",
   "bodyAvailable": true,
   "blocks": [
+    {
+      "type": "background",
+      "backgroundId": "53_g13_invertedpyramid"
+    },
     {
       "type": "narration",
       "text": "目を開け、ペペはズバイルのシストラムが目の前にあるのを見た。それあと少しでも前に伸ばされていれば、ペペの首は完全に折れていた。\nそして自らのハンマーはズバイルの胸に当てられ、彼の胸の宝石には細長い亀裂が広がっている。"
@@ -21,18 +25,21 @@
       "type": "dialogue",
       "speakerName": "ズバイル",
       "speakerId": null,
+      "isRemote": false,
       "text": "おめでとう、ペペ殿……"
     },
     {
       "type": "dialogue",
       "speakerName": "ズバイル",
       "speakerId": null,
+      "isRemote": false,
       "text": "そなたは成したな……"
     },
     {
       "type": "dialogue",
       "speakerName": "ズバイル",
       "speakerId": null,
+      "isRemote": false,
       "text": "幼い頃鬼ごっこではいつも姉様に負けていた。今となってそなたにも負けるとは。"
     },
     {
@@ -42,36 +49,42 @@
       "type": "dialogue",
       "speakerName": "ぺぺ",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "君の胸の宝石……"
     },
     {
       "type": "dialogue",
       "speakerName": "ズバイル",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "……此度は、修復できる可能性はないように思う。"
     },
     {
       "type": "dialogue",
       "speakerName": "ぺぺ",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "宝石が完全に砕けたら、君はどうなるの？"
     },
     {
       "type": "dialogue",
       "speakerName": "ズバイル",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "永遠の静けさを得るであろう。"
     },
     {
       "type": "dialogue",
       "speakerName": "ぺぺ",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "君は死ぬのか。"
     },
     {
       "type": "dialogue",
       "speakerName": "ズバイル",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "左様……余は死ぬ。"
     },
     {
@@ -81,42 +94,49 @@
       "type": "dialogue",
       "speakerName": "ズバイル",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "ペペ殿、余がそなたの祖先であることに免じて、頼み事をしてもよいか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ぺぺ",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "言ってごらんよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ズバイル",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "あの貴石の中へと運んでくれるか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ぺぺ",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "あれって入れるの？　てっきり巨大な飾り物だと思っていたよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ズバイル",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "否。あそこには余だけのものが保存されている。"
     },
     {
       "type": "dialogue",
       "speakerName": "ズバイル",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "余はここで無数の歳月を過ごした。あれらがここに保管されているからこそ、余の守護がすべて他人のためであることはなかったのだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ズバイル",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "少なくとも……それらが余のものである歳月があった。"
     },
     {
@@ -126,6 +146,7 @@
       "type": "dialogue",
       "speakerName": "ぺぺ",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "支えるよ……"
     },
     {
@@ -135,12 +156,14 @@
       "type": "dialogue",
       "speakerName": "ズバイル",
       "speakerId": "avg_npc_1479_1",
+      "isRemote": false,
       "text": "気をつけよ、ペペ殿。この体は重い。されど幸いにも……もう間もなく解放される。"
     },
     {
       "type": "dialogue",
       "speakerName": "ズバイル",
       "speakerId": "avg_npc_1479_1",
+      "isRemote": false,
       "text": "そうだ、貴石の下へと行くのだ。"
     },
     {
@@ -161,21 +184,28 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "53_g13_invertedpyramid"
+    },
+    {
       "type": "dialogue",
       "speakerName": "ナラントゥヤ",
       "speakerId": null,
+      "isRemote": false,
       "text": "……ん？"
     },
     {
       "type": "dialogue",
       "speakerName": "ナラントゥヤ",
       "speakerId": null,
+      "isRemote": false,
       "text": "なんだかよく知る感覚が……また循獣に頭を踏まれるような……"
     },
     {
       "type": "dialogue",
       "speakerName": "ナラントゥヤ",
       "speakerId": null,
+      "isRemote": false,
       "text": "――ん！？"
     },
     {
@@ -185,12 +215,14 @@
       "type": "dialogue",
       "speakerName": "ナラントゥヤ",
       "speakerId": "avg_4138_narant_1",
+      "isRemote": false,
       "text": "もしもし、アナト、あたしはどこにいるの？　アスパシア、聞こえる？"
     },
     {
       "type": "dialogue",
       "speakerName": "ナラントゥヤ",
       "speakerId": "avg_4138_narant_1",
+      "isRemote": false,
       "text": "……通信機が壊れてる。それもそうか。"
     },
     {
@@ -201,12 +233,14 @@
       "type": "dialogue",
       "speakerName": "ナラントゥヤ",
       "speakerId": "avg_4138_narant_1",
+      "isRemote": false,
       "text": "……これはあの日の夜、川辺で追いつけなかった影じゃない？"
     },
     {
       "type": "dialogue",
       "speakerName": "ナラントゥヤ",
       "speakerId": "avg_4138_narant_1",
+      "isRemote": false,
       "text": "まさかこの都市の人々が毎年毎年見てたのはこの影なの？"
     },
     {
@@ -217,24 +251,28 @@
       "type": "dialogue",
       "speakerName": "ナラントゥヤ",
       "speakerId": "avg_4138_narant_1",
+      "isRemote": false,
       "text": "……あなたの髪はなかなかに赤いね。でもその背中を見て初めて、あたしの知っている人なのかもしれないと思ったよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ナラントゥヤ",
       "speakerId": "avg_4138_narant_1",
+      "isRemote": false,
       "text": "あたしが見てきたナイツモラは、皆振り返りもせずに自分の道を走っていたからね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ナラントゥヤ",
       "speakerId": "avg_4138_narant_1",
+      "isRemote": false,
       "text": "あれは何て言ったっけ？　「川の水が増した時にこれらが必要な人に拾われますように」……あなたたちも水位が上がった時にしか現れない影、そうでしょ？"
     },
     {
       "type": "dialogue",
       "speakerName": "ナラントゥヤ",
       "speakerId": "avg_4138_narant_1",
+      "isRemote": false,
       "text": "さて、今は亀裂を探さないといけないんだ。あなたを信じるとしようか。"
     },
     {
@@ -248,6 +286,7 @@
       "type": "dialogue",
       "speakerName": "ナラントゥヤ",
       "speakerId": "avg_4138_narant_1",
+      "isRemote": false,
       "text": "これは――"
     },
     {
@@ -259,6 +298,10 @@
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "53_g15_invertedpyramid_ruin"
     },
     {
       "type": "narration",
@@ -278,27 +321,35 @@
       "type": "dialogue",
       "speakerName": "ナラントゥヤ",
       "speakerId": "avg_4138_narant_1",
+      "isRemote": false,
       "text": "……嘘でしょ、これが埋めなきゃいけない「隙間」なわけ？"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "53_g14_kaleidoscope"
+    },
+    {
       "type": "dialogue",
       "speakerName": "ぺぺ",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "ぺぺ",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "まさか巨大な宝石の中がこんなにもすごい景色だなんて思ってもみなかったよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ズバイル",
       "speakerId": "avg_npc_1479_1",
+      "isRemote": false,
       "text": "真ん中にある台が見えるか？　少し判別しづらいが、それは確かに中央にある。"
     },
     {
@@ -309,27 +360,35 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "53_g14_kaleidoscope"
+    },
+    {
       "type": "dialogue",
       "speakerName": "ぺぺ",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "階段があるなんて全くわからなかったよ……"
     },
     {
       "type": "dialogue",
       "speakerName": "ズバイル",
       "speakerId": "avg_npc_1479_1",
+      "isRemote": false,
       "text": "気をつけよ……まだ三段ある。"
     },
     {
       "type": "dialogue",
       "speakerName": "ぺぺ",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "台に触れたよ。上に宝石がある。次はどうしたらいいの？"
     },
     {
       "type": "dialogue",
       "speakerName": "ズバイル",
       "speakerId": "avg_npc_1479_1",
+      "isRemote": false,
       "text": "その貴石を手に取り、余の体に入れてくれないか？"
     },
     {
@@ -339,78 +398,91 @@
       "type": "dialogue",
       "speakerName": "ぺぺ",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "水が入ってきた……"
     },
     {
       "type": "dialogue",
       "speakerName": "ズバイル",
       "speakerId": "avg_npc_1479_1",
+      "isRemote": false,
       "text": "宝物庫の構造はすでに流砂に破壊された。恐らく川の水が流れ込んできたのであろう。"
     },
     {
       "type": "dialogue",
       "speakerName": "ぺぺ",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "すぐにここは沈んでしまうよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ズバイル",
       "speakerId": "avg_npc_1479_1",
+      "isRemote": false,
       "text": "……川の水にここを洗い流させればよい……さあ、貴石を余の胸に入れるのだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ぺぺ",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "最後の貴石は一体何を表すんだ？"
     },
     {
       "type": "dialogue",
       "speakerName": "ズバイル",
       "speakerId": "avg_npc_1479_1",
+      "isRemote": false,
       "text": "感情。余の感情だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ズバイル",
       "speakerId": "avg_npc_1479_1",
+      "isRemote": false,
       "text": "一人でこの長き歳月に抵抗することはあまりにも困難だ。耐え抜くためには、ほとんどの感情を捨て去らざるを得なかった。"
     },
     {
       "type": "dialogue",
       "speakerName": "ぺぺ",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "君の宝石はもう砕けている。たとえ入れたところで意味がないと思うよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ズバイル",
       "speakerId": "avg_npc_1479_1",
+      "isRemote": false,
       "text": "わかっている。されど余は一人の完全な人間として旅立ちたいのだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ぺぺ",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "君はこれまでもずっと人間だったよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ズバイル",
       "speakerId": "avg_npc_1479_1",
+      "isRemote": false,
       "text": "あぁ……感謝する……"
     },
     {
       "type": "dialogue",
       "speakerName": "ズバイル",
       "speakerId": "avg_npc_1479_1",
+      "isRemote": false,
       "text": "ときに……黄金都市に関して……そなたにずっと言いたいことがあった……"
     },
     {
       "type": "dialogue",
       "speakerName": "ぺぺ",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "うん、聞いてるよ……"
     },
     {
@@ -420,6 +492,7 @@
       "type": "dialogue",
       "speakerName": "ズバイル",
       "speakerId": "avg_npc_1479_1",
+      "isRemote": false,
       "text": "やはりいい……"
     },
     {
@@ -429,6 +502,7 @@
       "type": "dialogue",
       "speakerName": "ぺぺ",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "え？"
     },
     {
@@ -438,18 +512,21 @@
       "type": "dialogue",
       "speakerName": "ぺぺ",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "ズバイル……"
     },
     {
       "type": "dialogue",
       "speakerName": "ズバイル",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "ペペ殿、手を放すのだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ズバイル",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "余に行かせてくれ……"
     },
     {
@@ -463,10 +540,15 @@
       "type": "dialogue",
       "speakerName": "ぺぺ",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "ハラヘト、どうか彼の魂が安らかに眠れるように。"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "53_g15_invertedpyramid_ruin"
     },
     {
       "type": "narration",
@@ -476,6 +558,7 @@
       "type": "dialogue",
       "speakerName": "ナラントゥヤ",
       "speakerId": "avg_4138_narant_1",
+      "isRemote": false,
       "text": "ハッ、都市を沈没させるほどの穴がほんのちょっとの応急資材だけじゃ決して埋められないことを、あの博物館の二匹の子ネコちゃんには知っておいてほしいものだね。"
     },
     {
@@ -486,6 +569,7 @@
       "type": "dialogue",
       "speakerName": "ナラントゥヤ",
       "speakerId": "avg_4138_narant_1",
+      "isRemote": false,
       "text": "よし、踊るとしよう。"
     },
     {
@@ -502,6 +586,7 @@
       "type": "dialogue",
       "speakerName": "ナラントゥヤ",
       "speakerId": "avg_4138_narant_1",
+      "isRemote": false,
       "text": "開けーー！"
     },
     {
@@ -511,6 +596,7 @@
       "type": "dialogue",
       "speakerName": "ナラントゥヤ",
       "speakerId": "avg_4138_narant_1",
+      "isRemote": false,
       "text": "――？"
     },
     {
@@ -531,42 +617,49 @@
       "type": "dialogue",
       "speakerName": "ナラントゥヤ",
       "speakerId": "avg_4138_narant_1",
+      "isRemote": false,
       "text": "少し予想外だったけど……ずっと知っていたさ。あたしは白昼夢なんか見ていない。妄想にふけってなんかいない！"
     },
     {
       "type": "dialogue",
       "speakerName": "ナラントゥヤ",
       "speakerId": "avg_4138_narant_1",
+      "isRemote": false,
       "text": "あたしは輝ける都市に来て、一攫千金をしたんだ――"
     },
     {
       "type": "dialogue",
       "speakerName": "ナラントゥヤ",
       "speakerId": "avg_4138_narant_1",
+      "isRemote": false,
       "text": "――いいや、サルゴンの歴史上でこんな風に金貨を滝のように流れさせた奴なんて一体何人いたっていうの？"
     },
     {
       "type": "dialogue",
       "speakerName": "ナラントゥヤ",
       "speakerId": "avg_4138_narant_1",
+      "isRemote": false,
       "text": "この黄金の砂の海は覚えておくよ。あたしが欲しいと思ったものは、必ずこの手に掴めるんだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ナラントゥヤ",
       "speakerId": "avg_4138_narant_1",
+      "isRemote": false,
       "text": "あたしはもっとたくさんまき散らすことも厭わないよ。なぜなら、これからこんなもんじゃないほど手にするからね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ナラントゥヤ",
       "speakerId": "avg_4138_narant_1",
+      "isRemote": false,
       "text": "その日が来たら、今度はサルゴンの砂の海の方があたしを覚えることになる。"
     },
     {
       "type": "dialogue",
       "speakerName": "ナラントゥヤ",
       "speakerId": "avg_4138_narant_1",
+      "isRemote": false,
       "text": "このすべては、あたし自身が選んだんだ！"
     },
     {
@@ -580,22 +673,29 @@
       "type": "dialogue",
       "speakerName": "ナラントゥヤ",
       "speakerId": "avg_4138_narant_1",
+      "isRemote": false,
       "text": "――*サルゴンスラング*、ちょっと待ってよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ナラントゥヤ",
       "speakerId": "avg_4138_narant_1",
+      "isRemote": false,
       "text": "骨董品が一個や二個くらい減ったところで渦は静まるはずよね？"
     },
     {
       "type": "dialogue",
       "speakerName": "ナラントゥヤ",
       "speakerId": "avg_4138_narant_1",
+      "isRemote": false,
       "text": "あたしったらどうしてお宝を一つもくすねておかなかったんだろ？"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "49_g12_diving"
     },
     {
       "type": "narration",
@@ -605,12 +705,14 @@
       "type": "dialogue",
       "speakerName": "ぺぺ",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "ぺぺ",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "（ダ……メだ……）"
     },
     {
@@ -631,105 +733,126 @@
       "type": "dialogue",
       "speakerName": "ぺぺ",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "（ありがとう……）"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": null,
+      "isRemote": false,
       "text": "ははっ、やっぱり運はあたしの味方だね。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": null,
+      "isRemote": false,
       "text": "ようやくお宝を手に入れたよ！"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "53_g4_ctizengarden"
+    },
+    {
       "type": "dialogue",
       "speakerName": "アナト",
       "speakerId": "avg_4139_papyrs_1",
+      "isRemote": false,
       "text": "と、止まったんですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "アジャジ",
       "speakerId": "avg_npc_1484_1",
+      "isRemote": false,
       "text": "はい、アナト館長代理。蛇口からはもう砂が流れてません。"
     },
     {
       "type": "dialogue",
       "speakerName": "アジャニ",
       "speakerId": "avg_npc_1485_1",
+      "isRemote": false,
       "text": "水も流れてませんけど。"
     },
     {
       "type": "dialogue",
       "speakerName": "アナト",
       "speakerId": "avg_4139_papyrs_1",
+      "isRemote": false,
       "text": "ただ塞がっているだけの可能性もありますよね！"
     },
     {
       "type": "dialogue",
       "speakerName": "メジェティクティ",
       "speakerId": "avg_npc_1478_1",
+      "isRemote": false,
       "text": "心配しなくていいわ。貴石の使いも動いてないから。"
     },
     {
       "type": "dialogue",
       "speakerName": "メジェティクティ",
       "speakerId": "avg_npc_1478_1",
+      "isRemote": false,
       "text": "源石回路がエネルギーを放っている気配はない……二度と目覚めることはないかもね。"
     },
     {
       "type": "dialogue",
       "speakerName": "アナト",
       "speakerId": "avg_4139_papyrs_1",
+      "isRemote": false,
       "text": "……こっそり自分のペットをそばに隠し持ってたんですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "メジェティクティ",
       "speakerId": "avg_npc_1478_1",
+      "isRemote": false,
       "text": "ペペを信じていたもの。"
     },
     {
       "type": "dialogue",
       "speakerName": "アナト",
       "speakerId": "avg_4139_papyrs_1",
+      "isRemote": false,
       "text": "まあいいです。わたしたちにできることはすべてやりました……"
     },
     {
       "type": "dialogue",
       "speakerName": "アスパシア",
       "speakerId": "avg_npc_1477_1",
+      "isRemote": false,
       "text": "現状都市の混乱は確かに緩和されたが、今回の異常事態がこれで終わったとまだ断言できない。"
     },
     {
       "type": "dialogue",
       "speakerName": "アナト",
       "speakerId": "avg_4139_papyrs_1",
+      "isRemote": false,
       "text": "そうですね。皆さんの心配はまだ続いています。"
     },
     {
       "type": "dialogue",
       "speakerName": "アスパシア",
       "speakerId": "avg_npc_1477_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "アナト",
       "speakerId": "avg_4139_papyrs_1",
+      "isRemote": false,
       "text": "……あなたのご友人には感謝しなければなりません。"
     },
     {
       "type": "dialogue",
       "speakerName": "アナト",
       "speakerId": "avg_4139_papyrs_1",
+      "isRemote": false,
       "text": "彼女とペペの成したことは報告書に記載し、二人の名は輝ける都市で響き渡り、この地の歴史に刻まれることを約束します……"
     },
     {
@@ -739,12 +862,14 @@
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_4139_papyrs_1",
+      "isRemote": false,
       "text": "輝ける都市に名が響き渡るのはいいけど、歴史書に残るのは……あたしが死んでからにしてくれない？"
     },
     {
       "type": "dialogue",
       "speakerName": "アスパシア",
       "speakerId": "avg_npc_1477_1",
+      "isRemote": false,
       "text": "ナラントゥヤ！？"
     },
     {
@@ -754,24 +879,28 @@
       "type": "dialogue",
       "speakerName": "ナラントゥヤ",
       "speakerId": "avg_4138_narant_1",
+      "isRemote": false,
       "text": "ちょっと、手を貸して。このお嬢ちゃんを支えてよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アナト",
       "speakerId": "avg_4139_papyrs_1",
+      "isRemote": false,
       "text": "……ペペ？"
     },
     {
       "type": "dialogue",
       "speakerName": "ナラントゥヤ",
       "speakerId": "avg_4138_narant_1",
+      "isRemote": false,
       "text": "もし外へ泳いでる途中に偶然見つけてなかったら、多分この子は中で死んでただろうね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ナラントゥヤ",
       "speakerId": "avg_4138_narant_1",
+      "isRemote": false,
       "text": "まさか上に向かって泳いでたら、最終的にこの場所にたどり着くとはね。"
     },
     {
@@ -781,18 +910,21 @@
       "type": "dialogue",
       "speakerName": "ぺぺ",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "アナト",
       "speakerId": "avg_4139_papyrs_1",
+      "isRemote": false,
       "text": "顔色がとても悪いですよ……"
     },
     {
       "type": "dialogue",
       "speakerName": "ぺぺ",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "ズバイルが……"
     },
     {
@@ -809,18 +941,21 @@
       "type": "dialogue",
       "speakerName": "ぺぺ",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "いや～、危うく溺れ死ぬところだったんだ。顔が青くなって唇が紫になるのも当然だろう！"
     },
     {
       "type": "dialogue",
       "speakerName": "ぺぺ",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "それより早く私の成果を見せてくれ。街の砂は消えたかね？　水路はきれいになったかね？"
     },
     {
       "type": "dialogue",
       "speakerName": "アナト",
       "speakerId": "avg_4139_papyrs_1",
+      "isRemote": false,
       "text": "い、今からですか？"
     },
     {
@@ -830,12 +965,14 @@
       "type": "dialogue",
       "speakerName": "ぺぺ",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "アナト、君はずっと博物館にいたのに、どうして顔中ほこりまみれなんだ？　ほら、水をかけて洗ってあげよう！"
     },
     {
       "type": "dialogue",
       "speakerName": "アナト",
       "speakerId": "avg_4139_papyrs_1",
+      "isRemote": false,
       "text": "わ、わたしがフィールドワークに行かない理由の一つは大雨に濡れたくないからなんですよ！"
     },
     {
@@ -845,12 +982,14 @@
       "type": "dialogue",
       "speakerName": "ナラントゥヤ",
       "speakerId": "avg_4138_narant_1",
+      "isRemote": false,
       "text": "フンッ、どうやらあたしはかなりの人を救ったようだね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ナラントゥヤ",
       "speakerId": "avg_4138_narant_1",
+      "isRemote": false,
       "text": "でも、この子ネコたちは頼りなさそうだから、手下にするのはよしておこうか。"
     },
     {
@@ -860,48 +999,56 @@
       "type": "dialogue",
       "speakerName": "ラズバール",
       "speakerId": null,
+      "isRemote": false,
       "text": "……あのクランタが思う頼れる手下というのはどんな奴なんだ？"
     },
     {
       "type": "dialogue",
       "speakerName": "アスパシア",
       "speakerId": "avg_npc_1477_1",
+      "isRemote": false,
       "text": "うーん……"
     },
     {
       "type": "dialogue",
       "speakerName": "アジャニ",
       "speakerId": "avg_npc_1485_1",
+      "isRemote": false,
       "text": "ほら、ナラントゥヤなら大丈夫だって言ったでしょ！　このままあたしたちをここに残しておくわけないんだもの！"
     },
     {
       "type": "dialogue",
       "speakerName": "アジャジ",
       "speakerId": "avg_npc_1484_1",
+      "isRemote": false,
       "text": "アジャニ、座れ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アジャジ",
       "speakerId": "avg_npc_1484_1",
+      "isRemote": false,
       "text": "この噴水は頑丈じゃない。二人で一緒に立ったらきっと崩れてしまう。だから今は私が立つ番だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アスパシア",
       "speakerId": "avg_npc_1477_1",
+      "isRemote": false,
       "text": "……多分彼女と同じく、何も恐れない人だろう。"
     },
     {
       "type": "dialogue",
       "speakerName": "ぺぺ",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "ティティも来なよ！"
     },
     {
       "type": "dialogue",
       "speakerName": "ぺぺ",
       "speakerId": "avg_4058_pepe_1",
+      "isRemote": false,
       "text": "今日は素晴らしくごきげんな太陽が煌めいているだろう？"
     },
     {

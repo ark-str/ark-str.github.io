@@ -6,7 +6,7 @@
   "title": "斷弦",
   "storyCode": "6-7",
   "avgTag": "行動前",
-  "sourcePath": "vendor/ArknightsGamedata/tw/gamedata/story/obt/main/level_main_06-06_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/tw/gamedata/story/obt/main/level_main_06-06_beg.txt",
   "sourceHash": "fe14e7a34a2b6bb1c0f48872c7568ae4717f5f7b14d4c491a59d2c1ba1a593e0",
   "bodyAvailable": true,
   "blocks": [
@@ -18,75 +18,91 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_outcity_1"
+    },
+    {
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "灰喉！你在哪裡？"
     },
     {
       "type": "dialogue",
       "speakerName": "灰喉",
       "speakerId": null,
+      "isRemote": false,
       "text": "阿米婭，我已經和近衛局會合了，現在正在輔助近衛局小隊戰鬥。"
     },
     {
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "我們馬上就會趕去戰場！"
     },
     {
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "各位精英幹員，請聽我說，這次可能會是我們在龍門唯一一次，也是最後一次的大型作戰。"
     },
     {
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "請各位以完成自己的第一任務為優先目標。"
     },
     {
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "對敵指揮官的圍攻，我和我的小隊會全力參與。"
     },
     {
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "請各位記住一件事：我們的首要目標，是完成合約內容，和近衛局一同保障龍門的安全。"
     },
     {
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "但羅德島在這次戰鬥中的任務，是減少感染者與普通市民間的摩擦，減少相互之間的衝突！"
     },
     {
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "無論抱著什麼樣的心態參與作戰，我們都首先是羅德島的一員！"
     },
     {
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "無論何時，無論何地！"
     },
     {
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "當然。如果我們的行動實質上會違反我們的準則，我們會立刻停止戰鬥！"
     },
     {
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "所以，我們依然該為這場作戰負責。"
     },
     {
@@ -96,12 +112,14 @@
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "簡直是說給我聽的嘛。"
     },
     {
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "她也擔心太多事了......"
     },
     {
@@ -115,48 +133,52 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "煌",
-          "speakerId": "char_017_homura",
-          "text": "沒辦法啊，剛才那些感染者有多難纏，你也親眼見識過了。那可不是一個幹員或者一支小隊能對付的量和質。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "煌",
-          "speakerId": "char_017_homura",
-          "text": "果然，當時在天台上就該把那小子直接收了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "煌",
-          "speakerId": "char_017_homura",
-          "text": "啊，通訊。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "你要是再不到設伏地點準備，我就把過去一年所有的違紀檔案全部交給凱爾希醫生！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "煌",
-          "speakerId": "char_017_homura",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "煌",
-          "speakerId": "char_017_homura",
-          "text": "我很準時的！不要慌！馬上就到！"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "煌",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "沒辦法啊，剛才那些感染者有多難纏，你也親眼見識過了。那可不是一個幹員或者一支小隊能對付的量和質。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "煌",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "果然，當時在天台上就該把那小子直接收了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "煌",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "啊，通訊。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "你要是再不到設伏地點準備，我就把過去一年所有的違紀檔案全部交給凱爾希醫生！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "煌",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "煌",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "我很準時的！不要慌！馬上就到！"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -169,18 +191,21 @@
               "type": "dialogue",
               "speakerName": "阿米婭",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "煌！"
             },
             {
               "type": "dialogue",
               "speakerName": "煌",
               "speakerId": "char_017_homura",
+              "isRemote": false,
               "text": "我也沒辦法，這不是要趕路嗎......"
             },
             {
               "type": "dialogue",
               "speakerName": "煌",
               "speakerId": "char_017_homura",
+              "isRemote": false,
               "text": "（你給我記住了，一會兒我再跟你算帳！）"
             }
           ]
@@ -193,30 +218,35 @@
               "type": "dialogue",
               "speakerName": "阿米婭",
               "speakerId": "char_017_homura",
+              "isRemote": false,
               "text": "博士怎麼沒聲音了？"
             },
             {
               "type": "dialogue",
               "speakerName": "阿米婭",
               "speakerId": "char_017_homura",
+              "isRemote": false,
               "text": "......煌！"
             },
             {
               "type": "dialogue",
               "speakerName": "煌",
               "speakerId": "char_017_homura",
+              "isRemote": false,
               "text": "我什麼都沒做啊！這個人自己不說話！"
             },
             {
               "type": "dialogue",
               "speakerName": "煌",
               "speakerId": "char_017_homura",
+              "isRemote": false,
               "text": "你說兩句給她聽聽啊！"
             },
             {
               "type": "dialogue",
               "speakerName": "煌",
               "speakerId": "char_017_homura",
+              "isRemote": false,
               "text": "快說啊，為啥不說話啊......！"
             }
           ]
@@ -229,67 +259,75 @@
               "type": "dialogue",
               "speakerName": "阿米婭",
               "speakerId": "char_017_homura",
+              "isRemote": false,
               "text": "啊......"
             },
             {
               "type": "dialogue",
               "speakerName": "阿米婭",
               "speakerId": "char_017_homura",
+              "isRemote": false,
               "text": "抱歉博士，我忘了你和煌一起行動一定會是這種樣子了......"
             },
             {
               "type": "dialogue",
               "speakerName": "煌",
               "speakerId": "char_017_homura",
+              "isRemote": false,
               "text": "因地制宜嘛。"
             },
             {
               "type": "dialogue",
               "speakerName": "阿米婭",
               "speakerId": "char_017_homura",
+              "isRemote": false,
               "text": "你在得意個什麼勁，誰是地啊......"
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_017_homura",
-          "text": "可以了，我只要知道你們的位置和行動就好。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_017_homura",
-          "text": "你們的關係還變得挺好的。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "煌",
-          "speakerId": "char_017_homura",
-          "text": "是啊！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_017_homura",
-          "text": "......是嗎？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "煌",
-          "speakerId": "char_017_homura",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "煌",
-          "speakerId": "char_017_homura",
-          "text": "（不對，怎麼回事？我該怎麼回答？）"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "可以了，我只要知道你們的位置和行動就好。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "你們的關係還變得挺好的。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "煌",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "是啊！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "......是嗎？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "煌",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "煌",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "（不對，怎麼回事？我該怎麼回答？）"
     },
     {
       "type": "choice",
@@ -309,45 +347,48 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "煌",
-          "speakerId": "char_017_homura",
-          "text": "（很危險！現在很危險！我心態有損，我急需指點！）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_017_homura",
-          "text": "你們加油。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "煌",
-          "speakerId": "char_017_homura",
-          "text": "她掛斷了！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "煌",
-          "speakerId": "char_017_homura",
-          "text": "完了。我也完了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "煌",
-          "speakerId": "char_017_homura",
-          "text": "反正已經到了，我們坐會兒吧。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "煌",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "（很危險！現在很危險！我心態有損，我急需指點！）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "你們加油。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "煌",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "她掛斷了！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "煌",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "完了。我也完了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "煌",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "反正已經到了，我們坐會兒吧。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -357,21 +398,21 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "煌",
-          "speakerId": "char_017_homura",
-          "text": "啊~完蛋了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "煌",
-          "speakerId": "char_017_homura",
-          "text": "我喜歡高處啊。反正兩點間直線最短，我們一會兒跳下去就行了。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "煌",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "啊~完蛋了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "煌",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "我喜歡高處啊。反正兩點間直線最短，我們一會兒跳下去就行了。"
     },
     {
       "type": "choice",
@@ -381,658 +422,765 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "煌",
-          "speakerId": "char_017_homura",
-          "text": "是啊。哈欠。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "煌",
-          "speakerId": "char_017_homura",
-          "text": "等等。我沒看錯的話......正在向埋伏圈移動的，東邊的是梅菲斯特帶著的隊伍。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "煌",
-          "speakerId": "char_017_homura",
-          "text": "另一邊......長鱗的小子？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "煌",
-          "speakerId": "char_017_homura",
-          "text": "他還在帶著隊伍和什麼交戰。那黑壓壓一片是啥？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "煌",
-          "speakerId": "char_017_homura",
-          "text": "......是牧群？這個數量是怎麼回事？！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "煌",
-          "speakerId": "char_017_homura",
-          "text": "看來沒法在這閒著了。走了，博士，這就是最後一戰了！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "煌",
-          "speakerId": "char_017_homura",
-          "text": "喂，阿米婭，喂！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "煌",
-          "speakerId": "char_017_homura",
-          "text": "我馬上就和博士一起加入戰場！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "詩懷雅",
-          "speakerId": "char_308_swire",
-          "text": "你有什麼打算？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "陳",
-          "speakerId": "char_010_chen",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "陳",
-          "speakerId": "char_010_chen",
-          "text": "我要放走一小部分整合運動，然後我們進貧民區追蹤它們。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "詩懷雅",
-          "speakerId": "char_308_swire",
-          "text": "你這不是給了那些特殊部隊把柄？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "陳",
-          "speakerId": "char_010_chen",
-          "text": "但我們也可以順勢再進入貧民區作業。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "陳",
-          "speakerId": "char_010_chen",
-          "text": "我已經去探查過一次情況，有一點可以明確：只要我們還在，特殊部隊就沒法明目張膽地行動。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "陳",
-          "speakerId": "char_010_chen",
-          "text": "撐到戰事結束，特殊部隊也不好再動手。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "詩懷雅",
-          "speakerId": "char_308_swire",
-          "text": "你不怕上司給你下命令？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "陳",
-          "speakerId": "char_010_chen",
-          "text": "誰敢站出來聲稱“這支隊伍是我的”？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "詩懷雅",
-          "speakerId": "char_308_swire",
-          "text": "行啊，算盤打得挺好的。貧民區裡的情況怎麼樣？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "陳",
-          "speakerId": "char_010_chen",
-          "text": "我的線人們一直在調查。除了少數失聯的區域，我們掌握的情報會比其他人多得多。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "詩懷雅",
-          "speakerId": "char_308_swire",
-          "text": "這把賭的有點大，但我們確實得賭了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "陳",
-          "speakerId": "char_010_chen",
-          "text": "現在能讓特殊部隊回避的也就只有近衛局。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "陳",
-          "speakerId": "char_010_chen",
-          "text": "阿米婭，聽得見嗎？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_017_homura",
-          "text": "陳長官，我們已經就位！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "陳",
-          "speakerId": "char_010_chen",
-          "text": "......嗯。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "陳",
-          "speakerId": "char_010_chen",
-          "text": "之前，整合運動擄走感染者的事件，我向你致歉。如果我們考慮的更周到，這種事就不會發生。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_017_homura",
-          "text": "......正是因為近衛局在貧民區的先期行動，龍門才能提前規劃出對抗整合運動滲透的方法。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_017_homura",
-          "text": "在戰略上，我認為陳長官沒有責任。至於個人的問題......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_017_homura",
-          "text": "陳長官，米莎是沒法死而復生的。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "陳",
-          "speakerId": "char_010_chen",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_017_homura",
-          "text": "而且，我不會同意陳長官對感染者的看法。甚至陳長官自己也很清楚......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_017_homura",
-          "text": "在龍門，熱愛龍門的龍門人會為龍門而戰，不分身份。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "詩懷雅",
-          "speakerId": "char_308_swire",
-          "text": "哎，這隻小兔子，好厲害啊。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_017_homura",
-          "text": "那是詩懷雅小姐的聲音嗎？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "陳",
-          "speakerId": "char_010_chen",
-          "text": "別管她。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "詩懷雅",
-          "speakerId": "char_308_swire",
-          "text": "喂！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "陳",
-          "speakerId": "char_010_chen",
-          "text": "我認同你的看法，阿米婭，為龍門而戰確實能團結起各式各樣的人——那些投向整合運動的除外。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "陳",
-          "speakerId": "char_010_chen",
-          "text": "但想要在龍門生活，又是另一件事。我不認為時間能改變一切。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_017_homura",
-          "text": "當然不能。是我們去改變一切。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "陳",
-          "speakerId": "char_010_chen",
-          "text": "這種想法太天真了。感染者和普通人之間有著巨大的隔閡。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_017_homura",
-          "text": "米莎的死，無數感染者的死，這種事由不得我去天真什麼，陳長官。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_017_homura",
-          "text": "就是這種隔閡把他們逼上死路。我們難道要讓這個隔閡本身，成為我們不應該去消滅隔閡的理由？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "陳",
-          "speakerId": "char_010_chen",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_017_homura",
-          "text": "希望陳長官能真的理解......為什麼我們羅德島的感染者與非感染者，會為龍門而戰。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_017_homura",
-          "text": "來了。陳長官。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "陳",
-          "speakerId": "char_010_chen",
-          "text": "準備戰鬥。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "幻影弩手",
-          "speakerId": "avg_npc_016",
-          "text": "埋伏圈！近衛局正在縮小包圍圈！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "向貧民區方向突破。雖然我們沒有弑君者的音信......但貧民區依然是我們唯一的出口。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "帶他走。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "幻影弩手",
-          "speakerId": "avg_npc_016",
-          "text": "那你怎麼辦？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "我和幾支小隊已經誘導了......“牧群”......聚向這裡。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "他們不會攻擊我。利用這個特性，我可以和他們一起戰鬥。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "近衛局成員",
-          "speakerId": null,
-          "text": "轟炸他們的陣線！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "整合運動成員",
-          "speakerId": null,
-          "text": "我們撐不了多久！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "牧群",
-          "speakerId": null,
-          "text": "呃......呃啊！！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "近衛局成員",
-          "speakerId": null,
-          "text": "有特殊感染者！小心！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "幻影弩手",
-          "speakerId": "avg_npc_016",
-          "text": "......你要殿後？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "幻影弩手",
-          "speakerId": "avg_npc_016",
-          "text": "你會一去無回。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "梅菲斯特",
-          "speakerId": null,
-          "text": "唔唔，唔！！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "幻影弩手",
-          "speakerId": "avg_npc_016",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "讓他說吧。現在這個樣子，他沒法施術。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "梅菲斯特",
-          "speakerId": "char_1507_Mephisto",
-          "text": "你要做什麼！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "梅菲斯特......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "梅菲斯特",
-          "speakerId": "char_1507_Mephisto",
-          "text": "你要做什麼！你要做什麼！！回來！不要，不要！快回來！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "你說過，無論我要你做什麼，你都會去做。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "梅菲斯特",
-          "speakerId": "char_1507_Mephisto",
-          "text": "薩沙！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "你也說過，你不想做出自己的選擇。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "只是，如果你真的有了自己的想法，想要去追隨什麼，我......不會責怪你選了什麼。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "如果是那樣的話......梅菲斯特，那樣，真好。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "不過......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "我已經沒有選擇的餘地了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "接下來我說的這些，會是我最後一個願望。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "梅菲斯特",
-          "speakerId": "char_1507_Mephisto",
-          "text": "......薩沙？你在說什麼，我不懂！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "近衛局成員",
-          "speakerId": null,
-          "text": "別讓他們走！擊殺他們的指揮核心！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "灰喉",
-          "speakerId": "char_367_swllow",
-          "text": "啊......！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "......羅德島的燕子？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "（口型：你該扣下扳機了。）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "近衛局成員",
-          "speakerId": null,
-          "text": "小心，臥倒！火力太猛了，我們在被兩面夾擊！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "灰喉",
-          "speakerId": "char_367_swllow",
-          "text": "——！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "近衛局成員",
-          "speakerId": null,
-          "text": "羅德島的弩手，先後撤！這條通道就是為了這時候準備的！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "幻影弩手",
-          "speakerId": "avg_npc_016",
-          "text": "浮士德！後退！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "不。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "弩手們，我相信霜星正在趕往這裡。雖然弑君者下落不明，但她的部隊說不定還在龍門貧民區之內。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "如果霜星來了，她會自動獲得你們的全權指揮權。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "我信任霜星。如果她來了，你們都能倖存。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "還有，我的源石技藝，其實是可以讓你們在移動中隱形的。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "幻影弩手",
-          "speakerId": "avg_npc_016",
-          "text": "浮士德！我們知道，別用！你的感染器官會破裂的！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "沒事。我沒有不用的理由了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "命令，撤退。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "......帶他一起走。別去切爾諾伯格。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "幻影弩手",
-          "speakerId": "avg_npc_016",
-          "text": "......浮士德......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "梅菲斯特",
-          "speakerId": "char_1507_Mephisto",
-          "text": "你不能這樣！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "我希望哪怕是一個人，你也要活下去。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "不要死。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "——這就是我最後一個願望。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "梅菲斯特",
-          "speakerId": "char_1507_Mephisto",
-          "text": "薩沙！！薩沙！！！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "......我不想傷害別人。我也不想被別人傷害。這兩件事，我都不想。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "如果可以，當時我們就該逃走。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "我們本來......可以逃走。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "梅菲斯特",
-          "speakerId": "char_1507_Mephisto",
-          "text": "薩沙，你和我說好的，你和我約定好的！你說我們要一起活下去的！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "太遲了。我......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "......已經太累了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "梅菲斯特",
-          "speakerId": "char_1507_Mephisto",
-          "text": "薩沙！！！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "浮士德",
-          "speakerId": "char_1508_Faust",
-          "text": "別了，伊諾。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "他將弩矢搭在弩上，上弦。\n他瞄準，最後一次。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "煌",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "是啊。哈欠。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "煌",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "等等。我沒看錯的話......正在向埋伏圈移動的，東邊的是梅菲斯特帶著的隊伍。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "煌",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "另一邊......長鱗的小子？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "煌",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "他還在帶著隊伍和什麼交戰。那黑壓壓一片是啥？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "煌",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "......是牧群？這個數量是怎麼回事？！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "煌",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "看來沒法在這閒著了。走了，博士，這就是最後一戰了！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "煌",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "喂，阿米婭，喂！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "煌",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "我馬上就和博士一起加入戰場！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_indoor_n"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "詩懷雅",
+      "speakerId": "char_308_swire",
+      "isRemote": false,
+      "text": "你有什麼打算？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "陳",
+      "speakerId": "char_010_chen",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "陳",
+      "speakerId": "char_010_chen",
+      "isRemote": false,
+      "text": "我要放走一小部分整合運動，然後我們進貧民區追蹤它們。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "詩懷雅",
+      "speakerId": "char_308_swire",
+      "isRemote": false,
+      "text": "你這不是給了那些特殊部隊把柄？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "陳",
+      "speakerId": "char_010_chen",
+      "isRemote": false,
+      "text": "但我們也可以順勢再進入貧民區作業。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "陳",
+      "speakerId": "char_010_chen",
+      "isRemote": false,
+      "text": "我已經去探查過一次情況，有一點可以明確：只要我們還在，特殊部隊就沒法明目張膽地行動。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "陳",
+      "speakerId": "char_010_chen",
+      "isRemote": false,
+      "text": "撐到戰事結束，特殊部隊也不好再動手。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "詩懷雅",
+      "speakerId": "char_308_swire",
+      "isRemote": false,
+      "text": "你不怕上司給你下命令？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "陳",
+      "speakerId": "char_010_chen",
+      "isRemote": false,
+      "text": "誰敢站出來聲稱“這支隊伍是我的”？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "詩懷雅",
+      "speakerId": "char_308_swire",
+      "isRemote": false,
+      "text": "行啊，算盤打得挺好的。貧民區裡的情況怎麼樣？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "陳",
+      "speakerId": "char_010_chen",
+      "isRemote": false,
+      "text": "我的線人們一直在調查。除了少數失聯的區域，我們掌握的情報會比其他人多得多。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "詩懷雅",
+      "speakerId": "char_308_swire",
+      "isRemote": false,
+      "text": "這把賭的有點大，但我們確實得賭了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "陳",
+      "speakerId": "char_010_chen",
+      "isRemote": false,
+      "text": "現在能讓特殊部隊回避的也就只有近衛局。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "陳",
+      "speakerId": "char_010_chen",
+      "isRemote": false,
+      "text": "阿米婭，聽得見嗎？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "陳長官，我們已經就位！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "陳",
+      "speakerId": "char_010_chen",
+      "isRemote": false,
+      "text": "......嗯。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "陳",
+      "speakerId": "char_010_chen",
+      "isRemote": false,
+      "text": "之前，整合運動擄走感染者的事件，我向你致歉。如果我們考慮的更周到，這種事就不會發生。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "......正是因為近衛局在貧民區的先期行動，龍門才能提前規劃出對抗整合運動滲透的方法。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "在戰略上，我認為陳長官沒有責任。至於個人的問題......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "陳長官，米莎是沒法死而復生的。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "陳",
+      "speakerId": "char_010_chen",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "而且，我不會同意陳長官對感染者的看法。甚至陳長官自己也很清楚......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "在龍門，熱愛龍門的龍門人會為龍門而戰，不分身份。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "詩懷雅",
+      "speakerId": "char_308_swire",
+      "isRemote": false,
+      "text": "哎，這隻小兔子，好厲害啊。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "那是詩懷雅小姐的聲音嗎？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "陳",
+      "speakerId": "char_010_chen",
+      "isRemote": false,
+      "text": "別管她。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "詩懷雅",
+      "speakerId": "char_308_swire",
+      "isRemote": false,
+      "text": "喂！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "陳",
+      "speakerId": "char_010_chen",
+      "isRemote": false,
+      "text": "我認同你的看法，阿米婭，為龍門而戰確實能團結起各式各樣的人——那些投向整合運動的除外。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "陳",
+      "speakerId": "char_010_chen",
+      "isRemote": false,
+      "text": "但想要在龍門生活，又是另一件事。我不認為時間能改變一切。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "當然不能。是我們去改變一切。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "陳",
+      "speakerId": "char_010_chen",
+      "isRemote": false,
+      "text": "這種想法太天真了。感染者和普通人之間有著巨大的隔閡。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "米莎的死，無數感染者的死，這種事由不得我去天真什麼，陳長官。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "就是這種隔閡把他們逼上死路。我們難道要讓這個隔閡本身，成為我們不應該去消滅隔閡的理由？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "陳",
+      "speakerId": "char_010_chen",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "希望陳長官能真的理解......為什麼我們羅德島的感染者與非感染者，會為龍門而戰。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "來了。陳長官。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "陳",
+      "speakerId": "char_010_chen",
+      "isRemote": false,
+      "text": "準備戰鬥。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "幻影弩手",
+      "speakerId": "avg_npc_016",
+      "isRemote": false,
+      "text": "埋伏圈！近衛局正在縮小包圍圈！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "向貧民區方向突破。雖然我們沒有弑君者的音信......但貧民區依然是我們唯一的出口。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "帶他走。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "幻影弩手",
+      "speakerId": "avg_npc_016",
+      "isRemote": false,
+      "text": "那你怎麼辦？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "我和幾支小隊已經誘導了......“牧群”......聚向這裡。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "他們不會攻擊我。利用這個特性，我可以和他們一起戰鬥。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "近衛局成員",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "轟炸他們的陣線！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "整合運動成員",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "我們撐不了多久！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "牧群",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "呃......呃啊！！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "近衛局成員",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "有特殊感染者！小心！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "幻影弩手",
+      "speakerId": "avg_npc_016",
+      "isRemote": false,
+      "text": "......你要殿後？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "幻影弩手",
+      "speakerId": "avg_npc_016",
+      "isRemote": false,
+      "text": "你會一去無回。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "梅菲斯特",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "唔唔，唔！！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "幻影弩手",
+      "speakerId": "avg_npc_016",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "讓他說吧。現在這個樣子，他沒法施術。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "梅菲斯特",
+      "speakerId": "char_1507_Mephisto",
+      "isRemote": false,
+      "text": "你要做什麼！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "梅菲斯特......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "梅菲斯特",
+      "speakerId": "char_1507_Mephisto",
+      "isRemote": false,
+      "text": "你要做什麼！你要做什麼！！回來！不要，不要！快回來！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "你說過，無論我要你做什麼，你都會去做。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "梅菲斯特",
+      "speakerId": "char_1507_Mephisto",
+      "isRemote": false,
+      "text": "薩沙！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "你也說過，你不想做出自己的選擇。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "只是，如果你真的有了自己的想法，想要去追隨什麼，我......不會責怪你選了什麼。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "如果是那樣的話......梅菲斯特，那樣，真好。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "不過......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "我已經沒有選擇的餘地了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "接下來我說的這些，會是我最後一個願望。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "梅菲斯特",
+      "speakerId": "char_1507_Mephisto",
+      "isRemote": false,
+      "text": "......薩沙？你在說什麼，我不懂！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "近衛局成員",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "別讓他們走！擊殺他們的指揮核心！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "灰喉",
+      "speakerId": "char_367_swllow",
+      "isRemote": false,
+      "text": "啊......！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "......羅德島的燕子？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "（口型：你該扣下扳機了。）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "近衛局成員",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "小心，臥倒！火力太猛了，我們在被兩面夾擊！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "灰喉",
+      "speakerId": "char_367_swllow",
+      "isRemote": false,
+      "text": "——！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "近衛局成員",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "羅德島的弩手，先後撤！這條通道就是為了這時候準備的！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "幻影弩手",
+      "speakerId": "avg_npc_016",
+      "isRemote": false,
+      "text": "浮士德！後退！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "不。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "弩手們，我相信霜星正在趕往這裡。雖然弑君者下落不明，但她的部隊說不定還在龍門貧民區之內。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "如果霜星來了，她會自動獲得你們的全權指揮權。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "我信任霜星。如果她來了，你們都能倖存。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "還有，我的源石技藝，其實是可以讓你們在移動中隱形的。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "幻影弩手",
+      "speakerId": "avg_npc_016",
+      "isRemote": false,
+      "text": "浮士德！我們知道，別用！你的感染器官會破裂的！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "沒事。我沒有不用的理由了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "命令，撤退。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "......帶他一起走。別去切爾諾伯格。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "幻影弩手",
+      "speakerId": "avg_npc_016",
+      "isRemote": false,
+      "text": "......浮士德......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "梅菲斯特",
+      "speakerId": "char_1507_Mephisto",
+      "isRemote": false,
+      "text": "你不能這樣！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "我希望哪怕是一個人，你也要活下去。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "不要死。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "——這就是我最後一個願望。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "梅菲斯特",
+      "speakerId": "char_1507_Mephisto",
+      "isRemote": false,
+      "text": "薩沙！！薩沙！！！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "......我不想傷害別人。我也不想被別人傷害。這兩件事，我都不想。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "如果可以，當時我們就該逃走。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "我們本來......可以逃走。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "梅菲斯特",
+      "speakerId": "char_1507_Mephisto",
+      "isRemote": false,
+      "text": "薩沙，你和我說好的，你和我約定好的！你說我們要一起活下去的！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "太遲了。我......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "......已經太累了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "梅菲斯特",
+      "speakerId": "char_1507_Mephisto",
+      "isRemote": false,
+      "text": "薩沙！！！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "浮士德",
+      "speakerId": "char_1508_Faust",
+      "isRemote": false,
+      "text": "別了，伊諾。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "他將弩矢搭在弩上，上弦。\n他瞄準，最後一次。"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": [

@@ -6,7 +6,7 @@
   "title": "グローリーシールド",
   "storyCode": "MN-4",
   "avgTag": "戦闘前",
-  "sourcePath": "vendor/ArknightsGamedata/jp/gamedata/story/activities/act13d5/level_act13d5_04_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/jp/gamedata/story/activities/act13d5/level_act13d5_04_beg.txt",
   "sourceHash": "c020c44e35ae7a8bbd4327b0944639216ab011b32e3ed17573ac69af59c8760f",
   "bodyAvailable": true,
   "blocks": [
@@ -18,6 +18,10 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
       "type": "narration",
       "text": "p.m. 03:49 天気/晴天 カジミエーシュ四都連合 某ペントハウス　プライベートテラス"
     },
@@ -25,162 +29,196 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_towerinside"
+    },
+    {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "……来ましたか、モーブさん。"
     },
     {
       "type": "dialogue",
       "speakerName": "ビッグマウスモーブ",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "ええと……あなたでしたか。この間、競技場でお会いした時には、その……あなたが――"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "いえ、そんなことはどうでもいいんですよ。どうか緊張なさらず、お掛けになってください。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "では、改めて自己紹介をしましょうか――私のことはチャルニーとお呼びください。この度の騎士協会競技ブロックの責任者の一人でございます。我々は交代制でしてね。"
     },
     {
       "type": "dialogue",
       "speakerName": "代弁者チャルニー",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "また、ミェシュコグループの騎士競技宣伝部のマネージャーでもありまして、光栄にも商業連合会の会場駐在の代弁者にも選ばれました。"
     },
     {
       "type": "dialogue",
       "speakerName": "ビッグマウスモーブ",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "しょ、商業連合会？　ど、どうか今までのご無礼をお許しくださいませ！　チャルニー様……"
     },
     {
       "type": "dialogue",
       "speakerName": "代弁者チャルニー",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "どうかそのように畏まらないでください。私はあなたを……あなたのMCスタイルを嫌ってはいませんよ。「ビッグマウスモーブ」さん……それとも、本名でお呼びしましょうか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ビッグマウスモーブ",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "い、いえ、結構です……"
     },
     {
       "type": "dialogue",
       "speakerName": "代弁者チャルニー",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "はは、冗談ですよ。さあ、外をご覧になってください。壮観な景色が広がっているでしょう？"
     },
     {
       "type": "dialogue",
       "speakerName": "代弁者チャルニー",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "一部の老人たちはこのようなコンクリートジャングル、そして昼夜の区別がつかない都市の風景を嫌っておりましてね。しかし、私に言わせれば、これこそ文明が進化した証。"
     },
     {
       "type": "dialogue",
       "speakerName": "代弁者チャルニー",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "もちろん、広大な森林や草原もカジミエーシュの一部です。しかし強靭なカジミエーシュ人は、自然の隙間を利用し高層ビル群を建設することに成功した……なんて誇らしい実績でしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "代弁者チャルニー",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "我々はこうして天災の脅威から逃れ、外敵に対抗する堅固な防衛線を得たのです。カジミエーシュは正に全盛期にあり、さらに急速な進化を遂げ続けています……"
     },
     {
       "type": "dialogue",
       "speakerName": "代弁者チャルニー",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "当然、あなたもそう思いますよね？　モーブさん。"
     },
     {
       "type": "dialogue",
       "speakerName": "ビッグマウスモーブ",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "ええ、もちろん！　あなたの言う通りでございます！"
     },
     {
       "type": "dialogue",
       "speakerName": "代弁者チャルニー",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "しかし、カジミエーシュは未だ、最果ての景色を目にしていない。目指す場所への道のりはまだまだ遠い……"
     },
     {
       "type": "dialogue",
       "speakerName": "代弁者チャルニー",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "例えば……モーブさん、あなたの故郷は確か……「木漏れ日と職人の都」と呼ばれるオグニスコですね？"
     },
     {
       "type": "dialogue",
       "speakerName": "代弁者チャルニー",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "ではその周囲に、貧しい村や国の庇護を受けていない要害の地がどれほどあると思いますか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ビッグマウスモーブ",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "よ、よくご存知で。ですが私はもう二十年以上故郷を離れておりまして、詳しい数字までは……しかし、なぜ今その話を？　正直、不安で仕方がないのですが……"
     },
     {
       "type": "dialogue",
       "speakerName": "代弁者チャルニー",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "あなたの正直な一面も気に入っていますよ。私はあるメッセージを伝えに来たのです、モーブさん。我々が共に前進するため、あなたをスカウトします。"
     },
     {
       "type": "dialogue",
       "speakerName": "ビッグマウスモーブ",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "……私を？　しかし、私はロアーガード社から前金をもらったばかりでして……"
     },
     {
       "type": "dialogue",
       "speakerName": "代弁者チャルニー",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "ご安心を。この極秘の契約書には、パーヴィルさん――ロアーガード社代表取締役のハンコも押されています。今この瞬間から、あなたの雇い主は――"
     },
     {
       "type": "dialogue",
       "speakerName": "ビッグマウスモーブ",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "ミェ、ミェシュコになるってことですか！？"
     },
     {
       "type": "dialogue",
       "speakerName": "代弁者チャルニー",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "そうとも言えますが……少しだけ違います。"
     },
     {
       "type": "dialogue",
       "speakerName": "ビッグマウスモーブ",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "と、言いますと……？"
     },
     {
       "type": "dialogue",
       "speakerName": "代弁者チャルニー",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "今から、あなたは私の部下なのですよ、ミスターMC。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_courtyard"
+    },
+    {
       "type": "dialogue",
       "speakerName": "マリア",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "てやぁーーっ！！"
     },
     {
@@ -190,60 +228,70 @@
       "type": "dialogue",
       "speakerName": "ゾフィア",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "……よし、今日はここまでよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "マリア",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "え？　でも私はまだまだ――"
     },
     {
       "type": "dialogue",
       "speakerName": "ゾフィア",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "欲張らないの！　まだ病み上がりなんだから……いくらクランタの体が丈夫だからって、無理して調子を崩したら元も子もないわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "マリア",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "わかったよ……"
     },
     {
       "type": "dialogue",
       "speakerName": "マリア",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "――じゃあ、この間言ってたアーツを活かした戦い方について、もう一度話を聞かせてもらえないかな？"
     },
     {
       "type": "dialogue",
       "speakerName": "ゾフィア",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "……昨日も話したでしょ。"
     },
     {
       "type": "dialogue",
       "speakerName": "マリア",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "うん。でも昨日の夜、リターニア騎士が戦ってる映像を観てたら、幾つか参考になりそうなものを見つけ――"
     },
     {
       "type": "dialogue",
       "speakerName": "ゾフィア",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "昨日の、夜？"
     },
     {
       "type": "dialogue",
       "speakerName": "マリア",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "あっ……"
     },
     {
       "type": "dialogue",
       "speakerName": "ゾフィア",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "まーーた夜更かししたのね！？　ちゃんと体を休めなさいってあれほど言ったのに！"
     },
     {
@@ -253,84 +301,98 @@
       "type": "dialogue",
       "speakerName": "禿頭マーティン",
       "speakerId": "avg_npc_107",
+      "isRemote": false,
       "text": "おっ、どうやら回復は順調のようだね。これであの老いぼれたちも安心できるだろうよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "マリア",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "あれ、マーティンおじさん？　どうしてここに？"
     },
     {
       "type": "dialogue",
       "speakerName": "禿頭マーティン",
       "speakerId": "avg_npc_107",
+      "isRemote": false,
       "text": "どうしてって……「これ」のために決まってるじゃないか。"
     },
     {
       "type": "dialogue",
       "speakerName": "マリア",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "こ、これは？"
     },
     {
       "type": "dialogue",
       "speakerName": "禿頭マーティン",
       "speakerId": "avg_npc_107",
+      "isRemote": false,
       "text": "訪ねてきたスポンサーが置いてった資料だ。全部で十三部、そこそこ名の知れている大企業のものもいくつかあってね……"
     },
     {
       "type": "dialogue",
       "speakerName": "マリア",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "うわっ！　このグローリーシールドって、あの兵器を作ってる会社でしょ？　こういうところも競技騎士のサポートをやってるんだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ゾフィア",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "ほとんどが騎士団へのスカウトね。数字は確かに魅力的だけど、どれを選んだって傀儡になり下がる運命よ。"
     },
     {
       "type": "dialogue",
       "speakerName": "マリア",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "ゾフィア",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "ちょっと、マリア！？　援助金に惑わされたりしちゃダメよ！？　この程度なら私だって出せるんだからね！"
     },
     {
       "type": "dialogue",
       "speakerName": "マリア",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "……惑わされてはいないけど、資料を眺めてたらお金の現実味がどんどん増してきて、おばさんが支援してくれてることに今さら申し訳なくなっちゃって……"
     },
     {
       "type": "dialogue",
       "speakerName": "ゾフィア",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "お金なんて、使おうと思った時に使えばいいの。この土地を買った時だって、そういう気まぐれだったんだから。"
     },
     {
       "type": "dialogue",
       "speakerName": "マリア",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "（だから「庭園」が「雑木林」になったんだ……）"
     },
     {
       "type": "dialogue",
       "speakerName": "禿頭マーティン",
       "speakerId": "avg_npc_107",
+      "isRemote": false,
       "text": "ははは！　あれほど企業の勧誘を断ってきたのに、賞金と引退後の数年でこれほどの資産を手に入れるとは。さすがゾフィアだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "禿頭マーティン",
       "speakerId": "avg_npc_107",
+      "isRemote": false,
       "text": "まあとにかく、私はムリナールに見つからないように資料を届けに来ただけさ。後は二人に任せるから、じっくり考えてくれ。暇なときはバーにも顔を出してくれよ。"
     },
     {
@@ -340,273 +402,329 @@
       "type": "dialogue",
       "speakerName": "ゾフィア",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "さて……どうする、マリア？"
     },
     {
       "type": "dialogue",
       "speakerName": "マリア",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "前にも言ったけど、私はニアール家の紋章を企業の付属品にしたくないの……でも、今の私じゃ彼らと同じ土俵にすら立てない。"
     },
     {
       "type": "dialogue",
       "speakerName": "ゾフィア",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "……続ける気なのね？"
     },
     {
       "type": "dialogue",
       "speakerName": "マリア",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "うん。お金だけの問題じゃないから。"
     },
     {
       "type": "dialogue",
       "speakerName": "マリア",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "お祖父ちゃんやお姉ちゃんはもちろん、お父さんとお母さんも命をかけて守り抜いた「ニアール」の価値は、証券所の数字やグラフの線に左右されるようなものじゃないと思うの。"
     },
     {
       "type": "dialogue",
       "speakerName": "マリア",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "だから……"
     },
     {
       "type": "dialogue",
       "speakerName": "ゾフィア",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "マリア……わかった。そういうことなら、これは全部捨てておく。"
     },
     {
       "type": "dialogue",
       "speakerName": "ゾフィア",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "メジャー進出を目標と決めたからには、今まで以上に早くポイントを稼がなきゃいけないわ――競技騎士団に加入していない独立騎士はこれだから面倒なの。"
     },
     {
       "type": "dialogue",
       "speakerName": "ゾフィア",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "たとえば、あのスポンサーにハメられたシェブチックだけど、彼一人がレースと決闘に参加しただけで、チーム全体の総合ポイントは予選突破基準に達した。"
     },
     {
       "type": "dialogue",
       "speakerName": "ゾフィア",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "そしてポイント譲渡ルールを巧く利用すれば、騎士団の切り札の選手は予選に出場する必要さえなくなるのよ……"
     },
     {
       "type": "dialogue",
       "speakerName": "マリア",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "それってつまり、これからは他の騎士団よりもずっと多くの対戦をしていかなきゃならないってこと……？"
     },
     {
       "type": "dialogue",
       "speakerName": "ゾフィア",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "そうよ。だからここからは特別な方法を使わないと……競技資格を無駄にしない前提だと、手段はそんなに多くないわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ゾフィア",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "たとえば――"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_arena_1"
+    },
+    {
       "type": "dialogue",
       "speakerName": "ビッグマウスモーブ",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "さあさあ、皆様！　ファイヤブレード競技場へようこそ——！"
     },
     {
       "type": "dialogue",
       "speakerName": "ビッグマウスモーブ",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "十五組のチームから、合計十五名の騎士が参戦！"
     },
     {
       "type": "dialogue",
       "speakerName": "ビッグマウスモーブ",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "本日の試合は「団体混戦」のみとなります！　略奪、逃亡、そして追撃！　カジミエーシュで総面積第三位を誇るこの人工競技場で、騎士たちは残酷な本性を剥き出しにすることでしょう！"
     },
     {
       "type": "dialogue",
       "speakerName": "ビッグマウスモーブ",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "えっ？　こんな長丁場の試合に一回勝っても、一回分しかポイント加算されないのは効率が悪いだろうって？　そんなケチ臭いルールなんてありません！"
     },
     {
       "type": "dialogue",
       "speakerName": "ビッグマウスモーブ",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "この試合では、周りの騎士に対し有効な攻撃を与えると得点が加算されます。そしてその得点は即座に競技ポイントに換算され、最終的には札束へと変化するのです！"
     },
     {
       "type": "dialogue",
       "speakerName": "ビッグマウスモーブ",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "しかし、皆様に言わせれば、ただ勝者を讃える試合などまったく面白味がないですよね？　わかっていますよ、皆様が求めているもの――"
     },
     {
       "type": "dialogue",
       "speakerName": "ビッグマウスモーブ",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "ズバリそれは――巨星の墜落！　世代交代！　そしてそのために、今シーズンでは大胆な新ルールが追加されております！　参加する騎士の皆さん、リスクとリターンは常に表裏一体なんですよ！"
     },
     {
       "type": "dialogue",
       "speakerName": "ビッグマウスモーブ",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "得点をただ貯めていくなんて味気ない！　本試合は得点の「略奪」制度が導入されます！　簡単に説明すると、有効な攻撃をした選手は、相手の選手から1ポイントを「奪う」ことができるのです！"
     },
     {
       "type": "dialogue",
       "speakerName": "ビッグマウスモーブ",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "ＹＥＳ！　私も余裕ぶっこいている選手たちがポイントをすべて奪われ、途方に暮れる顔を見るのが楽しみで仕方ありません！　順位がまるごとひっくり返ってもおかしくない、前代未聞の新ルール！"
     },
     {
       "type": "dialogue",
       "speakerName": "ビッグマウスモーブ",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "最効率、最速でメジャー昇格したいというそこのあなた！　今シーズンの競技ポイントをすべて失う覚悟があるなら、この試合に挑戦してみませんか！？"
     },
     {
       "type": "dialogue",
       "speakerName": "ビッグマウスモーブ",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "もちろん、レイジアン工業提供のドローンが、各騎士の視点で最初から最後まで中継致します！　総勢八名の騎士協会登録審判員が、どんな小さな動きも見逃がしませんよ！"
     },
     {
       "type": "dialogue",
       "speakerName": "ビッグマウスモーブ",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "さあ、騎士たちが最後の調整段階に入りました。これよりスタッフがセンサーチップをアーマーに装着します。さて、この試合で何人のスターが誕生し、何人の騎士がすべてを失うのでしょうか！？"
     },
     {
       "type": "dialogue",
       "speakerName": "ビッグマウスモーブ",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "それでは――間もなく始まる選手たちの入場にご期待ください！！"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_sportsbar"
+    },
+    {
       "type": "dialogue",
       "speakerName": "老職人",
       "speakerId": "avg_npc_101",
+      "isRemote": false,
       "text": "またあいつか？　ロアーガード社の犬がこんなところにも出しゃばるのかよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "禿頭マーティン",
       "speakerId": "avg_npc_107",
+      "isRemote": false,
       "text": "あいつもそれだけ高い地位に就いたってことだろうね。"
     },
     {
       "type": "dialogue",
       "speakerName": "老騎士",
       "speakerId": "avg_npc_120",
+      "isRemote": false,
       "text": "それにしても……得点が奪われる？　今までの団体混戦に、そんな制度はなかったじゃろう？"
     },
     {
       "type": "dialogue",
       "speakerName": "老騎士",
       "speakerId": "avg_npc_120",
+      "isRemote": false,
       "text": "試合が始まる直前に、後出しで新ルールを追加するなんぞ、まともな運営ではないわ！"
     },
     {
       "type": "dialogue",
       "speakerName": "禿頭マーティン",
       "speakerId": "avg_npc_101",
+      "isRemote": false,
       "text": "どうやら協会の傍若無人ぶりを甘く見ていたようだ……これはいい兆しとは言えない。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_arena_1"
+    },
+    {
       "type": "dialogue",
       "speakerName": "ビッグマウスモーブ",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "さて、十五名の騎士がそれぞれ開始位置につきました！　スタッフが退場次第、いよいよ試合が始まります！"
     },
     {
       "type": "dialogue",
       "speakerName": "ビッグマウスモーブ",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "試合時間は合計一時間！　哀れな騎士たちが全員倒れない限り、戦いが中断されることはありません！"
     },
     {
       "type": "dialogue",
       "speakerName": "ビッグマウスモーブ",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "そして、たとえ競技ポイントがマイナスになっても、即時退場とはなりません！　つまり一発逆転のチャンスは、いつどこにでもあるということです！"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_122",
+      "isRemote": false,
       "text": "ねぇ、マリア・ニアール。"
     },
     {
       "type": "dialogue",
       "speakerName": "マリア",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "――あなたは？"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_122",
+      "isRemote": false,
       "text": "うーん……君のファン、ってとこかな。"
     },
     {
       "type": "dialogue",
       "speakerName": "ビッグマウスモーブ",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "皆様――！　十五名の騎士の準備がすべて整いました！"
     },
     {
       "type": "dialogue",
       "speakerName": "通りすがりのファン",
       "speakerId": "avg_npc_122",
+      "isRemote": false,
       "text": "ねえ、知ってる？　あの錆銅騎士だけど、ケガが落ち着いたところにうちのカイちゃん――あ、「灰毫（かいごう）」騎士のことね、そのカイちゃんにまた病院送りにされちゃったのよ。可哀想に。"
     },
     {
       "type": "dialogue",
       "speakerName": "ビッグマウスモーブ",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "それでは――！"
     },
     {
       "type": "dialogue",
       "speakerName": "通りすがりのファン",
       "speakerId": "avg_npc_122",
+      "isRemote": false,
       "text": "カイちゃんがあたしの出場権まで使っちゃったから暇で暇で……だからこの試合でポイント稼ぎでもしようかなって思ったわけよ。でもここで噂のニアール家の新星に会えるなんて思わなかったわ――"
     },
     {
       "type": "dialogue",
       "speakerName": "通りすがりのファン",
       "speakerId": "avg_npc_122",
+      "isRemote": false,
       "text": "――せっかくなんだし、あたしと勝負しない？"
     },
     {
       "type": "dialogue",
       "speakerName": "マリア",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "え？"
     },
     {
       "type": "dialogue",
       "speakerName": "ビッグマウスモーブ",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "――ファイヤブレード団体混戦、開始――！"
     },
     {

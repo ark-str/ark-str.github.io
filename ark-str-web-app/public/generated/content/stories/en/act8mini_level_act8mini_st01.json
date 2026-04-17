@@ -6,10 +6,14 @@
   "title": "Spes",
   "storyCode": "",
   "avgTag": "Interlude",
-  "sourcePath": "vendor/ArknightsGamedata/en/gamedata/story/activities/act8mini/level_act8mini_st01.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/en/gamedata/story/activities/act8mini/level_act8mini_st01.txt",
   "sourceHash": "e0e1e07df28e10c1b89236976f736ea4ab9e5e92feef371433539c7b1318049f",
   "bodyAvailable": true,
   "blocks": [
+    {
+      "type": "background",
+      "backgroundId": "bg_storehouse"
+    },
     {
       "type": "narration",
       "text": "5:20 P.M. \\ Clear\nColumbia City, Tkaronto\nThe name's Dylan, Rhodes Island low-altitude aircraft pilot, and I'm currently running pell-mell around the city.\nI should be sitting in the cockpit of my aircraft, joystick in hand. The only things I should be facing down are turbulence and terrain.\nInstead, I'm clutching one half of an automatic assault crossbow in my hands, and hell, the first time I heard of this model was earlier this morning. Even just half of it is damned heavy.\nMy palms are all sweaty. If I have to end up in a warzone, I sure as hell shouldn't be on the ground, let alone in some dark alley in Columbia.\nI just hope to God that my enemy isn't... Ugh."
@@ -18,48 +22,56 @@
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "Dylan, I got my hands full over here. Can you help a gal out and tell me what it says?"
     },
     {
       "type": "dialogue",
       "speakerName": "Dylan",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "It says Police. The 'police' of Tkaronto."
     },
     {
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "He started it."
     },
     {
       "type": "dialogue",
       "speakerName": "Dylan",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "But it seems... probably not the real deal. A real botch-job if I've ever seen one."
     },
     {
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "At least he looked the part, pretty much the same as the guys up on the roof earlier this morning. Better than the ones that didn't have a uniform ready."
     },
     {
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "So let me ask this question again: what kind of cops wind their automatic assault crossbows during questioning?"
     },
     {
       "type": "dialogue",
       "speakerName": "Dylan",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "Columbian cops?"
     },
     {
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "Very funny. You know he's not a cop, at least not the kind we're used to dealing with."
     },
     {
@@ -76,129 +88,154 @@
       "type": "dialogue",
       "speakerName": "Medic Operator",
       "speakerId": "char_016_medic",
+      "isRemote": false,
       "text": "Are we... safe?"
     },
     {
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "No, not until we leave Tkaronto— Maybe not even until we leave Columbia."
     },
     {
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "Check for me if he's still breathing. It'd be nice if you made sure he kept on breathing."
     },
     {
       "type": "dialogue",
       "speakerName": "Medic Operator",
       "speakerId": "char_016_medic",
+      "isRemote": false,
       "text": "I... Um, alright."
     },
     {
       "type": "dialogue",
       "speakerName": "Dylan",
       "speakerId": "char_016_medic",
+      "isRemote": false,
       "text": "This is my first time seeing such a powerful automatic crossbow. Are these weapons common in Columbia?"
     },
     {
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "Automatic weapons like that are a Columbian specialty."
     },
     {
       "type": "dialogue",
       "speakerName": "Dylan",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "I wonder how the Doctor's doing..."
     },
     {
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "As soon as the raid started, the Doctor and Amiya left in a car. No clue if the autopilot system that Closure was fiddling with will work though..."
     },
     {
       "type": "dialogue",
       "speakerName": "Dylan",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "What a disaster... Even those two got caught off guard."
     },
     {
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "They're only human after all... Sometimes shit happens."
     },
     {
       "type": "dialogue",
       "speakerName": "Medic Operator",
       "speakerId": "char_016_medic",
+      "isRemote": false,
       "text": "They took over the hotel and seized all the drug samples we kept behind..."
     },
     {
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "Whatever, we can worry about that later."
     },
     {
       "type": "dialogue",
       "speakerName": "Blaze",
       "speakerId": "char_017_homura",
+      "isRemote": false,
       "text": "We've gotta think of a way to get out of this city safely first."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": null,
+      "isRemote": false,
       "text": "We've lost everything, but you are still not standing by my side."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": null,
+      "isRemote": false,
       "text": "Then what has it all been for?"
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": null,
+      "isRemote": false,
       "text": "Just to leave the faintest sliver of hope?"
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": null,
+      "isRemote": false,
       "text": "But, hope?"
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": null,
+      "isRemote": false,
       "text": "Hope?"
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": null,
+      "isRemote": false,
       "text": "Don't you know, that hope is a cruel thing indeed?"
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": null,
+      "isRemote": false,
       "text": "When you realize it can't be undone, when you realize you are powerless, when you find yourself nothing but desperate..."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": null,
+      "isRemote": false,
       "text": "Hope is enough to drive a perfectly good person mad."
     },
     {
@@ -212,38 +249,42 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "narration",
-          "text": "You want to say something, but you can't move your body.\nYou seem to be drifting in the void, everything before your eyes so familiar and yet so distant. These are a part of your memories, floating alongside you like fragments.\nLike this, you continue to drift with your ceaseless thoughts, watching the familiar woman before you gradually fade away.\nYou open your eyes, and before you stretches an endless rocky desert. You see a strange, ugly iron bucket helm.\nA peculiar man seems to be looking your way, but you cannot see his expression through that rough bucket helm."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "10:43 A.M. \\ Clear\nGaspar Wildland"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Good morning, good afternoon, and good evening, friend."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Can you talk?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "narration",
+      "text": "You want to say something, but you can't move your body.\nYou seem to be drifting in the void, everything before your eyes so familiar and yet so distant. These are a part of your memories, floating alongside you like fragments.\nLike this, you continue to drift with your ceaseless thoughts, watching the familiar woman before you gradually fade away.\nYou open your eyes, and before you stretches an endless rocky desert. You see a strange, ugly iron bucket helm.\nA peculiar man seems to be looking your way, but you cannot see his expression through that rough bucket helm."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_desert_1"
+    },
+    {
+      "type": "narration",
+      "text": "10:43 A.M. \\ Clear\nGaspar Wildland"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Good morning, good afternoon, and good evening, friend."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Can you talk?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -253,49 +294,51 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "The friend awakens, little rabbit."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Doctor!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "You feel someone tightly embrace your waist.\nBut before experiencing this warm embrace, the cold, hard touch of the rocks behind you and the throbbing pain in your head remind you that all is not well."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "I'm so glad! You're awake... I don't know what I would've done if you didn't wake up..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "How are you feeling? Does it hurt anywhere?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "The friend awakens, little rabbit."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Doctor!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "You feel someone tightly embrace your waist.\nBut before experiencing this warm embrace, the cold, hard touch of the rocks behind you and the throbbing pain in your head remind you that all is not well."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "I'm so glad! You're awake... I don't know what I would've done if you didn't wake up..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "How are you feeling? Does it hurt anywhere?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -308,6 +351,7 @@
               "type": "dialogue",
               "speakerName": "Amiya",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "Your head hurts? Did you hit it? Let me have a look."
             },
             {
@@ -323,6 +367,7 @@
               "type": "dialogue",
               "speakerName": "Amiya",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "Are you sure you're fine, Doctor? Do you need me to help you up?"
             },
             {
@@ -338,6 +383,7 @@
               "type": "dialogue",
               "speakerName": "Amiya",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "Doctor... you should still be careful. You're not in the best shape."
             },
             {
@@ -345,24 +391,24 @@
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Worry not, little rabbit. There is nothing wrong with this 'Doctor,' at least not physically."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "On a spiritual level, however, one cannot say. You were mumbling a great deal in your slumber, but before you complain, I did not listen closely."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Worry not, little rabbit. There is nothing wrong with this 'Doctor,' at least not physically."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "On a spiritual level, however, one cannot say. You were mumbling a great deal in your slumber, but before you complain, I did not listen closely."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -372,36 +418,38 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Ah, pardon me for not introducing myself."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "As you can see, I am a merchant."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "You can call me Cannot, or Mr. Goodenough should you prefer that instead."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "To be honest, friend, that display you put on earlier was simply too exhilarating. It is not every day one sees someone performing Originium Arts while flying off a cliff. A most excellent show indeed."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Ah, pardon me for not introducing myself."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "As you can see, I am a merchant."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "You can call me Cannot, or Mr. Goodenough should you prefer that instead."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "To be honest, friend, that display you put on earlier was simply too exhilarating. It is not every day one sees someone performing Originium Arts while flying off a cliff. A most excellent show indeed."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -416,36 +464,38 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "This should be Columbia's... eastern wastelands."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "That is correct, little rabbit. This is the Gaspar Wildland, and you two are quite fortunate."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Fortunate?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Yes, yes. Quite fortunate indeed. Two kilometers further south is a poisonous swamp, and had your car gotten stuck in that, good luck getting it out."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "This should be Columbia's... eastern wastelands."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "That is correct, little rabbit. This is the Gaspar Wildland, and you two are quite fortunate."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Fortunate?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Yes, yes. Quite fortunate indeed. Two kilometers further south is a poisonous swamp, and had your car gotten stuck in that, good luck getting it out."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -465,24 +515,24 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "The other operators split off on their own. I'm sure Blaze is taking good care of them..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "But we can't get a hold of them, or any other branch offices."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "The other operators split off on their own. I'm sure Blaze is taking good care of them..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "But we can't get a hold of them, or any other branch offices."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -497,36 +547,38 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "We left it all on the 'Bad Guy.'"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Not just the communicator. We didn't even have time to pack food or water."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Sounds like a desperate situation indeed, friends?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "But there is always a way, if you don't mind..."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "We left it all on the 'Bad Guy.'"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Not just the communicator. We didn't even have time to pack food or water."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Sounds like a desperate situation indeed, friends?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "But there is always a way, if you don't mind..."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -536,18 +588,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "I am quite familiar with this area. I can show you to the nearest Messenger Outpost where, should all go well, you will be able to contact your friends."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "I am quite familiar with this area. I can show you to the nearest Messenger Outpost where, should all go well, you will be able to contact your friends."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -557,112 +608,132 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "An excellent question indeed, but the only ones who could answer it are no longer able to speak."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "The bucket-headed man points to the nearby cliff, where a unique-looking armed vehicle is emitting a thick, black smoke. By the looks of things, it's been wrecked for quite some time now."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Mercenaries. They've been chasing us even after we left the city."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Dedicated to their job. Dedicated to the point of giving up their own lives."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "To be frank, Columbian mercenaries range from peerless to useless, and the ones with the resources to hire such dedicated mercenaries can be counted on one hand."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "They seem to have taken quite an interest in you, friends. How exactly did you offend these great moguls?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "So it was them..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Officer-in-Charge",
-          "speakerId": "avg_npc_177",
-          "text": "So, Miss Amiya, are you really unwilling to consider the offer?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Officer-in-Charge",
-          "speakerId": "avg_npc_177",
-          "text": "In Columbia, you'll be hard-pressed to find a more suitable partner than Mama John's. We can provide fairly favorable terms for Rhodes Island's drug sales."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Thank you for your generosity, but..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "We're only here for technical exchange. Rhodes Island has no plans for any deeper-level commercial cooperation."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "And the Oripathy analgesics we brought are still undergoing trials. These are more of a proof of concept than a finished product."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "The process of researching and developing Oripathy treatments is long and complicated, and in these areas, we still have many opportunities for cooperation in the future."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Officer-in-Charge",
-          "speakerId": "avg_npc_177",
-          "text": "Many opportunities for cooperation in the future...? Hahaha..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "They planned this from the very beginning..."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "An excellent question indeed, but the only ones who could answer it are no longer able to speak."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "The bucket-headed man points to the nearby cliff, where a unique-looking armed vehicle is emitting a thick, black smoke. By the looks of things, it's been wrecked for quite some time now."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Mercenaries. They've been chasing us even after we left the city."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Dedicated to their job. Dedicated to the point of giving up their own lives."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "To be frank, Columbian mercenaries range from peerless to useless, and the ones with the resources to hire such dedicated mercenaries can be counted on one hand."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "They seem to have taken quite an interest in you, friends. How exactly did you offend these great moguls?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "So it was them..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_manorindoor"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Officer-in-Charge",
+      "speakerId": "avg_npc_177",
+      "isRemote": false,
+      "text": "So, Miss Amiya, are you really unwilling to consider the offer?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Officer-in-Charge",
+      "speakerId": "avg_npc_177",
+      "isRemote": false,
+      "text": "In Columbia, you'll be hard-pressed to find a more suitable partner than Mama John's. We can provide fairly favorable terms for Rhodes Island's drug sales."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Thank you for your generosity, but..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "We're only here for technical exchange. Rhodes Island has no plans for any deeper-level commercial cooperation."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "And the Oripathy analgesics we brought are still undergoing trials. These are more of a proof of concept than a finished product."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "The process of researching and developing Oripathy treatments is long and complicated, and in these areas, we still have many opportunities for cooperation in the future."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Officer-in-Charge",
+      "speakerId": "avg_npc_177",
+      "isRemote": false,
+      "text": "Many opportunities for cooperation in the future...? Hahaha..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_desert_1"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "They planned this from the very beginning..."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -672,36 +743,38 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Police? Friend, you don't seem to understand where you are."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Mama John's is the largest firm in Tkaronto. The chief of police boasts of his connections to their corporate leadership in order to display his status. I suggest you change your mind."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "The fact that they dared to steal your goods in the urban core means that from the very beginning, they never thought anything of you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "It's all my fault... I bought into their talk."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Police? Friend, you don't seem to understand where you are."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Mama John's is the largest firm in Tkaronto. The chief of police boasts of his connections to their corporate leadership in order to display his status. I suggest you change your mind."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "The fact that they dared to steal your goods in the urban core means that from the very beginning, they never thought anything of you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "It's all my fault... I bought into their talk."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -721,78 +794,87 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Mr... Good...y?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Ah. What is it, Miss Rabbit?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "You just said you could take us through the wastelands, right?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "That I did say, Miss Rabbit."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "How do you plan to do that? Were you a Catastrophe Messenger?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "That is nothing you need to concern yourself over."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "I have plied my trade in the wastelands for many years, and that has given me a knack for avoiding Catastrophes."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Of course, I do ask for a small guide fee, two refined Originium Ingots in this case. Not too much to ask for in such a situation, yes?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "We only have Columbian Gold Certificates, and won't be able to pay you until we get in touch with our ship. Is that alright?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "No problem! My friend."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Doctor... What do you think? We could also figure a way back into the city, to meet up with Blaze and the others."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Mr... Good...y?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Ah. What is it, Miss Rabbit?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "You just said you could take us through the wastelands, right?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "That I did say, Miss Rabbit."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "How do you plan to do that? Were you a Catastrophe Messenger?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "That is nothing you need to concern yourself over."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "I have plied my trade in the wastelands for many years, and that has given me a knack for avoiding Catastrophes."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Of course, I do ask for a small guide fee, two refined Originium Ingots in this case. Not too much to ask for in such a situation, yes?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "We only have Columbian Gold Certificates, and won't be able to pay you until we get in touch with our ship. Is that alright?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "No problem! My friend."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Doctor... What do you think? We could also figure a way back into the city, to meet up with Blaze and the others."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -807,18 +889,17 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "That is scarcely the case. We always have many choices at any point in our lives, but of course, we tend to pick the best one from the available options."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "That is scarcely the case. We always have many choices at any point in our lives, but of course, we tend to pick the best one from the available options."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -828,55 +909,62 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Of course, my friend!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "I trust that this will be a most enjoyable journey."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "Five hours later..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "...As I said, bandits are not the biggest threat in the wastelands. I once knew the most courageous local– he even..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Doctor, give me your hand."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Phew, we're up."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Of course, my friend!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "I trust that this will be a most enjoyable journey."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_wild_a"
+    },
+    {
+      "type": "narration",
+      "text": "Five hours later..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "...As I said, bandits are not the biggest threat in the wastelands. I once knew the most courageous local– he even..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Doctor, give me your hand."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Phew, we're up."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -886,18 +974,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "This is only the second one, Doctor."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "This is only the second one, Doctor."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -917,127 +1004,147 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Haha, Doctor, sit down here for a minute."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Friend, at your speed, we will be on the road for at least another whole day."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "The Doctor might not be able to maintain such a brisk pace."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "We can slow down a touch, but..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Why can't we go a bit slower?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Even as a merchant of the wastelands, there is a limit to the amount of food and water I can carry on me."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "If we slow down too much, we will inevitably run into a supply shortage."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "If that's the case... Mr. Cannot?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Hmm?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Is there a forest nearby? I've heard of an oasis in the wastes of eastern Columbia."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "There is, but what use is it?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "Night, above the wastelands, in a dark mountain pass.\nA tongue of flame consumes dry branches, and the sound of a wooden spoon tapping against a bowl echoes across the canyon along with Amiya's humming."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "These vegetables, as well as the mushrooms here, are pretty much all edible as long as they're cooked through."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "This kind... is slightly toxic, but can still be eaten in an emergency."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "I should've given you more credit, Miss Rabbit."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "To be honest, most friends from the nomadic cities... have no sense of how to survive in the wilds. Many I know will never once step foot in the wastelands."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "I see that you have a decent survivalist's skillset. Where are you from? Rim Billiton?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "I would not be surprised if you were in fact from Rim Billiton..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Actually, the Doctor taught me all of this, a few years ago..."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Haha, Doctor, sit down here for a minute."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Friend, at your speed, we will be on the road for at least another whole day."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "The Doctor might not be able to maintain such a brisk pace."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "We can slow down a touch, but..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Why can't we go a bit slower?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Even as a merchant of the wastelands, there is a limit to the amount of food and water I can carry on me."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "If we slow down too much, we will inevitably run into a supply shortage."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "If that's the case... Mr. Cannot?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Hmm?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Is there a forest nearby? I've heard of an oasis in the wastes of eastern Columbia."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "There is, but what use is it?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_wild_m"
+    },
+    {
+      "type": "narration",
+      "text": "Night, above the wastelands, in a dark mountain pass.\nA tongue of flame consumes dry branches, and the sound of a wooden spoon tapping against a bowl echoes across the canyon along with Amiya's humming."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "These vegetables, as well as the mushrooms here, are pretty much all edible as long as they're cooked through."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "This kind... is slightly toxic, but can still be eaten in an emergency."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "I should've given you more credit, Miss Rabbit."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "To be honest, most friends from the nomadic cities... have no sense of how to survive in the wilds. Many I know will never once step foot in the wastelands."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "I see that you have a decent survivalist's skillset. Where are you from? Rim Billiton?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "I would not be surprised if you were in fact from Rim Billiton..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Actually, the Doctor taught me all of this, a few years ago..."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1047,42 +1154,52 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Yes. Back then..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Young Amiya",
-          "speakerId": null,
-          "text": "Doctor... Are these edible?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Doctor",
-          "speakerId": null,
-          "text": "These vegetables, as well as the mushrooms here, are pretty much all edible as long as they're cooked through."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Those were trying times, harrowing times. But they were also good times."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Yes. Back then..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_outcounty"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Young Amiya",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Doctor... Are these edible?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Doctor",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "These vegetables, as well as the mushrooms here, are pretty much all edible as long as they're cooked through."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_wild_m"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Those were trying times, harrowing times. But they were also good times."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1092,22 +1209,21 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "narration",
-          "text": "It seems that something is stirring in the back of your mind, but it gradually blurs out.\nYou try to recall that scene again, but the vague memory is like bubbles that occasionally rise to the water's surface, only to disappear just as quickly."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Doctor?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "narration",
+      "text": "It seems that something is stirring in the back of your mind, but it gradually blurs out.\nYou try to recall that scene again, but the vague memory is like bubbles that occasionally rise to the water's surface, only to disappear just as quickly."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Doctor?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1117,36 +1233,37 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Ah, it's nothing. It did happen a few years ago, but it doesn't matter if you can't remember."
-        },
-        {
-          "type": "narration",
-          "text": "She lowers her head and continues to stir the bowl, but the smile on her face seems somewhat lonelier."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Ahem, I must also say, you've chosen a most prudent location to make camp. Even though we've made a fire, our position is not easy to detect."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Ah, it's nothing. It did happen a few years ago, but it doesn't matter if you can't remember."
+    },
+    {
+      "type": "narration",
+      "text": "She lowers her head and continues to stir the bowl, but the smile on her face seems somewhat lonelier."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "dialogue",
       "speakerName": "Cannot",
       "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Ahem, I must also say, you've chosen a most prudent location to make camp. Even though we've made a fire, our position is not easy to detect."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
       "text": "Bandits, bounty hunters, and countless Rusthammers. There are no shortage of annoyances in this land."
     },
     {
@@ -1167,42 +1284,45 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Rusthammer... I've heard the name before. They're a group of vicious marauders, right?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "That description would not be a very rigorous one."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Rusthammer is a loose organization, and it is made up of various smaller groups."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "For example, there is 'Fiends Gang' made up of Sarkaz, and also a group of strange folks who worship Catastrophes as gods. I think they're called 'Followers of the Archosauria', or something."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "They worship Catastrophes?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Rusthammer... I've heard the name before. They're a group of vicious marauders, right?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "That description would not be a very rigorous one."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Rusthammer is a loose organization, and it is made up of various smaller groups."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "For example, there is 'Fiends Gang' made up of Sarkaz, and also a group of strange folks who worship Catastrophes as gods. I think they're called 'Followers of the Archosauria', or something."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "They worship Catastrophes?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1222,51 +1342,55 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "I heard something about a Rusthammer gang in Sargon that called themselves 'Archosauria Devils.' They seemed to have been searching for an 'Archosauria war-god with massive horns on its head.'"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "An operator from Columbia once told me that Rusthammer used to be just a few, small, scattered groups. Over the past few years though, their numbers have greatly increased, stretching from the mountains of Ursus to the wastelands of Columbia."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Our world is not a peaceful one, friend."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "And the wastelands is no exception. You will encounter all sorts of strange people and strange occurrences."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "But you will adapt."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Here, Doctor! Dinner's ready!"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "I heard something about a Rusthammer gang in Sargon that called themselves 'Archosauria Devils.' They seemed to have been searching for an 'Archosauria war-god with massive horns on its head.'"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "An operator from Columbia once told me that Rusthammer used to be just a few, small, scattered groups. Over the past few years though, their numbers have greatly increased, stretching from the mountains of Ursus to the wastelands of Columbia."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Our world is not a peaceful one, friend."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "And the wastelands is no exception. You will encounter all sorts of strange people and strange occurrences."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "But you will adapt."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Here, Doctor! Dinner's ready!"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1276,84 +1400,98 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Very good. What a heartfelt scene of intimacy."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Mr. Cannot!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Ahem... I am simply jesting. My apologies, please do not take it seriously."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": null,
-          "text": "At this rate, you will lose everything."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": null,
-          "text": "You will be alone, with nothing. Is it worth it?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": null,
-          "text": "Loneliness is a poison that erodes the mind. How much do you think you can withstand?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": null,
-          "text": "By the time you awaken, there will be no kin at your side. Nobody will recognize your sacrifice, let alone remember it. Is this the future you look forward to?"
-        },
-        {
-          "type": "narration",
-          "text": "You wake up."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "A crimson glow spills forth from the distant horizon, and the darkness left unto humanity by the Shadow-Moon gradually ebbs."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "Frigid wind gnaws at your cheeks as it blows across your face, and the land of Terra once again ushers in a new dawn."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "You are up very early, friend."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Very good. What a heartfelt scene of intimacy."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Mr. Cannot!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Ahem... I am simply jesting. My apologies, please do not take it seriously."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "At this rate, you will lose everything."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "You will be alone, with nothing. Is it worth it?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Loneliness is a poison that erodes the mind. How much do you think you can withstand?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "By the time you awaken, there will be no kin at your side. Nobody will recognize your sacrifice, let alone remember it. Is this the future you look forward to?"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_wild_a"
+    },
+    {
+      "type": "narration",
+      "text": "You wake up."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "A crimson glow spills forth from the distant horizon, and the darkness left unto humanity by the Shadow-Moon gradually ebbs."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "Frigid wind gnaws at your cheeks as it blows across your face, and the land of Terra once again ushers in a new dawn."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "You are up very early, friend."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1363,18 +1501,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Where's the little rabbit? Is she not awake yet?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Where's the little rabbit? Is she not awake yet?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1389,36 +1526,38 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Short-tailed fowlbeasts don't have much meat, but they can suffice as breakfast."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "This is a specialty of the Columbian wastelands. Worry not, it's free of charge."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "A new day comes to Terra, and the situation has not changed, as far as I can tell. Nevertheless, good morning, friend!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "You were talking in your sleep last night. Your mental state has seemed a bit unstable, do be careful."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Short-tailed fowlbeasts don't have much meat, but they can suffice as breakfast."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "This is a specialty of the Columbian wastelands. Worry not, it's free of charge."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "A new day comes to Terra, and the situation has not changed, as far as I can tell. Nevertheless, good morning, friend!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "You were talking in your sleep last night. Your mental state has seemed a bit unstable, do be careful."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1428,30 +1567,31 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "I am a trustworthy person. I didn't go out of my way to listen, let alone remember anything. Plus, you were only mumbling. Couldn't really hear anything clearly."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "But... Every night, the little rabbit is very concerned about your sleep-talking."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Pardon me for being nosy, but after all the chatting we've done on our journey, it is hard not to take certain impressions. Have you lost your memories, or something of that sort?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "I am a trustworthy person. I didn't go out of my way to listen, let alone remember anything. Plus, you were only mumbling. Couldn't really hear anything clearly."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "But... Every night, the little rabbit is very concerned about your sleep-talking."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Pardon me for being nosy, but after all the chatting we've done on our journey, it is hard not to take certain impressions. Have you lost your memories, or something of that sort?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1461,18 +1601,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "I see. If that's some sort of secret, let's say I never asked. It is an uncouth question indeed, and I asked out of simple curiosity."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "I see. If that's some sort of secret, let's say I never asked. It is an uncouth question indeed, and I asked out of simple curiosity."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1482,8 +1621,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1493,8 +1631,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1504,8 +1641,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1515,30 +1651,31 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Friend, I have a vague idea of what's going on."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Suppose your memory is a spread-out newspaper, and now, someone has spilled a bucket of paint on it."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "You can only see bits and pieces of the content through the gaps in the paint, but you can't grasp the full picture of that content."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Friend, I have a vague idea of what's going on."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Suppose your memory is a spread-out newspaper, and now, someone has spilled a bucket of paint on it."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "You can only see bits and pieces of the content through the gaps in the paint, but you can't grasp the full picture of that content."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1553,24 +1690,24 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "It sounds like something that defies all words, friend."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "But I am no psychiatrist, and there is not much I can do for you."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "It sounds like something that defies all words, friend."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "But I am no psychiatrist, and there is not much I can do for you."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1580,8 +1717,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1591,30 +1727,31 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "That's not important, friend."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Our existence is often based on how others perceive us. The sum of your 'self' is but the feedback of auditory, visual, and emotional interaction with others."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "It doesn't matter what kind of person 'you' are, but from a social point of view, it should be quite clear what kind of person others need you to be."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "That's not important, friend."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Our existence is often based on how others perceive us. The sum of your 'self' is but the feedback of auditory, visual, and emotional interaction with others."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "It doesn't matter what kind of person 'you' are, but from a social point of view, it should be quite clear what kind of person others need you to be."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1634,54 +1771,59 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "I do, but I can't recommend it. Let me think of how to put this..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Our lives are like an elastic belt. If you stretch out one side, the other side will contract."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "If you want to restore your memories 'quickly,' you will have to endure many unmanageable consequences."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "That quaint head of yours might not withstand such a tussle. Besides, this only applies to the most common forms of 'amnesia.'"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Whether for your own sake, or for that of the little bunny who you value so much, I'd recommend just taking things easy."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "By the way, the little rabbit's up."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Doctor... Good morning."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "I do, but I can't recommend it. Let me think of how to put this..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Our lives are like an elastic belt. If you stretch out one side, the other side will contract."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "If you want to restore your memories 'quickly,' you will have to endure many unmanageable consequences."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "That quaint head of yours might not withstand such a tussle. Besides, this only applies to the most common forms of 'amnesia.'"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Whether for your own sake, or for that of the little bunny who you value so much, I'd recommend just taking things easy."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "By the way, the little rabbit's up."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Doctor... Good morning."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1691,34 +1833,34 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "I'll leave you two to it then. I'm going to fetch some firewood."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "Amiya stands beside you quietly, watching the sun rising in the distance.\nThe rays of light are slowly melting the cold tones of the wastelands, every piece of the rocky desert dyed by the gradually rising sun.\nPerhaps you have never set foot upon this land, but in a corner of Terra's vast domain, you once wandered with Amiya.\nYou once left your footprints in this sparsely populated world.\nThis should have been your impression, your fragments of your memory— but the truth is, this is the 'story' Kal'tsit told you.\nIn the cold wind of the early morning, you rack your brain, trying to find a tangible thread within your hazy memory.\nThe light of daybreak, the cold wind of the wastelands. You and Amiya, Amiya and you. You can remember, and yet you cannot remember.\nAmiya takes hold of your hand."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Doctor, are you okay?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "I'll leave you two to it then. I'm going to fetch some firewood."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "Amiya stands beside you quietly, watching the sun rising in the distance.\nThe rays of light are slowly melting the cold tones of the wastelands, every piece of the rocky desert dyed by the gradually rising sun.\nPerhaps you have never set foot upon this land, but in a corner of Terra's vast domain, you once wandered with Amiya.\nYou once left your footprints in this sparsely populated world.\nThis should have been your impression, your fragments of your memory— but the truth is, this is the 'story' Kal'tsit told you.\nIn the cold wind of the early morning, you rack your brain, trying to find a tangible thread within your hazy memory.\nThe light of daybreak, the cold wind of the wastelands. You and Amiya, Amiya and you. You can remember, and yet you cannot remember.\nAmiya takes hold of your hand."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Doctor, are you okay?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1728,30 +1870,31 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "I remember it was around the same time. We spent our first night in the wastelands, and watched the sun rise over the horizon just like this."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "You asked me a bunch of weird questions..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Haha... Of course, all of that happened years ago, but it seems like it was just yesterday."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "I remember it was around the same time. We spent our first night in the wastelands, and watched the sun rise over the horizon just like this."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "You asked me a bunch of weird questions..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Haha... Of course, all of that happened years ago, but it seems like it was just yesterday."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1761,89 +1904,101 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "It's okay, Doctor."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "As long as you're here, one day, things will get better."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "The next day\n2:39 P.M. \\ Clear\nMessenger Outpost"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "Several huge engineering vehicles and armed off-road transports make a circular formation on the rocky, barren expanses, surrounding several makeshift sheds.\nThe noisy din of generators and the roar of running Originium boilers can be heard near and far, intermingled with the loud conversations of travelers and Messengers.\nThe Messenger Outpost, an oasis of civilization beyond the ecological oasis of the wastelands, your destination."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Finally! We've arrived safely at the post!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "We didn't encounter any major difficulties on our journey, nor did a Catastrophe befall us. You are quite lucky indeed, friend."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "The third car from the left is the Messenger contact station here. You might be able to contact your group there. The Messenger rates here are pretty good."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "But... the room over there has the logo of Mama John's on it. Are you sure it's fine?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "As long as you keep a low profile and don't cause any trouble, there won't be any problems. This is a Messenger outpost after all. Even in Columbia, few companies will go out of their way to get on the Messengers' bad side."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Doctor... Wait here for me. I don't stand out as much as you do, so I'll head down to the Messenger contact station."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Mr. Cannot, can I trouble you to stay with the Doctor for a while? I'll be right back."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Don't worry, little rabbit. I am good at hiding people from prying eyes. There won't be any problems."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "It's okay, Doctor."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "As long as you're here, one day, things will get better."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_barracks"
+    },
+    {
+      "type": "narration",
+      "text": "The next day\n2:39 P.M. \\ Clear\nMessenger Outpost"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "Several huge engineering vehicles and armed off-road transports make a circular formation on the rocky, barren expanses, surrounding several makeshift sheds.\nThe noisy din of generators and the roar of running Originium boilers can be heard near and far, intermingled with the loud conversations of travelers and Messengers.\nThe Messenger Outpost, an oasis of civilization beyond the ecological oasis of the wastelands, your destination."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Finally! We've arrived safely at the post!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "We didn't encounter any major difficulties on our journey, nor did a Catastrophe befall us. You are quite lucky indeed, friend."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "The third car from the left is the Messenger contact station here. You might be able to contact your group there. The Messenger rates here are pretty good."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "But... the room over there has the logo of Mama John's on it. Are you sure it's fine?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "As long as you keep a low profile and don't cause any trouble, there won't be any problems. This is a Messenger outpost after all. Even in Columbia, few companies will go out of their way to get on the Messengers' bad side."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Doctor... Wait here for me. I don't stand out as much as you do, so I'll head down to the Messenger contact station."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Mr. Cannot, can I trouble you to stay with the Doctor for a while? I'll be right back."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Don't worry, little rabbit. I am good at hiding people from prying eyes. There won't be any problems."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1853,30 +2008,31 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Relax, friend. Look at those armed vehicles over there. Do you see those anti-armor turrets? Trust me, it's very safe here."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Here, have a sip."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "It's a specialty from a local microbrewery. Give it a try."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Relax, friend. Look at those armed vehicles over there. Do you see those anti-armor turrets? Trust me, it's very safe here."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Here, have a sip."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "It's a specialty from a local microbrewery. Give it a try."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1886,18 +2042,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Indeed. I've heard the owner of this microbrewery is an Infected. Unexpected, yes? Even among Columbia's pioneers, there are few who can accomplish this much."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Indeed. I've heard the owner of this microbrewery is an Infected. Unexpected, yes? Even among Columbia's pioneers, there are few who can accomplish this much."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1907,93 +2062,104 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Fair enough. Why don't we go relax over there and listen to the news?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "You know, the very best thing about Columbia is that they provide radio base stations for all the wasteland outposts. You can hear the news on the radio from just about anywhere."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Almost all cities have intra-city broadcasting, but the decision to cover the wilderness with base stations is unique in Terra. You should take it all in, and treat it like sightseeing."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "News Broadcast",
-          "speakerId": null,
-          "text": "...The armed conflict that occurred in the Northern District of Tkaronto has gradually subsided. On site, police found evidence of a large-scale crossbow shoot-out, but have not apprehended any suspects..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "News Broadcast",
-          "speakerId": null,
-          "text": "...The Tkaronto Police announced that one of the parties involved in the conflict has ties to a foreign company, 'Rhodes Island.' The specifics of this organization are not known at this time..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "News Broadcast",
-          "speakerId": null,
-          "text": "...Some sources note that this foreign company has certain commercial conflicts with a local firm, but the spokesperson of this local business declined to comment on the matter."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "News Broadcast",
-          "speakerId": null,
-          "text": "The police believe that this may have been a terrorist attack on Tkaronto, and the specifics of this armed conflict are pending further investigation."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Doctor."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "You're back, little rabbit?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "The people at the Messenger contact station didn't come to work until three past noon, so we'll have to wait."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "The news just now..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "It sounds like your people have withdrawn successfully, which is a good thing."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "But Mama John's probably got what it came for. Most regrettable."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Fair enough. Why don't we go relax over there and listen to the news?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "You know, the very best thing about Columbia is that they provide radio base stations for all the wasteland outposts. You can hear the news on the radio from just about anywhere."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Almost all cities have intra-city broadcasting, but the decision to cover the wilderness with base stations is unique in Terra. You should take it all in, and treat it like sightseeing."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "News Broadcast",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "...The armed conflict that occurred in the Northern District of Tkaronto has gradually subsided. On site, police found evidence of a large-scale crossbow shoot-out, but have not apprehended any suspects..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "News Broadcast",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "...The Tkaronto Police announced that one of the parties involved in the conflict has ties to a foreign company, 'Rhodes Island.' The specifics of this organization are not known at this time..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "News Broadcast",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "...Some sources note that this foreign company has certain commercial conflicts with a local firm, but the spokesperson of this local business declined to comment on the matter."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "News Broadcast",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "The police believe that this may have been a terrorist attack on Tkaronto, and the specifics of this armed conflict are pending further investigation."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Doctor."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "You're back, little rabbit?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "The people at the Messenger contact station didn't come to work until three past noon, so we'll have to wait."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "The news just now..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "It sounds like your people have withdrawn successfully, which is a good thing."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "But Mama John's probably got what it came for. Most regrettable."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -2013,30 +2179,31 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Hah, something like this is a routine operation in Columbia. That bunch moved quickly and wiped their asses in advance."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Don't dwell on it, friend."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "You'll leave this place soon enough. It's too late to manage this problem now, but be more mindful about it next time."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Hah, something like this is a routine operation in Columbia. That bunch moved quickly and wiped their asses in advance."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Don't dwell on it, friend."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "You'll leave this place soon enough. It's too late to manage this problem now, but be more mindful about it next time."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -2051,165 +2218,188 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Very well... It seems that you've made up your mind."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Are you familiar with Columbia's business, my friend? How many times have you had to deal with them in the past?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Rhodes Island has had some simple dealings with a few Columbian technology companies."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Oh, I'm sure 'simple dealings' are decently good on the surface."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "But, my friend, the ugly and indecent parts are not often placed on the table for everyone to see."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Come then. I will take you someplace, so you can see something fun."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Corporate Staff",
-          "speakerId": null,
-          "text": "Next!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Infected",
-          "speakerId": null,
-          "text": "H-Hello... I need this month's dose."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Corporate Staff",
-          "speakerId": null,
-          "text": "Sure, let's take a look..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Corporate Staff",
-          "speakerId": null,
-          "text": "Mr. Dave, is it? Ah yes, I saw your application. You've been a model employee this past month. Here's your monthly medicine ration."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Infected Dave",
-          "speakerId": null,
-          "text": "Thank you... Thank you..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Infected Dave",
-          "speakerId": null,
-          "text": "Um, would it be possible... to get next month's dose in advance? My wife is in pretty bad shape lately, and I need..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Corporate Staff",
-          "speakerId": null,
-          "text": "Mr. Dave, according to company regulations, we are unable to provide any medication in advance. Thank you for your understanding."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Corporate Staff",
-          "speakerId": null,
-          "text": "But as you know, we always prepare additional medicine for commercial sale, and you can always go next door to purchase more Oripathy suppressants."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Infected Dave",
-          "speakerId": null,
-          "text": "B-But..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Corporate Staff",
-          "speakerId": null,
-          "text": "Company regulations, Mr. Dave. Thank you for your understanding."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Corporate Staff",
-          "speakerId": null,
-          "text": "Next!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "What... what is this place?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Shhhh, hush. This is the Frontier Department of Mama John's. Keep a low profile."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "They're passing out medicine to the Infected?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "In Columbia, many things operate in a way unlike elsewhere in Terra."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "For example, consider the wasteland pioneers— Pioneers, the lifeblood of Columbia's westward expansion, the writers of Columbia's wilderness stories, the protagonists of the Columbian dream."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "They sign a contract with Mama John's and open up land in the barren wastes, establishing residential areas for Columbia and its companies."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Depending on how they work, companies will also provide them with medicine and supplies, as a sort of wage."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Here, take this."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Very well... It seems that you've made up your mind."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Are you familiar with Columbia's business, my friend? How many times have you had to deal with them in the past?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Rhodes Island has had some simple dealings with a few Columbian technology companies."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Oh, I'm sure 'simple dealings' are decently good on the surface."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "But, my friend, the ugly and indecent parts are not often placed on the table for everyone to see."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Come then. I will take you someplace, so you can see something fun."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Corporate Staff",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Next!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Infected",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "H-Hello... I need this month's dose."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Corporate Staff",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Sure, let's take a look..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Corporate Staff",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Mr. Dave, is it? Ah yes, I saw your application. You've been a model employee this past month. Here's your monthly medicine ration."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Infected Dave",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Thank you... Thank you..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Infected Dave",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Um, would it be possible... to get next month's dose in advance? My wife is in pretty bad shape lately, and I need..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Corporate Staff",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Mr. Dave, according to company regulations, we are unable to provide any medication in advance. Thank you for your understanding."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Corporate Staff",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "But as you know, we always prepare additional medicine for commercial sale, and you can always go next door to purchase more Oripathy suppressants."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Infected Dave",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "B-But..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Corporate Staff",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Company regulations, Mr. Dave. Thank you for your understanding."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Corporate Staff",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Next!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "What... what is this place?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Shhhh, hush. This is the Frontier Department of Mama John's. Keep a low profile."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "They're passing out medicine to the Infected?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "In Columbia, many things operate in a way unlike elsewhere in Terra."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "For example, consider the wasteland pioneers— Pioneers, the lifeblood of Columbia's westward expansion, the writers of Columbia's wilderness stories, the protagonists of the Columbian dream."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "They sign a contract with Mama John's and open up land in the barren wastes, establishing residential areas for Columbia and its companies."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Depending on how they work, companies will also provide them with medicine and supplies, as a sort of wage."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Here, take this."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -2229,60 +2419,66 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "This is the medication that they give to the Infected. You are the expert here, I doubt you need me to explain."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "This is not an Oripathy suppressant."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Of course not, you know better than me. This half is a generic painkiller and the other half is a nutrient solution."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Why?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "It's not a question of why, don't you see? They don't need to sell real suppressants."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "These pioneers, Infected from all over the world, have never seen a real Oripathy suppressant."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Though these things can't actually suppress Oripathy itself, they can relieve the symptoms of the disease. The product of Mama John's works, and works quickly, and that's good enough for them."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "The concept of 'suppressant' is new to Terra, and naturally they wouldn't know."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "This is the medication that they give to the Infected. You are the expert here, I doubt you need me to explain."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "This is not an Oripathy suppressant."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Of course not, you know better than me. This half is a generic painkiller and the other half is a nutrient solution."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Why?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "It's not a question of why, don't you see? They don't need to sell real suppressants."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "These pioneers, Infected from all over the world, have never seen a real Oripathy suppressant."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Though these things can't actually suppress Oripathy itself, they can relieve the symptoms of the disease. The product of Mama John's works, and works quickly, and that's good enough for them."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "The concept of 'suppressant' is new to Terra, and naturally they wouldn't know."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -2292,8 +2488,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -2303,186 +2498,213 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Hahahaha... That story would be even more interesting."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Did you know, before Mama John's became a big name, they were just a donut chain. How could they have mastered the technology to produce drugs?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "All their pharmaceutical production lines are purchased from other companies such as Beachbrella, Tower Mountains, Rhine Lab..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Now that they sell painkillers as suppressants and make so much money, do you think the other pharmaceutical companies will sit on their hands?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "They've been thoroughly beaten down by other companies, but they've also learned a whole lot. This time, they've decided to directly off their partner, something that is distinctively Columbian."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "With your batch of samples in hand, I suspect the landscape of their cheap drugs will soon change."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "A more efficacious drug with a stronger analgesic will convince more people that this in fact is an 'Oripathy suppressant.'"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "How can that be allowed?! Rhodes Island's samples are not Oripathy suppressants at all. Those samples haven't been tested for safety yet and might have serious side effects. We haven't..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Let me tell you what will happen next."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Mama John's will use your technology to make more and more 'suppressants' at lower costs."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Of course, those poor pioneers will become the guinea pigs."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Will they die? Let me tell you the truth. Even without Mama John's, they will still die—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "—Columbia's frontiers have been bought with the blood of the pioneers. Their life expectancy is not long regardless."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "But those who remain, those whose lives were not claimed while paving the wilderness, are ever more likely to work for them in exchange for these so-called suppressants."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "This medicine gives some short-term pain relief. Maybe it can even buy them a few extra years."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Then, the newspapers across Columbia's major cities will publish headline after headline of their great achievements, right on the front page."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "'Mama John's Strides Into Pharmaceuticals, Bringing New Hope to the Infected!'"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Impeccable!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "As for the truth, it is not at all important compared to the actual effectiveness of the analgesics."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Of course you can tell these poor people, 'those drugs that you're taking can't actually cure Oripathy, but can best be regarded as expensive painkillers and placebos.' And then what?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "You keep telling the truth, saying that even the best suppressants by far can't bring back their completely normal lives and that they will continue to be accompanied by sickness and pain until they die."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "On the subject of Oripathy, Rhodes Island indeed stands at the bleeding edge in this world, so you know the truth. But is it a truth that they can stomach?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "And this... is Columbia, my friend."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Nothing will change, and everything makes sense. People come to Columbia with hope, create value with hope, and die with hope."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "But we can't just sit around and watch them use Rhodes Island to..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "See, this is very practical."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "You cannot save them, nobody can save them. Not to mention, it is difficult even to protect yourselves now."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "For the Infected who harbor hope in their hearts, hope never existed in the first place, and you know this better than they do."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "You should contact your people sooner rather than later, and find a way to get back."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Hahahaha... That story would be even more interesting."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Did you know, before Mama John's became a big name, they were just a donut chain. How could they have mastered the technology to produce drugs?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "All their pharmaceutical production lines are purchased from other companies such as Beachbrella, Tower Mountains, Rhine Lab..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Now that they sell painkillers as suppressants and make so much money, do you think the other pharmaceutical companies will sit on their hands?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "They've been thoroughly beaten down by other companies, but they've also learned a whole lot. This time, they've decided to directly off their partner, something that is distinctively Columbian."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "With your batch of samples in hand, I suspect the landscape of their cheap drugs will soon change."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "A more efficacious drug with a stronger analgesic will convince more people that this in fact is an 'Oripathy suppressant.'"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "How can that be allowed?! Rhodes Island's samples are not Oripathy suppressants at all. Those samples haven't been tested for safety yet and might have serious side effects. We haven't..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Let me tell you what will happen next."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Mama John's will use your technology to make more and more 'suppressants' at lower costs."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Of course, those poor pioneers will become the guinea pigs."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Will they die? Let me tell you the truth. Even without Mama John's, they will still die—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "—Columbia's frontiers have been bought with the blood of the pioneers. Their life expectancy is not long regardless."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "But those who remain, those whose lives were not claimed while paving the wilderness, are ever more likely to work for them in exchange for these so-called suppressants."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "This medicine gives some short-term pain relief. Maybe it can even buy them a few extra years."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Then, the newspapers across Columbia's major cities will publish headline after headline of their great achievements, right on the front page."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "'Mama John's Strides Into Pharmaceuticals, Bringing New Hope to the Infected!'"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Impeccable!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "As for the truth, it is not at all important compared to the actual effectiveness of the analgesics."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Of course you can tell these poor people, 'those drugs that you're taking can't actually cure Oripathy, but can best be regarded as expensive painkillers and placebos.' And then what?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "You keep telling the truth, saying that even the best suppressants by far can't bring back their completely normal lives and that they will continue to be accompanied by sickness and pain until they die."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "On the subject of Oripathy, Rhodes Island indeed stands at the bleeding edge in this world, so you know the truth. But is it a truth that they can stomach?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "And this... is Columbia, my friend."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Nothing will change, and everything makes sense. People come to Columbia with hope, create value with hope, and die with hope."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "But we can't just sit around and watch them use Rhodes Island to..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "See, this is very practical."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "You cannot save them, nobody can save them. Not to mention, it is difficult even to protect yourselves now."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "For the Infected who harbor hope in their hearts, hope never existed in the first place, and you know this better than they do."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "You should contact your people sooner rather than later, and find a way to get back."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -2502,56 +2724,59 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Doctor..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "I know, that hope is a cruel thing indeed."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "When you realize it can't be undone, when you realize you are powerless, when you find yourself nothing but desperate..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Hope is enough to drive a perfectly good person mad."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "People believe what they want to believe, and that makes them feel much better."
-        },
-        {
-          "type": "narration",
-          "text": "You look over at Amiya. You watch her ears slowly droop, her eyes filled with sadness, then stained with helplessness.\nThe two of you have seen much, but you both will see more still. You both understand all this, and in fact, there is no need for the wasteland merchant to explain it again."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "In the distance, along the border between the wastelands and the sky, the sun slowly sinks.\nDay is about to draw to an end in Terra's wastelands. The light is about to fade, and the twin moons will soon take its place in the sky.\nThe sun will still rise tomorrow, but not every Infected will see the coming dawn.\nEven if there are enough drugs to suppress Oripathy in this place, it is too late for so many more. Nothing will change.\nNothing will change?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Doctor..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "I know, that hope is a cruel thing indeed."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "When you realize it can't be undone, when you realize you are powerless, when you find yourself nothing but desperate..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Hope is enough to drive a perfectly good person mad."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "People believe what they want to believe, and that makes them feel much better."
+    },
+    {
+      "type": "narration",
+      "text": "You look over at Amiya. You watch her ears slowly droop, her eyes filled with sadness, then stained with helplessness.\nThe two of you have seen much, but you both will see more still. You both understand all this, and in fact, there is no need for the wasteland merchant to explain it again."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "In the distance, along the border between the wastelands and the sky, the sun slowly sinks.\nDay is about to draw to an end in Terra's wastelands. The light is about to fade, and the twin moons will soon take its place in the sky.\nThe sun will still rise tomorrow, but not every Infected will see the coming dawn.\nEven if there are enough drugs to suppress Oripathy in this place, it is too late for so many more. Nothing will change.\nNothing will change?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -2561,8 +2786,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -2572,8 +2796,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -2583,78 +2806,87 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Doctor...!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Oh! Quite the rousing speech, friend."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "You did not convince me, for you will find it hard to do so, but I felt the sincerity of your emotions."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "I do like how you still refuse to bow to reality despite having seen it, though to be honest, you've already embarrassed yourselves."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Let's put that speech aside for now. I know that you two are very practical people, so I will also pose a very practical question. I'm quite curious, what will you do next?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "You've already arrived at the Messenger Outpost at the border, and you will be leaving this place soon."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Do you plan to turn around and head back? What then?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "To be frank, my friend, unless you have some way of getting your things back from them, you will have a very hard time resolving these matters."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Will you charge there single-handedly with all guns blazing? Should I lend you a burdenbeast so you can look like a hero of the vale from the indigenous Columbian peoples' folklore?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Oh, I almost forgot, you can't fight."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Mr. Cannot, please don't say that about the Doctor."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Doctor...!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Oh! Quite the rousing speech, friend."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "You did not convince me, for you will find it hard to do so, but I felt the sincerity of your emotions."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "I do like how you still refuse to bow to reality despite having seen it, though to be honest, you've already embarrassed yourselves."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Let's put that speech aside for now. I know that you two are very practical people, so I will also pose a very practical question. I'm quite curious, what will you do next?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "You've already arrived at the Messenger Outpost at the border, and you will be leaving this place soon."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Do you plan to turn around and head back? What then?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "To be frank, my friend, unless you have some way of getting your things back from them, you will have a very hard time resolving these matters."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Will you charge there single-handedly with all guns blazing? Should I lend you a burdenbeast so you can look like a hero of the vale from the indigenous Columbian peoples' folklore?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Oh, I almost forgot, you can't fight."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Mr. Cannot, please don't say that about the Doctor."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -2664,8 +2896,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -2685,31 +2916,35 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "From the sound of things, you plan to appeal to reason?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "Four days later\n4:01 P.M. \\ Clear\nColumbia Detention Center"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Columbian Police",
-          "speakerId": null,
-          "text": "Alright, you can leave now."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "From the sound of things, you plan to appeal to reason?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_prison_corridor"
+    },
+    {
+      "type": "narration",
+      "text": "Four days later\n4:01 P.M. \\ Clear\nColumbia Detention Center"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Columbian Police",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Alright, you can leave now."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -2719,18 +2954,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Doctor!"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Doctor!"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -2740,36 +2974,38 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Don't do that again! I was really... I was worried sick!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "You played your bag of tricks quite well, my friend. Very clever."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "I'm glad that the little excursion I took you on was not in vain, nor was me waiting out here for a few days. I really did underestimate you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "But, I am a bit scared of you now, my friend."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Don't do that again! I was really... I was worried sick!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "You played your bag of tricks quite well, my friend. Very clever."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "I'm glad that the little excursion I took you on was not in vain, nor was me waiting out here for a few days. I really did underestimate you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "But, I am a bit scared of you now, my friend."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -2789,138 +3025,157 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "I... I still don't understand... what happened."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Simply stated... our clever friend here voluntarily surrendered to Columbian Customs and Border Protection, saying that your company had smuggled a batch of Oripathy-related drugs into Columbia."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "If you know anything about Columbian laws, you should know that Oripathy-related drugs are the most strictly-regulated medical products."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "The company that lobbied to implement this law in the past spent a lot of efforts to monopolize the drug market in Columbia."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "The information provided by our friend here definitely alarmed the Columbian Bureau of Alcohol, Tobacco, Arts Units, and Originium, and they certainly aren't easy to deal with."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Per protocol, the Bureau's security forces went there in no time and seized all items in this smuggled product trade."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "But, we have complete contracts and records of our cooperation with them, which should be easy to find..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Hahaha, that's the important part."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Miss Rabbit, when they chose to attack you, they had no intention of leaving any footprints. They have destroyed all evidence of this cooperation, and nothing would match up in the investigation."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "So what kind of situation will prevent a company from leaving behind any evidence of a transaction?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "What else but shady business."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "So it was the Columbian government that seizes all the samples..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "According to law, they will destroy these smuggled goods, and then? There's nothing after that. Mama John's is pretty much omnipotent around here, but what if the scope extends to cover all of Columbia?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Columbian Bureau of Alcohol, Tobacco, Arts Units, and Originium. Their name might be a mouthful, but they have some competent people. And they'll be watching closely."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "I understand now... But even with that being the case, won't Rhodes Island have a blackened record?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Hahaha, this is Columbia after all. There's not a company out there with a perfectly wiped rear."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Pay a fine, sign off on the ticket, and it won't be long until people forget about it— perhaps, people might have stopped caring already."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "After all, in order to cover their ass, Mama John's might have inadvertently given Rhodes Island its best cover— and in case the Bureau really came for Rhodes Island, they would be the ones in trouble."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Of course, your Doctor did spend three days in the Bureau's detention room, which is its own price."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "It's hard for me to evaluate this move, Doctor..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Dr. Kal'tsit is going to be mad."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "I... I still don't understand... what happened."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Simply stated... our clever friend here voluntarily surrendered to Columbian Customs and Border Protection, saying that your company had smuggled a batch of Oripathy-related drugs into Columbia."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "If you know anything about Columbian laws, you should know that Oripathy-related drugs are the most strictly-regulated medical products."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "The company that lobbied to implement this law in the past spent a lot of efforts to monopolize the drug market in Columbia."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "The information provided by our friend here definitely alarmed the Columbian Bureau of Alcohol, Tobacco, Arts Units, and Originium, and they certainly aren't easy to deal with."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Per protocol, the Bureau's security forces went there in no time and seized all items in this smuggled product trade."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "But, we have complete contracts and records of our cooperation with them, which should be easy to find..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Hahaha, that's the important part."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Miss Rabbit, when they chose to attack you, they had no intention of leaving any footprints. They have destroyed all evidence of this cooperation, and nothing would match up in the investigation."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "So what kind of situation will prevent a company from leaving behind any evidence of a transaction?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "What else but shady business."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "So it was the Columbian government that seizes all the samples..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "According to law, they will destroy these smuggled goods, and then? There's nothing after that. Mama John's is pretty much omnipotent around here, but what if the scope extends to cover all of Columbia?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Columbian Bureau of Alcohol, Tobacco, Arts Units, and Originium. Their name might be a mouthful, but they have some competent people. And they'll be watching closely."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "I understand now... But even with that being the case, won't Rhodes Island have a blackened record?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Hahaha, this is Columbia after all. There's not a company out there with a perfectly wiped rear."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Pay a fine, sign off on the ticket, and it won't be long until people forget about it— perhaps, people might have stopped caring already."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "After all, in order to cover their ass, Mama John's might have inadvertently given Rhodes Island its best cover— and in case the Bureau really came for Rhodes Island, they would be the ones in trouble."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Of course, your Doctor did spend three days in the Bureau's detention room, which is its own price."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "It's hard for me to evaluate this move, Doctor..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Dr. Kal'tsit is going to be mad."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -2935,18 +3190,17 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Blaze",
-          "speakerId": "char_017_homura",
-          "text": "I wouldn't mouth off like that if I were you..."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Blaze",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "I wouldn't mouth off like that if I were you..."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -2956,43 +3210,45 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "narration",
-          "text": "The well-built Feline operator is looking at you with eyes of helplessness."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Blaze",
-          "speakerId": "char_017_homura",
-          "text": "Doctor, you caused a real big uproar this time around..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Blaze",
-          "speakerId": "char_017_homura",
-          "text": "Fines, fees, jail time, and even the Columbian government investigating illegitimate business practices..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Blaze",
-          "speakerId": "char_017_homura",
-          "text": "But I have no clue how you managed to sort it all out. I almost had to call Dr. Kal'tsit myself."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Blaze",
-          "speakerId": "char_017_homura",
-          "text": "How the hell are you gonna explain all this to her when you get back?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "narration",
+      "text": "The well-built Feline operator is looking at you with eyes of helplessness."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Blaze",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "Doctor, you caused a real big uproar this time around..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Blaze",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "Fines, fees, jail time, and even the Columbian government investigating illegitimate business practices..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Blaze",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "But I have no clue how you managed to sort it all out. I almost had to call Dr. Kal'tsit myself."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Blaze",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "How the hell are you gonna explain all this to her when you get back?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -3012,24 +3268,24 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Doctor! Please don't ever take a gamble like this in the future. We could contact the ship and wait for support!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Besides, Rhodes Island actually has a contingency plan for dealing with situations like this."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Doctor! Please don't ever take a gamble like this in the future. We could contact the ship and wait for support!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Besides, Rhodes Island actually has a contingency plan for dealing with situations like this."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -3039,30 +3295,31 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Fun? ...I suppose, just a little..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Doctor! Don't change the subject!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "After we get back, you have to tell the whole truth to Dr. Kal'tsit. I'll help you with the report."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Fun? ...I suppose, just a little..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Doctor! Don't change the subject!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "After we get back, you have to tell the whole truth to Dr. Kal'tsit. I'll help you with the report."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -3077,24 +3334,24 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Then I suppose it is time to part ways, my friend."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "As I said before, our journey together was most enjoyable."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Then I suppose it is time to part ways, my friend."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "As I said before, our journey together was most enjoyable."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -3109,36 +3366,38 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "I do believe we will meet again in the near future."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Until then, I wish you good health. See you later."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Blaze",
-          "speakerId": "char_017_homura",
-          "text": "Who was that? Gave me the sense there was something else under that nice front of his..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Doctor?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "I do believe we will meet again in the near future."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Until then, I wish you good health. See you later."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Blaze",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "Who was that? Gave me the sense there was something else under that nice front of his..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Doctor?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -3148,49 +3407,56 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "There's something I'd like to ask you..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Back then, you said you needed Mr. Cannot to do a little favor for you. What was it?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "Three days ago\n3:27 P.M. \\ Clear\nSomewhere in the wastelands"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "You're a real crazy one, friend."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "That's a rather destructive trick you've got there."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "So, what do you need my help with?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "There's something I'd like to ask you..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Back then, you said you needed Mr. Cannot to do a little favor for you. What was it?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_desert_1"
+    },
+    {
+      "type": "narration",
+      "text": "Three days ago\n3:27 P.M. \\ Clear\nSomewhere in the wastelands"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "You're a real crazy one, friend."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "That's a rather destructive trick you've got there."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "So, what do you need my help with?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -3200,8 +3466,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -3221,24 +3486,24 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Oi! Hold up, easy now."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "What do you mean by 'my people?'"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Oi! Hold up, easy now."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "What do you mean by 'my people?'"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -3258,61 +3523,66 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "......"
-        },
-        {
-          "type": "narration",
-          "text": "The strange man has gone silent, but you can't judge his expression under the thick bucket helm. However, you feel that the silence harbors neither anger nor dissatisfaction."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Well done, Dr. {@nickname}."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "I thought my friends did a good job concealing themselves. This whole time, I took you for an intelligent but overly sentimental person."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "You truly are full of surprises."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Well then, Dr. {@nickname}."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Of course I can help you with this little favor, though I believe that with Miss Amiya's skills, she won't really need my help."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "But business is business, and what can you offer me?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "narration",
+      "text": "The strange man has gone silent, but you can't judge his expression under the thick bucket helm. However, you feel that the silence harbors neither anger nor dissatisfaction."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Well done, Dr. {@nickname}."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "I thought my friends did a good job concealing themselves. This whole time, I took you for an intelligent but overly sentimental person."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "You truly are full of surprises."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Well then, Dr. {@nickname}."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Of course I can help you with this little favor, though I believe that with Miss Amiya's skills, she won't really need my help."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "But business is business, and what can you offer me?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -3322,8 +3592,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -3333,24 +3602,24 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Hahaha..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Beautifully played, friend. It's a deal."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Hahaha..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Beautifully played, friend. It's a deal."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -3360,81 +3629,89 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Of course, my friend. I wish you the best of luck."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "All right, you can come out now."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Fiends Gang Member",
-          "speakerId": "avg_npc_091",
-          "text": "You alone? Is it over?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Not quite. The upcoming show should be quite entertaining."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Fiends Gang Member",
-          "speakerId": "avg_npc_091",
-          "text": "That one's extremely dangerous. We shouldn't let 'em go."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rusthammer Member",
-          "speakerId": "avg_npc_009",
-          "text": "We could come up against that Rhodes Island. Why should we help them?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Just trust me. The existence of an organization like theirs is good for us."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "The longer such people live, the more interesting this world will become."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cannot",
-          "speakerId": "avg_npc_208",
-          "text": "Let's go, friends. We still have a lot of work to do."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Of course, my friend. I wish you the best of luck."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "All right, you can come out now."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Fiends Gang Member",
+      "speakerId": "avg_npc_091",
+      "isRemote": false,
+      "text": "You alone? Is it over?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Not quite. The upcoming show should be quite entertaining."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Fiends Gang Member",
+      "speakerId": "avg_npc_091",
+      "isRemote": false,
+      "text": "That one's extremely dangerous. We shouldn't let 'em go."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rusthammer Member",
+      "speakerId": "avg_npc_009",
+      "isRemote": false,
+      "text": "We could come up against that Rhodes Island. Why should we help them?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Just trust me. The existence of an organization like theirs is good for us."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "The longer such people live, the more interesting this world will become."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cannot",
+      "speakerId": "avg_npc_208",
+      "isRemote": false,
+      "text": "Let's go, friends. We still have a lot of work to do."
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": [

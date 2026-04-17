@@ -6,14 +6,19 @@
   "title": "明滅する灯火",
   "storyCode": "BB-6",
   "avgTag": "戦闘後",
-  "sourcePath": "vendor/ArknightsGamedata/jp/gamedata/story/activities/act33side/level_act33side_06_end.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/jp/gamedata/story/activities/act33side/level_act33side_06_end.txt",
   "sourceHash": "536c8a92ac6b1ac97666d5fcc454af58d7363c0cb2a3602aece7b265097643d9",
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "bg_room_2"
+    },
+    {
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": null,
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -27,37 +32,57 @@
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "プリースティス……我々は一体……"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "46_g6_rmbtmine"
+    },
+    {
       "type": "dialogue",
       "speakerName": "サベージ",
       "speakerId": "avg_230_savage_1",
+      "isRemote": false,
       "text": "残念だけど……そんなの不可能だよ。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "46_g4_rmbtwild_d"
+    },
+    {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "ドクター……体が……痛い……"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_snowconutry_4"
+    },
+    {
       "type": "dialogue",
       "speakerName": "瀕死の感染者",
       "speakerId": "avg_npc_932_1",
+      "isRemote": false,
       "text": "ありが……とう……ございます……"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_room_2"
     },
     {
       "type": "narration",
@@ -74,18 +99,21 @@
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "……この身体は源石に感染しない。"
     },
     {
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "しかし源石が孕む苦しみがこんな姿になろうことなど、我々はかつて想像しただろうか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "君なら、この大地の現状をどう判断するのだろう……"
     },
     {
@@ -95,27 +123,35 @@
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "（未知の言語）「源石」。"
     },
     {
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "（未知の言語）我々が存続させた……唯一の灯火。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_infirmary"
+    },
+    {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "（穏やかな呼吸）"
     },
     {
@@ -125,105 +161,126 @@
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "効果ありだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "これまでの抑制剤の何倍もの抑制効率だ。アーミヤの血液中源石密度も明らかに低下している。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "しかし……"
     },
     {
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "あくまで実験の産物だ。テラでこれを量産する方法はまだ見つけられていない。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "ドクター！"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "君が自らの体を実験に用いているのは知っている……しかし君の状態はどんどん悪くなるばかりだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "血液に関する研究をしているだけにすぎない。"
     },
     {
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "この身体は源石に感染しない。あれがまだエネルギープロジェクトだった頃に、源石にかけた保険のようなものだ。この特性を利用すれば、鉱石病の症状を和らげることができるかもしれないだろう？"
     },
     {
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "それにテレジアもいる。彼女は君とは異なるし、「文明の存続」自体も万能の魔法などではない。しかし彼女は無数の伝承を頼りに、最も根本的なアーツ形態を創り出した。"
     },
     {
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "彼女の助けがあれば、我々はさらに一歩進んだ、持続生産可能な鉱石病の薬を開発できるかもしれない……"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "今はそれよりも君の状態の方が心配だ、ドクター。"
     },
     {
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "大丈夫だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "源石が君たちを我々とそう大差ない形態に形作ったからには、この身体以外に血清を生み出せる方法も必ず見つかるはずだ……"
     },
     {
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "目の前の問題がどれだけ複雑だろうと、バベルが効果的な鉱石病の薬を差し出すことさえできれば、我々を支持するサルカズは……いや……"
     },
     {
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "バベルを支持するテラ人は数え切れないほどになるだろう。"
     },
     {
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "そんな時が来たら、我々は――"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_infirmary"
+    },
+    {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "いや、私の話を聞いてくれ。"
     },
     {
@@ -234,40 +291,50 @@
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "レム・ビリトンでの旅からサルカズの内戦に至るまで、君はひと時も気を緩めたことがないだろう。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "君を目覚めさせる決定をしたのは私だ。それは、この文明――驚きと喜びが絶えず湧き上がり、同時に方向性を失っていく文明に解決の道を示してくれることを望んだからだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "しかし、君がそうやってその身を犠牲にすることは望まない。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "もう少し自分を大切にすべきだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "……すまない。"
     },
     {
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "だけど今は、そんなことよりもアーミヤの苦しみを和らげてあげたいんだ。"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_motorroom"
     },
     {
       "type": "narration",
@@ -277,6 +344,7 @@
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "……アーミヤ、いるのはわかっているよ。出ておいで。"
     },
     {
@@ -286,237 +354,284 @@
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "ドクター……お、お邪魔しちゃいましたか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "いいや……どうやって扉の音を立てずに入ってきたのかはちょっと気になるな。"
     },
     {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "隠し通路をたくさん見つけたんです。"
     },
     {
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "隠し通路？"
     },
     {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "はい、クロージャさんからは秘密だって言われているので、誰にも言ってません。ドクターにだけ教えちゃいました。"
     },
     {
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "道理でケルシーが検査のときに君を見つけられないことが多々あったわけだ。こっそり通路に隠れていたんだな。"
     },
     {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "……ドクターが検査についてきてくれるなら、もう隠れたりしませんよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "わかった。今後はできるだけ時間を取るよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "でもドクターは最近本当に忙しそうですね。ケルシー先生でさえ、ドクターに会える回数が減ってきてるって言ってましたよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "いつも一人で……こーんな分厚い資料を抱えて、うつむいたまま廊下の端から端まで歩いていって……"
     },
     {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "みんなが挨拶してもうなずくだけで何も言わなくて、振り返らずに行っちゃうんです。"
     },
     {
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "いやあ、そう言われてみると失礼だな。申し訳ない、アーミヤ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "違うんです、ドクター……そういう意味じゃなくて、わ、私はただドクターが楽しくなさそうだなって思っただけで。"
     },
     {
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "なぜそう思うんだ？"
     },
     {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "ロドスに来る前は、ドクターは何に対しても興味津々で、駄獣さんと一緒に寝たり、坑道で小石をじっと見つめてぼんやりしたり、循獣の巣穴に果物を取りに行ったり……"
     },
     {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "私が子供っぽいと思うことでさえ、ドクターは楽しそうにやっていました。"
     },
     {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "でも今は……私が面白いことを話しても、ドクターはただ「アーミヤが楽しければそれでいい」と言うだけです。"
     },
     {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "私、ドクターを喜ばせるために話してるのに……"
     },
     {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "私の体が良くならないから、楽しくないんですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "アーミヤのせいじゃない。自分自身のせいだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "それに……アーミヤもたまに船の外の音が聞こえるだろう？"
     },
     {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "……はい……レム・ビリトンのとっても大きなボーリングマシンと同じで……とてもうるさくて、嫌いです。"
     },
     {
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "だから……と言ってはなんだけど、自分にも、テレジアにも、そしてケルシー先生にもみんなやらなきゃいけないことがたくさんあるんだ。アーミヤのせいじゃないよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "……わかりました。"
     },
     {
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "それじゃあアーミヤ、今日は空いているかい？"
     },
     {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "はい！"
     },
     {
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "甲板へ雲を見に行きたいんだ。もう少ししたら雨が降るから、面白い雲の形が見られるよ。聞いてくれる人がいるなら、たくさんのお話をしてあげられると思うよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "聞きたい！　でも……まだお仕事があるんじゃないんですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "大丈夫……すぐに終わるから。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "49_g14_rhodesdeck_d"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_infirmary"
+    },
+    {
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "ドクター！"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "……大丈夫だ。甲板で倒れたと聞いた時は驚いたが、どうやら過労なだけのようだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "ふぅ……ただの過労なら、ひとまず安心したわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "ドクターの腕の傷は……一体何があったの？"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "自分が鉱石病に感染するか試していたんだ。粉塵を吸入したり、源石に富んだ環境に身をさらしたり……活性源石で直接皮膚を引き裂くようなことまで。いろいろな方法を試していたようで……"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "当然、止めるよう説得はした。Scoutたちにも制止してもらった。しかし、ドクターはそれでも……"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "誰もドクターが傷付く様子など見たくないというのに。"
     },
     {
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "……ドクターは私たちが思っている以上に思い悩み、苦しんでいるのかもしれないわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "アーミヤは？"
     },
     {
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "驚いちゃったのか、全然泣きやまなくてね。さっきようやく寝かしつけたところよ。"
     },
     {
@@ -526,102 +641,119 @@
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "あら？　この……小さな石の彫刻は？"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "救助された感染者からドクターに届いたものだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "アーミヤの叫び声を聞いて駆けつけたAceが、ドクターをここまで運んだ際に残していったものでな。"
     },
     {
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "……見てドクター、あなたはもうたくさんの人と繋がっているの。とうに孤独なんかではなくなっているのよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "なのに、あなたはどうして私やケルシーにすら思いを打ち明けようとしないの？"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "ドクターの、アーミヤやバベルを助けたいという気持ちが偽りでないことは感じられるわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "でもずっと気掛かりなの。ドクターにはまだ口に出していない考えや懸念、疑問があるんじゃないかって。"
     },
     {
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "前までは、きっとその原因は慌ただしい目覚めにあって、そうした感情も時間と共に薄れていくのだろうと思っていた……"
     },
     {
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "だけど、違ったみたい。"
     },
     {
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "だってドクターは今まさに、口には出さない言葉に引き裂かれているんだもの。ためらって、苦しんで、自責の念に駆られ続けているわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "面目ない。あるいは私も、自分で思うほどドクターという人物のことを理解していないのかもしれない。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "どうすればドクターの苦しみを和らげてやれるのか、私にはわからない。我々二人でさえドクターの考えを理解できないのであれば……"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "どれほど敬愛や畏敬の眼差しを向けられたとしても、バベルのドクターは、どこまでも孤独なままだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "……ケルシー。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "ああ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "後ほど私からドクターに説明しておく。"
     },
     {
@@ -638,6 +770,7 @@
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "……これは、源石？"
     },
     {
@@ -647,18 +780,21 @@
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "これは一体……いつの記憶なの？　ドクターの感情は、苦痛とためらい、それに……恐怖？"
     },
     {
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "この絶望の中でドクターに寄り添っている人は……誰？"
     },
     {
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "そうだ、ケルシーが前に言っていたわ。もう一人――"
     },
     {
@@ -668,6 +804,7 @@
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "……！"
     },
     {
@@ -698,57 +835,70 @@
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "テレジア！"
     },
     {
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "……！"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_infirmary"
+    },
+    {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "テレジア、どうした？"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "何を見たんだ？"
     },
     {
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "私は……源石を見たわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "源石が、大地全体を同化させて……ドクターは、そのことに苦しみと不安を感じていた。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "――"
     },
     {
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "あれはドクターの記憶なの？　それとも……あれは……夢？"
     },
     {
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "ケルシー……支えてもらえるかしら。あの感覚、あの中の雑音と泣き叫ぶ声……ううっ……"
     },
     {
@@ -758,102 +908,119 @@
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "……テレジア。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "前にも言ったと思うが……源石は、かつてこの大地のはるか遠くの未来を決定した。選択肢は二つあった。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "我々は現状、具体的な苦痛、天災、鉱石病に眼を向けすぎている。ゆえにはるか先の未来を見据えることは困難であり、また意味にも乏しい。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "だがドクターはかつてそのうちの一つを選択したんだ。ドクターが……自ら私に語ってくれた未来を。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "私はその未来を、ドクターが語った言葉を忘れられない。長い年月の間、ずっと頭に残っていた。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "しかしその選択と対になるもう一つの空虚で冷たい考えも――これまで過ごした万年の歳月の間、いつも夜中に冷気と化し、私の脊髄に入り込んできた。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "これ以上、私は言葉を続けられない。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "しかし君は魔王の力を通じて私の……怒りを感じとれるはずだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "これは実のところ、「文明の存続」は言語による桎梏の外にあることを意味している。"
     },
     {
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "だから、テレジア。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "もし君が受け入れられない未来を見たのなら、どうかそれを変えてほしい。これは君だけが、「文明の存続」だけが成し遂げられることだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "……そして、私にせよ、ドクターにせよ、もしも君が私たちの見知らぬ一面を見たのなら……"
     },
     {
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "ケルシー？"
     },
     {
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "何言ってるの、ケルシー！　そういう意味じゃないわ――"
     },
     {
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "――ドクターが、アーミヤや私たち、そしてあなたに向ける感情は決して偽りではない。そこには絶対、嘘なんてないの。"
     },
     {
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "ドクターを、そして私を信じて。ドクターを苦しませる原因は私が見つけてみせるから。そうしたら――"
     },
     {
@@ -863,18 +1030,21 @@
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "うぅ……"
     },
     {
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "ドクター！"
     },
     {
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "ドクター……！　起きたのね。"
     },
     {
@@ -884,36 +1054,42 @@
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "何があったんだ……"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "アーミヤと甲板から戻る際に、突然倒れたんだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "うぅ、アーミヤは？"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "少しショックを受けていたが、もう大丈夫だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "だが君の状態は相変わらず芳しくないぞ。一体何を考えている？"
     },
     {
       "type": "dialogue",
       "speakerName": "ドクター",
       "speakerId": "avg_npc_048",
+      "isRemote": false,
       "text": "……"
     },
     {

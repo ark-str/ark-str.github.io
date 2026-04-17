@@ -6,10 +6,14 @@
   "title": "Rain, Rain, Go Away",
   "storyCode": "SL-ST-2",
   "avgTag": "Interlude",
-  "sourcePath": "vendor/ArknightsGamedata/en/gamedata/story/activities/act27side/level_act27side_st02.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/en/gamedata/story/activities/act27side/level_act27side_st02.txt",
   "sourceHash": "7c231ac7a3e199389765dad50c84e610177670a2e657dadb613eba975a4f17cb",
   "bodyAvailable": true,
   "blocks": [
+    {
+      "type": "background",
+      "backgroundId": "41_g9_purewhitevolcano_inside"
+    },
     {
       "type": "narration",
       "text": "The setting sun seems to be the last customer of the small shop. The one behind the counter is no longer a familiar old man, but a coffee-colored creature.\nIt cranks a grinder handle, and the aroma of coffee wafts into the air with bits and pieces of finely ground beans.\nA record spins slowly as a loudspeaker sings leisurely."
@@ -21,6 +25,7 @@
       "type": "dialogue",
       "speakerName": "Coffee-colored Creature",
       "speakerId": "avg_npc_1009_1",
+      "isRemote": false,
       "text": "Oh, welcome."
     },
     {
@@ -30,54 +35,63 @@
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "I don't think I saw you earlier. Are you new here?"
     },
     {
       "type": "dialogue",
       "speakerName": "Coffee-colored Creature",
       "speakerId": "avg_npc_1009_1",
+      "isRemote": false,
       "text": "I think so, because I don't have any memories from yesterday. I don't know why I'm here, but I thought I'd make a cup of coffee... Oh, would you like one?"
     },
     {
       "type": "dialogue",
       "speakerName": "Coffee-colored Creature",
       "speakerId": "avg_npc_1009_1",
+      "isRemote": false,
       "text": "Coffee has a nimbly wonderful flavor that comes only when you brew by hand. Now let's see... where did I put those newly arrived beans? I should have stored them myself..."
     },
     {
       "type": "dialogue",
       "speakerName": "Coffee-colored Creature",
       "speakerId": "avg_npc_1009_1",
+      "isRemote": false,
       "text": "Seems like it's behind some kind of guitar. Hm... talk of guitars is suddenly making me a little angry. How odd, what's got my heart frazzling?"
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "Guitar? Angry? Are you okay?"
     },
     {
       "type": "dialogue",
       "speakerName": "Coffee-colored Creature",
       "speakerId": "avg_npc_1009_1",
+      "isRemote": false,
       "text": "Never mind. Maybe it's because that guitar looks a bit boring."
     },
     {
       "type": "dialogue",
       "speakerName": "Coffee-colored Creature",
       "speakerId": "avg_npc_1009_1",
+      "isRemote": false,
       "text": "Please, sit anywhere you like. The one you're waiting for will soon be here."
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "The one I'm waiting for...?"
     },
     {
       "type": "dialogue",
       "speakerName": "Coffee-colored Creature",
       "speakerId": "avg_npc_1009_1",
+      "isRemote": false,
       "text": "Are you waiting? Or is the other? I can't tell."
     },
     {
@@ -87,58 +101,71 @@
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "Oh, you're here."
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "I... remember you."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "Good evening, Adele. So sorry I'm late—did you remember to have breakfast today?"
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "Yes, I did."
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "Huh? Why do you ask?"
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "Good girl."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "You've changed your clothes. are you ready?"
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "Clothes...? Huh, isn't this Mutti's coat...?"
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "Pack your things and let's go shopping. We'll go buy some things we need to climb a volcano."
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "41_g2_siestacommercialstreet_n"
     },
     {
       "type": "narration",
@@ -151,42 +178,49 @@
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "Is this your shopping mall?"
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "Yes. We have to make some preparations before we climb the volcano."
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "I know there's many things we need to bring. A compass, protective clothing, a camera... A tent and some flint too, if we're camping overnight."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "No, we won't need those in here."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "First, we need to buy enough 'knowledge,' 'courage,' and 'curiosity.' Check the prices before buying one of each, and lastly buy a little 'luck.'"
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "But 'luck' is very expensive, and often the fastest to sell out, so it's alright to skip it if you don't have the budget."
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "I see..."
     },
     {
@@ -203,18 +237,21 @@
       "type": "dialogue",
       "speakerName": "Shrewd Creature",
       "speakerId": "avg_npc_1011_1",
+      "isRemote": false,
       "text": "Thank you for your generosity!"
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "Hm... I may need to buy a bit more 'courage.'"
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "I have enough 'courage' to climb the volcano, but I need a bit more 'courage' to leave home."
     },
     {
@@ -231,60 +268,70 @@
       "type": "dialogue",
       "speakerName": "Shrewd Creature",
       "speakerId": "avg_npc_1011_1",
+      "isRemote": false,
       "text": "Not enough, not enough."
     },
     {
       "type": "dialogue",
       "speakerName": "Shrewd Creature",
       "speakerId": "avg_npc_1011_1",
+      "isRemote": false,
       "text": "If the pouch isn't full, I can't give you 'courage,' if the pouch isn't full."
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "If you don't manage to buy 'courage', will you be able to climb the volcano?"
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "It's alright, Adele. Things like this happen all the time. I've gradually become used to finding 'courage' by and for myself."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "Adele, let's get moving. We must be careful on our journey, and look after our things well."
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "Things? But I didn't bring anything with me."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "Someone wants to steal the 'photograph.'"
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "Follow me, and keep an eye on my package, okay?"
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "What did you just say? I didn't catch that..."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "We can't go on like this Adele. Here, for you."
     },
     {
@@ -298,22 +345,29 @@
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "What's this...?"
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "Go on, put it on your ear, and you'll be able to hear."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "Now, we have to find the next one."
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "41_g2_siestacommercialstreet_n"
     },
     {
       "type": "narration",
@@ -326,30 +380,35 @@
       "type": "dialogue",
       "speakerName": "Solemn Creature",
       "speakerId": "avg_npc_1006_1",
+      "isRemote": false,
       "text": "Oh, um... you two... you're finally here."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "We have much to prepare. How's the weather looking?"
     },
     {
       "type": "dialogue",
       "speakerName": "Solemn Creature",
       "speakerId": "avg_npc_1006_1",
+      "isRemote": false,
       "text": "The sky is full of thick clouds, I'm afraid it might rain soon."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "Do we still have time?"
     },
     {
       "type": "dialogue",
       "speakerName": "Solemn Creature",
       "speakerId": "avg_npc_1006_1",
+      "isRemote": false,
       "text": "Not much left. We'll need to hurry."
     },
     {
@@ -366,42 +425,49 @@
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "Do you need me to buy an umbrella?"
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "No, Adele. Look, I'm an umbrella."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "We can't let the 'photograph' get wet, or be stolen. I'll keep it safe in my package."
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "What is this 'photograph' you're talking about?"
     },
     {
       "type": "dialogue",
       "speakerName": "Solemn Creature",
       "speakerId": "avg_npc_1006_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "Shh. I hope you never find out."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "And if you do, that it happens far, far in the future."
     },
     {
@@ -418,18 +484,21 @@
       "type": "dialogue",
       "speakerName": "Solemn Creature",
       "speakerId": "avg_npc_1006_1",
+      "isRemote": false,
       "text": "Let's go. We'll head upwards in a bit, and that's where we want to go."
     },
     {
       "type": "dialogue",
       "speakerName": "Solemn Creature",
       "speakerId": "avg_npc_1006_1",
+      "isRemote": false,
       "text": "You don't have enough wool yet, Adele. here, this is mine."
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "Eh...? O-Okay."
     },
     {
@@ -446,54 +515,63 @@
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "Um... Oh! The wool seems to be bumping me upwards?"
     },
     {
       "type": "dialogue",
       "speakerName": "Solemn Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "That means our trip is about to begin."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "How's the view up there?"
     },
     {
       "type": "dialogue",
       "speakerName": "Solemn Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "Always great before the rain falls."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "And how are you feeling?"
     },
     {
       "type": "dialogue",
       "speakerName": "Solemn Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "...Always great before the rain falls."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "And you, Adele?"
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "I..."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "Hm, you seem to be in a good mood?"
     },
     {
@@ -510,12 +588,14 @@
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "Wow... I think it's gotten stronger."
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "Will it come with us?"
     },
     {
@@ -529,6 +609,10 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "41_g4_siestanewstreet_n"
+    },
+    {
       "type": "narration",
       "text": "Adele feels as if she's flying. People are come and go on the street—no, it is sheep that are moving to and fro."
     },
@@ -539,18 +623,21 @@
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "——Oh! Be careful, you might run into someone."
     },
     {
       "type": "dialogue",
       "speakerName": "Merry Creature",
       "speakerId": "avg_npc_1010_1",
+      "isRemote": false,
       "text": "They're selling flowers up ahead! I need to hurry."
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "No need to rush still, your rainbow is all crooked. Here, let me help you straighten it."
     },
     {
@@ -560,12 +647,14 @@
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "Alright, off you go."
     },
     {
       "type": "dialogue",
       "speakerName": "Merry Creature",
       "speakerId": "avg_npc_1010_1",
+      "isRemote": false,
       "text": "Thank you, see you, so long!"
     },
     {
@@ -579,33 +668,42 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "41_g4_siestanewstreet_n"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Solemn Creature",
       "speakerId": "avg_npc_1006_1",
+      "isRemote": false,
       "text": "Adele, you have to plant a pebble when you return this time."
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "A pebble?"
     },
     {
       "type": "dialogue",
       "speakerName": "Solemn Creature",
       "speakerId": "avg_npc_1006_1",
+      "isRemote": false,
       "text": "Yes, just like we did with a small hunk of rock before."
     },
     {
       "type": "dialogue",
       "speakerName": "Solemn Creature",
       "speakerId": "avg_npc_1006_1",
+      "isRemote": false,
       "text": "We buried it in the ground, which was originally in a very dark shade, until it met many different kinds of rocks."
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "Let me guess. Because you bought a lot of 'luck' for it?"
     },
     {
@@ -619,232 +717,274 @@
       "type": "dialogue",
       "speakerName": "Solemn Creature",
       "speakerId": "avg_npc_1006_1",
+      "isRemote": false,
       "text": "Well... that is one reason, but the important bit is that I water it with 'love' everyday."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "And 'memories.'"
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "Can you buy those in shops too?"
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "No, little one. 'Love' and 'memories' are our own treasures."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "They will grow on the paths you tread, in your embraces, and on the cheeks you kiss."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "But sometimes they go unnoticed, so we always have to work hard to find them."
     },
     {
       "type": "dialogue",
       "speakerName": "Solemn Creature",
       "speakerId": "avg_npc_1006_1",
+      "isRemote": false,
       "text": "That little stone traveled through many mountains underground, and followed the rivers through many a place."
     },
     {
       "type": "dialogue",
       "speakerName": "Solemn Creature",
       "speakerId": "avg_npc_1006_1",
+      "isRemote": false,
       "text": "Knocking and bumping into things, and finally we realized, we had no idea where it had gone. We lost it."
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "Then, are you two... sad because of that?"
     },
     {
       "type": "dialogue",
       "speakerName": "Solemn Creature",
       "speakerId": "avg_npc_1006_1",
+      "isRemote": false,
       "text": "We feel regret."
     },
     {
       "type": "dialogue",
       "speakerName": "Solemn Creature",
       "speakerId": "avg_npc_1006_1",
+      "isRemote": false,
       "text": "Perhaps we shouldn't have planted it, or maybe we should have planted it somewhere we could see."
     },
     {
       "type": "dialogue",
       "speakerName": "Solemn Creature",
       "speakerId": "avg_npc_1006_1",
+      "isRemote": false,
       "text": "Every little stone is unique, and we lost what was ours."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "But I recall that it turned into lava in the end, warm and piping hot, and we all loved it."
     },
     {
       "type": "dialogue",
       "speakerName": "Solemn Creature",
       "speakerId": "avg_npc_1006_1",
+      "isRemote": false,
       "text": "Yes, we loved it."
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "Then, that's all right... It managed to turn into lava in the end, and you didn't forget it."
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "I think this little stone was already fortunate enough."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "Maybe it's a dream. A dream, a story."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "A story circling in my head, that needed us to tell you about it."
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "Then, if you ever meet this rock again one day, do you think you'll be able to recognize it?"
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "Adele, my little rascal."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "Will we still recognize it?"
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "No, it has already turned into beautiful lava. Red hot lava rushing forward, never to look back again."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "We will never ever meet it again, we will only be at its back."
     },
     {
       "type": "dialogue",
       "speakerName": "Solemn Creature",
       "speakerId": "avg_npc_1006_1",
+      "isRemote": false,
       "text": "It will go to places we have never been, to see sights we have never seen."
     },
     {
       "type": "dialogue",
       "speakerName": "Solemn Creature",
       "speakerId": "avg_npc_1006_1",
+      "isRemote": false,
       "text": "And all we need is to remember this story, to tell it to you. You'll also have to plant your own little pebble, and then watch it take root and sprout, watch it go far away."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "Look, Adele. We've reached the peak."
     },
     {
       "type": "dialogue",
       "speakerName": "Solemn Creature",
       "speakerId": "avg_npc_1006_1",
+      "isRemote": false,
       "text": "The little stones have already turned into lava. The eruption is about to begin."
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "Is this story about to end too?"
     },
     {
       "type": "dialogue",
       "speakerName": "Solemn Creature",
       "speakerId": "avg_npc_1006_1",
+      "isRemote": false,
       "text": "Not at all, this is just the beginning."
     },
     {
       "type": "dialogue",
       "speakerName": "Solemn Creature",
       "speakerId": "avg_npc_1006_1",
+      "isRemote": false,
       "text": "It will turn into a cloud, and then fall back to the ground."
     },
     {
       "type": "dialogue",
       "speakerName": "Solemn Creature",
       "speakerId": "avg_npc_1006_1",
+      "isRemote": false,
       "text": "It will no longer be a rock, but a handful of warm and white volcanic ash."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "It is the little stones turning into nutritious volcanic ash that allows the land to bloom."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "Our little stone will return. Someday, when that happens, we'll be able to see it again."
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "Will that be a long time, or will it be soon...?"
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "Maybe we don't know."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "Come, Adele. Hold onto me, we too will turn into clouds, and then fall back to the earth."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "We're going to fly down together."
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
     },
     {
       "type": "narration",
@@ -854,6 +994,10 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "41_g2_siestacommercialstreet_n"
+    },
+    {
       "type": "narration",
       "text": "She sees her hair flying around her, the other Little Black Sheep lightly jumping around the lights of the shops.\nThe wool on her body holds her up, enveloping her. An experience already in the depths of her childhood memories, her parents hold her up, and throw her into the sky to catch the stars above.\nShe falls onto the wool, fluffy and soft beneath her. The stars fall into her eyes, and her eyes grow hot.\nShadows come and go on the street, and Adele tries to get on her feet, wanting to share this fantastic feeling with the two fluffy creatures by her side."
     },
@@ -861,30 +1005,35 @@
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "Phew... I..."
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "Where are we going next?"
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "I spotted many more little shops in the distance when we were above earlier. Should we go around and take a look?"
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "I'll go look for places where we can find more bottle caps, so we can buy more of the things we want."
     },
     {
@@ -895,18 +1044,21 @@
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "The Little Black Sheep from earlier mentioned a flower shop just ahead. My mother used to always place some flowers by my bed when I was young. Do you like flowers?"
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "Those small and white flowers, that look like you two."
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "Look, just like the one on that Little Black Sheep."
     },
     {
@@ -923,24 +1075,28 @@
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "Little one..."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "I know, the bedside flowers do smell really good. I love them too."
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "Then I'll buy some and make garlands for you!"
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "Just wait for me here, I haven't made one in a long time, I..."
     },
     {
@@ -957,78 +1113,91 @@
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "No, Adele. We have to go."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "The clouds have gathered, and will never again disperse."
     },
     {
       "type": "dialogue",
       "speakerName": "Solemn Creature",
       "speakerId": "avg_npc_1006_1",
+      "isRemote": false,
       "text": "Yes. It's time."
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "Where are you going?"
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "We have to head back up the volcano before it starts to rain."
     },
     {
       "type": "dialogue",
       "speakerName": "Solemn Creature",
       "speakerId": "avg_npc_1006_1",
+      "isRemote": false,
       "text": "Up the volcano."
     },
     {
       "type": "dialogue",
       "speakerName": "Adele",
       "speakerId": "avg_1016_agoat2_1",
+      "isRemote": false,
       "text": "Don't go to the volcano... you'll..."
     },
     {
       "type": "dialogue",
       "speakerName": "Solemn Creature",
       "speakerId": "avg_npc_1006_1",
+      "isRemote": false,
       "text": "No, Adele. The rain will soon fall."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "If we don't go, everything we've done before will be for naught."
     },
     {
       "type": "dialogue",
       "speakerName": "Solemn Creature",
       "speakerId": "avg_npc_1006_1",
+      "isRemote": false,
       "text": "You will drown if you stay somewhere low."
     },
     {
       "type": "dialogue",
       "speakerName": "Solemn Creature",
       "speakerId": "avg_npc_1006_1",
+      "isRemote": false,
       "text": "Adele, you have to go to the peak."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "It has a beautiful view, and also the truth."
     },
     {
       "type": "dialogue",
       "speakerName": "Solemn Creature",
       "speakerId": "avg_npc_1006_1",
+      "isRemote": false,
       "text": "Adele, I hope that you can stay pure and focused."
     },
     {
@@ -1038,12 +1207,14 @@
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "Adele..."
     },
     {
       "type": "dialogue",
       "speakerName": "Gentle Creature",
       "speakerId": "avg_npc_1007_1",
+      "isRemote": false,
       "text": "So long, Adele."
     },
     {

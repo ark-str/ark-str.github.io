@@ -6,10 +6,17 @@
   "title": "陳皮菊花茶",
   "storyCode": "OR-ST-1",
   "avgTag": "幕間",
-  "sourcePath": "vendor/ArknightsGamedata/jp/gamedata/story/activities/act40side/level_act40side_st01.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/jp/gamedata/story/activities/act40side/level_act40side_st01.txt",
   "sourceHash": "59cdc849e858b3724a8fef484b1449b0881010767f07a3f6a6f7e73e76b841a1",
   "bodyAvailable": true,
   "blocks": [
+    {
+      "type": "background",
+      "backgroundId": "bg_indoor"
+    },
+    {
+      "type": "sceneBreak"
+    },
     {
       "type": "narration",
       "text": "<p=2>1062年4月21日 穀雨</>"
@@ -18,48 +25,56 @@
       "type": "dialogue",
       "speakerName": "客引きする店員",
       "speakerId": null,
+      "isRemote": false,
       "text": "お客さん、お客さん！"
     },
     {
       "type": "dialogue",
       "speakerName": "客引きする店員",
       "speakerId": null,
+      "isRemote": false,
       "text": "こんな大雨ですよ！　うちで雨宿りはいかがですか！　温かいお茶でも飲んでってくださいよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "落ち着いた男性",
       "speakerId": null,
+      "isRemote": false,
       "text": "無用だ。この雨はすぐに降り止むものでもないだろう。先を急ぐ。"
     },
     {
       "type": "dialogue",
       "speakerName": "客引きする店員",
       "speakerId": null,
+      "isRemote": false,
       "text": "ははっ、どうでしょうねぇ。雨が止むように望む人もいれば、少しでも長く降ってほしいと望む人もいますから。"
     },
     {
       "type": "dialogue",
       "speakerName": "客引きする店員",
       "speakerId": null,
+      "isRemote": false,
       "text": "傘売りなんかは儲け時で大笑いですよ。道を急ぐ者は困るでしょうが。"
     },
     {
       "type": "dialogue",
       "speakerName": "落ち着いた男性",
       "speakerId": null,
+      "isRemote": false,
       "text": "なかなかに面白いことを言う……"
     },
     {
       "type": "dialogue",
       "speakerName": "客引きする店員",
       "speakerId": null,
+      "isRemote": false,
       "text": "お客さん、やはり休んで行ってくださいよ。ある方からお客さんに言伝を頼まれてるんです。この先は道が悪くて歩きにくいから、水たまりで靴が濡れてしまわないか心配しておられるとか。"
     },
     {
       "type": "dialogue",
       "speakerName": "落ち着いた男性",
       "speakerId": null,
+      "isRemote": false,
       "text": "言伝……？"
     },
     {
@@ -69,21 +84,28 @@
       "type": "dialogue",
       "speakerName": "客引きする店員",
       "speakerId": null,
+      "isRemote": false,
       "text": "中へどうぞ。あなたに会いたいと望まれている方がお待ちになってます。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "35_g13_yanlivingroom"
+    },
+    {
       "type": "dialogue",
       "speakerName": "シュオ",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "尚書殿か。久しいな。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュオ",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "いや、今は……太傅と呼ぶべきだったな。"
     },
     {
@@ -93,24 +115,28 @@
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "玉門での一別以来か。確かに久しいな。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュオ",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "此度の都への報告では、まず司歳台と兵部に会うことになると思っていたが。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "まさにそうであるからこそ、その前にお主に会いに来たのだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "……陛下が崩御された。"
     },
     {
@@ -120,24 +146,28 @@
       "type": "dialogue",
       "speakerName": "シュオ",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "いつのことだ？"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "半月前だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュオ",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "そうか……陛下が天寿を全うされたのであれば、太傅もわざわざ会いには来ないだろう。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュオ",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "もしや。"
     },
     {
@@ -151,360 +181,427 @@
       "type": "dialogue",
       "speakerName": "シュオ",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "……！"
     },
     {
       "type": "dialogue",
       "speakerName": "太傅",
       "speakerId": "avg_npc_301_1",
+      "isRemote": false,
       "text": "六十年前、あやつは例の古寺から逃げ出し、己の身を百八十一の黒石へと分けて各地へと散らばせた。大半は今もって行方知れずである。"
     },
     {
       "type": "dialogue",
       "speakerName": "太傅",
       "speakerId": "avg_npc_301_1",
+      "isRemote": false,
       "text": "そして、ちょうど半月前、司歳台は都にてこの黒石の痕跡を発見した。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュオ",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "……あいつは何をしたんだ？"
     },
     {
       "type": "dialogue",
       "speakerName": "太傅",
       "speakerId": "avg_npc_301_1",
+      "isRemote": false,
       "text": "まだ知れぬ。"
     },
     {
       "type": "dialogue",
       "speakerName": "太傅",
       "speakerId": "avg_npc_301_1",
+      "isRemote": false,
       "text": "ただ一つ確かであるのは、あやつが禁城に入るのは不可能だということだ。必ず自発的にあやつに会った者がいるはずだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "太傅",
       "speakerId": "avg_npc_301_1",
+      "isRemote": false,
       "text": "そやつの身分は、調べるには都合が悪い。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュオ",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "あいつの望みは、他者を巻き込むものではないはずなのだがな。"
     },
     {
       "type": "dialogue",
       "speakerName": "太傅",
       "speakerId": "avg_npc_301_1",
+      "isRemote": false,
       "text": "本来であれば、わしは今日お主に会うべきではなかった。しかし過去にかの罪人が動乱を引き起こした際に、お主が自らの手であやつを制圧したのは事実である。"
     },
     {
       "type": "dialogue",
       "speakerName": "太傅",
       "speakerId": "avg_npc_301_1",
+      "isRemote": false,
       "text": "……宗師、この件について何か知ることは？"
     },
     {
       "type": "dialogue",
       "speakerName": "シュオ",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "……何も。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュオ",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "あの事件以来、一度も会っていない。"
     },
     {
       "type": "dialogue",
       "speakerName": "太傅",
       "speakerId": "avg_npc_301_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "太傅",
       "speakerId": "avg_npc_301_1",
+      "isRemote": false,
       "text": "では宗師を信じるとしよう。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュオ",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "私に望むことはあるか？"
     },
     {
       "type": "dialogue",
       "speakerName": "太傅",
       "speakerId": "avg_npc_301_1",
+      "isRemote": false,
       "text": "留まることなく、即刻玉門へと引き返すのだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "太傅",
       "speakerId": "avg_npc_301_1",
+      "isRemote": false,
       "text": "ウルサスの不穏は変わらず、玉門の守りの要は入れ替わった。今この時において、これ以上、人心に不安を広めてはならぬ。"
     },
     {
       "type": "dialogue",
       "speakerName": "太傅",
       "speakerId": "avg_npc_301_1",
+      "isRemote": false,
       "text": "司歳台と兵部には、わしが話を通しておこう。お主が盤外にいてこそ、わしは重責を委ねることができるのだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュオ",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "……承知した。"
     },
     {
       "type": "dialogue",
       "speakerName": "太傅",
       "speakerId": "avg_npc_301_1",
+      "isRemote": false,
       "text": "彼の者が仕掛ける棋局の件も、引き続き司歳台に秘密裏に調査させる。"
     },
     {
       "type": "dialogue",
       "speakerName": "太傅",
       "speakerId": "avg_npc_301_1",
+      "isRemote": false,
       "text": "特殊な状況ゆえ、宗師が再び人前に出るのは具合が悪い――わしには会わなかったと思ってくれてよい。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュオ",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "真龍は一体なぜ……炎武（イェンウ）殿下は無事か？"
     },
     {
       "type": "dialogue",
       "speakerName": "シュオ",
       "speakerId": "avg_2024_chyue_1",
+      "isRemote": false,
       "text": "今頃、彼は――"
     },
     {
       "type": "dialogue",
       "speakerName": "太傅",
       "speakerId": "avg_npc_301_1",
+      "isRemote": false,
       "text": "イェンウか……"
     },
     {
       "type": "dialogue",
       "speakerName": "太傅",
       "speakerId": "avg_npc_301_1",
+      "isRemote": false,
       "text": "陛下が崩御された晩は、イェンウが陛下に拝謁をしていた。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "58_g5_dragonpalace"
+    },
+    {
       "type": "dialogue",
       "speakerName": "太尉",
       "speakerId": "avg_npc_1239_1",
+      "isRemote": false,
       "text": "殿下にご報告申し上げます。叛臣の一族二十八名は全て収監いたしました。"
     },
     {
       "type": "dialogue",
       "speakerName": "太尉",
       "speakerId": "avg_npc_1239_1",
+      "isRemote": false,
       "text": "しかし名簿を突き合わせた際、一族には一ヶ月にも満たぬ赤子がいるのを発見しました――"
     },
     {
       "type": "dialogue",
       "speakerName": "太尉",
       "speakerId": "avg_npc_1239_1",
+      "isRemote": false,
       "text": "禁軍が本日太師府を捜索し、家中をくまなく探しましたが、その赤子の行方が分かりません。"
     },
     {
       "type": "dialogue",
       "speakerName": "帳の後ろの声",
       "speakerId": "avg_npc_1239_1",
+      "isRemote": false,
       "text": "……まだお包みの赤子が、ひとりでに逃げ出すことなどなかろう。"
     },
     {
       "type": "dialogue",
       "speakerName": "帳の後ろの声",
       "speakerId": "avg_npc_1239_1",
+      "isRemote": false,
       "text": "まだ彼女を気にかけている者がおるな。"
     },
     {
       "type": "dialogue",
       "speakerName": "太尉",
       "speakerId": "avg_npc_1239_1",
+      "isRemote": false,
       "text": "殿下が気を揉む必要はございません。禁軍が赤子を見つけることでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "帳の後ろの声",
       "speakerId": "avg_npc_1239_1",
+      "isRemote": false,
       "text": "ふん……"
     },
     {
       "type": "dialogue",
       "speakerName": "太尉",
       "speakerId": "avg_npc_1239_1",
+      "isRemote": false,
       "text": "今朝方、刑部尚書から謁見の申し出がありました。"
     },
     {
       "type": "dialogue",
       "speakerName": "太尉",
       "speakerId": "avg_npc_1239_1",
+      "isRemote": false,
       "text": "一連の事件についていかに審議すべきか、殿下に意見を求めたいとのこと。"
     },
     {
       "type": "dialogue",
       "speakerName": "帳の後ろの声",
       "speakerId": "avg_npc_1239_1",
+      "isRemote": false,
       "text": "……炎律に基づき進めよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "太尉",
       "speakerId": "avg_npc_1239_1",
+      "isRemote": false,
       "text": "畏まりました。伝えておきます。"
     },
     {
       "type": "dialogue",
       "speakerName": "帳の後ろの声",
       "speakerId": "avg_npc_1239_1",
+      "isRemote": false,
       "text": "私のあの兄は、今いずこまで離れたのだ？"
     },
     {
       "type": "dialogue",
       "speakerName": "太尉",
       "speakerId": "avg_npc_1239_1",
+      "isRemote": false,
       "text": "守備隊の報告によりますと、半刻前に都を発ったばかりとのことです。一部の禁軍が従い離反しました。"
     },
     {
       "type": "dialogue",
       "speakerName": "太尉",
       "speakerId": "avg_npc_1239_1",
+      "isRemote": false,
       "text": "警備兵は軍令がなく、阻むこと叶わず。"
     },
     {
       "type": "dialogue",
       "speakerName": "帳の後ろの声",
       "speakerId": "avg_npc_1239_1",
+      "isRemote": false,
       "text": "ああ……百灶（バイザオ）に留めておくよう命を下してはいなかったな。"
     },
     {
       "type": "dialogue",
       "speakerName": "帳の後ろの声",
       "speakerId": "avg_npc_1239_1",
+      "isRemote": false,
       "text": "兄が留まることを望まず、皆を捨てて去っていったのだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "帳の後ろの声",
       "speakerId": "avg_npc_1239_1",
+      "isRemote": false,
       "text": "離反した禁軍は……いかほどか？"
     },
     {
       "type": "dialogue",
       "speakerName": "太尉",
       "speakerId": "avg_npc_1239_1",
+      "isRemote": false,
       "text": "十八名です。"
     },
     {
       "type": "dialogue",
       "speakerName": "帳の後ろの声",
       "speakerId": "avg_npc_1239_1",
+      "isRemote": false,
       "text": "我が兄よ。天地に悖る大罪を犯しながら、自らの代わりに太師に死なせ、あまつさえ十八名の死士の追従を受けるとは。"
     },
     {
       "type": "dialogue",
       "speakerName": "帳の後ろの声",
       "speakerId": "avg_npc_1239_1",
+      "isRemote": false,
       "text": "朝廷百官のうち、どれほどの者が未だ兄に心を寄せている？　玉座に座ることを望んでいるのはまた、いかほどだ？"
     },
     {
       "type": "dialogue",
       "speakerName": "太尉",
       "speakerId": "avg_npc_1239_1",
+      "isRemote": false,
       "text": "今この時、その席に座しておられるのは殿下です。炎国の万世にわたる繁栄と安寧の責は、殿下の御身にございます。"
     },
     {
       "type": "dialogue",
       "speakerName": "太尉",
       "speakerId": "avg_npc_1239_1",
+      "isRemote": false,
       "text": "炎国の誰もが、迷い惑うことを許されておりますが……唯一、殿下だけは揺れ動いてはなりません。"
     },
     {
       "type": "dialogue",
       "speakerName": "帳の後ろの声",
       "speakerId": "avg_npc_1239_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "帳の後ろの声",
       "speakerId": "avg_npc_1239_1",
+      "isRemote": false,
       "text": "私は久しくこの宮殿から足を踏み出していない……太尉、聞くが――"
     },
     {
       "type": "dialogue",
       "speakerName": "帳の後ろの声",
       "speakerId": "avg_npc_1239_1",
+      "isRemote": false,
       "text": "百灶の春雨は降り止んだか？"
     },
     {
       "type": "dialogue",
       "speakerName": "太尉",
       "speakerId": "avg_npc_1239_1",
+      "isRemote": false,
       "text": "殿下が望みさえすれば、この雨は止みましょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "太尉",
       "speakerId": "avg_npc_1239_1",
+      "isRemote": false,
       "text": "……殿下のお考えが変わったのであれば、まだ彼らを引き止める間はあります。"
     },
     {
       "type": "dialogue",
       "speakerName": "帳の後ろの声",
       "speakerId": "avg_npc_1239_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "帳の後ろの声",
       "speakerId": "avg_npc_1239_1",
+      "isRemote": false,
       "text": "……くたびれた。"
     },
     {
       "type": "dialogue",
       "speakerName": "侍従",
       "speakerId": "avg_npc_1239_1",
+      "isRemote": false,
       "text": "温かいスープをお召し上がりになってはいかがでしょうか？　御膳司が八宝攢湯（バーバオザンタン）と筍の細切りをご用意いたしております。"
     },
     {
       "type": "dialogue",
       "speakerName": "帳の後ろの声",
       "speakerId": "avg_npc_1239_1",
+      "isRemote": false,
       "text": "もて。"
     },
     {
       "type": "dialogue",
       "speakerName": "太尉",
       "speakerId": "avg_npc_1239_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_wilderness_n"
+    },
+    {
       "type": "dialogue",
       "speakerName": "優しい女性",
       "speakerId": null,
+      "isRemote": false,
       "text": "いい子……いい子だから……"
     },
     {
       "type": "dialogue",
       "speakerName": "優しい女性",
       "speakerId": null,
+      "isRemote": false,
       "text": "ほら、泣かないのよ、帰りましょう……すぐにおうちだから……"
     },
     {
@@ -514,42 +611,49 @@
       "type": "dialogue",
       "speakerName": "慌てる男",
       "speakerId": "avg_npc_1616_1",
+      "isRemote": false,
       "text": "もっと速く……お願いします、もっと速く走れませんか……"
     },
     {
       "type": "dialogue",
       "speakerName": "御者",
       "speakerId": "avg_npc_1616_1",
+      "isRemote": false,
       "text": "雨がひどくて道がよく見えないんです。これ以上の速度を出すのは無理ですよ……"
     },
     {
       "type": "dialogue",
       "speakerName": "慌てる男",
       "speakerId": "avg_npc_1616_1",
+      "isRemote": false,
       "text": "次の宿駅まではどれくらいですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "御者",
       "speakerId": "avg_npc_1616_1",
+      "isRemote": false,
       "text": "どう見積もっても三十里はあります……"
     },
     {
       "type": "dialogue",
       "speakerName": "御者",
       "speakerId": "avg_npc_1616_1",
+      "isRemote": false,
       "text": "お客さん、どれだけ急ぎの用だってんですか……家族まで連れて、わざわざこんな夜中を選んで移動しようってのは？"
     },
     {
       "type": "dialogue",
       "speakerName": "慌てる男",
       "speakerId": "avg_npc_1616_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "慌てる男",
       "speakerId": "avg_npc_1616_1",
+      "isRemote": false,
       "text": "……どうか急いでください。"
     },
     {
@@ -559,6 +663,7 @@
       "type": "dialogue",
       "speakerName": "御者",
       "speakerId": "avg_npc_1616_1",
+      "isRemote": false,
       "text": "ああ……！　うわぁ！　何だ――"
     },
     {
@@ -568,12 +673,14 @@
       "type": "dialogue",
       "speakerName": "御者",
       "speakerId": "avg_npc_1616_1",
+      "isRemote": false,
       "text": "何事だ！　荒野にどうして人が……"
     },
     {
       "type": "dialogue",
       "speakerName": "慌てる男",
       "speakerId": "avg_npc_1616_1",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -584,81 +691,98 @@
       "type": "dialogue",
       "speakerName": "慌てる男",
       "speakerId": "avg_npc_1616_1",
+      "isRemote": false,
       "text": "このまま乗り続けることはできません……"
     },
     {
       "type": "dialogue",
       "speakerName": "慌てる男",
       "speakerId": "avg_npc_1616_1",
+      "isRemote": false,
       "text": "ご苦労をかけました。この金は全て取っておいてください。引き続きこの先の宿駅に向かって、もし誰かに尋ねられても、今宵子供連れの客人を乗せたことはくれぐれも口外せぬようお願いします。"
     },
     {
       "type": "dialogue",
       "speakerName": "慌てる男",
       "speakerId": "avg_npc_1616_1",
+      "isRemote": false,
       "text": "では、私たちはこれで。礼を申し上げます……"
     },
     {
       "type": "dialogue",
       "speakerName": "御者",
       "speakerId": "avg_npc_1616_1",
+      "isRemote": false,
       "text": "ですが……こんなのって、お客人！"
     },
     {
       "type": "dialogue",
       "speakerName": "御者",
       "speakerId": "avg_npc_1616_1",
+      "isRemote": false,
       "text": "こんな大雨で、どちらへ向かうというのです？"
     },
     {
       "type": "dialogue",
       "speakerName": "慌てる男",
       "speakerId": "avg_npc_1616_1",
+      "isRemote": false,
       "text": "小道を行き……北の林を抜け――"
     },
     {
       "type": "dialogue",
       "speakerName": "うろたえる女性",
       "speakerId": "avg_npc_1616_1",
+      "isRemote": false,
       "text": "きゃああ――！"
     },
     {
       "type": "dialogue",
       "speakerName": "慌てる男",
       "speakerId": "avg_npc_1616_1",
+      "isRemote": false,
       "text": "どうした――"
     },
     {
       "type": "dialogue",
       "speakerName": "うろたえる女性",
       "speakerId": "avg_npc_1616_1",
+      "isRemote": false,
       "text": "子供が……"
     },
     {
       "type": "dialogue",
       "speakerName": "うろたえる女性",
       "speakerId": "avg_npc_1616_1",
+      "isRemote": false,
       "text": "子供が見当たらないわ……"
     },
     {
       "type": "dialogue",
       "speakerName": "慌てる男",
       "speakerId": "avg_npc_1616_1",
+      "isRemote": false,
       "text": "――！"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "25_g11_yanroom"
+    },
+    {
       "type": "dialogue",
       "speakerName": "寡黙な老人",
       "speakerId": "avg_npc_1614_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "寡黙な老人",
       "speakerId": "avg_npc_1614_1",
+      "isRemote": false,
       "text": "これが……例の子か。"
     },
     {
@@ -669,96 +793,112 @@
       "type": "dialogue",
       "speakerName": "手が血だらけの者",
       "speakerId": "avg_npc_1614_1",
+      "isRemote": false,
       "text": "ご依頼の件は、全て完了いたしました……"
     },
     {
       "type": "dialogue",
       "speakerName": "手が血だらけの者",
       "speakerId": "avg_npc_1614_1",
+      "isRemote": false,
       "text": "彼らの手管はよく承知しており、対処法も存じています。どうかご心配なく、あなたのお体を汚すようなことは起きません。"
     },
     {
       "type": "dialogue",
       "speakerName": "寡黙な老人",
       "speakerId": "avg_npc_1614_1",
+      "isRemote": false,
       "text": "かような大義……老いぼれには、どう報いたらいいやも分からぬ。"
     },
     {
       "type": "dialogue",
       "speakerName": "手が血だらけの者",
       "speakerId": "avg_npc_1614_1",
+      "isRemote": false,
       "text": "いいえ……感謝など無用です。あなたのために行ったのではございませんから。"
     },
     {
       "type": "dialogue",
       "speakerName": "手が血だらけの者",
       "speakerId": "avg_npc_1614_1",
+      "isRemote": false,
       "text": "あの方には大きなご恩がございます。私が今回行ったことでは、彼女の冤罪をすすぐことは叶わず、復讐など語るべくもない。"
     },
     {
       "type": "dialogue",
       "speakerName": "手が血だらけの者",
       "speakerId": "avg_npc_1614_1",
+      "isRemote": false,
       "text": "私に親族はおりませんゆえ、死後の憂いはございません。閣下に願いたいことも一つだけです。"
     },
     {
       "type": "dialogue",
       "speakerName": "手が血だらけの者",
       "speakerId": "avg_npc_1614_1",
+      "isRemote": false,
       "text": "どうか……この子を引き取ってはくださいませんか。"
     },
     {
       "type": "dialogue",
       "speakerName": "寡黙な老人",
       "speakerId": "avg_npc_1614_1",
+      "isRemote": false,
       "text": "それは……"
     },
     {
       "type": "dialogue",
       "speakerName": "手が血だらけの者",
       "speakerId": "avg_npc_1614_1",
+      "isRemote": false,
       "text": "この子に何も伝える必要はございません。ただ無事に成長し、平穏に一生を暮らせればそれでよいのです。"
     },
     {
       "type": "dialogue",
       "speakerName": "寡黙な老人",
       "speakerId": "avg_npc_1614_1",
+      "isRemote": false,
       "text": "……貴殿も分かっているであろうが、この子がここに留まれば、危険が増し、この件が蒸し返される可能性も高まる。"
     },
     {
       "type": "dialogue",
       "speakerName": "手が血だらけの者",
       "speakerId": "avg_npc_1614_1",
+      "isRemote": false,
       "text": "それが、あなたが望んでいたことではないのですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "手が血だらけの者",
       "speakerId": "avg_npc_1614_1",
+      "isRemote": false,
       "text": "時勢のしからしめるところにより、今の我々にはなす術がない。"
     },
     {
       "type": "dialogue",
       "speakerName": "手が血だらけの者",
       "speakerId": "avg_npc_1614_1",
+      "isRemote": false,
       "text": "しかしいつの日か、三十年でも、四十年でもいい……いつの日か、真相が白日の下にさらされるのであれば……"
     },
     {
       "type": "dialogue",
       "speakerName": "手が血だらけの者",
       "speakerId": "avg_npc_1614_1",
+      "isRemote": false,
       "text": "流された血は……無駄ではないのです。"
     },
     {
       "type": "dialogue",
       "speakerName": "寡黙な老人",
       "speakerId": "avg_npc_1614_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "寡黙な老人",
       "speakerId": "avg_npc_1614_1",
+      "isRemote": false,
       "text": "よかろう。引き受けよう。"
     },
     {

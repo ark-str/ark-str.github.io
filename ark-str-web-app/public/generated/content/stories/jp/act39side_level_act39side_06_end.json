@@ -6,14 +6,19 @@
   "title": "退路燃えぬれば",
   "storyCode": "EP-6",
   "avgTag": "戦闘後",
-  "sourcePath": "vendor/ArknightsGamedata/jp/gamedata/story/activities/act39side/level_act39side_06_end.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/jp/gamedata/story/activities/act39side/level_act39side_06_end.txt",
   "sourceHash": "195751b506bf974c5df3b75b6a3e052c4fc8275b754737aa234ca4ffb599039b",
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "57_g9_community_d"
+    },
+    {
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -23,12 +28,14 @@
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "おい、坊主。"
     },
     {
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "ティーチ……一体何があったんだ？"
     },
     {
@@ -38,70 +45,92 @@
       "type": "dialogue",
       "speakerName": "ティーチ",
       "speakerId": "avg_npc_1580_1",
+      "isRemote": false,
       "text": "ハビエルが裁判所の連中を手引きしやがったんだ。フアナさんは今船長室に閉じ込められてる。"
     },
     {
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "ティーチ",
       "speakerId": "avg_npc_1580_1",
+      "isRemote": false,
       "text": "で、あんたはどうして戻ってきたんだい？"
     },
     {
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "わからない……だが、あんたと目的は同じだろうな。"
     },
     {
       "type": "dialogue",
       "speakerName": "ティーチ",
       "speakerId": "avg_npc_1580_1",
+      "isRemote": false,
       "text": "待った……向こうの甲板に隠れてるのはあんたの友達じゃないか？"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "57_g3_newdeck_1"
+    },
+    {
       "type": "dialogue",
       "speakerName": "パスクアラ",
       "speakerId": "avg_4163_rosesa_1",
+      "isRemote": false,
       "text": "ねえ、あれイシドロだよね？　あいつも戻ってきてたんだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "パスクアラ",
       "speakerId": "avg_4163_rosesa_1",
+      "isRemote": false,
       "text": "へへっ、だから言ったでしょ。あたしですら心配してんのに、あいつがおとなしくしてられるわけないって。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリジウム",
       "speakerId": "avg_npc_450_1",
+      "isRemote": false,
       "text": "そりゃあ、僕の友達は優しい奴だからね。ここで火の手が上がってるのを見れば当然戻ってくるだろうさ！"
     },
     {
       "type": "dialogue",
       "speakerName": "ウィーディ",
       "speakerId": "avgnew_400_weedy_1",
+      "isRemote": false,
       "text": "それで……"
     },
     {
       "type": "dialogue",
       "speakerName": "ウィーディ",
       "speakerId": "avgnew_400_weedy_1",
+      "isRemote": false,
       "text": "どうして私も巻き込まれてるの？"
     },
     {
       "type": "dialogue",
       "speakerName": "エリジウム",
       "speakerId": "avg_npc_450_1",
+      "isRemote": false,
       "text": "えーっと、消火要員が必要だからってことでどう？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "57_g11_meetingroom"
     },
     {
       "type": "sceneBreak"
@@ -110,6 +139,7 @@
       "type": "dialogue",
       "speakerName": "武装修道士",
       "speakerId": "avg_npc_1587_1",
+      "isRemote": false,
       "text": "うっ……"
     },
     {
@@ -119,6 +149,7 @@
       "type": "dialogue",
       "speakerName": "ティーチ",
       "speakerId": "avg_npc_1580_1",
+      "isRemote": false,
       "text": "起きてください、フアナさん……"
     },
     {
@@ -128,18 +159,21 @@
       "type": "dialogue",
       "speakerName": "フアナ",
       "speakerId": "avg_npc_1581_1",
+      "isRemote": false,
       "text": "真珠ちゃん……ネネはどうしたの？　戻ってきてはダメでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "ティーチ",
       "speakerId": "avg_npc_1580_1",
+      "isRemote": false,
       "text": "ネネは塩海に帰しました。あいつは身体が弱いとはいえ、生きていけないと決まったわけじゃありませんし、反乱を起こした船員に殺されるよりマシですから。"
     },
     {
       "type": "dialogue",
       "speakerName": "ティーチ",
       "speakerId": "avg_npc_1580_1",
+      "isRemote": false,
       "text": "こっちとしては、あなたを一人でここに残すわけにいかないんですよ。"
     },
     {
@@ -150,105 +184,126 @@
       "type": "dialogue",
       "speakerName": "フアナ",
       "speakerId": "avg_npc_1581_1",
+      "isRemote": false,
       "text": "大したことない……薬を飲まされただけよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "フアナ",
       "speakerId": "avg_npc_1581_1",
+      "isRemote": false,
       "text": "それにしても、あなたたちは本来なら逃げて生き延びられたはずなのに……"
     },
     {
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "あんたみたいな頑固な人は、そう簡単には諦めないと思っていたんだが。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリジウム",
       "speakerId": "avg_npc_450_1",
+      "isRemote": false,
       "text": "何にせよ、みんな戻って来ちゃったんですから、そんなこと言わないでくださいよ。それより、フアナさんは船団で一番塩海に詳しい人ですよね。何かいい逃げ道を知りませんか？"
     },
     {
       "type": "dialogue",
       "speakerName": "フアナ",
       "speakerId": "avg_npc_1581_1",
+      "isRemote": false,
       "text": "こっちの手勢は今何人？"
     },
     {
       "type": "dialogue",
       "speakerName": "ティーチ",
       "speakerId": "avg_npc_1580_1",
+      "isRemote": false,
       "text": "二十四人です。"
     },
     {
       "type": "dialogue",
       "speakerName": "フアナ",
       "speakerId": "avg_npc_1581_1",
+      "isRemote": false,
       "text": "いいじゃない、船を一艘奪って逃げるには十分な数ね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ティーチ",
       "speakerId": "avg_npc_1580_1",
+      "isRemote": false,
       "text": "どの船にしましょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "フアナ",
       "speakerId": "avg_npc_1581_1",
+      "isRemote": false,
       "text": "コンキスタ号よ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ティーチ",
       "speakerId": "avg_npc_1580_1",
+      "isRemote": false,
       "text": "あの船は古いですし……新しいソルトシップにはスピードじゃかないませんよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "フアナ",
       "speakerId": "avg_npc_1581_1",
+      "isRemote": false,
       "text": "だけど、あれが一番勝手を知ってる船だから。"
     },
     {
       "type": "dialogue",
       "speakerName": "フアナ",
       "speakerId": "avg_npc_1581_1",
+      "isRemote": false,
       "text": "それに、古い船には裁判所もあまり監視の人員を割かないでしょうから、奪うのもそう難しくないと思うわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ティーチ",
       "speakerId": "avg_npc_1580_1",
+      "isRemote": false,
       "text": "わかりました。それじゃ、あたしが八人連れて甲板へ向かい、巡回と見張りに対処しましょう。残りの人員はエリジウムと一緒に船側から忍び込んだら、ほかの連中を片付けるってことで。"
     },
     {
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "俺はどうすれば？"
     },
     {
       "type": "dialogue",
       "speakerName": "ティーチ",
       "speakerId": "avg_npc_1580_1",
+      "isRemote": false,
       "text": "フアナさんは弱ってるし、速くは歩けないだろう……だからあんたがついててやってほしいんだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "わかった、任せろ。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "57_g6_olddeck_1"
+    },
+    {
       "type": "dialogue",
       "speakerName": "警戒する船員",
       "speakerId": "avg_npc_1591_1",
+      "isRemote": false,
       "text": "何の音だ？"
     },
     {
@@ -258,6 +313,7 @@
       "type": "dialogue",
       "speakerName": "警戒する船員",
       "speakerId": "avg_npc_1591_1",
+      "isRemote": false,
       "text": "ぐっ――"
     },
     {
@@ -267,6 +323,7 @@
       "type": "dialogue",
       "speakerName": "巡回する船員",
       "speakerId": null,
+      "isRemote": false,
       "text": "うっ――"
     },
     {
@@ -276,6 +333,7 @@
       "type": "dialogue",
       "speakerName": "ティーチ",
       "speakerId": "avg_npc_1580_1",
+      "isRemote": false,
       "text": "やれやれ、あたしも歳食ったもんだ……"
     },
     {
@@ -285,12 +343,14 @@
       "type": "dialogue",
       "speakerName": "信用の置ける船員",
       "speakerId": "avg_npc_1589_1",
+      "isRemote": false,
       "text": "甲板にいた連中は、全員気絶させて船の外に投げ出しといたよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ティーチ",
       "speakerId": "avg_npc_1580_1",
+      "isRemote": false,
       "text": "よし、マストに登って指示を待ちな。あたしがやれと言ったらすぐに帆を揚げるんだ。最速で船を動かさないとね。"
     },
     {
@@ -300,6 +360,7 @@
       "type": "dialogue",
       "speakerName": "ティーチ",
       "speakerId": "avg_npc_1580_1",
+      "isRemote": false,
       "text": "そっちも終わったのかい？"
     },
     {
@@ -309,12 +370,14 @@
       "type": "dialogue",
       "speakerName": "エリジウム",
       "speakerId": "avg_npc_450_1",
+      "isRemote": false,
       "text": "ええ、下にいた人は全員片付けましたよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリジウム",
       "speakerId": "avg_npc_450_1",
+      "isRemote": false,
       "text": "ティーチさん、すみませんがちょっと手を貸してもらっても？"
     },
     {
@@ -324,33 +387,42 @@
       "type": "dialogue",
       "speakerName": "ティーチ",
       "speakerId": "avg_npc_1580_1",
+      "isRemote": false,
       "text": "それじゃ、あとはフアナさんを待つだけだね。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "57_g9_community_d"
+    },
+    {
       "type": "dialogue",
       "speakerName": "真面目な武装修道士",
       "speakerId": "avg_npc_1587_1",
+      "isRemote": false,
       "text": "注意深く探せ。必ずあのコンパスを見つけ出せとの執行官閣下のご命令だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "責任感の強い武装修道士",
       "speakerId": "avg_npc_1587_1",
+      "isRemote": false,
       "text": "部屋はくまなく探しましたが、それらしいものは見つかりませんでした。"
     },
     {
       "type": "dialogue",
       "speakerName": "真面目な武装修道士",
       "speakerId": "avg_npc_1587_1",
+      "isRemote": false,
       "text": "見落としがあるかもしれない。もっとよく探してくれ。"
     },
     {
       "type": "dialogue",
       "speakerName": "責任感の強い武装修道士",
       "speakerId": "avg_npc_1587_1",
+      "isRemote": false,
       "text": "わかりました。"
     },
     {
@@ -360,6 +432,7 @@
       "type": "dialogue",
       "speakerName": "ハビエル",
       "speakerId": "avg_npc_1579_1",
+      "isRemote": false,
       "text": "そこのあんたたち、執行官閣下から新しい命令だ。すぐに小隊を組織して俺と来い。逃げた錬金術師を追うぞ。"
     },
     {
@@ -369,6 +442,7 @@
       "type": "dialogue",
       "speakerName": "真面目な武装修道士",
       "speakerId": "avg_npc_1587_1",
+      "isRemote": false,
       "text": "なぜお前がそれを伝達してくるんだ？"
     },
     {
@@ -378,6 +452,7 @@
       "type": "dialogue",
       "speakerName": "ハビエル",
       "speakerId": "avg_npc_1579_1",
+      "isRemote": false,
       "text": "俺たちは今協力関係にあるはずだろう。来ちゃいけない理由なんてあるか？"
     },
     {
@@ -387,6 +462,7 @@
       "type": "dialogue",
       "speakerName": "責任感の強い武装修道士",
       "speakerId": "avg_npc_1587_1",
+      "isRemote": false,
       "text": "わかった。ほかの人員を呼んでくるから、しばし待て。"
     },
     {
@@ -396,6 +472,7 @@
       "type": "dialogue",
       "speakerName": "ハビエル",
       "speakerId": "avg_npc_1579_1",
+      "isRemote": false,
       "text": "悪いな、頼んだ。"
     },
     {
@@ -405,87 +482,112 @@
       "type": "dialogue",
       "speakerName": "フアナ",
       "speakerId": "avg_npc_1581_1",
+      "isRemote": false,
       "text": "どうしてハビエルがここに？"
     },
     {
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "俺にもわからないが、何であれ、あいつがあの武装修道士たちを引き離してくれたのは確かだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "奴らが去れば、向こうのテントの裏に隠れて進めるだろう。"
     },
     {
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "あの場所なら、どのソルトシップからも見えないし、気付かれることもないはずだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "フアナ",
       "speakerId": "avg_npc_1581_1",
+      "isRemote": false,
       "text": "あなたって、脱出経験が豊富みたいね。"
     },
     {
       "type": "dialogue",
       "speakerName": "フアナ",
       "speakerId": "avg_npc_1581_1",
+      "isRemote": false,
       "text": "ッ……"
     },
     {
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "もう少し耐えてくれ。すぐに着く。"
     },
     {
       "type": "dialogue",
       "speakerName": "フアナ",
       "speakerId": "avg_npc_1581_1",
+      "isRemote": false,
       "text": "ええ……"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "57_g8_oldcabin"
+    },
+    {
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "あんたは甲板に向かっていろ。俺は工房に荷物を取りに行く。"
     },
     {
       "type": "dialogue",
       "speakerName": "フアナ",
       "speakerId": "avg_npc_1581_1",
+      "isRemote": false,
       "text": "すぐに戻ってきなさいね。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "57_g8_oldcabin"
+    },
+    {
       "type": "dialogue",
       "speakerName": "アナスタシオ",
       "speakerId": "avg_npc_1582_1",
+      "isRemote": false,
       "text": "これは……旧時代の船ですね。"
     },
     {
       "type": "dialogue",
       "speakerName": "アナスタシオ",
       "speakerId": "avg_npc_1582_1",
+      "isRemote": false,
       "text": "コンパスを求める貴方たちの渇望は、よもやあの災いの根源たる海を指し示しているのでしょうか？"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "57_g12_alchemyworkshop"
+    },
+    {
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "どこに置いたんだったか……"
     },
     {
@@ -495,12 +597,14 @@
       "type": "dialogue",
       "speakerName": "アナスタシオ",
       "speakerId": "avg_npc_1582_1",
+      "isRemote": false,
       "text": "貴方は……"
     },
     {
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "……見覚えのある顔だ。"
     },
     {
@@ -510,132 +614,154 @@
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "包囲戦を指揮していたのはお前だな。"
     },
     {
       "type": "dialogue",
       "speakerName": "アナスタシオ",
       "speakerId": "avg_npc_1582_1",
+      "isRemote": false,
       "text": "コンパスを修理していたのは貴方なのですね。"
     },
     {
       "type": "dialogue",
       "speakerName": "アナスタシオ",
       "speakerId": "avg_npc_1582_1",
+      "isRemote": false,
       "text": "私はよく、人からこう言われるのです。他人の善良さをもっと信じるべきだと……"
     },
     {
       "type": "dialogue",
       "speakerName": "アナスタシオ",
       "speakerId": "avg_npc_1582_1",
+      "isRemote": false,
       "text": "ですが、事実は常に彼らの愚かさを証明するばかりです。私には、初めて会った時から、あなたが罪深き錬金術の研究のために、コンパスを狙っていることはわかっていました。"
     },
     {
       "type": "dialogue",
       "speakerName": "アナスタシオ",
       "speakerId": "avg_npc_1582_1",
+      "isRemote": false,
       "text": "……やはり私の目に狂いはなかったようですね。"
     },
     {
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "コンパスなら壊れた。今もその残骸が成型台に残っているだろう。"
     },
     {
       "type": "dialogue",
       "speakerName": "アナスタシオ",
       "speakerId": "avg_npc_1582_1",
+      "isRemote": false,
       "text": "あの黒い泥のことを言っているのですか？　あれは本物のコンパスではありません。嘘をついても意味はありませんよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "裁判所から失われたものはどれも、お前たちがこれほど手間と時間をかけて虐殺を行うに値するのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "アナスタシオ",
       "speakerId": "avg_npc_1582_1",
+      "isRemote": false,
       "text": "コンパスが人の心を腐敗させることは、あなたも知っているでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "あれは単なる航海の道具だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アナスタシオ",
       "speakerId": "avg_npc_1582_1",
+      "isRemote": false,
       "text": "フッ。航海ですか。"
     },
     {
       "type": "dialogue",
       "speakerName": "アナスタシオ",
       "speakerId": "avg_npc_1582_1",
+      "isRemote": false,
       "text": "世俗の審判を拒み、道徳の束縛から逃れようとする者は皆、人が選ばぬイバラの道を選び、誰も上陸したことのない異郷の彼岸を目指さんとするものです。"
     },
     {
       "type": "dialogue",
       "speakerName": "アナスタシオ",
       "speakerId": "avg_npc_1582_1",
+      "isRemote": false,
       "text": "あたかも、不朽の偉業を成せば、それがすべての罪を逃れられる場所となるとでも思っているかのように。"
     },
     {
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "罪を犯した覚えはないが。"
     },
     {
       "type": "dialogue",
       "speakerName": "アナスタシオ",
       "speakerId": "avg_npc_1582_1",
+      "isRemote": false,
       "text": "窃盗犯をかばい、町民の遺体を盗んで貪り食らい、裁判所の修道士を襲い、町に害をなす盗賊と徒党を組んでおきながら……まだそれでは罪とは呼べないと？"
     },
     {
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "そうして罪を被せるだけなら、いくらでもできるだろう。"
     },
     {
       "type": "dialogue",
       "speakerName": "アナスタシオ",
       "speakerId": "avg_npc_1582_1",
+      "isRemote": false,
       "text": "ハッ……あまつさえ己の罪を否定し始めるとは。"
     },
     {
       "type": "dialogue",
       "speakerName": "アナスタシオ",
       "speakerId": "avg_npc_1582_1",
+      "isRemote": false,
       "text": "罪を犯した者は皆、そうして否定したがるものです。私とてそうでした。"
     },
     {
       "type": "dialogue",
       "speakerName": "アナスタシオ",
       "speakerId": "avg_npc_1582_1",
+      "isRemote": false,
       "text": "ですが私は、最後には己の罪を認め、贖罪の道を見出したのです。"
     },
     {
       "type": "dialogue",
       "speakerName": "アナスタシオ",
       "speakerId": "avg_npc_1582_1",
+      "isRemote": false,
       "text": "私の命は初めから食人の罪と結びついておりますので、私という存在は初めから罪深き存在なのです。ゆえに私は、単純な死を与えられるには値しません。"
     },
     {
       "type": "dialogue",
       "speakerName": "アナスタシオ",
       "speakerId": "avg_npc_1582_1",
+      "isRemote": false,
       "text": "ですが貴方は――欲望に染まるより前は、正直で善良な人だったのでしょう。なればこそ、まだ死ぬ資格を持っています。"
     },
     {
       "type": "dialogue",
       "speakerName": "アナスタシオ",
       "speakerId": "avg_npc_1582_1",
+      "isRemote": false,
       "text": "私が、罪から解き放って差し上げましょう。"
     },
     {
@@ -645,66 +771,84 @@
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "本当に狂った奴だな……"
     },
     {
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "お前に構っている暇はない！"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "57_g6_olddeck_1"
+    },
+    {
       "type": "dialogue",
       "speakerName": "フアナ",
       "speakerId": "avg_npc_1581_1",
+      "isRemote": false,
       "text": "妙ね、イシドロはまだ来ないの？"
     },
     {
       "type": "dialogue",
       "speakerName": "ティーチ",
       "speakerId": "avg_npc_1580_1",
+      "isRemote": false,
       "text": "まあ、大丈夫ですよ。どのみちあいつもこの船にはいますし、全員揃ってますから。"
     },
     {
       "type": "dialogue",
       "speakerName": "ティーチ",
       "speakerId": "avg_npc_1580_1",
+      "isRemote": false,
       "text": "みんな準備はできてます。あとはあなたの号令だけですよ、フアナさん。"
     },
     {
       "type": "dialogue",
       "speakerName": "フアナ",
       "speakerId": "avg_npc_1581_1",
+      "isRemote": false,
       "text": "帆を揚げて。"
     },
     {
       "type": "dialogue",
       "speakerName": "フアナ",
       "speakerId": "avg_npc_1581_1",
+      "isRemote": false,
       "text": "出航よ。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "57_g12_alchemyworkshop"
+    },
+    {
       "type": "dialogue",
       "speakerName": "アナスタシオ",
       "speakerId": "avg_npc_1582_1",
+      "isRemote": false,
       "text": "この船……動いている……？"
     },
     {
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "（クソッ……フアナはこの狂人がここにいることなど知らない。）"
     },
     {
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "（船が動き出してしまえば、こいつはさらなる問題を引き起こすばかりだろう。）"
     },
     {
@@ -714,18 +858,21 @@
       "type": "dialogue",
       "speakerName": "アナスタシオ",
       "speakerId": "avg_npc_1582_1",
+      "isRemote": false,
       "text": "逃走を企てた愚か者たちは、皆ここにいるのですね？"
     },
     {
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "黙っていろ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アナスタシオ",
       "speakerId": "avg_npc_1582_1",
+      "isRemote": false,
       "text": "貴方たちも、この旧時代の罪深き遺物たる船も、すべてはここで終わりを遂げるのです。"
     },
     {
@@ -739,10 +886,15 @@
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "（このままではまずい……何か手を打たなければ……）"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
     },
     {
       "type": "narration",
@@ -759,9 +911,21 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "57_g6_olddeck_1"
+    },
+    {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "ごほっ、ごほ、げほっ……"
     },
     {
@@ -771,162 +935,196 @@
       "type": "dialogue",
       "speakerName": "エリジウム",
       "speakerId": "avg_npc_450_1",
+      "isRemote": false,
       "text": "……ソーンズ？"
     },
     {
       "type": "dialogue",
       "speakerName": "エリジウム",
       "speakerId": "avg_npc_450_1",
+      "isRemote": false,
       "text": "随分遅かったじゃないか。死ぬほど心配してたんだよ。工房に荷物を取りに行くって言ったきり、全然戻ってこないんだもの。"
     },
     {
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "その工房の中で、裁判所の人間に遭遇したんだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "エリジウム",
       "speakerId": "avg_npc_450_1",
+      "isRemote": false,
       "text": "下にいた人たちなら、僕らが片付けておいたはずなんだけど。"
     },
     {
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "俺にも経緯はわからないが、奴はコンパスを探して船に忍び込んでいたようで、有無を言わさず襲い掛かってきた。"
     },
     {
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "奴を振り切るには工房を爆破して、奴を吹き飛ばすしかなかった。"
     },
     {
       "type": "dialogue",
       "speakerName": "フアナ",
       "speakerId": "avg_npc_1581_1",
+      "isRemote": false,
       "text": "あなたって子は、危うく船の半分を吹き飛ばすところだったわよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "フアナ",
       "speakerId": "avg_npc_1581_1",
+      "isRemote": false,
       "text": "……よくやってくれたわね。"
     },
     {
       "type": "dialogue",
       "speakerName": "フアナ",
       "speakerId": "avg_npc_1581_1",
+      "isRemote": false,
       "text": "でも、中にあったものは無事で済んだの？"
     },
     {
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "多少なら……救えるものもあるかもしれない。"
     },
     {
       "type": "dialogue",
       "speakerName": "フアナ",
       "speakerId": "avg_npc_1581_1",
+      "isRemote": false,
       "text": "まあいいわ……"
     },
     {
       "type": "dialogue",
       "speakerName": "フアナ",
       "speakerId": "avg_npc_1581_1",
+      "isRemote": false,
       "text": "骸礁峡谷を目指しましょう。あそこを抜けて、海を目指すのよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "フアナ",
       "speakerId": "avg_npc_1581_1",
+      "isRemote": false,
       "text": "その間に、あなたにはもう一度コンパスの修理に挑戦してもらってもいいかもね。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "57_g9_community_d"
+    },
+    {
       "type": "dialogue",
       "speakerName": "武装修道士",
       "speakerId": "avg_npc_1587_1",
+      "isRemote": false,
       "text": "シルバー閣下！　し、執行官閣下はまだあの船に乗っていらっしゃるのです！　お助けしなくては！"
     },
     {
       "type": "dialogue",
       "speakerName": "シルバー",
       "speakerId": "avg_npc_1583_1",
+      "isRemote": false,
       "text": "いいや……"
     },
     {
       "type": "dialogue",
       "speakerName": "シルバー",
       "speakerId": "avg_npc_1583_1",
+      "isRemote": false,
       "text": "あれほど激しい爆発の中にいては、生き残ることなどできまい。"
     },
     {
       "type": "dialogue",
       "speakerName": "武装修道士",
       "speakerId": "avg_npc_1587_1",
+      "isRemote": false,
       "text": "ですが、執行官閣下が……"
     },
     {
       "type": "dialogue",
       "speakerName": "シルバー",
       "speakerId": "avg_npc_1583_1",
+      "isRemote": false,
       "text": "行くなと言っているんだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "シルバー",
       "speakerId": "avg_npc_1583_1",
+      "isRemote": false,
       "text": "執行官殿は壮烈な最期を遂げられた。彼が創り出してくれた活路を無駄にしてまで、死者を救うべく生者を犠牲にしようというのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "武装修道士",
       "speakerId": "avg_npc_1587_1",
+      "isRemote": false,
       "text": "ですが、あの方がもし……"
     },
     {
       "type": "dialogue",
       "speakerName": "シルバー",
       "speakerId": "avg_npc_1583_1",
+      "isRemote": false,
       "text": "今この時、最も君たちを必要としているのはアーロンの町だ。すぐに没収した物資をまとめ、投降した海賊の割り振りをしに向かいなさい。"
     },
     {
       "type": "dialogue",
       "speakerName": "シルバー",
       "speakerId": "avg_npc_1583_1",
+      "isRemote": false,
       "text": "これは命令だ。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "57_g6_olddeck_1"
+    },
+    {
       "type": "dialogue",
       "speakerName": "パスクアラ",
       "speakerId": "avg_4163_rosesa_1",
+      "isRemote": false,
       "text": "ねえちょっと！　船を安定させてくれない！？　マストが折れちゃうって！"
     },
     {
       "type": "dialogue",
       "speakerName": "パスクアラ",
       "speakerId": "avg_4163_rosesa_1",
+      "isRemote": false,
       "text": "下手すると船があのでっかい骨に激突するよ！　そうなりゃ全員、串刺しにされて塩漬けミイラになるまで宙ぶらりんだからね！"
     },
     {
       "type": "dialogue",
       "speakerName": "フアナ",
       "speakerId": "avg_npc_1581_1",
+      "isRemote": false,
       "text": "取り舵いっぱい！"
     },
     {
       "type": "dialogue",
       "speakerName": "ティーチ",
       "speakerId": "avg_npc_1580_1",
+      "isRemote": false,
       "text": "――取り舵いっぱーい！"
     },
     {
@@ -936,36 +1134,42 @@
       "type": "dialogue",
       "speakerName": "ウィーディ",
       "speakerId": "avgnew_400_weedy_1",
+      "isRemote": false,
       "text": "右舷損傷！　もう一度蒸気が当たったら船体が完全に崩壊するよ！"
     },
     {
       "type": "dialogue",
       "speakerName": "エリジウム",
       "speakerId": "avg_npc_450_1",
+      "isRemote": false,
       "text": "大きな骨がどんどん密集してきてる！　進行方向をきちんとコントロールしないと、蒸気より先に骨にぶつかって大破しかねない！"
     },
     {
       "type": "dialogue",
       "speakerName": "ティーチ",
       "speakerId": "avg_npc_1580_1",
+      "isRemote": false,
       "text": "こんなに蒸気が噴き出してくるってことは、いよいよ峡谷が近いんだろうね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ティーチ",
       "speakerId": "avg_npc_1580_1",
+      "isRemote": false,
       "text": "そこまで行けば、あの腰抜けどもは追ってこられないさ！"
     },
     {
       "type": "dialogue",
       "speakerName": "エリジウム",
       "speakerId": "avg_npc_450_1",
+      "isRemote": false,
       "text": "でも、僕たち自身はどうするんです？　あそこは高圧の蒸気があちこちから噴き出してますし、この船にもすぐ穴が空いちゃうと思いますよ！"
     },
     {
       "type": "dialogue",
       "speakerName": "ティーチ",
       "speakerId": "avg_npc_1580_1",
+      "isRemote": false,
       "text": "裁判所に捕まるよりマシだろうが！"
     },
     {
@@ -975,6 +1179,7 @@
       "type": "dialogue",
       "speakerName": "エリジウム",
       "speakerId": "avg_npc_450_1",
+      "isRemote": false,
       "text": "……うっ！"
     },
     {
@@ -988,6 +1193,7 @@
       "type": "dialogue",
       "speakerName": "フアナ",
       "speakerId": "avg_npc_1581_1",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -1001,42 +1207,49 @@
       "type": "dialogue",
       "speakerName": "エリジウム",
       "speakerId": "avg_npc_450_1",
+      "isRemote": false,
       "text": "……ウィーディ！　君はエンジニア部の人だよね、何か解決方法はない？"
     },
     {
       "type": "dialogue",
       "speakerName": "ウィーディ",
       "speakerId": "avgnew_400_weedy_1",
+      "isRemote": false,
       "text": "私も黄金時代の船を見るのは初めてだし、それがこんなに改造されてるとなると……すぐに航行原理を理解するなんてできないよ！"
     },
     {
       "type": "dialogue",
       "speakerName": "エリジウム",
       "speakerId": "avg_npc_450_1",
+      "isRemote": false,
       "text": "だったら船を捨てるのは？　今飛び降りれば助かるかも！"
     },
     {
       "type": "dialogue",
       "speakerName": "パスクアラ",
       "speakerId": "avg_4163_rosesa_1",
+      "isRemote": false,
       "text": "頭おかしいんじゃないの！？　そんなことしたら三十秒もしないうちに塩鱗獣が突っ込んできて、身体に大穴が空くっつーの！"
     },
     {
       "type": "dialogue",
       "speakerName": "ティーチ",
       "speakerId": "avg_npc_1580_1",
+      "isRemote": false,
       "text": "――フアナさん！"
     },
     {
       "type": "dialogue",
       "speakerName": "エリジウム",
       "speakerId": "avg_npc_450_1",
+      "isRemote": false,
       "text": "終わりだ……"
     },
     {
       "type": "dialogue",
       "speakerName": "フアナ",
       "speakerId": "avg_npc_1581_1",
+      "isRemote": false,
       "text": "いいえ。"
     },
     {
@@ -1057,6 +1270,7 @@
       "type": "dialogue",
       "speakerName": "フアナ",
       "speakerId": "avg_npc_1581_1",
+      "isRemote": false,
       "text": "久しぶりね、相棒！"
     },
     {
@@ -1073,51 +1287,63 @@
       "type": "dialogue",
       "speakerName": "ティーチ",
       "speakerId": "avg_npc_1580_1",
+      "isRemote": false,
       "text": "フアナさん……？"
     },
     {
       "type": "dialogue",
       "speakerName": "エリジウム",
       "speakerId": "avg_npc_450_1",
+      "isRemote": false,
       "text": "船が……安定してきた！"
     },
     {
       "type": "dialogue",
       "speakerName": "パスクアラ",
       "speakerId": "avg_4163_rosesa_1",
+      "isRemote": false,
       "text": "はぁ……はあ……"
     },
     {
       "type": "dialogue",
       "speakerName": "パスクアラ",
       "speakerId": "avg_4163_rosesa_1",
+      "isRemote": false,
       "text": "あたし……生きてるの？　死んでない？　どっかの骨にぶっ刺さってない？"
     },
     {
       "type": "dialogue",
       "speakerName": "ウィーディ",
       "speakerId": "avgnew_400_weedy_1",
+      "isRemote": false,
       "text": "……消火要員が必要だとか、ごまかされてついてきたけど……次からは何をするのかちゃんと説明して……！"
     },
     {
       "type": "dialogue",
       "speakerName": "エリジウム",
       "speakerId": "avg_npc_450_1",
+      "isRemote": false,
       "text": "まあほら、緊急事態を解決するのも消火の一つってことで、どうかな……？"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "57_g8_oldcabin"
+    },
+    {
       "type": "dialogue",
       "speakerName": "エリジウム",
       "speakerId": "avg_npc_450_1",
+      "isRemote": false,
       "text": "ソーンズ、どうだい！？　道具はどのくらい残ってる？"
     },
     {
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -1131,36 +1357,42 @@
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "成型台はどうにか回収できた。外側は破損しているものの、エネルギーの出力は安定しているようだ……"
     },
     {
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "探針は……残ったのは一つだけ。かなり古いものだが、幸いまだ使えるな。"
     },
     {
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "前に骨董品から取り外した合金と、源石も少し。とはいえ、これで足りるかどうか……"
     },
     {
       "type": "dialogue",
       "speakerName": "エリジウム",
       "speakerId": "avg_npc_450_1",
+      "isRemote": false,
       "text": "何か手伝えることはある？"
     },
     {
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "お前の指が探針の先端と同じくらい細ければ、あるいはな。"
     },
     {
@@ -1177,12 +1409,14 @@
       "type": "dialogue",
       "speakerName": "エリジウム",
       "speakerId": "avg_npc_450_1",
+      "isRemote": false,
       "text": "船には食べ物がほとんど残ってないんだ。このままだと、僕は実際そのくらいやせ細っちゃうかもね……"
     },
     {
       "type": "dialogue",
       "speakerName": "イシドロ",
       "speakerId": "avg_npc_1577_1",
+      "isRemote": false,
       "text": "……まずは食料を探すところからだな。"
     },
     {

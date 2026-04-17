@@ -6,10 +6,14 @@
   "title": "童話のプロローグ",
   "storyCode": "SS-8",
   "avgTag": "戦闘前",
-  "sourcePath": "vendor/ArknightsGamedata/jp/gamedata/story/activities/act45side/level_act45side_08_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/jp/gamedata/story/activities/act45side/level_act45side_08_beg.txt",
   "sourceHash": "ff202e13726ca97a2d9853a64e96fab20971b46d4d9e1daf7c806d4779c380fd",
   "bodyAvailable": true,
   "blocks": [
+    {
+      "type": "background",
+      "backgroundId": "bg_deluxeroom"
+    },
     {
       "type": "narration",
       "text": "何十階もある建物の屋上から見下ろすと、地上の車も人も塵のようにちっぽけに見える。"
@@ -18,60 +22,70 @@
       "type": "dialogue",
       "speakerName": "電話越しの声",
       "speakerId": null,
+      "isRemote": false,
       "text": "にゃむさん、事務所の指示通り周辺の警備を強化しました。"
     },
     {
       "type": "dialogue",
       "speakerName": "電話越しの声",
       "speakerId": null,
+      "isRemote": false,
       "text": "ですが、誘拐犯はまだ捕まっていません。安全を考慮して、事務所からしばらく活動休止の要請が来ています。"
     },
     {
       "type": "dialogue",
       "speakerName": "祐天寺にゃむ",
       "speakerId": "avg_4185_amoris_1",
+      "isRemote": false,
       "text": "活動休止……？"
     },
     {
       "type": "dialogue",
       "speakerName": "電話越しの声",
       "speakerId": null,
+      "isRemote": false,
       "text": "長くはかかりません。にゃむさんの安全を確保するため、改めてこちらで信頼できる仕事相手を選んでおきます。"
     },
     {
       "type": "dialogue",
       "speakerName": "祐天寺にゃむ",
       "speakerId": "avg_4185_amoris_1",
+      "isRemote": false,
       "text": "でも、それじゃファンのみんなが……"
     },
     {
       "type": "dialogue",
       "speakerName": "電話越しの声",
       "speakerId": null,
+      "isRemote": false,
       "text": "にゃむさん、今やあなたは龍門のスターなんです。ご自身の人気をもう少し自覚してください。"
     },
     {
       "type": "dialogue",
       "speakerName": "祐天寺にゃむ",
       "speakerId": "avg_4185_amoris_1",
+      "isRemote": false,
       "text": "でも……！"
     },
     {
       "type": "dialogue",
       "speakerName": "電話越しの声",
       "speakerId": null,
+      "isRemote": false,
       "text": "しばらくゆっくりお休みしたり、趣味の時間を過ごしたりしてはいかがでしょうか？"
     },
     {
       "type": "dialogue",
       "speakerName": "電話越しの声",
       "speakerId": null,
+      "isRemote": false,
       "text": "――でも無闇に出歩いちゃダメですよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "電話越しの声",
       "speakerId": null,
+      "isRemote": false,
       "text": "近衛局からまた連絡が来ましたので、私はそちらの対応をしてきますね。"
     },
     {
@@ -81,6 +95,7 @@
       "type": "dialogue",
       "speakerName": "祐天寺にゃむ",
       "speakerId": "avg_4185_amoris_1",
+      "isRemote": false,
       "text": "ゆっくり休め、無闇に出歩くな……ね？"
     },
     {
@@ -97,6 +112,7 @@
       "type": "dialogue",
       "speakerName": "祐天寺にゃむ",
       "speakerId": "avg_4185_amoris_1",
+      "isRemote": false,
       "text": "あった……"
     },
     {
@@ -110,6 +126,7 @@
       "type": "dialogue",
       "speakerName": "祐天寺にゃむ",
       "speakerId": "avg_4185_amoris_1",
+      "isRemote": false,
       "text": "（スティックを叩く）……ワン、ツー、スリー、フォー。"
     },
     {
@@ -119,27 +136,35 @@
       "type": "dialogue",
       "speakerName": "祐天寺にゃむ",
       "speakerId": "avg_4185_amoris_1",
+      "isRemote": false,
       "text": "……ヘタクソ。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "33_g7_reception"
+    },
+    {
       "type": "dialogue",
       "speakerName": "年老いた声",
       "speakerId": null,
+      "isRemote": false,
       "text": "あの女を逃がしたな。"
     },
     {
       "type": "dialogue",
       "speakerName": "年老いた声",
       "speakerId": null,
+      "isRemote": false,
       "text": "私の命令に背いたか。"
     },
     {
       "type": "dialogue",
       "speakerName": "八幡海鈴",
       "speakerId": "avg_4186_tmoris_1",
+      "isRemote": false,
       "text": "今回は契約違反ということにしてください。こちら、違約金です。"
     },
     {
@@ -153,60 +178,70 @@
       "type": "dialogue",
       "speakerName": "年老いた声",
       "speakerId": null,
+      "isRemote": false,
       "text": "……私を拒むつもりか。"
     },
     {
       "type": "dialogue",
       "speakerName": "八幡海鈴",
       "speakerId": "avg_4186_tmoris_1",
+      "isRemote": false,
       "text": "……再考した結果、やはりこのままの関係を保つのが良いかと。"
     },
     {
       "type": "dialogue",
       "speakerName": "八幡海鈴",
       "speakerId": "avg_4186_tmoris_1",
+      "isRemote": false,
       "text": "一人で動く方が私の性に合っています。もし相棒を選ぶにしても、私はベースを選ぶでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "年老いた声",
       "speakerId": null,
+      "isRemote": false,
       "text": "いや、違うな。お前はフランシスたちの元に戻りたいんだろう。"
     },
     {
       "type": "dialogue",
       "speakerName": "八幡海鈴",
       "speakerId": "avg_4186_tmoris_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "八幡海鈴",
       "speakerId": "avg_4186_tmoris_1",
+      "isRemote": false,
       "text": "そうですね、以前から彼らの音楽パーティーに興味がありました。申し訳ないですが、あなたの言う大きなテーブルには着けそうにありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "年老いた声",
       "speakerId": null,
+      "isRemote": false,
       "text": "はははははっ……私がいつお前をテーブルに着かせると言った？"
     },
     {
       "type": "dialogue",
       "speakerName": "年老いた声",
       "speakerId": null,
+      "isRemote": false,
       "text": "初めから、お前はただの「チップ」に過ぎないんだよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "八幡海鈴",
       "speakerId": "avg_4186_tmoris_1",
+      "isRemote": false,
       "text": "――！"
     },
     {
       "type": "dialogue",
       "speakerName": "年老いた声",
       "speakerId": null,
+      "isRemote": false,
       "text": "自分の手元にないチップなど、何の価値もない。"
     },
     {
@@ -220,6 +255,10 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "27_g24_cloudy_sea"
+    },
+    {
       "type": "narration",
       "text": "小島はどんどん遠ざかり、今にも視界から消えようとしている。"
     },
@@ -227,54 +266,63 @@
       "type": "dialogue",
       "speakerName": "三角初華",
       "speakerId": "avg_4184_dolris_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "親切な船長",
       "speakerId": "avg_npc_1000_1",
+      "isRemote": false,
       "text": "どうしたんだ？　ずっと島のほうを眺めて。"
     },
     {
       "type": "dialogue",
       "speakerName": "三角初華",
       "speakerId": "avg_4184_dolris_1",
+      "isRemote": false,
       "text": "さっき、誰かが私を呼んでたような……"
     },
     {
       "type": "dialogue",
       "speakerName": "親切な船長",
       "speakerId": "avg_npc_1000_1",
+      "isRemote": false,
       "text": "ははっ、聞き間違いだろう。こんな海の上で、風の音、波の音と羽獣の声以外に何があるってんだ？"
     },
     {
       "type": "dialogue",
       "speakerName": "親切な船長",
       "speakerId": "avg_npc_1000_1",
+      "isRemote": false,
       "text": "しかしそんなにたくさん荷物を抱えて、大都市に出稼ぎにでも行くのかい？"
     },
     {
       "type": "dialogue",
       "speakerName": "三角初華",
       "speakerId": "avg_4184_dolris_1",
+      "isRemote": false,
       "text": "……ある人を探しに行くんです。"
     },
     {
       "type": "dialogue",
       "speakerName": "親切な船長",
       "speakerId": "avg_npc_1000_1",
+      "isRemote": false,
       "text": "そりゃ奇遇だな、さっき乗せた嬢ちゃんも同じことを……"
     },
     {
       "type": "dialogue",
       "speakerName": "三角初華",
       "speakerId": "avg_4184_dolris_1",
+      "isRemote": false,
       "text": "今、何て言いました……？"
     },
     {
       "type": "dialogue",
       "speakerName": "親切な船長",
       "speakerId": "avg_npc_1000_1",
+      "isRemote": false,
       "text": "（大声）波が急に荒れてきやがった！"
     },
     {
@@ -285,6 +333,7 @@
       "type": "dialogue",
       "speakerName": "親切な船長",
       "speakerId": "avg_npc_1000_1",
+      "isRemote": false,
       "text": "危な――手すり――掴まれ！！"
     },
     {
@@ -298,15 +347,21 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "65_g9_warmrabbitnest"
+    },
+    {
       "type": "dialogue",
       "speakerName": "若葉睦",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "違う……違う！"
     },
     {
       "type": "dialogue",
       "speakerName": "若葉睦",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "違う……私のギター、こんな音じゃない……"
     },
     {
@@ -320,54 +375,63 @@
       "type": "dialogue",
       "speakerName": "睦の父",
       "speakerId": null,
+      "isRemote": false,
       "text": "（小声）睦、もう遅いから寝たらどうだ？"
     },
     {
       "type": "dialogue",
       "speakerName": "睦の父",
       "speakerId": null,
+      "isRemote": false,
       "text": "（小声）それと、ドアを開けてくれないか……"
     },
     {
       "type": "dialogue",
       "speakerName": "睦の母",
       "speakerId": null,
+      "isRemote": false,
       "text": "（小声）ほら睦ちゃん、いつもみたいに、寝る前のお話を聞かせてあげる。"
     },
     {
       "type": "dialogue",
       "speakerName": "若葉睦",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "……いらない。"
     },
     {
       "type": "dialogue",
       "speakerName": "若葉睦",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "開けてほしかったら、教えて。祥はどこに行ったの？"
     },
     {
       "type": "dialogue",
       "speakerName": "睦の母",
       "speakerId": null,
+      "isRemote": false,
       "text": "さあ、どこなのかしらね……"
     },
     {
       "type": "dialogue",
       "speakerName": "睦の母",
       "speakerId": null,
+      "isRemote": false,
       "text": "もしかしたら、祥子ちゃんもどこかに自分の幸せを探しに行ったのかもしれないわよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "若葉睦",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "……嘘つき。"
     },
     {
       "type": "dialogue",
       "speakerName": "若葉睦",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "祥は、そんなことしない。"
     },
     {
@@ -381,6 +445,7 @@
       "type": "dialogue",
       "speakerName": "若葉睦",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "そんな簡単に考えを変えたりしない。祥は、私をAve{@nbs}Mujicaに連れ戻そうとしてて――"
     },
     {
@@ -390,6 +455,7 @@
       "type": "dialogue",
       "speakerName": "睦の母",
       "speakerId": "avg_npc_1939_1",
+      "isRemote": false,
       "text": "じゃあ、睦ちゃんも簡単に変わっちゃダメよ。"
     },
     {
@@ -400,12 +466,14 @@
       "type": "dialogue",
       "speakerName": "若葉睦",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "――！"
     },
     {
       "type": "dialogue",
       "speakerName": "睦の母",
       "speakerId": "avg_npc_1939_1",
+      "isRemote": false,
       "text": "これはあなただけの夢じゃなくて、私たちみんなの夢なんだから。"
     },
     {
@@ -415,24 +483,28 @@
       "type": "dialogue",
       "speakerName": "「睦」たち",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "私たち、みんな「睦」でしょ？"
     },
     {
       "type": "dialogue",
       "speakerName": "「睦」たち",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "これは私たちみんなの夢。みんながちゃんと存在できる、幸せな夢なんだよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "「睦」たち",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "睦ちゃんに祥子ちゃんはいらない。私たちがいればそれでいいの。"
     },
     {
       "type": "dialogue",
       "speakerName": "若葉睦",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "嫌……"
     },
     {
@@ -442,6 +514,7 @@
       "type": "dialogue",
       "speakerName": "「睦」たち",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "私たち、ずっと……ずっと一緒にいようね。"
     },
     {
@@ -451,15 +524,21 @@
       "type": "dialogue",
       "speakerName": "若葉睦",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "嫌――！"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "34_g1_victoriavillage"
+    },
+    {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "約束の時間まで、あと十分しか……"
     },
     {
@@ -469,30 +548,35 @@
       "type": "dialogue",
       "speakerName": "子供たち",
       "speakerId": null,
+      "isRemote": false,
       "text": "アイリスお姉ちゃん、ベナお姉ちゃん、さようなら――"
     },
     {
       "type": "dialogue",
       "speakerName": "ベナ",
       "speakerId": "avg_369_bena_1",
+      "isRemote": false,
       "text": "じゃあね、バイバイ！"
     },
     {
       "type": "dialogue",
       "speakerName": "ベナ",
       "speakerId": "avg_369_bena_1",
+      "isRemote": false,
       "text": "約束守って、ちゃんといい子にしてるのよ！"
     },
     {
       "type": "dialogue",
       "speakerName": "子供たち",
       "speakerId": null,
+      "isRemote": false,
       "text": "はーい！"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィグナ",
       "speakerId": "avg_290_vigna_1",
+      "isRemote": false,
       "text": "アイリス、ベナ、もう行ける？　準備できたら――"
     },
     {
@@ -502,48 +586,56 @@
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "お待ちになって！"
     },
     {
       "type": "dialogue",
       "speakerName": "アイリス",
       "speakerId": "avg_338_iris_1",
+      "isRemote": false,
       "text": "祥子さん……？"
     },
     {
       "type": "dialogue",
       "speakerName": "アイリス",
       "speakerId": "avg_338_iris_1",
+      "isRemote": false,
       "text": "てっきり来ないものだと思っていましたわ……"
     },
     {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "はぁ……はぁ……はぁ……"
     },
     {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "アイリスさん……ネックレス……"
     },
     {
       "type": "dialogue",
       "speakerName": "アイリス",
       "speakerId": "avg_338_iris_1",
+      "isRemote": false,
       "text": "ネ、ネックレス？"
     },
     {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "左ポケットの小さな箱に入っている――悪夢を防ぐネックレスですわ！"
     },
     {
       "type": "dialogue",
       "speakerName": "アイリス",
       "speakerId": "avg_338_iris_1",
+      "isRemote": false,
       "text": "祥子さん、何をおっしゃっているの？　私はそんなもの……"
     },
     {
@@ -557,10 +649,15 @@
       "type": "dialogue",
       "speakerName": "アイリス",
       "speakerId": "avg_338_iris_1",
+      "isRemote": false,
       "text": "祥子さん……あなたは、未来を知っていますの？"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "65_g2_dreamcastlehall"
     },
     {
       "type": "narration",
@@ -570,48 +667,56 @@
       "type": "dialogue",
       "speakerName": "母",
       "speakerId": null,
+      "isRemote": false,
       "text": "我が子よ！　我が愛しの子よ！"
     },
     {
       "type": "dialogue",
       "speakerName": "母",
       "speakerId": null,
+      "isRemote": false,
       "text": "早く！　早くこの子を助けてあげて！"
     },
     {
       "type": "dialogue",
       "speakerName": "監督",
       "speakerId": null,
+      "isRemote": false,
       "text": "どうした？　怪我でもしたのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "女主人公",
       "speakerId": null,
+      "isRemote": false,
       "text": "可哀想に、本当に死んでしまったのね！　何て恐ろしいのかしら！"
     },
     {
       "type": "dialogue",
       "speakerName": "男主人公",
       "speakerId": null,
+      "isRemote": false,
       "text": "嘘だ、死んでなどいない！　そんなこと信じるものか！"
     },
     {
       "type": "dialogue",
       "speakerName": "他の役者たち",
       "speakerId": null,
+      "isRemote": false,
       "text": "（騒がしい鳴き声）"
     },
     {
       "type": "dialogue",
       "speakerName": "他の役者たち",
       "speakerId": null,
+      "isRemote": false,
       "text": "（興奮した鳴き声）"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": null,
+      "isRemote": false,
       "text": "カット――"
     },
     {
@@ -621,36 +726,42 @@
       "type": "dialogue",
       "speakerName": "モーフィアス",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "……ウォルフ、あんたの演技、ひどすぎ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウォルフ",
       "speakerId": "avg_npc_1938_1",
+      "isRemote": false,
       "text": "ごめんなさい。演技は得意じゃなくて。"
     },
     {
       "type": "dialogue",
       "speakerName": "カールトンたち",
       "speakerId": "avg_npc_1937_1",
+      "isRemote": false,
       "text": "（楽しそうな笑い声）"
     },
     {
       "type": "dialogue",
       "speakerName": "モーフィアス",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "カールトン、自分たちは上手くできてるとでも思ってんの！？"
     },
     {
       "type": "dialogue",
       "speakerName": "カールトンたち",
       "speakerId": "avg_npc_1937_1",
+      "isRemote": false,
       "text": "（慌てふためくような鳴き声）"
     },
     {
       "type": "dialogue",
       "speakerName": "モーフィアス",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "ダメね、役者がもう一人足りないわ……"
     },
     {
@@ -664,126 +775,154 @@
       "type": "dialogue",
       "speakerName": "カールトンたち",
       "speakerId": "avg_npc_1937_1",
+      "isRemote": false,
       "text": "（落胆した鳴き声）"
     },
     {
       "type": "dialogue",
       "speakerName": "ウォルフ",
       "speakerId": "avg_npc_1938_1",
+      "isRemote": false,
       "text": "この劇はシラクーザの劇作家が書いたもので、上演されたばかりの頃は、結構な物議を醸したとか。"
     },
     {
       "type": "dialogue",
       "speakerName": "モーフィアス",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "何が嘘で何が本当かなんて、わざわざ突きとめて何の意味があるのかしら？"
     },
     {
       "type": "dialogue",
       "speakerName": "モーフィアス",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "人間は、物事を徹底的に知りたがりすぎるわね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウォルフ",
       "speakerId": "avg_npc_1938_1",
+      "isRemote": false,
       "text": "でもそれが、人間が「人間」である所以なのかも。"
     },
     {
       "type": "dialogue",
       "speakerName": "モーフィアス",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "ウォルフ",
       "speakerId": "avg_npc_1938_1",
+      "isRemote": false,
       "text": "ごめんなさい、また余計なことを言って。"
     },
     {
       "type": "dialogue",
       "speakerName": "モーフィアス",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "いいのよ……てかウォルフ、あんた綺麗に話せてるじゃない。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウォルフ",
       "speakerId": "avg_npc_1938_1",
+      "isRemote": false,
       "text": "最近、劇の稽古が多かったからかな……もしくは、色々な出来事を目にして、少し考えさせられたからかもしれない。"
     },
     {
       "type": "dialogue",
       "speakerName": "モーフィアス",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "編み出された創造物にも「心」があるってわけ？"
     },
     {
       "type": "dialogue",
       "speakerName": "ウォルフ",
       "speakerId": "avg_npc_1938_1",
+      "isRemote": false,
       "text": "本で読んだ。ブリキの人形にも心があるって。だったら僕にもあったっていいよね。"
     },
     {
       "type": "dialogue",
       "speakerName": "モーフィアス",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "チッ。本なんてあんなに読ませるんじゃなかったわ……ずっと口ごもってればよかったのに。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "65_g2_dreamcastlehall"
+    },
+    {
       "type": "dialogue",
       "speakerName": "アイリス",
       "speakerId": "avg_338_iris_1",
+      "isRemote": false,
       "text": "あの子が「心」を失くしましたの！？"
     },
     {
       "type": "dialogue",
       "speakerName": "ベナ",
       "speakerId": "avg_369_bena_1",
+      "isRemote": false,
       "text": "また縫い合わせることはできるけど、心を失ってしまった以上、あの子はもう二度とここから出られないわ……"
     },
     {
       "type": "dialogue",
       "speakerName": "ベナ",
       "speakerId": "avg_369_bena_1",
+      "isRemote": false,
       "text": "あんたが決めるのよ……モーフィアスの運命を。"
     },
     {
       "type": "dialogue",
       "speakerName": "モーフィアス",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "（アイリスお姉ちゃん……ベナお姉ちゃん……）"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "65_g2_dreamcastlehall"
+    },
+    {
       "type": "dialogue",
       "speakerName": "モーフィアス",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "モーフィアス",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "あんた、やっぱり黙ってる方がずっと似合ってるわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "モーフィアス",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "皆が私みたいになれば、それでいいのに……"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": null,
+      "isRemote": false,
       "text": "モーフィアス、茶番はここまでにしましょう。"
     },
     {
@@ -797,48 +936,56 @@
       "type": "dialogue",
       "speakerName": "モーフィアス",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "ど、どういうこと！？"
     },
     {
       "type": "dialogue",
       "speakerName": "モーフィアス",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "あり得ない……あり得ないわ！　どうしてあんたが――"
     },
     {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "言ったはずですわ。皆さんの目を覚ますまで、逃げはしないと。"
     },
     {
       "type": "dialogue",
       "speakerName": "モーフィアス",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "選択肢を二つあげる――"
     },
     {
       "type": "dialogue",
       "speakerName": "モーフィアス",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "今すぐ私の前から消えるか……"
     },
     {
       "type": "dialogue",
       "speakerName": "モーフィアス",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "幾重にも重なる私の夢に飲まれて、「夢なき境界」を彷徨うか。"
     },
     {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "いいえ、どちらもお断りです。"
     },
     {
       "type": "dialogue",
       "speakerName": "モーフィアス",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "私に逆らうつもり！？"
     },
     {
@@ -852,6 +999,7 @@
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "（やっぱり、入ってますわね。）"
     },
     {
@@ -865,42 +1013,49 @@
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "わたくしたちの勝負は、まだ終わっていません。"
     },
     {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "あの子たちの夢の中で、皆さんが心に秘めていた思いを見てきました。"
     },
     {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "皆さんの願いはすべて叶ったはずなのに、それでもまだ彼女たちは心の底から幸せになれていない……"
     },
     {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "決して取り繕ってなどいません。ただ迷っているだけなのです。"
     },
     {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "皆さんをバンドに引き込んだ人間として、わたくしは皆さんの人生に責任を負うと約束しましたわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "その言葉を口にした時から、わたくしたちの運命は切り離せないものとなったと自覚しております。"
     },
     {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "わたくしの役目は、迷える人形たちに道を指し示すこと。皆さんのことも、必ず夢から連れ出してみせますわ。"
     },
     {
@@ -914,30 +1069,35 @@
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "モーフィアス……あなたもその一人です。"
     },
     {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "月明かりが降り注ぐ時、人形は仮初めの命を宿す。"
     },
     {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "目覚めなさい――"
     },
     {
       "type": "dialogue",
       "speakerName": "モーフィアス",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "そいつを止めなさい！"
     },
     {
       "type": "dialogue",
       "speakerName": "カールトンたち",
       "speakerId": "avg_npc_1937_1",
+      "isRemote": false,
       "text": "（恐ろしい雄たけび）"
     },
     {
@@ -947,12 +1107,14 @@
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "ここがわたくしたちの夢。でしたら、夢の主はわたくしたち自身ですわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "ですから、わたくしたちが思い描く通りの姿になれますのよ！"
     },
     {
@@ -973,9 +1135,14 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "65_g1_rainystreet"
+    },
+    {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "Ave{@nbs}Mujicaの皆さんは、今日まで努力を重ねてきたのです。わたくしだけ怠けているわけにはいきませんわ。"
     },
     {
@@ -985,18 +1152,21 @@
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "どのような困難に直面しようと、わたくしたち五人はまた集まり、Ave{@nbs}Mujicaのマスカレードをやり遂げましたわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "今こそ、わたくしは曲を書きたい――"
     },
     {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "わたくしたちの試練、そして未来についての曲を。"
     },
     {
@@ -1006,27 +1176,35 @@
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "わたくしたちは一つのバンド――そう、運命共同体です。"
     },
     {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "これが、わたくしの答えですわ。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "65_g9_warmrabbitnest"
+    },
+    {
       "type": "dialogue",
       "speakerName": "「睦」たち",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "睦ちゃん、ギターを置いて。"
     },
     {
       "type": "dialogue",
       "speakerName": "「睦」たち",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "睦ちゃんはみんなのお姫様。何があってもそばにいてあげる。"
     },
     {
@@ -1036,36 +1214,42 @@
       "type": "dialogue",
       "speakerName": "「睦」たち",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "――睦ちゃんの耳を塞いで！"
     },
     {
       "type": "dialogue",
       "speakerName": "若葉睦",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "（ギターを抱きしめる）"
     },
     {
       "type": "dialogue",
       "speakerName": "若葉睦",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "あなたたちは私じゃない……"
     },
     {
       "type": "dialogue",
       "speakerName": "若葉睦",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "会いたいよ、祥……"
     },
     {
       "type": "dialogue",
       "speakerName": "若葉睦",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "だれか、助けて……"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": null,
+      "isRemote": false,
       "text": "ふふ、しょうがないなぁ。"
     },
     {
@@ -1076,10 +1260,15 @@
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": null,
+      "isRemote": false,
       "text": "睦ちゃんのどうしてもってお願いなら、聞いてあげる。"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "33_g7_reception"
     },
     {
       "type": "narration",
@@ -1089,6 +1278,7 @@
       "type": "dialogue",
       "speakerName": "年老いた声",
       "speakerId": null,
+      "isRemote": false,
       "text": "海鈴、もう終わりにしよう……"
     },
     {
@@ -1098,12 +1288,14 @@
       "type": "dialogue",
       "speakerName": "年老いた声",
       "speakerId": null,
+      "isRemote": false,
       "text": "何だ？　この曲は……"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": null,
+      "isRemote": false,
       "text": "うおおおおぉぉ――！！"
     },
     {
@@ -1113,102 +1305,119 @@
       "type": "dialogue",
       "speakerName": "フランシス",
       "speakerId": "avg_npc_698_1",
+      "isRemote": false,
       "text": "海鈴――！"
     },
     {
       "type": "dialogue",
       "speakerName": "八幡海鈴",
       "speakerId": "avg_4186_tmoris_1",
+      "isRemote": false,
       "text": "フランシスさん、なぜ空から！？"
     },
     {
       "type": "dialogue",
       "speakerName": "フランシス",
       "speakerId": "avg_npc_698_1",
+      "isRemote": false,
       "text": "祥子って子が全部話してくれたんだ――俺たちは皆、お前の夢の中で作られた存在だってな。"
     },
     {
       "type": "dialogue",
       "speakerName": "八幡海鈴",
       "speakerId": "avg_4186_tmoris_1",
+      "isRemote": false,
       "text": "なぜそんなバカげた話を信じるんです……"
     },
     {
       "type": "dialogue",
       "speakerName": "フランシス",
       "speakerId": "avg_npc_698_1",
+      "isRemote": false,
       "text": "いいや、もっともな話だと思わねぇか？"
     },
     {
       "type": "dialogue",
       "speakerName": "フランシス",
       "speakerId": "avg_npc_698_1",
+      "isRemote": false,
       "text": "お前が作った人間だからこそ、俺たちは最初からお前のことを信用しきってたってことさ！"
     },
     {
       "type": "dialogue",
       "speakerName": "フランシス",
       "speakerId": "avg_npc_698_1",
+      "isRemote": false,
       "text": "そう聞いてから、すっかり気持ちが楽になったんだ。海鈴、今の俺は何だってできる気がするぜ！"
     },
     {
       "type": "dialogue",
       "speakerName": "八幡海鈴",
       "speakerId": "avg_4186_tmoris_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "フランシス",
       "speakerId": "avg_npc_698_1",
+      "isRemote": false,
       "text": "時間がねぇんだろ。急いでこの悪夢から抜け出そうぜ！"
     },
     {
       "type": "dialogue",
       "speakerName": "八幡海鈴",
       "speakerId": "avg_4186_tmoris_1",
+      "isRemote": false,
       "text": "しかし、どうすれば……"
     },
     {
       "type": "dialogue",
       "speakerName": "フランシス",
       "speakerId": "avg_npc_698_1",
+      "isRemote": false,
       "text": "お前の夢なんだから、自分で分かるはずだろ！"
     },
     {
       "type": "dialogue",
       "speakerName": "八幡海鈴",
       "speakerId": "avg_4186_tmoris_1",
+      "isRemote": false,
       "text": "ですが私がいなくなったら、あなたたちは……"
     },
     {
       "type": "dialogue",
       "speakerName": "フランシス",
       "speakerId": "avg_npc_698_1",
+      "isRemote": false,
       "text": "いつからそんなウジウジするようになりやがった？"
     },
     {
       "type": "dialogue",
       "speakerName": "フランシス",
       "speakerId": "avg_npc_698_1",
+      "isRemote": false,
       "text": "安心しろ。仲間で音楽パーティーをした日にゃ、お前がいねぇのを皆で寂しがってやるよ！"
     },
     {
       "type": "dialogue",
       "speakerName": "八幡海鈴",
       "speakerId": "avg_4186_tmoris_1",
+      "isRemote": false,
       "text": "……はい！"
     },
     {
       "type": "dialogue",
       "speakerName": "フランシス",
       "speakerId": "avg_npc_698_1",
+      "isRemote": false,
       "text": "さっさと行け！"
     },
     {
       "type": "dialogue",
       "speakerName": "年老いた声",
       "speakerId": null,
+      "isRemote": false,
       "text": "そいつを逃がすな――！"
     },
     {
@@ -1219,13 +1428,22 @@
       "type": "dialogue",
       "speakerName": "八幡海鈴",
       "speakerId": "avg_4186_tmoris_1",
+      "isRemote": false,
       "text": "では――行ってきます！"
     },
     {
       "type": "dialogue",
       "speakerName": "フランシス&仲間たち",
       "speakerId": null,
+      "isRemote": false,
       "text": "海鈴の姉貴、達者でな！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_deluxeroom"
     },
     {
       "type": "sceneBreak"
@@ -1234,6 +1452,7 @@
       "type": "dialogue",
       "speakerName": "マネージャー",
       "speakerId": "avg_npc_1260_1",
+      "isRemote": false,
       "text": "にゃむさん……！"
     },
     {
@@ -1247,118 +1466,148 @@
       "type": "dialogue",
       "speakerName": "マネージャー",
       "speakerId": "avg_npc_1260_1",
+      "isRemote": false,
       "text": "すぐに警備会社に連絡を！"
     },
     {
       "type": "dialogue",
       "speakerName": "慌てる警備員",
       "speakerId": "avg_npc_020",
+      "isRemote": false,
       "text": "にゃ、にゃむさんがライブ配信を始めました！"
     },
     {
       "type": "dialogue",
       "speakerName": "マネージャー",
       "speakerId": "avg_npc_1260_1",
+      "isRemote": false,
       "text": "えっ……！？"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_lungmen_m"
+    },
+    {
       "type": "dialogue",
       "speakerName": "祐天寺にゃむ",
       "speakerId": "avg_4185_amoris_1",
+      "isRemote": false,
       "text": "こんにちにゃむにゃむ～！　にゃむちで〜っす！"
     },
     {
       "type": "dialogue",
       "speakerName": "祐天寺にゃむ",
       "speakerId": "avg_4185_amoris_1",
+      "isRemote": false,
       "text": "にゃむちはなんと！　いま、龍門の上空を飛んじゃってま〜す！　あははっ、すっごい量のパトカーが追いかけてきてる〜！"
     },
     {
       "type": "dialogue",
       "speakerName": "祐天寺にゃむ",
       "speakerId": "avg_4185_amoris_1",
+      "isRemote": false,
       "text": "は〜楽しい！　こ〜んなにゃむちの姿、みんな一生忘れられないよね？"
     },
     {
       "type": "dialogue",
       "speakerName": "祐天寺にゃむ",
       "speakerId": "avg_4185_amoris_1",
+      "isRemote": false,
       "text": "もしこれがみんなの記憶に残るんだったら、もう一つ覚えててほしいな――"
     },
     {
       "type": "dialogue",
       "speakerName": "祐天寺にゃむ",
       "speakerId": "avg_4185_amoris_1",
+      "isRemote": false,
       "text": "にゃむちはAve{@nbs}Mujicaのドラマー――アモーリスでもあるってこと！"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "51_g12_seabed"
+    },
+    {
       "type": "dialogue",
       "speakerName": "三角初華",
       "speakerId": "avg_4184_dolris_1",
+      "isRemote": false,
       "text": "（記憶が……少しずつ消えていく……）"
     },
     {
       "type": "dialogue",
       "speakerName": "三角初華",
       "speakerId": "avg_4184_dolris_1",
+      "isRemote": false,
       "text": "（今まで残ってたあの子の記憶も、だんだん薄れていってる……）"
     },
     {
       "type": "dialogue",
       "speakerName": "三角初華",
       "speakerId": "avg_4184_dolris_1",
+      "isRemote": false,
       "text": "（あの歌……あの歌……）"
     },
     {
       "type": "dialogue",
       "speakerName": "三角初華",
       "speakerId": "avg_4184_dolris_1",
+      "isRemote": false,
       "text": "（大切な歌……）"
     },
     {
       "type": "dialogue",
       "speakerName": "三角初華",
       "speakerId": "avg_4184_dolris_1",
+      "isRemote": false,
       "text": "（i say, you're mine... you're mine...）"
     },
     {
       "type": "dialogue",
       "speakerName": "三角初華",
       "speakerId": "avg_4184_dolris_1",
+      "isRemote": false,
       "text": "（ほら　すぐそこにいるのに）"
     },
     {
       "type": "dialogue",
       "speakerName": "三角初華",
       "speakerId": "avg_4184_dolris_1",
+      "isRemote": false,
       "text": "（光……）"
     },
     {
       "type": "dialogue",
       "speakerName": "三角初華",
       "speakerId": "avg_4184_dolris_1",
+      "isRemote": false,
       "text": "（まるで光みたい……）"
     },
     {
       "type": "dialogue",
       "speakerName": "三角初華",
       "speakerId": "avg_4184_dolris_1",
+      "isRemote": false,
       "text": "（みんなを惹きつけて、温もりをくれて、輝かせてくれる……）"
     },
     {
       "type": "dialogue",
       "speakerName": "三角初華",
       "speakerId": "avg_4184_dolris_1",
+      "isRemote": false,
       "text": "（それが……さきちゃんなんだね。）"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "65_g2_dreamcastlehall"
     },
     {
       "type": "narration",
@@ -1368,30 +1617,35 @@
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "……ごめんなさい。"
     },
     {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "わたくしは、これまで何度も皆さんを傷つけてきました。"
     },
     {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "それでも、今のわたくしは心から願っています。皆さんと――本当の皆さんと会うことを。"
     },
     {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "Ave{@nbs}Mujicaは運命共同体。皆さんの人生を預かっているのですから、わたくしも、人生をかけて皆さんをお守りします。"
     },
     {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "どうか……皆さん、お目覚めになって。"
     },
     {
@@ -1405,6 +1659,7 @@
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "もう一度始めましょう……Ave{@nbs}Mujicaの世界を。"
     },
     {

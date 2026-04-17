@@ -6,14 +6,19 @@
   "title": "マスカレードへの招待状",
   "storyCode": "SS-5",
   "avgTag": "戦闘後",
-  "sourcePath": "vendor/ArknightsGamedata/jp/gamedata/story/activities/act45side/level_act45side_05_end.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/jp/gamedata/story/activities/act45side/level_act45side_05_end.txt",
   "sourceHash": "91e5329abd209fd9768480cf189a4abb6d325e3b79e3f50e99401f99466510c5",
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "46_g6_rmbtmine"
+    },
+    {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "はぁ……はぁ……くっ……！"
     },
     {
@@ -27,6 +32,10 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_wilderness_n"
+    },
+    {
       "type": "narration",
       "text": "洞窟を抜け出した瞬間、冷気が祥子を襲った。\nその刺すような寒さに、鼓動がますます早まっていく。"
     },
@@ -34,6 +43,7 @@
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "わたくしは……どうやってあの子と向き合えばいいの？"
     },
     {
@@ -47,6 +57,7 @@
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": null,
+      "isRemote": false,
       "text": "やれやれ、どうすればいいのかしらね。"
     },
     {
@@ -63,48 +74,56 @@
       "type": "dialogue",
       "speakerName": "モーフィアス",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "あの子の夢、とっても気に入っちゃったわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "モーフィアス",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "どんな子にも素敵な夢を見せてあげるのが夢のお城の役目。だからあの子の願いも全部叶えてあげたわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "モーフィアス",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "そうしたら、意外と安定してる――ううん、それどころか、この夢は完璧よ。まさかここまで上手くいくなんて。"
     },
     {
       "type": "dialogue",
       "speakerName": "モーフィアス",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "それに今は、もっと面白いことになってるしね。"
     },
     {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "……睦を騙していますのね。"
     },
     {
       "type": "dialogue",
       "speakerName": "モーフィアス",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "騙す？　そんなことするわけないじゃない。何度も交渉して、あの子も私の正体はよく知ってるもの。"
     },
     {
       "type": "dialogue",
       "speakerName": "モーフィアス",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "最高の結果になって、とっても嬉しいわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "モーフィアス",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "夢だと理解していながら、それでもここを離れたくない。それってつまり、私の夢作りが完璧って証拠よね？"
     },
     {
@@ -114,6 +133,7 @@
       "type": "dialogue",
       "speakerName": "カールトンたち",
       "speakerId": "avg_npc_1937_1",
+      "isRemote": false,
       "text": "（賛成するような鳴き声）"
     },
     {
@@ -123,18 +143,21 @@
       "type": "dialogue",
       "speakerName": "モーフィアス",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "あら？　あんたが来るなんて……"
     },
     {
       "type": "dialogue",
       "speakerName": "モーフィアス",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "ふふっ、面白いわね。"
     },
     {
       "type": "dialogue",
       "speakerName": "モーフィアス",
       "speakerId": "avg_npc_1942_1",
+      "isRemote": false,
       "text": "私はここで失礼するわ。祥子、あんたもすぐこの夢の面白さに気付くはずよ。"
     },
     {
@@ -144,43 +167,57 @@
       "type": "dialogue",
       "speakerName": "若葉睦",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "祥子ちゃん、みんな待ってる。帰ろう？"
     },
     {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "どこへ帰ると言うんですの？"
     },
     {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "モーフィアスが消えても、少しも驚きませんのね……"
     },
     {
       "type": "dialogue",
       "speakerName": "若葉睦",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "うん。"
     },
     {
       "type": "dialogue",
       "speakerName": "若葉睦",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "ここにあるものは、全部私たちが作った「ウソ」だから。"
     },
     {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "「私たち」……？"
     },
     {
       "type": "dialogue",
       "speakerName": "若葉睦",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "あなたは……私たちのものじゃない。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "65_g9_warmrabbitnest"
     },
     {
       "type": "sceneBreak"
@@ -189,30 +226,35 @@
       "type": "dialogue",
       "speakerName": "睦の母",
       "speakerId": "avg_npc_1939_1",
+      "isRemote": false,
       "text": "睦ちゃんの演奏、本当に良かった〜！"
     },
     {
       "type": "dialogue",
       "speakerName": "若葉睦",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "祥……"
     },
     {
       "type": "dialogue",
       "speakerName": "若葉睦",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "ねぇ、ママ……祥はどこ？"
     },
     {
       "type": "dialogue",
       "speakerName": "睦の母",
       "speakerId": "avg_npc_1939_1",
+      "isRemote": false,
       "text": "さきちゃん？　あれ？　どこに行ったのかしら……"
     },
     {
       "type": "dialogue",
       "speakerName": "若葉睦",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "違う……祥は、私を置いて行ったりしない。"
     },
     {
@@ -226,12 +268,14 @@
       "type": "dialogue",
       "speakerName": "睦の母",
       "speakerId": "avg_npc_1939_1",
+      "isRemote": false,
       "text": "睦ちゃん、忘れちゃったみたいね――"
     },
     {
       "type": "dialogue",
       "speakerName": "睦の母",
       "speakerId": "avg_npc_1939_1",
+      "isRemote": false,
       "text": "ここはあなただけの夢じゃないの。"
     },
     {
@@ -241,165 +285,196 @@
       "type": "dialogue",
       "speakerName": "「睦の母」",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "ここは「私たち」の夢。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_wilderness_n"
+    },
+    {
       "type": "dialogue",
       "speakerName": "「睦」",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "「私たち」。"
     },
     {
       "type": "dialogue",
       "speakerName": "「睦」",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "この夢の中では、すべての「睦」が願いを叶えられる。"
     },
     {
       "type": "dialogue",
       "speakerName": "「睦」",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "私たちは睦ちゃんを中心に、私たちだけの美しい夢を作った。みんなが幸せになれる、そんな夢をね。"
     },
     {
       "type": "dialogue",
       "speakerName": "「睦」",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "私たちは睦ちゃんの中から、ずっとその人生を見てきた。"
     },
     {
       "type": "dialogue",
       "speakerName": "「睦」",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "それで、最後はみんなの意見が一致したんだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "「睦」",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "祥子ちゃんは、私たちの敵だって。"
     },
     {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "睦、何を言っていますの？"
     },
     {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "わたくしも、あなたにこれ以上辛い思いはさせたくありません。でも、こんな夢に逃げていてはいけないのです。"
     },
     {
       "type": "dialogue",
       "speakerName": "「睦」",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "「睦」",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "違う！　大事なのは、睦ちゃんがここでずっと幸せでいることだもん！"
     },
     {
       "type": "dialogue",
       "speakerName": "「睦」",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "だから祥子ちゃん、私の言うことを聞いて。"
     },
     {
       "type": "dialogue",
       "speakerName": "「睦」",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "ここに残って、一緒に睦ちゃんの夢を守ろうよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "「睦」",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "睦ちゃんは弱い子だから、迷ってるんだ。目を覚ましたほうがいいか、このまま幸せな夢を見続けるかって。"
     },
     {
       "type": "dialogue",
       "speakerName": "「睦」",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "今の睦ちゃんにとっては、祥子ちゃんだけが現実かどうかの基準なんだよ。だから祥子ちゃんのいる場所が「現実」になるの。"
     },
     {
       "type": "dialogue",
       "speakerName": "「睦」",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "祥子ちゃんが残ってくれたら、この夢を一生見ていられる。それってもう「現実」とほとんど変わらないでしょ？"
     },
     {
       "type": "dialogue",
       "speakerName": "「睦」",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "だから祥子ちゃん、ここに残ろう？"
     },
     {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "お断りします。"
     },
     {
       "type": "dialogue",
       "speakerName": "「睦」",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "……残ってくれないの？"
     },
     {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "現実の睦は、今もあの冷たい夢のお城で眠っていますわ。そんな結末でいいと本気で思ってますの？"
     },
     {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "本当に睦を愛しているなら、こんなことはできないはずですわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "「睦」",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "睦ちゃんが幸せでいられるなら、私たちみんなが生きていられるなら――そこが本当の現実かどうかなんて、どうだっていい！"
     },
     {
       "type": "dialogue",
       "speakerName": "「睦」",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "私は睦ちゃんの記憶を全部持ってる。だから、祥子ちゃんの本当の望みも知ってるんだよ！？"
     },
     {
       "type": "dialogue",
       "speakerName": "「睦」",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "祥子ちゃんがここに残ってくれたら、完璧なAve{@nbs}Mujicaだって実現してあげられるよ！"
     },
     {
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "やめなさい！　あなたは睦ではありません。睦はそんなことを言ったりしませんわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "「睦」",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "そんな……祥子ちゃんも、睦ちゃんも大好きなのに……"
     },
     {
       "type": "dialogue",
       "speakerName": "「睦」",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "どうして私を板挟みにするの？"
     },
     {
@@ -430,12 +505,14 @@
       "type": "dialogue",
       "speakerName": "「睦」",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "私たちは睦ちゃんにとって、いくつもある影のひとつなんだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "「睦」",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "影がずっと暗闇に隠れるためには、みんなの言う通り、ちょっとした光でも消しておかなきゃ。"
     },
     {
@@ -452,12 +529,14 @@
       "type": "dialogue",
       "speakerName": "豊川祥子",
       "speakerId": "avg_4182_oblvns_1",
+      "isRemote": false,
       "text": "……一体何を……！？"
     },
     {
       "type": "dialogue",
       "speakerName": "「睦」",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "祥子ちゃん……"
     },
     {
@@ -478,18 +557,21 @@
       "type": "dialogue",
       "speakerName": "「睦」",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "祥子ちゃん、私は睦ちゃんにずっと幸せでいてほしいし、みんなにも消えてほしくない。"
     },
     {
       "type": "dialogue",
       "speakerName": "「睦」",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "だから、こうするしかなかったんだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "「睦」",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "睦ちゃんには、もう祥子ちゃんはいらない。"
     },
     {
@@ -499,6 +581,7 @@
       "type": "dialogue",
       "speakerName": "「睦」",
       "speakerId": "avg_4183_mortis_1",
+      "isRemote": false,
       "text": "さよなら、祥子ちゃん。"
     },
     {

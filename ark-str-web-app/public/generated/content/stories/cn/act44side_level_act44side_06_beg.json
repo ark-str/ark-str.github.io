@@ -6,14 +6,23 @@
   "title": "漩涡",
   "storyCode": "AT-6",
   "avgTag": "行动前",
-  "sourcePath": "vendor/ArknightsGamedata/cn/gamedata/story/activities/act44side/level_act44side_06_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/cn/gamedata/story/activities/act44side/level_act44side_06_beg.txt",
   "sourceHash": "a607fc93a87426de142244159a8db8d4ec81ccd3e067f680f0e6699efc39d0c7",
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
+      "type": "background",
+      "backgroundId": "64_g4_kajistreet_dusk"
+    },
+    {
       "type": "dialogue",
       "speakerName": "疲惫的警察",
       "speakerId": "avg_npc_1914_1",
+      "isRemote": false,
       "text": "......"
     },
     {
@@ -23,60 +32,70 @@
       "type": "dialogue",
       "speakerName": "泄气的警察",
       "speakerId": "avg_npc_1915_1",
+      "isRemote": false,
       "text": "别傻站着，这帮亡命徒还没嫌疑人有分寸！"
     },
     {
       "type": "dialogue",
       "speakerName": "疲惫的警察",
       "speakerId": "avg_npc_1914_1",
+      "isRemote": false,
       "text": "......我累了。"
     },
     {
       "type": "dialogue",
       "speakerName": "泄气的警察",
       "speakerId": "avg_npc_1915_1",
+      "isRemote": false,
       "text": "谁不累？"
     },
     {
       "type": "dialogue",
       "speakerName": "疲惫的警察",
       "speakerId": "avg_npc_1914_1",
+      "isRemote": false,
       "text": "我是说，我真的累了。"
     },
     {
       "type": "dialogue",
       "speakerName": "疲惫的警察",
       "speakerId": "avg_npc_1914_1",
+      "isRemote": false,
       "text": "跟一帮社会渣滓一起，一群人抓一个人，还*东国粗口*抓不到。"
     },
     {
       "type": "dialogue",
       "speakerName": "疲惫的警察",
       "speakerId": "avg_npc_1914_1",
+      "isRemote": false,
       "text": "她连我们的一根头发都不愿意碰，倒在她那刀鞘下的才是真正的渣滓，每个人屁股上都不缺案底。"
     },
     {
       "type": "dialogue",
       "speakerName": "疲惫的警察",
       "speakerId": "avg_npc_1914_1",
+      "isRemote": false,
       "text": "她把他们一个个打趴下，我们却和社会渣滓一起对付她......"
     },
     {
       "type": "dialogue",
       "speakerName": "疲惫的警察",
       "speakerId": "avg_npc_1914_1",
+      "isRemote": false,
       "text": "可恶......该死！"
     },
     {
       "type": "dialogue",
       "speakerName": "疲惫的警察",
       "speakerId": "avg_npc_1914_1",
+      "isRemote": false,
       "text": "惟任那家伙只知道一句“会好的”，我从入职到现在已经干了快十年，肩上的章也快换了，真的好了吗？好个——"
     },
     {
       "type": "dialogue",
       "speakerName": "张狂的忍者",
       "speakerId": "avg_npc_1915_1",
+      "isRemote": false,
       "text": "条子，躲开！"
     },
     {
@@ -86,18 +105,21 @@
       "type": "dialogue",
       "speakerName": "泄气的警察",
       "speakerId": "avg_npc_1915_1",
+      "isRemote": false,
       "text": "将吾！"
     },
     {
       "type": "dialogue",
       "speakerName": "泄气的警察",
       "speakerId": "avg_npc_1915_1",
+      "isRemote": false,
       "text": "混蛋，你敢袭警？！"
     },
     {
       "type": "dialogue",
       "speakerName": "张狂的忍者",
       "speakerId": "avg_npc_1916_1",
+      "isRemote": false,
       "text": "我刚刚叫你们躲了——"
     },
     {
@@ -107,6 +129,7 @@
       "type": "dialogue",
       "speakerName": "泄气的警察",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "你——"
     },
     {
@@ -117,12 +140,14 @@
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "警官，让条路好吗？"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "不然，我身上的罪名可能会多一条袭警。也许是杀人。我现在不是特别在乎。"
     },
     {
@@ -133,33 +158,42 @@
       "type": "dialogue",
       "speakerName": "泄气的警察",
       "speakerId": "avg_npc_1915_1",
+      "isRemote": false,
       "text": "多谢你替将吾出了口气。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "64_g1_jindastreet_d"
+    },
+    {
       "type": "dialogue",
       "speakerName": "重复播放的广播",
       "speakerId": null,
+      "isRemote": false,
       "text": "铃、铃、铃，林贡斯，林贡斯百货♪"
     },
     {
       "type": "dialogue",
       "speakerName": "重复播放的广播",
       "speakerId": null,
+      "isRemote": false,
       "text": "古今东西，无所不包，林贡斯百货♪"
     },
     {
       "type": "dialogue",
       "speakerName": "拉客的店员",
       "speakerId": "avg_npc_1908_1",
+      "isRemote": false,
       "text": "时候还早，进来喝一杯吧！像您这样豪爽的鬼族，最适合本店新进的精酿黑啤——"
     },
     {
       "type": "dialogue",
       "speakerName": "拉客的店员",
       "speakerId": "avg_npc_1908_1",
+      "isRemote": false,
       "text": "如果您是古典派，我们也有珍藏的芋烧酒......"
     },
     {
@@ -169,18 +203,21 @@
       "type": "dialogue",
       "speakerName": "打扮入时的男人",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "女士，请收好。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "滚开。"
     },
     {
       "type": "dialogue",
       "speakerName": "打扮入时的男人",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "何必这么急躁呢？难道您也在寻找这片大地唯一珍贵之物——“幸福”的敲门砖——"
     },
     {
@@ -190,36 +227,42 @@
       "type": "dialogue",
       "speakerName": "打扮入时的男人",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "等等，您是“金石会的青鬼”？"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "打扮入时的男人",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "我能问下萌萌香小姐去哪里了吗？"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "你是她的粉丝？还是想带着她去找三船领赏？"
     },
     {
       "type": "dialogue",
       "speakerName": "打扮入时的男人",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "都不是，我是想请您帮个忙。"
     },
     {
       "type": "dialogue",
       "speakerName": "打扮入时的男人",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "能不能请您也让我像这几天的萌萌香小姐一样失踪一次？这样，我是不是也能像她一样彻彻底底火一把？"
     },
     {
@@ -229,18 +272,21 @@
       "type": "dialogue",
       "speakerName": "凑热闹的路人",
       "speakerId": "avg_npc_1909_1",
+      "isRemote": false,
       "text": "是“青鬼”！"
     },
     {
       "type": "dialogue",
       "speakerName": "凑热闹的路人",
       "speakerId": "avg_npc_1909_1",
+      "isRemote": false,
       "text": "“青鬼”小姐，咱们能合个影吗？"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "让开。"
     },
     {
@@ -250,6 +296,7 @@
       "type": "dialogue",
       "speakerName": "凑热闹的路人",
       "speakerId": "avg_npc_1909_1",
+      "isRemote": false,
       "text": "欸，“青鬼”小姐，等等——"
     },
     {
@@ -259,24 +306,28 @@
       "type": "dialogue",
       "speakerName": "拉客的店员",
       "speakerId": "avg_npc_1908_1",
+      "isRemote": false,
       "text": "那个，“青鬼”小姐，本店只是个卖酒的......"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "“燃岛黑”，打包带走。"
     },
     {
       "type": "dialogue",
       "speakerName": "拉客的店员",
       "speakerId": "avg_npc_1908_1",
+      "isRemote": false,
       "text": "不好意思，“燃岛黑”停产好几年了，同一家厂子的新产品可以吗？也是最高档的产品线，包您满意——"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "随便。"
     },
     {
@@ -290,15 +341,21 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "64_g3_jindaalley"
+    },
+    {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "没人跟过来。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "就这里吧。"
     },
     {
@@ -315,6 +372,7 @@
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "铁斋叔，这杯是你的。"
     },
     {
@@ -324,48 +382,56 @@
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "嘶......卖这么贵，度数又这么高的酒，也这么单薄吗？"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "铁斋叔，我这次回御机和人喝酒，一次是在老宅祭奠父亲，一次就是现在。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "那些追着怪谈跑的人一定觉得合适极了，“青鬼”就该跟死人一起喝酒。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "怪谈......哈，怪谈。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "我在东国的故事，在我不明真相，却认定了对错，一脚踏出去之后，就已经结束了。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "那真的是最蠢的事情。哪怕我活了下来，后来老陈也面临差不多的抉择，而她也活了下来，我仍然这么觉得。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "......说起陈晖洁，铁斋叔，你该和她认识认识的。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "她当得起侠这个字。炎国也好，东国也罢，只要“侠”这个字还这么写，一人挟剑，立于万军之前，那就是侠。"
     },
     {
@@ -375,18 +441,21 @@
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "这杯是敬她的。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "但我和她，不一样。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "她胆子很大，不像我——"
     },
     {
@@ -396,60 +465,70 @@
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "哈哈，别说是你，这话我自己听着都觉得别扭。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "但怕......就是怕。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "把自己的生死置之度外，于我而言没什么难的，可其他人呢？我要保护的人呢？我的......"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "......家呢？"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "说实话，事到如今，我该立刻启程回龙门。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "龙门近卫局的人在东国背了命案，此事非同小可。Missy自然不用说了，林先生，文月夫人，甚至魏先生，怕不是都要为我劳神。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "他们不会弃我于不顾。我明白他们是什么样的人，他们也明白我。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "可这件事终究是我捅出来的。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "我那个好不容易找到的家，又要被我捅的娄子狠狠插上一刀吗？"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "那我又有什么面目，继续把那个地方称为“家”？"
     },
     {
@@ -459,36 +538,42 @@
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "或者，让这把刀出鞘，彻底沦为一个鬼。杀人鬼。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "杀了金兵卫，杀了敢跟着他向我拔刀的混混，杀了敢拦我的警察......"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "最终成为雨夜游荡在御机街头的灾祸，成为彻彻底底的怪物，成为真正的怪谈。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "解恨，痛快，顺应潮流，拥抱时势，去当狂欢中最耀眼的疯子，然后正中他的......"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "不，御机所有人的下怀。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "......无路可走。走什么路，做什么事，全都是错。"
     },
     {
@@ -498,18 +583,21 @@
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "酒......这就快喝干了？"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "星熊小姐海量。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "谁？！"
     },
     {
@@ -519,48 +607,56 @@
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "......你的手下呢？"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "就我一个人。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "铁斋叔的尸身在哪里？"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "警察已经保护起来了。刀伤致死，而且不是你这把刀。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "那你的人还来抓我？"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "上司的任务。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "你也是来抓我的？"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "不，我来找你喝酒。"
     },
     {
@@ -571,54 +667,63 @@
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "......啧，好烈的酒。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "打算晓之以理，动之以情，让我乖乖跟着你进局子，好完成上司给你的任务？"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "......然后把你弄出御机，让你老老实实回龙门。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "这时候不听你上司的了？"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "你以为我为什么在你刚进御机的时候就派人逮你？"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "二十年前在龙门犯下要案的黑道高层重返龙门，换成我，我也会去逮住他好好问个清楚的。"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "仅此而已？"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "不然还能因为什么？"
     },
     {
@@ -632,150 +737,175 @@
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "真亏你忘得了啊。"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "当年死在你们金石会手里的那个议员候选人，他也姓惟任。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "这拳是替我叔叔打的。"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "如果不是你为了黑道的*东国粗口*侠义把罪名强行担在自己身上，他的事也不会沉寂这么多年。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "......抱歉。"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "道歉早就没用了。我现在拿三船无计可施。"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "那家伙早就傍上了一位炙手可热的议员。不然你以为，光凭一个黑道的身份，他就敢在警察局呼来喝去？"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "把你放走，让他不能称心如意，我能做到的事——警察能做到的事，也就这么多了。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "然后，铁斋叔的死会成为青鬼和凶宅怪谈的最后一个注脚，一切都会像当年一样不了了之，是吗，“灵务局”的惟任刑警？"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "你嘴上说不让他称心如意，可你做的事不就是在帮他吗？"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "你怀疑怪谈和三船有关。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "你好像并不惊讶。"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "“灵务局”的条子也是条子，条子是有嗅觉的。哪怕被铁链死死拴着，我也能闻到腐肉的气味从哪里飘过来。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "然后你就跟铁链和解了？"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "不是每个人都和你一样，一人吃饱炸肉排饭，全家就都不饿了的。"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "知道御机一间转身都费劲，却要住一家四口的房子，究竟要多少钱吗？"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "不太想猜。"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "如果你愿意替我把贷款一次性还清，愿意把我的老婆孩子接到龙门，我当然可以把你家老宅翻个底朝天。"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "或者，如果这么做真的能一击毙命，彻底打倒三船，我也不是不愿意冒险。"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "现在轮到你回答我了。"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "你是打算帮我还清我这辈子都未必还得清的贷款呢，还是有比议员更大的势力，能彻底扳倒三船？"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "我已经在尽我所能帮你了。别不识好歹，青鬼。"
     },
     {
@@ -789,24 +919,28 @@
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "跟我走。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "......不行。"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "给我个你不能走的理由。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "我......"
     },
     {
@@ -816,66 +950,77 @@
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "......熊！"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "谁？"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "什么谁？你在说什么？"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "......星熊！"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "幽灵小姐！！"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "是萌萌香？！"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "惟任，听见萌萌香的声音了吗？"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "萌萌香？那个偶像？她不是一直和你在一起吗？我还要问你把她藏到——"
     },
     {
       "type": "dialogue",
       "speakerName": "萌萌香的声音",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "我在这里！"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "这边！"
     },
     {
@@ -892,24 +1037,28 @@
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "没人？可声音明明就越来越近了——"
     },
     {
       "type": "dialogue",
       "speakerName": "萌萌香的声音",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "这边！这边！！"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "萌萌香？！"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "你怎么——"
     },
     {
@@ -923,45 +1072,56 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_towerinside"
+    },
+    {
       "type": "dialogue",
       "speakerName": "萌萌香",
       "speakerId": "avg_npc_1918_1",
+      "isRemote": false,
       "text": "是星熊对吧！"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_npc_1918_1",
+      "isRemote": false,
       "text": "是我！你看不见我吗？"
     },
     {
       "type": "dialogue",
       "speakerName": "萌萌香",
       "speakerId": "avg_npc_1918_1",
+      "isRemote": false,
       "text": "我看不见你，但我听见你说话了！"
     },
     {
       "type": "dialogue",
       "speakerName": "萌萌香",
       "speakerId": "avg_npc_1918_1",
+      "isRemote": false,
       "text": "太好了，真的太好了......我以为一切都已经没救了......"
     },
     {
       "type": "dialogue",
       "speakerName": "萌萌香",
       "speakerId": "avg_npc_1918_1",
+      "isRemote": false,
       "text": "呜呜......"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_npc_1918_1",
+      "isRemote": false,
       "text": "你先别哭，你到底在哪？这台电视现在放的是什么地方的事情？"
     },
     {
       "type": "dialogue",
       "speakerName": "萌萌香",
       "speakerId": "avg_npc_1918_1",
+      "isRemote": false,
       "text": "这里是金兵卫的老巢，我和吉星被他关起来了——"
     },
     {
@@ -975,9 +1135,14 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "64_g3_jindaalley"
+    },
+    {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "萌萌香？！"
     },
     {
@@ -988,60 +1153,70 @@
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "惟任。"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "铁斋叔刚死，我的心很乱。我忘了一些事情。这是我不对。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "可你呢？你真觉得萌萌香被我藏起来了？"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "还有吉星。她对你们来说想必也无足轻重。一个只知道打小钢珠的废人罢了。"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "星熊——"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "为了把我这颗灾星安安稳稳送走，一个两个无关紧要的人，反正已经和金兵卫扯上了关系，就别管了，是这样吗？"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "我们会尽量保证那两个人的生命安全——"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "凶宅的受害者，铁斋叔，前几天被砍倒在锻冶町的金兵卫的手下......你们有哪次做到过吗？"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "......"
     },
     {
@@ -1058,42 +1233,49 @@
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "我不称职，这不用你提醒。"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "但我要说的是，你不是灾星。你是我手中唯一一张能让三船感受到痛，感受到他在御机不是无所不能的牌。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "就凭把我半路放掉？"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "这是警察能做到的极限。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "警察，是吗？"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "你也是警察。你知道警察的极限在哪里。"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "星熊，听我一句劝。回龙门。你的那个“同乡”，还有龙门近卫局，他们会帮你把事情摆平的。"
     },
     {
@@ -1104,36 +1286,42 @@
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "你说得对。"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "知道我说得对，那就赶紧——"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "我是说，“龙门近卫局会帮我把事情摆平”那句，你说得对。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "我之前好像有点太瞻前顾后......或者说，太怕给朋友们添麻烦了。"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "你什么意思？"
     },
     {
@@ -1144,108 +1332,126 @@
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "你要用这把刀？你到底想干什么？"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "我还有个承诺没兑现呢。"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "你要去救人？"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "别犯傻——"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "如果我就这么灰溜溜地回了龙门，Missy大概会气到住院，林雨霞呢，我这辈子都别想在她面前抬起头来。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "至于老陈......我还等着用重铸好的般若跟赤霄打一架呢。总不能空着手回去吧。"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "你就不怕这把刀出鞘之后，你又像二十年前那样后悔一生吗？！"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "铁斋叔说般若中其实融着僧院的秘法，可我心性不足，压不住鬼族血脉中的狂性。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "不过，心性、秘法......你不觉得这些都太虚无缥缈了吗，惟任？"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "二十年前若是真有秘法，事情会变成什么样，我不知道，我也不关心。但此时此刻，我不需要什么秘法。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "只要这绑带还被我握在手里，星熊就决不会沦为只知杀戮的恶鬼。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "至于后悔，我后悔的是，非要把一切背在自己背上，非要让自己来扛，却又一厢情愿地想让自己的牺牲有意义。"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "你现在到底觉得自己是警察还是黑道？哪个身份要求你非这么做不可？"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "警察？黑道？"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "跟这些没关系。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "我答应过萌萌香，就这么简单。"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "哦，还有，既然要去救人......我多半会和三船碰上。就算碰不上，我也会去找他的。我有事要问他。"
     },
     {
@@ -1256,30 +1462,35 @@
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "你会和他打？"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "我不想打，但多半逃不掉。"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "帮我在那家伙身上留个口子。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "用不着你拜托。"
     },
     {
@@ -1289,42 +1500,49 @@
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "不过，留个口子就够了？"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "最后重复一次，我可是警察啊。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "我先回警局了。"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "只要不出人命，从上面来的压力，我会尽量顶住。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "avg_1044_hsgma2_1",
+      "isRemote": false,
       "text": "感谢之情，无以言表。"
     },
     {
       "type": "dialogue",
       "speakerName": "惟任刑警",
       "speakerId": "avg_npc_1898_1",
+      "isRemote": false,
       "text": "但愿我当得起你这么重的一句感谢。"
     },
     {

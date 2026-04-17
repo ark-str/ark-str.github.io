@@ -6,10 +6,14 @@
   "title": "高空墜物",
   "storyCode": "RI-1",
   "avgTag": "行動前",
-  "sourcePath": "vendor/ArknightsGamedata/tw/gamedata/story/activities/act12d0/level_act12d0_01_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/tw/gamedata/story/activities/act12d0/level_act12d0_01_beg.txt",
   "sourceHash": "7ddc60195a964a08dc11b91c76ea118e66447258494ca034053cb37498c4ac96",
   "bodyAvailable": true,
   "blocks": [
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
     {
       "type": "narration",
       "text": "這裡有你想要的一切。\n你所渴望的片刻安寧、沒有戰爭的大地、母親的懷抱。\n你的意識無限擴張，你掙脫了枷鎖，你自由了。"
@@ -40,13 +44,11 @@
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "narration",
-          "text": "你如同時間長河中的一顆頑石，它將會帶走你的責任、宿命、欲望、聯繫，但唯有你自身，你將永遠地存在於這裡。\n你不擁有任何東西，任何東西也不擁有你。"
-        }
       ]
+    },
+    {
+      "type": "narration",
+      "text": "你如同時間長河中的一顆頑石，它將會帶走你的責任、宿命、欲望、聯繫，但唯有你自身，你將永遠地存在於這裡。\n你不擁有任何東西，任何東西也不擁有你。"
     },
     {
       "type": "choice",
@@ -66,8 +68,7 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -92,8 +93,7 @@
             }
           ]
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -110,6 +110,7 @@
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": null,
+              "isRemote": false,
               "text": "......士，博士！"
             },
             {
@@ -120,6 +121,7 @@
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": null,
+              "isRemote": false,
               "text": "躺這麼久了還不醒，真麻煩。"
             },
             {
@@ -133,12 +135,14 @@
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": null,
+              "isRemote": false,
               "text": "怎麼辦，這都不醒，反正阿米婭不在，把博士抓起來來幾圈大風車試試好了。"
             },
             {
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": null,
+              "isRemote": false,
               "text": "大風車？好玩嗎，我也要玩！"
             },
             {
@@ -159,6 +163,7 @@
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": null,
+              "isRemote": false,
               "text": "......士，博士！"
             },
             {
@@ -169,6 +174,7 @@
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": null,
+              "isRemote": false,
               "text": "躺這麼久了還不醒，真麻煩。"
             },
             {
@@ -182,12 +188,14 @@
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": null,
+              "isRemote": false,
               "text": "怎麼辦，這都不醒，反正阿米婭不在，把博士抓起來來幾圈大風車試試好了。"
             },
             {
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": null,
+              "isRemote": false,
               "text": "大風車？好玩嗎，我也要玩！"
             },
             {
@@ -196,8 +204,7 @@
             }
           ]
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -217,66 +224,84 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "刻俄柏",
-          "speakerId": null,
-          "text": "嘉維爾，大風車應該怎麼玩呀？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉維爾",
-          "speakerId": null,
-          "text": "所謂大風車，就是你要把對方的腿或者手抓起來，然後開始旋轉起來。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉維爾",
-          "speakerId": null,
-          "text": "等到你覺得差不多了就把他丟出去。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "刻俄柏",
-          "speakerId": null,
-          "text": "聽起來好好玩！我可以試試嗎！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉維爾",
-          "speakerId": null,
-          "text": "可以啊，我來接住博士就是了......嗯？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉維爾",
-          "speakerId": null,
-          "text": "博士，你終於醒了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "刻俄柏",
-          "speakerId": null,
-          "text": "啊，博士醒了！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉維爾",
-          "speakerId": null,
-          "text": "小刻，別一下子就跳到博士身上去，博士被你這麼一壓說不定又要昏過去了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "刻俄柏",
-          "speakerId": null,
-          "text": "哦，對不起，博士！"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_desert_1"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "刻俄柏",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "嘉維爾，大風車應該怎麼玩呀？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉維爾",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "所謂大風車，就是你要把對方的腿或者手抓起來，然後開始旋轉起來。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉維爾",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "等到你覺得差不多了就把他丟出去。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "刻俄柏",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "聽起來好好玩！我可以試試嗎！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉維爾",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "可以啊，我來接住博士就是了......嗯？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉維爾",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "博士，你終於醒了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "刻俄柏",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "啊，博士醒了！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉維爾",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "小刻，別一下子就跳到博士身上去，博士被你這麼一壓說不定又要昏過去了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "刻俄柏",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "哦，對不起，博士！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_desert_1"
     },
     {
       "type": "choice",
@@ -289,12 +314,14 @@
               "type": "dialogue",
               "speakerName": "嘉維爾",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "沒事，這點高度，小意思。"
             },
             {
               "type": "dialogue",
               "speakerName": "刻俄柏",
               "speakerId": "char_2013_cerber",
+              "isRemote": false,
               "text": "我也沒事！"
             }
           ]
@@ -307,6 +334,7 @@
               "type": "dialogue",
               "speakerName": "嘉維爾",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "喂，不是吧博士，你難道又摔失憶了？"
             }
           ]
@@ -316,8 +344,7 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -330,24 +357,28 @@
               "type": "dialogue",
               "speakerName": "嘉維爾",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "博士，你別忘了，我是醫生。"
             },
             {
               "type": "dialogue",
               "speakerName": "嘉維爾",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "總之，博士，我來簡單說明一下情況吧。"
             },
             {
               "type": "dialogue",
               "speakerName": "嘉維爾",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "總而言之，我們墜機了。"
             },
             {
               "type": "dialogue",
               "speakerName": "刻俄柏",
               "speakerId": "char_2013_cerber",
+              "isRemote": false,
               "text": "從很高的地方摔了下來！咻——！碰！這樣。"
             }
           ]
@@ -360,30 +391,33 @@
               "type": "dialogue",
               "speakerName": "嘉維爾",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "還會開玩笑，看起來沒有大礙。"
             },
             {
               "type": "dialogue",
               "speakerName": "嘉維爾",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "總之，博士，我來簡單說明一下情況吧。"
             },
             {
               "type": "dialogue",
               "speakerName": "嘉維爾",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "總而言之，我們墜機了。"
             },
             {
               "type": "dialogue",
               "speakerName": "刻俄柏",
               "speakerId": "char_2013_cerber",
+              "isRemote": false,
               "text": "從很高的地方摔了下來！咻——！碰！這樣。"
             }
           ]
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -403,33 +437,35 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "嘉維爾",
-          "speakerId": "char_187_ccheal",
-          "text": "嘖，好吧，總之，博士你運氣不太好，我們被攻擊的時候爆炸正好發生在你座位附近，你直接被炸飛撞到牆上就暈倒了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉維爾",
-          "speakerId": "char_187_ccheal",
-          "text": "放心，你的傷口我已經包紮過了，問題不大，而且和你剛到羅德島的時候比，你的體質可好了不少。不錯啊，博士。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "刻俄柏",
-          "speakerId": "char_2013_cerber",
-          "text": "嗚嗚，博士，對不起，我應該接住你的，但是我被爆炸聲嚇到了......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉維爾",
-          "speakerId": "char_187_ccheal",
-          "text": "這也不能怪你，老實說，就算是我也想不到他們居然還有能對空的武器了。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉維爾",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "嘖，好吧，總之，博士你運氣不太好，我們被攻擊的時候爆炸正好發生在你座位附近，你直接被炸飛撞到牆上就暈倒了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉維爾",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "放心，你的傷口我已經包紮過了，問題不大，而且和你剛到羅德島的時候比，你的體質可好了不少。不錯啊，博士。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "刻俄柏",
+      "speakerId": "char_2013_cerber",
+      "isRemote": false,
+      "text": "嗚嗚，博士，對不起，我應該接住你的，但是我被爆炸聲嚇到了......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉維爾",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "這也不能怪你，老實說，就算是我也想不到他們居然還有能對空的武器了。"
     },
     {
       "type": "choice",
@@ -439,15 +475,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "嘉維爾",
-          "speakerId": "char_187_ccheal",
-          "text": "是啊，我沒說過嗎，我老家這裡的人很好鬥的，雖然他們都打不過我。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉維爾",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "是啊，我沒說過嗎，我老家這裡的人很好鬥的，雖然他們都打不過我。"
     },
     {
       "type": "choice",
@@ -457,27 +492,28 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "嘉維爾",
-          "speakerId": "char_187_ccheal",
-          "text": "在下墜的時候，為了控制高度，其他人中途就先跳下去了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉維爾",
-          "speakerId": "char_187_ccheal",
-          "text": "為了保護你，我和刻俄柏是最後才跳下來的。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉維爾",
-          "speakerId": "char_187_ccheal",
-          "text": "哦對，Lancet-2應該還留在飛行器上。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉維爾",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "在下墜的時候，為了控制高度，其他人中途就先跳下去了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉維爾",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "為了保護你，我和刻俄柏是最後才跳下來的。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉維爾",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "哦對，Lancet-2應該還留在飛行器上。"
     },
     {
       "type": "choice",
@@ -487,15 +523,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "嘉維爾",
-          "speakerId": "char_187_ccheal",
-          "text": "我沒記錯的話，在那個方向吧，喏，那邊那個山坡過去應該就是了。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉維爾",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "我沒記錯的話，在那個方向吧，喏，那邊那個山坡過去應該就是了。"
     },
     {
       "type": "choice",
@@ -505,132 +540,157 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "嘉維爾",
-          "speakerId": "char_187_ccheal",
-          "text": "行。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉維爾",
-          "speakerId": "char_187_ccheal",
-          "text": "你看，那就是我們的飛行器。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉維爾",
-          "speakerId": "char_187_ccheal",
-          "text": "唔哦，在冒煙呢，感覺不能用了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉維爾",
-          "speakerId": "char_187_ccheal",
-          "text": "不過看起來還能修的樣子。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "刻俄柏",
-          "speakerId": "char_2013_cerber",
-          "text": "博士，嘉維爾，飛行器那邊有人！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉維爾",
-          "speakerId": "char_187_ccheal",
-          "text": "嗯？那是......"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Lancet-2",
-          "speakerId": "char_285_medic2",
-          "text": "請不要靠近我，雖然我有保護羅德島財產的義務，但我只是一台醫療器械，嗚嗚......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿達克利斯人A",
-          "speakerId": "avg_npc_071",
-          "text": "喂，這台機器好像會說話啊。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿達克利斯人B",
-          "speakerId": "avg_npc_070",
-          "text": "是啊，沒想到天上掉下來個這麼厲害的機器不說，裡面還有會說話的機器！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿達克利斯人C",
-          "speakerId": "avg_npc_070",
-          "text": "喂，你們說，該不會它裡面其實裝著個人吧？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿達克利斯人A",
-          "speakerId": "avg_npc_071",
-          "text": "不知道，要不然我們把它也搶回去吧，酋長肯定會喜歡的。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿達克利斯人B",
-          "speakerId": "avg_npc_070",
-          "text": "好啊，弟兄們，我們把它也扛回去！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Lancet-2",
-          "speakerId": "char_285_medic2",
-          "text": "救命啊——"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉維爾",
-          "speakerId": "char_187_ccheal",
-          "text": "給我住手！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿達克利斯人A",
-          "speakerId": "avg_npc_071",
-          "text": "......&%（什麼人？！）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉維爾",
-          "speakerId": "char_187_ccheal",
-          "text": "敢搶我們的東西，你們活得不耐煩了！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿達克利斯人A",
-          "speakerId": "avg_npc_071",
-          "text": "......￥%%#（誰能證明這就是你的東西，它是從天上掉下來的！）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿達克利斯人B",
-          "speakerId": "avg_npc_070",
-          "text": "！@#%......&（沒錯，是我們先到的，所以就是我們的！）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉維爾",
-          "speakerId": "char_187_ccheal",
-          "text": "嘖，還挺有道理。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉維爾",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "行。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_desert_2"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉維爾",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "你看，那就是我們的飛行器。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉維爾",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "唔哦，在冒煙呢，感覺不能用了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉維爾",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "不過看起來還能修的樣子。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "刻俄柏",
+      "speakerId": "char_2013_cerber",
+      "isRemote": false,
+      "text": "博士，嘉維爾，飛行器那邊有人！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉維爾",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "嗯？那是......"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_desert_2"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Lancet-2",
+      "speakerId": "char_285_medic2",
+      "isRemote": false,
+      "text": "請不要靠近我，雖然我有保護羅德島財產的義務，但我只是一台醫療器械，嗚嗚......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿達克利斯人A",
+      "speakerId": "avg_npc_071",
+      "isRemote": false,
+      "text": "喂，這台機器好像會說話啊。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿達克利斯人B",
+      "speakerId": "avg_npc_070",
+      "isRemote": false,
+      "text": "是啊，沒想到天上掉下來個這麼厲害的機器不說，裡面還有會說話的機器！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿達克利斯人C",
+      "speakerId": "avg_npc_070",
+      "isRemote": false,
+      "text": "喂，你們說，該不會它裡面其實裝著個人吧？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿達克利斯人A",
+      "speakerId": "avg_npc_071",
+      "isRemote": false,
+      "text": "不知道，要不然我們把它也搶回去吧，酋長肯定會喜歡的。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿達克利斯人B",
+      "speakerId": "avg_npc_070",
+      "isRemote": false,
+      "text": "好啊，弟兄們，我們把它也扛回去！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Lancet-2",
+      "speakerId": "char_285_medic2",
+      "isRemote": false,
+      "text": "救命啊——"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉維爾",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "給我住手！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿達克利斯人A",
+      "speakerId": "avg_npc_071",
+      "isRemote": false,
+      "text": "......&%（什麼人？！）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉維爾",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "敢搶我們的東西，你們活得不耐煩了！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿達克利斯人A",
+      "speakerId": "avg_npc_071",
+      "isRemote": false,
+      "text": "......￥%%#（誰能證明這就是你的東西，它是從天上掉下來的！）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿達克利斯人B",
+      "speakerId": "avg_npc_070",
+      "isRemote": false,
+      "text": "！@#%......&（沒錯，是我們先到的，所以就是我們的！）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉維爾",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "嘖，還挺有道理。"
     },
     {
       "type": "choice",
@@ -640,54 +700,59 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "嘉維爾",
-          "speakerId": "char_187_ccheal",
-          "text": "嗯？哦對，忘了博士你們聽不懂我們這裡的語言了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉維爾",
-          "speakerId": "char_187_ccheal",
-          "text": "雖然這裡也是薩爾貢，但是這裡的人沒有會用普通的薩爾貢語的。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉維爾",
-          "speakerId": "char_187_ccheal",
-          "text": "這樣吧，要是有要傳達給你的話我給你翻譯一下好了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉維爾",
-          "speakerId": "char_187_ccheal",
-          "text": "其他時候就意會一下吧！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿達克利斯人A",
-          "speakerId": "avg_npc_071",
-          "text": "......&*#（在那邊嘀嘀咕咕說什麼呢混帳！）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉維爾",
-          "speakerId": "char_187_ccheal",
-          "text": "我在說，既然這是你們的東西，那只要把你們全都放倒，它就是我的了！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿達克利斯人B",
-          "speakerId": "avg_npc_070",
-          "text": "&&......！@（什麼？這個女人太囂張了，弟兄們，上！）"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉維爾",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "嗯？哦對，忘了博士你們聽不懂我們這裡的語言了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉維爾",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "雖然這裡也是薩爾貢，但是這裡的人沒有會用普通的薩爾貢語的。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉維爾",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "這樣吧，要是有要傳達給你的話我給你翻譯一下好了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉維爾",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "其他時候就意會一下吧！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿達克利斯人A",
+      "speakerId": "avg_npc_071",
+      "isRemote": false,
+      "text": "......&*#（在那邊嘀嘀咕咕說什麼呢混帳！）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉維爾",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "我在說，既然這是你們的東西，那只要把你們全都放倒，它就是我的了！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿達克利斯人B",
+      "speakerId": "avg_npc_070",
+      "isRemote": false,
+      "text": "&&......！@（什麼？這個女人太囂張了，弟兄們，上！）"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": [

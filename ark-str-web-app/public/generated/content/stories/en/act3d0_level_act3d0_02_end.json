@@ -6,7 +6,7 @@
   "title": "To be Continued",
   "storyCode": "OF-2",
   "avgTag": "After Operation",
-  "sourcePath": "vendor/ArknightsGamedata/en/gamedata/story/activities/act3d0/level_act3d0_02_end.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/en/gamedata/story/activities/act3d0/level_act3d0_02_end.txt",
   "sourceHash": "c8ccb90a64421e43c1fdde0b3fa7e3c21b79634ae76b3fb4bc7b20270edea42a",
   "bodyAvailable": true,
   "blocks": [
@@ -18,27 +18,35 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_sunnytown_2"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Ceylon",
       "speakerId": "char_348_ceylon",
+      "isRemote": false,
       "text": "Quick! Doctor! Let's head towards the beach!"
     },
     {
       "type": "dialogue",
       "speakerName": "Ceylon",
       "speakerId": "char_348_ceylon",
+      "isRemote": false,
       "text": "There are a ton of tourists gathered on the beach, so we'll be able to blend into the crowd and shrug them off!"
     },
     {
       "type": "dialogue",
       "speakerName": "Bodyguard",
       "speakerId": "avg_npc_020",
+      "isRemote": false,
       "text": "Stand still!"
     },
     {
       "type": "dialogue",
       "speakerName": "Ceylon",
       "speakerId": "char_348_ceylon",
+      "isRemote": false,
       "text": "You wish!"
     },
     {
@@ -48,6 +56,7 @@
       "type": "dialogue",
       "speakerName": "Schwarz",
       "speakerId": "char_340_shwaz",
+      "isRemote": false,
       "text": "..."
     },
     {
@@ -58,60 +67,66 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "Schwarz! Great! You're finally here!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "I'm so glad you're here. What's going on with Cronin?!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "Doctor, she's the one I was telling you about..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Schwarz",
-          "speakerId": "char_340_shwaz",
-          "text": "Milady, Master Doykos is currently out of town. You ought to listen to Cronin."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "Schwarz? What are you saying...?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Schwarz",
-          "speakerId": "char_340_shwaz",
-          "text": "Let's head back to Cronin now and hand these people over."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Schwarz",
-          "speakerId": "char_340_shwaz",
-          "text": "I do not wish to resort to violence, milady."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "...Schwarz?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "Schwarz! Great! You're finally here!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "I'm so glad you're here. What's going on with Cronin?!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "Doctor, she's the one I was telling you about..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Schwarz",
+      "speakerId": "char_340_shwaz",
+      "isRemote": false,
+      "text": "Milady, Master Doykos is currently out of town. You ought to listen to Cronin."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "Schwarz? What are you saying...?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Schwarz",
+      "speakerId": "char_340_shwaz",
+      "isRemote": false,
+      "text": "Let's head back to Cronin now and hand these people over."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Schwarz",
+      "speakerId": "char_340_shwaz",
+      "isRemote": false,
+      "text": "I do not wish to resort to violence, milady."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "...Schwarz?"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": [

@@ -6,10 +6,17 @@
   "title": "Alcohol and Placebo",
   "storyCode": "GO-4",
   "avgTag": "Before Operation",
-  "sourcePath": "vendor/ArknightsGamedata/en/gamedata/story/activities/act37side/level_act37side_04_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/en/gamedata/story/activities/act37side/level_act37side_04_beg.txt",
   "sourceHash": "809022f9f6e8aa304a480b051215c69a00620d23799a0518db38be5c1eba186e",
   "bodyAvailable": true,
   "blocks": [
+    {
+      "type": "background",
+      "backgroundId": "55_g5_victoriaspeakeasy"
+    },
+    {
+      "type": "sceneBreak"
+    },
     {
       "type": "narration",
       "text": "<p=1>Ten Pints Pub</><p=2>December 21st, 1098, 5:05 P.M.</>"
@@ -18,42 +25,49 @@
       "type": "dialogue",
       "speakerName": "Drunken Soldier",
       "speakerId": "avg_npc_414_1",
+      "isRemote": false,
       "text": "Good job, Madam Speaker, I say!"
     },
     {
       "type": "dialogue",
       "speakerName": "Drunken Soldier",
       "speakerId": "avg_npc_414_1",
+      "isRemote": false,
       "text": "Rip up every tile in Londinium and root out the devil scum hiding under them! *cough* *cough*..."
     },
     {
       "type": "dialogue",
       "speakerName": "Ragged Citizen",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "I hear there's gonna be a big shipment of Oripathy meds coming in."
     },
     {
       "type": "dialogue",
       "speakerName": "Ragged Citizen",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "I got a friend at the procurement office. Maybe he can get me some meds first, and I'll see if I can get some for you, hah... cheers— *hic* —"
     },
     {
       "type": "dialogue",
       "speakerName": "Ragged Citizen",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "You were strutting all day when you got into the duke's army... and then you went to the Exemplars, and now here you are after the end of the war, just like me."
     },
     {
       "type": "dialogue",
       "speakerName": "Ragged Citizen",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "Two Infected with nothing left—"
     },
     {
       "type": "dialogue",
       "speakerName": "Drunken Soldier",
       "speakerId": "avg_npc_414_1",
+      "isRemote": false,
       "text": "Who are you calling Infected?!"
     },
     {
@@ -63,6 +77,7 @@
       "type": "dialogue",
       "speakerName": "Drunken Soldier",
       "speakerId": "avg_npc_414_1",
+      "isRemote": false,
       "text": "I can fight! I'm not like you! I'm not afraid to die... *vomit*—"
     },
     {
@@ -86,12 +101,14 @@
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "He's drunk. Take him home. I've got the bill."
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "Don't mind what they said, madam."
     },
     {
@@ -101,6 +118,7 @@
       "type": "dialogue",
       "speakerName": "Catherine",
       "speakerId": "avg_4162_cathy_1",
+      "isRemote": false,
       "text": "He's just telling the truth, Lieutenant."
     },
     {
@@ -110,150 +128,175 @@
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "I'm retired too. But suit yourself."
     },
     {
       "type": "dialogue",
       "speakerName": "Catherine",
       "speakerId": "avg_4162_cathy_1",
+      "isRemote": false,
       "text": "Sure. As for your question... it doesn't matter if I was talking to the one whose name's on the warrant, or Reunion, or anybody else."
     },
     {
       "type": "dialogue",
       "speakerName": "Catherine",
       "speakerId": "avg_4162_cathy_1",
+      "isRemote": false,
       "text": "The workers want to do something for our home. I can't just stand by and watch everything get worse."
     },
     {
       "type": "dialogue",
       "speakerName": "Catherine",
       "speakerId": "avg_4162_cathy_1",
+      "isRemote": false,
       "text": "Extraordinary times call for extraordinary measures. That's how things have always been for us."
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "Just friendly advice. I've seen what medicine from dubious sources can do. I watched a soldier collapse into his drink a couple of days ago."
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "I'd performed emergency surgery on him during the war."
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "That time, he survived. But this time... it was the last checkup he ever got."
     },
     {
       "type": "dialogue",
       "speakerName": "Catherine",
       "speakerId": "avg_4162_cathy_1",
+      "isRemote": false,
       "text": "You're a kind soul."
     },
     {
       "type": "dialogue",
       "speakerName": "Catherine",
       "speakerId": "avg_4162_cathy_1",
+      "isRemote": false,
       "text": "The apothecary in my neighborhood says he can't remember how many came to him for poison during the war."
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "I don't remember everyone I've ever treated, of course."
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "I've seen much worse in my time as field medic, but at least I get to see those who walk out the field hospital again."
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "Spend enough time drinking here, and you begin to recognize the faces in the crowd that you've seen before, even if it was only once."
     },
     {
       "type": "dialogue",
       "speakerName": "Catherine",
       "speakerId": "avg_4162_cathy_1",
+      "isRemote": false,
       "text": "I know some doctors, the Rhodes Islanders. Maybe you need their help."
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "You forget that I'm a physician myself... what do you think of the Exemplars?"
     },
     {
       "type": "dialogue",
       "speakerName": "Catherine",
       "speakerId": "avg_4162_cathy_1",
+      "isRemote": false,
       "text": "It's asking a lot, getting an old burdenbeast to remember something that long ago."
     },
     {
       "type": "dialogue",
       "speakerName": "Catherine",
       "speakerId": "avg_4162_cathy_1",
+      "isRemote": false,
       "text": "It's ancient history, even to me. All I remember is that decades ago, when kids would brag about this and that, they wouldn't be tossing around the names of dukes, it was the Exemplars."
     },
     {
       "type": "dialogue",
       "speakerName": "Catherine",
       "speakerId": "avg_4162_cathy_1",
+      "isRemote": false,
       "text": "There were lots of heroes. Lots of them lost."
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "No, what I mean is—"
     },
     {
       "type": "dialogue",
       "speakerName": "Catherine",
       "speakerId": "avg_4162_cathy_1",
+      "isRemote": false,
       "text": "I know what you wanted to hear, but I don't have anything else for you. Sorry."
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "Most people in the new 'Exemplars' aren't soldiers. You can't compare them to the old ones."
     },
     {
       "type": "dialogue",
       "speakerName": "Catherine",
       "speakerId": "avg_4162_cathy_1",
+      "isRemote": false,
       "text": "We didn't start celebrating here in the city when the dukes defeated the Sarkaz, that's the end of it."
     },
     {
       "type": "dialogue",
       "speakerName": "Catherine",
       "speakerId": "avg_4162_cathy_1",
+      "isRemote": false,
       "text": "The walls were on fire, and unarmed Londiniers trapped inside with the Sarkaz."
     },
     {
       "type": "dialogue",
       "speakerName": "Catherine",
       "speakerId": "avg_4162_cathy_1",
+      "isRemote": false,
       "text": "Nobody knew if the dukes would spend the next two months talking before they entered the city. Nobody knew what would become of us."
     },
     {
       "type": "dialogue",
       "speakerName": "Catherine",
       "speakerId": "avg_4162_cathy_1",
+      "isRemote": false,
       "text": "It was the Exemplars who came. No one can take away what you did, not in Londinium, at least."
     },
     {
@@ -270,24 +313,28 @@
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "These days, the only contribution most of us make is to the business of the city's drinking establishments."
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "Thankfully, the kindly owner here doesn't throw out loitering drunkards."
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "After all, most of those who fought tooth and nail to get back home no longer have homes at all."
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "To hard-won victory."
     },
     {
@@ -301,18 +348,21 @@
       "type": "dialogue",
       "speakerName": "Catherine",
       "speakerId": "avg_4162_cathy_1",
+      "isRemote": false,
       "text": "I'm afraid you found the wrong drinking partner. I have an appointment to keep, and I intend to be sober for it."
     },
     {
       "type": "dialogue",
       "speakerName": "Catherine",
       "speakerId": "avg_4162_cathy_1",
+      "isRemote": false,
       "text": "You're drunk, medic. Leave the alcohol to your later days."
     },
     {
       "type": "dialogue",
       "speakerName": "Catherine",
       "speakerId": "avg_4162_cathy_1",
+      "isRemote": false,
       "text": "I've heard the rumors about the Exemplars. Why don't you talk to the Speaker directly?"
     },
     {
@@ -326,9 +376,14 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "55_g5_victoriaspeakeasy"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "...What makes you think I haven't?"
     },
     {
@@ -342,10 +397,15 @@
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "None of my business."
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "55_g5_victoriaspeakeasy"
     },
     {
       "type": "narration",
@@ -355,54 +415,70 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "55_g6_dusklentiavenue"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Vina",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "Lieutenant Shearer sent two messages. I asked the Messenger and both came from this underground pub."
     },
     {
       "type": "dialogue",
       "speakerName": "Morgan",
       "speakerId": "avg_npc_405_1",
+      "isRemote": false,
       "text": "But Delphine said she made arrangements for all the surviving soldiers of Duke Windermere's ship."
     },
     {
       "type": "dialogue",
       "speakerName": "Morgan",
       "speakerId": "avg_npc_405_1",
+      "isRemote": false,
       "text": "Are you sure we don't want to check out the street that Delphine talked about first?"
     },
     {
       "type": "dialogue",
       "speakerName": "Vina",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "Vina",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "No. Let's go in."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "55_g5_victoriaspeakeasy"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Excited Soldier",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "Deal. You're gonna answer my questions frankly and truthfully, right?"
     },
     {
       "type": "dialogue",
       "speakerName": "Morgan",
       "speakerId": "avg_npc_405_1",
+      "isRemote": false,
       "text": "As long as you beat me at arm wrestling."
     },
     {
       "type": "dialogue",
       "speakerName": "Excited Soldier",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "Brr—"
     },
     {
@@ -412,153 +488,182 @@
       "type": "dialogue",
       "speakerName": "Morgan",
       "speakerId": "avg_npc_405_1",
+      "isRemote": false,
       "text": "Piece of cake."
     },
     {
       "type": "dialogue",
       "speakerName": "Excited Soldier",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "Hmph, I figured my injury wouldn't be a problem..."
     },
     {
       "type": "dialogue",
       "speakerName": "Morgan",
       "speakerId": "avg_npc_405_1",
+      "isRemote": false,
       "text": "I know what you want to ask."
     },
     {
       "type": "dialogue",
       "speakerName": "Morgan",
       "speakerId": "avg_npc_405_1",
+      "isRemote": false,
       "text": "'Will she disband the Exemplars?'"
     },
     {
       "type": "dialogue",
       "speakerName": "Morgan",
       "speakerId": "avg_npc_405_1",
+      "isRemote": false,
       "text": "Honestly, I don't know. The stuff she's thinking about has been getting more and more complicated, and I've given up trying to figure it out."
     },
     {
       "type": "dialogue",
       "speakerName": "Excited Soldier",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "My guess is no. She even came to see us in the clothes that she wore when we fought together. If that's not sending a message, I don't know what it is."
     },
     {
       "type": "dialogue",
       "speakerName": "Morgan",
       "speakerId": "avg_npc_405_1",
+      "isRemote": false,
       "text": "Didn't she say she just didn't want to draw too much attention?"
     },
     {
       "type": "dialogue",
       "speakerName": "Excited Soldier",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "That's what's in all the books! You wouldn't get it."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "55_g5_victoriaspeakeasy"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "What you see here is no exception."
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "Many Exemplars are suffering from their lingering war wounds."
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "With medicine in short supply, alcohol represents one of the few sources of comfort available to them."
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "While some are here for information, most are here all day and night because they simply have nowhere else to go."
     },
     {
       "type": "dialogue",
       "speakerName": "Vina",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "Is this why you wrote to me? To stand up for them?"
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "No... I see you have not read my letter."
     },
     {
       "type": "dialogue",
       "speakerName": "Vina",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "Vina",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "I'm sorry, there's been so much going on—"
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "You used to be more straight and forthcoming, Madam Speaker."
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "If you think the Exemplars are calling for you to pay more attention to veterans' welfare, I can tell you that you're wrong."
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "They're waiting for your next order."
     },
     {
       "type": "dialogue",
       "speakerName": "Vina",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "...?"
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "Everyone I've talked to for the past two months believes that Siege has grown since becoming Speaker, that she's getting even better as a leader."
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "And the question they ask the most is—where do we go next?"
     },
     {
       "type": "dialogue",
       "speakerName": "Vina",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "Are you telling me to continue to send them to bleed and die, instead of trying to make life better for them?"
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "You never truly saw yourself as their leader. You saw them as equals, as comrades in arms. I respect you for that, but it's also where you have failed in your responsibilities."
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "Forgive my frankness, but for many of them, what's left of their lives will never know a greater happiness than the taste of victory they enjoyed as the Exemplars."
     },
     {
@@ -579,6 +684,7 @@
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "..."
     },
     {
@@ -592,18 +698,21 @@
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "One more of the same, please."
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "Where were we, Madam Speaker?"
     },
     {
       "type": "dialogue",
       "speakerName": "Vina",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "..."
     },
     {
@@ -613,19 +722,29 @@
       "type": "dialogue",
       "speakerName": "Morgan",
       "speakerId": "avg_npc_405_1",
+      "isRemote": false,
       "text": "You... why—"
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "Lingering effect of an injury."
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1520_1",
+      "isRemote": false,
       "text": "It was one hell of a battle, wasn't it?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "55_g1_battlefieldoutside"
     },
     {
       "type": "sceneBreak"
@@ -638,102 +757,119 @@
       "type": "dialogue",
       "speakerName": "Vina",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "Any news about the situation in the city?"
     },
     {
       "type": "dialogue",
       "speakerName": "Delphine",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "Unclear."
     },
     {
       "type": "dialogue",
       "speakerName": "Delphine",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "As of yesterday, the Military Commission still had a heavy presence in important areas."
     },
     {
       "type": "dialogue",
       "speakerName": "Delphine",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "With the Royal Court elites deployed around the walls in a standoff with the dukes, however, the resistance within the city stands a better chance."
     },
     {
       "type": "dialogue",
       "speakerName": "Indra",
       "speakerId": "avg_155_tiger_1",
+      "isRemote": false,
       "text": "The siege's gone on ten days already! When are the dukes gonna charge?"
     },
     {
       "type": "dialogue",
       "speakerName": "Delphine",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "If the priority is to minimize casualties amongst the allied forces, then besieging the city is the best way, particularly with the Duke of Wellington's position still uncertain..."
     },
     {
       "type": "dialogue",
       "speakerName": "Morgan",
       "speakerId": "avg_npc_405_1",
+      "isRemote": false,
       "text": "But they're playing with the lives of innocent citizens! If this drags on much longer..."
     },
     {
       "type": "dialogue",
       "speakerName": "Dagda",
       "speakerId": "avg_npc_396_1",
+      "isRemote": false,
       "text": "Are they really okay with taking over an empty city?"
     },
     {
       "type": "dialogue",
       "speakerName": "Dagda",
       "speakerId": "avg_npc_396_1",
+      "isRemote": false,
       "text": "If the truth about the situation here gets out—"
     },
     {
       "type": "dialogue",
       "speakerName": "Delphine",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "Nothing gets out. They will not allow anything to happen out of their control."
     },
     {
       "type": "dialogue",
       "speakerName": "Delphine",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "People often underestimate the dukes, but the truth is, they have never changed."
     },
     {
       "type": "dialogue",
       "speakerName": "Vina",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "Just like how they treated the Steam Knights."
     },
     {
       "type": "dialogue",
       "speakerName": "Delphine",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "It's only one example... I can't say I know all of them well, but I knew my own mother."
     },
     {
       "type": "dialogue",
       "speakerName": "Delphine",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "Ethics is the first thing to go out the window when dealing with matters of shared interest."
     },
     {
       "type": "dialogue",
       "speakerName": "Delphine",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "The focus had already shifted to how to retrieve The Shard tech at the joint staff meeting last night."
     },
     {
       "type": "dialogue",
       "speakerName": "Dagda",
       "speakerId": "avg_npc_396_1",
+      "isRemote": false,
       "text": "So they've already accepted this outcome."
     },
     {
       "type": "dialogue",
       "speakerName": "Delphine",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "Dagda..."
     },
     {
@@ -743,36 +879,42 @@
       "type": "dialogue",
       "speakerName": "Dagda",
       "speakerId": "avg_npc_396_1",
+      "isRemote": false,
       "text": "I need a squad, Siege. I'm going to try that Confessarius passage that Shining shared with us again—"
     },
     {
       "type": "dialogue",
       "speakerName": "Dagda",
       "speakerId": "avg_npc_396_1",
+      "isRemote": false,
       "text": "I'll be back, Vina. I promise."
     },
     {
       "type": "dialogue",
       "speakerName": "Vina",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "Go."
     },
     {
       "type": "dialogue",
       "speakerName": "Indra",
       "speakerId": "avg_155_tiger_1",
+      "isRemote": false,
       "text": "You're just gonna let her go like that?"
     },
     {
       "type": "dialogue",
       "speakerName": "Indra",
       "speakerId": "avg_155_tiger_1",
+      "isRemote": false,
       "text": "I'm keeping an eye on you, Dagda. Now's not the time to play the hero!"
     },
     {
       "type": "dialogue",
       "speakerName": "Dagda",
       "speakerId": "avg_npc_396_1",
+      "isRemote": false,
       "text": "Well, you'd better not fall behind then, Hannah."
     },
     {
@@ -782,48 +924,56 @@
       "type": "dialogue",
       "speakerName": "Vina",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "Delphine, any updates from Feist and Rockrock?"
     },
     {
       "type": "dialogue",
       "speakerName": "Delphine",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "They've reached the backup access port from when the wall was first built, but they can't find an opportunity to get close with all the Sarkaz patrols."
     },
     {
       "type": "dialogue",
       "speakerName": "Delphine",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "The Doctor's team is trying to give us an opening. One feint attack is all that it takes to create an opening, but..."
     },
     {
       "type": "dialogue",
       "speakerName": "Vina",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "The alliance doesn't plan to attack at all."
     },
     {
       "type": "dialogue",
       "speakerName": "Delphine",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "Correct."
     },
     {
       "type": "dialogue",
       "speakerName": "Vina",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "Vina",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "Delphine, can you guarantee that you'll find a way inside, if there's a gap in the Sarkaz lines?"
     },
     {
       "type": "dialogue",
       "speakerName": "Delphine",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "Yes, but I need help. We can try to persuade the dukes again—"
     },
     {
@@ -837,36 +987,42 @@
       "type": "dialogue",
       "speakerName": "Vina",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "Give me two hours."
     },
     {
       "type": "dialogue",
       "speakerName": "Vina",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "I'll pull a squad with decent Arts skills and some battle drones. We'll feign an attack on the access port at N12 to draw their attention—"
     },
     {
       "type": "dialogue",
       "speakerName": "Vina",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "You take the rest of them."
     },
     {
       "type": "dialogue",
       "speakerName": "Delphine",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "No! You'll be going to your death!"
     },
     {
       "type": "dialogue",
       "speakerName": "Morgan",
       "speakerId": "avg_npc_405_1",
+      "isRemote": false,
       "text": "Chetleigh, Brentwood, the Gloriana, Silverrock Bluffs... we were going to our deaths, each and every time."
     },
     {
       "type": "dialogue",
       "speakerName": "Morgan",
       "speakerId": "avg_npc_405_1",
+      "isRemote": false,
       "text": "But somebody has to do it. I'm with you, Vina."
     },
     {
@@ -877,37 +1033,50 @@
       "type": "dialogue",
       "speakerName": "Morgan",
       "speakerId": "avg_npc_405_1",
+      "isRemote": false,
       "text": "...Vina?"
     },
     {
       "type": "dialogue",
       "speakerName": "Vina",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "Urgent message from the Doctor—"
     },
     {
       "type": "dialogue",
       "speakerName": "Vina",
       "speakerId": "avgnew_112_siege_1",
+      "isRemote": false,
       "text": "Loughshinny just went into the Wellington encampment."
     },
     {
       "type": "dialogue",
       "speakerName": "Morgan",
       "speakerId": "avg_npc_405_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "Delphine",
       "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "Morgan",
       "speakerId": "avg_npc_405_1",
+      "isRemote": false,
       "text": "...Who's Loughshinny?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "55_g1_battlefieldoutside"
     },
     {
       "type": "sceneBreak"
@@ -920,84 +1089,98 @@
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1070_1",
+      "isRemote": false,
       "text": "Tell the people behind us, no delay through the trenches!"
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1070_1",
+      "isRemote": false,
       "text": "The bulk of the Sarkaz forces are being tied up at the front, but that doesn't mean we have all day."
     },
     {
       "type": "dialogue",
       "speakerName": "Exemplar Nurse",
       "speakerId": "avg_npc_418_1",
+      "isRemote": false,
       "text": "Sir, there's a lot of equipment in the camp that we need time to—"
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1070_1",
+      "isRemote": false,
       "text": "There is no time!"
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1070_1",
+      "isRemote": false,
       "text": "We can deal with the equipment issue once we get into the city."
     },
     {
       "type": "dialogue",
       "speakerName": "Exemplar Nurse",
       "speakerId": "avg_npc_418_1",
+      "isRemote": false,
       "text": "Some of the wounded can't walk on their own. We'll need to carry them by stretcher."
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1070_1",
+      "isRemote": false,
       "text": "You follow the path that Siege has cleared for us. I'll organize the transfer of the wounded. Now go!"
     },
     {
       "type": "dialogue",
       "speakerName": "Exemplar Nurse",
       "speakerId": "avg_npc_418_1",
+      "isRemote": false,
       "text": "I'll help, sir. I'm more familiar with the situation of individual patients."
     },
     {
       "type": "dialogue",
       "speakerName": "Exemplar Nurse",
       "speakerId": "avg_npc_418_1",
+      "isRemote": false,
       "text": "Plus, I promised them I wouldn't leave them behind."
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1070_1",
+      "isRemote": false,
       "text": "Grab your own share of suppressant and protective gear from the patients' supplies. Better than nothing, at least."
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1070_1",
+      "isRemote": false,
       "text": "The closer we get to the walls, the higher the atmospheric Originium particle density. The wounded will be in more danger than us."
     },
     {
       "type": "dialogue",
       "speakerName": "Exemplar Nurse",
       "speakerId": "avg_npc_418_1",
+      "isRemote": false,
       "text": "Yes, sir."
     },
     {
       "type": "dialogue",
       "speakerName": "Exemplar Nurse",
       "speakerId": "avg_npc_418_1",
+      "isRemote": false,
       "text": "They say you're not a Londinier, sir. Why would you risk your neck like this?"
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1070_1",
+      "isRemote": false,
       "text": "..."
     },
     {
@@ -1007,18 +1190,21 @@
       "type": "dialogue",
       "speakerName": "Exemplar Nurse",
       "speakerId": "avg_npc_418_1",
+      "isRemote": false,
       "text": "Look! Another battleship is giving covering fire for the Gastrell!"
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1070_1",
+      "isRemote": false,
       "text": "The Duke of Caster..."
     },
     {
       "type": "dialogue",
       "speakerName": "Exemplar Nurse",
       "speakerId": "avg_npc_418_1",
+      "isRemote": false,
       "text": "Weren't they saying that the Duke of Wellington betrayed us and fell out with the Duke of Caster?"
     },
     {
@@ -1028,6 +1214,7 @@
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1070_1",
+      "isRemote": false,
       "text": "Shit!"
     },
     {
@@ -1037,6 +1224,7 @@
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": null,
+      "isRemote": false,
       "text": "Contact his liege, we have sighted a small force of Victorians. Request permission to engage."
     },
     {
@@ -1046,6 +1234,7 @@
       "type": "dialogue",
       "speakerName": "Nachzehrer Royal Court Elites",
       "speakerId": "avg_npc_1341_1",
+      "isRemote": false,
       "text": "Get them. Leave survivors. Find out what their unit's objective is."
     },
     {
@@ -1055,12 +1244,14 @@
       "type": "dialogue",
       "speakerName": "Nachzehrer Royal Court Elites",
       "speakerId": "avg_npc_1341_1",
+      "isRemote": false,
       "text": "—?"
     },
     {
       "type": "dialogue",
       "speakerName": "Nachzehrer Royal Court Elites",
       "speakerId": "avg_npc_1341_1",
+      "isRemote": false,
       "text": "What happened to the clouds?"
     },
     {
@@ -1070,6 +1261,7 @@
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1070_1",
+      "isRemote": false,
       "text": "...Fire."
     },
     {
@@ -1086,18 +1278,21 @@
       "type": "dialogue",
       "speakerName": "Exemplar Nurse",
       "speakerId": "avg_npc_418_1",
+      "isRemote": false,
       "text": "Th—They're dead?"
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1070_1",
+      "isRemote": false,
       "text": "Careful. The fire has cleared a path, but it's a threat to us too."
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1070_1",
+      "isRemote": false,
       "text": "Hah."
     },
     {
@@ -1111,18 +1306,21 @@
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1070_1",
+      "isRemote": false,
       "text": "This is a war that will shock all the Core nations."
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1070_1",
+      "isRemote": false,
       "text": "It is not the number of casualties that will interest them the most... but how many people on both sides are actually fighting for the city of Londinium itself."
     },
     {
       "type": "dialogue",
       "speakerName": "Shearer",
       "speakerId": "avg_npc_1070_1",
+      "isRemote": false,
       "text": "It's a long way home for you."
     },
     {

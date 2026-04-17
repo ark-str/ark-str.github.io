@@ -6,7 +6,7 @@
   "title": "それぞれの行動",
   "storyCode": "4-7",
   "avgTag": "戦闘前",
-  "sourcePath": "vendor/ArknightsGamedata/jp/gamedata/story/obt/main/level_main_04-07_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/jp/gamedata/story/obt/main/level_main_04-07_beg.txt",
   "sourceHash": "5322ceb0248f5ef7ba3b6bd515cbc0b30ce720b3e78d30666e359f6548845781",
   "bodyAvailable": true,
   "blocks": [
@@ -15,105 +15,126 @@
       "text": "第三十二关（前）"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_cher_2"
+    },
+    {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "ここに倒れているのは……全員、レユニオンのようですね。"
     },
     {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "……傷口から流れ出した血は凍っていますが、それ以外、攻撃の痕跡はないですし……"
     },
     {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "フロストリーフさんのアーツによるものと考えていいでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "それから、あちらの瓦礫は、爆発で崩れた建物の残骸のようですが……"
     },
     {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "恐らく、メテオリーテさんの狙撃を受けて、ああなったのではないかと。"
     },
     {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "（だから、きっと……三人はまだ、無事でいるはず……）"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "char_003_kalts",
+      "isRemote": true,
       "text": "――アーミヤ。先ほど、救援部隊の全員が任務を終え、ロドスへ帰還した。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "char_003_kalts",
+      "isRemote": true,
       "text": "これで、メテオリーテの部隊以外、すべての偵察隊が救出されたことになる。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "char_003_kalts",
+      "isRemote": true,
       "text": "幸い、犠牲者は出なかったが、その代わりに――"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "char_003_kalts",
+      "isRemote": true,
       "text": "程度の差こそあれど、救出された隊員たちは皆凍傷を負っていた。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "char_003_kalts",
+      "isRemote": true,
       "text": "これは重要な情報と捉えて良いだろう。"
     },
     {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "……凍傷、ですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "ああ。加えて、すべての偵察隊員から、廃都市内にレユニオンの特殊部隊と思しき構成員を確認したという報告が上がっている。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "彼らの戦い方は、盲目的な普通の構成員とはまったく異なっているとのことだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "くれぐれも注意してくれ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "は、はい。わかりました。"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "ドクター、君も状況は理解したな？"
     },
     {
@@ -124,66 +145,73 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_002_amiya",
-          "text": "それは何よりだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_002_amiya",
-          "text": "では私も、己のすべきことを進めておくとしよう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_002_amiya",
-          "text": "――アーミヤ。Dr.{@nickname}がいくら有能であろうとも、一人の人間に頼りすぎないように。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_002_amiya",
-          "text": "それから、指輪の状態に気を配ることも忘れるな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "はい。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "……ケルシー先生も、ドクターを心配しているんですね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "それにしても――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "こちらが知らないうちに、危険な相手が迫ってきていたなんて……"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "それは何よりだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "では私も、己のすべきことを進めておくとしよう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "――アーミヤ。Dr.{@nickname}がいくら有能であろうとも、一人の人間に頼りすぎないように。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "それから、指輪の状態に気を配ることも忘れるな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "はい。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "……ケルシー先生も、ドクターを心配しているんですね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "それにしても――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "こちらが知らないうちに、危険な相手が迫ってきていたなんて……"
     },
     {
       "type": "choice",
@@ -203,75 +231,83 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "そうですね……レユニオンが、私たちを逃すまいとしていることは明らかだと思います。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "ですが、そもそも我々には、目的も果たさず逃げ出すつもりなんてありませんから。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "――ロドスのみなさん、聞いてください。これから、レユニオンの防衛線を突破します。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "一緒に、メテオリーテさんたちを助けに行きましょう！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_002_amiya",
-          "text": "――レッド、聞こえるか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_002_amiya",
-          "text": "ふむ……そうか。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_002_amiya",
-          "text": "では、スラム街東側の入口で合流しよう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_002_amiya",
-          "text": "ああ。二人だけでいい。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_002_amiya",
-          "text": "問題はない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_002_amiya",
-          "text": "レユニオンの相手など、我々二人で十分だ。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "そうですね……レユニオンが、私たちを逃すまいとしていることは明らかだと思います。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ですが、そもそも我々には、目的も果たさず逃げ出すつもりなんてありませんから。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "――ロドスのみなさん、聞いてください。これから、レユニオンの防衛線を突破します。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "一緒に、メテオリーテさんたちを助けに行きましょう！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "――レッド、聞こえるか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ふむ……そうか。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "では、スラム街東側の入口で合流しよう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ああ。二人だけでいい。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "問題はない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "レユニオンの相手など、我々二人で十分だ。"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": [

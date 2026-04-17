@@ -18,6 +18,7 @@ The corridor falls silent.
   assert.deepEqual(blocks, [
     {
       type: "dialogue",
+      isRemote: false,
       speakerName: "Amiya",
       speakerId: null,
       text: "Ready, Doctor?",
@@ -29,6 +30,7 @@ The corridor falls silent.
     { type: "sceneBreak" },
     {
       type: "dialogue",
+      isRemote: false,
       speakerName: "Dobermann",
       speakerId: null,
       text: "Move out.",
@@ -51,20 +53,21 @@ test("parseStoryText groups predicate blocks under the matching choice option", 
   assert.equal(blocks[0].options[0].blocks[0].type, "dialogue");
   assert.equal(blocks[0].options[0].blocks[0].text, "Hold the line.");
   assert.equal(blocks[0].options[1].blocks[0].text, "Push forward.");
+  assert.equal(blocks[0].options[0].blocks[0].isRemote, false);
 });
 
-test("parseStoryText treats predicates that reference every option as shared", () => {
+test("parseStoryText treats predicates that reference every option as continuation after the choice", () => {
   const blocks = parseStoryText(`
 [Decision(options="...;Proceed",values="1;2")]
 [Predicate(references="1;2")]
 [name="Amiya"] We understand.
 `);
 
-  assert.equal(blocks.length, 1);
+  assert.equal(blocks.length, 2);
   assert.equal(blocks[0].type, "choice");
-  assert.equal(blocks[0].sharedBlocks.length, 1);
-  assert.equal(blocks[0].sharedBlocks[0].type, "dialogue");
-  assert.equal(blocks[0].sharedBlocks[0].text, "We understand.");
+  assert.equal(blocks[1].type, "dialogue");
+  assert.equal(blocks[1].text, "We understand.");
+  assert.equal(blocks[1].isRemote, false);
 });
 
 test("normalizeSpeakerIdToken keeps char ids canonical and preserves non-char visual keys", () => {
@@ -83,6 +86,7 @@ test("parseStoryText resolves focused Character slots into operator-aware dialog
   assert.deepEqual(blocks, [
     {
       type: "dialogue",
+      isRemote: false,
       speakerName: "Texas",
       speakerId: "char_102_texas",
       text: "Stand down.",
@@ -99,6 +103,7 @@ test("parseStoryText ignores char_empty placeholders when only one real Characte
   assert.deepEqual(blocks, [
     {
       type: "dialogue",
+      isRemote: false,
       speakerName: "린 위시아",
       speakerId: "avg_npc_196_1",
       text: "찾았다.",
@@ -150,6 +155,7 @@ test("parseStoryText keeps non-char visual keys on dialogue blocks without alias
   assert.deepEqual(blocks, [
     {
       type: "dialogue",
+      isRemote: false,
       speakerName: "Cheery Legatus",
       speakerId: "avg_npc_360_1",
       text: "Lady Sharon, we're in the Basilica...",
@@ -166,6 +172,7 @@ test("parseStoryText resolves charslot speaker ids for visual portrait lookup", 
   assert.deepEqual(blocks, [
     {
       type: "dialogue",
+      isRemote: false,
       speakerName: "Theresis",
       speakerId: "avg_npc_1297_1",
       text: "You're watching me, aren't you?",
@@ -188,18 +195,21 @@ test("parseStoryText resolves spaced charslot attributes from act34side npc exch
   assert.deepEqual(blocks, [
     {
       type: "dialogue",
+      isRemote: false,
       speakerName: "에기르 연구원 A",
       speakerId: "avg_npc_1393_1",
       text: "……지질 조건 상으로는 잠재력이 아주 큰 화산이지만 위치가 그리 좋지는 않아.",
     },
     {
       type: "dialogue",
+      isRemote: false,
       speakerName: "에기르 연구원 B",
       speakerId: "avg_npc_1395_1",
       text: "기술원의 보고서를 검토해 봤군요?",
     },
     {
       type: "dialogue",
+      isRemote: false,
       speakerName: "에기르 연구원 A",
       speakerId: "avg_npc_1393_1",
       text: "자료에 따르면 탑의 에너지 소모는 현재보다 훨씬 더 많았다더군.",
@@ -224,13 +234,15 @@ test("parseStoryText resolves mixed cutin and character frames with priority and
 `);
 
   assert.deepEqual(
-    blocks.filter((block) => block.type === "dialogue").map((block) => block.speakerId),
+    blocks
+      .filter((block) => block.type === "dialogue")
+      .map((block) => ({ isRemote: block.isRemote, speakerId: block.speakerId })),
     [
-      "char_2006_weiywfmzuki",
-      "avg_npc_034",
-      "avg_npc_036",
-      "char_2006_weiywfmzuki",
-      "char_2006_weiywfmzuki",
+      { isRemote: true, speakerId: "char_2006_weiywfmzuki" },
+      { isRemote: false, speakerId: "avg_npc_034" },
+      { isRemote: false, speakerId: "avg_npc_036" },
+      { isRemote: true, speakerId: "char_2006_weiywfmzuki" },
+      { isRemote: false, speakerId: "char_2006_weiywfmzuki" },
     ],
   );
 });
@@ -284,9 +296,31 @@ test("parseStoryText leaves ambiguous multi-slot decimal focus without a speaker
   assert.deepEqual(blocks, [
     {
       type: "dialogue",
+      isRemote: false,
       speakerName: "로빈",
       speakerId: null,
       text: "지금은 움직이면 안 돼.",
+    },
+  ]);
+});
+
+test("parseStoryText emits background blocks from Background tags", () => {
+  const blocks = parseStoryText(`
+[Background(image="51_g4_aegirstreet_1",screenadapt="coverall")]
+[name="에기르 연구원 A"]배경이 바뀌었다.
+`);
+
+  assert.deepEqual(blocks, [
+    {
+      type: "background",
+      backgroundId: "51_g4_aegirstreet_1",
+    },
+    {
+      type: "dialogue",
+      isRemote: false,
+      speakerName: "에기르 연구원 A",
+      speakerId: null,
+      text: "배경이 바뀌었다.",
     },
   ]);
 });

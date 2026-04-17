@@ -6,10 +6,14 @@
   "title": "Not a Moment's Rest",
   "storyCode": "13-3",
   "avgTag": "After Operation",
-  "sourcePath": "vendor/ArknightsGamedata/en/gamedata/story/obt/main/level_main_13-02_end.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/en/gamedata/story/obt/main/level_main_13-02_end.txt",
   "sourceHash": "48b484ca523b1c0b924739dd8d5466f9f4fec55e4652b38e3ea47450e70883aa",
   "bodyAvailable": true,
   "blocks": [
+    {
+      "type": "background",
+      "backgroundId": "bg_warehouse"
+    },
     {
       "type": "choice",
       "options": [
@@ -28,51 +32,55 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Panicking Citizen",
-          "speakerId": null,
-          "text": "Out of my way, out of my way!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Crying Citizen",
-          "speakerId": null,
-          "text": "Th-The monsters are coming!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Panicking Citizen",
-          "speakerId": null,
-          "text": "Get out of my way!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Crying Citizen",
-          "speakerId": null,
-          "text": "Get away! There's blood on you! Like those monsters!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": null,
-          "text": "Doctor!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": null,
-          "text": "Doctor, I'm here! Grab my hand!"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Panicking Citizen",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Out of my way, out of my way!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Crying Citizen",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Th-The monsters are coming!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Panicking Citizen",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Get out of my way!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Crying Citizen",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Get away! There's blood on you! Like those monsters!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Doctor!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Doctor, I'm here! Grab my hand!"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -82,18 +90,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Grab my hand, Doctor."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Grab my hand, Doctor."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -113,8 +120,7 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -124,33 +130,34 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya?",
-          "speakerId": "avg_npc_394_1",
-          "text": "...Why?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya?",
-          "speakerId": "avg_npc_394_1",
-          "text": "What should The King of Sarkaz look like?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Damazti Cluster",
-          "speakerId": "avg_npc_426_1",
-          "text": "......"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya?",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "...Why?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya?",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "What should The King of Sarkaz look like?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Damazti Cluster",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -170,129 +177,145 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Damazti Cluster",
-          "speakerId": "avg_npc_426_1",
-          "text": "The myriad souls still reject us."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Damazti Cluster",
-          "speakerId": "avg_npc_426_1",
-          "text": "However... a change has occurred. A part of us has left us."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Damazti Cluster",
-          "speakerId": "avg_npc_426_1",
-          "text": "We must make a choice... we cannot remain stagnant."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Doctor!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Damazti Cluster",
-          "speakerId": "avg_npc_426_1",
-          "text": "...King of Sarkaz."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Damazti Cluster",
-          "speakerId": "avg_npc_426_1",
-          "text": "I tried to imitate you, but I failed."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "A new Damazti..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Is this your choice? To formally stand against us?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Damazti Cluster",
-          "speakerId": "avg_npc_426_1",
-          "text": "We simply decided to try."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Hm—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Damazti Cluster",
-          "speakerId": "avg_npc_426_1",
-          "text": "Will we learn our meaning in battle against you, King of Sarkaz?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Damazti Cluster",
-          "speakerId": "avg_npc_426_1",
-          "text": "Where does our path lead?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Once... I asked the previous Damazti what I should do. He said I must overcome all doubt and hesitation."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "If you still call me the King of Sarkaz after being reborn..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Then go find the answer yourself. You won't get it from me."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "Oh, did I hurt you?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "That Ascalon woman is so annoying. Is she so persistent with everyone?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Doctor!"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Damazti Cluster",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "The myriad souls still reject us."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Damazti Cluster",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "However... a change has occurred. A part of us has left us."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Damazti Cluster",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "We must make a choice... we cannot remain stagnant."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Doctor!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Damazti Cluster",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "...King of Sarkaz."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Damazti Cluster",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "I tried to imitate you, but I failed."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "A new Damazti..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Is this your choice? To formally stand against us?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Damazti Cluster",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "We simply decided to try."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Hm—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Damazti Cluster",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "Will we learn our meaning in battle against you, King of Sarkaz?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Damazti Cluster",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "Where does our path lead?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Once... I asked the previous Damazti what I should do. He said I must overcome all doubt and hesitation."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "If you still call me the King of Sarkaz after being reborn..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Then go find the answer yourself. You won't get it from me."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "Oh, did I hurt you?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "That Ascalon woman is so annoying. Is she so persistent with everyone?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Doctor!"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -302,8 +325,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -313,138 +335,154 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "H-How—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "I have long waited to rummage in your emotions and memories, little king."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "I thought the Revenant would cause you some difficulty, but you seem to be in better condition than I expected."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "Cautus, no, Chimera."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "You are no Theresa."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Confessarius Guard",
-          "speakerId": "avg_npc_425_1",
-          "text": "......"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Let go of me—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "You had the fortune to be conferred the crown, but do you truly understand your power?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "We have studied the King of Sarkaz for thousands of years."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "As for you..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Get... away... from... Doctor!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "Oh? Still mustering the power of the King of Sarkaz, even when surrounded by Confessarius witchcraft? I'm starting to miss Liz."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "Well, this is a benefit to our experiments. I'll spare the Doctor's life, for now, and teach you to leverage your emotions."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "But I must make sure you behave before handing you over to the leader."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "Great Damazti, that nasty woman is coming. May I count on you to deal with the rest?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Damazti Cluster",
-          "speakerId": "avg_npc_426_1",
-          "text": "Very well."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Damazti Cluster",
-          "speakerId": "avg_npc_426_1",
-          "text": "Maybe she will temper us."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Doctor..."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "H-How—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "I have long waited to rummage in your emotions and memories, little king."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "I thought the Revenant would cause you some difficulty, but you seem to be in better condition than I expected."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "Cautus, no, Chimera."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "You are no Theresa."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Confessarius Guard",
+      "speakerId": "avg_npc_425_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Let go of me—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "You had the fortune to be conferred the crown, but do you truly understand your power?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "We have studied the King of Sarkaz for thousands of years."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "As for you..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Get... away... from... Doctor!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "Oh? Still mustering the power of the King of Sarkaz, even when surrounded by Confessarius witchcraft? I'm starting to miss Liz."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "Well, this is a benefit to our experiments. I'll spare the Doctor's life, for now, and teach you to leverage your emotions."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "But I must make sure you behave before handing you over to the leader."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "Great Damazti, that nasty woman is coming. May I count on you to deal with the rest?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Damazti Cluster",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "Very well."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Damazti Cluster",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "Maybe she will temper us."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Doctor..."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -454,24 +492,31 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Ascalon",
-          "speakerId": "avg_npc_395_1",
-          "text": "Doctor! Stay where you are!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ascalon",
-          "speakerId": "avg_npc_395_1",
-          "text": "The most important thing is—"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ascalon",
+      "speakerId": "avg_npc_395_1",
+      "isRemote": false,
+      "text": "Doctor! Stay where you are!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ascalon",
+      "speakerId": "avg_npc_395_1",
+      "isRemote": false,
+      "text": "The most important thing is—"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_warehouse"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -486,8 +531,7 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -497,8 +541,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_laccolith"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -508,8 +558,11 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_cave_4"
     },
     {
       "type": "choice",
@@ -519,8 +572,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -530,8 +582,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -546,18 +597,17 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": null,
-          "text": "You're tough, 'Doctor'. I respect that."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "You're tough, 'Doctor'. I respect that."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -567,48 +617,52 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "Awake?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "How did you follow me with that feeble constitution of yours? I examined your body, but found nothing."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "Well... not exactly nothing."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "Your structure is... unusual. Different from all the samples I've seen. I would very much like to study you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "In great detail. Unfortunately, this place has been abandoned a long time, and the equipment is far from adequate. It would not do to damage such a precious sample."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "Perhaps I could bring you back to Londinium. But Theresis seems to pay particular attention to you..."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "Awake?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "How did you follow me with that feeble constitution of yours? I examined your body, but found nothing."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "Well... not exactly nothing."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "Your structure is... unusual. Different from all the samples I've seen. I would very much like to study you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "In great detail. Unfortunately, this place has been abandoned a long time, and the equipment is far from adequate. It would not do to damage such a precious sample."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "Perhaps I could bring you back to Londinium. But Theresis seems to pay particular attention to you..."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -618,24 +672,24 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "Look, 'Doctor'. What is she looking at?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "She's trembling."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "Look, 'Doctor'. What is she looking at?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "She's trembling."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -645,18 +699,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "'The King of Sarkaz grants the promised land.' The little bunny simply got a taste of her own power."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "'The King of Sarkaz grants the promised land.' The little bunny simply got a taste of her own power."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -669,6 +722,7 @@
               "type": "dialogue",
               "speakerName": "Salus",
               "speakerId": "avg_npc_653_1",
+              "isRemote": false,
               "text": "Laughable attempt at flattery."
             }
           ]
@@ -681,6 +735,7 @@
               "type": "dialogue",
               "speakerName": "Salus",
               "speakerId": "avg_npc_653_1",
+              "isRemote": false,
               "text": "Meaningless negotiation."
             }
           ]
@@ -693,55 +748,60 @@
               "type": "dialogue",
               "speakerName": "Salus",
               "speakerId": "avg_npc_653_1",
+              "isRemote": false,
               "text": "A trembling threat."
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "Painfully amusing, the way you hopelessly grasp at straws."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "No operators at your side. Nothing for you to command. Even the King of Sarkaz whom you served is leaving you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "What can you do?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "I've asked the leader many times: why does power so often end up in the hands of the ordinary?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "What have these forgotten Kings of Sarkaz given us, besides a life of exile and persecution?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "Will you, 'Doctor', be one of the causes of another round of suffering?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "Painfully amusing, the way you hopelessly grasp at straws."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "No operators at your side. Nothing for you to command. Even the King of Sarkaz whom you served is leaving you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "What can you do?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "I've asked the leader many times: why does power so often end up in the hands of the ordinary?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "What have these forgotten Kings of Sarkaz given us, besides a life of exile and persecution?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "Will you, 'Doctor', be one of the causes of another round of suffering?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -761,36 +821,38 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "I appreciate your intelligence, but there has never been a shortage of smart people."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "There is nothing that can compare to this opportunity, what we have pursued for thousands of years."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "If she can force the crown upon the head of this little bunny—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "Then it can be forced out."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "I appreciate your intelligence, but there has never been a shortage of smart people."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "There is nothing that can compare to this opportunity, what we have pursued for thousands of years."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "If she can force the crown upon the head of this little bunny—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "Then it can be forced out."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -800,69 +862,75 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "Steal? No, this crown is not a ring lying on the battlefield for the taking."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "You'll never understand."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "What's this? A rock?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "How touching, putting yourself in front of her. But meaningless."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "If you're so obsessed, I have a better way to deal with you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "Perhaps that brain beneath the hood holds secrets beneficial to our experiments."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "There. Don't try to resist."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "Share your memories with me—"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "Steal? No, this crown is not a ring lying on the battlefield for the taking."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "You'll never understand."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "What's this? A rock?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "How touching, putting yourself in front of her. But meaningless."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "If you're so obsessed, I have a better way to deal with you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "Perhaps that brain beneath the hood holds secrets beneficial to our experiments."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "There. Don't try to resist."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "Share your memories with me—"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -872,33 +940,34 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "What? What could possibly repel a Confessarius's..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "The King of Sarkaz? But her mind should have been shackled..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "*Ancient Sarkaz Language*"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "What? What could possibly repel a Confessarius's..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "The King of Sarkaz? But her mind should have been shackled..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "*Ancient Sarkaz Language*"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -908,36 +977,38 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "The shackles of myriad souls are not so easily broken. She remains amidst the myriad souls."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "She has chosen to protect you subconsciously. Hah."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "Wait... That's not all?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "Her connection with the crown is growing?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "The shackles of myriad souls are not so easily broken. She remains amidst the myriad souls."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "She has chosen to protect you subconsciously. Hah."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "Wait... That's not all?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "Her connection with the crown is growing?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -947,45 +1018,48 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "Ah, such intense emotions."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "Looks like Theresa's choice was not entirely one of desperation, after all."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "Why don't we cut straight to the chase, then? I hope this won't break your little head. That would be a shame."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "The Confessarii left more than statues in this cavern."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "*Sarkaz incantation*"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "Ah, such intense emotions."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "Looks like Theresa's choice was not entirely one of desperation, after all."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "Why don't we cut straight to the chase, then? I hope this won't break your little head. That would be a shame."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "The Confessarii left more than statues in this cavern."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "*Sarkaz incantation*"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -995,8 +1069,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1006,8 +1079,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1017,129 +1089,148 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "Tsk—"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ascalon",
-          "speakerId": "avg_npc_395_1",
-          "text": "That was reckless, Doctor. If I didn't run into—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": null,
-          "text": "Look out."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "Vampire Arts... what have you done to your bloodline?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "Hard to imagine that you're related to Shining."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "The amount of grief that your degeneration has caused that fine girl..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "*Cough* *cough*—Lord of the Banshees."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "I'm impressed. It couldn't have been easy to get here."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "I should have been more careful, knowing that the sitting Lord of the Banshees is rather rebellious."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ascalon",
-          "speakerId": "avg_npc_395_1",
-          "text": "You're more dangerous than we expected."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ascalon",
-          "speakerId": "avg_npc_395_1",
-          "text": "Urgent situation. Interrogation out of the question. Kill her and leave."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "I know."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "This is the Lord of the Banshees? The Elegiac Court? Indeed, these incantations are no less refined than that of your famous mother."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "But... did you know?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Salus",
-          "speakerId": "avg_npc_653_1",
-          "text": "Such refined runes, refined Arts... they are far from the Sarkaz's roots."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "Ascalon!"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "Tsk—"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ascalon",
+      "speakerId": "avg_npc_395_1",
+      "isRemote": false,
+      "text": "That was reckless, Doctor. If I didn't run into—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Look out."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "Vampire Arts... what have you done to your bloodline?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "Hard to imagine that you're related to Shining."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "The amount of grief that your degeneration has caused that fine girl..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "*Cough* *cough*—Lord of the Banshees."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "I'm impressed. It couldn't have been easy to get here."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "I should have been more careful, knowing that the sitting Lord of the Banshees is rather rebellious."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ascalon",
+      "speakerId": "avg_npc_395_1",
+      "isRemote": false,
+      "text": "You're more dangerous than we expected."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ascalon",
+      "speakerId": "avg_npc_395_1",
+      "isRemote": false,
+      "text": "Urgent situation. Interrogation out of the question. Kill her and leave."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "I know."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "This is the Lord of the Banshees? The Elegiac Court? Indeed, these incantations are no less refined than that of your famous mother."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "But... did you know?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Salus",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "Such refined runes, refined Arts... they are far from the Sarkaz's roots."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "Ascalon!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_coldforest"
     },
     {
       "type": "choice",
@@ -1149,30 +1240,31 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "Doctor."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "We've left the cave. Ascalon is scouting the area."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "Your right forearm is broken. I made a makeshift splint, but I'm no medic."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "Doctor."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "We've left the cave. Ascalon is scouting the area."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "Your right forearm is broken. I made a makeshift splint, but I'm no medic."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1182,39 +1274,41 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "Still unconscious. The Confessarius said something to the effect of 'trapped in the myriad souls', but..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "She's alive, at least."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "I can understand Ascalon's objection to your methods. She's concerned for more than just your safety."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "But it's also true that you bought us time. The Confessarius and Amiya would be behind Londinium's walls by now, if not for your efforts."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "Still unconscious. The Confessarius said something to the effect of 'trapped in the myriad souls', but..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "She's alive, at least."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "I can understand Ascalon's objection to your methods. She's concerned for more than just your safety."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "But it's also true that you bought us time. The Confessarius and Amiya would be behind Londinium's walls by now, if not for your efforts."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1224,30 +1318,31 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "She got away."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "Rock and earth, blood... and the wail of the Banshee."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "Is this the Sarkaz that the Confessarii want? One so obsessed with bloodline and witchcraft?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "She got away."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "Rock and earth, blood... and the wail of the Banshee."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "Is this the Sarkaz that the Confessarii want? One so obsessed with bloodline and witchcraft?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1257,8 +1352,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1268,30 +1362,31 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "...Wait."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "The vapor around us..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "...This can't be. Careful, Doctor. We may still be inside the enemy's trap."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "...Wait."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "The vapor around us..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "...This can't be. Careful, Doctor. We may still be inside the enemy's trap."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1306,24 +1401,24 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "This is not Victoria."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1072_1",
-          "text": "This is the Convallis of the Banshees."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "This is not Victoria."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1072_1",
+      "isRemote": false,
+      "text": "This is the Convallis of the Banshees."
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": []

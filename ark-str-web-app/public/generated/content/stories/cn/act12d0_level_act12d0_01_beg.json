@@ -6,10 +6,14 @@
   "title": "高空坠物",
   "storyCode": "RI-1",
   "avgTag": "行动前",
-  "sourcePath": "vendor/ArknightsGamedata/cn/gamedata/story/activities/act12d0/level_act12d0_01_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/cn/gamedata/story/activities/act12d0/level_act12d0_01_beg.txt",
   "sourceHash": "03ae804fb2902824c2aa2444756ea101bb5e5bf0bb74e665bbdb4e7f4278f189",
   "bodyAvailable": true,
   "blocks": [
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
     {
       "type": "narration",
       "text": "这里有你想要的一切。\n你所渴望的片刻安宁、没有战争的大地、母亲的怀抱。\n你的意识无限扩张，你挣脱了枷锁，你自由了。"
@@ -40,13 +44,11 @@
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "narration",
-          "text": "你如同时间长河中的一颗顽石，它将会带走你的责任、宿命、欲望、联系，但唯有你自身，你将永远地存在于这里。\n你不拥有任何东西，任何东西也不拥有你。"
-        }
       ]
+    },
+    {
+      "type": "narration",
+      "text": "你如同时间长河中的一颗顽石，它将会带走你的责任、宿命、欲望、联系，但唯有你自身，你将永远地存在于这里。\n你不拥有任何东西，任何东西也不拥有你。"
     },
     {
       "type": "choice",
@@ -66,8 +68,7 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -92,8 +93,7 @@
             }
           ]
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -110,6 +110,7 @@
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": null,
+              "isRemote": false,
               "text": "......士，博士！"
             },
             {
@@ -120,6 +121,7 @@
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": null,
+              "isRemote": false,
               "text": "躺这么久了还不醒，真麻烦。"
             },
             {
@@ -133,12 +135,14 @@
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": null,
+              "isRemote": false,
               "text": "怎么办，这都不醒，反正阿米娅不在，把博士抓起来来几圈大风车试试好了。"
             },
             {
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": null,
+              "isRemote": false,
               "text": "大风车？好玩吗，我也要玩！"
             },
             {
@@ -159,6 +163,7 @@
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": null,
+              "isRemote": false,
               "text": "......士，博士！"
             },
             {
@@ -169,6 +174,7 @@
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": null,
+              "isRemote": false,
               "text": "躺这么久了还不醒，真麻烦。"
             },
             {
@@ -182,12 +188,14 @@
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": null,
+              "isRemote": false,
               "text": "怎么办，这都不醒，反正阿米娅不在，把博士抓起来来几圈大风车试试好了。"
             },
             {
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": null,
+              "isRemote": false,
               "text": "大风车？好玩吗，我也要玩！"
             },
             {
@@ -196,8 +204,7 @@
             }
           ]
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -217,66 +224,84 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "刻俄柏",
-          "speakerId": null,
-          "text": "嘉维尔，大风车应该怎么玩呀？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉维尔",
-          "speakerId": null,
-          "text": "所谓大风车，就是你要把对方的腿或者手抓起来，然后开始旋转起来。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉维尔",
-          "speakerId": null,
-          "text": "等到你觉得差不多了就把他丢出去。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "刻俄柏",
-          "speakerId": null,
-          "text": "听起来好好玩！我可以试试吗！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉维尔",
-          "speakerId": null,
-          "text": "可以啊，我来接住博士就是了......嗯？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉维尔",
-          "speakerId": null,
-          "text": "博士，你终于醒了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "刻俄柏",
-          "speakerId": null,
-          "text": "啊，博士醒了！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉维尔",
-          "speakerId": null,
-          "text": "小刻，别一下子就跳到博士身上去，博士被你这么一压说不定又要昏过去了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "刻俄柏",
-          "speakerId": null,
-          "text": "哦，对不起，博士！"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_desert_1"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "刻俄柏",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "嘉维尔，大风车应该怎么玩呀？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉维尔",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "所谓大风车，就是你要把对方的腿或者手抓起来，然后开始旋转起来。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉维尔",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "等到你觉得差不多了就把他丢出去。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "刻俄柏",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "听起来好好玩！我可以试试吗！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉维尔",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "可以啊，我来接住博士就是了......嗯？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉维尔",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "博士，你终于醒了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "刻俄柏",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "啊，博士醒了！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉维尔",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "小刻，别一下子就跳到博士身上去，博士被你这么一压说不定又要昏过去了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "刻俄柏",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "哦，对不起，博士！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_desert_1"
     },
     {
       "type": "choice",
@@ -289,12 +314,14 @@
               "type": "dialogue",
               "speakerName": "嘉维尔",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "没事，这点高度，小意思。"
             },
             {
               "type": "dialogue",
               "speakerName": "刻俄柏",
               "speakerId": "char_2013_cerber",
+              "isRemote": false,
               "text": "我也没事！"
             }
           ]
@@ -307,6 +334,7 @@
               "type": "dialogue",
               "speakerName": "嘉维尔",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "喂，不是吧博士，你难道又摔失忆了？"
             }
           ]
@@ -316,8 +344,7 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -330,24 +357,28 @@
               "type": "dialogue",
               "speakerName": "嘉维尔",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "博士，你别忘了，我是医生。"
             },
             {
               "type": "dialogue",
               "speakerName": "嘉维尔",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "总之，博士，我来简单说明一下情况吧。"
             },
             {
               "type": "dialogue",
               "speakerName": "嘉维尔",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "总而言之，我们坠机了。"
             },
             {
               "type": "dialogue",
               "speakerName": "刻俄柏",
               "speakerId": "char_2013_cerber",
+              "isRemote": false,
               "text": "从很高的地方摔了下来！咻——！碰！这样。"
             }
           ]
@@ -360,30 +391,33 @@
               "type": "dialogue",
               "speakerName": "嘉维尔",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "还会开玩笑，看起来没有大事。"
             },
             {
               "type": "dialogue",
               "speakerName": "嘉维尔",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "总之，博士，我来简单说明一下情况吧。"
             },
             {
               "type": "dialogue",
               "speakerName": "嘉维尔",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "总而言之，我们坠机了。"
             },
             {
               "type": "dialogue",
               "speakerName": "刻俄柏",
               "speakerId": "char_2013_cerber",
+              "isRemote": false,
               "text": "从很高的地方摔了下来！咻——！碰！这样。"
             }
           ]
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -403,33 +437,35 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "嘉维尔",
-          "speakerId": "char_187_ccheal",
-          "text": "啧，好吧，总之，博士你运气不太好，我们被攻击的时候爆炸正好发生在你座位附近，你直接被炸飞撞到墙上就晕倒了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉维尔",
-          "speakerId": "char_187_ccheal",
-          "text": "放心，你的伤口我已经包扎过了，问题不大，而且和你刚到罗德岛的时候比，你的体质可好了不少。不错啊，博士。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "刻俄柏",
-          "speakerId": "char_2013_cerber",
-          "text": "呜呜，博士，对不起，我应该接住你的，但是我被爆炸声吓到了......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉维尔",
-          "speakerId": "char_187_ccheal",
-          "text": "这也不能怪你，老实说，就算是我也想不到这帮崽子居然还有能对空的武器了。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉维尔",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "啧，好吧，总之，博士你运气不太好，我们被攻击的时候爆炸正好发生在你座位附近，你直接被炸飞撞到墙上就晕倒了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉维尔",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "放心，你的伤口我已经包扎过了，问题不大，而且和你刚到罗德岛的时候比，你的体质可好了不少。不错啊，博士。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "刻俄柏",
+      "speakerId": "char_2013_cerber",
+      "isRemote": false,
+      "text": "呜呜，博士，对不起，我应该接住你的，但是我被爆炸声吓到了......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉维尔",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "这也不能怪你，老实说，就算是我也想不到这帮崽子居然还有能对空的武器了。"
     },
     {
       "type": "choice",
@@ -439,15 +475,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "嘉维尔",
-          "speakerId": "char_187_ccheal",
-          "text": "是啊，我没说过吗，我老家这里的人很好斗的，虽然他们都打不过我。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉维尔",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "是啊，我没说过吗，我老家这里的人很好斗的，虽然他们都打不过我。"
     },
     {
       "type": "choice",
@@ -457,27 +492,28 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "嘉维尔",
-          "speakerId": "char_187_ccheal",
-          "text": "在下坠的时候，为了控制高度，其他人中途就先跳下去了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉维尔",
-          "speakerId": "char_187_ccheal",
-          "text": "为了保护你，我和刻俄柏是最后才跳下来的。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉维尔",
-          "speakerId": "char_187_ccheal",
-          "text": "哦对，Lancet-2应该还留在飞行器上。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉维尔",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "在下坠的时候，为了控制高度，其他人中途就先跳下去了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉维尔",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "为了保护你，我和刻俄柏是最后才跳下来的。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉维尔",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "哦对，Lancet-2应该还留在飞行器上。"
     },
     {
       "type": "choice",
@@ -487,15 +523,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "嘉维尔",
-          "speakerId": "char_187_ccheal",
-          "text": "我没记错的话，在那个方向吧，喏，那边那个山坡过去应该就是了。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉维尔",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "我没记错的话，在那个方向吧，喏，那边那个山坡过去应该就是了。"
     },
     {
       "type": "choice",
@@ -505,132 +540,157 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "嘉维尔",
-          "speakerId": "char_187_ccheal",
-          "text": "行。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉维尔",
-          "speakerId": "char_187_ccheal",
-          "text": "你看，那就是我们的飞行器。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉维尔",
-          "speakerId": "char_187_ccheal",
-          "text": "唔哦，在冒烟呢，感觉不能用了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉维尔",
-          "speakerId": "char_187_ccheal",
-          "text": "不过看起来还能修的样子。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "刻俄柏",
-          "speakerId": "char_2013_cerber",
-          "text": "博士，嘉维尔，飞行器那边有人！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉维尔",
-          "speakerId": "char_187_ccheal",
-          "text": "嗯？那是......"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Lancet-2",
-          "speakerId": "char_285_medic2",
-          "text": "请不要靠近我，虽然我有保护罗德岛财产的义务，但我只是一台医疗器械，呜呜......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿达克利斯人A",
-          "speakerId": "avg_npc_071",
-          "text": "喂，这台机器好像会说话啊。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿达克利斯人B",
-          "speakerId": "avg_npc_070",
-          "text": "是啊，没想到天上掉下来这么个厉害的机器不说，里面还有会说话的机器！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿达克利斯人C",
-          "speakerId": "avg_npc_070",
-          "text": "喂，你们说，该不会它里面其实装着个人吧？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿达克利斯人A",
-          "speakerId": "avg_npc_071",
-          "text": "不知道，要不然我们把它也抢回去吧，酋长肯定会喜欢的。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿达克利斯人B",
-          "speakerId": "avg_npc_070",
-          "text": "好啊，弟兄们，我们把它也扛回去！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Lancet-2",
-          "speakerId": "char_285_medic2",
-          "text": "救命啊——"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉维尔",
-          "speakerId": "char_187_ccheal",
-          "text": "给我住手！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿达克利斯人A",
-          "speakerId": "avg_npc_071",
-          "text": "......&%（什么人？！）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉维尔",
-          "speakerId": "char_187_ccheal",
-          "text": "敢抢我们的东西，你们活得不耐烦了！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿达克利斯人A",
-          "speakerId": "avg_npc_071",
-          "text": "......￥%%#（谁能证明这就是你的东西，它是从天上掉下来的！）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿达克利斯人B",
-          "speakerId": "avg_npc_070",
-          "text": "！@#%......&（没错，是我们先到的，所以就是我们的！）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉维尔",
-          "speakerId": "char_187_ccheal",
-          "text": "啧，还挺有道理。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉维尔",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "行。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_desert_2"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉维尔",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "你看，那就是我们的飞行器。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉维尔",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "唔哦，在冒烟呢，感觉不能用了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉维尔",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "不过看起来还能修的样子。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "刻俄柏",
+      "speakerId": "char_2013_cerber",
+      "isRemote": false,
+      "text": "博士，嘉维尔，飞行器那边有人！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉维尔",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "嗯？那是......"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_desert_2"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Lancet-2",
+      "speakerId": "char_285_medic2",
+      "isRemote": false,
+      "text": "请不要靠近我，虽然我有保护罗德岛财产的义务，但我只是一台医疗器械，呜呜......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿达克利斯人A",
+      "speakerId": "avg_npc_071",
+      "isRemote": false,
+      "text": "喂，这台机器好像会说话啊。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿达克利斯人B",
+      "speakerId": "avg_npc_070",
+      "isRemote": false,
+      "text": "是啊，没想到天上掉下来这么个厉害的机器不说，里面还有会说话的机器！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿达克利斯人C",
+      "speakerId": "avg_npc_070",
+      "isRemote": false,
+      "text": "喂，你们说，该不会它里面其实装着个人吧？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿达克利斯人A",
+      "speakerId": "avg_npc_071",
+      "isRemote": false,
+      "text": "不知道，要不然我们把它也抢回去吧，酋长肯定会喜欢的。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿达克利斯人B",
+      "speakerId": "avg_npc_070",
+      "isRemote": false,
+      "text": "好啊，弟兄们，我们把它也扛回去！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Lancet-2",
+      "speakerId": "char_285_medic2",
+      "isRemote": false,
+      "text": "救命啊——"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉维尔",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "给我住手！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿达克利斯人A",
+      "speakerId": "avg_npc_071",
+      "isRemote": false,
+      "text": "......&%（什么人？！）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉维尔",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "敢抢我们的东西，你们活得不耐烦了！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿达克利斯人A",
+      "speakerId": "avg_npc_071",
+      "isRemote": false,
+      "text": "......￥%%#（谁能证明这就是你的东西，它是从天上掉下来的！）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿达克利斯人B",
+      "speakerId": "avg_npc_070",
+      "isRemote": false,
+      "text": "！@#%......&（没错，是我们先到的，所以就是我们的！）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉维尔",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "啧，还挺有道理。"
     },
     {
       "type": "choice",
@@ -640,54 +700,59 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "嘉维尔",
-          "speakerId": "char_187_ccheal",
-          "text": "嗯？哦对，忘了博士你们听不懂我们这里的语言了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉维尔",
-          "speakerId": "char_187_ccheal",
-          "text": "虽然这里也是萨尔贡，但是这里的人没有会用普通的萨尔贡语的。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉维尔",
-          "speakerId": "char_187_ccheal",
-          "text": "这样吧，要是有要传达给你的话我给你翻译一下好了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉维尔",
-          "speakerId": "char_187_ccheal",
-          "text": "其他时候就意会一下吧！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿达克利斯人A",
-          "speakerId": "avg_npc_071",
-          "text": "......&*#（在那边嘀嘀咕咕说什么呢混账！）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "嘉维尔",
-          "speakerId": "char_187_ccheal",
-          "text": "我在说，既然这是你们的东西，那只要把你们全都放倒，它就是我的了！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿达克利斯人B",
-          "speakerId": "avg_npc_070",
-          "text": "&&......！@（什么？这个女人太嚣张了，弟兄们，上！）"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉维尔",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "嗯？哦对，忘了博士你们听不懂我们这里的语言了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉维尔",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "虽然这里也是萨尔贡，但是这里的人没有会用普通的萨尔贡语的。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉维尔",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "这样吧，要是有要传达给你的话我给你翻译一下好了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉维尔",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "其他时候就意会一下吧！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿达克利斯人A",
+      "speakerId": "avg_npc_071",
+      "isRemote": false,
+      "text": "......&*#（在那边嘀嘀咕咕说什么呢混账！）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "嘉维尔",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "我在说，既然这是你们的东西，那只要把你们全都放倒，它就是我的了！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿达克利斯人B",
+      "speakerId": "avg_npc_070",
+      "isRemote": false,
+      "text": "&&......！@（什么？这个女人太嚣张了，弟兄们，上！）"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": [

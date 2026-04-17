@@ -6,38 +6,47 @@
   "title": "团结就是奢望",
   "storyCode": "12-4",
   "avgTag": "行动前",
-  "sourcePath": "vendor/ArknightsGamedata/cn/gamedata/story/obt/main/level_main_12-03_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/cn/gamedata/story/obt/main/level_main_12-03_beg.txt",
   "sourceHash": "7c6f80696352a9f95cca435c37ae6908110ac99e35b9ff29234443fa0e92d098",
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "21_G7_decisivebattlealley_d"
+    },
+    {
       "type": "dialogue",
       "speakerName": "“灰礼帽”",
       "speakerId": "avg_npc_867_1",
+      "isRemote": false,
       "text": "很爽快，罗德岛的博士。"
     },
     {
       "type": "dialogue",
       "speakerName": "“灰礼帽”",
       "speakerId": "avg_npc_867_1",
+      "isRemote": false,
       "text": "一处安全地点的位置已经发送到了亚历山德莉娜的终端上，请在那里待命。我不能保证你们任何超出安排的行动的安全。"
     },
     {
       "type": "dialogue",
       "speakerName": "推进之王",
       "speakerId": "avg_npc_407_1",
+      "isRemote": false,
       "text": "终端？什么时候......？!"
     },
     {
       "type": "dialogue",
       "speakerName": "“灰礼帽”",
       "speakerId": "avg_npc_867_1",
+      "isRemote": false,
       "text": "你们有几个厉害的家伙，这很好，这应该是达成我们共同目标的助力，而不是破坏我们合作的阻碍。"
     },
     {
       "type": "dialogue",
       "speakerName": "“灰礼帽”",
       "speakerId": "avg_npc_867_1",
+      "isRemote": false,
       "text": "对吧？"
     },
     {
@@ -54,6 +63,7 @@
               "type": "dialogue",
               "speakerName": "“灰礼帽”",
               "speakerId": "avg_npc_867_1",
+              "isRemote": false,
               "text": "当然，我们需要慢慢建立信任。"
             }
           ]
@@ -66,6 +76,7 @@
               "type": "dialogue",
               "speakerName": "“灰礼帽”",
               "speakerId": "avg_npc_867_1",
+              "isRemote": false,
               "text": "谨慎的沉默，我很欣赏。"
             }
           ]
@@ -78,52 +89,56 @@
               "type": "dialogue",
               "speakerName": "“灰礼帽”",
               "speakerId": "avg_npc_867_1",
+              "isRemote": false,
               "text": "很遗憾，是的。"
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "“灰礼帽”",
-          "speakerId": "avg_npc_867_1",
-          "text": "请等候下一次的联络。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿斯卡纶",
-          "speakerId": "avg_npc_395_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿斯卡纶",
-          "speakerId": "avg_npc_395_1",
-          "text": "博士，我需要去联系可露希尔，我们需要重新评估一下罗德岛的通讯安全，在此之前，请保持无线电静默。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿斯卡纶",
-          "speakerId": "avg_npc_395_1",
-          "text": "当然，还有......处理本舰在维多利亚境内停留的手续问题。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米娅",
-          "speakerId": "avg_npc_394_1",
-          "text": "伊内丝小姐，谢谢你。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "“灰礼帽”",
+      "speakerId": "avg_npc_867_1",
+      "isRemote": false,
+      "text": "请等候下一次的联络。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿斯卡纶",
+      "speakerId": "avg_npc_395_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿斯卡纶",
+      "speakerId": "avg_npc_395_1",
+      "isRemote": false,
+      "text": "博士，我需要去联系可露希尔，我们需要重新评估一下罗德岛的通讯安全，在此之前，请保持无线电静默。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿斯卡纶",
+      "speakerId": "avg_npc_395_1",
+      "isRemote": false,
+      "text": "当然，还有......处理本舰在维多利亚境内停留的手续问题。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米娅",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "伊内丝小姐，谢谢你。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -133,18 +148,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "伊内丝",
-          "speakerId": "avg_4087_ines_1",
-          "text": "恐怕不是。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "伊内丝",
+      "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
+      "text": "恐怕不是。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -154,30 +168,31 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "伊内丝",
-          "speakerId": "avg_4087_ines_1",
-          "text": "......我知道。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "伊内丝",
-          "speakerId": "avg_4087_ines_1",
-          "text": "对于这次的你，是第一次见面。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "伊内丝",
-          "speakerId": "avg_4087_ines_1",
-          "text": "你真的......失忆了吗？还是，这也是你计划的一部分。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "伊内丝",
+      "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
+      "text": "......我知道。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "伊内丝",
+      "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
+      "text": "对于这次的你，是第一次见面。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "伊内丝",
+      "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
+      "text": "你真的......失忆了吗？还是，这也是你计划的一部分。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -197,794 +212,922 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "伊内丝",
-          "speakerId": "avg_4087_ines_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "伊内丝",
-          "speakerId": "avg_4087_ines_1",
-          "text": "我从不轻易下判断，Dr.{@nickname}。我能感觉到，你确实发生了一些......变化。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "伊内丝",
-          "speakerId": "avg_4087_ines_1",
-          "text": "我们之后的相处时间，还有很多。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "伊内丝",
-          "speakerId": "avg_4087_ines_1",
-          "text": "相比于听那些口头上的宣言，我更倾向于自己去看。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米娅",
-          "speakerId": "avg_npc_394_1",
-          "text": "伊内丝小姐，你对博士......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "伊内丝",
-          "speakerId": "avg_4087_ines_1",
-          "text": "放心吧，阿米娅，我会收好我的偏见。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "伊内丝",
-          "speakerId": "avg_4087_ines_1",
-          "text": "暂时。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "自救军战士",
-          "speakerId": "avg_npc_398_1",
-          "text": "撤离已经基本完成了！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "号角",
-          "speakerId": "avg_npc_229_1",
-          "text": "很好，我们也必须离开这里。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗本",
-          "speakerId": "avg_npc_414_1",
-          "text": "那个罗德岛的萨卡兹，是叫Logos吗？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "号角",
-          "speakerId": "avg_npc_229_1",
-          "text": "我还以为，在与Misery先生并肩作战这么久以后，我们都已经不会再为罗德岛的作战方式感到惊讶了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗本",
-          "speakerId": "avg_npc_414_1",
-          "text": "也对。不管那位Logos先生是什么身份，他的那些咒术都帮了我们大忙。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "自救军战士",
-          "speakerId": "avg_npc_398_1",
-          "text": "......哈，而且他玩飞镖很有一手。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "自救军战士",
-          "speakerId": "avg_npc_398_1",
-          "text": "我有幸跟他比过几次，他的准头可能和他的那些法术一样恐怖。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_650_1",
-          "text": "......我的一位朋友，教过我一些小技巧罢了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_650_1",
-          "text": "那家伙圆凳滑行赛比不过我，但玩起飞镖来......不差。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_650_1",
-          "text": "号角女士，萨卡兹的部队已经暂时退却，抓紧机会。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "号角",
-          "speakerId": "avg_npc_229_1",
-          "text": "根据计划，罗德岛和自救军会通过补给线，撤往那条运输通道的起点，一个叫布伦特伍德的镇子附近，并尝试重新建立安全屋。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "号角",
-          "speakerId": "avg_npc_229_1",
-          "text": "我们去那里与他们会合。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "号角",
-          "speakerId": "avg_npc_229_1",
-          "text": "我建议向城墙的方向突围，诺伯特区被抛离了，萨卡兹虽然合拢了城墙，但还来不及新建一个地块填补那里。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "号角",
-          "speakerId": "avg_npc_229_1",
-          "text": "那些裸露的地下结构会帮上我们的忙的。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_650_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_650_1",
-          "text": "看来，我又遇到了一位故人。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "自救军战士",
-          "speakerId": "avg_npc_398_1",
-          "text": "是那位教飞镖的朋友吗？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_650_1",
-          "text": "很遗憾，并不是。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_650_1",
-          "text": "与这位故人不同，我的朋友们至死如一。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_650_1",
-          "text": "各位，我在城内恐怕还有些小事需要处理，号角女士有能力带你们离开伦蒂尼姆。我的同事Misery也会在必要时刻支援你们。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "号角",
-          "speakerId": "avg_npc_229_1",
-          "text": "......我明白了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "号角",
-          "speakerId": "avg_npc_229_1",
-          "text": "各位，保持隐蔽，跟我来。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_650_1",
-          "text": "往日的山巅当真如此值得怀念？泪与血并不值得你为之着迷。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "“茉莉”",
-          "speakerId": "avg_npc_657_1",
-          "text": "我承认，我对这些并没有如此兴致盎然。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "“茉莉”",
-          "speakerId": "avg_npc_657_1",
-          "text": "但倘若，只剩下山巅可供栖身，只有荣光可得温暖呢？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_650_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_650_1",
-          "text": "我以为我已经追猎了足够多的你。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "“茉莉”",
-          "speakerId": "avg_npc_657_1",
-          "text": "三十一个“茉莉”，你很努力，女妖。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_650_1",
-          "text": "但你还是得逞了，你帮助特雷西斯瓦解了自救军。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "“茉莉”",
-          "speakerId": "avg_npc_657_1",
-          "text": "工作而已。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_650_1",
-          "text": "......我会撬开伦蒂尼姆的每一片瓦，找到每一个躲藏在暗处的你的碎片，变形者。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_650_1",
-          "text": "你仍拒绝相信改变的可能，这从来就是你的选择。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "变形者集群",
-          "speakerId": "avg_npc_426_1",
-          "text": "你是不是有些太自大了，年轻的女妖？我们了解变化，我们自变化中而来。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "变形者集群",
-          "speakerId": "avg_npc_426_1",
-          "text": "但变化不过是适应的手段，任何改变都有其最终的目的。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "变形者集群",
-          "speakerId": "avg_npc_426_1",
-          "text": "在萨卡兹还未获得如此模样之时，我们便行走于大地之上。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "变形者集群",
-          "speakerId": "avg_npc_426_1",
-          "text": "理念、信仰、宗旨、口号，无一逃得过岁月的冲刷。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "变形者集群",
-          "speakerId": "avg_npc_426_1",
-          "text": "你那些自以为新鲜的发想早有人想过，你那些自以为高尚的道途早有人践行。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "变形者集群",
-          "speakerId": "avg_npc_426_1",
-          "text": "他们如今在哪里？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "变形者集群",
-          "speakerId": "avg_npc_426_1",
-          "text": "我们却仍站在你的面前。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "变形者集群",
-          "speakerId": "avg_npc_426_1",
-          "text": "这便是最好的证明。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "“砰！”"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "“砰、砰！”"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "呼——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "贝尔德",
-          "speakerId": "avg_npc_863_1",
-          "text": "你该节省些体力，卡铎尔，你吃的已经够多的了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "贝尔德",
-          "speakerId": "avg_npc_863_1",
-          "text": "戴菲恩已经反映过好几次你的食量问题了，现在可比不得以往。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "放轻松点，贝尔德，情况还没有那么糟。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "那帮魔族佬没他们看起来的那么强大，他们只是打了我们一个措手不及。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "运输工会的马歇尔找我聊过一次，他们那里也团结了一批人。只要我们再多拉些人入伙，那帮萨卡兹也并非不可战胜。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "就像以前我们几个帮派团结起来对付那些条子们一样。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "背后突袭，干净利落，“咻咻”，“啪”！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "几拳放倒，就这么简单。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "贝尔德",
-          "speakerId": "avg_npc_863_1",
-          "text": "萨卡兹的军队可不是条子。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "我知道，他们很厉害。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "但我们不怕流血，不怕牺牲！我们会越过倒下的同胞，再把拳头狠狠砸在他们的脸上——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "就像拳馆的名字，“揍歪下巴”！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "我和马歇尔盘算过了，我们绝对能赢！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "贝尔德",
-          "speakerId": "avg_npc_863_1",
-          "text": "和你收藏的那些龙门劣质录像里一样，嗯？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "我是认真的，我在诺伯特区街头摸爬滚打的时间比你短不了多少。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "我们得为自己谋一条出路，就像以前一样。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "你们的那位推进之王当时就这么离开了格拉斯哥帮，咱们那些地盘都拱手让给了别人，是你和我想尽办法重新在这里站稳了脚跟。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "现在无非像以前一样，团结起来，做好准备，然后揍翻他们，反正我们一直是这么过来的。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "不管外面情况怎样，街头总有街头的办法。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "接下来，只要寻找到一个时机......"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "贝尔德",
-          "speakerId": "avg_npc_863_1",
-          "text": "看来戴菲恩他们回来了。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "戴菲恩",
-          "speakerId": "avg_npc_866_1",
-          "text": "......"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "秃头佩尔松口了吗？就算是眼下的情况，我们给的价格也相当高，他应该——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "怎么了？这是......血？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "戴菲恩",
-          "speakerId": "avg_npc_866_1",
-          "text": "秃头佩尔死了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "萨卡兹——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "胆怯的市民",
-          "speakerId": "avg_npc_177",
-          "text": "不，不是萨卡兹！该死的，我不知道那些都是谁，我们到那家店的时候就已经打起来了！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "胆怯的市民",
-          "speakerId": "avg_npc_177",
-          "text": "他们杀红了眼！我亲眼看到有个拿撬棍的家伙，把另一个人摁在地上，那家伙甚至——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "胆怯的市民",
-          "speakerId": "avg_npc_177",
-          "text": "呕——咳咳咳！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "戴菲恩",
-          "speakerId": "avg_npc_866_1",
-          "text": "情况很糟，大概是哪个饿疯了的流浪汉盯上了佩尔的店，那蠢货还把面包放在玻璃橱窗里。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "戴菲恩",
-          "speakerId": "avg_npc_866_1",
-          "text": "结果可想而知。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "戴菲恩",
-          "speakerId": "avg_npc_866_1",
-          "text": "你可以猜猜，现在这一片被封锁的街区里，这种“流浪汉”有多少。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "这些该死的疯子，大概是什么违禁品把他们的脑子烧坏了！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "戴菲恩",
-          "speakerId": "avg_npc_866_1",
-          "text": "......我认识那个拿撬棍的家伙，是个卖尾巴毛发护理膏的推销员，平时脸上总挂着笑容。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "戴菲恩",
-          "speakerId": "avg_npc_866_1",
-          "text": "我买过几次他的产品，他给我打了折，不过谈不上好用。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "戴菲恩",
-          "speakerId": "avg_npc_866_1",
-          "text": "刚才......我看见他双眼通红，嘴角淌着血，那把撬棍已经被他砸得变了形。我几乎......认不出他来了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "戴菲恩",
-          "speakerId": "avg_npc_866_1",
-          "text": "恐慌在蔓延，卡铎尔。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "——运输工会的人说过这种情况，他们说可能有些胆小鬼会发疯，可是怎么......"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "戴菲恩",
-          "speakerId": "avg_npc_866_1",
-          "text": "抵住门！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "胆怯的市民",
-          "speakerId": "avg_npc_177",
-          "text": "我，我......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "贝尔德",
-          "speakerId": "avg_npc_863_1",
-          "text": "还愣着干什么，快点来帮忙！卡铎尔，去把沙发推过来！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "混蛋，你们找死吗？你们*维多利亚粗口*想干嘛？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "门外的声音",
-          "speakerId": "avg_npc_862_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "滚开，这里还*维多利亚粗口*有活人呢，这里是格拉斯哥帮的地盘！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "门外的声音",
-          "speakerId": "avg_npc_862_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "贝尔德，小心！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "一柄消防斧将拳馆厚重的门板劈开一道缝隙，锋利的斧刃擦着贝尔德的发梢而过。\n几根发丝飘落。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "我说了，这里还*维多利亚粗口*有活人呢！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "卡铎尔抵住门，两只手紧紧攥住穿过门板的斧刃，门外的人试了几次，都没有成功把斧子重新抽出。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "不管你是谁，给我滚！否则我会把这把斧头嵌进你的脑袋里！我说到做到！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "门外的声音",
-          "speakerId": "avg_npc_862_1",
-          "text": "......"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "斧子又摇晃了几下，几次沉重的踹门声过后，门外的人终于放弃了努力，纷乱的脚步声逐渐远去。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "胆怯的市民",
-          "speakerId": "avg_npc_177",
-          "text": "你手上......你的手指......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "谢天谢地，拳馆最不缺的就是绷带。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "贝尔德，戴菲恩，我们得重新清点一遍所有物资。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "我去卸几个沙袋下来，重新加固一下大门。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "胆怯的市民",
-          "speakerId": "avg_npc_177",
-          "text": "这......这些人，他们难道都疯了吗？！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "胆怯的市民",
-          "speakerId": "avg_npc_177",
-          "text": "他们......诺伯特区本该都是有道德的市民，基本上......警察呢？他们平时开罚单比谁都勤快！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "我要是个没来得及溜出地块的倒霉条子，现在一定揣好武器把自己锁在家里。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "我......之后我得再去运输工会一趟，马歇尔的话住在这里的人们总还是认的。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "他——大家平常都愿意听他的，他能想出办法来的。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡铎尔",
-          "speakerId": "avg_npc_862_1",
-          "text": "该死......该死！萨卡兹还在外面，这帮人昏了头，怎么能——"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "胆怯的市民",
-          "speakerId": "avg_npc_177",
-          "text": "我们......接下来怎么办？卡铎尔之前说，只要等......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "贝尔德",
-          "speakerId": "avg_npc_863_1",
-          "text": "一个机会？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "贝尔德",
-          "speakerId": "avg_npc_863_1",
-          "text": "“下个院士”先生，你知道十五年前诺伯特区的那场大火吗？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "胆怯的市民",
-          "speakerId": "avg_npc_177",
-          "text": "啊，我听说过，好像是在码头......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "贝尔德",
-          "speakerId": "avg_npc_863_1",
-          "text": "烧掉整个码头并没有什么困难的。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "贝尔德",
-          "speakerId": "avg_npc_863_1",
-          "text": "热得要死的天气，堆满刨花的库房，和一颗没掐灭的烟头，就足以酿成那一切。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "贝尔德",
-          "speakerId": "avg_npc_863_1",
-          "text": "这种火，没人能扑得灭的。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "贝尔德",
-          "speakerId": "avg_npc_863_1",
-          "text": "我们只能眼睁睁看着一切都烧成灰烬。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "伊内丝",
+      "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "伊内丝",
+      "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
+      "text": "我从不轻易下判断，Dr.{@nickname}。我能感觉到，你确实发生了一些......变化。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "伊内丝",
+      "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
+      "text": "我们之后的相处时间，还有很多。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "伊内丝",
+      "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
+      "text": "相比于听那些口头上的宣言，我更倾向于自己去看。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米娅",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "伊内丝小姐，你对博士......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "伊内丝",
+      "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
+      "text": "放心吧，阿米娅，我会收好我的偏见。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "伊内丝",
+      "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
+      "text": "暂时。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "27_g7_subway"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "自救军战士",
+      "speakerId": "avg_npc_398_1",
+      "isRemote": false,
+      "text": "撤离已经基本完成了！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "号角",
+      "speakerId": "avg_npc_229_1",
+      "isRemote": false,
+      "text": "很好，我们也必须离开这里。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗本",
+      "speakerId": "avg_npc_414_1",
+      "isRemote": false,
+      "text": "那个罗德岛的萨卡兹，是叫Logos吗？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "号角",
+      "speakerId": "avg_npc_229_1",
+      "isRemote": false,
+      "text": "我还以为，在与Misery先生并肩作战这么久以后，我们都已经不会再为罗德岛的作战方式感到惊讶了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗本",
+      "speakerId": "avg_npc_414_1",
+      "isRemote": false,
+      "text": "也对。不管那位Logos先生是什么身份，他的那些咒术都帮了我们大忙。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "自救军战士",
+      "speakerId": "avg_npc_398_1",
+      "isRemote": false,
+      "text": "......哈，而且他玩飞镖很有一手。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "自救军战士",
+      "speakerId": "avg_npc_398_1",
+      "isRemote": false,
+      "text": "我有幸跟他比过几次，他的准头可能和他的那些法术一样恐怖。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_650_1",
+      "isRemote": false,
+      "text": "......我的一位朋友，教过我一些小技巧罢了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_650_1",
+      "isRemote": false,
+      "text": "那家伙圆凳滑行赛比不过我，但玩起飞镖来......不差。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_650_1",
+      "isRemote": false,
+      "text": "号角女士，萨卡兹的部队已经暂时退却，抓紧机会。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "号角",
+      "speakerId": "avg_npc_229_1",
+      "isRemote": false,
+      "text": "根据计划，罗德岛和自救军会通过补给线，撤往那条运输通道的起点，一个叫布伦特伍德的镇子附近，并尝试重新建立安全屋。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "号角",
+      "speakerId": "avg_npc_229_1",
+      "isRemote": false,
+      "text": "我们去那里与他们会合。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "号角",
+      "speakerId": "avg_npc_229_1",
+      "isRemote": false,
+      "text": "我建议向城墙的方向突围，诺伯特区被抛离了，萨卡兹虽然合拢了城墙，但还来不及新建一个地块填补那里。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "号角",
+      "speakerId": "avg_npc_229_1",
+      "isRemote": false,
+      "text": "那些裸露的地下结构会帮上我们的忙的。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_650_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_650_1",
+      "isRemote": false,
+      "text": "看来，我又遇到了一位故人。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "自救军战士",
+      "speakerId": "avg_npc_398_1",
+      "isRemote": false,
+      "text": "是那位教飞镖的朋友吗？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_650_1",
+      "isRemote": false,
+      "text": "很遗憾，并不是。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_650_1",
+      "isRemote": false,
+      "text": "与这位故人不同，我的朋友们至死如一。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_650_1",
+      "isRemote": false,
+      "text": "各位，我在城内恐怕还有些小事需要处理，号角女士有能力带你们离开伦蒂尼姆。我的同事Misery也会在必要时刻支援你们。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "号角",
+      "speakerId": "avg_npc_229_1",
+      "isRemote": false,
+      "text": "......我明白了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "号角",
+      "speakerId": "avg_npc_229_1",
+      "isRemote": false,
+      "text": "各位，保持隐蔽，跟我来。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "27_g7_subway"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_650_1",
+      "isRemote": false,
+      "text": "往日的山巅当真如此值得怀念？泪与血并不值得你为之着迷。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "“茉莉”",
+      "speakerId": "avg_npc_657_1",
+      "isRemote": false,
+      "text": "我承认，我对这些并没有如此兴致盎然。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "“茉莉”",
+      "speakerId": "avg_npc_657_1",
+      "isRemote": false,
+      "text": "但倘若，只剩下山巅可供栖身，只有荣光可得温暖呢？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_650_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_650_1",
+      "isRemote": false,
+      "text": "我以为我已经追猎了足够多的你。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "“茉莉”",
+      "speakerId": "avg_npc_657_1",
+      "isRemote": false,
+      "text": "三十一个“茉莉”，你很努力，女妖。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_650_1",
+      "isRemote": false,
+      "text": "但你还是得逞了，你帮助特雷西斯瓦解了自救军。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "“茉莉”",
+      "speakerId": "avg_npc_657_1",
+      "isRemote": false,
+      "text": "工作而已。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_650_1",
+      "isRemote": false,
+      "text": "......我会撬开伦蒂尼姆的每一片瓦，找到每一个躲藏在暗处的你的碎片，变形者。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_650_1",
+      "isRemote": false,
+      "text": "你仍拒绝相信改变的可能，这从来就是你的选择。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "变形者集群",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "你是不是有些太自大了，年轻的女妖？我们了解变化，我们自变化中而来。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "变形者集群",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "但变化不过是适应的手段，任何改变都有其最终的目的。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "变形者集群",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "在萨卡兹还未获得如此模样之时，我们便行走于大地之上。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "变形者集群",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "理念、信仰、宗旨、口号，无一逃得过岁月的冲刷。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "变形者集群",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "你那些自以为新鲜的发想早有人想过，你那些自以为高尚的道途早有人践行。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "变形者集群",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "他们如今在哪里？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "变形者集群",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "我们却仍站在你的面前。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "变形者集群",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "这便是最好的证明。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "37_g1_glasgowboxinggym"
+    },
+    {
+      "type": "narration",
+      "text": "“砰！”"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "“砰、砰！”"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "呼——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "贝尔德",
+      "speakerId": "avg_npc_863_1",
+      "isRemote": false,
+      "text": "你该节省些体力，卡铎尔，你吃的已经够多的了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "贝尔德",
+      "speakerId": "avg_npc_863_1",
+      "isRemote": false,
+      "text": "戴菲恩已经反映过好几次你的食量问题了，现在可比不得以往。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "放轻松点，贝尔德，情况还没有那么糟。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "那帮魔族佬没他们看起来的那么强大，他们只是打了我们一个措手不及。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "运输工会的马歇尔找我聊过一次，他们那里也团结了一批人。只要我们再多拉些人入伙，那帮萨卡兹也并非不可战胜。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "就像以前我们几个帮派团结起来对付那些条子们一样。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "背后突袭，干净利落，“咻咻”，“啪”！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "几拳放倒，就这么简单。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "贝尔德",
+      "speakerId": "avg_npc_863_1",
+      "isRemote": false,
+      "text": "萨卡兹的军队可不是条子。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "我知道，他们很厉害。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "但我们不怕流血，不怕牺牲！我们会越过倒下的同胞，再把拳头狠狠砸在他们的脸上——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "就像拳馆的名字，“揍歪下巴”！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "我和马歇尔盘算过了，我们绝对能赢！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "贝尔德",
+      "speakerId": "avg_npc_863_1",
+      "isRemote": false,
+      "text": "和你收藏的那些龙门劣质录像里一样，嗯？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "我是认真的，我在诺伯特区街头摸爬滚打的时间比你短不了多少。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "我们得为自己谋一条出路，就像以前一样。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "你们的那位推进之王当时就这么离开了格拉斯哥帮，咱们那些地盘都拱手让给了别人，是你和我想尽办法重新在这里站稳了脚跟。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "现在无非像以前一样，团结起来，做好准备，然后揍翻他们，反正我们一直是这么过来的。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "不管外面情况怎样，街头总有街头的办法。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "接下来，只要寻找到一个时机......"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "贝尔德",
+      "speakerId": "avg_npc_863_1",
+      "isRemote": false,
+      "text": "看来戴菲恩他们回来了。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "戴菲恩",
+      "speakerId": "avg_npc_866_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "秃头佩尔松口了吗？就算是眼下的情况，我们给的价格也相当高，他应该——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "怎么了？这是......血？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "戴菲恩",
+      "speakerId": "avg_npc_866_1",
+      "isRemote": false,
+      "text": "秃头佩尔死了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "萨卡兹——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "胆怯的市民",
+      "speakerId": "avg_npc_177",
+      "isRemote": false,
+      "text": "不，不是萨卡兹！该死的，我不知道那些都是谁，我们到那家店的时候就已经打起来了！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "胆怯的市民",
+      "speakerId": "avg_npc_177",
+      "isRemote": false,
+      "text": "他们杀红了眼！我亲眼看到有个拿撬棍的家伙，把另一个人摁在地上，那家伙甚至——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "胆怯的市民",
+      "speakerId": "avg_npc_177",
+      "isRemote": false,
+      "text": "呕——咳咳咳！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "戴菲恩",
+      "speakerId": "avg_npc_866_1",
+      "isRemote": false,
+      "text": "情况很糟，大概是哪个饿疯了的流浪汉盯上了佩尔的店，那蠢货还把面包放在玻璃橱窗里。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "戴菲恩",
+      "speakerId": "avg_npc_866_1",
+      "isRemote": false,
+      "text": "结果可想而知。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "戴菲恩",
+      "speakerId": "avg_npc_866_1",
+      "isRemote": false,
+      "text": "你可以猜猜，现在这一片被封锁的街区里，这种“流浪汉”有多少。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "这些该死的疯子，大概是什么违禁品把他们的脑子烧坏了！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "戴菲恩",
+      "speakerId": "avg_npc_866_1",
+      "isRemote": false,
+      "text": "......我认识那个拿撬棍的家伙，是个卖尾巴毛发护理膏的推销员，平时脸上总挂着笑容。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "戴菲恩",
+      "speakerId": "avg_npc_866_1",
+      "isRemote": false,
+      "text": "我买过几次他的产品，他给我打了折，不过谈不上好用。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "戴菲恩",
+      "speakerId": "avg_npc_866_1",
+      "isRemote": false,
+      "text": "刚才......我看见他双眼通红，嘴角淌着血，那把撬棍已经被他砸得变了形。我几乎......认不出他来了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "戴菲恩",
+      "speakerId": "avg_npc_866_1",
+      "isRemote": false,
+      "text": "恐慌在蔓延，卡铎尔。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "——运输工会的人说过这种情况，他们说可能有些胆小鬼会发疯，可是怎么......"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "戴菲恩",
+      "speakerId": "avg_npc_866_1",
+      "isRemote": false,
+      "text": "抵住门！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "胆怯的市民",
+      "speakerId": "avg_npc_177",
+      "isRemote": false,
+      "text": "我，我......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "贝尔德",
+      "speakerId": "avg_npc_863_1",
+      "isRemote": false,
+      "text": "还愣着干什么，快点来帮忙！卡铎尔，去把沙发推过来！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "混蛋，你们找死吗？你们*维多利亚粗口*想干嘛？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "门外的声音",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "滚开，这里还*维多利亚粗口*有活人呢，这里是格拉斯哥帮的地盘！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "门外的声音",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "贝尔德，小心！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "一柄消防斧将拳馆厚重的门板劈开一道缝隙，锋利的斧刃擦着贝尔德的发梢而过。\n几根发丝飘落。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "我说了，这里还*维多利亚粗口*有活人呢！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "卡铎尔抵住门，两只手紧紧攥住穿过门板的斧刃，门外的人试了几次，都没有成功把斧子重新抽出。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "不管你是谁，给我滚！否则我会把这把斧头嵌进你的脑袋里！我说到做到！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "门外的声音",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "斧子又摇晃了几下，几次沉重的踹门声过后，门外的人终于放弃了努力，纷乱的脚步声逐渐远去。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "胆怯的市民",
+      "speakerId": "avg_npc_177",
+      "isRemote": false,
+      "text": "你手上......你的手指......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "谢天谢地，拳馆最不缺的就是绷带。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "贝尔德，戴菲恩，我们得重新清点一遍所有物资。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "我去卸几个沙袋下来，重新加固一下大门。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "胆怯的市民",
+      "speakerId": "avg_npc_177",
+      "isRemote": false,
+      "text": "这......这些人，他们难道都疯了吗？！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "胆怯的市民",
+      "speakerId": "avg_npc_177",
+      "isRemote": false,
+      "text": "他们......诺伯特区本该都是有道德的市民，基本上......警察呢？他们平时开罚单比谁都勤快！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "我要是个没来得及溜出地块的倒霉条子，现在一定揣好武器把自己锁在家里。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "我......之后我得再去运输工会一趟，马歇尔的话住在这里的人们总还是认的。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "他——大家平常都愿意听他的，他能想出办法来的。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡铎尔",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "该死......该死！萨卡兹还在外面，这帮人昏了头，怎么能——"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "胆怯的市民",
+      "speakerId": "avg_npc_177",
+      "isRemote": false,
+      "text": "我们......接下来怎么办？卡铎尔之前说，只要等......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "贝尔德",
+      "speakerId": "avg_npc_863_1",
+      "isRemote": false,
+      "text": "一个机会？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "贝尔德",
+      "speakerId": "avg_npc_863_1",
+      "isRemote": false,
+      "text": "“下个院士”先生，你知道十五年前诺伯特区的那场大火吗？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "胆怯的市民",
+      "speakerId": "avg_npc_177",
+      "isRemote": false,
+      "text": "啊，我听说过，好像是在码头......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "贝尔德",
+      "speakerId": "avg_npc_863_1",
+      "isRemote": false,
+      "text": "烧掉整个码头并没有什么困难的。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "贝尔德",
+      "speakerId": "avg_npc_863_1",
+      "isRemote": false,
+      "text": "热得要死的天气，堆满刨花的库房，和一颗没掐灭的烟头，就足以酿成那一切。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "贝尔德",
+      "speakerId": "avg_npc_863_1",
+      "isRemote": false,
+      "text": "这种火，没人能扑得灭的。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "贝尔德",
+      "speakerId": "avg_npc_863_1",
+      "isRemote": false,
+      "text": "我们只能眼睁睁看着一切都烧成灰烬。"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": []

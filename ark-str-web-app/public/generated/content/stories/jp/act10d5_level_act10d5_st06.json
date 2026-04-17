@@ -6,7 +6,7 @@
   "title": "いつも通り",
   "storyCode": "",
   "avgTag": "幕間",
-  "sourcePath": "vendor/ArknightsGamedata/jp/gamedata/story/activities/act10d5/level_act10d5_st06.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/jp/gamedata/story/activities/act10d5/level_act10d5_st06.txt",
   "sourceHash": "dc6e948e85b73124a2b30dbab8342889bc2b6fff073f72830b05ec855ca2ee32",
   "bodyAvailable": true,
   "blocks": [
@@ -18,6 +18,10 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_corridor"
+    },
+    {
       "type": "choice",
       "options": [
         {
@@ -25,8 +29,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -36,15 +39,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "えっ？　あ、すみません、ドクター。ボーっとしてしまいました。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "えっ？　あ、すみません、ドクター。ボーっとしてしまいました。"
     },
     {
       "type": "choice",
@@ -54,33 +56,35 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "……ちょっと気になることがあって。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "ドクター、この部署異動申請を見てください。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "申請者は、ナターリア・ロストワ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "後方支援部から前線への異動を希望しています。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "……ちょっと気になることがあって。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ドクター、この部署異動申請を見てください。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "申請者は、ナターリア・ロストワ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "後方支援部から前線への異動を希望しています。"
     },
     {
       "type": "choice",
@@ -93,12 +97,14 @@
               "type": "dialogue",
               "speakerName": "アーミヤ",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "はい、彼女は自治団のメンバーの中で、唯一後方支援部に所属しています。"
             },
             {
               "type": "dialogue",
               "speakerName": "アーミヤ",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "とても仕事ができるようで、後方支援部ではすごく評判が良いんですよ。"
             }
           ]
@@ -111,6 +117,7 @@
               "type": "dialogue",
               "speakerName": "アーミヤ",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "ドクターも気になりますか？　正直に言うと今回私は、この異動にあまり同意したくないんです。"
             }
           ]
@@ -123,37 +130,40 @@
               "type": "dialogue",
               "speakerName": "アーミヤ",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "ウルサス人の名前は、ちょっと覚えにくいですよね。"
             },
             {
               "type": "dialogue",
               "speakerName": "アーミヤ",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "彼女は以前私たちがチェルノボーグから救出した難民の一人で、唯一の貴族です。"
             },
             {
               "type": "dialogue",
               "speakerName": "アーミヤ",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "ズィマーさんがリーダーをしているウルサス学生自治団の一員でもあります。"
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "ズィマーさんたちがオペレーターになったのは、彼女たち本人の要望があってのことですが……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "最初、私はとても反対していたんです。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ズィマーさんたちがオペレーターになったのは、彼女たち本人の要望があってのことですが……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "最初、私はとても反対していたんです。"
     },
     {
       "type": "choice",
@@ -166,12 +176,14 @@
               "type": "dialogue",
               "speakerName": "アーミヤ",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "はい。だから初めは本人たちの意向であっても、ケルシー先生を説得して却下しようと思っていました。"
             },
             {
               "type": "dialogue",
               "speakerName": "アーミヤ",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "ただ……"
             }
           ]
@@ -184,12 +196,14 @@
               "type": "dialogue",
               "speakerName": "アーミヤ",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "彼女たちは今、定期的にカウンセリングを受けています。報告を見る限り、多少のトラウマは残っていますが、全体としては問題なしという状態です。"
             },
             {
               "type": "dialogue",
               "speakerName": "アーミヤ",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "ただ……"
             }
           ]
@@ -202,31 +216,33 @@
               "type": "dialogue",
               "speakerName": "アーミヤ",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "ありがとうございます。"
             },
             {
               "type": "dialogue",
               "speakerName": "アーミヤ",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "ですが……"
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "なんと言うか、どう説明したら良いかわかりません。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "……ドクター、ナターリアさんの様子を見てきていただけますか？"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "なんと言うか、どう説明したら良いかわかりません。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "……ドクター、ナターリアさんの様子を見てきていただけますか？"
     },
     {
       "type": "choice",
@@ -239,6 +255,7 @@
               "type": "dialogue",
               "speakerName": "アーミヤ",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "ではよろしくお願いします、ドクター。"
             }
           ]
@@ -251,6 +268,7 @@
               "type": "dialogue",
               "speakerName": "アーミヤ",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "お手数をおかけしますが、ドクターにしかお願いできないんです。"
             }
           ]
@@ -263,34 +281,40 @@
               "type": "dialogue",
               "speakerName": "アーミヤ",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "ドクター、これはとても重要なことなんです。面倒でもどうかお願いします。"
             },
             {
               "type": "dialogue",
               "speakerName": "アーミヤ",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "そこまで真面目に観察しなくても大丈夫ですから、仕事外の気分転換だと思ってどうか。"
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "あ、でもその前にお昼休みですね。そんなに急がなくても、食事が済んだ後で問題ありませんので。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ズィマー",
-          "speakerId": "char_115_headbr",
-          "text": "おい、ドクター。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "あ、でもその前にお昼休みですね。そんなに急がなくても、食事が済んだ後で問題ありませんので。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_bridge"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ズィマー",
+      "speakerId": "char_115_headbr",
+      "isRemote": false,
+      "text": "おい、ドクター。"
     },
     {
       "type": "choice",
@@ -303,6 +327,7 @@
               "type": "dialogue",
               "speakerName": "ズィマー",
               "speakerId": "char_115_headbr",
+              "isRemote": false,
               "text": "なんでもない、ただ見かけたから声をかけただけだ。"
             }
           ]
@@ -315,12 +340,14 @@
               "type": "dialogue",
               "speakerName": "ズィマー",
               "speakerId": "char_115_headbr",
+              "isRemote": false,
               "text": "おい、とぼけてんじゃねぇ。聞こえただろ。"
             },
             {
               "type": "dialogue",
               "speakerName": "ズィマー",
               "speakerId": "char_115_headbr",
+              "isRemote": false,
               "text": "オマエは忙しいんじゃなかったのか、なんでこんなところでブラブラしてんだよ。"
             }
           ]
@@ -333,91 +360,102 @@
               "type": "dialogue",
               "speakerName": "ズィマー",
               "speakerId": "char_115_headbr",
+              "isRemote": false,
               "text": "暇なのか。"
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ズィマー",
-          "speakerId": "char_115_headbr",
-          "text": "アタシがこれから行く任務は、オマエみたいにブラブラする余裕はないんだけどな。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "ズィマー、出発前はウロウロするなと言っただろう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ズィマー",
-          "speakerId": "char_115_headbr",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "ごきげんよう、ドクター。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "さあズィマー、休憩室に戻れ。そろそろ時間だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ズィマー",
-          "speakerId": "char_115_headbr",
-          "text": "フンッ、いつかアタシが隊長になってオマエをあごで使ってやる。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ズィマー",
-          "speakerId": "char_115_headbr",
-          "text": "オマエもだ、ドクター。いつかオマエを超えてやる。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "その志や良し。だがせめて私の片腕に敵うようになってから言うのだな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "そしてドクターを超えるとなれば、うむ、全力の私に勝利してから言うと良い。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ズィマー",
-          "speakerId": "char_115_headbr",
-          "text": "チッ。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "そうだ、ドクター。もう知っているとは思うが、念のため説明しておくと、ここ最近は私が新人小隊の引率をしているんだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "では、要件がなければ私はこの辺で……"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ズィマー",
+      "speakerId": "char_115_headbr",
+      "isRemote": false,
+      "text": "アタシがこれから行く任務は、オマエみたいにブラブラする余裕はないんだけどな。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "ズィマー、出発前はウロウロするなと言っただろう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ズィマー",
+      "speakerId": "char_115_headbr",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "ごきげんよう、ドクター。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "さあズィマー、休憩室に戻れ。そろそろ時間だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ズィマー",
+      "speakerId": "char_115_headbr",
+      "isRemote": false,
+      "text": "フンッ、いつかアタシが隊長になってオマエをあごで使ってやる。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ズィマー",
+      "speakerId": "char_115_headbr",
+      "isRemote": false,
+      "text": "オマエもだ、ドクター。いつかオマエを超えてやる。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "その志や良し。だがせめて私の片腕に敵うようになってから言うのだな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "そしてドクターを超えるとなれば、うむ、全力の私に勝利してから言うと良い。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ズィマー",
+      "speakerId": "char_115_headbr",
+      "isRemote": false,
+      "text": "チッ。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "そうだ、ドクター。もう知っているとは思うが、念のため説明しておくと、ここ最近は私が新人小隊の引率をしているんだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "では、要件がなければ私はこの辺で……"
     },
     {
       "type": "choice",
@@ -427,39 +465,42 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "ん？　ズィマーか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "うむ……先程見た通りだな。言うことを聞かず、慇懃無礼だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "戦士と言えどあの年頃であれば、自分が何と戦っているか、何のために戦うべきかがわからないのはよくあることではあるが――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "彼女はその傾向が明らかに強い。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "彼女からはとても大きな迷いが感じられる。その正体を知ることはできないが、悪い傾向であることは間違いない。これから私が念入りに正していかなければならない部分だ。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "ん？　ズィマーか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "うむ……先程見た通りだな。言うことを聞かず、慇懃無礼だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "戦士と言えどあの年頃であれば、自分が何と戦っているか、何のために戦うべきかがわからないのはよくあることではあるが――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "彼女はその傾向が明らかに強い。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "彼女からはとても大きな迷いが感じられる。その正体を知ることはできないが、悪い傾向であることは間違いない。これから私が念入りに正していかなければならない部分だ。"
     },
     {
       "type": "choice",
@@ -472,12 +513,14 @@
               "type": "dialogue",
               "speakerName": "ニアール",
               "speakerId": "char_148_nearl",
+              "isRemote": false,
               "text": "その通りだ。外面の乱暴さはある種の防御壁だろうな。"
             },
             {
               "type": "dialogue",
               "speakerName": "ニアール",
               "speakerId": "char_148_nearl",
+              "isRemote": false,
               "text": "内側に守られている心が弱いものであると断定はできない。しかし彼女の凶暴さは、私の前ではひとたまりもないということは間違いないだろう。"
             }
           ]
@@ -490,12 +533,14 @@
               "type": "dialogue",
               "speakerName": "ニアール",
               "speakerId": "char_148_nearl",
+              "isRemote": false,
               "text": "心配するな、ドクター。彼女はまだ子供だ。"
             },
             {
               "type": "dialogue",
               "speakerName": "ニアール",
               "speakerId": "char_148_nearl",
+              "isRemote": false,
               "text": "彼女はチェルノボーグ出身だと聞いた。嫌な思い出が色濃く残っているのかもしれないが、彼女に未来がある。"
             }
           ]
@@ -508,58 +553,68 @@
               "type": "dialogue",
               "speakerName": "ニアール",
               "speakerId": "char_148_nearl",
+              "isRemote": false,
               "text": "フッ、ドクター、慌てなくていい。"
             },
             {
               "type": "dialogue",
               "speakerName": "ニアール",
               "speakerId": "char_148_nearl",
+              "isRemote": false,
               "text": "わかっているだろう、彼女はあなたのことを嫌ってはいない。"
             },
             {
               "type": "dialogue",
               "speakerName": "ニアール",
               "speakerId": "char_148_nearl",
+              "isRemote": false,
               "text": "と言うよりも、彼女は自分に親しくする者に対して、無意識に攻撃的になっているように思える。"
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "それにドクター、私もあの子のことは嫌ってはいない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "むしろ気に入っているんだ。彼女はある種の純粋な正義感を宿している。たとえ心に迷いがあったとしても、その実直さゆえに、大きく道を踏み外すことはないだろう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "それはとても貴重な素質だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "おっと、そろそろ出発の時間だ。では、今度こそ失礼する。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "グム",
-          "speakerId": "char_196_sunbr",
-          "text": "あれ、ドクターだ！"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "それにドクター、私もあの子のことは嫌ってはいない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "むしろ気に入っているんだ。彼女はある種の純粋な正義感を宿している。たとえ心に迷いがあったとしても、その実直さゆえに、大きく道を踏み外すことはないだろう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "それはとても貴重な素質だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "おっと、そろそろ出発の時間だ。では、今度こそ失礼する。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_canteen"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "グム",
+      "speakerId": "char_196_sunbr",
+      "isRemote": false,
+      "text": "あれ、ドクターだ！"
     },
     {
       "type": "choice",
@@ -572,6 +627,7 @@
               "type": "dialogue",
               "speakerName": "グム",
               "speakerId": "char_196_sunbr",
+              "isRemote": false,
               "text": "こんにちは！"
             }
           ]
@@ -584,12 +640,14 @@
               "type": "dialogue",
               "speakerName": "グム",
               "speakerId": "char_196_sunbr",
+              "isRemote": false,
               "text": "まさか見えてない？　グムが小さすぎるのかな！？"
             },
             {
               "type": "dialogue",
               "speakerName": "グム",
               "speakerId": "char_196_sunbr",
+              "isRemote": false,
               "text": "ドクター、おーい、グムだよ！"
             }
           ]
@@ -602,127 +660,145 @@
               "type": "dialogue",
               "speakerName": "グム",
               "speakerId": "char_196_sunbr",
+              "isRemote": false,
               "text": "ドクター、今日はごきげんだね！"
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "グム",
-          "speakerId": "char_196_sunbr",
-          "text": "ドクターは食堂にご飯を食べに来たの？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "グム",
-          "speakerId": "char_196_sunbr",
-          "text": "グムはねえ、最近あんまり任務がないから、キッチンを手伝ってるんだー。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "パフューマー",
-          "speakerId": "char_181_flower",
-          "text": "グムちゃん、香料を持ってきたわ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "グム",
-          "speakerId": "char_196_sunbr",
-          "text": "あっ、ありがとうパフューマーお姉ちゃん！　そこに置いといて！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "グム",
-          "speakerId": "char_196_sunbr",
-          "text": "パフューマーお姉ちゃんも食堂でご飯？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "パフューマー",
-          "speakerId": "char_181_flower",
-          "text": "いいえ。私は自分の作業室で自炊するほうが好きなの。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "グム",
-          "speakerId": "char_196_sunbr",
-          "text": "ええっ、グムも食べに行っていい？　パフューマーお姉ちゃんの香料の使い方を勉強したい！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "パフューマー",
-          "speakerId": "char_181_flower",
-          "text": "フフ、もちろんよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マッターホルン",
-          "speakerId": "char_199_yak",
-          "text": "グムさん、お手すきならこちらのお手伝いをお願いします。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "グム",
-          "speakerId": "char_196_sunbr",
-          "text": "はぁい！　今行くよ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "マッターホルン",
-          "speakerId": "char_199_yak",
-          "text": "ウンさんが任務で出ているので、人手不足で手が回らなくて。この鍋は任せますね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "グム",
-          "speakerId": "char_196_sunbr",
-          "text": "うん、わかったよ、マッターホルンおじさん！　あ、パフューマーお姉ちゃん、お部屋に行くのはまた今度にするね。ドクターもたくさん食べていってね！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "パフューマー",
-          "speakerId": "char_181_flower",
-          "text": "ええ、いつでも大歓迎よ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "前衛オペレーター",
-          "speakerId": null,
-          "text": "おっ、今日はグムちゃんが作ったメシを食えるのか！？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "支援オペレーター",
-          "speakerId": null,
-          "text": "クソっ、さっき食べたばっかりなのに！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "支援オペレーター",
-          "speakerId": null,
-          "text": "今日はツイてないな！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "前衛オペレーター",
-          "speakerId": null,
-          "text": "はは、じゃあ俺はもう一杯食べるぜ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "グム",
-          "speakerId": "char_196_sunbr",
-          "text": "みんな慌てないで、ちゃんと全員分作るから！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "パフューマー",
-          "speakerId": "char_181_flower",
-          "text": "グムちゃんは本当に元気な子ね。ねぇドクターくん？"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "グム",
+      "speakerId": "char_196_sunbr",
+      "isRemote": false,
+      "text": "ドクターは食堂にご飯を食べに来たの？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "グム",
+      "speakerId": "char_196_sunbr",
+      "isRemote": false,
+      "text": "グムはねえ、最近あんまり任務がないから、キッチンを手伝ってるんだー。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "パフューマー",
+      "speakerId": "char_181_flower",
+      "isRemote": false,
+      "text": "グムちゃん、香料を持ってきたわ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "グム",
+      "speakerId": "char_196_sunbr",
+      "isRemote": false,
+      "text": "あっ、ありがとうパフューマーお姉ちゃん！　そこに置いといて！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "グム",
+      "speakerId": "char_196_sunbr",
+      "isRemote": false,
+      "text": "パフューマーお姉ちゃんも食堂でご飯？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "パフューマー",
+      "speakerId": "char_181_flower",
+      "isRemote": false,
+      "text": "いいえ。私は自分の作業室で自炊するほうが好きなの。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "グム",
+      "speakerId": "char_196_sunbr",
+      "isRemote": false,
+      "text": "ええっ、グムも食べに行っていい？　パフューマーお姉ちゃんの香料の使い方を勉強したい！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "パフューマー",
+      "speakerId": "char_181_flower",
+      "isRemote": false,
+      "text": "フフ、もちろんよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マッターホルン",
+      "speakerId": "char_199_yak",
+      "isRemote": false,
+      "text": "グムさん、お手すきならこちらのお手伝いをお願いします。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "グム",
+      "speakerId": "char_196_sunbr",
+      "isRemote": false,
+      "text": "はぁい！　今行くよ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "マッターホルン",
+      "speakerId": "char_199_yak",
+      "isRemote": false,
+      "text": "ウンさんが任務で出ているので、人手不足で手が回らなくて。この鍋は任せますね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "グム",
+      "speakerId": "char_196_sunbr",
+      "isRemote": false,
+      "text": "うん、わかったよ、マッターホルンおじさん！　あ、パフューマーお姉ちゃん、お部屋に行くのはまた今度にするね。ドクターもたくさん食べていってね！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "パフューマー",
+      "speakerId": "char_181_flower",
+      "isRemote": false,
+      "text": "ええ、いつでも大歓迎よ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "前衛オペレーター",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "おっ、今日はグムちゃんが作ったメシを食えるのか！？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "支援オペレーター",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "クソっ、さっき食べたばっかりなのに！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "支援オペレーター",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "今日はツイてないな！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "前衛オペレーター",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "はは、じゃあ俺はもう一杯食べるぜ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "グム",
+      "speakerId": "char_196_sunbr",
+      "isRemote": false,
+      "text": "みんな慌てないで、ちゃんと全員分作るから！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "パフューマー",
+      "speakerId": "char_181_flower",
+      "isRemote": false,
+      "text": "グムちゃんは本当に元気な子ね。ねぇドクターくん？"
     },
     {
       "type": "choice",
@@ -742,27 +818,28 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "パフューマー",
-          "speakerId": "char_181_flower",
-          "text": "前に一度私の作業室で居眠りをして、心配になる寝言を言っていたから気になってはいたんだけど。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "パフューマー",
-          "speakerId": "char_181_flower",
-          "text": "あの子がロドスに溶け込み始めているのを見て、少し安心したわ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "パフューマー",
-          "speakerId": "char_181_flower",
-          "text": "すぐに万事オッケーってことにはならないだろうけど、きっと少しずつ、良くなっていくわね。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "パフューマー",
+      "speakerId": "char_181_flower",
+      "isRemote": false,
+      "text": "前に一度私の作業室で居眠りをして、心配になる寝言を言っていたから気になってはいたんだけど。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "パフューマー",
+      "speakerId": "char_181_flower",
+      "isRemote": false,
+      "text": "あの子がロドスに溶け込み始めているのを見て、少し安心したわ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "パフューマー",
+      "speakerId": "char_181_flower",
+      "isRemote": false,
+      "text": "すぐに万事オッケーってことにはならないだろうけど、きっと少しずつ、良くなっていくわね。"
     },
     {
       "type": "choice",
@@ -775,12 +852,14 @@
               "type": "dialogue",
               "speakerName": "パフューマー",
               "speakerId": "char_181_flower",
+              "isRemote": false,
               "text": "あら、ドクターくん、ストレート過ぎるのは必ずしも良いことじゃないわよ？"
             },
             {
               "type": "dialogue",
               "speakerName": "パフューマー",
               "speakerId": "char_181_flower",
+              "isRemote": false,
               "text": "すべてを話すことはできないけど……大丈夫。あの子に必要なのは慰めじゃなくて、時間だから。"
             }
           ]
@@ -793,18 +872,21 @@
               "type": "dialogue",
               "speakerName": "パフューマー",
               "speakerId": "char_181_flower",
+              "isRemote": false,
               "text": "ドクターくんもあの子を気にかけているのかしら？　フフ、やっぱりドクターくんはオペレーターたちのことを心配しているのね。"
             },
             {
               "type": "dialogue",
               "speakerName": "パフューマー",
               "speakerId": "char_181_flower",
+              "isRemote": false,
               "text": "安心して、本当に重要なことなら、私も隠したりはしないから。"
             },
             {
               "type": "dialogue",
               "speakerName": "パフューマー",
               "speakerId": "char_181_flower",
+              "isRemote": false,
               "text": "誰にだって小さな秘密くらいある、そうでしょう？"
             }
           ]
@@ -817,40 +899,43 @@
               "type": "dialogue",
               "speakerName": "パフューマー",
               "speakerId": "char_181_flower",
+              "isRemote": false,
               "text": "ドクターくん、あまり自惚れたらダメよ。あなた一人で全員の面倒を見られるとも、見ないといけないとも考えなくていいの。"
             },
             {
               "type": "dialogue",
               "speakerName": "パフューマー",
               "speakerId": "char_181_flower",
+              "isRemote": false,
               "text": "オペレーター同士も、お互いを気にかけ合っているんだから。"
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "パフューマー",
-          "speakerId": "char_181_flower",
-          "text": "じゃあ、私は作業室に戻るわね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "パフューマー",
-          "speakerId": "char_181_flower",
-          "text": "ドクターくんも疲れたらいつでもどうぞ。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "イースチナ",
-          "speakerId": "char_195_glassb",
-          "text": "ドクター、こんにちは。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "パフューマー",
+      "speakerId": "char_181_flower",
+      "isRemote": false,
+      "text": "じゃあ、私は作業室に戻るわね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "パフューマー",
+      "speakerId": "char_181_flower",
+      "isRemote": false,
+      "text": "ドクターくんも疲れたらいつでもどうぞ。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "イースチナ",
+      "speakerId": "char_195_glassb",
+      "isRemote": false,
+      "text": "ドクター、こんにちは。"
     },
     {
       "type": "choice",
@@ -863,6 +948,7 @@
               "type": "dialogue",
               "speakerName": "イースチナ",
               "speakerId": "char_195_glassb",
+              "isRemote": false,
               "text": "食堂でドクターと会ったのは初めてですね。"
             }
           ]
@@ -875,6 +961,7 @@
               "type": "dialogue",
               "speakerName": "イースチナ",
               "speakerId": "char_195_glassb",
+              "isRemote": false,
               "text": "ドクター、何か考え込んでいるようですが、食堂の入り口で考え込むのは止めたほうが良いと思いますよ。"
             }
           ]
@@ -887,25 +974,26 @@
               "type": "dialogue",
               "speakerName": "イースチナ",
               "speakerId": "char_195_glassb",
+              "isRemote": false,
               "text": "ふむ……ご飯が少し硬くて、スープもちょっと甘みが強い気がしますが、料理自体はとても好みです。"
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "イースチナ",
-          "speakerId": "char_195_glassb",
-          "text": "ではドクター、何も要件がなければ、私はこの辺で。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "イースチナ",
-          "speakerId": "char_195_glassb",
-          "text": "午後にはまだ授業がありますから。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "イースチナ",
+      "speakerId": "char_195_glassb",
+      "isRemote": false,
+      "text": "ではドクター、何も要件がなければ、私はこの辺で。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "イースチナ",
+      "speakerId": "char_195_glassb",
+      "isRemote": false,
+      "text": "午後にはまだ授業がありますから。"
     },
     {
       "type": "choice",
@@ -915,21 +1003,21 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "イースチナ",
-          "speakerId": "char_195_glassb",
-          "text": "はい、ヒュパティア先生の歴史授業です。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "イースチナ",
-          "speakerId": "char_195_glassb",
-          "text": "これまで色々やってきて、気付いたんです。ヒュパティア先生の歴史授業が、私にとっては一番の力になると。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "イースチナ",
+      "speakerId": "char_195_glassb",
+      "isRemote": false,
+      "text": "はい、ヒュパティア先生の歴史授業です。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "イースチナ",
+      "speakerId": "char_195_glassb",
+      "isRemote": false,
+      "text": "これまで色々やってきて、気付いたんです。ヒュパティア先生の歴史授業が、私にとっては一番の力になると。"
     },
     {
       "type": "choice",
@@ -942,12 +1030,14 @@
               "type": "dialogue",
               "speakerName": "イースチナ",
               "speakerId": "char_195_glassb",
+              "isRemote": false,
               "text": "ふむ、なれません。"
             },
             {
               "type": "dialogue",
               "speakerName": "イースチナ",
               "speakerId": "char_195_glassb",
+              "isRemote": false,
               "text": "あ、拒絶しているわけではありませんよ。私自身もよくわかっていないので、うまく説明はできませんが。"
             }
           ]
@@ -960,6 +1050,7 @@
               "type": "dialogue",
               "speakerName": "イースチナ",
               "speakerId": "char_195_glassb",
+              "isRemote": false,
               "text": "先生の授業は面白いですよ、ドクターも時間がある時に聞いてみてはいかがですか。"
             }
           ]
@@ -972,43 +1063,47 @@
               "type": "dialogue",
               "speakerName": "イースチナ",
               "speakerId": "char_195_glassb",
+              "isRemote": false,
               "text": "ふむ、ドクター、私の記憶が確かなら、ドクターは記憶喪失ではないのですか？"
             },
             {
               "type": "dialogue",
               "speakerName": "イースチナ",
               "speakerId": "char_195_glassb",
+              "isRemote": false,
               "text": "何はともあれ、厚意には感謝します。"
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "イースチナ",
-          "speakerId": "char_195_glassb",
-          "text": "実際、歴史を学ぶことが本当に私の役に立つのかはわかりません。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "イースチナ",
-          "speakerId": "char_195_glassb",
-          "text": "ですが私は、先人たちの経験や考え方が、インスピレーションをもたらしてくれるのではないかと思っています。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "イースチナ",
-          "speakerId": "char_195_glassb",
-          "text": "私には、導きが必要だということでしょうね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "イースチナ",
-          "speakerId": "char_195_glassb",
-          "text": "では、授業に行きますね。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "イースチナ",
+      "speakerId": "char_195_glassb",
+      "isRemote": false,
+      "text": "実際、歴史を学ぶことが本当に私の役に立つのかはわかりません。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "イースチナ",
+      "speakerId": "char_195_glassb",
+      "isRemote": false,
+      "text": "ですが私は、先人たちの経験や考え方が、インスピレーションをもたらしてくれるのではないかと思っています。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "イースチナ",
+      "speakerId": "char_195_glassb",
+      "isRemote": false,
+      "text": "私には、導きが必要だということでしょうね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "イースチナ",
+      "speakerId": "char_195_glassb",
+      "isRemote": false,
+      "text": "では、授業に行きますね。"
     },
     {
       "type": "choice",
@@ -1018,192 +1113,222 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "イースチナ",
-          "speakerId": "char_195_glassb",
-          "text": "ナターリアですか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "イースチナ",
-          "speakerId": "char_195_glassb",
-          "text": "彼女が前線のオペレーターになろうとしていることは、グムから聞きました。申請が通ったかどうかは知りませんが、私の知る彼女なら、既に周到な準備を始めているはずです。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "リェータ",
-          "speakerId": "char_194_rosali",
-          "text": "ナターリア、狙いが甘いぞ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ナターリア",
-          "speakerId": "char_197_poca",
-          "text": "ロザリン、いい気でいられるのは今のうちだけよ。必ず当ててみせるから。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "リェータ",
-          "speakerId": "char_194_rosali",
-          "text": "へへ、あり得ねぇあり得ねぇー。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "リェータ",
-          "speakerId": "char_194_rosali",
-          "text": "あとな、もう私のことは「リェータ」って呼べよな！「ロサ」！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ナターリア",
-          "speakerId": "char_197_poca",
-          "text": "あらそう、リェータ、今に見ていなさいな。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "リェータ",
-          "speakerId": "char_194_rosali",
-          "text": "そんなバカでかい武器を使ってっから、うまくできねえんだよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "リェータ",
-          "speakerId": "char_194_rosali",
-          "text": "チェルノボーグで拾ったガラクタなんてさっさと捨てて、もっと使いやすいもんにしたらどうだ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ナターリア",
-          "speakerId": "char_197_poca",
-          "text": "はぁ、はぁ……これは記念品だから。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "リェータ",
-          "speakerId": "char_194_rosali",
-          "text": "ふーん、じゃあ頑張んねえとな。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "リェータ",
-          "speakerId": "char_194_rosali",
-          "text": "でもよ、ナターリア。もう脚もフラフラで、ろくに歩けなくなってるじゃねぇか。一旦休んだほうがいいって。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ナターリア",
-          "speakerId": "char_197_poca",
-          "text": "まだ頑張れるわ……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ナターリア",
-          "speakerId": "char_197_poca",
-          "text": "うわっ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "まだ持久力に難ありだな、ナターリア。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "ウルサス人として悪くない基礎体力はあるが、戦えるようになるにはまだまだだ。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ナターリア",
-          "speakerId": "char_197_poca",
-          "text": "はぁ、はぁ……申し訳ございません、努力します。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "だがお前のその意気込みは、私の想像以上だ。悪くない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "この一連の訓練を乗り越えたなら、オペレーターにならずとも、お前にとって大きな糧になるはずだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ナターリア",
-          "speakerId": "char_197_poca",
-          "text": "お褒めに預かり光栄です。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "あ……ああ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "ひとまず少し休憩だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ナターリア",
-          "speakerId": "char_197_poca",
-          "text": "はい！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "リェータ、お前は自己トレーニングを。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "リェータ",
-          "speakerId": "char_194_rosali",
-          "text": "はーい。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "グレース、見てやってくれ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "グレース教官",
-          "speakerId": null,
-          "text": "わかりました。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "ドクター、昼休みなのだから休んでいろ。ここはお前が来る必要のない場所だ。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "イースチナ",
+      "speakerId": "char_195_glassb",
+      "isRemote": false,
+      "text": "ナターリアですか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "イースチナ",
+      "speakerId": "char_195_glassb",
+      "isRemote": false,
+      "text": "彼女が前線のオペレーターになろうとしていることは、グムから聞きました。申請が通ったかどうかは知りませんが、私の知る彼女なら、既に周到な準備を始めているはずです。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_trainingcom"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "リェータ",
+      "speakerId": "char_194_rosali",
+      "isRemote": false,
+      "text": "ナターリア、狙いが甘いぞ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ナターリア",
+      "speakerId": "char_197_poca",
+      "isRemote": false,
+      "text": "ロザリン、いい気でいられるのは今のうちだけよ。必ず当ててみせるから。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "リェータ",
+      "speakerId": "char_194_rosali",
+      "isRemote": false,
+      "text": "へへ、あり得ねぇあり得ねぇー。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "リェータ",
+      "speakerId": "char_194_rosali",
+      "isRemote": false,
+      "text": "あとな、もう私のことは「リェータ」って呼べよな！「ロサ」！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ナターリア",
+      "speakerId": "char_197_poca",
+      "isRemote": false,
+      "text": "あらそう、リェータ、今に見ていなさいな。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "リェータ",
+      "speakerId": "char_194_rosali",
+      "isRemote": false,
+      "text": "そんなバカでかい武器を使ってっから、うまくできねえんだよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "リェータ",
+      "speakerId": "char_194_rosali",
+      "isRemote": false,
+      "text": "チェルノボーグで拾ったガラクタなんてさっさと捨てて、もっと使いやすいもんにしたらどうだ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ナターリア",
+      "speakerId": "char_197_poca",
+      "isRemote": false,
+      "text": "はぁ、はぁ……これは記念品だから。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "リェータ",
+      "speakerId": "char_194_rosali",
+      "isRemote": false,
+      "text": "ふーん、じゃあ頑張んねえとな。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "リェータ",
+      "speakerId": "char_194_rosali",
+      "isRemote": false,
+      "text": "でもよ、ナターリア。もう脚もフラフラで、ろくに歩けなくなってるじゃねぇか。一旦休んだほうがいいって。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ナターリア",
+      "speakerId": "char_197_poca",
+      "isRemote": false,
+      "text": "まだ頑張れるわ……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ナターリア",
+      "speakerId": "char_197_poca",
+      "isRemote": false,
+      "text": "うわっ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "まだ持久力に難ありだな、ナターリア。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "ウルサス人として悪くない基礎体力はあるが、戦えるようになるにはまだまだだ。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ナターリア",
+      "speakerId": "char_197_poca",
+      "isRemote": false,
+      "text": "はぁ、はぁ……申し訳ございません、努力します。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "だがお前のその意気込みは、私の想像以上だ。悪くない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "この一連の訓練を乗り越えたなら、オペレーターにならずとも、お前にとって大きな糧になるはずだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ナターリア",
+      "speakerId": "char_197_poca",
+      "isRemote": false,
+      "text": "お褒めに預かり光栄です。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "あ……ああ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "ひとまず少し休憩だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ナターリア",
+      "speakerId": "char_197_poca",
+      "isRemote": false,
+      "text": "はい！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "リェータ、お前は自己トレーニングを。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "リェータ",
+      "speakerId": "char_194_rosali",
+      "isRemote": false,
+      "text": "はーい。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "グレース、見てやってくれ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "グレース教官",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "わかりました。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "ドクター、昼休みなのだから休んでいろ。ここはお前が来る必要のない場所だ。"
     },
     {
       "type": "choice",
@@ -1216,12 +1341,14 @@
               "type": "dialogue",
               "speakerName": "ドーベルマン",
               "speakerId": "char_130_doberm",
+              "isRemote": false,
               "text": "ああ。"
             },
             {
               "type": "dialogue",
               "speakerName": "ドーベルマン",
               "speakerId": "char_130_doberm",
+              "isRemote": false,
               "text": "もしただ挨拶に来ただけなら、私は戻るぞ。"
             }
           ]
@@ -1234,6 +1361,7 @@
               "type": "dialogue",
               "speakerName": "ドーベルマン",
               "speakerId": "char_130_doberm",
+              "isRemote": false,
               "text": "ここのところ、少しずつ統率者の風格が出てきたな、悪くないと言わざるを得ない。"
             }
           ]
@@ -1246,133 +1374,151 @@
               "type": "dialogue",
               "speakerName": "ドーベルマン",
               "speakerId": "char_130_doberm",
+              "isRemote": false,
               "text": "来れば、私はお前の対応をしなくてはならん。そんな時間は極力減らしたいのでな。"
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "恐らく、アーミヤからナターリアもオペレーター転向の申請を出したと聞き、様子を見に来たといったところだろう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "そんな驚いた顔をするな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "アーミヤがウルサスから救出したあの難民たちをとても気にかけているのは、皆の知るところだからな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "覚えているだろう、ズィマー、グム、イースチナ、リェータ――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "そうだな、リェータは例外だ。戦闘に関して言えば、彼女の心配はほとんどいらないだろう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "とにかく、あの四人がオペレーター申請を出した時、アーミヤは無理やり申請を却下しようとするほど反対していた。だが何故か、途中で考えを改めたようだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "とはいえ、最後の一人まで申請を出したとなれば、アーミヤが気にしない方が不自然だろう……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ナターリア",
-          "speakerId": "char_197_poca",
-          "text": "ふぅ、十分休めたわ。ロザリン、もうちょっと付き合ってくれるかしら。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "リェータ",
-          "speakerId": "char_194_rosali",
-          "text": "はぁ、お前も粘るなぁ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ナターリア",
-          "speakerId": "char_197_poca",
-          "text": "私のオペレーター転向の決心を甘く見ないことね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "リェータ",
-          "speakerId": "char_194_rosali",
-          "text": "はいはい。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "グレース教官",
-          "speakerId": null,
-          "text": "ナターリア、もう少し休んだほうが良いぞ。トレーニングで一番大切なのは休むことだ。無理をし続ければ、身体が持たなくなる。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ナターリア",
-          "speakerId": "char_197_poca",
-          "text": "ありがとうございます、グレース教官。でもまだ頑張れます……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "グレース教官",
-          "speakerId": null,
-          "text": "おいおい、ドーベルマン教官にビビってるのか？　あの人は怖そうに見えて……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "グレース、聞こえているぞ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "グレース教官",
-          "speakerId": null,
-          "text": "あっ、えーっと、とにかくそういうことだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ナターリア",
-          "speakerId": "char_197_poca",
-          "text": "はい、ですが安心してください。本当に苦しくなれば私も休みますから。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "グレース教官",
-          "speakerId": null,
-          "text": "そうか……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "彼女をどう思う？"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "恐らく、アーミヤからナターリアもオペレーター転向の申請を出したと聞き、様子を見に来たといったところだろう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "そんな驚いた顔をするな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "アーミヤがウルサスから救出したあの難民たちをとても気にかけているのは、皆の知るところだからな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "覚えているだろう、ズィマー、グム、イースチナ、リェータ――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "そうだな、リェータは例外だ。戦闘に関して言えば、彼女の心配はほとんどいらないだろう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "とにかく、あの四人がオペレーター申請を出した時、アーミヤは無理やり申請を却下しようとするほど反対していた。だが何故か、途中で考えを改めたようだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "とはいえ、最後の一人まで申請を出したとなれば、アーミヤが気にしない方が不自然だろう……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ナターリア",
+      "speakerId": "char_197_poca",
+      "isRemote": false,
+      "text": "ふぅ、十分休めたわ。ロザリン、もうちょっと付き合ってくれるかしら。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "リェータ",
+      "speakerId": "char_194_rosali",
+      "isRemote": false,
+      "text": "はぁ、お前も粘るなぁ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ナターリア",
+      "speakerId": "char_197_poca",
+      "isRemote": false,
+      "text": "私のオペレーター転向の決心を甘く見ないことね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "リェータ",
+      "speakerId": "char_194_rosali",
+      "isRemote": false,
+      "text": "はいはい。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "グレース教官",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "ナターリア、もう少し休んだほうが良いぞ。トレーニングで一番大切なのは休むことだ。無理をし続ければ、身体が持たなくなる。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ナターリア",
+      "speakerId": "char_197_poca",
+      "isRemote": false,
+      "text": "ありがとうございます、グレース教官。でもまだ頑張れます……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "グレース教官",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "おいおい、ドーベルマン教官にビビってるのか？　あの人は怖そうに見えて……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "グレース、聞こえているぞ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "グレース教官",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "あっ、えーっと、とにかくそういうことだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ナターリア",
+      "speakerId": "char_197_poca",
+      "isRemote": false,
+      "text": "はい、ですが安心してください。本当に苦しくなれば私も休みますから。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "グレース教官",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "そうか……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "彼女をどう思う？"
     },
     {
       "type": "choice",
@@ -1385,30 +1531,35 @@
               "type": "dialogue",
               "speakerName": "ドーベルマン",
               "speakerId": "char_130_doberm",
+              "isRemote": false,
               "text": "お前からはそう見えるのか？　私はそうは思わない。"
             },
             {
               "type": "dialogue",
               "speakerName": "ドーベルマン",
               "speakerId": "char_130_doberm",
+              "isRemote": false,
               "text": "似たような者を多く見てきたからわかる。彼らが死ぬ気で喰らいついているのは、自分に思考を放棄させようとしているだけだ。"
             },
             {
               "type": "dialogue",
               "speakerName": "ドーベルマン",
               "speakerId": "char_130_doberm",
+              "isRemote": false,
               "text": "あの三人の子たちを思い出したのではないか？"
             },
             {
               "type": "dialogue",
               "speakerName": "ドーベルマン",
               "speakerId": "char_130_doberm",
+              "isRemote": false,
               "text": "あんな年齢であんなに歯を食いしばって、大人たちの社会に挑もうとするとは。どこからそんな覚悟が湧いているのか。"
             },
             {
               "type": "dialogue",
               "speakerName": "ドーベルマン",
               "speakerId": "char_130_doberm",
+              "isRemote": false,
               "text": "しかも彼女たちに限っては、その覚悟は本物のようだからな。"
             }
           ]
@@ -1426,70 +1577,82 @@
               "type": "dialogue",
               "speakerName": "ドーベルマン",
               "speakerId": "char_130_doberm",
+              "isRemote": false,
               "text": "確かに無理をしているな。私の想像以上だ。"
             },
             {
               "type": "dialogue",
               "speakerName": "ドーベルマン",
               "speakerId": "char_130_doberm",
+              "isRemote": false,
               "text": "命がけでトレーニングをする貴族のお嬢様か……フッ。"
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "私も、アーミヤが彼女たちを戦場に立たせたくない気持ちは理解できる。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "あんな若者が戦場に踏み出すことを喜ぶ者などいないからな。というよりも、私のような軍人がここにいる意味は、彼女たちの生活を守るためのはずだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "いつも思うんだ、彼女たちを戦場に立たせることは、私の力不足の結果なのだと。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "――とは言え私も、自分が全ての人の力になることはできないという現実は受け入れているがな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "私にできるのは、彼女たちに戦い方を教え、自分の身を守る術を身に着けさせ、未来の彼女たちの傷を減らすことだけだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "よく考えてみろ、ドクター、お前は彼女たちのために何ができる？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "ドクター、おかえりなさい。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "早速ですが、ナターリアさんのこと……ドクターはどう思われましたか？"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "私も、アーミヤが彼女たちを戦場に立たせたくない気持ちは理解できる。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "あんな若者が戦場に踏み出すことを喜ぶ者などいないからな。というよりも、私のような軍人がここにいる意味は、彼女たちの生活を守るためのはずだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "いつも思うんだ、彼女たちを戦場に立たせることは、私の力不足の結果なのだと。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "――とは言え私も、自分が全ての人の力になることはできないという現実は受け入れているがな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "私にできるのは、彼女たちに戦い方を教え、自分の身を守る術を身に着けさせ、未来の彼女たちの傷を減らすことだけだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "よく考えてみろ、ドクター、お前は彼女たちのために何ができる？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_corridor"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ドクター、おかえりなさい。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "早速ですが、ナターリアさんのこと……ドクターはどう思われましたか？"
     },
     {
       "type": "choice",
@@ -1499,81 +1662,91 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "……はい、それが私が彼女たちを気にかけていた理由の一つです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "ごめんなさい、ドクター。これまでは……話してもいいのかわからなくて。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "ドクターは私の能力を知っていますよね。相手が強い感情を抱き、それを私に向けた時――私は相手の想いを感じることができます。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "そして感情が強烈であれば、たとえそれが私に向けられたものでなくても……微弱にですが、その想いを感じることができるんです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "ズィマーさんたちは、なんと……説明したらいいか。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "他の人たちと、少し違うんです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "私たちにとっては普通で当たり前の状況の、ふとした瞬間に、彼女たちのとてつもない感情を感じることがあるんです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "もちろん、彼女たちの感情はそれぞれ異なりますが、共通している部分もあります。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "もしその感情に名前を付けるなら、きっと、「無力感」が相応しいでしょう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "実際彼女たちは、そこまで悲しんでいるわけでも、苦しんでいるわけでも、怒っているわけでも、絶望しているわけでもありません……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "ただ、この比喩が正しいかはわかりませんが、まるで、形のない壁がそこにあるかのようなんです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "普段はその壁は見えませんし、触れることもできません。ですが彼女たちが前に進もうとすると、壁が彼女たちを阻み、その場に押し止めるんです。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "……はい、それが私が彼女たちを気にかけていた理由の一つです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ごめんなさい、ドクター。これまでは……話してもいいのかわからなくて。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ドクターは私の能力を知っていますよね。相手が強い感情を抱き、それを私に向けた時――私は相手の想いを感じることができます。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "そして感情が強烈であれば、たとえそれが私に向けられたものでなくても……微弱にですが、その想いを感じることができるんです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ズィマーさんたちは、なんと……説明したらいいか。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "他の人たちと、少し違うんです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "私たちにとっては普通で当たり前の状況の、ふとした瞬間に、彼女たちのとてつもない感情を感じることがあるんです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "もちろん、彼女たちの感情はそれぞれ異なりますが、共通している部分もあります。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "もしその感情に名前を付けるなら、きっと、「無力感」が相応しいでしょう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "実際彼女たちは、そこまで悲しんでいるわけでも、苦しんでいるわけでも、怒っているわけでも、絶望しているわけでもありません……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ただ、この比喩が正しいかはわかりませんが、まるで、形のない壁がそこにあるかのようなんです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "普段はその壁は見えませんし、触れることもできません。ですが彼女たちが前に進もうとすると、壁が彼女たちを阻み、その場に押し止めるんです。"
     },
     {
       "type": "choice",
@@ -1583,51 +1756,56 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "いいえ、ドクター。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "今の私たちは、それをしてあげられる立場にないんです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "彼女たちがロドスに資料を登録するにあたって、私たちに教えてくれた経歴などの情報……それが、私たちが「知る権利のある」情報の全てですから。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "彼女たちには何か隠し事があるかもしれませんが、隠しているならばなおさら、私たちはそれを暴いてはいけないんです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "もちろん、ロドスに不利益をもたらすものはその限りではありませんよ。とは言え、ズィマーさんたちが心に秘めているものは、そんな類のものではないと思います。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "それに……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "私たちが今彼女たちを助けようと躍起になったところで、本当に助けになれるとは思いません。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "いいえ、ドクター。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "今の私たちは、それをしてあげられる立場にないんです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "彼女たちがロドスに資料を登録するにあたって、私たちに教えてくれた経歴などの情報……それが、私たちが「知る権利のある」情報の全てですから。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "彼女たちには何か隠し事があるかもしれませんが、隠しているならばなおさら、私たちはそれを暴いてはいけないんです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "もちろん、ロドスに不利益をもたらすものはその限りではありませんよ。とは言え、ズィマーさんたちが心に秘めているものは、そんな類のものではないと思います。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "それに……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "私たちが今彼女たちを助けようと躍起になったところで、本当に助けになれるとは思いません。"
     },
     {
       "type": "choice",
@@ -1640,6 +1818,7 @@
               "type": "dialogue",
               "speakerName": "アーミヤ",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "はい、私もそう思います。"
             }
           ]
@@ -1652,6 +1831,7 @@
               "type": "dialogue",
               "speakerName": "アーミヤ",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "もしかすると単に私が、そうすることを勝手に恐れているだけかもしれませんが。"
             }
           ]
@@ -1664,49 +1844,54 @@
               "type": "dialogue",
               "speakerName": "アーミヤ",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "クスッ、ドクター、また冗談を。"
             },
             {
               "type": "dialogue",
               "speakerName": "アーミヤ",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "本当に、そんな風に簡単だったら良かったんですが。"
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "ドクター、私は今になって心から思うんです。「あなたのことが理解できる」というのは、良い言葉ではないって。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "ですが多くの人がそんな言葉を使います。そう言いさえすれば慰めの義務を果たせる、あるいは相手が心の扉を開けてくれると勘違いしているのかもしれません。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "他人の感情を理解するのは、本当はとても難しいことです。助けになるのは、理解する以上に難しいでしょう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "艦内の他のオペレーターたちの場合も同じです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "過去の経歴を彼らと共有していない限り、私たちの言葉は彼らには届きません。私たちが正しいと思うことをしても、それが彼らの求めていることにはなり得ない場合もあります。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ドクター、私は今になって心から思うんです。「あなたのことが理解できる」というのは、良い言葉ではないって。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ですが多くの人がそんな言葉を使います。そう言いさえすれば慰めの義務を果たせる、あるいは相手が心の扉を開けてくれると勘違いしているのかもしれません。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "他人の感情を理解するのは、本当はとても難しいことです。助けになるのは、理解する以上に難しいでしょう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "艦内の他のオペレーターたちの場合も同じです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "過去の経歴を彼らと共有していない限り、私たちの言葉は彼らには届きません。私たちが正しいと思うことをしても、それが彼らの求めていることにはなり得ない場合もあります。"
     },
     {
       "type": "choice",
@@ -1716,57 +1901,63 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "はい。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "彼女たちの感情を感知した後、私は考え方を改めたんです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "彼女たちを保護の対象とするのは、私たちから見れば彼女たちのためです。結果的に、彼女たちの安全を保障することもできるでしょう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "ですがそれだけでは、彼女たちが完全に回復することはないと思ったんです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "ドクター、私も本当は、時間が全てを解決するなんて言いたくありません。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "ですが今の私にはもう他の手がないんです、それ以外の方法を知らないんです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "私にできるのは、彼女たちの選択を尊重し、私の、そしてロドスのやり方で彼女たちを守ることです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "こうやって考えることでさえ、傲慢なのではと思ってしまいますが……"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "はい。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "彼女たちの感情を感知した後、私は考え方を改めたんです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "彼女たちを保護の対象とするのは、私たちから見れば彼女たちのためです。結果的に、彼女たちの安全を保障することもできるでしょう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ですがそれだけでは、彼女たちが完全に回復することはないと思ったんです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ドクター、私も本当は、時間が全てを解決するなんて言いたくありません。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ですが今の私にはもう他の手がないんです、それ以外の方法を知らないんです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "私にできるのは、彼女たちの選択を尊重し、私の、そしてロドスのやり方で彼女たちを守ることです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "こうやって考えることでさえ、傲慢なのではと思ってしまいますが……"
     },
     {
       "type": "choice",
@@ -1779,6 +1970,7 @@
               "type": "dialogue",
               "speakerName": "アーミヤ",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "ですが私は、多くの人のために、もっといろいろなことができるようになりたいんです。"
             }
           ]
@@ -1791,18 +1983,21 @@
               "type": "dialogue",
               "speakerName": "アーミヤ",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "ドクター、身体的な疾患の治療方法を考えたり、治療の必要性を判断するなら、あまり深く悩む必要はありません。"
             },
             {
               "type": "dialogue",
               "speakerName": "アーミヤ",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "ですが精神的な治療においては、それがとても難しい問題に変わります。"
             },
             {
               "type": "dialogue",
               "speakerName": "アーミヤ",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "今の私には、こんなぼんやりとした答えしか出せません。"
             }
           ]
@@ -1815,49 +2010,54 @@
               "type": "dialogue",
               "speakerName": "アーミヤ",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "ドクターと同じことを、私も考えました。"
             },
             {
               "type": "dialogue",
               "speakerName": "アーミヤ",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "もし今、自分が相手を助けられる立場になければ、その立場を造ればいいということですよね。"
             },
             {
               "type": "dialogue",
               "speakerName": "アーミヤ",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "……少し弱気になってしまっていました。"
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "痛みを和らげ、傷口を治療できる薬を使えば、全快する病気やケガもあります。ですがそれまでに受けた痛みと苦しみを消すことはできません。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "私、いつも思うんです。私たちロドスが、たとえほんの一握りの人であってもいい、誰かが過去に受けた傷のことを忘れさせてあげられたら、それを考えないようにしてあげられたらいいなって。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "でもそれはとても難しいことなんですよね。この道を歩んでみて初めて気付きました。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "だってその願いを本当に実現するためには、薬品の研究を第一の基本として、それ以上に多くのことを成さなくてはなりません。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "痛みを和らげ、傷口を治療できる薬を使えば、全快する病気やケガもあります。ですがそれまでに受けた痛みと苦しみを消すことはできません。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "私、いつも思うんです。私たちロドスが、たとえほんの一握りの人であってもいい、誰かが過去に受けた傷のことを忘れさせてあげられたら、それを考えないようにしてあげられたらいいなって。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "でもそれはとても難しいことなんですよね。この道を歩んでみて初めて気付きました。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "だってその願いを本当に実現するためには、薬品の研究を第一の基本として、それ以上に多くのことを成さなくてはなりません。"
     },
     {
       "type": "choice",
@@ -1867,48 +2067,52 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "……そうですね。私たちはいつも、前を向いて進んでいます。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "ありがとうございます、ドクター。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "彼女たちの話をしていたはずなのに、いつの間にか私がドクターに励ましてもらっちゃいました。お恥ずかしい限りです……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "今回は私も、素直にナターリアさんの申請に同意するつもりです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "彼女たちが私たちに心を開いてくれたら……私たちが彼女たちの力になれたら嬉しいです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "いつの日か……ロドスが彼女たちの新しい故郷になったらいいな。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "……そうですね。私たちはいつも、前を向いて進んでいます。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ありがとうございます、ドクター。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "彼女たちの話をしていたはずなのに、いつの間にか私がドクターに励ましてもらっちゃいました。お恥ずかしい限りです……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "今回は私も、素直にナターリアさんの申請に同意するつもりです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "彼女たちが私たちに心を開いてくれたら……私たちが彼女たちの力になれたら嬉しいです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "いつの日か……ロドスが彼女たちの新しい故郷になったらいいな。"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": [

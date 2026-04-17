@@ -6,20 +6,26 @@
   "title": "所謂“英雄”",
   "storyCode": "14-11",
   "avgTag": "行動後",
-  "sourcePath": "vendor/ArknightsGamedata/tw/gamedata/story/obt/main/level_main_14-10_end.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/tw/gamedata/story/obt/main/level_main_14-10_end.txt",
   "sourceHash": "65e0bf0ea783a7974b9f393ea8b9cf213d8e0b96495ac683a9328c64633eb290",
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "50_g18_originiumcave"
+    },
+    {
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "avg_npc_394_1",
+      "isRemote": false,
       "text": "……喪鐘。"
     },
     {
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "avg_npc_394_1",
+      "isRemote": false,
       "text": "這是……Logos先生吹響的骨哨。"
     },
     {
@@ -38,18 +44,17 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_npc_394_1",
-          "text": "……"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -59,753 +64,879 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_npc_394_1",
-          "text": "沒事的，博士。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_npc_394_1",
-          "text": "只是一下想起了……很多很多事。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_npc_394_1",
-          "text": "以前在羅德島的時候，很少見到Logos先生以女妖之主的身分自居。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_npc_394_1",
-          "text": "他總說自己和Scout先生還有Misery先生他們沒有區別，僅是一位相信著羅德島理想的薩卡茲幹員。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_npc_394_1",
-          "text": "所以……出發的那天，當我看到Logos先生換上了王庭服飾的時候……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_npc_394_1",
-          "text": "我從他的眼睛裡，感受到了很大的決心……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_npc_394_1",
-          "text": "還有……悲哀。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_4133_logos_1",
-          "text": "……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "骨哨碎裂，骨筆已經折斷，他的唇角滲出縷縷血絲。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "孽茨雷",
-          "speakerId": "avg_npc_1339_1",
-          "text": "你已無法再施展任何咒術。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "孽茨雷",
-          "speakerId": "avg_npc_1339_1",
-          "text": "你把自己逼到極限，點燃了全身的血，吹響這一聲骨哨……只為了攔住我一時半刻。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "孽茨雷",
-          "speakerId": "avg_npc_1339_1",
-          "text": "哀琺尼爾……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "孽茨雷",
-          "speakerId": "avg_npc_1339_1",
-          "text": "作為戰士，你合格了。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "食腐者的王張開雙臂。\n披在他身上的破碎旗幟紛紛揚起，彷彿薩卡茲經歷過的無數戰爭再現。\n從他的新舊傷口處掉落的血與腐肉，正滋養著這片戰場。新的枝條破土而出，填補了受到咒文重創的戰士們的身軀。\n所有倒下的“靈幛”再度站了起來。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "孽茨雷",
-          "speakerId": "avg_npc_1339_1",
-          "text": "但你要對抗的，絕不是一個或者幾個具體的人。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "孽茨雷",
-          "speakerId": "avg_npc_1339_1",
-          "text": "薩卡茲之中乃至王庭內部，都從來不缺變革者。他們終究失敗。就像當年的特蕾西婭。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "孽茨雷",
-          "speakerId": "avg_npc_1339_1",
-          "text": "戰爭如巨石，而薩卡茲注定站在深淵中。石頭永遠會一次次落下。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "孽茨雷",
-          "speakerId": "avg_npc_1339_1",
-          "text": "而你……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "孽茨雷",
-          "speakerId": "avg_npc_1339_1",
-          "text": "你獲得了食腐者的敬意，接下來，由我來賜予你死亡。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "食腐者踏著腐敗之霧，緩步走向年輕的女妖。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1339_1",
-          "text": "“斬斷”。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "女妖以幾乎微不可聞的聲音念出最後的咒言，鋒利的字詞，化為有形的利刃，他將利刃緊握在手——"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "斬下了食腐者之王的右臂。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "孽茨雷",
-          "speakerId": "avg_npc_1339_1",
-          "text": "竟然是……特雷西斯的劍術——"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "凝聚了食腐者之王全力的法術擊中了Logos的胸膛。\n他的身軀墜下山崖。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "源石地面正轟隆隆地崩解。\nLogos想像著那艘熟悉的船碾過山巒與河岸，她的履帶也會發出類似的轟鳴。\n他想起自己第一次登上羅德島，特蕾西婭與他並肩站在甲板上。特蕾西婭注視著卡茲戴爾，而他仔細聽著風中傳來的嚎哭。\n他想起Mechanist弓著背擺弄零件，教訓可露希爾浪費材料。Outcast和煌打賭這場教訓會持續多長時間，被機械臂一把摘掉了帽子。\n他想起Ace沾血的手，放在盾牌上和酒杯旁。Scout的掌心還要更涼些，和他的弩溫度差不多，握起來和擊掌時不用看就能分辨。\n他想起博士和阿米婭在走廊上互道晚安，阿米婭突然叫住他，詢問他是否準備好了來倫蒂尼姆。\n他想起凱爾希醫生牽著阿米婭的手，來到他們中間——\n“特蕾西婭不在了。以後，阿米婭就是羅德島的領袖。”\nLogos不斷地下墜著——\n直到冰涼的水沒過頭頂。\n他想起許多年前的自己。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "菈瑪蓮",
-          "speakerId": null,
-          "text": "你已經想好了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "哀琺尼爾",
-          "speakerId": null,
-          "text": "是的。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "哀琺尼爾",
-          "speakerId": null,
-          "text": "我會留在羅德島，與那艘船一起航行於大地。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "菈瑪蓮",
-          "speakerId": null,
-          "text": "特蕾西婭……不在了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "菈瑪蓮",
-          "speakerId": null,
-          "text": "巴別塔的理想……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "哀琺尼爾",
-          "speakerId": null,
-          "text": "……依然在。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "哀琺尼爾",
-          "speakerId": null,
-          "text": "殿下已選定一位繼承人。她尚年幼，眼裡卻有著熟悉的屬於理想者的火焰。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "哀琺尼爾",
-          "speakerId": null,
-          "text": "而我留在羅德島，並非只為她一人。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "哀琺尼爾",
-          "speakerId": null,
-          "text": "殿下的探求與尋覓並沒有，也不該就此結束。既然關於薩卡茲未來的答案仍在別處，我便會不斷地踏上旅途。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "哀琺尼爾",
-          "speakerId": null,
-          "text": "這意味著，我可能有很長時間不會回到河谷。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "菈瑪蓮",
-          "speakerId": null,
-          "text": "你感到了歉疚……是因為無法留在我們身邊嗎？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "哀琺尼爾",
-          "speakerId": null,
-          "text": "在河谷之外，我並不會以王庭之主身分行事。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "哀琺尼爾",
-          "speakerId": null,
-          "text": "可仍會有許多人視我的意志為王庭的意志。他們可能會因此對女妖心懷敵意，而我……恐怕無法替你們擋下任何來自谷外的風雨。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "菈瑪蓮",
-          "speakerId": null,
-          "text": "如果有老朋友願意拜訪我，我一定會好好招待他們。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "哀琺尼爾",
-          "speakerId": null,
-          "text": "當然。我不會質疑女妖河谷曾經的主人……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "菈瑪蓮",
-          "speakerId": null,
-          "text": "我和姐妹們也同樣憂心著你。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "哀琺尼爾",
-          "speakerId": null,
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "菈瑪蓮",
-          "speakerId": null,
-          "text": "所以，請帶走我們的思念吧。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "女妖的歌聲環繞著年輕的女妖之主。\n水流變得暖和了起來，如一雙雙手，溫柔地拉住了下墜的人。\nLogos睜開眼睛。\n他彷彿看到了母親，還有無數親人的身影。\n“哀琺尼爾，河谷最美的波光，最動人的歌聲……我們不得不留在原地，注視著你遠行……”\n“但無論你去往何方，我們的祝福都將陪伴著你。”"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_1339_1",
-          "text": "……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_1334_1",
-          "text": "哀琺尼爾，挺住。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_1334_1",
-          "text": "我們就在你身邊……我們始終都在一起。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "咒文的力量緩緩注入Logos的四肢百骸。\n他再一次啟唇。\n飽含力量的歌聲迴盪在河面上，反射出最美麗的波光。\n所有的追擊者，都不得不停下了腳步。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "孽茨雷",
-          "speakerId": "avg_npc_1339_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "孽茨雷",
-          "speakerId": "avg_npc_1339_1",
-          "text": "沒想到，我會在這異國的峽谷中，聽到女妖齊聲歌唱。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "孽茨雷",
-          "speakerId": "avg_npc_1339_1",
-          "text": "新生與死亡相伴……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "孽茨雷",
-          "speakerId": "avg_npc_1339_1",
-          "text": "年輕人，到了最後，你還想用歌聲……勸告我嗎？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "“靈幛”",
-          "speakerId": "avg_npc_1331_1",
-          "text": "宗長，只是女妖的咒言。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "“靈幛”",
-          "speakerId": "avg_npc_1331_1",
-          "text": "她們並未真的參戰。我們的敵人，依然只是那個小女妖一人。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "孽茨雷",
-          "speakerId": "avg_npc_1339_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "孽茨雷",
-          "speakerId": "avg_npc_1339_1",
-          "text": "嗯……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "“靈幛”",
-          "speakerId": "avg_npc_1331_1",
-          "text": "您的傷……竟這麼重。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "孽茨雷",
-          "speakerId": "avg_npc_1339_1",
-          "text": "哀琺尼爾的詛咒，令腐朽的歸於腐朽。我暫時，無法恢復。但這副軀體……也足以支撐到打完這一仗了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "孽茨雷",
-          "speakerId": "avg_npc_1339_1",
-          "text": "至於現在……就讓我先聽完他和女妖們的歌聲吧。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "沒有依靠任何法術飄浮，孽茨雷走到了懸崖邊。\n在這一刻，他格外像一個樣貌普通的老者。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "孽茨雷",
-          "speakerId": "avg_npc_1339_1",
-          "text": "還記得……博卓卡斯替嗎？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "“靈幛”",
-          "speakerId": "avg_npc_1331_1",
-          "text": "記得。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "“靈幛”",
-          "speakerId": "avg_npc_1331_1",
-          "text": "您對他，視如己出。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "孽茨雷",
-          "speakerId": "avg_npc_1339_1",
-          "text": "他是那樣天賦卓絕，無疑可以成為卡茲戴爾的英雄。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "孽茨雷",
-          "speakerId": "avg_npc_1339_1",
-          "text": "他本是我最為欣賞的學徒。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "孽茨雷",
-          "speakerId": "avg_npc_1339_1",
-          "text": "可惜他離開了卡茲戴爾，又死在一場異國的陰謀中。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "孽茨雷",
-          "speakerId": "avg_npc_1339_1",
-          "text": "好在，他仍是以戰士的面貌死去。他透過戰爭踐行了生的意義，並在死時回歸了眾魂。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "孽茨雷",
-          "speakerId": "avg_npc_1339_1",
-          "text": "而在那之後……在那之後……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "孽茨雷",
-          "speakerId": "avg_npc_1339_1",
-          "text": "卡茲戴爾的下一位英雄……在哪裡？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "孽茨雷看向懸崖之下。\n風穿過他軀幹上未能癒合的空洞，吹出些許沒有意義的聲音。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_npc_394_1",
-          "text": "眾魂的哀歌變輕了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_npc_394_1",
-          "text": "“提卡茲之血”與源石的聯繫……被Logos先生的骨哨壓住了片刻。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_npc_394_1",
-          "text": "這是我們最好的機會。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "avg_npc_394_1",
-          "text": "博士，凱爾希醫生……這一次，我絕不會錯過。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "……追上來了啊。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "親愛的奎薩辛娜，你是不是也快到了？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "你和首領……我們敬愛的父親，誰會成為那個……走到王座面前的人呢？"
-        },
-        {
-          "type": "narration",
-          "text": "薩盧斯向祭壇上方的那滴血伸出手。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "源石燃燒，眾魂咆哮。\n強大的巫術作用下，她的指尖很快就變成了焦黑色的結晶。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "真想看見啊……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "薩盧斯",
-          "speakerId": "avg_npc_653_1",
-          "text": "原點，已經那麼近那麼近。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "赦罪師直屬衛兵",
-          "speakerId": "avg_npc_425_1",
-          "text": "你——"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "閃靈",
-          "speakerId": "avgnew_147_shining_1",
-          "text": "你們躲藏得很好。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "閃靈",
-          "speakerId": "avgnew_147_shining_1",
-          "text": "找到你們……花去了太多時間。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "赦罪師直屬衛兵",
-          "speakerId": "avg_npc_425_1",
-          "text": "叛徒！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "赦罪師直屬衛兵",
-          "speakerId": "avg_npc_425_1",
-          "text": "該死，你這一路上殺了多少人？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "閃靈",
-          "speakerId": "avgnew_147_shining_1",
-          "text": "……不比當年逃出來的時候，殺得多。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "赦罪師直屬衛兵",
-          "speakerId": "avg_npc_425_1",
-          "text": "那個時候……地下實驗區裡堆滿了我們的人的屍體。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "赦罪師直屬衛兵",
-          "speakerId": "avg_npc_425_1",
-          "text": "你害得首領在皇家科學院的部署幾乎白費。那麼大動靜，維多利亞人險些就要發現我們的計劃了！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "閃靈",
-          "speakerId": "avgnew_147_shining_1",
-          "text": "我寧可他從未成功過。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "赦罪師直屬衛兵",
-          "speakerId": "avg_npc_425_1",
-          "text": "哈……你以前可不是這麼說的！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "赦罪師直屬衛兵",
-          "speakerId": "avg_npc_425_1",
-          "text": "你是怎麼能夠裝得跟個正義使者一樣的？當年都是你指揮著我們忙進忙出！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "赦罪師直屬衛兵",
-          "speakerId": "avg_npc_425_1",
-          "text": "倫蒂尼姆城外，那麼大的地窟，那麼多處實驗基地……哪一處不是由你負責？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "赦罪師直屬衛兵",
-          "speakerId": "avg_npc_425_1",
-          "text": "那時候首領大多數時間都在卡茲戴爾。你才是那個主導研究的人，你戴著面具，看起來就和首領一模一樣——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "閃靈",
-          "speakerId": "avgnew_147_shining_1",
-          "text": "那個時候，我並不能選擇。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "赦罪師直屬衛兵",
-          "speakerId": "avg_npc_425_1",
-          "text": "不能選擇？那你把我們拉到倫蒂尼姆，給我們戴上這個面具的時候，說的那些話呢？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "赦罪師直屬衛兵",
-          "speakerId": "avg_npc_425_1",
-          "text": "我們最開始也只是雇傭兵，但我們相信了赦罪師的信仰，相信你們所說的，“薩卡茲最終和最初的道路”！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "赦罪師直屬衛兵",
-          "speakerId": "avg_npc_425_1",
-          "text": "我們與生俱來的罪孽——我們被外族人施加的罪，都將在那個終會抵達的時刻，盡數洗去。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "赦罪師直屬衛兵",
-          "speakerId": "avg_npc_425_1",
-          "text": "那是假的嗎？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "閃靈",
-          "speakerId": "avgnew_147_shining_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "閃靈",
-          "speakerId": "avgnew_147_shining_1",
-          "text": "我確實希望，那是一個謊言。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "赦罪師直屬衛兵",
-          "speakerId": "avg_npc_425_1",
-          "text": "那是真的……不是什麼騙人話。每次首領對我們許下諾言，都是真誠的。你也是，奎薩辛娜，即便你後來走偏了……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "赦罪師直屬衛兵",
-          "speakerId": "avg_npc_425_1",
-          "text": "首領和攝政王，的確就要成功了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "赦罪師直屬衛兵",
-          "speakerId": "avg_npc_425_1",
-          "text": "丟失萬年的自由與權力，即將回到所有薩卡茲的手中。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "閃靈",
-          "speakerId": "avgnew_147_shining_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "赦罪師直屬衛兵",
-          "speakerId": "avg_npc_425_1",
-          "text": "你要殺我，你就殺吧。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "赦罪師直屬衛兵",
-          "speakerId": "avg_npc_425_1",
-          "text": "去見首領，見你的父親。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "赦罪師直屬衛兵",
-          "speakerId": "avg_npc_425_1",
-          "text": "在那條道路的盡頭，他在等你。他們都在等你。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "赦罪師直屬衛兵",
-          "speakerId": "avg_npc_425_1",
-          "text": "你會替我，替我們每一個……死在你劍下的亡魂看見的。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "閃靈",
-          "speakerId": "avgnew_147_shining_1",
-          "text": "……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "閃靈取下那名衛兵的面具。\n她確實記得這張臉。他屬於頭一批被赦罪師帶到倫蒂尼姆的雇傭兵。\n他們最初什麼都不知道，只是負責城外的遺跡挖掘。\n這個年輕人還當面對她表達過謝意，感謝赦罪師給了他們一份收入豐厚，又很安全的工作。\n但很快，她就再也聽不到他們說這些話了。\n赦罪師的首領來到了倫蒂尼姆。\n不再有四處閒聊、喝酒玩遊戲的雇傭兵。周圍的人們都戴上了一模一樣的面具，除非必要的時刻，都不會再開口。\n他們並沒有特殊血脈，奎薩圖什塔本不該能夠輕鬆操控他們的意志。\n可他們屬於自己的那一部分，還是在赦罪師的宏大理想面前死去了。\n而最初殺死他們的，就是她。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "閃靈",
-          "speakerId": "avgnew_147_shining_1",
-          "text": "這份罪孽……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "閃靈",
-          "speakerId": "avgnew_147_shining_1",
-          "text": "……不該再延續了。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "面具裂開了，碎屑刺痛著閃靈的掌心。\n她繼續往山頂走去。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "沒事的，博士。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "只是一下想起了……很多很多事。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "以前在羅德島的時候，很少見到Logos先生以女妖之主的身分自居。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "他總說自己和Scout先生還有Misery先生他們沒有區別，僅是一位相信著羅德島理想的薩卡茲幹員。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "所以……出發的那天，當我看到Logos先生換上了王庭服飾的時候……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "我從他的眼睛裡，感受到了很大的決心……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "還有……悲哀。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "50_g1_originiumcanyon"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_4133_logos_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "骨哨碎裂，骨筆已經折斷，他的唇角滲出縷縷血絲。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "孽茨雷",
+      "speakerId": "avg_npc_1339_1",
+      "isRemote": false,
+      "text": "你已無法再施展任何咒術。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "孽茨雷",
+      "speakerId": "avg_npc_1339_1",
+      "isRemote": false,
+      "text": "你把自己逼到極限，點燃了全身的血，吹響這一聲骨哨……只為了攔住我一時半刻。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "孽茨雷",
+      "speakerId": "avg_npc_1339_1",
+      "isRemote": false,
+      "text": "哀琺尼爾……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "孽茨雷",
+      "speakerId": "avg_npc_1339_1",
+      "isRemote": false,
+      "text": "作為戰士，你合格了。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "食腐者的王張開雙臂。\n披在他身上的破碎旗幟紛紛揚起，彷彿薩卡茲經歷過的無數戰爭再現。\n從他的新舊傷口處掉落的血與腐肉，正滋養著這片戰場。新的枝條破土而出，填補了受到咒文重創的戰士們的身軀。\n所有倒下的“靈幛”再度站了起來。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "孽茨雷",
+      "speakerId": "avg_npc_1339_1",
+      "isRemote": false,
+      "text": "但你要對抗的，絕不是一個或者幾個具體的人。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "孽茨雷",
+      "speakerId": "avg_npc_1339_1",
+      "isRemote": false,
+      "text": "薩卡茲之中乃至王庭內部，都從來不缺變革者。他們終究失敗。就像當年的特蕾西婭。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "孽茨雷",
+      "speakerId": "avg_npc_1339_1",
+      "isRemote": false,
+      "text": "戰爭如巨石，而薩卡茲注定站在深淵中。石頭永遠會一次次落下。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "孽茨雷",
+      "speakerId": "avg_npc_1339_1",
+      "isRemote": false,
+      "text": "而你……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "孽茨雷",
+      "speakerId": "avg_npc_1339_1",
+      "isRemote": false,
+      "text": "你獲得了食腐者的敬意，接下來，由我來賜予你死亡。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "食腐者踏著腐敗之霧，緩步走向年輕的女妖。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1339_1",
+      "isRemote": false,
+      "text": "“斬斷”。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "女妖以幾乎微不可聞的聲音念出最後的咒言，鋒利的字詞，化為有形的利刃，他將利刃緊握在手——"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "斬下了食腐者之王的右臂。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "孽茨雷",
+      "speakerId": "avg_npc_1339_1",
+      "isRemote": false,
+      "text": "竟然是……特雷西斯的劍術——"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "凝聚了食腐者之王全力的法術擊中了Logos的胸膛。\n他的身軀墜下山崖。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "49_g12_diving"
+    },
+    {
+      "type": "narration",
+      "text": "源石地面正轟隆隆地崩解。\nLogos想像著那艘熟悉的船碾過山巒與河岸，她的履帶也會發出類似的轟鳴。\n他想起自己第一次登上羅德島，特蕾西婭與他並肩站在甲板上。特蕾西婭注視著卡茲戴爾，而他仔細聽著風中傳來的嚎哭。\n他想起Mechanist弓著背擺弄零件，教訓可露希爾浪費材料。Outcast和煌打賭這場教訓會持續多長時間，被機械臂一把摘掉了帽子。\n他想起Ace沾血的手，放在盾牌上和酒杯旁。Scout的掌心還要更涼些，和他的弩溫度差不多，握起來和擊掌時不用看就能分辨。\n他想起博士和阿米婭在走廊上互道晚安，阿米婭突然叫住他，詢問他是否準備好了來倫蒂尼姆。\n他想起凱爾希醫生牽著阿米婭的手，來到他們中間——\n“特蕾西婭不在了。以後，阿米婭就是羅德島的領袖。”\nLogos不斷地下墜著——\n直到冰涼的水沒過頭頂。\n他想起許多年前的自己。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "菈瑪蓮",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "你已經想好了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "哀琺尼爾",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "是的。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "哀琺尼爾",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "我會留在羅德島，與那艘船一起航行於大地。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "菈瑪蓮",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "特蕾西婭……不在了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "菈瑪蓮",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "巴別塔的理想……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "哀琺尼爾",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "……依然在。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "哀琺尼爾",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "殿下已選定一位繼承人。她尚年幼，眼裡卻有著熟悉的屬於理想者的火焰。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "哀琺尼爾",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "而我留在羅德島，並非只為她一人。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "哀琺尼爾",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "殿下的探求與尋覓並沒有，也不該就此結束。既然關於薩卡茲未來的答案仍在別處，我便會不斷地踏上旅途。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "哀琺尼爾",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "這意味著，我可能有很長時間不會回到河谷。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "菈瑪蓮",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "你感到了歉疚……是因為無法留在我們身邊嗎？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "哀琺尼爾",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "在河谷之外，我並不會以王庭之主身分行事。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "哀琺尼爾",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "可仍會有許多人視我的意志為王庭的意志。他們可能會因此對女妖心懷敵意，而我……恐怕無法替你們擋下任何來自谷外的風雨。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "菈瑪蓮",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "如果有老朋友願意拜訪我，我一定會好好招待他們。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "哀琺尼爾",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "當然。我不會質疑女妖河谷曾經的主人……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "菈瑪蓮",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "我和姐妹們也同樣憂心著你。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "哀琺尼爾",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "菈瑪蓮",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "所以，請帶走我們的思念吧。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "49_g12_diving"
+    },
+    {
+      "type": "narration",
+      "text": "女妖的歌聲環繞著年輕的女妖之主。\n水流變得暖和了起來，如一雙雙手，溫柔地拉住了下墜的人。\nLogos睜開眼睛。\n他彷彿看到了母親，還有無數親人的身影。\n“哀琺尼爾，河谷最美的波光，最動人的歌聲……我們不得不留在原地，注視著你遠行……”\n“但無論你去往何方，我們的祝福都將陪伴著你。”"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_1339_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_1334_1",
+      "isRemote": false,
+      "text": "哀琺尼爾，挺住。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_1334_1",
+      "isRemote": false,
+      "text": "我們就在你身邊……我們始終都在一起。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "咒文的力量緩緩注入Logos的四肢百骸。\n他再一次啟唇。\n飽含力量的歌聲迴盪在河面上，反射出最美麗的波光。\n所有的追擊者，都不得不停下了腳步。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "50_g1_originiumcanyon"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "孽茨雷",
+      "speakerId": "avg_npc_1339_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "孽茨雷",
+      "speakerId": "avg_npc_1339_1",
+      "isRemote": false,
+      "text": "沒想到，我會在這異國的峽谷中，聽到女妖齊聲歌唱。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "孽茨雷",
+      "speakerId": "avg_npc_1339_1",
+      "isRemote": false,
+      "text": "新生與死亡相伴……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "孽茨雷",
+      "speakerId": "avg_npc_1339_1",
+      "isRemote": false,
+      "text": "年輕人，到了最後，你還想用歌聲……勸告我嗎？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "“靈幛”",
+      "speakerId": "avg_npc_1331_1",
+      "isRemote": false,
+      "text": "宗長，只是女妖的咒言。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "“靈幛”",
+      "speakerId": "avg_npc_1331_1",
+      "isRemote": false,
+      "text": "她們並未真的參戰。我們的敵人，依然只是那個小女妖一人。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "孽茨雷",
+      "speakerId": "avg_npc_1339_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "孽茨雷",
+      "speakerId": "avg_npc_1339_1",
+      "isRemote": false,
+      "text": "嗯……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "“靈幛”",
+      "speakerId": "avg_npc_1331_1",
+      "isRemote": false,
+      "text": "您的傷……竟這麼重。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "孽茨雷",
+      "speakerId": "avg_npc_1339_1",
+      "isRemote": false,
+      "text": "哀琺尼爾的詛咒，令腐朽的歸於腐朽。我暫時，無法恢復。但這副軀體……也足以支撐到打完這一仗了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "孽茨雷",
+      "speakerId": "avg_npc_1339_1",
+      "isRemote": false,
+      "text": "至於現在……就讓我先聽完他和女妖們的歌聲吧。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "沒有依靠任何法術飄浮，孽茨雷走到了懸崖邊。\n在這一刻，他格外像一個樣貌普通的老者。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "孽茨雷",
+      "speakerId": "avg_npc_1339_1",
+      "isRemote": false,
+      "text": "還記得……博卓卡斯替嗎？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "“靈幛”",
+      "speakerId": "avg_npc_1331_1",
+      "isRemote": false,
+      "text": "記得。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "“靈幛”",
+      "speakerId": "avg_npc_1331_1",
+      "isRemote": false,
+      "text": "您對他，視如己出。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "孽茨雷",
+      "speakerId": "avg_npc_1339_1",
+      "isRemote": false,
+      "text": "他是那樣天賦卓絕，無疑可以成為卡茲戴爾的英雄。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "孽茨雷",
+      "speakerId": "avg_npc_1339_1",
+      "isRemote": false,
+      "text": "他本是我最為欣賞的學徒。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "孽茨雷",
+      "speakerId": "avg_npc_1339_1",
+      "isRemote": false,
+      "text": "可惜他離開了卡茲戴爾，又死在一場異國的陰謀中。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "孽茨雷",
+      "speakerId": "avg_npc_1339_1",
+      "isRemote": false,
+      "text": "好在，他仍是以戰士的面貌死去。他透過戰爭踐行了生的意義，並在死時回歸了眾魂。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "孽茨雷",
+      "speakerId": "avg_npc_1339_1",
+      "isRemote": false,
+      "text": "而在那之後……在那之後……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "孽茨雷",
+      "speakerId": "avg_npc_1339_1",
+      "isRemote": false,
+      "text": "卡茲戴爾的下一位英雄……在哪裡？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "孽茨雷看向懸崖之下。\n風穿過他軀幹上未能癒合的空洞，吹出些許沒有意義的聲音。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "50_g18_originiumcave"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "眾魂的哀歌變輕了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "“提卡茲之血”與源石的聯繫……被Logos先生的骨哨壓住了片刻。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "這是我們最好的機會。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "博士，凱爾希醫生……這一次，我絕不會錯過。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "50_g8_altarcoreandblood"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "……追上來了啊。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "親愛的奎薩辛娜，你是不是也快到了？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "你和首領……我們敬愛的父親，誰會成為那個……走到王座面前的人呢？"
+    },
+    {
+      "type": "narration",
+      "text": "薩盧斯向祭壇上方的那滴血伸出手。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "源石燃燒，眾魂咆哮。\n強大的巫術作用下，她的指尖很快就變成了焦黑色的結晶。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "真想看見啊……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "薩盧斯",
+      "speakerId": "avg_npc_653_1",
+      "isRemote": false,
+      "text": "原點，已經那麼近那麼近。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "50_g7_confessariusaltar_on"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "赦罪師直屬衛兵",
+      "speakerId": "avg_npc_425_1",
+      "isRemote": false,
+      "text": "你——"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "閃靈",
+      "speakerId": "avgnew_147_shining_1",
+      "isRemote": false,
+      "text": "你們躲藏得很好。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "閃靈",
+      "speakerId": "avgnew_147_shining_1",
+      "isRemote": false,
+      "text": "找到你們……花去了太多時間。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "赦罪師直屬衛兵",
+      "speakerId": "avg_npc_425_1",
+      "isRemote": false,
+      "text": "叛徒！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "赦罪師直屬衛兵",
+      "speakerId": "avg_npc_425_1",
+      "isRemote": false,
+      "text": "該死，你這一路上殺了多少人？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "閃靈",
+      "speakerId": "avgnew_147_shining_1",
+      "isRemote": false,
+      "text": "……不比當年逃出來的時候，殺得多。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "赦罪師直屬衛兵",
+      "speakerId": "avg_npc_425_1",
+      "isRemote": false,
+      "text": "那個時候……地下實驗區裡堆滿了我們的人的屍體。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "赦罪師直屬衛兵",
+      "speakerId": "avg_npc_425_1",
+      "isRemote": false,
+      "text": "你害得首領在皇家科學院的部署幾乎白費。那麼大動靜，維多利亞人險些就要發現我們的計劃了！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "閃靈",
+      "speakerId": "avgnew_147_shining_1",
+      "isRemote": false,
+      "text": "我寧可他從未成功過。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "赦罪師直屬衛兵",
+      "speakerId": "avg_npc_425_1",
+      "isRemote": false,
+      "text": "哈……你以前可不是這麼說的！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "赦罪師直屬衛兵",
+      "speakerId": "avg_npc_425_1",
+      "isRemote": false,
+      "text": "你是怎麼能夠裝得跟個正義使者一樣的？當年都是你指揮著我們忙進忙出！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "赦罪師直屬衛兵",
+      "speakerId": "avg_npc_425_1",
+      "isRemote": false,
+      "text": "倫蒂尼姆城外，那麼大的地窟，那麼多處實驗基地……哪一處不是由你負責？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "赦罪師直屬衛兵",
+      "speakerId": "avg_npc_425_1",
+      "isRemote": false,
+      "text": "那時候首領大多數時間都在卡茲戴爾。你才是那個主導研究的人，你戴著面具，看起來就和首領一模一樣——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "閃靈",
+      "speakerId": "avgnew_147_shining_1",
+      "isRemote": false,
+      "text": "那個時候，我並不能選擇。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "赦罪師直屬衛兵",
+      "speakerId": "avg_npc_425_1",
+      "isRemote": false,
+      "text": "不能選擇？那你把我們拉到倫蒂尼姆，給我們戴上這個面具的時候，說的那些話呢？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "赦罪師直屬衛兵",
+      "speakerId": "avg_npc_425_1",
+      "isRemote": false,
+      "text": "我們最開始也只是雇傭兵，但我們相信了赦罪師的信仰，相信你們所說的，“薩卡茲最終和最初的道路”！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "赦罪師直屬衛兵",
+      "speakerId": "avg_npc_425_1",
+      "isRemote": false,
+      "text": "我們與生俱來的罪孽——我們被外族人施加的罪，都將在那個終會抵達的時刻，盡數洗去。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "赦罪師直屬衛兵",
+      "speakerId": "avg_npc_425_1",
+      "isRemote": false,
+      "text": "那是假的嗎？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "閃靈",
+      "speakerId": "avgnew_147_shining_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "閃靈",
+      "speakerId": "avgnew_147_shining_1",
+      "isRemote": false,
+      "text": "我確實希望，那是一個謊言。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "赦罪師直屬衛兵",
+      "speakerId": "avg_npc_425_1",
+      "isRemote": false,
+      "text": "那是真的……不是什麼騙人話。每次首領對我們許下諾言，都是真誠的。你也是，奎薩辛娜，即便你後來走偏了……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "赦罪師直屬衛兵",
+      "speakerId": "avg_npc_425_1",
+      "isRemote": false,
+      "text": "首領和攝政王，的確就要成功了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "赦罪師直屬衛兵",
+      "speakerId": "avg_npc_425_1",
+      "isRemote": false,
+      "text": "丟失萬年的自由與權力，即將回到所有薩卡茲的手中。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "閃靈",
+      "speakerId": "avgnew_147_shining_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "赦罪師直屬衛兵",
+      "speakerId": "avg_npc_425_1",
+      "isRemote": false,
+      "text": "你要殺我，你就殺吧。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "赦罪師直屬衛兵",
+      "speakerId": "avg_npc_425_1",
+      "isRemote": false,
+      "text": "去見首領，見你的父親。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "赦罪師直屬衛兵",
+      "speakerId": "avg_npc_425_1",
+      "isRemote": false,
+      "text": "在那條道路的盡頭，他在等你。他們都在等你。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "赦罪師直屬衛兵",
+      "speakerId": "avg_npc_425_1",
+      "isRemote": false,
+      "text": "你會替我，替我們每一個……死在你劍下的亡魂看見的。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "閃靈",
+      "speakerId": "avgnew_147_shining_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "閃靈取下那名衛兵的面具。\n她確實記得這張臉。他屬於頭一批被赦罪師帶到倫蒂尼姆的雇傭兵。\n他們最初什麼都不知道，只是負責城外的遺跡挖掘。\n這個年輕人還當面對她表達過謝意，感謝赦罪師給了他們一份收入豐厚，又很安全的工作。\n但很快，她就再也聽不到他們說這些話了。\n赦罪師的首領來到了倫蒂尼姆。\n不再有四處閒聊、喝酒玩遊戲的雇傭兵。周圍的人們都戴上了一模一樣的面具，除非必要的時刻，都不會再開口。\n他們並沒有特殊血脈，奎薩圖什塔本不該能夠輕鬆操控他們的意志。\n可他們屬於自己的那一部分，還是在赦罪師的宏大理想面前死去了。\n而最初殺死他們的，就是她。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "閃靈",
+      "speakerId": "avgnew_147_shining_1",
+      "isRemote": false,
+      "text": "這份罪孽……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "閃靈",
+      "speakerId": "avgnew_147_shining_1",
+      "isRemote": false,
+      "text": "……不該再延續了。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "面具裂開了，碎屑刺痛著閃靈的掌心。\n她繼續往山頂走去。"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": []

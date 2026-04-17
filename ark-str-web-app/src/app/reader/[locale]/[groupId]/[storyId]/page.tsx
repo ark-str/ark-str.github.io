@@ -6,6 +6,7 @@ import {
   findSummaryEntry,
   getGroupStories,
   getReaderStoryStaticParams,
+  readStoryBackgroundPaths,
   readContentIndex,
   readStoryPortraitPaths,
   readStoryDetail,
@@ -43,12 +44,14 @@ export default async function ReaderStoryPage({
   }
 
   const detail = story.bodyAvailable ? await readStoryDetail(locale, storyId) : null;
+  const backgroundPaths = readStoryBackgroundPaths(detail);
   const portraitPaths = readStoryPortraitPaths(detail);
   const summaryEntry = findSummaryEntry(readSummaryManifest(), locale, storyId);
 
   return (
     <ReaderStoryShell
       detail={detail}
+      backgroundPaths={backgroundPaths}
       group={group}
       locale={locale}
       portraitPaths={portraitPaths}

@@ -6,10 +6,17 @@
   "title": "前奏「思いがけない帰還」",
   "storyCode": "ZT-ST-1",
   "avgTag": "幕間",
-  "sourcePath": "vendor/ArknightsGamedata/jp/gamedata/story/activities/act29side/level_act29side_st01.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/jp/gamedata/story/activities/act29side/level_act29side_st01.txt",
   "sourceHash": "aae494e31ca60b62918f8b33748655447168378d723d12b11ad342f37400ec7e",
   "bodyAvailable": true,
   "blocks": [
+    {
+      "type": "background",
+      "backgroundId": "28_g9_auditorium"
+    },
+    {
+      "type": "sceneBreak"
+    },
     {
       "type": "narration",
       "text": "シュトルム領管区で過ごす夜は、たいてい風雨が伴となる。一族に伝わる高塔は、あまりにも古いせいで、術師たちがどれほど努力をしても、階段の隙間の苔を全て取り除くことはできない。\n彼はツヴィリングトゥルムを思い出した。螺旋を描く角状の黒い高塔が、いまだ双塔に取って代わられていなかった時代、あの雄大な都市は今とは違う名だった。\n秋の小路はいつも黄金色に輝き、若木のような時代の彼は、その中を歩いた。胸に抱くはアーツユニットや短刀ではなく、数冊の詩集と、自由への希望だけであった。\n今は違う。嵐が束の間の休息をとるときであっても、塔の頂は恐ろしいほどに寒い。雨のように降り注ぐ月光は帳を抜け、あらゆる期待をその場に釘付けにする。\nなんと惜しいことだろうか、彼は思う。\nあのカレンデュラがもう一度咲き誇る姿を、彼は永遠に見られないのだ。"
@@ -28,36 +35,42 @@
       "type": "dialogue",
       "speakerName": "年長の貴族",
       "speakerId": "avg_npc_493_1",
+      "isRemote": false,
       "text": "ブラボー、大変素晴らしい！"
     },
     {
       "type": "dialogue",
       "speakerName": "年長の貴族",
       "speakerId": "avg_npc_493_1",
+      "isRemote": false,
       "text": "なんとよどみない演奏だろうか、まるで月明かりが私の頬をなでているようだ――エーリヒ殿、どう思われますかな？"
     },
     {
       "type": "dialogue",
       "speakerName": "若い貴族",
       "speakerId": "avg_npc_492_1",
+      "isRemote": false,
       "text": "ミス・マルタ、あなたはなぜ私にそのような態度を取るのです？"
     },
     {
       "type": "dialogue",
       "speakerName": "年長の貴族",
       "speakerId": "avg_npc_493_1",
+      "isRemote": false,
       "text": "エーリヒ殿、人違いをしていますよ。あなたの元婚約者はここにはいません。"
     },
     {
       "type": "dialogue",
       "speakerName": "若い貴族",
       "speakerId": "avg_npc_492_1",
+      "isRemote": false,
       "text": "あなたの冷酷な表情は私の心を深く傷付けます。けれどあなたの美貌は私の呼吸をまた奪っていくのです。決して忘れることなどできない……"
     },
     {
       "type": "dialogue",
       "speakerName": "年長の貴族",
       "speakerId": "avg_npc_493_1",
+      "isRemote": false,
       "text": "私の腰から手をどかしていただけますかな。すでに何人かが我々の方を見ていますよ。"
     },
     {
@@ -67,87 +80,105 @@
       "type": "dialogue",
       "speakerName": "若い貴族",
       "speakerId": "avg_npc_492_1",
+      "isRemote": false,
       "text": "も、申し訳ございません！　曲は終わりましたか？　気付きませんでした。"
     },
     {
       "type": "dialogue",
       "speakerName": "若い貴族",
       "speakerId": "avg_npc_492_1",
+      "isRemote": false,
       "text": "どうしてか、また昨年の秋に戻ったような感覚に陥ったのです。マルタが私から去っていったあの日に。悲しみで息ができなくなりそうです。"
     },
     {
       "type": "dialogue",
       "speakerName": "年長の貴族",
       "speakerId": "avg_npc_493_1",
+      "isRemote": false,
       "text": "気晴らしにもっと外へ出た方がいいでしょう。このようなコンサートは、シュトルム領では滅多に開かれませんが、ツヴィリングトゥルムへ行けばそうではありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "若い貴族",
       "speakerId": "avg_npc_492_1",
+      "isRemote": false,
       "text": "はぁ、恐らく私は今年の女帝の祭典には行けないでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "年長の貴族",
       "speakerId": "avg_npc_493_1",
+      "isRemote": false,
       "text": "たしかエーリヒ殿の遠縁の叔父様は選帝侯の宮廷仕えでいらっしゃいましたね。もしかして何か知らせを得たので？　ウェルナー選帝侯は……"
     },
     {
       "type": "dialogue",
       "speakerName": "若い貴族",
       "speakerId": "avg_npc_492_1",
+      "isRemote": false,
       "text": "いえ、確かな情報は何もありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "若い貴族",
       "speakerId": "avg_npc_492_1",
+      "isRemote": false,
       "text": "ただここ数ヶ月、選帝侯はご自身の高塔からほとんど離れていないようです。医師の訪問は減り、他の一族を代表する術師の訪問はむしろますます増えているとか。"
     },
     {
       "type": "dialogue",
       "speakerName": "年長の貴族",
       "speakerId": "avg_npc_493_1",
+      "isRemote": false,
       "text": "どうやらここしばらくは我々もシュトルム領を離れることができないようですね。女帝の祭典は毎年行われますが、新たな領主の初のお目見えはそうではないですから。"
     },
     {
       "type": "dialogue",
       "speakerName": "若い貴族",
       "speakerId": "avg_npc_492_1",
+      "isRemote": false,
       "text": "そんな恐れ多いことを考えるなんて、私にはとても。どうかご容赦ください。それならば私はマルタのことを、もっと思っていたいです。"
     },
     {
       "type": "dialogue",
       "speakerName": "若い貴族",
       "speakerId": "avg_npc_492_1",
+      "isRemote": false,
       "text": "ミス・アルトリアがいて幸いでした。"
     },
     {
       "type": "dialogue",
       "speakerName": "若い貴族",
       "speakerId": "avg_npc_492_1",
+      "isRemote": false,
       "text": "彼女のチェロの音の中でだけ、私はこうして日々の耐え難い現実から抜け出し、一息つけるのですから。"
     },
     {
       "type": "dialogue",
       "speakerName": "年長の貴族",
       "speakerId": "avg_npc_493_1",
+      "isRemote": false,
       "text": "おっしゃる通りです。まったく、今日が最後のコンサートであるのが残念ですね。"
     },
     {
       "type": "dialogue",
       "speakerName": "若い貴族",
       "speakerId": "avg_npc_492_1",
+      "isRemote": false,
       "text": "ではもうしばらくの間じっくりと浸らせてください、少しで構いません。何せ、嵐がまたすぐにやってくるのですから。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "34_g5_noblehall"
+    },
+    {
       "type": "dialogue",
       "speakerName": "貴族の侍従",
       "speakerId": "avg_npc_069",
+      "isRemote": false,
       "text": "――"
     },
     {
@@ -157,18 +188,21 @@
       "type": "dialogue",
       "speakerName": "高塔術師",
       "speakerId": "avg_npc_1135_1",
+      "isRemote": false,
       "text": "ここで何をしている？"
     },
     {
       "type": "dialogue",
       "speakerName": "高塔術師",
       "speakerId": "avg_npc_1135_1",
+      "isRemote": false,
       "text": "侍従長から何をすべきか聞いていないのか？　夕食の配膳が終わったなら、すぐに地下室に戻れ。選帝侯のお休みの邪魔をするな。"
     },
     {
       "type": "dialogue",
       "speakerName": "貴族の侍従",
       "speakerId": "avg_npc_069",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -182,6 +216,7 @@
       "type": "dialogue",
       "speakerName": "高塔術師",
       "speakerId": "avg_npc_1135_1",
+      "isRemote": false,
       "text": "待て。"
     },
     {
@@ -192,33 +227,42 @@
       "type": "dialogue",
       "speakerName": "高塔術師",
       "speakerId": "avg_npc_1135_1",
+      "isRemote": false,
       "text": "選帝侯は……"
     },
     {
       "type": "dialogue",
       "speakerName": "高塔術師",
       "speakerId": "avg_npc_1135_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "高塔術師",
       "speakerId": "avg_npc_1135_1",
+      "isRemote": false,
       "text": "護衛隊、早く！"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_snowconutryinside"
+    },
+    {
       "type": "dialogue",
       "speakerName": "雑貨屋店主",
       "speakerId": "avg_npc_068",
+      "isRemote": false,
       "text": "はぁ、なんでこうも天気がコロコロ変わるんだろうな。これじゃ、仕入れたばっかりの薪がまたしけっちまう。"
     },
     {
       "type": "dialogue",
       "speakerName": "雑貨屋店主",
       "speakerId": "avg_npc_068",
+      "isRemote": false,
       "text": "ハンク、まだ火はつかないのか！？　裏庭に行くだけで、いつまでかかってるんだよ。またアーツユニットを持ってくの忘れたか――"
     },
     {
@@ -228,12 +272,14 @@
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": null,
+      "isRemote": false,
       "text": "……あの、蝋燭をもう一本頂けますか？"
     },
     {
       "type": "dialogue",
       "speakerName": "雑貨屋店主",
       "speakerId": "avg_npc_068",
+      "isRemote": false,
       "text": "どうぞ！　ドロステさん。また昨日みたいに、ここで人を待ってるんですか？"
     },
     {
@@ -243,120 +289,140 @@
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "ええ。"
     },
     {
       "type": "dialogue",
       "speakerName": "雑貨屋店主",
       "speakerId": "avg_npc_068",
+      "isRemote": false,
       "text": "今晩は風が特に強い。上の階に戻ってください、部屋の中の方が暖かいですよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "どうぞお構いなく。長くこちらに戻っていませんでしたが……私の体は、まだこの場所の風や雨を忘れていませんから。"
     },
     {
       "type": "dialogue",
       "speakerName": "雑貨屋店主",
       "speakerId": "avg_npc_068",
+      "isRemote": false,
       "text": "ハハ、そうでした、あなたもシュトルム領出身でしたね。"
     },
     {
       "type": "dialogue",
       "speakerName": "雑貨屋店主",
       "speakerId": "avg_npc_068",
+      "isRemote": false,
       "text": "数年前に新聞であなたの報道を読んだ時は、驚きましたよ。この辺りで育った子供なら、全員何かしら印象はあるはずなんですがね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "覚えていなくても当然です。私は普通で、特別な人間ではありませんから。ずっとそうです。"
     },
     {
       "type": "dialogue",
       "speakerName": "雑貨屋店主",
       "speakerId": "avg_npc_068",
+      "isRemote": false,
       "text": "またまた、謙遜しちゃって。"
     },
     {
       "type": "dialogue",
       "speakerName": "雑貨屋店主",
       "speakerId": "avg_npc_068",
+      "isRemote": false,
       "text": "あなたがうちの店に入って来た時、新聞もたまには本当のことを書くんだって、初めて思ったんです。あなたは確かにノーブルでエレガントだ。まるで高塔から下りてきた大貴族みたいにね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "ここ数日のご厚意に感謝します、ミュラーさん。特に……"
     },
     {
       "type": "dialogue",
       "speakerName": "雑貨屋店主",
       "speakerId": "avg_npc_068",
+      "isRemote": false,
       "text": "よしてくださいって。大丈夫です、あなたがここにいることは言いふらしやしませんよ。たとえ引退しても、メディアがしつこく追っかけてきてるのは知ってます。"
     },
     {
       "type": "dialogue",
       "speakerName": "雑貨屋店主",
       "speakerId": "avg_npc_068",
+      "isRemote": false,
       "text": "前向きに考えましょう。ここはリターニアなんです。見出しを飾ることができるのはお貴族様の重大な出来事だけですよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "……そうかもしれませんね。"
     },
     {
       "type": "dialogue",
       "speakerName": "雑貨屋店主",
       "speakerId": "avg_npc_068",
+      "isRemote": false,
       "text": "おっといけない。また自分の話に夢中になって、お時間を取らせてしまいました。先に蝋燭を渡しておきますね。他に何か必要なものはありますか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "あの……他に何かお借りできる本はありますか？"
     },
     {
       "type": "dialogue",
       "speakerName": "雑貨屋店主",
       "speakerId": "avg_npc_068",
+      "isRemote": false,
       "text": "前のあの小説はもう読み終えたんですか？　そうですね、次は何がいいでしょうか？　画集が二冊と、歴史小説が一冊、それと詩集が五、六冊がありますよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "雑貨屋店主",
       "speakerId": "avg_npc_068",
+      "isRemote": false,
       "text": "やはり詩集の方がお好きですよね？　ウェルナー選帝侯はよく民衆の間で詩会を開いていましてね、この詩人たちはどなたも彼のお客だそうですよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "いいえ、歴史小説の方にしていただけますか。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "こちらに戻ってきてから、今のところ、どんな詩歌も読む気にはなれないのです。"
     },
     {
       "type": "dialogue",
       "speakerName": "雑貨屋店主",
       "speakerId": "avg_npc_068",
+      "isRemote": false,
       "text": "そうですか。ではこの小説をどうぞ、返すのはいつでも大丈夫ですから。ゆっくり読んでください。では私はこの辺で。"
     },
     {
       "type": "dialogue",
       "speakerName": "雑貨屋店主",
       "speakerId": "avg_npc_068",
+      "isRemote": false,
       "text": "ハンク、ハンク――あの小僧、一体どこでサボってるんだ！"
     },
     {
@@ -366,42 +432,49 @@
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "……『余燼』。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "それなりに面白い物語よ。まあ……本当の歴史とはかけ離れているけれど。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "ほかにもお客さんがいたのですね。ご機嫌よう。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "こんばんは。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "あなたは……"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "コーラ。コーラ・レーヴェンシュタイン。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "レーヴェンシュタインさんもこの本を読まれたことが？"
     },
     {
@@ -411,24 +484,28 @@
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "残念ながら、その小説を改編したオペラしか聞いたことがないの。それが出版された年には、私はすでに文字を鑑賞する能力を失っていたから。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "あなたの目……申し訳ありません、気付きませんでした。"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "二十年以上も経っているから、とっくに慣れたわ。それにこんな日になると蝋燭や薪を節約できるのよ。ねえ、もっと近くに座ってもいいかしら？"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "どうぞ。"
     },
     {
@@ -438,72 +515,84 @@
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "なんて暖かい蝋燭の火かしら。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "外は雨が降っているのですか？　お召し物が濡れています。"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "ええ。道を急いでいて、傘を差すのを忘れていたわね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "失礼ですが、予想が誤っていないのであれば、もしや私を訪ねてこちらに？"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "ここ何年も、このお店は景気が悪いの……いえ、正確にはシュトルム領全体がほとんど変わっていないというべきね。"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "首都から遠く、天災が頻発し、雨が降り続いている。特別な時期でもなければ、この場所が外からこれほど多くの人を引きつけるのは難しいでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "たしか、この位置のそばにある窓からは、選帝侯の居住塔がある移動区画が見えたわね？　彼はあなたにもっと隠れやすい場所を選んであげるべきだったわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "つまり、彼があなたを遣わしたのですね……"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "私の手を握って。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "ええと？"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "耳を傾けてみて。"
     },
     {
@@ -513,30 +602,35 @@
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "人が……たくさん、外の風の中に隠れています。"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "ヴィヴィアナ、手元の蝋燭の火を制御できるのよね？"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "ええ。"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "準備してちょうだい――"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "まずは「火を消して」。"
     },
     {
@@ -550,12 +644,14 @@
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "向こうは私たちがどこにいるか見えていないから、近づいて探るしかないわ。彼らの位置が分かるかしら？"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "……はっきりと。私が対処します。"
     },
     {
@@ -572,93 +668,112 @@
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "……七人、八人。"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "九人。"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "これでひとまずは安全ね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "あなたのおかげです。"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "倒したのはあなたよ。私はただ彼らが放ったアーツを少し「調律」しただけ。"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "さあ、さらに多くの刺客が来る前に、私をここから連れて行ってくれるかしら。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "34_g4_swamp_n"
+    },
+    {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "先ほどのあの人たちは……"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "彼らも私と同じで、あなたを訪ねてきたのよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "このまま私が離れて、ミュラーさんとハンクさんたちに危険は及びませんか？"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "あの優しい店主さんは裏庭に行って難を逃れたわ。後で私の仲間が保護して他の場所に連れて行くから安心して。"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "お手伝いさんは……あの人たちを呼び寄せたのは彼なのよ。悪い人と関わったら、報酬が数個の源石錐だけで済まないことを知っておくべきだったわね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "私は自分がそこまで価値のあるターゲットだとは思いません。"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "それはまた後で説明するわ。その前に、ヴィヴィアナ……"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "あなたのことを、よく「見せて」ちょうだい？"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "レーヴェンシュタインさん……"
     },
     {
@@ -672,45 +787,56 @@
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "あなたはお母さんによく似ているわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "もしウェルナーが直接あなたの姿を見ることができていたら、とても喜んだはずよ。あとほんの少しだったのに……彼が病床であんなに長い間耐え忍んだのは、あなたに一目会うためだったのよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "ウェルナー……お父様？"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "彼は……"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "ごめんなさい、ヴィヴィアナ。"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "少し前に、あなたの父……シュトルム領選帝侯ウェルナーは、自らの高塔の中で亡くなったわ。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "34_g5_noblehall"
+    },
+    {
       "type": "dialogue",
       "speakerName": "高塔術師",
       "speakerId": "avg_npc_1135_1",
+      "isRemote": false,
       "text": "事のいきさつは以上です。我々は各々の持ち場を定められた通りに守護しておりましたが、まさか刺客が選帝侯の部屋に忍び込むなどとは想像もせず。"
     },
     {
@@ -720,96 +846,112 @@
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "……刺客。それは、あの選帝侯お付きの侍従のことか？"
     },
     {
       "type": "dialogue",
       "speakerName": "高塔術師",
       "speakerId": "avg_npc_1135_1",
+      "isRemote": false,
       "text": "左様でございます。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "彼女は選帝侯に仕え、人生の大半をこの塔で過ごしてきたのだぞ。"
     },
     {
       "type": "dialogue",
       "speakerName": "高塔術師",
       "speakerId": "avg_npc_1135_1",
+      "isRemote": false,
       "text": "選帝侯は彼女を信頼しておりました、我々もです。しかし彼女は確かに最後に選帝侯にお会いした人物です。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "事件後、他に部屋に入った者は？"
     },
     {
       "type": "dialogue",
       "speakerName": "高塔術師",
       "speakerId": "avg_npc_1135_1",
+      "isRemote": false,
       "text": "衛兵と医者のみです。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "出て行った者はいないのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "高塔術師",
       "speakerId": "avg_npc_1135_1",
+      "isRemote": false,
       "text": "おりません。今夜居住塔から出た者は誰もおりません。"
     },
     {
       "type": "dialogue",
       "speakerName": "高塔術師",
       "speakerId": "avg_npc_1135_1",
+      "isRemote": false,
       "text": "どこに誤りが生じたのか判明していませんので、使用人たちを全員塔の地下牢に閉じ込めております。ご案内いたしましょうか？"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "必要ない、すでに全員に会ってきた。"
     },
     {
       "type": "dialogue",
       "speakerName": "高塔術師",
       "speakerId": "avg_npc_1135_1",
+      "isRemote": false,
       "text": "ではあの刺客に尋問はされましたか？"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "あの侍従は精神系アーツの影響を受け、自らが見聞きしたものを覚えていなかった。"
     },
     {
       "type": "dialogue",
       "speakerName": "高塔術師",
       "speakerId": "avg_npc_1135_1",
+      "isRemote": false,
       "text": "彼女を拷問すべきです。でなければ、彼女が嘘をついていないかの断定が難しいと思われます。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "では、貴様は嘘をついているのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "高塔術師",
       "speakerId": "avg_npc_1135_1",
+      "isRemote": false,
       "text": "私ですか？　いえ、それはありえません。私は十年前からホッホベルク家に忠誠を尽くしています。今の私があるのは、全て選帝侯のお引き立てあってのことです。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "では……金律楽章に誓いを立てられるか？"
     },
     {
@@ -819,12 +961,14 @@
       "type": "dialogue",
       "speakerName": "高塔術師",
       "speakerId": "avg_npc_1135_1",
+      "isRemote": false,
       "text": "金……律……"
     },
     {
       "type": "dialogue",
       "speakerName": "高塔術師",
       "speakerId": "avg_npc_1135_1",
+      "isRemote": false,
       "text": "私がどうして……金律法衛を騙せましょう？"
     },
     {
@@ -834,51 +978,63 @@
       "type": "dialogue",
       "speakerName": "金律法衛",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "事件後、貴様は高塔を離れたな。"
     },
     {
       "type": "dialogue",
       "speakerName": "金律法衛",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "体から雨の匂いがする。それと服の裾に塔外の階段の隙間にある苔が付いているぞ。"
     },
     {
       "type": "dialogue",
       "speakerName": "金律法衛",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "たった十年では不十分だ。貴様はまだホッホベルク家の高塔への理解が足りていない、ウェルナー選帝侯への理解がまだ足りていないようにな。"
     },
     {
       "type": "dialogue",
       "speakerName": "高塔術師",
       "speakerId": "avg_npc_1135_1",
+      "isRemote": false,
       "text": "選帝侯が……あなた方を呼んだのですか……"
     },
     {
       "type": "dialogue",
       "speakerName": "金律法衛",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "選帝侯は貴様らの反心を察知していた。彼が病床についてから、貴様らは蠢き始めていたな。"
     },
     {
       "type": "dialogue",
       "speakerName": "金律法衛",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "惜しむべきは、私とレーヴェンシュタインが一足遅かったことだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "高塔術師",
       "speakerId": "avg_npc_1135_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "28_g12_sewer"
+    },
+    {
       "type": "dialogue",
       "speakerName": "「高塔術師」",
       "speakerId": "avg_npc_1135_1",
+      "isRemote": false,
       "text": "「首席」に伝えなければ、金律法衛がすでに――"
     },
     {
@@ -888,30 +1044,35 @@
       "type": "dialogue",
       "speakerName": "「高塔術師」",
       "speakerId": "avg_npc_1135_1",
+      "isRemote": false,
       "text": "ぐあっ――！"
     },
     {
       "type": "dialogue",
       "speakerName": "金律法衛",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "旋律の束縛から逃れようなどという、愚かな考えは捨てろ。貴様のそのアーツは、使い手の頭と同じくらい脆く醜い。"
     },
     {
       "type": "dialogue",
       "speakerName": "金律法衛",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "それで、あれをどこへやった？"
     },
     {
       "type": "dialogue",
       "speakerName": "「高塔術師」",
       "speakerId": "avg_npc_1135_1",
+      "isRemote": false,
       "text": "ガハッ――うっ！"
     },
     {
       "type": "dialogue",
       "speakerName": "金律法衛",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "答えろ、残党が。"
     },
     {
@@ -921,84 +1082,98 @@
       "type": "dialogue",
       "speakerName": "「高塔術師」",
       "speakerId": "avg_npc_1135_1",
+      "isRemote": false,
       "text": "ツ……ヴィリングトゥル……"
     },
     {
       "type": "dialogue",
       "speakerName": "金律法衛",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "貴様の言った「首席」とは、精神系アーツを用いて侍従に影響を与えた人物か？　その者もツヴィリングトゥルムにいるのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "「高塔術師」",
       "speakerId": "avg_npc_1135_1",
+      "isRemote": false,
       "text": "首席……は……"
     },
     {
       "type": "dialogue",
       "speakerName": "「高塔術師」",
       "speakerId": "avg_npc_1135_1",
+      "isRemote": false,
       "text": "頭が……痛い！"
     },
     {
       "type": "dialogue",
       "speakerName": "金律法衛",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "黄金の旋律は、貴様の魂の奥深くで奏でられる。"
     },
     {
       "type": "dialogue",
       "speakerName": "金律法衛",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "反抗の意思を持ち続ける限り、この旋律は貴様の心と脳を苛み続けるぞ。"
     },
     {
       "type": "dialogue",
       "speakerName": "「高塔術師」",
       "speakerId": "avg_npc_1135_1",
+      "isRemote": false,
       "text": "金律法衛……"
     },
     {
       "type": "dialogue",
       "speakerName": "「高塔術師」",
       "speakerId": "avg_npc_1135_1",
+      "isRemote": false,
       "text": "これほど圧倒的な力を有しておきながら、なぜ女帝という名の傀儡たちの下僕に甘んじる！？"
     },
     {
       "type": "dialogue",
       "speakerName": "金律法衛",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "貴様を縛りつけているのは私の旋律でも、ましてや女帝の思し召しでもない。"
     },
     {
       "type": "dialogue",
       "speakerName": "金律法衛",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "貴様はリターニアの意志には逆らえないのだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "「高塔術師」",
       "speakerId": "avg_npc_1135_1",
+      "isRemote": false,
       "text": "リターニアの……意志？"
     },
     {
       "type": "dialogue",
       "speakerName": "「高塔術師」",
       "speakerId": "avg_npc_1135_1",
+      "isRemote": false,
       "text": "ハ……ハハ！　今のリターニアに……本来あるべき意志がまだ残っているとでも？"
     },
     {
       "type": "dialogue",
       "speakerName": "「高塔術師」",
       "speakerId": "avg_npc_1135_1",
+      "isRemote": false,
       "text": "「始源の角」……ヘーアクンフツホルンの力が、いずれ再びこの土地を覆うであろう！"
     },
     {
       "type": "dialogue",
       "speakerName": "「高塔術師」",
       "speakerId": "avg_npc_1135_1",
+      "isRemote": false,
       "text": "ガアアアァァ――！"
     },
     {
@@ -1008,60 +1183,77 @@
       "type": "dialogue",
       "speakerName": "金律法衛",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "死が引き起こす微弱な雑音を、遠くから捕捉できる術師であれば、決してただの残党ではないな。"
     },
     {
       "type": "dialogue",
       "speakerName": "金律法衛",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "……「首席」か。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "27_g26_dusk_wild"
+    },
+    {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_245_cello_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "貴族の侍従",
       "speakerId": "avg_npc_498_1",
+      "isRemote": false,
       "text": "ツヴィリングトゥルム行きの車が到着いたしました。すぐに出発しますか？"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_245_cello_1",
+      "isRemote": false,
       "text": "ええ、行きましょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_245_cello_1",
+      "isRemote": false,
       "text": "私を招いた友人は、つい先ほどカーテンコールを終えたし、私が演奏すべき曲は全て奏でたもの。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_245_cello_1",
+      "isRemote": false,
       "text": "もうここにとどまる必要はないわ。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "28_g11_lounge"
+    },
+    {
       "type": "dialogue",
       "speakerName": "若い貴族",
       "speakerId": "avg_npc_492_1",
+      "isRemote": false,
       "text": "いつの間にか……こんな時間になってしまった……"
     },
     {
       "type": "dialogue",
       "speakerName": "若い貴族",
       "speakerId": "avg_npc_492_1",
+      "isRemote": false,
       "text": "マルタ、私のマルタ……はぁ、まるで夢のようだった。次またこんな素晴らしい演奏を聞けるのは一体いつになることやら。"
     },
     {
@@ -1071,30 +1263,35 @@
       "type": "dialogue",
       "speakerName": "若い貴族",
       "speakerId": "avg_npc_492_1",
+      "isRemote": false,
       "text": "言っただろう、コンサートの時は邪魔をするなと……"
     },
     {
       "type": "dialogue",
       "speakerName": "若い貴族",
       "speakerId": "avg_npc_492_1",
+      "isRemote": false,
       "text": "なに？　待て、もう一度言え！"
     },
     {
       "type": "dialogue",
       "speakerName": "若い貴族",
       "speakerId": "avg_npc_492_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "若い貴族",
       "speakerId": "avg_npc_492_1",
+      "isRemote": false,
       "text": "すぐに戻る。車の用意をしてくれ、幾人かに会ってこなければ。"
     },
     {
       "type": "dialogue",
       "speakerName": "若い貴族",
       "speakerId": "avg_npc_492_1",
+      "isRemote": false,
       "text": "ああ、数日前にループカーン管区で購入した木彫りの装飾、それと書斎にあるヴィクトリアの骨灰磁器も持ってくるんだ。"
     },
     {
@@ -1104,66 +1301,77 @@
       "type": "dialogue",
       "speakerName": "若い貴族",
       "speakerId": "avg_npc_492_1",
+      "isRemote": false,
       "text": "なぜ、こんなに突然？　選帝侯はお元気だと、今朝聞いたばかりなのに。"
     },
     {
       "type": "dialogue",
       "speakerName": "若い貴族",
       "speakerId": "avg_npc_492_1",
+      "isRemote": false,
       "text": "これからはまた大変な日々になるな。ミス・アルトリア……あぁ、ミス・アルトリアの音楽と美貌だけが私を悪夢から救い出してくれる。"
     },
     {
       "type": "dialogue",
       "speakerName": "若い貴族",
       "speakerId": "avg_npc_492_1",
+      "isRemote": false,
       "text": "あれだけ苦労して彼女の仮住まいの住所を手に入れたというのに、まさかもう出……"
     },
     {
       "type": "dialogue",
       "speakerName": "フェデリコ",
       "speakerId": "avg_1032_excu2_1",
+      "isRemote": false,
       "text": "続けてください。"
     },
     {
       "type": "dialogue",
       "speakerName": "若い貴族",
       "speakerId": "avg_npc_492_1",
+      "isRemote": false,
       "text": "つ、続ける？　あなたはどちら様で？　手に持っているそれはアーツユニットですか、それとも……"
     },
     {
       "type": "dialogue",
       "speakerName": "フェデリコ",
       "speakerId": "avg_1032_excu2_1",
+      "isRemote": false,
       "text": "先ほど、アルトリアを訪問する意思があると示唆しましたね。ですから、あなたは彼女と何らかの関わりがあると仮定します。"
     },
     {
       "type": "dialogue",
       "speakerName": "フェデリコ",
       "speakerId": "avg_1032_excu2_1",
+      "isRemote": false,
       "text": "私は現在彼女を探しています。従って、彼女に関するあらゆる手がかりが必要なのです。"
     },
     {
       "type": "dialogue",
       "speakerName": "若い貴族",
       "speakerId": "avg_npc_492_1",
+      "isRemote": false,
       "text": "あなたもミス・アルトリアを探しているのですか？　彼女の熱狂的なファンか何かですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "フェデリコ",
       "speakerId": "avg_1032_excu2_1",
+      "isRemote": false,
       "text": "ファン？　その表現は、正確性に欠けています。"
     },
     {
       "type": "dialogue",
       "speakerName": "フェデリコ",
       "speakerId": "avg_1032_excu2_1",
+      "isRemote": false,
       "text": "法の規定と教皇庁の特殊任務に伴う務めとして、私は速やかに当該指名手配犯をラテラーノに連行しなければなりません。"
     },
     {
       "type": "dialogue",
       "speakerName": "若い貴族",
       "speakerId": "avg_npc_492_1",
+      "isRemote": false,
       "text": "指名手配犯？　ミス・アルトリアは選帝侯の客人ですよ。たとえ外でそのような根拠のない噂があったとしても……いえ、あなた、あなたの方こそ疑わしいです！"
     },
     {
@@ -1173,274 +1381,330 @@
       "type": "dialogue",
       "speakerName": "年長の貴族",
       "speakerId": "avg_npc_493_1",
+      "isRemote": false,
       "text": "エーリヒ殿！　ご無事ですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "年長の貴族",
       "speakerId": "avg_npc_493_1",
+      "isRemote": false,
       "text": "外の通りはすべて戒厳令が敷かれ、どこも憲兵だらけです。金律法衛が選帝侯の居住塔に向かったとも聞き及びました。"
     },
     {
       "type": "dialogue",
       "speakerName": "若い貴族",
       "speakerId": "avg_npc_492_1",
+      "isRemote": false,
       "text": "私は大丈夫です、ご心配をおかけしました。数名の伯爵方に情報を伺いに向かうところで。はぁ、今夜はおかしな出来事が多い。全部あの怠け者の運転手のせいです、今になっても来ないとは！"
     },
     {
       "type": "dialogue",
       "speakerName": "若い貴族",
       "speakerId": "avg_npc_492_1",
+      "isRemote": false,
       "text": "幸いミス・アルトリアはすでにツヴィリングトゥルムへと発っていました。少なくとも彼女は安全でしょう……"
     },
     {
       "type": "dialogue",
       "speakerName": "若い貴族",
       "speakerId": "avg_npc_492_1",
+      "isRemote": false,
       "text": "あれ、あのおかしなサンクタは？"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "27_g26_dusk_wild"
+    },
+    {
       "type": "dialogue",
       "speakerName": "フェデリコ",
       "speakerId": "avg_1032_excu2_1",
+      "isRemote": false,
       "text": "……指名手配犯アルトリアはすでにフェルスを離脱。"
     },
     {
       "type": "dialogue",
       "speakerName": "フェデリコ",
       "speakerId": "avg_1032_excu2_1",
+      "isRemote": false,
       "text": "執行人フェデリコ、引き続きターゲットを追跡します。"
     },
     {
       "type": "dialogue",
       "speakerName": "フェデリコ",
       "speakerId": "avg_1032_excu2_1",
+      "isRemote": false,
       "text": "目的地は――リターニア首都、ツヴィリングトゥルム。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_ltstrongpoint"
+    },
+    {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "ヴィヴィアナ、私たちも出発するわよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "選帝侯は病死だと対外的に発表されたわ。領地の安定のためには、理解できるやり方ね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "私は……葬儀に参加できないのですよね？"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "ごめんなさい。わざわざカジミエーシュから駆け付けてきたのに、彼の最期に立ち会うこともできないし、公には……"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "ええ、哀悼の意を示すこともできません。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "言ってしまえば、そもそも私自身に、その資格があるかすら分からないのです。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "私は父の姿さえもはっきりと思い出せません。これまでずっと、私にとっての父とは、カジミエーシュへと送られてくる一通一通の手紙でした。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "その手紙の文字ですら、父の代わりに従者が書いたものではないかと考えてしまう時もありました。"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "あなたの父親はあなたを片時も忘れたことはないわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "はい……誰もが、彼自身も含め、皆さんがそう言います。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "私もそれを信じたいと思っています。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "けれど、最後の手紙を受け取った時に、私はやはり躊躇ってしまったのです。自分がここに帰るべきか……いえ、帰りたいと思っているか分からなかった。"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "あなたは優しい心の持ち主よ、ヴィヴィアナ。あなたは死にゆく人の最期の願いを断れないわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "……あるいは、もう一度あの高塔を見たかったのかもしれません。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "あの高塔は……未だに私の記憶にあるように高くそびえているのかどうかを確かめたかったのです。"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "あの高塔に戻ってはいけないわ、少なくとも今はまだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "安全を考慮して、シュトルム領にはとどまらない方がいいわね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "父を殺害した人も、昨夜私たちの所に来た術師も……同一人物に指示を受けているのでしょうか？"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "そうとも限らないわ。ウェルナーがいなくなった今、あなたの素性を知っている人物であれば、誰もが動機を持ち得るもの。"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "あなたは彼の唯一の子よ。今は情勢が非常に不安定な時期だから、彼の敵や、かつての従者、それに継承権を有し得る者たち、あなたを狙う人間には事欠かないわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "ではあなたは？　あなたはなぜ私を守るのですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "覚えているかしら。十三年前、あなたの母が亡くなった後、あなたを大騎士領へと送り届けたのは私よ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "あなたは……リターニアロイヤル楽団の……"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "……調律師よ。これがなかなか便利な肩書でね。"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "ロイヤル楽団の訪問は、リターニアとカジミエーシュの友好関係を表すものだから、その中で楽器を持った子供の身分を疑う人なんて誰もいないわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "あなたが私を救ったのは……これが初めてではなかったのですね。"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "本当にあなたを救いたいと願っていたのは、あなたの父親よ。"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "数ヶ月前、ウェルナーは残された時間が少ないことを知り、自分がこの世を去った後で、あなたが権力闘争の犠牲になることを恐れたの。"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "あなたの身分は、あまりに特殊だもの。リターニアに帰るにせよ、カジミエーシュに残ることを選ぶにせよ、どう転んでも影響を受けるでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "それで彼はもう一度私とブラントを訪ねるしかなかった。あなたを無事ツヴィリングトゥルムへと送り届けてほしいと古馴染みの私たちに頼んだのよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "あそこでなら、あなたは女帝の庇護を受けられるから。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィヴィアナ",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "女帝の……庇護？"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "そうよ、これがウェルナーの願い。"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "ヴィヴィアナ・フォン・ホッホベルク――"
     },
     {
       "type": "dialogue",
       "speakerName": "コーラ",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "あなたは自らの一族を代表し、女帝の声になるのよ。"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "34_g4_swamp_n"
     },
     {
       "type": "narration",
@@ -1453,18 +1717,21 @@
       "type": "dialogue",
       "speakerName": "疲弊した当直員",
       "speakerId": "avg_npc_1133_1",
+      "isRemote": false,
       "text": "ふぁ～……はぁ……眠ぃ。くそが、なんでまた俺が当直なんだよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "疲弊した当直員",
       "speakerId": "avg_npc_1133_1",
+      "isRemote": false,
       "text": "若い連中は、毎日何かしら理由をつけてさっさと帰っちまうし。今日は何だっけ、新しい映画だったか、それとも地下のバーのライブだったか？"
     },
     {
       "type": "dialogue",
       "speakerName": "疲弊した当直員",
       "speakerId": "avg_npc_1133_1",
+      "isRemote": false,
       "text": "来月になったら、できるだけ早くツヴィリングトゥルムに異動させてもらえるよう男爵に……"
     },
     {
@@ -1474,120 +1741,140 @@
       "type": "dialogue",
       "speakerName": "疲弊した当直員",
       "speakerId": "avg_npc_1133_1",
+      "isRemote": false,
       "text": "おい、そこ！"
     },
     {
       "type": "dialogue",
       "speakerName": "疲弊した当直員",
       "speakerId": "avg_npc_1133_1",
+      "isRemote": false,
       "text": "こんな遅くに何をふらついてるんだ？"
     },
     {
       "type": "dialogue",
       "speakerName": "エーベンホルツ",
       "speakerId": "avg_4046_ebnhlz_1",
+      "isRemote": false,
       "text": "極めて普通に道を歩いていただけだが。"
     },
     {
       "type": "dialogue",
       "speakerName": "エーベンホルツ",
       "speakerId": "avg_4046_ebnhlz_1",
+      "isRemote": false,
       "text": "私の知る限り、ここには十二時以降私のような平民が荒野を歩いてはならないなどという新たな法令はなかったはずだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "疲弊した当直員",
       "speakerId": "avg_npc_1133_1",
+      "isRemote": false,
       "text": "……そりゃないけどよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "疲弊した当直員",
       "speakerId": "avg_npc_1133_1",
+      "isRemote": false,
       "text": "退屈でぶらついてる若者なだけか、俺はなんでこんなに気を張ってるんだ……"
     },
     {
       "type": "dialogue",
       "speakerName": "エーベンホルツ",
       "speakerId": "avg_4046_ebnhlz_1",
+      "isRemote": false,
       "text": "……もう行っても構わないか？　お勤めご苦労。"
     },
     {
       "type": "dialogue",
       "speakerName": "疲弊した当直員",
       "speakerId": "avg_npc_1133_1",
+      "isRemote": false,
       "text": "ああ、いいよ……いや待て。"
     },
     {
       "type": "dialogue",
       "speakerName": "エーベンホルツ",
       "speakerId": "avg_4046_ebnhlz_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "疲弊した当直員",
       "speakerId": "avg_npc_1133_1",
+      "isRemote": false,
       "text": "どこかで……あんたの顔を見たことある気がするが？"
     },
     {
       "type": "dialogue",
       "speakerName": "エーベンホルツ",
       "speakerId": "avg_4046_ebnhlz_1",
+      "isRemote": false,
       "text": "恐らく勘違いだろう。貴殿の言った通り、暇を持て余してぶらつく若者などどこにでもいるからな。"
     },
     {
       "type": "dialogue",
       "speakerName": "疲弊した当直員",
       "speakerId": "avg_npc_1133_1",
+      "isRemote": false,
       "text": "あんたはどこから来たんだ？　その訛りを聞くに、ウルティカか？"
     },
     {
       "type": "dialogue",
       "speakerName": "エーベンホルツ",
       "speakerId": "avg_4046_ebnhlz_1",
+      "isRemote": false,
       "text": "ウルティカの……田舎出身だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "疲弊した当直員",
       "speakerId": "avg_npc_1133_1",
+      "isRemote": false,
       "text": "田舎？　田舎者がそのアクセント？　冗談はよせ。"
     },
     {
       "type": "dialogue",
       "speakerName": "疲弊した当直員",
       "speakerId": "avg_npc_1133_1",
+      "isRemote": false,
       "text": "いや、そうだ。そうだよ。そんな口調でしゃべる平民の若者なんて聞いたことないな。もしかして、あんたどこかのお貴族様の家から抜け出してきた坊ちゃまなんてことはないよな？"
     },
     {
       "type": "dialogue",
       "speakerName": "疲弊した当直員",
       "speakerId": "avg_npc_1133_1",
+      "isRemote": false,
       "text": "身分証を見せてくれ。"
     },
     {
       "type": "dialogue",
       "speakerName": "エーベンホルツ",
       "speakerId": "avg_4046_ebnhlz_1",
+      "isRemote": false,
       "text": "私をどこかへ送り届けることで、どこぞの貴族の歓心を得られるかもしれないなどという幻想を抱いているのなら、きっと失望することになる。"
     },
     {
       "type": "dialogue",
       "speakerName": "疲弊した当直員",
       "speakerId": "avg_npc_1133_1",
+      "isRemote": false,
       "text": "……なあ、あんたの話を聞いてるとイライラするって言われたことないか？"
     },
     {
       "type": "dialogue",
       "speakerName": "疲弊した当直員",
       "speakerId": "avg_npc_1133_1",
+      "isRemote": false,
       "text": "身分証だ。早く出せ。"
     },
     {
       "type": "dialogue",
       "speakerName": "エーベンホルツ",
       "speakerId": "avg_4046_ebnhlz_1",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -1597,147 +1884,175 @@
       "type": "dialogue",
       "speakerName": "ビーグラー",
       "speakerId": "avg_npc_485_1",
+      "isRemote": false,
       "text": "どうぞどうぞ、こちらがこの子のパスポートです、ご覧ください。"
     },
     {
       "type": "dialogue",
       "speakerName": "疲弊した当直員",
       "speakerId": "avg_npc_1133_1",
+      "isRemote": false,
       "text": "あんたは誰だ？"
     },
     {
       "type": "dialogue",
       "speakerName": "ビーグラー",
       "speakerId": "avg_npc_485_1",
+      "isRemote": false,
       "text": "おや、覚えてらっしゃらないのですか？　こちらに住んでいる者ですよ。ほら本を商っている。"
     },
     {
       "type": "dialogue",
       "speakerName": "ビーグラー",
       "speakerId": "avg_npc_485_1",
+      "isRemote": false,
       "text": "そうだ、近頃は商売があまりうまくいかないので、コーヒー屋に鞍替えをしようかと思っているんです。遅くまで巡回して、お疲れでしょう？　さあどうぞ、このコーヒーを飲んでみてください。"
     },
     {
       "type": "dialogue",
       "speakerName": "疲弊した当直員",
       "speakerId": "avg_npc_1133_1",
+      "isRemote": false,
       "text": "……フンッ。"
     },
     {
       "type": "dialogue",
       "speakerName": "疲弊した当直員",
       "speakerId": "avg_npc_1133_1",
+      "isRemote": false,
       "text": "うぷ……なんて味だ……コーヒー屋はやめておいた方がいい。"
     },
     {
       "type": "dialogue",
       "speakerName": "ビーグラー",
       "speakerId": "avg_npc_485_1",
+      "isRemote": false,
       "text": "ハハ、でも目は覚めたでしょう。身分証はもうよろしいですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "疲弊した当直員",
       "speakerId": "avg_npc_1133_1",
+      "isRemote": false,
       "text": "……エーベンホルツ。これがあんたの名前か？"
     },
     {
       "type": "dialogue",
       "speakerName": "エーベンホルツ",
       "speakerId": "avg_4046_ebnhlz_1",
+      "isRemote": false,
       "text": "そうだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ビーグラー",
       "speakerId": "avg_npc_485_1",
+      "isRemote": false,
       "text": "彼の両親は楽器をこよなく愛していましてね、特にピアノを。"
     },
     {
       "type": "dialogue",
       "speakerName": "疲弊した当直員",
       "speakerId": "avg_npc_1133_1",
+      "isRemote": false,
       "text": "そうか。もう行け、パスポート自体は本物っぽいし、名前が本当かどうかはどうでもいい。そうだ、本売りの。お前のポケットにある薄っすいコーヒー、全部置いていけ。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "28_g3_slumstreets_night"
+    },
+    {
       "type": "dialogue",
       "speakerName": "ビーグラー",
       "speakerId": "avg_npc_485_1",
+      "isRemote": false,
       "text": "戻ってくると分かっていたなら、例のパスポートを燃やさなかったのではないですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "エーベンホルツ",
       "speakerId": "avg_4046_ebnhlz_1",
+      "isRemote": false,
       "text": "どうでもいいことだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "エーベンホルツ",
       "speakerId": "avg_4046_ebnhlz_1",
+      "isRemote": false,
       "text": "私に戻ってきてほしいと思うのであれば、当然今のように、二冊目を……それこそいくらでも新しいのを用意するだろう。"
     },
     {
       "type": "dialogue",
       "speakerName": "ビーグラー",
       "speakerId": "avg_npc_485_1",
+      "isRemote": false,
       "text": "……なぜ戻ってきたのです？"
     },
     {
       "type": "dialogue",
       "speakerName": "エーベンホルツ",
       "speakerId": "avg_4046_ebnhlz_1",
+      "isRemote": false,
       "text": "ウルティカ領にいる数十万の人々、それと高塔内の百人余りの侍従……私はいわゆる自由のためにこれほどまで多くの人を犠牲にできるほど利己的ではない。"
     },
     {
       "type": "dialogue",
       "speakerName": "エーベンホルツ",
       "speakerId": "avg_4046_ebnhlz_1",
+      "isRemote": false,
       "text": "であるから、わざわざ私と冗談を言い合う必要もないぞ、親愛なる密偵殿。それとも、女帝陛下の命令で、私が本心から従っているか探りに来ているのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ビーグラー",
       "speakerId": "avg_npc_485_1",
+      "isRemote": false,
       "text": "女帝の祭典が近づいています、近頃のツヴィリングトゥルムは少々不穏ですよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "エーベンホルツ",
       "speakerId": "avg_4046_ebnhlz_1",
+      "isRemote": false,
       "text": "フッ……あれはまだ私の頭の中にあるぞ。"
     },
     {
       "type": "dialogue",
       "speakerName": "エーベンホルツ",
       "speakerId": "avg_4046_ebnhlz_1",
+      "isRemote": false,
       "text": "耳障り極まりないこの曲がまだまだ終わらないことを、私は君たちの誰よりもよく理解している。"
     },
     {
       "type": "dialogue",
       "speakerName": "ビーグラー",
       "speakerId": "avg_npc_485_1",
+      "isRemote": false,
       "text": "いいから聞きなさい。私の任務はここまでです。"
     },
     {
       "type": "dialogue",
       "speakerName": "ビーグラー",
       "speakerId": "avg_npc_485_1",
+      "isRemote": false,
       "text": "ツヴィリングトゥルムに着いたら、他の迎えが来ます。"
     },
     {
       "type": "dialogue",
       "speakerName": "ビーグラー",
       "speakerId": "avg_npc_485_1",
+      "isRemote": false,
       "text": "恐らくすでにご存知でしょうが、あの……あなたに戻ってくるよう命じた密書と、以前あなたに「死」を与えた密書は、同一の陛下によるものではありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "ビーグラー",
       "speakerId": "avg_npc_485_1",
+      "isRemote": false,
       "text": "以前のあのお方の慈悲に比べ、こちらは……"
     },
     {
@@ -1751,42 +2066,49 @@
       "type": "dialogue",
       "speakerName": "ビーグラー",
       "speakerId": "avg_npc_485_1",
+      "isRemote": false,
       "text": "全て分かっていたか。"
     },
     {
       "type": "dialogue",
       "speakerName": "ビーグラー",
       "speakerId": "avg_npc_485_1",
+      "isRemote": false,
       "text": "かつてのウルティカ伯爵、あなたは……本当の「死」を望んでいるのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ビーグラー",
       "speakerId": "avg_npc_485_1",
+      "isRemote": false,
       "text": "ふぅ……これほどどんよりした天気だと、私ですら感傷的になってしまうな。"
     },
     {
       "type": "dialogue",
       "speakerName": "ビーグラー",
       "speakerId": "avg_npc_485_1",
+      "isRemote": false,
       "text": "どうかあなたが……"
     },
     {
       "type": "dialogue",
       "speakerName": "ビーグラー",
       "speakerId": "avg_npc_485_1",
+      "isRemote": false,
       "text": "いや、やめておくとしよう。"
     },
     {
       "type": "dialogue",
       "speakerName": "ビーグラー",
       "speakerId": "avg_npc_485_1",
+      "isRemote": false,
       "text": "私たちのような人間に、まかり間違ってまだ運が残っているとしたら――"
     },
     {
       "type": "dialogue",
       "speakerName": "ビーグラー",
       "speakerId": "avg_npc_485_1",
+      "isRemote": false,
       "text": "――もう二度と会うことがないと祈ろう。"
     },
     {

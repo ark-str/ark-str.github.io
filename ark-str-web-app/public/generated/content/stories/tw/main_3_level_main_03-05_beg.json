@@ -6,7 +6,7 @@
   "title": "呼叫",
   "storyCode": "3-5",
   "avgTag": "行動前",
-  "sourcePath": "vendor/ArknightsGamedata/tw/gamedata/story/obt/main/level_main_03-05_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/tw/gamedata/story/obt/main/level_main_03-05_beg.txt",
   "sourceHash": "a9e411bea704a603efb5fdfbc8aa76da3125f91bb53b3b9ecc8d1a508a34923f",
   "bodyAvailable": true,
   "blocks": [
@@ -18,42 +18,53 @@
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "{@nickname}博士......"
     },
     {
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "我......我不是......我......"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_wild_a"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "char_136_hsguma",
+      "isRemote": false,
       "text": "霧散了。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "char_136_hsguma",
+      "isRemote": false,
       "text": "近衛局發來通訊，他們發現了更多整合運動的蹤跡。"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "char_136_hsguma",
+      "isRemote": false,
       "text": "說是在跟蹤一個敵人，女性，白髮——"
     },
     {
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "char_136_hsguma",
+      "isRemote": false,
       "text": "阿米婭，老陳催促我，讓你......"
     },
     {
@@ -63,12 +74,14 @@
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "char_136_hsguma",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "星熊",
       "speakerId": "char_136_hsguma",
+      "isRemote": false,
       "text": "——你臉色不太好。"
     },
     {
@@ -79,42 +92,45 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "星熊",
-          "speakerId": "char_136_hsguma",
-          "text": "那......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "星熊",
-          "speakerId": "char_136_hsguma",
-          "text": "那就交給你了，{@nickname}博士。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "星熊",
-          "speakerId": "char_136_hsguma",
-          "text": "最好能在五分鐘內出發。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "——{@nickname}博士——"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "星熊",
+      "speakerId": "char_136_hsguma",
+      "isRemote": false,
+      "text": "那......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "星熊",
+      "speakerId": "char_136_hsguma",
+      "isRemote": false,
+      "text": "那就交給你了，{@nickname}博士。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "星熊",
+      "speakerId": "char_136_hsguma",
+      "isRemote": false,
+      "text": "最好能在五分鐘內出發。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "——{@nickname}博士——"
     },
     {
       "type": "choice",
@@ -127,24 +143,28 @@
               "type": "dialogue",
               "speakerName": "阿米婭",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "啊......？我......"
             },
             {
               "type": "dialogue",
               "speakerName": "阿米婭",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "博士......我沒有在害怕什麼......"
             },
             {
               "type": "dialogue",
               "speakerName": "阿米婭",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "當然，我害怕，害怕再一次失去......所以才......"
             },
             {
               "type": "dialogue",
               "speakerName": "阿米婭",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "不，我只是不想的......"
             }
           ]
@@ -157,30 +177,35 @@
               "type": "dialogue",
               "speakerName": "阿米婭",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "我......我不知道......"
             },
             {
               "type": "dialogue",
               "speakerName": "阿米婭",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "我不知道該不該這麼說......但我......"
             },
             {
               "type": "dialogue",
               "speakerName": "阿米婭",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "它不應該光是......傷害別人。"
             },
             {
               "type": "dialogue",
               "speakerName": "阿米婭",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "我不想讓博士看到我，這麼近的看到我......"
             },
             {
               "type": "dialogue",
               "speakerName": "阿米婭",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "......奪走生命。"
             }
           ]
@@ -193,72 +218,82 @@
               "type": "dialogue",
               "speakerName": "阿米婭",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "我沒有後悔。"
             },
             {
               "type": "dialogue",
               "speakerName": "阿米婭",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "不，我是說......"
             },
             {
               "type": "dialogue",
               "speakerName": "阿米婭",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "我就是會為了博士而使用力量，無論他背負著什麼，我不後悔殺死他。"
             },
             {
               "type": "dialogue",
               "speakerName": "阿米婭",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "但是，當然......原本，應該會有更好的辦法吧。"
             },
             {
               "type": "dialogue",
               "speakerName": "阿米婭",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "因為沒能找到那個辦法，所以他死去了。"
             },
             {
               "type": "dialogue",
               "speakerName": "阿米婭",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "這一點......我很後悔。"
             },
             {
               "type": "dialogue",
               "speakerName": "阿米婭",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "我不希望......"
             },
             {
               "type": "dialogue",
               "speakerName": "阿米婭",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "不希望{@Nickname}你看到這樣的我。"
             },
             {
               "type": "dialogue",
               "speakerName": "阿米婭",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "明明說著讓這片大地的感染者從痛苦中脫身......"
             },
             {
               "type": "dialogue",
               "speakerName": "阿米婭",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "關鍵時刻，卻還是要一次又一次的，說服自己，去剝奪感染者的生命。"
             },
             {
               "type": "dialogue",
               "speakerName": "阿米婭",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "我真是，太弱了。"
             }
           ]
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -268,312 +303,359 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "——————"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "......這是我應該做的。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "我明白了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "我從來都不認為，有什麼事情真的命中註定。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "只是，無論如何......無論我會走到哪一步......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "我都會保護你的，博士。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "我保證。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "整合運動成員",
-          "speakerId": "char_1002_nsabr",
-          "text": "不行！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "整合運動成員",
-          "speakerId": "char_1002_nsabr",
-          "text": "你們先走！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "整合運動成員",
-          "speakerId": "char_1002_nsabr",
-          "text": "我得去......得去把碎骨救回來！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "整合運動成員",
-          "speakerId": "char_1002_nsabr",
-          "text": "你瘋了？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "整合運動成員",
-          "speakerId": "char_1002_nsabr",
-          "text": "你這是自投羅網......要去，就大家一起去！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "整合運動成員",
-          "speakerId": "char_1002_nsabr",
-          "text": "好！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "整合運動成員",
-          "speakerId": "char_1002_nsabr",
-          "text": "我可不能，不能讓他在這荒野中......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "整合運動成員",
-          "speakerId": "char_1002_nsabr",
-          "text": "那就上吧！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "星熊",
-          "speakerId": "char_136_hsguma",
-          "text": "怎麼會——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "星熊",
-          "speakerId": "char_136_hsguma",
-          "text": "整合運動......折返了？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "星熊",
-          "speakerId": "char_136_hsguma",
-          "text": "他們要做什麼——？！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "星熊警官！快回撤！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "星熊",
-          "speakerId": "char_136_hsguma",
-          "text": "近衛局，別懈怠！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "星熊",
-          "speakerId": "char_136_hsguma",
-          "text": "準備好防禦對方的攻擊！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "整合運動成員",
-          "speakerId": "char_1002_nsabr",
-          "text": "掩護！掩護我！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "整合運動成員",
-          "speakerId": "char_1002_nsabr",
-          "text": "那個女人......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "整合運動成員",
-          "speakerId": "char_1002_nsabr",
-          "text": "不行，那個女人的盾，我們是越不過去的！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "整合運動成員",
-          "speakerId": "char_1002_nsabr",
-          "text": "快！迂回！趁他們還沒反應過來......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "整合運動成員",
-          "speakerId": "char_1002_nsabr",
-          "text": "先把碎骨，把碎骨——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "整合運動成員",
-          "speakerId": "char_1002_nsabr",
-          "text": "把他搶回來！！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "星熊",
-          "speakerId": "char_136_hsguma",
-          "text": "羅德島！他們在轉移目標，你們要注意！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "不好！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "星熊警官！小心你的右邊！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "星熊",
-          "speakerId": "char_136_hsguma",
-          "text": "——嗯——？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "char_1504_cqbw",
-          "text": "呼呼，用盾擋開了？有些意思——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "星熊",
-          "speakerId": "char_136_hsguma",
-          "text": "爆炸？整合運動的偷襲？！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "char_1504_cqbw",
-          "text": "當然不止是偷襲哦~"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "char_1504_cqbw",
-          "text": "就請你在這裡乖乖待著，別向後去了哦？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "星熊",
-          "speakerId": "char_136_hsguma",
-          "text": "嘖——哪來的混蛋！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "星熊",
-          "speakerId": "char_136_hsguma",
-          "text": "又是爆炸！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "星熊",
-          "speakerId": "char_136_hsguma",
-          "text": "阿米婭！我遭到整合運動遠程火力的壓制！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "星熊",
-          "speakerId": "char_136_hsguma",
-          "text": "其餘的整合運動，正朝你們的方向快速移動！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "char_1504_cqbw",
-          "text": "唔，這面盾還挺厚實的。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "char_1504_cqbw",
-          "text": "我似乎有點自找麻煩的意思呢......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "char_1504_cqbw",
-          "text": "算了，就當我幫整合運動一點小忙吧。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "char_1504_cqbw",
-          "text": "要讓我看到有趣的事情哦。可別讓我太失望了~"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "是切城的那個叫W的人！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "難道說，陳長官他們被她甩掉了嗎？！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "小心敵人的突襲！迅速援護星熊警官！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "還有很多敵人埋伏在周圍！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "只有暴露他們的蹤跡，我們才能取得優勢！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米婭",
-          "speakerId": "char_002_amiya",
-          "text": "博士！請指揮各小隊應對敵人的襲擊！"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "——————"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "......這是我應該做的。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "我明白了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "我從來都不認為，有什麼事情真的命中註定。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "只是，無論如何......無論我會走到哪一步......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "我都會保護你的，博士。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "我保證。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "整合運動成員",
+      "speakerId": "char_1002_nsabr",
+      "isRemote": false,
+      "text": "不行！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "整合運動成員",
+      "speakerId": "char_1002_nsabr",
+      "isRemote": false,
+      "text": "你們先走！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "整合運動成員",
+      "speakerId": "char_1002_nsabr",
+      "isRemote": false,
+      "text": "我得去......得去把碎骨救回來！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "整合運動成員",
+      "speakerId": "char_1002_nsabr",
+      "isRemote": false,
+      "text": "你瘋了？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "整合運動成員",
+      "speakerId": "char_1002_nsabr",
+      "isRemote": false,
+      "text": "你這是自投羅網......要去，就大家一起去！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "整合運動成員",
+      "speakerId": "char_1002_nsabr",
+      "isRemote": false,
+      "text": "好！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "整合運動成員",
+      "speakerId": "char_1002_nsabr",
+      "isRemote": false,
+      "text": "我可不能，不能讓他在這荒野中......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "整合運動成員",
+      "speakerId": "char_1002_nsabr",
+      "isRemote": false,
+      "text": "那就上吧！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "星熊",
+      "speakerId": "char_136_hsguma",
+      "isRemote": false,
+      "text": "怎麼會——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "星熊",
+      "speakerId": "char_136_hsguma",
+      "isRemote": false,
+      "text": "整合運動......折返了？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "星熊",
+      "speakerId": "char_136_hsguma",
+      "isRemote": false,
+      "text": "他們要做什麼——？！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "星熊警官！快回撤！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "星熊",
+      "speakerId": "char_136_hsguma",
+      "isRemote": false,
+      "text": "近衛局，別懈怠！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "星熊",
+      "speakerId": "char_136_hsguma",
+      "isRemote": false,
+      "text": "準備好防禦對方的攻擊！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "整合運動成員",
+      "speakerId": "char_1002_nsabr",
+      "isRemote": false,
+      "text": "掩護！掩護我！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "整合運動成員",
+      "speakerId": "char_1002_nsabr",
+      "isRemote": false,
+      "text": "那個女人......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "整合運動成員",
+      "speakerId": "char_1002_nsabr",
+      "isRemote": false,
+      "text": "不行，那個女人的盾，我們是越不過去的！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "整合運動成員",
+      "speakerId": "char_1002_nsabr",
+      "isRemote": false,
+      "text": "快！迂回！趁他們還沒反應過來......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "整合運動成員",
+      "speakerId": "char_1002_nsabr",
+      "isRemote": false,
+      "text": "先把碎骨，把碎骨——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "整合運動成員",
+      "speakerId": "char_1002_nsabr",
+      "isRemote": false,
+      "text": "把他搶回來！！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "星熊",
+      "speakerId": "char_136_hsguma",
+      "isRemote": false,
+      "text": "羅德島！他們在轉移目標，你們要注意！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "不好！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "星熊警官！小心你的右邊！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "星熊",
+      "speakerId": "char_136_hsguma",
+      "isRemote": false,
+      "text": "——嗯——？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "char_1504_cqbw",
+      "isRemote": false,
+      "text": "呼呼，用盾擋開了？有些意思——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "星熊",
+      "speakerId": "char_136_hsguma",
+      "isRemote": false,
+      "text": "爆炸？整合運動的偷襲？！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "char_1504_cqbw",
+      "isRemote": false,
+      "text": "當然不止是偷襲哦~"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "char_1504_cqbw",
+      "isRemote": false,
+      "text": "就請你在這裡乖乖待著，別向後去了哦？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "星熊",
+      "speakerId": "char_136_hsguma",
+      "isRemote": false,
+      "text": "嘖——哪來的混蛋！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "星熊",
+      "speakerId": "char_136_hsguma",
+      "isRemote": false,
+      "text": "又是爆炸！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "星熊",
+      "speakerId": "char_136_hsguma",
+      "isRemote": false,
+      "text": "阿米婭！我遭到整合運動遠程火力的壓制！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "星熊",
+      "speakerId": "char_136_hsguma",
+      "isRemote": false,
+      "text": "其餘的整合運動，正朝你們的方向快速移動！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "char_1504_cqbw",
+      "isRemote": false,
+      "text": "唔，這面盾還挺厚實的。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "char_1504_cqbw",
+      "isRemote": false,
+      "text": "我似乎有點自找麻煩的意思呢......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "char_1504_cqbw",
+      "isRemote": false,
+      "text": "算了，就當我幫整合運動一點小忙吧。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "char_1504_cqbw",
+      "isRemote": false,
+      "text": "要讓我看到有趣的事情哦。可別讓我太失望了~"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "是切城的那個叫W的人！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "難道說，陳長官他們被她甩掉了嗎？！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "小心敵人的突襲！迅速援護星熊警官！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "還有很多敵人埋伏在周圍！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "只有暴露他們的蹤跡，我們才能取得優勢！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米婭",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "博士！請指揮各小隊應對敵人的襲擊！"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": [

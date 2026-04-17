@@ -31,7 +31,23 @@ function collectSpeakerIdsFromBlocks(blocks, accumulator) {
       for (const option of block.options ?? []) {
         collectSpeakerIdsFromBlocks(option.blocks ?? [], accumulator);
       }
-      collectSpeakerIdsFromBlocks(block.sharedBlocks ?? [], accumulator);
+    }
+  }
+}
+
+function collectBackgroundIdsFromBlocks(blocks, accumulator) {
+  for (const block of blocks) {
+    if (block?.type === "background") {
+      if (typeof block.backgroundId === "string" && block.backgroundId.length > 0) {
+        accumulator.add(block.backgroundId);
+      }
+      continue;
+    }
+
+    if (block?.type === "choice") {
+      for (const option of block.options ?? []) {
+        collectBackgroundIdsFromBlocks(option.blocks ?? [], accumulator);
+      }
     }
   }
 }
@@ -69,6 +85,11 @@ function compareLiveArtifacts(generated, live) {
 
   if (hasPortraitSource(process.cwd())) {
     invariant(
+      JSON.stringify(live.backgroundPaths ?? {}) ===
+        JSON.stringify(JSON.parse(fs.readFileSync(getGeneratedFilePaths(process.cwd()).appBackgroundManifest, "utf8"))),
+      "Generated background manifest does not match live vendor-derived background availability",
+    );
+    invariant(
       JSON.stringify(live.portraitPaths ?? {}) ===
         JSON.stringify(JSON.parse(fs.readFileSync(getGeneratedFilePaths(process.cwd()).appPortraitManifest, "utf8"))),
       "Generated portrait manifest does not match live vendor-derived portrait availability",
@@ -85,6 +106,7 @@ function validateGeneratedArtifacts(generated) {
   invariant(Array.isArray(generated.summaryManifest.items), "summary-manifest items must be an array");
   invariant(fs.existsSync(filePaths.appIndex), "app-generated index.json is missing");
   invariant(fs.existsSync(filePaths.appSummaryManifest), "app-generated summary-manifest.json is missing");
+  invariant(fs.existsSync(filePaths.appBackgroundManifest), "app-generated backgrounds.json is missing");
   invariant(fs.existsSync(filePaths.appPortraitManifest), "app-generated portraits.json is missing");
   invariant(fs.existsSync(filePaths.appRegistry), "app-generated registry.js is missing");
   invariant(
@@ -94,6 +116,7 @@ function validateGeneratedArtifacts(generated) {
 
   const appIndex = JSON.parse(fs.readFileSync(filePaths.appIndex, "utf8"));
   const appSummaryManifest = JSON.parse(fs.readFileSync(filePaths.appSummaryManifest, "utf8"));
+  const appBackgroundManifest = JSON.parse(fs.readFileSync(filePaths.appBackgroundManifest, "utf8"));
   const appPortraitManifest = JSON.parse(fs.readFileSync(filePaths.appPortraitManifest, "utf8"));
   invariant(
     JSON.stringify(appIndex) === JSON.stringify(generated.index),
@@ -103,6 +126,7 @@ function validateGeneratedArtifacts(generated) {
     JSON.stringify(appSummaryManifest) === JSON.stringify(generated.summaryManifest),
     "app-generated summary-manifest.json does not match the published generated summary manifest",
   );
+  invariant(appBackgroundManifest && typeof appBackgroundManifest === "object", "app-generated backgrounds.json must be an object");
   invariant(appPortraitManifest && typeof appPortraitManifest === "object", "app-generated portraits.json must be an object");
 
   invariant(
@@ -168,10 +192,21 @@ function validateGeneratedArtifacts(generated) {
 
     for (const block of body.blocks) {
       if (block?.type !== "dialogue") {
+        if (block?.type === "choice") {
+          invariant(!Object.hasOwn(block, "sharedBlocks"), `legacy sharedBlocks found for ${story.server}:${story.storyId}`);
+        }
+
+        if (block?.type === "background") {
+          invariant(
+            typeof block.backgroundId === "string" && block.backgroundId.length > 0,
+            `background block backgroundId is invalid for ${story.server}:${story.storyId}`,
+          );
+        }
         continue;
       }
 
       invariant(Object.hasOwn(block, "speakerId"), `dialogue block speakerId is missing for ${story.server}:${story.storyId}`);
+      invariant(typeof block.isRemote === "boolean", `dialogue block isRemote is missing for ${story.server}:${story.storyId}`);
       invariant(!Object.hasOwn(block, "speakerToken"), `legacy speakerToken found for ${story.server}:${story.storyId}`);
       invariant(!Object.hasOwn(block, "operatorId"), `legacy operatorId found for ${story.server}:${story.storyId}`);
       invariant(!Object.hasOwn(block, "portraitKey"), `legacy portraitKey found for ${story.server}:${story.storyId}`);
@@ -208,11 +243,28 @@ function validateGeneratedArtifacts(generated) {
         return [...speakerIds];
       }),
   );
+  const backgroundIds = new Set(
+    generated.index.stories
+      .filter((story) => story.bodyAvailable && story.bodyPath)
+      .flatMap((story) => {
+        const bodyFilePath = path.join(process.cwd(), "ark-str-web-app", "public", "generated", "content", story.bodyPath);
+        const body = JSON.parse(fs.readFileSync(bodyFilePath, "utf8"));
+        const ids = new Set();
+        collectBackgroundIdsFromBlocks(body.blocks ?? [], ids);
+        return [...ids];
+      }),
+  );
 
   for (const speakerId of Object.keys(appPortraitManifest)) {
     invariant(portraitSpeakerIds.has(speakerId), `portrait manifest references an unobserved speakerId: ${speakerId}`);
     const portraitFilePath = path.join(filePaths.generatedPortraitsRoot, `${speakerId}.png`);
     invariant(fs.existsSync(portraitFilePath), `portrait file is missing for ${speakerId}`);
+  }
+
+  for (const backgroundId of Object.keys(appBackgroundManifest)) {
+    invariant(backgroundIds.has(backgroundId), `background manifest references an unobserved backgroundId: ${backgroundId}`);
+    const backgroundFilePath = path.join(filePaths.generatedBackgroundsRoot, `${backgroundId}.png`);
+    invariant(fs.existsSync(backgroundFilePath), `background file is missing for ${backgroundId}`);
   }
 }
 

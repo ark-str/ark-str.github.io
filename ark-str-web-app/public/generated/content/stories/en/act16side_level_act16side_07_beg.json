@@ -6,20 +6,33 @@
   "title": "Light and Shadow",
   "storyCode": "GA-7",
   "avgTag": "Before Operation",
-  "sourcePath": "vendor/ArknightsGamedata/en/gamedata/story/activities/act16side/level_act16side_07_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/en/gamedata/story/activities/act16side/level_act16side_07_beg.txt",
   "sourceHash": "9c39dddf42c89ca5d621916c7dc6f0a31bce06751dace6f1ab3f1649638b94db",
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "26_g11_laterano_alley"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "26_g9_laterano_street"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Joyous Lateran Citizen",
       "speakerId": "avg_npc_366_1",
+      "isRemote": false,
       "text": "The town feels so lively today. is it because the conference is about to start?"
     },
     {
       "type": "dialogue",
       "speakerName": "Relaxed Lateran Citizen",
       "speakerId": "avg_npc_368_1",
+      "isRemote": false,
       "text": "Maybe. There are explosions everywhere. Everyone's so excited."
     },
     {
@@ -29,12 +42,14 @@
       "type": "dialogue",
       "speakerName": "Joyous Lateran Citizen",
       "speakerId": "avg_npc_366_1",
+      "isRemote": false,
       "text": "Hey, what the hell?!"
     },
     {
       "type": "dialogue",
       "speakerName": "Federico",
       "speakerId": "char_279_excu",
+      "isRemote": false,
       "text": "......"
     },
     {
@@ -44,33 +59,42 @@
       "type": "dialogue",
       "speakerName": "Relaxed Lateran Citizen",
       "speakerId": "avg_npc_368_1",
+      "isRemote": false,
       "text": "Is that... an executor... and a Legatus?!"
     },
     {
       "type": "dialogue",
       "speakerName": "Joyous Lateran Citizen",
       "speakerId": "avg_npc_366_1",
+      "isRemote": false,
       "text": "What's going on? A parkour competition?"
     },
     {
       "type": "dialogue",
       "speakerName": "Relaxed Lateran Citizen",
       "speakerId": "avg_npc_368_1",
+      "isRemote": false,
       "text": "That sounds like fun! Why don't you join in?"
     },
     {
       "type": "dialogue",
       "speakerName": "Joyous Lateran Citizen",
       "speakerId": "avg_npc_366_1",
+      "isRemote": false,
       "text": "Let's go! See if we can catch up with them!"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "26_g10_laterano_roof"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "This should be far enough..."
     },
     {
@@ -80,168 +104,196 @@
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "*Sigh*... You're a stubborn one, aren't you, Federico?"
     },
     {
       "type": "dialogue",
       "speakerName": "Federico",
       "speakerId": "char_279_excu",
+      "isRemote": false,
       "text": "As are you."
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "I thought you didn't have a mission... Aren't you practically on vacation?"
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "I don't get it. Is there a reason you can't get off my case? What did I ever do to offend you?"
     },
     {
       "type": "dialogue",
       "speakerName": "Federico",
       "speakerId": "char_279_excu",
+      "isRemote": false,
       "text": "My last mission was in Siracusa, to recover the personal effects of a local Sankta."
     },
     {
       "type": "dialogue",
       "speakerName": "Federico",
       "speakerId": "char_279_excu",
+      "isRemote": false,
       "text": "Among them was a notebook. In it, he wrote that he once saw a female Sankta come into contact with a male Sarkaz."
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "Alright, I can see why you'd look into that, but what does it have to do with me? I'm decidedly male, in case you can't tell."
     },
     {
       "type": "dialogue",
       "speakerName": "Federico",
       "speakerId": "char_279_excu",
+      "isRemote": false,
       "text": "I followed all the leads I had and found the Sankta woman's address: 7-265 Via Thervatius, Pagus Stevonus."
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "And when you made it there, you found that she'd already passed away."
     },
     {
       "type": "dialogue",
       "speakerName": "Federico",
       "speakerId": "char_279_excu",
+      "isRemote": false,
       "text": "That's correct."
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "So you had no choice but to keep following her tracks. Then you found she had been taking suspicious trips, and that she always contacted a specific Legatus before she left on her journeys..."
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "Hahahahaha, this is good. This is very good!"
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "And here I thought I gave myself away in Victoria or left some evidence after I talked to Andoain. Never would I have thought it was because I helped Feoria out of the goodness of my heart."
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "This might just be some kind of fate."
     },
     {
       "type": "dialogue",
       "speakerName": "Federico",
       "speakerId": "char_279_excu",
+      "isRemote": false,
       "text": "Are you done musing?"
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "*Sigh*, Federico, if my hunch's correct, you probably can't feel what I'm feeling right now. Yes? No?"
     },
     {
       "type": "dialogue",
       "speakerName": "Federico",
       "speakerId": "char_279_excu",
+      "isRemote": false,
       "text": "Yes. And I do not care."
     },
     {
       "type": "dialogue",
       "speakerName": "Federico",
       "speakerId": "char_279_excu",
+      "isRemote": false,
       "text": "The emotions of those I arrest are not my concern."
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "Does that mean you care about the feelings of anyone you're not arresting?"
     },
     {
       "type": "dialogue",
       "speakerName": "Federico",
       "speakerId": "char_279_excu",
+      "isRemote": false,
       "text": "No."
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "You and I are the same. Neither of us cares for empathy... The way I see it, we could be great friends."
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "Actually, I think Laterano could use more people like you."
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "Someone who doesn't let their empathy get to them, always doing things by the book."
     },
     {
       "type": "dialogue",
       "speakerName": "Federico",
       "speakerId": "char_279_excu",
+      "isRemote": false,
       "text": "I don't disagree. Perhaps I could pay you a visit in the penitentiary after your trial and we could discuss it more."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": null,
+      "isRemote": false,
       "text": "So, that's your reason, Oren?"
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "Well, here comes the worst of my troubles... Why must an honest-to-God good guy like me be blessed with such rotten luck?"
     },
     {
       "type": "dialogue",
       "speakerName": "Federico",
       "speakerId": "char_279_excu",
+      "isRemote": false,
       "text": "Good day, Cardinal Velliv."
     },
     {
@@ -251,30 +303,35 @@
       "type": "dialogue",
       "speakerName": "Velliv",
       "speakerId": "avg_npc_361_1",
+      "isRemote": false,
       "text": "Good day, Executor Federico."
     },
     {
       "type": "dialogue",
       "speakerName": "Velliv",
       "speakerId": "avg_npc_361_1",
+      "isRemote": false,
       "text": "The Seventh Tribunal will handle the traitor from this point forward. The Notarial Hall's involvement is concluded. Please send a copy of your report on this matter to both the Seventh and First Tribunals."
     },
     {
       "type": "dialogue",
       "speakerName": "Velliv",
       "speakerId": "avg_npc_361_1",
+      "isRemote": false,
       "text": "This is my authorization code."
     },
     {
       "type": "dialogue",
       "speakerName": "Federico",
       "speakerId": "char_279_excu",
+      "isRemote": false,
       "text": "Confirmed. In accordance with all relevant regulations."
     },
     {
       "type": "dialogue",
       "speakerName": "Velliv",
       "speakerId": "avg_npc_361_1",
+      "isRemote": false,
       "text": "So? Would you like to go back to your vacation or join me in arresting the Astray? It's up to you."
     },
     {
@@ -284,237 +341,280 @@
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "Vel, has anyone ever heard Federico say goodbye to anyone?"
     },
     {
       "type": "dialogue",
       "speakerName": "Velliv",
       "speakerId": "avg_npc_361_1",
+      "isRemote": false,
       "text": "You can stop trying to cozy up to me."
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "I thought you were here to help me."
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "If you were here to arrest me, you could've waited until Federico was done, right?"
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "Of course, it's possible that he couldn't take me... but that wouldn't mean you had to send him home, right?"
     },
     {
       "type": "dialogue",
       "speakerName": "Velliv",
       "speakerId": "avg_npc_361_1",
+      "isRemote": false,
       "text": "I simply realized that you might be more useful than I expected."
     },
     {
       "type": "dialogue",
       "speakerName": "Velliv",
       "speakerId": "avg_npc_361_1",
+      "isRemote": false,
       "text": "When I read Federico's report, I thought you were just Andoain's helping hand... but it looks like... you're not as much of an imbecile as I thought."
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "I'm honored."
     },
     {
       "type": "dialogue",
       "speakerName": "Velliv",
       "speakerId": "avg_npc_361_1",
+      "isRemote": false,
       "text": "Cecelia's existence is a threat to Laterano. You don't want this threat to be wiped away... not because you want to see it executed, but because you want to use it to make a deal."
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "It really makes my heart ache, you know? It's such a windfall, but no one's trying to touch the pile of money."
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "I'm the most faithful to Laterano a man can be, honestly. You know that, Velliv."
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "I'm His Holiness's biggest supporter. His ideals, anyway."
     },
     {
       "type": "dialogue",
       "speakerName": "Velliv",
       "speakerId": "avg_npc_361_1",
+      "isRemote": false,
       "text": "But you don't agree with the way he does things, correct?"
     },
     {
       "type": "dialogue",
       "speakerName": "Velliv",
       "speakerId": "avg_npc_361_1",
+      "isRemote": false,
       "text": "Like this conference, for example. You don't think there's any point to it."
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "And you think there is?"
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "Velliv, how much do you know about Victoria these days?"
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "You wouldn't understand just how close we are to war."
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "And at a time like this, His Holiness put up all the political capital he accumulated over the last couple decades... but even though he managed to get most of the countries to bend, the envoys who showed up... they hardly have any weight."
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "In more peaceful times, maybe we could use this as a foundation and slowly pave our way forward."
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "But we don't live in peaceful times. There's no time for us to dilly-dally around if we actually want to see his ideals put into practice."
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "I saw a lot of even dirtier moves in Victoria, with my own eyes. I won't say it's the right way to do things, but if doing the right thing doesn't get us to the finish line—"
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "Tell me, would you rather be a woman of integrity?"
     },
     {
       "type": "dialogue",
       "speakerName": "Velliv",
       "speakerId": "avg_npc_361_1",
+      "isRemote": false,
       "text": "You know, you usually aren't this talkative in situations like these."
     },
     {
       "type": "dialogue",
       "speakerName": "Velliv",
       "speakerId": "avg_npc_361_1",
+      "isRemote": false,
       "text": "What are you waiting for?"
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "Actually, I just changed my mind."
     },
     {
       "type": "dialogue",
       "speakerName": "Velliv",
       "speakerId": "avg_npc_361_1",
+      "isRemote": false,
       "text": "Oh?"
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "After traveling out there for so long, I'm buying less and less into the idea that Sankta are special."
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "We've got the empathy thing, we feel what we feel. That's it."
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "What just happened, though... Even I have to admit... I felt something ancient and primal... and it originated in my heart."
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "Moreover, we got ourselves a trump card."
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "All those envoys are gathered here in Laterano, and we are blessed with a miracle."
     },
     {
       "type": "dialogue",
       "speakerName": "Oren",
       "speakerId": "avg_npc_355_1",
+      "isRemote": false,
       "text": "What does that mean? What could it mean? There is still a lot for us to do, isn't there?"
     },
     {
       "type": "dialogue",
       "speakerName": "Velliv",
       "speakerId": "avg_npc_361_1",
+      "isRemote": false,
       "text": "I think you might be mistaken about one thing. You think there is no place for the Summit of Nations during troubled times... I suggest you look at this from the other side."
     },
     {
       "type": "dialogue",
       "speakerName": "Velliv",
       "speakerId": "avg_npc_361_1",
+      "isRemote": false,
       "text": "That said, I think you have the right idea about one point. There are certain things that His Holiness can't do himself, and I also don't think there's any harm in having a backup plan."
     },
     {
       "type": "dialogue",
       "speakerName": "Velliv",
       "speakerId": "avg_npc_361_1",
+      "isRemote": false,
       "text": "You're a lucky man, Oren. I do have a use for you."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "26_g11_laterano_alley"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Fiammetta",
       "speakerId": "avg_300_phenxi_1",
+      "isRemote": false,
       "text": "Come out, Patia."
     },
     {
       "type": "dialogue",
       "speakerName": "Fiammetta",
       "speakerId": "avg_300_phenxi_1",
+      "isRemote": false,
       "text": "At least you still have some sense in you, and your Sarkaz friends aren't running around the city, joining in on the commotion."
     },
     {
       "type": "dialogue",
       "speakerName": "Fiammetta",
       "speakerId": "avg_300_phenxi_1",
+      "isRemote": false,
       "text": "If any of the envoys saw the Sarkaz actively sabotaging the Summit of Nations in Laterano... Things wouldn't end nearly as well."
     },
     {
@@ -524,54 +624,63 @@
       "type": "dialogue",
       "speakerName": "Patia",
       "speakerId": "avg_npc_357_1",
+      "isRemote": false,
       "text": "What are you trying to say?"
     },
     {
       "type": "dialogue",
       "speakerName": "Fiammetta",
       "speakerId": "avg_300_phenxi_1",
+      "isRemote": false,
       "text": "Andoain is on his way to the Basilica, isn't he?"
     },
     {
       "type": "dialogue",
       "speakerName": "Patia",
       "speakerId": "avg_npc_357_1",
+      "isRemote": false,
       "text": "What do you know about him?!"
     },
     {
       "type": "dialogue",
       "speakerName": "Fiammetta",
       "speakerId": "avg_300_phenxi_1",
+      "isRemote": false,
       "text": "I've got no reason to tell you, Patia."
     },
     {
       "type": "dialogue",
       "speakerName": "Fiammetta",
       "speakerId": "avg_300_phenxi_1",
+      "isRemote": false,
       "text": "But before I go settle my score with him, I need you to stop the stupid, annoying little tricks."
     },
     {
       "type": "dialogue",
       "speakerName": "Fiammetta",
       "speakerId": "avg_300_phenxi_1",
+      "isRemote": false,
       "text": "While your people might still have some sense in you and you aren't actually trying to sabotage the Summit of Nations..."
     },
     {
       "type": "dialogue",
       "speakerName": "Fiammetta",
       "speakerId": "avg_300_phenxi_1",
+      "isRemote": false,
       "text": "I'm warning you. Don't push your luck. Things don't always go the way we want them to."
     },
     {
       "type": "dialogue",
       "speakerName": "Patia",
       "speakerId": "avg_npc_357_1",
+      "isRemote": false,
       "text": "Oh? So now it's your turn to 'convince' me?"
     },
     {
       "type": "dialogue",
       "speakerName": "Fiammetta",
       "speakerId": "avg_300_phenxi_1",
+      "isRemote": false,
       "text": "This is just a little advice. If you don't want to take it, that's no feathers off my plumage."
     },
     {
@@ -581,138 +690,161 @@
       "type": "dialogue",
       "speakerName": "Patia",
       "speakerId": "avg_npc_357_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Patia",
       "speakerId": "avg_npc_357_1",
+      "isRemote": false,
       "text": "Fiammetta, tell me. What are you thinking?"
     },
     {
       "type": "dialogue",
       "speakerName": "Fiammetta",
       "speakerId": "avg_300_phenxi_1",
+      "isRemote": false,
       "text": "What else could I be thinking? I'm doing my job... I'm settling the score. It's not that complicated."
     },
     {
       "type": "dialogue",
       "speakerName": "Patia",
       "speakerId": "avg_npc_357_1",
+      "isRemote": false,
       "text": "Why did you leave the Pontifica Cohors eight years ago?"
     },
     {
       "type": "dialogue",
       "speakerName": "Fiammetta",
       "speakerId": "avg_300_phenxi_1",
+      "isRemote": false,
       "text": "They don't get to leave the city, only the Notarial Hall does. What's it matter? Why ask about that?"
     },
     {
       "type": "dialogue",
       "speakerName": "Patia",
       "speakerId": "avg_npc_357_1",
+      "isRemote": false,
       "text": ".................."
     },
     {
       "type": "dialogue",
       "speakerName": "Fiammetta",
       "speakerId": "avg_300_phenxi_1",
+      "isRemote": false,
       "text": "I don't know what you're brooding about. Maybe you put your hopes on me for something, but I don't really get what your whole thing about Lateran Liberi is about."
     },
     {
       "type": "dialogue",
       "speakerName": "Fiammetta",
       "speakerId": "avg_300_phenxi_1",
+      "isRemote": false,
       "text": "And I couldn't care less about it."
     },
     {
       "type": "dialogue",
       "speakerName": "Fiammetta",
       "speakerId": "avg_300_phenxi_1",
+      "isRemote": false,
       "text": "A teammate I trusted betrayed us. One of my friends got hurt because of it, and another got exiled. There might even be traitors who have eyes on them because of it."
     },
     {
       "type": "dialogue",
       "speakerName": "Fiammetta",
       "speakerId": "avg_300_phenxi_1",
+      "isRemote": false,
       "text": "I made this mistake once... and I won't let it happen again."
     },
     {
       "type": "dialogue",
       "speakerName": "Fiammetta",
       "speakerId": "avg_300_phenxi_1",
+      "isRemote": false,
       "text": "I'll protect them. It's as simple as that."
     },
     {
       "type": "dialogue",
       "speakerName": "Fiammetta",
       "speakerId": "avg_300_phenxi_1",
+      "isRemote": false,
       "text": "And I'm not going to apologize if that doesn't fit in with your fantasies."
     },
     {
       "type": "dialogue",
       "speakerName": "Mostima",
       "speakerId": "avg_213_mostma_1",
+      "isRemote": false,
       "text": "...Pfft."
     },
     {
       "type": "dialogue",
       "speakerName": "Fiammetta",
       "speakerId": "avg_300_phenxi_1",
+      "isRemote": false,
       "text": "Don't get cocky, Mostima. In the same position, wouldn't you do the same?"
     },
     {
       "type": "dialogue",
       "speakerName": "Mostima",
       "speakerId": "avg_213_mostma_1",
+      "isRemote": false,
       "text": "You're right. I would."
     },
     {
       "type": "dialogue",
       "speakerName": "Patia",
       "speakerId": "avg_npc_357_1",
+      "isRemote": false,
       "text": "It's true. I've got a fantasy."
     },
     {
       "type": "dialogue",
       "speakerName": "Patia",
       "speakerId": "avg_npc_357_1",
+      "isRemote": false,
       "text": "But so what if it's a fantasy? Fantasies, ideals. If I didn't chase the things I once believed in, I wouldn't have made it this far."
     },
     {
       "type": "dialogue",
       "speakerName": "Patia",
       "speakerId": "avg_npc_357_1",
+      "isRemote": false,
       "text": "Maybe I'm too naive to entrust others with my ideals, but I have no regrets."
     },
     {
       "type": "dialogue",
       "speakerName": "Fiammetta",
       "speakerId": "avg_300_phenxi_1",
+      "isRemote": false,
       "text": "I don't get you."
     },
     {
       "type": "dialogue",
       "speakerName": "Patia",
       "speakerId": "avg_npc_357_1",
+      "isRemote": false,
       "text": "That's why I'm not going to back down. Even if everything I'm doing seems stupid and annoying to you, it's my mission, and I will see it through to the end."
     },
     {
       "type": "dialogue",
       "speakerName": "Patia",
       "speakerId": "avg_npc_357_1",
+      "isRemote": false,
       "text": "If you want to stop me, you'll have to take me down."
     },
     {
       "type": "dialogue",
       "speakerName": "Fiammetta",
       "speakerId": "avg_300_phenxi_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Fiammetta",
       "speakerId": "avg_300_phenxi_1",
+      "isRemote": false,
       "text": "Very well, Patia."
     },
     {

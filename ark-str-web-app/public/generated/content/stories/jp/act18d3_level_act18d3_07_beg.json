@@ -6,14 +6,19 @@
   "title": "守護者",
   "storyCode": "SV-7",
   "avgTag": "戦闘前",
-  "sourcePath": "vendor/ArknightsGamedata/jp/gamedata/story/activities/act18d3/level_act18d3_07_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/jp/gamedata/story/activities/act18d3/level_act18d3_07_beg.txt",
   "sourceHash": "4ec71040b3075df234fa7d04f993e80268471f595d08b5c3e67f4c140c78697c",
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "bg_ibcoastn"
+    },
+    {
       "type": "dialogue",
       "speakerName": "男性住民C",
       "speakerId": "avg_npc_188",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -23,66 +28,77 @@
       "type": "dialogue",
       "speakerName": "男性住民D",
       "speakerId": "avg_npc_189",
+      "isRemote": false,
       "text": "鱗獣。"
     },
     {
       "type": "dialogue",
       "speakerName": "男性住民C",
       "speakerId": "avg_npc_188",
+      "isRemote": false,
       "text": "……貝だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "男性住民D",
       "speakerId": "avg_npc_189",
+      "isRemote": false,
       "text": "食える。"
     },
     {
       "type": "dialogue",
       "speakerName": "男性住民C",
       "speakerId": "avg_npc_188",
+      "isRemote": false,
       "text": "食える。"
     },
     {
       "type": "dialogue",
       "speakerName": "男性住民D",
       "speakerId": "avg_npc_189",
+      "isRemote": false,
       "text": "もっと、もっと……口、いっぱいに。"
     },
     {
       "type": "dialogue",
       "speakerName": "男性住民C",
       "speakerId": "avg_npc_188",
+      "isRemote": false,
       "text": "こぼれた。"
     },
     {
       "type": "dialogue",
       "speakerName": "男性住民D",
       "speakerId": "avg_npc_189",
+      "isRemote": false,
       "text": "拾え、飲み込め。もっと……"
     },
     {
       "type": "dialogue",
       "speakerName": "男性住民C",
       "speakerId": "avg_npc_188",
+      "isRemote": false,
       "text": "持って、行く。持って、帰る。"
     },
     {
       "type": "dialogue",
       "speakerName": "男性住民D",
       "speakerId": "avg_npc_189",
+      "isRemote": false,
       "text": "持って、帰る。体に、詰める。苦しく、なるまで。詰める。"
     },
     {
       "type": "dialogue",
       "speakerName": "男性住民C",
       "speakerId": "avg_npc_188",
+      "isRemote": false,
       "text": "宣教師……"
     },
     {
       "type": "dialogue",
       "speakerName": "男性住民D",
       "speakerId": "avg_npc_189",
+      "isRemote": false,
       "text": "宣教師。"
     },
     {
@@ -92,42 +108,49 @@
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "兄弟、そして姉妹たち。この朝食を思う存分楽しんでください。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "これはあなたたちの善行へのご褒美です。我々は飢えや苦痛、病に滅ぼされることなく、むしろそれらを以て、より誠実になり、より団結し、より大きな友愛を得たのですから。"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "こうも冗長な茶番劇を一つ一つの都市でご披露なさっていて、あなたはよく食傷なさいませんこと。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "茶番とは……一体何のことです？　我らが海の偉大さと慈愛を陸地にもたらし、無知な者に施す……これぞ我が喜びそのものですよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "彼らには理解が及びませんのに。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "我らの海はすべてに対し平等ですから。"
     },
     {
@@ -137,282 +160,329 @@
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "さあ、兄弟よ。あなたの手にある鱗獣の肉を、苦しむ兄弟へと分け与えるのです。信じなさい。その小さなものを施して、施された彼が満ち足りることで、あなたの心もより豊かに満ちるのです。"
     },
     {
       "type": "dialogue",
       "speakerName": "男性住民C",
       "speakerId": "avg_npc_188",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "そして、施しを受けたあなた。あなたは兄弟に感謝をするのです。自分のものを分けてくれた彼に、感謝を送るべきなのです。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "あなたたち二人は共に立ち、手を取り合い、互いの人生を分かち合うのです。それが、あなたたちをより大きく成長させるでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "男性住民D",
       "speakerId": "avg_npc_189",
+      "isRemote": false,
       "text": "感謝します……宣教師……様。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "良い子ですね。"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "……約束とは、あなたと「あれ」の間に存在するものではなく、彼らと「あれ」の間に存在するものですのよ。あなたの手を経由しておりますけれど、ね。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "いいえ、約束とは双方の合意をもって行うもの。しかし、彼らのように苦しみ多き者が海に求められるには未だ不十分です。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "故に海が、彼らの願いに応えてくださいます。私は、そんな彼らの声が海に聞こえるよう手助けしているだけですよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "あなたも、自分自身を我らの一部と見なしたからには、当然ルールをご理解されているでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "あら、ごめんあそばせ。もっと適切な言い回しがありましたわ――あなたは彼らの血肉で道を築き、教会内で己が欲するものを得ていらっしゃるのね。"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "そうでなければ、あなたが毎回姿を現す必要などありませんわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "私の欲するものをご存知と……？"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "他人より優れているという快感は、人を容易に溺れさせますもの。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "あなたは何か誤解されているようだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "最も敬虔なる海の被造物として……私の立場は、決して偽善によるものではありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "私がここに立っているのは、心の底から彼らを救いたいがため。もし私がいなければ、彼らはとっくに陸地に転がる汚れた腐肉となっていたことでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "病や飢餓などの事象は抗うことさえできれば、最も深刻な苦しみには成り得ません。なにせ「最も深刻な苦しみ」は、人々の心の奥深くからやってくるのですから。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "災害に抗いきれなくなり、どう足掻いても滅びを避けることなどできないと人々が気付いてしまった時――それこそが、最も深刻な苦しみの訪れなのです。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "こうした苦しみを抱えた都市が、イベリアにはあとどれほどあるのでしょう？"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "この広大な国土は既に、人々が国家へと向ける要求に応える力を失いつつあります。その中で人々は未だ窮屈な肉体の中で生きることを強いられ、孤立し、あるいは互いに争い合っているのです。"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "あなたがイベリアに向ける関心には、感嘆いたしますわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "またも、誤解がある様子ですね。良いですか、私が気にかけているものは人々の苦しみであり、陸地の国境線などではありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "己が肉体の限界に縛られ、己が種族の伝統的な在り方に執着するあまり盲目的に対決を選び、理解し合おうともしない。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "人とは皆そういうものです。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "そして、そのまま放っておけば、いかに力のある者でも一人また一人と打ち負かされ、ついにはすべての人々が苦しみに飲み込まれてしまうのです。あなたも覚えがあるでしょう？"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "それを私に言う必要が本当におありですの？"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "恐らく、これでもまだ伝え足りないほどでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "真の知識とは、伝える価値があるものです。聞き手の方があなたのように愚かであろうとなかろうと、ね。"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "もしお気に召さないのでしたら……この話は、我々の協力関係に免じて、ちょっとした娯楽程度のものとして捉えていただけたらと。"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "あなたの話術は確かに非凡の才の類かと……多くの人が酔いしれるのも頷けますわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "ふむ、どうやらまだご理解いただけてないようだ。私は彼らに一切の要求もしていなければ、一切の強制もしておりません。ただ誠実に、新たな可能性を彼らに指し示したい……それだけなのです。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "身体の脆弱さは、常に彼らの認知能力を制限し続けています。あなたは私が言葉を通じて彼らの心を誘惑し信服させているとお思いのようですが、事実は全くの逆ですよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "私は彼らの心を、彼ら自身の肉体が持つ最も基本的な要求に従わせているだけです。聖人の導きなど、一時の盲信をもたらすのみ……強健な肉体を持って初めて、彼らの視野は広がるのですから。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "海に住まう生き物の中には、目を持たず、身体が小さく、泳ぐこともできず、潮に流されるまま漂うことしかできぬ者もおります。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "それらの生き物が感じる海は、私たちが見る海と一体どれだけ違うのでしょう？　目を持たないのなら何を頼って海の神聖さを、深遠なる様を理解するのでしょう？"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "あなたとあなたの僚友は、小さき彼らがその卑しくも硬い肉体をどこで手に入れたかなど知るよしもありません。それどころか、このか弱い生き物たちがもがく様すら見えていないのです。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "さて、本当に傲慢なのは誰でしょう？"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "彼らを助ける私でしょうか。それとも、広がる危機にかこつけて、言葉巧みに真の絶望を偽の希望へとすり替え、弱者を欺き、彼らを支配し、権力を盗み取ろうとする、偽りの神の信奉者でしょうか？"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "それとも――海底を直視することを避けている、愚かなあなたたちでしょうか？"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "私は彼らの視野を広げ、未だ本当の希望があると教えるために、己が見たものを彼らと共有しています。そうして彼らは、自ら選択するのです。陸と共に滅びるか、海と共に生まれ変わるかを。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "それは彼らを飢餓や病という窮地から救い出す意義を持つだけではありません。常に対峙し続けてきた陸に対して、海が見せる寛大さの表れでもあるのです。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "そう。これは征服ではなく、理解であり、受容なのです。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "私は彼らに道を示し、彼らにより素晴らしい生活をもたらし、最終的には私と同じく真理へと至れるように導いています。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "これぞ、私の偉大なる責務。あなたの誤ち多き肉体は心を縛り、視野を狭め、真に偉大なるものを見えなくさせているのでしょう……けれども、私はあなたを赦します。"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "あら。酔いしれているのは、彼らだけではないようですわね。"
     },
     {
@@ -422,18 +492,21 @@
       "type": "dialogue",
       "speakerName": "アニタ",
       "speakerId": "avg_npc_180",
+      "isRemote": false,
       "text": "ふぅ……歌い手さん、なんとか間に合いましたね。"
     },
     {
       "type": "dialogue",
       "speakerName": "アニタ",
       "speakerId": "avg_npc_180",
+      "isRemote": false,
       "text": "食べ物がこんなにたくさん……皆とってもお腹がすいてますけど、これなら全員、ちゃんと食べられそうですね。"
     },
     {
       "type": "dialogue",
       "speakerName": "アニタ",
       "speakerId": "avg_npc_180",
+      "isRemote": false,
       "text": "一、二、三……これは持ち帰って、しっかり潰して……ペトラおばあさんが飲めるようにスープを作ろうっと。今夜はこれを食べようね、いいでしょ？　ベンチ。"
     },
     {
@@ -443,36 +516,42 @@
       "type": "dialogue",
       "speakerName": "幼い住民",
       "speakerId": null,
+      "isRemote": false,
       "text": "う～……あぅ～？"
     },
     {
       "type": "dialogue",
       "speakerName": "アニタ",
       "speakerId": "avg_npc_180",
+      "isRemote": false,
       "text": "そ、そのまま食べちゃダメ！"
     },
     {
       "type": "dialogue",
       "speakerName": "アニタ",
       "speakerId": "avg_npc_180",
+      "isRemote": false,
       "text": "これは殻が硬いから、歯が欠けちゃうよ。お家に帰って、柔らかく煮てから食べようね。"
     },
     {
       "type": "dialogue",
       "speakerName": "アニタ",
       "speakerId": "avg_npc_180",
+      "isRemote": false,
       "text": "歌い手さん、あなたもどうですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "アニタ",
       "speakerId": "avg_npc_180",
+      "isRemote": false,
       "text": "う、歌い手さん？　ぼーっとして、どうしちゃったんですか？"
     },
     {
@@ -482,36 +561,42 @@
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "焦らずお食べなさい、兄弟。すべてあなたのものですから。ご覧なさい。将来的にはこのすべてが、あなたのものとなるのです。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "さあ、心を開き、自らを受け入れ、他人を抱擁し、信じ合うことを知り、犠牲の尊さを学ぶのです。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "紛争はとうに終結しました。苦しみも遠く去って行くことでしょう……共に立つことで、私たちの心と体、そして信仰はより強靭なものとなるのです。足元に広がる、この永遠なる海のように。"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "少し、ここを離れさせていただきますわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "おや、どうしました？"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "私……近頃、消化不良気味ですの。このままでは堪えきれずに、あなたのお顔へ吐き出してしまうかもしれませんわ。"
     },
     {
@@ -521,30 +606,35 @@
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "――我が兄弟よ。貝を落としましたよ。他の兄弟に持ってもらいなさい。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "まさか私に対してそんな言葉を使うとは……実に面白いですね。今日のあなたは随分機嫌が良いようだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "何とでもお好きなように仰ってくださいまし。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "きっと海からのメッセージが、あなたを刺激しているのでしょう。我らの盛大なる催しが待ちきれないのですね。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "ならばお行きなさい、彼女を探しに。旧友を見つけ出し、この喜びを分け与えるのです。"
     },
     {
@@ -554,6 +644,7 @@
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "……見つけたわ。"
     },
     {
@@ -563,30 +654,35 @@
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "何を……してるの？"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "静かに。"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "こちらへ来て。彼を見なさい。"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "嗅ぎ取れたかしら？"
     },
     {
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -596,6 +692,7 @@
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "姿勢に優雅さが足りないわね。教導してあげましょう。"
     },
     {
@@ -605,216 +702,252 @@
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "あなたとは何回踊ったかしらね、スカジ？　二回？　それとも三回かしら？"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "いずれにせよ、あなたは良きダンスパートナーだわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "彼女はどこ？"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "心配なのね。"
     },
     {
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "当然でしょ？"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "彼女は無事よ。今のところは、ね。"
     },
     {
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "証拠は？"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "そんなものが、一体何の役に立つというのかしら？"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "陸での日々で嗅覚が鈍ったのではなくて？　ハンター。"
     },
     {
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "あなたの全身から、嫌な匂いがするわ……"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "あなたよりも、私の方がよほど我慢をしていてよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "彼女は確かにあなたと一緒にいたようね。"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "あら。どうやら、前言を撤回する必要がありそうね。"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "幸い……なぜ彼女を連れ去ったのか、なぜここにいるのか、なんて理由ばかりを聞きたがる、軟弱な陸地の赤子とは違うようだし。"
     },
     {
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "まあ、理由を問うのは私たちの流儀に反するものね。"
     },
     {
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "私「たち」？"
     },
     {
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "あなたがまだ私たちの一員と呼べるのか、私にはわからないわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "そう。あなたの心の中には、まだたくさんの疑問があるようね。"
     },
     {
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "確信もなく、手出しすることは避けるべきよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "そうでなければ、敵にただチャンスを与えてしまうだけだもの。"
     },
     {
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "私の目的はあなたじゃないの。"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "それならあなたは、何のために来たのかしら？"
     },
     {
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "知ってるくせに。"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "あなたはずっと彼女を探しているのね。だけど……彼女さえ見つかれば、あなたの疑問は消えるのかしら？"
     },
     {
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "彼女の記憶は壊れているわ。だから彼女が私に何かを伝えることなんて、できはしない。"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "あなた……ちゃんと鏡を見ているのかしら。今のあなたときたら、檻に囚われる人々よりは多少マシ、というレベルよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "……そうね。あなたは私の部下ではないけれど、もう少し教えてあげましょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "ハンターが追うべきものは獲物であり、己自身ではないということを忘れてしまってはだめよ。盲目的な追求の末、もたらされるのは気休めにすぎないのだから。"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "あなたは虚ろな幻想を渇望するほど弱くなってしまったのかしら、スカジ？"
     },
     {
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "随分多くの道を歩いたのでしょうね。あなたの肌、ひどく乾燥しているもの。もうどれくらい踊っていないの？　もしかして、呼吸のリズムも忘れてしまったのかしら。"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "もう一度聞くわ。あなたは、何のために来たのかしら？"
     },
     {
@@ -824,24 +957,28 @@
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "あら、手を出さないの？"
     },
     {
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "あの人、あなたの仲間じゃないの？"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "別段、気にしないわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "気にしているのはあなたの方でしょう。心のしこりを取り除きたいのはあなたであって、私ではないもの。"
     },
     {
@@ -851,45 +988,56 @@
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "あなた、一体どういうつもり？　彼は何者なの！？"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "仮に教えたとして……私の言葉を信じるかしら？"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_ibcoastn"
+    },
+    {
       "type": "dialogue",
       "speakerName": "住民",
       "speakerId": "avg_npc_178",
+      "isRemote": false,
       "text": "うお……うおぉ……"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "慌てず、ゆっくりで良いですよ。焦ると転んでしまいますからね。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "聞こえますか？　この波音が。ざぷん、ざぷん……私たちの心臓、その鼓動とよく似たリズムですね。"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "皆さんが口にするものは、すべて海からの贈り物です。兄弟よ……みなぎる力が口と腹から手足を通じて、心臓へと達するのを感じませんか？"
     },
     {
       "type": "dialogue",
       "speakerName": "司教",
       "speakerId": "avg_npc_184",
+      "isRemote": false,
       "text": "さあ、眼前の広大なる様を受け入れるのです！　これこそが新しき人生の希望なのですから！"
     },
     {
@@ -899,30 +1047,35 @@
       "type": "dialogue",
       "speakerName": "アニタ",
       "speakerId": "avg_npc_180",
+      "isRemote": false,
       "text": "あれ、歌い手さんは？"
     },
     {
       "type": "dialogue",
       "speakerName": "アニタ",
       "speakerId": "avg_npc_180",
+      "isRemote": false,
       "text": "ちょっと目を離した隙に、またいなくなっちゃった。"
     },
     {
       "type": "dialogue",
       "speakerName": "アニタ",
       "speakerId": "avg_npc_180",
+      "isRemote": false,
       "text": "はぁ……"
     },
     {
       "type": "dialogue",
       "speakerName": "アニタ",
       "speakerId": "avg_npc_180",
+      "isRemote": false,
       "text": "まあいっか。道はわかるだろうし……きっとまた仲間を探しに行ったんだよね。"
     },
     {
       "type": "dialogue",
       "speakerName": "アニタ",
       "speakerId": "avg_npc_180",
+      "isRemote": false,
       "text": "行こっか、ベンチ。食べ物も持ったし、お家に帰ろう。"
     },
     {
@@ -932,24 +1085,28 @@
       "type": "dialogue",
       "speakerName": "幼い住民",
       "speakerId": null,
+      "isRemote": false,
       "text": "あぅ……"
     },
     {
       "type": "dialogue",
       "speakerName": "アニタ",
       "speakerId": "avg_npc_180",
+      "isRemote": false,
       "text": "ベンチ、私歌いたくなっちゃった。一緒に歌いましょ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アニタ",
       "speakerId": "avg_npc_180",
+      "isRemote": false,
       "text": "歌い手さんが歌ってたの、覚えてる？　……覚えてても、ベンチはまだお喋りできないから意味ないか。じゃあ、こうしましょ。私が歌ってあげる！"
     },
     {
       "type": "dialogue",
       "speakerName": "アニタ",
       "speakerId": "avg_npc_180",
+      "isRemote": false,
       "text": "彼は故郷を背にして遠く……♪"
     },
     {
@@ -959,12 +1116,14 @@
       "type": "dialogue",
       "speakerName": "幼い住民",
       "speakerId": null,
+      "isRemote": false,
       "text": "う～……"
     },
     {
       "type": "dialogue",
       "speakerName": "アニタ",
       "speakerId": "avg_npc_180",
+      "isRemote": false,
       "text": "行くべき道は前にのみ……♪"
     },
     {
@@ -974,30 +1133,35 @@
       "type": "dialogue",
       "speakerName": "幼い住民",
       "speakerId": null,
+      "isRemote": false,
       "text": "う～……あぅ～？"
     },
     {
       "type": "dialogue",
       "speakerName": "アニタ",
       "speakerId": "avg_npc_180",
+      "isRemote": false,
       "text": "もう、さっきからなあに？　はぁ……そうだよね、下手だと思ってるんでしょ？　私だってわかってるもの。"
     },
     {
       "type": "dialogue",
       "speakerName": "アニタ",
       "speakerId": "avg_npc_180",
+      "isRemote": false,
       "text": "歌い手さんよりず～っと下手！"
     },
     {
       "type": "dialogue",
       "speakerName": "アニタ",
       "speakerId": "avg_npc_180",
+      "isRemote": false,
       "text": "でも、何回も歌ってたら、私だって上手くなれるはずだよね？"
     },
     {
       "type": "dialogue",
       "speakerName": "アニタ",
       "speakerId": "avg_npc_180",
+      "isRemote": false,
       "text": "ふん、ふふん……行くべき道は、前にのみ……♪"
     },
     {
@@ -1007,30 +1171,35 @@
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "もう行くわ。これ以上いては、彼に怪しまれてしまうもの。"
     },
     {
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "第二隊長！　あなたは一体、何を考えているの？"
     },
     {
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "隊員が……仲間が必要なの？　もし必要なら、どうしてあなたはそう言わないの？"
     },
     {
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "あなたは敵なの、それとも味方？　もし敵だというなら……私はあなたを殺そうとしたのに、殺意を向け返さなかったのはどうして？"
     },
     {
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -1040,126 +1209,154 @@
       "type": "dialogue",
       "speakerName": "グレイディーア",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "あなたはまず、自分が求めるものをはっきりさせなさい。彷徨うハンターは罠さえ見落とすこともあるわ。わけもわからず他人の獲物になるなんて、望ましいとは言えないでしょう？"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_ibbar"
+    },
+    {
       "type": "dialogue",
       "speakerName": "アニタ",
       "speakerId": "avg_npc_180",
+      "isRemote": false,
       "text": "歌い手さん、あなたの目、なんだかちょっと変わりましたね。"
     },
     {
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "そう？"
     },
     {
       "type": "dialogue",
       "speakerName": "アニタ",
       "speakerId": "avg_npc_180",
+      "isRemote": false,
       "text": "前まで、歌い手さんが私たちを見る目は、あの怪物たちを見る目と変わりませんでした。"
     },
     {
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "アニタ",
       "speakerId": "avg_npc_180",
+      "isRemote": false,
       "text": "でも、今は違います。あなたはお酒の作り方を教えてくれますし、私たち皆に歌を歌ってくれますから。"
     },
     {
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "……あなたたちは、あの怪物とは違うわ。当然でしょ。"
     },
     {
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "怪物は歌なんてせがまないし、話すことさえできない。汚くて、愚かで、食べることしか頭にないもの。"
     },
     {
       "type": "dialogue",
       "speakerName": "アニタ",
       "speakerId": "avg_npc_180",
+      "isRemote": false,
       "text": "そ……それじゃ、あの海の怪物は、私たちのことも食べちゃうんですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "お腹がすいてたら、食べるでしょうね。"
     },
     {
       "type": "dialogue",
       "speakerName": "アニタ",
       "speakerId": "avg_npc_180",
+      "isRemote": false,
       "text": "ああやって陸へ上がってくるのは、私たちが海へ行くのと同じで、食べ物を探すためなんですね。"
     },
     {
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "怪物に同情してるの？"
     },
     {
       "type": "dialogue",
       "speakerName": "アニタ",
       "speakerId": "avg_npc_180",
+      "isRemote": false,
       "text": "お腹がすくのは、誰だってつらいですから。"
     },
     {
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "食べられた人は、そうは思わないでしょうけど。"
     },
     {
       "type": "dialogue",
       "speakerName": "アニタ",
       "speakerId": "avg_npc_180",
+      "isRemote": false,
       "text": "そうですね……私だって、怪物に食べられるのはイヤですもん。"
     },
     {
       "type": "dialogue",
       "speakerName": "アニタ",
       "speakerId": "avg_npc_180",
+      "isRemote": false,
       "text": "前はこんなこと考えもしませんでした。でも今は、えっと……もっとあなたの歌を聞きたいんです。ペトラおばあさんが私に色んなことを教えてくれたみたいに、ベンチに歌を教えてあげたくて。"
     },
     {
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "それなら、おばあさんみたいに長生きしないとね。"
     },
     {
       "type": "dialogue",
       "speakerName": "アニタ",
       "speakerId": "avg_npc_180",
+      "isRemote": false,
       "text": "はい！　あっ、でも今は、ちっとも心配してませんよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アニタ",
       "speakerId": "avg_npc_180",
+      "isRemote": false,
       "text": "だって……あなたがいますから！　ばばばーってあいつらをみーんなやっつけて、私たちを助けてくれますもんね！"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_ibcoastn"
+    },
+    {
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "……私の鼓動、速くなってる。"
     },
     {
@@ -1169,12 +1366,14 @@
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "ああ……うん。そうね。"
     },
     {
       "type": "dialogue",
       "speakerName": "スカジ",
       "speakerId": "avg_1012_skadiSP_1",
+      "isRemote": false,
       "text": "……結局、私はまだハンターなんだもの。"
     },
     {

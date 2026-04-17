@@ -6,10 +6,14 @@
   "title": "油潑扯麵",
   "storyCode": "OR-3",
   "avgTag": "行動後",
-  "sourcePath": "vendor/ArknightsGamedata/tw/gamedata/story/activities/act40side/level_act40side_03_end.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/tw/gamedata/story/activities/act40side/level_act40side_03_end.txt",
   "sourceHash": "4e9109789d1a8241ec7f1cd01c657843fc894f9e9c629c386c5b66da5d1aeb21",
   "bodyAvailable": true,
   "blocks": [
+    {
+      "type": "background",
+      "backgroundId": "58_g1_yusrestaurant"
+    },
     {
       "type": "narration",
       "text": "一大早，小飯館的門外尚冷清，僅有幾隻羽獸在落葉上來回跳躍。\n對門大理寺的值夜人打了個長長的呵欠，驚得羽獸四散飛離。"
@@ -21,12 +25,14 @@
       "type": "dialogue",
       "speakerName": "小大廚",
       "speakerId": "avg_2026_yu_1",
+      "isRemote": false,
       "text": "啊——嗚……"
     },
     {
       "type": "dialogue",
       "speakerName": "小大廚",
       "speakerId": "avg_2026_yu_1",
+      "isRemote": false,
       "text": "昨晚做了惡夢，夢見有隻循獸把我廚房裡的麵粉都吃光了。好可怕……"
     },
     {
@@ -36,6 +42,7 @@
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "早！"
     },
     {
@@ -45,66 +52,77 @@
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "請！"
     },
     {
       "type": "dialogue",
       "speakerName": "小大廚",
       "speakerId": "avg_2026_yu_1",
+      "isRemote": false,
       "text": "你……學會了？"
     },
     {
       "type": "dialogue",
       "speakerName": "小大廚",
       "speakerId": "avg_2026_yu_1",
+      "isRemote": false,
       "text": "你這黑眼圈……難道真做了一整夜？"
     },
     {
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "哈哈，也就到後半宿吧……行箸到現在還沒醒呢。"
     },
     {
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "先不說別的了，快嚐嚐這麵！"
     },
     {
       "type": "dialogue",
       "speakerName": "小大廚",
       "speakerId": "avg_2026_yu_1",
+      "isRemote": false,
       "text": "你……啊？"
     },
     {
       "type": "dialogue",
       "speakerName": "小大廚",
       "speakerId": "avg_2026_yu_1",
+      "isRemote": false,
       "text": "你沒學會和麵，就煮了一把麵線來給我交差？！"
     },
     {
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "這可不是一般的麵線。這是行箸和我挑遍了市面上所有種類的麵線後，精心挑選出的口感最接近你做的麵的一款。"
     },
     {
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "當然，相比於手工麵，口感還是略差一些的。不過行箸還對你湯底配方稍微進行了一點調整——保證做出來的口味和你做的差不多。"
     },
     {
       "type": "dialogue",
       "speakerName": "小大廚",
       "speakerId": "avg_2026_yu_1",
+      "isRemote": false,
       "text": "歪門邪說，投機取巧，還亂改我的配方！"
     },
     {
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "先別急著下結論，你嚐嚐再說嘛！"
     },
     {
@@ -115,219 +133,259 @@
       "type": "dialogue",
       "speakerName": "小大廚",
       "speakerId": "avg_2026_yu_1",
+      "isRemote": false,
       "text": "……唔。"
     },
     {
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "怎麼樣？"
     },
     {
       "type": "dialogue",
       "speakerName": "小大廚",
       "speakerId": "avg_2026_yu_1",
+      "isRemote": false,
       "text": "……嗯。"
     },
     {
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "說話啊！"
     },
     {
       "type": "dialogue",
       "speakerName": "小大廚",
       "speakerId": "avg_2026_yu_1",
+      "isRemote": false,
       "text": "你們……為什麼會覺得這樣做就可以？"
     },
     {
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "主要是行箸都快餓得不行了。當時想著，與其就這麼和麵糰乾耗著，不如先用你的配方做碗我能做的麵給她吃。"
     },
     {
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "後來想了想，長壽麵最重要的可能不是味道，而是讓吃麵的人有被祝福的感覺。"
     },
     {
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "有些人就是學不會你這一手做麵條的功夫，但是用一把麵線也能為自己或家人送上祝福，這就是長壽麵的意義。"
     },
     {
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "你看，這麵條金黃油亮，是不是比你那一碗看起來還熱鬧一點？"
     },
     {
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "呃……當然，投機取巧也是事實啦……"
     },
     {
       "type": "dialogue",
       "speakerName": "小大廚",
       "speakerId": "avg_2026_yu_1",
+      "isRemote": false,
       "text": "你說“被祝福的感覺”……你覺得自己做出來了嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "我……應該吧？"
     },
     {
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "昨晚第一次成功做出這碗麵的時候，我和行箸一起分享了。我覺得吃得很開心，她還偷偷擦眼淚來著……"
     },
     {
       "type": "dialogue",
       "speakerName": "小大廚",
       "speakerId": "avg_2026_yu_1",
+      "isRemote": false,
       "text": "把手工麵換成了麵線，也跟著調整了香油和鹽的用量，倒也算動了腦子……那位姑娘的舌頭真是厲害。"
     },
     {
       "type": "dialogue",
       "speakerName": "小大廚",
       "speakerId": "avg_2026_yu_1",
+      "isRemote": false,
       "text": "但是麵線煮完需要過涼水，你做是做了，卻沒把涼水瀝乾。"
     },
     {
       "type": "dialogue",
       "speakerName": "小大廚",
       "speakerId": "avg_2026_yu_1",
+      "isRemote": false,
       "text": "涼水留得太多，降低了湯的溫度，也影響了整碗麵的口感。要想精益求精的話，這些細節下次最好也要照顧到。"
     },
     {
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "啊……好，我記住了！"
     },
     {
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "欸，你說這話的意思是……"
     },
     {
       "type": "dialogue",
       "speakerName": "小大廚",
       "speakerId": "avg_2026_yu_1",
+      "isRemote": false,
       "text": "打住，我就是看在你花了心思的分上，決定繼續教你罷了。"
     },
     {
       "type": "dialogue",
       "speakerName": "小大廚",
       "speakerId": "avg_2026_yu_1",
+      "isRemote": false,
       "text": "和麵還是要接著練的，你總不能真的打算帶著一把麵線去參加比賽吧？"
     },
     {
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "嘿嘿，好！"
     },
     {
       "type": "dialogue",
       "speakerName": "小大廚",
       "speakerId": "avg_2026_yu_1",
+      "isRemote": false,
       "text": "這只是師父心軟，覺得徒弟開竅了一點。但客人到底買不買單，還是要考驗一番的。"
     },
     {
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "這……要怎麼考驗？"
     },
     {
       "type": "dialogue",
       "speakerName": "小大廚",
       "speakerId": "avg_2026_yu_1",
+      "isRemote": false,
       "text": "等會客人來了，如果有點麵條的，你就做一碗送去。"
     },
     {
       "type": "dialogue",
       "speakerName": "小大廚",
       "speakerId": "avg_2026_yu_1",
+      "isRemote": false,
       "text": "客人要是覺得不好吃，那你就接著練習吧。"
     },
     {
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "……我這就去！"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "58_g1_yusrestaurant"
+    },
+    {
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "這位客人！要不要來一碗本店新推出的特色長壽麵！"
     },
     {
       "type": "dialogue",
       "speakerName": "衣著光鮮的食客",
       "speakerId": null,
+      "isRemote": false,
       "text": "今天又不是我的生日，怎麼平白無故讓我吃長壽麵？"
     },
     {
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "呃……小店新菜品試吃，讓客人免費品嚐！"
     },
     {
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "不對……您要是吃完覺得滿意，還是付一下錢比較好，我也得向我們老闆交差……"
     },
     {
       "type": "dialogue",
       "speakerName": "衣著光鮮的食客",
       "speakerId": null,
+      "isRemote": false,
       "text": "真有趣，這小店的生意還有這種做法。"
     },
     {
       "type": "dialogue",
       "speakerName": "衣著光鮮的食客",
       "speakerId": null,
+      "isRemote": false,
       "text": "把麵放下吧，就算我點的。"
     },
     {
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "（熱切的眼神）"
     },
     {
       "type": "dialogue",
       "speakerName": "衣著光鮮的食客",
       "speakerId": null,
+      "isRemote": false,
       "text": "呃……還有事嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "沒，沒！我就是想等您吃過後，聽聽您的評價。"
     },
     {
       "type": "dialogue",
       "speakerName": "衣著光鮮的食客",
       "speakerId": null,
+      "isRemote": false,
       "text": "好好……我吃就是。"
     },
     {
@@ -338,54 +396,63 @@
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "味道如何？"
     },
     {
       "type": "dialogue",
       "speakerName": "衣著光鮮的食客",
       "speakerId": null,
+      "isRemote": false,
       "text": "嗯……好吃，很好吃。"
     },
     {
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "真……真的？！"
     },
     {
       "type": "dialogue",
       "speakerName": "衣著光鮮的食客",
       "speakerId": null,
+      "isRemote": false,
       "text": "這湯很鮮，所用食材也很講究，如果再燉上一天一夜，味道能更完美。"
     },
     {
       "type": "dialogue",
       "speakerName": "衣著光鮮的食客",
       "speakerId": null,
+      "isRemote": false,
       "text": "可是我已經很餓了，等不了那麼久。如果為了那點“完美”再等上一天一夜，我恐怕早就餓死了。"
     },
     {
       "type": "dialogue",
       "speakerName": "衣著光鮮的食客",
       "speakerId": null,
+      "isRemote": false,
       "text": "他想要求一份完美的味道，但客人卻等不住了。"
     },
     {
       "type": "dialogue",
       "speakerName": "衣著光鮮的食客",
       "speakerId": null,
+      "isRemote": false,
       "text": "即便我願意等他，有些事也是沒辦法再等下去了。"
     },
     {
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "您這話……"
     },
     {
       "type": "dialogue",
       "speakerName": "衣著光鮮的食客",
       "speakerId": null,
+      "isRemote": false,
       "text": "不要緊，你把我的話轉告你們老闆就好。"
     },
     {
@@ -396,6 +463,7 @@
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "欸，您……您還沒給錢呢！"
     },
     {
@@ -405,270 +473,322 @@
       "type": "dialogue",
       "speakerName": "衣著光鮮的食客",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "從我帳上扣吧。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "58_g8_baizaoacademy"
+    },
+    {
       "type": "dialogue",
       "speakerName": "景教授",
       "speakerId": "avg_npc_1620_1",
+      "isRemote": false,
       "text": "不管你要查的到底是什麼，出去以後，千萬不要說這份檔案資料是從學宮拿到的，記住了？"
     },
     {
       "type": "dialogue",
       "speakerName": "麟青硯",
       "speakerId": "avg_npc_1644_1",
+      "isRemote": false,
       "text": "明白……"
     },
     {
       "type": "dialogue",
       "speakerName": "景教授",
       "speakerId": "avg_npc_1620_1",
+      "isRemote": false,
       "text": "怎麼了？還有什麼問題嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "麟青硯",
       "speakerId": "avg_npc_1644_1",
+      "isRemote": false,
       "text": "你還記不記得……1062年，那場血案……"
     },
     {
       "type": "dialogue",
       "speakerName": "景教授",
       "speakerId": "avg_npc_1620_1",
+      "isRemote": false,
       "text": "……這可不是什麼能隨便談起的話題。"
     },
     {
       "type": "dialogue",
       "speakerName": "麟青硯",
       "speakerId": "avg_npc_1644_1",
+      "isRemote": false,
       "text": "……我只是突然想起……"
     },
     {
       "type": "dialogue",
       "speakerName": "麟青硯",
       "speakerId": "avg_npc_1644_1",
+      "isRemote": false,
       "text": "你口中那位，支持學界變法改革，造福無數寒門學子的太師，和四十年前，弒君謀逆的太師，真的是同一個人嗎……"
     },
     {
       "type": "dialogue",
       "speakerName": "景教授",
       "speakerId": "avg_npc_1620_1",
+      "isRemote": false,
       "text": "……我沒有辦法回答你的問題。不瞭解的事，我絕不會妄言。"
     },
     {
       "type": "dialogue",
       "speakerName": "景教授",
       "speakerId": "avg_npc_1620_1",
+      "isRemote": false,
       "text": "我沒有見過那位太師，只是曾經讀過她一些關於民生政治的論著。從書中能看出作者的見識之深、學識之廣，這也讓我獲益良多。"
     },
     {
       "type": "dialogue",
       "speakerName": "景教授",
       "speakerId": "avg_npc_1620_1",
+      "isRemote": false,
       "text": "但恐怕，人是很難一概而論的。"
     },
     {
       "type": "dialogue",
       "speakerName": "麟青硯",
       "speakerId": "avg_npc_1644_1",
+      "isRemote": false,
       "text": "你這樣說，不正意味著，你對於當年案件的結果，並不是完全相信的嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "景教授",
       "speakerId": "avg_npc_1620_1",
+      "isRemote": false,
       "text": "青硯，你臉上可從來藏不住事。"
     },
     {
       "type": "dialogue",
       "speakerName": "景教授",
       "speakerId": "avg_npc_1620_1",
+      "isRemote": false,
       "text": "你果然還是……"
     },
     {
       "type": "dialogue",
       "speakerName": "麟青硯",
       "speakerId": "avg_npc_1644_1",
+      "isRemote": false,
       "text": "大理寺的卷宗，容不下不清不白的案件……不管是多大的案件。"
     },
     {
       "type": "dialogue",
       "speakerName": "麟青硯",
       "speakerId": "avg_npc_1644_1",
+      "isRemote": false,
       "text": "這是大理寺少卿的職責。"
     },
     {
       "type": "dialogue",
       "speakerName": "景教授",
       "speakerId": "avg_npc_1620_1",
+      "isRemote": false,
       "text": "你要做的事，我不會勸你別做。可無論如何，你都要學會保護好自己。"
     },
     {
       "type": "dialogue",
       "speakerName": "景教授",
       "speakerId": "avg_npc_1620_1",
+      "isRemote": false,
       "text": "唉……你的父母入山閉關前還拜託我對你多加關照，你要是出了什麼事，我可就沒臉再去見他們了。"
     },
     {
       "type": "dialogue",
       "speakerName": "麟青硯",
       "speakerId": "avg_npc_1644_1",
+      "isRemote": false,
       "text": "我又不是小輩，怎麼會總要人照顧——"
     },
     {
       "type": "dialogue",
       "speakerName": "景教授",
       "speakerId": "avg_npc_1620_1",
+      "isRemote": false,
       "text": "年輕的時候，任誰都是這樣的想法。可作為母親，看著左樂一天天長大，我心裡也壓上了一塊石頭。"
     },
     {
       "type": "dialogue",
       "speakerName": "景教授",
       "speakerId": "avg_npc_1620_1",
+      "isRemote": false,
       "text": "當長輩的不惦記著孩子的安危，又能惦記些什麼呢？"
     },
     {
       "type": "dialogue",
       "speakerName": "景教授",
       "speakerId": "avg_npc_1620_1",
+      "isRemote": false,
       "text": "可如果要讓他們知道，我為了你的“安危”考慮，阻止你履行大理寺少卿的職責，他們才會真的怪我吧。"
     },
     {
       "type": "dialogue",
       "speakerName": "麟青硯",
       "speakerId": "avg_npc_1644_1",
+      "isRemote": false,
       "text": "多謝……姐姐……"
     },
     {
       "type": "dialogue",
       "speakerName": "景教授",
       "speakerId": "avg_npc_1620_1",
+      "isRemote": false,
       "text": "唉……你口口聲聲叫我姐姐，可在我眼裡，你一直都是和左樂一輩的孩子。"
     },
     {
       "type": "dialogue",
       "speakerName": "麟青硯",
       "speakerId": "avg_npc_1644_1",
+      "isRemote": false,
       "text": "說起來，玉門已經接近百灶，這幾天，你還沒有見過左將軍？"
     },
     {
       "type": "dialogue",
       "speakerName": "景教授",
       "speakerId": "avg_npc_1620_1",
+      "isRemote": false,
       "text": "局勢已經迫在眉睫。兵部日夜開會研究，他也必須坐鎮一線。"
     },
     {
       "type": "dialogue",
       "speakerName": "景教授",
       "speakerId": "avg_npc_1620_1",
+      "isRemote": false,
       "text": "我和他，誰都不能擅離職守。"
     },
     {
       "type": "dialogue",
       "speakerName": "麟青硯",
       "speakerId": "avg_npc_1644_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "麟青硯",
       "speakerId": "avg_npc_1644_1",
+      "isRemote": false,
       "text": "這場爭端……難道真的無法避免了嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "景教授",
       "speakerId": "avg_npc_1620_1",
+      "isRemote": false,
       "text": "這不是我可以決斷的事。"
     },
     {
       "type": "dialogue",
       "speakerName": "景教授",
       "speakerId": "avg_npc_1620_1",
+      "isRemote": false,
       "text": "作為兵部參知，我的職責就是盡最大的努力，盡可能精準地演算戰爭結果。要是心存偏私，那就是對大炎萬千百姓的不負責。"
     },
     {
       "type": "dialogue",
       "speakerName": "景教授",
       "speakerId": "avg_npc_1620_1",
+      "isRemote": false,
       "text": "你不會在你的職責中退讓分毫，那我也一樣。"
     },
     {
       "type": "dialogue",
       "speakerName": "麟青硯",
       "speakerId": "avg_npc_1644_1",
+      "isRemote": false,
       "text": "希望一切，平安順遂……"
     },
     {
       "type": "dialogue",
       "speakerName": "景教授",
       "speakerId": "avg_npc_1620_1",
+      "isRemote": false,
       "text": "倒也不用太過擔心，如果是無可避免的結果，那不如泰然處之。"
     },
     {
       "type": "dialogue",
       "speakerName": "景教授",
       "speakerId": "avg_npc_1620_1",
+      "isRemote": false,
       "text": "中秋節的時候，要是自己一個人的話，就來家裡吃頓飯吧。"
     },
     {
       "type": "dialogue",
       "speakerName": "麟青硯",
       "speakerId": "avg_npc_1644_1",
+      "isRemote": false,
       "text": "嗯，一定……"
     },
     {
       "type": "dialogue",
       "speakerName": "景教授",
       "speakerId": "avg_npc_1620_1",
+      "isRemote": false,
       "text": "等等……我突然想起來。"
     },
     {
       "type": "dialogue",
       "speakerName": "景教授",
       "speakerId": "avg_npc_1620_1",
+      "isRemote": false,
       "text": "你剛才不是問我，誰可以修改學宮的檔案資料？"
     },
     {
       "type": "dialogue",
       "speakerName": "景教授",
       "speakerId": "avg_npc_1620_1",
+      "isRemote": false,
       "text": "雖然是極端情況，但也的確有過這樣的個例……"
     },
     {
       "type": "dialogue",
       "speakerName": "麟青硯",
       "speakerId": "avg_npc_1644_1",
+      "isRemote": false,
       "text": "你是說……"
     },
     {
       "type": "dialogue",
       "speakerName": "景教授",
       "speakerId": "avg_npc_1620_1",
+      "isRemote": false,
       "text": "不，不能說是修改。但如果學宮裡的某一份檔案資料完全消失不見的話，那只能是轉移去了一個地方——"
     },
     {
       "type": "dialogue",
       "speakerName": "景教授",
       "speakerId": "avg_npc_1620_1",
+      "isRemote": false,
       "text": "……刑部死獄。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "35_g7_zuosroom"
+    },
+    {
       "type": "dialogue",
       "speakerName": "左樂",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "左樂",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "父親不在……？"
     },
     {
@@ -679,6 +799,7 @@
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": null,
+      "isRemote": false,
       "text": "公子……"
     },
     {
@@ -692,18 +813,21 @@
       "type": "dialogue",
       "speakerName": "左樂",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "太合叔！"
     },
     {
       "type": "dialogue",
       "speakerName": "左樂",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "你……你的傷？"
     },
     {
       "type": "dialogue",
       "speakerName": "太合",
       "speakerId": "avg_npc_299_1",
+      "isRemote": false,
       "text": "半個月前才勉強可以行動，總算不用整日臥床了。"
     },
     {
@@ -714,252 +838,329 @@
       "type": "dialogue",
       "speakerName": "左樂",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "太合叔……"
     },
     {
       "type": "dialogue",
       "speakerName": "太合",
       "speakerId": "avg_npc_299_1",
+      "isRemote": false,
       "text": "這身拳腳功夫不過是外物，我依然是肅政院的監察御史，心中抱負總有施展之處。"
     },
     {
       "type": "dialogue",
       "speakerName": "太合",
       "speakerId": "avg_npc_299_1",
+      "isRemote": false,
       "text": "公子若是還要這樣掛懷，那就是看輕太合了。"
     },
     {
       "type": "dialogue",
       "speakerName": "左樂",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "不……怎會……"
     },
     {
       "type": "dialogue",
       "speakerName": "左樂",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "太合叔一身才學，怎會被這區區傷病限制住！"
     },
     {
       "type": "dialogue",
       "speakerName": "太合",
       "speakerId": "avg_npc_299_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "太合",
       "speakerId": "avg_npc_299_1",
+      "isRemote": false,
       "text": "倒是公子，大半年未見，看上去更壯實了些。將軍見到你，應當欣慰。"
     },
     {
       "type": "dialogue",
       "speakerName": "左樂",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "對了，父親他……？"
     },
     {
       "type": "dialogue",
       "speakerName": "太合",
       "speakerId": "avg_npc_299_1",
+      "isRemote": false,
       "text": "將軍這幾天一直在與司歲台和兵部開會議事，幾乎沒有片刻閒暇。"
     },
     {
       "type": "dialogue",
       "speakerName": "左樂",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "現在的局勢……"
     },
     {
       "type": "dialogue",
       "speakerName": "太合",
       "speakerId": "avg_npc_299_1",
+      "isRemote": false,
       "text": "只在旦夕。"
     },
     {
       "type": "dialogue",
       "speakerName": "左樂",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "……現在朝中的態度，是不惜一戰嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "太合",
       "speakerId": "avg_npc_299_1",
+      "isRemote": false,
       "text": "大荒城變故發生後，歲獸一事已然不是司歲台所能控制。"
     },
     {
       "type": "dialogue",
       "speakerName": "太合",
       "speakerId": "avg_npc_299_1",
+      "isRemote": false,
       "text": "朝中內閣、六部，雖然還有些爭議，但態度已經明確——"
     },
     {
       "type": "dialogue",
       "speakerName": "太合",
       "speakerId": "avg_npc_299_1",
+      "isRemote": false,
       "text": "永絕後患。"
     },
     {
       "type": "dialogue",
       "speakerName": "左樂",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "可是，這一戰的後果……"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "35_mini01_villagevacancy"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "35_g5_swordcastingworkshop"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "25_g07_fairyland_1"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "25_g08_pavilion"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "35_g7_zuosroom"
+    },
+    {
       "type": "dialogue",
       "speakerName": "左樂",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "我聽說，月前，有其他秉燭人在百灶附近發現了那罪人的蹤跡。"
     },
     {
       "type": "dialogue",
       "speakerName": "太合",
       "speakerId": "avg_npc_299_1",
+      "isRemote": false,
       "text": "是的……我也聽說了此事。"
     },
     {
       "type": "dialogue",
       "speakerName": "太合",
       "speakerId": "avg_npc_299_1",
+      "isRemote": false,
       "text": "朝廷已經嚴加防備，出動了多位禁軍。"
     },
     {
       "type": "dialogue",
       "speakerName": "左樂",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "竟然連禁軍都……"
     },
     {
       "type": "dialogue",
       "speakerName": "太合",
       "speakerId": "avg_npc_299_1",
+      "isRemote": false,
       "text": "那罪人的手段難以預料，是當下最緊要的威脅。"
     },
     {
       "type": "dialogue",
       "speakerName": "左樂",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "我有一個猜想，或許……"
     },
     {
       "type": "dialogue",
       "speakerName": "左樂",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "現在百灶城中，還有一位代理人……"
     },
     {
       "type": "dialogue",
       "speakerName": "左樂",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "這一位“年紀”最小的代理人，也是最為特殊的一位。"
     },
     {
       "type": "dialogue",
       "speakerName": "左樂",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "據司歲台的觀測，他從走出那座陵墓起，這數百年裡從未施展過任何權能。司歲台也不知該對他如何是好……"
     },
     {
       "type": "dialogue",
       "speakerName": "左樂",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "唯有一事可疑——百年前，他在望越獄後來到百灶，之後便一直逗留此處。"
     },
     {
       "type": "dialogue",
       "speakerName": "左樂",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "望之前曾頻繁地接觸其他代理人，他這次回來，恐怕留在百灶的這一位，也在他的計劃之內。"
     },
     {
       "type": "dialogue",
       "speakerName": "太合",
       "speakerId": "avg_npc_299_1",
+      "isRemote": false,
       "text": "公子有何打算？"
     },
     {
       "type": "dialogue",
       "speakerName": "左樂",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "我不知道……所以要先去看個明白。"
     },
     {
       "type": "dialogue",
       "speakerName": "左樂",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "我自己去看。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "58_g13_yuskitchen"
+    },
+    {
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "呼……完成！"
     },
     {
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "怎麼樣？從洗菜開始的每一道工序，我已經記得滾瓜爛熟了！一點都不用人幫忙！"
     },
     {
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "也多虧行箸幫我想的辦法，只要在上手和麵之前，先把手放在冰水裡泡上五分鐘就沒有問題了！"
     },
     {
       "type": "dialogue",
       "speakerName": "行箸",
       "speakerId": "avg_4172_xingzh_1",
+      "isRemote": false,
       "text": "嗯……看起來成色不錯，味道上也有些神似小大廚的手藝了。"
     },
     {
       "type": "dialogue",
       "speakerName": "小大廚",
       "speakerId": "avg_2026_yu_1",
+      "isRemote": false,
       "text": "勉勉強強吧，還遠談不上以假亂真呢。"
     },
     {
       "type": "dialogue",
       "speakerName": "小大廚",
       "speakerId": "avg_2026_yu_1",
+      "isRemote": false,
       "text": "要是我這麼多年的手藝，被一個沒下過廚的人隨隨便便就學會了，那我不是白混了。"
     },
     {
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "努力了這麼多天，明天就要比賽了，你就不能說點鼓勵的話……"
     },
     {
       "type": "dialogue",
       "speakerName": "小大廚",
       "speakerId": "avg_2026_yu_1",
+      "isRemote": false,
       "text": "我是怕你得意忘形……不過留點心氣也好，別到時候見了莫不服被嚇得連菜刀都不會用了。"
     },
     {
       "type": "dialogue",
       "speakerName": "小大廚",
       "speakerId": "avg_2026_yu_1",
+      "isRemote": false,
       "text": "沒什麼好怕的，莫不服倚老賣老，你就去給他一點年輕人的顏色看看。"
     },
     {
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "好！"
     },
     {
       "type": "dialogue",
       "speakerName": "煌",
       "speakerId": "avg_1040_blaze2_1",
+      "isRemote": false,
       "text": "萬事俱備，明天就去決戰鼎豐樓。"
     },
     {

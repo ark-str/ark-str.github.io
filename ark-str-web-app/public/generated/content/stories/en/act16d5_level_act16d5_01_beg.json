@@ -6,14 +6,34 @@
   "title": "First Waking",
   "storyCode": "WR-1",
   "avgTag": "Before Operation",
-  "sourcePath": "vendor/ArknightsGamedata/en/gamedata/story/activities/act16d5/level_act16d5_01_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/en/gamedata/story/activities/act16d5/level_act16d5_01_beg.txt",
   "sourceHash": "42245077b044baaaa5fa262bc76df9b7551c455e4a47be1859109a8847a3afe9",
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_white"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_light"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_landscape"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Villager",
       "speakerId": "avg_npc_140",
+      "isRemote": false,
       "text": "Why?"
     },
     {
@@ -23,90 +43,105 @@
       "type": "dialogue",
       "speakerName": "Storyteller",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "Because that night, the lame scholar had in reality fulfilled his promise. He had, in reality, painted 'that which had never before been in this world.'"
     },
     {
       "type": "dialogue",
       "speakerName": "Villager",
       "speakerId": "avg_npc_140",
+      "isRemote": false,
       "text": "Why do I feel like the books told it pretty differently?"
     },
     {
       "type": "dialogue",
       "speakerName": "Storyteller",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "The teacher had not the time to explain, or perhaps he simply swallowed the words he did not have."
     },
     {
       "type": "dialogue",
       "speakerName": "Storyteller",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "Thus in the narrative heard on the streets, there is only the lame scholar's sails billowing with success, up to the fall of his senses."
     },
     {
       "type": "dialogue",
       "speakerName": "Storyteller",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "As for the truth of things, I fear not a single soul now knows."
     },
     {
       "type": "dialogue",
       "speakerName": "Villager",
       "speakerId": "avg_npc_140",
+      "isRemote": false,
       "text": "See, though, what's so hard about drawing something you've never seen before? I could head back, smear up a scroll, and none of you would've ever seen that."
     },
     {
       "type": "dialogue",
       "speakerName": "Storyteller",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "Ah, you can't put it like that. You've never seen a vast lake before, but you've seen the ponded waters after the rains. Let me tell you, lakes are ponded waters made vast. In the end, you've seen them before."
     },
     {
       "type": "dialogue",
       "speakerName": "Storyteller",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "If the lame scholar had strength, then this is where it lay."
     },
     {
       "type": "dialogue",
       "speakerName": "Villager",
       "speakerId": "avg_npc_140",
+      "isRemote": false,
       "text": "Well if all that's true, then what in the world did he paint?"
     },
     {
       "type": "dialogue",
       "speakerName": "Storyteller",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "Who knows."
     },
     {
       "type": "dialogue",
       "speakerName": "Villager",
       "speakerId": "avg_npc_140",
+      "isRemote": false,
       "text": "Look, could you give the contrived stories a rest? They're not exactly the most fun. Are you gonna tell any others?"
     },
     {
       "type": "dialogue",
       "speakerName": "Child",
       "speakerId": "avg_npc_142",
+      "isRemote": false,
       "text": "I want to hear the ending to the one with 'a lone soul ventures forth to Heaven, twin blade lovers that split the lands!'"
     },
     {
       "type": "dialogue",
       "speakerName": "Storyteller",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "I'll tell in due time, all of it. It is not possible to tell all under heaven in totality, and I use my scarce predestined hundred or so years of life to tell what I might. If I yet pursued thoroughness on top of it, that would be quite greedy."
     },
     {
       "type": "dialogue",
       "speakerName": "Storyteller",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "As you'd like to hear it, then next time, we'll tell of something else."
     },
     {
       "type": "dialogue",
       "speakerName": "Child",
       "speakerId": "avg_npc_142",
+      "isRemote": false,
       "text": "Alright!"
     },
     {
@@ -116,12 +151,14 @@
       "type": "dialogue",
       "speakerName": "Storyteller",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "By custom, my mouth is worth no money. But when you've paid your tea, see what you might have for an old man's story."
     },
     {
       "type": "dialogue",
       "speakerName": "Storyteller",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "It seems we've got a few new faces today. Three mysterious visitors; I hope these strange tales of mine were to your satisfaction?"
     },
     {
@@ -131,60 +168,70 @@
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Kroos",
       "speakerId": "avg_npc_144",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Mr. Nothing",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "Was that fiction?"
     },
     {
       "type": "dialogue",
       "speakerName": "Storyteller",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "If someone told me a scholar caught Oripathy, and met his end in melancholy before his wishes were complete, then I'd certainly believe it was true."
     },
     {
       "type": "dialogue",
       "speakerName": "Storyteller",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "Add some spice and flourish, and the story tastes all the better."
     },
     {
       "type": "dialogue",
       "speakerName": "Mr. Nothing",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "Quite sensible!"
     },
     {
       "type": "dialogue",
       "speakerName": "Storyteller",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "My thanks."
     },
     {
       "type": "dialogue",
       "speakerName": "Storyteller",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "However, I'm not sure myself how many really are true, out of all these anecdotal legends... I just have some interest in the field, nothing more."
     },
     {
       "type": "dialogue",
       "speakerName": "Storyteller",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "That said, while I might not be any kind of formal storyteller, I've spent a long time in the village doing it, though only the few you saw are actually willing to hear me spout my nonsense."
     },
     {
       "type": "dialogue",
       "speakerName": "Storyteller",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "I see three unfamiliar faces. What brings you here?"
     },
     {
@@ -194,12 +241,14 @@
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "Ahem— (Gives a meaningful look)"
     },
     {
       "type": "dialogue",
       "speakerName": "Mr. Nothing",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "Ah—right, right, these two friends of mine came from far away, in search of someone."
     },
     {
@@ -209,72 +258,84 @@
       "type": "dialogue",
       "speakerName": "Mr. Nothing",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "But neither of them are quite as aware of Yan as those of us born here, so I'm giving them some small assistance, acting as their guide. How should I address you, sir?"
     },
     {
       "type": "dialogue",
       "speakerName": "Storyteller",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "It's been many years since I left home; I long since abandoned my old name to disuse. I fancied myself literary in younger years, calling myself the 'Umbrella-Boiling Hermit,' and though it's somewhat shameless of a title, I still use it to this day."
     },
     {
       "type": "dialogue",
       "speakerName": "Mr. Nothing",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "How artistic! How artistic indeed! By damned luck, I too was given no option but to leave home, and nowadays go by 'No' and 'thing' in lieu of names sur and given. You can call me Brother No, how about that?"
     },
     {
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "(I told you that was a made-up name, didn't I—?!)"
     },
     {
       "type": "dialogue",
       "speakerName": "Kroos",
       "speakerId": "avg_npc_144",
+      "isRemote": false,
       "text": "(Shh...)"
     },
     {
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "(Kroos? You catch something?)"
     },
     {
       "type": "dialogue",
       "speakerName": "Kroos",
       "speakerId": "avg_npc_144",
+      "isRemote": false,
       "text": "(Eh? Uh, nothing, I just reckon it's really fun to watch how he lies himself a new layer every time.)"
     },
     {
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "(......)"
     },
     {
       "type": "dialogue",
       "speakerName": "Storyteller",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "So we are both men fallen to the other side of the world. Then who's the person you three mysteries are searching for?"
     },
     {
       "type": "dialogue",
       "speakerName": "Mr. Nothing",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "Hah, just as the proverb goes, chance meetings are predestiny; it truly couldn't be more opportune if we tried. The one we're searching for is also a painter, like in the story we just heard."
     },
     {
       "type": "dialogue",
       "speakerName": "Storyteller",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "...A painter? This village is modestly sized, and I've never heard of any painter here. What manner of man is this?"
     },
     {
       "type": "dialogue",
       "speakerName": "Mr. Nothing",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "Er... benefactor? May you describe?"
     },
     {
@@ -284,24 +345,28 @@
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "A woman. Uh, she should have big, weird horns on her head. And she can use some weird Arts. Also... also... she's a painter."
     },
     {
       "type": "dialogue",
       "speakerName": "Storyteller",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "And that's it?"
     },
     {
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "That's it."
     },
     {
       "type": "dialogue",
       "speakerName": "Storyteller",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "I admit, with that, I have even less of an idea."
     },
     {
@@ -311,30 +376,35 @@
       "type": "dialogue",
       "speakerName": "Mr. Nothing",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "Oh, this is a strange turn indeed... could it be that the one you benefactors seek left this place before we came?"
     },
     {
       "type": "dialogue",
       "speakerName": "Storyteller",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "This village entertains very few guests. If it's as you all say, that strange person would have to have left an impression on us. I can get someone to help you ask around."
     },
     {
       "type": "dialogue",
       "speakerName": "Mr. Nothing",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "Good, good, then we'll leave you to it, sir, and for the time being—"
     },
     {
       "type": "dialogue",
       "speakerName": "Mr. Nothing",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "We'll...?"
     },
     {
       "type": "dialogue",
       "speakerName": "Storyteller",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "Mr. Nothing?"
     },
     {
@@ -344,54 +414,63 @@
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "Hey, what's up with you?"
     },
     {
       "type": "dialogue",
       "speakerName": "Mr. Nothing",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "Ah, heheh, where... where did we come in from?"
     },
     {
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "What are you talking about? Didn't we—"
     },
     {
       "type": "dialogue",
       "speakerName": "Storyteller",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "—Follow this pathway, and you can leave the landscape garden."
     },
     {
       "type": "dialogue",
       "speakerName": "Storyteller",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "Presumably you arrived following a crowd, and erred here? Haha, my garden isn't that big or small, but it's tough to find your way through it. Ask a servant for help."
     },
     {
       "type": "dialogue",
       "speakerName": "Mr. Nothing",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "Heh... Look at me, all befuddled. How is it I can't remember, now?"
     },
     {
       "type": "dialogue",
       "speakerName": "Storyteller",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "If you find any trace of that painter, and you need the help, don't hesitate to ask me."
     },
     {
       "type": "dialogue",
       "speakerName": "Storyteller",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "I have some business for now, so, everyone, farewell."
     },
     {
       "type": "dialogue",
       "speakerName": "Mr. Nothing",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "Here, thank you, thank you, farewell now, farewell. Benefactors, shall we go?"
     },
     {
@@ -401,39 +480,49 @@
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "Wait—"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_town"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Mr. Nothing",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "And that said, where should we take a look at? We've visited the teahouse, the stage station and the gardens. Where else could there be any clues?"
     },
     {
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "How long has it been since we got here?"
     },
     {
       "type": "dialogue",
       "speakerName": "Mr. Nothing",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "Oh, why do you ask? I'd say about... two or three days?"
     },
     {
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "Are you sure?"
     },
     {
       "type": "dialogue",
       "speakerName": "Mr. Nothing",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "Ahahah, heh, most likely I slept awful last night. I'm a little out of kilter."
     },
     {
@@ -443,48 +532,56 @@
       "type": "dialogue",
       "speakerName": "Kroos",
       "speakerId": "avg_npc_144",
+      "isRemote": false,
       "text": "Lavaaa."
     },
     {
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "Nnng... I can sense it now... but it's so indistinct... it's like..."
     },
     {
       "type": "dialogue",
       "speakerName": "Kroos",
       "speakerId": "avg_npc_144",
+      "isRemote": false,
       "text": "Times like these, you've gotta go with your intuition."
     },
     {
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "My intuition's telling me that right now, the situation's extremely messed up."
     },
     {
       "type": "dialogue",
       "speakerName": "Kroos",
       "speakerId": "avg_npc_144",
+      "isRemote": false,
       "text": "Is it some kind of mind-level Originium Arts...?"
     },
     {
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "Nngh... if it's Arts..."
     },
     {
       "type": "dialogue",
       "speakerName": "Mr. Nothing",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "Benefactors, why the muttering? If we don't hurry up soon, it'll get dark on us."
     },
     {
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "What are you talking about? It's still so light—"
     },
     {
@@ -494,72 +591,84 @@
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "——"
     },
     {
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "—The sky... the color?"
     },
     {
       "type": "dialogue",
       "speakerName": "Kroos",
       "speakerId": "avg_npc_144",
+      "isRemote": false,
       "text": "Did we never look at the sky before...? We should've noticed any moment we lifted our heads... now that's odd."
     },
     {
       "type": "dialogue",
       "speakerName": "Mr. Nothing",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "B... benefactors, what's going on? Look over there, is that... is that a moon, now?!"
     },
     {
       "type": "dialogue",
       "speakerName": "Mr. Nothing",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "And it's broad daylight right now, isn't it? Why have they lit lanterns on the other end of the bridge?"
     },
     {
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "Look behind you..."
     },
     {
       "type": "dialogue",
       "speakerName": "Mr. Nothing",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "Er?"
     },
     {
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "The horizon on the other side. Is that... is that the sun?"
     },
     {
       "type": "dialogue",
       "speakerName": "Kroos",
       "speakerId": "avg_npc_144",
+      "isRemote": false,
       "text": "Hey. You think us coming back from there to here counted as 'going' one full day and night?"
     },
     {
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "This is really... new to me. Nian always told me that Yan was full of weird, unseen wonders... and landscapes like this too?"
     },
     {
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "Uh, hold on, I think there's something in my pocket..."
     },
     {
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "Is this—the charm Nian gave me...?"
     },
     {
@@ -569,108 +678,126 @@
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "Wait a minute... hold on! No, that's not right!"
     },
     {
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "What the hell do I mean 'landscapes like this?' What was I just thinking?!"
     },
     {
       "type": "dialogue",
       "speakerName": "Kroos",
       "speakerId": "avg_npc_144",
+      "isRemote": false,
       "text": "Ah..."
     },
     {
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "Mr. Nothing!"
     },
     {
       "type": "dialogue",
       "speakerName": "Mr. Nothing",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "Er—? I'm here, I'm here!"
     },
     {
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "Is this Ni-weng Village or not!?"
     },
     {
       "type": "dialogue",
       "speakerName": "Mr. Nothing",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "Does... does it need to be said... er..."
     },
     {
       "type": "dialogue",
       "speakerName": "Mr. Nothing",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "P—paying close attention, it seems a little off! But there isn't another village anywhere around!"
     },
     {
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "This isn't right. It's not right."
     },
     {
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "Kroos, we left Rhodes Island, reached Kou-wu City first, stocked up, and then left the next morning."
     },
     {
       "type": "dialogue",
       "speakerName": "Kroos",
       "speakerId": "avg_npc_144",
+      "isRemote": false,
       "text": "We were heading across the wastes for Mount Hui-ch'i, and we saw a crashed car—"
     },
     {
       "type": "dialogue",
       "speakerName": "Mr. Nothing",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "—and then you two benefactors dealt with the beasts and saved me?"
     },
     {
       "type": "dialogue",
       "speakerName": "Kroos",
       "speakerId": "avg_npc_144",
+      "isRemote": false,
       "text": "Just took 'em to a nice new pit to build their nest in, that's all."
     },
     {
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "And then?"
     },
     {
       "type": "dialogue",
       "speakerName": "Mr. Nothing",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "And then, we...?"
     },
     {
       "type": "dialogue",
       "speakerName": "Kroos",
       "speakerId": "avg_npc_144",
+      "isRemote": false,
       "text": "Hmmmgh. Then we went straight up Mount Hui-ch'i, and found a thatched cottage."
     },
     {
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "I pushed open its..."
     },
     {
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "...door?"
     },
     {
@@ -680,6 +807,7 @@
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "Bells? Where are they coming from?"
     },
     {
@@ -689,54 +817,63 @@
       "type": "dialogue",
       "speakerName": "Villager",
       "speakerId": "avg_npc_140",
+      "isRemote": false,
       "text": "The bells are sounding? The bells are sounding! Hey, everyone call your families out! Move quickly!"
     },
     {
       "type": "dialogue",
       "speakerName": "Villager",
       "speakerId": "avg_npc_140",
+      "isRemote": false,
       "text": "What's happening!? It's been so long! Why is it happening today?!"
     },
     {
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "Excuse me! Can I ask what's happening?"
     },
     {
       "type": "dialogue",
       "speakerName": "Villager",
       "speakerId": "avg_npc_140",
+      "isRemote": false,
       "text": "Are you—are you outsiders? The bells mean monsters are coming from the west mountains!"
     },
     {
       "type": "dialogue",
       "speakerName": "Villager",
       "speakerId": "avg_npc_140",
+      "isRemote": false,
       "text": "Those monsters can't stand light! Just run to where the sun is and you'll be safe!"
     },
     {
       "type": "dialogue",
       "speakerName": "Mr. Nothing",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "M—Monsters? What monsters?"
     },
     {
       "type": "dialogue",
       "speakerName": "Villager",
       "speakerId": "avg_npc_140",
+      "isRemote": false,
       "text": "Look, I've got no time to chat with you! Get out of my way, I need to bring my wife over here!"
     },
     {
       "type": "dialogue",
       "speakerName": "Child",
       "speakerId": "avg_npc_142",
+      "isRemote": false,
       "text": "Mama! Mama!"
     },
     {
       "type": "dialogue",
       "speakerName": "Villager",
       "speakerId": "avg_npc_140",
+      "isRemote": false,
       "text": "Is everyone here? We're still missing someone! Start looking, fast!"
     },
     {
@@ -746,12 +883,14 @@
       "type": "dialogue",
       "speakerName": "Mr. Nothing",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "Benefactors, benefactors, let us hurry and take shelter!"
     },
     {
       "type": "dialogue",
       "speakerName": "Mr. Nothing",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "They said we'll be fine if we run somewhere where the sun is? Then let us hurry—benefactors?"
     },
     {
@@ -761,18 +900,21 @@
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "...Kroos."
     },
     {
       "type": "dialogue",
       "speakerName": "Kroos",
       "speakerId": "avg_npc_144",
+      "isRemote": false,
       "text": "Ready."
     },
     {
       "type": "dialogue",
       "speakerName": "Lava",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "Good."
     },
     {
@@ -782,12 +924,14 @@
       "type": "dialogue",
       "speakerName": "Mr. Nothing",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "—Benefactors!? This is no time for jokes, we're no better than paste on our own! Let's hide before we do anything else!"
     },
     {
       "type": "dialogue",
       "speakerName": "Mr. Nothing",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "Here! Here, here! Why are you charging them! Alas! My good benefactors, you—wait for me, wait for me a moment!"
     },
     {

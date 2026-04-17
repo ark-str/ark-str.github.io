@@ -6,10 +6,14 @@
   "title": "夜明けの時",
   "storyCode": "EA-8",
   "avgTag": "戦闘前",
-  "sourcePath": "vendor/ArknightsGamedata/jp/gamedata/story/activities/act41side/level_act41side_08_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/jp/gamedata/story/activities/act41side/level_act41side_08_beg.txt",
   "sourceHash": "0dcde66d4491540a57292c4b034dbf1e39a02269f186868947ab97d3eb968107",
   "bodyAvailable": true,
   "blocks": [
+    {
+      "type": "background",
+      "backgroundId": "59_g4_dragonsquare_n"
+    },
     {
       "type": "narration",
       "text": "ネモスは棺を要塞の外へ引きずり出した。\n彫像がそびえ立つ広場には誰もいない。外出禁止の時間になった今も、彼女は炎に身を焼かれながら、赤き龍の棺を引いていた。\n彼女が通れば、闇は退く。彼女が去れば、闇が再びその場を支配した。"
@@ -21,24 +25,28 @@
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "ふふっ、クランさん……あなたが本当に羨ましいです。"
     },
     {
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "あんな大きな彫像を引きずれば、たとえ眠っていたとしても、誰もがその音で目覚め、騒いで外へ出てきたことでしょうから。"
     },
     {
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "それに比べて、私はどうでしょう？"
     },
     {
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "まさか「赤き龍は死んだ」と叫んで回れとは言いませんよね？"
     },
     {
@@ -52,24 +60,28 @@
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "……ターラーの人たちが、ああした古い歌を今も忘れていなければいいんですが。"
     },
     {
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "そういえば、あなたの死を告げるにあたってはどんな歌を歌えばいいのでしょうね、赤き龍よ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "いっそ『ティム・フェンの通夜』でも歌いましょうか。もしかすると、あなたの葬儀でもあの曲にあるように皆が乱闘を始め、酒を死者へとぶちまけて、あまりのにおいに死者が蘇るかも。"
     },
     {
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "いえ、やめておきましょう。あなたの復活など誰も望んでいませんから。"
     },
     {
@@ -83,12 +95,14 @@
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "寒風が山と丘を抜け、黒雲が沼と谷を覆う……♪"
     },
     {
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "夜明けに出会った旅人は、黄金の原野への道を尋ねてきた……♪"
     },
     {
@@ -102,42 +116,56 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "59_g3_dragonsquare_d"
+    },
+    {
       "type": "dialogue",
       "speakerName": "興味津々な住民",
       "speakerId": null,
+      "isRemote": false,
       "text": "ターラー語教室？　キーラン、それってタダじゃないんだよな？"
     },
     {
       "type": "dialogue",
       "speakerName": "興味津々な住民",
       "speakerId": null,
+      "isRemote": false,
       "text": "この値段なら……まあいいか。酒を多少我慢すればいいだけだし。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "59_g4_dragonsquare_n"
+    },
+    {
       "type": "dialogue",
       "speakerName": "泥酔した住民",
       "speakerId": null,
+      "isRemote": false,
       "text": "*ヴィクトリアスラング*、キーラン、あの時俺がもっと力になってやれてたら、お前がヴィクトリア人に捕まることもなかっただろうに……"
     },
     {
       "type": "dialogue",
       "speakerName": "泥酔した住民",
       "speakerId": null,
+      "isRemote": false,
       "text": "クソッタレの黒い霧め。赤き龍がこの霧を払ってくれないってんなら、俺がやってやる！"
     },
     {
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "寒風が山と丘を抜け、黒雲が沼と谷を覆う……♪"
     },
     {
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "夜明けに出会った旅人は、黄金の原野への道を尋ねてきた……♪"
     },
     {
@@ -147,54 +175,70 @@
       "type": "dialogue",
       "speakerName": "泥酔した住民",
       "speakerId": null,
+      "isRemote": false,
       "text": "誰だ？　……ネモスか？　こんな夜中に何を歌ってやがるんだ？"
     },
     {
       "type": "dialogue",
       "speakerName": "泥酔した住民",
       "speakerId": null,
+      "isRemote": false,
       "text": "あいつが引きずってる、あの燃えてるもんは一体……"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "59_g3_dragonsquare_d"
+    },
+    {
       "type": "dialogue",
       "speakerName": "別れを惜しむ住民",
       "speakerId": null,
+      "isRemote": false,
       "text": "ねえあなた、ターラー人のために何かしたいからって、何も軍隊に行かなくてもいいじゃない？"
     },
     {
       "type": "dialogue",
       "speakerName": "別れを惜しむ住民",
       "speakerId": null,
+      "isRemote": false,
       "text": "……わかった。ここでずっとあなたの帰りを待っているわ。私たちが自由を勝ち取るその日まで。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "59_g4_dragonsquare_n"
+    },
+    {
       "type": "dialogue",
       "speakerName": "嫌気が差した住民",
       "speakerId": null,
+      "isRemote": false,
       "text": "はあ、やっと静かになったわね。手が痛い手が痛いっていつまでもうるさいのよ。腕を丸ごと失くしてるのに何が痛むって言うの？　そう言えば薬がもらえるとでも思った？"
     },
     {
       "type": "dialogue",
       "speakerName": "嫌気が差した住民",
       "speakerId": null,
+      "isRemote": false,
       "text": "あなたなんて、いっそ帰ってこなければよかったのに。こんなことになるくらいなら、一生あなたを想い続けるほうがマシだったわ……"
     },
     {
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "私は言った……♪　どれほど長き旅になるかはわからない……♪"
     },
     {
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "だが望むなら、共に歩もう……♪　黄金の原野へ続く道を……♪"
     },
     {
@@ -204,27 +248,35 @@
       "type": "dialogue",
       "speakerName": "嫌気が差した住民",
       "speakerId": null,
+      "isRemote": false,
       "text": "これって、死者を悼む歌じゃない？"
     },
     {
       "type": "dialogue",
       "speakerName": "嫌気が差した住民",
       "speakerId": null,
+      "isRemote": false,
       "text": "あの紫の炎……死者ってまさか……！？"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "59_g2_citystreets_n"
+    },
+    {
       "type": "dialogue",
       "speakerName": "驚く住民",
       "speakerId": null,
+      "isRemote": false,
       "text": "何！？　敵が黒き森へ侵入し、街の外まで来ているだと！？"
     },
     {
       "type": "dialogue",
       "speakerName": "驚く住民",
       "speakerId": null,
+      "isRemote": false,
       "text": "ネモス、俺はもうじっとしてはいられない。徴兵所はどこだ？　すぐに武器を持って向かう！"
     },
     {
@@ -241,12 +293,14 @@
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "右へと曲がり、不滅の王城を過ぎ、美酒の川を渡って……♪"
     },
     {
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "川辺で喉を潤したなら、黄金の原野への道を行こう……♪"
     },
     {
@@ -256,12 +310,14 @@
       "type": "dialogue",
       "speakerName": "テオ",
       "speakerId": "avg_npc_240",
+      "isRemote": false,
       "text": "ねえネモスさん、戦争が終わったら、クランさんと一緒にここに住んでよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "テオ",
       "speakerId": "avg_npc_240",
+      "isRemote": false,
       "text": "そっか、残念。僕の代わりに、クランさんにご飯を作ってくれたらと思ってたんだけど……"
     },
     {
@@ -271,12 +327,14 @@
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "ラフシニー殿下が戻られる前に……工房の扉を直しておくべきかもしれませんね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "（鼻をすする）"
     },
     {
@@ -286,12 +344,14 @@
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "願わくば君が黄金の原野を見つけられますように……♪　裏切らぬ帰るべき場所を火中で見つけられますように……♪"
     },
     {
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "さすれば君は迷わずに、原野への道を往けるだろう……♪"
     },
     {
@@ -301,40 +361,50 @@
       "type": "dialogue",
       "speakerName": "「放逐王」",
       "speakerId": "avg_npc_1690_1",
+      "isRemote": false,
       "text": "死に飲まれかけた霊の守人が歌ったところで、誰を目覚めさせられると言うんだ？"
     },
     {
       "type": "dialogue",
       "speakerName": "「放逐王」",
       "speakerId": "avg_npc_1690_1",
+      "isRemote": false,
       "text": "お前は自分自身すら目覚めさせられてはいないというのに。"
     },
     {
       "type": "dialogue",
       "speakerName": "「放逐王」",
       "speakerId": "avg_npc_1690_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "「放逐王」",
       "speakerId": "avg_npc_1690_1",
+      "isRemote": false,
       "text": "どうあれ、ブリギッドよ、我が血をかすかに受け継いだ愚かな子よ……"
     },
     {
       "type": "dialogue",
       "speakerName": "「放逐王」",
       "speakerId": "avg_npc_1690_1",
+      "isRemote": false,
       "text": "どうかここには戻ってくるな。"
     },
     {
       "type": "dialogue",
       "speakerName": "「放逐王」",
       "speakerId": "avg_npc_1690_1",
+      "isRemote": false,
       "text": "この街に、お前が命を懸けるほどの価値はない。"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "59_g4_dragonsquare_n"
     },
     {
       "type": "narration",
@@ -347,87 +417,105 @@
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "明け方の黒き森へと踏み込んで、霧を呼ぶ……♪"
     },
     {
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "戦場に続く道へと踏み出していく……♪"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "59_g4_dragonsquare_n"
+    },
+    {
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "ネモス……"
     },
     {
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "……エマさん！"
     },
     {
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "すぐにあなただとわかりませんでした。あなたは……まだ……"
     },
     {
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "いいえ、私はもう持たないわ。じきに死ぬの。さっきまで……このまま、ベッドの上で死にたいと思って……横になっていたのよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "全身の関節が痛んで、喉が焼けるように熱くて……最近は、いなくなった人の姿ばかり見えるの。"
     },
     {
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "だけどそんな時に、あなたの歌が聞こえて、棺を引くあなたの姿も見えて！　どうせ死ぬんだから、出てもいいと思って……こうして出てきたの……げほっ、げほっ！"
     },
     {
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "黒い霧は、どこなのかしら？"
     },
     {
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "森にいるかもしれませんし、街にいるかもしれません。あるいは背後へ迫っているのかもしれませんが、わかりませんし、興味もありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "ふふ……ふ……そうね、私も……興味は、ないわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "一つだけ、聞かせて……それを聞けたら、安心して、死ぬことができる……こんな苦しみからも、解放されて……"
     },
     {
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "（荒く呼吸する）……その棺の中にいるのは……本当に……私たちの、赤き龍なの？"
     },
     {
@@ -441,24 +529,28 @@
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "はい。私がこの手で、赤き龍の遺体を棺に納めました。"
     },
     {
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "あの方は、なぜ亡くなったの……"
     },
     {
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "誰が殺したの？"
     },
     {
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "誰が！？"
     },
     {
@@ -472,18 +564,21 @@
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "あなたたちはまだ……復讐を……望むのですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "そうよ。この身体が、動く限り……"
     },
     {
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "赤き龍のために、復讐を。"
     },
     {
@@ -497,6 +592,7 @@
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "待って、ネモス、待って！"
     },
     {
@@ -504,18 +600,28 @@
     },
     {
       "type": "narration",
-      "text": "//黑雾\n//录一下m_bat_act22side_01_intro"
+      "text": "//黑雾"
+    },
+    {
+      "type": "background",
+      "backgroundId": "59_g2_citystreets_n"
+    },
+    {
+      "type": "narration",
+      "text": "//录一下m_bat_act22side_01_intro"
     },
     {
       "type": "dialogue",
       "speakerName": "ラフシニー",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "何度言えばわかるの、黒い霧。エブラナはもう死んでしまった、私がこの手で殺したんだ！"
     },
     {
       "type": "dialogue",
       "speakerName": "ラフシニー",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "遺体はネモスが引いている棺の中にあるってことを、みんなに伝えないと――それを知ったうえで炎を返さなきゃ、紫の炎は消えないんだから！"
     },
     {
@@ -525,6 +631,7 @@
       "type": "dialogue",
       "speakerName": "ラフシニー",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "はぁ、はぁ……"
     },
     {
@@ -534,6 +641,7 @@
       "type": "dialogue",
       "speakerName": "ラフシニー",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "エブラナが約束なんて気にかけたことがある？　そこまで彼女との約束を信じたいのなら――"
     },
     {
@@ -547,30 +655,35 @@
       "type": "dialogue",
       "speakerName": "ラフシニー",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "それなら、はっきり教えてあげる。赤き龍はもう、キミの目の前にいる一人しかいないんだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ラフシニー",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "何を約束されたかは知らないけど、それを与えられるのはもう私だけだよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ラフシニー",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "遠くから扉が開く音が聞こえたでしょう？"
     },
     {
       "type": "dialogue",
       "speakerName": "ラフシニー",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "あれはネモス以外に、今夜初めて夜の外出禁止令を破った人が家を出た音だよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ラフシニー",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "その人のためにも、その人に続いて街へ出てくる何千人もの人たちのためにも、キミにはここで止まってもらう。"
     },
     {
@@ -580,6 +693,7 @@
       "type": "dialogue",
       "speakerName": "ラフシニー",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "私がナ・シアーシャに託した答えが失敗に終わり、人々が生ける屍と化して黒い霧に食らいつき始めるまでは、暗闇に踏み込んだ者の命を奪う権利なんてキミにはない。"
     },
     {
@@ -589,12 +703,14 @@
       "type": "dialogue",
       "speakerName": "ラフシニー",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "これが傲慢だというの？"
     },
     {
       "type": "dialogue",
       "speakerName": "ラフシニー",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "ターラーのために必要なことなら、私は今よりもっと、もっと傲慢になってみせるよ。"
     },
     {
@@ -608,6 +724,10 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "59_g4_dragonsquare_n"
+    },
+    {
       "type": "narration",
       "text": "巨大な彫像の下に立つ、二つの小さな人影は、まるで亡霊のように見えた。\nだがネモスは、広場にいるのがエマと自分だけではないように感じていた。ナ・シアーシャ中の人々が集まっているかのように、無数の人々がそこに立ち並んでいるかのように思ったのだ。\n彼らは身に着けた源石ランプの不気味な紫の炎を輝かせながら、その場を見て、聞いていた。\n否、正確にはランプだけが輝いているのではなく……彼ら自身もまた同じ炎を燃やしていた。"
     },
@@ -615,6 +735,7 @@
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "赤き龍を殺したのは……"
     },
     {
@@ -628,6 +749,7 @@
       "type": "dialogue",
       "speakerName": "遠く聞こえる音",
       "speakerId": null,
+      "isRemote": false,
       "text": "……明け方の黒き森へと踏み込んで、霧を呼ぶ……♪"
     },
     {
@@ -638,30 +760,35 @@
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "うっ、うう……クランさん……"
     },
     {
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "っ……もしも、あなたが……命を賭してまで、この人たちを守ろうとして、いなければ……"
     },
     {
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "赤き龍を殺したのは、他でもなく……赤き龍……"
     },
     {
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "彼女自身です。"
     },
     {
@@ -675,24 +802,28 @@
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "赤き龍こそが、自分自身を殺したのです！"
     },
     {
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "知らぬ間にあなたたちの身に炎を灯してしまった赤き龍は、皆さんがその炎に焼き尽くされぬようにと、己の命を差し出したのです！"
     },
     {
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "彼女はあなたたちを守るために死んだのに、あなたたちは……"
     },
     {
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "無意味な復讐のために、彼女が命と引き換えに得たすべてを無駄にするつもりですか！？"
     },
     {
@@ -706,12 +837,14 @@
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "赤き龍は……私たちに復讐をさせないために、自分の命を絶ったというの……！？"
     },
     {
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "じゃあ……私たちは一体、どうすれば？"
     },
     {
@@ -725,54 +858,63 @@
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "ニルス……まだ見ぬ私の子……赤き龍……誰か、教えて……"
     },
     {
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "エマさん……"
     },
     {
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "復讐すら叶わないなら、私に何ができると言うの？"
     },
     {
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "私にはもう何もない。戦争がすべてを奪っていった……"
     },
     {
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "どうやって生きていけばいいの？　教えて、ニルス……赤き龍……"
     },
     {
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "誰でもいいから、教えてちょうだい。私は一体、どうやって生きていけばいいの？"
     },
     {
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "あるいは、私は……あなたたちに……会いに行くべきなのかしら？"
     },
     {
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "エマさん、いけません！"
     },
     {
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "もう……これしか道はないでしょう？"
     },
     {
@@ -782,18 +924,21 @@
       "type": "dialogue",
       "speakerName": "徐々に近づく音",
       "speakerId": null,
+      "isRemote": false,
       "text": "明け方の黒き森へと踏み込んで、霧を呼ぶ……♪"
     },
     {
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "ニルス、あなたなの？　ようやく来てくれたのね？"
     },
     {
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "……！"
     },
     {
@@ -803,30 +948,35 @@
       "type": "dialogue",
       "speakerName": "ブリギッド",
       "speakerId": "avg_4177_brigid_1",
+      "isRemote": false,
       "text": "戦場に続く道へと踏み出していく……♪"
     },
     {
       "type": "dialogue",
       "speakerName": "ブリギッド",
       "speakerId": "avg_4177_brigid_1",
+      "isRemote": false,
       "text": "笛の音も、軍鼓の音もなく……♪"
     },
     {
       "type": "dialogue",
       "speakerName": "ブリギッド",
       "speakerId": "avg_4177_brigid_1",
+      "isRemote": false,
       "text": "背後に響く鐘の音ばかりが、霧を突き抜けていく……♪"
     },
     {
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "やめてちょうだい！"
     },
     {
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "その歌が私からニルスを奪ったのよ！　なのにどうして、その歌を歌うの！？"
     },
     {
@@ -840,42 +990,49 @@
       "type": "dialogue",
       "speakerName": "モラン",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "もう一度、黒き森を抜け――♪"
     },
     {
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "やめてと言ったでしょう！"
     },
     {
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "――待って、「もう一度」って……？"
     },
     {
       "type": "dialogue",
       "speakerName": "モラン",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "モラン",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "恐れながら、私はこの歌に一節加えたいと思ったのです……"
     },
     {
       "type": "dialogue",
       "speakerName": "モラン",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "というのは、あの勇敢な人々が……私たちのもとを去った後、二度と会うこともできぬまま、私たちと同じように霧の中を永遠に彷徨い続けることなど、私は望んでいないからです。"
     },
     {
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -889,6 +1046,7 @@
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "……再会のためでなく……君が行く道を照らすため……？"
     },
     {
@@ -902,72 +1060,84 @@
       "type": "dialogue",
       "speakerName": "モラン",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "あなたの火を、赤き龍から授かった祝福を……返しましょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "火を……？"
     },
     {
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "この祝福を……私たちに宿る炎を赤き龍に返せば、彼らの行く道を照らすことができるの？"
     },
     {
       "type": "dialogue",
       "speakerName": "モラン",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "炎を赤き龍へと返せば、彷徨う死者たちも炎へと帰り、安らかな眠りに就けるでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "そんな、嫌よ……私はただ……もう一度ニルスに会いたいだけなの……"
     },
     {
       "type": "dialogue",
       "speakerName": "モラン",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "こんな形で命を落とせば、あなたたちは霧の中で幾度もすれ違うだけです。"
     },
     {
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "じゃあ……どうすれば？"
     },
     {
       "type": "dialogue",
       "speakerName": "モラン",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "生きるんですよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "モラン",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "彼が自ら進んで霧の中へと踏み込んだのは、あなたが霧の中で迷わないようにするためなんです。"
     },
     {
       "type": "dialogue",
       "speakerName": "瀕死の住民",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "モラン",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "彼に火を返して、行く道を照らしてあげてください。そうして、時が過ぎ、人生がもう一度始まって、そのうちあなたの髪が白くなる頃……彼が、自分の願いが叶ったと知った時にこそ……"
     },
     {
       "type": "dialogue",
       "speakerName": "モラン",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "あなたたちは再会を果たすでしょう。"
     },
     {
@@ -988,15 +1158,21 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "59_g4_dragonsquare_n"
+    },
+    {
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "扉が……開いた？"
     },
     {
       "type": "dialogue",
       "speakerName": "モラン",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "ええ、開きました。"
     },
     {
@@ -1010,36 +1186,42 @@
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "ああ、やっと……"
     },
     {
       "type": "dialogue",
       "speakerName": "生真面目な霊の守人",
       "speakerId": "avg_npc_1691_1",
+      "isRemote": false,
       "text": "ネモス、赤き龍の棺を彫像の台座まで運んでくれ。"
     },
     {
       "type": "dialogue",
       "speakerName": "生真面目な霊の守人",
       "speakerId": "avg_npc_1691_1",
+      "isRemote": false,
       "text": "今宵このナ・シアーシャでは、盛大な返し火の儀が執り行われることになりそうだからな。"
     },
     {
       "type": "dialogue",
       "speakerName": "生真面目な霊の守人",
       "speakerId": "avg_npc_1691_1",
+      "isRemote": false,
       "text": "では、まずはお前から始めよう。"
     },
     {
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "私が？　赤き龍の葬儀なのに……いいのですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "生真面目な霊の守人",
       "speakerId": "avg_npc_1691_1",
+      "isRemote": false,
       "text": "これは赤き龍だけの葬儀ではあるまい？"
     },
     {
@@ -1056,12 +1238,14 @@
       "type": "dialogue",
       "speakerName": "「放逐王」",
       "speakerId": "avg_npc_1690_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "「放逐王」",
       "speakerId": "avg_npc_1690_1",
+      "isRemote": false,
       "text": "これで貸し借りはなしだな、石頭ども。"
     },
     {
@@ -1075,6 +1259,7 @@
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "……どうか安らかに。"
     },
     {
@@ -1095,15 +1280,21 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "59_g2_citystreets_n"
+    },
+    {
       "type": "dialogue",
       "speakerName": "ラフシニー",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "ラフシニー",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "言ったでしょう。これが……私の答えだって。"
     },
     {
@@ -1124,6 +1315,10 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
       "type": "narration",
       "text": "ラフシニーは都市の入り口から赤き龍の広場までの道を引き返していく。今なお生きている者はみな、燃え盛る彫像の前に集まっていた。\n要塞の片側はすでに立ち昇る紫の炎に包まれており、誰も近寄れなくなっていたが、それがかえってラフシニーのための空間となっていた。"
     },
@@ -1131,12 +1326,14 @@
       "type": "dialogue",
       "speakerName": "ラフシニー",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "ここからでも……返し火はできるよね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ラフシニー",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "願わくば、ターラーが……二度と姉さんの炎を必要としませんように。"
     },
     {
@@ -1154,18 +1351,21 @@
       "type": "dialogue",
       "speakerName": "ラフシニー",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "まだ諦めていないんだね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ラフシニー",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "わかった、それなら私が……"
     },
     {
       "type": "dialogue",
       "speakerName": "ラフシニー",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "最後にもう一度付き合ってあげる。"
     },
     {

@@ -6,16 +6,24 @@
   "title": "星火燦燦",
   "storyCode": "",
   "avgTag": "幕間",
-  "sourcePath": "vendor/ArknightsGamedata/jp/gamedata/story/activities/act7mini/level_act7mini_st02.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/jp/gamedata/story/activities/act7mini/level_act7mini_st02.txt",
   "sourceHash": "07d6a83431a2ac5b031a1c263d3f351349d60d5546c1b6f47c160565f32df0a3",
   "bodyAvailable": true,
   "blocks": [
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
     {
       "type": "narration",
       "text": "ここはもう、お前が身を置いていい場所ではない。\n逃げよ、逃げるがいい。戦士よ、お前の哀れむべき運命はすでに結末が定められている。もはやお前に安息の地など残されていない。\nそう。お前の生は、我らにとってもう意味のないものだ。\n――そうして、敵の鼓の音に恐れをなしたことなどない彼女は、敵の残忍な雄叫びにも退いたことのない戦士は、その場を去った。"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_forest"
     },
     {
       "type": "narration",
@@ -25,6 +33,10 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
       "type": "narration",
       "text": "連日続く雨に打たれると、若く頑健な戦士といえども衰弱は避けられなかった。\nましてや、その戦士は絶望の淵に突き落とされた哀れな者であったのだ。\n一体どのような事情があり、彼女のような若者が故郷からの逃亡を余儀なくされたのか。\n一体どのような過去が、見慣れた故郷を振り返る時、彼女に身を切るような思いを抱かせるのか。\n彼女は誰にもそれを知られたくなかった。\n逃げよ、誰一人として知る者のいない地へ。\nしかし――"
     },
@@ -32,105 +44,126 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_village"
+    },
+    {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "状況はいかがです？"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "あそこで苦しみだして二時間、ようやく落ち着いてきたみたいだ。俺たちが発見した地点からまた十メートルほど前進している。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "もし彼女がそれなりのスパイなら、俺たちの注意を引くような真似はせずに、体力を温存して死んだふりをするはずだろうからな。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "あるいは恐ろしい罠かもしれないがな。ミノス人の善良さと同情心を利用して、危険を顧みない善行を誘っているとも考えられる。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "ええ。ミノス人なら、彼女を放っておく良心の呵責には耐えられぬでしょう。しかし異郷の戦士であるあなたは、彼女の行動をどう思いますか？"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "フンッ、罠だな。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "俺に言わせるなら、撒き餌である可能性の方が高いだろうよ。お前も知ってるだろ？　サルゴン人の陰険さと狡猾さのせいで、この村がどれだけ長い間――"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "それはまた別の話です。臆測や疑念はありますが、私があなたに彼女を見ていただいているのは、そんなことよりも、彼女が無害か否かを確認してもらいたいからです。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "あなたが村人たちの境遇を憂いていることには感謝します……"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "（冷笑）"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "……もちろん、それが善意によるものかどうかにかかわらずです。サルカズの戦士よ、教えてください。その来訪者は今、どのような状況にあるのですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "一言で言えば、命の危機に瀕している。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "防具や武器から判断するに、彼女は戦士だ。おそらくサルゴン辺りからやってきたんだろう。今はミノスの地に横たわっているがな、陸に打ち上げられて必死にもがく魚のように。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "彼女は一人ですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "今のところは……だが今後どうなるかは、わからんな。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "そうですか、もしそうなら――"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "おい、祭司、「パラス」。"
     },
     {
@@ -140,298 +173,351 @@
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "はい、何でしょう？"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "俺は助言する立場じゃないんだが、ミノス人に雇われた身として、俺たちの指揮を執るお前に、とりあえず言っておくが――"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "お前はそこらの看護師でもなければ、純粋で善良な、同情や赦ししか知らないバカ祭司とも違う。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "お前はミノス人の指揮官だ。部族の戦士を育成する指導者であり、この村々が信仰する「女神」とやらだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "お前が彼女を受け入れれば、人々は彼女を丁重に扱い、お前に接するように彼女をもてなす。なんせ「女神」が連れてきた人間だからな。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "だが今のところ、あの小さな戦士がサルゴン人であるというのは、ほぼほぼ間違いない――"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "サルゴンとの休戦協定が無事結ばれるまで、ミノス人が警戒し、対抗すべき敵だということを忘れるな。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "戦士よ、あなたはその言葉によって自身の意志と、知恵深さを示しました。私は敬意と職責をもって、耳を傾けるべきだと思います。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "しかしながら、あなたも感じているように、私たちの判断は異なるかもしれません。悲しいことですが、向き合わなければならない現実です。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "たしかに私は、彼女を受け入れようと考えています。少なくとも、彼女のために治療を施さねばなりません。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "彼女はいまだ年若い生命。そして今まさに死に至る境へと迷い込んでいます。いかなる経緯があろうと、彼女は私たちにとって危険ではないと信じるべきです。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "彼女の背後に、何千何百というサルゴン兵が潜んでいる可能性――それについては、あなたが確認すべきことです。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "現時点で危険がない以上は、目の前で進んでいる戦争だけを理由に命を救うことを放棄してはなりません。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "（お節介な奴だ。）"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "お節介だと思う者もいるやもしれません。だからこそ私は、他の者には変わらず仕事をするよう言いつけて、あなたに彼女を監視するよう指示したのです。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "サルカズ、哀れなサルカズよ。あなた方は冷酷非情で知られ、自らもそれを生きる道として選んでいます。言い換えれば、あなた方の多くが、無情であることを己の誇りとしているのです。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "適材適所、私はこの原則に従って命令を出しました。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "あなたはただ自らの任務を確実に達成すればよいのです。その他の憂いについては……おのずと解決の術があります。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "俺の話を聞くだけで、考えを変えようとしないのなら、誰が彼女を見ていようと一緒じゃないのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "あなたがここで傭兵として雇われて三ヶ月になります。この村のことはよくわかっているはずです。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "もしミノス人に監視させたなら、二時間どころか十分と経たずに、罪悪感が彼らの純粋な心を蝕んでしまうでしょう。きっと良心に逆らえず、危険を顧みずに救いの手を差し伸べてしまう――"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "そうなった時、彼女が村人たちの善意を裏切れば、彼らの誠実な心はどれほど揺れ動いてしまうことでしょうか。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "ハッ、つまりお前もここの村人たちのお人よしが過ぎるってことを認めてるわけだな。敵かもしれない命すら大切にするなんてよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "戦士よ、村人の中には、あなたをすでに信用している者もいれば、我が子のように思う老人すらいます。これは善意に基づいた受容です……しかし、サルカズよ、私はあなたの考えを理解できます。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "あなたはそんなものを求めてはいません。あなたは愛に……少なくとも同族でない者から受ける愛については、傭兵としての金銭的報酬と比べてそれほど価値があるとも思っていないでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "そんなことを今、俺たちが話し合う必要などない。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "あなたたちにはあなたたちの生きる道があります。それについてもとより私が口を挟むものでありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "けれど私には感じられるのです、あなたも始めはさきほど話したサルカズの誇りを体現していましたね。私たちが初めて会った時、あなたは確かに冷酷で、不純な善意と半端な邪心を抱いていました。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "ですが今は違うでしょう。ミノスの兵士や村人たちと過ごす間に、あなたは思慮深く、自らの意志で力を振るう明晰な戦士となったのですよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "あなたの警告に理がないというわけではなく、今回はただ私の判断を優先しただけです。敵――サルゴンが、今襲ってくる理由はありません。こんなに拙い手段で「撒き餌」を放つ必要性も。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "おそらくサルゴン人なら、ミノス人の良心を利用するような罠など使わず、正面から荒々しく攻め入って、殺戮や略奪といった残忍な企みを騒がしく吠えたてる方を好むでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "……わかったよ。お前の判断が正しいってことにしておいてやる。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "それでは、サルゴンの方からやってきたあの若い戦士に視線を戻しましょうか。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "あなたの言う通り、私は彼女を救いたいとは思っています……"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "しかしあなたが警告したように、彼女を軽率に村に連れて行くのは賢明な判断ではありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "幸い彼女に目立った外傷はなく、手術が必要な深刻な事態でもなさそうです。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "私が彼女を治療します。その後の結果については、私が自ら責任を負いましょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "つまりお前は、俺にテントを持ってこいって言ってるんだな？　国境線から二キロ以内の、しかも駐屯所から遠いこの場所で、あいつの治療が終わるまで居座り続けるってのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "ええその通りです、ここにいるのも駐屯所にいるのも大して違いはありませんから……"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "今の自分の立場を忘れたわけではないだろうな。お前は村人たちの心の拠り所であり、サルゴン人の束縛から解放してくれる希望だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "彼らは皆、お前のことが大好きで、お前を「勝利の女神」と呼ぶ。それなのにお前は、こんな危険を冒してまで――"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "戦士よ、分を弁えなさい。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "……チッ。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "何の罪もないかもしれぬ若者が、もう二時間もの間、必死に意識を保ち、生きようと地でもがいています。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "彼女はすでにあなたの試練をくぐり抜けたと言ってもいいでしょう――最も警戒心が強く、用心深いサルカズのあなたですら、彼女の存在が敵の罠である証拠を未だ示すことができないのですから。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "私の心はすでに罪悪感でいっぱいなのです。これ以上は放っておくことができません。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "お前の感情論なんかどうでもいい。だが……あの娘が目覚めた後、お前との対話に応じてくれるかどうかは怪しいぞ。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "あいつが目を覚ましたら、やり合うことになる覚悟だけはしとけ。"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
     },
     {
       "type": "narration",
@@ -441,27 +527,35 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_towerinside"
+    },
+    {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "……誰。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "おや、目が覚めましたか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "……！"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "警戒しなくても大丈夫ですよ。随分よく眠っていましたね……"
     },
     {
@@ -475,12 +569,14 @@
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "……ああ、武器が欲しいのですね？　ここにありますよ、どうぞ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -494,156 +590,182 @@
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "容赦がなく思い切りのいい動きですね。見知らぬ来訪者よ、きっとあなたは自身の力量に自負のある、訓練された兵士なのでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "しかし残念なことに、ここでは満足に実力を発揮できませんね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "質問に答えて。さもなければ、私の鎖と盾があなたを叩き潰す、ゴホゴホッ……"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "ええ、わかりました。あなたの気が済むまで質問に答えましょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "ここはどこ？"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "私のテントです。あなたの治療をするには、ゆっくり休める場所が必要でしたから。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "余計な話はしないで。テントの外はどこ？　誰がいるの？"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "私たちの兵士がいます。ミノス人の。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "（*サルゴンスラング*、どうして私がミノスの兵なんかに？）"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "あなたはサルゴン領とミノス領の境界で倒れていたのです。兵士があなたを見つけた時、あなたはまだ這って進もうとしていました。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "……ここはミノスの領土なの？"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "ええ。あなたの荷物もまとめてありますよ。足元を見てください。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "方向を確認するための計器が、すべて損傷していました。あなたは凄まじい飢えと疲労を抱えたまま先を急ぐあまり、計器が完全に機能していないことに気付かなかったのでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "今話したように、外にいるのはすべてミノスの兵士です。一人きりで暴力による解決を試みるのは賢い選択ではありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "ここからどういう形で去るかはあなた次第です。話をつけてから、安心して出て行くこともできるし、交渉を拒否して出て行くこともできます。後者はお勧めしませんけれどね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "保証は？"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "私は祭司です。ここの村人と兵士たちは、信仰心の篤い方々ですから私の言葉には逆らえません。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "私はあなたたちがどういう人間かを知っている。あなたが今言ったような決まり事など聞いたことがない。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "ここは今、まさにサルゴンの部族と戦争の最中にあります。あなたがここからそう遠くない場所に住んでいたのなら、サルゴンの集落でも聞いたことがあるはず。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "……ここはアクロティの近くなの？"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "その通りです。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "そういえば、サルゴンからの来訪者よ、私はあなたのことを何と呼べばいいのですか……？"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "あなたの質問は受け付けません。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "うむ、それでは公平な対話ができませんよ。私にとってあまりにも不利です。"
     },
     {
@@ -657,840 +779,987 @@
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "あなたはさっき、私がミノスの領土で倒れていたため、このテントに運んで治療したと言いましたよね？"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "ええ。兵士に任せて容赦ない尋問を行わせるよりも、私が対応した方が少なくとも話し合いの余地が生まれるでしょうから。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "話し合い？"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "あなたとの話し合いのことです。若きサルゴンの戦士よ。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "あなたはミノスとサルゴンの国境付近で突然倒れ、空腹でお腹を鳴らしていたのです。背後に特に軍隊などは見当たらなかったので、あなたが攻め入ってきた敵ではないと判断しました。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "ここの首長は、ロクな輩ではなかったと記憶しています。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "戦争はあなたたちと彼らの間のことで、私とは関係ありません。私はただ、先を急いでいるだけです。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "ああ、やはり！　そういうことなら、武器を下ろしてください。私と対等に話し合いましょう。そうすれば、少なくとも私の誠意を余すことなく伝えられます。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "……あなたのお話はあまり理解できません。その、なんだか回りくどくて。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "うっ……兵士たちにも時々そういう文句を言われます。ですが私としては非常に不本意です。英雄殿では、人々から最も親しみやすい祭司と褒め讃えられているというのに……"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "……とにかく、私はあなたたちミノス軍関係者であろうと他の誰かであろうとお話するつもりはありません。今の私は、もうサルゴン軍の傭兵ではありませんから。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "すぐにここから去れるのなら、他のことはどうだっていいんです。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "そうですか。わかりました、そういうことなら――"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "（クゥ……）"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "……えーと。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "罪なき戦士よ、若くして密林の大地を勇ましく歩む旅人よ、まずは武器を下ろして食事をなさってはいかがです？"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "いりません……ううっ……！"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "焦って余計な体力を使う必要はありません。安心なさい、私は村の祭司、あなたの治療を担当するだけです。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "話がいい具合にまとまり、あなたがこのテントを出るまでは、私も外にいる兵士も、誰も勝手な真似は致しません。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "言いましたよね、あなたと話すことなんてありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "（グゥゥ……）"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "（ダメです、お腹が減りすぎてて……）"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "まずは食事をとりなさい、名も知らぬ旅人よ。武器は壊れていなくとも、身体が過度に弱っていては、戦士として安心できないでしょう？"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "あなたはこれまで、ミノス人と関わったことはないはず。せいぜい噂で聞いた程度でしょう。ミノスの兵士たちは命令が下されるまで一歩たりとも動くことはありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "彼らは皆とても礼儀正しいのですが、理解してほしいのは、戦争という特殊な状況ゆえに、あなたを用心するのは当然だということです。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "ならどうして私を助けたんですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "おそらくは私たちが培った一種の美徳によるものでしょう。善良さが時に客観的判断に融通を利かせるということもあります。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "……あなたの手にあるその武器は、どう説明するつもりですか。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "あっ……そうですね。あなたは似たような武器を扱ってますから、私が手にしている武器については、よく理解できるはずです。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "やっぱり……！"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "いいえ、まずは私の話を聞いてください。罪なき客人、あなたの武器は精巧に作られています。おそらくサルゴンの優れた職人の手によるものでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "あなたはその武器を大切に扱い、使い慣れてもいるでしょう。ですから私の武器を見れば、これがどのようにして使われるか、そして私がどれだけの実力なのかが判断できるはずです。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "あなたが私を疑っているように、私もあなたの正体に疑いを抱いていました。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "しかしあなたの今の様子を見れば、疲労困憊なのは明らかで、身に付けた装備は使い込まれ、持ち物も使い果たされています。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "それから最も注目すべき点は、あなたの武器に新しい傷がないことです。つまりあなたはここしばらく戦闘をしていないのでしょう。私にはあなたを恐れる必要がありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "……ということは、やはり戦いになるんですね。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "そうではありません。武器は私にとって交渉材料でも何でもないのです。ですから、私は武器を置きましょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "さあ、サルゴンの旅人、お願いですからいますぐ食事をして空腹を満たしなさい。あなたが私たちの本当の敵とは無関係だと、私はもう確信しています。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "これからどんな選択をするにせよ、あなたの体力を考えれば、このタダで美味しい朝食を無駄にするべきではありませんよ。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_village"
+    },
+    {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "……おう、やっと出てきたか。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "サルカズ……"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "どうした、俺の図体と角を見てビビったのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "なっ……！"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "嫌悪感に恐怖。ハッ、一目でそうやってビビっちまうような連中を*サルカズスラング*たくさん見てきたぜ。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "ご宥恕を、勇敢な戦士よ。あなたがここにいることには何の過ちもありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "フンッ、祭司がそう思ってるにしても、こいつはどうだろうな？　お前の話なんか聞き入れやしないだろ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "あの……祭司、テントの外はミノス兵が守っていると言ってませんでしたか？"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "とっくに飯に行っちまったぜ。飯を食ったら酒飲んで歌を歌って、詩も読んでからじゃないと戻って来ないだろ。だから俺みたいなサルカズが代わりに見張ってやってんだよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "ふむ、私の功徳はまだ足りなかったようですね。ミノスの兵士が思いやりのある人たちだということを見せたかったのですが……"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "会わずに済むならそれに越したことはありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "私は今すぐに立ち去ります。あなたたちの戦場をうろつくつもりはありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "ああ、もう行ってしまわれるのですか？　恐れ知らずの旅人よ。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "アクロティで一番有名な村は、ここからそう遠くありません。もしあなたが先を急ぐというのなら、そこだけでも立ち寄ってみれば、また違った楽しみが見つかるかもしれませんよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "必要ありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "げ、劇場や映画館もあるのですよ。それから美味しいミノス料理のレストランも――"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "興味、ない、です。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "ふむ、それでは、私たちの勇士が最も好む浴場はどうです？"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "……浴場？"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "やめとけ、あそこは男女混浴だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "絶対に嫌です。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "さ、祭司専用のお風呂も使えますよ。ほら、あなた長旅でホコリだらけですし、少し休んでいくくらい悪くはないでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "必要ないと言ってるじゃないですか！　私は……旅行してるんじゃないんです。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "私を知る人が少なければ少ないほどいいんです。何か嫌な予感がするので、すぐにここを去ろうと思います。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "ここはまだ、サルゴンから近すぎますから。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "ううっ……でも質素な身なりでありながら、こんなに可憐な異郷の少女なんて滅多にお目にかかれないのに……"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "え？"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "構う必要はない。この祭司は随分と長い間、昔暮らしてた大都市に帰れていなくてな。こんな辺ぴな片田舎で過ごして狂っちまいそうなんだ。こいつの話し方に我慢できてるだけでもお前はいい奴だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "アクロティの村は、たしかにお前が滞在するにはふさわしくない。何かから逃げていて、トラブルを起こしたくないって言うんなら、今立ち去るのが一番いい。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "ですが異郷人よ、あなたの目的地はどこなのです？　そこまで疲労を引きずりながら先を急ぐなんて、何か洗い流せない罪、あるいは重要な貴族の事情にでも関係しているのですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "どれも違います。私はただの……自由を得た傭兵です。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "目的地は重要ではありません。遠ければ遠いほどいい、だけです。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "ここから北へ行き、さらに東へと進むつもりです。ここは……この場所は、今の私が生きるにはふさわしくありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "荒野に戦場、それにサルゴン人……今の私はこれらと向き合いたくないんです。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "あぁ、可哀想に……つらく悲しい過去を背負った若者よ。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "せめてあなたの名前を残してお行きなさい。私が、あなたのために祈りましょう。あるいは、これから直面する危機や、幸福への啓示を探し求めましょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "それってサルゴン人にも効果はあるんですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "フンッ、俺は信じてねぇがな。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "（足を踏む）"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "いって……何すんだパラス……！"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "「パラス」？"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "（はぁ、名前がバレたらあなたのせいですよ、サルカズの勇士。）"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "記憶すべき名ではありませんよ、今のところは。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "でも、もしあなたがこんな話を聞いたことがあるなら――十二英雄の啓示を携えてミノスの国境に現れた一人の祭司が、ミノス人の尊厳と自由を守り、サルゴンの侵略に抗い、勝利をもたらす話を――"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "聞いたことがありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "コホン……そ、それはそうでしょう。今の戦争もまだ最終的な勝利が宣言されたわけではないですし。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "すみません。この名を告げるつもりはありませんでした。しかし、もしミノス人の伝説がサルゴン人にも伝えられて、私たちが互いにより理解し合えればどんなに素晴らしいことか――"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "そういう話は、次に来るサルゴン人に言ってあげてください。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "ううっ……わかりました。そういうことでしたら、サルゴンからの旅人に対し、手を振って別れのあいさつをすること以外、私たちにしてあげられることはありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "せめて、この正常に動くコンパスをあなたに差し上げましょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "あなたは未だ行き先が決まっていないようですが……しかし、前進こそが今のあなたの唯一の目的であり、過去のすべての苦しみから逃れる方法でもあります。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "前を向いて進むことは一種の選択――素晴らしき選択です。あなたならその途上で多くの助けを得ることができると信じています。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "あなたのために力を尽くし、最悪の危機からあなたを救い、死神の追跡からあなたを連れて逃げてくれるような善人が次に現れた時、あなたは再び決断を……あるいはその者と共に行きなさい。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "おい祭司、言葉に気をつけろ。お前が言ったそれらの苦難が、本当に彼女の身に降りかかったらどうするつもりだ？"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "お前の言葉は、意外と的中することがあるからな。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "構いません……どうでもいいことですから。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "旅の終りは、旅の途中で訪れるかもしれませんし。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "あなたが行く道は果てしなく長い。あなたのために祈りましょう、若者よ。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "あなたは戦士であり、勇敢で毅然とした勇士です。あなたの勇敢さは武器に、手足に、魂に刻まれています。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "たとえその瞳が濁ったとしても、それは一時のこと……雨風を受けた後、また再び透徹な姿を見せるでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "信用していただけるよう、心を尽くすほどの時をあなたにかけられない力不足を詫びさせてください。……今の私たちはお互いに、より重要な事柄があります。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヘビーレイン",
       "speakerId": "char_304_hvrain",
+      "isRemote": false,
       "text": "私はまだ十分に疑っていますけど。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "あなたも、私も、そこのかわいいサルカズの戦士も、私たちは皆、終わりなき旅路を歩んでいます。自らの魂を守るために、苦しみに耐えています。そして今、我々が一番に見据え目指すべきことは――"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "自分の居場所を見つけることです。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_coldforest"
+    },
+    {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "ほら、交代だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ミノス兵士",
       "speakerId": null,
+      "isRemote": false,
       "text": "ああ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ミノス兵士",
       "speakerId": null,
+      "isRemote": false,
       "text": "おい、サルカズ。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "なんだ？"
     },
     {
       "type": "dialogue",
       "speakerName": "ミノス兵士",
       "speakerId": null,
+      "isRemote": false,
       "text": "そろそろ俺たちにも名前を教えてくれたっていいんじゃないか？　それとも、「サルカズ」がお前の名前だってのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "名前など重要じゃない。お前たちは祭司を「女神」と呼び、彼女は自身を「祭司パラス」だと言うけど、じゃあ本当にそうなのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ミノス兵士",
       "speakerId": null,
+      "isRemote": false,
       "text": "好きにすればいいさ……ただ、この戦争が終わって、英雄たちを碑に刻み本に書き記す時、お前が歴史に残せるのは「サルカズ」っていう文字だけだぞ？"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "ハッ、その時まで生き延びてから言えよ！　お気楽なミノス人め！"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "（……）"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "（英雄として本に載るかどうかは、俺にとって重要じゃない。）"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "（俺がサルカズである限り、何をしようとサルカズとして扱われる……それで英雄のおこぼれに預かれるってんなら上等じゃねぇか。）"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "ん？"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "パラス祭司、なぜこんなところに？"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "ああ、サルカズさん。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "……その呼び方はやめろ。なぜお前まで見張りに立つ？　何か異常でもあったのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "大騒ぎするほどのことではありませんよ、おそらく。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "ただ、昼間のことが未だ心に残り、釈然としないのです。ここに来れば、知りたい答えが見つかるかもしれないと思っただけです。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "どうした、あの通りすがりのサルゴンのクランタ兵について、まだ考えてたのか？　あいつのどこが特別なんだ？"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "その逆ですよ。彼女はいたって普通です。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "普通だからこそ、誰に対しても不信感を露わにし、粗暴な振る舞いを見せ、まるで悪霊に追われているかのように、慌ただしく去って行きました。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "彼女は本来、あんなふうに他者に攻撃的な人間ではないはずです。そんな子を、あのように変えてしまうほど追い詰めるような重大な何かが起きた。そういった様子でした。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "サルカズさん、あなたは彼女に何が起きたと思いますか？"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "俺には関係のないことだ。それに俺はお前のように、他人に対してそこまで強い興味を引かれたりはしない。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "俺が今知りたいのは何故お前がここに来たかだけだ。俺に用があって来たのか、単にぶらぶらしてるだけなのか。気まぐれな「女神」様が何を考えているか教えてくれよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "シーッ。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "（刀を握る）"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "誰かそこにいるのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "あなたの言う通りです、サルカズさん。人の心というのは測り難いものです。そして、私と昼間出会ったクランタの旅人との関係も浅いものです。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "しかし、我々は彼女のすぐにも砕けてしまいそうな脆さを目撃しました――心の挫けた今こそ彼女が最も彷徨える時です。我々がしてやれることは少なく、体を満たす一食を与えるのが精一杯でした。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "しかし、しかしです。あの哀れなクランタの戦士、彼女が今求めているのは、己の運命をその手で握り締めることに他なりません。次の目的地を選ぶか、あるいはここで、自分で旅路の幕を引くか。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "いずれにせよ、彼女と私たちの目的は同じものです。自由を求め、それこそを使命とする。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "彼女の自由を奪った悪霊が、どれほど悪辣なものであるかは、想像もつきません。そして自分自身が、そんな悲惨な状況に直面するだなんて、信じることなど不可能です。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "あぁ「サルカズさん」、あなたはそんな境遇に心が痛みませんか？"
     },
     {
@@ -1500,24 +1769,28 @@
       "type": "dialogue",
       "speakerName": "サルカズ殺し屋",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "そのような境遇の中、私が事前に警告をすることで、もしかしたら今まさに起きようとしているこの争いに、直接的な終止符を打つことができるかもしれない――"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "招かれざる客よ、あなたは先刻の旅人とは違いますね。体中から血と罪の臭いがします。あなたは残忍な企図があり、弱者を標的にしようとしているのでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "あなたがミノスの神聖なる土地で遂行しようとしているその企みはあなたにとって狩りであり、自らの手柄になるであろう穢れた殺人行為でしょう。しかし、それは絶対に許されないことです。"
     },
     {
@@ -1531,102 +1804,119 @@
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ殺し屋",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ殺し屋",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "そこをどけ、同族。巫女よろしく、訳のわからねぇ話をうだうだと吐かしてるその女がうざったくねぇのか。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "お前には彼女の言ってる意味がわからないのか。それに彼女が今、何のために悲しんでいるのかも。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ殺し屋",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "俺にはやることがある。お前たちの戯言に付き合ってる暇はねぇ。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ殺し屋",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "俺がある「クランタの戦士」を探し出すのを阻止したいってことくらいはわかるぜ。俺が手がかりを手に入れる前に始末するタイミングを待っていたんだろ。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ殺し屋",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "だが同族よ、お前はなんだ。ここで何をしている？　俺のターゲットをかばおうってんなら、生きる道はねぇぜ。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "俺は傭兵だ、ミノス人に雇われてるのさ。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ殺し屋",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "へえ、そういうことなら俺たちは敵ってことにはならねぇな。俺もお前も金を貰って仕事をするだけだ。それぞれのな。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ殺し屋",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "その巫女の命は、お前の仕事の範疇か？"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "それはお前が気にすることじゃない。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ殺し屋",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "確かにな。俺の刀は一振りごとに高い値がつく。余計なエネルギーを使う必要はない。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ殺し屋",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "――そいつのくだらねぇ世迷言が俺を不快にさせない限りは、な。あるいは、そのフォルテの角をつかんで、あのクランタをさっさと見つけられる道を指し示してもらうとするか。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ殺し屋",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "おい、クランタがどこに行ったか知ってるんだろう。とっとと吐けば命乞いくらいは聞き入れてやるぞ。この巫女くずれが。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "……まったく、マナーもモラルもなっていない獣ですね。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "あなたは自分を薄汚い刀だと卑下して、いかなる訓戒も受け入れるつもりがない。そうでしょう？"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ殺し屋",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "*サルカズスラング*、もういい。同族よ、俺とお前の間に恨みなどないだろう。目をつぶって、そこをどけ。"
     },
     {
@@ -1640,78 +1930,91 @@
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ殺し屋",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "フッ、何のつもりだ？　サルカズでありながら、ミノス人の洗礼を受け、尊敬されるボディーガードになれるとでも思っているのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ傭兵",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "祭司とは関係ない。ただ、お前が受けたその仕事があまりにもクソすぎるんでな。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ殺し屋",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "お前はこういう汚れ仕事をしたことがないとでも言うのか？　正直に言ってやる、お前では俺に勝てない。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "いいえ、野蛮な侵入者よ、邪悪な追跡者よ、あなたは盲目的に尊大であるがゆえに、敗北するでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "英雄は座して死を待つことなどありません。悪魔が獲物を追うことを放ってはおきませんし、思い通りにさせることもないのです。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "あなたは金と権力に目がくらんで、迫害や殺戮がどれほど卑劣で、恥ずべき行為であるかを、とうの昔に忘れてしまったようですね。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ殺し屋",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "大口を叩けるのも今のうちだけだ。まぁ、お前の情報が確かなら、角一本で勘弁してやるよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ殺し屋",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "正直、脱走兵一人を「片づける」ために俺を雇うなんて、もったいないとは俺も思うがな。ミノス人の首を持ち帰った方が、もっと賞金がもらえるんじゃねぇのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "私を侮辱したからには、悪魔に惑わされたあなたの心に対し、最後に残していた哀れみは捨て去ることに致します。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "残忍な殺し屋よ、あの旅人の安全のため、私はあなたを生かしてはおきません。"
     },
     {
       "type": "dialogue",
       "speakerName": "パラス",
       "speakerId": "avg_482_pallas_1",
+      "isRemote": false,
       "text": "惨めで、憐れむべきサルカズの兵士たちよ。かつて混沌としていたあなたたちの心は、今や重なることなく、全く異なる二つの道を歩み始めました。"
     },
     {
       "type": "dialogue",
       "speakerName": "サルカズ殺し屋",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "サルカズにあるのは一つの結末だけだ。救いなんぞねぇ。巫女が、これ以上うだうだ吐かすんじゃねぇ、くらえ！"
     },
     {

@@ -6,10 +6,14 @@
   "title": "火山",
   "storyCode": null,
   "avgTag": "幕間",
-  "sourcePath": "vendor/ArknightsGamedata/jp/gamedata/story/obt/memory/story_amgoat_2_1.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/jp/gamedata/story/obt/memory/story_amgoat_2_1.txt",
   "sourceHash": "687bcfa36bef1d9a7f80661e03133731d0e655245953864bf39381970c04f8cc",
   "bodyAvailable": true,
   "blocks": [
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
     {
       "type": "narration",
       "text": "p.m. 4:32 天気/曇天\nリターニア北部荒原 火山帯サンプリングポイント7番\n……ご安心ください、任務は順調に進行し、現在、最終段階です。エイヤフィヤトラさんは疲労が蓄積しているようですが、状態そのものは安定しています。\n今回の調査の具体的な結果はまだ判明していませんが、エイヤフィヤトラさんの反応から見ると、画期的とは言い難いものの、多少の発見はあるようです。\n帰路においても、引き続き彼女の安全を優先します。"
@@ -18,169 +22,204 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_desert_3"
+    },
+    {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "バティさん？"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "え……ああっ！　エイヤフィヤトラさん、どうかされましたか？"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "ええと……ここから見て、左前方の一番近くにあるサンプリングポイントの装置が動いてしまったみたいなんです。リアルタイムデータの背景ノイズに少し問題が……"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "何があったか現場を確認してきてもらえませんか？"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "す……すみませんでした！"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "え？　どうしたんです？"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "さっき俺が触った時に動いてしまったんだと思います！　本当にすみませ……あっ。その、触ったのも、けっ、決してわざとデータを見ようとしてたわけでは――"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "えっと……バティさんはデータを見ようとしていたんです？"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "ゴホッ、ゴホゴホゴホッ……。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "なるほど……そういうことなら大丈夫です。風が強くて勝手に動いてしまったのなら問題ですが、この様子なら他のサンプリング装置に影響もないようですし、点検も必要ないでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "え……どうして？　どうして怒らないんですか。"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "エイヤフィヤトラさんは、俺がわかりもしないのに勝手にデータを覗いたことを、怒ったりしないんですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "……お……ないんですか？　私、ちゃんと聞き取れてるでしょうか……おかしいと思わないんですかって聞いてるんですよね？"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "言われてみれば、確かに少し不思議ですけど……まさかバティさんがこの研究データに興味があるなんて、これまで思いもしませんでしたから。"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "ハハッ……でしょう。俺みたいな学がない奴だと特にね。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "いや、そんなことはありませんよ。そういうことじゃなくて……"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "火山の研究って地味でしょう？　ほとんどの場合はこうして荒地で一日中座って観察するだけ、その後も分析したデータとずっと睨めっこですし。味気なくて普通の方はつまらなく感じるものですから。"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "そんなことを言ったら……この世の大多数の人たちの生活こそ、味気なくてつまらないものですよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "起きて、生きるために仕事をして、家に帰って食事をして、最後に寝る。毎日毎日ただその繰り返しです。"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "それに比べれば、エイヤフィヤトラさんのような学者は、いつも新しいことに取り組んでる。その方がずっと意義がありますって！"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "……笑いましたね。バカなこと言ってすみません。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "あっ、違いますよ。今のバティさんの話し方が、学校の時の知り合いにちょっと似ていたので、思い出して笑ってしまっただけです。"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "あー。まあ、俺も昔、大学の人とは何度か関わったことがありますからね。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "え？　バティさんはずっと警備のお仕事をされていたんじゃないんですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "仕事としてはそうなんですが、まあずっと前のことですよ。あの時俺は、ある若い教員のおかげで、最初の仕事を手に入れたんです。"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "彼には、随分とお世話になりました。おかげで、研究には意義があるということに気づかされました。それになんというか……簡単ではないということも。そう、研究は簡単なことじゃないですね。"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
     },
     {
       "type": "narration",
@@ -190,229 +229,274 @@
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "そう……カーンさんからの手紙にはこう書かれていた。"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "出発前にケルシー先生にこの手紙を渡された。でもあの人はきっとわかっていたと思う。誰に何も言われなくても、俺はエイヤフィヤトラさんをちゃんと守ると。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_desert_3"
+    },
+    {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "そ、そういえば……エイヤフィヤトラさんが初めて火山のフィールドワークに出たのって、ずっと前みたいですけど、いつ頃なんですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "そうですね。初めてのフィールドワークは……三年くらい前だったと思いますよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "えぇ、三年も前って、まだ子供だったんじゃないんですか！？"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "（小声）研究機関って、そんなにブラックなのか？　それに親御さんも……"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "バティさん？　今は補聴器が正常に作動してるので、ちゃんと聞こえちゃってますよ？"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "あぁっ、俺が言ったのはロドスのことじゃなくてですね……ご、誤解しないでくださいよ！？"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "ふふ、冗談です。分かってるから大丈夫ですよ。実のところ、ヴィルヘルム大学も違うんですけどね。当時、あまりにも幼いということで、私のフィールドワークへの参加は容認されませんでした。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "ただ、両親が残した資料に、私にしか読み解けない部分があって――"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "プロジェクトを中断してほしくなかったんです。両親もきっと中断を望まないだろうと思っていました。だから私の方からフィールドワークに参加するんだって言い張ったんです。"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "両親……そういえばそうでした！　ご両親はもう……すみません、辛い話をさせてしまって。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "気にしなくても大丈夫ですよ、もう、ずっと前のことですから。"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "……もしかして、火山が原因ですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "はい……火山はそもそも、とても危険なものですから。小さい頃から母は私にこう言ってました。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "――ほんの少しの炎があれば家の一つくらい簡単に呑み込める。火山は、そんな炎のエネルギーをお腹にいっぱい蓄えた巨大なモンスターなんだと。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "その巨大なモンスターは何も考えていないかもしれない。でもそれが口を大きく開けて、呼吸したり咳をしたりすれば――たったそれだけで、大地そのものが変わってしまうと。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "思い出すと笑ってしまうのですが、あの頃、私は両親の仕事をきちんと理解できていませんでした。二人は大きなモンスターに立ち向かう勇者なんだって、そう思ってたんです。"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "でもそれ案外合ってるんじゃ？　ご両親は火山の危険性は十分知ってたわけじゃないですか。それでも行くって相当の勇気が必要ですよ？　きっと勇者みたいに強い方々だったんですね。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "……怖いとも思いますよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "初めて生の火山を目にした時、私の目はまだハッキリと見えていました。耳も何の問題もなくて、音をしっかりと捉えていました。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "視界が一瞬で真っ赤に染まったことも、鼓膜が轟音でつんざかれたことも、はっきり覚えています。まるで本物のモンスターが大地を突き破って、雄叫びを上げ、目の前まで迫ってくるようでした。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "本で読んだのとも、絵で見たのとも、それまで想像してたのとはまるで違う……火山は、本当に生きた巨大なモンスターそのものでした。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "私の足は、凍り付いたように全く動かなくなりました。呼吸をすることすら怖かった。耐え切れなくなった肺が酸素を求めて、思わず息を吸ったら涙が出るほど咳き込みました。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "私はその瞬間になって、初めて分かったんです。"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "……分かった？"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "はい。たくさんのことが分かったんです。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "フィールドワークに行く前、どうして母はいつも私の小さなベッドに入り込んできて、私が眠りにつくまでぎゅっと抱きしめてくれていたのか。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "どうして父はフィールドワークから帰ってきた時にいつも、資料を整理しながら、私の頭を撫でて「本当によかった」と言い続けていたのか。きっと……おんなじだったんです。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "父も母も、あの瞬間に私が感じた怖さを同じように感じていた。特別強かったわけではなくて、ただ、目指す先のために、いつだって勇気を持って全てを乗り越えていた。そういうことだったんです。"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "……素晴らしい方々だったんですね。だから、エイヤフィヤトラさんも研究を続けるんですか？　研究から離れることは考えなかったんですか。"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "事故で我が子が川に呑み込まれてしまった親が、川を恨みに恨んで以後決して川に近付かなくなったとか、そういう類の話は山ほど聞いたことがあります。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "似たような話なら……私も聞いたことがあるような気がします。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "両親が事故に遭った次の日から、いろんな人たちが訪ねて来てくれました。特に私が火山のフィールドワークチームに入りたいと言い出した後はすごかったんです。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "もちろん、みなさんが言いたかったことは理解していますし、感謝もしています。私が理性を失ってバカなことをしでかさないか、心配してくれていたんですよね。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "私にいつものように学校に行って、普通の暮らしをすることを望んでいるのは理解していました。でも、それができませんでした。"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "エイヤフィヤトラさんは……恨んでないんですか？"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
     },
     {
       "type": "narration",
@@ -422,315 +506,371 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_desert_3"
+    },
+    {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "火山は、あなたの両親を奪い、さらには……あなたの病の原因でもある……"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "うーん……どうなんでしょうね？"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "恨んでいないのか、と聞かれたら……やはり少しは恨んでいます。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "あ、いえ、少し違いますね。どちらかというと哀しんでいると言うべきですね。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "私は両親……お父さんとお母さんが恋しいです。二人の事故を聞いた時、信じられなくて、ずっとそれが嘘だと自分に言い聞かせていました。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "だって、お父さんのアーツはあんなにすごくて……お母さんは何度も無事に帰ってきたんだから……"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "あれから数日の夜、私は意識が混濁していてずっと眠りについていました。でも夢の中で想像してた火山を見て、泣き喚きながら目を覚ますんです……バティさんの言うほど、私はすごくないんです。"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "そんなことない！　同じ目にあったら誰だってそうなりますよ！　ましてやエイヤフィヤトラさんはあんなに小さかったんですよ！"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "そうですね……幼かったです。今思うと、フィールドワークで泣きべそをかいてる女の子の面倒を見ていた考察隊のみなさんは、本当に大変だったでしょうね。とても迷惑だったと思います。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "うーん……もっと感謝を伝えるべきでした。なんで今まで気が付かなかったんだろう。手紙ならいつでも出せるのに。"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "ハハッ……手紙ですか。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "本当にお世話になったんです。そして不思議なことに、初めて火山を目にしてから悪夢が減り始めたんです。精神状態が徐々に安定してきたらしいです。"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "え？　でもさっきは恐怖を感じるって言ってませんでしたか？"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "怖いのは怖いんですけど。でもそれ以外にも、たくさんの感情が混在していて……波紋ひとつない水面のような静けさを感じる時もあるんです。きっと誰にも理解してもらえないと思いますけど。"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "水面のような静けさですか……？　確かに……想像できませんね。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "こんな気持ちになるのも、やはり両親の影響かもしれません。火山を見るとどうしても思い出してしまうんですけど、でもやっぱり思うんですよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "私は二人と、そして過去のたくさんの学者たちと同じものをいま相手にしているって。何百年後でもきっと同じ――この赤いマグマはいつだって変わらず、未知のモンスターなんです。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "たとえ私が病気でなかったとして……もっと長い一生があるものだとして、その全部を研究に費やしたとして、そうだとして目の前の巨大なモンスターのことを、どれだけ知ることができるでしょう？"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "「どうしてお父さんとお母さんは学者さんになったの？」「どうしてお父さんとお母さんは私を残して死んじゃったの？」"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "これらの問いは……目の前にある未だ解かれぬ謎と比べれば、そんなに重要なものでないと思うようになったんです。私に残されている時間はごくごくわずかですから。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "私には、尻込みする言い訳を考えたり、悲しんで恐れ続けて、立ち止まったり、そんな時間ないんです。"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "……エイヤフィヤトラさん。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "きっとお母さんもお父さんも、応援してくれているはずです……二人が残してくれた資料を持って、二人の思いを抱えて、私は二人が歩いた道の先へ行きます。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "この道の上では、二人がすごく近くに感じられるんです。まるで、ほんのちょっと前で、私を導いてくれているみたいに。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "いつか……いつか私がこの世を去る時が来たら、今度は私の研究成果を、誰かが引き継いでくれるでしょうか。それを持って前へ進み続けてくれるでしょうか。"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "はい。きっと。とめどなく受け継がれていく真理の探究の中で、あなたはご両親と一緒に、永遠に生き続けるんだと思います。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "えっ……永遠ですか？　そんなこと、考えたことなかったんですけど……ケホッケホッ……"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "ああ、風がまた強くなってきたみたいですね。"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "少しこちらに寄ってください、あまり風に当たると大変ですから。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "ケホケホッ……ありがとうございます。だいぶマシになりました。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "なんだかたくさん話しちゃいましたけど、バティさん、誤解しないでくださいね……さっきも言いましたけど、私はそんなに立派じゃないんです。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "できないことの方が多くて……私はいつも……いつも病気になる前にフィールドワークに出た時のことを思い出してしまうんです。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "すごく丈夫だったわけではありませんが、あの頃は今よりもずっと体調が良くて……少なくともちゃんと歩けて、人に迷惑をかけることはありませんでした。いつもごめんなさい。"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "いやいや、迷惑だなんて思ってませんよ。エイヤフィヤトラさんはすごいです。あなたは、ご自分が思っているよりずっと立派です。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "えっと……その、ありがとうございます。ところで、なんだかまた寒くなってきて……か、風が強くなっていませんか？"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "ううっ……耐寒装備はもう全部身に着けてるのに……手足の震えが止まりません。"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "え、そうなんですか？　エイヤフィヤトラさんの周りは熱く感じるのに、意外と寒がりなんですね？"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "それはおそらく……寒いと感じて、無意識のうちにアーツを使ってしまっているんだと思います。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "すみません、もし火傷などしたくなかったら、私から少し離れてください。"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "いや、大丈夫です。それよりエイヤフィヤトラさんはどうですか？　寒くなくなるのなら、温度が高くても俺は平気です。気にしないでください。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "……そこまで大きな効果はなくて、せいぜい気休め程度なんです。先程から使っていても結局ほら、ブルブル震えてみっともない姿を見せちゃってますし。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "キャプリニーですし、こういうアーツも持ってるのに、こんなに寒がりだなんて、おかしいですよね？"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "前は……前はちっとも寒がりじゃなかったんですけど。"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "だ、大丈夫ですよ！　次は、もっと耐寒装備を増やせばいいんですから！"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "……そうですね、そうしましょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "それと補聴器もしっかり調整しておかないと。いつも中途半端にしか話が聞けないとか、バティさんも困っちゃいますよね？"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "あの、エイヤフィヤトラさん……言いにくいんですが、その……足が……"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "え？　私の足？　どうかしましたか？"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "……あれ？　これ、勝手に動いちゃってますね。"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "ハハッ、リズムでも取ってるんですか？　歌いたいってわざわざ離れて座ったっていうのに、ここまであいつの歌声が聞こえてくるもんだから。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "ん？"
     },
     {
@@ -747,28 +887,36 @@
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "不思議な旋律ですね。聴こえているはずなのに……聴こえていないような。"
     },
     {
       "type": "dialogue",
       "speakerName": "エイヤフィヤトラ",
       "speakerId": "char_180_amgoat",
+      "isRemote": false,
       "text": "うーん……でも、なんだろう？　子供の頃に聞いたことがあるような懐かしい歌。ずっと頭の中で響き続けるような。ひょっとして……"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "足だけじゃなくて、今度は釣られて歌い出した……"
     },
     {
       "type": "dialogue",
       "speakerName": "バティ",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "ただ、こういうのは悪くないな。エイヤフィヤトラさんも楽しそうだし、なんだか落ち着く。とてもいい気分だ。"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
     },
     {
       "type": "narration",

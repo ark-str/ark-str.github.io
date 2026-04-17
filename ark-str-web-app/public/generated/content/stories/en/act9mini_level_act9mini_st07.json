@@ -6,7 +6,7 @@
   "title": "Drifting in the Wind",
   "storyCode": "",
   "avgTag": "Interlude",
-  "sourcePath": "vendor/ArknightsGamedata/en/gamedata/story/activities/act9mini/level_act9mini_st07.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/en/gamedata/story/activities/act9mini/level_act9mini_st07.txt",
   "sourceHash": "a90452b7172ff063c905c41ca67d31a5746de5b3f0770853d378f81eb37e3cdb",
   "bodyAvailable": true,
   "blocks": [
@@ -16,6 +16,10 @@
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_kxstreet"
     },
     {
       "type": "narration",
@@ -28,6 +32,7 @@
       "type": "dialogue",
       "speakerName": "Knight Scout",
       "speakerId": "avg_npc_223",
+      "isRemote": false,
       "text": "Miss Centaurea, would you be interested trying out for my company's knight preliminaries?"
     },
     {
@@ -38,6 +43,10 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_23_G09"
+    },
+    {
       "type": "narration",
       "text": "In the end, I got second place in Rose Paper's knight prelims that year, and I landed myself the contract of my dreams.\nAs for the one who got first place? It was a blond man who stank of sunshine...\nHow do I put it? He's the perfect Kazimierz ideal of the Kuranta. He comes from a pretty decent background too. Maybe Rose picked him to be their champion up front.\nEven if not, it would've been tough to beat him in the large-scale prelims.\nAt least, I didn't stand a chance in the polls.\nOh well, no reason to complain about that.\nThere's a long road ahead. Who knows? I might get my knight title before him."
     },
@@ -45,33 +54,42 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_arena_1"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Manager",
       "speakerId": "avg_npc_222",
+      "isRemote": false,
       "text": "Rest easy, Miss Centaurea. You'll get a title this time."
     },
     {
       "type": "dialogue",
       "speakerName": "Manager",
       "speakerId": "avg_npc_222",
+      "isRemote": false,
       "text": "I've already confirmed with headquarters. Right now, out of all the contracted independent knights, you have the highest priority."
     },
     {
       "type": "dialogue",
       "speakerName": "Manager",
       "speakerId": "avg_npc_222",
+      "isRemote": false,
       "text": "You might get a little less matches than before, but we'll arrange for you to get more media time."
     },
     {
       "type": "dialogue",
       "speakerName": "Manager",
       "speakerId": "avg_npc_222",
+      "isRemote": false,
       "text": "Just wait a few months. Once you get your title, you'll be the foremost titled knight of your class at Rose."
     },
     {
       "type": "dialogue",
       "speakerName": "Centaurea",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "Hm, alright. Thanks."
     },
     {
@@ -82,11 +100,19 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_hotel"
+    },
+    {
       "type": "narration",
       "text": "What's the deal with this Kuranta today?\nI was already pretending to be exhausted, even signaled to the referee that I was out, but he kept attacking.\nSome kind of victor's spoils? He knew he was gonna win and he still treated me like a pet fowlbeast, chasing me all over the arena just to humiliate me.\nIf... If I didn't have to pretend I was hurt, then I'd have—\n......\nI guess Dad was right. Getting humiliated in the arena is part of being a knight.\nLike, if you won't be humiliated, you've only got two choices. You beat everyone down, legit, under the rules—\n—or you disappear without a trace after showing up on the news."
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_arena_1"
     },
     {
       "type": "narration",
@@ -110,6 +136,10 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_hotel"
+    },
+    {
       "type": "narration",
       "text": "Not long after that incident, I get a phone call."
     },
@@ -127,36 +157,42 @@
       "type": "dialogue",
       "speakerName": "Centaurea",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "Phew... Hello."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "Good afternoon, Independent Knight Centaurea. Congratulations on your forthcoming title."
     },
     {
       "type": "dialogue",
       "speakerName": "Centaurea",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "I have no idea how you got my number, but if you're calling about business, talk to my manager. Thanks."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "It doesn't sound like you are very fond of your job. I can hear the exhaustion."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "I can offer you a job that's far more suitable."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "You only need to pass a simple test, and the job will be yours."
     },
     {
@@ -167,30 +203,35 @@
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "The arena's too small for you, isn't it?"
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "By the time you release your bowstring, the arrow has already made it to the other end of the arena."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "With the job I'm offering, you will find the salary as satisfactory as that you've received as a knight, and you will also have much more freedom."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "If you like, Miss Centaurea, your arrows could pierce even the night skies of the Grand Knight Territory."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "I await your reply."
     },
     {
@@ -201,11 +242,19 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_23_G07"
+    },
+    {
       "type": "narration",
       "text": "I made my way to the address. A flower shop. When the owner noticed me, he hands me a bouquet.\nThe bouquet has a note. Another address along with some information and a name.\nIt's the name of my last opponent. The bad-mannered Kuranta.\nThere's also an arrow hidden inside the bouquet. A military-grade, rhombus-shaped arrow. No manufacturer or serial number listed.\nIf I'm allowed to see all this, I must already have this organization's trust, if only a bit.\nBut it also means I have no actual choice.\nCould I go back and be a regular knight after getting 'their' invitation?\nIt's either completing their test or showing up in the next day's newspapers.\nI can already imagine the headlines—'Independent Knight Centaurea Dies at Home in Freak Accident.'\nHmph, no real choice at all..."
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_23_G05"
     },
     {
       "type": "narration",
@@ -232,64 +281,78 @@
       "type": "dialogue",
       "speakerName": "Centaurea",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "Hello."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "Wonderful work, Miss Centaurea. You masterfully gathered your intel and picked the finest vantage point from which to carry out your mission. Superb execution, considering your age and talents."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "From here on out, you are part of the Armorless Union."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "We've concluded our negotiations with the Rose Paper Union too. They agreed to terminate your contract, and you will receive a mental health compensation payout."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "Please come to the General Chamber of Commerce's headquarters tomorrow morning. Someone will meet you there for the follow-up arrangements."
     },
     {
       "type": "dialogue",
       "speakerName": "Centaurea",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "Alright."
     },
     {
       "type": "dialogue",
       "speakerName": "Centaurea",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "So what should I call you?"
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "You may call me—"
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "Platinum."
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_23_G03"
     },
     {
       "type": "narration",
@@ -299,6 +362,10 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_23_G03"
+    },
+    {
       "type": "narration",
       "text": "After three months, the people have long forgotten there was ever an independent knight called Centaurea.\nHer manager has already been reassigned to other knights who made it through the preliminaries.\nHer fans turned their eyes to the luster of other knights.\nEven the girl who was once her greatest fan, the girl who once camped outside her door every single day just to catch a glimpse of her, already joined another knight's fan club.\nEven when they walked past each other, it seemed like the girl didn't recognize the woman who had once been her idol.\nIt was as though she never existed.\nForgotten so soon after shining so brightly.\nMaybe that's the fate of all knights.\nBut being in the Armorless Union is different. They hold a knight's life and death in their hands. Even the most prideful knights are afraid to speak up before them.\nThat is, as long as we don't mess up the jobs the bosses hand down to us.\nAfter all... K.G.C.C.'s directors don't like seeing the words 'mission failed' on their reports.\nAnd if we do screw it up, even Platinum himself gets an earful."
     },
@@ -306,69 +373,84 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_23_G03"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Spokesman",
       "speakerId": "avg_npc_216",
+      "isRemote": false,
       "text": "That's how the Armorless Union works?"
     },
     {
       "type": "dialogue",
       "speakerName": "Armorless Union Member",
       "speakerId": "avg_npc_216",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Spokesman",
       "speakerId": "avg_npc_216",
+      "isRemote": false,
       "text": "I'm sure I was clear that there's nothing more important than intel!"
     },
     {
       "type": "dialogue",
       "speakerName": "Spokesman",
       "speakerId": "avg_npc_216",
+      "isRemote": false,
       "text": "I don't care whether that knight's dead or alive, but you let him send out top secret intel?"
     },
     {
       "type": "dialogue",
       "speakerName": "Centaurea",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Spokesman",
       "speakerId": "avg_npc_216",
+      "isRemote": false,
       "text": "'The target planted fake transmitters to deceive our assets and hid a miniature transmitter with his body, allowing it to send out information'?"
     },
     {
       "type": "dialogue",
       "speakerName": "Spokesman",
       "speakerId": "avg_npc_216",
+      "isRemote": false,
       "text": "You couldn't have been more careless, could you?"
     },
     {
       "type": "dialogue",
       "speakerName": "Spokesman",
       "speakerId": "avg_npc_216",
+      "isRemote": false,
       "text": "You took care of the guy, but what about the problem?!"
     },
     {
       "type": "dialogue",
       "speakerName": "Spokesman",
       "speakerId": "avg_npc_216",
+      "isRemote": false,
       "text": "Have you taken care of my problem?!"
     },
     {
       "type": "dialogue",
       "speakerName": "Armorless Union Member",
       "speakerId": "avg_npc_216",
+      "isRemote": false,
       "text": "(Purses lips)"
     },
     {
       "type": "dialogue",
       "speakerName": "Centaurea",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "(Looks at Platinum)"
     },
     {
@@ -377,6 +459,10 @@
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_23_G07"
     },
     {
       "type": "narration",
@@ -389,78 +475,91 @@
       "type": "dialogue",
       "speakerName": "'Lazurite'",
       "speakerId": "avg_npc_209_1",
+      "isRemote": false,
       "text": "My little pegasus, I'm looking for Platinum. Have you seen him?"
     },
     {
       "type": "dialogue",
       "speakerName": "Centaurea",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "My master's out on a mission right now, Lazurite."
     },
     {
       "type": "dialogue",
       "speakerName": "'Lazurite'",
       "speakerId": "avg_npc_209_1",
+      "isRemote": false,
       "text": "Haha, is he now?"
     },
     {
       "type": "dialogue",
       "speakerName": "'Lazurite'",
       "speakerId": "avg_npc_209_1",
+      "isRemote": false,
       "text": "What sort of mission?"
     },
     {
       "type": "dialogue",
       "speakerName": "Centaurea",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "He didn't tell me."
     },
     {
       "type": "dialogue",
       "speakerName": "'Lazurite'",
       "speakerId": "avg_npc_209_1",
+      "isRemote": false,
       "text": "Then did he tell you he had doubts about this mission?"
     },
     {
       "type": "dialogue",
       "speakerName": "Centaurea",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "No, he didn't, but I kind of sensed it."
     },
     {
       "type": "dialogue",
       "speakerName": "'Lazurite'",
       "speakerId": "avg_npc_209_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "'Lazurite'",
       "speakerId": "avg_npc_209_1",
+      "isRemote": false,
       "text": "You're an honest one, little pegasus."
     },
     {
       "type": "dialogue",
       "speakerName": "'Lazurite'",
       "speakerId": "avg_npc_209_1",
+      "isRemote": false,
       "text": "Well, since you shared what you know about Platinum with me, let me tell you what I know as well."
     },
     {
       "type": "dialogue",
       "speakerName": "'Lazurite'",
       "speakerId": "avg_npc_209_1",
+      "isRemote": false,
       "text": "'Platinum' is dead. On the path of betrayal, even."
     },
     {
       "type": "dialogue",
       "speakerName": "Centaurea",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "!"
     },
     {
       "type": "dialogue",
       "speakerName": "Centaurea",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "......"
     },
     {
@@ -471,18 +570,21 @@
       "type": "dialogue",
       "speakerName": "'Lazurite'",
       "speakerId": "avg_npc_209_1",
+      "isRemote": false,
       "text": "You see, it would be very inconvenient for this position to go unfilled, both for me, the Darksteels, and the General Chamber of Commerce directors."
     },
     {
       "type": "dialogue",
       "speakerName": "'Lazurite'",
       "speakerId": "avg_npc_209_1",
+      "isRemote": false,
       "text": "How about this, little pegasus?"
     },
     {
       "type": "dialogue",
       "speakerName": "'Lazurite'",
       "speakerId": "avg_npc_209_1",
+      "isRemote": false,
       "text": "Why don't you be the next Platinum?"
     },
     {
@@ -493,12 +595,14 @@
       "type": "dialogue",
       "speakerName": "'Lazurite'",
       "speakerId": "avg_npc_209_1",
+      "isRemote": false,
       "text": "Silence means yes."
     },
     {
       "type": "dialogue",
       "speakerName": "'Lazurite'",
       "speakerId": "avg_npc_209_1",
+      "isRemote": false,
       "text": "Do your new job well, Platinum."
     },
     {
@@ -512,11 +616,19 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_23_G03"
+    },
+    {
       "type": "narration",
       "text": "It wasn't until I became Platinum that I understood how hard things were for him.\nEvery day, the K.G.C.C.'s directors dish out difficult assignments to the Armorless Union.\nThe Lazurites take care of the top priority missions themselves, while Platinum has to both assist the Lazurites and assign hands to take care of the directors' other problems.\nPlatinum has to manage, command, and take to the field personally. There's no more tiring job in Kazimierz.\nThankfully, everything he taught me came in handy.\nAfter I made a few mistakes and got yelled at by the spokespeople a few times, I started to get the hang of things, and, just barely, I'm finally a decent Platinum.\nIf I could quit, I would hand in my resignation to the K.G.C.C. the first opportunity I got.\nWith so much responsibility and risk, plus how exhausting it is, who'd want a job like this?\nBut, you know, I don't have a choice here.\n*Sigh*..."
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_23_G07"
     },
     {
       "type": "narration",
@@ -529,84 +641,98 @@
       "type": "dialogue",
       "speakerName": "Platinum",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "Go ahead."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "Hello, Platinum. We have a secret mission for you. Please see to it immediately."
     },
     {
       "type": "dialogue",
       "speakerName": "Platinum",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "Hmph... Go ahead."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "We want you to make sure that Glorious Shield Industries' Chairman doesn't attend the General Chamber of Commerce's board meeting tomorrow."
     },
     {
       "type": "dialogue",
       "speakerName": "Platinum",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "Y-You mean...?"
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "Right, and we would prefer that he has no more involvement in Glorious Shield Industries' affairs in the future."
     },
     {
       "type": "dialogue",
       "speakerName": "Platinum",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "I don't think I'm allowed to go after someone that high up."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "This mission was originally meant for the Lazurites, but they recommended you for the job."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "That's why your phone rang."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "Here is the mission authorization passcode—"
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "Please confirm."
     },
     {
       "type": "dialogue",
       "speakerName": "Platinum",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "Confirmed... It's a match."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "Very good."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "Do not disappoint us."
     },
     {
@@ -620,11 +746,19 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_23_G07"
+    },
+    {
       "type": "narration",
       "text": "To make sure the Chairman has no way out, I stationed an Armorless Union squad around his children before heading to the company.\nThen, I waltzed in through the front door.\nJust as Lazurite said, Glorious Shield HQ is all prepped and ready.\nThe lobby doors are wide open. The security guards are away, all the detectors are undergoing maintenance, and there's a temporary card key in the most conspicuous spot on the front desk counter. And that card key—\nIt has access to the top floor, where the Chairman's lounge is."
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_ltroom"
     },
     {
       "type": "narration",
@@ -634,8 +768,19 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_23_G07"
+    },
+    {
       "type": "narration",
       "text": "When I was still a student, I admired the knights.\nAfter I became a knight, I learned the secret of the Knight-Assassins.\nThese days, as one of the Armorless Union's leaders, I still have to listen to every word the K.G.C.C. directors say.\nAnd now, by pure coincidence, I've offed one of their directors.\nMy parents once said. My sharp eyes will bring honor and glory to my family.\nBut what am I seeing with these eyes now?\nI see the vast, dark wilderness beyond the borders of the Grand Knight Territory.\nI see the colorful neon lights emblazoning the whole Territory.\nI also see the General Chamber of Commerce headquarters in the dead center, towering above everything.\nAnd the radiant night sky above it.\nAs long as I can see, I can understand.\nStill...\nAbove these pillars of capitalism and beneath the earth that the city drives over, there are a pair of invisible hands puppeteering the directors.\nCompelling them to stack bricks, tiles, and steel to the tops of those buildings, adding ever more to the tower called Kazimierz.\nBut like the puppets they are, if they don't keep their masters happy, they get replaced.\nHe's not the first, and he's definitely not the last.\nThrough the General Chamber of Commerce, this pair of hands can reach anywhere in Kazimierz.\nAnd you can never escape them, so long as you walk the world."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_ltroom"
     },
     {
       "type": "sceneBreak"
@@ -644,24 +789,28 @@
       "type": "dialogue",
       "speakerName": "Platinum",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "Hmph..."
     },
     {
       "type": "dialogue",
       "speakerName": "Platinum",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "*Sigh*... Can't I at least get a little time to veg out...?"
     },
     {
       "type": "dialogue",
       "speakerName": "Platinum",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "I'm so tired..."
     },
     {
       "type": "dialogue",
       "speakerName": "Platinum",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "I want a vacation..."
     },
     {

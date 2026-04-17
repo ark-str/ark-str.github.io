@@ -6,10 +6,14 @@
   "title": "Early Seeding",
   "storyCode": "HS-3",
   "avgTag": "Before Operation",
-  "sourcePath": "vendor/ArknightsGamedata/en/gamedata/story/activities/act31side/level_act31side_03_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/en/gamedata/story/activities/act31side/level_act31side_03_beg.txt",
   "sourceHash": "fed2b7f3d454bcb0cfc89739efcf9355d7177f21853985039a7c11f43f33f387",
   "bodyAvailable": true,
   "blocks": [
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
     {
       "type": "narration",
       "text": "My dear sister.\nTraveling with the gentleman has taught me that the lands beyond are very different from Dahuang. Humans have invented many new things in just a few decades.\nThere are all kinds of cities in Yan, more than just fields as far as the eye can see. There are glamorous palaces and busy markets, and so many more fascinating things.\nI'm just coming back for a little break. Then I'll go out on a long journey again. I don't know how many years it will be.\nDahuang isn't the backwater hovel it once was. There are many people who can take care of these fields for you. Are you sure you don't want to go and see with me?"
@@ -25,33 +29,42 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_cottage"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Nian",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "Wei—"
     },
     {
       "type": "dialogue",
       "speakerName": "Nian",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "Why do you still shut your self away like this? It took us so much effort to get you out of that hill. Shu's not here. Wanna go for a walk with me?"
     },
     {
       "type": "dialogue",
       "speakerName": "Nian",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "There's nothing new here, but the produce is on another level compared the agricultural plates in the other cities. Say, have you seen how they make booze out of grain yet?"
     },
     {
       "type": "dialogue",
       "speakerName": "Dusk",
       "speakerId": "avgnew_2015_dusk_1",
+      "isRemote": false,
       "text": "Ugh."
     },
     {
       "type": "dialogue",
       "speakerName": "Nian",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "Did the Tianshi Bureaus come looking for trouble?"
     },
     {
@@ -62,219 +75,259 @@
       "type": "dialogue",
       "speakerName": "Dusk",
       "speakerId": "avgnew_2015_dusk_1",
+      "isRemote": false,
       "text": "With skills like that, you should be dealing with that big guy outside who refuses to move."
     },
     {
       "type": "dialogue",
       "speakerName": "Nian",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "All the Tianshis are out there for the relief effort. What can I do on my own? It's not like I could do it with my own two hands..."
     },
     {
       "type": "dialogue",
       "speakerName": "Nian",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "I'm so bored! C'mon, lemme see what you're drawing..."
     },
     {
       "type": "dialogue",
       "speakerName": "Dusk",
       "speakerId": "avgnew_2015_dusk_1",
+      "isRemote": false,
       "text": "No!"
     },
     {
       "type": "dialogue",
       "speakerName": "Nian",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "Oh, don't be like that. I could give you ideas, if you've got art block or whatever."
     },
     {
       "type": "dialogue",
       "speakerName": "Dusk",
       "speakerId": "avgnew_2015_dusk_1",
+      "isRemote": false,
       "text": "Get, out—"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "47_g5_factory_inside"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Nian",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "Why so nervous? Looks like you're hiding something."
     },
     {
       "type": "dialogue",
       "speakerName": "Dusk",
       "speakerId": "avgnew_2015_dusk_1",
+      "isRemote": false,
       "text": "No I'm not. Something's just bothering me."
     },
     {
       "type": "dialogue",
       "speakerName": "Nian",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "The folks at the Tianshi Bureaus might be annoying, but they can't actually do anything about you. The imperial court has already given us a guarantee. The worst they could do is complain."
     },
     {
       "type": "dialogue",
       "speakerName": "Nian",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "So you're bothered about... <i>him.</i>"
     },
     {
       "type": "dialogue",
       "speakerName": "Dusk",
       "speakerId": "avgnew_2015_dusk_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "Nian",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "I can feel his presence. He never hides. Are you sure you don't want to go and see him? We're family, after all."
     },
     {
       "type": "dialogue",
       "speakerName": "Dusk",
       "speakerId": "avgnew_2015_dusk_1",
+      "isRemote": false,
       "text": "No."
     },
     {
       "type": "dialogue",
       "speakerName": "Nian",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "Wow, you really are cold... I heard how he always brought you the best paintings of the era whenever he passed by your hill. Don't pretend you didn't like them."
     },
     {
       "type": "dialogue",
       "speakerName": "Dusk",
       "speakerId": "avgnew_2015_dusk_1",
+      "isRemote": false,
       "text": "Things are different now."
     },
     {
       "type": "dialogue",
       "speakerName": "Dusk",
       "speakerId": "avgnew_2015_dusk_1",
+      "isRemote": false,
       "text": "When was the last time you saw him?"
     },
     {
       "type": "dialogue",
       "speakerName": "Nian",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "I can't say I remember."
     },
     {
       "type": "dialogue",
       "speakerName": "Nian",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "His business got so big that he started getting warnings from the Sui Regulator. He pulled things back a little afterwards. He's been enjoying himself the last few years, sightseeing all over Yan."
     },
     {
       "type": "dialogue",
       "speakerName": "Nian",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "But the Sui Regulator keeps a much tighter eye on him than it does us."
     },
     {
       "type": "dialogue",
       "speakerName": "Dusk",
       "speakerId": "avgnew_2015_dusk_1",
+      "isRemote": false,
       "text": "How do you know all that?"
     },
     {
       "type": "dialogue",
       "speakerName": "Nian",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "I had a peek in the Regulator's notebooks in the course of my dealings with them. The parts that weren't super-double classified, anyway."
     },
     {
       "type": "dialogue",
       "speakerName": "Dusk",
       "speakerId": "avgnew_2015_dusk_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "Dusk",
       "speakerId": "avgnew_2015_dusk_1",
+      "isRemote": false,
       "text": "'His business became so big'? I always remember him as that simple-minded boy following Shu around, with no eye for anything other than silkworms and mulberry."
     },
     {
       "type": "dialogue",
       "speakerName": "Dusk",
       "speakerId": "avgnew_2015_dusk_1",
+      "isRemote": false,
       "text": "The last time I saw him was when he 'passed by', and I caught a glimpse through the painting."
     },
     {
       "type": "dialogue",
       "speakerName": "Dusk",
       "speakerId": "avgnew_2015_dusk_1",
+      "isRemote": false,
       "text": "His eyes were clouded, repulsive, like—"
     },
     {
       "type": "dialogue",
       "speakerName": "Nian",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "—like the stinky weiqi failure, I know."
     },
     {
       "type": "dialogue",
       "speakerName": "Nian",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "He was in Baizao the year our weiqi failure broke out. Who do you think Yan had its eyes on for the past few years while ignoring you and I?"
     },
     {
       "type": "dialogue",
       "speakerName": "Dusk",
       "speakerId": "avgnew_2015_dusk_1",
+      "isRemote": false,
       "text": "You think they're in cahoots?"
     },
     {
       "type": "dialogue",
       "speakerName": "Nian",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "No idea. I thought Ling and Dage were the only ones he got along with."
     },
     {
       "type": "dialogue",
       "speakerName": "Nian",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "But he wouldn't have been able to call on people like he does now if the Sui Regulator made a decision like that, would he?"
     },
     {
       "type": "dialogue",
       "speakerName": "Nian",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "You know how comfortable he is in human skin. Every transaction in the books he submits every year to the Sui Regulator is perfectly above board. You couldn't find a flaw if you put them under a microscope."
     },
     {
       "type": "dialogue",
       "speakerName": "Nian",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "He's always the first to donate whenever a city is hit by Catastrophe. The Sui Regulator has to give him some respect on that point alone."
     },
     {
       "type": "dialogue",
       "speakerName": "Dusk",
       "speakerId": "avgnew_2015_dusk_1",
+      "isRemote": false,
       "text": "You really think he did it out of the kindness of his heart?"
     },
     {
       "type": "dialogue",
       "speakerName": "Nian",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "He's our brother. I won't badmouth him behind his back."
     },
     {
       "type": "dialogue",
       "speakerName": "Dusk",
       "speakerId": "avgnew_2015_dusk_1",
+      "isRemote": false,
       "text": "Yeah, riiiight."
     },
     {
       "type": "dialogue",
       "speakerName": "Dusk",
       "speakerId": "avgnew_2015_dusk_1",
+      "isRemote": false,
       "text": "Anyway, relationships like ours don't exist amongst humans. Brothers? Sisters? I..."
     },
     {
@@ -284,12 +337,14 @@
       "type": "dialogue",
       "speakerName": "Nian",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "You what?"
     },
     {
       "type": "dialogue",
       "speakerName": "Dusk",
       "speakerId": "avgnew_2015_dusk_1",
+      "isRemote": false,
       "text": "Get out of here. Now, and no peeking!"
     },
     {
@@ -299,76 +354,92 @@
       "type": "dialogue",
       "speakerName": "Nian",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "Fine, fine. No need to get all violent and excitable."
     },
     {
       "type": "dialogue",
       "speakerName": "Nian",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "Sibling ties in the worldly sense mean nothing to us, after all..."
     },
     {
       "type": "dialogue",
       "speakerName": "Nian",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "Maybe Yanese historians will invent a word to describe our relationship in a few hundred years or so... maybe."
     },
     {
       "type": "dialogue",
       "speakerName": "Nian",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "But we would've thrown a few more family reunions if you could change that stubborn streak of yours."
     },
     {
       "type": "dialogue",
       "speakerName": "Dusk",
       "speakerId": "avgnew_2015_dusk_1",
+      "isRemote": false,
       "text": "I'm not stubborn."
     },
     {
       "type": "dialogue",
       "speakerName": "Nian",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "So, when are you going to show me the twelve scrolls in your study?"
     },
     {
       "type": "dialogue",
       "speakerName": "Dusk",
       "speakerId": "avgnew_2015_dusk_1",
+      "isRemote": false,
       "text": "Go away!"
     },
     {
       "type": "dialogue",
       "speakerName": "Nian",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "Yes, I know it's twelve. You kept the one for Sanjie, our third sister, even after she disappeared."
     },
     {
       "type": "dialogue",
       "speakerName": "Nian",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "—Have you figured out who the people depicted in the scrolls are? Or did you give up on that?"
     },
     {
       "type": "dialogue",
       "speakerName": "Nian",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "Unless... you haven't even started on your self-portrait?"
     },
     {
       "type": "dialogue",
       "speakerName": "Nian",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "Why are you so stubborn?"
     },
     {
       "type": "dialogue",
       "speakerName": "Dusk",
       "speakerId": "avgnew_2015_dusk_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "47_g1_desertedcityfield_d"
     },
     {
       "type": "narration",
@@ -381,12 +452,14 @@
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "Zuo Le",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "..."
     },
     {
@@ -403,24 +476,28 @@
       "type": "dialogue",
       "speakerName": "Zuo Le",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "All these crops have to be destroyed?"
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Yes."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "It was my first ever test field. Maize. All soaked in Originium-polluted water. No other choice."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Restoring Originium-polluted soil is extremely difficult. The land is vast, but precious little of it is fit for farming."
     },
     {
@@ -430,18 +507,21 @@
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Even the cob of the corn was sweet. I tried it when I first came to Dahuang. It was the best thing ever."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "I wanted to grow it in the earth, so that everyone could taste the sweetness, feel the joy that I did when I tried it for the first time."
     },
     {
       "type": "dialogue",
       "speakerName": "Zuo Le",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "..."
     },
     {
@@ -458,93 +538,112 @@
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "Found you, Xiaohe!"
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "The farmers are arguing with the Tianshis after the engineers bulldozed a field. You need to come! Hurry!"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "47_g1_desertedcityfield_d"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Tumu Tianshi",
       "speakerId": "avg_npc_1246_1",
+      "isRemote": false,
       "text": "Folks, the disaster has left us with little supplies and even less time. We can't afford any delays."
     },
     {
       "type": "dialogue",
       "speakerName": "Tumu Tianshi",
       "speakerId": "avg_npc_1246_1",
+      "isRemote": false,
       "text": "The decision has already been made to abandon these farms. Please, let us pass through with our tools."
     },
     {
       "type": "dialogue",
       "speakerName": "Angry Farmer",
       "speakerId": "avg_npc_1249_1",
+      "isRemote": false,
       "text": "Abandon? You liar! The Tianshis who planted here told me two days ago that the crop research was at a crossroads."
     },
     {
       "type": "dialogue",
       "speakerName": "Angry Farmer",
       "speakerId": "avg_npc_1249_1",
+      "isRemote": false,
       "text": "Who gave you the authority to trample our fields with your trucks?"
     },
     {
       "type": "dialogue",
       "speakerName": "Tumu Tianshi",
       "speakerId": "avg_npc_1246_1",
+      "isRemote": false,
       "text": "'Originium particle concentration in Plate D-4 soil samples exceed acceptable limits.' That means this field is polluted and no longer usable—"
     },
     {
       "type": "dialogue",
       "speakerName": "Angry Farmer",
       "speakerId": "avg_npc_1249_1",
+      "isRemote": false,
       "text": "We've dealt with stuff like this every year! Who do you think you are, an outsider deciding that this field should be abandoned?"
     },
     {
       "type": "dialogue",
       "speakerName": "Tumu Tianshi",
       "speakerId": "avg_npc_1246_1",
+      "isRemote": false,
       "text": "These fields can't be moved. It's been polluted by natural disaster, and the higher-ups have made the decision to not save it..."
     },
     {
       "type": "dialogue",
       "speakerName": "Angry Farmer",
       "speakerId": "avg_npc_1249_1",
+      "isRemote": false,
       "text": "This is already a bad year for the harvest! There's going to be a famine if we don't save the fields!"
     },
     {
       "type": "dialogue",
       "speakerName": "Angry Farmer",
       "speakerId": "avg_npc_1249_1",
+      "isRemote": false,
       "text": "You've never seen thousands die of starvation, have you? All you people care about is your construction projects! You're not helping to save the fields, you're trampling them!"
     },
     {
       "type": "dialogue",
       "speakerName": "Angry Farmer",
       "speakerId": "avg_npc_1249_1",
+      "isRemote": false,
       "text": "Dahuang belongs to us!"
     },
     {
       "type": "dialogue",
       "speakerName": "Tumu Tianshi",
       "speakerId": "avg_npc_1246_1",
+      "isRemote": false,
       "text": "You speak without wisdom."
     },
     {
       "type": "dialogue",
       "speakerName": "Angry Farmer",
       "speakerId": "avg_npc_1249_1",
+      "isRemote": false,
       "text": "No wisdom, huh?"
     },
     {
       "type": "dialogue",
       "speakerName": "Angry Farmer",
       "speakerId": "avg_npc_1249_1",
+      "isRemote": false,
       "text": "I'll show you wisdom!"
     },
     {
@@ -554,18 +653,21 @@
       "type": "dialogue",
       "speakerName": "Tumu Tianshi",
       "speakerId": "avg_npc_1246_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "Tumu Tianshi",
       "speakerId": "avg_npc_1246_1",
+      "isRemote": false,
       "text": "You dare strike me?"
     },
     {
       "type": "dialogue",
       "speakerName": "Angry Tumu Tianshi",
       "speakerId": "avg_npc_1246_1",
+      "isRemote": false,
       "text": "Screw you, son of a..."
     },
     {
@@ -575,12 +677,14 @@
       "type": "dialogue",
       "speakerName": "Angry Farmer",
       "speakerId": "avg_npc_1249_1",
+      "isRemote": false,
       "text": "I'll show you a son of a..."
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "Hey, everybody, calm down!"
     },
     {
@@ -590,78 +694,91 @@
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Uncle Wang!"
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "These fields..."
     },
     {
       "type": "dialogue",
       "speakerName": "Angry Farmer",
       "speakerId": "avg_npc_1249_1",
+      "isRemote": false,
       "text": "Just look! It's bad enough that the fields were ruined by Originium, now these people are running over it with their trucks!"
     },
     {
       "type": "dialogue",
       "speakerName": "Angry Farmer",
       "speakerId": "avg_npc_1249_1",
+      "isRemote": false,
       "text": "All they talk about is ministers and reports. Minister who? We've never seen them!"
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "We've not received any notice of these fields being abandoned."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "I thought the decision had been made to prioritize saving the soil...?"
     },
     {
       "type": "dialogue",
       "speakerName": "Tumu Tianshi",
       "speakerId": "avg_npc_1246_1",
+      "isRemote": false,
       "text": "You didn't hear? The construction supplies have arrived. The rebuilding of Dahuang resumed last night."
     },
     {
       "type": "dialogue",
       "speakerName": "Tumu Tianshi",
       "speakerId": "avg_npc_1246_1",
+      "isRemote": false,
       "text": "The cost of soil repairs has been re-assessed based on the latest damage reports."
     },
     {
       "type": "dialogue",
       "speakerName": "Tumu Tianshi",
       "speakerId": "avg_npc_1246_1",
+      "isRemote": false,
       "text": "The decision was made to prioritize construction on the core and abandon the outer agricultural plates... and make preparations to move the core city."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "What?!"
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Has research on the source of the pollutant been completed? Why the hasty decision?"
     },
     {
       "type": "dialogue",
       "speakerName": "Tumu Tianshi",
       "speakerId": "avg_npc_1246_1",
+      "isRemote": false,
       "text": "This comes from Tianshi Bureaus... way up. You can ask up the chain yourself, if you don't believe it."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "..."
     },
     {
@@ -672,177 +789,217 @@
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "If the Tianshi Bureaus' instructions are to abandon the fields, we will comply."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "But these fields aren't just places of work; they're people's homes as well."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "If there hasn't been a formal notice of evacuation, please, move this equipment elsewhere, at least for now."
     },
     {
       "type": "dialogue",
       "speakerName": "Tumu Tianshi",
       "speakerId": "avg_npc_1246_1",
+      "isRemote": false,
       "text": "Fine. But it'll happen in the next few days."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Duoxie."
     },
     {
       "type": "dialogue",
       "speakerName": "Tumu Tianshi",
       "speakerId": "avg_npc_1246_1",
+      "isRemote": false,
       "text": "I understand the hard work you folks put into farming this land, but things have changed."
     },
     {
       "type": "dialogue",
       "speakerName": "Tumu Tianshi",
       "speakerId": "avg_npc_1246_1",
+      "isRemote": false,
       "text": "People were stuck to the earth before the nomadic cities. Today, though, most agriculture takes place in hydroponic facilities on mobile plates."
     },
     {
       "type": "dialogue",
       "speakerName": "Tumu Tianshi",
       "speakerId": "avg_npc_1246_1",
+      "isRemote": false,
       "text": "To be frank, there's nothing special about this land."
     },
     {
       "type": "dialogue",
       "speakerName": "Tumu Tianshi",
       "speakerId": "avg_npc_1246_1",
+      "isRemote": false,
       "text": "You said you're studying Originium-resistant crops, but nothing's come of the research after all these years, has it?"
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "47_g11_shuresearchoffice"
+    },
+    {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "I'm just not sure... if this is the only result, then there is no way to expand the application of the <i>Wanqing</i> 'the Ten Thousand Qing of Fertile Fields' project."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "All these years, and nothing to show for it... not even a bud of hope."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "47_g1_desertedcityfield_d"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Angry Farmer",
       "speakerId": "avg_npc_1249_1",
+      "isRemote": false,
       "text": "They're gone. What did you say to them, Xiaohe?"
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Nothing special..."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "...I think we should get to cleaning up, Uncle Wang."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "47_g3_fieldpath"
+    },
+    {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "Big Buffalo? Big Buffalo! What are you doing, just standing there?"
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "What are we gonna do? Listen to the Tianshis and move Dahuang away? Leave all these fields behind?"
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "We should go ask the Xiangzhang."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "...Say something!"
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "She would be the first to know if anything was happening to Dahuang. If she isn't saying anything, that means it's out of her hands..."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "And mine..."
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "Why are you holding your head like that?"
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Maybe Shennong really was a celestial Xian..."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Otherwise, how could she have carved out farmland in an environment like this?"
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "Sure, Shennong was amazing, but it's amazing how people have taken care of the land."
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "Shennong would be so mad if you give up this easily!"
     },
     {
@@ -852,6 +1009,7 @@
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "Whoa!"
     },
     {
@@ -865,6 +1023,7 @@
       "type": "dialogue",
       "speakerName": "Napping Man",
       "speakerId": null,
+      "isRemote": false,
       "text": "Aww, that was a good dream..."
     },
     {
@@ -874,102 +1033,119 @@
       "type": "dialogue",
       "speakerName": "Well-Dressed Man",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "I dreamed of a bumper harvest, before a Catastrophe woke me up."
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "Why are you sleeping in the fields? Someone might step on you."
     },
     {
       "type": "dialogue",
       "speakerName": "Well-Dressed Man",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "You already stepped on me."
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "That's because you're sleeping in the fields!"
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Apologies, sir. Are you okay?"
     },
     {
       "type": "dialogue",
       "speakerName": "Well-Dressed Man",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "I'm not injured, but I've got a big muddy footprint on this fine fabric..."
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "It's your fault for not watching where you're sleeping!"
     },
     {
       "type": "dialogue",
       "speakerName": "Well-Dressed Man",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "You should watch where you're walking."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Grain Buds..."
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "Well, what do you want me to do? Wash it for you? Buy a new set?"
     },
     {
       "type": "dialogue",
       "speakerName": "Well-Dressed Man",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "Ach, forget it. All my clothes are made of the finest stuff from all over the land. You wouldn't know how to wash it."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Are you the one who delivered the relief supplies?"
     },
     {
       "type": "dialogue",
       "speakerName": "Well-Dressed Man",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "Hey, you're awfully clever."
     },
     {
       "type": "dialogue",
       "speakerName": "Well-Dressed Man",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "I'm a trader who managed to make a few coins. I came back when I heard about the disaster that hit Dahuang. Got to do my part for my homeland, after all."
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "You're from Dahuang? Why were you sleeping in the fields, then? Don't you have a home here?"
     },
     {
       "type": "dialogue",
       "speakerName": "Well-Dressed Man",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "It's been so long that I could hardly recognize the place. Lost my way... say, do you know where the shadow play theater is?"
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "Shadow play? What's that?"
     },
     {
@@ -980,36 +1156,42 @@
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "I've never seen it..."
     },
     {
       "type": "dialogue",
       "speakerName": "Well-Dressed Man",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "Hm... where do you celebrate the harvest now?"
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "The great stage?"
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "Just follow this path and turn left at the third tree. It's behind the Shennong Shrine."
     },
     {
       "type": "dialogue",
       "speakerName": "Well-Dressed Man",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "Oh, the Shennong Shrine is still here. That's good to hear."
     },
     {
       "type": "dialogue",
       "speakerName": "Well-Dressed Man",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "Thanks. You're the first one to point the way for me. Well, fate has determined that we would meet. Here, I have a wish for sale. Anything you like."
     },
     {
@@ -1023,42 +1205,49 @@
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "What's this?"
     },
     {
       "type": "dialogue",
       "speakerName": "Well-Dressed Man",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "A wish. For anything you desire."
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "A wish?"
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "I don't believe you. You're a trader, not some Xian. How could you make my wish come true?"
     },
     {
       "type": "dialogue",
       "speakerName": "Well-Dressed Man",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "I may be a humble trader, but I'm a big enough deal that I buy and sell anything."
     },
     {
       "type": "dialogue",
       "speakerName": "Well-Dressed Man",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "But the opportunity to trade with me doesn't come to everyone."
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "...For real?"
     },
     {
@@ -1069,54 +1258,63 @@
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "(Hushed) I wish..."
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "(Hushed) I wish Dahuang could always be safe and peaceful, and the harvests always good."
     },
     {
       "type": "dialogue",
       "speakerName": "Well-Dressed Man",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "Sure, I can sell you that wish. What will you pay me for it?"
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Grain Buds... this guy is kinda weird. We should go."
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "There's no use trying to scam me. I don't have any valuables."
     },
     {
       "type": "dialogue",
       "speakerName": "Well-Dressed Man",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "It doesn't have to be valuable in terms of monetary value. I accept anything that you value and treasure."
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "Xiaohe! Can I play that song?"
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Song? What song?"
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "..."
     },
     {
@@ -1127,6 +1325,7 @@
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "You stupid buffalo!"
     },
     {
@@ -1150,12 +1349,14 @@
       "type": "dialogue",
       "speakerName": "Well-Dressed Man",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "A fine payment."
     },
     {
       "type": "dialogue",
       "speakerName": "Well-Dressed Man",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "The stone is yours. Your wish will come true."
     },
     {
@@ -1165,6 +1366,7 @@
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "...Hmph."
     },
     {
@@ -1181,96 +1383,112 @@
       "type": "dialogue",
       "speakerName": "Well-Dressed Man",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "She looked angry. Why?"
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "She arranged it for me when I took my entrance exam three years ago."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "I remembered. She just put me on the spot..."
     },
     {
       "type": "dialogue",
       "speakerName": "Well-Dressed Man",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "Ah. Such precious sentiment."
     },
     {
       "type": "dialogue",
       "speakerName": "Well-Dressed Man",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "What about you? Is there anything you would like to buy from me?"
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "...Me?"
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Thank you, but there's nothing I want in particular right now."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Or should I say, what I want can't be bought. I have to earn it on my own."
     },
     {
       "type": "dialogue",
       "speakerName": "Well-Dressed Man",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "I could hear you out, if you'd like. There isn't much I can brag about, but I've been to more places than most, and so I sell more things than most."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "You said you sell anything. Do you sell a future where nobody will starve?"
     },
     {
       "type": "dialogue",
       "speakerName": "Well-Dressed Man",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "Well-Dressed Man",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "Yes."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Wh-What?"
     },
     {
       "type": "dialogue",
       "speakerName": "Well-Dressed Man",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "The more valuable the good, the higher the price. What price will you pay for your tremendous dream?"
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Well..."
     },
     {
@@ -1280,6 +1498,7 @@
       "type": "dialogue",
       "speakerName": "Zuo Le",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "I've cleaned up the polluted crops, He Sheng. Anything else you need me to—"
     },
     {
@@ -1289,24 +1508,28 @@
       "type": "dialogue",
       "speakerName": "Zuo Le",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "You—"
     },
     {
       "type": "dialogue",
       "speakerName": "Well-Dressed Man",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "I'm not sure why you're staring at me, young man. Have we met before?"
     },
     {
       "type": "dialogue",
       "speakerName": "Zuo Le",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "Zuo Le",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "Excuse me, sir, we need to talk."
     },
     {

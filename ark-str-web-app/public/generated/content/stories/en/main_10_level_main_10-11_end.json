@@ -6,14 +6,19 @@
   "title": "At Vendetta's Close",
   "storyCode": "10-12",
   "avgTag": "After Operation",
-  "sourcePath": "vendor/ArknightsGamedata/en/gamedata/story/obt/main/level_main_10-11_end.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/en/gamedata/story/obt/main/level_main_10-11_end.txt",
   "sourceHash": "3cced26a5a689bc029ae76c7fa9e20ea5ca7e66daef927cfa86c8e557f01d13f",
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "27_g10_lightinduarea_street_n"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Amiya",
       "speakerId": "avg_npc_394_1",
+      "isRemote": false,
       "text": "It's so strange, Doctor. We definitely shook off the Sarkaz warriors from before..."
     },
     {
@@ -32,1309 +37,1530 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Closure, are our communications being traced?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "avg_npc_411_1",
-          "text": "Not a chance, Amiya, I guarantee it! I set up triple-layer encryption on our transmitters! If they had the tech for that, then Theresis would've breached the landship a hundred times over by now!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "...Doctor, I believe Closure."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "They must be using some other method then."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Feist",
-          "speakerId": "avg_npc_402_1",
-          "text": "Miss Amiya, we're a stone's throw from the rendezvous point!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Feist",
-          "speakerId": "avg_npc_402_1",
-          "text": "As long as we link up with Team 6, we can get in contact with the subterranean support unit. Once we're underground, the Sarkaz pursuing us will be out of luck."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Siege",
-          "speakerId": "avg_npc_407_1",
-          "text": "No, don't go that way."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Feist",
-          "speakerId": "avg_npc_402_1",
-          "text": "Huh? Why... wait, what? Miss Siege, what are you doing here?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Feist",
-          "speakerId": "avg_npc_402_1",
-          "text": "Weren't you under..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Siege",
-          "speakerId": "avg_npc_407_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Siege",
-          "speakerId": "avg_npc_407_1",
-          "text": "Team 6 is..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Feist",
-          "speakerId": "avg_npc_402_1",
-          "text": "Team 6 is what? Why do you look so... erk, Miss Indra, have you seen all that blood on your hands?!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Indra",
-          "speakerId": "avg_155_tiger_1",
-          "text": "Your soldiers, they... all gave their lives."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Feist",
-          "speakerId": "avg_npc_402_1",
-          "text": "Th-That can't be right! Team 6 is still ahead of us, how could they have run into the Sarkaz?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Siege",
-          "speakerId": "avg_npc_407_1",
-          "text": "We don't have time to analyze how."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Siege",
-          "speakerId": "avg_npc_407_1",
-          "text": "Doctor, it wasn't the Sarkaz force pursuing us that killed Team 6's soldiers."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "You mean..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Siege",
-          "speakerId": "avg_npc_407_1",
-          "text": "The enemy they faced had terrifying Originium Arts... It was more of a massacre than a battle. Hardly any of them had even drawn their weapons."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Indra",
-          "speakerId": "avg_155_tiger_1",
-          "text": "You sure it was Originium Arts?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Indra",
-          "speakerId": "avg_155_tiger_1",
-          "text": "I don't believe that!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Indra",
-          "speakerId": "avg_155_tiger_1",
-          "text": "I saw this red bug thing tear the soldiers' chests apart. Vina, you saw it too! That was a genuine monster!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Siege",
-          "speakerId": "avg_npc_407_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "...So the perpetrator is no ordinary Sarkaz."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "We have to change course. Mr. Feist, are there any other routes we can take?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Feist",
-          "speakerId": "avg_npc_402_1",
-          "text": "Yes. But we don't have any support waiting on it. If we run into Sarkaz forces..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Siege",
-          "speakerId": "avg_npc_407_1",
-          "text": "We'll be in for another hard fight."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_4039_horn_1",
-          "text": "Find cover!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Robben",
-          "speakerId": "avg_npc_413_1",
-          "text": "Horn, what the hell is this?!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Robben",
-          "speakerId": "avg_npc_413_1",
-          "text": "What did that Sarkaz throw at us, a bomb? None of us even saw it—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_4039_horn_1",
-          "text": "...Originium Arts."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_4039_horn_1",
-          "text": "Eyes up!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Robben",
-          "speakerId": "avg_npc_413_1",
-          "text": "I... I just saw something red flash by in midair!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_4039_horn_1",
-          "text": "Retreat!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Robben",
-          "speakerId": "avg_npc_413_1",
-          "text": "It's like a thunderbolt or something! That's Originium Arts?!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Robben",
-          "speakerId": "avg_npc_413_1",
-          "text": "These... abominable devils!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "Still won't come out?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "Your war, your battle, your fight, it can't be this game of runabout you're playing, can it White Wolf?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Robben",
-          "speakerId": "avg_npc_413_1",
-          "text": "Five aerial blood streaks at once?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Robben",
-          "speakerId": "avg_npc_413_1",
-          "text": "Horn, we have no chance of—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_4039_horn_1",
-          "text": "No."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_4039_horn_1",
-          "text": "No matter how strong the Arts... he's only one person."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_4039_horn_1",
-          "text": "What did Victoria do in the past, to prevail over the Sarkaz again and again?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Robben",
-          "speakerId": "avg_npc_413_1",
-          "text": "You mean..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_4039_horn_1",
-          "text": "How many bolts do we have left?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_4039_horn_1",
-          "text": "Cover me."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Robben",
-          "speakerId": "avg_npc_413_1",
-          "text": "Yes, sir!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "A pitiful act of defiance—"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_4039_horn_1",
-          "text": "Now... is our chance."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "Counting on an Arts bombardment to make your escape?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "I'll give you a rude awakening."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "—!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_4039_horn_1",
-          "text": "What I said still stands. So long as my soldiers remain here, I will not flee."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "Not bad after all, White Wolf. I see you have the bravado to reverse course and charge me."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "Such a shame then..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_4039_horn_1",
-          "text": "––Rrgh!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "Whoever told you that a Sarkaz depends solely on Arts in a fight?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "Even wielding no more than a sword—I can still defeat every last one of you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_4039_horn_1",
-          "text": "Beating me... may not be so difficult..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_4039_horn_1",
-          "text": "But making me fall will... not be so easy."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "How very brave of you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "It's thanks to that valor of yours that I can end this battle that much quicker—"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "The instant he thrusts his sword out, the soldier before Manfred abruptly vanishes.\nShe seems to practically dissolve and melt through the wall behind her, leaving not even a ripple."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "These Arts are unfamiliar..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "Vigilance!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "...A dagger from thin air?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "No, not from thin air..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_404_1",
-          "text": "You react very fast."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "I'm afraid I'd have one more hole in my chest otherwise."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sarkaz Warrior",
-          "speakerId": "avg_npc_419_1",
-          "text": "Target found! Take aim!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sarkaz Warrior",
-          "speakerId": "avg_npc_419_1",
-          "text": "What the hell? They vanished again?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sarkaz Warrior",
-          "speakerId": "avg_npc_419_1",
-          "text": "Th-They're too fast! I can't land a shot!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sarkaz Warrior",
-          "speakerId": "avg_npc_419_1",
-          "text": "Shields up, up! Quick! Shit, are they able to blink?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "Blink? No such Arts could be cast without leaving even a trace!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "Or is this... a diversion?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "Don't let them fool you! All men, cast precision aside! Attack at once!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "So long as the enemy is still in front of us, they have no escape!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "Have we... hit them?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sarkaz Warrior",
-          "speakerId": "avg_npc_419_1",
-          "text": "General, there's no body."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sarkaz Warrior",
-          "speakerId": "avg_npc_419_1",
-          "text": "But the ground is shot to hell... Where can they still be hiding?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sarkaz Warrior",
-          "speakerId": "avg_npc_419_1",
-          "text": "General, behind you!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "Show yourself, and your life is mine!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_235",
-          "text": "Really?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_235",
-          "text": "Manfred, you put it very well, but unfortunately... you were only half right."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "Half?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_235",
-          "text": "Sarkaz do not depend solely on Arts to fight—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_235",
-          "text": "—but in no world do Sarkaz wield swords alone."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sarkaz Warrior",
-          "speakerId": "avg_npc_419_1",
-          "text": "Aarrghh!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sarkaz Warrior",
-          "speakerId": "avg_npc_419_1",
-          "text": "The ground shouldn't be this soft—this place is going to swallow us! I-I'm losing my grip on my blade!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sarkaz Warrior",
-          "speakerId": "avg_npc_419_1",
-          "text": "General, you're sinking too?!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "...Nobody move, and nobody panic."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "The dagger is his staff. These are Arts, and nothing more than Arts."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_235",
-          "text": "You're very calm-headed. Good... you've saved your men's lives."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_235",
-          "text": "However..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "Rgh!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "The ground's... nearing my stomach..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "My sword..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_235",
-          "text": "With your swordsmanship, blocking my attacks would be a simple task."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_235",
-          "text": "But the more you struggle, the quicker the ground swallows you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_235",
-          "text": "Is this how you want to go... this self-destruction?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "Urgh... *cough* *cough*..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sarkaz Warrior",
-          "speakerId": "avg_npc_419_1",
-          "text": "General—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "No one come near!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_235",
-          "text": "Or, you could cease all movements, same as your men."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "You want me to wait as you run my heart through?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_235",
-          "text": "It'd be tough, killing you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "*cough* *cough*... *pant*..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "I see now. You're not actually here to take my life."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "I never imagined that outside of Ascalon, Rhodes Island would have yet another apex Sarkaz assassin."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_235",
-          "text": "I'm no assassin."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_235",
-          "text": "Unless it's called for, I have zero desire to harm any Sarkaz at all."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "But here you are, abetting our enemies!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_235",
-          "text": "Are these Victorians... your enemies?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_235",
-          "text": "What I see is a group of bruised, weary warriors, on the soil of their own home, struggling painfully just to live."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_235",
-          "text": "You and Theresis, on the other hand, are turning the Sarkaz into the enemy of all."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "I had entertained having a talk with your people, if I had the chance."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "It's a sorry thing, that we should first meet on the battlefield—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "—Rhodes Island Elite Operator."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sarkaz Warrior",
-          "speakerId": "avg_npc_419_1",
-          "text": "He's gone again? Ngh—the ground's back to normal!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "A hair's breadth."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "I was on the cusp of capturing him. His Arts are all too exceptional... He can induce hallucinations without influencing our nervous systems."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "There are marks of energy transformation on the ground. Could it be...?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sarkaz Warrior",
-          "speakerId": "avg_npc_419_1",
-          "text": "General, they're all gone! Those Victoria soldiers, I mean—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "Keh... He would visit me and stall for time, just to extricate those half-dead soldiers one by one?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sarkaz Warrior",
-          "speakerId": "avg_npc_419_1",
-          "text": "Are... Are we pursuing them, then?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "Do you think we can?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "I may have called it a hair's breadth, but against a Caster of that level, a hair's breadth is tantamount to guaranteed failure."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sarkaz Warrior",
-          "speakerId": "avg_npc_419_1",
-          "text": "Dammit! We were set to clean out all the rebel forces by today! Now a mercenary's gone traitor AND some mystery Caster's held us back!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "It's Rhodes Island... This is all because of Rhodes Island."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "We missed our chance to round them up in their entirety, but their losses can't be light, can they?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "They had their chance to hide in the dark, but now they've been driven front and center. For them, revealing their forces is already a colossal tactical defeat."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "An assassin, an expert spacial illusionist Caster, and the as-yet unseen Banshee... How many cards does Rhodes Island still have up their sleeve?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sarkaz Warrior",
-          "speakerId": "avg_npc_419_1",
-          "text": "General, what are your plans?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "...Let us go. Before we deal with Rhodes Island, we first need to put the discontented clown in its place."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_235",
-          "text": "This should be far enough for now."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_4039_horn_1",
-          "text": "...Is this outside of the factory district?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_4039_horn_1",
-          "text": "You... cut open space with your dagger?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_235",
-          "text": "Don't always trust your senses. Tricking your eyes is much easier than influencing space."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_4039_horn_1",
-          "text": "You've..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_4039_horn_1",
-          "text": "You've rescued me, and not just once. My eyes might not show me the truest answers, but my senses never lie."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_4039_horn_1",
-          "text": "Just who are you?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_235",
-          "text": "Misery. I'm Misery of Rhodes Island."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_4039_horn_1",
-          "text": "Rhodes Island?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_4039_horn_1",
-          "text": "I'm sorry..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Misery",
-          "speakerId": "avg_npc_235",
-          "text": "You'll get a chance to hear a full explanation from Bagpipe in due time."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_4039_horn_1",
-          "text": "Bagpipe?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Misery",
-          "speakerId": "avg_npc_235",
-          "text": "She's a coworker at this point."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Misery",
-          "speakerId": "avg_npc_235",
-          "text": "Not to mention... the last friend my best friend ever made."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_4039_horn_1",
-          "text": "Sounds like I've been quite a bit out of the loop."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_4039_horn_1",
-          "text": "But before I lose myself to the joy that Bagpipe made it out, allow me to once again thank you and Rhodes Island."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Misery",
-          "speakerId": "avg_npc_235",
-          "text": "Let's get out of here first. Chances are we'll be meeting again soon enough."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Misery",
-          "speakerId": "avg_npc_235",
-          "text": "Manfred's almost worked out the truth of my Originium Arts. He could be coming after us any moment now."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_4039_horn_1",
-          "text": "...No. I imagine he'll be busy with something else right now."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Misery",
-          "speakerId": "avg_npc_235",
-          "text": "You mean Dublinn."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Misery",
-          "speakerId": "avg_npc_235",
-          "text": "County Hillock's Mandragora... There's no way she's leaving this factory now."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_4039_horn_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Misery",
-          "speakerId": "avg_npc_235",
-          "text": "Are you giving yourself grief for not being able to personally avenge your comrades?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_4039_horn_1",
-          "text": "I... I'm just lamenting."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_4039_horn_1",
-          "text": "Myself for standing here, regretting that I missed the opportunity to kill her..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_4039_horn_1",
-          "text": "Or her, for being long since beyond saving."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mandragora",
-          "speakerId": "avg_npc_233_1",
-          "text": "That's odd. This is what you agreed with them, right? Why aren't they here to back us up?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Dublinn Soldier",
-          "speakerId": "avg_npc_244",
-          "text": "I—argh!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mandragora",
-          "speakerId": "avg_npc_233_1",
-          "text": "What the hell is it—?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Dublinn Soldier",
-          "speakerId": "avg_npc_244",
-          "text": "Sarkaz! It's Sarkaz! We have to run—"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mandragora",
-          "speakerId": "avg_npc_233_1",
-          "text": "...Were we spotted?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mandragora",
-          "speakerId": "avg_npc_233_1",
-          "text": "No. Not like this. 'Spy', we have to go—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mandragora",
-          "speakerId": "avg_npc_233_1",
-          "text": "Only ten meters to that sliding door there, right? Just ten meters, and we're right out, and..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Taran Secret Agent",
-          "speakerId": "avg_npc_421_1",
-          "text": "A... Alright, let's run..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mandragora",
-          "speakerId": "avg_npc_233_1",
-          "text": "Just like we used to, you pulling me. We only had to run fast enough that those noble kids couldn't catch us..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mandragora",
-          "speakerId": "avg_npc_233_1",
-          "text": "Grotesques! Get down, block them!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mandragora",
-          "speakerId": "avg_npc_233_1",
-          "text": "Bastards! Can't even rely on you in a time like this?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Taran Secret Agent",
-          "speakerId": "avg_npc_421_1",
-          "text": "Mandragora..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mandragora",
-          "speakerId": "avg_npc_233_1",
-          "text": "What? Didn't I tell you to stay quiet for now?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Taran Secret Agent",
-          "speakerId": "avg_npc_421_1",
-          "text": "I can't keep walking. You go."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mandragora",
-          "speakerId": "avg_npc_233_1",
-          "text": "What...? Can't you see? I've been doing all this just to..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Taran Secret Agent",
-          "speakerId": "avg_npc_421_1",
-          "text": "To save me? Or to gain favor with the Leader?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mandragora",
-          "speakerId": "avg_npc_233_1",
-          "text": "Is there a difference? What are you talking about? We're just five meters away, our people are right outside!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Taran Secret Agent",
-          "speakerId": "avg_npc_421_1",
-          "text": "They're gone."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mandragora",
-          "speakerId": "avg_npc_233_1",
-          "text": "What?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Taran Secret Agent",
-          "speakerId": "avg_npc_421_1",
-          "text": "Mandragora... The Leader... she's long since abandoned us..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mandragora",
-          "speakerId": "avg_npc_233_1",
-          "text": "'Spy'!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mandragora",
-          "speakerId": "avg_npc_233_1",
-          "text": "Bastard, bastard—stones, go! Skewer them, impale every one of those Sarkaz!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mandragora",
-          "speakerId": "avg_npc_233_1",
-          "text": "You'll be alright, 'Spy', it's just an arrow, we're three meters away, even if I have to carry you—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Taran Secret Agent",
-          "speakerId": "avg_npc_421_1",
-          "text": "...Just go."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mandragora",
-          "speakerId": "avg_npc_233_1",
-          "text": "I..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Taran Secret Agent",
-          "speakerId": "avg_npc_421_1",
-          "text": "If you can make it out..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Taran Secret Agent",
-          "speakerId": "avg_npc_421_1",
-          "text": "Don't... Don't head for the Leader."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mandragora",
-          "speakerId": "avg_npc_233_1",
-          "text": "...Did you just die?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mandragora",
-          "speakerId": "avg_npc_233_1",
-          "text": "Who said you could die so easily...? I..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mandragora",
-          "speakerId": "avg_npc_233_1",
-          "text": "Cillian, Cillian... you bloody disgrace! I'm not letting you die here, you stand up for me, stand up!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "No need to work yourself up."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "You won't live much longer either, Mandragora. You and your old Taran friend will meet again before you know it."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mandragora",
-          "speakerId": "avg_npc_233_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mandragora",
-          "speakerId": "avg_npc_233_1",
-          "text": "Ha... hahahaha!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mandragora",
-          "speakerId": "avg_npc_233_1",
-          "text": "Manfred, you cost me another eleven lives."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mandragora",
-          "speakerId": "avg_npc_233_1",
-          "text": "You don't know the half... you don't know anything of what it took to kill that many Sarkaz."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Manfred",
-          "speakerId": "avg_npc_404_1",
-          "text": "...This is exactly why you must die here."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mandragora",
-          "speakerId": "avg_npc_233_1",
-          "text": "Perfect... drop yourselves right in my lap."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mandragora",
-          "speakerId": "avg_npc_233_1",
-          "text": "I'll crush every one of you into paste, no prisoners."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Closure, are our communications being traced?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "avg_npc_411_1",
+      "isRemote": false,
+      "text": "Not a chance, Amiya, I guarantee it! I set up triple-layer encryption on our transmitters! If they had the tech for that, then Theresis would've breached the landship a hundred times over by now!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "...Doctor, I believe Closure."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "They must be using some other method then."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Feist",
+      "speakerId": "avg_npc_402_1",
+      "isRemote": false,
+      "text": "Miss Amiya, we're a stone's throw from the rendezvous point!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Feist",
+      "speakerId": "avg_npc_402_1",
+      "isRemote": false,
+      "text": "As long as we link up with Team 6, we can get in contact with the subterranean support unit. Once we're underground, the Sarkaz pursuing us will be out of luck."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Siege",
+      "speakerId": "avg_npc_407_1",
+      "isRemote": false,
+      "text": "No, don't go that way."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Feist",
+      "speakerId": "avg_npc_402_1",
+      "isRemote": false,
+      "text": "Huh? Why... wait, what? Miss Siege, what are you doing here?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Feist",
+      "speakerId": "avg_npc_402_1",
+      "isRemote": false,
+      "text": "Weren't you under..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Siege",
+      "speakerId": "avg_npc_407_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Siege",
+      "speakerId": "avg_npc_407_1",
+      "isRemote": false,
+      "text": "Team 6 is..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Feist",
+      "speakerId": "avg_npc_402_1",
+      "isRemote": false,
+      "text": "Team 6 is what? Why do you look so... erk, Miss Indra, have you seen all that blood on your hands?!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Indra",
+      "speakerId": "avg_155_tiger_1",
+      "isRemote": false,
+      "text": "Your soldiers, they... all gave their lives."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Feist",
+      "speakerId": "avg_npc_402_1",
+      "isRemote": false,
+      "text": "Th-That can't be right! Team 6 is still ahead of us, how could they have run into the Sarkaz?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Siege",
+      "speakerId": "avg_npc_407_1",
+      "isRemote": false,
+      "text": "We don't have time to analyze how."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Siege",
+      "speakerId": "avg_npc_407_1",
+      "isRemote": false,
+      "text": "Doctor, it wasn't the Sarkaz force pursuing us that killed Team 6's soldiers."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "You mean..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Siege",
+      "speakerId": "avg_npc_407_1",
+      "isRemote": false,
+      "text": "The enemy they faced had terrifying Originium Arts... It was more of a massacre than a battle. Hardly any of them had even drawn their weapons."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Indra",
+      "speakerId": "avg_155_tiger_1",
+      "isRemote": false,
+      "text": "You sure it was Originium Arts?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Indra",
+      "speakerId": "avg_155_tiger_1",
+      "isRemote": false,
+      "text": "I don't believe that!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Indra",
+      "speakerId": "avg_155_tiger_1",
+      "isRemote": false,
+      "text": "I saw this red bug thing tear the soldiers' chests apart. Vina, you saw it too! That was a genuine monster!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Siege",
+      "speakerId": "avg_npc_407_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "...So the perpetrator is no ordinary Sarkaz."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "We have to change course. Mr. Feist, are there any other routes we can take?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Feist",
+      "speakerId": "avg_npc_402_1",
+      "isRemote": false,
+      "text": "Yes. But we don't have any support waiting on it. If we run into Sarkaz forces..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Siege",
+      "speakerId": "avg_npc_407_1",
+      "isRemote": false,
+      "text": "We'll be in for another hard fight."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "27_g8_jail"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "Find cover!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Robben",
+      "speakerId": "avg_npc_413_1",
+      "isRemote": false,
+      "text": "Horn, what the hell is this?!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Robben",
+      "speakerId": "avg_npc_413_1",
+      "isRemote": false,
+      "text": "What did that Sarkaz throw at us, a bomb? None of us even saw it—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "...Originium Arts."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "Eyes up!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Robben",
+      "speakerId": "avg_npc_413_1",
+      "isRemote": false,
+      "text": "I... I just saw something red flash by in midair!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "Retreat!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Robben",
+      "speakerId": "avg_npc_413_1",
+      "isRemote": false,
+      "text": "It's like a thunderbolt or something! That's Originium Arts?!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Robben",
+      "speakerId": "avg_npc_413_1",
+      "isRemote": false,
+      "text": "These... abominable devils!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "Still won't come out?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "Your war, your battle, your fight, it can't be this game of runabout you're playing, can it White Wolf?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Robben",
+      "speakerId": "avg_npc_413_1",
+      "isRemote": false,
+      "text": "Five aerial blood streaks at once?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Robben",
+      "speakerId": "avg_npc_413_1",
+      "isRemote": false,
+      "text": "Horn, we have no chance of—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "No."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "No matter how strong the Arts... he's only one person."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "What did Victoria do in the past, to prevail over the Sarkaz again and again?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Robben",
+      "speakerId": "avg_npc_413_1",
+      "isRemote": false,
+      "text": "You mean..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "How many bolts do we have left?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "Cover me."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Robben",
+      "speakerId": "avg_npc_413_1",
+      "isRemote": false,
+      "text": "Yes, sir!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "A pitiful act of defiance—"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "Now... is our chance."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "Counting on an Arts bombardment to make your escape?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "I'll give you a rude awakening."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "—!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "What I said still stands. So long as my soldiers remain here, I will not flee."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "Not bad after all, White Wolf. I see you have the bravado to reverse course and charge me."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "Such a shame then..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "––Rrgh!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "Whoever told you that a Sarkaz depends solely on Arts in a fight?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "Even wielding no more than a sword—I can still defeat every last one of you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "Beating me... may not be so difficult..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "But making me fall will... not be so easy."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "How very brave of you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "It's thanks to that valor of yours that I can end this battle that much quicker—"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "The instant he thrusts his sword out, the soldier before Manfred abruptly vanishes.\nShe seems to practically dissolve and melt through the wall behind her, leaving not even a ripple."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "These Arts are unfamiliar..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "Vigilance!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "...A dagger from thin air?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "No, not from thin air..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "You react very fast."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "I'm afraid I'd have one more hole in my chest otherwise."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sarkaz Warrior",
+      "speakerId": "avg_npc_419_1",
+      "isRemote": false,
+      "text": "Target found! Take aim!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sarkaz Warrior",
+      "speakerId": "avg_npc_419_1",
+      "isRemote": false,
+      "text": "What the hell? They vanished again?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sarkaz Warrior",
+      "speakerId": "avg_npc_419_1",
+      "isRemote": false,
+      "text": "Th-They're too fast! I can't land a shot!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sarkaz Warrior",
+      "speakerId": "avg_npc_419_1",
+      "isRemote": false,
+      "text": "Shields up, up! Quick! Shit, are they able to blink?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "Blink? No such Arts could be cast without leaving even a trace!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "Or is this... a diversion?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "Don't let them fool you! All men, cast precision aside! Attack at once!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "So long as the enemy is still in front of us, they have no escape!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "Have we... hit them?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sarkaz Warrior",
+      "speakerId": "avg_npc_419_1",
+      "isRemote": false,
+      "text": "General, there's no body."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sarkaz Warrior",
+      "speakerId": "avg_npc_419_1",
+      "isRemote": false,
+      "text": "But the ground is shot to hell... Where can they still be hiding?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sarkaz Warrior",
+      "speakerId": "avg_npc_419_1",
+      "isRemote": false,
+      "text": "General, behind you!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "Show yourself, and your life is mine!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "Really?"
+    },
+    {
+      "type": "background",
+      "backgroundId": "27_g8_jail"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "Manfred, you put it very well, but unfortunately... you were only half right."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "Half?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "Sarkaz do not depend solely on Arts to fight—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "—but in no world do Sarkaz wield swords alone."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sarkaz Warrior",
+      "speakerId": "avg_npc_419_1",
+      "isRemote": false,
+      "text": "Aarrghh!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sarkaz Warrior",
+      "speakerId": "avg_npc_419_1",
+      "isRemote": false,
+      "text": "The ground shouldn't be this soft—this place is going to swallow us! I-I'm losing my grip on my blade!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sarkaz Warrior",
+      "speakerId": "avg_npc_419_1",
+      "isRemote": false,
+      "text": "General, you're sinking too?!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "27_g8_jail"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "...Nobody move, and nobody panic."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "The dagger is his staff. These are Arts, and nothing more than Arts."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "You're very calm-headed. Good... you've saved your men's lives."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "However..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "Rgh!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "The ground's... nearing my stomach..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "My sword..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "With your swordsmanship, blocking my attacks would be a simple task."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "But the more you struggle, the quicker the ground swallows you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "Is this how you want to go... this self-destruction?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "Urgh... *cough* *cough*..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sarkaz Warrior",
+      "speakerId": "avg_npc_419_1",
+      "isRemote": false,
+      "text": "General—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "No one come near!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "Or, you could cease all movements, same as your men."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "You want me to wait as you run my heart through?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "It'd be tough, killing you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "*cough* *cough*... *pant*..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "I see now. You're not actually here to take my life."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "I never imagined that outside of Ascalon, Rhodes Island would have yet another apex Sarkaz assassin."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "I'm no assassin."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "Unless it's called for, I have zero desire to harm any Sarkaz at all."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "But here you are, abetting our enemies!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "Are these Victorians... your enemies?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "What I see is a group of bruised, weary warriors, on the soil of their own home, struggling painfully just to live."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "You and Theresis, on the other hand, are turning the Sarkaz into the enemy of all."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "I had entertained having a talk with your people, if I had the chance."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "It's a sorry thing, that we should first meet on the battlefield—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "—Rhodes Island Elite Operator."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sarkaz Warrior",
+      "speakerId": "avg_npc_419_1",
+      "isRemote": false,
+      "text": "He's gone again? Ngh—the ground's back to normal!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "A hair's breadth."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "I was on the cusp of capturing him. His Arts are all too exceptional... He can induce hallucinations without influencing our nervous systems."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "There are marks of energy transformation on the ground. Could it be...?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sarkaz Warrior",
+      "speakerId": "avg_npc_419_1",
+      "isRemote": false,
+      "text": "General, they're all gone! Those Victoria soldiers, I mean—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "Keh... He would visit me and stall for time, just to extricate those half-dead soldiers one by one?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sarkaz Warrior",
+      "speakerId": "avg_npc_419_1",
+      "isRemote": false,
+      "text": "Are... Are we pursuing them, then?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "Do you think we can?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "I may have called it a hair's breadth, but against a Caster of that level, a hair's breadth is tantamount to guaranteed failure."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sarkaz Warrior",
+      "speakerId": "avg_npc_419_1",
+      "isRemote": false,
+      "text": "Dammit! We were set to clean out all the rebel forces by today! Now a mercenary's gone traitor AND some mystery Caster's held us back!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "It's Rhodes Island... This is all because of Rhodes Island."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "We missed our chance to round them up in their entirety, but their losses can't be light, can they?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "They had their chance to hide in the dark, but now they've been driven front and center. For them, revealing their forces is already a colossal tactical defeat."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "An assassin, an expert spacial illusionist Caster, and the as-yet unseen Banshee... How many cards does Rhodes Island still have up their sleeve?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sarkaz Warrior",
+      "speakerId": "avg_npc_419_1",
+      "isRemote": false,
+      "text": "General, what are your plans?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "...Let us go. Before we deal with Rhodes Island, we first need to put the discontented clown in its place."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "27_g10_lightinduarea_street_n"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "This should be far enough for now."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "...Is this outside of the factory district?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "You... cut open space with your dagger?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "Don't always trust your senses. Tricking your eyes is much easier than influencing space."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "You've..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "You've rescued me, and not just once. My eyes might not show me the truest answers, but my senses never lie."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "Just who are you?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "Misery. I'm Misery of Rhodes Island."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "Rhodes Island?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "I'm sorry..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Misery",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "You'll get a chance to hear a full explanation from Bagpipe in due time."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "Bagpipe?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Misery",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "She's a coworker at this point."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Misery",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "Not to mention... the last friend my best friend ever made."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "Sounds like I've been quite a bit out of the loop."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "But before I lose myself to the joy that Bagpipe made it out, allow me to once again thank you and Rhodes Island."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Misery",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "Let's get out of here first. Chances are we'll be meeting again soon enough."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Misery",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "Manfred's almost worked out the truth of my Originium Arts. He could be coming after us any moment now."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "...No. I imagine he'll be busy with something else right now."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Misery",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "You mean Dublinn."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Misery",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "County Hillock's Mandragora... There's no way she's leaving this factory now."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Misery",
+      "speakerId": "avg_npc_235",
+      "isRemote": false,
+      "text": "Are you giving yourself grief for not being able to personally avenge your comrades?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "I... I'm just lamenting."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "Myself for standing here, regretting that I missed the opportunity to kill her..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_4039_horn_1",
+      "isRemote": false,
+      "text": "Or her, for being long since beyond saving."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "27_g8_jail"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mandragora",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "That's odd. This is what you agreed with them, right? Why aren't they here to back us up?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Dublinn Soldier",
+      "speakerId": "avg_npc_244",
+      "isRemote": false,
+      "text": "I—argh!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mandragora",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "What the hell is it—?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Dublinn Soldier",
+      "speakerId": "avg_npc_244",
+      "isRemote": false,
+      "text": "Sarkaz! It's Sarkaz! We have to run—"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mandragora",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "...Were we spotted?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mandragora",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "No. Not like this. 'Spy', we have to go—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mandragora",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "Only ten meters to that sliding door there, right? Just ten meters, and we're right out, and..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Taran Secret Agent",
+      "speakerId": "avg_npc_421_1",
+      "isRemote": false,
+      "text": "A... Alright, let's run..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mandragora",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "Just like we used to, you pulling me. We only had to run fast enough that those noble kids couldn't catch us..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mandragora",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "Grotesques! Get down, block them!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mandragora",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "Bastards! Can't even rely on you in a time like this?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Taran Secret Agent",
+      "speakerId": "avg_npc_421_1",
+      "isRemote": false,
+      "text": "Mandragora..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mandragora",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "What? Didn't I tell you to stay quiet for now?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Taran Secret Agent",
+      "speakerId": "avg_npc_421_1",
+      "isRemote": false,
+      "text": "I can't keep walking. You go."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mandragora",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "What...? Can't you see? I've been doing all this just to..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Taran Secret Agent",
+      "speakerId": "avg_npc_421_1",
+      "isRemote": false,
+      "text": "To save me? Or to gain favor with the Leader?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mandragora",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "Is there a difference? What are you talking about? We're just five meters away, our people are right outside!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Taran Secret Agent",
+      "speakerId": "avg_npc_421_1",
+      "isRemote": false,
+      "text": "They're gone."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mandragora",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "What?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Taran Secret Agent",
+      "speakerId": "avg_npc_421_1",
+      "isRemote": false,
+      "text": "Mandragora... The Leader... she's long since abandoned us..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mandragora",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "'Spy'!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mandragora",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "Bastard, bastard—stones, go! Skewer them, impale every one of those Sarkaz!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mandragora",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "You'll be alright, 'Spy', it's just an arrow, we're three meters away, even if I have to carry you—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Taran Secret Agent",
+      "speakerId": "avg_npc_421_1",
+      "isRemote": false,
+      "text": "...Just go."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mandragora",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "I..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Taran Secret Agent",
+      "speakerId": "avg_npc_421_1",
+      "isRemote": false,
+      "text": "If you can make it out..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Taran Secret Agent",
+      "speakerId": "avg_npc_421_1",
+      "isRemote": false,
+      "text": "Don't... Don't head for the Leader."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mandragora",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "...Did you just die?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mandragora",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "Who said you could die so easily...? I..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mandragora",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "Cillian, Cillian... you bloody disgrace! I'm not letting you die here, you stand up for me, stand up!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "No need to work yourself up."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "You won't live much longer either, Mandragora. You and your old Taran friend will meet again before you know it."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mandragora",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mandragora",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "Ha... hahahaha!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mandragora",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "Manfred, you cost me another eleven lives."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mandragora",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "You don't know the half... you don't know anything of what it took to kill that many Sarkaz."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Manfred",
+      "speakerId": "avg_npc_404_1",
+      "isRemote": false,
+      "text": "...This is exactly why you must die here."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mandragora",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "Perfect... drop yourselves right in my lap."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mandragora",
+      "speakerId": "avg_npc_233_1",
+      "isRemote": false,
+      "text": "I'll crush every one of you into paste, no prisoners."
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": []

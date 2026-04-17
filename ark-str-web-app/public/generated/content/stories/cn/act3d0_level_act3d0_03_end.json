@@ -6,7 +6,7 @@
   "title": "竞走赛",
   "storyCode": "OF-3",
   "avgTag": "行动后",
-  "sourcePath": "vendor/ArknightsGamedata/cn/gamedata/story/activities/act3d0/level_act3d0_03_end.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/cn/gamedata/story/activities/act3d0/level_act3d0_03_end.txt",
   "sourceHash": "6e4240b5cee086d97b6feca6944f6aae7f9a65b7561c97627bc74f82534f32ae",
   "bodyAvailable": true,
   "blocks": [
@@ -18,18 +18,21 @@
       "type": "dialogue",
       "speakerName": "保镖A",
       "speakerId": null,
+      "isRemote": false,
       "text": "烫烫烫！焦了焦了！"
     },
     {
       "type": "dialogue",
       "speakerName": "保镖B",
       "speakerId": null,
+      "isRemote": false,
       "text": "噫！我的头发！"
     },
     {
       "type": "dialogue",
       "speakerName": "保镖A",
       "speakerId": null,
+      "isRemote": false,
       "text": "啧，撤退，撤退！"
     },
     {
@@ -39,18 +42,21 @@
       "type": "dialogue",
       "speakerName": "伊芙利特",
       "speakerId": "char_134_ifrit",
+      "isRemote": false,
       "text": "哈哈哈，果然还是打架有意思啊，博士！"
     },
     {
       "type": "dialogue",
       "speakerName": "伊芙利特",
       "speakerId": "char_134_ifrit",
+      "isRemote": false,
       "text": "啊，对了，博士，我这是为了救你，而且也听你的话没有下重手了，你可不许告诉赫默我打架的事！"
     },
     {
       "type": "dialogue",
       "speakerName": "伊芙利特",
       "speakerId": "char_134_ifrit",
+      "isRemote": false,
       "text": "要是被她知道了我的作业肯定又要变多了！"
     },
     {
@@ -64,6 +70,7 @@
               "type": "dialogue",
               "speakerName": "伊芙利特",
               "speakerId": "char_134_ifrit",
+              "isRemote": false,
               "text": "嘿嘿，我就知道博士是个好人！"
             }
           ]
@@ -76,49 +83,54 @@
               "type": "dialogue",
               "speakerName": "伊芙利特",
               "speakerId": "char_134_ifrit",
+              "isRemote": false,
               "text": "哼，那我可不管！"
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "锡兰",
-          "speakerId": "char_348_ceylon",
-          "text": "源石驱动的火焰喷射器......而且这个功率，好厉害的术师。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "伊芙利特",
-          "speakerId": "char_134_ifrit",
-          "text": "大姐，你的眼光不错欸，我超厉害的！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "锡兰",
-          "speakerId": "char_348_ceylon",
-          "text": "我叫锡兰。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "锡兰",
-          "speakerId": "char_348_ceylon",
-          "text": "谢谢你救了我们。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "伊芙利特",
-          "speakerId": "char_134_ifrit",
-          "text": "哦、哦......没关系。这，这是我该做的。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "伊芙利特",
-          "speakerId": "char_134_ifrit",
-          "text": "喂，博士，这个姐姐好懂礼貌啊，这种时候我该怎么做来着？"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "锡兰",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "源石驱动的火焰喷射器......而且这个功率，好厉害的术师。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "伊芙利特",
+      "speakerId": "char_134_ifrit",
+      "isRemote": false,
+      "text": "大姐，你的眼光不错欸，我超厉害的！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "锡兰",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "我叫锡兰。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "锡兰",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "谢谢你救了我们。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "伊芙利特",
+      "speakerId": "char_134_ifrit",
+      "isRemote": false,
+      "text": "哦、哦......没关系。这，这是我该做的。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "伊芙利特",
+      "speakerId": "char_134_ifrit",
+      "isRemote": false,
+      "text": "喂，博士，这个姐姐好懂礼貌啊，这种时候我该怎么做来着？"
     },
     {
       "type": "choice",
@@ -138,30 +150,31 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "伊芙利特",
-          "speakerId": "char_134_ifrit",
-          "text": "噢，好吧，那我试......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "伊芙利特",
-          "speakerId": "char_134_ifrit",
-          "text": "啊？我忘记我的烤肉还在架子上了！我不跟你们多说了！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "伊芙利特",
-          "speakerId": "char_134_ifrit",
-          "text": "博士，锡兰，你们之后要是想吃烧烤记得来找我啊！"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "伊芙利特",
+      "speakerId": "char_134_ifrit",
+      "isRemote": false,
+      "text": "噢，好吧，那我试......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "伊芙利特",
+      "speakerId": "char_134_ifrit",
+      "isRemote": false,
+      "text": "啊？我忘记我的烤肉还在架子上了！我不跟你们多说了！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "伊芙利特",
+      "speakerId": "char_134_ifrit",
+      "isRemote": false,
+      "text": "博士，锡兰，你们之后要是想吃烧烤记得来找我啊！"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -171,51 +184,59 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "锡兰",
-          "speakerId": "char_348_ceylon",
-          "text": "博士，我们也赶紧回去吧。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "char_188_helage",
-          "text": "博士，你们平安无事，很好。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "锡兰",
-          "speakerId": "char_348_ceylon",
-          "text": "十分感谢您的相助，请问......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "赫拉格",
-          "speakerId": "char_188_helage",
-          "text": "你可以叫我赫拉格。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "赫拉格",
-          "speakerId": "char_188_helage",
-          "text": "和博士一样，我也来自罗德岛。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "赫拉格",
-          "speakerId": "char_188_helage",
-          "text": "博士，你现在有时间吗，有些话我要单独告诉你。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "锡兰",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "博士，我们也赶紧回去吧。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_hotel"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "char_188_helage",
+      "isRemote": false,
+      "text": "博士，你们平安无事，很好。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "锡兰",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "十分感谢您的相助，请问......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "赫拉格",
+      "speakerId": "char_188_helage",
+      "isRemote": false,
+      "text": "你可以叫我赫拉格。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "赫拉格",
+      "speakerId": "char_188_helage",
+      "isRemote": false,
+      "text": "和博士一样，我也来自罗德岛。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "赫拉格",
+      "speakerId": "char_188_helage",
+      "isRemote": false,
+      "text": "博士，你现在有时间吗，有些话我要单独告诉你。"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": [

@@ -6,7 +6,7 @@
   "title": "酣眠的城市",
   "storyCode": "NL-ST-3",
   "avgTag": "幕间",
-  "sourcePath": "vendor/ArknightsGamedata/cn/gamedata/story/activities/act13side/level_act13side_st03.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/cn/gamedata/story/activities/act13side/level_act13side_st03.txt",
   "sourceHash": "f3f6eab1f2c5d52f188b8e44593029d84083dc0ef8ed5b5e109ade9242a3a87d",
   "bodyAvailable": true,
   "blocks": [
@@ -18,6 +18,10 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
       "type": "narration",
       "text": "确认卡瓦莱利亚基陷入紧急情况。\n确认讯号代码正确。确认部队识别码正确。\n全队听令。\n撤下伪装，进城。"
     },
@@ -25,27 +29,35 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_23_G09"
+    },
+    {
       "type": "dialogue",
       "speakerName": "砾",
       "speakerId": "avg_237_gravel_1",
+      "isRemote": false,
       "text": "......距离电力完全恢复，还需要一点时间。"
     },
     {
       "type": "dialogue",
       "speakerName": "砾",
       "speakerId": "avg_237_gravel_1",
+      "isRemote": false,
       "text": "罗德岛的各位已经在指引下回到了房间休息，如果二位想要确认的话......"
     },
     {
       "type": "dialogue",
       "speakerName": "阿米娅",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "......博士，我想去看看各位。"
     },
     {
       "type": "dialogue",
       "speakerName": "阿米娅",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "事发突然，也许会有一些干员弄不清状况，这些天对感染者的抗议，也让干员们积攒了不少压力。"
     },
     {
@@ -62,18 +74,21 @@
               "type": "dialogue",
               "speakerName": "阿米娅",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "啊，没关系的，博士。"
             },
             {
               "type": "dialogue",
               "speakerName": "阿米娅",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "这些天一直是博士在应付各种商业洽谈和社交活动，其实我还挺过意不去的。"
             },
             {
               "type": "dialogue",
               "speakerName": "阿米娅",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "趁着这个机会，赶紧休息一下吧。"
             }
           ]
@@ -86,12 +101,14 @@
               "type": "dialogue",
               "speakerName": "阿米娅",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "......啊哈哈，博士已经很累了吧。"
             },
             {
               "type": "dialogue",
               "speakerName": "阿米娅",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "毕竟从昨天开始就一直在应付那些企业家，嗓子都哑了吧？"
             }
           ]
@@ -104,67 +121,74 @@
               "type": "dialogue",
               "speakerName": "阿米娅",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "没关系，有芙蓉小姐在，应该不会出什么差错。"
             },
             {
               "type": "dialogue",
               "speakerName": "阿米娅",
               "speakerId": "char_002_amiya",
+              "isRemote": false,
               "text": "我也只是去确认一下各位的情况，很快就会回来的。"
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "砾",
-          "speakerId": "avg_237_gravel_1",
-          "text": "请阿米娅小姐放心吧，您不在的时间里，我会照顾好博士的。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米娅",
-          "speakerId": "char_002_amiya",
-          "text": "啊......嗯。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米娅",
-          "speakerId": "char_002_amiya",
-          "text": "那么我先下去啦。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "砾",
-          "speakerId": "avg_237_gravel_1",
-          "text": "......{@nickname}博士。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "砾",
-          "speakerId": "avg_237_gravel_1",
-          "text": "最近商业联合会有一些动向，恐怕会对罗德岛不利。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "砾",
-          "speakerId": "avg_237_gravel_1",
-          "text": "加上现在的停电事件，恐怕下一步会是更加明目张胆的阴谋。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "砾",
-          "speakerId": "avg_237_gravel_1",
-          "text": "最近......请千万不要离开我的视线。当然，您要是自愿留在我的身边，那是再好不过。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "砾",
+      "speakerId": "avg_237_gravel_1",
+      "isRemote": false,
+      "text": "请阿米娅小姐放心吧，您不在的时间里，我会照顾好博士的。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米娅",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "啊......嗯。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米娅",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "那么我先下去啦。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "砾",
+      "speakerId": "avg_237_gravel_1",
+      "isRemote": false,
+      "text": "......{@nickname}博士。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "砾",
+      "speakerId": "avg_237_gravel_1",
+      "isRemote": false,
+      "text": "最近商业联合会有一些动向，恐怕会对罗德岛不利。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "砾",
+      "speakerId": "avg_237_gravel_1",
+      "isRemote": false,
+      "text": "加上现在的停电事件，恐怕下一步会是更加明目张胆的阴谋。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "砾",
+      "speakerId": "avg_237_gravel_1",
+      "isRemote": false,
+      "text": "最近......请千万不要离开我的视线。当然，您要是自愿留在我的身边，那是再好不过。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -174,24 +198,24 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "砾",
-          "speakerId": "avg_237_gravel_1",
-          "text": "......嘻嘻，您突然这么解风情，倒是让我有些吃惊。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "砾",
-          "speakerId": "avg_237_gravel_1",
-          "text": "怎么了？难道发生了什么好事吗？"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "砾",
+      "speakerId": "avg_237_gravel_1",
+      "isRemote": false,
+      "text": "......嘻嘻，您突然这么解风情，倒是让我有些吃惊。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "砾",
+      "speakerId": "avg_237_gravel_1",
+      "isRemote": false,
+      "text": "怎么了？难道发生了什么好事吗？"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -201,30 +225,31 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "砾",
-          "speakerId": "avg_237_gravel_1",
-          "text": "......您不是问过类似的问题了吗？怎么，是想多听一听我的声音吗？可以哦。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "砾",
-          "speakerId": "avg_237_gravel_1",
-          "text": "他们是卡西米尔的蛀虫。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "砾",
-          "speakerId": "avg_237_gravel_1",
-          "text": "商人们联合起来，腐蚀骑士和城市，最终达成他们自己的目的。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "砾",
+      "speakerId": "avg_237_gravel_1",
+      "isRemote": false,
+      "text": "......您不是问过类似的问题了吗？怎么，是想多听一听我的声音吗？可以哦。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "砾",
+      "speakerId": "avg_237_gravel_1",
+      "isRemote": false,
+      "text": "他们是卡西米尔的蛀虫。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "砾",
+      "speakerId": "avg_237_gravel_1",
+      "isRemote": false,
+      "text": "商人们联合起来，腐蚀骑士和城市，最终达成他们自己的目的。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -234,8 +259,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -245,8 +269,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -256,8 +279,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -267,24 +289,24 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "砾",
-          "speakerId": "avg_237_gravel_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "砾",
-          "speakerId": "avg_237_gravel_1",
-          "text": "......您做了什么？"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "砾",
+      "speakerId": "avg_237_gravel_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "砾",
+      "speakerId": "avg_237_gravel_1",
+      "isRemote": false,
+      "text": "......您做了什么？"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -294,18 +316,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "砾",
-          "speakerId": "avg_237_gravel_1",
-          "text": "嘻......愿闻其详。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "砾",
+      "speakerId": "avg_237_gravel_1",
+      "isRemote": false,
+      "text": "嘻......愿闻其详。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -315,8 +336,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -326,8 +346,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -337,18 +356,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "砾",
-          "speakerId": "avg_237_gravel_1",
-          "text": "......最后一种呢？"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "砾",
+      "speakerId": "avg_237_gravel_1",
+      "isRemote": false,
+      "text": "......最后一种呢？"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -358,8 +376,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -369,18 +386,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "砾",
-          "speakerId": "avg_237_gravel_1",
-          "text": "......您的意思是，联合会内部有分歧？而您......已经抓住了那些分歧？"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "砾",
+      "speakerId": "avg_237_gravel_1",
+      "isRemote": false,
+      "text": "......您的意思是，联合会内部有分歧？而您......已经抓住了那些分歧？"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -400,24 +416,24 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "砾",
-          "speakerId": "avg_237_gravel_1",
-          "text": "......但您不过初来乍到，只是通过发言人的渠道，结识了一部分常务董事......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "砾",
-          "speakerId": "avg_237_gravel_1",
-          "text": "您怎么敢如此断言？一旦您选错了信任对象，其后果绝非监正会可以承担......"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "砾",
+      "speakerId": "avg_237_gravel_1",
+      "isRemote": false,
+      "text": "......但您不过初来乍到，只是通过发言人的渠道，结识了一部分常务董事......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "砾",
+      "speakerId": "avg_237_gravel_1",
+      "isRemote": false,
+      "text": "您怎么敢如此断言？一旦您选错了信任对象，其后果绝非监正会可以承担......"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -432,1788 +448,2120 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "砾",
-          "speakerId": "avg_237_gravel_1",
-          "text": "......不。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "砾",
-          "speakerId": "avg_237_gravel_1",
-          "text": "您当然不。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "你们还有时间可以浪费吗？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "关于感染者的通缉令已经发出，等到大隔断的影响过去，你们无路可逃。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "啊，顺便一提，之所以叫“大隔断”，是因为在失去核心电力后各地块会出现短暂的漂移现象......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "现在，联合会周遭的地块连接都中断了，你们逃不出去。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "格蕾纳蒂",
-          "speakerId": "avg_npc_123",
-          "text": "......呃......该死......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "......好像不是可以正面打赢的对手啊。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "感谢你总算理解了你早该理解的事情。那我再问一遍，要不要把东西交给我？那我可以放走你们。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "嘿，无胄盟什么时候这么好心了？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "......心情问题吧，终于从漫长的......斗争里看到了曙光。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "从玻利瓦尔的废墟，到卡西米尔的平原，最后来到这里。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "没有正常人会觉得杀人是一件快乐的事情，只有那些养尊处优的蠢货喜欢观赏他人流血。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "现在，你能拯救我，感染者，我也可以帮你摧毁无胄盟。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "......抱歉，就算你说的是真的，我也不打算把这东西交给你。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "为什么？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "我们已经厌倦了受他人操纵的日子了，无胄盟。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "小灰！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "格蕾纳蒂",
-          "speakerId": "avg_npc_123",
-          "text": "明白，看这一炮如何！？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "——唔。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "咳咳......咳咳......搞什么。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "跑，小灰！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "格蕾纳蒂",
-          "speakerId": "avg_npc_123",
-          "text": "我知道！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "......在这座城市的构造区乱跑，小心失足跌进引擎里，变成肉末啊。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "你可跑不了——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "——唔。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "......！？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "小灰！小心！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "格蕾纳蒂",
-          "speakerId": "avg_npc_123",
-          "text": "——"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "青色的箭矢贯穿了焰尾骑士的盔甲。\n索娜试图格挡，但是巨大的冲击力依然让她娇小的身躯失去控制。\n她在半空中挣扎，飞向城区地块之间的间隙。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "格蕾纳蒂",
-          "speakerId": "avg_npc_123",
-          "text": "索娜——！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "（......歪了点，刚才突然眼前黑了一下......）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "（疲劳产生的错觉吗......？不，确实是被干扰了......）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "格蕾纳蒂",
-          "speakerId": "avg_npc_123",
-          "text": "——罗伊——！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "......！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "失去理智了吗。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "啧啧啧，这么近的距离开火，你是打算同归于尽了吗？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "格蕾纳蒂",
-          "speakerId": "avg_npc_123",
-          "text": "你......你竟然......对索娜......！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "......确实有些不小心。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "还没确认那枚芯片是不是真的被销毁了，这很危险，我可不敢担这个责任。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "格蕾纳蒂",
-          "speakerId": "avg_npc_123",
-          "text": "少废话！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "（该怎么办，赶紧杀掉灰毫，想办法下去确认一下尸体吗？）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "（不，这也太危险了，而且电力就快要恢复了，我可不想被夹在铁板中间啊。）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "格蕾纳蒂",
-          "speakerId": "avg_npc_123",
-          "text": "我要你血债血偿——！！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "直来直往，失去理智之后你的动作还真是好看穿啊——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "格蕾纳蒂",
-          "speakerId": "avg_npc_123",
-          "text": "——是吗？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "！？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "唔，竟然是我大意了吗？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "......跑了？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "这么说，那股怒火是装出来的......？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "......为了感染者而成为骑士。\n为了感染者而奋战至死。\n我很荣幸。\n很荣幸......死于一场荣耀的事业。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "......虽然很想大义凛然地这么说，但是......这是什么情况？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "烛骑士",
-          "speakerId": "avg_npc_215_1",
-          "text": "罗伊还在这附近，他一定会发现我的法术，我们不能久留。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "烛骑士",
-          "speakerId": "avg_npc_215_1",
-          "text": "通知你的同伴，让她逃走吧，如有必要，我会在暗中帮助她。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "......喂，小灰，我没事。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "别让他察觉到，找机会逃走，我趁着帮你挡箭的时候把芯片扔进你兜里了，确认一下。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "不用回复，我们回头见。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "......你接住的我？怎么做到的？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "烛骑士",
-          "speakerId": "avg_npc_215_1",
-          "text": "法术的应用方法多种多样，经过刻苦学习的莱塔尼亚人，无论其原本法术是什么性质，几乎都能使用基础的法术形式。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "......你是，烛骑士，对吧？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "你这样的大骑士，为什么要救我......救一个感染者？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "烛骑士",
-          "speakerId": "avg_npc_215_1",
-          "text": "有个人想要见你。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "谁？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "烛骑士",
-          "speakerId": "avg_npc_215_1",
-          "text": "还不能说。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "啊......你也知道我们正在做什么事，瘫痪城市，袭击联合会......我可没有时间郊游喔？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "烛骑士",
-          "speakerId": "avg_npc_215_1",
-          "text": "......你不信任我，也情有可原。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "不，我相信你。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "只要看有些人一眼，你就能从她的眼里读出他们的想法。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "当然，这招可不是百分之百准确的，但是现在情况紧急，对吧。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "企业员工",
-          "speakerId": "avg_npc_222",
-          "text": "唉，怎么遇上这种事，路也不通，车也打不到，今晚又回不了家了吗......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "企业员工",
-          "speakerId": "avg_npc_222",
-          "text": "该死的组长，说什么报表昨天就该做完......一天能做完个鬼......"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "企业员工",
-          "speakerId": "avg_npc_222",
-          "text": "唔啊啊啊，怎、怎么了！？？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "莫妮克",
-          "speakerId": "avg_npc_208_1",
-          "text": "让开，否则我就连你一起射穿。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "企业员工",
-          "speakerId": "avg_npc_222",
-          "text": "咿————别、别，我这就让——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "托兰",
-          "speakerId": "avg_npc_213_1",
-          "text": "别乱动，小哥，你也不想脑袋搬家吧？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "企业员工",
-          "speakerId": "avg_npc_222",
-          "text": "但、但是她让我动——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "托兰",
-          "speakerId": "avg_npc_213_1",
-          "text": "一个张口闭口就要杀你的人，你会相信吗？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "企业员工",
-          "speakerId": "avg_npc_222",
-          "text": "我——我——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "莫妮克",
-          "speakerId": "avg_npc_208_1",
-          "text": "托兰，躲在普通人身后，是不是有点太难看了？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "企业员工",
-          "speakerId": "avg_npc_222",
-          "text": "啊啊啊——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "托兰",
-          "speakerId": "avg_npc_213_1",
-          "text": "也有点道理，我数到三？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "企业员工",
-          "speakerId": "avg_npc_222",
-          "text": "求、求求你们了，别管我，别管我！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "托兰",
-          "speakerId": "avg_npc_213_1",
-          "text": "一。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "企业员工",
-          "speakerId": "avg_npc_222",
-          "text": "咿呀——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "托兰",
-          "speakerId": "avg_npc_213_1",
-          "text": "二。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "莫妮克",
-          "speakerId": "avg_npc_208_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "托兰",
-          "speakerId": "avg_npc_213_1",
-          "text": "三！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "企业员工",
-          "speakerId": "avg_npc_222",
-          "text": "两个疯子，两个疯子——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "企业员工",
-          "speakerId": "avg_npc_222",
-          "text": "这条路通向哪儿——等等，那里是——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "企业员工",
-          "speakerId": "avg_npc_222",
-          "text": "骑士先生！骑士老爷！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "企业员工",
-          "speakerId": "avg_npc_222",
-          "text": "我是玫瑰报业的员工，您帮帮我，您知道我们吗？我会向编辑部推荐您的，那边有两个不法之徒——"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "逐魇骑士",
-          "speakerId": "avg_npc_225",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "企业员工",
-          "speakerId": "avg_npc_222",
-          "text": "——咿——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "逐魇骑士",
-          "speakerId": "avg_npc_225",
-          "text": "......"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "托兰",
-          "speakerId": "avg_npc_213_1",
-          "text": "......你的箭是用不完的吗？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "莫妮克",
-          "speakerId": "avg_npc_208_1",
-          "text": "啧，我还是第一次好几分钟没能追上猎物......了不起，托兰·卡什。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "莫妮克",
-          "speakerId": "avg_npc_208_1",
-          "text": "你的目的就是拖住我吗？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "托兰",
-          "speakerId": "avg_npc_213_1",
-          "text": "呵呵......你呢，你的目的是陪我玩吗？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "莫妮克",
-          "speakerId": "avg_npc_208_1",
-          "text": "不，你的人头值很多钱，任何时候，我们都需要钱。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "托兰",
-          "speakerId": "avg_npc_213_1",
-          "text": "哦？你家里有病重的弟弟吗？还是有需要赡养的老父亲？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "莫妮克",
-          "speakerId": "avg_npc_208_1",
-          "text": "......这份工作能为我带来你无法想象的财富，赏金猎人。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "莫妮克",
-          "speakerId": "avg_npc_208_1",
-          "text": "我们比你们，比骑士，比任何一个卡西米尔人都更懂得这个社会的运作规则。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "莫妮克",
-          "speakerId": "avg_npc_208_1",
-          "text": "我们只是选了一条捷径，等今晚的猎杀结束之后，我们将迎来新的开始。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "莫妮克",
-          "speakerId": "avg_npc_208_1",
-          "text": "不过现在，好像又有一个蠢货想要搅局。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "托兰",
-          "speakerId": "avg_npc_213_1",
-          "text": "......"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "逐魇骑士",
-          "speakerId": "avg_npc_225",
-          "text": "......在这座，死气沉沉的城市里......还能见到这样的夜空。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "逐魇骑士",
-          "speakerId": "avg_npc_225",
-          "text": "这才是我所熟悉的夜晚，让这人造的孽物搁浅于此......放空这座城市的血，做得好，不知名的反抗者！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "托兰",
-          "speakerId": "avg_npc_213_1",
-          "text": "......真是一位奇怪的骑士，私斗可不挣钱啊。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "莫妮克",
-          "speakerId": "avg_npc_208_1",
-          "text": "啧，闹剧。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "玛嘉烈",
-          "speakerId": "avg_1014_nearl2_1",
-          "text": "大家都没事吧！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "玛莉娅",
-          "speakerId": "avg_npc_061",
-          "text": "姐姐！我刚把备用电池找出来......唔......这盏灯就不开了吧？感觉撑不了多久......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "佐菲娅",
-          "speakerId": "avg_npc_064_weapon_1",
-          "text": "......看来大家都没事。老弗和科瓦尔去外面查看情况了，一会回来。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "佐菲娅",
-          "speakerId": "avg_npc_064_weapon_1",
-          "text": "玛恩纳呢？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "玛莉娅",
-          "speakerId": "avg_npc_061",
-          "text": "叔叔待在家里，说是难得可以从工作中解脱出来，想一个人待一会......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "玛莉娅",
-          "speakerId": "avg_npc_061",
-          "text": "闪灵姐姐和夜莺姐姐呢？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "玛嘉烈",
-          "speakerId": "avg_1014_nearl2_1",
-          "text": "她们担心博士被无胄盟盯上，已经赶回感染者收容中心了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "玛莉娅",
-          "speakerId": "avg_npc_061",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "玛嘉烈",
-          "speakerId": "avg_1014_nearl2_1",
-          "text": "没事的，她们都是很可靠的人。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "玛莉娅",
-          "speakerId": "avg_npc_061",
-          "text": "不......只是......我好像还是不知道姐姐的任何事情......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "玛嘉烈",
-          "speakerId": "avg_1014_nearl2_1",
-          "text": "抱歉，是我坚持不让你们有任何接触的......我不能把博士他们卷入我自己的事情中来。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "玛嘉烈",
-          "speakerId": "avg_1014_nearl2_1",
-          "text": "但也许迟早有一天，你们会相逢、相识。也许有一天，玛莉娅，你会登上那艘船。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "玛嘉烈",
-          "speakerId": "avg_1014_nearl2_1",
-          "text": "理想者的光辉终究会指引所有人，即使他们的前路各不相同，信念迥异，也没有什么能动摇他们心中的意志。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "玛莉娅",
-          "speakerId": "avg_npc_061",
-          "text": "......就像......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "玛嘉烈",
-          "speakerId": "avg_1014_nearl2_1",
-          "text": "就像骑士小说里的骑士那样。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "老骑士",
-          "speakerId": "avg_npc_120",
-          "text": "我回来了！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "老工匠",
-          "speakerId": "avg_npc_101",
-          "text": "真的一片漆黑啊......隔壁卖手电筒的今天都要断货了吧......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "光头马丁",
-          "speakerId": "avg_npc_107",
-          "text": "玛嘉烈，你来了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "老骑士",
-          "speakerId": "avg_npc_120",
-          "text": "现在外面是一团乱啦，我看，我们就老老实实待在这里，等着电力恢复如何？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "老工匠",
-          "speakerId": "avg_npc_101",
-          "text": "就干等着？本来今天是不是也有比赛来着？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "玛嘉烈",
-          "speakerId": "avg_1014_nearl2_1",
-          "text": "本来是决出第一个八强骑士的日子。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "佐菲娅",
-          "speakerId": "avg_npc_064_weapon_1",
-          "text": "......你有关注血骑士的动向吗？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "玛嘉烈",
-          "speakerId": "avg_1014_nearl2_1",
-          "text": "了解过一些......他是这赛季从选拔阶段到特锦赛的无败王者......不仅如此......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "玛嘉烈",
-          "speakerId": "avg_1014_nearl2_1",
-          "text": "他还是感染者的英雄。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "......我们要去哪儿？不是我抱怨，我真的没有太多时间......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "烛骑士",
-          "speakerId": "avg_npc_215_1",
-          "text": "就是这。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "......冠军墙展厅？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "烛骑士",
-          "speakerId": "avg_npc_215_1",
-          "text": "这是一次秘密的会面，还请您不要声张。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "是哪个骑士要见我吗？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "烛骑士",
-          "speakerId": "avg_npc_215_1",
-          "text": "骑士吗......说的没错，确实是一位可敬的骑士。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "烛骑士",
-          "speakerId": "avg_npc_215_1",
-          "text": "呵呵，别紧张......是位年纪有些大的女士。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "烛骑士",
-          "speakerId": "avg_npc_215_1",
-          "text": "你先进去吧。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "......你不进来？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "烛骑士",
-          "speakerId": "avg_npc_215_1",
-          "text": "她可能是卡西米尔为数不多的几位，让我有些害怕的人呢。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "哇哦......手握烛剑的烛骑士也会有害怕的人？那我真的没问题吗？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "烛骑士",
-          "speakerId": "avg_npc_215_1",
-          "text": "......可能不太一样吧。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "烛骑士",
-          "speakerId": "avg_npc_215_1",
-          "text": "毕竟名义上，她算我的半个养母。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "（和联合会一样的紧急电源......没有被大隔断的断电影响吗......）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "（骑士和......联合会......）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "（......还在这片黑夜里闪着光。）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "......"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "灯光扑闪。\n打断了索娜的思绪。\n骑士和资本一并避开了这浓稠的夜色。\n谁会在今夜溺亡？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "年长的骑士",
-          "speakerId": "avg_npc_210_1",
-          "text": "......焰尾骑士，索娜。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "年长的骑士",
-          "speakerId": "avg_npc_210_1",
-          "text": "快过来些，让我好好看看你。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "——！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "您、您是......！！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "年长的骑士",
-          "speakerId": "avg_npc_210_1",
-          "text": "哎。我今天不是以公务之身来见你的。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "年长的骑士",
-          "speakerId": "avg_npc_210_1",
-          "text": "我听说了......感染者骑士和监正会的一些骑士，做了笔交易。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "年长的骑士",
-          "speakerId": "avg_npc_210_1",
-          "text": "是骑士协会和监正会议员，德米安。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "年长的骑士",
-          "speakerId": "avg_npc_210_1",
-          "text": "感染者为了能在大骑士领活下去，答应在他的配合下，进行了本次行动。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "年长的骑士",
-          "speakerId": "avg_npc_210_1",
-          "text": "四城大隔断......监正会默许了这件事再次发生。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "年长的骑士",
-          "speakerId": "avg_npc_210_1",
-          "text": "看看这面墙......这些骑士，他们本该成为真正的英雄，而不是以这种姿态，被人关注。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "年长的骑士",
-          "speakerId": "avg_npc_210_1",
-          "text": "唉，你不感到......悲哀吗？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "......悲哀，女士。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "但我为感染者们至今仍不能受到公正的待遇而悲哀，为那些沉溺在享乐与欲望之中的人们而悲哀。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "为每一个......努力活着，却举步维艰的卡西米尔人......而悲哀。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "年长的骑士",
-          "speakerId": "avg_npc_210_1",
-          "text": "......真是漂亮的就职演说，小松鼠。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "监正会能让我们过普通的生活吗？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "年长的骑士",
-          "speakerId": "avg_npc_210_1",
-          "text": "手续、公文、国民院认可的法律文件。当然，监正会都会为你办妥。这是老德米安答应你的。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "年长的骑士",
-          "speakerId": "avg_npc_210_1",
-          "text": "可你身上的源石结晶呢？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "年长的骑士",
-          "speakerId": "avg_npc_210_1",
-          "text": "我欣赏你们，红松骑士团，但是你们必须克服的，是一些更模糊的问题。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "年长的骑士",
-          "speakerId": "avg_npc_210_1",
-          "text": "之后，德米安会和你们对接的。就相信他吧，虽然办法笨了点，但他有的是想法。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "......好。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "年长的骑士",
-          "speakerId": "avg_npc_210_1",
-          "text": "......好了，我的骑士团也快到了，赶紧去找你的同伴们会合吧。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "年长的骑士",
-          "speakerId": "avg_npc_210_1",
-          "text": "还有，告诉薇薇安娜一声，让她偶尔有空也来陪我吃顿饭吧。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "索娜",
-          "speakerId": "avg_npc_122",
-          "text": "............骑士意味着什么，女士？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "年长的骑士",
-          "speakerId": "avg_npc_210_1",
-          "text": "每个人都有不一样的答案，孩子。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "年长的骑士",
-          "speakerId": "avg_npc_210_1",
-          "text": "你不会想听到我的答案的，我们这些老家伙呀，走过太多的路啦。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "年长的骑士",
-          "speakerId": "avg_npc_210_1",
-          "text": "走吧，小松鼠，走吧。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "年长的骑士",
-          "speakerId": "avg_npc_210_1",
-          "text": "去看看卡西米尔的朝阳，是不是还那样炽热。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "......追丢了啊。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "之后再发布围剿任务比较有效率吗......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "是我，怎么了吗？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "......什......多少？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "逐魇骑士",
-          "speakerId": "avg_npc_225",
-          "text": "......卓越的剑术。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "托兰",
-          "speakerId": "avg_npc_213_1",
-          "text": "唉，我可不想继续陪你浪费时间啊，骑士老兄。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "莫妮克",
-          "speakerId": "avg_npc_208_1",
-          "text": "......这个疯子......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "莫妮克",
-          "speakerId": "avg_npc_208_1",
-          "text": "杀了托兰之后，就立刻撤退好了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "莫妮克",
-          "speakerId": "avg_npc_208_1",
-          "text": "......我在陪“公会领袖”和梦魇捉迷藏，有什么事一会再说。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "莫妮克",
-          "speakerId": "avg_npc_208_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "莫妮克",
-          "speakerId": "avg_npc_208_1",
-          "text": "不......我立刻就去。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "莫妮克",
-          "speakerId": "avg_npc_208_1",
-          "text": "游戏到此为止了，托兰。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "托兰",
-          "speakerId": "avg_npc_213_1",
-          "text": "你要逃走？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "莫妮克",
-          "speakerId": "avg_npc_208_1",
-          "text": "不。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "莫妮克",
-          "speakerId": "avg_npc_208_1",
-          "text": "还有你也是，梦魇。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "托兰",
-          "speakerId": "avg_npc_213_1",
-          "text": "——！你是梦魇！？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "逐魇骑士",
-          "speakerId": "avg_npc_225",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "莫妮克",
-          "speakerId": "avg_npc_208_1",
-          "text": "暂时停手吧。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "莫妮克",
-          "speakerId": "avg_npc_208_1",
-          "text": "你是......来卡瓦莱利亚基寻找同胞和试炼的，对吧？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "逐魇骑士",
-          "speakerId": "avg_npc_225",
-          "text": "别把荣耀的传统说得如此轻浮，卡西米尔人，你没有这个资格。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "莫妮克",
-          "speakerId": "avg_npc_208_1",
-          "text": "不，只是好心提醒你一句，梦魇。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "莫妮克",
-          "speakerId": "avg_npc_208_1",
-          "text": "别在我们这里白费力气。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "托兰",
-          "speakerId": "avg_npc_213_1",
-          "text": "这倒是句公道话。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "逐魇骑士",
-          "speakerId": "avg_npc_225",
-          "text": "......无凭无据......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "莫妮克",
-          "speakerId": "avg_npc_208_1",
-          "text": "......哼，后会无期，蠢货。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "企业员工",
-          "speakerId": "avg_npc_222",
-          "text": "交通还没恢复吗？我听说有些地方已经通电了啊......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡西米尔骑士",
-          "speakerId": "avg_npc_219",
-          "text": "这么大的损失，难道骑士协会不应该赔偿我们吗！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "游客",
-          "speakerId": "avg_npc_033",
-          "text": "说得没错！政府应该补偿旅游津贴！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "企业员工",
-          "speakerId": "avg_npc_222",
-          "text": "唉......冰箱里的鲜肉没问题吧......"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "莫妮克",
-          "speakerId": "avg_npc_208_1",
-          "text": "......确定了吗？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "唉。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "你知道吗，他们中的任何一个人，我们都可以独自解决。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "但两个人，就需要我们联手。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "三个人，将是一场空前绝后的苦战。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "如果是三个及以上......那可以视作一支战术小队了，无胄盟承担不起这个损失。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "要是超过双手之数，把无胄盟全体成员叫上，怕是都不够他们杀的。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "莫妮克",
-          "speakerId": "avg_npc_208_1",
-          "text": "这我知道，我还是见过他们的，不劳你好心提醒了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "莫妮克",
-          "speakerId": "avg_npc_208_1",
-          "text": "岗哨看到多少人？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "四十来个。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "莫妮克",
-          "speakerId": "avg_npc_208_1",
-          "text": "太糟糕了......在这个节骨眼？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "......是啊。已经通知董事会了。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "他们是想攻陷四城联合吗？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "发言人麦基",
-          "speakerId": "avg_npc_212_1",
-          "text": "......这不可能！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "发言人麦基",
-          "speakerId": "avg_npc_212_1",
-          "text": "不，这不可能......军事顾问呢！监视征战骑士的人呢！？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "发言人麦基",
-          "speakerId": "avg_npc_212_1",
-          "text": "之前监正会调动的那批征战骑士，上一次汇报的时候他们在哪里？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "发言人麦基",
-          "speakerId": "avg_npc_212_1",
-          "text": "......五百七十三公里。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "发言人麦基",
-          "speakerId": "avg_npc_212_1",
-          "text": "常规征战骑士小队的行军速度不可能来得及......太快了，这太快了......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "发言人麦基",
-          "speakerId": "avg_npc_212_1",
-          "text": "难道监正会背着联合会，调动了另一支？不对，这不可能......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "发言人麦基",
-          "speakerId": "avg_npc_212_1",
-          "text": "......慢着。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "发言人麦基",
-          "speakerId": "avg_npc_212_1",
-          "text": "......银枪皮加索斯的急行军......最快的一次记录是多少......？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "发言人麦基",
-          "speakerId": "avg_npc_212_1",
-          "text": "可......他们......伪装了自己的军队识别码......？甚至，伪装了自己的甲胄和长枪？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡西米尔骑士",
-          "speakerId": "avg_npc_219",
-          "text": "嗯？是不是亮一些了？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "企业员工",
-          "speakerId": "avg_npc_222",
-          "text": "看那边！路那头的光芒！那边一定是恢复电力了！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "游客",
-          "speakerId": "avg_npc_033",
-          "text": "但是......灯还是灭的......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "游客",
-          "speakerId": "avg_npc_033",
-          "text": "那更像是......月光......？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "月光。\n通电玻璃管的兴盛让现代人逐渐遗忘了月光原本的模样。\n这座片刻黑暗的城市——\n——已经被银光照亮。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "围观的路人",
-          "speakerId": null,
-          "text": ".....................那、那也是骑士？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "卡西米尔骑士",
-          "speakerId": "avg_npc_219",
-          "text": "征、征战骑士！？在这里！？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "骑士穿过人群。\n穿过这座被誉为骑士之城的城市。\n城市不承认这群骑士。\n正如骑士也不承认这座城。\n他们从遥远的边境要塞而来。\n他们的身上沾染着清晰可闻的泥土气息。\n夹杂着血肉，白骨，埋葬在战场上的无数英豪。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "......通知无胄盟全体成员，不管手头有什么活儿，全部停下。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "不想惹麻烦就什么都别做，绝对别轻举妄动。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "莫妮克",
-          "speakerId": "avg_npc_208_1",
-          "text": "唔。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "罗伊",
-          "speakerId": "avg_npc_209_1",
-          "text": "莫妮克？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "莫妮克",
-          "speakerId": "avg_npc_208_1",
-          "text": "那边......那个人......"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "玛恩纳",
-          "speakerId": "avg_npc_108",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "托兰",
-          "speakerId": "avg_npc_213_1",
-          "text": "......怀念吗？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "玛恩纳",
-          "speakerId": "avg_npc_108",
-          "text": "不。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "托兰",
-          "speakerId": "avg_npc_213_1",
-          "text": "......我倒是很怀念。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "托兰",
-          "speakerId": "avg_npc_213_1",
-          "text": "怀念那个......还误以为这片大地没那么糟糕的时候，那本来是个意气风发的时代。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "玛恩纳",
-          "speakerId": "avg_npc_108",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "托兰",
-          "speakerId": "avg_npc_213_1",
-          "text": "如果你真的没有任何想法，你是不会出现在这里的，对吧？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "托兰",
-          "speakerId": "avg_npc_213_1",
-          "text": "玛恩纳，看看四周吧，这座城市睡着了，谁也未曾想过。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "托兰",
-          "speakerId": "avg_npc_213_1",
-          "text": "可你呢？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "企业员工",
-          "speakerId": "avg_npc_223",
-          "text": "报告！已经修复了一部分通讯线路——！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "发言人麦基",
-          "speakerId": "avg_npc_212_1",
-          "text": "——接通国民院副审官。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "企业员工",
-          "speakerId": "avg_npc_223",
-          "text": "是。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "发言人麦基",
-          "speakerId": "avg_npc_212_1",
-          "text": "......副审官阁下？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "发言人麦基",
-          "speakerId": "avg_npc_212_1",
-          "text": "你知道我要说什么，这批征战骑士未经许可进入大骑士领，已经触犯了第二法案的——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "电话那头的声音",
-          "speakerId": "avg_npc_212_1",
-          "text": "前国民院副审官杜克，涉嫌受贿、参与非法贸易、谋杀和渎职等多项罪名，已被依法拘留。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "发言人麦基",
-          "speakerId": "avg_npc_212_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "电话那头的声音",
-          "speakerId": "avg_npc_212_1",
-          "text": "冷静选择你说的每一句话，发言人阁下。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "电话那头的声音",
-          "speakerId": "avg_npc_212_1",
-          "text": "大骑士领因大断电处于紧急状态，监正会有权在城市处于紧急状态时派军入驻。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "电话那头的声音",
-          "speakerId": "avg_npc_212_1",
-          "text": "还有什么疑问吗？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "发言人麦基",
-          "speakerId": "avg_npc_212_1",
-          "text": "......没有。打扰了，先生。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "发言人马克维茨",
-          "speakerId": "avg_npc_211_1",
-          "text": "......麦基先生。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "发言人麦基",
-          "speakerId": "avg_npc_212_1",
-          "text": "......嗯。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "发言人马克维茨",
-          "speakerId": "avg_npc_211_1",
-          "text": "通讯基本恢复了，麦基先生。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "发言人马克维茨",
-          "speakerId": "avg_npc_211_1",
-          "text": "看看他们忙碌的样子......你觉得电话是什么？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "发言人麦基",
-          "speakerId": "avg_npc_212_1",
-          "text": "......？当然是通讯工具......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "发言人马克维茨",
-          "speakerId": "avg_npc_211_1",
-          "text": "不。电话是现代社会的纺锤与犁，是编织这个现代社会的渠道。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "发言人马克维茨",
-          "speakerId": "avg_npc_211_1",
-          "text": "是伟大的象征，麦基先生。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "发言人麦基",
-          "speakerId": "avg_npc_212_1",
-          "text": "......"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "麦基一言未发。\n他只是突然从马克维茨身上感到了一种气势。\n这个数月前创业失败，一事无成，唯唯诺诺的人身上，有一种近乎天然的气势。\n他曾在不少人身上看到过这种气势。\n他们大都在变迁与博弈中血肉模糊，至于活下来的那些——\n——几乎都成为了某种形态的一部分。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "砾",
+      "speakerId": "avg_237_gravel_1",
+      "isRemote": false,
+      "text": "......不。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "砾",
+      "speakerId": "avg_237_gravel_1",
+      "isRemote": false,
+      "text": "您当然不。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_23_G04"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "你们还有时间可以浪费吗？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "关于感染者的通缉令已经发出，等到大隔断的影响过去，你们无路可逃。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "啊，顺便一提，之所以叫“大隔断”，是因为在失去核心电力后各地块会出现短暂的漂移现象......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "现在，联合会周遭的地块连接都中断了，你们逃不出去。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "格蕾纳蒂",
+      "speakerId": "avg_npc_123",
+      "isRemote": false,
+      "text": "......呃......该死......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "......好像不是可以正面打赢的对手啊。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "感谢你总算理解了你早该理解的事情。那我再问一遍，要不要把东西交给我？那我可以放走你们。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "嘿，无胄盟什么时候这么好心了？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "......心情问题吧，终于从漫长的......斗争里看到了曙光。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "从玻利瓦尔的废墟，到卡西米尔的平原，最后来到这里。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "没有正常人会觉得杀人是一件快乐的事情，只有那些养尊处优的蠢货喜欢观赏他人流血。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "现在，你能拯救我，感染者，我也可以帮你摧毁无胄盟。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "......抱歉，就算你说的是真的，我也不打算把这东西交给你。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "为什么？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "我们已经厌倦了受他人操纵的日子了，无胄盟。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "小灰！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "格蕾纳蒂",
+      "speakerId": "avg_npc_123",
+      "isRemote": false,
+      "text": "明白，看这一炮如何！？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "——唔。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "咳咳......咳咳......搞什么。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "跑，小灰！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "格蕾纳蒂",
+      "speakerId": "avg_npc_123",
+      "isRemote": false,
+      "text": "我知道！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "......在这座城市的构造区乱跑，小心失足跌进引擎里，变成肉末啊。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "你可跑不了——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "——唔。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "......！？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "小灰！小心！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "格蕾纳蒂",
+      "speakerId": "avg_npc_123",
+      "isRemote": false,
+      "text": "——"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "青色的箭矢贯穿了焰尾骑士的盔甲。\n索娜试图格挡，但是巨大的冲击力依然让她娇小的身躯失去控制。\n她在半空中挣扎，飞向城区地块之间的间隙。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "格蕾纳蒂",
+      "speakerId": "avg_npc_123",
+      "isRemote": false,
+      "text": "索娜——！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_23_G04"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "（......歪了点，刚才突然眼前黑了一下......）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "（疲劳产生的错觉吗......？不，确实是被干扰了......）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "格蕾纳蒂",
+      "speakerId": "avg_npc_123",
+      "isRemote": false,
+      "text": "——罗伊——！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "......！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "失去理智了吗。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "啧啧啧，这么近的距离开火，你是打算同归于尽了吗？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "格蕾纳蒂",
+      "speakerId": "avg_npc_123",
+      "isRemote": false,
+      "text": "你......你竟然......对索娜......！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "......确实有些不小心。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "还没确认那枚芯片是不是真的被销毁了，这很危险，我可不敢担这个责任。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "格蕾纳蒂",
+      "speakerId": "avg_npc_123",
+      "isRemote": false,
+      "text": "少废话！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "（该怎么办，赶紧杀掉灰毫，想办法下去确认一下尸体吗？）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "（不，这也太危险了，而且电力就快要恢复了，我可不想被夹在铁板中间啊。）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "格蕾纳蒂",
+      "speakerId": "avg_npc_123",
+      "isRemote": false,
+      "text": "我要你血债血偿——！！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "直来直往，失去理智之后你的动作还真是好看穿啊——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "格蕾纳蒂",
+      "speakerId": "avg_npc_123",
+      "isRemote": false,
+      "text": "——是吗？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "！？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "唔，竟然是我大意了吗？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "......跑了？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "这么说，那股怒火是装出来的......？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
+      "type": "narration",
+      "text": "......为了感染者而成为骑士。\n为了感染者而奋战至死。\n我很荣幸。\n很荣幸......死于一场荣耀的事业。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_23_G04"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "......虽然很想大义凛然地这么说，但是......这是什么情况？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "烛骑士",
+      "speakerId": "avg_npc_215_1",
+      "isRemote": false,
+      "text": "罗伊还在这附近，他一定会发现我的法术，我们不能久留。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "烛骑士",
+      "speakerId": "avg_npc_215_1",
+      "isRemote": false,
+      "text": "通知你的同伴，让她逃走吧，如有必要，我会在暗中帮助她。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "......喂，小灰，我没事。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "别让他察觉到，找机会逃走，我趁着帮你挡箭的时候把芯片扔进你兜里了，确认一下。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "不用回复，我们回头见。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "......你接住的我？怎么做到的？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "烛骑士",
+      "speakerId": "avg_npc_215_1",
+      "isRemote": false,
+      "text": "法术的应用方法多种多样，经过刻苦学习的莱塔尼亚人，无论其原本法术是什么性质，几乎都能使用基础的法术形式。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "......你是，烛骑士，对吧？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "你这样的大骑士，为什么要救我......救一个感染者？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "烛骑士",
+      "speakerId": "avg_npc_215_1",
+      "isRemote": false,
+      "text": "有个人想要见你。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "谁？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "烛骑士",
+      "speakerId": "avg_npc_215_1",
+      "isRemote": false,
+      "text": "还不能说。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "啊......你也知道我们正在做什么事，瘫痪城市，袭击联合会......我可没有时间郊游喔？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "烛骑士",
+      "speakerId": "avg_npc_215_1",
+      "isRemote": false,
+      "text": "......你不信任我，也情有可原。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "不，我相信你。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "只要看有些人一眼，你就能从她的眼里读出他们的想法。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "当然，这招可不是百分之百准确的，但是现在情况紧急，对吧。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_23_G06"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "企业员工",
+      "speakerId": "avg_npc_222",
+      "isRemote": false,
+      "text": "唉，怎么遇上这种事，路也不通，车也打不到，今晚又回不了家了吗......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "企业员工",
+      "speakerId": "avg_npc_222",
+      "isRemote": false,
+      "text": "该死的组长，说什么报表昨天就该做完......一天能做完个鬼......"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "企业员工",
+      "speakerId": "avg_npc_222",
+      "isRemote": false,
+      "text": "唔啊啊啊，怎、怎么了！？？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "莫妮克",
+      "speakerId": "avg_npc_208_1",
+      "isRemote": false,
+      "text": "让开，否则我就连你一起射穿。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "企业员工",
+      "speakerId": "avg_npc_222",
+      "isRemote": false,
+      "text": "咿————别、别，我这就让——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "托兰",
+      "speakerId": "avg_npc_213_1",
+      "isRemote": false,
+      "text": "别乱动，小哥，你也不想脑袋搬家吧？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "企业员工",
+      "speakerId": "avg_npc_222",
+      "isRemote": false,
+      "text": "但、但是她让我动——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "托兰",
+      "speakerId": "avg_npc_213_1",
+      "isRemote": false,
+      "text": "一个张口闭口就要杀你的人，你会相信吗？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "企业员工",
+      "speakerId": "avg_npc_222",
+      "isRemote": false,
+      "text": "我——我——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "莫妮克",
+      "speakerId": "avg_npc_208_1",
+      "isRemote": false,
+      "text": "托兰，躲在普通人身后，是不是有点太难看了？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "企业员工",
+      "speakerId": "avg_npc_222",
+      "isRemote": false,
+      "text": "啊啊啊——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "托兰",
+      "speakerId": "avg_npc_213_1",
+      "isRemote": false,
+      "text": "也有点道理，我数到三？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "企业员工",
+      "speakerId": "avg_npc_222",
+      "isRemote": false,
+      "text": "求、求求你们了，别管我，别管我！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "托兰",
+      "speakerId": "avg_npc_213_1",
+      "isRemote": false,
+      "text": "一。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "企业员工",
+      "speakerId": "avg_npc_222",
+      "isRemote": false,
+      "text": "咿呀——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "托兰",
+      "speakerId": "avg_npc_213_1",
+      "isRemote": false,
+      "text": "二。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "莫妮克",
+      "speakerId": "avg_npc_208_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "托兰",
+      "speakerId": "avg_npc_213_1",
+      "isRemote": false,
+      "text": "三！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "企业员工",
+      "speakerId": "avg_npc_222",
+      "isRemote": false,
+      "text": "两个疯子，两个疯子——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "企业员工",
+      "speakerId": "avg_npc_222",
+      "isRemote": false,
+      "text": "这条路通向哪儿——等等，那里是——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "企业员工",
+      "speakerId": "avg_npc_222",
+      "isRemote": false,
+      "text": "骑士先生！骑士老爷！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "企业员工",
+      "speakerId": "avg_npc_222",
+      "isRemote": false,
+      "text": "我是玫瑰报业的员工，您帮帮我，您知道我们吗？我会向编辑部推荐您的，那边有两个不法之徒——"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "逐魇骑士",
+      "speakerId": "avg_npc_225",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "企业员工",
+      "speakerId": "avg_npc_222",
+      "isRemote": false,
+      "text": "——咿——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "逐魇骑士",
+      "speakerId": "avg_npc_225",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_23_G06"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "托兰",
+      "speakerId": "avg_npc_213_1",
+      "isRemote": false,
+      "text": "......你的箭是用不完的吗？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "莫妮克",
+      "speakerId": "avg_npc_208_1",
+      "isRemote": false,
+      "text": "啧，我还是第一次好几分钟没能追上猎物......了不起，托兰·卡什。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "莫妮克",
+      "speakerId": "avg_npc_208_1",
+      "isRemote": false,
+      "text": "你的目的就是拖住我吗？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "托兰",
+      "speakerId": "avg_npc_213_1",
+      "isRemote": false,
+      "text": "呵呵......你呢，你的目的是陪我玩吗？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "莫妮克",
+      "speakerId": "avg_npc_208_1",
+      "isRemote": false,
+      "text": "不，你的人头值很多钱，任何时候，我们都需要钱。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "托兰",
+      "speakerId": "avg_npc_213_1",
+      "isRemote": false,
+      "text": "哦？你家里有病重的弟弟吗？还是有需要赡养的老父亲？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "莫妮克",
+      "speakerId": "avg_npc_208_1",
+      "isRemote": false,
+      "text": "......这份工作能为我带来你无法想象的财富，赏金猎人。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "莫妮克",
+      "speakerId": "avg_npc_208_1",
+      "isRemote": false,
+      "text": "我们比你们，比骑士，比任何一个卡西米尔人都更懂得这个社会的运作规则。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "莫妮克",
+      "speakerId": "avg_npc_208_1",
+      "isRemote": false,
+      "text": "我们只是选了一条捷径，等今晚的猎杀结束之后，我们将迎来新的开始。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "莫妮克",
+      "speakerId": "avg_npc_208_1",
+      "isRemote": false,
+      "text": "不过现在，好像又有一个蠢货想要搅局。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "托兰",
+      "speakerId": "avg_npc_213_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "逐魇骑士",
+      "speakerId": "avg_npc_225",
+      "isRemote": false,
+      "text": "......在这座，死气沉沉的城市里......还能见到这样的夜空。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "逐魇骑士",
+      "speakerId": "avg_npc_225",
+      "isRemote": false,
+      "text": "这才是我所熟悉的夜晚，让这人造的孽物搁浅于此......放空这座城市的血，做得好，不知名的反抗者！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "托兰",
+      "speakerId": "avg_npc_213_1",
+      "isRemote": false,
+      "text": "......真是一位奇怪的骑士，私斗可不挣钱啊。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "莫妮克",
+      "speakerId": "avg_npc_208_1",
+      "isRemote": false,
+      "text": "啧，闹剧。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_sportsbar"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "玛嘉烈",
+      "speakerId": "avg_1014_nearl2_1",
+      "isRemote": false,
+      "text": "大家都没事吧！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "玛莉娅",
+      "speakerId": "avg_npc_061",
+      "isRemote": false,
+      "text": "姐姐！我刚把备用电池找出来......唔......这盏灯就不开了吧？感觉撑不了多久......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "佐菲娅",
+      "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
+      "text": "......看来大家都没事。老弗和科瓦尔去外面查看情况了，一会回来。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "佐菲娅",
+      "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
+      "text": "玛恩纳呢？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "玛莉娅",
+      "speakerId": "avg_npc_061",
+      "isRemote": false,
+      "text": "叔叔待在家里，说是难得可以从工作中解脱出来，想一个人待一会......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "玛莉娅",
+      "speakerId": "avg_npc_061",
+      "isRemote": false,
+      "text": "闪灵姐姐和夜莺姐姐呢？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "玛嘉烈",
+      "speakerId": "avg_1014_nearl2_1",
+      "isRemote": false,
+      "text": "她们担心博士被无胄盟盯上，已经赶回感染者收容中心了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "玛莉娅",
+      "speakerId": "avg_npc_061",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "玛嘉烈",
+      "speakerId": "avg_1014_nearl2_1",
+      "isRemote": false,
+      "text": "没事的，她们都是很可靠的人。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "玛莉娅",
+      "speakerId": "avg_npc_061",
+      "isRemote": false,
+      "text": "不......只是......我好像还是不知道姐姐的任何事情......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "玛嘉烈",
+      "speakerId": "avg_1014_nearl2_1",
+      "isRemote": false,
+      "text": "抱歉，是我坚持不让你们有任何接触的......我不能把博士他们卷入我自己的事情中来。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "玛嘉烈",
+      "speakerId": "avg_1014_nearl2_1",
+      "isRemote": false,
+      "text": "但也许迟早有一天，你们会相逢、相识。也许有一天，玛莉娅，你会登上那艘船。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "玛嘉烈",
+      "speakerId": "avg_1014_nearl2_1",
+      "isRemote": false,
+      "text": "理想者的光辉终究会指引所有人，即使他们的前路各不相同，信念迥异，也没有什么能动摇他们心中的意志。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "玛莉娅",
+      "speakerId": "avg_npc_061",
+      "isRemote": false,
+      "text": "......就像......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "玛嘉烈",
+      "speakerId": "avg_1014_nearl2_1",
+      "isRemote": false,
+      "text": "就像骑士小说里的骑士那样。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "老骑士",
+      "speakerId": "avg_npc_120",
+      "isRemote": false,
+      "text": "我回来了！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "老工匠",
+      "speakerId": "avg_npc_101",
+      "isRemote": false,
+      "text": "真的一片漆黑啊......隔壁卖手电筒的今天都要断货了吧......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "光头马丁",
+      "speakerId": "avg_npc_107",
+      "isRemote": false,
+      "text": "玛嘉烈，你来了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "老骑士",
+      "speakerId": "avg_npc_120",
+      "isRemote": false,
+      "text": "现在外面是一团乱啦，我看，我们就老老实实待在这里，等着电力恢复如何？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "老工匠",
+      "speakerId": "avg_npc_101",
+      "isRemote": false,
+      "text": "就干等着？本来今天是不是也有比赛来着？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "玛嘉烈",
+      "speakerId": "avg_1014_nearl2_1",
+      "isRemote": false,
+      "text": "本来是决出第一个八强骑士的日子。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "佐菲娅",
+      "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
+      "text": "......你有关注血骑士的动向吗？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "玛嘉烈",
+      "speakerId": "avg_1014_nearl2_1",
+      "isRemote": false,
+      "text": "了解过一些......他是这赛季从选拔阶段到特锦赛的无败王者......不仅如此......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "玛嘉烈",
+      "speakerId": "avg_1014_nearl2_1",
+      "isRemote": false,
+      "text": "他还是感染者的英雄。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_23_G06"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "......我们要去哪儿？不是我抱怨，我真的没有太多时间......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "烛骑士",
+      "speakerId": "avg_npc_215_1",
+      "isRemote": false,
+      "text": "就是这。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "......冠军墙展厅？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "烛骑士",
+      "speakerId": "avg_npc_215_1",
+      "isRemote": false,
+      "text": "这是一次秘密的会面，还请您不要声张。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "是哪个骑士要见我吗？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "烛骑士",
+      "speakerId": "avg_npc_215_1",
+      "isRemote": false,
+      "text": "骑士吗......说的没错，确实是一位可敬的骑士。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "烛骑士",
+      "speakerId": "avg_npc_215_1",
+      "isRemote": false,
+      "text": "呵呵，别紧张......是位年纪有些大的女士。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "烛骑士",
+      "speakerId": "avg_npc_215_1",
+      "isRemote": false,
+      "text": "你先进去吧。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "......你不进来？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "烛骑士",
+      "speakerId": "avg_npc_215_1",
+      "isRemote": false,
+      "text": "她可能是卡西米尔为数不多的几位，让我有些害怕的人呢。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "哇哦......手握烛剑的烛骑士也会有害怕的人？那我真的没问题吗？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "烛骑士",
+      "speakerId": "avg_npc_215_1",
+      "isRemote": false,
+      "text": "......可能不太一样吧。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "烛骑士",
+      "speakerId": "avg_npc_215_1",
+      "isRemote": false,
+      "text": "毕竟名义上，她算我的半个养母。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_23_G02"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "（和联合会一样的紧急电源......没有被大隔断的断电影响吗......）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "（骑士和......联合会......）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "（......还在这片黑夜里闪着光。）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "灯光扑闪。\n打断了索娜的思绪。\n骑士和资本一并避开了这浓稠的夜色。\n谁会在今夜溺亡？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "年长的骑士",
+      "speakerId": "avg_npc_210_1",
+      "isRemote": false,
+      "text": "......焰尾骑士，索娜。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "年长的骑士",
+      "speakerId": "avg_npc_210_1",
+      "isRemote": false,
+      "text": "快过来些，让我好好看看你。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "——！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "您、您是......！！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "年长的骑士",
+      "speakerId": "avg_npc_210_1",
+      "isRemote": false,
+      "text": "哎。我今天不是以公务之身来见你的。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "年长的骑士",
+      "speakerId": "avg_npc_210_1",
+      "isRemote": false,
+      "text": "我听说了......感染者骑士和监正会的一些骑士，做了笔交易。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "年长的骑士",
+      "speakerId": "avg_npc_210_1",
+      "isRemote": false,
+      "text": "是骑士协会和监正会议员，德米安。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "年长的骑士",
+      "speakerId": "avg_npc_210_1",
+      "isRemote": false,
+      "text": "感染者为了能在大骑士领活下去，答应在他的配合下，进行了本次行动。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "年长的骑士",
+      "speakerId": "avg_npc_210_1",
+      "isRemote": false,
+      "text": "四城大隔断......监正会默许了这件事再次发生。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "年长的骑士",
+      "speakerId": "avg_npc_210_1",
+      "isRemote": false,
+      "text": "看看这面墙......这些骑士，他们本该成为真正的英雄，而不是以这种姿态，被人关注。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "年长的骑士",
+      "speakerId": "avg_npc_210_1",
+      "isRemote": false,
+      "text": "唉，你不感到......悲哀吗？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "......悲哀，女士。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "但我为感染者们至今仍不能受到公正的待遇而悲哀，为那些沉溺在享乐与欲望之中的人们而悲哀。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "为每一个......努力活着，却举步维艰的卡西米尔人......而悲哀。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "年长的骑士",
+      "speakerId": "avg_npc_210_1",
+      "isRemote": false,
+      "text": "......真是漂亮的就职演说，小松鼠。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "监正会能让我们过普通的生活吗？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "年长的骑士",
+      "speakerId": "avg_npc_210_1",
+      "isRemote": false,
+      "text": "手续、公文、国民院认可的法律文件。当然，监正会都会为你办妥。这是老德米安答应你的。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "年长的骑士",
+      "speakerId": "avg_npc_210_1",
+      "isRemote": false,
+      "text": "可你身上的源石结晶呢？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "年长的骑士",
+      "speakerId": "avg_npc_210_1",
+      "isRemote": false,
+      "text": "我欣赏你们，红松骑士团，但是你们必须克服的，是一些更模糊的问题。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "年长的骑士",
+      "speakerId": "avg_npc_210_1",
+      "isRemote": false,
+      "text": "之后，德米安会和你们对接的。就相信他吧，虽然办法笨了点，但他有的是想法。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "......好。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "年长的骑士",
+      "speakerId": "avg_npc_210_1",
+      "isRemote": false,
+      "text": "......好了，我的骑士团也快到了，赶紧去找你的同伴们会合吧。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "年长的骑士",
+      "speakerId": "avg_npc_210_1",
+      "isRemote": false,
+      "text": "还有，告诉薇薇安娜一声，让她偶尔有空也来陪我吃顿饭吧。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "索娜",
+      "speakerId": "avg_npc_122",
+      "isRemote": false,
+      "text": "............骑士意味着什么，女士？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "年长的骑士",
+      "speakerId": "avg_npc_210_1",
+      "isRemote": false,
+      "text": "每个人都有不一样的答案，孩子。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "年长的骑士",
+      "speakerId": "avg_npc_210_1",
+      "isRemote": false,
+      "text": "你不会想听到我的答案的，我们这些老家伙呀，走过太多的路啦。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "年长的骑士",
+      "speakerId": "avg_npc_210_1",
+      "isRemote": false,
+      "text": "走吧，小松鼠，走吧。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "年长的骑士",
+      "speakerId": "avg_npc_210_1",
+      "isRemote": false,
+      "text": "去看看卡西米尔的朝阳，是不是还那样炽热。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_23_G04"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "......追丢了啊。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "之后再发布围剿任务比较有效率吗......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "是我，怎么了吗？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "......什......多少？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_23_G06"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "逐魇骑士",
+      "speakerId": "avg_npc_225",
+      "isRemote": false,
+      "text": "......卓越的剑术。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "托兰",
+      "speakerId": "avg_npc_213_1",
+      "isRemote": false,
+      "text": "唉，我可不想继续陪你浪费时间啊，骑士老兄。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "莫妮克",
+      "speakerId": "avg_npc_208_1",
+      "isRemote": false,
+      "text": "......这个疯子......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "莫妮克",
+      "speakerId": "avg_npc_208_1",
+      "isRemote": false,
+      "text": "杀了托兰之后，就立刻撤退好了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "莫妮克",
+      "speakerId": "avg_npc_208_1",
+      "isRemote": false,
+      "text": "......我在陪“公会领袖”和梦魇捉迷藏，有什么事一会再说。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "莫妮克",
+      "speakerId": "avg_npc_208_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "莫妮克",
+      "speakerId": "avg_npc_208_1",
+      "isRemote": false,
+      "text": "不......我立刻就去。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "莫妮克",
+      "speakerId": "avg_npc_208_1",
+      "isRemote": false,
+      "text": "游戏到此为止了，托兰。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "托兰",
+      "speakerId": "avg_npc_213_1",
+      "isRemote": false,
+      "text": "你要逃走？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "莫妮克",
+      "speakerId": "avg_npc_208_1",
+      "isRemote": false,
+      "text": "不。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "莫妮克",
+      "speakerId": "avg_npc_208_1",
+      "isRemote": false,
+      "text": "还有你也是，梦魇。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "托兰",
+      "speakerId": "avg_npc_213_1",
+      "isRemote": false,
+      "text": "——！你是梦魇！？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "逐魇骑士",
+      "speakerId": "avg_npc_225",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "莫妮克",
+      "speakerId": "avg_npc_208_1",
+      "isRemote": false,
+      "text": "暂时停手吧。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "莫妮克",
+      "speakerId": "avg_npc_208_1",
+      "isRemote": false,
+      "text": "你是......来卡瓦莱利亚基寻找同胞和试炼的，对吧？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "逐魇骑士",
+      "speakerId": "avg_npc_225",
+      "isRemote": false,
+      "text": "别把荣耀的传统说得如此轻浮，卡西米尔人，你没有这个资格。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "莫妮克",
+      "speakerId": "avg_npc_208_1",
+      "isRemote": false,
+      "text": "不，只是好心提醒你一句，梦魇。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "莫妮克",
+      "speakerId": "avg_npc_208_1",
+      "isRemote": false,
+      "text": "别在我们这里白费力气。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "托兰",
+      "speakerId": "avg_npc_213_1",
+      "isRemote": false,
+      "text": "这倒是句公道话。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "逐魇骑士",
+      "speakerId": "avg_npc_225",
+      "isRemote": false,
+      "text": "......无凭无据......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "莫妮克",
+      "speakerId": "avg_npc_208_1",
+      "isRemote": false,
+      "text": "......哼，后会无期，蠢货。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_23_G06"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "企业员工",
+      "speakerId": "avg_npc_222",
+      "isRemote": false,
+      "text": "交通还没恢复吗？我听说有些地方已经通电了啊......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡西米尔骑士",
+      "speakerId": "avg_npc_219",
+      "isRemote": false,
+      "text": "这么大的损失，难道骑士协会不应该赔偿我们吗！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "游客",
+      "speakerId": "avg_npc_033",
+      "isRemote": false,
+      "text": "说得没错！政府应该补偿旅游津贴！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "企业员工",
+      "speakerId": "avg_npc_222",
+      "isRemote": false,
+      "text": "唉......冰箱里的鲜肉没问题吧......"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "莫妮克",
+      "speakerId": "avg_npc_208_1",
+      "isRemote": false,
+      "text": "......确定了吗？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "唉。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "你知道吗，他们中的任何一个人，我们都可以独自解决。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "但两个人，就需要我们联手。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "三个人，将是一场空前绝后的苦战。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "如果是三个及以上......那可以视作一支战术小队了，无胄盟承担不起这个损失。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "要是超过双手之数，把无胄盟全体成员叫上，怕是都不够他们杀的。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "莫妮克",
+      "speakerId": "avg_npc_208_1",
+      "isRemote": false,
+      "text": "这我知道，我还是见过他们的，不劳你好心提醒了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "莫妮克",
+      "speakerId": "avg_npc_208_1",
+      "isRemote": false,
+      "text": "岗哨看到多少人？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "四十来个。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "莫妮克",
+      "speakerId": "avg_npc_208_1",
+      "isRemote": false,
+      "text": "太糟糕了......在这个节骨眼？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "......是啊。已经通知董事会了。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "他们是想攻陷四城联合吗？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_23_G03"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "发言人麦基",
+      "speakerId": "avg_npc_212_1",
+      "isRemote": false,
+      "text": "......这不可能！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "发言人麦基",
+      "speakerId": "avg_npc_212_1",
+      "isRemote": false,
+      "text": "不，这不可能......军事顾问呢！监视征战骑士的人呢！？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "发言人麦基",
+      "speakerId": "avg_npc_212_1",
+      "isRemote": false,
+      "text": "之前监正会调动的那批征战骑士，上一次汇报的时候他们在哪里？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "发言人麦基",
+      "speakerId": "avg_npc_212_1",
+      "isRemote": false,
+      "text": "......五百七十三公里。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "发言人麦基",
+      "speakerId": "avg_npc_212_1",
+      "isRemote": false,
+      "text": "常规征战骑士小队的行军速度不可能来得及......太快了，这太快了......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "发言人麦基",
+      "speakerId": "avg_npc_212_1",
+      "isRemote": false,
+      "text": "难道监正会背着联合会，调动了另一支？不对，这不可能......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "发言人麦基",
+      "speakerId": "avg_npc_212_1",
+      "isRemote": false,
+      "text": "......慢着。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "发言人麦基",
+      "speakerId": "avg_npc_212_1",
+      "isRemote": false,
+      "text": "......银枪皮加索斯的急行军......最快的一次记录是多少......？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "发言人麦基",
+      "speakerId": "avg_npc_212_1",
+      "isRemote": false,
+      "text": "可......他们......伪装了自己的军队识别码......？甚至，伪装了自己的甲胄和长枪？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_23_G06"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡西米尔骑士",
+      "speakerId": "avg_npc_219",
+      "isRemote": false,
+      "text": "嗯？是不是亮一些了？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "企业员工",
+      "speakerId": "avg_npc_222",
+      "isRemote": false,
+      "text": "看那边！路那头的光芒！那边一定是恢复电力了！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "游客",
+      "speakerId": "avg_npc_033",
+      "isRemote": false,
+      "text": "但是......灯还是灭的......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "游客",
+      "speakerId": "avg_npc_033",
+      "isRemote": false,
+      "text": "那更像是......月光......？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "月光。\n通电玻璃管的兴盛让现代人逐渐遗忘了月光原本的模样。\n这座片刻黑暗的城市——\n——已经被银光照亮。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "围观的路人",
+      "speakerId": null,
+      "isRemote": false,
+      "text": ".....................那、那也是骑士？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "卡西米尔骑士",
+      "speakerId": "avg_npc_219",
+      "isRemote": false,
+      "text": "征、征战骑士！？在这里！？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "骑士穿过人群。\n穿过这座被誉为骑士之城的城市。\n城市不承认这群骑士。\n正如骑士也不承认这座城。\n他们从遥远的边境要塞而来。\n他们的身上沾染着清晰可闻的泥土气息。\n夹杂着血肉，白骨，埋葬在战场上的无数英豪。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_23_G06"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "......通知无胄盟全体成员，不管手头有什么活儿，全部停下。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "不想惹麻烦就什么都别做，绝对别轻举妄动。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "莫妮克",
+      "speakerId": "avg_npc_208_1",
+      "isRemote": false,
+      "text": "唔。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "罗伊",
+      "speakerId": "avg_npc_209_1",
+      "isRemote": false,
+      "text": "莫妮克？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "莫妮克",
+      "speakerId": "avg_npc_208_1",
+      "isRemote": false,
+      "text": "那边......那个人......"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "玛恩纳",
+      "speakerId": "avg_npc_108",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "托兰",
+      "speakerId": "avg_npc_213_1",
+      "isRemote": false,
+      "text": "......怀念吗？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "玛恩纳",
+      "speakerId": "avg_npc_108",
+      "isRemote": false,
+      "text": "不。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "托兰",
+      "speakerId": "avg_npc_213_1",
+      "isRemote": false,
+      "text": "......我倒是很怀念。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "托兰",
+      "speakerId": "avg_npc_213_1",
+      "isRemote": false,
+      "text": "怀念那个......还误以为这片大地没那么糟糕的时候，那本来是个意气风发的时代。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "玛恩纳",
+      "speakerId": "avg_npc_108",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "托兰",
+      "speakerId": "avg_npc_213_1",
+      "isRemote": false,
+      "text": "如果你真的没有任何想法，你是不会出现在这里的，对吧？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "托兰",
+      "speakerId": "avg_npc_213_1",
+      "isRemote": false,
+      "text": "玛恩纳，看看四周吧，这座城市睡着了，谁也未曾想过。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "托兰",
+      "speakerId": "avg_npc_213_1",
+      "isRemote": false,
+      "text": "可你呢？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_23_G03"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "企业员工",
+      "speakerId": "avg_npc_223",
+      "isRemote": false,
+      "text": "报告！已经修复了一部分通讯线路——！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "发言人麦基",
+      "speakerId": "avg_npc_212_1",
+      "isRemote": false,
+      "text": "——接通国民院副审官。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "企业员工",
+      "speakerId": "avg_npc_223",
+      "isRemote": false,
+      "text": "是。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "发言人麦基",
+      "speakerId": "avg_npc_212_1",
+      "isRemote": false,
+      "text": "......副审官阁下？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "发言人麦基",
+      "speakerId": "avg_npc_212_1",
+      "isRemote": false,
+      "text": "你知道我要说什么，这批征战骑士未经许可进入大骑士领，已经触犯了第二法案的——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "电话那头的声音",
+      "speakerId": "avg_npc_212_1",
+      "isRemote": false,
+      "text": "前国民院副审官杜克，涉嫌受贿、参与非法贸易、谋杀和渎职等多项罪名，已被依法拘留。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "发言人麦基",
+      "speakerId": "avg_npc_212_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "电话那头的声音",
+      "speakerId": "avg_npc_212_1",
+      "isRemote": false,
+      "text": "冷静选择你说的每一句话，发言人阁下。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "电话那头的声音",
+      "speakerId": "avg_npc_212_1",
+      "isRemote": false,
+      "text": "大骑士领因大断电处于紧急状态，监正会有权在城市处于紧急状态时派军入驻。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "电话那头的声音",
+      "speakerId": "avg_npc_212_1",
+      "isRemote": false,
+      "text": "还有什么疑问吗？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "发言人麦基",
+      "speakerId": "avg_npc_212_1",
+      "isRemote": false,
+      "text": "......没有。打扰了，先生。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "发言人马克维茨",
+      "speakerId": "avg_npc_211_1",
+      "isRemote": false,
+      "text": "......麦基先生。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "发言人麦基",
+      "speakerId": "avg_npc_212_1",
+      "isRemote": false,
+      "text": "......嗯。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "发言人马克维茨",
+      "speakerId": "avg_npc_211_1",
+      "isRemote": false,
+      "text": "通讯基本恢复了，麦基先生。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "发言人马克维茨",
+      "speakerId": "avg_npc_211_1",
+      "isRemote": false,
+      "text": "看看他们忙碌的样子......你觉得电话是什么？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "发言人麦基",
+      "speakerId": "avg_npc_212_1",
+      "isRemote": false,
+      "text": "......？当然是通讯工具......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "发言人马克维茨",
+      "speakerId": "avg_npc_211_1",
+      "isRemote": false,
+      "text": "不。电话是现代社会的纺锤与犁，是编织这个现代社会的渠道。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "发言人马克维茨",
+      "speakerId": "avg_npc_211_1",
+      "isRemote": false,
+      "text": "是伟大的象征，麦基先生。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "发言人麦基",
+      "speakerId": "avg_npc_212_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "麦基一言未发。\n他只是突然从马克维茨身上感到了一种气势。\n这个数月前创业失败，一事无成，唯唯诺诺的人身上，有一种近乎天然的气势。\n他曾在不少人身上看到过这种气势。\n他们大都在变迁与博弈中血肉模糊，至于活下来的那些——\n——几乎都成为了某种形态的一部分。"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": [

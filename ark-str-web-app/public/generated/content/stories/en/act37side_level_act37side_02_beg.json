@@ -6,10 +6,24 @@
   "title": "Crippling Illness",
   "storyCode": "GO-2",
   "avgTag": "Before Operation",
-  "sourcePath": "vendor/ArknightsGamedata/en/gamedata/story/activities/act37side/level_act37side_02_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/en/gamedata/story/activities/act37side/level_act37side_02_beg.txt",
   "sourceHash": "2a8a069525e4c0867c729a81a6ed3460d56ba433edf09194350d1f58cefe9fed",
   "bodyAvailable": true,
   "blocks": [
+    {
+      "type": "background",
+      "backgroundId": "55_g3_westlobbythroneroom"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "55_g3_westlobbythroneroom"
+    },
+    {
+      "type": "sceneBreak"
+    },
     {
       "type": "narration",
       "text": "<p=1>Throne Room, Palace of Westhaleg</><p=2>October 8th, 1098, 9:45 P.M.</>"
@@ -27,36 +41,38 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "'Like' is too strong a word. It's just left an impression on me."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "My foster parents would hum it by my bedside whenever I couldn't sleep."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "I thought it was a lullaby. It's only long after they've passed on that I realized whom I was to them, who was their 'kynge'."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "The song became a stranger from that day forth, but the tune has remained familiar. I would never forget it."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "'Like' is too strong a word. It's just left an impression on me."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "My foster parents would hum it by my bedside whenever I couldn't sleep."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "I thought it was a lullaby. It's only long after they've passed on that I realized whom I was to them, who was their 'kynge'."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "The song became a stranger from that day forth, but the tune has remained familiar. I would never forget it."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -66,60 +82,66 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "The King? I'm not familiar with him. As for the man who is my closest blood relative..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "I won't lie, Doctor, I tried to piece together an image of my father in my memory."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "But when I saw him again with my own eyes, there was nothing familiar about him."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "He was a king, and I'm just a gangster from the streets. We have nothing in common, save for the name Victoria."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "There are more important things for me to think about."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "You heard the dukes talking. They're ready to abandon Londinium... my home, to whatever fate."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "This wasn't what I expected when Dr. Kal'tsit got you out of Chernobog and got me to plan a return to Victoria."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "But I've come too far to let it go."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "The King? I'm not familiar with him. As for the man who is my closest blood relative..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "I won't lie, Doctor, I tried to piece together an image of my father in my memory."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "But when I saw him again with my own eyes, there was nothing familiar about him."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "He was a king, and I'm just a gangster from the streets. We have nothing in common, save for the name Victoria."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "There are more important things for me to think about."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "You heard the dukes talking. They're ready to abandon Londinium... my home, to whatever fate."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "This wasn't what I expected when Dr. Kal'tsit got you out of Chernobog and got me to plan a return to Victoria."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "But I've come too far to let it go."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -139,8 +161,7 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -150,42 +171,45 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "And we're counting on them being obsessed with maintaining their own power."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "As long as their pride still needs the name 'Victoria', the city will have time to recover."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "It's a deal where the outcome is predetermined, and both sides of the table know that."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "It's the people who have had my back through all this that keeps me going."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "We're home. The war is over. It's time to listen to their voices."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "And we're counting on them being obsessed with maintaining their own power."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "As long as their pride still needs the name 'Victoria', the city will have time to recover."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "It's a deal where the outcome is predetermined, and both sides of the table know that."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "It's the people who have had my back through all this that keeps me going."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "We're home. The war is over. It's time to listen to their voices."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -195,18 +219,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "What is it, Doctor?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "What is it, Doctor?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -221,60 +244,66 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "...I know."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "Many of us find it hard to accept that you assisted Wiš'adel with the evacuation of the remaining Sarkaz."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "But this war can go on no longer. I... We've lost enough people."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "And we've heard Sarkaz warning, loud and clear."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "The ducal fleets held their positions during the retreat because they all got the news—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "Massive Catastrophe clouds forming over the capitals of most of the Core countries almost simultaneously."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "Talk about straightforward. They strolled back to Kazdel in broad daylight."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "You and Dr. Kal'tsit know what they could do with that piece of Originium."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "...I know."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "Many of us find it hard to accept that you assisted Wiš'adel with the evacuation of the remaining Sarkaz."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "But this war can go on no longer. I... We've lost enough people."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "And we've heard Sarkaz warning, loud and clear."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "The ducal fleets held their positions during the retreat because they all got the news—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "Massive Catastrophe clouds forming over the capitals of most of the Core countries almost simultaneously."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "Talk about straightforward. They strolled back to Kazdel in broad daylight."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "You and Dr. Kal'tsit know what they could do with that piece of Originium."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -284,30 +313,31 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "For self-defense only? Maybe they think that way, for now."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "But there is no such thing as a guarantee when one is in possession of power far greater than one can control."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "I've seen many gangs rise rapidly with the backing of the nobility, only to fall apart from the inside just as quickly."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "For self-defense only? Maybe they think that way, for now."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "But there is no such thing as a guarantee when one is in possession of power far greater than one can control."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "I've seen many gangs rise rapidly with the backing of the nobility, only to fall apart from the inside just as quickly."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -322,25 +352,24 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "narration",
-          "text": "A golden lion walks out from behind the darkened throne and crouches by its side.\nGawain. It is like he was always here, like the reliefs around him, bearing witness to the Empire's rise and fall, all in the blink of an eye.\nAnd now, his dark eyes have witnessed you."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "Teacher?!"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "narration",
+      "text": "A golden lion walks out from behind the darkened throne and crouches by its side.\nGawain. It is like he was always here, like the reliefs around him, bearing witness to the Empire's rise and fall, all in the blink of an eye.\nAnd now, his dark eyes have witnessed you."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "Teacher?!"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -355,8 +384,7 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -366,8 +394,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -377,18 +404,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "......"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -398,862 +424,1024 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "narration",
-          "text": "<p=1>Speaker's Office</><p=2>December 10th, 1098, 7:32 P.M.</>"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "What is this instrument, Vina?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "An engineering sample made by Rockrock. Says it keeps tired workers from growing drowsy. But how's that different from just taking a nap?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "Does it work?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "Vina yawns, rubs her eyes, and continues to peruse the documents before her."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "No."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "What DOES wake you up, though, is responding to some forty petitions to eliminate the traitor, Millscar."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "Have the citizens fighting over this outside calmed down?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "Yes. Horn brought a bunch of city guard's newcomers straight out of training camp."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "Thank goodness it didn't get out of hand."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "It helped that the soldiers had families and comrades on both sides. *sigh* I really don't know what the people who still support Millscar are thinking."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "No surprise. It was Parliament that went back on its word first. We did have trouble with our medicine supply, and her stuff gave people hope."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "Only false hope, though."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "At first, I thought you sent the Defense Forces to..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "Crack down? Using violence to suppress innocent countrymen is the most cowardly and least effective method—"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "Why are you looking at me like that?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "Just feeling dumb for worrying at all."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "Don't tease me. I've got a long way to go before I'm used to this role. Thank goodness I have a lot help from people I can trust."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "My teacher, the Doctor, and you... and many others."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "She stretches, puts down Rockrock's sample, and lets out a long exhalation."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "I would be stumbling in the dark without the intel from your informants and our Rhodes Island colleagues."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "But Millscar..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "Selling dangerous drugs of unknown origin, offering predatory loans, threatening the lives of the citizenry... and colluding with the Sarkaz..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "All the evidence lies in my drawer, all of it corroborated. She cannot be allowed to run unchecked just because some few benefited from association with her."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "Allerdale, she—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "It's not just her, Delphine."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "No one wants to see this hard-earned peace broken again, after all we've been through."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "Parliament promised safety to the people. I know what must be done."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "Very well. An old friend has a lead on her that might interest you."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "By the way, I've given serious consideration to the Doctor's suggestion."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "Once things have settled down for a bit, I'll return to Windermere and take back certain things that have always belonged to me."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "How long will you be?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "I don't know. But the Doctor is right. I need what Mother left behind, if I am to help you... even if I was reluctant at the time of her death."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "Thank you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "It's for myself, too. Victoria, Windermere, Lynncardine... I must see for myself that which Mother cared so much about."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "It's the only way I can get closer to her."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Injured Exemplar",
-          "speakerId": "avg_npc_423_1",
-          "text": "Sir! Please allow me to still call you that... I-I didn't think you would come to me."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Injured Exemplar",
-          "speakerId": "avg_npc_423_1",
-          "text": "Did my application go through?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_npc_229_1",
-          "text": "Walker, I've heard how Pitt and the others got you to leave the scene of the protest. I think—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Walker",
-          "speakerId": "avg_npc_423_1",
-          "text": "So that's not what you're here for... Alright. Actually, I've been listening to the radio, sir."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Walker",
-          "speakerId": "avg_npc_423_1",
-          "text": "I heard about the artillery handover to the newly reorganized Defense Forces under your command, and the newly-constructed training plate outside the city."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Walker",
-          "speakerId": "avg_npc_423_1",
-          "text": "I went to see it myself. The facilities are superb. I can even imagine myself training there..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_npc_229_1",
-          "text": "I'm sorry, Walker, but I can't approve your application to join the Defense Forces."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Walker",
-          "speakerId": "avg_npc_423_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Walker",
-          "speakerId": "avg_npc_423_1",
-          "text": "Sure, if I'm not up to standard, I'll redouble my—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_npc_229_1",
-          "text": "You know your own health. Training and fighting will only make it worse."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Walker",
-          "speakerId": "avg_npc_423_1",
-          "text": "My condition is under control. I'm taking medicine. I haven't felt any pain from the rocks for a while! I'm getting better—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_npc_229_1",
-          "text": "Millscar's medicine, right? We've analyzed it, and it's..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Walker",
-          "speakerId": "avg_npc_423_1",
-          "text": "Nothing more than a painkiller. I know."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Walker",
-          "speakerId": "avg_npc_423_1",
-          "text": "But that's what we need. Parliament's medicine rations are running out, aren't they?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Walker",
-          "speakerId": "avg_npc_423_1",
-          "text": "At least this makes me feel better, for a while, and lets me practice wielding a crossbow with one hand. I'll pass the Defense Forces tests, sir."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Walker",
-          "speakerId": "avg_npc_423_1",
-          "text": "'There will be hope as long as we make it back home, no matter how bloody goddamned hard life is.' That's what you told me during the defense of Chetleigh."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Morgan",
-          "speakerId": "avg_npc_405_1",
-          "text": "Vina and the others are here. We ought to go down."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Walker",
-          "speakerId": "avg_npc_423_1",
-          "text": "Vina? Speaker Vina? She's coming for me too? Because of the protest?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Walker",
-          "speakerId": "avg_npc_423_1",
-          "text": "Did you come to keep an eye on me, sir?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Morgan",
-          "speakerId": "avg_npc_405_1",
-          "text": "She came to help you because she knew Vina was coming. Same for all of us."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "There is no warmth in Londinium's sunset.\nThe survivors do not remember if it has always been this way. Those who come after will not even question it.\nOnce, The Shard was the pride of this old nomadic city. Now, people pay careful attention not to step into its shadow.\nThey all remember the day that terror itself descended upon its pinnacle, beneath the burning red sky."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "Two walk side-by-side through the sparse crowd, the setting sun drawing long shadows behind them.\nThose they pass bow to them, then go back to the work at hand, humming—\n♪Then may we call and savely syng,\n♪Victoria, yeve thankes for owre hom!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "The refurbishment of The Shard seems to be proceeding ahead of schedule."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "Rhodes Island helped a lot: providing medicine, taking in patients, and the Engineering Department has been helping with construction work in the city."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "The initial incident left such an impression on the people that the proposal to modify The Shard met no significant opposition."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "And we're cleaning up the Originium crystal growths in the city while we're at it."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "But the engineers of the Self-Salvation Corps say it'll take some time for things to go back to normal. Even the mobility layer is affected."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "Have we confirmed the retrieval team for The Shard's core technologies?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "We have a preliminary list, but we're still doing background checks on some of the technicians and scholars. They have... certain links, if you know what I mean."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "I do. The dukes have given me a heads-up. We'll turn a blind eye, as long as there's no serious issue."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "I, for one, am hoping that they find something worthwhile in that scrapheap. It would be a good thing for Victoria."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "And it's not such a bad thing for us if they started fighting over it."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_npc_229_1",
-          "text": "Vina. Delphine."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "Horn? I thought you were..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_npc_229_1",
-          "text": "I came to visit an old comrade."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_npc_229_1",
-          "text": "Don't mind me. I was just about to go and see how Bagpipe's doing with the new recruits."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "Horn stretches, but shows no sign of leaving. Vina sighs."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Morgan",
-          "speakerId": "avg_npc_405_1",
-          "text": "Vina! You would never guess what Walker and I talked about. You remember the Davises, who came with us from Chetleigh? Well, the wife just gave birth—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "I know why you're here, Morgan."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "Walker and the protests are a matter for Parliament... it's not something I should get involved in."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "I'm just here to talk about the whereabouts of Millscar."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Morgan",
-          "speakerId": "avg_npc_405_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Walker",
-          "speakerId": "avg_npc_423_1",
-          "text": "Thanks, but there's no need to make things difficult for Madam Speaker."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Walker",
-          "speakerId": "avg_npc_423_1",
-          "text": "I trust Parliament. I know many MPs. Fine people."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "Parliament is not as simple as you think. There are those who would prefer to escalate the issue."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_4110_delphn_1",
-          "text": "But resolving the Millscar issue as soon as possible is in the best interests of everyone, including you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Walker",
-          "speakerId": "avg_npc_423_1",
-          "text": "......"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "<p=1>Londinium</><p=2>September 28th, 1098, 5:27 P.M.</>\nThe city was angry."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Morgan",
-          "speakerId": "avg_npc_405_1",
-          "text": "The troops that stood in our way... are they falling back?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Indra",
-          "speakerId": null,
-          "text": "The factories are waking up? I thought the Sarkaz had shut everything down."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Dagda",
-          "speakerId": null,
-          "text": "...I remember these factories. I know where they are. I always will."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Dagda",
-          "speakerId": null,
-          "text": "That's Miles Industries on York Street! And that's Coppola Foods on Scott Street! And that's—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Dagda",
-          "speakerId": null,
-          "text": "'Consolidated Inc.'... 'Hankin's'... 'South Wicker Cargo'..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Dagda",
-          "speakerId": null,
-          "text": "(Choked) Vina... I thought they..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "Those that were silent, those that had been abandoned, those that had been commandeered by the Sarkaz, and those that continued to run timidly.\nAll the city's factories came alive at the same time, but the Sarkaz hastily pulling back from the battlefield outside the city had no time to notice.\nThe steam that gushed out was the breath of steel and machine. The factories were roaring."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Morgan",
-          "speakerId": "avg_npc_405_1",
-          "text": "What's going on?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "They're helping us. Londinium is helping us."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Allied Soldier",
-          "speakerId": null,
-          "text": "March on, Exemplars. It's time to bring this to an end."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Allied Soldier",
-          "speakerId": null,
-          "text": "This is Lieutenant Diane Weber of the Sixth Column, Tenth Infantry Regiment. Lower your weapons, soldiers, and escort the Exemplars in their advance."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "You're defying the dukes?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Diane",
-          "speakerId": null,
-          "text": "Before I was a soldier, I was a Londinier. This is my home too."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Diane",
-          "speakerId": null,
-          "text": "Go, Siege. The fight is not yet over."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Diane",
-          "speakerId": null,
-          "text": "We will take back what is ours!"
-        },
-        {
-          "type": "narration",
-          "text": "The first squad starts lowering their crossbows, and they are soon followed by others, who step aside to clear a path."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "Exemplars, forward!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "We're home."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Catherine",
-          "speakerId": "avg_4162_cathy_1",
-          "text": "Keep the factories running at full steam! Keep the Sarkaz at bay just a bit longer!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Catherine",
-          "speakerId": "avg_4162_cathy_1",
-          "text": "The dukes want people to think there's no Victorians left alive, justifying them sitting on their hands out there. But we'll make 'em hear we're still here!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Catherine",
-          "speakerId": "avg_4162_cathy_1",
-          "text": "The people outside the walls will know we haven't given up yet!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Percival",
-          "speakerId": "avg_npc_864_1",
-          "text": "Thanks for the assist, Madam Catherine. You can trust our guys; everyone has a trick or two up their sleeves."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Percival",
-          "speakerId": "avg_npc_864_1",
-          "text": "Nine and the others are working on the other factories. This whole city is about to rise up."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Catherine",
-          "speakerId": "avg_4162_cathy_1",
-          "text": "Are you coming back... Feist?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Heidi",
-          "speakerId": "avg_npc_400_1",
-          "text": "Is it on?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Guard Operator",
-          "speakerId": "avg_npc_012",
-          "text": "On it is! The other factories have also been restored, just as the Doctor planned."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Guard Operator",
-          "speakerId": "avg_npc_012",
-          "text": "It's not just the citizens that are helping us though. There are other people, and they call themselves—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Guard Operator",
-          "speakerId": "avg_npc_012",
-          "text": "Reunion..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Duke of Gododdin",
-          "speakerId": "avg_npc_1068_1",
-          "text": "Well, well. I haven't seen the city so lively in years."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Duke of Gododdin",
-          "speakerId": "avg_npc_1068_1",
-          "text": "I just got word that alliance troops have cleared a path for the Exemplars."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Duke of Gododdin",
-          "speakerId": "avg_npc_1068_1",
-          "text": "That wasn't our orders. Are you happy with the test results?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Duke of Caster",
-          "speakerId": "avg_npc_726_1",
-          "text": "It seems we have underestimated the influence of a miracle."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Duke of Caster",
-          "speakerId": "avg_npc_726_1",
-          "text": "We should hasten our preparations, then."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mysterious Mercenary",
-          "speakerId": "avg_npc_399_1",
-          "text": "Hey, boss, looks like we don't have to cause a commotion anymore."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mysterious Mercenary",
-          "speakerId": "avg_npc_399_1",
-          "text": "They're letting the Exemplars through."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_1342_1",
-          "text": "Pull the ambush and give a hand to the factories we captured."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_1342_1",
-          "text": "Tell the people in charge that the boilers keep burning until I say stop."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mysterious Mercenary",
-          "speakerId": "avg_npc_399_1",
-          "text": "You got it."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_1342_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_1342_1",
-          "text": "Welcome home, Vina."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "<p=1>Speaker's Office</><p=2>December 10th, 1098, 9:28 P.M.</>"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "Speaker's Office."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "Walker's fine. Parliament won't come down hard on him over this little thing. But tell him to stay safe."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "There's no telling if the people watching us might find him inconvenient to them."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "And... how are things going over there?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "...Good."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "We'll find you..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Vina",
-          "speakerId": "avg_1019_siege2_1",
-          "text": "Allerdale."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "background",
+      "backgroundId": "55_g8_siegeoffice"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "<p=1>Speaker's Office</><p=2>December 10th, 1098, 7:32 P.M.</>"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "What is this instrument, Vina?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "An engineering sample made by Rockrock. Says it keeps tired workers from growing drowsy. But how's that different from just taking a nap?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "Does it work?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "Vina yawns, rubs her eyes, and continues to peruse the documents before her."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "No."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "What DOES wake you up, though, is responding to some forty petitions to eliminate the traitor, Millscar."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "Have the citizens fighting over this outside calmed down?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "Yes. Horn brought a bunch of city guard's newcomers straight out of training camp."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "Thank goodness it didn't get out of hand."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "It helped that the soldiers had families and comrades on both sides. *sigh* I really don't know what the people who still support Millscar are thinking."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "No surprise. It was Parliament that went back on its word first. We did have trouble with our medicine supply, and her stuff gave people hope."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "Only false hope, though."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "At first, I thought you sent the Defense Forces to..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "Crack down? Using violence to suppress innocent countrymen is the most cowardly and least effective method—"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "Why are you looking at me like that?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "Just feeling dumb for worrying at all."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "Don't tease me. I've got a long way to go before I'm used to this role. Thank goodness I have a lot help from people I can trust."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "My teacher, the Doctor, and you... and many others."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "She stretches, puts down Rockrock's sample, and lets out a long exhalation."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "I would be stumbling in the dark without the intel from your informants and our Rhodes Island colleagues."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "But Millscar..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "Selling dangerous drugs of unknown origin, offering predatory loans, threatening the lives of the citizenry... and colluding with the Sarkaz..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "All the evidence lies in my drawer, all of it corroborated. She cannot be allowed to run unchecked just because some few benefited from association with her."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "Allerdale, she—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "It's not just her, Delphine."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "No one wants to see this hard-earned peace broken again, after all we've been through."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "Parliament promised safety to the people. I know what must be done."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "Very well. An old friend has a lead on her that might interest you."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "By the way, I've given serious consideration to the Doctor's suggestion."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "Once things have settled down for a bit, I'll return to Windermere and take back certain things that have always belonged to me."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "How long will you be?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "I don't know. But the Doctor is right. I need what Mother left behind, if I am to help you... even if I was reluctant at the time of her death."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "Thank you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "It's for myself, too. Victoria, Windermere, Lynncardine... I must see for myself that which Mother cared so much about."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "It's the only way I can get closer to her."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_indoor_u"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Injured Exemplar",
+      "speakerId": "avg_npc_423_1",
+      "isRemote": false,
+      "text": "Sir! Please allow me to still call you that... I-I didn't think you would come to me."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Injured Exemplar",
+      "speakerId": "avg_npc_423_1",
+      "isRemote": false,
+      "text": "Did my application go through?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_npc_229_1",
+      "isRemote": false,
+      "text": "Walker, I've heard how Pitt and the others got you to leave the scene of the protest. I think—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Walker",
+      "speakerId": "avg_npc_423_1",
+      "isRemote": false,
+      "text": "So that's not what you're here for... Alright. Actually, I've been listening to the radio, sir."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Walker",
+      "speakerId": "avg_npc_423_1",
+      "isRemote": false,
+      "text": "I heard about the artillery handover to the newly reorganized Defense Forces under your command, and the newly-constructed training plate outside the city."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Walker",
+      "speakerId": "avg_npc_423_1",
+      "isRemote": false,
+      "text": "I went to see it myself. The facilities are superb. I can even imagine myself training there..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_npc_229_1",
+      "isRemote": false,
+      "text": "I'm sorry, Walker, but I can't approve your application to join the Defense Forces."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Walker",
+      "speakerId": "avg_npc_423_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Walker",
+      "speakerId": "avg_npc_423_1",
+      "isRemote": false,
+      "text": "Sure, if I'm not up to standard, I'll redouble my—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_npc_229_1",
+      "isRemote": false,
+      "text": "You know your own health. Training and fighting will only make it worse."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Walker",
+      "speakerId": "avg_npc_423_1",
+      "isRemote": false,
+      "text": "My condition is under control. I'm taking medicine. I haven't felt any pain from the rocks for a while! I'm getting better—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_npc_229_1",
+      "isRemote": false,
+      "text": "Millscar's medicine, right? We've analyzed it, and it's..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Walker",
+      "speakerId": "avg_npc_423_1",
+      "isRemote": false,
+      "text": "Nothing more than a painkiller. I know."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Walker",
+      "speakerId": "avg_npc_423_1",
+      "isRemote": false,
+      "text": "But that's what we need. Parliament's medicine rations are running out, aren't they?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Walker",
+      "speakerId": "avg_npc_423_1",
+      "isRemote": false,
+      "text": "At least this makes me feel better, for a while, and lets me practice wielding a crossbow with one hand. I'll pass the Defense Forces tests, sir."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Walker",
+      "speakerId": "avg_npc_423_1",
+      "isRemote": false,
+      "text": "'There will be hope as long as we make it back home, no matter how bloody goddamned hard life is.' That's what you told me during the defense of Chetleigh."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Morgan",
+      "speakerId": "avg_npc_405_1",
+      "isRemote": false,
+      "text": "Vina and the others are here. We ought to go down."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Walker",
+      "speakerId": "avg_npc_423_1",
+      "isRemote": false,
+      "text": "Vina? Speaker Vina? She's coming for me too? Because of the protest?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Walker",
+      "speakerId": "avg_npc_423_1",
+      "isRemote": false,
+      "text": "Did you come to keep an eye on me, sir?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Morgan",
+      "speakerId": "avg_npc_405_1",
+      "isRemote": false,
+      "text": "She came to help you because she knew Vina was coming. Same for all of us."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "55_g6_dusklentiavenue"
+    },
+    {
+      "type": "narration",
+      "text": "There is no warmth in Londinium's sunset.\nThe survivors do not remember if it has always been this way. Those who come after will not even question it.\nOnce, The Shard was the pride of this old nomadic city. Now, people pay careful attention not to step into its shadow.\nThey all remember the day that terror itself descended upon its pinnacle, beneath the burning red sky."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "55_g6_dusklentiavenue"
+    },
+    {
+      "type": "narration",
+      "text": "Two walk side-by-side through the sparse crowd, the setting sun drawing long shadows behind them.\nThose they pass bow to them, then go back to the work at hand, humming—\n♪Then may we call and savely syng,\n♪Victoria, yeve thankes for owre hom!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "The refurbishment of The Shard seems to be proceeding ahead of schedule."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "Rhodes Island helped a lot: providing medicine, taking in patients, and the Engineering Department has been helping with construction work in the city."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "The initial incident left such an impression on the people that the proposal to modify The Shard met no significant opposition."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "And we're cleaning up the Originium crystal growths in the city while we're at it."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "But the engineers of the Self-Salvation Corps say it'll take some time for things to go back to normal. Even the mobility layer is affected."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "Have we confirmed the retrieval team for The Shard's core technologies?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "We have a preliminary list, but we're still doing background checks on some of the technicians and scholars. They have... certain links, if you know what I mean."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "I do. The dukes have given me a heads-up. We'll turn a blind eye, as long as there's no serious issue."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "I, for one, am hoping that they find something worthwhile in that scrapheap. It would be a good thing for Victoria."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "And it's not such a bad thing for us if they started fighting over it."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_npc_229_1",
+      "isRemote": false,
+      "text": "Vina. Delphine."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "Horn? I thought you were..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_npc_229_1",
+      "isRemote": false,
+      "text": "I came to visit an old comrade."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_npc_229_1",
+      "isRemote": false,
+      "text": "Don't mind me. I was just about to go and see how Bagpipe's doing with the new recruits."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "Horn stretches, but shows no sign of leaving. Vina sighs."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Morgan",
+      "speakerId": "avg_npc_405_1",
+      "isRemote": false,
+      "text": "Vina! You would never guess what Walker and I talked about. You remember the Davises, who came with us from Chetleigh? Well, the wife just gave birth—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "I know why you're here, Morgan."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "Walker and the protests are a matter for Parliament... it's not something I should get involved in."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "I'm just here to talk about the whereabouts of Millscar."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Morgan",
+      "speakerId": "avg_npc_405_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Walker",
+      "speakerId": "avg_npc_423_1",
+      "isRemote": false,
+      "text": "Thanks, but there's no need to make things difficult for Madam Speaker."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Walker",
+      "speakerId": "avg_npc_423_1",
+      "isRemote": false,
+      "text": "I trust Parliament. I know many MPs. Fine people."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "Parliament is not as simple as you think. There are those who would prefer to escalate the issue."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_4110_delphn_1",
+      "isRemote": false,
+      "text": "But resolving the Millscar issue as soon as possible is in the best interests of everyone, including you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Walker",
+      "speakerId": "avg_npc_423_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "<p=1>Londinium</><p=2>September 28th, 1098, 5:27 P.M.</>\nThe city was angry."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Morgan",
+      "speakerId": "avg_npc_405_1",
+      "isRemote": false,
+      "text": "The troops that stood in our way... are they falling back?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Indra",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "The factories are waking up? I thought the Sarkaz had shut everything down."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Dagda",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "...I remember these factories. I know where they are. I always will."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Dagda",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "That's Miles Industries on York Street! And that's Coppola Foods on Scott Street! And that's—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Dagda",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "'Consolidated Inc.'... 'Hankin's'... 'South Wicker Cargo'..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Dagda",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "(Choked) Vina... I thought they..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "Those that were silent, those that had been abandoned, those that had been commandeered by the Sarkaz, and those that continued to run timidly.\nAll the city's factories came alive at the same time, but the Sarkaz hastily pulling back from the battlefield outside the city had no time to notice.\nThe steam that gushed out was the breath of steel and machine. The factories were roaring."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Morgan",
+      "speakerId": "avg_npc_405_1",
+      "isRemote": false,
+      "text": "What's going on?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "They're helping us. Londinium is helping us."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Allied Soldier",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "March on, Exemplars. It's time to bring this to an end."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Allied Soldier",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "This is Lieutenant Diane Weber of the Sixth Column, Tenth Infantry Regiment. Lower your weapons, soldiers, and escort the Exemplars in their advance."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "You're defying the dukes?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Diane",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Before I was a soldier, I was a Londinier. This is my home too."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Diane",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Go, Siege. The fight is not yet over."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Diane",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "We will take back what is ours!"
+    },
+    {
+      "type": "narration",
+      "text": "The first squad starts lowering their crossbows, and they are soon followed by others, who step aside to clear a path."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "Exemplars, forward!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "We're home."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "32_g4_ordnancefactory"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Catherine",
+      "speakerId": "avg_4162_cathy_1",
+      "isRemote": false,
+      "text": "Keep the factories running at full steam! Keep the Sarkaz at bay just a bit longer!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Catherine",
+      "speakerId": "avg_4162_cathy_1",
+      "isRemote": false,
+      "text": "The dukes want people to think there's no Victorians left alive, justifying them sitting on their hands out there. But we'll make 'em hear we're still here!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Catherine",
+      "speakerId": "avg_4162_cathy_1",
+      "isRemote": false,
+      "text": "The people outside the walls will know we haven't given up yet!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Percival",
+      "speakerId": "avg_npc_864_1",
+      "isRemote": false,
+      "text": "Thanks for the assist, Madam Catherine. You can trust our guys; everyone has a trick or two up their sleeves."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Percival",
+      "speakerId": "avg_npc_864_1",
+      "isRemote": false,
+      "text": "Nine and the others are working on the other factories. This whole city is about to rise up."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Catherine",
+      "speakerId": "avg_4162_cathy_1",
+      "isRemote": false,
+      "text": "Are you coming back... Feist?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_cherunder_2"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Heidi",
+      "speakerId": "avg_npc_400_1",
+      "isRemote": false,
+      "text": "Is it on?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Guard Operator",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "On it is! The other factories have also been restored, just as the Doctor planned."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Guard Operator",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "It's not just the citizens that are helping us though. There are other people, and they call themselves—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Guard Operator",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "Reunion..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "50_g13_warshipcommandroom"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Duke of Gododdin",
+      "speakerId": "avg_npc_1068_1",
+      "isRemote": false,
+      "text": "Well, well. I haven't seen the city so lively in years."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Duke of Gododdin",
+      "speakerId": "avg_npc_1068_1",
+      "isRemote": false,
+      "text": "I just got word that alliance troops have cleared a path for the Exemplars."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Duke of Gododdin",
+      "speakerId": "avg_npc_1068_1",
+      "isRemote": false,
+      "text": "That wasn't our orders. Are you happy with the test results?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Duke of Caster",
+      "speakerId": "avg_npc_726_1",
+      "isRemote": false,
+      "text": "It seems we have underestimated the influence of a miracle."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Duke of Caster",
+      "speakerId": "avg_npc_726_1",
+      "isRemote": false,
+      "text": "We should hasten our preparations, then."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "21_G7_decisivebattlealley_d"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mysterious Mercenary",
+      "speakerId": "avg_npc_399_1",
+      "isRemote": false,
+      "text": "Hey, boss, looks like we don't have to cause a commotion anymore."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mysterious Mercenary",
+      "speakerId": "avg_npc_399_1",
+      "isRemote": false,
+      "text": "They're letting the Exemplars through."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_1342_1",
+      "isRemote": false,
+      "text": "Pull the ambush and give a hand to the factories we captured."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_1342_1",
+      "isRemote": false,
+      "text": "Tell the people in charge that the boilers keep burning until I say stop."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mysterious Mercenary",
+      "speakerId": "avg_npc_399_1",
+      "isRemote": false,
+      "text": "You got it."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_1342_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_1342_1",
+      "isRemote": false,
+      "text": "Welcome home, Vina."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "55_g8_siegeoffice"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "<p=1>Speaker's Office</><p=2>December 10th, 1098, 9:28 P.M.</>"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "Speaker's Office."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "Walker's fine. Parliament won't come down hard on him over this little thing. But tell him to stay safe."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "There's no telling if the people watching us might find him inconvenient to them."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "And... how are things going over there?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "...Good."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "We'll find you..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Vina",
+      "speakerId": "avg_1019_siege2_1",
+      "isRemote": false,
+      "text": "Allerdale."
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": []

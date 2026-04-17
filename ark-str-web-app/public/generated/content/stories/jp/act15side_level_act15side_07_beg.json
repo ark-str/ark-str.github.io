@@ -6,7 +6,7 @@
   "title": "混乱",
   "storyCode": "IW-7",
   "avgTag": "戦闘前",
-  "sourcePath": "vendor/ArknightsGamedata/jp/gamedata/story/activities/act15side/level_act15side_07_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/jp/gamedata/story/activities/act15side/level_act15side_07_beg.txt",
   "sourceHash": "3f5c867daa147d90e629ed609e3dfe9323f7358531a7f89e32562ce46f6f05cc",
   "bodyAvailable": true,
   "blocks": [
@@ -18,11 +18,19 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "25_g07_fairyland_2"
+    },
+    {
       "type": "narration",
       "text": "……うっ。\n頭が痛い……何故こんなに騒がしいんだ……ん？\nあぁ……碁を打つ音か、パチパチと。\n碁が終わりて人の世のかわるを知らず、夢より醒めてただ問う、何年か……何年か……何年かと……\nうっ……\n……なんだ、また酒がなくなったのか。\nなぜわざわざそうするのか。"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "25_g06_mountainroad_d"
     },
     {
       "type": "narration",
@@ -35,162 +43,189 @@
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "……ようやくまた会ったな。"
     },
     {
       "type": "dialogue",
       "speakerName": "テイ",
       "speakerId": "avg_npc_300_1",
+      "isRemote": false,
       "text": "さっき会ったばかりだろう。"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "さっきは刀を持ってなかったろ。会ったとは言えない。"
     },
     {
       "type": "dialogue",
       "speakerName": "テイ",
       "speakerId": "avg_npc_300_1",
+      "isRemote": false,
       "text": "今度は持ってきたぞ。"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "……まずは話をしよう。"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "あれはあんたのせいじゃないのはわかっている。あの夜、死んだのは俺の息子だけじゃないってこともな。"
     },
     {
       "type": "dialogue",
       "speakerName": "テイ",
       "speakerId": "avg_npc_300_1",
+      "isRemote": false,
       "text": "そうだろうな。"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "あんたはあいつの娘を引き取ったが、その子は今元気か？"
     },
     {
       "type": "dialogue",
       "speakerName": "テイ",
       "speakerId": "avg_npc_300_1",
+      "isRemote": false,
       "text": "……彼女には私の後を継いでもらうつもりだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "鏢局の仕事を継がせるのか、それともあんたがここ数年やってきたように、つつましく女将さんでもやってもらうつもりか？"
     },
     {
       "type": "dialogue",
       "speakerName": "テイ",
       "speakerId": "avg_npc_300_1",
+      "isRemote": false,
       "text": "どちらでもいい、好きな方を選ばせる。"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "その子は思い人でもいるのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "テイ",
       "speakerId": "avg_npc_300_1",
+      "isRemote": false,
       "text": "いないだろう。"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "そいつは残念だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "あんたはその子が嫁ぐ日まで生きられないからな。"
     },
     {
       "type": "dialogue",
       "speakerName": "テイ",
       "speakerId": "avg_npc_300_1",
+      "isRemote": false,
       "text": "……あるいは、私たちが今日戦う必要などないのではないか？"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "ありえん。あんたがどんな人かはわかっている。あんたの心には後ろめたさがあり、俺の心には恨みがあるんだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "十年、あんたを恨んできた。"
     },
     {
       "type": "dialogue",
       "speakerName": "テイ",
       "speakerId": "avg_npc_300_1",
+      "isRemote": false,
       "text": "……だから何だ？"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "だからあんたは初めから今日俺に勝つつもりはない。酒楼に茶館に客桟、どれも娘のための逃げ道を作ってやってるんだろ？"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "あんたは鏢局が人の恨みを買う稼業だと、嫌になるほど理解しているはずだ。あんたがいなくなったあとに、鏢局がどうなるかってこともな。"
     },
     {
       "type": "dialogue",
       "speakerName": "テイ",
       "speakerId": "avg_npc_300_1",
+      "isRemote": false,
       "text": "忘れるな。お前は刀を置いて鏢局を抜け、掟を破った。皆が情で許したとしても、道理の上ではお前は裏切り者だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "あの夜のあと、もしあんたが罪を背負って、それでも鏢局を率いて前へ進んでいたなら、俺が鏢局を裏切ったと思うか！？"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "俺の息子は鏢師として務めたんだ、死ぬ覚悟があったのは俺も承知の上さ！　だが、そのあとお前は何をした？　宿や飯屋なんかを開きやがって、あいつらの死を踏みにじる以外のなんだってんだ？"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "あんたはな！　打ちのめされて過去から逃げているだけだろ！"
     },
     {
       "type": "dialogue",
       "speakerName": "テイ",
       "speakerId": "avg_npc_300_1",
+      "isRemote": false,
       "text": "そうさ……ああ、わかっているさ。だが少しおしゃべりがすぎたようだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "テイ",
       "speakerId": "avg_npc_300_1",
+      "isRemote": false,
       "text": "行裕鏢局総鏢頭。問霜客、テイ・チンユエ。"
     },
     {
@@ -200,6 +235,7 @@
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "……シャン家流棒術、シャン・ジョン。"
     },
     {
@@ -216,54 +252,63 @@
       "type": "dialogue",
       "speakerName": "テイ",
       "speakerId": "avg_npc_300_1",
+      "isRemote": false,
       "text": "……うっ。"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "鈍ったな、テイ。"
     },
     {
       "type": "dialogue",
       "speakerName": "テイ",
       "speakerId": "avg_npc_300_1",
+      "isRemote": false,
       "text": "……私が鈍ったとは限らん。山を登っているうちに、お前の歩法にさらに磨きがかかったのかもな。"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "どうかな。"
     },
     {
       "type": "dialogue",
       "speakerName": "テイ",
       "speakerId": "avg_npc_300_1",
+      "isRemote": false,
       "text": "だがお前のような英雄豪傑が、残りの半生を立ち上がることすらできず、過ごすことになるとは不憫だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "……先ほどは、雪の反射光で目が眩んだだけだ。腿を少しかすったぐらいで、俺が歩けなくなるだと？"
     },
     {
       "type": "dialogue",
       "speakerName": "テイ",
       "speakerId": "avg_npc_300_1",
+      "isRemote": false,
       "text": "次の斬撃はお前では防げん。お前が持っているのは、家伝の宝棍ではなくただの棒切れだろう。"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "テイ",
       "speakerId": "avg_npc_300_1",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -273,24 +318,28 @@
       "type": "dialogue",
       "speakerName": "ドゥ",
       "speakerId": "avg_npc_296_1",
+      "isRemote": false,
       "text": "――父さん！"
     },
     {
       "type": "dialogue",
       "speakerName": "テイ",
       "speakerId": "avg_npc_300_1",
+      "isRemote": false,
       "text": "ヤオイェ！？　なぜお前が……"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "やはりあんたがドゥ・ヤオイェだったのか。こんなに大きくなってるとは……"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "うむ。"
     },
     {
@@ -300,174 +349,203 @@
       "type": "dialogue",
       "speakerName": "リー",
       "speakerId": "avg_322_lmlee_1",
+      "isRemote": false,
       "text": "お二人とも精が出ますねぇ。空も暗くなってきたっていうのに、まだこんな場所で……武術の鍛錬とは。"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "あんたか。ここで何している？"
     },
     {
       "type": "dialogue",
       "speakerName": "リー",
       "speakerId": "avg_322_lmlee_1",
+      "isRemote": false,
       "text": "シャンさん、実はあなたが腰に下げているその酒杯は、友人から探すように頼まれた物なんですよ。おれが東屋を探していたのもそれに関係しています。"
     },
     {
       "type": "dialogue",
       "speakerName": "リー",
       "speakerId": "avg_322_lmlee_1",
+      "isRemote": false,
       "text": "そんなもんでお二人が研鑽してる間に、刀が酒杯を傷つけでもしたら……取り返しがつかないんでね。ここで見てたんですよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "ドゥ",
       "speakerId": "avg_npc_296_1",
+      "isRemote": false,
       "text": "父さん、何してるのよ――！"
     },
     {
       "type": "dialogue",
       "speakerName": "テイ",
       "speakerId": "avg_npc_300_1",
+      "isRemote": false,
       "text": "……ヤオイェ、私は……"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "十年前、行裕鏢局はでかい仕事を受けた。そして護送していた途中の大雨が降った夜に、荒野で賊に襲われた。"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "そのとき荷を守るため、テイは仲間の鏢師を見捨てた。十数人の仲間たちが死に、その中には俺の息子、そしてあんたの……実の父親もいた。"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "テイは仲間を見殺しにした。それだけじゃない、結局こいつは、犠牲を出してなお、荷も鏢局の評判も守り切れなかった。"
     },
     {
       "type": "dialogue",
       "speakerName": "ドゥ",
       "speakerId": "avg_npc_296_1",
+      "isRemote": false,
       "text": "あたしは――"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "極め付けに、こいつは事件のあと鏢局が落ちぶれていく事実から目を逸らし、己の失敗から逃げたんだ。そのことを知ってるか？"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "あんたの母親も尚蜀から出て、実家に帰っちまったよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "ドゥ・ヤオイェ……あんたは本当に知っているのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ドゥ",
       "speakerId": "avg_npc_296_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "テイ",
       "speakerId": "avg_npc_300_1",
+      "isRemote": false,
       "text": "ヤオイェ。これはお前とは関係ない、私は――"
     },
     {
       "type": "dialogue",
       "speakerName": "ドゥ",
       "speakerId": "avg_npc_296_1",
+      "isRemote": false,
       "text": "あんたが……シャンさんでしょ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ドゥ",
       "speakerId": "avg_npc_296_1",
+      "isRemote": false,
       "text": "いえ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ドゥ",
       "speakerId": "avg_npc_296_1",
+      "isRemote": false,
       "text": "裏切り者の……シャン・ジョンね。"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "ドゥ",
       "speakerId": "avg_npc_296_1",
+      "isRemote": false,
       "text": "あんた、このあたしが誰だと思ってるの？　何も知らずに温室の中で今日まで育ってきたおバカさんだと思ってるわけ？"
     },
     {
       "type": "dialogue",
       "speakerName": "ドゥ",
       "speakerId": "avg_npc_296_1",
+      "isRemote": false,
       "text": "そうね、本当の父さんと母さんのことなら全部知ってるわよ。テイのじじいが、ここ数年どうしていたかだって、あんたよりもよっぽどわかってるわよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "ドゥ",
       "speakerId": "avg_npc_296_1",
+      "isRemote": false,
       "text": "まあ良い機会だし、あんたたちに教えてあげる――"
     },
     {
       "type": "dialogue",
       "speakerName": "ドゥ",
       "speakerId": "avg_npc_296_1",
+      "isRemote": false,
       "text": "――鏢局にしろ酒楼にしろ、いつかはあたしのものになるのよ！"
     },
     {
       "type": "dialogue",
       "speakerName": "ドゥ",
       "speakerId": "avg_npc_296_1",
+      "isRemote": false,
       "text": "じじい二人は、邪魔をしないでもらえるかしら。"
     },
     {
       "type": "dialogue",
       "speakerName": "テイ",
       "speakerId": "avg_npc_300_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "……あんた、そこをどかないと痛い目見るぞ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ドゥ",
       "speakerId": "avg_npc_296_1",
+      "isRemote": false,
       "text": "――！"
     },
     {
@@ -477,60 +555,70 @@
       "type": "dialogue",
       "speakerName": "リー",
       "speakerId": "avg_322_lmlee_1",
+      "isRemote": false,
       "text": "いやあ、まずは話し合いましょうや……"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "……銅銭剣？"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "笑わせるなよ。俺の前で何か術でもひけらかす気か？"
     },
     {
       "type": "dialogue",
       "speakerName": "リー",
       "speakerId": "avg_322_lmlee_1",
+      "isRemote": false,
       "text": "いーえ、まさかまさか。おれは接近戦が苦手なんでねぇ……ただ……"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "こんな物、欲しけりゃ持ってけ、ほらよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "リー",
       "speakerId": "avg_322_lmlee_1",
+      "isRemote": false,
       "text": "――！"
     },
     {
       "type": "dialogue",
       "speakerName": "テイ",
       "speakerId": "avg_npc_300_1",
+      "isRemote": false,
       "text": "――させん！"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "テイ！　よそ見してんじゃねぇ！"
     },
     {
       "type": "dialogue",
       "speakerName": "ドゥ",
       "speakerId": "avg_npc_296_1",
+      "isRemote": false,
       "text": "――父さんに手を出さないで！"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "くっ、邪魔だ！"
     },
     {
@@ -540,24 +628,28 @@
       "type": "dialogue",
       "speakerName": "ドゥ",
       "speakerId": "avg_npc_296_1",
+      "isRemote": false,
       "text": "うっ！"
     },
     {
       "type": "dialogue",
       "speakerName": "テイ",
       "speakerId": "avg_npc_300_1",
+      "isRemote": false,
       "text": "ヤオイェ！"
     },
     {
       "type": "dialogue",
       "speakerName": "テイ",
       "speakerId": "avg_npc_300_1",
+      "isRemote": false,
       "text": "シャン、子供に手を出しやがって、気が狂ったか！"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "――！"
     },
     {
@@ -571,36 +663,42 @@
       "type": "dialogue",
       "speakerName": "リー",
       "speakerId": "avg_322_lmlee_1",
+      "isRemote": false,
       "text": "――酒杯が！"
     },
     {
       "type": "dialogue",
       "speakerName": "ドゥ",
       "speakerId": "avg_npc_296_1",
+      "isRemote": false,
       "text": "あたしたちはいいから！　あんたはやることやりなさい！"
     },
     {
       "type": "dialogue",
       "speakerName": "リー",
       "speakerId": "avg_322_lmlee_1",
+      "isRemote": false,
       "text": "でも嬢ちゃんは……"
     },
     {
       "type": "dialogue",
       "speakerName": "ドゥ",
       "speakerId": "avg_npc_296_1",
+      "isRemote": false,
       "text": "これは身内の話なの！"
     },
     {
       "type": "dialogue",
       "speakerName": "リー",
       "speakerId": "avg_322_lmlee_1",
+      "isRemote": false,
       "text": "……わかりました。"
     },
     {
       "type": "dialogue",
       "speakerName": "リー",
       "speakerId": "avg_322_lmlee_1",
+      "isRemote": false,
       "text": "あと少し持ちこたえてください。すぐに人が来ますから。"
     },
     {
@@ -610,36 +708,42 @@
       "type": "dialogue",
       "speakerName": "テイ",
       "speakerId": "avg_npc_300_1",
+      "isRemote": false,
       "text": "ヤオイェ、彼に行かせてはならん！"
     },
     {
       "type": "dialogue",
       "speakerName": "ドゥ",
       "speakerId": "avg_npc_296_1",
+      "isRemote": false,
       "text": "このじじいはあんたの命を狙ってるのよ、まだそんなガラクタを気にしてるの！？"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "ふっ、こいつの言う通りだ。十年前もあんたは崖から酒杯を落として失ったよな。今また同じことになってどんな気分だ？"
     },
     {
       "type": "dialogue",
       "speakerName": "テイ",
       "speakerId": "avg_npc_300_1",
+      "isRemote": false,
       "text": "シャン、お前……！"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "俺にどいてほしいなら、方法は簡単だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "テイ",
       "speakerId": "avg_npc_300_1",
+      "isRemote": false,
       "text": "チッ。"
     },
     {
@@ -649,6 +753,7 @@
       "type": "dialogue",
       "speakerName": "タイホー",
       "speakerId": "avg_npc_299_1",
+      "isRemote": false,
       "text": "ここまでだ！"
     },
     {
@@ -658,36 +763,42 @@
       "type": "dialogue",
       "speakerName": "ズオ・ラウ",
       "speakerId": "avg_npc_297_1",
+      "isRemote": false,
       "text": "テイさん！"
     },
     {
       "type": "dialogue",
       "speakerName": "テイ",
       "speakerId": "avg_npc_300_1",
+      "isRemote": false,
       "text": "――酒杯は崖下へと落ちました。あの龍門人がすでに探しに行っています。お二人とも、早く行ってください！"
     },
     {
       "type": "dialogue",
       "speakerName": "ズオ・ラウ",
       "speakerId": "avg_npc_297_1",
+      "isRemote": false,
       "text": "感謝します。"
     },
     {
       "type": "dialogue",
       "speakerName": "ズオ・ラウ",
       "speakerId": "avg_npc_297_1",
+      "isRemote": false,
       "text": "タイホーさん。"
     },
     {
       "type": "dialogue",
       "speakerName": "タイホー",
       "speakerId": "avg_npc_299_1",
+      "isRemote": false,
       "text": "御意。"
     },
     {
       "type": "dialogue",
       "speakerName": "ドゥ",
       "speakerId": "avg_npc_296_1",
+      "isRemote": false,
       "text": "――チッ。"
     },
     {
@@ -697,72 +808,84 @@
       "type": "dialogue",
       "speakerName": "ズオ・ラウ",
       "speakerId": "avg_npc_297_1",
+      "isRemote": false,
       "text": "……ドゥさん、これは？"
     },
     {
       "type": "dialogue",
       "speakerName": "ドゥ",
       "speakerId": "avg_npc_296_1",
+      "isRemote": false,
       "text": "行かせないわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ズオ・ラウ",
       "speakerId": "avg_npc_297_1",
+      "isRemote": false,
       "text": "……なぜ？"
     },
     {
       "type": "dialogue",
       "speakerName": "ドゥ",
       "speakerId": "avg_npc_296_1",
+      "isRemote": false,
       "text": "……リャン様とリーか、情に欠けてそうな二人の朝廷の特使か。"
     },
     {
       "type": "dialogue",
       "speakerName": "ドゥ",
       "speakerId": "avg_npc_296_1",
+      "isRemote": false,
       "text": "どっちか選ばなきゃいけないんだから、決めただけよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ドゥ",
       "speakerId": "avg_npc_296_1",
+      "isRemote": false,
       "text": "それに、あたしはリーと約束してるの。一諾千金、吐いた唾は決して飲まない、これも掟よ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ズオ・ラウ",
       "speakerId": "avg_npc_297_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "テイ",
       "speakerId": "avg_npc_300_1",
+      "isRemote": false,
       "text": "ヤオイェ！　馬鹿言ってるんじゃない！"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "……人が多いな。"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "今日はこんなに人が来るはずじゃなかったんだが。しかし、まぁいい……"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "ケリをつけるなら、あんたと俺がいれば十分だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "テイ",
       "speakerId": "avg_npc_300_1",
+      "isRemote": false,
       "text": "――チッ！"
     },
     {
@@ -772,36 +895,42 @@
       "type": "dialogue",
       "speakerName": "ズオ・ラウ",
       "speakerId": "avg_npc_297_1",
+      "isRemote": false,
       "text": "ドゥさん、私たちが至極公正に公務をこなしているのはお分かりだと思いますが。"
     },
     {
       "type": "dialogue",
       "speakerName": "ドゥ",
       "speakerId": "avg_npc_296_1",
+      "isRemote": false,
       "text": "そこまで「公正」とは思えないけどね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ズオ・ラウ",
       "speakerId": "avg_npc_297_1",
+      "isRemote": false,
       "text": "通してください。"
     },
     {
       "type": "dialogue",
       "speakerName": "ドゥ",
       "speakerId": "avg_npc_296_1",
+      "isRemote": false,
       "text": "いやよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ズオ・ラウ",
       "speakerId": "avg_npc_297_1",
+      "isRemote": false,
       "text": "仕方ありません……ご容赦を。"
     },
     {
       "type": "dialogue",
       "speakerName": "ドゥ",
       "speakerId": "avg_npc_296_1",
+      "isRemote": false,
       "text": "――"
     },
     {
@@ -811,18 +940,21 @@
       "type": "dialogue",
       "speakerName": "ウユウ",
       "speakerId": "avgnew_455_nothing_1",
+      "isRemote": false,
       "text": "ちょいとお待ちを。大の男がお嬢さん相手に手を上げるのは、いただけませんよ。そう思いませんか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ズオ・ラウ",
       "speakerId": "avg_npc_297_1",
+      "isRemote": false,
       "text": "――廉家の陰晴扇。やはり素晴らしい腕前ですね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウユウ",
       "speakerId": "avgnew_455_nothing_1",
+      "isRemote": false,
       "text": "……！"
     },
     {
@@ -832,30 +964,35 @@
       "type": "dialogue",
       "speakerName": "タイホー",
       "speakerId": "avg_npc_299_1",
+      "isRemote": false,
       "text": "身の程を弁えろ。"
     },
     {
       "type": "dialogue",
       "speakerName": "タイホー",
       "speakerId": "avg_npc_299_1",
+      "isRemote": false,
       "text": "公子、無事ですか。"
     },
     {
       "type": "dialogue",
       "speakerName": "ズオ・ラウ",
       "speakerId": "avg_npc_297_1",
+      "isRemote": false,
       "text": "……問題ありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウユウ",
       "speakerId": "avgnew_455_nothing_1",
+      "isRemote": false,
       "text": "くっ、あいててて、あんな大きな岩を軽々と放り投げるとは……まことに恐ろしい……"
     },
     {
       "type": "dialogue",
       "speakerName": "タイホー",
       "speakerId": "avg_npc_299_1",
+      "isRemote": false,
       "text": "貴様が我々の忠告を聞かないというのであれば、もはや話すべきことはない。"
     },
     {
@@ -865,279 +1002,329 @@
       "type": "dialogue",
       "speakerName": "テイ",
       "speakerId": "avg_npc_300_1",
+      "isRemote": false,
       "text": "クロスボウ！　誰だ？"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "クルース",
       "speakerId": "avg_1021_kroos2_1",
+      "isRemote": false,
       "text": "ここだよ。そっちじゃないよぉ。"
     },
     {
       "type": "dialogue",
       "speakerName": "テイ",
       "speakerId": "avg_npc_300_1",
+      "isRemote": false,
       "text": "お前は……"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "邪魔するな、ウサギ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ズオ・ラウ",
       "speakerId": "avg_npc_297_1",
+      "isRemote": false,
       "text": "ロドスは司歳台に協力しないつもりですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "クルース",
       "speakerId": "avg_1021_kroos2_1",
+      "isRemote": false,
       "text": "うん。"
     },
     {
       "type": "dialogue",
       "speakerName": "クルース",
       "speakerId": "avg_1021_kroos2_1",
+      "isRemote": false,
       "text": "あなたたちにも言い分はあるんだろうけどぉ、私たちはニェンさんと付き合いが長いし、彼女がどんな人かは分かってるよぉ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ズオ・ラウ",
       "speakerId": "avg_npc_297_1",
+      "isRemote": false,
       "text": "獣の心は測りかねるもの。本当に分かると思っているんですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "クルース",
       "speakerId": "avg_1021_kroos2_1",
+      "isRemote": false,
       "text": "分かった気になってるだけかもしれないけど、少なくとも私のことは助けてくれたからぁ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウユウ",
       "speakerId": "avgnew_455_nothing_1",
+      "isRemote": false,
       "text": "私のことも、ですよ。シー嬢は私の迷いを晴らし喝も入れてくださいました……私はいささか物事から逃げるところがありますが、そんな私でも、恩に報いることは忘れませんよ！"
     },
     {
       "type": "dialogue",
       "speakerName": "タイホー",
       "speakerId": "avg_npc_299_1",
+      "isRemote": false,
       "text": "……廉家の陰晴扇。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウユウ",
       "speakerId": "avgnew_455_nothing_1",
+      "isRemote": false,
       "text": "前回は驚いてしまって機を逸しましたが、今回は手合わせができそうですね。"
     },
     {
       "type": "dialogue",
       "speakerName": "タイホー",
       "speakerId": "avg_npc_299_1",
+      "isRemote": false,
       "text": "……うむ……"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "おい、酒杯が欲しい連中は、さっさと行け。邪魔するな。"
     },
     {
       "type": "dialogue",
       "speakerName": "テイ",
       "speakerId": "avg_npc_300_1",
+      "isRemote": false,
       "text": "あの酒杯は鏢局にとって重大な意味を持つのだ。それを放っておくことは、私が死んだのと同義。"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "今のあんたは死んでるのと変わらんだろ。"
     },
     {
       "type": "dialogue",
       "speakerName": "テイ",
       "speakerId": "avg_npc_300_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "そうだ、それでいい。今のその目こそがテイ・チンユエの目だ。娘がここにいるからか？　それとも鏢局のメンツがあるからか？"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "ようやく生きたいと思うようになったか。それでこそ、俺たちの勝負に意味があるってもんだ！"
     },
     {
       "type": "dialogue",
       "speakerName": "ドゥ",
       "speakerId": "avg_npc_296_1",
+      "isRemote": false,
       "text": "……シャン。"
     },
     {
       "type": "dialogue",
       "speakerName": "ドゥ",
       "speakerId": "avg_npc_296_1",
+      "isRemote": false,
       "text": "もしあんたの息子さんがこの場を見てたら、父親がこんなことしてて彼が喜ぶと思う？"
     },
     {
       "type": "dialogue",
       "speakerName": "山の担夫",
       "speakerId": "avg_npc_302_1",
+      "isRemote": false,
       "text": "そんな言葉で惑わそうとするな。あいつがもし生きていて、ここにいたとしても、俺を止めることはできん！"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "25_g09_teahouse"
+    },
+    {
       "type": "dialogue",
       "speakerName": "リャン・シュン",
       "speakerId": "avg_npc_295_1",
+      "isRemote": false,
       "text": "……シェン殿、なぜここに？"
     },
     {
       "type": "dialogue",
       "speakerName": "船頭",
       "speakerId": "avg_npc_294_1",
+      "isRemote": false,
       "text": "一行を山頂に送り届けて下りてきました。道中のどこかでリャン様に会うだろうとは思っていましたが。"
     },
     {
       "type": "dialogue",
       "speakerName": "船頭",
       "speakerId": "avg_npc_294_1",
+      "isRemote": false,
       "text": "やはり来られたのですね？"
     },
     {
       "type": "dialogue",
       "speakerName": "リャン・シュン",
       "speakerId": "avg_npc_295_1",
+      "isRemote": false,
       "text": "ああ、だいぶ経ったので、近くまで見に来ようと思ってな。"
     },
     {
       "type": "dialogue",
       "speakerName": "船頭",
       "speakerId": "avg_npc_294_1",
+      "isRemote": false,
       "text": "ではニンさんの方は？"
     },
     {
       "type": "dialogue",
       "speakerName": "リャン・シュン",
       "speakerId": "avg_npc_295_1",
+      "isRemote": false,
       "text": "気付いている。あるいは初めから気付いていたのかもしれん。"
     },
     {
       "type": "dialogue",
       "speakerName": "リャン・シュン",
       "speakerId": "avg_npc_295_1",
+      "isRemote": false,
       "text": "書斎での一件は、おおかた彼女が計画したものだろう。"
     },
     {
       "type": "dialogue",
       "speakerName": "船頭",
       "speakerId": "avg_npc_294_1",
+      "isRemote": false,
       "text": "……リャン様、どうかニンさんを説得していただきたい。"
     },
     {
       "type": "dialogue",
       "speakerName": "船頭",
       "speakerId": "avg_npc_294_1",
+      "isRemote": false,
       "text": "他の方たちはさておき、あの白（バイ）という老陶工が手が出すことは、絶対にあってはなりません。"
     },
     {
       "type": "dialogue",
       "speakerName": "リャン・シュン",
       "speakerId": "avg_npc_295_1",
+      "isRemote": false,
       "text": "バイ天師……"
     },
     {
       "type": "dialogue",
       "speakerName": "船頭",
       "speakerId": "avg_npc_294_1",
+      "isRemote": false,
       "text": "彼が天雷を世に落とせば、司歳台と礼部の関係は崩壊し、天師府の立場もなくなってしまいます。"
     },
     {
       "type": "dialogue",
       "speakerName": "リャン・シュン",
       "speakerId": "avg_npc_295_1",
+      "isRemote": false,
       "text": "シェン殿には苦労をかけてしまうな。"
     },
     {
       "type": "dialogue",
       "speakerName": "船頭",
       "speakerId": "avg_npc_294_1",
+      "isRemote": false,
       "text": "はぁ……私は一介の船頭です、苦労などありませんよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "船頭",
       "speakerId": "avg_npc_294_1",
+      "isRemote": false,
       "text": "かつて北境の防衛に当たっていた頃も、凍てつく寒さの中でやることもなく、戦友と国家について語らってばかりいました。"
     },
     {
       "type": "dialogue",
       "speakerName": "船頭",
       "speakerId": "avg_npc_294_1",
+      "isRemote": false,
       "text": "みなこの炎国のために尽くす者、些細なことで差異はあれど大きく分かれる必要はありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "リャン・シュン",
       "speakerId": "avg_npc_295_1",
+      "isRemote": false,
       "text": "それは凡夫の責だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "船頭",
       "speakerId": "avg_npc_294_1",
+      "isRemote": false,
       "text": "私は凡人ですが、リャン様も凡人なのですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "リャン・シュン",
       "speakerId": "avg_npc_295_1",
+      "isRemote": false,
       "text": "大地は広く、万物は自由だ。人は等しく凡夫だよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "船頭",
       "speakerId": "avg_npc_294_1",
+      "isRemote": false,
       "text": "はぁ……リャン様は私にどうしてほしいので？"
     },
     {
       "type": "dialogue",
       "speakerName": "リャン・シュン",
       "speakerId": "avg_npc_295_1",
+      "isRemote": false,
       "text": "尚蜀の太平を守っていただきたい。もし最終的に何か問題が起きれば……ニンさんやあの五人が行動を起こす前に、穏便に事を収めてほしい。"
     },
     {
       "type": "dialogue",
       "speakerName": "船頭",
       "speakerId": "avg_npc_294_1",
+      "isRemote": false,
       "text": "……「人事を尽くして天命を待つ」という古い言葉があります。"
     },
     {
       "type": "dialogue",
       "speakerName": "リャン・シュン",
       "speakerId": "avg_npc_295_1",
+      "isRemote": false,
       "text": "残念だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "リャン・シュン",
       "speakerId": "avg_npc_295_1",
+      "isRemote": false,
       "text": "私が炎国の朝廷で学んだ最初の言葉は、「天命は人にあり」だ。"
     },
     {

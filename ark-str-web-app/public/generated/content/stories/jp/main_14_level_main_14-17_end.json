@@ -6,16 +6,24 @@
   "title": "結晶の中",
   "storyCode": "14-19",
   "avgTag": "戦闘後",
-  "sourcePath": "vendor/ArknightsGamedata/jp/gamedata/story/obt/main/level_main_14-17_end.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/jp/gamedata/story/obt/main/level_main_14-17_end.txt",
   "sourceHash": "5ec582a778406d2644035f93adae1a9a3206956f213f94384220a43a9f2d1e22",
   "bodyAvailable": true,
   "blocks": [
+    {
+      "type": "background",
+      "backgroundId": "bg_corridor"
+    },
     {
       "type": "narration",
       "text": "この場所に戻ってきた。\nまるでここを長く離れたかのようで、この船で寝るのが久しく感じた。\nドクター、ケルシー先生、シージさん……\n外の戦争は終わったのだろうか？　これでやっと休めそうだ。\n食堂に行って温かい野菜スープを飲んで、宿舎にある自分のベッドに横たわることができる。\nテレジアさんは？　今頃、彼女は多分――\n……\nいや……違う……\nテレジアさんは、もうここにはいない。"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_room_2"
     },
     {
       "type": "narration",
@@ -25,36 +33,49 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
       "type": "dialogue",
       "speakerName": "遠くの声",
       "speakerId": null,
+      "isRemote": false,
       "text": "……ドクター！"
     },
     {
       "type": "dialogue",
       "speakerName": "近づく声",
       "speakerId": null,
+      "isRemote": false,
       "text": "私の声が聞こえるか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": null,
+      "isRemote": false,
       "text": "ドクター！"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_corridor"
+    },
+    {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "ドクター……"
     },
     {
       "type": "dialogue",
       "speakerName": "ケルシー",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "やはり、ここにいたか……"
     },
     {
@@ -78,44 +99,45 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "見る限り、調子が悪そうだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "この場で君に身体検査をすることは多分無理だ。ドクター、私を見て、正気を保つんだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "なにか思い出さないか？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "あなたは女性の厳しくも心配のこもった言葉を聞いて、目を大きく見開こうとすると……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "視界は次第にはっきりし、身体の一部の機能も徐々に回復してきていた。\nそしてゆっくり口を開く――"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "見る限り、調子が悪そうだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "この場で君に身体検査をすることは多分無理だ。ドクター、私を見て、正気を保つんだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "なにか思い出さないか？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "あなたは女性の厳しくも心配のこもった言葉を聞いて、目を大きく見開こうとすると……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "視界は次第にはっきりし、身体の一部の機能も徐々に回復してきていた。\nそしてゆっくり口を開く――"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -130,25 +152,24 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "――！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "砕けた意識が繋ぎ合わされ、途切れた思考が論理を取り戻し、今この瞬間に自分がしっかりとした地面に立っていると確信できた。\n辺りを見渡すと、ここが自分がかつて長い時間を過ごしてきた、馴染みのある場所だとはっきりと認識できた。\nしかし目の前の女性があなたを見る目は見知らぬ人を見るかのようで、あまつさえ、敵意さえ帯びていた。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "――！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "砕けた意識が繋ぎ合わされ、途切れた思考が論理を取り戻し、今この瞬間に自分がしっかりとした地面に立っていると確信できた。\n辺りを見渡すと、ここが自分がかつて長い時間を過ごしてきた、馴染みのある場所だとはっきりと認識できた。\nしかし目の前の女性があなたを見る目は見知らぬ人を見るかのようで、あまつさえ、敵意さえ帯びていた。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -168,16 +189,25 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "narration",
-          "text": "ロドスのDr.{@nickname}だ。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
+      "type": "narration",
+      "text": "ロドスのDr.{@nickname}だ。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_corridor"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -192,30 +222,31 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "君は……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "……どうやら、自分が誰なのかはまだ覚えているようだな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "アーミヤはここにいない。一つ確かなのは、ここは決して本来のロドスではないということだ。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "君は……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "……どうやら、自分が誰なのかはまだ覚えているようだな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "アーミヤはここにいない。一つ確かなのは、ここは決して本来のロドスではないということだ。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -230,24 +261,24 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "ここに来てから君としか会っていない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "なんでこうなったのか、本当に心当たりはないのか？"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "ここに来てから君としか会っていない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "なんでこうなったのか、本当に心当たりはないのか？"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -257,18 +288,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "……"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -283,87 +313,101 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "……こういう場合は、ある程度の警戒をしないといけない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "気を付けるんだ、ドクター。我々は何があってもここを離れねばならない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "我々はこの場に不案内であるし、どんな予想外のことが起きてもおかしくない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "できるだけ君を守る。だから、あまり離れるな。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "クルース",
-          "speakerId": "char_124_kroos",
-          "text": "も……もう無理だよぉ……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "クルース",
-          "speakerId": "char_124_kroos",
-          "text": "来月分の運動量まで使い切っちゃったぁ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェン",
-          "speakerId": "char_123_fang",
-          "text": "ダメだ、クルース！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェン",
-          "speakerId": "char_123_fang",
-          "text": "今は実戦演習中だ。訓練室を戦場だと思わないと！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ビーグル",
-          "speakerId": "char_122_beagle",
-          "text": "隊長は容赦ないなぁ……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェン",
-          "speakerId": "char_123_fang",
-          "text": "みんなやる気を出して。教官から割り当てられた訓練任務はまだまだ残っているんだから。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "クルース",
-          "speakerId": "char_124_kroos",
-          "text": "別にいいじゃ～ん……どうせ教官いないんだしぃ――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "クルース",
-          "speakerId": "char_124_kroos",
-          "text": "あっ、ドクターだぁ！"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "……こういう場合は、ある程度の警戒をしないといけない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "気を付けるんだ、ドクター。我々は何があってもここを離れねばならない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "我々はこの場に不案内であるし、どんな予想外のことが起きてもおかしくない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "できるだけ君を守る。だから、あまり離れるな。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_trainingcom"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クルース",
+      "speakerId": "char_124_kroos",
+      "isRemote": false,
+      "text": "も……もう無理だよぉ……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クルース",
+      "speakerId": "char_124_kroos",
+      "isRemote": false,
+      "text": "来月分の運動量まで使い切っちゃったぁ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェン",
+      "speakerId": "char_123_fang",
+      "isRemote": false,
+      "text": "ダメだ、クルース！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェン",
+      "speakerId": "char_123_fang",
+      "isRemote": false,
+      "text": "今は実戦演習中だ。訓練室を戦場だと思わないと！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ビーグル",
+      "speakerId": "char_122_beagle",
+      "isRemote": false,
+      "text": "隊長は容赦ないなぁ……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェン",
+      "speakerId": "char_123_fang",
+      "isRemote": false,
+      "text": "みんなやる気を出して。教官から割り当てられた訓練任務はまだまだ残っているんだから。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クルース",
+      "speakerId": "char_124_kroos",
+      "isRemote": false,
+      "text": "別にいいじゃ～ん……どうせ教官いないんだしぃ――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クルース",
+      "speakerId": "char_124_kroos",
+      "isRemote": false,
+      "text": "あっ、ドクターだぁ！"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -378,105 +422,115 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "フェン",
-          "speakerId": "char_123_fang",
-          "text": "クルース！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "クルース",
-          "speakerId": "char_124_kroos",
-          "text": "へーきだって～、ドクターならきっと教官に告げ口しないよ～。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "クルース",
-          "speakerId": "char_124_kroos",
-          "text": "とりあえずここで～、心ゆくまで横になっちゃおーっと――"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "厳格な声",
-          "speakerId": null,
-          "text": "お前たちに与えた訓練任務は、偽装潜入ではなかったはずだが？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェン",
-          "speakerId": "char_123_fang",
-          "text": "……終わった。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "A1小隊全員、気をつけ！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "小隊全員",
-          "speakerId": null,
-          "text": "はい！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "全員、訓練場を百周、その後フィジカルトレーニング五十セット、始め！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "小隊全員",
-          "speakerId": null,
-          "text": "はい……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "恥ずかしいところを見せたな、ドクター。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "ロドスでは長い間平和が続いているせいか、若い戦士たちは少したるんでいるんだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "俺がビシッとしごいてやるさ。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェン",
+      "speakerId": "char_123_fang",
+      "isRemote": false,
+      "text": "クルース！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クルース",
+      "speakerId": "char_124_kroos",
+      "isRemote": false,
+      "text": "へーきだって～、ドクターならきっと教官に告げ口しないよ～。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "クルース",
+      "speakerId": "char_124_kroos",
+      "isRemote": false,
+      "text": "とりあえずここで～、心ゆくまで横になっちゃおーっと――"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "厳格な声",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "お前たちに与えた訓練任務は、偽装潜入ではなかったはずだが？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェン",
+      "speakerId": "char_123_fang",
+      "isRemote": false,
+      "text": "……終わった。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "A1小隊全員、気をつけ！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "小隊全員",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "はい！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "全員、訓練場を百周、その後フィジカルトレーニング五十セット、始め！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "小隊全員",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "はい……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "恥ずかしいところを見せたな、ドクター。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "ロドスでは長い間平和が続いているせいか、若い戦士たちは少したるんでいるんだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "俺がビシッとしごいてやるさ。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -486,8 +540,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -497,36 +550,38 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "ああ。だが起こり得る危険に備えることも必要だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "大丈夫だ、ここの訓練については心配しなくていい。俺に任せろ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "ドクター、ここ最近疲れただろう？　ゆっくりと休んでくれ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "安心しろ、俺たちがここを守る。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "ああ。だが起こり得る危険に備えることも必要だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "大丈夫だ、ここの訓練については心配しなくていい。俺に任せろ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "ドクター、ここ最近疲れただろう？　ゆっくりと休んでくれ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "安心しろ、俺たちがここを守る。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -541,24 +596,24 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "私も同じ光景を見たのだ。彼らは確かにここに存在している。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "このようなはっきりとした夢などない、それにこれは君の記憶でもない。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "私も同じ光景を見たのだ。彼らは確かにここに存在している。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "このようなはっきりとした夢などない、それにこれは君の記憶でもない。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -573,39 +628,45 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "正気を保て、ドクター。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "まだ進み続けなければならない。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Outcast",
-          "speakerId": "avg_npc_245_1",
-          "text": "おや。これは珍しい客人が来たな、ドクター。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Outcast",
-          "speakerId": "avg_npc_245_1",
-          "text": "座って一杯ひっかける時間はあるかい？　今夜は、全部私のおごりだ。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "正気を保て、ドクター。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "まだ進み続けなければならない。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_bar_1"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Outcast",
+      "speakerId": "avg_npc_245_1",
+      "isRemote": false,
+      "text": "おや。これは珍しい客人が来たな、ドクター。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Outcast",
+      "speakerId": "avg_npc_245_1",
+      "isRemote": false,
+      "text": "座って一杯ひっかける時間はあるかい？　今夜は、全部私のおごりだ。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -620,33 +681,34 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Touch",
-          "speakerId": "avg_npc_249_1",
-          "text": "忘れたのですかドクター、今日はOutcastさんの引退送別会ですよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sharp",
-          "speakerId": "avg_npc_252",
-          "text": "俺たちの尊敬する大先輩に乾杯だ。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Outcast",
-          "speakerId": "avg_npc_245_1",
-          "text": "おっと、Sharp。それはいただけないな。君に大先輩と言われるほどの年の差はないだろう。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Touch",
+      "speakerId": "avg_npc_249_1",
+      "isRemote": false,
+      "text": "忘れたのですかドクター、今日はOutcastさんの引退送別会ですよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sharp",
+      "speakerId": "avg_npc_252",
+      "isRemote": false,
+      "text": "俺たちの尊敬する大先輩に乾杯だ。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Outcast",
+      "speakerId": "avg_npc_245_1",
+      "isRemote": false,
+      "text": "おっと、Sharp。それはいただけないな。君に大先輩と言われるほどの年の差はないだろう。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -661,183 +723,211 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Pith",
-          "speakerId": "avg_npc_095",
-          "text": "お前が成したこととその射撃の腕は忘れない、乾杯だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "Outcastもこれで引退かぁ……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "これから週末の夜に……げぷ……お酒に付き合ってくれる人がいなくなっちゃうじゃん……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Outcast",
-          "speakerId": "avg_npc_245_1",
-          "text": "まったく、私はただ引退するだけだっていうのに。ラテラーノの追悼会でもここまで辛気臭くはならないよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Outcast",
-          "speakerId": "avg_npc_245_1",
-          "text": "それに、たとえ今夜酔いつぶれて、明日の朝に目を覚ますことはなかったとしても、この一生はもう十分素晴らしいものだったさ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Outcast",
-          "speakerId": "avg_npc_245_1",
-          "text": "皆と連れ立った時間は私の一番の宝物だ。この記憶は、私の守護銃と共に墓場まで持っていかせてもらうよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Outcast",
-          "speakerId": "avg_npc_245_1",
-          "text": "ただし今後、若者に射撃を教える仕事はレンジャーに任せることになるだろうね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "Outcastったら酔っ払っちゃって～、レンジャーは銃を使うんだよ、どうやって――げぷ――サンクタのクロスボウを教えるのさ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Pith",
-          "speakerId": "avg_npc_095",
-          "text": "飲み過ぎだ、話があべこべになっているぞ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Outcast",
-          "speakerId": "avg_npc_245_1",
-          "text": "撃つとき片目を閉じるところは同じだ、それほど違いはないさ。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Outcast",
-          "speakerId": "avg_npc_245_1",
-          "text": "ああ、今夜のバーのお客さんは私たちだけじゃなかったね。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "インドラ",
-          "speakerId": "avg_155_tiger_1",
-          "text": "マジで来いよダグザ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "インドラ",
-          "speakerId": "avg_155_tiger_1",
-          "text": "塔楼騎士に叙任されたやつの拳がどれだけ重いか見せてみやがれ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ダグザ",
-          "speakerId": "avg_npc_396_1",
-          "text": "……いいだろう。あんたが言ったんだからな。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ベアード",
-          "speakerId": "avg_npc_863_1",
-          "text": "ちょっと！　ここはボクシングジムじゃない。私たちはお客さんとしてロドスに来たんだから、いい加減にして！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アラデル",
-          "speakerId": "avg_npc_397_1",
-          "text": "私にもこういう時期があったわね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ヴィーナ",
-          "speakerId": "avg_npc_407_1",
-          "text": "なんだ？　蒸気騎士になったから、私たちストリートギャングと絶縁したくなったか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アラデル",
-          "speakerId": "avg_npc_397_1",
-          "text": "からかわないで……というか、本当に決めたの、ヴィーナ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ヴィーナ",
-          "speakerId": "avg_npc_407_1",
-          "text": "何もためらうことなどないな。ノーポート区で過ごした日々は私にとって人生で最も楽しい時間だった、もうあの宮殿に戻る必要はない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ヴィーナ",
-          "speakerId": "avg_npc_407_1",
-          "text": "アレクサンドリナ・ヴィーナ・ヴィクトリアは王室の末裔であり、同時に栄誉あるごく普通のヴィクトリア人でもある。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ヴィーナ",
-          "speakerId": "avg_npc_407_1",
-          "text": "アラデル、今後貴様は栄誉ある蒸気騎士だ。そして私は、栄誉ある「シージ」だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ヴィーナ",
-          "speakerId": "avg_npc_407_1",
-          "text": "このような生活が、最良であると信じている。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アラデル",
-          "speakerId": "avg_npc_397_1",
-          "text": "平和な生活は、とても貴重なものよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ヴィーナ",
-          "speakerId": "avg_npc_407_1",
-          "text": "ありふれた暮らしに乾杯。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アラデル",
-          "speakerId": "avg_npc_397_1",
-          "text": "ヴィクトリアに乾杯。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ヴィーナ",
-          "speakerId": "avg_npc_407_1",
-          "text": "貴様の気が向いたら、散歩にでも行かないか。例えば、公爵家の窓に石を投げつけるのなんてどうだ？"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Pith",
+      "speakerId": "avg_npc_095",
+      "isRemote": false,
+      "text": "お前が成したこととその射撃の腕は忘れない、乾杯だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "Outcastもこれで引退かぁ……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "これから週末の夜に……げぷ……お酒に付き合ってくれる人がいなくなっちゃうじゃん……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Outcast",
+      "speakerId": "avg_npc_245_1",
+      "isRemote": false,
+      "text": "まったく、私はただ引退するだけだっていうのに。ラテラーノの追悼会でもここまで辛気臭くはならないよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Outcast",
+      "speakerId": "avg_npc_245_1",
+      "isRemote": false,
+      "text": "それに、たとえ今夜酔いつぶれて、明日の朝に目を覚ますことはなかったとしても、この一生はもう十分素晴らしいものだったさ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Outcast",
+      "speakerId": "avg_npc_245_1",
+      "isRemote": false,
+      "text": "皆と連れ立った時間は私の一番の宝物だ。この記憶は、私の守護銃と共に墓場まで持っていかせてもらうよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Outcast",
+      "speakerId": "avg_npc_245_1",
+      "isRemote": false,
+      "text": "ただし今後、若者に射撃を教える仕事はレンジャーに任せることになるだろうね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "Outcastったら酔っ払っちゃって～、レンジャーは銃を使うんだよ、どうやって――げぷ――サンクタのクロスボウを教えるのさ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Pith",
+      "speakerId": "avg_npc_095",
+      "isRemote": false,
+      "text": "飲み過ぎだ、話があべこべになっているぞ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Outcast",
+      "speakerId": "avg_npc_245_1",
+      "isRemote": false,
+      "text": "撃つとき片目を閉じるところは同じだ、それほど違いはないさ。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Outcast",
+      "speakerId": "avg_npc_245_1",
+      "isRemote": false,
+      "text": "ああ、今夜のバーのお客さんは私たちだけじゃなかったね。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_bar_1"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "インドラ",
+      "speakerId": "avg_155_tiger_1",
+      "isRemote": false,
+      "text": "マジで来いよダグザ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "インドラ",
+      "speakerId": "avg_155_tiger_1",
+      "isRemote": false,
+      "text": "塔楼騎士に叙任されたやつの拳がどれだけ重いか見せてみやがれ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ダグザ",
+      "speakerId": "avg_npc_396_1",
+      "isRemote": false,
+      "text": "……いいだろう。あんたが言ったんだからな。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ベアード",
+      "speakerId": "avg_npc_863_1",
+      "isRemote": false,
+      "text": "ちょっと！　ここはボクシングジムじゃない。私たちはお客さんとしてロドスに来たんだから、いい加減にして！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アラデル",
+      "speakerId": "avg_npc_397_1",
+      "isRemote": false,
+      "text": "私にもこういう時期があったわね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ヴィーナ",
+      "speakerId": "avg_npc_407_1",
+      "isRemote": false,
+      "text": "なんだ？　蒸気騎士になったから、私たちストリートギャングと絶縁したくなったか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アラデル",
+      "speakerId": "avg_npc_397_1",
+      "isRemote": false,
+      "text": "からかわないで……というか、本当に決めたの、ヴィーナ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ヴィーナ",
+      "speakerId": "avg_npc_407_1",
+      "isRemote": false,
+      "text": "何もためらうことなどないな。ノーポート区で過ごした日々は私にとって人生で最も楽しい時間だった、もうあの宮殿に戻る必要はない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ヴィーナ",
+      "speakerId": "avg_npc_407_1",
+      "isRemote": false,
+      "text": "アレクサンドリナ・ヴィーナ・ヴィクトリアは王室の末裔であり、同時に栄誉あるごく普通のヴィクトリア人でもある。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ヴィーナ",
+      "speakerId": "avg_npc_407_1",
+      "isRemote": false,
+      "text": "アラデル、今後貴様は栄誉ある蒸気騎士だ。そして私は、栄誉ある「シージ」だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ヴィーナ",
+      "speakerId": "avg_npc_407_1",
+      "isRemote": false,
+      "text": "このような生活が、最良であると信じている。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アラデル",
+      "speakerId": "avg_npc_397_1",
+      "isRemote": false,
+      "text": "平和な生活は、とても貴重なものよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ヴィーナ",
+      "speakerId": "avg_npc_407_1",
+      "isRemote": false,
+      "text": "ありふれた暮らしに乾杯。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アラデル",
+      "speakerId": "avg_npc_397_1",
+      "isRemote": false,
+      "text": "ヴィクトリアに乾杯。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ヴィーナ",
+      "speakerId": "avg_npc_407_1",
+      "isRemote": false,
+      "text": "貴様の気が向いたら、散歩にでも行かないか。例えば、公爵家の窓に石を投げつけるのなんてどうだ？"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -850,12 +940,14 @@
               "type": "dialogue",
               "speakerName": "ケルシー",
               "speakerId": "avg_003_kalts_1",
+              "isRemote": false,
               "text": "君はまだ彼女たちの一人一人を覚えており、彼女たちの境遇を心から残念だと思っている。"
             },
             {
               "type": "dialogue",
               "speakerName": "ケルシー",
               "speakerId": "avg_003_kalts_1",
+              "isRemote": false,
               "text": "でなければ、このような光景を見るはずがない。"
             }
           ]
@@ -868,12 +960,14 @@
               "type": "dialogue",
               "speakerName": "ケルシー",
               "speakerId": "avg_003_kalts_1",
+              "isRemote": false,
               "text": "今の気分はどうだ、ドクター？"
             },
             {
               "type": "dialogue",
               "speakerName": "ケルシー",
               "speakerId": "avg_003_kalts_1",
+              "isRemote": false,
               "text": "喜び、困惑、それとも憤怒か？"
             }
           ]
@@ -886,18 +980,19 @@
               "type": "dialogue",
               "speakerName": "ケルシー",
               "speakerId": "avg_003_kalts_1",
+              "isRemote": false,
               "text": "これは全て君が潜在意識の中で期待している光景だ。"
             },
             {
               "type": "dialogue",
               "speakerName": "ケルシー",
               "speakerId": "avg_003_kalts_1",
+              "isRemote": false,
               "text": "この全てが現実であることを望んでいるだろう？"
             }
           ]
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -907,39 +1002,45 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "それを知るのは君自身しかいない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "前に進もう、ドクター。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "何を見ようと、それに向き合い、乗り越えるんだ。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "タルラ",
-          "speakerId": "avg_npc_078",
-          "text": "ドクター、久しぶりだな、戻ったぞ。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "それを知るのは君自身しかいない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "前に進もう、ドクター。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "何を見ようと、それに向き合い、乗り越えるんだ。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_corridor"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "タルラ",
+      "speakerId": "avg_npc_078",
+      "isRemote": false,
+      "text": "ドクター、久しぶりだな、戻ったぞ。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -954,30 +1055,31 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "タルラ",
-          "speakerId": "avg_npc_078",
-          "text": "ふっ、しばらく会わなかっただけで、私が分からなくなったのか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "タルラ",
-          "speakerId": "avg_npc_078",
-          "text": "今回は感染者治療センター建設のためにウルサス北部へと赴いたが結局苦労した。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "タルラ",
-          "speakerId": "avg_npc_078",
-          "text": "町の労働者が我々を支持してくれたおかげで、現地の領主も妥協せざるを得なくなった。それで我々は十分な土地を勝ち取れたぞ。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "タルラ",
+      "speakerId": "avg_npc_078",
+      "isRemote": false,
+      "text": "ふっ、しばらく会わなかっただけで、私が分からなくなったのか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "タルラ",
+      "speakerId": "avg_npc_078",
+      "isRemote": false,
+      "text": "今回は感染者治療センター建設のためにウルサス北部へと赴いたが結局苦労した。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "タルラ",
+      "speakerId": "avg_npc_078",
+      "isRemote": false,
+      "text": "町の労働者が我々を支持してくれたおかげで、現地の領主も妥協せざるを得なくなった。それで我々は十分な土地を勝ち取れたぞ。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -987,24 +1089,24 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "タルラ",
-          "speakerId": "avg_npc_078",
-          "text": "ドクター、また冗談を言っているのか、それともまだ寝ぼけているのかどっちだ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "タルラ",
-          "speakerId": "avg_npc_078",
-          "text": "レユニオンがないなら、ロドスと協力して、ウルサスで感染者治療を手伝っているのは誰なんだ？"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "タルラ",
+      "speakerId": "avg_npc_078",
+      "isRemote": false,
+      "text": "ドクター、また冗談を言っているのか、それともまだ寝ぼけているのかどっちだ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "タルラ",
+      "speakerId": "avg_npc_078",
+      "isRemote": false,
+      "text": "レユニオンがないなら、ロドスと協力して、ウルサスで感染者治療を手伝っているのは誰なんだ？"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1014,33 +1116,34 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "タルラ",
-          "speakerId": "avg_npc_078",
-          "text": "なぜ急に死んだ「黒蛇」の話を持ち出す？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "タルラ",
-          "speakerId": "avg_npc_078",
-          "text": "もう一度礼を言ってほしいのか？　まあいい。結局のところ、私とウルサスをあの元凶から解放し、人々の未来に良い切っ掛けをもたらしたのはロドスだからな。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "冷たい声",
-          "speakerId": null,
-          "text": "ドクター。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "タルラ",
+      "speakerId": "avg_npc_078",
+      "isRemote": false,
+      "text": "なぜ急に死んだ「黒蛇」の話を持ち出す？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "タルラ",
+      "speakerId": "avg_npc_078",
+      "isRemote": false,
+      "text": "もう一度礼を言ってほしいのか？　まあいい。結局のところ、私とウルサスをあの元凶から解放し、人々の未来に良い切っ掛けをもたらしたのはロドスだからな。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "冷たい声",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "ドクター。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1055,18 +1158,17 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "フロストノヴァ",
-          "speakerId": "avg_1505_frstar_1",
-          "text": "ドクター？"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フロストノヴァ",
+      "speakerId": "avg_1505_frstar_1",
+      "isRemote": false,
+      "text": "ドクター？"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1076,8 +1178,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1087,8 +1188,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1098,24 +1198,24 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "フロストノヴァ",
-          "speakerId": "avg_1505_frstar_1",
-          "text": "……なぜだ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フロストノヴァ",
-          "speakerId": "avg_1505_frstar_1",
-          "text": "任務が終わったらすぐに報告するように言ったのはお前ではなかったか？"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フロストノヴァ",
+      "speakerId": "avg_1505_frstar_1",
+      "isRemote": false,
+      "text": "……なぜだ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フロストノヴァ",
+      "speakerId": "avg_1505_frstar_1",
+      "isRemote": false,
+      "text": "任務が終わったらすぐに報告するように言ったのはお前ではなかったか？"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1125,18 +1225,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "フロストノヴァ",
-          "speakerId": "avg_1505_frstar_1",
-          "text": "他に何がある。私はずっとロドスの一員だからな。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フロストノヴァ",
+      "speakerId": "avg_1505_frstar_1",
+      "isRemote": false,
+      "text": "他に何がある。私はずっとロドスの一員だからな。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1146,18 +1245,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "フロストノヴァ",
-          "speakerId": "avg_1505_frstar_1",
-          "text": "なんだか様子が変だ。私が近すぎて、凍えさせてしまったか？"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フロストノヴァ",
+      "speakerId": "avg_1505_frstar_1",
+      "isRemote": false,
+      "text": "なんだか様子が変だ。私が近すぎて、凍えさせてしまったか？"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1177,16 +1275,18 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "narration",
-          "text": "その場にいた一人一人の人間が自分の外見を失い、曖昧な黒い影と化した。\nその影たちはただあなたを囲み、ゆっくりと漂っている。まるで危険そうには見えないのだ。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "background",
+      "backgroundId": "50_g14_rhodescorridor_ex"
+    },
+    {
+      "type": "narration",
+      "text": "その場にいた一人一人の人間が自分の外見を失い、曖昧な黒い影と化した。\nその影たちはただあなたを囲み、ゆっくりと漂っている。まるで危険そうには見えないのだ。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1196,24 +1296,24 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "これは幻でも、夢でもない。ある意味、これは本当に実在しているものと言える。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "君の想像の中に存在して過去に遭遇した人や物事で、君の最も期待している光景を描いてくれたものだ。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "これは幻でも、夢でもない。ある意味、これは本当に実在しているものと言える。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "君の想像の中に存在して過去に遭遇した人や物事で、君の最も期待している光景を描いてくれたものだ。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1228,42 +1328,45 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "これらの光景が私の感情に与える刺激は、君に勝るとも劣っていないと思う。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "しかしつまるところ、これらはやはり君自身が作り上げた光景だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "源石が君の潜在意識の奥深くにある期待と、心残りを埋めたいという考えを参考に「複製」した光景にすぎない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "君はまだロドスと共に経験した全てをその記憶に刻んでおり、そして美しい嘘の欺瞞からも逃れた。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "今ようやく確信した。今の君は、変わらずロドスのドクターだ。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "これらの光景が私の感情に与える刺激は、君に勝るとも劣っていないと思う。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "しかしつまるところ、これらはやはり君自身が作り上げた光景だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "源石が君の潜在意識の奥深くにある期待と、心残りを埋めたいという考えを参考に「複製」した光景にすぎない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "君はまだロドスと共に経験した全てをその記憶に刻んでおり、そして美しい嘘の欺瞞からも逃れた。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "今ようやく確信した。今の君は、変わらずロドスのドクターだ。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1278,8 +1381,7 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1289,30 +1391,31 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "やはり……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "ドクター、私はかつて君にこう言った。君自身に関する謎は、他人の口から語ることはできず、君自身で解くしかないと。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "今の私たちはその終着点に近づいているかもしれない。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "やはり……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "ドクター、私はかつて君にこう言った。君自身に関する謎は、他人の口から語ることはできず、君自身で解くしかないと。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "今の私たちはその終着点に近づいているかもしれない。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1325,6 +1428,7 @@
               "type": "dialogue",
               "speakerName": "ケルシー",
               "speakerId": "avg_003_kalts_1",
+              "isRemote": false,
               "text": "これまで我々が共に過ごしてきた経験を踏まえれば、君が正確な判断を下すには十分だと思っていたが。"
             }
           ]
@@ -1337,12 +1441,12 @@
               "type": "dialogue",
               "speakerName": "ケルシー",
               "speakerId": "avg_003_kalts_1",
+              "isRemote": false,
               "text": "その判断をさせたものが、ほかの何でもなく、君の理性であることを願っている。"
             }
           ]
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1352,8 +1456,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1363,33 +1466,34 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "テレジアがどこにいて、何をしているかは分からない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "しかし今我々がいるこの環境は、きっと彼女と何かしらの関係があるに違いない。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "優しい声",
-          "speakerId": null,
-          "text": "ドクター。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "テレジアがどこにいて、何をしているかは分からない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "しかし今我々がいるこの環境は、きっと彼女と何かしらの関係があるに違いない。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "優しい声",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "ドクター。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1399,8 +1503,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1410,18 +1513,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "ドクター、ケルシー先生。よかった、お二人ともいたんですね。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "ドクター、ケルシー先生。よかった、お二人ともいたんですね。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1434,6 +1536,7 @@
               "type": "dialogue",
               "speakerName": "アーミヤ",
               "speakerId": "avg_1037_amiya3_1",
+              "isRemote": false,
               "text": "安心してください。私は正真正銘、本当のアーミヤです。"
             }
           ]
@@ -1446,12 +1549,12 @@
               "type": "dialogue",
               "speakerName": "アーミヤ",
               "speakerId": "avg_1037_amiya3_1",
+              "isRemote": false,
               "text": "うぅ……ドクター、ずっと探してました。"
             }
           ]
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1466,18 +1569,17 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "これはテレジアさんが私に残してくれた服です。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "これはテレジアさんが私に残してくれた服です。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1487,18 +1589,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "彼女には会っていません。この「ロドス」にも彼女の気配はありません。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "彼女には会っていません。この「ロドス」にも彼女の気配はありません。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1508,46 +1609,49 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "私は大丈夫です。"
-        },
-        {
-          "type": "narration",
-          "text": "たくさんの記憶が脳内に流れてきました……\nその、記憶だけではありません。様々で、豊かな感情も。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "ここで会った人たちは、きっと生きていると思います。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "ですがこのような形で「生きている」ことを私は……哀しく思います。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "この廊下を抜け、ドクターに会って、ようやく分かりました。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "ドクター、私が触れた感情は、どれも同じ根源を持っています。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "私は大丈夫です。"
+    },
+    {
+      "type": "narration",
+      "text": "たくさんの記憶が脳内に流れてきました……\nその、記憶だけではありません。様々で、豊かな感情も。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "ここで会った人たちは、きっと生きていると思います。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "ですがこのような形で「生きている」ことを私は……哀しく思います。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "この廊下を抜け、ドクターに会って、ようやく分かりました。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "ドクター、私が触れた感情は、どれも同じ根源を持っています。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1557,67 +1661,73 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "はい。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "私は……あなたに「触れ」ました、ドクター。今までにはなかったことです……"
-        },
-        {
-          "type": "narration",
-          "text": "目の前の少女はいつものように手を握ってくれた。いや、いつも以上に慎重で力強く握ってくれたというべきか。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "ドクターが昔と比べてかなり変わっていることは分かっています。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "ですが、私たちは様々な経験をしてきました。それに、私は今、目の前にいるドクターが私が信じ続けてきたあのドクターだと信じています。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "記憶は嘘をつくかもしれません。でも、感情を偽ることはできません。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "今の私でははっきりさせられないことはまだたくさんあります。テレジアさんに会わないと答えが得られない疑問もあります。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "ですが、これから何が起きようと、私たちがどんなに悲しい結末に遭遇しようと……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "ドクターは私と共に立ってくれますよね？"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "はい。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "私は……あなたに「触れ」ました、ドクター。今までにはなかったことです……"
+    },
+    {
+      "type": "narration",
+      "text": "目の前の少女はいつものように手を握ってくれた。いや、いつも以上に慎重で力強く握ってくれたというべきか。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "ドクターが昔と比べてかなり変わっていることは分かっています。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "ですが、私たちは様々な経験をしてきました。それに、私は今、目の前にいるドクターが私が信じ続けてきたあのドクターだと信じています。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "記憶は嘘をつくかもしれません。でも、感情を偽ることはできません。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "今の私でははっきりさせられないことはまだたくさんあります。テレジアさんに会わないと答えが得られない疑問もあります。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "ですが、これから何が起きようと、私たちがどんなに悲しい結末に遭遇しようと……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "ドクターは私と共に立ってくれますよね？"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1627,8 +1737,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1638,106 +1747,121 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "はい……今はこれで大丈夫です。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "ではまずはテレジアさんを探しに行きましょう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "今はどうにかしてここを離れよう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "答えはここにはない。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_4133_logos_1",
-          "text": "幻術の致すところではないが、天と地、生と死は……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_4133_logos_1",
-          "text": "すべからく偽りである。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "フフッ、あの息の詰まる偽の画廊から出たところで、もっと大きな舞台でグルグル回るしかないってわけ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "この幕をしつらえてくれたのは一体誰なの？　センスの欠片もないわね。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "あら、ようやく主役たちのお出ましね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "ババア、早くしてちょうだい、あんたのその何でも知ってる頭を働かせて、一番肝心の質問に答えて――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "あたしたちは、今、一体、どこにいるの？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "果てしのない金色の海の上を一艘の小舟が漂っている。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "ここは、「源石」の内部だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "「源石」の内部には、「宇宙」が存在している。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "はい……今はこれで大丈夫です。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "ではまずはテレジアさんを探しに行きましょう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "今はどうにかしてここを離れよう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "答えはここにはない。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "50_g11_rhodesdeck_ex"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_4133_logos_1",
+      "isRemote": false,
+      "text": "幻術の致すところではないが、天と地、生と死は……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_4133_logos_1",
+      "isRemote": false,
+      "text": "すべからく偽りである。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "フフッ、あの息の詰まる偽の画廊から出たところで、もっと大きな舞台でグルグル回るしかないってわけ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "この幕をしつらえてくれたのは一体誰なの？　センスの欠片もないわね。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "あら、ようやく主役たちのお出ましね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "ババア、早くしてちょうだい、あんたのその何でも知ってる頭を働かせて、一番肝心の質問に答えて――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "あたしたちは、今、一体、どこにいるの？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "果てしのない金色の海の上を一艘の小舟が漂っている。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "ここは、「源石」の内部だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "「源石」の内部には、「宇宙」が存在している。"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": [

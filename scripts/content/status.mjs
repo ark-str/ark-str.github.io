@@ -37,6 +37,9 @@ const status = {
         storyCount: generated.index.stories.length,
         storyDetailCount: generated.index.stories.filter((story) => story.bodyAvailable).length,
         summaryMissingCount: generated.summaryManifest.items.filter((item) => item.status === "missing").length,
+        backgroundCount: fs.existsSync(generatedPaths.generatedBackgroundsRoot)
+          ? fs.readdirSync(generatedPaths.generatedBackgroundsRoot).filter((fileName) => fileName.endsWith(".png")).length
+          : 0,
         portraitCount: fs.existsSync(generatedPaths.generatedPortraitsRoot)
           ? fs.readdirSync(generatedPaths.generatedPortraitsRoot).filter((fileName) => fileName.endsWith(".png")).length
           : 0,

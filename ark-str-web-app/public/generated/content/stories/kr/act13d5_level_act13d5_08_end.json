@@ -6,7 +6,7 @@
   "title": "상업연합",
   "storyCode": "MN-8",
   "avgTag": "작전 후",
-  "sourcePath": "vendor/ArknightsGamedata/kr/gamedata/story/activities/act13d5/level_act13d5_08_end.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/kr/gamedata/story/activities/act13d5/level_act13d5_08_end.txt",
   "sourceHash": "e9570f322cb437512fdfefb0fa1bf09d7ba56fcac27b566b037ec6d056d0cce3",
   "bodyAvailable": true,
   "blocks": [
@@ -18,11 +18,19 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
       "type": "narration",
       "text": "관중석엔 어느 노인이 한 명 앉아 있었다.\n이 노인은 기사 스포츠에는 전혀 관심이 없었지만, 손자의 환심을 사고자 다른 사람에게 부탁해 표 두 장을 구입해 신문과 TV에서 가장 크게 홍보하던 경기를 보러 온 것이었다.\n노인은 눈썹을 찌푸리고 한숨을 내쉬었다. 살카즈가 대중 앞에서 어린 쿠란타를 처벌하는 게 왜 인기가 있는지 이해가 가지 않았기 때문이다.\n그는 어딘가가 잘못됐다고 느끼지는 않았다. 그도 귀족 지위가 없는 출정 기사이기 때문이다. 그는 단지, 이 경기를, 어쩌면 살카즈 사람을 싫어하고 있을 뿐일지도 모른다."
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_light"
     },
     {
       "type": "narration",
@@ -32,11 +40,19 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_arena_1"
+    },
+    {
       "type": "narration",
       "text": "그 두 번째 태양은 바로 빛이었다.\n빛은 사라지지 않았고, 안개가 자욱해지며 공포를 몰아냈다.\n그리고 지금 이 순간, 태양은 머리를 숙여, 고향으로 돌아온 기사를 맞이했다.\n......"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
     },
     {
       "type": "narration",
@@ -49,16 +65,22 @@
       "type": "dialogue",
       "speakerName": "마리아",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "마리아",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "……언니?"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_light"
     },
     {
       "type": "narration",
@@ -68,84 +90,105 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_kxstreet"
+    },
+    {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "말도 안 돼…… 저건 마리아의 아츠가 아니야……"
     },
     {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "대체 뭐가 어떻게 돌아가는 거지??"
     },
     {
       "type": "dialogue",
       "speakerName": "기업 직원",
       "speakerId": "avg_npc_109",
+      "isRemote": false,
       "text": "차르니 씨! 방금…… 아머레스 유니온의 경비로부터 통지를 받았습니다! 빛 한 줄기가 아레나 북서쪽 1km 정도 된 곳에서 아레나 쪽으로 돌진해 왔다고 합니다!"
     },
     {
       "type": "dialogue",
       "speakerName": "기업 직원",
       "speakerId": "avg_npc_109",
+      "isRemote": false,
       "text": "속도가 매우 빨랐고, 정체가 무엇인지 정확히 식별할 수 없었다고 합니다!"
     },
     {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "……테러일 가능성은?"
     },
     {
       "type": "dialogue",
       "speakerName": "기업 직원",
       "speakerId": "avg_npc_109",
+      "isRemote": false,
       "text": "무, 무기 같지는 않고, 사람이었다고 합니다. 한 명의 쿠란타였다는데, 이 정도 속도라면 아마, 최정상급의 기사일 것 같습니다……"
     },
     {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "……아니야."
     },
     {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "그럴 리가 없어…… 빛이라면…… 설마……"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_arena_1"
+    },
+    {
       "type": "dialogue",
       "speakerName": "부패한 기사",
       "speakerId": "avg_npc_102_2",
+      "isRemote": false,
       "text": "크어어…… 적은 어디 있지? 빛이 너무 밝아서 잘 안 보여……!"
     },
     {
       "type": "dialogue",
       "speakerName": "쇠퇴한 기사",
       "speakerId": "avg_npc_102",
+      "isRemote": false,
       "text": "임무는 반드시 끝까지 해내야 해. 아무나 상관없으니…… 일단 목표를 처리해!"
     },
     {
       "type": "dialogue",
       "speakerName": "부패한 기사",
       "speakerId": "avg_npc_102_2",
+      "isRemote": false,
       "text": "크아아아!"
     },
     {
       "type": "dialogue",
       "speakerName": "부패한 기사",
       "speakerId": "avg_npc_102_2",
+      "isRemote": false,
       "text": "감히…… 주먹만으로 내 두 발을 움직이게 만들어? 누구냐?"
     },
     {
@@ -155,78 +198,91 @@
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "더러운 아츠로군…… 지독한 고통에 시달리는 살카즈 감염자라니, '기사'가 어떻게 이런 꼴이 될 수 있는 거지?"
     },
     {
       "type": "dialogue",
       "speakerName": "부패한 기사",
       "speakerId": "avg_npc_102_2",
+      "isRemote": false,
       "text": "크어어……"
     },
     {
       "type": "dialogue",
       "speakerName": "마리아",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "언니……?"
     },
     {
       "type": "dialogue",
       "speakerName": "마리아",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "잠깐…… 진짜 언니 맞아? 기절한 것도 아닌데 환영이라도 보이는 건가……?"
     },
     {
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "응."
     },
     {
       "type": "dialogue",
       "speakerName": "마리아",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "마리아",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "지, 진짜 언니야?"
     },
     {
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "그래."
     },
     {
       "type": "dialogue",
       "speakerName": "마리아",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "……언니?"
     },
     {
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "고생했어, 마리아."
     },
     {
       "type": "dialogue",
       "speakerName": "마리아",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "흐흑…… 왜…… 이제야 온 거야……"
     },
     {
       "type": "dialogue",
       "speakerName": "부패한 기사",
       "speakerId": "avg_npc_102",
+      "isRemote": false,
       "text": "……거슬리는군! 둘 다 죽여버려!"
     },
     {
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "꿈도 꾸지 마라."
     },
     {
@@ -236,312 +292,371 @@
       "type": "dialogue",
       "speakerName": "부패한 기사",
       "speakerId": "avg_npc_102_2",
+      "isRemote": false,
       "text": "어째서…… 왜 벨 수 없는 거지?"
     },
     {
       "type": "dialogue",
       "speakerName": "쇠퇴한 기사",
       "speakerId": "avg_npc_102",
+      "isRemote": false,
       "text": "……저 여자의 빛이 하나로 이어져서 우리의 아츠를 막고 있다. 넌 물러나, 내가 해결한다."
     },
     {
       "type": "dialogue",
       "speakerName": "빅마우스 모브",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "빛 속에서 등장한 사람이라면 의심할 여지가 없겠죠! 빛 속에서 등장한 건 바로!!! 빛의 기사였습니다!!!!!!"
     },
     {
       "type": "dialogue",
       "speakerName": "빅마우스 모브",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "이게 어떻게 된 거죠!? 추방 당했을 빛의 기사가 지금 이 순간 경기장에 다시 나타나다니요!!"
     },
     {
       "type": "dialogue",
       "speakerName": "빅마우스 모브",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "(이봐! 어서 대변인을 찾아, 이게 어떻게 된 거야?! 무슨…… 어?)"
     },
     {
       "type": "dialogue",
       "speakerName": "빅마우스 모브",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "규, 규칙에는 어긋나긴 하지만! 그건 상관없겠죠! 여동생을 구하기 위해, 위험을 무릅쓰고 카시미어로 돌아온 빛의 기사입니다!!"
     },
     {
       "type": "dialogue",
       "speakerName": "빅마우스 모브",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "패기가 확연히 다르군요! 그야말로 차원이 다른 기세! 지옥에서 온 것 같은 두 기사를 마주하고도, 전혀 두려워하지 않는 모습!!"
     },
     {
       "type": "dialogue",
       "speakerName": "빅마우스 모브",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "빛의 기사에게~ 함성을 보내주십시오!!!!"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_arena_1"
+    },
+    {
       "type": "dialogue",
       "speakerName": "조피아",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "저건…… 마가렛? 방패를 들고 있는 저 기사, 마가렛이야?"
     },
     {
       "type": "dialogue",
       "speakerName": "조피아",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "……왜 카시미어로 돌아온 거지?"
     },
     {
       "type": "dialogue",
       "speakerName": "대머리 마틴",
       "speakerId": "avg_npc_107",
+      "isRemote": false,
       "text": "못 알아볼 뻔했네……"
     },
     {
       "type": "dialogue",
       "speakerName": "대머리 마틴",
       "speakerId": "avg_npc_107",
+      "isRemote": false,
       "text": "……마가렛이 맞아. 그동안…… 무슨 일을 겪은 거지?"
     },
     {
       "type": "dialogue",
       "speakerName": "조피아",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "하아……"
     },
     {
       "type": "dialogue",
       "speakerName": "대머리 마틴",
       "speakerId": "avg_npc_107",
+      "isRemote": false,
       "text": "빛의 기사, 그 기세등등한 마가렛이…… 돌아오다니?"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_kxstreet"
+    },
+    {
       "type": "dialogue",
       "speakerName": "나이 든 기사",
       "speakerId": "avg_npc_120",
+      "isRemote": false,
       "text": "후…… 좀 순순히 물러나 주면 안 되겠나?"
     },
     {
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "유감이지만, 그럴 순 없어."
     },
     {
       "type": "dialogue",
       "speakerName": "나이 든 기사",
       "speakerId": "avg_npc_120",
+      "isRemote": false,
       "text": "그러니까 죽기 살기로 해야 한다는 거네?"
     },
     {
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "……가능하다면, 당신들이 그렇게 목숨 걸고 덤비진 않았으면 좋겠어."
     },
     {
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "다시 말하지만, 당신들은 아무것도 할 수 없어. 꼭 해치워야 하는 사람을 빼곤, 다른 사람은 그대로 살려 두는 게 내 신조라서."
     },
     {
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "아레나 쪽으로 걸어가지만 않으면, 적어도 목숨만은…… 응?"
     },
     {
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "……뭐야 저 빛은?"
     },
     {
       "type": "dialogue",
       "speakerName": "나이 든 장인",
       "speakerId": "avg_npc_101",
+      "isRemote": false,
       "text": "이봐! 포, 저쪽을 봐!"
     },
     {
       "type": "dialogue",
       "speakerName": "나이 든 기사",
       "speakerId": "avg_npc_120",
+      "isRemote": false,
       "text": "뭐야……??"
     },
     {
       "type": "dialogue",
       "speakerName": "나이 든 기사",
       "speakerId": "avg_npc_120",
+      "isRemote": false,
       "text": "저 빛은…… 저건……"
     },
     {
       "type": "dialogue",
       "speakerName": "나이 든 기사",
       "speakerId": "avg_npc_120",
+      "isRemote": false,
       "text": "니어 어르신……?"
     },
     {
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "(이 강도, 전에 마리아가 보여줬던 아츠 같진 않은데, 설마……)"
     },
     {
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "(하지만…… 라주라이트 그 둘은…… 설마……)"
     },
     {
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "쳇."
     },
     {
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "그래."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "놀이는 끝이다, 페가수스 꼬마. 퇴각해."
     },
     {
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "……뭐?"
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "빛의 기사가 이미 돌진해 들어갔는데, 아직도 문밖에 가로막고 있는다고 무슨 의미가 있겠어?"
     },
     {
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "무슨 상황인진 대충 알겠는데…… 라주라이트 둘이 달라붙었는데도 놓쳤다고?"
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "윗사람을 의심하면 안 되지, 페가수스 꼬마. 이사회에서 원래 우리에게 준 임무는 '빛의 기사를 감시하라'라는 거였지 꼭 싸우라고 한 적은 없잖아……"
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "원래는 싸우더라도 그 짜증 나게 생긴 녀석이랑 같이 싸우면 별 어려울 게 없을 거라 생각했는데……"
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "그런데 아주 살짝…… 예상치 못한 상황이 발생했다. 일단은 빛의 기사가 좀 강해진 것 같고…… 그리고, 주변에 성가신 놈들이 몇 명 더 있어. 아주 곤란하게 됐지."
     },
     {
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "아…… 너희가 달라붙어도 어려울 거 같으면, 굳이 나한테 알려줄 필요는 없어."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "깜빡할 뻔했네. 목표가 지금 루트대로 움직이면, 분명 너와 부딪힐 거라서 일부러 알려준 거야…… 아, 이미 늦은 것 같네."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "아무튼, 절대 공격하지 말고, 알아서 잘 살아남아, 플래티넘."
     },
     {
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "하? 잠깐……"
     },
     {
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "참나, 지금 뭐 하는 거야?"
     },
     {
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "설마 무에나? 아니지…… 무에나는 계속 사무실에 있을 텐데…… 그럼……"
     },
     {
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "윽……!"
     },
     {
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "(뭐, 뭐지? 아까 그…… 푸른 그림자는?)"
     },
     {
       "type": "dialogue",
       "speakerName": "나이 든 장인",
       "speakerId": "avg_npc_101",
+      "isRemote": false,
       "text": "포……!"
     },
     {
       "type": "dialogue",
       "speakerName": "나이 든 기사",
       "speakerId": "avg_npc_120",
+      "isRemote": false,
       "text": "알아!"
     },
     {
       "type": "dialogue",
       "speakerName": "나이 든 장인",
       "speakerId": "avg_npc_101",
+      "isRemote": false,
       "text": "무슨 일이 일어난 거지? 이런 느낌은 처음인데……"
     },
     {
       "type": "dialogue",
       "speakerName": "나이 든 기사",
       "speakerId": "avg_npc_120",
+      "isRemote": false,
       "text": "……움직이지 말고 조용히 숨 쉬어. 주위 잘 살피고."
     },
     {
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "(무언가에 붙잡힌 거 같아…… 저 두 사람도 곤란하게 만들 정도라면……)"
     },
     {
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "뭐야, 너희였어?"
     },
     {
@@ -551,18 +666,21 @@
       "type": "dialogue",
       "speakerName": "나이 든 기사",
       "speakerId": "avg_npc_120",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "나이 든 장인",
       "speakerId": "avg_npc_101",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -579,6 +697,7 @@
       "type": "dialogue",
       "speakerName": "샤이닝",
       "speakerId": "char_147_shining",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -588,282 +707,343 @@
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "에이…… 이건 좀 아니지…… 애초에 기사가 아니잖아……"
     },
     {
       "type": "dialogue",
       "speakerName": "샤이닝",
       "speakerId": "char_147_shining",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "저 사람들은 보내줘. 어차피 목표 명단에 올라가 있지도 않으니까."
     },
     {
       "type": "dialogue",
       "speakerName": "샤이닝",
       "speakerId": "char_147_shining",
+      "isRemote": false,
       "text": "……고마워요."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_kxstreet"
+    },
+    {
       "type": "dialogue",
       "speakerName": "샤이닝",
       "speakerId": "char_147_shining",
+      "isRemote": false,
       "text": "리즈 씨, 걸을 수 있겠어요?"
     },
     {
       "type": "dialogue",
       "speakerName": "나이팅게일",
       "speakerId": "char_179_cgbird",
+      "isRemote": false,
       "text": "괜찮아요…… 저기, 굉장히 밝네요."
     },
     {
       "type": "dialogue",
       "speakerName": "샤이닝",
       "speakerId": "char_147_shining",
+      "isRemote": false,
       "text": "니어 씨겠군요."
     },
     {
       "type": "dialogue",
       "speakerName": "나이팅게일",
       "speakerId": "char_179_cgbird",
+      "isRemote": false,
       "text": "우리도 따라갈까요?"
     },
     {
       "type": "dialogue",
       "speakerName": "샤이닝",
       "speakerId": "char_147_shining",
+      "isRemote": false,
       "text": "그러죠."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_kxstreet"
+    },
+    {
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "……정말, 오늘 무슨 날이래?"
     },
     {
       "type": "dialogue",
       "speakerName": "나이 든 기사",
       "speakerId": "avg_npc_120",
+      "isRemote": false,
       "text": "아까 저 살카즈랑…… 마가렛이랑 아는 사인가? 뭐가 어떻게 된 거지……?"
     },
     {
       "type": "dialogue",
       "speakerName": "나이 든 장인",
       "speakerId": "avg_npc_101",
+      "isRemote": false,
       "text": "정말로 마가렛이야! 포! 마가렛이 돌아왔어!"
     },
     {
       "type": "dialogue",
       "speakerName": "나이 든 기사",
       "speakerId": "avg_npc_120",
+      "isRemote": false,
       "text": "……큰 소리로 말하지 마."
     },
     {
       "type": "dialogue",
       "speakerName": "나이 든 기사",
       "speakerId": "avg_npc_120",
+      "isRemote": false,
       "text": "그럼 이제…… 우리는? 계속할 건가?"
     },
     {
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "그렇게 쳐다보지 말지…… 당신들은, 이제 목숨은 걱정하지 않아도 되니까."
     },
     {
       "type": "dialogue",
       "speakerName": "나이 든 기사",
       "speakerId": "avg_npc_120",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "임무가 취소됐으니, 계속 당신들을 막을 이유도 없잖아."
     },
     {
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "목숨 하나 건졌네."
     },
     {
       "type": "dialogue",
       "speakerName": "나이 든 기사",
       "speakerId": "avg_npc_120",
+      "isRemote": false,
       "text": "그냥 마음대로 간다고? 거기 서!"
     },
     {
       "type": "dialogue",
       "speakerName": "나이 든 장인",
       "speakerId": "avg_npc_101",
+      "isRemote": false,
       "text": "포! 일단 아레나로 가자, 저 사람들은 신경 쓰지 말고!"
     },
     {
       "type": "dialogue",
       "speakerName": "나이 든 기사",
       "speakerId": "avg_npc_120",
+      "isRemote": false,
       "text": "쳇…… 아머레스 유니온……!"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_kxstreet"
+    },
+    {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "마가렛 니어…… 빛의 기사!"
     },
     {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "아레나의 경비는?"
     },
     {
       "type": "dialogue",
       "speakerName": "기업 직원",
       "speakerId": "avg_npc_109",
+      "isRemote": false,
       "text": "겨, 경비 말씀이신가요? 빛의 기사가 전력으로 돌격하고 있잖습니까. 성 안에는 대항할 방벽도 준비되어 있지 않은데……"
     },
     {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "빛의 기사……"
     },
     {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "하하…… 빛의 기사…… 이제 와서 뭐 하러 돌아온 거지? 기사들의 묘지명이라도 보러 온 건가?"
     },
     {
       "type": "dialogue",
       "speakerName": "기업 직원",
       "speakerId": "avg_npc_109",
+      "isRemote": false,
       "text": "차르니 선생님! 연합회에서 연락이 왔습니다……"
     },
     {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "말키위츠 씨."
     },
     {
       "type": "dialogue",
       "speakerName": "기업 직원",
       "speakerId": "avg_npc_109",
+      "isRemote": false,
       "text": "네?"
     },
     {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "앞으로 무슨 일이 일어나건, 제가 이곳에 돌아오건 말건, 절대 이 방에서 나가지 마십시오."
     },
     {
       "type": "dialogue",
       "speakerName": "기업 직원",
       "speakerId": "avg_npc_109",
+      "isRemote": false,
       "text": "아, 알겠습니다……"
     },
     {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "그래, 난 진작 모든 걸 준비해놨어…… 맞아, 차르니, 넌 이미 모든 일을 해뒀다고. 이제 막을 내릴 시간이다."
     },
     {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "정말 웃기는군…… 허, 하하하……"
     },
     {
       "type": "dialogue",
       "speakerName": "기업 직원",
       "speakerId": "avg_npc_109",
+      "isRemote": false,
       "text": "차르니 선생님……?"
     },
     {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "아, 실례했습니다……"
     },
     {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "기업 직원",
       "speakerId": "avg_npc_109",
+      "isRemote": false,
       "text": "차르니 선생님? 전화는요……?"
     },
     {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "……알아요, 알고 있습니다."
     },
     {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "……잠시 나갔다 오겠습니다."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_arena_1"
+    },
+    {
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "……기사의 기술이네."
     },
     {
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "하지만 약물 복용이 너무 심해, 아츠에 지나치게 의존한 흔적이 있다. 그리고……"
     },
     {
       "type": "dialogue",
       "speakerName": "부패한 기사",
       "speakerId": "avg_npc_102_2",
+      "isRemote": false,
       "text": "크어어……"
     },
     {
       "type": "dialogue",
       "speakerName": "쇠퇴한 기사",
       "speakerId": "avg_npc_102",
+      "isRemote": false,
       "text": "내가 제압할게! 목표를 처리해!"
     },
     {
@@ -877,6 +1057,7 @@
       "type": "dialogue",
       "speakerName": "쇠퇴한 기사",
       "speakerId": "avg_npc_102",
+      "isRemote": false,
       "text": "……죽여버려!"
     },
     {
@@ -886,12 +1067,14 @@
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "음, 폭발의 에너지가 흩어져서……"
     },
     {
       "type": "dialogue",
       "speakerName": "부패한 기사",
       "speakerId": "avg_npc_102_2",
+      "isRemote": false,
       "text": "……죽어라!"
     },
     {
@@ -901,6 +1084,7 @@
       "type": "dialogue",
       "speakerName": "마리아",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -910,66 +1094,77 @@
       "type": "dialogue",
       "speakerName": "부패한 기사",
       "speakerId": "avg_npc_102_2",
+      "isRemote": false,
       "text": "크어어어……! 아직 힘이 남아 있다니!?"
     },
     {
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "마리아, 네 상처는 아직……"
     },
     {
       "type": "dialogue",
       "speakerName": "마리아",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "언니……! 언니가 그랬잖아. 기사는 남을 보호하기 위해 방패를 드는 거라고…… 그렇지?"
     },
     {
       "type": "dialogue",
       "speakerName": "마리아",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "하지만 지금, 이 아레나엔……"
     },
     {
       "type": "dialogue",
       "speakerName": "마리아",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "……언니가 보호해야 할 약자는 없어!"
     },
     {
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "……!"
     },
     {
       "type": "dialogue",
       "speakerName": "마리아",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "내가 언니의 방패가 되어줄게, 그러니까……"
     },
     {
       "type": "dialogue",
       "speakerName": "쇠퇴한 기사",
       "speakerId": "avg_npc_102",
+      "isRemote": false,
       "text": "비켜, 내가 둘 다 폭파시켜 죽여버릴 테니까!"
     },
     {
       "type": "dialogue",
       "speakerName": "마리아",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "……최선을 다하자!"
     },
     {
       "type": "dialogue",
       "speakerName": "부패한 기사",
       "speakerId": "avg_npc_102_2",
+      "isRemote": false,
       "text": "크어어…… 저 여자가 방패를 버렸다! 하지만 네 아츠는!"
     },
     {
       "type": "dialogue",
       "speakerName": "쇠퇴한 기사",
       "speakerId": "avg_npc_102",
+      "isRemote": false,
       "text": "……이건, 말도 안 돼…… 해머가 아츠 유닛이었단 말인가……"
     },
     {
@@ -979,24 +1174,28 @@
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "마리아…… 준비됐어?"
     },
     {
       "type": "dialogue",
       "speakerName": "마리아",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "응!"
     },
     {
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "……기사란!"
     },
     {
       "type": "dialogue",
       "speakerName": "마리아",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "모든 세상을 비추는 숭고한 자이다!"
     },
     {
@@ -1006,33 +1205,42 @@
       "type": "dialogue",
       "speakerName": "빅마우스 모브",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "전장에 뛰어 들어간 빛의 기사가 전투를 시작하더니, 놀랍게도 방패를 버렸습니다! 잠깐! 잠깐만요!!"
     },
     {
       "type": "dialogue",
       "speakerName": "빅마우스 모브",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "과거 빛의 기사가 양손 워해머로 대회를 휩쓸었던 걸 기억하십니까?! 지금 저 모습은, 방패를 버리고 완전히 해머에 의지하고 있는 저 모습은! 저게 바로 빛의 기사의 원래 모습입니다!"
     },
     {
       "type": "dialogue",
       "speakerName": "빅마우스 모브",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "파죽지세인 빛의 기사! 돌아온 전설! 어쩌면 경기가 끝나면 곧바로 국민원에 끌려갈 수도 있겠죠. 그러니 빛의 기사의 모습을 구경하고 싶으시다면 지금밖에 없습니다!"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_arena_1"
+    },
+    {
       "type": "dialogue",
       "speakerName": "좌완의 기사",
       "speakerId": "avg_npc_105",
+      "isRemote": false,
       "text": "저 아츠…… 저 빛은……"
     },
     {
       "type": "dialogue",
       "speakerName": "좌완의 기사",
       "speakerId": "avg_npc_105",
+      "isRemote": false,
       "text": "네가 뭔데 그런 빛을 태연하게 낼 수 있는 것이냐……? 시건방진 자식…… 설마 정말 태양이라도 되는 줄 아는 거냐!? 빛의 기사!"
     },
     {
@@ -1042,111 +1250,133 @@
       "type": "dialogue",
       "speakerName": "샤이닝",
       "speakerId": "char_147_shining",
+      "isRemote": false,
       "text": "마가렛 씨가 방패를 내려놓은 건 정말 오랜만이네요."
     },
     {
       "type": "dialogue",
       "speakerName": "나이팅게일",
       "speakerId": "char_179_cgbird",
+      "isRemote": false,
       "text": "저 빛…… 너무 뜨거워요."
     },
     {
       "type": "dialogue",
       "speakerName": "나이팅게일",
       "speakerId": "char_179_cgbird",
+      "isRemote": false,
       "text": "별일, 없겠죠?"
     },
     {
       "type": "dialogue",
       "speakerName": "샤이닝",
       "speakerId": "char_147_shining",
+      "isRemote": false,
       "text": "저 모습의 빛의 기사가 실패한 적은 지금까지 단 한 번도 본 적이 없어요."
     },
     {
       "type": "dialogue",
       "speakerName": "나이팅게일",
       "speakerId": "char_179_cgbird",
+      "isRemote": false,
       "text": "저 아이는 니어 씨와 정말 닮았네요."
     },
     {
       "type": "dialogue",
       "speakerName": "샤이닝",
       "speakerId": "char_147_shining",
+      "isRemote": false,
       "text": "니어 씨의 동생이니까요."
     },
     {
       "type": "dialogue",
       "speakerName": "샤이닝",
       "speakerId": "char_147_shining",
+      "isRemote": false,
       "text": "후훗…… 정말 귀여운 꼬마 기사네요, 진짜 닮았어요."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_arena_1"
+    },
+    {
       "type": "dialogue",
       "speakerName": "쇠퇴한 기사",
       "speakerId": "avg_npc_102",
+      "isRemote": false,
       "text": "……화살을…… 다 썼어!"
     },
     {
       "type": "dialogue",
       "speakerName": "부패한 기사",
       "speakerId": "avg_npc_102_2",
+      "isRemote": false,
       "text": "크어어……! 아츠를 써!"
     },
     {
       "type": "dialogue",
       "speakerName": "마리아",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "아츠로 화살을 만들었어…… 내가 막을게!"
     },
     {
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "그래, 나머지는 나한테 맡겨."
     },
     {
       "type": "dialogue",
       "speakerName": "쇠퇴한 기사",
       "speakerId": "avg_npc_102",
+      "isRemote": false,
       "text": "뚫을 수가 없어…… 이 망할 놈의 빛을!"
     },
     {
       "type": "dialogue",
       "speakerName": "조피아",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "대머리 마틴",
       "speakerId": "avg_npc_107",
+      "isRemote": false,
       "text": "……관중들이 조용해졌네."
     },
     {
       "type": "dialogue",
       "speakerName": "대머리 마틴",
       "speakerId": "avg_npc_107",
+      "isRemote": false,
       "text": "마가렛이 우위를 차지한 건 아니야. 저 두 살카즈는 너무 강해…… 게다가 호흡도 완벽하지."
     },
     {
       "type": "dialogue",
       "speakerName": "조피아",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "근데 왜 마가렛이 질 거 같다는 생각이 안 들까요? 심지어 조금도 불리하지 않은 거 같은……"
     },
     {
       "type": "dialogue",
       "speakerName": "대머리 마틴",
       "speakerId": "avg_npc_107",
+      "isRemote": false,
       "text": "마가렛의 기술은 사람을 빠져들게 만들지…… 마가렛은 계속 침착한데, 빛은 오히려 더 드높아졌어……"
     },
     {
       "type": "dialogue",
       "speakerName": "대머리 마틴",
       "speakerId": "avg_npc_107",
+      "isRemote": false,
       "text": "니어 어르신 젊었을 때 생각이 나네."
     },
     {
@@ -1156,36 +1386,42 @@
       "type": "dialogue",
       "speakerName": "빅마우스 모브",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "마, 말도 안 돼! 완전히 말도 안 됩니다!"
     },
     {
       "type": "dialogue",
       "speakerName": "빅마우스 모브",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "마가렛이 해머를 휘두를 때마다 피어나는 빛이 적의 아츠를 무효화시키고 있습니다! 빛의 기사가 밟고 지나간 지면에는 균열이 생겼고, 그 균열에서는 빛이 가득 뿜어져 나오고 있습니다!"
     },
     {
       "type": "dialogue",
       "speakerName": "빅마우스 모브",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "이 얼마나 눈부신 오리지늄 아츠입니까! 저건 대체 어떤 기술이죠!"
     },
     {
       "type": "dialogue",
       "speakerName": "빅마우스 모브",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "저게 바로 우승자의 수준! 진정한 기사의 실력입니다!!"
     },
     {
       "type": "dialogue",
       "speakerName": "마리아",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "우와…… 상처가 그렇게 아프지 않아졌어…… 이것도 언니의 아츠인가?"
     },
     {
       "type": "dialogue",
       "speakerName": "마리아",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "(저런 공방전을 벌이면서 나까지 신경 써 줄 수 있다니……)"
     },
     {
@@ -1195,18 +1431,21 @@
       "type": "dialogue",
       "speakerName": "부패한 기사",
       "speakerId": "avg_npc_102_2",
+      "isRemote": false,
       "text": "크어어……! 내 망치가……!"
     },
     {
       "type": "dialogue",
       "speakerName": "부패한 기사",
       "speakerId": "avg_npc_102_2",
+      "isRemote": false,
       "text": "무기가 없으면 손으로라도 널 찢어버리겠다……!"
     },
     {
       "type": "dialogue",
       "speakerName": "쇠퇴한 기사",
       "speakerId": "avg_npc_102",
+      "isRemote": false,
       "text": "죽여버려!"
     },
     {
@@ -1216,6 +1455,7 @@
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -1229,54 +1469,63 @@
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "……마리아."
     },
     {
       "type": "dialogue",
       "speakerName": "마리아",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "응!"
     },
     {
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "지원은 네게 맡길게."
     },
     {
       "type": "dialogue",
       "speakerName": "마리아",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "……알았어!"
     },
     {
       "type": "dialogue",
       "speakerName": "부패한 기사",
       "speakerId": "avg_npc_102_2",
+      "isRemote": false,
       "text": "공격해!"
     },
     {
       "type": "dialogue",
       "speakerName": "쇠퇴한 기사",
       "speakerId": "avg_npc_102",
+      "isRemote": false,
       "text": "알았어!"
     },
     {
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "참회해라."
     },
     {
       "type": "dialogue",
       "speakerName": "부패한 기사&쇠퇴한 기사",
       "speakerId": null,
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -1290,6 +1539,7 @@
       "type": "dialogue",
       "speakerName": "부패한 기사",
       "speakerId": "avg_npc_102_2",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -1303,18 +1553,21 @@
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "자신의 운명을 포기해서는 안 돼."
     },
     {
       "type": "dialogue",
       "speakerName": "부패한 기사",
       "speakerId": "avg_npc_102_2",
+      "isRemote": false,
       "text": "싫어……"
     },
     {
       "type": "dialogue",
       "speakerName": "부패한 기사",
       "speakerId": "avg_npc_102_2",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -1328,18 +1581,21 @@
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "마리아."
     },
     {
       "type": "dialogue",
       "speakerName": "마리아",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "어, 어……?"
     },
     {
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "우리의 승리다."
     },
     {
@@ -1349,120 +1605,140 @@
       "type": "dialogue",
       "speakerName": "빅마우스 모브",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "눈으로 봐도 믿기 힘든 광경입니다!! 정말 믿기 힘든 광경이에요!!"
     },
     {
       "type": "dialogue",
       "speakerName": "빅마우스 모브",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "믿을 수가 없습니다! 갑자기 아레나에 뛰어든 빛의 기사!! 이 모든 걸 묵인한 기사 협회!! 세상에! 전, 이걸……"
     },
     {
       "type": "dialogue",
       "speakerName": "빅마우스 모브",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "오랫동안 MC를 맡아왔지만 이런 상황은 처음입니다!! 국민원이 그녀가 저지른 일을 어떻게 처리할지는 모르겠지만, 그건 눈앞의 승리에는 아무런 영향을 주지 않습니다!!"
     },
     {
       "type": "dialogue",
       "speakerName": "빅마우스 모브",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "전……"
     },
     {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "(모브 씨.)"
     },
     {
       "type": "dialogue",
       "speakerName": "빅마우스 모브",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "(……아이고, 기다렸다고요!)"
     },
     {
       "type": "dialogue",
       "speakerName": "빅마우스 모브",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "여러분께 선포하게 되어 진심으로 영광입니다!!"
     },
     {
       "type": "dialogue",
       "speakerName": "빅마우스 모브",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "(대변인 씨, 어떻게 해야 하죠?)"
     },
     {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "(인정하십시오.)"
     },
     {
       "type": "dialogue",
       "speakerName": "빅마우스 모브",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "승자는! 젊은 기적의 마리아! 그리고 머나먼 황야에서 돌아온! 모르는 이가 없는 페가수스, 빛의 기사! 마가렛 니어입니다!!"
     },
     {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "(훌륭하군요 모브 씨, 역시 그 감정을 부추기는 재주가 참 마음에 들어요.)"
     },
     {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "(현장이 진정되면, 누군가가 와서 처리해 줄 겁니다.)"
     },
     {
       "type": "dialogue",
       "speakerName": "빅마우스 모브",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "이 두 니어를 뜨거운 박수로 맞아주십시오!!!"
     },
     {
       "type": "dialogue",
       "speakerName": "조피아",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "대머리 마틴",
       "speakerId": "avg_npc_107",
+      "isRemote": false,
       "text": "조피아!? 어디 가?"
     },
     {
       "type": "dialogue",
       "speakerName": "나이 든 장인",
       "speakerId": "avg_npc_101",
+      "isRemote": false,
       "text": "마틴! 두 사람은……? 어? 저, 저건?"
     },
     {
       "type": "dialogue",
       "speakerName": "나이 든 기사",
       "speakerId": "avg_npc_120",
+      "isRemote": false,
       "text": "정말 마가렛이네…… 마가렛이 왜 지금 돌아온 거지?"
     },
     {
       "type": "dialogue",
       "speakerName": "나이 든 기사",
       "speakerId": "avg_npc_120",
+      "isRemote": false,
       "text": "마가렛은 유배된 거 아니었나, 왜 우리한테 한마디도 없이 이렇게……"
     },
     {
       "type": "dialogue",
       "speakerName": "대머리 마틴",
       "speakerId": "avg_npc_107",
+      "isRemote": false,
       "text": "그만하고 진정해. 어쩌면 무에나는 이 사실을 알고 있었을지도 몰라…… 일단 지금은 여기를 벗어나야 해."
     },
     {
       "type": "dialogue",
       "speakerName": "대머리 마틴",
       "speakerId": "avg_npc_107",
+      "isRemote": false,
       "text": "기자와 관중들이 곧 출입구 앞을 꽉 막게 될 거야. 일단 길을 찾아서…… 빛의 기사를 돌려보내야 해."
     },
     {
@@ -1472,36 +1748,42 @@
       "type": "dialogue",
       "speakerName": "관광객",
       "speakerId": null,
+      "isRemote": false,
       "text": "빛의 기사!! 저번 시즌의 그 빛의 기사다!!"
     },
     {
       "type": "dialogue",
       "speakerName": "관광객",
       "speakerId": null,
+      "isRemote": false,
       "text": "비켜요, 비켜! 사진 좀 찍자고!!!"
     },
     {
       "type": "dialogue",
       "speakerName": "빅마우스 모브",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "여러분, 여러분! 진정하세요! 어찌 됐든 이번 경기가 합법적인 절차대로 끝까지 진행되도록 저희가 책임지고 처리하겠습니다!"
     },
     {
       "type": "dialogue",
       "speakerName": "빅마우스 모브",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "(이다음은 어쩌지!? 대변인과 연락이 안 된다고? 멍청하기는! VIP석에 가서 찾아봐……!)"
     },
     {
       "type": "dialogue",
       "speakerName": "빅마우스 모브",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "잠깐만요! 저기! 저건 채찍의 기사입니다! 위슬래시가 관중석에서 경기장으로 들어와 빛의 기사를 향해 달려갑니다……"
     },
     {
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "조피……"
     },
     {
@@ -1511,102 +1793,119 @@
       "type": "dialogue",
       "speakerName": "마리아",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "앗…… 조, 조피아 고모!?"
     },
     {
       "type": "dialogue",
       "speakerName": "조피아",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "왜…… 이제야 온 거야!?"
     },
     {
       "type": "dialogue",
       "speakerName": "빅마우스 모브",
       "speakerId": "avg_npc_121",
+      "isRemote": false,
       "text": "……바, 방금 빛의 기사 뺨을 때린 건가요? 앗? 잠깐만요, 이것도 헤드라인에 오를 만한 그림인데요……"
     },
     {
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "미안해, 그래도 돌아왔잖아."
     },
     {
       "type": "dialogue",
       "speakerName": "조피아",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "……방금은 마리아 몫이야."
     },
     {
       "type": "dialogue",
       "speakerName": "마리아",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "……!?"
     },
     {
       "type": "dialogue",
       "speakerName": "조피아",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "내 몫은 됐으니까."
     },
     {
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "봐줘서 고마워…… 그런데, 방금 오른손을 썼잖아…… 언제 그렇게 된 거야?"
     },
     {
       "type": "dialogue",
       "speakerName": "조피아",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "……그건 여기서 할 얘기가 아니야. 네가 갑자기 나타났잖아. 국민원에선 유배된 사람이 카시미어로 돌아오는 걸 허락하지 않을 거야."
     },
     {
       "type": "dialogue",
       "speakerName": "조피아",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "기자들이랑 국민원이 쫓아오기 전에 빨리 빠져나가야 해."
     },
     {
       "type": "dialogue",
       "speakerName": "마리아",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "지, 지금? 아직 경기 결과가……"
     },
     {
       "type": "dialogue",
       "speakerName": "조피아",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "뭐 그런 것까지 신경 써! 얘가 갑자기 뛰어들어온 일이 경기보다 더 중요한 일이라고!"
     },
     {
       "type": "dialogue",
       "speakerName": "나이팅게일",
       "speakerId": "char_179_cgbird",
+      "isRemote": false,
       "text": "니어 씨."
     },
     {
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "리즈, 조심해!"
     },
     {
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "……그렇게 걱정할 거 없어. 자, 내 손 잡아."
     },
     {
       "type": "dialogue",
       "speakerName": "조피아",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "이 두 살카즈는……"
     },
     {
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "내 전우니까 걱정하지 마. 샤이닝, 부탁 하나만 들어줄래?"
     },
     {
@@ -1616,6 +1915,7 @@
       "type": "dialogue",
       "speakerName": "샤이닝",
       "speakerId": "char_147_shining",
+      "isRemote": false,
       "text": "네."
     },
     {
@@ -1625,144 +1925,168 @@
       "type": "dialogue",
       "speakerName": "부패한 기사",
       "speakerId": "avg_npc_102_2",
+      "isRemote": false,
       "text": "……!"
     },
     {
       "type": "dialogue",
       "speakerName": "부패한 기사",
       "speakerId": "avg_npc_102_2",
+      "isRemote": false,
       "text": "난…… 난 기절했었는데…… 이건 치유 아츠인가?"
     },
     {
       "type": "dialogue",
       "speakerName": "부패한 기사",
       "speakerId": "avg_npc_102_2",
+      "isRemote": false,
       "text": "누구냐…… 너는!?"
     },
     {
       "type": "dialogue",
       "speakerName": "부패한 기사",
       "speakerId": "avg_npc_102_2",
+      "isRemote": false,
       "text": "살카즈, 너…… 너! 이건 말도 안 돼, 네가? 날 치료했다고?"
     },
     {
       "type": "dialogue",
       "speakerName": "샤이닝",
       "speakerId": "char_147_shining",
+      "isRemote": false,
       "text": "둘 다 아주 심하게 다치셨지만, 이번 경기에서 생긴 흉터는 아니네요. 약물이 남긴 흔적은 없앨 수 없으니, 여러분은 자신을 좀 더 아끼도록 하세요."
     },
     {
       "type": "dialogue",
       "speakerName": "부패한 기사",
       "speakerId": "avg_npc_102_2",
+      "isRemote": false,
       "text": "꺼져…… 만지지 마! 크어어……"
     },
     {
       "type": "dialogue",
       "speakerName": "부패한 기사",
       "speakerId": "avg_npc_102_2",
+      "isRemote": false,
       "text": "난……"
     },
     {
       "type": "dialogue",
       "speakerName": "부패한 기사",
       "speakerId": "avg_npc_102_2",
+      "isRemote": false,
       "text": "자…… 잠깐, 너…… 넌……"
     },
     {
       "type": "dialogue",
       "speakerName": "샤이닝",
       "speakerId": "char_147_shining",
+      "isRemote": false,
       "text": "……니어 씨."
     },
     {
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "응, 나도 알아."
     },
     {
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "저기 아머레스 유니온의 킬러 두 명이 계속 우릴 쳐다보고 있어…… 지금은 여기에서 승리를 축하할 때가 아니라고."
     },
     {
       "type": "dialogue",
       "speakerName": "조피아",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "아, 아머레스 유니온? 넌 도대체……"
     },
     {
       "type": "dialogue",
       "speakerName": "나이팅게일",
       "speakerId": "char_179_cgbird",
+      "isRemote": false,
       "text": "도망칠까요? 니어 씨?"
     },
     {
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "아니……"
     },
     {
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "승리를 거머쥔 기사가 겁먹고 도망갈 이유는 없지. 막고 싶으면 어디 막아보라고 해."
     },
     {
       "type": "dialogue",
       "speakerName": "나이팅게일",
       "speakerId": "char_179_cgbird",
+      "isRemote": false,
       "text": "니어 씨, 저쪽."
     },
     {
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "아…… 코발 씨랑 포그발드 씨네. 두 분 다 뭐하는 거지?"
     },
     {
       "type": "dialogue",
       "speakerName": "조피아",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "뭘 하긴! 당연히 도망갈 길을 준비하는 거겠지!"
     },
     {
       "type": "dialogue",
       "speakerName": "조피아",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "나랑 저 세 사람이 홍수처럼 밀려오는 관중들을 막을게. 하지만 나중에 국민원이 분명 집으로 찾아올 거야. 그때는 너희가 알아서 해결하는 수밖에 없어……"
     },
     {
       "type": "dialogue",
       "speakerName": "조피아",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "……마가렛!"
     },
     {
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "응?"
     },
     {
       "type": "dialogue",
       "speakerName": "조피아",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "네가 돌아와서…… 정말 좋아, 진심이야."
     },
     {
       "type": "dialogue",
       "speakerName": "조피아",
       "speakerId": "avg_npc_064_weapon_1",
+      "isRemote": false,
       "text": "이따 늘 보던 곳에서 만나자, 늦지 마."
     },
     {
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "응…… 당연하지."
     },
     {
@@ -1772,30 +2096,35 @@
       "type": "dialogue",
       "speakerName": "나이팅게일",
       "speakerId": "char_179_cgbird",
+      "isRemote": false,
       "text": "저 사람은…… 니어 씨의 가족인가요?"
     },
     {
       "type": "dialogue",
       "speakerName": "샤이닝",
       "speakerId": "char_147_shining",
+      "isRemote": false,
       "text": "그렇겠죠. 집으로 돌아와서 그런지, 기뻐 보이네요, 그렇죠?"
     },
     {
       "type": "dialogue",
       "speakerName": "샤이닝",
       "speakerId": "char_147_shining",
+      "isRemote": false,
       "text": "그러니 그녀에게 시간을 좀 주자고요. 니어 씨는 빛의 기사고, 여긴 카시미어니까, 누가 뭘 어떻게 할 순 없을 거예요."
     },
     {
       "type": "dialogue",
       "speakerName": "나이팅게일",
       "speakerId": "char_179_cgbird",
+      "isRemote": false,
       "text": "네."
     },
     {
       "type": "dialogue",
       "speakerName": "샤이닝",
       "speakerId": "char_179_cgbird",
+      "isRemote": false,
       "text": "우린…… 일단 아미야와 합류하죠."
     },
     {
@@ -1809,18 +2138,21 @@
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "……마리아."
     },
     {
       "type": "dialogue",
       "speakerName": "마리아",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "아, 응?"
     },
     {
       "type": "dialogue",
       "speakerName": "마가렛",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "……집에 가야지."
     },
     {
@@ -1834,105 +2166,126 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_kxstreet"
+    },
+    {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "……왔구나, 네 곁에 있던 그 졸개는?"
     },
     {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "……그 사람은 다음입니다."
     },
     {
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "헤에…… 진짜 잔인하네."
     },
     {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "그쯤하고, 답을 알려주시겠습니까?"
     },
     {
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "정말 시원시원하구나…… 그런데 답을 뻔히 알면서 왜 나한테 물어보는 거야?"
     },
     {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "어쩌면 더 나은 삶을 살게 될 수도 있잖아?"
     },
     {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "아니요…… 아마 저는 유배지로 가는 황야에서 죽을 수도 있을 겁니다. 어쩌면 저를 죽이는 사람이 바로 당신일 수도 있겠죠."
     },
     {
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "……그럴지도 모르지. 만약에 그렇게 되더라도 날 탓하면 안 된다?"
     },
     {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "물론입니다."
     },
     {
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "당신 유배 문제는 국민원의 절차를 거치지 않을 거야. 오늘 밤 바로 여기를 떠나야 해. 뭐 더 할 말은 없고?"
     },
     {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "셰브치크에게 아들이 있습니다. 사건이 발생했을 때 현장에 있었죠."
     },
     {
       "type": "dialogue",
       "speakerName": "플래티넘",
       "speakerId": "char_204_platnm",
+      "isRemote": false,
       "text": "응."
     },
     {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "그래서 부탁드리고 싶습니다만……"
     },
     {
       "type": "dialogue",
       "speakerName": "대변인 차르니",
       "speakerId": "avg_npc_106",
+      "isRemote": false,
       "text": "……그에겐 진실을 말할 기회를 주지 말아주셨으면 합니다, 영원히요."
     },
     {

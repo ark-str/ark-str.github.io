@@ -13,6 +13,7 @@ console.log(
     {
       generatedAt: artifacts.index.generatedAt,
       storyDetailCount: artifacts.storyDetails.length,
+      backgroundCount: Object.keys(artifacts.backgroundPaths ?? {}).length,
       portraitCount: Object.keys(artifacts.portraitPaths ?? {}).length,
       portraitRevision: getPortraitSourceRevision(process.cwd()),
     },

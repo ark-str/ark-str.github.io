@@ -6,10 +6,14 @@
   "title": "在りし日のステップ",
   "storyCode": "EA-4",
   "avgTag": "戦闘前",
-  "sourcePath": "vendor/ArknightsGamedata/jp/gamedata/story/activities/act41side/level_act41side_04_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/jp/gamedata/story/activities/act41side/level_act41side_04_beg.txt",
   "sourceHash": "cad8edb97dffe6895bceda57cf259496230053d16a63fe34734fa3edf4054ffc",
   "bodyAvailable": true,
   "blocks": [
+    {
+      "type": "background",
+      "backgroundId": "59_g3_dragonsquare_d"
+    },
     {
       "type": "narration",
       "text": "千年以上昔のこと、ターラー人の先祖たちも、秋が終わり冬が始まる頃、荒野にいくつものかがり火を灯していた。\n当時、人々は赤き龍に寄り添うようにして眠っていた。彼らの燃えるような夢は、風砂に削られ節くれだってはいても、互いの身体を温めるだけの温もりを持っていた。\nそして、彼らが目覚めても、かがり火が消えることはなかった。赤き龍は眠らなかったからだ。\nかがり火から静かに立ち昇る夢を――故郷や美酒、自由にまつわる夢を吸い込むだけで、赤き龍は疲れと苦痛の中にひと時の安らぎを得ることができていた。\nそして今日、サウィン祭が再び近付くこの時も、人々は廃墟から木材を引き剥がして、かがり火を灯していた。だが、はるか昔の穏やかで、永遠に続くかに思われた時代はすっかり忘れ去られていた。"
@@ -18,33 +22,42 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "59_g3_dragonsquare_d"
+    },
+    {
       "type": "dialogue",
       "speakerName": "狂気的な住民",
       "speakerId": "avg_npc_1695_1",
+      "isRemote": false,
       "text": "炎の上に手をかざせ。"
     },
     {
       "type": "dialogue",
       "speakerName": "落ち着かない様子の住民",
       "speakerId": "avg_npc_1752_1",
+      "isRemote": false,
       "text": "腰につけてるランプの色を見てくれよ。俺はターラー人だ、赤き龍の祝福だって受けてる。"
     },
     {
       "type": "dialogue",
       "speakerName": "狂気的な住民",
       "speakerId": "avg_npc_1695_1",
+      "isRemote": false,
       "text": "スパイ野郎なら、ランプの色を偽装するくらいできるはずだろ？　いいから早くしろ！"
     },
     {
       "type": "dialogue",
       "speakerName": "落ち着かない様子の住民",
       "speakerId": "avg_npc_1752_1",
+      "isRemote": false,
       "text": "ううっ……"
     },
     {
       "type": "dialogue",
       "speakerName": "落ち着かない様子の住民",
       "speakerId": "avg_npc_1752_1",
+      "isRemote": false,
       "text": "赤き龍よ、どうかお慈悲を……！"
     },
     {
@@ -54,57 +67,70 @@
       "type": "dialogue",
       "speakerName": "落ち着かない様子の住民",
       "speakerId": "avg_npc_1752_1",
+      "isRemote": false,
       "text": "うっ……なんだ……そんなに痛くないな。"
     },
     {
       "type": "dialogue",
       "speakerName": "狂気的な住民",
       "speakerId": "avg_npc_1695_1",
+      "isRemote": false,
       "text": "本当にか？"
     },
     {
       "type": "dialogue",
       "speakerName": "落ち着かない様子の住民",
       "speakerId": "avg_npc_1752_1",
+      "isRemote": false,
       "text": "見てくれ、火傷の痕すらほとんど残ってないだろ。"
     },
     {
       "type": "dialogue",
       "speakerName": "狂気的な住民",
       "speakerId": "avg_npc_1695_1",
+      "isRemote": false,
       "text": "だったらお前はスパイじゃないな。周りにこれを試してない奴はいないか？"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "59_g3_dragonsquare_d"
+    },
+    {
       "type": "dialogue",
       "speakerName": "寡黙な住民",
       "speakerId": "avg_npc_1689_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "落ち着かない様子の住民",
       "speakerId": "avg_npc_1752_1",
+      "isRemote": false,
       "text": "おい、そこのあんた、炎には手をかざしたか？"
     },
     {
       "type": "dialogue",
       "speakerName": "寡黙な住民",
       "speakerId": "avg_npc_1689_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "落ち着かない様子の住民",
       "speakerId": "avg_npc_1752_1",
+      "isRemote": false,
       "text": "何か言えよ、そんな汚い組紐いじってないでこっちに来い！"
     },
     {
       "type": "dialogue",
       "speakerName": "落ち着かない様子の住民",
       "speakerId": "avg_npc_1752_1",
+      "isRemote": false,
       "text": "来いって言ってるだろ！　紐を放せ――"
     },
     {
@@ -114,22 +140,29 @@
       "type": "dialogue",
       "speakerName": "落ち着かない様子の住民",
       "speakerId": "avg_npc_1752_1",
+      "isRemote": false,
       "text": "なっ――殴りやがったな！？"
     },
     {
       "type": "dialogue",
       "speakerName": "寡黙な住民",
       "speakerId": "avg_npc_1689_1",
+      "isRemote": false,
       "text": "よくも……私の組紐を……"
     },
     {
       "type": "dialogue",
       "speakerName": "落ち着かない様子の住民",
       "speakerId": "avg_npc_1752_1",
+      "isRemote": false,
       "text": "わかったよ、紐は取らないからついてこいって。あんたがヴィクトリアのスパイじゃないかを確かめるんだ！"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
     },
     {
       "type": "narration",
@@ -156,48 +189,56 @@
       "type": "dialogue",
       "speakerName": "落ち着かない様子の住民",
       "speakerId": "avg_npc_1752_1",
+      "isRemote": false,
       "text": "赤き龍の像が……蘇った？"
     },
     {
       "type": "dialogue",
       "speakerName": "狂気的な住民",
       "speakerId": "avg_npc_1695_1",
+      "isRemote": false,
       "text": "あれは――クランか！？"
     },
     {
       "type": "dialogue",
       "speakerName": "落ち着かない様子の住民",
       "speakerId": "avg_npc_1752_1",
+      "isRemote": false,
       "text": "クラン、あんたもヴィクトリア人を探し出すのを手伝いに来てくれたのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "狂気的な住民",
       "speakerId": "avg_npc_1695_1",
+      "isRemote": false,
       "text": "その前に、奴自身がそうでないことを証明させるべきだろう！"
     },
     {
       "type": "dialogue",
       "speakerName": "落ち着かない様子の住民",
       "speakerId": "avg_npc_1752_1",
+      "isRemote": false,
       "text": "こっちに来てくれよ、クラン。ヴィクトリア人じゃなければ、炎に焼かれたって痛くなんか――"
     },
     {
       "type": "dialogue",
       "speakerName": "狂気的な住民",
       "speakerId": "avg_npc_1695_1",
+      "isRemote": false,
       "text": "聞こえないのか！　こっちへ来いと言っているんだ！"
     },
     {
       "type": "dialogue",
       "speakerName": "落ち着かない様子の住民",
       "speakerId": "avg_npc_1752_1",
+      "isRemote": false,
       "text": "待った、あいつ……"
     },
     {
       "type": "dialogue",
       "speakerName": "落ち着かない様子の住民",
       "speakerId": "avg_npc_1752_1",
+      "isRemote": false,
       "text": "たった一人であの像を引っ張ってきたのか！？"
     },
     {
@@ -211,6 +252,10 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
       "type": "narration",
       "text": "英雄は広場中央の空地に彫像を横たえると、苦しげに振り返り、群衆を見据えた。\n鋼の骨格は、まるですべての始まりの時からそこでそうしていたかのように、冷たい美しさをまとって、翼を広げ飛び立たんとするその瞬間で静止した姿をしていた。"
     },
@@ -218,15 +263,21 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "59_g3_dragonsquare_d"
+    },
+    {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "もうよせ、同胞たちよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "これ以上同胞を手にかける前に、やめるんだ。"
     },
     {
@@ -240,18 +291,21 @@
       "type": "dialogue",
       "speakerName": "狂気的な住民",
       "speakerId": "avg_npc_1695_1",
+      "isRemote": false,
       "text": "誰が同胞を殺したと？"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "今は火で炙るだけでも、それでスパイが見つからなければ、次はどうするつもりなんだ？"
     },
     {
       "type": "dialogue",
       "speakerName": "狂気的な住民",
       "speakerId": "avg_npc_1695_1",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -261,12 +315,14 @@
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "クランさん、本当に像を引きずってくるなんて……"
     },
     {
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "どうしましょう？　彼を……止めるべきでしょうか？"
     },
     {
@@ -276,12 +332,14 @@
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "それに、食糧は戻ってきただろう？　戦争だって、とっくに終わってる。"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "本当にスパイがいたとして、どうしてそんな卑怯なスパイのために街の全員が互いを傷つけ合わなければならないんだ？"
     },
     {
@@ -291,6 +349,7 @@
       "type": "dialogue",
       "speakerName": "ラフシニー",
       "speakerId": "avg_npc_1694_1",
+      "isRemote": false,
       "text": "今は、最後まで……話させてあげよう。"
     },
     {
@@ -300,12 +359,14 @@
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "もう一度言おう。戦争は終わったんだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "戦争が終わったばかりの時、俺はごく単純にこう考えていた。俺よりも腕の立つ鍛冶師が来たら、その人のもとで学びたいと。自分で打ったものくらい自分で直せるようになりたいと思ったんだ。"
     },
     {
@@ -316,18 +377,21 @@
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "こんなことをすべきじゃなかったんだ。今のナ・シアーシャには何もかもが足りていないと言うのに……空の椀でも雨水くらいは貯められるんだぞ。こんな像にして光らせておくだけなんて無駄だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "それに、食糧の件もだ。昨日の俺は本気で焦っていた。備蓄不足はもう手遅れの状況なんじゃないかと思ってな。だが、赤き龍の慈悲か、あるいはどこかに豊作の畑があったのか、食糧は帰ってきた。"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "つまりは、生きてさえいれば、何とか乗り越えられるんだ。そうだろう？"
     },
     {
@@ -337,114 +401,133 @@
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "だが、テオは……あの子はもういない。"
     },
     {
       "type": "dialogue",
       "speakerName": "狂気的な住民",
       "speakerId": "avg_npc_1695_1",
+      "isRemote": false,
       "text": "お前はまだあのヴィクトリアのクズなんぞを憐れんでいるのか！？"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "俺はあいつが不憫でならないんだ。テオが死んだと聞いた時、俺は皆を恨んだ。俺自身も含めて、全員をな。"
     },
     {
       "type": "dialogue",
       "speakerName": "狂気的な住民",
       "speakerId": "avg_npc_1695_1",
+      "isRemote": false,
       "text": "ヴィクトリア人が何をしたか、俺たちよりもお前のほうが、よくわかっているはずだろう！"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "あのヴィクトリア人は、最後の力を振り絞ってテオを庇い、俺に頼んできたんだ。この子を連れて行ってくれと。"
     },
     {
       "type": "dialogue",
       "speakerName": "狂気的な住民",
       "speakerId": "avg_npc_1695_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "俺はお前たちが憎い。テオを見殺しにした奴ら全員に復讐したいとさえ思ったほどだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "だが、復讐には理由がいるものだろう？　俺たちは、一体何のために復讐しようとしているんだ？"
     },
     {
       "type": "dialogue",
       "speakerName": "狂気的な住民",
       "speakerId": "avg_npc_1695_1",
+      "isRemote": false,
       "text": "あの頃奴らがそうしたように、奴らからすべて奪ってやればいい！"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "斧の一本すら鋳溶かした今のナ・シアーシャが、ヴィクトリア人の手から穀物一粒でも奪えると思うのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "寡黙な住民",
       "speakerId": "avg_npc_1689_1",
+      "isRemote": false,
       "text": "あのクズどもに私たちが受けた苦痛を味わわせてやらないと。"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "そうだな。俺が今、お前たちに路地裏で死ぬ苦しみを味わわせてやりたいと思っているのと同じように。"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "だが、かつて同胞たちは俺たちを生き延びさせるために命を賭したというのに――生かされた俺たちが、他人に苦痛を与えるためだけに、この命を捨てていいと思うのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "狂気的な住民",
       "speakerId": "avg_npc_1695_1",
+      "isRemote": false,
       "text": "お前は奴らを愛せと言うのか？　俺たちの収穫を奪い、家族を殺した連中を？"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "いいや、敵を愛する必要などない。"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "俺はただ、生きている人を……お前たち自身を愛してほしいと思っているだけだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "なんなら、誰かを愛することさえしなくてもいい。代わりに一つだけ聞かせてほしいことがある。"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "明日が来て、サウィン祭が終わり、戦争の影が俺たちの頭上を去る時が来たら……お前たちは何をするつもりだ？"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "俺は、像を完成させて、自分の名前を刻めたらと思っていた。だが今は、腕の立つ鍛冶師を見つけて、義足の直し方を教わりたいとだけ思っている。"
     },
     {
@@ -454,30 +537,35 @@
       "type": "dialogue",
       "speakerName": "沈黙する群衆",
       "speakerId": null,
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "狂気的な住民",
       "speakerId": "avg_npc_1695_1",
+      "isRemote": false,
       "text": "今日はやけに弁が立つな、クラン。だが、俺は明日のことも戦争のこともどうでもいい。ヴィクトリア人さえ死ねばそれでいいんだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "狂気的な住民",
       "speakerId": "avg_npc_1695_1",
+      "isRemote": false,
       "text": "ヴィクトリア人の肩を持つのなら、お前にも死んでもらうぞ。"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "いいだろう。"
     },
     {
@@ -501,6 +589,7 @@
       "type": "dialogue",
       "speakerName": "ネモス",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "クランさん、早まらないでください！"
     },
     {
@@ -517,6 +606,7 @@
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "俺は、お前たちから渡された生活をお前たちに返すためにこそ、この像を壊しに来た。"
     },
     {
@@ -526,12 +616,14 @@
       "type": "dialogue",
       "speakerName": "怒り狂う群衆",
       "speakerId": null,
+      "isRemote": false,
       "text": "なんだって！？"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "この像の骨一つ一つが何で出来ているか、俺はよく覚えている。背骨は斧に、肋骨は食器に、頭は机や椅子に鋳直して、お前たちのもとに返そう。"
     },
     {
@@ -541,12 +633,14 @@
       "type": "dialogue",
       "speakerName": "怒り狂う群衆",
       "speakerId": null,
+      "isRemote": false,
       "text": "この裏切り者！　お前は英雄だろう！　どうしてそんな真似をするんだ！？"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "誰かの生活を奪うことに痛みを感じる者が裏切り者であるのなら、俺は初めから英雄なんかじゃなく、裏切り者だったんだろう。"
     },
     {
@@ -556,54 +650,63 @@
       "type": "dialogue",
       "speakerName": "怒り狂う群衆",
       "speakerId": null,
+      "isRemote": false,
       "text": "屁理屈を言うな！"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "そんなことをする気はないさ。"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "クランという人間が何者なのかを教えてやろう。奴は英雄などではなく、虚栄心にまみれた嘘つきだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "黒き森でヴィクトリアの斥候部隊を倒したという話は嘘だ。実際にヴィクトリア人と会ったのは黒き森じゃなく、もっと遠くでのことだった……"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "そのヴィクトリア人も斥候なんかじゃない。哀れにもどこぞの軍に蹂躙されたキャラバンの連中だったんだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "クランは何とかしてその全員を救おうとしたが、結局助けられたのは子供一人――ヴィクトリア人の子供だけだった。奴はどうしていいかわからなくなった。"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "そして結局、ほかに打つ手がなかったせいか、あるいは虚栄心に駆られたせいか、奴はヴィクトリア人の首を落とし、「斥候部隊を仕留めた」と同胞に伝えることにしたんだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "そうして、クランは英雄となり、街で最も尊敬を集める市民となった。奴はこれで、街の人々のために多くを成すことができると思っていた。"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "そして、あの子を育てることは、「英雄」の示すささやかな慈悲の表れともなった。"
     },
     {
@@ -613,24 +716,28 @@
       "type": "dialogue",
       "speakerName": "怒り狂う群衆",
       "speakerId": null,
+      "isRemote": false,
       "text": "なっ……！？"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "そんな哀れな嘘つきでさえ、本当の自分はただの鍛冶師で、戦争が終われば何かを学ばねばならないということを理解しているんだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "それに比べてお前たちは……"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "お前たちはどうだ？"
     },
     {
@@ -640,6 +747,7 @@
       "type": "dialogue",
       "speakerName": "友好的な住民",
       "speakerId": "avg_npc_1688_1",
+      "isRemote": false,
       "text": "あなたは――あなたはクランじゃない！　クランのフリをした嘘つきに違いないわ！"
     },
     {
@@ -649,6 +757,7 @@
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "ぐっ……"
     },
     {
@@ -658,6 +767,7 @@
       "type": "dialogue",
       "speakerName": "狂気的な住民",
       "speakerId": "avg_npc_1695_1",
+      "isRemote": false,
       "text": "そうだ、お前はクランじゃない！　俺たちの英雄は、ヴィクトリアの斥候部隊じゃ敵わないような豪傑なんだぞ！　偽物め、お前は一体何者だ！？"
     },
     {
@@ -667,18 +777,21 @@
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "ハッ……"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "この彫像をここまで運んできた今……"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "俺に残された時間が……あとどれだけあると思っている？"
     },
     {
@@ -692,6 +805,7 @@
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "げほっ……ごほっ！"
     },
     {
@@ -702,18 +816,21 @@
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "テオ……？　なぜお前まで……！？"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "ごほっ……"
     },
     {
       "type": "dialogue",
       "speakerName": "クラン",
       "speakerId": "avg_npc_1697_1",
+      "isRemote": false,
       "text": "全部、無駄だ……無駄だったんだ……"
     },
     {
@@ -741,11 +858,19 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "47_g15_eveningglow_L2"
+    },
+    {
       "type": "narration",
       "text": "英雄の身体は巨龍の前に崩れ落ち、群衆は突然魂を抜き取られたかのように呆然と立ち尽くした。\nそこでようやくラフシニーの声が辺りに響き、彼女の炎が夕陽の如く燃え盛ったが、誰一人気に留める者はいなかった。"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "59_g3_dragonsquare_d"
     },
     {
       "type": "narration",
@@ -762,6 +887,10 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "59_g4_dragonsquare_n"
+    },
+    {
       "type": "narration",
       "text": "群衆は呆気に取られていたのか、あるいは敬意からか、そのすべてを黙って見守っていた。\nそうして、要塞の方角からかすかな足音が近づいてきた。"
     },
@@ -772,6 +901,7 @@
       "type": "dialogue",
       "speakerName": "エブラナ",
       "speakerId": "avg_450_necras_1",
+      "isRemote": false,
       "text": "なんということだ、私は遅れてしまったようだな。この街に残された最後の英雄よ。"
     },
     {
@@ -781,75 +911,91 @@
       "type": "dialogue",
       "speakerName": "エブラナ",
       "speakerId": "avg_450_necras_1",
+      "isRemote": false,
       "text": "では、ナ・シアーシャの民よ、お前たちの英雄が彫像のために身を捧げ、夜の帳が降りようとしているこの時――"
     },
     {
       "type": "dialogue",
       "speakerName": "エブラナ",
       "speakerId": "avg_450_necras_1",
+      "isRemote": false,
       "text": "まだ赤き龍の意志に従うつもりがあるのなら……"
     },
     {
       "type": "dialogue",
       "speakerName": "エブラナ",
       "speakerId": "avg_450_necras_1",
+      "isRemote": false,
       "text": "家に戻るべき頃だろう。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_snowconutryinside"
+    },
+    {
       "type": "dialogue",
       "speakerName": "謎の女性",
       "speakerId": null,
+      "isRemote": false,
       "text": "「クランは最後の力を振り絞り、巨龍の頭を思い切り打ち叩いた。誰かのための弔鐘を鳴らすかのように」……"
     },
     {
       "type": "dialogue",
       "speakerName": "謎の女性",
       "speakerId": null,
+      "isRemote": false,
       "text": "あなたは本当にクランのことがお好きなのですね。とても悲しい結末なのに、美しい「創作」が為されていますもの。"
     },
     {
       "type": "dialogue",
       "speakerName": "作家",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "恐縮です。"
     },
     {
       "type": "dialogue",
       "speakerName": "作家",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "けれど、あの鍛冶師と顔を合わせたことはほとんどありませんでした。彼はあの街の混乱における最初の犠牲者にすぎません――テオを除けばの話ですが。"
     },
     {
       "type": "dialogue",
       "speakerName": "謎の女性",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "そういえば、一つ気になることが。暗闇に足を踏み入れたダブリンの人々ですが、彼らの身体にあなたの語る「紫の炎」は灯っていたと思いますか？"
     },
     {
       "type": "dialogue",
       "speakerName": "作家",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "ごめんなさい、その質問にはお答えできません。"
     },
     {
       "type": "dialogue",
       "speakerName": "謎の女性",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "あなたの物語を聞く限り、きっと灯ってはいなかったのでしょう。汚職に密輸、権力の濫用……彼らは未来に多くの野望を持っていましたからね。"
     },
     {
       "type": "dialogue",
       "speakerName": "作家",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "作家",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "これだけ多くをお話ししたのですから、そろそろあなたがこの物語に結末を与えることもできるでしょう。"
     },
     {
@@ -859,12 +1005,14 @@
       "type": "dialogue",
       "speakerName": "謎の女性",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "街で起きた出来事は一つではありませんでした。あなたも仰った通り、彼は最初の犠牲者にすぎないのです。"
     },
     {
       "type": "dialogue",
       "speakerName": "謎の女性",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "けれど、どうしてもここでお話を終わらせたいと仰るのなら……"
     },
     {
@@ -874,36 +1022,42 @@
       "type": "dialogue",
       "speakerName": "作家",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "うーむ……"
     },
     {
       "type": "dialogue",
       "speakerName": "謎の女性",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "どうされました？"
     },
     {
       "type": "dialogue",
       "speakerName": "作家",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "何でもありません。さあ、もう行っていいですよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "謎の女性",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "ですが、まだ仰りたいことがおありなのでは？"
     },
     {
       "type": "dialogue",
       "speakerName": "作家",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "作家",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "その後、本当に赤き龍を見た者はいなかったんでしょうか？"
     },
     {
@@ -917,54 +1071,63 @@
       "type": "dialogue",
       "speakerName": "作家",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "それに、「共に死出の旅路へ踏み出す」など……赤き龍がいつそんなことを？"
     },
     {
       "type": "dialogue",
       "speakerName": "謎の女性",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "物語とは自由なものですから。"
     },
     {
       "type": "dialogue",
       "speakerName": "作家",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "確かにそうですが、自由だからと思い付きで好きに語っておいて、それを笑い話で済ませていいわけではありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "謎の女性",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "それがなぜいけないのですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "作家",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "あなたも、私も、ターラー人ですから。我々の物語はどんなに歪められたものであっても、我々自身を映し出すものです。"
     },
     {
       "type": "dialogue",
       "speakerName": "謎の女性",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "今もなお、自分はターラー人だと認めると？"
     },
     {
       "type": "dialogue",
       "speakerName": "作家",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "初めてシェイマス・ウィリアムズという詩人の綴る言葉を読んだ時からずっと、私はターラー人です。"
     },
     {
       "type": "dialogue",
       "speakerName": "作家",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "そうでなければ、なぜ私がカイシャー郡の文学サロンの温かなアームチェアを捨て、ターラーへ来て、一人の――"
     },
     {
       "type": "dialogue",
       "speakerName": "作家",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -978,30 +1141,35 @@
       "type": "dialogue",
       "speakerName": "作家",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "単刀直入に聞きましょう。誰の命令で来たのですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "謎の女性",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "誰の命も受けてはいませんよ。あなたが仰っていた通り、私はあなたの物語と、「真実の継ぎはぎ」に関心を寄せる一読者に過ぎません。"
     },
     {
       "type": "dialogue",
       "speakerName": "作家",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "それをどう証明するおつもりで？"
     },
     {
       "type": "dialogue",
       "speakerName": "謎の女性",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "難しい注文ですね。誰かの命令で来た場合には、それを証明するのは簡単でしょう。ですが、そんな人間は存在しないと証明するにはどうすればいいのでしょうか？"
     },
     {
       "type": "dialogue",
       "speakerName": "作家",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -1015,6 +1183,7 @@
       "type": "dialogue",
       "speakerName": "作家",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "考えてみれば、その通りですね。たかが物語に、神経質になりすぎていたようです。すみません。"
     },
     {
@@ -1024,24 +1193,28 @@
       "type": "dialogue",
       "speakerName": "謎の女性",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "気にしないでください。それに、あなたの未完の物語はまだ残っていますよね。"
     },
     {
       "type": "dialogue",
       "speakerName": "謎の女性",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "それを繋ぎ合わせていけば、あの頃のナ・シアーシャに――あなたの心の中のターラーに相応しい結末が得られるかもしれません。"
     },
     {
       "type": "dialogue",
       "speakerName": "謎の女性",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "ご準備が整ったら、次の物語へ進みましょう。あの鏡の中のダンスについて語っていただけますか？"
     },
     {
       "type": "dialogue",
       "speakerName": "作家",
       "speakerId": "avg_npc_1698_1",
+      "isRemote": false,
       "text": "鏡の中のダンス……ですか？"
     },
     {

@@ -6,26 +6,40 @@
   "title": "Shennong Rites",
   "storyCode": "HS-2",
   "avgTag": "Before Operation",
-  "sourcePath": "vendor/ArknightsGamedata/en/gamedata/story/activities/act31side/level_act31side_02_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/en/gamedata/story/activities/act31side/level_act31side_02_beg.txt",
   "sourceHash": "85f41f88f701ae24dd659ad591a0fb778e3d70146bdfb9ee8fd0f2e75938bba5",
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "47_g12_cityoperastage"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Opera Singer",
       "speakerId": null,
+      "isRemote": false,
       "text": "Let the wild plains, rivers and mountains come! Harsh is the east wind, the frozen moon, heavens fickle, raging thunder♪"
     },
     {
       "type": "dialogue",
       "speakerName": "Opera Singer",
       "speakerId": null,
+      "isRemote": false,
       "text": "May the scent of rice fill Heaven and earth, north and south, and fear neither drought nor flood! If only I was the wind and spring rain, bringing spring to the people♪"
     },
     {
       "type": "dialogue",
       "speakerName": "Opera Singer",
       "speakerId": null,
+      "isRemote": false,
       "text": "Plow the great plains and soak them with blood, sweat, and tears! Trample a thousand li flat, and turn them into fields of gold♪"
     },
     {
@@ -42,72 +56,84 @@
       "type": "dialogue",
       "speakerName": "Zuo Le",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "What's it about?"
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "The story of Shennong putting the land of Dahuang to the plow for the first time."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "The three-act opera is an essential part of the annual Shennong Festival. This is the second act, Signs of Heaven."
     },
     {
       "type": "dialogue",
       "speakerName": "Zuo Le",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "Why isn't it in the local dialect?"
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "The first Tianshis here came from all over Yan. No one remembers exactly where they came from today."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "When the opera was written, the characters were assigned a regional dialect based on their traits, and things have stayed that way."
     },
     {
       "type": "dialogue",
       "speakerName": "Zuo Le",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "What about the people lined up over there?"
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "They're there to greet Shennong."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Legend has it that Shennong returns to Dahuang every summer to check on the harvest."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "As one of the rare unpolluted regions, Dahuang has long been Yan's breadbasket."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "It began a thousand years ago, when a group of farmers settled here and began cultivating the land."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Until Catastrophe found them..."
     },
     {
@@ -124,30 +150,35 @@
       "type": "dialogue",
       "speakerName": "Zuo Le",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "Is that actor playing Shennong?"
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "A Catastrophe the likes of which had never been seen struck Dahuang. The land was severely polluted, and monsters ravaged the farms."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Generations of hard work, reduced to nothing."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Cultivating the land is hard. Finding land that can be cultivated is even harder. Shennong learned of what happened here, and decided to try to save this hard-won soil."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "She settled here with a group of farmers and Tianshis, studying how to cleanse the pollution in the soil, and developing new breeds of crops that could adapt to the environment, generation after generation."
     },
     {
@@ -164,120 +195,147 @@
       "type": "dialogue",
       "speakerName": "Zuo Le",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "What's the story here?"
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Shennong passed away on a journey to the north, in search of new species."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Her body was never found, only a basket and pouch filled with rice grains. They were brought back to Dahuang and buried in a cenotaph."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Some say that in the summer of the year of Shennong's death, she was seen descending from the sky as the last rice was harvested, touching the harvested crops with gladness, and sowing new seeds in the fields."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Since then, Dahuang has held an annual festival to welcome Shennong and pray for a good harvest."
     },
     {
       "type": "dialogue",
       "speakerName": "Zuo Le",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "Is Shennong a figure of legend?"
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Absolutely not! While there are elements of myth in the stories associated with her, there is no doubt that Shennong did, in fact, exist."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "There are records of her existence in the Tianshi Bureaus' publications. She was the founder of Yanese agricultural theory, the first to summarize it in a systematic manner, and responsible for determining the patterns of the twenty-four Jieqi solar terms."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Surely it's not just the Tianshi Bureaus that kept such records? It should be common knowledge in Yan... I'm surprised you had to ask."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "47_g6_civilengineermasteroffice"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Zuo Le",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "Shu, the Sixth, measured the signs of heaven and laid out the twenty-four Jieqi... she appeared in Dahuang at the time of a great famine, and has faithfully served the city for a thousand years since."
     },
     {
       "type": "dialogue",
       "speakerName": "Zuo Le",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "I didn't realize there was one like that among the proxies..."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "47_g12_cityoperastage"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Joyful Farmer",
       "speakerId": "avg_npc_1249_1",
+      "isRemote": false,
       "text": "Xiaohe! You're early today. Is Grain Buds not with you? And who's this young man over here?"
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Uncle Wang, I'm not—"
     },
     {
       "type": "dialogue",
       "speakerName": "Joyful Farmer",
       "speakerId": "avg_npc_1249_1",
+      "isRemote": false,
       "text": "Ah, I shouldn't get into young folks' business. How's the harvest going for your research crops?"
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Pretty good!"
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "We're at a key juncture. We might see results in another couple of seasons."
     },
     {
       "type": "dialogue",
       "speakerName": "Joyful Farmer",
       "speakerId": "avg_npc_1249_1",
+      "isRemote": false,
       "text": "Good, good! Nice to have something to show for, after working hard all year round."
     },
     {
       "type": "dialogue",
       "speakerName": "Joyful Farmer",
       "speakerId": "avg_npc_1249_1",
+      "isRemote": false,
       "text": "Well, have fun. I'll get the reaper ready."
     },
     {
@@ -291,51 +349,63 @@
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Don't ask."
     },
     {
       "type": "dialogue",
       "speakerName": "Zuo Le",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Where did Grain Buds go?"
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "She's supposed to be playing the flute for the show..."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "47_g8_crestofweir"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Shu",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "It's me."
     },
     {
       "type": "dialogue",
       "speakerName": "Shu",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "I brought some fresh-baked cookies."
     },
     {
       "type": "dialogue",
       "speakerName": "Shu",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "I thought I would use rough cane sugar, but nobody uses that anymore. These were made from the white sugar they sell in shops. Try one."
     },
     {
       "type": "dialogue",
       "speakerName": "Shu",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "These fruits are a new variety, much sweeter than the sour stuff we had to eat in the past. I brought a few of each type because I'm not sure what you like."
     },
     {
@@ -345,12 +415,14 @@
       "type": "dialogue",
       "speakerName": "Silent Lumberjack",
       "speakerId": "avg_npc_1243_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "Shu",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "How are you feeling? Still dizzy?"
     },
     {
@@ -364,12 +436,14 @@
       "type": "dialogue",
       "speakerName": "Shu",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "Do you hear the music? They're holding the annual festival to welcome Shennong."
     },
     {
       "type": "dialogue",
       "speakerName": "Shu",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "How lonely it must be here, with everybody celebrating in town."
     },
     {
@@ -386,36 +460,42 @@
       "type": "dialogue",
       "speakerName": "Shu",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "The summer has brought a few Catastrophes. The weather is rough this year."
     },
     {
       "type": "dialogue",
       "speakerName": "Shu",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "I'll instruct the Tianshis to be conscientious. Don't worry about it."
     },
     {
       "type": "dialogue",
       "speakerName": "Silent Lumberjack",
       "speakerId": "avg_npc_1243_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "Shu",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "The harvest isn't great, but things aren't that bad."
     },
     {
       "type": "dialogue",
       "speakerName": "Shu",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "We've been doing this for many years. We've always had enough food to get by."
     },
     {
       "type": "dialogue",
       "speakerName": "Silent Lumberjack",
       "speakerId": "avg_npc_1243_1",
+      "isRemote": false,
       "text": "..."
     },
     {
@@ -429,36 +509,42 @@
       "type": "dialogue",
       "speakerName": "Silent Lumberjack",
       "speakerId": "avg_npc_1243_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "Shu",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "We have a lot of visitors from outside. Some know the truth. I'm helping. Don't worry."
     },
     {
       "type": "dialogue",
       "speakerName": "Shu",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "We... we didn't manage to protect it all."
     },
     {
       "type": "dialogue",
       "speakerName": "Silent Lumberjack",
       "speakerId": "avg_npc_1243_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "Silent Lumberjack",
       "speakerId": "avg_npc_1243_1",
+      "isRemote": false,
       "text": "....*sobs*..."
     },
     {
       "type": "dialogue",
       "speakerName": "Silent Lumberjack",
       "speakerId": "avg_npc_1243_1",
+      "isRemote": false,
       "text": "(Mumbled sobbing)"
     },
     {
@@ -472,42 +558,49 @@
       "type": "dialogue",
       "speakerName": "Shu",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "It'll get better. There'll be a way."
     },
     {
       "type": "dialogue",
       "speakerName": "Shu",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "The extraordinary Catastrophe... the past... the sacrifice and death, it won't go to waste."
     },
     {
       "type": "dialogue",
       "speakerName": "Shu",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "Do you remember?"
     },
     {
       "type": "dialogue",
       "speakerName": "Shu",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "We've all seen seeds take root and sprout."
     },
     {
       "type": "dialogue",
       "speakerName": "Silent Lumberjack",
       "speakerId": "avg_npc_1243_1",
+      "isRemote": false,
       "text": "(Mumbled sobbing)"
     },
     {
       "type": "dialogue",
       "speakerName": "Shu",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "I'll take care of them."
     },
     {
       "type": "dialogue",
       "speakerName": "Shu",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "But you... you can..."
     },
     {
@@ -524,6 +617,7 @@
       "type": "dialogue",
       "speakerName": "Silent Lumberjack",
       "speakerId": "avg_npc_1243_1",
+      "isRemote": false,
       "text": "..."
     },
     {
@@ -537,16 +631,22 @@
       "type": "dialogue",
       "speakerName": "Shu",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "...*sigh*"
     },
     {
       "type": "dialogue",
       "speakerName": "Shu",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "Come out, Grain Buds."
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "47_g12_cityoperastage"
     },
     {
       "type": "narration",
@@ -566,30 +666,35 @@
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Every farmer brings a few seeds, which can be of any crop."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "The grain is piled high so that Shennong can see the way back, so that wind and rain may favor Dahuang, so that Yan will not go hungry."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "You didn't bring any, did you? I have some extras here. Put them in after you bow."
     },
     {
       "type": "dialogue",
       "speakerName": "Zuo Le",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "Duo xie le."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "The harvest this year has already been poor... hopefully nothing happens to the summer harvest."
     },
     {
@@ -606,36 +711,42 @@
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "The pile is a lot smaller this year..."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "In good years, there wouldn't even be enough room to put all the grains we brought. We'd bring bags and pile them up on the sides of the altar, something we did gladly."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Young kids climbed the pile for fun. The adults didn't stop them, because it was believed that the higher the kids climbed, the higher the crops would grow the next year."
     },
     {
       "type": "dialogue",
       "speakerName": "Zuo Le",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "What happens to the grain? Is it made into porridge?"
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "No, it's brewed into alcohol, which everyone shares at next year's festival."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Rice from the year before is used to make yeast for next year's drink, year after year. It's our commitment to ourselves."
     },
     {
@@ -652,18 +763,21 @@
       "type": "dialogue",
       "speakerName": "Old Xiangzhang",
       "speakerId": "avg_npc_1240_1",
+      "isRemote": false,
       "text": "Good work this year, Xiaohe."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Thank you, Xiangzhang."
     },
     {
       "type": "dialogue",
       "speakerName": "Old Xiangzhang",
       "speakerId": "avg_npc_1240_1",
+      "isRemote": false,
       "text": "Good boy."
     },
     {
@@ -680,6 +794,7 @@
       "type": "dialogue",
       "speakerName": "Zuo Le",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "May wind and rain favor Dahuang, and peace ever favor Yan."
     },
     {
@@ -721,15 +836,21 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Farmer",
       "speakerId": null,
+      "isRemote": false,
       "text": "Harvest—!"
     },
     {
       "type": "dialogue",
       "speakerName": "Farmer",
       "speakerId": null,
+      "isRemote": false,
       "text": "Harvest!"
     },
     {
@@ -743,39 +864,49 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "47_g8_crestofweir"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Yawning Tumu Tianshi",
       "speakerId": "avg_npc_1245_1",
+      "isRemote": false,
       "text": "Kaoliang liquor? Just bought it at the fair."
     },
     {
       "type": "dialogue",
       "speakerName": "Tired Tumu Tianshi",
       "speakerId": "avg_npc_1246_1",
+      "isRemote": false,
       "text": "Laoshi will have your head if she finds out you're drinking on the job."
     },
     {
       "type": "dialogue",
       "speakerName": "Yawning Tumu Tianshi",
       "speakerId": "avg_npc_1245_1",
+      "isRemote": false,
       "text": "All we're doing is watching the water levels and keeping track of a few numbers. I could have three bottles in me and still catch any unusual data with one glance—"
     },
     {
       "type": "dialogue",
       "speakerName": "Yawning Tumu Tianshi",
       "speakerId": "avg_npc_1245_1",
+      "isRemote": false,
       "text": "Hey, am I actually drunk? Cross-check that Originium level in the silt for me."
     },
     {
       "type": "dialogue",
       "speakerName": "Tired Tumu Tianshi",
       "speakerId": "avg_npc_1246_1",
+      "isRemote": false,
       "text": "What the...?"
     },
     {
       "type": "dialogue",
       "speakerName": "Tired Tumu Tianshi",
       "speakerId": "avg_npc_1246_1",
+      "isRemote": false,
       "text": "Close the gate—"
     },
     {
@@ -789,141 +920,168 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "47_g8_crestofweir"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Shu",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "Why did you follow me? Shouldn't you be playing the flute for the opera?"
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "You were the one who sneaked out."
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "Why do you always come here with food by yourself during the Shennong Festival? Did you come to visit the mute uncle?"
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "Who is he? Why doesn't he live with the others?"
     },
     {
       "type": "dialogue",
       "speakerName": "Shu",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "He has an illness that he's afraid he could pass onto others. That's why he moved here on his own."
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "Oh..."
     },
     {
       "type": "dialogue",
       "speakerName": "Shu",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "The others are all afraid of him. Aren't you, Grain Buds?"
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "Well, a little..."
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "I saw him when I was looking for Mianmian a few days ago. He wasn't as scary as people say. It's just the way he looks, and the axe he carries."
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "But I can tell he's not a bad man. When he's angry, he glares at me the same way Xiaohe glares at the students who don't do their homework."
     },
     {
       "type": "dialogue",
       "speakerName": "Shu",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "You're a smart kid."
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "Stray stockbeast foals become aggressive and distrustful."
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "But it doesn't take long for them start acting like the normal when they've spent some time eating and playing with other stockbeasts."
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "Maybe that uncle will be happier if he has someone talking to him. It's sad that he has to be in this place by himself."
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "There are so many Tianshis in Dahuang. Can't any of them cure his illness?"
     },
     {
       "type": "dialogue",
       "speakerName": "Shu",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "Someday, maybe."
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "Shu... does his illness have something to do with the monsters in the legends?"
     },
     {
       "type": "dialogue",
       "speakerName": "Shu",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "Why do you ask?"
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "There's this dream I've had more than once."
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "It takes place right here on this levee, and sometimes I see that mute uncle standing on it."
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "In the dream, the weather gets really bad, sometimes very dry, sometimes raining heavily, and the wind brings strange things from the other side of the river..."
     },
     {
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "All the seedlings in the fields die, and the granaries run out of grain..."
     },
     {
       "type": "dialogue",
       "speakerName": "Shu",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "Have you... ever told this to anyone?"
     },
     {
@@ -933,63 +1091,77 @@
       "type": "dialogue",
       "speakerName": "Grain Buds",
       "speakerId": "avg_4122_grabds_1",
+      "isRemote": false,
       "text": "Whoa! Thunder?"
     },
     {
       "type": "dialogue",
       "speakerName": "Shu",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "Shu",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "Run, Grain Buds. Hurry back."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "47_g12_cityoperastage"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Drunken Farmer",
       "speakerId": "avg_npc_1250_1",
+      "isRemote": false,
       "text": "Rain...?"
     },
     {
       "type": "dialogue",
       "speakerName": "Tipsy Farmer",
       "speakerId": "avg_npc_1249_1",
+      "isRemote": false,
       "text": "Rain... not that unusual this season, is it?"
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "Something's not right with the skies..."
     },
     {
       "type": "dialogue",
       "speakerName": "Tipsy Farmer",
       "speakerId": "avg_npc_1249_1",
+      "isRemote": false,
       "text": "Who cares? *hic* The Tianshis didn't say anything. Can't be Catastrophe—"
     },
     {
       "type": "dialogue",
       "speakerName": "Tipsy Farmer",
       "speakerId": "avg_npc_1249_1",
+      "isRemote": false,
       "text": "Just disappointing that a day like this is spoiled by rain."
     },
     {
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "The water in the paddies looks muddy..."
     },
     {
@@ -999,6 +1171,7 @@
       "type": "dialogue",
       "speakerName": "He Sheng",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "No!"
     },
     {
@@ -1008,6 +1181,7 @@
       "type": "dialogue",
       "speakerName": "Zuo Le",
       "speakerId": "avg_4121_zuole_1",
+      "isRemote": false,
       "text": "What's the matter? Where are you going?"
     },
     {

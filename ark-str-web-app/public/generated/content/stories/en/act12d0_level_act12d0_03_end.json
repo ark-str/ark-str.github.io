@@ -6,80 +6,96 @@
   "title": "Old Times",
   "storyCode": "RI-3",
   "avgTag": "After Operation",
-  "sourcePath": "vendor/ArknightsGamedata/en/gamedata/story/activities/act12d0/level_act12d0_03_end.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/en/gamedata/story/activities/act12d0/level_act12d0_03_end.txt",
   "sourceHash": "2476394780a5079e6fc170bbe5f2dcea54a00356ccf322bee518e3d159962cb7",
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "bg_temple_1"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Archosauria A",
       "speakerId": null,
+      "isRemote": false,
       "text": "This weirdo's way too strong! She's beaten back so many of us already!"
     },
     {
       "type": "dialogue",
       "speakerName": "Archosauria B",
       "speakerId": null,
+      "isRemote": false,
       "text": "I still don't get what she's saying, but she's no joke!"
     },
     {
       "type": "dialogue",
       "speakerName": "Archosauria C",
       "speakerId": null,
+      "isRemote": false,
       "text": "I reckon she'd make a fine Great Chief!"
     },
     {
       "type": "dialogue",
       "speakerName": "Tomimi",
       "speakerId": "char_411_tomimi",
+      "isRemote": false,
       "text": "...Gavial, your friend's really strong."
     },
     {
       "type": "dialogue",
       "speakerName": "Gavial",
       "speakerId": "char_187_ccheal",
+      "isRemote": false,
       "text": "She sure is a pain in the ass at times like this though."
     },
     {
       "type": "dialogue",
       "speakerName": "Gavial",
       "speakerId": "char_187_ccheal",
+      "isRemote": false,
       "text": "I think we finally hit a lull. I'm gonna go up there and restrain her..."
     },
     {
       "type": "dialogue",
       "speakerName": "Ceobe",
       "speakerId": "char_2013_cerber",
+      "isRemote": false,
       "text": "You, Reunion! You're back!"
     },
     {
       "type": "dialogue",
       "speakerName": "Ceobe",
       "speakerId": "char_2013_cerber",
+      "isRemote": false,
       "text": "So you were the ones who took the Doctor!"
     },
     {
       "type": "dialogue",
       "speakerName": "Ceobe",
       "speakerId": "char_2013_cerber",
+      "isRemote": false,
       "text": "You won't get away!"
     },
     {
       "type": "dialogue",
       "speakerName": "Gavial",
       "speakerId": "char_187_ccheal",
+      "isRemote": false,
       "text": "Oh, you dumb... She's gonna escape again!"
     },
     {
       "type": "dialogue",
       "speakerName": "Gavial",
       "speakerId": "char_187_ccheal",
+      "isRemote": false,
       "text": "I'm going after her! Tomimi, you and the Doctor stay put! I'll come back and find you!"
     },
     {
       "type": "dialogue",
       "speakerName": "Tomimi",
       "speakerId": "char_411_tomimi",
+      "isRemote": false,
       "text": "Uh, okay!"
     },
     {
@@ -89,6 +105,7 @@
       "type": "dialogue",
       "speakerName": "Tomimi",
       "speakerId": "char_411_tomimi",
+      "isRemote": false,
       "text": "......"
     },
     {
@@ -99,21 +116,21 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Tomimi",
-          "speakerId": "char_411_tomimi",
-          "text": "Oh, there's another fight starting."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Tomimi",
-          "speakerId": "char_411_tomimi",
-          "text": "...Doctor, could you tell me what Gavial is like on the outside?"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tomimi",
+      "speakerId": "char_411_tomimi",
+      "isRemote": false,
+      "text": "Oh, there's another fight starting."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tomimi",
+      "speakerId": "char_411_tomimi",
+      "isRemote": false,
+      "text": "...Doctor, could you tell me what Gavial is like on the outside?"
     },
     {
       "type": "choice",
@@ -126,12 +143,14 @@
               "type": "dialogue",
               "speakerName": "Tomimi",
               "speakerId": "char_411_tomimi",
+              "isRemote": false,
               "text": "Is Gavial having a good life out there, then?"
             },
             {
               "type": "dialogue",
               "speakerName": "Tomimi",
               "speakerId": "char_411_tomimi",
+              "isRemote": false,
               "text": "......"
             }
           ]
@@ -144,18 +163,21 @@
               "type": "dialogue",
               "speakerName": "Tomimi",
               "speakerId": "char_411_tomimi",
+              "isRemote": false,
               "text": "Maybe you don't know Gavial that well?"
             },
             {
               "type": "dialogue",
               "speakerName": "Tomimi",
               "speakerId": "char_411_tomimi",
+              "isRemote": false,
               "text": "That's great! ...Um, no, I was just thinking since Gavial came back with you, and she seemed to really like you, and it looks like you get along really well."
             },
             {
               "type": "dialogue",
               "speakerName": "Tomimi",
               "speakerId": "char_411_tomimi",
+              "isRemote": false,
               "text": "But that's okay! Gavial's a really nice person! I think you can definitely get along with her!"
             }
           ]
@@ -168,25 +190,26 @@
               "type": "dialogue",
               "speakerName": "Tomimi",
               "speakerId": "char_411_tomimi",
+              "isRemote": false,
               "text": "That's great! Even if she's a doctor, Gavial's still Gavial!"
             },
             {
               "type": "dialogue",
               "speakerName": "Tomimi",
               "speakerId": "char_411_tomimi",
+              "isRemote": false,
               "text": "That's good to know. Gavial hasn't changed. What a relief..."
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Tomimi",
-          "speakerId": "char_411_tomimi",
-          "text": "So if Gavial decided to leave you one day, how would you feel?"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tomimi",
+      "speakerId": "char_411_tomimi",
+      "isRemote": false,
+      "text": "So if Gavial decided to leave you one day, how would you feel?"
     },
     {
       "type": "choice",
@@ -199,6 +222,7 @@
               "type": "dialogue",
               "speakerName": "Tomimi",
               "speakerId": "char_411_tomimi",
+              "isRemote": false,
               "text": "Mmm. I cried a lot when it happened, too..."
             }
           ]
@@ -211,6 +235,7 @@
               "type": "dialogue",
               "speakerName": "Tomimi",
               "speakerId": "char_411_tomimi",
+              "isRemote": false,
               "text": "How... How could you be like that?! Gavial's such a good person! How could you care so little if she left?!"
             }
           ]
@@ -223,25 +248,26 @@
               "type": "dialogue",
               "speakerName": "Tomimi",
               "speakerId": "char_411_tomimi",
+              "isRemote": false,
               "text": "You're incredible... I couldn't do that."
             },
             {
               "type": "dialogue",
               "speakerName": "Tomimi",
               "speakerId": "char_411_tomimi",
+              "isRemote": false,
               "text": "I always hoped Gavial would come back."
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Tomimi",
-          "speakerId": "char_411_tomimi",
-          "text": "Doctor, um, about Gavial...! I-I'm not gonna let you take her from me!"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tomimi",
+      "speakerId": "char_411_tomimi",
+      "isRemote": false,
+      "text": "Doctor, um, about Gavial...! I-I'm not gonna let you take her from me!"
     },
     {
       "type": "choice",
@@ -261,8 +287,7 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -272,126 +297,150 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Tomimi",
-          "speakerId": "char_411_tomimi",
-          "text": "Um, that one..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Gavial",
-          "speakerId": "char_187_ccheal",
-          "text": "Oh, what? You call me a kid, and this is all you've got?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Gavial",
-          "speakerId": "char_187_ccheal",
-          "text": "Who else is gonna challenge me?!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Archosauria A",
-          "speakerId": null,
-          "text": "She beat a lot of fighters more experienced than her..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Archosauria B",
-          "speakerId": null,
-          "text": "Gavial, you rule!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Archosauria C",
-          "speakerId": null,
-          "text": "It's wild to say, but could she be the next Great Chief?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "char_416_zumama",
-          "text": "I'll take you on!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Gavial",
-          "speakerId": "char_187_ccheal",
-          "text": "Oh, what the hell are you doing here, Zumama?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Gavial",
-          "speakerId": "char_187_ccheal",
-          "text": "Weren't you busy building your machines? Every time I went looking for you, you ignored me."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Zumama",
-          "speakerId": "char_416_zumama",
-          "text": "...I decided to come and see, in the end."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Gavial",
-          "speakerId": "char_187_ccheal",
-          "text": "See what?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Zumama",
-          "speakerId": "char_416_zumama",
-          "text": "See if my fists could beat you or not."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Gavial",
-          "speakerId": "char_187_ccheal",
-          "text": "You say that like you wanna get killed dead."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Zumama",
-          "speakerId": "char_416_zumama",
-          "text": "Enough talk. I'm not losing to you today, Gavial."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Gavial",
-          "speakerId": "char_187_ccheal",
-          "text": "Hey, you won't know until you've tried!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Tomimi",
-          "speakerId": "char_411_tomimi",
-          "text": "They fought from noon until night without settling anything. No winner, no loser."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Tomimi",
-          "speakerId": "char_411_tomimi",
-          "text": "They went until they'd used all their strength, and afterwards, both of them got dragged off by the others."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Tomimi",
-          "speakerId": "char_411_tomimi",
-          "text": "That's the story of the first time Gavial joined the ceremony."
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tomimi",
+      "speakerId": "char_411_tomimi",
+      "isRemote": false,
+      "text": "Um, that one..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_temple_1"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Gavial",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "Oh, what? You call me a kid, and this is all you've got?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Gavial",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "Who else is gonna challenge me?!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Archosauria A",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "She beat a lot of fighters more experienced than her..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Archosauria B",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Gavial, you rule!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Archosauria C",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "It's wild to say, but could she be the next Great Chief?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "char_416_zumama",
+      "isRemote": false,
+      "text": "I'll take you on!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Gavial",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "Oh, what the hell are you doing here, Zumama?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Gavial",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "Weren't you busy building your machines? Every time I went looking for you, you ignored me."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Zumama",
+      "speakerId": "char_416_zumama",
+      "isRemote": false,
+      "text": "...I decided to come and see, in the end."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Gavial",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "See what?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Zumama",
+      "speakerId": "char_416_zumama",
+      "isRemote": false,
+      "text": "See if my fists could beat you or not."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Gavial",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "You say that like you wanna get killed dead."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Zumama",
+      "speakerId": "char_416_zumama",
+      "isRemote": false,
+      "text": "Enough talk. I'm not losing to you today, Gavial."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Gavial",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "Hey, you won't know until you've tried!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_temple_1"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tomimi",
+      "speakerId": "char_411_tomimi",
+      "isRemote": false,
+      "text": "They fought from noon until night without settling anything. No winner, no loser."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tomimi",
+      "speakerId": "char_411_tomimi",
+      "isRemote": false,
+      "text": "They went until they'd used all their strength, and afterwards, both of them got dragged off by the others."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tomimi",
+      "speakerId": "char_411_tomimi",
+      "isRemote": false,
+      "text": "That's the story of the first time Gavial joined the ceremony."
     },
     {
       "type": "choice",
@@ -401,45 +450,49 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Tomimi",
-          "speakerId": "char_411_tomimi",
-          "text": "Zumama was someone from a different tribe, but she was fairly close."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Tomimi",
-          "speakerId": "char_411_tomimi",
-          "text": "Back when they were young, she and Gavial fought a lot. Gavial was stronger than her, but it wasn't like Zumama never won."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Tomimi",
-          "speakerId": "char_411_tomimi",
-          "text": "But then Gavial said Zumama just stopped caring about fighting for some reason. She started researching machines instead."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Tomimi",
-          "speakerId": "char_411_tomimi",
-          "text": "And I remember that day was the last time Zumama and Gavial ever fought."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Tomimi",
-          "speakerId": "char_411_tomimi",
-          "text": "After that, Zumama barely even showed her face anywhere. Eventually, her tribe moved away, and I never saw her again."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Tomimi",
-          "speakerId": "char_411_tomimi",
-          "text": "Not even at that final mess of a ceremony before Gavial left. She never came."
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tomimi",
+      "speakerId": "char_411_tomimi",
+      "isRemote": false,
+      "text": "Zumama was someone from a different tribe, but she was fairly close."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tomimi",
+      "speakerId": "char_411_tomimi",
+      "isRemote": false,
+      "text": "Back when they were young, she and Gavial fought a lot. Gavial was stronger than her, but it wasn't like Zumama never won."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tomimi",
+      "speakerId": "char_411_tomimi",
+      "isRemote": false,
+      "text": "But then Gavial said Zumama just stopped caring about fighting for some reason. She started researching machines instead."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tomimi",
+      "speakerId": "char_411_tomimi",
+      "isRemote": false,
+      "text": "And I remember that day was the last time Zumama and Gavial ever fought."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tomimi",
+      "speakerId": "char_411_tomimi",
+      "isRemote": false,
+      "text": "After that, Zumama barely even showed her face anywhere. Eventually, her tribe moved away, and I never saw her again."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tomimi",
+      "speakerId": "char_411_tomimi",
+      "isRemote": false,
+      "text": "Not even at that final mess of a ceremony before Gavial left. She never came."
     },
     {
       "type": "choice",
@@ -449,60 +502,66 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Gavial",
-          "speakerId": "char_187_ccheal",
-          "text": "I'm back."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Tomimi",
-          "speakerId": "char_411_tomimi",
-          "text": "Gavial! You're okay, right?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Gavial",
-          "speakerId": "char_187_ccheal",
-          "text": "I'm fine. Tch. Kay's got a hell of a pair of legs. Just ran off and disappeared out of sight."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Gavial",
-          "speakerId": "char_187_ccheal",
-          "text": "But knowing how well she can fend for herself, I'm not worried. Tomimi, did Zumama get here yet?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Tomimi",
-          "speakerId": "char_411_tomimi",
-          "text": "Not yet."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Archosauria",
-          "speakerId": "avg_npc_070",
-          "text": "Who else will challenge me?!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "char_416_zumama",
-          "text": "I will."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Gavial",
-          "speakerId": "char_187_ccheal",
-          "text": "Hmm? Looks like I came back at just the right time."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Gavial",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "I'm back."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tomimi",
+      "speakerId": "char_411_tomimi",
+      "isRemote": false,
+      "text": "Gavial! You're okay, right?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Gavial",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "I'm fine. Tch. Kay's got a hell of a pair of legs. Just ran off and disappeared out of sight."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Gavial",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "But knowing how well she can fend for herself, I'm not worried. Tomimi, did Zumama get here yet?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Tomimi",
+      "speakerId": "char_411_tomimi",
+      "isRemote": false,
+      "text": "Not yet."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Archosauria",
+      "speakerId": "avg_npc_070",
+      "isRemote": false,
+      "text": "Who else will challenge me?!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "char_416_zumama",
+      "isRemote": false,
+      "text": "I will."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Gavial",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "Hmm? Looks like I came back at just the right time."
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": [

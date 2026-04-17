@@ -6,26 +6,40 @@
   "title": "그녀의 그림자",
   "storyCode": "FC-8",
   "avgTag": "작전 전",
-  "sourcePath": "vendor/ArknightsGamedata/kr/gamedata/story/activities/act22side/level_act22side_08_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/kr/gamedata/story/activities/act22side/level_act22side_08_beg.txt",
   "sourceHash": "ed82a605a1e1e6f7aa913efbc830a19dc46f32c987e99f1331c39506eba64093",
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "34_g7_galekingruins"
+    },
+    {
       "type": "dialogue",
       "speakerName": "타라 유랑민",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "이럴 줄 알았어. 그 녀석들이 이렇게 재앙으로 박살난 돌더미 속까지 찾아볼 리가 없지."
     },
     {
       "type": "dialogue",
       "speakerName": "타라 유랑민",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "아침에 안개가 껴서 다행이야, 덕분에 쉽게 빠져나왔어."
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "앗, 조심해. 지금 우리는 아무런 보호 장비도 없어서 여기에서 다치게 되면 감염될 위험이 있어."
     },
     {
@@ -35,84 +49,98 @@
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "모란, 너도 마찬가지야. 오리지늄 다발 지역은 감염자에게 더더욱 위험하거든."
     },
     {
       "type": "dialogue",
       "speakerName": "모란",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "네, 조심할게요."
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "……캐리언은 잠든 거야?"
     },
     {
       "type": "dialogue",
       "speakerName": "모란",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "네. 호흡이 안정적인 걸 보니, 기절한 게 아니라 잠든 것 같아요. 자는 동안엔 어느 정도 고통을 덜 수 있을 거예요."
     },
     {
       "type": "dialogue",
       "speakerName": "모란",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "……그래도 아직 좀 불안하네요. 슬슬 캐리언의 상처를 치료하지 않으면 버티기 힘들 텐데."
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "그래."
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "……다들, 실망했어?"
     },
     {
       "type": "dialogue",
       "speakerName": "모란",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "아니에요. 당신이 그랬잖아요? 두 번째 '리더'를 원하지 않는 더블린이 있는 한, 우린 더블린과 싸울 수밖에 없다고요."
     },
     {
       "type": "dialogue",
       "speakerName": "모란",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "그래도 더블린에게는 더 큰 목표가 있으니, 우릴 계속 쫓아오진 않을 거예요."
     },
     {
       "type": "dialogue",
       "speakerName": "모란",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "이렇게 도망쳐 다니는 생활은 익숙하니까, 견딜 수 있어요."
     },
     {
       "type": "dialogue",
       "speakerName": "모란",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "하지만 그다음은요? 당신은 아직 우리에게 당신의 생각을 알려주지 않았어요."
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "미안, 나도 아직은 확신이 없어."
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "참, 어쩌면 폐허 깊은 곳에 오리지늄 결정이 적은 장소가 있을지도 몰라. 은신처로 사용할 수 있는 곳이 있는지 가보고 싶어."
     },
     {
@@ -122,42 +150,49 @@
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "다들 이만 휴식도 해야 하고."
     },
     {
       "type": "dialogue",
       "speakerName": "모란",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "하지만 저쪽엔 사람이 있지 않나요?"
     },
     {
       "type": "dialogue",
       "speakerName": "모란",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "평범한 사람처럼 보일지도 모르지만, 피해야 해요. 전에 당신이 말했던 것처럼, 이런 곳에 사람이 있는 건 너무 수상하잖아요. 최대한 조심해요……"
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "……그럴 필요 없어."
     },
     {
       "type": "dialogue",
       "speakerName": "모란",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "……안색이 좋지 않은데, 무슨 일 있어요?"
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "아니야, 걱정하지 않아도 돼."
     },
     {
@@ -167,24 +202,28 @@
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "(……이 주변에 왔다 간 건가?)"
     },
     {
       "type": "dialogue",
       "speakerName": "타라 유랑민",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "이봐, 저기 저 사람, 걷는 게 이상하지 않아?"
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "보지 마."
     },
     {
       "type": "dialogue",
       "speakerName": "타라 유랑민",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "엇…… 저 여자는……"
     },
     {
@@ -194,51 +233,63 @@
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "저 여자도 세상을 떠난 지 꽤 됐을 거야."
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "그저, 오리지늄 아츠가 몸을 조종하고 있는 것뿐이지. 우리가 전에 봤던 더블린 병사들처럼."
     },
     {
       "type": "dialogue",
       "speakerName": "모란",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "왜 평범한 사람을 조종하는 걸까요?"
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "그건 나도 몰라."
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "……따라 와, 오리지늄 아츠에 조종당하는 망자들은 내가 상대할게."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "여긴 상당히 어두워, 돌계단을 따라서 내려갈 때 오리지늄 결정 조각에 긁히지 않도록 조심해…… 모란, 캐리언을 업고 움직이는 게 힘들진 않아?"
     },
     {
       "type": "dialogue",
       "speakerName": "모란",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "전 괜찮아요. 당신의 불꽃 덕분에, 주변에 뭐가 있는지 정도는 알 수 있으니까요."
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "좋아. 최대한 심층부로 이동하자. 이동 중에 너무 큰 소리가 나지 않도록 조심하고."
     },
     {
@@ -248,12 +299,14 @@
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "모란",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "이건……"
     },
     {
@@ -267,11 +320,19 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "34_g8_galekingruins_inside"
+    },
+    {
       "type": "narration",
       "text": "이 멸망한 왕조에 대해, 용맹한 전사들이 남긴 무구들이 회색 뼈 사이사이에 가득 쌓여 있을 것이라 생각하는 사람이 있는가 하면, 낡고 음침한 장치 속에 황금 왕관이 숨겨져 있을 것이라 생각하는 사람도 있다.\n현대 런디니움의 높은 성벽과 비교하며 왕성의 웅장함에 관해 논하는 사람이 있는가 하면, 한없이 넓은 크래스딘 내해에 빗대어 영웅 시대의 미덕과 번영에 관해 논하는 사람도 있으며, 옛 왕조가 빅토리아의 그림자 아래서 날이 갈수록 침식되어 가는 것을 한탄하는 사람도 있다.\n사람들은 이 고성을 타라인들의 비통함의 묘비이자, 증오의 망령이라고 생각한다."
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "34_g8_galekingruins_inside"
     },
     {
       "type": "narration",
@@ -284,48 +345,56 @@
       "type": "dialogue",
       "speakerName": "타라 유랑민",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "이건 얼마나 오래됐을까? 한 오백 년? 아니면 천 년?"
     },
     {
       "type": "dialogue",
       "speakerName": "모란",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "쉿…… 캐리언이 깨겠어요."
     },
     {
       "type": "dialogue",
       "speakerName": "타라 유랑민",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "미안…… 조금 놀랐을 뿐이야. 아니, 사실은 엄청 놀랐어."
     },
     {
       "type": "dialogue",
       "speakerName": "타라 유랑민",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "솔직히 말해서, 우린 매년 게일 왕의 새로운 이야기를 연극으로만 접하고 있긴 하지만, 나도 우리가 타라 왕국 백성의 후손이라서 타라인으로 불린다는 사실 정도는 잘 알고 있어……"
     },
     {
       "type": "dialogue",
       "speakerName": "모란",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "……하지만 예전 사람들은 이런 것들이 정말로 존재한다는 걸 믿지 않았어요."
     },
     {
       "type": "dialogue",
       "speakerName": "모란",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "심지어 모든 타라 전사들의 무기들을 녹여, 왕조의 운명을 뒤집었다는 전설의 용광로도 있어요."
     },
     {
       "type": "dialogue",
       "speakerName": "모란",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "……아주 오래전, 음유시인을 찾아 다니는 사람을 만난 적이 있었는데요."
     },
     {
       "type": "dialogue",
       "speakerName": "모란",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "그 사람이 그랬어요. 전설은 대부분 후대 사람들에 의해 만들어졌지만, 그 이야기 속엔 반드시 역사의 흔적이 담겨 있다고요."
     },
     {
@@ -335,36 +404,42 @@
       "type": "dialogue",
       "speakerName": "모란",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "리드 씨도 분명 많은 것을 알고 있을 거예요, 그렇죠?"
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "모란",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "여기가 별로 마음에 안 드나 봐요? 이곳에 온 뒤론 한마디도 하지 않네요."
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "……그럴지도 모르겠어."
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "어릴 때 난 타라의 옛이야기들을 읽으며 잠에 들곤 했어."
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "빅토리아 왕실을 위해 글을 쓰는 사람도, 타라 문명을 보존하기 위해 글을 쓰는 사람도 공통적으로 “드라코는 싸움을 위해 태어났다”라는 내용의 글을 썼어."
     },
     {
@@ -378,12 +453,14 @@
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "타라의 역사는 이런 이야기들로 가득해. 드라코의 왕성은 사실 음모와 피로 가득했던 거야."
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "난 이곳에 대한 동경이나 환상보다…… 두려움이 더 많아."
     },
     {
@@ -393,43 +470,57 @@
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "……그건 그렇고, 여긴 오리지늄 결정이 거의 안 보이네."
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "여기서 쉬면 안전할 거야."
     },
     {
       "type": "dialogue",
       "speakerName": "타라 유랑민",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "그거 좋은 소식이네. 모란, 내가 캐리언을 내려 줄게."
     },
     {
       "type": "dialogue",
       "speakerName": "모란",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "여기, 바람이 없는 곳에 눕히세요."
     },
     {
       "type": "dialogue",
       "speakerName": "모란",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "벽이 아주 단단해요. 위치도 은밀하고요. 여기라면 밤에 불을 지펴도 바깥 사람들한테 들키지 않을 거예요."
     },
     {
       "type": "dialogue",
       "speakerName": "타라 유랑민",
       "speakerId": "avg_npc_242",
+      "isRemote": false,
       "text": "어, 리드는 왜 저기서……"
     },
     {
       "type": "dialogue",
       "speakerName": "모란",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "둘러보게 놔두세요."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "34_g8_galekingruins_inside"
     },
     {
       "type": "sceneBreak"
@@ -438,6 +529,7 @@
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -454,6 +546,7 @@
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "이건…… 작동하고 있는 건가?"
     },
     {
@@ -463,12 +556,14 @@
       "type": "dialogue",
       "speakerName": "로흐시니",
       "speakerId": "avg_226_weed_1",
+      "isRemote": false,
       "text": "이건 누구나 작동시킬 수 있는 물건이야…… 그냥 누군가가 다시 불을 붙였을 뿐이지, 왜 이상하게 생각하는 거야?"
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "……그래, 그녀가 이곳에 왔었어도 이상한 일은 아니지."
     },
     {
@@ -485,90 +580,105 @@
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "여긴 과거에 왕성이었으니까, 분명 왔을 거야…… 그리고는 비웃었겠지? 전설 속 왕이 남긴 물건이 겨우 이런 것뿐이냐면서."
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "주변에 안식을 얻지 못한 망자들이 많았던 이유는, 바로 여기에 그녀의 불길이 타오르고 있기 때문이었어."
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "그저 이 주변에서 길을 잃고 목말라 죽은 방랑자들일 뿐이었는데, 아무런 이유도 없이 죽음의 불길에 의해 불려 나왔던 거야."
     },
     {
       "type": "dialogue",
       "speakerName": "로흐시니",
       "speakerId": "avg_226_weed_1",
+      "isRemote": false,
       "text": "안 돼…… 다가가지 마."
     },
     {
       "type": "dialogue",
       "speakerName": "로흐시니",
       "speakerId": "avg_226_weed_1",
+      "isRemote": false,
       "text": "너도 그 불길을 두려워하고 있잖아?"
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "로흐시니",
       "speakerId": "avg_226_weed_1",
+      "isRemote": false,
       "text": "이제 알겠다. 넌 그 불길을 꺼뜨리고 싶은 거구나."
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "……그래, 그 불길은 많은 사람들에게 고통을 안겨 줄 테니까."
     },
     {
       "type": "dialogue",
       "speakerName": "로흐시니",
       "speakerId": "avg_226_weed_1",
+      "isRemote": false,
       "text": "하지만 그게 정말 네 생각이라면, 난 널 보낼 수 없어."
     },
     {
       "type": "dialogue",
       "speakerName": "로흐시니",
       "speakerId": "avg_226_weed_1",
+      "isRemote": false,
       "text": "그녀가 피운 건 더블린의 불길이야. 너도 알잖아, 네가 같은 불길을 다시 피워 낼 방법은 없어."
     },
     {
       "type": "dialogue",
       "speakerName": "로흐시니",
       "speakerId": "avg_226_weed_1",
+      "isRemote": false,
       "text": "그녀는 수많은 악행을 저질렀고, 허울 좋은 거짓말도 수없이 반복했지만, 그건 어쩔 수 없는 일이었어. 그녀는 성인과 폭도, 귀족이나 천민 모두 가릴 것 없이 수천의 타라족에게 자신을 따라 달라고 호소했어."
     },
     {
       "type": "dialogue",
       "speakerName": "로흐시니",
       "speakerId": "avg_226_weed_1",
+      "isRemote": false,
       "text": "이런 건 네가 할 수 없는 일이야."
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "아니…… 나도 할 수 있어."
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "그 희생들이 반드시 필요한 일이었다는 말은 믿지 않을 거야. 그녀의 방식이 아니더라도, 타라인들을 구할 방법은 분명 있으니까."
     },
     {
       "type": "dialogue",
       "speakerName": "로흐시니",
       "speakerId": "avg_226_weed_1",
+      "isRemote": false,
       "text": "하지만 아주 오래전, 오크 그로브 카운티에서 대화재가 나기 전부터 그녀는 이미 리더였어."
     },
     {
@@ -585,88 +695,106 @@
       "type": "dialogue",
       "speakerName": "로흐시니",
       "speakerId": "avg_226_weed_1",
+      "isRemote": false,
       "text": "그리고 넌 결국, 그 누구에게도 손을 내밀지 않았지."
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "응. 내가 그녀에게 손을 내밀었다면, 상황이 달라졌을지도 몰라."
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "내가 그때 그녀를 구했더라면…… 그녀가 방화 같은 악행 말고도 할 수 있는 일이 많다는 걸 배울 수 있었을 텐데."
     },
     {
       "type": "dialogue",
       "speakerName": "로흐시니",
       "speakerId": "avg_226_weed_1",
+      "isRemote": false,
       "text": "하지만 지금의 넌 자기가 가진 힘조차 두려워하고 있으니까, 타인이 네 힘을 조종하게 둘 수밖에 없었던 거야."
     },
     {
       "type": "dialogue",
       "speakerName": "로흐시니",
       "speakerId": "avg_226_weed_1",
+      "isRemote": false,
       "text": "……그러니 언니마저 너한테 실망했는데, 다른 사람이야 오죽할까."
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "……아니, 네 말은 틀렸어. 네가 말하고 있는 건 전부 지나간 일이야."
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "지금의 난, 기꺼이 다른 이의 손을 잡아 줄 수 있어."
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "내가 그들을 일으켜 세웠다고 말할 순 없겠지만, 그들이 앞으로 나아가길 원한다면, 내 불길이 길을 열어 줄 거야. 비록 그 길이 그들에게 끌려가는 길일지라도."
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "그녀가…… 그녀가 이 모습을 본다고 해도, 분명 실망하지는 않을 거야."
     },
     {
       "type": "dialogue",
       "speakerName": "'리더'",
       "speakerId": "avg_226_weed_1",
+      "isRemote": false,
       "text": "넌 단지 우연히 동료가 생겼을 뿐이야."
     },
     {
       "type": "dialogue",
       "speakerName": "'리더'",
       "speakerId": "avg_226_weed_1",
+      "isRemote": false,
       "text": "넌 그들 앞에서 마치 전투나 연설 같은 것들도 잘 해낼 수 있다는 듯 모두를 설득시켰지…… 네게 정말로 그럴 힘이 있기라도 한 것처럼 말이야."
     },
     {
       "type": "dialogue",
       "speakerName": "'리더'",
       "speakerId": "avg_226_weed_1",
+      "isRemote": false,
       "text": "하지만 사실 넌, 그녀를 흉내 내고 있을 뿐이야."
     },
     {
       "type": "dialogue",
       "speakerName": "'리더'",
       "speakerId": "avg_226_weed_1",
+      "isRemote": false,
       "text": "넌 그녀의 그림자일 뿐이야. 그녀는 모든 방면에서 정점을 찍을 능력이 있지만, 반대로 넌 항상 망설이며 약한 모습만을 보였잖아."
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "21_G5_victoria_street_n_ruins"
     },
     {
       "type": "narration",
@@ -676,81 +804,101 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "34_g8_galekingruins_inside"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "……난 후회하지 않아."
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "예전엔 늘 그녀가 옳다고 생각했어."
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "“타라인들이 꿈꾸는 나라를 만들기 위해서라면, 우리의 생명을 연료로 불 속에 던져져도 좋아……”"
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "난 그녀의 곁에서 항상 그렇게 말했었거든."
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "……하지만 그 연료가 다 타고 나면, 그 나라엔 대체 누가 남을까?"
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "난 망설이기도 했고, 반성하기도 했으며, 도망치기도 했어……"
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "난 후회하지 않아."
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "난 도망치던 와중에, 그녀가 보지 못한 많은 사람과 일들을 봤어. 내가 하고 싶은 말은 분명 그녀와 달라."
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "그러니까, 난 이제 더 이상 그녀를 떠올리면서 두려움에 떨지 않을 거야."
     },
     {
       "type": "dialogue",
       "speakerName": "리드",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "난 절대…… 그림자에 갇혀 있지만은 않겠어!"
     },
     {
       "type": "dialogue",
       "speakerName": "'리더'",
       "speakerId": "avg_226_weed_1",
+      "isRemote": false,
       "text": "이 왕성의 정체를 눈치챌 당시만 해도, 넌 두려워하고 있었잖아?"
     },
     {
       "type": "dialogue",
       "speakerName": "'리더'",
       "speakerId": "avg_226_weed_1",
+      "isRemote": false,
       "text": "너는 네 '동료'들이 어디로 향할지에 대해 대답할 수 없었지만, 속으론 이미 그에 대한 답을 알고 있었어."
     },
     {
       "type": "dialogue",
       "speakerName": "'리더'",
       "speakerId": "avg_226_weed_1",
+      "isRemote": false,
       "text": "내가 되지 않는다면, 넌 과연 더블린의 이상 속에서 제대로 네 자리를 찾을 수 있을까?"
     },
     {
@@ -760,10 +908,15 @@
       "type": "dialogue",
       "speakerName": "에블라나",
       "speakerId": "avg_npc_722_1",
+      "isRemote": false,
       "text": "……로흐시니, 네가 원하는 건 뭐야?"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "21_G6_decisivebattlealley_n"
     },
     {
       "type": "narration",
@@ -776,6 +929,7 @@
       "type": "dialogue",
       "speakerName": "로흐시니",
       "speakerId": "avg_226_weed_1",
+      "isRemote": false,
       "text": "……당장 멈춰……"
     },
     {
@@ -792,12 +946,14 @@
       "type": "dialogue",
       "speakerName": "로흐시니",
       "speakerId": "avg_226_weed_1",
+      "isRemote": false,
       "text": "더 이상 걷지마……"
     },
     {
       "type": "dialogue",
       "speakerName": "로흐시니",
       "speakerId": "avg_226_weed_1",
+      "isRemote": false,
       "text": "너희들은…… 편히 잠들어야 해!"
     },
     {
@@ -814,12 +970,14 @@
       "type": "dialogue",
       "speakerName": "로흐시니",
       "speakerId": "avg_226_weed_1",
+      "isRemote": false,
       "text": "……미안해, 언니. 미안해……"
     },
     {
       "type": "dialogue",
       "speakerName": "로흐시니",
       "speakerId": "avg_226_weed_1",
+      "isRemote": false,
       "text": "언니의 아츠를 파괴할 생각은 없었는데……"
     },
     {
@@ -829,6 +987,7 @@
       "type": "dialogue",
       "speakerName": "에블라나",
       "speakerId": "avg_npc_722_1",
+      "isRemote": false,
       "text": "……잘했어, 로흐시니."
     },
     {
@@ -845,24 +1004,28 @@
       "type": "dialogue",
       "speakerName": "에블라나",
       "speakerId": "avg_npc_722_1",
+      "isRemote": false,
       "text": "정말 잘했어. 너의 불길은 이토록 눈부시구나."
     },
     {
       "type": "dialogue",
       "speakerName": "에블라나",
       "speakerId": "avg_npc_722_1",
+      "isRemote": false,
       "text": "난 항상 생각했어, 어떻게 해야 네가 자신의 힘을 끌어내고, 다른 사람들의 주목을 받을 수 있을지."
     },
     {
       "type": "dialogue",
       "speakerName": "에블라나",
       "speakerId": "avg_npc_722_1",
+      "isRemote": false,
       "text": "로흐시니, 다시 한번 나에게 너의 재능을 보여줘, 네가 내 불길을 물리칠 수 있는 가능성이 있다는 걸."
     },
     {
       "type": "dialogue",
       "speakerName": "에블라나",
       "speakerId": "avg_npc_722_1",
+      "isRemote": false,
       "text": "사랑하는 내 동생아, 네가 과연 날 이길 수 있을까?"
     },
     {

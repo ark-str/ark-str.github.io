@@ -6,10 +6,14 @@
   "title": "得果",
   "storyCode": "HS-9",
   "avgTag": "戦闘後",
-  "sourcePath": "vendor/ArknightsGamedata/jp/gamedata/story/activities/act31side/level_act31side_09_end.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/jp/gamedata/story/activities/act31side/level_act31side_09_end.txt",
   "sourceHash": "2c4875d57460db58f2c9d552e9461137d5ee85483b383da8bb1bf5f2b7b13e14",
   "bodyAvailable": true,
   "blocks": [
+    {
+      "type": "background",
+      "backgroundId": "bg_snow_2"
+    },
     {
       "type": "narration",
       "text": "この雪を誰が予想できただろう？\n田のあぜが絶望の白で分厚く覆われて、ぽつりぽつりと見える黄色は、月初めに植えたばかりの麦が苦しそうに出した頭だ。\n十日後にどれだけ生き残れるのか？　想像するのも恐ろしい。\n一匹の鼷獣が駆け回り、よろよろとこの静かな麦畑にやってきた。\n目の前のまばらな作物は思いがけない贈り物だ。鼷獣は慎重に匂いを嗅ぎ、自分の腹を半分満たすのにどれだけいるか、そして穴に持ち帰り同族に食べさせるにはどれだけいるか考えていた。"
@@ -28,40 +32,50 @@
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": null,
+      "isRemote": false,
       "text": "なんと哀れなことだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": null,
+      "isRemote": false,
       "text": "天気は移ろうもの、こういう時もあるわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": null,
+      "isRemote": false,
       "text": "これらの麦がこの雪で死んでしまえば、来年はどれだけの者が飢饉で死ぬ？"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": null,
+      "isRemote": false,
       "text": "たくさんよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": null,
+      "isRemote": false,
       "text": "でも彼らを助けてくれる人もたくさんいる。たくさんの人が、生き残るわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": null,
+      "isRemote": false,
       "text": "生命そのものが絶えはしない。"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "47_g16_beautifulland"
     },
     {
       "type": "narration",
@@ -74,181 +88,226 @@
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "ニェン、手を引きなさい。"
     },
     {
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "この心臓を作り上げる手伝いをするにもだいぶ骨を折ったのです。ここで戦って壊してしまえば、これまでの努力がどれだけ無駄になるでしょう？"
     },
     {
       "type": "dialogue",
       "speakerName": "ニェン",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "オメーだって無駄話してる暇はねーんじゃねーの。さっき爆竹がぶち当たりそうだったじゃねーか。"
     },
     {
       "type": "dialogue",
       "speakerName": "シー",
       "speakerId": "avgnew_2015_dusk_1",
+      "isRemote": false,
       "text": "私の絵の中で暴れ回ってる時の元気さはどこ行ったのよ？　大きなハサミでも作ってこいつの布を引き裂けないわけ？"
     },
     {
       "type": "dialogue",
       "speakerName": "ニェン",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "そっちこそもっと踏ん張れよ！　オメーの絵がアイツに刺繍にされかけてるぞ！"
     },
     {
       "type": "dialogue",
       "speakerName": "シー",
       "speakerId": "avgnew_2015_dusk_1",
+      "isRemote": false,
       "text": "人のこと言えるの――？"
     },
     {
       "type": "dialogue",
       "speakerName": "ニェン",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "ちと厄介だな。デカい爆竹を作ったそばから糸にされちまう。前からこんなことできたか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ニェン",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "てっきりここ数年は、能力の鍛錬なんてやる気ないのかと思ってたぜ。"
     },
     {
       "type": "dialogue",
       "speakerName": "シー",
       "speakerId": "avgnew_2015_dusk_1",
+      "isRemote": false,
       "text": "でもどうして、あいつは私たちの能力にこんな詳しいの……"
     },
     {
       "type": "dialogue",
       "speakerName": "シー",
       "speakerId": "avgnew_2015_dusk_1",
+      "isRemote": false,
       "text": "待って、あいつ、本当に一人なの？"
     },
     {
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "そろそろ時間です……"
     },
     {
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "せっかくこうして集まったのですから、本当はもっとおしゃべりしたかったですが、時間が迫っていましてね。お先に失礼させていただきます。"
     },
     {
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "本当は戦いたくはありませんでした。次会う機会があれば、詫びましょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "もし機会があれば、ですが……"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
+      "type": "background",
+      "backgroundId": "47_g10_fairyfarmland_ex"
+    },
+    {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "妹にも容赦なく手を出すなんて、とんでもないわね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ニェン",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "シュウ姉？"
     },
     {
       "type": "dialogue",
       "speakerName": "ニェン",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "このまま消えちまうわきゃないとは思ってたけど……ほんとに何ともないのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "シー",
       "speakerId": "avgnew_2015_dusk_1",
+      "isRemote": false,
       "text": "わざとあんなことして脅かしてきたなら許さないから……"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "久しぶりに少し長い夢を見てたとでも思ってちょうだい。ごめんなさいね、心配かけちゃって。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "やっぱりこの弟を見に来ないとと思ってね。せっかく帰ってきたと思ったらこんな騒ぎを起こして、ここを一体何だと思ってるの？"
     },
     {
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "……姉さん。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "あなたは昔から間違ったことをした時、いつもその表情をするわよね。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "いつぶりかしら？"
     },
     {
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "……丸六十七年です。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "なら今日は残ってご飯を食べていきなさい。話があるなら、食卓でゆっくりしましょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "ごめん、姉さん。今回は言うことを聞けません。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "もう一人の言うことを聞いたからでしょうね……"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "ずっと隠れている例の人は、いつまで避け続けるつもりなの？"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "話があるなら、直接私に言えばいいじゃない？"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "47_g9_fairyfarmland"
+    },
+    {
+      "type": "background",
+      "backgroundId": "47_g10_fairyfarmland_ex"
     },
     {
       "type": "narration",
@@ -261,195 +320,231 @@
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "やっと姿を現す気になったのね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "これだけの人数が揃うのは……本当に賑やかだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "お前たち、まだここで騒ぐつもりか？"
     },
     {
       "type": "dialogue",
       "speakerName": "シー",
       "speakerId": "avgnew_2015_dusk_1",
+      "isRemote": false,
       "text": "――！"
     },
     {
       "type": "dialogue",
       "speakerName": "シー",
       "speakerId": "avgnew_2015_dusk_1",
+      "isRemote": false,
       "text": "こいつ、もう狂ったんじゃなかったの？"
     },
     {
       "type": "dialogue",
       "speakerName": "ニェン",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "このホームパーティーの雰囲気は、想像してたのとちげーな……"
     },
     {
       "type": "dialogue",
       "speakerName": "ニェン",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "映画の中だと、指名手配されてる家族が突然家に現れたらどうするんだっけか？"
     },
     {
       "type": "dialogue",
       "speakerName": "シー",
       "speakerId": "avgnew_2015_dusk_1",
+      "isRemote": false,
       "text": "これは本人なの、それともただの影？"
     },
     {
       "type": "dialogue",
       "speakerName": "ニェン",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "囲碁バカが今何をしようともう驚かなくなったな。もしここでまた歳相に出てこられたら、さすがに笑えねーけどな……"
     },
     {
       "type": "dialogue",
       "speakerName": "ニェン",
       "speakerId": "avgnew_2014_nian_1",
+      "isRemote": false,
       "text": "どうする、シュウ姉。ほんとにやるか？"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "尚蜀、玉門、それとここ……あなた、やり過ぎだとは思わないの？"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "小を捨てて大に就き、各々が必要なものを得る。それだけだろう。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "災害に遭った外の田畑を、苦しみを受けた民草を見なさい……その言葉を聞いて、はいそうですかと終わりにすることなんてできないわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "よくよく、この件が誰に咎があるかはまだ分からない。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "なら残って、ちゃんと結論を出してちょうだい。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "この件は、千年前からすでに始まっている。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_snow_2"
+    },
+    {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "あなたがここに来るなんて、珍しいわね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "私にも、私のやるべきことがある……北の戦事、陣を敷くには、前線に身を置かねばならん。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "「白骨野に露れ、千里羽鳴無し。」"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "毎年戦に赴いたところで、結局、この田のあぜにいる民草が苦しんだだけだわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "お前は、あの者たちをとても気にかけているな。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "あなたの言う弱い種族は、私たちにとって本当の意味での師よ。私たちは彼らの様子を真似て、興味を引かれるものをみつけて、ようやく世における自分の位置を見つけたの。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "私らとあの者たちとは、結局のところ異なる。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "どれだけ違うというの？"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "巨獣は万年の命を持ち、カゲロウは朝生暮死でも、もとをたどればいずれもこの天地に生きる生命でしょう。生命であれば、終わりはあるわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "戦争と殺戮、なぜよりによってそれを選んだの？　あなたは一体そこから何を見出したの？"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "規則と秩序だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "最近「囲碁」という遊戯を学んだ。規則は簡単だが、原理は兵法と相通ずるものがある。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "これにより、私はより明確に一つの道理を理解した。雑多な世は一見混沌で無秩序だが、その規則を把握すれば、最終的な結末を読むことができる。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "私たち皆が気にかけている終局図を。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -459,84 +554,98 @@
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "この静寂……これが、お前が見る終わりか。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "私たちだけではないわ。この大地における、あらゆる生き物にとってのよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "なんと皮肉だろうか。滅びることが「果」であるなど、まさか「生命」そのものこそが「因」だと？"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "お前はずっとここで見守っているが、嫌気は差さないのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "この世の万物が愛すべきものよ。今この瞬間のその姿が。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "万物には時があるの。人、獣、山水や草木のすべてがそう。これが人々の言う「道」よ。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "春草は年々緑なり。私たちは来て、存在した。それではまだ足りないのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "それゆえにお前は、このような結末を受け入れたか。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "あなたは、そうは思っていないのね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "私はただ……"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "私たちはいつ、真に自分として生きたことがあったのかと考えていただけだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "まさか……"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "長らく考え……長らく手を読んでいた……"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "そしてついに……別の結末を見たのだ。"
     },
     {
@@ -547,6 +656,7 @@
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "お前には見えるはずだ、シュウ。"
     },
     {
@@ -557,166 +667,204 @@
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "私の運命を、見てくれるか。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "「孤宿二つとして無し。劫数茫茫として、九死に一生を得。」"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "それは楽しみだ……期待をして待っていよう。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "25_g08_pavilion"
+    },
+    {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "……お前は彼女と再会したか？"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "それは不可能なことだと分かっているでしょ。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "よく彼女を思い出すわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "彼女は「教え有りて類無し」と言っていた。天下の誰もが読み書きできることを望んだ……学府や書の全てが彼女が残した痕跡よ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "お前たちは、この面でよく似ているな。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "だがここ数年、私は多くのことを忘れてしまった……彼女に関する多くのことを。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "彼女がどんな書を書いたのか、そしてこの一文字の真名の意味を……"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "彼女と、かつて対局したことははっきりと覚えているが、対局の中で私に何を伝えたかったのか、今ではどうしても思い出せなくなってしまった。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "私はてっきり……"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "そうだ……たとえ同じ「私」たちであっても、このような影響から逃れられないのだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "あなたは後悔しているのね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "解法を見つけたいのだ……"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "35_g3_yumenobservationtower_n"
+    },
+    {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "自分を百八十一に分けたあなたのことを、誰もが……狂ったと思っている。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "かもしれんな……"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "どうしたいの？"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "あの肉体の中に戻りたい。私にはアレの力が必要だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "アレを殺し、アレになる。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "アレの力を用い、この天下の数多の生命のために「大利」を図るのだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "命を失うわよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "だがお前たちは生き残るのだ。真の自分として……"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "シュウ、お前の力を借りたい。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "我々十二人、一人の力が増えれば、勝機もいくらか増える。"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "47_g10_fairyfarmland_ex"
     },
     {
       "type": "narration",
@@ -726,120 +874,140 @@
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "これが、お前の答えか。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "これがあなたの因果よ。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "もしあなたが道を間違えずに、確かにその終わりに向かって歩んでいるのなら、この種は適切な時に芽を出し、あなたの望んだ実を結ぶでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "お前も課題を出してくるようになった、か。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "いつまでも、あなたから意地悪されてばかりじゃいられないでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "ふっ……"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "こっちの話は終わった。用があるなら、自分で話せ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "ほんと成長したわね。一人でなんでもやれるようになったの？"
     },
     {
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "私はもう千歳ですよ……姉さん。"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "私じゃあなたを止められないわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "前回行く時は大喧嘩をしてしまいましたね。今回は思い出に何か頂けませんか？"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "大荒城全体をあの錦に織り込んでいるでしょ、これ以上何を持っていこうっていうの？"
     },
     {
       "type": "dialogue",
       "speakerName": "シュウ",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "もし何か名残惜しいものがあるなら、生きて戻ってきて自分でどうにかなさい。"
     },
     {
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "それもそうですね……"
     },
     {
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "シー、最後に一つ頂きたいものがあるのですが。"
     },
     {
       "type": "dialogue",
       "speakerName": "シー",
       "speakerId": "avgnew_2015_dusk_1",
+      "isRemote": false,
       "text": "なに？"
     },
     {
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "あの絵を、今頂けますか？"
     },
     {
       "type": "dialogue",
       "speakerName": "シー",
       "speakerId": "avgnew_2015_dusk_1",
+      "isRemote": false,
       "text": "なんでそれを――"
     },
     {
       "type": "dialogue",
       "speakerName": "シー",
       "speakerId": "avgnew_2015_dusk_1",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -849,12 +1017,14 @@
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "きっと大切にします。"
     },
     {
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "ではこの帳簿、今日のところは帳尻が合ったということで。"
     },
     {
@@ -864,6 +1034,7 @@
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "誰が行っていいと言ったの？"
     },
     {
@@ -873,30 +1044,35 @@
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "お前か……"
     },
     {
       "type": "dialogue",
       "speakerName": "「老天師」",
       "speakerId": "avg_npc_1238_1",
+      "isRemote": false,
       "text": "歳の次男！　*炎国スラング*、どうせあんただろうって思ってたわよ！"
     },
     {
       "type": "dialogue",
       "speakerName": "「老天師」",
       "speakerId": "avg_npc_1238_1",
+      "isRemote": false,
       "text": "じっとしておけばいいのに、荒れ寺の中で碁をやらずに、今度は私の縄張りまで騒ぎ立てに来たの？"
     },
     {
       "type": "dialogue",
       "speakerName": "「老天師」",
       "speakerId": "avg_npc_1238_1",
+      "isRemote": false,
       "text": "あんたたちここで騒ぎを起こして、どれだけの作物を踏みにじったと思ってんのよ！　今日こそひっぱたいてやるわ！"
     },
     {
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "危ない！"
     },
     {
@@ -910,6 +1086,7 @@
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -919,75 +1096,91 @@
       "type": "dialogue",
       "speakerName": "「老天師」",
       "speakerId": "avg_npc_1238_1",
+      "isRemote": false,
       "text": "逆分解アーツ？　いつ学んだの……いえ……これは「因果」？"
     },
     {
       "type": "dialogue",
       "speakerName": "「老天師」",
       "speakerId": "avg_npc_1238_1",
+      "isRemote": false,
       "text": "ふっ……あと石はどれだけ残ってるのかしら。私の火をどれだけ防げる？"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "天師……今は手を出す時ではないだろう。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "天機閣は甚大な被害をこうむり、お前に万一のことがあれば、炎国北の防衛線は揺らぐこととなる。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "炎国北境で虎視眈々とこの国を狙っているのは、あの悪魔の穢れだけではないだろう。"
     },
     {
       "type": "dialogue",
       "speakerName": "「老天師」",
       "speakerId": "avg_npc_1238_1",
+      "isRemote": false,
       "text": "ビビらそうとしてんじゃないわよ！　今日は絶対にあんたを懲らしめてやるんだからね！"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "では、お前と一緒にいるあの長命者たちのことも、どうでもよいのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "「老天師」",
       "speakerId": "avg_npc_1238_1",
+      "isRemote": false,
       "text": "あんた……"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "ふっ……精神が悪魔に侵されぬよう半狂乱のふりをしているが、どうやら、自分が本当に行うべきことは忘れていないようだな。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "利害損得によっては、お互いに協力の目がないとも限らない。"
     },
     {
       "type": "dialogue",
       "speakerName": "ウァン",
       "speakerId": "avg_npc_1237_1",
+      "isRemote": false,
       "text": "また会おう。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "47_g5_factory_inside"
+    },
+    {
       "type": "dialogue",
       "speakerName": "ワン侍郎",
       "speakerId": null,
+      "isRemote": false,
       "text": "終わった……のか……"
     },
     {
@@ -997,66 +1190,77 @@
       "type": "dialogue",
       "speakerName": "漂う女性",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "ええ、終わったわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "漂う女性",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "あなたはこのプロジェクトのために命まで懸けた。それは、どうして？"
     },
     {
       "type": "dialogue",
       "speakerName": "ワン侍郎",
       "speakerId": null,
+      "isRemote": false,
       "text": "……功を成し名を揚げて、人の上に立つため。"
     },
     {
       "type": "dialogue",
       "speakerName": "漂う女性",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "功を成し名を揚げた後はどうするの？"
     },
     {
       "type": "dialogue",
       "speakerName": "ワン侍郎",
       "speakerId": null,
+      "isRemote": false,
       "text": "私には、夢があります……"
     },
     {
       "type": "dialogue",
       "speakerName": "ワン侍郎",
       "speakerId": null,
+      "isRemote": false,
       "text": "天の宮殿に届くほどの、万里の都市。この広い大地で、雨風をしのげぬ民草がいなくなれば、それで……"
     },
     {
       "type": "dialogue",
       "speakerName": "ワン侍郎",
       "speakerId": null,
+      "isRemote": false,
       "text": "偉業を成せねば、天師の名に恥じるというもの……"
     },
     {
       "type": "dialogue",
       "speakerName": "漂う女性",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "まさか高い地位に就き、万人の上に立たなければ、あなたの夢の都市を作るのに微力を尽くせないとでもいうの？"
     },
     {
       "type": "dialogue",
       "speakerName": "ワン侍郎",
       "speakerId": null,
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "ワン侍郎",
       "speakerId": null,
+      "isRemote": false,
       "text": "あなたは……天上の仙人ですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "漂う女性",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "あなたの夢は、私が受け取っておくわ。あなたが担保にしていた命の代わりとしてね。"
     },
     {
@@ -1066,12 +1270,14 @@
       "type": "dialogue",
       "speakerName": "ワン侍郎",
       "speakerId": null,
+      "isRemote": false,
       "text": "（弱々しい呼吸）"
     },
     {
       "type": "dialogue",
       "speakerName": "ワン侍郎",
       "speakerId": null,
+      "isRemote": false,
       "text": "天上の白玉京、十二楼五城……仙人が我が頭を撫で、髪を結い長命のすべを授けた……"
     },
     {
@@ -1085,87 +1291,105 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "47_g2_desertedcityfield_n"
+    },
+    {
       "type": "dialogue",
       "speakerName": "通りすがりの農業天師",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "起きた？"
     },
     {
       "type": "dialogue",
       "speakerName": "ロン・ワンチィン",
       "speakerId": null,
+      "isRemote": false,
       "text": "これは……"
     },
     {
       "type": "dialogue",
       "speakerName": "通りすがりの農業天師",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "心配いらないわ。あの化け物たちはもう消えたから。"
     },
     {
       "type": "dialogue",
       "speakerName": "ロン・ワンチィン",
       "speakerId": null,
+      "isRemote": false,
       "text": "君が助けてくれたのか……？"
     },
     {
       "type": "dialogue",
       "speakerName": "通りすがりの農業天師",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "そんな大それたことはしてないわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "通りすがりの農業天師",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "通りかかった時にあなたが倒れているのを見かけたから、声を掛けたの。"
     },
     {
       "type": "dialogue",
       "speakerName": "ロン・ワンチィン",
       "speakerId": null,
+      "isRemote": false,
       "text": "……感謝する。"
     },
     {
       "type": "dialogue",
       "speakerName": "通りすがりの農業天師",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "あなたは大荒城の「郷長」だけど、全ての負担があなた一人の身にのしかかっているわけではないわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "通りすがりの農業天師",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "自らの命でもって、この場所の無事と交換するなんて、割に合う取引とは思えないわね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ロン・ワンチィン",
       "speakerId": null,
+      "isRemote": false,
       "text": "選択の余地などあるものか……大荒城が無事なら、それでいい。"
     },
     {
       "type": "dialogue",
       "speakerName": "通りすがりの農業天師",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "この場所を、とても大事に思っているのね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ロン・ワンチィン",
       "speakerId": null,
+      "isRemote": false,
       "text": "人生の大半をここで過ごし、とうにここに根を張った。大事に思わないことなどできない……"
     },
     {
       "type": "dialogue",
       "speakerName": "通りすがりの農業天師",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "……そう。"
     },
     {
       "type": "dialogue",
       "speakerName": "通りすがりの農業天師",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "どうか体に気をつけて。私は行くわ。"
     },
     {
@@ -1175,27 +1399,35 @@
       "type": "dialogue",
       "speakerName": "ロン・ワンチィン",
       "speakerId": "avg_npc_1240_1",
+      "isRemote": false,
       "text": "さようなら、シュウ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ロン・ワンチィン",
       "speakerId": "avg_npc_1240_1",
+      "isRemote": false,
       "text": "君はもう自由だ。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "47_g11_shuresearchoffice"
+    },
+    {
       "type": "dialogue",
       "speakerName": "ホーシェン",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "培養器、培養器……"
     },
     {
       "type": "dialogue",
       "speakerName": "ホーシェン",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "この稲はまだ助かる……実験にはまだ希望がある……"
     },
     {
@@ -1205,66 +1437,77 @@
       "type": "dialogue",
       "speakerName": "優しい女性",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "ここにいたのね……"
     },
     {
       "type": "dialogue",
       "speakerName": "ホーシェン",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "見つけた！"
     },
     {
       "type": "dialogue",
       "speakerName": "優しい女性",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "何を見つけたの？"
     },
     {
       "type": "dialogue",
       "speakerName": "ホーシェン",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "これは試験田の、「万頃」の実験で生き残った稲なんです。"
     },
     {
       "type": "dialogue",
       "speakerName": "ホーシェン",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "源石に汚染された土地での作物の栽培が不可能だとは限らない。先生の実験はついに実を結んだ――"
     },
     {
       "type": "dialogue",
       "speakerName": "ホーシェン",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "あ……"
     },
     {
       "type": "dialogue",
       "speakerName": "ホーシェン",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "あなたは……？"
     },
     {
       "type": "dialogue",
       "speakerName": "優しい女性",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "ホーシェン",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "その格好を見るに、あなたもここの天師府の指導天師ですか？　これまでにお会いしたことはありませんよね？"
     },
     {
       "type": "dialogue",
       "speakerName": "優しい女性",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "優しい女性",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "ええ……ここに来たばかりなの。"
     },
     {
@@ -1275,72 +1518,84 @@
       "type": "dialogue",
       "speakerName": "ホーシェン",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "僕は天師府の学生で、ホーシェンと言います。では、あなたのことも先生と呼ぶべきですね。"
     },
     {
       "type": "dialogue",
       "speakerName": "優しい女性",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "こんにちは、シャオホー……"
     },
     {
       "type": "dialogue",
       "speakerName": "ホーシェン",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "たった今、とても重要な作物を発見したんです……源石に汚染された土地でも成長する作物ですよ……"
     },
     {
       "type": "dialogue",
       "speakerName": "ホーシェン",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "これはずっとずっと研究してきたもので、この作物を普及させることさえできれば、使いものにならなかった多くの荒野を田畑にすることができます。そうすればもう飢える人はいなくなるんです……"
     },
     {
       "type": "dialogue",
       "speakerName": "ホーシェン",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "目標にはまだ時間がかかるかもしれません、しかもとても長い時間が。でも、少なくとも今は少しの希望が見えました……"
     },
     {
       "type": "dialogue",
       "speakerName": "優しい女性",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "なら、あなたは今後の時間をすべてこれに注いで後悔しない？"
     },
     {
       "type": "dialogue",
       "speakerName": "ホーシェン",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "はい！"
     },
     {
       "type": "dialogue",
       "speakerName": "優しい女性",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "そう。幸運を祈っているわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "優しい女性",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "頑張ってね、研究のお邪魔はしないでおきましょう。さようなら。"
     },
     {
       "type": "dialogue",
       "speakerName": "ホーシェン",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "えっ、もう行ってしまうんですか？　もっと紹介したかったのに。それか、アドバイスを頂きたかったのですが……"
     },
     {
       "type": "dialogue",
       "speakerName": "優しい女性",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "必要ないわ。あなたならばきっと目標を達成できると信じているもの。"
     },
     {
       "type": "dialogue",
       "speakerName": "優しい女性",
       "speakerId": "avg_2025_shu_1",
+      "isRemote": false,
       "text": "さようなら。"
     },
     {
@@ -1350,81 +1605,98 @@
       "type": "dialogue",
       "speakerName": "ホーシェン",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "え……？"
     },
     {
       "type": "dialogue",
       "speakerName": "ホーシェン",
       "speakerId": "avg_4119_wanqin_1",
+      "isRemote": false,
       "text": "あの先生、なんかどこかで見たことある気がするんだよな……"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "47_g3_fieldpath"
+    },
+    {
       "type": "dialogue",
       "speakerName": "聡明な商人",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "おじさん、荷物を運んでいるのですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "聡明な商人",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "今年の穀物の値は、どうですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "高齢の農家",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "不作だからな。去年より一斤当たり三文高い。"
     },
     {
       "type": "dialogue",
       "speakerName": "聡明な商人",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "最終的にポケットに入るお金は昨年より多いのでは？"
     },
     {
       "type": "dialogue",
       "speakerName": "高齢の農家",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "それが良いこととは思えんな。"
     },
     {
       "type": "dialogue",
       "speakerName": "高齢の農家",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "農作業ってのは人の腹を満たすためのものだ。農業で金儲けできるなんてのは聞いたことがない。"
     },
     {
       "type": "dialogue",
       "speakerName": "聡明な商人",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "一つ儲かる方法をお教えしましょう。食糧を売る際に、気に留めてみてください。"
     },
     {
       "type": "dialogue",
       "speakerName": "聡明な商人",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "栽培した作物は、出来の良いものに標準的な値を設定して近くで売り、評判を得るのです。出来が普通のものは高値に設定して、キャラバンを雇い遠くで売り、興味を持たせるのです。"
     },
     {
       "type": "dialogue",
       "speakerName": "高齢の農家",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "なんじゃそりゃ、聞いたことないぞ。"
     },
     {
       "type": "dialogue",
       "speakerName": "高齢の農家",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "一番良い出来のやつは当然家族や友人に取っておくぞ。普通の出来のやつは売りに行って、出来の悪いやつは飼料にするしかないだろうが。"
     },
     {
       "type": "dialogue",
       "speakerName": "高齢の農家",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "お前みたいな若者はずる賢いことばっか考えてるな。"
     },
     {
@@ -1434,6 +1706,7 @@
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -1443,168 +1716,196 @@
       "type": "dialogue",
       "speakerName": "「老天師」",
       "speakerId": "avg_npc_1238_1",
+      "isRemote": false,
       "text": "どこへ行くつもり？"
     },
     {
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "百灶です。"
     },
     {
       "type": "dialogue",
       "speakerName": "「老天師」",
       "speakerId": "avg_npc_1238_1",
+      "isRemote": false,
       "text": "こんな騒ぎを起こしておいて、何も言わずに出てくっての？"
     },
     {
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "そろそろ去らないとなりません。ですが、私はチョンユエ兄さんのような腕っぷしはないので、もし貴女に行かせる気がないのなら、私は当然ここを離れることはできないでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "本当に、私に行かせる気がなければの話ですね。"
     },
     {
       "type": "dialogue",
       "speakerName": "「老天師」",
       "speakerId": "avg_npc_1238_1",
+      "isRemote": false,
       "text": "一つだけ聞くわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "「老天師」",
       "speakerId": "avg_npc_1238_1",
+      "isRemote": false,
       "text": "あんたの言う炎国と取引をしたいっていうのは、初めから、この大荒城を建てる手助けをするつもりだったの？"
     },
     {
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "私は商人です。商売とは互いの利益を重んじるもの。一方のみが利を得るのであれば、それは強盗と何ら変わらないのでは？"
     },
     {
       "type": "dialogue",
       "speakerName": "「老天師」",
       "speakerId": "avg_npc_1238_1",
+      "isRemote": false,
       "text": "炎国全体を敵に回すつもりでないなら、なぜこんなことする必要があるのよ？"
     },
     {
       "type": "dialogue",
       "speakerName": "「老天師」",
       "speakerId": "avg_npc_1238_1",
+      "isRemote": false,
       "text": "あんたたち兄弟二人は、どうしても、炎国とやり合うところまで行かなきゃいけないの？"
     },
     {
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "何と言っても、私たちのあの姉妹は、殺されたのです。"
     },
     {
       "type": "dialogue",
       "speakerName": "「老天師」",
       "speakerId": "avg_npc_1238_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "炎国の民と我々に恨みも仇もないことは言うまでもありません。たとえウァン兄さんがこの天下を碁盤としたとて、棋士は長らく用いた碁の道具に思い入れがないわけではありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "ですが、朝廷に腰を下ろす影の中の数名は、自らの行いに代価を支払わねばなりません。"
     },
     {
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "この勘定は、きれいに清算されなければなりません。"
     },
     {
       "type": "dialogue",
       "speakerName": "「老天師」",
       "speakerId": "avg_npc_1238_1",
+      "isRemote": false,
       "text": "たとえそのために懸けるのが自分の命であっても？"
     },
     {
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "十二分の一の分身でもって全体に立ち向かうことは、そもそも九死に一生あるかもわかりませんよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "私の命も、帳簿で値を付け終わっています。"
     },
     {
       "type": "dialogue",
       "speakerName": "「老天師」",
       "speakerId": "avg_npc_1238_1",
+      "isRemote": false,
       "text": "ほんと狂ってるわね……"
     },
     {
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "遠い昔、貴女が我々兄弟姉妹を一人一人訪ねて質問し、各々に道を示してくれたことを、今でも覚えています。"
     },
     {
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "「あんたはこの炎国の大地で何を見た？」とね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "私の答えが変わったことはありません。きっとウァン兄さんも同じでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "「老天師」",
       "speakerId": "avg_npc_1238_1",
+      "isRemote": false,
       "text": "*炎国スラング*、初めからあんたとあの次男は、気にくわないのよ。道理を説いても言い負かせられないんだから、結局はあんたたちをぶん殴ってやることになるわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "あの兄は前からこういう気性ですよ。碁に負けると椀や杯を投げ捨てます。ですが身体が弱いので、そこまで激しくはありませんが。"
     },
     {
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "今回は少々やり過ぎましたが、どうか天師にはご勘弁いただきたいです。"
     },
     {
       "type": "dialogue",
       "speakerName": "「老天師」",
       "speakerId": "avg_npc_1238_1",
+      "isRemote": false,
       "text": "……さっさと消えなさい！"
     },
     {
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "ジー",
       "speakerId": "avg_npc_1236_1",
+      "isRemote": false,
       "text": "ではまた。"
     },
     {

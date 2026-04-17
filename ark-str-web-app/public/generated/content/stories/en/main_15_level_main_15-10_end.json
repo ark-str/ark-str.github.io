@@ -6,32 +6,40 @@
   "title": "Wake From a Long Dream",
   "storyCode": "15-11",
   "avgTag": "After Operation",
-  "sourcePath": "vendor/ArknightsGamedata/en/gamedata/story/obt/main/level_main_15-10_end.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/en/gamedata/story/obt/main/level_main_15-10_end.txt",
   "sourceHash": "235d6328517dcc43b30b53aa29ae38c9414a0bc04268b6b43ac83c939b745a15",
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "60_g11_rhodescanteen_origin"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Stormeye",
       "speakerId": "avg_npc_167",
+      "isRemote": false,
       "text": "Is the backup power online yet?"
     },
     {
       "type": "dialogue",
       "speakerName": "Sharp",
       "speakerId": "avg_npc_252",
+      "isRemote": false,
       "text": "The junction box broke. Try cutting off that damaged circuit. Maybe short-circuit protection is still kicking in."
     },
     {
       "type": "dialogue",
       "speakerName": "Sharp",
       "speakerId": "avg_npc_252",
+      "isRemote": false,
       "text": "Watch your feet."
     },
     {
       "type": "dialogue",
       "speakerName": "Stormeye",
       "speakerId": "avg_npc_167",
+      "isRemote": false,
       "text": "I can see."
     },
     {
@@ -41,72 +49,84 @@
       "type": "dialogue",
       "speakerName": "Sharp",
       "speakerId": "avg_npc_252",
+      "isRemote": false,
       "text": "We're in luck."
     },
     {
       "type": "dialogue",
       "speakerName": "Stormeye",
       "speakerId": "avg_npc_167",
+      "isRemote": false,
       "text": "The Originium crystals all appeared in an instant."
     },
     {
       "type": "dialogue",
       "speakerName": "Stormeye",
       "speakerId": "avg_npc_167",
+      "isRemote": false,
       "text": "Still no word from anyone else?"
     },
     {
       "type": "dialogue",
       "speakerName": "Sharp",
       "speakerId": "avg_npc_252",
+      "isRemote": false,
       "text": "Comms are still jammed. Even the emergency frequencies are out."
     },
     {
       "type": "dialogue",
       "speakerName": "Stormeye",
       "speakerId": "avg_npc_167",
+      "isRemote": false,
       "text": "I have even worse news. For some reason, Rhodes Island is currently headed northwest at maximum speed."
     },
     {
       "type": "dialogue",
       "speakerName": "Stormeye",
       "speakerId": "avg_npc_167",
+      "isRemote": false,
       "text": "At this rate, it's only a matter of time before we collide with a mobile mining platform."
     },
     {
       "type": "dialogue",
       "speakerName": "Sharp",
       "speakerId": "avg_npc_252",
+      "isRemote": false,
       "text": "We must eliminate all possible dangers along the course. Protect the ship from the outside, and prevent collateral damage."
     },
     {
       "type": "dialogue",
       "speakerName": "Sharp",
       "speakerId": "avg_npc_252",
+      "isRemote": false,
       "text": "Let's get out of here and check our vehicle inventory in the <i>Bad Guy's</i> cabin."
     },
     {
       "type": "dialogue",
       "speakerName": "Sharp",
       "speakerId": "avg_npc_252",
+      "isRemote": false,
       "text": "Space around here has been transformed. Existing maps are no longer reliable. Stay close to me."
     },
     {
       "type": "dialogue",
       "speakerName": "Stormeye",
       "speakerId": "avg_npc_167",
+      "isRemote": false,
       "text": "(Comes to a sudden stop)"
     },
     {
       "type": "dialogue",
       "speakerName": "Sharp",
       "speakerId": "avg_npc_252",
+      "isRemote": false,
       "text": "Is something wrong?"
     },
     {
       "type": "dialogue",
       "speakerName": "Stormeye",
       "speakerId": "avg_npc_167",
+      "isRemote": false,
       "text": "They're coming again."
     },
     {
@@ -123,6 +143,7 @@
       "type": "dialogue",
       "speakerName": "Sharp",
       "speakerId": "avg_npc_252",
+      "isRemote": false,
       "text": "Missed?"
     },
     {
@@ -136,6 +157,7 @@
       "type": "dialogue",
       "speakerName": "Sharp",
       "speakerId": "avg_npc_252",
+      "isRemote": false,
       "text": "Stormeye?"
     },
     {
@@ -153,9 +175,14 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "60_g10_rhodescorridor_origin"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Originium Entity",
       "speakerId": "avg_npc_1727_1",
+      "isRemote": false,
       "text": "(Approaches soundlessly)"
     },
     {
@@ -165,6 +192,7 @@
       "type": "dialogue",
       "speakerName": "Pith",
       "speakerId": "avg_npc_095",
+      "isRemote": false,
       "text": "Is that it?"
     },
     {
@@ -174,12 +202,14 @@
       "type": "dialogue",
       "speakerName": "Pith",
       "speakerId": "avg_npc_095",
+      "isRemote": false,
       "text": "Communications are still out."
     },
     {
       "type": "dialogue",
       "speakerName": "Pith",
       "speakerId": "avg_npc_095",
+      "isRemote": false,
       "text": "I wonder how the others are doing."
     },
     {
@@ -207,33 +237,42 @@
       "type": "dialogue",
       "speakerName": "Broken Communicator",
       "speakerId": null,
+      "isRemote": false,
       "text": "'—*Bzzt* All operators... receiving this message...'"
     },
     {
       "type": "dialogue",
       "speakerName": "Broken Communicator",
       "speakerId": null,
+      "isRemote": false,
       "text": "'Do not... trust... communications blocked...'"
     },
     {
       "type": "dialogue",
       "speakerName": "Broken Communicator",
       "speakerId": null,
+      "isRemote": false,
       "text": "'*Bzzt*... Rhodes Island... awake...'"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_rhodescorner"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Misery",
       "speakerId": "avg_npc_235",
+      "isRemote": false,
       "text": "'Awake'?"
     },
     {
       "type": "dialogue",
       "speakerName": "Ascalon",
       "speakerId": "avg_npc_235",
+      "isRemote": false,
       "text": "Watch the sides."
     },
     {
@@ -243,6 +282,7 @@
       "type": "dialogue",
       "speakerName": "Ascalon",
       "speakerId": "avg_4132_ascln_1",
+      "isRemote": false,
       "text": "Very strange. These things won't die."
     },
     {
@@ -253,48 +293,56 @@
       "type": "dialogue",
       "speakerName": "Misery",
       "speakerId": "avg_npc_235",
+      "isRemote": false,
       "text": "The clothes they wear—Reunion? And Nachzehrers too... nothing can surprise me now."
     },
     {
       "type": "dialogue",
       "speakerName": "Ascalon",
       "speakerId": "avg_4132_ascln_1",
+      "isRemote": false,
       "text": "Their bodies are composed entirely of Originium. We cannot rely on past experience."
     },
     {
       "type": "dialogue",
       "speakerName": "Misery",
       "speakerId": "avg_npc_235",
+      "isRemote": false,
       "text": "Guess we'll have to improvise."
     },
     {
       "type": "dialogue",
       "speakerName": "Ascalon",
       "speakerId": "avg_4132_ascln_1",
+      "isRemote": false,
       "text": "We can't just stay here. We have to find where these things came from."
     },
     {
       "type": "dialogue",
       "speakerName": "Misery",
       "speakerId": "avg_npc_235",
+      "isRemote": false,
       "text": "The intention of these enemies is unclear, as is the situation on the Doctor's side. If..."
     },
     {
       "type": "dialogue",
       "speakerName": "Ascalon",
       "speakerId": "avg_4132_ascln_1",
+      "isRemote": false,
       "text": "Amiya is with the Doctor. No need to worry."
     },
     {
       "type": "dialogue",
       "speakerName": "Ascalon",
       "speakerId": "avg_4132_ascln_1",
+      "isRemote": false,
       "text": "We continue with our mission—ascertaining the source of the abnormal events."
     },
     {
       "type": "dialogue",
       "speakerName": "Ascalon",
       "speakerId": "avg_4132_ascln_1",
+      "isRemote": false,
       "text": "If this is what Kal'tsit was guarding against, then these things must follow the command of some unknown actor..."
     },
     {
@@ -304,18 +352,21 @@
       "type": "dialogue",
       "speakerName": "Misery",
       "speakerId": "avg_npc_235",
+      "isRemote": false,
       "text": "Communications are still out. We can't reach anyone else."
     },
     {
       "type": "dialogue",
       "speakerName": "Misery",
       "speakerId": "avg_npc_235",
+      "isRemote": false,
       "text": "I wonder if the other elite operators—"
     },
     {
       "type": "dialogue",
       "speakerName": "Misery",
       "speakerId": "avg_npc_235",
+      "isRemote": false,
       "text": "Ascalon..."
     },
     {
@@ -326,10 +377,15 @@
       "type": "dialogue",
       "speakerName": "Misery",
       "speakerId": "avg_npc_235",
+      "isRemote": false,
       "text": "Did I just see Outcast?"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "60_g10_rhodescorridor_origin"
     },
     {
       "type": "narration",
@@ -342,6 +398,7 @@
       "type": "dialogue",
       "speakerName": "Stormeye",
       "speakerId": "avg_npc_167",
+      "isRemote": false,
       "text": "—Safe. For now."
     },
     {
@@ -355,6 +412,7 @@
       "type": "dialogue",
       "speakerName": "Stormeye",
       "speakerId": "avg_npc_167",
+      "isRemote": false,
       "text": "At least it won't hinder me in battle."
     },
     {
@@ -364,54 +422,63 @@
       "type": "dialogue",
       "speakerName": "Communicator",
       "speakerId": "avg_npc_167",
+      "isRemote": false,
       "text": "(Static)"
     },
     {
       "type": "dialogue",
       "speakerName": "Stormeye",
       "speakerId": "avg_npc_167",
+      "isRemote": false,
       "text": "Sharp. Come in, Sharp. Can you hear me?"
     },
     {
       "type": "dialogue",
       "speakerName": "Stormeye",
       "speakerId": "avg_npc_167",
+      "isRemote": false,
       "text": "If you hear me, leave a sign somewhere, any way you can. I'll come and find you."
     },
     {
       "type": "dialogue",
       "speakerName": "Communicator",
       "speakerId": "avg_npc_167",
+      "isRemote": false,
       "text": "(Static)"
     },
     {
       "type": "dialogue",
       "speakerName": "Stormeye",
       "speakerId": "avg_npc_167",
+      "isRemote": false,
       "text": "...Dammit—"
     },
     {
       "type": "dialogue",
       "speakerName": "Communicator",
       "speakerId": "avg_npc_167",
+      "isRemote": false,
       "text": "*Bzzt*—Stor...Stormeye—Careful—*bzzt—"
     },
     {
       "type": "dialogue",
       "speakerName": "Stormeye",
       "speakerId": "avg_npc_167",
+      "isRemote": false,
       "text": "Sharp?! What's your location?"
     },
     {
       "type": "dialogue",
       "speakerName": "Communicator",
       "speakerId": "avg_npc_167",
+      "isRemote": false,
       "text": "*Bzzt*—Engaging—Whitesmith—Stop—"
     },
     {
       "type": "dialogue",
       "speakerName": "Stormeye",
       "speakerId": "avg_npc_167",
+      "isRemote": false,
       "text": "...? Wait for me!"
     },
     {
@@ -421,6 +488,7 @@
       "type": "dialogue",
       "speakerName": "Originium-Infested Machine",
       "speakerId": "avg_npc_1726_1",
+      "isRemote": false,
       "text": "...Assist..."
     },
     {
@@ -431,6 +499,7 @@
       "type": "dialogue",
       "speakerName": "Stormeye",
       "speakerId": "avg_npc_167",
+      "isRemote": false,
       "text": "Not now!"
     },
     {
@@ -447,12 +516,14 @@
       "type": "dialogue",
       "speakerName": "Stormeye",
       "speakerId": "avg_npc_167",
+      "isRemote": false,
       "text": "At least... thirty."
     },
     {
       "type": "dialogue",
       "speakerName": "Stormeye",
       "speakerId": "avg_npc_167",
+      "isRemote": false,
       "text": "A fork..."
     },
     {
@@ -463,39 +534,49 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "60_g8_rhodeslowerdeck_origin"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Mon3tr",
       "speakerId": "npc_10002",
+      "isRemote": false,
       "text": "(Furious howl)"
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "Faster than expected. Rhodes Island is not ready."
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "If there is such a thing as being ready for her."
     },
     {
       "type": "dialogue",
       "speakerName": "Mon3tr",
       "speakerId": "npc_10002",
+      "isRemote": false,
       "text": "(Alerted growl)"
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "However, something is clearly not right with her as well. She would not resort to such inefficient means otherwise."
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "This may be our last chance to gain the upper hand."
     },
     {
@@ -505,18 +586,21 @@
       "type": "dialogue",
       "speakerName": "Originium Entity",
       "speakerId": "avg_npc_1728_1",
+      "isRemote": false,
       "text": "(Approaches silently)"
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "Clear a way, Mon3tr. Don't get stuck in a fight."
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "Time is of the essence."
     },
     {
@@ -527,15 +611,21 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_abyss_1"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "Mon3tr. Eliminate all threats that approach the Sarcophagus. Buy me time."
     },
     {
       "type": "dialogue",
       "speakerName": "Mon3tr",
       "speakerId": "npc_10002",
+      "isRemote": false,
       "text": "(Excited howling)"
     },
     {
@@ -546,12 +636,14 @@
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "I can't guarantee that this is going to work, Mon3tr."
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "But I won't just sit around and watch a fighting chance slip away."
     },
     {
@@ -565,24 +657,28 @@
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "This is her legacy. Little did she know at the time that it was fire stolen from the 'gods'."
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "...We must all challenge those higher beings and fight for a chance to live."
     },
     {
       "type": "dialogue",
       "speakerName": "Mon3tr",
       "speakerId": "npc_10002",
+      "isRemote": false,
       "text": "(Nervous growl)"
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "If something goes wrong, Mon3tr, act on your own discretion."
     },
     {
@@ -596,21 +692,28 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "60_g10_rhodescorridor_origin"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Raidian",
       "speakerId": "avg_npc_1730_1",
+      "isRemote": false,
       "text": "The interference is really bad."
     },
     {
       "type": "dialogue",
       "speakerName": "Raidian",
       "speakerId": "avg_npc_1730_1",
+      "isRemote": false,
       "text": "Not only am I not getting any signals, my Originium Arts are also being suppressed by the environment."
     },
     {
       "type": "dialogue",
       "speakerName": "Raidian",
       "speakerId": "avg_npc_1730_1",
+      "isRemote": false,
       "text": "Think, think—"
     },
     {
@@ -620,12 +723,14 @@
       "type": "dialogue",
       "speakerName": "Raidian",
       "speakerId": "avg_npc_1730_1",
+      "isRemote": false,
       "text": "This signal profile—PRTS?!"
     },
     {
       "type": "dialogue",
       "speakerName": "Raidian",
       "speakerId": "avg_npc_1730_1",
+      "isRemote": false,
       "text": "Closure? But the terminal still shows disconnected."
     },
     {
@@ -639,114 +744,140 @@
       "type": "dialogue",
       "speakerName": "Raidian",
       "speakerId": "avg_npc_1730_1",
+      "isRemote": false,
       "text": "Dr. Kal'tsit?!"
     },
     {
       "type": "dialogue",
       "speakerName": "Raidian",
       "speakerId": "avg_npc_1730_1",
+      "isRemote": false,
       "text": "How? But you're—no matter how you did it, you need to—"
     },
     {
       "type": "dialogue",
       "speakerName": "Raidian",
       "speakerId": "avg_npc_1730_1",
+      "isRemote": false,
       "text": "...No, you can't stop now."
     },
     {
       "type": "dialogue",
       "speakerName": "Raidian",
       "speakerId": "avg_npc_1730_1",
+      "isRemote": false,
       "text": "Thank you, Dr. Kal'tsit."
     },
     {
       "type": "dialogue",
       "speakerName": "Raidian",
       "speakerId": "avg_npc_1730_1",
+      "isRemote": false,
       "text": "I know what to do now."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "60_g10_rhodescorridor_origin"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Pith",
       "speakerId": "avg_npc_095",
+      "isRemote": false,
       "text": "...Kal'tsit? Thanks."
     },
     {
       "type": "dialogue",
       "speakerName": "Pith",
       "speakerId": "avg_npc_095",
+      "isRemote": false,
       "text": "This is Pith calling to all combat-effective operators. Report."
     },
     {
       "type": "dialogue",
       "speakerName": "Alanna",
       "speakerId": "avg_npc_095",
+      "isRemote": false,
       "text": "We're still trying to stop these... things!"
     },
     {
       "type": "dialogue",
       "speakerName": "Alanna",
       "speakerId": "avg_npc_095",
+      "isRemote": false,
       "text": "But they just keep coming!"
     },
     {
       "type": "dialogue",
       "speakerName": "Pith",
       "speakerId": "avg_npc_095",
+      "isRemote": false,
       "text": "We lack the means to completely neutralize these hostile Originium entities. Survival is your first priority."
     },
     {
       "type": "dialogue",
       "speakerName": "Pith",
       "speakerId": "avg_npc_095",
+      "isRemote": false,
       "text": "Any injured personnel are to immediately disengage and seek assistance from Touch."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_infirmary"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Warfarin",
       "speakerId": "avg_171_bldsk_1",
+      "isRemote": false,
       "text": "Kal'tsit... what have you done THIS time?"
     },
     {
       "type": "dialogue",
       "speakerName": "Chloe",
       "speakerId": "avg_npc_243",
+      "isRemote": false,
       "text": "Dr. Warfarin! Look out!"
     },
     {
       "type": "dialogue",
       "speakerName": "Warfarin",
       "speakerId": "avg_171_bldsk_1",
+      "isRemote": false,
       "text": "These things can't hurt me for now. But there are too many of them. It's not easy trying to protect everyone."
     },
     {
       "type": "dialogue",
       "speakerName": "Warfarin",
       "speakerId": "avg_171_bldsk_1",
+      "isRemote": false,
       "text": "Raidian's intel indicates that these things can't be killed."
     },
     {
       "type": "dialogue",
       "speakerName": "Chloe",
       "speakerId": "avg_npc_243",
+      "isRemote": false,
       "text": "'Kill'... are these things even alive?"
     },
     {
       "type": "dialogue",
       "speakerName": "Chloe",
       "speakerId": "avg_npc_243",
+      "isRemote": false,
       "text": "Have Dr. Touch and Dr. Kal'tsit run into these monsters too?"
     },
     {
       "type": "dialogue",
       "speakerName": "Warfarin",
       "speakerId": "avg_171_bldsk_1",
+      "isRemote": false,
       "text": "Protect yourself. We're not as weak as you think—"
     },
     {
@@ -756,6 +887,7 @@
       "type": "dialogue",
       "speakerName": "Warfarin",
       "speakerId": "avg_171_bldsk_1",
+      "isRemote": false,
       "text": "*Sarkaz expletive*!"
     },
     {
@@ -765,12 +897,14 @@
       "type": "dialogue",
       "speakerName": "Warfarin",
       "speakerId": "avg_171_bldsk_1",
+      "isRemote": false,
       "text": "What I wouldn't do for a chance to take you apart, piece by piece, to find out for sure whether you monsters can die—"
     },
     {
       "type": "dialogue",
       "speakerName": "Warfarin",
       "speakerId": "avg_171_bldsk_1",
+      "isRemote": false,
       "text": "Get clear, Chloe!"
     },
     {
@@ -791,36 +925,42 @@
       "type": "dialogue",
       "speakerName": "Chloe",
       "speakerId": "avg_npc_243",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Warfarin",
       "speakerId": "avg_171_bldsk_1",
+      "isRemote": false,
       "text": "——?!"
     },
     {
       "type": "dialogue",
       "speakerName": "Originium Entity",
       "speakerId": "avg_npc_1727_1",
+      "isRemote": false,
       "text": "(Gazes silently)"
     },
     {
       "type": "dialogue",
       "speakerName": "Warfarin",
       "speakerId": "avg_171_bldsk_1",
+      "isRemote": false,
       "text": "Get back! Don't touch them!"
     },
     {
       "type": "dialogue",
       "speakerName": "Chloe",
       "speakerId": "avg_npc_243",
+      "isRemote": false,
       "text": "B-But I can hear him... screaming? It's like those pained voices are etched into my mind..."
     },
     {
       "type": "dialogue",
       "speakerName": "Chloe",
       "speakerId": "avg_npc_243",
+      "isRemote": false,
       "text": "W-We're very... alike..."
     },
     {
@@ -834,42 +974,49 @@
       "type": "dialogue",
       "speakerName": "Chloe",
       "speakerId": "avg_npc_243",
+      "isRemote": false,
       "text": "Why... why don't you hurt me?"
     },
     {
       "type": "dialogue",
       "speakerName": "Chloe",
       "speakerId": "avg_npc_243",
+      "isRemote": false,
       "text": "...Are we the same?"
     },
     {
       "type": "dialogue",
       "speakerName": "Warfarin",
       "speakerId": "avg_171_bldsk_1",
+      "isRemote": false,
       "text": "Is it because of your infection? The symptoms we've never seen before... Originium is changing."
     },
     {
       "type": "dialogue",
       "speakerName": "Warfarin",
       "speakerId": "avg_171_bldsk_1",
+      "isRemote": false,
       "text": "—That's why your condition progressed quicker than expected!"
     },
     {
       "type": "dialogue",
       "speakerName": "Chloe",
       "speakerId": "avg_npc_243",
+      "isRemote": false,
       "text": "Does this mean I can help you find a way to deal with them?"
     },
     {
       "type": "dialogue",
       "speakerName": "Chloe",
       "speakerId": "avg_npc_243",
+      "isRemote": false,
       "text": "I want to try. I want to help you."
     },
     {
       "type": "dialogue",
       "speakerName": "Chloe",
       "speakerId": "avg_npc_243",
+      "isRemote": false,
       "text": "I don't want to disappoint you, or let Dr. Touch or Dr. Kal'tsit get hurt..."
     },
     {
@@ -883,69 +1030,84 @@
       "type": "dialogue",
       "speakerName": "Warfarin",
       "speakerId": "avg_171_bldsk_1",
+      "isRemote": false,
       "text": "Do you understand what it is you're offering?"
     },
     {
       "type": "dialogue",
       "speakerName": "Chloe",
       "speakerId": "avg_npc_243",
+      "isRemote": false,
       "text": "(Smiles) I don't. But I'm not afraid."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "60_g11_rhodescanteen_origin"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Sharp",
       "speakerId": "avg_npc_252",
+      "isRemote": false,
       "text": "Not as fast as you say, Stormeye."
     },
     {
       "type": "dialogue",
       "speakerName": "Stormeye",
       "speakerId": "avg_npc_167",
+      "isRemote": false,
       "text": "I got sidetracked by the changes to the deck plan."
     },
     {
       "type": "dialogue",
       "speakerName": "Stormeye",
       "speakerId": "avg_npc_167",
+      "isRemote": false,
       "text": "Luckily, Dr. Kal'tsit and Raidian were able to reestablish communications. Who knows what else I would've run into."
     },
     {
       "type": "dialogue",
       "speakerName": "Stormeye",
       "speakerId": "avg_npc_167",
+      "isRemote": false,
       "text": "You mentioned Whitesmith over the radio?"
     },
     {
       "type": "dialogue",
       "speakerName": "Sharp",
       "speakerId": "avg_npc_252",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Sharp",
       "speakerId": "avg_npc_252",
+      "isRemote": false,
       "text": "One instant she was inviting me to drink and dance in front of her fire. The next instant she was gone, leaving only a bunch of Originium-polluted machines crawling out of the furnace to attack me."
     },
     {
       "type": "dialogue",
       "speakerName": "Stormeye",
       "speakerId": "avg_npc_167",
+      "isRemote": false,
       "text": "A hallucination?"
     },
     {
       "type": "dialogue",
       "speakerName": "Sharp",
       "speakerId": "avg_npc_252",
+      "isRemote": false,
       "text": "I can tell what's real and what's not, Stormeye. But what's happening here is beyond anything I can comprehend."
     },
     {
       "type": "dialogue",
       "speakerName": "Sharp",
       "speakerId": "avg_npc_252",
+      "isRemote": false,
       "text": "Not that I'm the only one who's seeing strange things."
     },
     {
@@ -959,6 +1121,7 @@
       "type": "dialogue",
       "speakerName": "Stormeye",
       "speakerId": "avg_npc_167",
+      "isRemote": false,
       "text": "...?"
     },
     {
@@ -976,6 +1139,7 @@
       "type": "dialogue",
       "speakerName": "Stormeye",
       "speakerId": "avg_npc_167",
+      "isRemote": false,
       "text": "——?!"
     },
     {
@@ -989,6 +1153,7 @@
       "type": "dialogue",
       "speakerName": "Stormeye",
       "speakerId": "avg_npc_167",
+      "isRemote": false,
       "text": "(Soundless words)"
     },
     {
@@ -1002,6 +1167,10 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "60_g8_rhodeslowerdeck_origin"
+    },
+    {
       "type": "narration",
       "text": "At the same time, on the other side of Rhodes Island..."
     },
@@ -1012,6 +1181,7 @@
       "type": "dialogue",
       "speakerName": "Ascalon",
       "speakerId": "avg_4132_ascln_1",
+      "isRemote": false,
       "text": "......"
     },
     {
@@ -1028,6 +1198,7 @@
       "type": "dialogue",
       "speakerName": "Misery",
       "speakerId": "avg_npc_235",
+      "isRemote": false,
       "text": "......"
     },
     {
@@ -1045,33 +1216,42 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "60_g10_rhodescorridor_origin"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Amiya",
       "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
       "text": "It's Mantra!"
     },
     {
       "type": "dialogue",
       "speakerName": "Amiya",
       "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
       "text": "She's sharing the information that the others have collected."
     },
     {
       "type": "dialogue",
       "speakerName": "Amiya",
       "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
       "text": "Ascalon and Misery are close to the Abyss."
     },
     {
       "type": "dialogue",
       "speakerName": "Amiya",
       "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
       "text": "They've sent over the Abyss's signal profile to Raidian, who will be able to trace it, even if the spatial environment changes again."
     },
     {
       "type": "dialogue",
       "speakerName": "Amiya",
       "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
       "text": "They are currently holding position, helping Raidian establish an information anchor based on their own biosignals."
     },
     {
@@ -1090,30 +1270,31 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "Blaze and Rosmontis are on their way. It won't take long."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "I'm worried about Dr. Kal'tsit too, Doctor."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "Raidian's information indicates that Dr. Kal'tsit is in a dangerous predicament..."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "Blaze and Rosmontis are on their way. It won't take long."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "I'm worried about Dr. Kal'tsit too, Doctor."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "Raidian's information indicates that Dr. Kal'tsit is in a dangerous predicament..."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1123,8 +1304,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1134,8 +1314,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1145,28 +1324,28 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "Yeah. We're able to maintain communications thanks to Raidian and Mantra's Arts, but this puts a lot of stress on both of them."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "Time is of the essence, Doctor. Let's go."
-        },
-        {
-          "type": "narration",
-          "text": "You carefully lead Amiya through a forest of Originium shards. Your ability to precisely predict when and where explosions will occur is a major advantage.\nFocused on the path ahead, you fail to notice a little detail on the massive crystal formation that you just passed.\nIt is not your figures that are reflected in the smooth surface of the Originium crystal.\nA Cautus girl with her back to you, her thin, fragile hand held by another, just like you and Amiya right now."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "Yeah. We're able to maintain communications thanks to Raidian and Mantra's Arts, but this puts a lot of stress on both of them."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "Time is of the essence, Doctor. Let's go."
+    },
+    {
+      "type": "narration",
+      "text": "You carefully lead Amiya through a forest of Originium shards. Your ability to precisely predict when and where explosions will occur is a major advantage.\nFocused on the path ahead, you fail to notice a little detail on the massive crystal formation that you just passed.\nIt is not your figures that are reflected in the smooth surface of the Originium crystal.\nA Cautus girl with her back to you, her thin, fragile hand held by another, just like you and Amiya right now."
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": []

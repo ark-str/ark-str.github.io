@@ -6,10 +6,14 @@
   "title": "Etude 'Encounter'",
   "storyCode": "ZT-3",
   "avgTag": "After Operation",
-  "sourcePath": "vendor/ArknightsGamedata/en/gamedata/story/activities/act29side/level_act29side_03_end.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/en/gamedata/story/activities/act29side/level_act29side_03_end.txt",
   "sourceHash": "a75fb4da2191c42706d1a4e66eb4024b3c3c8195014a1299cbcab6850d60f84d",
   "bodyAvailable": true,
   "blocks": [
+    {
+      "type": "background",
+      "backgroundId": "bg_ltroom"
+    },
     {
       "type": "narration",
       "text": "Baron Peter Lukas turns seventy-three this year.\nHe inherited his title from his uncle three years ago. Six months later, he moved to Karl Schmidt Street due to the expenses of maintaining the Lukas family spire.\nHe enjoys Karl Schmidt's music, but hates the street.\nHe finds the sunlight, the flowers, the youth's graffiti, and the jazz music coming from the nearby bar unbearable.\nHe orders his servant to close the curtains, turns on the gramophone, and the room is immediately filled with the sound of cello.\nThe Sankta was a truly talented musician, he thinks. So talented, he could almost forgive her for being Lateran.\nHe plays eleven instruments, ten of which he learned during the reign of the Witch King.\nTo send the best melodies into the Genesis Spire, talented young musicians were put into a room and made to compose day and night.\nHe loved the violinist, her delicate fingers, and the beauty mark on the edge of her palm.\nTears flowed down his face when he visited Victoria for the first time and heard music from his homeland on the stage of the Royal Theater. He kissed her for the first time.\nThat was his elegant, dignified Leithanien.\nHe misses it."
@@ -18,21 +22,28 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "44_g1_marigold"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Gesatzswächter",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Gesatzswächter",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "Trying to destroy houses and escape in the chaos?"
     },
     {
       "type": "dialogue",
       "speakerName": "Gesatzswächter",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "There is nowhere for you to hide before the Golden Melody."
     },
     {
@@ -42,96 +53,112 @@
       "type": "dialogue",
       "speakerName": "'Witch King's Echo'",
       "speakerId": "avg_npc_1128_1",
+      "isRemote": false,
       "text": "Mmph—Argh!"
     },
     {
       "type": "dialogue",
       "speakerName": "Gesatzswächter",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "You're the last."
     },
     {
       "type": "dialogue",
       "speakerName": "Gesatzswächter",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "Remove your mask and surrender to Leithanien, and you will be spared the pain of a burning soul."
     },
     {
       "type": "dialogue",
       "speakerName": "'Witch King's Echo'",
       "speakerId": "avg_npc_1128_1",
+      "isRemote": false,
       "text": "This pain is... insignificant."
     },
     {
       "type": "dialogue",
       "speakerName": "'Witch King's Echo'",
       "speakerId": "avg_npc_1128_1",
+      "isRemote": false,
       "text": "Have you ever heard the Witch King's Reichsorchester play?"
     },
     {
       "type": "dialogue",
       "speakerName": "'Witch King's Echo'",
       "speakerId": "avg_npc_1128_1",
+      "isRemote": false,
       "text": "The black forests of Einwald, the lakes and ports of Fortsgard, the storms of Sturmland... anything you can imagine about Leithanien, you could feel in the melody."
     },
     {
       "type": "dialogue",
       "speakerName": "'Witch King's Echo'",
       "speakerId": "avg_npc_1128_1",
+      "isRemote": false,
       "text": "The Witch King did not interpret or conduct. He simply walked amongst them."
     },
     {
       "type": "dialogue",
       "speakerName": "'Witch King's Echo'",
       "speakerId": "avg_npc_1128_1",
+      "isRemote": false,
       "text": "As one of his musicians, you had to follow the guidance of his sightline, and keep a tight pace with him. Fall out of line, and you were ripped apart by the magnificent melody."
     },
     {
       "type": "dialogue",
       "speakerName": "Gesatzswächter",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "The Witch King's favorite punishment for those too weak to serve him."
     },
     {
       "type": "dialogue",
       "speakerName": "'Witch King's Echo'",
       "speakerId": "avg_npc_1128_1",
+      "isRemote": false,
       "text": "But I kept up."
     },
     {
       "type": "dialogue",
       "speakerName": "'Witch King's Echo'",
       "speakerId": "avg_npc_1128_1",
+      "isRemote": false,
       "text": "I became a part of that transcendent melody. Since then, I could no longer tolerate playing for the mediocre."
     },
     {
       "type": "dialogue",
       "speakerName": "Gesatzswächter",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "What did you think you were? Interpreters of the great melody? Ideal-driven revolutionaries?"
     },
     {
       "type": "dialogue",
       "speakerName": "Gesatzswächter",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "Nein."
     },
     {
       "type": "dialogue",
       "speakerName": "Gesatzswächter",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "All I see are criminals hiding behind masks, killing the innocents of Leithanien and undermining her peace and order... Clowns, burying their faces in the embers of the Witch King."
     },
     {
       "type": "dialogue",
       "speakerName": "Gesatzswächter",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "Your life belongs to the Golden Melody now."
     },
     {
       "type": "dialogue",
       "speakerName": "Gesatzswächter",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "But I suppose you were already dead, from the moment you gave up your free will and become the Witch King's vassal."
     },
     {
@@ -141,90 +168,105 @@
       "type": "dialogue",
       "speakerName": "'Witch King's Echo'",
       "speakerId": "avg_npc_1128_1",
+      "isRemote": false,
       "text": "Agh... hah... haha!"
     },
     {
       "type": "dialogue",
       "speakerName": "'Witch King's Echo'",
       "speakerId": "avg_npc_1128_1",
+      "isRemote": false,
       "text": "And what about you then? Aren't you wearing a mask yourself?"
     },
     {
       "type": "dialogue",
       "speakerName": "'Witch King's Echo'",
       "speakerId": "avg_npc_1128_1",
+      "isRemote": false,
       "text": "The Arts you use: the Golden Melody, the light of Leithanien, passed down through generations of Gesatzswächter, those who guard the Güldenesgesatz—"
     },
     {
       "type": "dialogue",
       "speakerName": "'Witch King's Echo'",
       "speakerId": "avg_npc_1128_1",
+      "isRemote": false,
       "text": "Are you not also a servant of a melody written by a greater will?"
     },
     {
       "type": "dialogue",
       "speakerName": "Gesatzswächter",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "Even the greatest individual will is nothing before Leithanien herself."
     },
     {
       "type": "dialogue",
       "speakerName": "'Witch King's Echo'",
       "speakerId": "avg_npc_1128_1",
+      "isRemote": false,
       "text": "Then..."
     },
     {
       "type": "dialogue",
       "speakerName": "'Witch King's Echo'",
       "speakerId": "avg_npc_1128_1",
+      "isRemote": false,
       "text": "Is it Leithanien's Golden Melody that pronounces my death sentence, or you yourself?"
     },
     {
       "type": "dialogue",
       "speakerName": "Gesatzswächter",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "Is this your escape plan? Did you think the will of the Gesatzswächter would waver before such cliches?"
     },
     {
       "type": "dialogue",
       "speakerName": "Gesatzswächter",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "Preposterous."
     },
     {
       "type": "dialogue",
       "speakerName": "'Witch King's Echo'",
       "speakerId": "avg_npc_1128_1",
+      "isRemote": false,
       "text": "Why... would I need an escape plan?"
     },
     {
       "type": "dialogue",
       "speakerName": "'Witch King's Echo'",
       "speakerId": "avg_npc_1128_1",
+      "isRemote": false,
       "text": "I was... chosen to find you."
     },
     {
       "type": "dialogue",
       "speakerName": "'Witch King's Echo'",
       "speakerId": "avg_npc_1128_1",
+      "isRemote": false,
       "text": "The Concertmaster wants to know.... When the events of twenty-three years ago echoed in your ears just now..."
     },
     {
       "type": "dialogue",
       "speakerName": "'Witch King's Echo'",
       "speakerId": "avg_npc_1128_1",
+      "isRemote": false,
       "text": "Did you see Ernst von Hochberg, for whom help would never arrive in time...?"
     },
     {
       "type": "dialogue",
       "speakerName": "'Witch King's Echo'",
       "speakerId": "avg_npc_1128_1",
+      "isRemote": false,
       "text": "Or his brother Werner, who died in sorrow as the Kurfürst he never wanted to be?"
     },
     {
       "type": "dialogue",
       "speakerName": "Gesatzswächter",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "......"
     },
     {
@@ -238,159 +280,189 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_ltroom"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Viviana",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "On that day, twenty-three years ago, Father didn't wait for Mother."
     },
     {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "They missed each other."
     },
     {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "Lucinda went to the spice market before coming to the studio that morning. She wanted to try a different incense, see if it would lift her spirits."
     },
     {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "She did not know that she was already with child."
     },
     {
       "type": "dialogue",
       "speakerName": "Viviana",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "Viviana",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "Mother went to Sturmland in the end."
     },
     {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "She loved you, and she loved Werner. She could not have raised you on her own if she'd stayed in Zwillingstürme."
     },
     {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "She knew that Werner had already gotten married, but she had no other choice."
     },
     {
       "type": "dialogue",
       "speakerName": "Viviana",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "Father had a choice."
     },
     {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "Ten minutes. If Werner had waited another ten minutes, he'd have met Lucinda and known that she was willing to face it all and fight by his side."
     },
     {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "He... regretted those ten minutes for the rest of his life."
     },
     {
       "type": "dialogue",
       "speakerName": "Viviana",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "...I know."
     },
     {
       "type": "dialogue",
       "speakerName": "Viviana",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "He never told me, but I knew."
     },
     {
       "type": "dialogue",
       "speakerName": "Viviana",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "A marigold and the moon... it was never meant to be. It was a dream that, upon waking, they knew to be beyond reach, words spoken only to comfort."
     },
     {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "Don't you blame your father?"
     },
     {
       "type": "dialogue",
       "speakerName": "Viviana",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "I can't."
     },
     {
       "type": "dialogue",
       "speakerName": "Viviana",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "We're too alike."
     },
     {
       "type": "dialogue",
       "speakerName": "Viviana",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "You told me that he aspired to be a poet."
     },
     {
       "type": "dialogue",
       "speakerName": "Viviana",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "But he never once recited a poem in front of me."
     },
     {
       "type": "dialogue",
       "speakerName": "Viviana",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "It was only after I returned to Leithanien that I realized... When someone no longer has the strength to face reality, the illusions that once brought hope now bring only pain."
     },
     {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "Viviana..."
     },
     {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "You've been busy since your father's passing, shuttling from Sturmland to Zwillingstürme."
     },
     {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "All I want to say is... it's alright to express your sorrow."
     },
     {
       "type": "dialogue",
       "speakerName": "Viviana",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "Viviana",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "I just want to rest for a while."
     },
     {
       "type": "dialogue",
       "speakerName": "Viviana",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "Just for a little while."
     },
     {
@@ -404,147 +476,175 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "44_g5_spiralstairs"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "Fortunately, the Arts in that music didn't cause Viviana any real damage."
     },
     {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "But they brought back memories of Werner, as they did for us. And it must be even more painful for her."
     },
     {
       "type": "dialogue",
       "speakerName": "Gesatzswächter",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "You're injured."
     },
     {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "I am?"
     },
     {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "Oh... this wasn't from the battle. I might have bumped myself when I went downstairs chasing after Viviana."
     },
     {
       "type": "dialogue",
       "speakerName": "Gesatzswächter",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "Why not try the therapeutic machine I brought back from Columbia?"
     },
     {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "I didn't lose my eyesight yesterday, Brandt. I've managed on my own for the past twenty-some years."
     },
     {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "You, though... something's off with your voice. Were these enemies that tough?"
     },
     {
       "type": "dialogue",
       "speakerName": "Gesatzswächter",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "What an absurd notion."
     },
     {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "That's more like you."
     },
     {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "I wish you'd take off your helmet and catch your breath once in a while, though. Even the finest instrument succumbs to wear and tear when used nonstop."
     },
     {
       "type": "dialogue",
       "speakerName": "Gesatzswächter",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "I don't deserve to rest."
     },
     {
       "type": "dialogue",
       "speakerName": "Gesatzswächter",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "The Gendarmerie is on their way. They'll take it from here."
     },
     {
       "type": "dialogue",
       "speakerName": "Gesatzswächter",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "You should leave before they arrive."
     },
     {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "Now? But we're so close to the truth."
     },
     {
       "type": "dialogue",
       "speakerName": "Gesatzswächter",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "Leithanien has not fallen so far as to need to entrust her future to a blind instrument tuner and a retired competition knight."
     },
     {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "The cultists are looking for the Witch King's legacy. Frieda and Loris were witnesses to that night. Werner... House Hochberg was part of the coup as well."
     },
     {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "If they're killing witnesses to complete some sort of ritual, they'll be looking for their next target."
     },
     {
       "type": "dialogue",
       "speakerName": "Gesatzswächter",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "Which is why you need to listen to me and stop your investigation."
     },
     {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "What about you, Brandt? You were there on the day of the coup too..."
     },
     {
       "type": "dialogue",
       "speakerName": "Gesatzswächter",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "I am a guardian of Leithanien's will. A few Witch King worshippers won't get me."
     },
     {
       "type": "dialogue",
       "speakerName": "Gesatzswächter",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "Besides, they laid an ambush for you here. You're the ones they're targeting."
     },
     {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "But how did they know we were coming? Could Viviana really be right, and Frieda's paintings hold an important clue?"
     },
     {
@@ -554,84 +654,98 @@
       "type": "dialogue",
       "speakerName": "Viviana",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "I believe so."
     },
     {
       "type": "dialogue",
       "speakerName": "Viviana",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "Herr Reiner, please allow me to continue the investigation. I want to know what Frau Seemann left behind."
     },
     {
       "type": "dialogue",
       "speakerName": "Gesatzswächter",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "You're... holding the draft to her final work."
     },
     {
       "type": "dialogue",
       "speakerName": "Viviana",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "'Regret.'"
     },
     {
       "type": "dialogue",
       "speakerName": "Viviana",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "The strongest emotion and desire that the painter had ever felt in her life."
     },
     {
       "type": "dialogue",
       "speakerName": "Viviana",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "She spent her last days painting it over and over again."
     },
     {
       "type": "dialogue",
       "speakerName": "Viviana",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "Through the strokes of her brush, she wanted to see the divine in her heart."
     },
     {
       "type": "dialogue",
       "speakerName": "Gesatzswächter",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "You're saying those haphazard strokes were intentional?"
     },
     {
       "type": "dialogue",
       "speakerName": "Viviana",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "Ja. It looks messy because she painted on the same sheet over and over again."
     },
     {
       "type": "dialogue",
       "speakerName": "Viviana",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "The scene of the Witch King's death is still in the draft."
     },
     {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "Put the painting on the ground, Viviana."
     },
     {
       "type": "dialogue",
       "speakerName": "Viviana",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "Okay."
     },
     {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "Brandt, try to 'play' it."
     },
     {
       "type": "dialogue",
       "speakerName": "Gesatzswächter",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "Tell me when to stop."
     },
     {
@@ -641,123 +755,147 @@
       "type": "dialogue",
       "speakerName": "Viviana",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "It's vibrating, like a musical instrument."
     },
     {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "...Ja."
     },
     {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "There are minute differences in each layer of paint."
     },
     {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "I can't see, but my Arts allow me to 'hear' the frequency of each layer."
     },
     {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "Almost there... just remove the layer of paint above, and we'll find..."
     },
     {
       "type": "dialogue",
       "speakerName": "Viviana",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "The very first version."
     },
     {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "Do you see it?"
     },
     {
       "type": "dialogue",
       "speakerName": "Viviana",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "It's blurry, but I can tell that it's the interior of a spire. It's... imposing."
     },
     {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "The Witch King's Spire. I imagine that even Frieda could only paint a small part of it."
     },
     {
       "type": "dialogue",
       "speakerName": "Cora",
       "speakerId": "avg_npc_1113_1",
+      "isRemote": false,
       "text": "Can you identify the figures in the painting?"
     },
     {
       "type": "dialogue",
       "speakerName": "Viviana",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "There is no Witch King. The throne is empty. The battle seems to be over."
     },
     {
       "type": "dialogue",
       "speakerName": "Viviana",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "The painter herself, Frieda Seemann, is behind the curtain."
     },
     {
       "type": "dialogue",
       "speakerName": "Viviana",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "There is a Liberi soldier charging in from the hallway... Loris Bordin?"
     },
     {
       "type": "dialogue",
       "speakerName": "Viviana",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "And... um..."
     },
     {
       "type": "dialogue",
       "speakerName": "Viviana",
       "speakerId": "avg_4098_vvana_1",
+      "isRemote": false,
       "text": "Who is this Caprinae holding an Arts unit and cleaning up?"
     },
     {
       "type": "dialogue",
       "speakerName": "Gesatzswächter",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "Gerhard Hoffmann."
     },
     {
       "type": "dialogue",
       "speakerName": "Gesatzswächter",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "One of the most talented casters in all of Einwald, formerly in service to House Urtica."
     },
     {
       "type": "dialogue",
       "speakerName": "Gesatzswächter",
       "speakerId": "avg_npc_1117_1",
+      "isRemote": false,
       "text": "He became a teacher after the Witch King's death."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "44_g1_marigold"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Micha",
       "speakerId": "avg_4109_baslin_1",
+      "isRemote": false,
       "text": "We were late."
     },
     {
       "type": "dialogue",
       "speakerName": "Micha",
       "speakerId": "avg_4109_baslin_1",
+      "isRemote": false,
       "text": "These lunatics don't care how many innocents they kill."
     },
     {
@@ -767,48 +905,56 @@
       "type": "dialogue",
       "speakerName": "Noble Attendant",
       "speakerId": "avg_npc_496_1",
+      "isRemote": false,
       "text": "*cough*... *cough*."
     },
     {
       "type": "dialogue",
       "speakerName": "Federico",
       "speakerId": "avg_1032_excu2_1",
+      "isRemote": false,
       "text": "You're injured. I can treat your wounds."
     },
     {
       "type": "dialogue",
       "speakerName": "Noble Attendant",
       "speakerId": "avg_npc_496_1",
+      "isRemote": false,
       "text": "Danke."
     },
     {
       "type": "dialogue",
       "speakerName": "Federico",
       "speakerId": "avg_1032_excu2_1",
+      "isRemote": false,
       "text": "Where is Baron Lukas? Is he upstairs?"
     },
     {
       "type": "dialogue",
       "speakerName": "Noble Attendant",
       "speakerId": "avg_npc_496_1",
+      "isRemote": false,
       "text": "The Baron... didn't make it."
     },
     {
       "type": "dialogue",
       "speakerName": "Noble Attendant",
       "speakerId": "avg_npc_496_1",
+      "isRemote": false,
       "text": "He'd been talking about moving for a while. We wouldn't have gotten caught up in all this if we hadn't put the plans on hold just because of that Sankta cellist playing in the area!"
     },
     {
       "type": "dialogue",
       "speakerName": "Federico",
       "speakerId": "avg_1032_excu2_1",
+      "isRemote": false,
       "text": "What did their performance sound like?"
     },
     {
       "type": "dialogue",
       "speakerName": "Noble Attendant",
       "speakerId": "avg_npc_496_1",
+      "isRemote": false,
       "text": "Do you want to hear it? The Baron had me record it. I wonder if the gramophone's still alright..."
     },
     {
@@ -818,12 +964,14 @@
       "type": "dialogue",
       "speakerName": "Micha",
       "speakerId": "avg_4109_baslin_1",
+      "isRemote": false,
       "text": "Huh, you actually found a clue."
     },
     {
       "type": "dialogue",
       "speakerName": "Federico",
       "speakerId": "avg_1032_excu2_1",
+      "isRemote": false,
       "text": "Loris Bordin found it."
     },
     {
@@ -833,99 +981,119 @@
       "type": "dialogue",
       "speakerName": "Federico",
       "speakerId": "avg_1032_excu2_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Micha",
       "speakerId": "avg_4109_baslin_1",
+      "isRemote": false,
       "text": "Is it Arturia?"
     },
     {
       "type": "dialogue",
       "speakerName": "Federico",
       "speakerId": "avg_1032_excu2_1",
+      "isRemote": false,
       "text": "Yes."
     },
     {
       "type": "dialogue",
       "speakerName": "Federico",
       "speakerId": "avg_1032_excu2_1",
+      "isRemote": false,
       "text": "I may not be able to recognize a live performance or not, but I would never mistake her playing."
     },
     {
       "type": "dialogue",
       "speakerName": "Micha",
       "speakerId": "avg_4109_baslin_1",
+      "isRemote": false,
       "text": "Aren't we in trouble then?!"
     },
     {
       "type": "dialogue",
       "speakerName": "Federico",
       "speakerId": "avg_1032_excu2_1",
+      "isRemote": false,
       "text": "No need to fear. There are no Arts in the recording, and she isn't nearby. Someone broadcasted her performance on this street a few minutes ago."
     },
     {
       "type": "dialogue",
       "speakerName": "Micha",
       "speakerId": "avg_4109_baslin_1",
+      "isRemote": false,
       "text": "And her Arts worked over such a large area?"
     },
     {
       "type": "dialogue",
       "speakerName": "Federico",
       "speakerId": "avg_1032_excu2_1",
+      "isRemote": false,
       "text": "She must have accomplices. It would only be possible through a combination of Leithanian Arts and her own."
     },
     {
       "type": "dialogue",
       "speakerName": "Micha",
       "speakerId": "avg_4109_baslin_1",
+      "isRemote": false,
       "text": "You can tell all that just from listening to this?"
     },
     {
       "type": "dialogue",
       "speakerName": "Federico",
       "speakerId": "avg_1032_excu2_1",
+      "isRemote": false,
       "text": "This section here. It's not the sound of a cello. It's a pipe organ, and one of uncommon size."
     },
     {
       "type": "dialogue",
       "speakerName": "Micha",
       "speakerId": "avg_4109_baslin_1",
+      "isRemote": false,
       "text": "A huge pipe organ..."
     },
     {
       "type": "dialogue",
       "speakerName": "Federico",
       "speakerId": "avg_1032_excu2_1",
+      "isRemote": false,
       "text": "It's an unusual instrument. Where might you find one in Zwillingstürme?"
     },
     {
       "type": "dialogue",
       "speakerName": "Micha",
       "speakerId": "avg_4109_baslin_1",
+      "isRemote": false,
       "text": "...Ludwigs-Universität."
     },
     {
       "type": "dialogue",
       "speakerName": "Federico",
       "speakerId": "avg_1032_excu2_1",
+      "isRemote": false,
       "text": "A school?"
     },
     {
       "type": "dialogue",
       "speakerName": "Micha",
       "speakerId": "avg_4109_baslin_1",
+      "isRemote": false,
       "text": "Ja. It used to be the spire of learning for House Urtica."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Ebenholz",
       "speakerId": "avg_4046_ebnhlz_1",
+      "isRemote": false,
       "text": "......"
     },
     {
@@ -939,39 +1107,49 @@
       "type": "dialogue",
       "speakerName": "Ebenholz",
       "speakerId": "avg_4046_ebnhlz_1",
+      "isRemote": false,
       "text": "...Say something."
     },
     {
       "type": "dialogue",
       "speakerName": "Ebenholz",
       "speakerId": "avg_4046_ebnhlz_1",
+      "isRemote": false,
       "text": "Gloat, why don't you? You're on the cusp of victory, after I've kept you trapped in my head for so long."
     },
     {
       "type": "dialogue",
       "speakerName": "Ebenholz",
       "speakerId": "avg_4046_ebnhlz_1",
+      "isRemote": false,
       "text": "When I die... I sure hope I get a proper death."
     },
     {
       "type": "dialogue",
       "speakerName": "Ebenholz",
       "speakerId": "avg_4046_ebnhlz_1",
+      "isRemote": false,
       "text": "Unlike you, who's been dead long enough to crumble to dust, only to be pieced back together and brought back to life."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "44_g4_towerroom"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Cranky Old Man",
       "speakerId": "avg_npc_1114_1",
+      "isRemote": false,
       "text": "What is he babbling about?"
     },
     {
       "type": "dialogue",
       "speakerName": "Cranky Old Man",
       "speakerId": "avg_npc_1114_1",
+      "isRemote": false,
       "text": "You haven't started the ritual yet, have you?"
     },
     {
@@ -981,84 +1159,98 @@
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "avg_npc_1124_1",
+      "isRemote": false,
       "text": "Not yet, Professor."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "avg_npc_1124_1",
+      "isRemote": false,
       "text": "He looks like he's in pain. Can he really take it?"
     },
     {
       "type": "dialogue",
       "speakerName": "Cranky Old Man",
       "speakerId": "avg_npc_1114_1",
+      "isRemote": false,
       "text": "He's from Herkunftshorn's bloodline. If he can't take even this much, then Ewigegnade must have intentionally raised him to be useless."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "avg_npc_1124_1",
+      "isRemote": false,
       "text": "He's suffered much for his age."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "avg_npc_1124_1",
+      "isRemote": false,
       "text": "If he's unable to bear it, interrupting the performance of the Voice of Mundane could cause the Genesis Horn to go out of control and affect all of Ludwig."
     },
     {
       "type": "dialogue",
       "speakerName": "Cranky Old Man",
       "speakerId": "avg_npc_1114_1",
+      "isRemote": false,
       "text": "I'm here. The spire will hold."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "avg_npc_1124_1",
+      "isRemote": false,
       "text": "But you swore an oath to Her Majesty that you would not reveal the true extent of your powers. She'd have to answer to the nobles if the students learned of your identity."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "avg_npc_1124_1",
+      "isRemote": false,
       "text": "Ludwigs-Universität may be shut down, which would affect your relocation plans."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "avg_npc_1124_1",
+      "isRemote": false,
       "text": "And Ermi will give you an earful when she gets back to Leithanien."
     },
     {
       "type": "dialogue",
       "speakerName": "Cranky Old Man",
       "speakerId": "avg_npc_1114_1",
+      "isRemote": false,
       "text": "...Bah. Keeping this boy alive is harder than summoning the Genesis Horn."
     },
     {
       "type": "dialogue",
       "speakerName": "Cranky Old Man",
       "speakerId": "avg_npc_1114_1",
+      "isRemote": false,
       "text": "Where is Lessing?"
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "avg_npc_1124_1",
+      "isRemote": false,
       "text": "He's standing watch outside."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "avg_npc_1124_1",
+      "isRemote": false,
       "text": "He said he'll ensure that no one can enter before the ritual is complete."
     },
     {
       "type": "dialogue",
       "speakerName": "Cranky Old Man",
       "speakerId": "avg_npc_1114_1",
+      "isRemote": false,
       "text": "Pah, nothing more than keeping his mind from being torn to pieces. Where is the device I made for those nutjobs in Bolívar?"
     },
     {
@@ -1068,30 +1260,35 @@
       "type": "dialogue",
       "speakerName": "Ebenholz",
       "speakerId": "avg_4046_ebnhlz_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "avg_npc_1124_1",
+      "isRemote": false,
       "text": "Are you alright?"
     },
     {
       "type": "dialogue",
       "speakerName": "Ebenholz",
       "speakerId": "avg_4046_ebnhlz_1",
+      "isRemote": false,
       "text": "Hah..."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "avg_npc_1124_1",
+      "isRemote": false,
       "text": "It's okay. They've left the room."
     },
     {
       "type": "dialogue",
       "speakerName": "Ebenholz",
       "speakerId": "avg_4046_ebnhlz_1",
+      "isRemote": false,
       "text": "You're..."
     },
     {
@@ -1101,48 +1298,56 @@
       "type": "dialogue",
       "speakerName": "Gerhard",
       "speakerId": "avg_npc_1124_1",
+      "isRemote": false,
       "text": "We met not too long ago."
     },
     {
       "type": "dialogue",
       "speakerName": "Ebenholz",
       "speakerId": "avg_4046_ebnhlz_1",
+      "isRemote": false,
       "text": "Forest... Park..."
     },
     {
       "type": "dialogue",
       "speakerName": "Gerhard",
       "speakerId": "avg_npc_1124_1",
+      "isRemote": false,
       "text": "Ja. I wanted to warn you, but Lessing was there. I couldn't take you away with him watching."
     },
     {
       "type": "dialogue",
       "speakerName": "Ebenholz",
       "speakerId": "avg_4046_ebnhlz_1",
+      "isRemote": false,
       "text": "Lessing..."
     },
     {
       "type": "dialogue",
       "speakerName": "Gerhard",
       "speakerId": "avg_npc_1124_1",
+      "isRemote": false,
       "text": "He's not evil by nature, but he can be stubborn."
     },
     {
       "type": "dialogue",
       "speakerName": "Gerhard",
       "speakerId": "avg_npc_1124_1",
+      "isRemote": false,
       "text": "I used to be like him too. But all it takes to change is courage."
     },
     {
       "type": "dialogue",
       "speakerName": "Ebenholz",
       "speakerId": "avg_4046_ebnhlz_1",
+      "isRemote": false,
       "text": "...Ja."
     },
     {
       "type": "dialogue",
       "speakerName": "Gerhard",
       "speakerId": "avg_npc_1124_1",
+      "isRemote": false,
       "text": "Can you move? Try to grab my hand."
     },
     {
@@ -1152,18 +1357,21 @@
       "type": "dialogue",
       "speakerName": "Cranky Old Man",
       "speakerId": "avg_npc_1114_1",
+      "isRemote": false,
       "text": "What are you doing, Gerhard?!"
     },
     {
       "type": "dialogue",
       "speakerName": "Gerhard",
       "speakerId": "avg_npc_1124_1",
+      "isRemote": false,
       "text": "I'm sorry, Professor."
     },
     {
       "type": "dialogue",
       "speakerName": "Gerhard",
       "speakerId": "avg_npc_1124_1",
+      "isRemote": false,
       "text": "I can't let you use Herkunftshorn's bloodline like this. He's a living, breathing soul, one with a bright future."
     },
     {
@@ -1173,66 +1381,77 @@
       "type": "dialogue",
       "speakerName": "Cranky Old Man",
       "speakerId": "avg_npc_1114_1",
+      "isRemote": false,
       "text": "Spatial defense Arts— <i>I</i> taught you those!"
     },
     {
       "type": "dialogue",
       "speakerName": "Gerhard",
       "speakerId": "avg_npc_1124_1",
+      "isRemote": false,
       "text": "You also taught me that even the most powerful Arts cannot erase regret."
     },
     {
       "type": "dialogue",
       "speakerName": "Gerhard",
       "speakerId": "avg_npc_1124_1",
+      "isRemote": false,
       "text": "I've caused a lot of harm with the Arts you taught me."
     },
     {
       "type": "dialogue",
       "speakerName": "Gerhard",
       "speakerId": "avg_npc_1124_1",
+      "isRemote": false,
       "text": "But when I'm alone at night, I often ask myself: how many souls would have continued to shine brightly, had I not done what I did?"
     },
     {
       "type": "dialogue",
       "speakerName": "Gerhard",
       "speakerId": "avg_npc_1124_1",
+      "isRemote": false,
       "text": "Would we be living in better times? Would the people around us have been better? Would we be better ourselves?"
     },
     {
       "type": "dialogue",
       "speakerName": "Gerhard",
       "speakerId": "avg_npc_1124_1",
+      "isRemote": false,
       "text": "That's why I gave up on being a spire caster and became a scholar."
     },
     {
       "type": "dialogue",
       "speakerName": "Cranky Old Man",
       "speakerId": "avg_npc_1114_1",
+      "isRemote": false,
       "text": "What are you babbling about, Gerhard?"
     },
     {
       "type": "dialogue",
       "speakerName": "Cranky Old Man",
       "speakerId": "avg_npc_1114_1",
+      "isRemote": false,
       "text": "You're making a big mistake. Step away from the boy—"
     },
     {
       "type": "dialogue",
       "speakerName": "Gerhard",
       "speakerId": "avg_npc_1124_1",
+      "isRemote": false,
       "text": "...A mistake?"
     },
     {
       "type": "dialogue",
       "speakerName": "Gerhard",
       "speakerId": "avg_npc_1124_1",
+      "isRemote": false,
       "text": "Nein, Professor."
     },
     {
       "type": "dialogue",
       "speakerName": "Gerhard",
       "speakerId": "avg_npc_1124_1",
+      "isRemote": false,
       "text": "I'm saving his life. I'm not going to miss my chance this time. I'm fixing the biggest mistake that you and I... that we ever made."
     },
     {

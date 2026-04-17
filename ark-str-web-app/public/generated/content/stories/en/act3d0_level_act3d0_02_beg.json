@@ -6,7 +6,7 @@
   "title": "To be Continued",
   "storyCode": "OF-2",
   "avgTag": "Before Operation",
-  "sourcePath": "vendor/ArknightsGamedata/en/gamedata/story/activities/act3d0/level_act3d0_02_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/en/gamedata/story/activities/act3d0/level_act3d0_02_beg.txt",
   "sourceHash": "5f97499ed89b4b0b0ad022753d475becd58bbcb8a408711b9cd2a4401c9cfd8f",
   "bodyAvailable": true,
   "blocks": [
@@ -18,9 +18,17 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_sunnytown_2"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Ceylon",
       "speakerId": "char_348_ceylon",
+      "isRemote": false,
       "text": "Cross Civic Square, and the highest building over there is the City Hall."
     },
     {
@@ -30,42 +38,49 @@
       "type": "dialogue",
       "speakerName": "D.D.D.",
       "speakerId": "avg_NPC_017_3",
+      "isRemote": false,
       "text": "What's up, everyone!! Thank you all for coming out here! This is... D— D— D——!"
     },
     {
       "type": "dialogue",
       "speakerName": "Audience",
       "speakerId": null,
+      "isRemote": false,
       "text": "(Thunderous cheering)"
     },
     {
       "type": "dialogue",
       "speakerName": "D.D.D.",
       "speakerId": "avg_NPC_017_3",
+      "isRemote": false,
       "text": "We're all gathered here on this scorching summer day for the same purpose... and that is—"
     },
     {
       "type": "dialogue",
       "speakerName": "Audience",
       "speakerId": null,
+      "isRemote": false,
       "text": "MUSIC!"
     },
     {
       "type": "dialogue",
       "speakerName": "D.D.D.",
       "speakerId": "avg_NPC_017_3",
+      "isRemote": false,
       "text": "What was that? I couldn't hear you! Gimme your loudest voice, and let the whole city know what you want!!"
     },
     {
       "type": "dialogue",
       "speakerName": "Audience",
       "speakerId": null,
+      "isRemote": false,
       "text": "M U S I C ! ! ! !"
     },
     {
       "type": "dialogue",
       "speakerName": "D.D.D.",
       "speakerId": "avg_NPC_017_3",
+      "isRemote": false,
       "text": "In that case... put your hands up! Let's go!!"
     },
     {
@@ -75,12 +90,14 @@
       "type": "dialogue",
       "speakerName": "Ceylon",
       "speakerId": "char_348_ceylon",
+      "isRemote": false,
       "text": "This is an everyday occurrence during the Obsidian Festival. After all, the concerts are one of the most beloved things about the Festival."
     },
     {
       "type": "dialogue",
       "speakerName": "Ceylon",
       "speakerId": "char_348_ceylon",
+      "isRemote": false,
       "text": "The major concert starts at night in Garrison Amusement Park, while at daytime, you can see small concerts in every district."
     },
     {
@@ -96,45 +113,49 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "Haha, but you know what, I studied in Victoria, so I prefer more elegant music and classical."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "Even though classical artists are invited to the Obsidian Festival, this kind of music is more attractive to the tourists."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "It started trending the last few years or so. When I was younger, jazz was all the rage."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "I love spending the day on 2nd Avenue. With a few books with me, I can stay an entire day in one of the cafés."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "Listening to music, having  a cup of green tea, and enjoying the sea breeze..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "It was then that I thought, Siesta must be the best city in the world."
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "Haha, but you know what, I studied in Victoria, so I prefer more elegant music and classical."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "Even though classical artists are invited to the Obsidian Festival, this kind of music is more attractive to the tourists."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "It started trending the last few years or so. When I was younger, jazz was all the rage."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "I love spending the day on 2nd Avenue. With a few books with me, I can stay an entire day in one of the cafés."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "Listening to music, having  a cup of green tea, and enjoying the sea breeze..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "It was then that I thought, Siesta must be the best city in the world."
     },
     {
       "type": "choice",
@@ -144,27 +165,28 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "Of course! This is all possible due to the support I have, including from my family."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "Besides my father, someone close to me works at the City Hall here."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "You'll meet her soon. With her help, it will be much easier to determine how serious the problem is!"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "Of course! This is all possible due to the support I have, including from my family."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "Besides my father, someone close to me works at the City Hall here."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "You'll meet her soon. With her help, it will be much easier to determine how serious the problem is!"
     },
     {
       "type": "choice",
@@ -179,168 +201,196 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "My mother died when she gave birth to me. After that, my father buried himself in his work."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "Since I was little, she has been taking care of me as my bodyguard. Her name is Schwarz."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "Whenever my father was busy with work, she patiently kept my company. Though we're not related by blood, she treats me just like a sister would, so I consider her to be an important part of my family."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "I'll introduce you to her when we meet."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "Look, Doctor, we're almost there. Let's head straight in."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Bodyguard",
-          "speakerId": "avg_npc_020",
-          "text": "Mister Cronin, Miss Ceylon would like to see you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": null,
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cronin",
-          "speakerId": "avg_npc_023_2",
-          "text": "What important matters bring you to the City Hall, milady?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cronin",
-          "speakerId": "avg_npc_023_2",
-          "text": "Everyone is busy organizing the festival right now, so I'm afraid there is little time to spare."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "Cronin, I'll get to the point. The Siesta Volcano is likely to erupt soon. I can't say exactly when, but it could be as soon as the next few days."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "In other words, all the citizens and tourists will be in danger. We need to start evacuating them and help them find shelter."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "We must stop the Obsidian Festival right away."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cronin",
-          "speakerId": "avg_npc_023_2",
-          "text": "Oh milady, do you know what you're saying?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cronin",
-          "speakerId": "avg_npc_023_2",
-          "text": "Anyone else would have been driven out the moment they talked to me like that."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cronin",
-          "speakerId": "avg_npc_023_2",
-          "text": "But because you're special, I'm willing to explain it just for you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cronin",
-          "speakerId": "avg_npc_023_2",
-          "text": "You don't have to worry about the volcano 'issue' at all. Even though I don't know where you got your information, I can assure you that it's nonsense."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "...Are you kidding me?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "There's plenty of evidence that suggests that the volcano is active again and will likely erupt soon."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cronin",
-          "speakerId": "avg_npc_023_2",
-          "text": "Such as?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "Agitation of the Originium slugs living there, unusual changes in temperature, and a strange smell. The conclusion should be obvious."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "If you don't believe me, read the material I brought. It contains a detailed analysis and the conclusion."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cronin",
-          "speakerId": "avg_npc_023_2",
-          "text": "Obvious? Did you go interview the Originium slugs? Or maybe the hot air, or that strange smell?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cronin",
-          "speakerId": "avg_npc_023_2",
-          "text": "I don't quite understand. What do these baseless numbers have to do with this so-called imminent eruption?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cronin",
-          "speakerId": "avg_npc_023_2",
-          "text": "All I know is, I designed the volcano observation system, the mayor built it, and it is still working well."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cronin",
-          "speakerId": "avg_npc_023_2",
-          "text": "Right now, the Siesta Volcano's parameters aren't much different from previous years. If anything, they're even more stable?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "What are you talking about? The truth is right before you..."
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "My mother died when she gave birth to me. After that, my father buried himself in his work."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "Since I was little, she has been taking care of me as my bodyguard. Her name is Schwarz."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "Whenever my father was busy with work, she patiently kept my company. Though we're not related by blood, she treats me just like a sister would, so I consider her to be an important part of my family."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "I'll introduce you to her when we meet."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "Look, Doctor, we're almost there. Let's head straight in."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_offce"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Bodyguard",
+      "speakerId": "avg_npc_020",
+      "isRemote": false,
+      "text": "Mister Cronin, Miss Ceylon would like to see you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cronin",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "What important matters bring you to the City Hall, milady?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cronin",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "Everyone is busy organizing the festival right now, so I'm afraid there is little time to spare."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "Cronin, I'll get to the point. The Siesta Volcano is likely to erupt soon. I can't say exactly when, but it could be as soon as the next few days."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "In other words, all the citizens and tourists will be in danger. We need to start evacuating them and help them find shelter."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "We must stop the Obsidian Festival right away."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cronin",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "Oh milady, do you know what you're saying?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cronin",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "Anyone else would have been driven out the moment they talked to me like that."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cronin",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "But because you're special, I'm willing to explain it just for you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cronin",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "You don't have to worry about the volcano 'issue' at all. Even though I don't know where you got your information, I can assure you that it's nonsense."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "...Are you kidding me?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "There's plenty of evidence that suggests that the volcano is active again and will likely erupt soon."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cronin",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "Such as?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "Agitation of the Originium slugs living there, unusual changes in temperature, and a strange smell. The conclusion should be obvious."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "If you don't believe me, read the material I brought. It contains a detailed analysis and the conclusion."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cronin",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "Obvious? Did you go interview the Originium slugs? Or maybe the hot air, or that strange smell?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cronin",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "I don't quite understand. What do these baseless numbers have to do with this so-called imminent eruption?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cronin",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "All I know is, I designed the volcano observation system, the mayor built it, and it is still working well."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cronin",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "Right now, the Siesta Volcano's parameters aren't much different from previous years. If anything, they're even more stable?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "What are you talking about? The truth is right before you..."
     },
     {
       "type": "choice",
@@ -350,117 +400,133 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cronin",
-          "speakerId": "avg_npc_023_2",
-          "text": "And who exactly are you?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "Dr. {@nickname} is from a professional organization, with colleagues who are experts in volcanology."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "These parameters were examined by the analysts from their specialized department."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cronin",
-          "speakerId": "avg_npc_023_2",
-          "text": "I see, I see."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cronin",
-          "speakerId": "avg_npc_023_2",
-          "text": "...Haha, I get it now."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cronin",
-          "speakerId": "avg_npc_023_2",
-          "text": "So it was you bunch who managed to fool the mayor's daughter, strange visitors."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "What are you talking about?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cronin",
-          "speakerId": "avg_npc_023_2",
-          "text": "Milady, isn't it obvious? You were duped by this faceless stranger."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "Cronin, what are you trying to say? You don't even believe my word?!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cronin",
-          "speakerId": "avg_npc_023_2",
-          "text": "What I'm saying is, you've been studying abroad so you might not know this, but many people are jealous of Siesta's development."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cronin",
-          "speakerId": "avg_npc_023_2",
-          "text": "These kinds of people appear every year. They've tried every trick in the book to try to stop our development. Blackmail, explosions, assassinations. They've even targeted no-name people like me."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cronin",
-          "speakerId": "avg_npc_023_2",
-          "text": "Of course, this is not the first time that someone has tried to spread rumors about this so-called 'volcanic eruption.' However, it is the first time one of these rumors has even been able to deceive someone like you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cronin",
-          "speakerId": "avg_npc_023_2",
-          "text": "I must say, these grifters must have done their homework on the mayor. They even knew that you just returned from studying abroad."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cronin",
-          "speakerId": "avg_npc_023_2",
-          "text": "And look at their nerve, marching into the City Hall like they own the place."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "...You're right that I didn't know about this, but I'm telling the truth!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "There's no way I'd just trust any stranger who shows up!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cronin",
-          "speakerId": "avg_npc_023_2",
-          "text": "As far as I can tell, there's no difference between this 'Doctor' and the swindlers I've encountered in the past."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cronin",
-          "speakerId": "avg_npc_023_2",
-          "text": "There's no depths to which they won't stoop in order to take away this city!"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cronin",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "And who exactly are you?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "Dr. {@nickname} is from a professional organization, with colleagues who are experts in volcanology."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "These parameters were examined by the analysts from their specialized department."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cronin",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "I see, I see."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cronin",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "...Haha, I get it now."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cronin",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "So it was you bunch who managed to fool the mayor's daughter, strange visitors."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "What are you talking about?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cronin",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "Milady, isn't it obvious? You were duped by this faceless stranger."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "Cronin, what are you trying to say? You don't even believe my word?!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cronin",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "What I'm saying is, you've been studying abroad so you might not know this, but many people are jealous of Siesta's development."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cronin",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "These kinds of people appear every year. They've tried every trick in the book to try to stop our development. Blackmail, explosions, assassinations. They've even targeted no-name people like me."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cronin",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "Of course, this is not the first time that someone has tried to spread rumors about this so-called 'volcanic eruption.' However, it is the first time one of these rumors has even been able to deceive someone like you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cronin",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "I must say, these grifters must have done their homework on the mayor. They even knew that you just returned from studying abroad."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cronin",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "And look at their nerve, marching into the City Hall like they own the place."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "...You're right that I didn't know about this, but I'm telling the truth!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "There's no way I'd just trust any stranger who shows up!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cronin",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "As far as I can tell, there's no difference between this 'Doctor' and the swindlers I've encountered in the past."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cronin",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "There's no depths to which they won't stoop in order to take away this city!"
     },
     {
       "type": "choice",
@@ -473,6 +539,7 @@
               "type": "dialogue",
               "speakerName": "Cronin",
               "speakerId": "avg_npc_023_2",
+              "isRemote": false,
               "text": "Jumping to conclusions? Hah, that's what all you swindlers say."
             }
           ]
@@ -485,73 +552,82 @@
               "type": "dialogue",
               "speakerName": "Cronin",
               "speakerId": "avg_npc_023_2",
+              "isRemote": false,
               "text": "What a coincidence. I didn't find your little joke funny either."
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Cronin",
-          "speakerId": "avg_npc_023_2",
-          "text": "Milady, you're still young, so things like this are bound to happen sometimes."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cronin",
-          "speakerId": "avg_npc_023_2",
-          "text": "But don't worry, these swindlers will be punished accordingly. This, I promise you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cronin",
-          "speakerId": "avg_npc_023_2",
-          "text": "Security."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cronin",
-          "speakerId": "avg_npc_023_2",
-          "text": "Take them away."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Bodyguard",
-          "speakerId": "avg_npc_020",
-          "text": "Yes, sir."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "Cronin! You won't even listen to me now?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ceylon",
-          "speakerId": "char_348_ceylon",
-          "text": "You won't have your way as long as I'm here!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cronin",
-          "speakerId": "avg_npc_023_2",
-          "text": "What a pity then. I can't just stand by and watch you disturb Siesta's order."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cronin",
-          "speakerId": "avg_npc_023_2",
-          "text": "Hurry and arrest these con-artists already."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cronin",
-          "speakerId": "avg_npc_023_2",
-          "text": "Also, suppress Miss Ceylon as well. Don't hurt her though; just let her calm down a little!"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cronin",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "Milady, you're still young, so things like this are bound to happen sometimes."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cronin",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "But don't worry, these swindlers will be punished accordingly. This, I promise you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cronin",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "Security."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cronin",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "Take them away."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Bodyguard",
+      "speakerId": "avg_npc_020",
+      "isRemote": false,
+      "text": "Yes, sir."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "Cronin! You won't even listen to me now?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ceylon",
+      "speakerId": "char_348_ceylon",
+      "isRemote": false,
+      "text": "You won't have your way as long as I'm here!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cronin",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "What a pity then. I can't just stand by and watch you disturb Siesta's order."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cronin",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "Hurry and arrest these con-artists already."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cronin",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "Also, suppress Miss Ceylon as well. Don't hurt her though; just let her calm down a little!"
     },
     {
       "type": "choice",
@@ -566,8 +642,7 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     }
   ],
   "observedOperators": [

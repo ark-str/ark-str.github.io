@@ -6,56 +6,68 @@
   "title": "Etched Bone-Deep",
   "storyCode": "15-6",
   "avgTag": "After Operation",
-  "sourcePath": "vendor/ArknightsGamedata/en/gamedata/story/obt/main/level_main_15-05_end.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/en/gamedata/story/obt/main/level_main_15-05_end.txt",
   "sourceHash": "b9596e0e0b562d5041a7b98e3a5c6374b4160bd7bfb79ce897dd0d8b7ba839ac",
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "bg_ceo"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Amiya",
       "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
       "text": "Doctor, Mantra and the others have already returned to the ship."
     },
     {
       "type": "dialogue",
       "speakerName": "Amiya",
       "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
       "text": "Your guess was correct. Someone is targeting our mission."
     },
     {
       "type": "dialogue",
       "speakerName": "Amiya",
       "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
       "text": "This instrument is from Ægir?"
     },
     {
       "type": "dialogue",
       "speakerName": "Broken Little Handy",
       "speakerId": "avg_npc_1401_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Amiya",
       "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
       "text": "Dr. Kal'tsit, can we discover anything from its remaining parts?"
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "No. The Ægir Academy of Technology put a great deal of care into this delicate piece of equipment—Given their pride, I'll bet they made sure no one could ever crack their Little Handy."
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "But the appearance of the Little Handy itself is enough to explain many problems."
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
       "text": "Doctor, do you remember the Joint Marine Corps?"
     },
     {
@@ -74,36 +86,38 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "Both the Iberian and Rim Billitonian authorities have responded to our call. The problem is that once cooperation begins, subsequent developments could spiral beyond what we've anticipated."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "In recent weeks, the Ægir fleet has not only constructed ports in Iberia, but also established landing sites along the southern coast of Rim Billiton."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "The Ægirs from the deep sea made no immediate move to land. Instead, they quickly carried out a number of operations, including hydrographic surveying, under the banner of 'technical cooperation'."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "They also quickly assembled a 'Land Patrol' through a mix of hired personnel and official partnerships, relying on more neutral intermediaries to facilitate cooperation with land-based forces."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "Both the Iberian and Rim Billitonian authorities have responded to our call. The problem is that once cooperation begins, subsequent developments could spiral beyond what we've anticipated."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "In recent weeks, the Ægir fleet has not only constructed ports in Iberia, but also established landing sites along the southern coast of Rim Billiton."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "The Ægirs from the deep sea made no immediate move to land. Instead, they quickly carried out a number of operations, including hydrographic surveying, under the banner of 'technical cooperation'."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "They also quickly assembled a 'Land Patrol' through a mix of hired personnel and official partnerships, relying on more neutral intermediaries to facilitate cooperation with land-based forces."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -113,48 +127,52 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "We're still only speculating—but right now, the Land Patrol is the only one that fits all the evidence we've collected."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "Dr. Kal'tsit, some consuls don't back Clementia, yes, but that doesn't prove that Ægir is behind all of this."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "No, I am more inclined to believe that someone took advantage of the internal conflicts within Ægir."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "The Land Patrol near the Iberian border, the mining ship being handed off in Rim Billiton, the mercenaries on the Kazdelian frontier..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "The breadth of their deployments and the depth of their knowledge about Rhodes Island's classified missions—that's more than enough to prove that Ægir isn't behind this."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "However, there is no possibility of a rebellion within Rhodes Island."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "We're still only speculating—but right now, the Land Patrol is the only one that fits all the evidence we've collected."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "Dr. Kal'tsit, some consuls don't back Clementia, yes, but that doesn't prove that Ægir is behind all of this."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "No, I am more inclined to believe that someone took advantage of the internal conflicts within Ægir."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "The Land Patrol near the Iberian border, the mining ship being handed off in Rim Billiton, the mercenaries on the Kazdelian frontier..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "The breadth of their deployments and the depth of their knowledge about Rhodes Island's classified missions—that's more than enough to prove that Ægir isn't behind this."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "However, there is no possibility of a rebellion within Rhodes Island."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -164,18 +182,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "Doctor, do you think there's anyone else in Rhodes Island who could do that, besides us?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "Doctor, do you think there's anyone else in Rhodes Island who could do that, besides us?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -190,57 +207,62 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "That's right. No one else could do that."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "Dr. Kal'tsit, the threats that Rhodes Island faces now are unpredictable."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "Dr. Warfarin also warned us several times—the special patients she is caring for—their conditions are deteriorating faster than she can control."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "Whether to save our patients or to respond to potential crises, we need more aggressive responses."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "I've reviewed the records Theresa left in the Black Crown—she also made major breakthroughs through her work on Civilight Eterna."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "I can visit Civilight Eterna to look for potential help, just like Theresa did."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "We must carefully assess the risks involved, Amiya."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "That's right. No one else could do that."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "Dr. Kal'tsit, the threats that Rhodes Island faces now are unpredictable."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "Dr. Warfarin also warned us several times—the special patients she is caring for—their conditions are deteriorating faster than she can control."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "Whether to save our patients or to respond to potential crises, we need more aggressive responses."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "I've reviewed the records Theresa left in the Black Crown—she also made major breakthroughs through her work on Civilight Eterna."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "I can visit Civilight Eterna to look for potential help, just like Theresa did."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "We must carefully assess the risks involved, Amiya."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -253,18 +275,21 @@
               "type": "dialogue",
               "speakerName": "Amiya",
               "speakerId": "avg_1037_amiya3_1",
+              "isRemote": false,
               "text": "I cannot give you a definitive answer, Doctor."
             },
             {
               "type": "dialogue",
               "speakerName": "Amiya",
               "speakerId": "avg_1037_amiya3_1",
+              "isRemote": false,
               "text": "But I will never stop trying. Any advantage I can gain may help Rhodes Island progress further."
             },
             {
               "type": "dialogue",
               "speakerName": "Amiya",
               "speakerId": "avg_1037_amiya3_1",
+              "isRemote": false,
               "text": "I want to try."
             }
           ]
@@ -277,18 +302,19 @@
               "type": "dialogue",
               "speakerName": "Kal'tsit",
               "speakerId": "avg_003_kalts_1",
+              "isRemote": false,
               "text": "At this moment when the situation is still unclear, I cannot come up with any more effective measures."
             },
             {
               "type": "dialogue",
               "speakerName": "Kal'tsit",
               "speakerId": "avg_003_kalts_1",
+              "isRemote": false,
               "text": "But diving recklessly into Civilight Eterna may not lead to the outcome we hope for, Doctor."
             }
           ]
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -298,24 +324,24 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "—?!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "Doctor, I cannot agree to such a risky plan."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "—?!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "Doctor, I cannot agree to such a risky plan."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -325,40 +351,42 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "Doctor, that's too dangerous. No one has ever done something like this before! I agree with Dr. Kal'tsit that you shouldn't take the risk."
-        },
-        {
-          "type": "narration",
-          "text": "Kal'tsit recalls the experience of her dear friend, which is not something she is happy to recall."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "Yes, Civilight Eterna can do that."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "She did it before."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "...?!"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "Doctor, that's too dangerous. No one has ever done something like this before! I agree with Dr. Kal'tsit that you shouldn't take the risk."
+    },
+    {
+      "type": "narration",
+      "text": "Kal'tsit recalls the experience of her dear friend, which is not something she is happy to recall."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "Yes, Civilight Eterna can do that."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "She did it before."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "...?!"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -373,36 +401,38 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "Doctor, your mind is incredibly complex, but you're not the only one at risk here—Amiya could be exposed to completely unforeseen shocks as well."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "I will not agree to this preposterous proposal."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "Dr. Kal'tsit..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "Amiya, this is my opinion. I cannot interfere with yours and the Doctor's final decision on this matter, but I hope you understand my stance."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "Doctor, your mind is incredibly complex, but you're not the only one at risk here—Amiya could be exposed to completely unforeseen shocks as well."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "I will not agree to this preposterous proposal."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "Dr. Kal'tsit..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "Amiya, this is my opinion. I cannot interfere with yours and the Doctor's final decision on this matter, but I hope you understand my stance."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -417,18 +447,17 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "But, Dr. Kal'tsit..."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "But, Dr. Kal'tsit..."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -443,18 +472,17 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_1037_amiya3_1",
-          "text": "I trust you, Doctor."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_1037_amiya3_1",
+      "isRemote": false,
+      "text": "I trust you, Doctor."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -464,8 +492,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -475,314 +502,364 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "(Muffled roar)"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "Are you worried about me? I'm not mad at all."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "Once again, we've arrived at a critical turning point. And last time… Babel met the fate I dreaded most."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "It turns out that I can't make sure everything is running on its ideal track, Mon3tr."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "(Raises claw)"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "(Rubs gently)"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "Our own limitations have begun to affect our usefulness in more important endeavors."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "We may be able to witness the changes of the stars and the untamed cosmos, but when faced with a real crisis, we're no different from any other creatures on this great land."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "(Dissatisifed growl)"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "Thank you for comforting me. I can sense your good intentions."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "(Anxious growl)"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "Yes, I suppose Amiya and the Doctor have already begun preparing to delve deeper into Civilight Eterna."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "I will not interfere with Amiya's decision. She is mature enough to make the most correct judgment."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "And the Doctor... the Doctor isn't quite the same anymore either."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "Maybe I still have a glimmer of hope in my heart. Maybe, this time the outcome will be different."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "(Subdued bow)"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "It is true that my own sanity is constantly warning me."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "Touching the Doctor's mind again with the help of Civilight Eterna is not a sound decision, but Amiya is right, we don't have much choice."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "(Passionate cry)"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "Mon3tr, I will protect the Doctor and Amiya."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "At this moment, Mon3tr can sense even Kal'tsit's slightest emotions.\nEver since Kal'tsit's latest awakening, Mon3tr has been at her side.\nMon3tr is her companion, the symbiote she personally guides... and more importantly, herself."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "(Affectionate murmur)"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "You're wrong. I do not feel hopeless, Mon3tr."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "I am delighted that the Ancients overthrew the rule of the Elders, and I am also pleased that Lugalszargus set the starting point for a new civilization."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "I have made mistakes out of arrogance, but I have also regained my confidence by making dear friends."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "Maybe yours and my basic structures will always be alien to this land, but that doesn't mean we will always walk alone."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "I've found my home, in Rhodes Island, on this great land."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "I've fulfilled her expectations, Mon3tr. I've learned to love. I've found myself."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "(Moves confusedly)"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "(Wraps tail around Kal'tsit)"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "I must protect Amiya and the Doctor."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "I must protect the true variable here... the future I cannot even glimpse."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "I've communicated with Civilight Eterna before, yet I haven't been able to break through my own limitations."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "But Amiya can. Of that, Theresa and I are certain."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "I'm sure she can pluck significance from the massive trove of data. With Theresa's blessing… she can do it."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "She is still Amiya, after all. I have seen her grow into a leader with my own eyes."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "Following in footsteps, she might find some words that one left behind."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "In the past, when Originium had not yet taken shape, there was an era when luminaries competed to argue with the epoch itself. Their wonderful ideas, born of a desire to celebrate and save lives, still persist."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "All is not yet lost, Mon3tr. Terra has a chance, no matter how faint, to keep that hope alive."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "(Excited howl)"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "Me? No, Mon3tr, I'm better at memories... remembering the history I witnessed, and have seen erased by time."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "I am not special at all."
-        },
-        {
-          "type": "narration",
-          "text": "Kal'tsit calmly inscribes the important info into Mon3tr's spine."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "If the outcome I fear most does come to pass, if the one I least want to see stands in front of us once more—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "Protect the Doctor. Protect Amiya."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "I will engrave this directive into your basic behavioral strategy matrix."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "(Agitated howling)"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "Come, Mon3tr. We still have work to do."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "If the threat does come, I must ensure that Rhodes Island is Terra's first outpost against the crisis."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "avg_003_kalts_1",
-          "text": "...I will be your final safeguard."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_rhodescom"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "(Muffled roar)"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "Are you worried about me? I'm not mad at all."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "Once again, we've arrived at a critical turning point. And last time… Babel met the fate I dreaded most."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "It turns out that I can't make sure everything is running on its ideal track, Mon3tr."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "(Raises claw)"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "(Rubs gently)"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "Our own limitations have begun to affect our usefulness in more important endeavors."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "We may be able to witness the changes of the stars and the untamed cosmos, but when faced with a real crisis, we're no different from any other creatures on this great land."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "(Dissatisifed growl)"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "Thank you for comforting me. I can sense your good intentions."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "(Anxious growl)"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "Yes, I suppose Amiya and the Doctor have already begun preparing to delve deeper into Civilight Eterna."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "I will not interfere with Amiya's decision. She is mature enough to make the most correct judgment."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "And the Doctor... the Doctor isn't quite the same anymore either."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "Maybe I still have a glimmer of hope in my heart. Maybe, this time the outcome will be different."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "(Subdued bow)"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "It is true that my own sanity is constantly warning me."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "Touching the Doctor's mind again with the help of Civilight Eterna is not a sound decision, but Amiya is right, we don't have much choice."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "(Passionate cry)"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "Mon3tr, I will protect the Doctor and Amiya."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "At this moment, Mon3tr can sense even Kal'tsit's slightest emotions.\nEver since Kal'tsit's latest awakening, Mon3tr has been at her side.\nMon3tr is her companion, the symbiote she personally guides... and more importantly, herself."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "(Affectionate murmur)"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "You're wrong. I do not feel hopeless, Mon3tr."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "I am delighted that the Ancients overthrew the rule of the Elders, and I am also pleased that Lugalszargus set the starting point for a new civilization."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "I have made mistakes out of arrogance, but I have also regained my confidence by making dear friends."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "Maybe yours and my basic structures will always be alien to this land, but that doesn't mean we will always walk alone."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "I've found my home, in Rhodes Island, on this great land."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "I've fulfilled her expectations, Mon3tr. I've learned to love. I've found myself."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "(Moves confusedly)"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "(Wraps tail around Kal'tsit)"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "I must protect Amiya and the Doctor."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "I must protect the true variable here... the future I cannot even glimpse."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "I've communicated with Civilight Eterna before, yet I haven't been able to break through my own limitations."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "But Amiya can. Of that, Theresa and I are certain."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "I'm sure she can pluck significance from the massive trove of data. With Theresa's blessing… she can do it."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "She is still Amiya, after all. I have seen her grow into a leader with my own eyes."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "Following in footsteps, she might find some words that one left behind."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "In the past, when Originium had not yet taken shape, there was an era when luminaries competed to argue with the epoch itself. Their wonderful ideas, born of a desire to celebrate and save lives, still persist."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "All is not yet lost, Mon3tr. Terra has a chance, no matter how faint, to keep that hope alive."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "(Excited howl)"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "Me? No, Mon3tr, I'm better at memories... remembering the history I witnessed, and have seen erased by time."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "I am not special at all."
+    },
+    {
+      "type": "narration",
+      "text": "Kal'tsit calmly inscribes the important info into Mon3tr's spine."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "If the outcome I fear most does come to pass, if the one I least want to see stands in front of us once more—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "Protect the Doctor. Protect Amiya."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "I will engrave this directive into your basic behavioral strategy matrix."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "(Agitated howling)"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "Come, Mon3tr. We still have work to do."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "If the threat does come, I must ensure that Rhodes Island is Terra's first outpost against the crisis."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "...I will be your final safeguard."
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": []

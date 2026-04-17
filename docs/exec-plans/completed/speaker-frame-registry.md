@@ -1,11 +1,11 @@
 # Speaker Frame Registry
 
-Status: active
+Status: completed
 Owner: Codex
 Started: 2026-04-17
 Parent issue: `#34`
-Active child issue: `#35`
-Draft PR: `#36`
+Completed child issue: `#35`
+Merged PR: `#36`
 
 ## Objective
 

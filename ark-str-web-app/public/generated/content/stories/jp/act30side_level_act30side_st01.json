@@ -6,10 +6,28 @@
   "title": "待合室",
   "storyCode": "RS-ST-1",
   "avgTag": "幕間",
-  "sourcePath": "vendor/ArknightsGamedata/jp/gamedata/story/activities/act30side/level_act30side_st01.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/jp/gamedata/story/activities/act30side/level_act30side_st01.txt",
   "sourceHash": "a63350517d76c11848f0b73f86ba8eb8115ee577a7944b077d86959cf449cca1",
   "bodyAvailable": true,
   "blocks": [
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "24_g13_mountpath_s"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "24_g1_snowyforest"
+    },
     {
       "type": "narration",
       "text": "1100年冬 イェラグ ペイルロッシュ家領内 カランド麓"
@@ -21,24 +39,28 @@
       "type": "dialogue",
       "speakerName": "精悍な兵士",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "リーダーの兵士",
       "speakerId": "avg_npc_1158_1",
+      "isRemote": false,
       "text": "ペースを上げろ！"
     },
     {
       "type": "dialogue",
       "speakerName": "リーダーの兵士",
       "speakerId": "avg_npc_1158_1",
+      "isRemote": false,
       "text": "我々がここへ来た理由を忘れるな！　後ろの連中もしっかりついてこい！"
     },
     {
       "type": "dialogue",
       "speakerName": "精悍な兵士",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "はっ！"
     },
     {
@@ -48,12 +70,14 @@
       "type": "dialogue",
       "speakerName": "リーダーの兵士",
       "speakerId": "avg_npc_1158_1",
+      "isRemote": false,
       "text": "止まれ！　集合！"
     },
     {
       "type": "dialogue",
       "speakerName": "リーダーの兵士",
       "speakerId": "avg_npc_1158_1",
+      "isRemote": false,
       "text": "その場で整列！"
     },
     {
@@ -63,108 +87,126 @@
       "type": "dialogue",
       "speakerName": "精悍な兵士",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "報告！　第二小隊揃いました！"
     },
     {
       "type": "dialogue",
       "speakerName": "リーダーの兵士",
       "speakerId": "avg_npc_1158_1",
+      "isRemote": false,
       "text": "よろしい。"
     },
     {
       "type": "dialogue",
       "speakerName": "リーダーの兵士",
       "speakerId": "avg_npc_1158_1",
+      "isRemote": false,
       "text": "第三小隊はまだか？"
     },
     {
       "type": "dialogue",
       "speakerName": "精悍な兵士",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "はっ、まだ到着しておりません！"
     },
     {
       "type": "dialogue",
       "speakerName": "リーダーの兵士",
       "speakerId": "avg_npc_1158_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "精悍な兵士",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "恐れながら、第三小隊のほうで何かがあったのではないかと……"
     },
     {
       "type": "dialogue",
       "speakerName": "精悍な兵士",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "到着を待ちますか？"
     },
     {
       "type": "dialogue",
       "speakerName": "リーダーの兵士",
       "speakerId": "avg_npc_1158_1",
+      "isRemote": false,
       "text": "もういい。こうなることも想定の内だ。先に到着した者から進攻を開始せよ！"
     },
     {
       "type": "dialogue",
       "speakerName": "精悍な兵士",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "はっ！"
     },
     {
       "type": "dialogue",
       "speakerName": "リーダーの兵士",
       "speakerId": "avg_npc_1158_1",
+      "isRemote": false,
       "text": "この先の作戦計画については知っての通りだ。私が詳細を語る必要はあるまい。"
     },
     {
       "type": "dialogue",
       "speakerName": "リーダーの兵士",
       "speakerId": "avg_npc_1158_1",
+      "isRemote": false,
       "text": "これは遠征であり、我らヴィクトリア人による栄誉ある戦いに他ならない！"
     },
     {
       "type": "dialogue",
       "speakerName": "リーダーの兵士",
       "speakerId": "avg_npc_1158_1",
+      "isRemote": false,
       "text": "常に警戒を怠るな！　いかなる敵も侮るな！　この一戦に……失敗は許されん！"
     },
     {
       "type": "dialogue",
       "speakerName": "精悍な兵士",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "はっ！"
     },
     {
       "type": "dialogue",
       "speakerName": "リーダーの兵士",
       "speakerId": "avg_npc_1158_1",
+      "isRemote": false,
       "text": "よし、そのまま士気を保て！"
     },
     {
       "type": "dialogue",
       "speakerName": "リーダーの兵士",
       "speakerId": "avg_npc_1158_1",
+      "isRemote": false,
       "text": "第二小隊に告ぐ。引き続き進軍せよ！"
     },
     {
       "type": "dialogue",
       "speakerName": "リーダーの兵士",
       "speakerId": "avg_npc_1158_1",
+      "isRemote": false,
       "text": "目標――麓の牧獣飼いの酒場！"
     },
     {
       "type": "dialogue",
       "speakerName": "リーダーの兵士",
       "speakerId": "avg_npc_1158_1",
+      "isRemote": false,
       "text": "酒量において、あの牧獣飼いどもに負けるわけにはいかん！　今度こそ奴らを完膚なきまでに叩きのめすのだ！"
     },
     {
       "type": "dialogue",
       "speakerName": "精悍な兵士",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "はっ！！"
     },
     {
@@ -174,111 +216,133 @@
       "type": "dialogue",
       "speakerName": "イェラグ人男性",
       "speakerId": "avg_npc_278_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "イェラグ人男性",
       "speakerId": "avg_npc_278_1",
+      "isRemote": false,
       "text": "あのヴィクトリア人たち、今度は何をしてるんだ？"
     },
     {
       "type": "dialogue",
       "speakerName": "イェラグ人女性",
       "speakerId": "avg_npc_280_1",
+      "isRemote": false,
       "text": "飲み比べでもしに行くんじゃない？　聞いた話じゃ、ライリーおじさんたちと何度も勝負しては、毎回吐くまで飲んでるらしいわよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "イェラグ人女性",
       "speakerId": "avg_npc_280_1",
+      "isRemote": false,
       "text": "我らのイェラガンドに……どうか彼らをお救いください。"
     },
     {
       "type": "dialogue",
       "speakerName": "イェラグ人女性",
       "speakerId": "avg_npc_280_1",
+      "isRemote": false,
       "text": "ヴィクトリアの人って、普段からあんなに暇してるのかしら……？"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "24_g8_nobleroom"
+    },
+    {
       "type": "dialogue",
       "speakerName": "スキウース",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "うーん……"
     },
     {
       "type": "dialogue",
       "speakerName": "スキウース",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "ダメ、これは却下。"
     },
     {
       "type": "dialogue",
       "speakerName": "スキウース",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "「ドレモミス」……んー、悪くないかも。"
     },
     {
       "type": "dialogue",
       "speakerName": "スキウース",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "ねえユカタン、「ドレモミス」って名前どう思う？"
     },
     {
       "type": "dialogue",
       "speakerName": "ユカタン",
       "speakerId": "avg_npc_263_1",
+      "isRemote": false,
       "text": "いいと思うよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "スキウース",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "も～っ、あなたったらそればっかり！"
     },
     {
       "type": "dialogue",
       "speakerName": "スキウース",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "毎回毎回「いいと思うよ」しか言わないじゃない！"
     },
     {
       "type": "dialogue",
       "speakerName": "ユカタン",
       "speakerId": "avg_npc_263_1",
+      "isRemote": false,
       "text": "……そうだったか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ユカタン",
       "speakerId": "avg_npc_263_1",
+      "isRemote": false,
       "text": "でも、実際お前が考えた名前はどれもいい響きだと思うからさ。"
     },
     {
       "type": "dialogue",
       "speakerName": "スキウース",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "ダメね、あなたの「いい」は当てにならないわ。あたしがよーく考えないと。だって、あたしたちにとって初めての……"
     },
     {
       "type": "dialogue",
       "speakerName": "スキウース",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "こほん、つまりはほら、一番良い名前を選んであげなきゃいけないでしょ！"
     },
     {
       "type": "dialogue",
       "speakerName": "スキウース",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "とりあえず、「ドレモミス」は候補に入れておくわ。あとは「タミオプス」なんかも良さそうね。"
     },
     {
       "type": "dialogue",
       "speakerName": "スキウース",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "そうだ、ついでにニックネームも考えておきましょうか。そうね……「ウォルナッツ」とかどうかしら！"
     },
     {
@@ -288,90 +352,105 @@
       "type": "dialogue",
       "speakerName": "ラタトス",
       "speakerId": "avg_npc_253_1",
+      "isRemote": false,
       "text": "まったく、騒がしいねお前は。扉の外まで声が聞こえてるよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ラタトス",
       "speakerId": "avg_npc_253_1",
+      "isRemote": false,
       "text": "だいたい、「ウォルナッツ」って何だ？　未来の子供の名前でも考えてんのかい？"
     },
     {
       "type": "dialogue",
       "speakerName": "ユカタン",
       "speakerId": "avg_npc_263_1",
+      "isRemote": false,
       "text": "お義姉様、ごきげんよう。"
     },
     {
       "type": "dialogue",
       "speakerName": "スキウース",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "そっ、そんなわけないでしょ……！"
     },
     {
       "type": "dialogue",
       "speakerName": "スキウース",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "テキトー言わないでくれる！？"
     },
     {
       "type": "dialogue",
       "speakerName": "ラタトス",
       "speakerId": "avg_npc_253_1",
+      "isRemote": false,
       "text": "はいはい、からかうのはこの辺にして本題に入ろうかね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ラタトス",
       "speakerId": "avg_npc_253_1",
+      "isRemote": false,
       "text": "イェラガンド像が完成したんだ。二日後に落成式が執り行われる。"
     },
     {
       "type": "dialogue",
       "speakerName": "ラタトス",
       "speakerId": "avg_npc_253_1",
+      "isRemote": false,
       "text": "しばらく忙しくなるから、お前たちで領内に目を光らせときな。"
     },
     {
       "type": "dialogue",
       "speakerName": "スキウース",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "安心してあたしにどーんと任せときなさい！"
     },
     {
       "type": "dialogue",
       "speakerName": "ラタトス",
       "speakerId": "avg_npc_253_1",
+      "isRemote": false,
       "text": "可愛い妹よ、任せるのがお前だから安心できないんだけどね。"
     },
     {
       "type": "dialogue",
       "speakerName": "スキウース",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "ふーんだ、今回は何もやらかしてないし、叱られる筋合いなんかないわよ！"
     },
     {
       "type": "dialogue",
       "speakerName": "ラタトス",
       "speakerId": "avg_npc_253_1",
+      "isRemote": false,
       "text": "ユカタン、まさかと思うが、お前の嫁さんは外でもこういうバカっぽい振る舞いをしてるわけか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ユカタン",
       "speakerId": "avg_npc_263_1",
+      "isRemote": false,
       "text": "あはは……"
     },
     {
       "type": "dialogue",
       "speakerName": "スキウース",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "何とでも言いなさい！　でもねラタトス、言っておくけど、今回はあたしなりに計画があるのよ！"
     },
     {
       "type": "dialogue",
       "speakerName": "スキウース",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "それが上手くいけば、あのエンシオディスだってあたしたちブラウンテイル家に恩義ができちゃうんだから！　黙って見てなさい！"
     },
     {
@@ -382,111 +461,133 @@
       "type": "dialogue",
       "speakerName": "ラタトス",
       "speakerId": "avg_npc_253_1",
+      "isRemote": false,
       "text": "とりあえず、お前を信じよう。ただ、忠告はしておくよ――慎重にやりな。"
     },
     {
       "type": "dialogue",
       "speakerName": "ラタトス",
       "speakerId": "avg_npc_253_1",
+      "isRemote": false,
       "text": "イェラガンド像の完成以外にも、ヴィクトリア人の動きや、エンシオディスの計画……気にかかることは色々とある。"
     },
     {
       "type": "dialogue",
       "speakerName": "ラタトス",
       "speakerId": "avg_npc_253_1",
+      "isRemote": false,
       "text": "フッ、どれも一筋縄ではいかないだろうね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ラタトス",
       "speakerId": "avg_npc_253_1",
+      "isRemote": false,
       "text": "この先しばらくは……穏やかには過ごせないと思うよ。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "24_g4_boudoir"
+    },
+    {
       "type": "dialogue",
       "speakerName": "アークトス",
       "speakerId": "avg_npc_254_1",
+      "isRemote": false,
       "text": "言語道断だ！　あのヴィクトリア人どもめ、人をバカにするにも程がある！"
     },
     {
       "type": "dialogue",
       "speakerName": "アークトス",
       "speakerId": "avg_npc_254_1",
+      "isRemote": false,
       "text": "巫女様のご命令さえ頂ければ、私が即座に兵力を揃え、奴らをイェラグから追い払ってみせましょう！"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "アークトス様、どうか冷静に。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "ヴィクトリアの部隊はイェラガンド像の落成を祝うべくいらしたと聞いております。"
     },
     {
       "type": "dialogue",
       "speakerName": "アークトス",
       "speakerId": "avg_npc_254_1",
+      "isRemote": false,
       "text": "単なる祝い事に二千人も送ることなどありましょうか？　そんなものはただの名目です！"
     },
     {
       "type": "dialogue",
       "speakerName": "アークトス",
       "speakerId": "avg_npc_254_1",
+      "isRemote": false,
       "text": "奴らはカランドの麓に野営地を構えているのですよ！　まったくの不信心者です！　あんな連中を二日後の式典に参列させれば、イェラガンドのお怒りに触れることでしょう！"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "アークトス",
       "speakerId": "avg_npc_254_1",
+      "isRemote": false,
       "text": "巫女様！　本当にこのイェラグの地で、奴らに不躾な振る舞いをさせても良いと仰るのですか！？"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "あなたの仰る通り、彼らがイェラガンドへの敬意など持ち合わせていないことはよくわかっております。"
     },
     {
       "type": "dialogue",
       "speakerName": "アークトス",
       "speakerId": "avg_npc_254_1",
+      "isRemote": false,
       "text": "ならば――！"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "ゆえにこそ、なのですよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "アークトス様。我らのイェラガンド像は、信徒がそれを仰ぎ見るためだけに作られたものなのでしょうか？"
     },
     {
       "type": "dialogue",
       "speakerName": "アークトス",
       "speakerId": "avg_npc_254_1",
+      "isRemote": false,
       "text": "それは……"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "ご覧ください、あの像を。"
     },
     {
@@ -496,210 +597,252 @@
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "三年前、我々はシルバーアッシュ家の提案を承認し、銀心湖にイェラガンドの像を建てると決めました。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "あれは壮大かつ厳粛にして、慈悲深く寛容でなければならぬ物。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "イェラグ人の精神的な支柱となり、対外的にもイェラグを代表するシンボルになることでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "あれを承認した時点で、皆さんは予想していたはずです。今後はより多くの方がこのイェラグを訪れ、多くの出来事が起こるのは避けられないだろうということを。"
     },
     {
       "type": "dialogue",
       "speakerName": "アークトス",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "それはそうですが、しかし――"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "しかしも何もございません。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "イェラグ人にとって、イェラガンドへの信仰は揺るぎなきもの。よそから来た方々にはそれを理解できようもないでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "ですが、敬虔な信仰を持つか否かにかかわらず、人々はこのイェラガンドの象徴たる像の前へと訪れて、その栄光に浴することができるのです。"
     },
     {
       "type": "dialogue",
       "speakerName": "アークトス",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "それでも、今の状況は巫女様が思い描いておられるようなものではないのです！"
     },
     {
       "type": "dialogue",
       "speakerName": "アークトス",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "これがただの観光客ならば、無論私も多くは申しません！　ですが現状我々が対峙しているのはヴィクトリアの軍隊であって、あなたの想定したような人々とは違うのです！"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "実のところ、我々が相対しているのは「軍隊」でしょうか、それとも「貴族の護衛」でしょうか？"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "はたまた、「ヴィクトリア」そのものなのでしょうか？"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "いずれにせよ、彼らが祝賀のためにとイェラグ入りを求めてきた以上は、それを拒む理由など我々にはございません。"
     },
     {
       "type": "dialogue",
       "speakerName": "アークトス",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "それは……"
     },
     {
       "type": "dialogue",
       "speakerName": "アークトス",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "しかし、向こうが何らかの企みを持っていることは確かです。万一……"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "24_g4_boudoir"
+    },
+    {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "今に至れど、身共はエンシオディス様が下したリスクの高い決定のいくつかに対し、同意しかねると考えています。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "それが確かにイェラグに発展をもたらしてきたとはいえ……"
     },
     {
       "type": "dialogue",
       "speakerName": "アークトス",
       "speakerId": "avg_npc_254_1",
+      "isRemote": false,
       "text": "エンシオディスはこの三年、一体何をしていたのですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "アークトス",
       "speakerId": "avg_npc_254_1",
+      "isRemote": false,
       "text": "鉱物の輸出問題で何かこそこそと動いているようですが、もしや今回のヴィクトリア人の件も、奴が引き起こしたものなのでは？"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "……わかりません。"
     },
     {
       "type": "dialogue",
       "speakerName": "アークトス",
       "speakerId": "avg_npc_254_1",
+      "isRemote": false,
       "text": "本気でそう仰るので？"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "何と仰られようと、「わからない」としかお答えできません。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "エンシオディス様が陰でどのような計画を立てていようと、すべては彼の独断であり、身共と蔓珠院は無論内情を知りません。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "知りすぎることは時として、良いことではないのです。"
     },
     {
       "type": "dialogue",
       "speakerName": "アークトス",
       "speakerId": "avg_npc_254_1",
+      "isRemote": false,
       "text": "ということは、つまり……"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "これは事実を述べたまでのこと。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "今回の式典において、アクシデントは決して許されません。我々が今すべきなのは、可能な限り準備を整えることです。"
     },
     {
       "type": "dialogue",
       "speakerName": "アークトス",
       "speakerId": "avg_npc_254_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "アークトス",
       "speakerId": "avg_npc_254_1",
+      "isRemote": false,
       "text": "わかりました。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "とはいえ、それほど心配なさる必要はありませんよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "何が起ころうとも……"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "イェラガンドは民をお守りくださいますから。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "24_g4_boudoir"
+    },
+    {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -709,60 +852,70 @@
       "type": "dialogue",
       "speakerName": "ヤエル",
       "speakerId": "avg_npc_250_1",
+      "isRemote": false,
       "text": "巫女様、何を考えているの？"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "アークトスが言及していたイェラガンド像のことです……"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "二日後の式典が滞りなく進めばよいのですが。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヤエル",
       "speakerId": "avg_npc_250_1",
+      "isRemote": false,
       "text": "きっと大丈夫よ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヤエル",
       "speakerId": "avg_npc_250_1",
+      "isRemote": false,
       "text": "「イェラガンドは民をお守りくださる」、でしょ？"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "……それでも、我々は力を尽くさねばなりません。それこそ、主がお手を煩わせることのないくらいに。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヤエル",
       "speakerId": "avg_npc_250_1",
+      "isRemote": false,
       "text": "イェラガンドはただ見守り続けてくだされば、ってことかしら？"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "イェラグはリスクに立ち向かうことや挑戦を学ばねばなりません。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "一生母に手を引いてもらって歩いていくことなど、できないのですから。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヤエル",
       "speakerId": "avg_npc_250_1",
+      "isRemote": false,
       "text": "……まあ、あなたの言う通りね。"
     },
     {
@@ -772,24 +925,28 @@
       "type": "dialogue",
       "speakerName": "ヤエル",
       "speakerId": "avg_npc_250_1",
+      "isRemote": false,
       "text": "あーあ、また話が重くなっちゃったわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヤエル",
       "speakerId": "avg_npc_250_1",
+      "isRemote": false,
       "text": "イェラガンド像といえば、アークトスときたら……正直、ほっぺたを叩いてやりたいくらいよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "……というと？"
     },
     {
       "type": "dialogue",
       "speakerName": "ヤエル",
       "speakerId": "avg_npc_250_1",
+      "isRemote": false,
       "text": "像の顔があの造形になったのは、彼が古典から見つけた記述を基にしているからでしょう？"
     },
     {
@@ -800,69 +957,84 @@
       "type": "dialogue",
       "speakerName": "ヤエル",
       "speakerId": "avg_npc_250_1",
+      "isRemote": false,
       "text": "ひっぱたいてやらないと気が収まらないわ！"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "ヤエル",
       "speakerId": "avg_npc_250_1",
+      "isRemote": false,
       "text": "あら、巫女様？"
     },
     {
       "type": "dialogue",
       "speakerName": "ヤエル",
       "speakerId": "avg_npc_250_1",
+      "isRemote": false,
       "text": "エンヤ？"
     },
     {
       "type": "dialogue",
       "speakerName": "ヤエル",
       "speakerId": "avg_npc_250_1",
+      "isRemote": false,
       "text": "どうして急に黙るの……？"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "ヤエル",
       "speakerId": "avg_npc_250_1",
+      "isRemote": false,
       "text": "……嘘でしょ、また私をからかってるのよね？　だってそんなはずないじゃない！"
     },
     {
       "type": "dialogue",
       "speakerName": "ヤエル",
       "speakerId": "avg_npc_250_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "ヤエル",
       "speakerId": "avg_npc_250_1",
+      "isRemote": false,
       "text": "まさか私……じゃなくて、イェラガンドの顔って……本当にあんなに大きいの？"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "45_g5_victoriabarracks_o"
+    },
+    {
       "type": "dialogue",
       "speakerName": "エンシオディス",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "二日後の早朝、銀心湖にて、イェラガンド像の正式な完成を祝し、巫女様による祝福の儀が執り行われます。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンシオディス",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "こちらがあなたへの招待状です、子爵殿。"
     },
     {
@@ -872,222 +1044,259 @@
       "type": "dialogue",
       "speakerName": "ヴィクトリア子爵",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "これは有難い、エンシオディス様――ははっ、イェラグの民からはそう呼ばれておられるのでしょう？"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィクトリア子爵",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "しかし招待状とは、ご丁寧にありがとうございます。我々はもとよりこのために伺ったのですから、わざわざご用意いただかなくとも大丈夫でしたのに。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィクトリア子爵",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "ともあれ、どうかご安心を。私も兵士たちも、当日は必ずや時間通りに会場へお伺いしてイェラガンド像の完成をお祝いいたしますぞ……偉大なるイェラガンドに敬意を！"
     },
     {
       "type": "dialogue",
       "speakerName": "エンシオディス",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "……イェラグでの生活に随分と馴染んでいただけたようで。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィクトリア子爵",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "この地は風光明媚にして独創性溢れる料理にも恵まれ、人々もまた親切です。どうして嫌いになれましょう？"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィクトリア子爵",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "公爵閣下が事あるごとにイェラグは実に良い地だと褒めそやしておられましたが、これは噂にたがわぬ素晴らしさですな！"
     },
     {
       "type": "dialogue",
       "speakerName": "エンシオディス",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "……過分なお言葉です。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンシオディス",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "遠路はるばるお越しになられたお客人にここまで評価していただけるのならば、イェラグにとっても、シルバーアッシュ家にとっても光栄の至りと存じます。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィクトリア子爵",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "そうご謙遜なさらず。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィクトリア子爵",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "このたび我々がこちらへ伺ったのはイェラガンド像の完成を祝してのことでしたが、しばらく過ごすうちに私はすっかりイェラグの魅力に取りつかれてしまいましたよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィクトリア子爵",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "幸い公爵閣下は心の広いお方ですので、式典が終わったあとも、もうしばしイェラグを遊覧することをお許しくださるでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンシオディス",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィクトリア子爵",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "まさか、観光客としてはご歓迎いただけない、などということはありますまい？"
     },
     {
       "type": "dialogue",
       "speakerName": "エンシオディス",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "……ええ、まさか。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンシオディス",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "子爵殿がイェラグを深く理解したいと仰られるのなら、こちらとしても願ってもないことです。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンシオディス",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "ただ、イェラグは凍てつくような寒さですし、この季節の山には目に見えぬ危険が多く潜んでいます。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンシオディス",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "ですので、子爵殿ならびに兵士の皆様には防寒対策を十全に取っていただけたらと。観光の際も、風雪による凍傷に留意し、危険な場所は避けてくださいますようお願いします。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィクトリア子爵",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "……なんと親切なご忠告でしょう！　誠に痛み入ります。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィクトリア子爵",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "確かにイェラグはいささか寒すぎますが、ご心配には及びません。そのくらいのこと、コートを一枚羽織れば解決ですよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィクトリア子爵",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "もちろん、個人的には極寒の地をハイキングするよりも、暖かい部屋の中で暖炉にあたりながら、チーズフォンデュでも頬張るほうが好きですがね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィクトリア子爵",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "いやはや、あの味わいと言ったらまったくたまりませんよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンシオディス",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "そう仰っていただけたのなら、安心いたしました。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィクトリア子爵",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "安心ですと？　いえいえ、それは違いますな。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィクトリア子爵",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "恐らく貴方は、安心するどころか、むしろより注意を払わねばなりますまい。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンシオディス",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "……詳しくお聞かせ願いましょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィクトリア子爵",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "おや？　貴方と公爵様との関係を考えれば、私が多くを語る必要はないでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィクトリア子爵",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "あの方は部下に対しては思いやり深く、イェラグに対しても親しみや好感を抱いておられますが、さしもの傑物も辛抱強さには限界があるものですからね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィクトリア子爵",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "仮に、イェラグにおける貴殿との協力が思うように進まず、公爵様に我慢の限界が訪れてしまえば……"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィクトリア子爵",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "とまあ、無論我々は双方、事態がそこまで発展することは望んでいないでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンシオディス",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "エンシオディス",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "仰りたいことは理解しました。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンシオディス",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "ご提案いただきました「協力」につきましては、近日中にお返事いたします。公爵様をそう長くお待たせすることはないかと。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィクトリア子爵",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "ふむ……"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィクトリア子爵",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "良い知らせを期待しておりますぞ。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンシオディス",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "ええ、きっと。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンシオディス",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "では、私はこれにて。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンシオディス",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "二日後の式典の席で、お待ちしております。"
     },
     {
@@ -1097,54 +1306,63 @@
       "type": "dialogue",
       "speakerName": "ヴィクトリア子爵",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "老練の兵士",
       "speakerId": "avg_npc_1157_1",
+      "isRemote": false,
       "text": "あのイェラグ人の青二才、去り際にまともな挨拶もなしか！　なんて偉ぶった野郎だ！"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴィクトリア子爵",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "まあまあ……若者が威厳を見せようとしているだけのことだよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "老練の兵士",
       "speakerId": "avg_npc_1157_1",
+      "isRemote": false,
       "text": "はあ？　お前ら頭のいい人間はいっつもそうやって、回りくどい言い方するよな……"
     },
     {
       "type": "dialogue",
       "speakerName": "老練の兵士",
       "speakerId": "avg_npc_1157_1",
+      "isRemote": false,
       "text": "なあハロルド、ここんとこ機嫌が悪そうじゃねえか。まさかあいつに何かされたのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ハロルド",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "バカを言うな。確かにあの坊やも少しはやるようだが、私を眠れなくさせるほどではないさ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ハロルド",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "……何にせよ、どのみち来るべき未来からは逃げられないんだ。くだらないことを考えてないで、やるべきことをやりなさい！"
     },
     {
       "type": "dialogue",
       "speakerName": "老練の兵士",
       "speakerId": "avg_npc_1157_1",
+      "isRemote": false,
       "text": "そうかい。ま、お前に考えがあるならそれでいいさ。"
     },
     {
       "type": "dialogue",
       "speakerName": "老練の兵士",
       "speakerId": "avg_npc_1157_1",
+      "isRemote": false,
       "text": "そんじゃ、俺はもう行くぜ。ゲップ……あの旦那方のお相手は任せたぞ、ハロルド！"
     },
     {
@@ -1154,57 +1372,70 @@
       "type": "dialogue",
       "speakerName": "ハロルド",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "待て待て、また私抜きで飲みに行くつもりか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ハロルド",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "こら、お前たち！　酒はいいとしても、私のチーズフォンデュをどこへやったんだ！？"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "45_g3_traincarriage"
+    },
+    {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": null,
+      "isRemote": false,
       "text": "すぅ……むにゃ……"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": null,
+      "isRemote": false,
       "text": "（イェラグ語）こんにちは……さようなら……"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": null,
+      "isRemote": false,
       "text": "すぅ……すぅ……"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": null,
+      "isRemote": false,
       "text": "母ちゃん……"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": null,
+      "isRemote": false,
       "text": "安心しろ……すぅ……私が、ぜってー……母ちゃんの代わりに……"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": null,
+      "isRemote": false,
       "text": "（イェラグ語で何か呟く）……"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": null,
+      "isRemote": false,
       "text": "はぁ……すぅ……"
     },
     {
@@ -1214,30 +1445,35 @@
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "うわっ！"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "誰だ！？　私を襲うなんていい度胸して――"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "……うっ……"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "いつの間に寝ちまってたんだ……？"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "いって……ケツが痛えや。この列車どんだけ揺れんだよ、身体バラバラになりそうだぜ……"
     },
     {
@@ -1247,6 +1483,7 @@
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "んん――ふぁ～あ、これで楽になった。"
     },
     {
@@ -1260,42 +1497,49 @@
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "これがイェラグの景色か……"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "雪だらけだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "それに山も見える。"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "ウルサスより山がちょっと多いってこと以外は、ほとんど変わんなさそうだな。そこら中に雪が積もってるし、そのくせ乾燥してて寒いし。"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "みんなは、一体ここの何がそこまで恋しくなんのかね……"
     },
     {
@@ -1312,15 +1556,21 @@
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "おぉ！　ようやく着いたか！"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "45_g1_kjeragtrainstation"
+    },
+    {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "通るぜ、悪りーな、ちょっと通してくれ！"
     },
     {
@@ -1330,12 +1580,14 @@
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "ふぅ、やっと出られた……！"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "ったく、降りる奴多すぎだっての！"
     },
     {
@@ -1345,12 +1597,14 @@
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "どれどれ……列車を降りたら左に進んで、改札を出て……"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "……何なんだよこの地図、わかりにくすぎんだろ！"
     },
     {
@@ -1360,6 +1614,7 @@
       "type": "dialogue",
       "speakerName": "情熱的な駄獣",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "モ～ウ。"
     },
     {
@@ -1369,6 +1624,7 @@
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "うわっ！　な、何だ！？"
     },
     {
@@ -1378,78 +1634,91 @@
       "type": "dialogue",
       "speakerName": "情熱的な駄獣",
       "speakerId": "avg_npc_1163_1",
+      "isRemote": false,
       "text": "モ～ウ！　ブモ～～！！"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "駄獣……？　なんで駅の中にいんだよ……"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "ってか、こいつ結構強そうだな。"
     },
     {
       "type": "dialogue",
       "speakerName": "駄獣を操る牧畜民",
       "speakerId": "avg_npc_279_1",
+      "isRemote": false,
       "text": "ふぉっふぉっ、お嬢さん、イェラグは初めてじゃな？"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "おっちゃん、わかんのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "駄獣を操る牧畜民",
       "speakerId": "avg_npc_279_1",
+      "isRemote": false,
       "text": "まあのう。よそから初めて来た人間は一目でわかるぞ！"
     },
     {
       "type": "dialogue",
       "speakerName": "駄獣を操る牧畜民",
       "speakerId": "avg_npc_279_1",
+      "isRemote": false,
       "text": "この駄獣はイェラグの名物サービスでな。巫女様がご自分で名付けてくださったんじゃ！"
     },
     {
       "type": "dialogue",
       "speakerName": "駄獣を操る牧畜民",
       "speakerId": "avg_npc_279_1",
+      "isRemote": false,
       "text": "うーむ、何と言ったかのう……おお、そうじゃそうじゃ！　「たったか駄獣」じゃよ！"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "「たったか駄獣」……？"
     },
     {
       "type": "dialogue",
       "speakerName": "情熱的な駄獣",
       "speakerId": "avg_npc_1163_1",
+      "isRemote": false,
       "text": "モ、モ～～ウ。"
     },
     {
       "type": "dialogue",
       "speakerName": "駄獣を操る牧畜民",
       "speakerId": "avg_npc_279_1",
+      "isRemote": false,
       "text": "うむ！"
     },
     {
       "type": "dialogue",
       "speakerName": "駄獣を操る牧畜民",
       "speakerId": "avg_npc_279_1",
+      "isRemote": false,
       "text": "ほれお嬢さん、ここを見てみなさい。"
     },
     {
       "type": "dialogue",
       "speakerName": "駄獣を操る牧畜民",
       "speakerId": "avg_npc_279_1",
+      "isRemote": false,
       "text": "駄獣に乗りたい時は、このボタンを押して駄獣を出してやれば乗れるぞ。"
     },
     {
@@ -1459,78 +1728,91 @@
       "type": "dialogue",
       "speakerName": "情熱的な駄獣",
       "speakerId": "avg_npc_1163_1",
+      "isRemote": false,
       "text": "モ～ウ！"
     },
     {
       "type": "dialogue",
       "speakerName": "駄獣を操る牧畜民",
       "speakerId": "avg_npc_279_1",
+      "isRemote": false,
       "text": "よしよし、いい子じゃのう。"
     },
     {
       "type": "dialogue",
       "speakerName": "駄獣を操る牧畜民",
       "speakerId": "avg_npc_279_1",
+      "isRemote": false,
       "text": "わしらの駄獣はどれも長年飼い慣らしてきたもんじゃが、その中からさらに一頭一頭厳選して連れてきとるでな。そらもう賢いぞ！"
     },
     {
       "type": "dialogue",
       "speakerName": "駄獣を操る牧畜民",
       "speakerId": "avg_npc_279_1",
+      "isRemote": false,
       "text": "乗ったあとは、どこにでも行きたい場所に行ってもらって構わんからな。目的の場所に着いたら、この駄獣に付いとる袋に料金を入れてくれたら良い。"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "ハハッ、おもしれーな！　マジで駄獣に乗って街を回れるのか？　超かっけー！　気に入ったぜ！"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "でもさあ、目的地までついた時に料金を踏み倒そうとする奴がいたらどうすんだ？"
     },
     {
       "type": "dialogue",
       "speakerName": "駄獣を操る牧畜民",
       "speakerId": "avg_npc_279_1",
+      "isRemote": false,
       "text": "ほっほ、わしらのイェラグで料金を踏み倒すなんぞ、容易いことではないぞい！"
     },
     {
       "type": "dialogue",
       "speakerName": "駄獣を操る牧畜民",
       "speakerId": "avg_npc_279_1",
+      "isRemote": false,
       "text": "ほれ、この張り紙を見てみなさい。"
     },
     {
       "type": "dialogue",
       "speakerName": "情熱的な駄獣",
       "speakerId": "avg_npc_1163_1",
+      "isRemote": false,
       "text": "モ～ウ！　ブモモウ！"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "どれどれ……"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "「お客様の違約行為が原因で、サービスを提供する駄獣から攻撃を受けた場合、当社はそれにより生じた人身傷害および物的損失について一切の責任を負いません」……"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "じゃあ、駄獣が料金を請求するってのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "情熱的な駄獣",
       "speakerId": "avg_npc_1163_1",
+      "isRemote": false,
       "text": "ブモ～ウ！"
     },
     {
@@ -1540,30 +1822,35 @@
       "type": "dialogue",
       "speakerName": "情熱的な駄獣",
       "speakerId": "avg_npc_1163_1",
+      "isRemote": false,
       "text": "フシュー！　フシュー……モ～ウ！"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "やるじゃねぇか！　料金踏み倒そうとする奴なんざ、ぶちのめしてやんねえとな！"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "私も今度乗ってみるよ！"
     },
     {
       "type": "dialogue",
       "speakerName": "駄獣を操る牧畜民",
       "speakerId": "avg_npc_279_1",
+      "isRemote": false,
       "text": "ふぉっふぉっ、元気なお嬢さんじゃのう。気に入ってくれたのなら何よりじゃ。"
     },
     {
       "type": "dialogue",
       "speakerName": "駄獣を操る牧畜民",
       "speakerId": "avg_npc_279_1",
+      "isRemote": false,
       "text": "それでは、わしはそろそろ行くとするかのう。イェラグを楽しんでおくれ！"
     },
     {
@@ -1573,33 +1860,42 @@
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "あっ、待ってくれよ、おっちゃん……！"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "行っちまった。道を聞きたかったのにな……"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "45_g1_kjeragtrainstation"
+    },
+    {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "ここ通ってきゃいいのか……？　うーん、まあ多分合ってるよな？"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "三番ホーム、三番ホーム……"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "ん？"
     },
     {
@@ -1609,18 +1905,21 @@
       "type": "dialogue",
       "speakerName": "老練の兵士",
       "speakerId": "avg_npc_1157_1",
+      "isRemote": false,
       "text": "止まれ！　集合！"
     },
     {
       "type": "dialogue",
       "speakerName": "老練の兵士",
       "speakerId": "avg_npc_1157_1",
+      "isRemote": false,
       "text": "その場で整列！"
     },
     {
       "type": "dialogue",
       "speakerName": "精悍な兵士",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "はっ！"
     },
     {
@@ -1630,72 +1929,84 @@
       "type": "dialogue",
       "speakerName": "興味津々な女性",
       "speakerId": "avg_npc_281_1",
+      "isRemote": false,
       "text": "どうして駅に兵士が？"
     },
     {
       "type": "dialogue",
       "speakerName": "興味津々な女性",
       "speakerId": "avg_npc_281_1",
+      "isRemote": false,
       "text": "何か大きな事件でもあったのかしら？"
     },
     {
       "type": "dialogue",
       "speakerName": "精悍な兵士",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "老練の兵士",
       "speakerId": "avg_npc_1157_1",
+      "isRemote": false,
       "text": "気を付け！"
     },
     {
       "type": "dialogue",
       "speakerName": "精悍な兵士",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "はっ！"
     },
     {
       "type": "dialogue",
       "speakerName": "大胆な男性",
       "speakerId": "avg_npc_277_1",
+      "isRemote": false,
       "text": "心配するなって、大したことじゃないさ。あいつらこの間も全員でお土産を買いに来てたし、きっとまた観光だよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "大胆な男性",
       "speakerId": "avg_npc_277_1",
+      "isRemote": false,
       "text": "しかし、ちょっと寒そうな格好してるな。見ろよ、あの坊主なんか寒さで鼻水垂らしてるぞ！"
     },
     {
       "type": "dialogue",
       "speakerName": "精悍な兵士",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "ハロルド",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "（小声）……はやく拭け、みっともない！"
     },
     {
       "type": "dialogue",
       "speakerName": "ハロルド",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "（小声）この前物産店でお前たち皆に買った厚手のコートはどうしたんだ？　どうしてあれを着てこなかった？"
     },
     {
       "type": "dialogue",
       "speakerName": "老練の兵士",
       "speakerId": "avg_npc_1157_1",
+      "isRemote": false,
       "text": "（小声）勘弁してくれよ、ハロルド！　あのコートときたら、どれもこれも「アイラブイェラグ」って刺繍されてんだぞ！"
     },
     {
       "type": "dialogue",
       "speakerName": "ハロルド",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "（小声）それが何だ。私はいいと思うぞ。"
     },
     {
@@ -1705,24 +2016,28 @@
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "（小声）私もいいと思うけどな。"
     },
     {
       "type": "dialogue",
       "speakerName": "老練の兵士",
       "speakerId": "avg_npc_1157_1",
+      "isRemote": false,
       "text": "（小声）……そうかよ、だったら自分で着ろっての。"
     },
     {
       "type": "dialogue",
       "speakerName": "老練の兵士",
       "speakerId": "avg_npc_1157_1",
+      "isRemote": false,
       "text": "…………"
     },
     {
       "type": "dialogue",
       "speakerName": "老練の兵士",
       "speakerId": "avg_npc_1157_1",
+      "isRemote": false,
       "text": "（小声）待て、お前どこの小娘だ！？"
     },
     {
@@ -1732,168 +2047,196 @@
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "私のことか？　まー気にせず続けてくれよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "なんか大勢人がいるから、気になって見に来ただけなんだけど……あんたらの話聞いてたら、ついつい混ざっちまったんだよ。悪かったな。"
     },
     {
       "type": "dialogue",
       "speakerName": "ハロルド",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "いえいえ、謝ることはありませんよ。貴方は実にセンスの良い方ですね、レディ！"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "センスが良いって……私がか？　ははっ、あんたも人を見る目があるな！"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "物産店のコートなら私もさっき見かけたぜ！　あの「アイラブイェラグ」って刺繍がダサいこと以外は、暖かそうだし良かったよな！"
     },
     {
       "type": "dialogue",
       "speakerName": "ハロルド",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "こ、こほん！"
     },
     {
       "type": "dialogue",
       "speakerName": "老練の兵士",
       "speakerId": "avg_npc_1157_1",
+      "isRemote": false,
       "text": "へえ。お前の言う通り、この子は実にセンスの良いレディだな、ハロルド。"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "なぁおっさん、あんたらは一般人じゃねぇんだろ？　イェラグには何しにきたんだ？"
     },
     {
       "type": "dialogue",
       "speakerName": "ハロルド",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "おっさんという呼び名には少々納得できかねますが、甘んじて受け入れるとしましょう。貴方はちょうど、うちのやんちゃ娘と同じくらいの年齢でしょうしね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ハロルド",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "さて、我々は何をしにきたか、ですか……ははっ、単なる観光目的ですよ。貴方と同じでね。"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "私はただの観光じゃねぇけどな。"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "そうだおっさん、三番ホームへの行き方ってわかるか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ハロルド",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "三番ホーム、ですかな？"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "おう。銀心湖行きの列車に乗りてぇんだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ハロルド",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "ふうむ……"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "おっさんも知らねーのかな？　そんならいいよ、ほかの奴に聞いてみるから――"
     },
     {
       "type": "dialogue",
       "speakerName": "ハロルド",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "お待ちを！"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "うおっ！？"
     },
     {
       "type": "dialogue",
       "speakerName": "ハロルド",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "三番ホームへの行き方でしたら……私にお尋ねいただいたのは正解でしたな！"
     },
     {
       "type": "dialogue",
       "speakerName": "ハロルド",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "この駅内外のことに最も詳しい人間といえば、このハロルド・クレイガボンをおいて他におりますまい！"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "おっ、おお！　マジか……"
     },
     {
       "type": "dialogue",
       "speakerName": "ハロルド",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "大マジでございます。私は決して、レディに嘘はつきません。"
     },
     {
       "type": "dialogue",
       "speakerName": "ハロルド",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "一ヶ月前に列車を降りた瞬間から、私はこの賑わいのとりこになってしまいましてね！"
     },
     {
       "type": "dialogue",
       "speakerName": "ハロルド",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "これまでにすべてのお店をじっくり回ってきた分すっかり仲も深まりまして、向かいにあるオープンしたてのお土産屋さんからはテープカットに招いていただいたくらいなのです！"
     },
     {
       "type": "dialogue",
       "speakerName": "ハロルド",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "あえて申しますと、ここの駄獣でさえも、私と兄弟たちには特別優しく接してくれていると断言できますぞ！"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "はぁ……ここの駄獣が？　それマジで言ってんのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "でもよ、ほら。あんたの言ってた駄獣は今、そっちの兄ちゃんの服を噛んでるぜ。"
     },
     {
       "type": "dialogue",
       "speakerName": "精悍な兵士",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -1903,45 +2246,56 @@
       "type": "dialogue",
       "speakerName": "遠慮しない駄獣",
       "speakerId": null,
+      "isRemote": false,
       "text": "ムー、モーウ！"
     },
     {
       "type": "dialogue",
       "speakerName": "遠慮しない駄獣",
       "speakerId": null,
+      "isRemote": false,
       "text": "（もぐもぐ）"
     },
     {
       "type": "dialogue",
       "speakerName": "精悍な兵士",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "…………"
     },
     {
       "type": "dialogue",
       "speakerName": "ハロルド",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "ご覧の通り、本当ですとも。この子は、実に親しくしてくれているでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "あっははは！　あんたの兄弟のほうはそんなに親しくなりたかねぇみたいだけどな！"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "45_g1_kjeragtrainstation"
+    },
+    {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "っはは……あー、笑った笑った！"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "さてと、本題に戻るとすっか。実は先を急いでてさ、暗くなるまでに銀心湖に着きてぇんだが……"
     },
     {
@@ -1951,78 +2305,91 @@
       "type": "dialogue",
       "speakerName": "ハロルド",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "今の音……"
     },
     {
       "type": "dialogue",
       "speakerName": "ハロルド",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "聞こえましたか、レディ？"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "……何がだ？　ぴんぽんぱんぽんってやつか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ハロルド",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "ええ。これぞまさに、三番ホームの列車到着を知らせる合図なのです。"
     },
     {
       "type": "dialogue",
       "speakerName": "ハロルド",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "そのうえ、偶然にも私の目的地は貴方と同じ方向でしてね。"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "同じ方向？"
     },
     {
       "type": "dialogue",
       "speakerName": "ハロルド",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "より正確に申しますと、銀心湖のイェラガンド像です。"
     },
     {
       "type": "dialogue",
       "speakerName": "ハロルド",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "私だけではなく、ここにいる全員が、これからあの列車に乗ることになるでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "ハロルド",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "二日後に、あらゆる人の視線があの像へと注がれる……我々は皆、そのためにやってきたのですから。"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "ほーん……ん？"
     },
     {
       "type": "dialogue",
       "speakerName": "リェータ",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "そのイェラガンド像を建てたのって、そんなにすげぇことだったのか……？"
     },
     {
       "type": "dialogue",
       "speakerName": "ハロルド",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "恐らくは！　観光客にとってみれば、確かに素晴らしい観光スポットだと思いますよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ハロルド",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "それでは、レディ。観光旅行へ共に踏み出すその一歩、エスコートさせていただいてもよろしいですかな？"
     },
     {

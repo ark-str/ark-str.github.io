@@ -6,26 +6,33 @@
   "title": "灯塔入口",
   "storyCode": "SN-4",
   "avgTag": "行动后",
-  "sourcePath": "vendor/ArknightsGamedata/cn/gamedata/story/activities/act17side/level_act17side_04_end.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/cn/gamedata/story/activities/act17side/level_act17side_04_end.txt",
   "sourceHash": "61dbf4959f465e79fafdcf191eccf53371bb97169c4242aaf2efa920693c1d73",
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "bg_room_2"
+    },
+    {
       "type": "dialogue",
       "speakerName": "玛莉娅",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "呼哈——天都亮了吗？"
     },
     {
       "type": "dialogue",
       "speakerName": "玛莉娅",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "干员们的装备损耗，真是比想象中严重得多......不过，从天灾之下救出这么多人，大家还真厉害。"
     },
     {
       "type": "dialogue",
       "speakerName": "玛莉娅",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "唔，我也要打起精神。"
     },
     {
@@ -35,6 +42,7 @@
       "type": "dialogue",
       "speakerName": "格拉尼",
       "speakerId": "char_220_grani",
+      "isRemote": false,
       "text": "玛莉娅小姐，我来取工程部的订单啦。"
     },
     {
@@ -44,78 +52,91 @@
       "type": "dialogue",
       "speakerName": "玛莉娅",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "啊，格拉尼！稍等，我看看放哪儿了......不好意思，几天没收拾，这儿有点乱......"
     },
     {
       "type": "dialogue",
       "speakerName": "格拉尼",
       "speakerId": "char_220_grani",
+      "isRemote": false,
       "text": "啊哈哈......这儿是不是比我上次来更接近一个卡西米尔式的工匠坊了......嗯？这是？"
     },
     {
       "type": "dialogue",
       "speakerName": "格拉尼",
       "speakerId": "char_220_grani",
+      "isRemote": false,
       "text": "......小说？"
     },
     {
       "type": "dialogue",
       "speakerName": "玛莉娅",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "《最后的骑士》！怎么在这儿？难道是昨晚翻箱倒柜的时候压在图纸下面了......我说怎么找不到。"
     },
     {
       "type": "dialogue",
       "speakerName": "格拉尼",
       "speakerId": "char_220_grani",
+      "isRemote": false,
       "text": "《最后的骑士》？"
     },
     {
       "type": "dialogue",
       "speakerName": "玛莉娅",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "姐姐在我小时候送给我的，是我以前最喜欢的小说。"
     },
     {
       "type": "dialogue",
       "speakerName": "格拉尼",
       "speakerId": "char_220_grani",
+      "isRemote": false,
       "text": "卡西米尔的骑士小说啊......"
     },
     {
       "type": "dialogue",
       "speakerName": "格拉尼",
       "speakerId": "char_220_grani",
+      "isRemote": false,
       "text": "可以借我看看吗？"
     },
     {
       "type": "dialogue",
       "speakerName": "玛莉娅",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "没问题！"
     },
     {
       "type": "dialogue",
       "speakerName": "玛莉娅",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "啊，施术单元的理论书原来被丢在这里......不好意思格拉尼小姐，估计还要费点功夫，我一会自己送过去吧。"
     },
     {
       "type": "dialogue",
       "speakerName": "格拉尼",
       "speakerId": "char_220_grani",
+      "isRemote": false,
       "text": "没关系，我等你。这次回罗德岛可以待不少时间呢。"
     },
     {
       "type": "dialogue",
       "speakerName": "格拉尼",
       "speakerId": "char_220_grani",
+      "isRemote": false,
       "text": "我就在这里看小说打发时间啦。"
     },
     {
       "type": "dialogue",
       "speakerName": "玛莉娅",
       "speakerId": "avg_npc_061",
+      "isRemote": false,
       "text": "实在抱歉......"
     },
     {
@@ -125,6 +146,7 @@
       "type": "dialogue",
       "speakerName": "格拉尼",
       "speakerId": "char_220_grani",
+      "isRemote": false,
       "text": "......"
     },
     {
@@ -138,6 +160,7 @@
       "type": "dialogue",
       "speakerName": "格拉尼",
       "speakerId": "char_220_grani",
+      "isRemote": false,
       "text": "“如果觉得浪涛吵闹，就去令大海平静。”......？"
     },
     {
@@ -149,6 +172,10 @@
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "27_g19_lighthouse_front"
     },
     {
       "type": "narration",
@@ -168,24 +195,28 @@
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_448_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_448_1",
+      "isRemote": false,
       "text": "............"
     },
     {
       "type": "dialogue",
       "speakerName": "歌蕾蒂娅",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "你是......什么东西？"
     },
     {
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_448_1",
+      "isRemote": false,
       "text": "......"
     },
     {
@@ -196,6 +227,7 @@
       "type": "dialogue",
       "speakerName": "？？？",
       "speakerId": "avg_npc_448_1",
+      "isRemote": false,
       "text": "嘎......咳咳......嘶......"
     },
     {
@@ -206,84 +238,105 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "27_g16_lighthouse_street"
+    },
+    {
       "type": "dialogue",
       "speakerName": "圣徒卡门",
       "speakerId": "avg_npc_447_1",
+      "isRemote": false,
       "text": "你从哪里拿到那把钥匙的？"
     },
     {
       "type": "dialogue",
       "speakerName": "凯尔希",
       "speakerId": "char_003_kalts",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "圣徒卡门",
       "speakerId": "avg_npc_447_1",
+      "isRemote": false,
       "text": "喔，我无意......打探所谓罗德岛的内部事务。"
     },
     {
       "type": "dialogue",
       "speakerName": "圣徒卡门",
       "speakerId": "avg_npc_447_1",
+      "isRemote": false,
       "text": "可那是布雷奥甘的遗产，经由那四匹巨兽的手，再交给了那个深海猎人。"
     },
     {
       "type": "dialogue",
       "speakerName": "凯尔希",
       "speakerId": "char_003_kalts",
+      "isRemote": false,
       "text": "因为一些机缘巧合，方才深海猎人中的一位，在卡西米尔发现了它。"
     },
     {
       "type": "dialogue",
       "speakerName": "圣徒卡门",
       "speakerId": "avg_npc_447_1",
+      "isRemote": false,
       "text": "......卡西米尔？真是个遥远的国度，我还记得年轻时跟随导师接待骑士之国的来使，私下听几位手持银枪的征战骑士描述他们的理想......"
     },
     {
       "type": "dialogue",
       "speakerName": "圣徒卡门",
       "speakerId": "avg_npc_447_1",
+      "isRemote": false,
       "text": "据说那个国家变了许多。"
     },
     {
       "type": "dialogue",
       "speakerName": "凯尔希",
       "speakerId": "char_003_kalts",
+      "isRemote": false,
       "text": "无论这种变化的好坏优劣，这种发生在当下时代的每一个政治实体上的变化，却与伊比利亚无缘。"
     },
     {
       "type": "dialogue",
       "speakerName": "圣徒卡门",
       "speakerId": "avg_npc_447_1",
+      "isRemote": false,
       "text": "我们就像落入陷阱的困兽，反抗挣扎，会痛，会流血。放弃，则死路一条。"
     },
     {
       "type": "dialogue",
       "speakerName": "圣徒卡门",
       "speakerId": "avg_npc_447_1",
+      "isRemote": false,
       "text": "在我们揪出那些尚是人类的背叛者之前，凯尔希，我有了一个新的问题。"
     },
     {
       "type": "dialogue",
       "speakerName": "圣徒卡门",
       "speakerId": "avg_npc_447_1",
+      "isRemote": false,
       "text": "你不会意识不到，那个少年绝非布雷奥甘的后裔。审判庭不可能漏过这样重要的线索。"
     },
     {
       "type": "dialogue",
       "speakerName": "圣徒卡门",
       "speakerId": "avg_npc_447_1",
+      "isRemote": false,
       "text": "你为什么还要让他去白白送死？"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "27_g19_lighthouse_front"
+    },
+    {
       "type": "dialogue",
       "speakerName": "恐鱼",
       "speakerId": "avg_npc_457_1",
+      "isRemote": false,
       "text": "（呼唤同伴的窸窣声）"
     },
     {
@@ -293,30 +346,35 @@
       "type": "dialogue",
       "speakerName": "审判官艾丽妮",
       "speakerId": "avg_4009_irene_1",
+      "isRemote": false,
       "text": "长官！"
     },
     {
       "type": "dialogue",
       "speakerName": "大审判官达里奥",
       "speakerId": "avg_npc_183",
+      "isRemote": false,
       "text": "......数量在增多。但是抵达灯塔之前，它们都没有现身。"
     },
     {
       "type": "dialogue",
       "speakerName": "乔迪",
       "speakerId": "avg_4042_lumen_1",
+      "isRemote": false,
       "text": "长、长官！我找到打开大门的办法了！"
     },
     {
       "type": "dialogue",
       "speakerName": "乔迪",
       "speakerId": "avg_4042_lumen_1",
+      "isRemote": false,
       "text": "但是伊比利亚之眼核心建筑是一座很高很高的塔！升降设施没有启动，我们只能——徒步！"
     },
     {
       "type": "dialogue",
       "speakerName": "恐鱼",
       "speakerId": "avg_npc_457_1",
+      "isRemote": false,
       "text": "（蠕动的窸窣声）"
     },
     {
@@ -326,6 +384,7 @@
       "type": "dialogue",
       "speakerName": "审判官艾丽妮",
       "speakerId": "avg_4009_irene_1",
+      "isRemote": false,
       "text": "——长官！我们需要一些时间！"
     },
     {
@@ -335,12 +394,14 @@
       "type": "dialogue",
       "speakerName": "大审判官达里奥",
       "speakerId": "avg_npc_183",
+      "isRemote": false,
       "text": "你带那个阿戈尔人先走。"
     },
     {
       "type": "dialogue",
       "speakerName": "大审判官达里奥",
       "speakerId": "avg_npc_183",
+      "isRemote": false,
       "text": "时间有限，艾丽妮。"
     },
     {
@@ -350,12 +411,14 @@
       "type": "dialogue",
       "speakerName": "审判官艾丽妮",
       "speakerId": "avg_4009_irene_1",
+      "isRemote": false,
       "text": "是！快走！"
     },
     {
       "type": "dialogue",
       "speakerName": "乔迪",
       "speakerId": "avg_4042_lumen_1",
+      "isRemote": false,
       "text": "啊，等等！"
     },
     {
@@ -365,12 +428,14 @@
       "type": "dialogue",
       "speakerName": "恐鱼",
       "speakerId": "avg_npc_457_1",
+      "isRemote": false,
       "text": "（激烈的窸窣声）"
     },
     {
       "type": "dialogue",
       "speakerName": "恐鱼",
       "speakerId": "avg_npc_457_1",
+      "isRemote": false,
       "text": "——！"
     },
     {
@@ -380,12 +445,14 @@
       "type": "dialogue",
       "speakerName": "大审判官达里奥",
       "speakerId": "avg_npc_183",
+      "isRemote": false,
       "text": "......唔，是她们？不，灯火在摇曳。有什么踏入了我法术的领域。"
     },
     {
       "type": "dialogue",
       "speakerName": "恐鱼",
       "speakerId": "avg_npc_457_1",
+      "isRemote": false,
       "text": "（萎缩的窸窣声）"
     },
     {
@@ -395,18 +462,21 @@
       "type": "dialogue",
       "speakerName": "大审判官达里奥",
       "speakerId": "avg_npc_183",
+      "isRemote": false,
       "text": "（这些东西害怕了。不，它们从未表露过恐惧。）"
     },
     {
       "type": "dialogue",
       "speakerName": "大审判官达里奥",
       "speakerId": "avg_npc_183",
+      "isRemote": false,
       "text": "（是混乱？有什么让它们感到混乱......？）"
     },
     {
       "type": "dialogue",
       "speakerName": "恐鱼",
       "speakerId": "avg_npc_457_1",
+      "isRemote": false,
       "text": "（混乱的窸窣声）"
     },
     {
@@ -416,6 +486,7 @@
       "type": "dialogue",
       "speakerName": "大审判官达里奥",
       "speakerId": "avg_npc_183",
+      "isRemote": false,
       "text": "......"
     },
     {
@@ -426,42 +497,49 @@
       "type": "dialogue",
       "speakerName": "大审判官达里奥",
       "speakerId": "avg_npc_183",
+      "isRemote": false,
       "text": "大静谧并未波及这座灯塔，所以它得以保存完好。"
     },
     {
       "type": "dialogue",
       "speakerName": "大审判官达里奥",
       "speakerId": "avg_npc_183",
+      "isRemote": false,
       "text": "但即使如此，审判庭从大静谧之后，就从未真正取回过自己的眼睛。"
     },
     {
       "type": "dialogue",
       "speakerName": "大审判官达里奥",
       "speakerId": "avg_npc_183",
+      "isRemote": false,
       "text": "这里，本是高丘。城市一览无遗，风光旖旎。"
     },
     {
       "type": "dialogue",
       "speakerName": "大审判官达里奥",
       "speakerId": "avg_npc_183",
+      "isRemote": false,
       "text": "伊比利亚人驻守于此，日复一日。"
     },
     {
       "type": "dialogue",
       "speakerName": "恐鱼",
       "speakerId": "avg_npc_457_1",
+      "isRemote": false,
       "text": "（警惕的窸窣声）"
     },
     {
       "type": "dialogue",
       "speakerName": "大审判官达里奥",
       "speakerId": "avg_npc_183",
+      "isRemote": false,
       "text": "而你们，却将这里，当做觅食的地点，还擅自建起巢穴。"
     },
     {
       "type": "dialogue",
       "speakerName": "大审判官达里奥",
       "speakerId": "avg_npc_183",
+      "isRemote": false,
       "text": "呼......"
     },
     {
@@ -475,51 +553,63 @@
       "type": "dialogue",
       "speakerName": "大审判官达里奥",
       "speakerId": "avg_npc_183",
+      "isRemote": false,
       "text": "你们死，则人类活。"
     },
     {
       "type": "dialogue",
       "speakerName": "大审判官达里奥",
       "speakerId": "avg_npc_183",
+      "isRemote": false,
       "text": "这不是我们的律法与经文，这是你们的，“弱肉强食”。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "27_g20_lighthouse_core"
+    },
+    {
       "type": "dialogue",
       "speakerName": "乔迪",
       "speakerId": "avg_4042_lumen_1",
+      "isRemote": false,
       "text": "......这里！"
     },
     {
       "type": "dialogue",
       "speakerName": "乔迪",
       "speakerId": "avg_4042_lumen_1",
+      "isRemote": false,
       "text": "果然就和记录里的一样，灯塔靠底部的能源供给，核心柱纵向分为数个区域，而这一层的控制台控制着——"
     },
     {
       "type": "dialogue",
       "speakerName": "审判官艾丽妮",
       "speakerId": "avg_4009_irene_1",
+      "isRemote": false,
       "text": "......控制着什么？"
     },
     {
       "type": "dialogue",
       "speakerName": "乔迪",
       "speakerId": "avg_4042_lumen_1",
+      "isRemote": false,
       "text": "——呃，信号记录。"
     },
     {
       "type": "dialogue",
       "speakerName": "审判官艾丽妮",
       "speakerId": "avg_4009_irene_1",
+      "isRemote": false,
       "text": "我们之后也会用得上的......但现在必须优先启动整座灯塔的能源。继续往上吧。"
     },
     {
       "type": "dialogue",
       "speakerName": "审判官艾丽妮",
       "speakerId": "avg_4009_irene_1",
+      "isRemote": false,
       "text": "但愿能在增援抵达前平安无事。"
     },
     {
@@ -529,81 +619,98 @@
       "type": "dialogue",
       "speakerName": "审判官艾丽妮",
       "speakerId": "avg_4009_irene_1",
+      "isRemote": false,
       "text": "唔——！"
     },
     {
       "type": "dialogue",
       "speakerName": "乔迪",
       "speakerId": "avg_4042_lumen_1",
+      "isRemote": false,
       "text": "怎么了？艾丽妮阁下？"
     },
     {
       "type": "dialogue",
       "speakerName": "审判官艾丽妮",
       "speakerId": "avg_4009_irene_1",
+      "isRemote": false,
       "text": "......没什么，是错觉。有老师......有长官在外看守，应该不会出什么事。"
     },
     {
       "type": "dialogue",
       "speakerName": "乔迪",
       "speakerId": "avg_4042_lumen_1",
+      "isRemote": false,
       "text": "好、好的......重启灯塔的系统之后，也许升降设施也能利用起来，大家可以很快赶上我们。"
     },
     {
       "type": "dialogue",
       "speakerName": "乔迪",
       "speakerId": "avg_4042_lumen_1",
+      "isRemote": false,
       "text": "我们赶紧吧！"
     },
     {
       "type": "dialogue",
       "speakerName": "审判官艾丽妮",
       "speakerId": "avg_4009_irene_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "27_g19_lighthouse_front"
+    },
+    {
       "type": "dialogue",
       "speakerName": "最后的骑士",
       "speakerId": "avg_npc_448_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "斯卡蒂",
       "speakerId": "char_263_skadi",
+      "isRemote": false,
       "text": "他很古怪，他的身上还留着一些......气味。"
     },
     {
       "type": "dialogue",
       "speakerName": "歌蕾蒂娅",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "什么气味？"
     },
     {
       "type": "dialogue",
       "speakerName": "斯卡蒂",
       "speakerId": "char_263_skadi",
+      "isRemote": false,
       "text": "另一个陆地国家的气味，你不会感兴趣的。"
     },
     {
       "type": "dialogue",
       "speakerName": "歌蕾蒂娅",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "毫无疑问，他是一只海嗣。但是与昆图斯不同。"
     },
     {
       "type": "dialogue",
       "speakerName": "歌蕾蒂娅",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "可怎么会有这么多的陆地生物成为海嗣？他们不该频繁接触到海洋。"
     },
     {
       "type": "dialogue",
       "speakerName": "最后的骑士",
       "speakerId": "avg_npc_448_1",
+      "isRemote": false,
       "text": "......"
     },
     {
@@ -613,12 +720,14 @@
       "type": "dialogue",
       "speakerName": "歌蕾蒂娅",
       "speakerId": "avg_474_gladiia_1",
+      "isRemote": false,
       "text": "无法交流，那么就只能让他的躯体失去机能。"
     },
     {
       "type": "dialogue",
       "speakerName": "斯卡蒂",
       "speakerId": "char_263_skadi",
+      "isRemote": false,
       "text": "他要发起攻击了！"
     },
     {
@@ -635,60 +744,77 @@
       "type": "dialogue",
       "speakerName": "最后的骑士",
       "speakerId": "avg_npc_448_1",
+      "isRemote": false,
       "text": "嘎啊啊啊——"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "27_g20_lighthouse_core"
+    },
+    {
       "type": "dialogue",
       "speakerName": "乔迪",
       "speakerId": "avg_4042_lumen_1",
+      "isRemote": false,
       "text": "哇啊啊——怎、怎么了？"
     },
     {
       "type": "dialogue",
       "speakerName": "审判官艾丽妮",
       "speakerId": "avg_4009_irene_1",
+      "isRemote": false,
       "text": "别慌！继续往上！"
     },
     {
       "type": "dialogue",
       "speakerName": "审判官艾丽妮",
       "speakerId": "avg_4009_irene_1",
+      "isRemote": false,
       "text": "完成我们的任务——点燃灯塔！"
     },
     {
       "type": "dialogue",
       "speakerName": "乔迪",
       "speakerId": "avg_4042_lumen_1",
+      "isRemote": false,
       "text": "是......是！"
     },
     {
       "type": "dialogue",
       "speakerName": "审判官艾丽妮",
       "speakerId": "avg_4009_irene_1",
+      "isRemote": false,
       "text": "（这股震动，是墙体受到了攻击？怎么可能，这里离地面已经有好几十米了，难道恐鱼还有大炮吗？）"
     },
     {
       "type": "dialogue",
       "speakerName": "审判官艾丽妮",
       "speakerId": "avg_4009_irene_1",
+      "isRemote": false,
       "text": "（难道......难道是巨型生物？可是除了刚才那一下，没有更大的动静......）"
     },
     {
       "type": "dialogue",
       "speakerName": "审判官艾丽妮",
       "speakerId": "avg_4009_irene_1",
+      "isRemote": false,
       "text": "（老师......！）"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "27_g19_lighthouse_front"
+    },
+    {
       "type": "dialogue",
       "speakerName": "最后的骑士",
       "speakerId": "avg_npc_448_1",
+      "isRemote": false,
       "text": "......"
     },
     {
@@ -702,12 +828,14 @@
       "type": "dialogue",
       "speakerName": "最后的骑士",
       "speakerId": "avg_npc_448_1",
+      "isRemote": false,
       "text": "——！"
     },
     {
       "type": "dialogue",
       "speakerName": "大审判官达里奥",
       "speakerId": "avg_npc_183",
+      "isRemote": false,
       "text": "你在做什么？"
     },
     {
@@ -718,84 +846,98 @@
       "type": "dialogue",
       "speakerName": "最后的骑士",
       "speakerId": "avg_npc_448_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "大审判官达里奥",
       "speakerId": "avg_npc_183",
+      "isRemote": false,
       "text": "你轻蔑地挑衅着伊比利亚，踏足禁区，损害重要遗产。"
     },
     {
       "type": "dialogue",
       "speakerName": "大审判官达里奥",
       "speakerId": "avg_npc_183",
+      "isRemote": false,
       "text": "看看你自己，你连生而为人的尊严都不剩下？"
     },
     {
       "type": "dialogue",
       "speakerName": "最后的骑士",
       "speakerId": "avg_npc_448_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "最后的骑士",
       "speakerId": "avg_npc_448_1",
+      "isRemote": false,
       "text": "......尊......严？"
     },
     {
       "type": "dialogue",
       "speakerName": "大审判官达里奥",
       "speakerId": "avg_npc_183",
+      "isRemote": false,
       "text": "看来你的发声器官还能运作。"
     },
     {
       "type": "dialogue",
       "speakerName": "最后的骑士",
       "speakerId": "avg_npc_448_1",
+      "isRemote": false,
       "text": "（不清晰的发音）......海......不需要。"
     },
     {
       "type": "dialogue",
       "speakerName": "最后的骑士",
       "speakerId": "avg_npc_448_1",
+      "isRemote": false,
       "text": "击碎......海浪。踩着白昼，斥责痛苦。"
     },
     {
       "type": "dialogue",
       "speakerName": "最后的骑士",
       "speakerId": "avg_npc_448_1",
+      "isRemote": false,
       "text": "事物，不应，保持原样。大树，扎根于大地。"
     },
     {
       "type": "dialogue",
       "speakerName": "大审判官达里奥",
       "speakerId": "avg_npc_183",
+      "isRemote": false,
       "text": "......你的姿势，你的盔甲，你的矛。"
     },
     {
       "type": "dialogue",
       "speakerName": "大审判官达里奥",
       "speakerId": "avg_npc_183",
+      "isRemote": false,
       "text": "你是卡西米尔人？"
     },
     {
       "type": "dialogue",
       "speakerName": "最后的骑士",
       "speakerId": "avg_npc_448_1",
+      "isRemote": false,
       "text": "我是......我是......"
     },
     {
       "type": "dialogue",
       "speakerName": "大审判官达里奥",
       "speakerId": "avg_npc_183",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "最后的骑士",
       "speakerId": "avg_npc_448_1",
+      "isRemote": false,
       "text": "骑士！"
     },
     {
@@ -805,24 +947,28 @@
       "type": "dialogue",
       "speakerName": "最后的骑士",
       "speakerId": "avg_npc_448_1",
+      "isRemote": false,
       "text": "......蠕行的钢铁......海浪......"
     },
     {
       "type": "dialogue",
       "speakerName": "大审判官达里奥",
       "speakerId": "avg_npc_183",
+      "isRemote": false,
       "text": "（提灯不起作用。没有其他船只登陆的痕迹。）"
     },
     {
       "type": "dialogue",
       "speakerName": "大审判官达里奥",
       "speakerId": "avg_npc_183",
+      "isRemote": false,
       "text": "（荧光的溟痕绕过了他。恐鱼慌乱的源头恐怕也是他。）"
     },
     {
       "type": "dialogue",
       "speakerName": "大审判官达里奥",
       "speakerId": "avg_npc_183",
+      "isRemote": false,
       "text": "（那么......他是伪装成人形的海嗣？）"
     },
     {
@@ -832,6 +978,7 @@
       "type": "dialogue",
       "speakerName": "大审判官达里奥",
       "speakerId": "avg_npc_183",
+      "isRemote": false,
       "text": "你想摧毁伊比利亚之眼？审判庭不许。"
     },
     {
@@ -841,24 +988,28 @@
       "type": "dialogue",
       "speakerName": "最后的骑士",
       "speakerId": "avg_npc_448_1",
+      "isRemote": false,
       "text": "啊啊啊，土地——！"
     },
     {
       "type": "dialogue",
       "speakerName": "大审判官达里奥",
       "speakerId": "avg_npc_183",
+      "isRemote": false,
       "text": "现在！"
     },
     {
       "type": "dialogue",
       "speakerName": "幽灵鲨",
       "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
       "text": "......晚安，骑士先生。"
     },
     {
       "type": "dialogue",
       "speakerName": "最后的骑士",
       "speakerId": "avg_npc_448_1",
+      "isRemote": false,
       "text": "——！？"
     },
     {
@@ -868,12 +1019,14 @@
       "type": "dialogue",
       "speakerName": "大审判官达里奥",
       "speakerId": "avg_npc_183",
+      "isRemote": false,
       "text": "其他两人呢？"
     },
     {
       "type": "dialogue",
       "speakerName": "幽灵鲨",
       "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
       "text": "她们？她们......她们在与骑士先生的同伴交流。"
     },
     {
@@ -883,48 +1036,56 @@
       "type": "dialogue",
       "speakerName": "大审判官达里奥",
       "speakerId": "avg_npc_183",
+      "isRemote": false,
       "text": "不远处正发生战斗。看来是一次文明的交流。"
     },
     {
       "type": "dialogue",
       "speakerName": "幽灵鲨",
       "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
       "text": "没我什么事嘛，我就过来了。"
     },
     {
       "type": "dialogue",
       "speakerName": "大审判官达里奥",
       "speakerId": "avg_npc_183",
+      "isRemote": false,
       "text": "......你......你似乎与盐风城那时不一样。"
     },
     {
       "type": "dialogue",
       "speakerName": "大审判官达里奥",
       "speakerId": "avg_npc_183",
+      "isRemote": false,
       "text": "也与你我在格兰法洛相见时有所区别。你在时刻变化着。"
     },
     {
       "type": "dialogue",
       "speakerName": "幽灵鲨",
       "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
       "text": "海水令人清醒。哪怕只是海风夹带的些微气息。"
     },
     {
       "type": "dialogue",
       "speakerName": "幽灵鲨",
       "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
       "text": "不过......我想回到海的怀抱，却被斯卡蒂制止了。"
     },
     {
       "type": "dialogue",
       "speakerName": "幽灵鲨",
       "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
       "text": "我的小斯卡蒂，她在害怕什么......害怕什么呢？"
     },
     {
       "type": "dialogue",
       "speakerName": "大审判官达里奥",
       "speakerId": "avg_npc_183",
+      "isRemote": false,
       "text": "......"
     },
     {
@@ -934,24 +1095,28 @@
       "type": "dialogue",
       "speakerName": "最后的骑士",
       "speakerId": "avg_npc_448_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "大审判官达里奥",
       "speakerId": "avg_npc_183",
+      "isRemote": false,
       "text": "眼下情形，我更需要歌蕾蒂娅的解释。"
     },
     {
       "type": "dialogue",
       "speakerName": "幽灵鲨",
       "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
       "text": "（阿戈尔语）骑士先生，好骑士先生，回到你酣眠的深渊去吧。"
     },
     {
       "type": "dialogue",
       "speakerName": "幽灵鲨",
       "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
       "text": "（阿戈尔语）我们不是敌人。"
     },
     {
@@ -962,51 +1127,63 @@
       "type": "dialogue",
       "speakerName": "幽灵鲨",
       "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
       "text": "啊，多么悲哀。语言已无法传入你的耳朵，就像阴云蒙蔽了你的眼。"
     },
     {
       "type": "dialogue",
       "speakerName": "幽灵鲨",
       "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
       "text": "即使疯狂，你的意志也像发条一样，控制你的肉体前进吗？"
     },
     {
       "type": "dialogue",
       "speakerName": "最后的骑士",
       "speakerId": "avg_npc_448_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "幽灵鲨",
       "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
       "text": "来吧，风暴。"
     },
     {
       "type": "dialogue",
       "speakerName": "幽灵鲨",
       "speakerId": "avg_1023_ghost2_1",
+      "isRemote": false,
       "text": "我们共舞一曲。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "27_g20_lighthouse_core"
+    },
+    {
       "type": "dialogue",
       "speakerName": "乔迪",
       "speakerId": "avg_4042_lumen_1",
+      "isRemote": false,
       "text": "找到了！主控面板！"
     },
     {
       "type": "dialogue",
       "speakerName": "审判官艾丽妮",
       "speakerId": "avg_4009_irene_1",
+      "isRemote": false,
       "text": "情况怎么样？"
     },
     {
       "type": "dialogue",
       "speakerName": "乔迪",
       "speakerId": "avg_4042_lumen_1",
+      "isRemote": false,
       "text": "我、我不清楚，这比图纸上画的复杂多了，而、而且我从来没实际操作过这些东西。"
     },
     {
@@ -1016,72 +1193,84 @@
       "type": "dialogue",
       "speakerName": "乔迪",
       "speakerId": "avg_4042_lumen_1",
+      "isRemote": false,
       "text": "又来了......外面发生了什么？"
     },
     {
       "type": "dialogue",
       "speakerName": "审判官艾丽妮",
       "speakerId": "avg_4009_irene_1",
+      "isRemote": false,
       "text": "兴许我们还是低估了在这里可能遭遇的危险。这样下去，要撑到惩戒军的技术人员抵达恐怕......"
     },
     {
       "type": "dialogue",
       "speakerName": "审判官艾丽妮",
       "speakerId": "avg_4009_irene_1",
+      "isRemote": false,
       "text": "不，就算援军抵达，要在这样的环境里修缮灯塔付出的牺牲无异于在高速军舰的火力网下修筑阵地。"
     },
     {
       "type": "dialogue",
       "speakerName": "审判官艾丽妮",
       "speakerId": "avg_4009_irene_1",
+      "isRemote": false,
       "text": "......市民乔迪，你是伊比利亚的一员。现在，我不问你的出身，以及格兰法洛过去的种种。"
     },
     {
       "type": "dialogue",
       "speakerName": "审判官艾丽妮",
       "speakerId": "avg_4009_irene_1",
+      "isRemote": false,
       "text": "我们必须争分夺秒。现在，立刻，就尽你所能地尝试获取伊比利亚之眼的所有信息，我和老师会保护这座塔，我们——"
     },
     {
       "type": "dialogue",
       "speakerName": "乔迪",
       "speakerId": "avg_4042_lumen_1",
+      "isRemote": false,
       "text": "好、好的......日志已经调取......面板还有反应，塔下的能源模块还能运作......"
     },
     {
       "type": "dialogue",
       "speakerName": "审判官艾丽妮",
       "speakerId": "avg_4009_irene_1",
+      "isRemote": false,
       "text": "......动作很快，值得夸奖。"
     },
     {
       "type": "dialogue",
       "speakerName": "审判官艾丽妮",
       "speakerId": "avg_4009_irene_1",
+      "isRemote": false,
       "text": "然后呢？如果要重启整座灯塔，我们要多久？"
     },
     {
       "type": "dialogue",
       "speakerName": "乔迪",
       "speakerId": "avg_4042_lumen_1",
+      "isRemote": false,
       "text": "我、我尽力！"
     },
     {
       "type": "dialogue",
       "speakerName": "乔迪",
       "speakerId": "avg_4042_lumen_1",
+      "isRemote": false,
       "text": "但是......我知道外面的各位在与那些来自海洋的怪物战斗，但是我还是得说！"
     },
     {
       "type": "dialogue",
       "speakerName": "乔迪",
       "speakerId": "avg_4042_lumen_1",
+      "isRemote": false,
       "text": "只要面板还有反应，重启应该不困难，这些我都在父母留下的笔记里读到过......虽、虽然是第一次实操......只能赌一把！"
     },
     {
       "type": "dialogue",
       "speakerName": "乔迪",
       "speakerId": "avg_4042_lumen_1",
+      "isRemote": false,
       "text": "但这是需要时间的！我们得——"
     },
     {
@@ -1091,18 +1280,21 @@
       "type": "dialogue",
       "speakerName": "乔迪",
       "speakerId": "avg_4042_lumen_1",
+      "isRemote": false,
       "text": "呜啊——"
     },
     {
       "type": "dialogue",
       "speakerName": "审判官艾丽妮",
       "speakerId": "avg_4009_irene_1",
+      "isRemote": false,
       "text": "守住这里，是吧。"
     },
     {
       "type": "dialogue",
       "speakerName": "审判官艾丽妮",
       "speakerId": "avg_4009_irene_1",
+      "isRemote": false,
       "text": "别往下看，你继续。"
     },
     {

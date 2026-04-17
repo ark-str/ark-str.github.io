@@ -6,53 +6,68 @@
   "title": "墨魎",
   "storyCode": "WR-2",
   "avgTag": "行動前",
-  "sourcePath": "vendor/ArknightsGamedata/tw/gamedata/story/activities/act16d5/level_act16d5_02_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/tw/gamedata/story/activities/act16d5/level_act16d5_02_beg.txt",
   "sourceHash": "442b6f712aa7fe12e82c751acd15dbe44ef5c96547ca6c16afbce5e923bed5cd",
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "原來如此，是替朋友尋找親人，為此不遠萬里來到大炎，實在令人欽佩。"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "不過，灰齊山，勾吳城？我可從來沒有聽說過附近有這樣的城市......不過這裡離天岳倒是不遠。興許是某座不知名的小山頭，也有可能。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_landscape"
+    },
+    {
       "type": "dialogue",
       "speakerName": "烏有",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "呃？天岳.....？"
     },
     {
       "type": "dialogue",
       "speakerName": "克洛絲",
       "speakerId": "avg_npc_144",
+      "isRemote": false,
       "text": "麻煩了呀。"
     },
     {
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "......抱歉，請問我們現在在大炎的哪裡？"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "此地在婆山地界，名為婆山鎮。"
     },
     {
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "......？"
     },
     {
@@ -62,6 +77,7 @@
       "type": "dialogue",
       "speakerName": "烏有",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "（沒聽過，絕對沒聽過！）"
     },
     {
@@ -71,54 +87,63 @@
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "那、那今年的年份是......？"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "今年是景祚七年，如今已過立春，恰逢除夕。"
     },
     {
       "type": "dialogue",
       "speakerName": "烏有",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "......啊？"
     },
     {
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "（小聲）景祚？"
     },
     {
       "type": "dialogue",
       "speakerName": "烏有",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "（小聲）恩人呐，不瞞你說，我歷史學得不好，但景祚......起碼近幾百年，都未曾聽過這麼個年號啊......"
     },
     {
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "烏有",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "（小聲）怎、怎麼回事啊恩人？難不成我們這一推門回到一千年前了？"
     },
     {
       "type": "dialogue",
       "speakerName": "克洛絲",
       "speakerId": "avg_npc_144",
+      "isRemote": false,
       "text": "（小聲）一千年前會有這種園林建築嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "烏有",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "（小聲）顯然不會！莫非是這位煮傘居士信口開河？可我看他文質彬彬的，不至於吧？"
     },
     {
@@ -128,6 +153,7 @@
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "三位英雄，你們幫了忙，就是我的貴客，有什麼問題直問便是，大可不用客氣。"
     },
     {
@@ -137,336 +163,392 @@
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "......能勞煩您給我們講述一下這裡的風土人情嗎？實不相瞞，這裡並不是我們一開始的目的地，看來是迷了路，有些茫然。"
     },
     {
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "比如......比如就說說這座城鎮？"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "啊......婆山鎮的來歷可就大有說法了。相傳七十年前，某個富商家起了一場大火，殃及無數。"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "富商受了驚，打算離開那裡，另尋一塊風水寶地作為自己頤養天年的地方。"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "在那之後，同鎮的人們卻在滿地灰燼中，找到了一幅古怪的畫。"
     },
     {
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "......畫？"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "沒錯。房屋都燒得一乾二淨，那幅畫卻安然無恙，撣去灰燼後，完好如初。"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "富商聽說了這幅畫的事，掏了大價錢重新買了回來，圖個辟火消災的吉利。"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "富商在新居裡，越看這畫中風水，越覺得中意。便發動上百家僕，去尋找這畫卷中描繪的山水寶地——"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "——於是就到了這裡，有了這座鎮，有了這園林。"
     },
     {
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "......是您的祖輩？"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "非也非也，世事無常。幾十年前，富商死後，幾個兒子都不學無術，散盡家財。"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "正巧我爹因為某些機緣巧合，有一筆閒錢，這才買下了這座園子，定居於此。"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "之後，因為這附近少有天災，山川秀美，吸引了不少風流雅士，久而久之，婆山鎮就有了今天這般規模。"
     },
     {
       "type": "dialogue",
       "speakerName": "克洛絲",
       "speakerId": "avg_npc_144",
+      "isRemote": false,
       "text": "（聽上去真奇妙呢。）"
     },
     {
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "（好像沒有什麼問題......）"
     },
     {
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "那，這天色......？"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "天色？"
     },
     {
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "呃，就是，白天和黑夜好像混在一起了......"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "我們素來日出而作，日落而息，幾位有何疑慮？"
     },
     {
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "從鐘聲響起到現在，兩個小時......差不多有一個時辰了。太陽的位置從來沒有變化過，這是什麼原因？"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "太陽？變化？"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "日月懸空，日在東，月在西，千古不易，變換什麼位置？"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "嗯？各位怎麼露出這副臉色？我說了什麼不妥當的話嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "烏有",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "欸，恩人，打斷一下，打斷一下啊。"
     },
     {
       "type": "dialogue",
       "speakerName": "烏有",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "敢問先生明天是不是也會在這裡說書？"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "那自然。"
     },
     {
       "type": "dialogue",
       "speakerName": "烏有",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "既然明天如此，那想必昨天也是這一把摺扇，一塊醒木？"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "賦閒在家，只有收集怪書這一個癖好，只靠說書打發時間。故而每日申時，雷打不動。"
     },
     {
       "type": "dialogue",
       "speakerName": "烏有",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "欸，那這日月恒定不落，“今天明天昨天”，這“一天”，要怎麼定義？"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "烏兄真有意思，十二個時辰為一天，這還用問嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "烏有",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "呃......十二時辰，二十四小時，指的不是一晝夜的時間嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "噫，奇了怪哉，幾位究竟是從何處而來的？十二時辰，指的是從極東日出之地，到極西月出之山之間所需的時間呀？"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "當然，也指這段路途的路段劃分，婆山鎮自東到西，便是由巳到亥。"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "我聽說山外有山，難道鴻洞山外，東升河下，其他的地方不是如此？"
     },
     {
       "type": "dialogue",
       "speakerName": "烏有",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "這......光是一個婆山鎮就占了這麼大地盤，其他地方要是有鎮子，不得永無天日啊？"
     },
     {
       "type": "dialogue",
       "speakerName": "克洛絲",
       "speakerId": "avg_npc_144",
+      "isRemote": false,
       "text": "或者永遠是白天，睡覺都睡不好呢，真糟糕。"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "這......這我還真不清楚。"
     },
     {
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "你從沒有離開過鎮子嗎？這裡沒有其他遊客？"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "從來沒有。很少有人來這裡，而離開這裡的年輕人，也很少回來。"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "不瞞幾位，我們如今所知道的“大炎”，也不過是從富商留下的一些藏書中獲悉的罷了。"
     },
     {
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "......這裡沒有遭遇過天災？"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "同樣極少。除了典籍記載，至少我們這三代人，從未見過。"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "正因此，我們從不輕易離開婆山鎮地界。也正如你所見，來此地的遊客都寥寥無幾，更別提官差和信使一類的人物。"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "說如今的婆山鎮與世隔絕，絲毫不為過。只不過，也唯有不問世事，方能愜意。"
     },
     {
       "type": "dialogue",
       "speakerName": "烏有",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "那些怪物？"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "唉......不知從何時開始，每逢除夕前後，鴻洞山裡時常會有些妖物來騷擾城鎮，大概三五天時間，這麼多年了，一直如此。"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "這些年，我翻遍典籍，問遍了那少之又少的外鄉人，從未找到解決之法......"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "不過只要躲到有太陽的地方，那些妖物就不敢靠近。"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "與其冒著風險去和那些怪物拼個你死我活，不如求個平平安安，躲在太陽底下，不過一夜不眠而已......"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "久而久之，就成了我們這裡的習慣。"
     },
     {
       "type": "dialogue",
       "speakerName": "烏有",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "唉！我還以為這裡當真是世外桃源，居然還會有這種麻煩事......那些怪物，太過恐怖，不主動靠近，是明智之舉啊！"
     },
     {
       "type": "dialogue",
       "speakerName": "烏有",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "（小聲）恩人呐，這聽著也太邪門了......"
     },
     {
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "......先生，這是最後一個請求。"
     },
     {
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "您也知道我們來這裡，是來找人的。我這裡有一件，呃，信物，您見過嗎？"
     },
     {
@@ -476,24 +558,28 @@
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "這......？"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "唔......"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "......巧奪天工啊。"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "但是......很遺憾，如此非凡的物件，我若是見過，一定——"
     },
     {
@@ -503,75 +589,91 @@
       "type": "dialogue",
       "speakerName": "村民",
       "speakerId": "avg_npc_140",
+      "isRemote": false,
       "text": "先生，宴席已經備好了。"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "好，好，請問幾位在鎮上可有住處？"
     },
     {
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "暫時沒有......"
     },
     {
       "type": "dialogue",
       "speakerName": "說書人",
       "speakerId": "avg_npc_138",
+      "isRemote": false,
       "text": "來者是客，不如就在這裡歇息一段時日，等除夕過了，再趕路不遲！"
     },
     {
       "type": "dialogue",
       "speakerName": "烏有",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "（小聲）恩人，您看？"
     },
     {
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "（小聲）反正也沒地方去......不如留在鎮子上收集情報。"
     },
     {
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "（小聲）這裡顯然和我們知道的“大炎”有很多不同的地方，以及，我們是怎麼到這裡來的，還是沒有頭緒......"
     },
     {
       "type": "dialogue",
       "speakerName": "烏有",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "好！"
     },
     {
       "type": "dialogue",
       "speakerName": "烏有",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "那咱們就，恭敬不如從命啦。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_indoor"
+    },
+    {
       "type": "dialogue",
       "speakerName": "克洛絲",
       "speakerId": "avg_npc_144",
+      "isRemote": false,
       "text": "到頭來還是沒有任何線索......不過這裡的茶起來著好香，這是大炎的綠茶嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "......克洛絲！"
     },
     {
       "type": "dialogue",
       "speakerName": "克洛絲",
       "speakerId": "avg_npc_144",
+      "isRemote": false,
       "text": "沒關係啦，我有分寸。"
     },
     {
@@ -581,78 +683,91 @@
       "type": "dialogue",
       "speakerName": "克洛絲",
       "speakerId": "avg_npc_144",
+      "isRemote": false,
       "text": "——"
     },
     {
       "type": "dialogue",
       "speakerName": "克洛絲",
       "speakerId": "avg_npc_144",
+      "isRemote": false,
       "text": "能喝。"
     },
     {
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "放在這兒的水果......"
     },
     {
       "type": "dialogue",
       "speakerName": "烏有",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "啊，恩人是要試毒？早說啊，我來我來！"
     },
     {
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "喂......！"
     },
     {
       "type": "dialogue",
       "speakerName": "烏有",
       "speakerId": null,
+      "isRemote": false,
       "text": "嗚唔！"
     },
     {
       "type": "dialogue",
       "speakerName": "烏有",
       "speakerId": null,
+      "isRemote": false,
       "text": "嗯，恩人呐，這水果可水靈了，還怪甜的。"
     },
     {
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "我不是那個意思......"
     },
     {
       "type": "dialogue",
       "speakerName": "烏有",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "沒有的事！俗話說得好，防人之心不可無嘛。"
     },
     {
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "倒不是擔心他們下毒......只是逐步確認......我們四周的一切。"
     },
     {
       "type": "dialogue",
       "speakerName": "克洛絲",
       "speakerId": "avg_npc_144",
+      "isRemote": false,
       "text": "其實你還挺煩躁的，對吧？沒關係，大家都一樣，一頭霧水。"
     },
     {
       "type": "dialogue",
       "speakerName": "克洛絲",
       "speakerId": "avg_npc_144",
+      "isRemote": false,
       "text": "就像是重新確認自己是不是還活著似的。"
     },
     {
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "......重新確認嗎。"
     },
     {
@@ -662,30 +777,35 @@
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "你們在這裡休息吧，我還是要去外面看看。"
     },
     {
       "type": "dialogue",
       "speakerName": "烏有",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "怎麼能讓恩人獨自勞累呢！我陪您一起去！"
     },
     {
       "type": "dialogue",
       "speakerName": "克洛絲",
       "speakerId": "avg_npc_144",
+      "isRemote": false,
       "text": "那我們就分頭行動吧，現在這個情況，誰都坐不住呀。"
     },
     {
       "type": "dialogue",
       "speakerName": "烏有",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "好，那咱們......一個時辰後見？"
     },
     {
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "好。"
     },
     {
@@ -695,75 +815,91 @@
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "你覺得他可信嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "克洛絲",
       "speakerId": "avg_npc_144",
+      "isRemote": false,
       "text": "......雖然在荒野上遇見落難者也不是什麼稀罕事，不過巧合這種東西，是最不值得相信的啦。"
     },
     {
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "我想也是，而且他欺騙我們也是事實。"
     },
     {
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "離巢的鉗獸是極具攻擊性的。雖然我們找到他的時候，他趴在樹枝上一副悲慘樣......但是那裡離車禍地點有足足八百米。"
     },
     {
       "type": "dialogue",
       "speakerName": "炎熔",
       "speakerId": "char_1011_purgatory",
+      "isRemote": false,
       "text": "而且看他的動作......"
     },
     {
       "type": "dialogue",
       "speakerName": "克洛絲",
       "speakerId": "avg_npc_144",
+      "isRemote": false,
       "text": "就算沒有惡意，總是要互相保留一些的嘛。"
     },
     {
       "type": "dialogue",
       "speakerName": "克洛絲",
       "speakerId": "avg_npc_144",
+      "isRemote": false,
       "text": "......我會稍微留意點的。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_town"
+    },
+    {
       "type": "dialogue",
       "speakerName": "烏有",
       "speakerId": null,
+      "isRemote": false,
       "text": "......唉。"
     },
     {
       "type": "dialogue",
       "speakerName": "烏有",
       "speakerId": null,
+      "isRemote": false,
       "text": "（雖說突然被捲入了莫名怪事......但也算是因禍得福......）"
     },
     {
       "type": "dialogue",
       "speakerName": "烏有",
       "speakerId": null,
+      "isRemote": false,
       "text": "（話說回來，這可真——不是鬧著玩的啊......要是找不到回去的辦法，該怎麼辦......）"
     },
     {
       "type": "dialogue",
       "speakerName": "烏有",
       "speakerId": null,
+      "isRemote": false,
       "text": "（唔......但炎熔和克洛絲確實有恩於我，這也不能賴她們......唉！走一步看一步吧——）"
     },
     {
@@ -773,24 +909,28 @@
       "type": "dialogue",
       "speakerName": "烏有",
       "speakerId": "char_455_nothing",
+      "isRemote": false,
       "text": "哦哦，抱歉抱歉，實在抱歉，看我一直想事情，一時間都沒注意前面——"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "char_362_Saga",
+      "isRemote": false,
       "text": "......啊！"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "char_362_Saga",
+      "isRemote": false,
       "text": "你看著面生，想必是外邊來的吧？小僧已經很久沒見過外來客啦！"
     },
     {
       "type": "dialogue",
       "speakerName": "嵯峨",
       "speakerId": "char_362_Saga",
+      "isRemote": false,
       "text": "小僧名叫嵯峨，是來自東國的雲遊僧！敢問施主從何處來？"
     },
     {

@@ -6,26 +6,33 @@
   "title": "Hull Breach",
   "storyCode": "14-16",
   "avgTag": "After Operation",
-  "sourcePath": "vendor/ArknightsGamedata/en/gamedata/story/obt/main/level_main_14-14_end.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/en/gamedata/story/obt/main/level_main_14-14_end.txt",
   "sourceHash": "a71ac9436697dd061f8955bd62e9b3dbb8c26e83c556233f2cce2e50f2500030",
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "bg_corridor_2"
+    },
+    {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_npc_1343_1",
+      "isRemote": false,
       "text": "You said you won't resist—"
     },
     {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_npc_1343_1",
+      "isRemote": false,
       "text": "You said you want the release of death—"
     },
     {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_npc_1343_1",
+      "isRemote": false,
       "text": "I don't believe you."
     },
     {
@@ -35,6 +42,7 @@
       "type": "dialogue",
       "speakerName": "Dying Assassin",
       "speakerId": null,
+      "isRemote": false,
       "text": "..."
     },
     {
@@ -45,42 +53,49 @@
       "type": "dialogue",
       "speakerName": "Dying Assassin",
       "speakerId": null,
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_npc_1343_1",
+      "isRemote": false,
       "text": "I won't let you die so easily..."
     },
     {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_npc_1343_1",
+      "isRemote": false,
       "text": "You took Her Highness—"
     },
     {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_npc_1343_1",
+      "isRemote": false,
       "text": "Death is too good for you..."
     },
     {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_npc_1343_1",
+      "isRemote": false,
       "text": "You said you were prepared to die when you accepted the mission—"
     },
     {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_npc_1343_1",
+      "isRemote": false,
       "text": "I don't believe you."
     },
     {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_npc_1343_1",
+      "isRemote": false,
       "text": "You want to live, don't you? You want to run away."
     },
     {
@@ -94,30 +109,35 @@
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_npc_1343_1",
+      "isRemote": false,
       "text": "Hold this grenade. It'll explode soon."
     },
     {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_npc_1343_1",
+      "isRemote": false,
       "text": "I'm right here. Prove it to me."
     },
     {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_npc_1343_1",
+      "isRemote": false,
       "text": "You can throw it away."
     },
     {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_npc_1343_1",
+      "isRemote": false,
       "text": "Do that, and you'll live."
     },
     {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_npc_1343_1",
+      "isRemote": false,
       "text": "I won't kill you. I'll let you go."
     },
     {
@@ -127,18 +147,21 @@
       "type": "dialogue",
       "speakerName": "Dying Assassin",
       "speakerId": null,
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_npc_1343_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_npc_1343_1",
+      "isRemote": false,
       "text": "Throw it away!"
     },
     {
@@ -148,18 +171,21 @@
       "type": "dialogue",
       "speakerName": "Dying Assassin",
       "speakerId": null,
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "Dying Assassin",
       "speakerId": null,
+      "isRemote": false,
       "text": "There won't be anything left of me once this thing goes off, right?"
     },
     {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_npc_1343_1",
+      "isRemote": false,
       "text": "..."
     },
     {
@@ -169,12 +195,14 @@
       "type": "dialogue",
       "speakerName": "Dying Assassin",
       "speakerId": null,
+      "isRemote": false,
       "text": "Good."
     },
     {
       "type": "dialogue",
       "speakerName": "Dying Assassin",
       "speakerId": null,
+      "isRemote": false,
       "text": "You should stay away."
     },
     {
@@ -211,16 +239,14 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "narration",
-          "text": "No, it's not enough.\nNot nearly close.\nI have more—"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "narration",
+      "text": "No, it's not enough.\nNot nearly close.\nI have more—"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -235,34 +261,43 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "narration",
-          "text": "The dark tides recede in the wake of the explosion.\nWhat about the man? Is there no trace left of him?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "Did I use too much of my stock?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "Who cares, the real waste is if I <i>don't</i> use it."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "Are you okay?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
+      "type": "background",
+      "backgroundId": "37_g9_airshipdockcorridor"
+    },
+    {
+      "type": "narration",
+      "text": "The dark tides recede in the wake of the explosion.\nWhat about the man? Is there no trace left of him?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "Did I use too much of my stock?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "Who cares, the real waste is if I <i>don't</i> use it."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "Are you okay?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -272,8 +307,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -283,42 +317,45 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "What? I was just saving your skin."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "(Low growling)"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "Little monster, you remember these people, don't you?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "Ghosts that should have died a long time ago..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "(Angry roar)"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "What? I was just saving your skin."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "(Low growling)"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "Little monster, you remember these people, don't you?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "Ghosts that should have died a long time ago..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "(Angry roar)"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -333,18 +370,17 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "You don't know them?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "You don't know them?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -359,42 +395,45 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "Ha. You better be telling the truth."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "I don't know if this is one of the revenant's tricks..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "And I don't think it's a coincidence that he appears on this ship which carries Her Highness—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "But he's dead."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "Ha. You better be telling the truth."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "I don't know if this is one of the revenant's tricks..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "And I don't think it's a coincidence that he appears on this ship which carries Her Highness—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "But he's dead."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -409,30 +448,31 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "The more the merrier."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "This mission is getting more and more interesting."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "Let's go. This way?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "The more the merrier."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "This mission is getting more and more interesting."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "Let's go. This way?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -447,30 +487,31 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "You go first."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "No need to worry. This little monster goes with you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "I have to keep you in my field of view in order to react in time."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "You go first."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "No need to worry. This little monster goes with you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "I have to keep you in my field of view in order to react in time."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -485,106 +526,120 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "It's not that hard, is it, working with me?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "The corridor smells of death. The silence is revolting.\nShe does not need anyone to tell her that they are getting closer to the revenant's core.\nWhy would Her Highness be in a place like this?\nWill Her Highness be there?\nWill Her Highness remember me?\nShe has many questions, but thinking about it serves only to stifle her excitement.\nShe cannot let Theresa see her down and depressed...\nTheresa always told her she looks best when she is smiling. She remembers—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "Hey, bastards. I was just thinking of you."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Airship 'Apparition'",
-          "speakerId": "avg_npc_1307_1",
-          "text": "You shall not pass."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Airship 'Apparition'",
-          "speakerId": "avg_npc_1307_1",
-          "text": "You shall not pass..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Airship 'Apparition'",
-          "speakerId": "avg_npc_1307_1",
-          "text": "Go no further."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "Don't stop, {@nickname}."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "What we're looking for must be waiting at the end of the corridor."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "Just grab on to little monster and don't think about anything else."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "I guarantee you they'll all turn to ash before they can touch you."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Airship 'Apparition'",
-          "speakerId": "avg_npc_1307_1",
-          "text": "There's only so much you can do on your own."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "—?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "(Angry roar)"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "It's not that hard, is it, working with me?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "37_g9_airshipdockcorridor"
+    },
+    {
+      "type": "narration",
+      "text": "The corridor smells of death. The silence is revolting.\nShe does not need anyone to tell her that they are getting closer to the revenant's core.\nWhy would Her Highness be in a place like this?\nWill Her Highness be there?\nWill Her Highness remember me?\nShe has many questions, but thinking about it serves only to stifle her excitement.\nShe cannot let Theresa see her down and depressed...\nTheresa always told her she looks best when she is smiling. She remembers—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "Hey, bastards. I was just thinking of you."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Airship 'Apparition'",
+      "speakerId": "avg_npc_1307_1",
+      "isRemote": false,
+      "text": "You shall not pass."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Airship 'Apparition'",
+      "speakerId": "avg_npc_1307_1",
+      "isRemote": false,
+      "text": "You shall not pass..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Airship 'Apparition'",
+      "speakerId": "avg_npc_1307_1",
+      "isRemote": false,
+      "text": "Go no further."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "Don't stop, {@nickname}."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "What we're looking for must be waiting at the end of the corridor."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "Just grab on to little monster and don't think about anything else."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "I guarantee you they'll all turn to ash before they can touch you."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Airship 'Apparition'",
+      "speakerId": "avg_npc_1307_1",
+      "isRemote": false,
+      "text": "There's only so much you can do on your own."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "—?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "(Angry roar)"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -594,8 +649,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -605,24 +659,24 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "I'm not the bunny! I don't need you to tell me what to do!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "You need to do something, do it. Skip the talk."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "I'm not the bunny! I don't need you to tell me what to do!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "You need to do something, do it. Skip the talk."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -637,54 +691,59 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Airship 'Apparition'",
-          "speakerId": "avg_npc_1307_1",
-          "text": "Deal with the Doctor."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "Did you really think I was just going to leave the dumbass alone?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Airship 'Apparition'",
-          "speakerId": "avg_npc_1307_1",
-          "text": "..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "Have you spent so much time with the revenant that you've gone crazy too?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "I left him a bunch of nice things."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "Close your eyes, {@nickname}—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "Bam!"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Airship 'Apparition'",
+      "speakerId": "avg_npc_1307_1",
+      "isRemote": false,
+      "text": "Deal with the Doctor."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "Did you really think I was just going to leave the dumbass alone?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Airship 'Apparition'",
+      "speakerId": "avg_npc_1307_1",
+      "isRemote": false,
+      "text": "..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "Have you spent so much time with the revenant that you've gone crazy too?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "I left him a bunch of nice things."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "Close your eyes, {@nickname}—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "Bam!"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -699,238 +758,275 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "Don't praise me. I was going to give the old hag a surprise when we met up. Now it's all wasted."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Airship 'Apparition'",
-          "speakerId": "avg_npc_1307_1",
-          "text": "Look out."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "Here's some more good stuff!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "I've lit up every corner for you. Time to go to hell—"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "Still no use? Guess we'll have to do this the hard way."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "(Answers excitedly)"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "Just keep the Doctor alive."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "(Complaining growl)"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "Ghosts continue to emerge from the darkness at the end of the corridor. There seems to be no end to it.\nOne after another, no fear of death.\nJust like back then—"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_npc_1343_1",
-          "text": "Who helped you?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Silent Assassin",
-          "speakerId": "avg_npc_1307_1",
-          "text": "..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_npc_1343_1",
-          "text": "..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "She gets no answer.\nThis endless corridor is filled with the bodies of the perpetrators, but why could she not find out how this betrayal happened?\nShe is sure that the answer is here.\nHere in Babel, amidst the seemingly unremarkable mission logs of PRTS.\nPerhaps... it's just at the end of the corridor."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": null,
-          "text": "Here..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_npc_1343_1",
-          "text": "—?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "???",
-          "speakerId": "avg_npc_1343_1",
-          "text": "Here... beneath these bodies..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Babel Member",
-          "speakerId": "avg_npc_1308_1",
-          "text": "Did you come back to help...? Go save Her Highness..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_npc_1343_1",
-          "text": "..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_npc_1343_1",
-          "text": "What are you doing here...?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Babel Member",
-          "speakerId": "avg_npc_1308_1",
-          "text": "I tried to protect Her Highness, but someone knocked me out."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Babel Member",
-          "speakerId": "avg_npc_1308_1",
-          "text": "Did we save her?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_npc_1343_1",
-          "text": "You saw the assassins?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Babel Member",
-          "speakerId": "avg_npc_1308_1",
-          "text": "The defense systems went offline all of a sudden. Then enemies rushed in..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Babel Member",
-          "speakerId": "avg_npc_1308_1",
-          "text": "My team and I tried to protect Her Highness—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_npc_1343_1",
-          "text": "Are these your teammates? They're dead."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_npc_1343_1",
-          "text": "But you're alive."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Babel Member",
-          "speakerId": "avg_npc_1308_1",
-          "text": "..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_npc_1343_1",
-          "text": "Her Highness is dead."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Babel Member",
-          "speakerId": "avg_npc_1308_1",
-          "text": "..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_npc_1343_1",
-          "text": "Protect Her Highness. Hah."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_npc_1343_1",
-          "text": "You can 'protect Her Highness' with this grenade."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "She holds back the urge. If only she had stayed here.\nWould it have changed anything?\nShe steps over a body and continues down the corridor.\nShe hears no explosion from behind her."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_npc_1343_1",
-          "text": "Trash. Coward."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "She arrives at the Speaker's Office to find the bodies of assassins piled outside the door. She does not want to go any further.\nWho is she to mourn Theresa when she has not killed the traitors?\nIn her heart, she already has the answer to who was behind all this.\nThe one who led the assassins, stood here, and led death to Theresa.\nShe would confront that one, once she has killed everyone who participated in the deed.\nIt would be her last target..."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "Don't praise me. I was going to give the old hag a surprise when we met up. Now it's all wasted."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Airship 'Apparition'",
+      "speakerId": "avg_npc_1307_1",
+      "isRemote": false,
+      "text": "Look out."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "Here's some more good stuff!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "I've lit up every corner for you. Time to go to hell—"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "Still no use? Guess we'll have to do this the hard way."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "(Answers excitedly)"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "Just keep the Doctor alive."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "(Complaining growl)"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "Ghosts continue to emerge from the darkness at the end of the corridor. There seems to be no end to it.\nOne after another, no fear of death.\nJust like back then—"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_corridor_2"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_npc_1343_1",
+      "isRemote": false,
+      "text": "Who helped you?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Silent Assassin",
+      "speakerId": "avg_npc_1307_1",
+      "isRemote": false,
+      "text": "..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_npc_1343_1",
+      "isRemote": false,
+      "text": "..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "She gets no answer.\nThis endless corridor is filled with the bodies of the perpetrators, but why could she not find out how this betrayal happened?\nShe is sure that the answer is here.\nHere in Babel, amidst the seemingly unremarkable mission logs of PRTS.\nPerhaps... it's just at the end of the corridor."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Here..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_npc_1343_1",
+      "isRemote": false,
+      "text": "—?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "???",
+      "speakerId": "avg_npc_1343_1",
+      "isRemote": false,
+      "text": "Here... beneath these bodies..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Babel Member",
+      "speakerId": "avg_npc_1308_1",
+      "isRemote": false,
+      "text": "Did you come back to help...? Go save Her Highness..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_npc_1343_1",
+      "isRemote": false,
+      "text": "..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_npc_1343_1",
+      "isRemote": false,
+      "text": "What are you doing here...?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Babel Member",
+      "speakerId": "avg_npc_1308_1",
+      "isRemote": false,
+      "text": "I tried to protect Her Highness, but someone knocked me out."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Babel Member",
+      "speakerId": "avg_npc_1308_1",
+      "isRemote": false,
+      "text": "Did we save her?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_npc_1343_1",
+      "isRemote": false,
+      "text": "You saw the assassins?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Babel Member",
+      "speakerId": "avg_npc_1308_1",
+      "isRemote": false,
+      "text": "The defense systems went offline all of a sudden. Then enemies rushed in..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Babel Member",
+      "speakerId": "avg_npc_1308_1",
+      "isRemote": false,
+      "text": "My team and I tried to protect Her Highness—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_npc_1343_1",
+      "isRemote": false,
+      "text": "Are these your teammates? They're dead."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_npc_1343_1",
+      "isRemote": false,
+      "text": "But you're alive."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Babel Member",
+      "speakerId": "avg_npc_1308_1",
+      "isRemote": false,
+      "text": "..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_npc_1343_1",
+      "isRemote": false,
+      "text": "Her Highness is dead."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Babel Member",
+      "speakerId": "avg_npc_1308_1",
+      "isRemote": false,
+      "text": "..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_npc_1343_1",
+      "isRemote": false,
+      "text": "Protect Her Highness. Hah."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_npc_1343_1",
+      "isRemote": false,
+      "text": "You can 'protect Her Highness' with this grenade."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "She holds back the urge. If only she had stayed here.\nWould it have changed anything?\nShe steps over a body and continues down the corridor.\nShe hears no explosion from behind her."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_npc_1343_1",
+      "isRemote": false,
+      "text": "Trash. Coward."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "She arrives at the Speaker's Office to find the bodies of assassins piled outside the door. She does not want to go any further.\nWho is she to mourn Theresa when she has not killed the traitors?\nIn her heart, she already has the answer to who was behind all this.\nThe one who led the assassins, stood here, and led death to Theresa.\nShe would confront that one, once she has killed everyone who participated in the deed.\nIt would be her last target..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
     },
     {
       "type": "choice",
@@ -945,25 +1041,28 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "...You—"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "She looks at you.\nYou stand in the darkness at the end of the corridor.\nMon3tr's massive frame stands between you and the ghosts charging towards you."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "background",
+      "backgroundId": "37_g9_airshipdockcorridor"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "...You—"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "She looks at you.\nYou stand in the darkness at the end of the corridor.\nMon3tr's massive frame stands between you and the ghosts charging towards you."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -978,82 +1077,94 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "(Loud roar)"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "Hang in there, little monster!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "She throws several bombs towards the gathered black apparitions."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "(Angry roar)"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "Tsk."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "W charges into the wake of the explosion."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "She goes through enemies and Mon3tr, through the fire and the cracking air."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "W arrives at the other side of the door.\nShe turns around—\nThe figure is still standing in the corridor, one hand on the door control, as countless wraiths try to rush out from behind.\nShe has no memory of ever having seen this scene.\nBut there was a scene from her imagination of the assassination, a scene that she could never shake—\nDid that 'evil spirit' stand before Theresa like this?\nDid the culprits who took her life rush out from behind the 'evil spirit' like this?\nWas it the 'evil spirit' who opened the door to the Speaker's Office?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "..."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "(Loud roar)"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "Hang in there, little monster!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "She throws several bombs towards the gathered black apparitions."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "(Angry roar)"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "Tsk."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "W charges into the wake of the explosion."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
+      "type": "narration",
+      "text": "She goes through enemies and Mon3tr, through the fire and the cracking air."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "50_g10_airshipwitchcraftcore"
+    },
+    {
+      "type": "narration",
+      "text": "W arrives at the other side of the door.\nShe turns around—\nThe figure is still standing in the corridor, one hand on the door control, as countless wraiths try to rush out from behind.\nShe has no memory of ever having seen this scene.\nBut there was a scene from her imagination of the assassination, a scene that she could never shake—\nDid that 'evil spirit' stand before Theresa like this?\nDid the culprits who took her life rush out from behind the 'evil spirit' like this?\nWas it the 'evil spirit' who opened the door to the Speaker's Office?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "..."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1063,18 +1174,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "(Excited howling)"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "(Excited howling)"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1084,34 +1194,38 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "She tosses the bomb almost instinctively, without arguing."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "(Raises you excitedly)"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "She tosses the bomb almost instinctively, without arguing."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "50_g10_airshipwitchcraftcore"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "(Raises you excitedly)"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1126,25 +1240,24 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "She looks at you as if she is trying to find a shadow of someone bygone upon you."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "She looks at you as if she is trying to find a shadow of someone bygone upon you."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1154,24 +1267,24 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "Was this your genius plan to prevent them from coming in? That simple?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "Was this your genius plan to prevent them from coming in? That simple?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1186,18 +1299,17 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "Wait. Is this... crystallization?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "Wait. Is this... crystallization?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1212,24 +1324,24 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "So that was our last chance before the door became fully crystalized..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "You had planned to block the door on your own from the beginning?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "So that was our last chance before the door became fully crystalized..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "You had planned to block the door on your own from the beginning?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1244,30 +1356,31 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "Trust... me? Hah..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "Until I find out what happened back then, I—"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "Trust... me? Hah..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "Until I find out what happened back then, I—"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1282,16 +1395,14 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "narration",
-          "text": "The engines roar deep inside the halls of the ship.\nSouls burn, releasing pain and anger.\nThe core of the airship lies bare before you."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "narration",
+      "text": "The engines roar deep inside the halls of the ship.\nSouls burn, releasing pain and anger.\nThe core of the airship lies bare before you."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1301,36 +1412,38 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "(Theresa isn't here.)"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "Doesn't matter what it is. Blow it up, and this piece of junk stops."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "Let's finish our business here. I got more important stuff to do."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "You're coming with me to see Theresa."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "(Theresa isn't here.)"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "Doesn't matter what it is. Blow it up, and this piece of junk stops."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "Let's finish our business here. I got more important stuff to do."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "You're coming with me to see Theresa."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1345,30 +1458,31 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "I know you're there, old geezer."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "I put a special gift for you under your bed."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "It's present time!"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "I know you're there, old geezer."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "I put a special gift for you under your bed."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "It's present time!"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -1383,282 +1497,330 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "narration",
-          "text": "The burning core instantly freezes, and the scattered flames rush back inside.\nThe fire that illuminates life dims.\nAll sound fades. One could hear one's own heartbeat in the silence left behind."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "Darkness begins to fill the room.\nShadows flow out of the core, converging into a great river, its current speeding up...\nUntil a great black tide, enough to swallow the entire room, rushes towards you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "—!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "—!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Such great pain and anger..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Shadow",
-          "speakerId": "avg_npc_1340_1",
-          "text": "No more words for you, outblood King!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Shadow",
-          "speakerId": "avg_npc_1340_1",
-          "text": "I have abided your many transgressions only because of Theresa. No more!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Shadow",
-          "speakerId": "avg_npc_1340_1",
-          "text": "Do you know what you are trying to stop?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Shadow",
-          "speakerId": "avg_npc_1340_1",
-          "text": "It is not just a war that the Sarkaz needs!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Shadow",
-          "speakerId": "avg_npc_1340_1",
-          "text": "You are trying to extinguish the flame that will change our destiny!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Shadow",
-          "speakerId": "avg_npc_1340_1",
-          "text": "You shall not succeed—"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "The black tide that swallowed Amiya recedes, and the shadows pulling at her weaken."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "He's focusing his strength?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "All the shadows... they've disappeared."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Looks like someone else found the revenant's location first."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Is the Doctor okay? I wonder where Dr. Kal'tsit and W are..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "I can feel the place where the anger is strongest. That's what we're looking for."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Hang in there, Doctor, Dr. Kal'tsit..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "I'm coming!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "Signs of explosions...\nW must have been here!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Did Mon3tr leave these claw marks? Is the Doctor with W?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "—!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "A figure that Amiya never expected to see emerges from the shadow at the end of the corridor."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "She has never forgotten the nightmare from so many years ago.\nShe remembers Theresa, and the black sword that pierced her chest...\nThe black-robed killers."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Impossible..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "You... you're all dead."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Ascalon checked and made sure you..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Airship 'Apparition'",
-          "speakerId": "avg_npc_1307_1",
-          "text": "...King of Sarkaz."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Airship 'Apparition'",
-          "speakerId": "avg_npc_1307_1",
-          "text": "You're too late. She knew you would come."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Theresa..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Airship 'Apparition'",
-          "speakerId": "avg_npc_1307_1",
-          "text": "Amiya, the ones you're looking for will die."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "—?!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Get out of my way."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "You..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Airship 'Apparition'",
-          "speakerId": "avg_npc_1307_1",
-          "text": "Spare the effort of reading our emotions."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Airship 'Apparition'",
-          "speakerId": "avg_npc_1307_1",
-          "text": "The only way you will pass..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Airship 'Apparition'",
-          "speakerId": "avg_npc_1307_1",
-          "text": "...is over our cold, dead bodies."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "I see the fragments of your memories—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "How could this be..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "You're from Babel?!"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "narration",
+      "text": "The burning core instantly freezes, and the scattered flames rush back inside.\nThe fire that illuminates life dims.\nAll sound fades. One could hear one's own heartbeat in the silence left behind."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
+      "type": "narration",
+      "text": "Darkness begins to fill the room.\nShadows flow out of the core, converging into a great river, its current speeding up...\nUntil a great black tide, enough to swallow the entire room, rushes towards you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "—!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "37_g9_airshipdockcorridor"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "—!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Such great pain and anger..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Shadow",
+      "speakerId": "avg_npc_1340_1",
+      "isRemote": false,
+      "text": "No more words for you, outblood King!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Shadow",
+      "speakerId": "avg_npc_1340_1",
+      "isRemote": false,
+      "text": "I have abided your many transgressions only because of Theresa. No more!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Shadow",
+      "speakerId": "avg_npc_1340_1",
+      "isRemote": false,
+      "text": "Do you know what you are trying to stop?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Shadow",
+      "speakerId": "avg_npc_1340_1",
+      "isRemote": false,
+      "text": "It is not just a war that the Sarkaz needs!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Shadow",
+      "speakerId": "avg_npc_1340_1",
+      "isRemote": false,
+      "text": "You are trying to extinguish the flame that will change our destiny!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Shadow",
+      "speakerId": "avg_npc_1340_1",
+      "isRemote": false,
+      "text": "You shall not succeed—"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "The black tide that swallowed Amiya recedes, and the shadows pulling at her weaken."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "He's focusing his strength?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "All the shadows... they've disappeared."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Looks like someone else found the revenant's location first."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Is the Doctor okay? I wonder where Dr. Kal'tsit and W are..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "I can feel the place where the anger is strongest. That's what we're looking for."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Hang in there, Doctor, Dr. Kal'tsit..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "I'm coming!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "37_g9_airshipdockcorridor"
+    },
+    {
+      "type": "narration",
+      "text": "Signs of explosions...\nW must have been here!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Did Mon3tr leave these claw marks? Is the Doctor with W?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "—!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "A figure that Amiya never expected to see emerges from the shadow at the end of the corridor."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "She has never forgotten the nightmare from so many years ago.\nShe remembers Theresa, and the black sword that pierced her chest...\nThe black-robed killers."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "37_g9_airshipdockcorridor"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Impossible..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "You... you're all dead."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Ascalon checked and made sure you..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Airship 'Apparition'",
+      "speakerId": "avg_npc_1307_1",
+      "isRemote": false,
+      "text": "...King of Sarkaz."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Airship 'Apparition'",
+      "speakerId": "avg_npc_1307_1",
+      "isRemote": false,
+      "text": "You're too late. She knew you would come."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Theresa..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Airship 'Apparition'",
+      "speakerId": "avg_npc_1307_1",
+      "isRemote": false,
+      "text": "Amiya, the ones you're looking for will die."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "—?!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Get out of my way."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "You..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Airship 'Apparition'",
+      "speakerId": "avg_npc_1307_1",
+      "isRemote": false,
+      "text": "Spare the effort of reading our emotions."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Airship 'Apparition'",
+      "speakerId": "avg_npc_1307_1",
+      "isRemote": false,
+      "text": "The only way you will pass..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Airship 'Apparition'",
+      "speakerId": "avg_npc_1307_1",
+      "isRemote": false,
+      "text": "...is over our cold, dead bodies."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "I see the fragments of your memories—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "How could this be..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "You're from Babel?!"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": []

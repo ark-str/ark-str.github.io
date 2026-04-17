@@ -11,6 +11,7 @@ export const PORTRAIT_SOURCE_PATH = "vendor/ArknightsResource";
 export const PORTRAIT_SOURCE_REMOTE = "https://github.com/fexli/ArknightsResource.git";
 export const PORTRAIT_SOURCE_BRANCH = "main";
 export const PORTRAIT_NPCS_DIRECTORY = path.join("avgs", "npcs");
+export const BACKGROUND_SOURCE_DIRECTORY = path.join("avgs", "bg");
 export const PORTRAIT_CACHE_MARKER = ".ark-str-portrait-cache.json";
 export const CANONICAL_READER_LOCALES = ["cn", "en", "jp", "kr", "tw"];
 
@@ -18,16 +19,64 @@ export function getRepoRoot() {
   return process.cwd();
 }
 
+function getHarnessHostRoot(cwd = getRepoRoot()) {
+  const marker = `${path.sep}.harness-worktrees${path.sep}`;
+  const markerIndex = cwd.indexOf(marker);
+  return markerIndex === -1 ? cwd : cwd.slice(0, markerIndex);
+}
+
+function hasGitWorkingTree(rootPath) {
+  return fs.existsSync(path.join(rootPath, ".git"));
+}
+
+function resolveSourceRoot(cwd, relativeRootPath) {
+  const directRoot = path.join(cwd, relativeRootPath);
+  if (hasGitWorkingTree(directRoot)) {
+    return directRoot;
+  }
+
+  const hostRoot = getHarnessHostRoot(cwd);
+  if (hostRoot !== cwd) {
+    const hostCandidate = path.join(hostRoot, relativeRootPath);
+    if (hasGitWorkingTree(hostCandidate)) {
+      return hostCandidate;
+    }
+  }
+
+  return directRoot;
+}
+
+function resolveWorkspacePath(cwd, relativePath) {
+  const directPath = path.join(cwd, relativePath);
+  if (fs.existsSync(directPath)) {
+    return directPath;
+  }
+
+  const hostRoot = getHarnessHostRoot(cwd);
+  if (hostRoot !== cwd) {
+    const hostPath = path.join(hostRoot, relativePath);
+    if (fs.existsSync(hostPath)) {
+      return hostPath;
+    }
+  }
+
+  return directPath;
+}
+
 export function getArknightsDataRoot(cwd = getRepoRoot()) {
-  return path.join(cwd, ARKNIGHTS_DATA_SUBMODULE_PATH);
+  return resolveSourceRoot(cwd, ARKNIGHTS_DATA_SUBMODULE_PATH);
 }
 
 export function getPortraitSourceRoot(cwd = getRepoRoot()) {
-  return path.join(cwd, PORTRAIT_SOURCE_PATH);
+  return resolveSourceRoot(cwd, PORTRAIT_SOURCE_PATH);
 }
 
 export function getPortraitNpcSourceRoot(cwd = getRepoRoot()) {
   return path.join(getPortraitSourceRoot(cwd), PORTRAIT_NPCS_DIRECTORY);
+}
+
+export function getBackgroundSourceRoot(cwd = getRepoRoot()) {
+  return path.join(getPortraitSourceRoot(cwd), BACKGROUND_SOURCE_DIRECTORY);
 }
 
 export function getPortraitCacheMarkerPath(cwd = getRepoRoot()) {
@@ -40,6 +89,10 @@ export function getGeneratedContentRoot(cwd = getRepoRoot()) {
 
 export function getGeneratedPortraitsRoot(cwd = getRepoRoot()) {
   return path.join(cwd, "ark-str-web-app", "public", "generated", "portraits", "speakers");
+}
+
+export function getGeneratedBackgroundsRoot(cwd = getRepoRoot()) {
+  return path.join(cwd, "ark-str-web-app", "public", "generated", "backgrounds");
 }
 
 export function getGeneratedAppContentRoot(cwd = getRepoRoot()) {
@@ -60,6 +113,7 @@ export function getGeneratedFilePaths(cwd = getRepoRoot()) {
   const storiesRoot = getGeneratedStoriesRoot(cwd);
   const appContentRoot = getGeneratedAppContentRoot(cwd);
   const generatedPortraitsRoot = getGeneratedPortraitsRoot(cwd);
+  const generatedBackgroundsRoot = getGeneratedBackgroundsRoot(cwd);
 
   return {
     contentRoot,
@@ -67,12 +121,14 @@ export function getGeneratedFilePaths(cwd = getRepoRoot()) {
     storiesRoot,
     appContentRoot,
     generatedPortraitsRoot,
+    generatedBackgroundsRoot,
     index: path.join(contentRoot, "index.json"),
     sourceManifest: path.join(statusRoot, "source-manifest.json"),
     summaryManifest: path.join(statusRoot, "summary-manifest.json"),
     appIndex: path.join(appContentRoot, "index.json"),
     appSummaryManifest: path.join(appContentRoot, "summary-manifest.json"),
     appPortraitManifest: path.join(appContentRoot, "portraits.json"),
+    appBackgroundManifest: path.join(appContentRoot, "backgrounds.json"),
     appRegistry: path.join(appContentRoot, "registry.js"),
   };
 }
@@ -91,11 +147,11 @@ export function writeJson(filePath, value) {
 }
 
 export function hasArknightsDataSource(cwd = getRepoRoot()) {
-  return fs.existsSync(path.join(getArknightsDataRoot(cwd), ".git"));
+  return hasGitWorkingTree(getArknightsDataRoot(cwd));
 }
 
 export function hasPortraitSource(cwd = getRepoRoot()) {
-  return fs.existsSync(path.join(getPortraitSourceRoot(cwd), ".git"));
+  return hasGitWorkingTree(getPortraitSourceRoot(cwd));
 }
 
 function runGit(args, { cwd = getRepoRoot(), stdio = "pipe" } = {}) {
@@ -169,6 +225,7 @@ export function ensurePortraitSourceCache(
 ) {
   const portraitRoot = getPortraitSourceRoot(cwd);
   const portraitNpcRoot = getPortraitNpcSourceRoot(cwd);
+  const backgroundRoot = getBackgroundSourceRoot(cwd);
   const cacheMarkerPath = getPortraitCacheMarkerPath(cwd);
 
   const rebuildCache = () => {
@@ -189,7 +246,7 @@ export function ensurePortraitSourceCache(
     writeJson(cacheMarkerPath, {
       source: PORTRAIT_SOURCE_REMOTE,
       branch: PORTRAIT_SOURCE_BRANCH,
-      directory: PORTRAIT_NPCS_DIRECTORY,
+      directories: [PORTRAIT_NPCS_DIRECTORY, BACKGROUND_SOURCE_DIRECTORY],
     });
   };
 
@@ -198,7 +255,12 @@ export function ensurePortraitSourceCache(
     return;
   }
 
-  if (remote || !fs.existsSync(portraitNpcRoot) || !fs.existsSync(cacheMarkerPath)) {
+  if (
+    remote ||
+    !fs.existsSync(portraitNpcRoot) ||
+    !fs.existsSync(backgroundRoot) ||
+    !fs.existsSync(cacheMarkerPath)
+  ) {
     rebuildCache();
     return;
   }
@@ -208,7 +270,8 @@ export function ensurePortraitSourceCache(
     if (
       cacheMarker?.source !== PORTRAIT_SOURCE_REMOTE ||
       cacheMarker?.branch !== PORTRAIT_SOURCE_BRANCH ||
-      cacheMarker?.directory !== PORTRAIT_NPCS_DIRECTORY
+      JSON.stringify(cacheMarker?.directories ?? []) !==
+        JSON.stringify([PORTRAIT_NPCS_DIRECTORY, BACKGROUND_SOURCE_DIRECTORY])
     ) {
       rebuildCache();
     }
@@ -239,41 +302,27 @@ function listTrackedPortraitFiles(cwd = getRepoRoot()) {
     .filter((line) => line.endsWith(".png"));
 }
 
-function materializePortraitFiles(relativePortraitPaths, cwd = getRepoRoot()) {
-  if (!hasPortraitSource(cwd) || relativePortraitPaths.length === 0) {
-    return;
-  }
+function listTrackedBackgroundFiles(cwd = getRepoRoot()) {
+  const backgroundRoot = getBackgroundSourceRoot(cwd);
 
-  const portraitRoot = getPortraitSourceRoot(cwd);
-  const pendingPaths = [...new Set(relativePortraitPaths)].filter(
-    (relativePath) => !fs.existsSync(path.join(portraitRoot, relativePath)),
-  );
-
-  const checkoutChunk = (chunk) => {
-    if (chunk.length === 0) {
-      return;
+  if (!hasPortraitSource(cwd)) {
+    if (!fs.existsSync(backgroundRoot)) {
+      return [];
     }
 
-    try {
-      runGit(["-C", portraitRoot, "checkout", "--force", "HEAD", "--", ...chunk], {
-        cwd,
-        stdio: "inherit",
-      });
-    } catch (error) {
-      if (chunk.length === 1) {
-        throw error;
-      }
-
-      const midpoint = Math.ceil(chunk.length / 2);
-      checkoutChunk(chunk.slice(0, midpoint));
-      checkoutChunk(chunk.slice(midpoint));
-    }
-  };
-
-  const chunkSize = 32;
-  for (let index = 0; index < pendingPaths.length; index += chunkSize) {
-    checkoutChunk(pendingPaths.slice(index, index + chunkSize));
+    return fs
+      .readdirSync(backgroundRoot)
+      .filter((fileName) => fileName.endsWith(".png"))
+      .map((fileName) => path.join(BACKGROUND_SOURCE_DIRECTORY, fileName).replaceAll("\\", "/"));
   }
+
+  return runGit(
+    ["-C", getPortraitSourceRoot(cwd), "ls-tree", "-r", "--name-only", "HEAD", BACKGROUND_SOURCE_DIRECTORY],
+    { cwd },
+  ).stdout
+    .split("\n")
+    .map((line) => line.trim())
+    .filter((line) => line.endsWith(".png"));
 }
 
 function selectPortraitMatch(speakerId, trackedPortraitFiles) {
@@ -298,15 +347,65 @@ function selectPortraitMatch(speakerId, trackedPortraitFiles) {
   )[0];
 }
 
-function readTrackedPortraitFile(relativePortraitPath, cwd = getRepoRoot()) {
+function readTrackedResourceFile(relativeResourcePath, cwd = getRepoRoot()) {
   const portraitRoot = getPortraitSourceRoot(cwd);
-  const sourceFilePath = path.join(portraitRoot, relativePortraitPath);
+  const sourceFilePath = path.join(portraitRoot, relativeResourcePath);
 
-  if (!fs.existsSync(sourceFilePath)) {
+  if (fs.existsSync(sourceFilePath)) {
+    return fs.readFileSync(sourceFilePath);
+  }
+
+  if (!hasPortraitSource(cwd)) {
     return null;
   }
 
-  return fs.readFileSync(sourceFilePath);
+  const result = spawnSync(
+    "git",
+    ["-C", portraitRoot, "show", `HEAD:${relativeResourcePath}`],
+    {
+      cwd,
+      encoding: null,
+      maxBuffer: 64 * 1024 * 1024,
+      shell: false,
+    },
+  );
+
+  if (result.status !== 0 || !result.stdout) {
+    return null;
+  }
+
+  const resourceBuffer = Buffer.from(result.stdout);
+  ensureDirectory(path.dirname(sourceFilePath));
+  fs.writeFileSync(sourceFilePath, resourceBuffer);
+  return resourceBuffer;
+}
+
+function readTrackedPortraitFile(relativePortraitPath, cwd = getRepoRoot()) {
+  return readTrackedResourceFile(relativePortraitPath, cwd);
+}
+
+function selectBackgroundMatch(backgroundId, trackedBackgroundFiles) {
+  const normalizedBackgroundId =
+    typeof backgroundId === "string" && backgroundId.trim().length > 0 ? backgroundId.trim() : null;
+
+  if (!normalizedBackgroundId) {
+    return null;
+  }
+
+  const matches = trackedBackgroundFiles.filter((relativePath) => {
+    const basename = path.basename(relativePath, ".png");
+    return basename === normalizedBackgroundId || basename.startsWith(`${normalizedBackgroundId}_`);
+  });
+
+  if (matches.length === 0) {
+    return null;
+  }
+
+  return matches.sort((left, right) => path.basename(left).localeCompare(path.basename(right)))[0];
+}
+
+function readTrackedBackgroundFile(relativeBackgroundPath, cwd = getRepoRoot()) {
+  return readTrackedResourceFile(relativeBackgroundPath, cwd);
 }
 
 export function getRequiredExcelPaths(serverRoot) {
@@ -374,19 +473,19 @@ export function resolveStorySource({
   storyId,
   unlockData,
 }) {
+  const dataRoot = getArknightsDataRoot(cwd);
   const candidatePaths = [];
 
   if (typeof storyTxt === "string" && storyTxt.length > 0) {
     candidatePaths.push(
-      path.join(cwd, ARKNIGHTS_DATA_SUBMODULE_PATH, server, "gamedata", "story", `${storyTxt}.txt`),
+      path.join(dataRoot, server, "gamedata", "story", `${storyTxt}.txt`),
     );
   }
 
   if (typeof storyInfo === "string" && storyInfo.length > 0) {
     candidatePaths.push(
       path.join(
-        cwd,
-        ARKNIGHTS_DATA_SUBMODULE_PATH,
+        dataRoot,
         server,
         "gamedata",
         "story",
@@ -394,13 +493,13 @@ export function resolveStorySource({
       ),
     );
     candidatePaths.push(
-      path.join(cwd, ARKNIGHTS_DATA_SUBMODULE_PATH, server, "gamedata", "story", `${storyInfo}.txt`),
+      path.join(dataRoot, server, "gamedata", "story", `${storyInfo}.txt`),
     );
   }
 
   if (candidatePaths.length === 0) {
     candidatePaths.push(
-      path.join(cwd, ARKNIGHTS_DATA_SUBMODULE_PATH, server, "gamedata", "story", `${storyId}.txt`),
+      path.join(dataRoot, server, "gamedata", "story", `${storyId}.txt`),
     );
   }
 
@@ -443,7 +542,23 @@ function collectSpeakerIdsFromBlocks(blocks, accumulator) {
       for (const option of block.options) {
         collectSpeakerIdsFromBlocks(option.blocks, accumulator);
       }
-      collectSpeakerIdsFromBlocks(block.sharedBlocks, accumulator);
+    }
+  }
+}
+
+function collectBackgroundIdsFromBlocks(blocks, accumulator) {
+  for (const block of blocks) {
+    if (block.type === "background") {
+      if (typeof block.backgroundId === "string" && block.backgroundId.length > 0) {
+        accumulator.add(block.backgroundId);
+      }
+      continue;
+    }
+
+    if (block.type === "choice") {
+      for (const option of block.options) {
+        collectBackgroundIdsFromBlocks(option.blocks, accumulator);
+      }
     }
   }
 }
@@ -456,6 +571,16 @@ function collectReferencedSpeakerIds(storyDetails) {
   }
 
   return speakerIds;
+}
+
+function collectReferencedBackgroundIds(storyDetails) {
+  const backgroundIds = new Set();
+
+  for (const storyDetail of storyDetails) {
+    collectBackgroundIdsFromBlocks(storyDetail.detail.blocks ?? [], backgroundIds);
+  }
+
+  return backgroundIds;
 }
 
 function collectReferencedPortraitPaths(storyDetails, cwd = getRepoRoot()) {
@@ -473,6 +598,23 @@ function collectReferencedPortraitPaths(storyDetails, cwd = getRepoRoot()) {
   }
 
   return portraitPaths;
+}
+
+function collectReferencedBackgroundPaths(storyDetails, cwd = getRepoRoot()) {
+  const backgroundPaths = {};
+  const backgroundIds = collectReferencedBackgroundIds(storyDetails);
+  const trackedBackgroundFiles = listTrackedBackgroundFiles(cwd);
+
+  for (const backgroundId of [...backgroundIds].filter(Boolean).sort((left, right) => left.localeCompare(right))) {
+    const backgroundMatch = selectBackgroundMatch(backgroundId, trackedBackgroundFiles);
+    if (!backgroundMatch) {
+      continue;
+    }
+
+    backgroundPaths[backgroundId] = `/generated/backgrounds/${backgroundId}.png`;
+  }
+
+  return backgroundPaths;
 }
 
 export function buildContentArtifacts(
@@ -577,7 +719,7 @@ export function buildContentArtifacts(
           });
 
           if (source.sourceExists) {
-            const sourceFilePath = path.join(cwd, source.sourcePath);
+            const sourceFilePath = resolveWorkspacePath(cwd, source.sourcePath);
             const parsedBlocks = parseStoryText(fs.readFileSync(sourceFilePath, "utf8"));
             storyDetails.push({
               locale: server,
@@ -627,11 +769,16 @@ export function buildContentArtifacts(
   sourceItems.sort((left, right) => left.server.localeCompare(right.server) || left.storyId.localeCompare(right.storyId));
   summaryItems.sort((left, right) => left.server.localeCompare(right.server) || left.storyId.localeCompare(right.storyId));
 
-  if (ensurePortraitSource && collectReferencedSpeakerIds(storyDetails).size > 0) {
+  if (
+    ensurePortraitSource &&
+    (collectReferencedSpeakerIds(storyDetails).size > 0 ||
+      collectReferencedBackgroundIds(storyDetails).size > 0)
+  ) {
     ensurePortraitSourceCache(cwd, { remote: remotePortraitSource });
   }
 
   const portraitPaths = collectReferencedPortraitPaths(storyDetails, cwd);
+  const backgroundPaths = collectReferencedBackgroundPaths(storyDetails, cwd);
 
   return {
     index: {
@@ -661,6 +808,7 @@ export function buildContentArtifacts(
     },
     storyDetails,
     portraitPaths,
+    backgroundPaths,
   };
 }
 
@@ -674,7 +822,7 @@ export function loadGeneratedArtifacts(cwd = getRepoRoot()) {
   };
 }
 
-function createGeneratedRegistrySource(stories, portraitPaths) {
+function createGeneratedRegistrySource(stories, portraitPaths, backgroundPaths) {
   const pathEntries = stories
     .slice()
     .sort(
@@ -694,15 +842,23 @@ function createGeneratedRegistrySource(stories, portraitPaths) {
       ([speakerId, portraitPath]) =>
         `  ${JSON.stringify(speakerId)}: ${JSON.stringify(portraitPath)},`,
     );
+  const backgroundEntries = Object.entries(backgroundPaths)
+    .sort(([left], [right]) => left.localeCompare(right))
+    .map(
+      ([backgroundId, backgroundPath]) =>
+        `  ${JSON.stringify(backgroundId)}: ${JSON.stringify(backgroundPath)},`,
+    );
 
   return [
     "// @ts-nocheck",
     "/* This file is generated by the content pipeline scripts. */",
     "import contentIndexData from \"./index.json\";",
+    "import backgroundManifestData from \"./backgrounds.json\";",
     "import portraitManifestData from \"./portraits.json\";",
     "import summaryManifestData from \"./summary-manifest.json\";",
     "",
     "export const contentIndex = contentIndexData;",
+    "export const backgroundManifest = backgroundManifestData;",
     "export const portraitManifest = portraitManifestData;",
     "export const summaryManifest = summaryManifestData;",
     "",
@@ -714,8 +870,20 @@ function createGeneratedRegistrySource(stories, portraitPaths) {
     ...portraitEntries,
     "};",
     "",
+    "export const backgroundPaths = {",
+    ...backgroundEntries,
+    "};",
+    "",
     "export function getStoryDetailPath(locale, storyId) {",
     "  return storyDetailPaths[`${locale}:${storyId}`] ?? null;",
+    "}",
+    "",
+    "export function hasBackgroundForBackgroundId(backgroundId) {",
+    "  return typeof backgroundId === \"string\" && Object.hasOwn(backgroundPaths, backgroundId);",
+    "}",
+    "",
+    "export function getBackgroundPathForBackgroundId(backgroundId) {",
+    "  return hasBackgroundForBackgroundId(backgroundId) ? backgroundPaths[backgroundId] : null;",
     "}",
     "",
     "export function hasPortraitForSpeakerId(speakerId) {",
@@ -737,6 +905,8 @@ export function writeGeneratedArtifacts(artifacts, cwd = getRepoRoot()) {
   ensureDirectory(filePaths.storiesRoot);
   fs.rmSync(filePaths.generatedPortraitsRoot, { recursive: true, force: true });
   ensureDirectory(filePaths.generatedPortraitsRoot);
+  fs.rmSync(filePaths.generatedBackgroundsRoot, { recursive: true, force: true });
+  ensureDirectory(filePaths.generatedBackgroundsRoot);
   fs.rmSync(filePaths.appContentRoot, { recursive: true, force: true });
   ensureDirectory(filePaths.appContentRoot);
   writeJson(filePaths.index, artifacts.index);
@@ -744,13 +914,11 @@ export function writeGeneratedArtifacts(artifacts, cwd = getRepoRoot()) {
   writeJson(filePaths.summaryManifest, artifacts.summaryManifest);
   writeJson(filePaths.appIndex, artifacts.index);
   writeJson(filePaths.appSummaryManifest, artifacts.summaryManifest);
+  writeJson(filePaths.appBackgroundManifest, artifacts.backgroundPaths ?? {});
   writeJson(filePaths.appPortraitManifest, artifacts.portraitPaths ?? {});
 
   const trackedPortraitFiles = listTrackedPortraitFiles(cwd);
-  const portraitSourcePaths = Object.keys(artifacts.portraitPaths ?? {})
-    .map((speakerId) => selectPortraitMatch(speakerId, trackedPortraitFiles))
-    .filter(Boolean);
-  materializePortraitFiles(portraitSourcePaths, cwd);
+  const trackedBackgroundFiles = listTrackedBackgroundFiles(cwd);
 
   for (const storyDetail of artifacts.storyDetails ?? []) {
     writeJson(path.join(filePaths.contentRoot, storyDetail.filePath), storyDetail.detail);
@@ -775,9 +943,29 @@ export function writeGeneratedArtifacts(artifacts, cwd = getRepoRoot()) {
     fs.writeFileSync(targetFilePath, portraitFileBuffer);
   }
 
+  for (const [backgroundId, publicPath] of Object.entries(artifacts.backgroundPaths ?? {})) {
+    const relativeBackgroundPath = selectBackgroundMatch(backgroundId, trackedBackgroundFiles);
+    if (!relativeBackgroundPath) {
+      continue;
+    }
+
+    const backgroundFileBuffer = readTrackedBackgroundFile(relativeBackgroundPath, cwd);
+    if (!backgroundFileBuffer) {
+      continue;
+    }
+
+    const targetFilePath = path.join(cwd, "ark-str-web-app", "public", publicPath.replace(/^\//, ""));
+    ensureDirectory(path.dirname(targetFilePath));
+    fs.writeFileSync(targetFilePath, backgroundFileBuffer);
+  }
+
   fs.writeFileSync(
     filePaths.appRegistry,
-    `${createGeneratedRegistrySource(artifacts.index.stories ?? [], artifacts.portraitPaths ?? {})}\n`,
+    `${createGeneratedRegistrySource(
+      artifacts.index.stories ?? [],
+      artifacts.portraitPaths ?? {},
+      artifacts.backgroundPaths ?? {},
+    )}\n`,
     "utf8",
   );
 }

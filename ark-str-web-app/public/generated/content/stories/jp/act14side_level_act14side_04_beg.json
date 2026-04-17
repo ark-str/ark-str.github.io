@@ -6,10 +6,21 @@
   "title": "風雪の道途",
   "storyCode": "BI-4",
   "avgTag": "戦闘前",
-  "sourcePath": "vendor/ArknightsGamedata/jp/gamedata/story/activities/act14side/level_act14side_04_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/jp/gamedata/story/activities/act14side/level_act14side_04_beg.txt",
   "sourceHash": "c98b19808e9a5ca614b5733c807bede1bcab9221ef6a8c41a0092106976c2a3d",
   "bodyAvailable": true,
   "blocks": [
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "24_g9_manoravenue"
+    },
     {
       "type": "narration",
       "text": "]"
@@ -18,459 +29,546 @@
       "type": "dialogue",
       "speakerName": "イェラグ民間人A",
       "speakerId": "avg_npc_280_1",
+      "isRemote": false,
       "text": "ねえあなた、ちょっと出てきてよ。あれってエンシオディス様じゃない？"
     },
     {
       "type": "dialogue",
       "speakerName": "イェラグ民間人B",
       "speakerId": "avg_npc_277_1",
+      "isRemote": false,
       "text": "そんなわけあるか。明日は山で聖猟があるんだぞ。巫女様に捧げるお供え物の準備があるってのに、こんな朝っぱらから領地の視察に来てどうするんだよ？"
     },
     {
       "type": "dialogue",
       "speakerName": "イェラグ民間人B",
       "speakerId": "avg_npc_277_1",
+      "isRemote": false,
       "text": "……待て、本当にエンシオディス様じゃないか！"
     },
     {
       "type": "dialogue",
       "speakerName": "イェラグ民間人A",
       "speakerId": "avg_npc_280_1",
+      "isRemote": false,
       "text": "大昔は、カランド山に入る際、駄獣に乗ることも許されなかったと聞いたことがあるわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "イェラグ民間人A",
       "speakerId": "avg_npc_280_1",
+      "isRemote": false,
       "text": "特に巫女様を拝みに行く人たちは、家の門を出る最初の一歩から、合掌したまま頭を下げて、地面から目を離さずに祈りながら歩いて行くのよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "イェラグ民間人A",
       "speakerId": "avg_npc_280_1",
+      "isRemote": false,
       "text": "エンシオディス様のあの様子は、もしかしてその伝統にならってるんじゃない？"
     },
     {
       "type": "dialogue",
       "speakerName": "イェラグ民間人B",
       "speakerId": "avg_npc_277_1",
+      "isRemote": false,
       "text": "あ、ああ。確かにそんな風習があると聞いた。だが……あのエンシオディス様までもが、下を向いたまま一歩一歩カランドの頂上まで歩かないといけないってのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "イェラグ民間人A",
       "speakerId": "avg_npc_280_1",
+      "isRemote": false,
       "text": "何言ってるの。エンシオディス様だってイェラガンドの民よ。あなたまさか、ペイルロッシュ家のバカが言ってるみたいに、あの方がイェラグの本分を忘れたとでも思ってるわけ？"
     },
     {
       "type": "dialogue",
       "speakerName": "イェラグ民間人B",
       "speakerId": "avg_npc_277_1",
+      "isRemote": false,
       "text": "バカ言うな！　そんなわけないだろ！"
     },
     {
       "type": "dialogue",
       "speakerName": "イェラグ民間人B",
       "speakerId": "avg_npc_277_1",
+      "isRemote": false,
       "text": "俺はただエンシオディス様を心配してるだけだ。お前だって知ってるだろ？　他の両家の強欲さときたら、権力を巫女様に引き渡すことを提案されても、まだ物足りなさそうにしていたんだぞ。"
     },
     {
       "type": "dialogue",
       "speakerName": "イェラグ民間人B",
       "speakerId": "avg_npc_277_1",
+      "isRemote": false,
       "text": "あいつらはエンシオディス様がもたらす発展に嫉妬しているんだ。俺たちの鉄道まで爆破しやがって……結託してイェラグを封鎖し、俺たちを呑み込むつもりなんだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "イェラグ民間人A",
       "speakerId": "avg_npc_280_1",
+      "isRemote": false,
       "text": "よくもそんなことができるわよね……イェラガンドの御前で武力に訴えるなんて、主はお怒りになるはずよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "イェラグ民間人B",
       "speakerId": "avg_npc_277_1",
+      "isRemote": false,
       "text": "あいつらにゃ、できないことなんてないんだろうよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "イェラグ民間人B",
       "speakerId": "avg_npc_277_1",
+      "isRemote": false,
       "text": "今、旦那様は丸腰で歩いているが、明日になれば三家が兵を率いて山で狩りの儀式を行うんだ。その時に、あいつらがどさくさに紛れて何をしでかすかわかったもんじゃない！"
     },
     {
       "type": "dialogue",
       "speakerName": "イェラグ民間人A",
       "speakerId": "avg_npc_280_1",
+      "isRemote": false,
       "text": "もう、そんな不吉なこと言わないでよ！　我らのイェラガンドよ、どうかエンシオディス様をお守りください！"
     },
     {
       "type": "dialogue",
       "speakerName": "イェラグ民間人B",
       "speakerId": "avg_npc_277_1",
+      "isRemote": false,
       "text": "我らのイェラガンドよ、どうかあの御方をお守りください！"
     },
     {
       "type": "dialogue",
       "speakerName": "イェラグ貴族",
       "speakerId": "avg_npc_272_1",
+      "isRemote": false,
       "text": "これはこれはエンシオディス様。まさかこれほど敬虔な参拝者を、この時代にまだ見られるとは！"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴァイス",
       "speakerId": "avg_198_blackd_1",
+      "isRemote": false,
       "text": "申し訳ありません、パライ様。旦那様は礼拝の最中でございます。敬虔な祈りを捧げ続ける必要がありますので、お返事をすることはかないません。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴァイス",
       "speakerId": "avg_198_blackd_1",
+      "isRemote": false,
       "text": "旦那様に代わって私がご挨拶を申し上げます。"
     },
     {
       "type": "dialogue",
       "speakerName": "イェラグ貴族",
       "speakerId": "avg_npc_272_1",
+      "isRemote": false,
       "text": "構わん構わん、私の方こそ邪魔をしたね。我らのイェラガンドよ、お許しください。"
     },
     {
       "type": "dialogue",
       "speakerName": "イェラグ貴族",
       "speakerId": "avg_npc_272_1",
+      "isRemote": false,
       "text": "ただ、トゥリクムからカランドまでは果てしなく長い道のりだ……我ら領民は、エンシオディス様のお姿を見るにつけ、心配でならんのだよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴァイス",
       "speakerId": "avg_198_blackd_1",
+      "isRemote": false,
       "text": "旦那様のご意志は揺るぎません。心配は無用ですよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴァイス",
       "speakerId": "avg_198_blackd_1",
+      "isRemote": false,
       "text": "我々護衛隊も控えておりますので、旦那様にはいかなるアクシデントも起こり得ません。"
     },
     {
       "type": "dialogue",
       "speakerName": "イェラグ貴族",
       "speakerId": "avg_npc_272_1",
+      "isRemote": false,
       "text": "ならば安心だ！　イェラガンドの祝福がシルバーアッシュ家の頭上にあらんことを。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヴァイス",
       "speakerId": "avg_198_blackd_1",
+      "isRemote": false,
       "text": "あなたにもイェラガンドのご加護があらんことを。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "24_g4_boudoir"
+    },
+    {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "狩りはまだ始まっていないというのに、野獣たちがもう騒ぎ始めているような気がします。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヤエル",
       "speakerId": "avg_npc_250_1",
+      "isRemote": false,
       "text": "あなたね、窓から見ただけで、野獣たちが騒いでるなんてどうしてわかるの？"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "積雪から伝わる音でわかります。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヤエル",
       "speakerId": "avg_npc_250_1",
+      "isRemote": false,
       "text": "そう。明日の聖猟は、足元に気をつけないといけないわね。"
     },
     {
       "type": "dialogue",
       "speakerName": "ヤエル",
       "speakerId": "avg_npc_250_1",
+      "isRemote": false,
       "text": "……大長老が来たわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "はぁ……気をつけるべき面倒事が多すぎます。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "24_g3_mainhall"
+    },
+    {
       "type": "dialogue",
       "speakerName": "大長老",
       "speakerId": "avg_npc_258_1",
+      "isRemote": false,
       "text": "エンヤ、準備はできたかのう？"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "旅装と式辞、いずれも準備できております。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "ご安心ください、大典への参加は初めてではございませんので。"
     },
     {
       "type": "dialogue",
       "speakerName": "大長老",
       "speakerId": "avg_npc_258_1",
+      "isRemote": false,
       "text": "此度の大典はこれまでとは異なる。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "エンシオディス様がイェラガンドの参拝に来るとお聞きしました。"
     },
     {
       "type": "dialogue",
       "speakerName": "大長老",
       "speakerId": "avg_npc_258_1",
+      "isRemote": false,
       "text": "うむ。この時期に信心深さを示すとは、良い心がけじゃ。"
     },
     {
       "type": "dialogue",
       "speakerName": "大長老",
       "speakerId": "avg_npc_258_1",
+      "isRemote": false,
       "text": "それだけではないぞい。しばらく前、蔓珠院から神像をたくさん持ち帰りおったわい。祀る神像を持たぬ領民のためだと言うてな。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "エンシオディス様が唐突にそこまで信心深くなられたと？"
     },
     {
       "type": "dialogue",
       "speakerName": "長老A",
       "speakerId": null,
+      "isRemote": false,
       "text": "巫女様、信心深さは見守っておられる主が判断なさる。我らがみだりに言及してはなりませぬ。"
     },
     {
       "type": "dialogue",
       "speakerName": "長老A",
       "speakerId": null,
+      "isRemote": false,
       "text": "たとえイェラガンドを知らぬ蒙昧な者であろうとも、一度絢爛たるあのオーロラを目にすれば、たちまち感化され、主に祈りを捧げるようになるものです。"
     },
     {
       "type": "dialogue",
       "speakerName": "長老A",
       "speakerId": null,
+      "isRemote": false,
       "text": "つまり、突然信心深くなったことも、主の威厳の顕れです。"
     },
     {
       "type": "dialogue",
       "speakerName": "大長老",
       "speakerId": "avg_npc_258_1",
+      "isRemote": false,
       "text": "エンシオディスが何を考えていようと、あやつの行いに非難すべき点は一つもない。"
     },
     {
       "type": "dialogue",
       "speakerName": "大長老",
       "speakerId": "avg_npc_258_1",
+      "isRemote": false,
       "text": "その行いが信仰を擁護するものである以上、巫女様も憂慮する必要はないじゃろうて。"
     },
     {
       "type": "dialogue",
       "speakerName": "大長老",
       "speakerId": "avg_npc_258_1",
+      "isRemote": false,
       "text": "イェラグ人は皆、最後には誰しもが千年の伝統に頭を垂れるものなのじゃよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "そうであることを願っております。"
     },
     {
       "type": "dialogue",
       "speakerName": "大長老",
       "speakerId": "avg_npc_258_1",
+      "isRemote": false,
       "text": "エンシオディス以外の当主の二人は、これまで通り、山に登って待つじゃろう。"
     },
     {
       "type": "dialogue",
       "speakerName": "大長老",
       "speakerId": "avg_npc_258_1",
+      "isRemote": false,
       "text": "お主が巫女として三家の主権奉還を受け入れた以上、準備するべきは体裁を整えた言葉だけではないぞ。"
     },
     {
       "type": "dialogue",
       "speakerName": "大長老",
       "speakerId": "avg_npc_258_1",
+      "isRemote": false,
       "text": "聖猟にせよ、大典にせよ、三家に対するお主の態度が多少なりとも偏れば、人々はすぐにそれを一族の優勢あるいは劣勢の証左と解釈するじゃろう。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "聖鈴の重さは理解し、どう対応すべきかも熟考済みです。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "ただ一つ、狩猟用の弓がこの手にありません。使用の許可をいただけますか？"
     },
     {
       "type": "dialogue",
       "speakerName": "大長老",
       "speakerId": "avg_npc_258_1",
+      "isRemote": false,
       "text": "エンヤ、歴代巫女の手記を通読したお主ならわかっておろう。巫女が自ら狩りに参加する必要はないのじゃ。その弓を、お主は聖猟の始まりの儀式で用いるつもりか？"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "確かに巫女が狩りをする必要はございませんが、参加したところで特にイェラガンドへの不敬にはあたらないでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "大長老",
       "speakerId": "avg_npc_258_1",
+      "isRemote": false,
       "text": "蔓珠院の伝統は千年来変わらぬものじゃ。巫女様、己の分を弁えぬ行為はお控えなされよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "大長老",
       "speakerId": "avg_npc_258_1",
+      "isRemote": false,
       "text": "巫女様のお役目は、三家が進ずる獲物をイェラガンドに代わって貰い受け、大典においてイェラガンドに代わり、食べ物を主の民に与えることじゃ。"
     },
     {
       "type": "dialogue",
       "speakerName": "大長老",
       "speakerId": "avg_npc_258_1",
+      "isRemote": false,
       "text": "その獲物が巫女様自ら狩ったものになってしまえば、なんと体裁の悪いことか。"
     },
     {
       "type": "dialogue",
       "speakerName": "大長老",
       "speakerId": "avg_npc_258_1",
+      "isRemote": false,
       "text": "それに、今はお主が狩りに出るのにふさわしい時期ではない。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "伝統と仰るならば、蔓珠院の伝統では千年来、三家が権力を返還した前例はございません。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "そもそも主権奉還は緩和政策であったはずです。しかし最近では、カランドの麓で騒乱が頻発し、返還が予定された土地でも破壊行為が起きています。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "あたかも彼らは、イェラガンドの怒りに触れることをまるで恐れていないかのように。"
     },
     {
       "type": "dialogue",
       "speakerName": "大長老",
       "speakerId": "avg_npc_258_1",
+      "isRemote": false,
       "text": "民が必要としておるのはまさに、巫女様が主の怒りを鎮め、人々の千年変わらぬ敬虔な心をイェラガンドに示すことじゃ。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "いいえ、イェラガンドは巫女に主の怒りを伝えてほしいのかもしれません。"
     },
     {
       "type": "dialogue",
       "speakerName": "大長老",
       "speakerId": "avg_npc_258_1",
+      "isRemote": false,
       "text": "……聖殿において、虚言を弄するなかれ。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "「働き者は必ず地位を得て、怠惰な者は必ず苦しみを受ける」ともあります。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "三家が巫女に権力を移行するのは、決して巫女に実権を握らせるためではないと承知しております。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "ですが巫女が信仰の地位を維持するには、三家が捧げる結果をただ待つだけにはいきません。これは彼らの至らぬ点を示すためではなく――身共がまず手本を見せるべきとの考えからです。"
     },
     {
       "type": "dialogue",
       "speakerName": "大長老",
       "speakerId": "avg_npc_258_1",
+      "isRemote": false,
       "text": "維持をするなら、変化を語ることなどあってはならん。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "イェラガンドの民は前へと進んでいるのです。彼らが主に捧げる祈りも、千年前とは異なっているに違いありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "エンヤ",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "主もきっと、千年前と同じ回答をすることなどできないのです。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "24_g7_thoroughfare"
+    },
+    {
       "type": "dialogue",
       "speakerName": "イェラグ民間人C",
       "speakerId": "avg_npc_280_1",
+      "isRemote": false,
       "text": "エンシオディス様は、明け方にお屋敷を出て、ここまで休むことなく歩いて来たらしいわ。お水だって一口も飲んでいないそうよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "イェラグ民間人C",
       "speakerId": "avg_npc_280_1",
+      "isRemote": false,
       "text": "父さん、せめてお水を持って行って差し上げましょうよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "イェラグ民間人D",
       "speakerId": "avg_npc_278_1",
+      "isRemote": false,
       "text": "いいや、伝統に従うのであれば、飲まず食わず、不眠不休で行かなくてはならん。"
     },
     {
       "type": "dialogue",
       "speakerName": "イェラグ民間人C",
       "speakerId": "avg_npc_280_1",
+      "isRemote": false,
       "text": "でも……もう丸一日よ、父さん。カランドまでの道のりは、この町でようやく半分を過ぎたところだっていうのに。"
     },
     {
       "type": "dialogue",
       "speakerName": "イェラグ民間人C",
       "speakerId": "avg_npc_280_1",
+      "isRemote": false,
       "text": "それに今から町を出たら、日も暮れるし、雪原でどんな危険があるかもわからないわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "イェラグ民間人D",
       "speakerId": "avg_npc_278_1",
+      "isRemote": false,
       "text": "あぁ、来なさった……"
     },
     {
@@ -484,18 +582,21 @@
       "type": "dialogue",
       "speakerName": "イェラグ民間人C",
       "speakerId": "avg_npc_280_1",
+      "isRemote": false,
       "text": "父さん。"
     },
     {
       "type": "dialogue",
       "speakerName": "イェラグ民間人C",
       "speakerId": "avg_npc_280_1",
+      "isRemote": false,
       "text": "お水を差し上げられないんなら……私もカランドの麓までついていくわ。"
     },
     {
       "type": "dialogue",
       "speakerName": "イェラグ民間人C",
       "speakerId": "avg_npc_280_1",
+      "isRemote": false,
       "text": "エンシオディス様が工場を開いて、技術を授けてくださった時、私はあの御方についていくと決めたの。今こうして誠意を尽くしてカランドへ向かおうとしてるんだもの。なおさらついていかないと。"
     },
     {

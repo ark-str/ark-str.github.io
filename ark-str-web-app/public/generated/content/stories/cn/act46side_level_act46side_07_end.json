@@ -6,29 +6,40 @@
   "title": "焚心灼影",
   "storyCode": "OS-7",
   "avgTag": "行动后",
-  "sourcePath": "vendor/ArknightsGamedata/cn/gamedata/story/activities/act46side/level_act46side_07_end.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/cn/gamedata/story/activities/act46side/level_act46side_07_end.txt",
   "sourceHash": "060fcb3e800de59dde7ef5f80b4a6fcc2438293a0eb6595ff841c66d14a02177",
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
       "type": "dialogue",
       "speakerName": "远处的声音",
       "speakerId": null,
+      "isRemote": false,
       "text": "快！后面的都跟上！"
     },
     {
       "type": "dialogue",
       "speakerName": "远处的声音",
       "speakerId": null,
+      "isRemote": false,
       "text": "情报上显示目标应该就在这附近，仔细搜，一点都不能放过了！"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_snowconutryinside"
+    },
+    {
       "type": "dialogue",
       "speakerName": "莫希",
       "speakerId": null,
+      "isRemote": false,
       "text": "......"
     },
     {
@@ -45,12 +56,14 @@
       "type": "dialogue",
       "speakerName": "莫希",
       "speakerId": "avg_npc_255_1",
+      "isRemote": false,
       "text": "我在......这......"
     },
     {
       "type": "dialogue",
       "speakerName": "莫希",
       "speakerId": "avg_npc_255_1",
+      "isRemote": false,
       "text": "我在——"
     },
     {
@@ -78,6 +91,7 @@
       "type": "dialogue",
       "speakerName": "休露丝",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "莫希！"
     },
     {
@@ -87,48 +101,56 @@
       "type": "dialogue",
       "speakerName": "莫希",
       "speakerId": "avg_npc_255_1",
+      "isRemote": false,
       "text": "夫人......怎么是你......"
     },
     {
       "type": "dialogue",
       "speakerName": "休露丝",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "天灾发生后我们一直在找你！该死的希瓦艾什，装模作样的，我还以为他们掌握了多么准确的情报......到头来还不是得我自己慢慢找！"
     },
     {
       "type": "dialogue",
       "speakerName": "休露丝",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "你怎么样，有没有哪里受伤了？"
     },
     {
       "type": "dialogue",
       "speakerName": "休露丝",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "等等，你的腿——"
     },
     {
       "type": "dialogue",
       "speakerName": "莫希",
       "speakerId": "avg_npc_255_1",
+      "isRemote": false,
       "text": "我......没事......"
     },
     {
       "type": "dialogue",
       "speakerName": "莫希",
       "speakerId": "avg_npc_255_1",
+      "isRemote": false,
       "text": "夫人，你听我说......"
     },
     {
       "type": "dialogue",
       "speakerName": "莫希",
       "speakerId": "avg_npc_255_1",
+      "isRemote": false,
       "text": "我在追踪的那个研究员......她来自维多利亚，但更重要的是......她还和，哥伦比亚......"
     },
     {
       "type": "dialogue",
       "speakerName": "莫希",
       "speakerId": "avg_npc_255_1",
+      "isRemote": false,
       "text": "他们的真正目的是......"
     },
     {
@@ -138,10 +160,15 @@
       "type": "dialogue",
       "speakerName": "休露丝",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "莫希！莫希！"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "67_G14_miningarea"
     },
     {
       "type": "narration",
@@ -154,6 +181,7 @@
       "type": "dialogue",
       "speakerName": "角峰",
       "speakerId": "avg_199_yak_1",
+      "isRemote": false,
       "text": "熄火，下车。"
     },
     {
@@ -163,66 +191,77 @@
       "type": "dialogue",
       "speakerName": "维多利亚特工",
       "speakerId": "avg_npc_399_1",
+      "isRemote": false,
       "text": "你们是什么人，敢做这种事情！"
     },
     {
       "type": "dialogue",
       "speakerName": "维多利亚特工",
       "speakerId": "avg_npc_399_1",
+      "isRemote": false,
       "text": "我......我是维多利亚派驻的产业调查员，你们这是非法妨碍公务。"
     },
     {
       "type": "dialogue",
       "speakerName": "维多利亚特工",
       "speakerId": "avg_npc_399_1",
+      "isRemote": false,
       "text": "你们在维多利亚的产业上危害维多利亚人的安全，还差点造成交通事故，我一定会向蔓珠院告发你们的行为！"
     },
     {
       "type": "dialogue",
       "speakerName": "维多利亚特工",
       "speakerId": "avg_npc_399_1",
+      "isRemote": false,
       "text": "*维多利亚粗口*，就不该来这种鬼地方......"
     },
     {
       "type": "dialogue",
       "speakerName": "角峰",
       "speakerId": "avg_199_yak_1",
+      "isRemote": false,
       "text": "......说够了？"
     },
     {
       "type": "dialogue",
       "speakerName": "角峰",
       "speakerId": "avg_199_yak_1",
+      "isRemote": false,
       "text": "都拍下来了吗？"
     },
     {
       "type": "dialogue",
       "speakerName": "希瓦艾什家护卫",
       "speakerId": "avg_npc_286_1",
+      "isRemote": false,
       "text": "是！"
     },
     {
       "type": "dialogue",
       "speakerName": "角峰",
       "speakerId": "avg_199_yak_1",
+      "isRemote": false,
       "text": "维多利亚人，现在不是你们掌握局势的场合，配合一点。"
     },
     {
       "type": "dialogue",
       "speakerName": "角峰",
       "speakerId": "avg_199_yak_1",
+      "isRemote": false,
       "text": "把后车厢打开。"
     },
     {
       "type": "dialogue",
       "speakerName": "维多利亚特工",
       "speakerId": "avg_npc_399_1",
+      "isRemote": false,
       "text": "我......"
     },
     {
       "type": "dialogue",
       "speakerName": "角峰",
       "speakerId": "avg_199_yak_1",
+      "isRemote": false,
       "text": "不愿意配合？无所谓，你们大可以保存着力气在审判席上为自己辩护——冷的话，需要给你一条毯子吗？"
     },
     {
@@ -253,18 +292,21 @@
       "type": "dialogue",
       "speakerName": "卡罗琳",
       "speakerId": "avg_npc_1999_1",
+      "isRemote": false,
       "text": "怎么车停了？"
     },
     {
       "type": "dialogue",
       "speakerName": "卡罗琳",
       "speakerId": "avg_npc_1999_1",
+      "isRemote": false,
       "text": "我们到了吗？"
     },
     {
       "type": "dialogue",
       "speakerName": "卡罗琳",
       "speakerId": "avg_npc_1999_1",
+      "isRemote": false,
       "text": "......"
     },
     {
@@ -278,24 +320,28 @@
       "type": "dialogue",
       "speakerName": "卡罗琳",
       "speakerId": "avg_npc_1999_1",
+      "isRemote": false,
       "text": "......什么情况？"
     },
     {
       "type": "dialogue",
       "speakerName": "年迈的修士",
       "speakerId": "avg_npc_268",
+      "isRemote": false,
       "text": "女士，稍安勿躁。"
     },
     {
       "type": "dialogue",
       "speakerName": "卡罗琳",
       "speakerId": "avg_npc_1999_1",
+      "isRemote": false,
       "text": "......我们被发现了吗？"
     },
     {
       "type": "dialogue",
       "speakerName": "年迈的修士",
       "speakerId": "avg_npc_268",
+      "isRemote": false,
       "text": "......"
     },
     {
@@ -305,36 +351,42 @@
       "type": "dialogue",
       "speakerName": "诺希斯",
       "speakerId": "avg_206_gnosis_1",
+      "isRemote": false,
       "text": "没想到能在这见到你，蔓珠院的修士。"
     },
     {
       "type": "dialogue",
       "speakerName": "诺希斯",
       "speakerId": "avg_206_gnosis_1",
+      "isRemote": false,
       "text": "我想我们可以换辆车，不必在这种地方展开对话。"
     },
     {
       "type": "dialogue",
       "speakerName": "年迈的修士",
       "speakerId": "avg_npc_268",
+      "isRemote": false,
       "text": "埃德怀斯家的年轻人，行事还是着急了些。"
     },
     {
       "type": "dialogue",
       "speakerName": "年迈的修士",
       "speakerId": "avg_npc_268",
+      "isRemote": false,
       "text": "希瓦艾什家的各位，很抱歉在这样的天气里打扰你们的行动。"
     },
     {
       "type": "dialogue",
       "speakerName": "年迈的修士",
       "speakerId": "avg_npc_268",
+      "isRemote": false,
       "text": "我愿意配合你们的一切安排。"
     },
     {
       "type": "dialogue",
       "speakerName": "诺希斯",
       "speakerId": "avg_206_gnosis_1",
+      "isRemote": false,
       "text": "看上去，我们要找的人，不在这里。"
     },
     {
@@ -344,30 +396,35 @@
       "type": "dialogue",
       "speakerName": "年迈的修士",
       "speakerId": "avg_npc_268",
+      "isRemote": false,
       "text": "来自维多利亚的女士，我想，我们该就此告别了。"
     },
     {
       "type": "dialogue",
       "speakerName": "卡罗琳",
       "speakerId": "avg_npc_1999_1",
+      "isRemote": false,
       "text": "你要下车？"
     },
     {
       "type": "dialogue",
       "speakerName": "年迈的修士",
       "speakerId": "avg_npc_268",
+      "isRemote": false,
       "text": "不，我会待在车上，您只需径直向前行走，不必回头。"
     },
     {
       "type": "dialogue",
       "speakerName": "年迈的修士",
       "speakerId": "avg_npc_268",
+      "isRemote": false,
       "text": "入口不远了，希瓦艾什的人一定会注意到这辆车，在他们发现你之前，离开我们。"
     },
     {
       "type": "dialogue",
       "speakerName": "年迈的修士",
       "speakerId": "avg_npc_268",
+      "isRemote": false,
       "text": "相信我......耶拉冈德在上。"
     },
     {
@@ -381,36 +438,42 @@
       "type": "dialogue",
       "speakerName": "卡罗琳",
       "speakerId": "avg_npc_1999_1",
+      "isRemote": false,
       "text": "我会照做。"
     },
     {
       "type": "dialogue",
       "speakerName": "卡罗琳",
       "speakerId": "avg_npc_1999_1",
+      "isRemote": false,
       "text": "但你也会暴露。"
     },
     {
       "type": "dialogue",
       "speakerName": "年迈的修士",
       "speakerId": "avg_npc_268",
+      "isRemote": false,
       "text": "那也会是耶拉冈德的旨意，我无法撼动，也接受一切。"
     },
     {
       "type": "dialogue",
       "speakerName": "年迈的修士",
       "speakerId": "avg_npc_268",
+      "isRemote": false,
       "text": "只祈求祂的原谅。"
     },
     {
       "type": "dialogue",
       "speakerName": "卡罗琳",
       "speakerId": "avg_npc_1999_1",
+      "isRemote": false,
       "text": "虽然我至今还是没有弄清楚你们的信仰到底是什么——或许我总有一天会搞清楚的。"
     },
     {
       "type": "dialogue",
       "speakerName": "卡罗琳",
       "speakerId": "avg_npc_1999_1",
+      "isRemote": false,
       "text": "我尊重您的信仰，我也会试着寻找让自己活得宁静的方法的，祝您好运，老先生。"
     },
     {
@@ -438,33 +501,42 @@
       "type": "dialogue",
       "speakerName": "诺希斯",
       "speakerId": "avg_206_gnosis_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "诺希斯",
       "speakerId": "avg_206_gnosis_1",
+      "isRemote": false,
       "text": "逮捕这两个人，立刻送去蔓珠院。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "24_g3_mainhall"
+    },
+    {
       "type": "dialogue",
       "speakerName": "锏",
       "speakerId": "avg_4116_blkkgt_1",
+      "isRemote": false,
       "text": "人带到了。"
     },
     {
       "type": "dialogue",
       "speakerName": "恩希欧迪斯",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "恩希欧迪斯",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "恐怕不能遂你心愿了，长老。"
     },
     {
@@ -478,6 +550,7 @@
       "type": "dialogue",
       "speakerName": "锏",
       "speakerId": "avg_4116_blkkgt_1",
+      "isRemote": false,
       "text": "诺希斯顺利执行了计划，他发来消息后，“山雪鬼”立刻开始行动。"
     },
     {
@@ -491,18 +564,21 @@
       "type": "dialogue",
       "speakerName": "蔓珠院见习修士",
       "speakerId": "avg_npc_2014_1",
+      "isRemote": false,
       "text": "我，我是蔓珠院的修士，不能如此对待——"
     },
     {
       "type": "dialogue",
       "speakerName": "“山雪鬼”",
       "speakerId": "avg_npc_275",
+      "isRemote": false,
       "text": "少废话，都老实点！"
     },
     {
       "type": "dialogue",
       "speakerName": "蔓珠院见习修士",
       "speakerId": "avg_npc_2014_1",
+      "isRemote": false,
       "text": "......弗雷师傅也在！求求你救我！"
     },
     {
@@ -516,72 +592,84 @@
       "type": "dialogue",
       "speakerName": "恩希欧迪斯",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "弗雷修士，我想如今可以解释你的行为了。"
     },
     {
       "type": "dialogue",
       "speakerName": "蔓珠院使者",
       "speakerId": "avg_npc_268",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "恩希欧迪斯",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "维多利亚特工与蔓珠院的修士合谋，从矿区铁道运送间谍出境，已经被喀兰贸易当场抓获。"
     },
     {
       "type": "dialogue",
       "speakerName": "恩希欧迪斯",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "而在此之前，你协助维多利亚人搜查矿区，其心可诛。"
     },
     {
       "type": "dialogue",
       "speakerName": "恩希欧迪斯",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "也不要忘了，在菈塔托丝的葬礼之后，你包庇了嫌犯。"
     },
     {
       "type": "dialogue",
       "speakerName": "恩希欧迪斯",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "这些罪行都将得到正式的审判。"
     },
     {
       "type": "dialogue",
       "speakerName": "蔓珠院使者",
       "speakerId": "avg_npc_268",
+      "isRemote": false,
       "text": "耶拉冈德在上......他不知道自己在说什么，宽宥他的无知吧——"
     },
     {
       "type": "dialogue",
       "speakerName": "恩希欧迪斯",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "......蔓珠院内部混入间谍已成事实，请各位不要顽抗，配合我们的调查是唯一能为自己争取宽赦的方式。"
     },
     {
       "type": "dialogue",
       "speakerName": "恩希欧迪斯",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "将阿德颂长老、弗雷修士，以及全部蔓珠院长老，先带去受审。其他修士暂留蔓珠院，等待传唤。"
     },
     {
       "type": "dialogue",
       "speakerName": "“山雪鬼”",
       "speakerId": "avg_npc_275",
+      "isRemote": false,
       "text": "是！"
     },
     {
       "type": "dialogue",
       "speakerName": "恩希欧迪斯",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "那么，阿德颂长老——"
     },
     {
       "type": "dialogue",
       "speakerName": "阿德颂",
       "speakerId": "avg_npc_1998_1",
+      "isRemote": false,
       "text": "......"
     },
     {
@@ -591,18 +679,21 @@
       "type": "dialogue",
       "speakerName": "阿德颂",
       "speakerId": "avg_npc_1998_1",
+      "isRemote": false,
       "text": "希瓦艾什，你会将此当作你的胜利？"
     },
     {
       "type": "dialogue",
       "speakerName": "阿德颂",
       "speakerId": "avg_npc_1998_1",
+      "isRemote": false,
       "text": "“持刀剑者只可矜骄一时”。"
     },
     {
       "type": "dialogue",
       "speakerName": "阿德颂",
       "speakerId": "avg_npc_1998_1",
+      "isRemote": false,
       "text": "我期待着，你的擅断专权，可以维持到什么时候......"
     },
     {
@@ -613,51 +704,63 @@
       "type": "dialogue",
       "speakerName": "蔓珠院见习修士",
       "speakerId": "avg_npc_2014_1",
+      "isRemote": false,
       "text": "大长老！我们该怎么办？！"
     },
     {
       "type": "dialogue",
       "speakerName": "阿德颂",
       "speakerId": "avg_npc_1998_1",
+      "isRemote": false,
       "text": "......活下去。"
     },
     {
       "type": "dialogue",
       "speakerName": "阿德颂",
       "speakerId": "avg_npc_1998_1",
+      "isRemote": false,
       "text": "除此之外，经书上写尽了一切，我别无他言。"
     },
     {
       "type": "dialogue",
       "speakerName": "阿德颂",
       "speakerId": "avg_npc_1998_1",
+      "isRemote": false,
       "text": "你们是祂的仆人，无论发生什么，都要凭良心行事。"
     },
     {
       "type": "dialogue",
       "speakerName": "蔓珠院见习修士",
       "speakerId": "avg_npc_2014_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "恩希欧迪斯",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "带走。"
     },
     {
       "type": "dialogue",
       "speakerName": "恩希欧迪斯",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "耶拉冈德在上，愿有罪之人得到公正的审判。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "66_g5_deepmine"
+    },
+    {
       "type": "dialogue",
       "speakerName": "茱安娜",
       "speakerId": "avg_4211_snhunt_1",
+      "isRemote": false,
       "text": "这是条废弃矿道，火把和探照灯已经不能用了，弯点腰，小心碰到头......"
     },
     {
@@ -668,6 +771,7 @@
       "type": "dialogue",
       "speakerName": "埃琳娜",
       "speakerId": "avg_1047_halo2_1",
+      "isRemote": false,
       "text": "小心！"
     },
     {
@@ -677,6 +781,7 @@
       "type": "dialogue",
       "speakerName": "埃琳娜",
       "speakerId": "avg_1047_halo2_1",
+      "isRemote": false,
       "text": "......你先过来，脚步小心点。"
     },
     {
@@ -690,6 +795,7 @@
       "type": "dialogue",
       "speakerName": "茱安娜",
       "speakerId": "avg_4211_snhunt_1",
+      "isRemote": false,
       "text": "这么深......掉下去恐怕真要摔成肉饼子了......"
     },
     {
@@ -703,22 +809,29 @@
       "type": "dialogue",
       "speakerName": "恩雅",
       "speakerId": "avg_npc_2010_1",
+      "isRemote": false,
       "text": "前面有火光，应该是主矿脉的路径。来吧，和之前一样，我们手拉手走。"
     },
     {
       "type": "dialogue",
       "speakerName": "恩雅",
       "speakerId": "avg_npc_2010_1",
+      "isRemote": false,
       "text": "我们已经距离答案很近了，千万不能在这里遇到危险。"
     },
     {
       "type": "dialogue",
       "speakerName": "恩雅",
       "speakerId": "avg_npc_2010_1",
+      "isRemote": false,
       "text": "很快......就能找到一切的答案了。"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "66_g5_deepmine"
     },
     {
       "type": "narration",
@@ -728,90 +841,105 @@
       "type": "dialogue",
       "speakerName": "埃琳娜",
       "speakerId": "avg_1047_halo2_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "恩雅",
       "speakerId": "avg_npc_2010_1",
+      "isRemote": false,
       "text": "......你确定就是这里吗？会不会是找错了？"
     },
     {
       "type": "dialogue",
       "speakerName": "埃琳娜",
       "speakerId": "avg_1047_halo2_1",
+      "isRemote": false,
       "text": "不......我很确信。"
     },
     {
       "type": "dialogue",
       "speakerName": "埃琳娜",
       "speakerId": "avg_1047_halo2_1",
+      "isRemote": false,
       "text": "这里就是我先前计算锁定的矿洞，我们没找错地方。"
     },
     {
       "type": "dialogue",
       "speakerName": "恩雅",
       "speakerId": "avg_npc_2010_1",
+      "isRemote": false,
       "text": "可是......"
     },
     {
       "type": "dialogue",
       "speakerName": "茱安娜",
       "speakerId": "avg_4211_snhunt_1",
+      "isRemote": false,
       "text": "你们在说什么？这里是我们要找的地方吗？"
     },
     {
       "type": "dialogue",
       "speakerName": "埃琳娜",
       "speakerId": "avg_1047_halo2_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "埃琳娜",
       "speakerId": "avg_1047_halo2_1",
+      "isRemote": false,
       "text": "按照计划，我们应该找到的是一条源石矿脉......只有它存在，才能证明我的推断是正确的......"
     },
     {
       "type": "dialogue",
       "speakerName": "埃琳娜",
       "speakerId": "avg_1047_halo2_1",
+      "isRemote": false,
       "text": "但是这里......"
     },
     {
       "type": "dialogue",
       "speakerName": "恩雅",
       "speakerId": "avg_npc_2010_1",
+      "isRemote": false,
       "text": "......是异铁矿。"
     },
     {
       "type": "dialogue",
       "speakerName": "茱安娜",
       "speakerId": "avg_4211_snhunt_1",
+      "isRemote": false,
       "text": "什么......？"
     },
     {
       "type": "dialogue",
       "speakerName": "埃琳娜",
       "speakerId": "avg_1047_halo2_1",
+      "isRemote": false,
       "text": "我探测分析过了，这些都是普通的异铁矿，它们绝对不可能与天灾异象有关。"
     },
     {
       "type": "dialogue",
       "speakerName": "埃琳娜",
       "speakerId": "avg_1047_halo2_1",
+      "isRemote": false,
       "text": "更不用说......这里完全没有什么“天外来物”的痕迹......到底哪里出了问题？"
     },
     {
       "type": "dialogue",
       "speakerName": "埃琳娜",
       "speakerId": "avg_1047_halo2_1",
+      "isRemote": false,
       "text": "可为什么？！我们在来的路上不是明明看到了不少运送源石的货车，这里怎么会是异铁矿？"
     },
     {
       "type": "dialogue",
       "speakerName": "恩雅",
       "speakerId": "avg_npc_2010_1",
+      "isRemote": false,
       "text": "......"
     },
     {
@@ -825,105 +953,126 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "66_g5_deepmine"
+    },
+    {
       "type": "dialogue",
       "speakerName": "恩雅",
       "speakerId": "avg_npc_2010_1",
+      "isRemote": false,
       "text": "是的......我们找错了。"
     },
     {
       "type": "dialogue",
       "speakerName": "恩雅",
       "speakerId": "avg_npc_2010_1",
+      "isRemote": false,
       "text": "这里的矿脉并非“喀兰之心”，而是“谢拉格的骨骼”......"
     },
     {
       "type": "dialogue",
       "speakerName": "恩雅",
       "speakerId": "avg_npc_2010_1",
+      "isRemote": false,
       "text": "能撑起谢拉格脊梁的骨骼......"
     },
     {
       "type": "dialogue",
       "speakerName": "茱安娜",
       "speakerId": "avg_4211_snhunt_1",
+      "isRemote": false,
       "text": "......那个，我能说一句吗？"
     },
     {
       "type": "dialogue",
       "speakerName": "茱安娜",
       "speakerId": "avg_4211_snhunt_1",
+      "isRemote": false,
       "text": "喀兰之心是验证信仰的、纯洁的心。因为人的眼耳口鼻手都是可以骗人和作假的，心却不能。这是写在《耶拉冈德》里面的。"
     },
     {
       "type": "dialogue",
       "speakerName": "茱安娜",
       "speakerId": "avg_4211_snhunt_1",
+      "isRemote": false,
       "text": "但是呢，我不觉得我们是不真诚、不虔诚的。"
     },
     {
       "type": "dialogue",
       "speakerName": "茱安娜",
       "speakerId": "avg_4211_snhunt_1",
+      "isRemote": false,
       "text": "我们做的很多，我们自己知道，耶拉冈德......祂一定也知道。"
     },
     {
       "type": "dialogue",
       "speakerName": "茱安娜",
       "speakerId": "avg_4211_snhunt_1",
+      "isRemote": false,
       "text": "就像打猎，就算很努力了，什么都猎不到而饿肚子一晚上，是很正常、很正常的情况。"
     },
     {
       "type": "dialogue",
       "speakerName": "茱安娜",
       "speakerId": "avg_4211_snhunt_1",
+      "isRemote": false,
       "text": "但要相信，相信谢拉格的土地，相信耶拉冈德的庇佑。祂曾许诺，我们只要还有双手，就定不会饿死与冻死在谢拉格的土地上。"
     },
     {
       "type": "dialogue",
       "speakerName": "茱安娜",
       "speakerId": "avg_4211_snhunt_1",
+      "isRemote": false,
       "text": "所以圣女大人，来吧，我们再试试——"
     },
     {
       "type": "dialogue",
       "speakerName": "恩雅",
       "speakerId": "avg_npc_2010_1",
+      "isRemote": false,
       "text": "嗯......？试......什么？"
     },
     {
       "type": "dialogue",
       "speakerName": "茱安娜",
       "speakerId": "avg_4211_snhunt_1",
+      "isRemote": false,
       "text": "呼唤耶拉冈德啊，用您的银铃。"
     },
     {
       "type": "dialogue",
       "speakerName": "茱安娜",
       "speakerId": "avg_4211_snhunt_1",
+      "isRemote": false,
       "text": "悦耳的铃声，那一位唤醒了耶拉冈德的圣女奏响的声音，祂喜爱的清脆的声响，也是祂的呼唤之声。"
     },
     {
       "type": "dialogue",
       "speakerName": "茱安娜",
       "speakerId": "avg_4211_snhunt_1",
+      "isRemote": false,
       "text": "《耶拉冈德》中记载过，戴着铃铛的驮兽不会被野兽叼走，也不会生病或是夭折，迷路时也会自己找到归途。"
     },
     {
       "type": "dialogue",
       "speakerName": "恩雅",
       "speakerId": "avg_npc_2010_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "茱安娜",
       "speakerId": "avg_4211_snhunt_1",
+      "isRemote": false,
       "text": "“心的迷途”，也算迷途对吧？虽然我不太明白这个词的意思，但我从蔓珠院修士嘴里听说过的！"
     },
     {
       "type": "dialogue",
       "speakerName": "恩雅",
       "speakerId": "avg_npc_2010_1",
+      "isRemote": false,
       "text": "......"
     },
     {
@@ -937,6 +1086,7 @@
       "type": "dialogue",
       "speakerName": "恩雅",
       "speakerId": "avg_npc_2010_1",
+      "isRemote": false,
       "text": "说的对，我们就试试吧。说不定，耶拉冈德会回应我们呢？"
     },
     {
@@ -950,6 +1100,7 @@
       "type": "dialogue",
       "speakerName": "埃琳娜",
       "speakerId": "avg_1047_halo2_1",
+      "isRemote": false,
       "text": "......欸，这是......！"
     },
     {
@@ -959,174 +1110,210 @@
       "type": "dialogue",
       "speakerName": "埃琳娜",
       "speakerId": "avg_1047_halo2_1",
+      "isRemote": false,
       "text": "这个声音，这个波频......怎么会这么相似的？！"
     },
     {
       "type": "dialogue",
       "speakerName": "恩雅",
       "speakerId": "avg_npc_2010_1",
+      "isRemote": false,
       "text": "你发现了什么？"
     },
     {
       "type": "dialogue",
       "speakerName": "埃琳娜",
       "speakerId": "avg_1047_halo2_1",
+      "isRemote": false,
       "text": "是波频，您的铃声在这个矿洞里的回声，和观测站记录到的那段特殊的音频相似度很高——几乎是一模一样！"
     },
     {
       "type": "dialogue",
       "speakerName": "恩雅",
       "speakerId": "avg_npc_2010_1",
+      "isRemote": false,
       "text": "这是巧合吗......？"
     },
     {
       "type": "dialogue",
       "speakerName": "埃琳娜",
       "speakerId": "avg_1047_halo2_1",
+      "isRemote": false,
       "text": "是巧合吗......不对......"
     },
     {
       "type": "dialogue",
       "speakerName": "埃琳娜",
       "speakerId": "avg_1047_halo2_1",
+      "isRemote": false,
       "text": "“自然界中不存在两片一模一样的雪花”......"
     },
     {
       "type": "dialogue",
       "speakerName": "埃琳娜",
       "speakerId": "avg_1047_halo2_1",
+      "isRemote": false,
       "text": "圣女大人......您手里的银铃，有什么来历吗？"
     },
     {
       "type": "dialogue",
       "speakerName": "恩雅",
       "speakerId": "avg_npc_2010_1",
+      "isRemote": false,
       "text": "这要追溯到很古老的传说了......"
     },
     {
       "type": "dialogue",
       "speakerName": "恩雅",
       "speakerId": "avg_npc_2010_1",
+      "isRemote": false,
       "text": "在谢拉格的历史上，曾经有很长一段时间，耶拉冈德陷入沉睡，直到有一位虔诚的圣女将祂唤醒。"
     },
     {
       "type": "dialogue",
       "speakerName": "恩雅",
       "speakerId": "avg_npc_2010_1",
+      "isRemote": false,
       "text": "这个银铃，最初就是耶拉冈德送给圣女的礼物。"
     },
     {
       "type": "dialogue",
       "speakerName": "恩雅",
       "speakerId": "avg_npc_2010_1",
+      "isRemote": false,
       "text": "我也听说，后来的工匠们在为圣女打造银铃的时候，就是在模仿群山的声音......"
     },
     {
       "type": "dialogue",
       "speakerName": "埃琳娜",
       "speakerId": "avg_1047_halo2_1",
+      "isRemote": false,
       "text": "群山发出的声音......可是群山怎么会发出声音——"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "67_G3_rhineobservatory_i"
+    },
+    {
       "type": "dialogue",
       "speakerName": "卡罗琳",
       "speakerId": "avg_npc_1999_1",
+      "isRemote": false,
       "text": "一只巨兽？"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "66_g5_deepmine"
+    },
+    {
       "type": "dialogue",
       "speakerName": "埃琳娜",
       "speakerId": "avg_1047_halo2_1",
+      "isRemote": false,
       "text": "这不可能......这怎么可能......"
     },
     {
       "type": "dialogue",
       "speakerName": "埃琳娜",
       "speakerId": "avg_1047_halo2_1",
+      "isRemote": false,
       "text": "清醒一点埃琳娜......你是一个科学家，哪怕是这种时候也不要动摇信念......"
     },
     {
       "type": "dialogue",
       "speakerName": "恩雅",
       "speakerId": "avg_npc_2010_1",
+      "isRemote": false,
       "text": "埃琳娜，你是说，在天灾发生的前一天，有某样东西坠落在了喀兰圣山上，才发出了这样的声音，对吗？"
     },
     {
       "type": "dialogue",
       "speakerName": "埃琳娜",
       "speakerId": "avg_1047_halo2_1",
+      "isRemote": false,
       "text": "按我之前的推测，是这样的......"
     },
     {
       "type": "dialogue",
       "speakerName": "恩雅",
       "speakerId": "avg_npc_2010_1",
+      "isRemote": false,
       "text": "我在想......如果把大山想象成一个铃铛，是不是山中应该也存在着一处巨大的空洞......"
     },
     {
       "type": "dialogue",
       "speakerName": "埃琳娜",
       "speakerId": "avg_1047_halo2_1",
+      "isRemote": false,
       "text": "理论上......的确有可能......你知道哪里会有这样巨大的空洞吗？"
     },
     {
       "type": "dialogue",
       "speakerName": "恩雅",
       "speakerId": "avg_npc_2010_1",
+      "isRemote": false,
       "text": "......这是没有记录在谢拉格正史中的传闻，同样与那位唤醒了耶拉冈德的圣女有关。"
     },
     {
       "type": "dialogue",
       "speakerName": "恩雅",
       "speakerId": "avg_npc_2010_1",
+      "isRemote": false,
       "text": "在很久很久之前，谢拉格曾经发生过一场针对蔓珠院的暴乱。"
     },
     {
       "type": "dialogue",
       "speakerName": "恩雅",
       "speakerId": "avg_npc_2010_1",
+      "isRemote": false,
       "text": "人们因为耶拉冈德许久不曾显露神迹而心生不满，他们围攻了蔓珠院，直到那位圣女唤醒了耶拉冈德，人们的愤怒才得以平息。"
     },
     {
       "type": "dialogue",
       "speakerName": "恩雅",
       "speakerId": "avg_npc_2010_1",
+      "isRemote": false,
       "text": "在那场动乱之中，有一部分修士带着珍贵的经书躲入了圣山上巨大的避难所之中，才将宝贵的知识部分留存了下来。"
     },
     {
       "type": "dialogue",
       "speakerName": "恩雅",
       "speakerId": "avg_npc_2010_1",
+      "isRemote": false,
       "text": "但无论如何，蔓珠院的经典在那个时候就出现了严重的断代......"
     },
     {
       "type": "dialogue",
       "speakerName": "恩雅",
       "speakerId": "avg_npc_2010_1",
+      "isRemote": false,
       "text": "我只是在想......《耶拉冈德》中提到的，耶拉冈德离开了人们，实际上描述的，也许就是这一件事呢......"
     },
     {
       "type": "dialogue",
       "speakerName": "埃琳娜",
       "speakerId": "avg_1047_halo2_1",
+      "isRemote": false,
       "text": "圣女大人......如果这个避难所真的存在的话，那里是否还会保留着“耶拉冈德”的痕迹？"
     },
     {
       "type": "dialogue",
       "speakerName": "埃琳娜",
       "speakerId": "avg_1047_halo2_1",
+      "isRemote": false,
       "text": "我们该上哪去找......"
     },
     {
       "type": "dialogue",
       "speakerName": "恩雅",
       "speakerId": "avg_npc_2010_1",
+      "isRemote": false,
       "text": "在蔓珠院的后面......通往圣山山顶的地方。"
     },
     {
@@ -1137,16 +1324,22 @@
       "type": "dialogue",
       "speakerName": "恩雅",
       "speakerId": "avg_npc_2010_1",
+      "isRemote": false,
       "text": "耶拉冈德在上，请您赐予我们以指引。"
     },
     {
       "type": "dialogue",
       "speakerName": "恩雅",
       "speakerId": "avg_npc_2010_1",
+      "isRemote": false,
       "text": "让我们走上正确的路。"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "67_G4_kjeragstreet"
     },
     {
       "type": "narration",
@@ -1156,39 +1349,49 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "45_g8_kjeragstreet"
+    },
+    {
       "type": "dialogue",
       "speakerName": "恼怒的谢拉格人",
       "speakerId": "avg_npc_278_1",
+      "isRemote": false,
       "text": "*谢拉格俚语*我就知道！"
     },
     {
       "type": "dialogue",
       "speakerName": "恼怒的谢拉格人",
       "speakerId": "avg_npc_278_1",
+      "isRemote": false,
       "text": "那个长老跟维多利亚的公爵，两个混蛋凑在一起干的这些好事！"
     },
     {
       "type": "dialogue",
       "speakerName": "担忧的谢拉格人",
       "speakerId": "avg_npc_277_1",
+      "isRemote": false,
       "text": "会不会只是误会？如果连蔓珠院都背叛了耶拉冈德......天啊。"
     },
     {
       "type": "dialogue",
       "speakerName": "恼怒的谢拉格人",
       "speakerId": "avg_npc_278_1",
+      "isRemote": false,
       "text": "都和维多利亚人鬼混了，你还能相信他们啊？"
     },
     {
       "type": "dialogue",
       "speakerName": "担忧的谢拉格人",
       "speakerId": "avg_npc_277_1",
+      "isRemote": false,
       "text": "可你相信的喀兰贸易不是一直在和维多利亚鬼混吗......"
     },
     {
       "type": "dialogue",
       "speakerName": "恼怒的谢拉格人",
       "speakerId": "avg_npc_278_1",
+      "isRemote": false,
       "text": "你能在这举着收音机听，也都是喀兰贸易的功劳。蔓珠院呢？又做了什么？"
     },
     {
@@ -1198,6 +1401,7 @@
       "type": "dialogue",
       "speakerName": "多嘴的谢拉格人",
       "speakerId": "avg_npc_270_1",
+      "isRemote": false,
       "text": "别吵了，维多利亚人的电台发了回应，赶紧听听。"
     },
     {
@@ -1207,12 +1411,14 @@
       "type": "dialogue",
       "speakerName": "恼怒的谢拉格人",
       "speakerId": "avg_npc_278_1",
+      "isRemote": false,
       "text": "他们说什么，我根本不在乎！"
     },
     {
       "type": "dialogue",
       "speakerName": "担忧的谢拉格人",
       "speakerId": "avg_npc_277_1",
+      "isRemote": false,
       "text": "......我得弄明白整件事。"
     },
     {
@@ -1226,9 +1432,14 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "45_g8_kjeragstreet"
+    },
+    {
       "type": "dialogue",
       "speakerName": "维多利亚记者",
       "speakerId": "avg_npc_2006_1",
+      "isRemote": false,
       "text": "胡说八道！"
     },
     {
@@ -1249,12 +1460,14 @@
       "type": "dialogue",
       "speakerName": "维多利亚记者",
       "speakerId": "avg_npc_2006_1",
+      "isRemote": false,
       "text": "呼——应该没人跟上我了。"
     },
     {
       "type": "dialogue",
       "speakerName": "维多利亚记者",
       "speakerId": "avg_npc_2006_1",
+      "isRemote": false,
       "text": "相机、摄影机、胶片拷贝......全都在，这回说什么也不能被他们抢走！"
     },
     {

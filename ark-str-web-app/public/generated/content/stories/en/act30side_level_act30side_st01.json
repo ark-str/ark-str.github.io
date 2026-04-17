@@ -6,10 +6,28 @@
   "title": "Waiting Room",
   "storyCode": "RS-ST-1",
   "avgTag": "Interlude",
-  "sourcePath": "vendor/ArknightsGamedata/en/gamedata/story/activities/act30side/level_act30side_st01.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/en/gamedata/story/activities/act30side/level_act30side_st01.txt",
   "sourceHash": "7684140409204bb086751a380bf4d391348a5f3bbfc5d03ad3a8f733af9750cd",
   "bodyAvailable": true,
   "blocks": [
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "24_g13_mountpath_s"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "24_g1_snowyforest"
+    },
     {
       "type": "narration",
       "text": "1100, Kjerag, Paleroche territory, at the foot of Mount Karlan."
@@ -21,24 +39,28 @@
       "type": "dialogue",
       "speakerName": "Stern Soldier",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Lead Soldier",
       "speakerId": "avg_npc_1158_1",
+      "isRemote": false,
       "text": "Faster!"
     },
     {
       "type": "dialogue",
       "speakerName": "Lead Soldier",
       "speakerId": "avg_npc_1158_1",
+      "isRemote": false,
       "text": "Don't forget what we're here to do! In the back, keep pace!"
     },
     {
       "type": "dialogue",
       "speakerName": "Stern Soldier",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "Aye!"
     },
     {
@@ -48,12 +70,14 @@
       "type": "dialogue",
       "speakerName": "Lead Soldier",
       "speakerId": "avg_npc_1158_1",
+      "isRemote": false,
       "text": "Halt! Gather up!"
     },
     {
       "type": "dialogue",
       "speakerName": "Lead Soldier",
       "speakerId": "avg_npc_1158_1",
+      "isRemote": false,
       "text": "Form up!"
     },
     {
@@ -63,108 +87,126 @@
       "type": "dialogue",
       "speakerName": "Stern Soldier",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "Sir! Reporting in! Second Squad in formation, sir!"
     },
     {
       "type": "dialogue",
       "speakerName": "Lead Soldier",
       "speakerId": "avg_npc_1158_1",
+      "isRemote": false,
       "text": "Very good then."
     },
     {
       "type": "dialogue",
       "speakerName": "Lead Soldier",
       "speakerId": "avg_npc_1158_1",
+      "isRemote": false,
       "text": "Has Third Squad reported in?"
     },
     {
       "type": "dialogue",
       "speakerName": "Stern Soldier",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "Sir! Not yet, sir!"
     },
     {
       "type": "dialogue",
       "speakerName": "Lead Soldier",
       "speakerId": "avg_npc_1158_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Stern Soldier",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "Sir, it's possible that Third Squad has run into trouble..."
     },
     {
       "type": "dialogue",
       "speakerName": "Stern Soldier",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "Should we wait for them to catch up to us?"
     },
     {
       "type": "dialogue",
       "speakerName": "Lead Soldier",
       "speakerId": "avg_npc_1158_1",
+      "isRemote": false,
       "text": "No. I had a feeling something like this might happen. Whoever's here first has to be the first to strike!"
     },
     {
       "type": "dialogue",
       "speakerName": "Stern Soldier",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "Aye!"
     },
     {
       "type": "dialogue",
       "speakerName": "Lead Soldier",
       "speakerId": "avg_npc_1158_1",
+      "isRemote": false,
       "text": "I don't think I need to go over the plan again."
     },
     {
       "type": "dialogue",
       "speakerName": "Lead Soldier",
       "speakerId": "avg_npc_1158_1",
+      "isRemote": false,
       "text": "This is an expedition, a right proper Victorian battle! A battle for glory!"
     },
     {
       "type": "dialogue",
       "speakerName": "Lead Soldier",
       "speakerId": "avg_npc_1158_1",
+      "isRemote": false,
       "text": "Stay alert! Do not underestimate the enemy! We will prevail! Failure is not an option!"
     },
     {
       "type": "dialogue",
       "speakerName": "Stern Soldier",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "Yes, sir!"
     },
     {
       "type": "dialogue",
       "speakerName": "Lead Soldier",
       "speakerId": "avg_npc_1158_1",
+      "isRemote": false,
       "text": "Good, keep those spirits up!"
     },
     {
       "type": "dialogue",
       "speakerName": "Lead Soldier",
       "speakerId": "avg_npc_1158_1",
+      "isRemote": false,
       "text": "Second Squad, march on!"
     },
     {
       "type": "dialogue",
       "speakerName": "Lead Soldier",
       "speakerId": "avg_npc_1158_1",
+      "isRemote": false,
       "text": "Our objective—the stockherd's inn at the foot of the mountain!"
     },
     {
       "type": "dialogue",
       "speakerName": "Lead Soldier",
       "speakerId": "avg_npc_1158_1",
+      "isRemote": false,
       "text": "We must not let these provincials drink us under the table! This time it will be them who taste defeat!"
     },
     {
       "type": "dialogue",
       "speakerName": "Stern Soldier",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "YES, SIR!"
     },
     {
@@ -174,111 +216,133 @@
       "type": "dialogue",
       "speakerName": "Common Kjerag Man",
       "speakerId": "avg_npc_278_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Common Kjerag Man",
       "speakerId": "avg_npc_278_1",
+      "isRemote": false,
       "text": "What are those Victorians up to this time?"
     },
     {
       "type": "dialogue",
       "speakerName": "Common Kjerag Woman",
       "speakerId": "avg_npc_280_1",
+      "isRemote": false,
       "text": "Testing their alcohol tolerance, I think? It's been a whole lot of times with Riley's boys. I hear they're always drinking till they vomit."
     },
     {
       "type": "dialogue",
       "speakerName": "Common Kjerag Woman",
       "speakerId": "avg_npc_280_1",
+      "isRemote": false,
       "text": "By Kjeragandr..."
     },
     {
       "type": "dialogue",
       "speakerName": "Common Kjerag Woman",
       "speakerId": "avg_npc_280_1",
+      "isRemote": false,
       "text": "Victorians... If they've got all this free time, then what are they even doing?"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "24_g8_nobleroom"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Sciurus",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "Hmm..."
     },
     {
       "type": "dialogue",
       "speakerName": "Sciurus",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "No, this one's no good."
     },
     {
       "type": "dialogue",
       "speakerName": "Sciurus",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "'Dremomys' ... Hmm, doesn't sound half bad..."
     },
     {
       "type": "dialogue",
       "speakerName": "Sciurus",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "What do you think, Yucatan? How do you like 'Dremomys'?"
     },
     {
       "type": "dialogue",
       "speakerName": "Yucatan",
       "speakerId": "avg_npc_263_1",
+      "isRemote": false,
       "text": "Sounds good."
     },
     {
       "type": "dialogue",
       "speakerName": "Sciurus",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "Ugh, don't you have anything else to say?!"
     },
     {
       "type": "dialogue",
       "speakerName": "Sciurus",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "Every name I suggest, you just say it sounds good!"
     },
     {
       "type": "dialogue",
       "speakerName": "Yucatan",
       "speakerId": "avg_npc_263_1",
+      "isRemote": false,
       "text": "...Really?"
     },
     {
       "type": "dialogue",
       "speakerName": "Yucatan",
       "speakerId": "avg_npc_263_1",
+      "isRemote": false,
       "text": "But I really do think that all the names you suggest sound good, Rus."
     },
     {
       "type": "dialogue",
       "speakerName": "Sciurus",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "Nope, can't trust you. I'll need to go over them again. I mean, we're talking about our first..."
     },
     {
       "type": "dialogue",
       "speakerName": "Sciurus",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "What I'm trying to say is that I'm definitely going to pick the best name!"
     },
     {
       "type": "dialogue",
       "speakerName": "Sciurus",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "'Dremomys' is the one to beat for now. 'Tamiops' sounds pretty good too."
     },
     {
       "type": "dialogue",
       "speakerName": "Sciurus",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "Oh, right! We can also pick a nickname! Something like... 'Nut'!"
     },
     {
@@ -288,90 +352,105 @@
       "type": "dialogue",
       "speakerName": "Ratatos",
       "speakerId": "avg_npc_253_1",
+      "isRemote": false,
       "text": "Pipe down already. I could hear you shouting from outside."
     },
     {
       "type": "dialogue",
       "speakerName": "Ratatos",
       "speakerId": "avg_npc_253_1",
+      "isRemote": false,
       "text": "And what's this about a 'Nut'? Picking out names for your kid?"
     },
     {
       "type": "dialogue",
       "speakerName": "Yucatan",
       "speakerId": "avg_npc_263_1",
+      "isRemote": false,
       "text": "Good day, Matriarch."
     },
     {
       "type": "dialogue",
       "speakerName": "Sciurus",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "No, definitely not...!"
     },
     {
       "type": "dialogue",
       "speakerName": "Sciurus",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "M-Mind your own stupid business!"
     },
     {
       "type": "dialogue",
       "speakerName": "Ratatos",
       "speakerId": "avg_npc_253_1",
+      "isRemote": false,
       "text": "Alright, no more teasing."
     },
     {
       "type": "dialogue",
       "speakerName": "Ratatos",
       "speakerId": "avg_npc_253_1",
+      "isRemote": false,
       "text": "Kjeragandr's statue is done. We'll have a ceremony for it in a couple of days."
     },
     {
       "type": "dialogue",
       "speakerName": "Ratatos",
       "speakerId": "avg_npc_253_1",
+      "isRemote": false,
       "text": "And I'm afraid I'll be very busy with everything involved in that. You two are going to have to handle anything that might pop up in our territory."
     },
     {
       "type": "dialogue",
       "speakerName": "Sciurus",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "I can handle it! Just relax!"
     },
     {
       "type": "dialogue",
       "speakerName": "Ratatos",
       "speakerId": "avg_npc_253_1",
+      "isRemote": false,
       "text": "If my darling little sister is handling it, there's no way I can relax."
     },
     {
       "type": "dialogue",
       "speakerName": "Sciurus",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "I'm not gonna mess anything up this time. You won't get to yell at me."
     },
     {
       "type": "dialogue",
       "speakerName": "Ratatos",
       "speakerId": "avg_npc_253_1",
+      "isRemote": false,
       "text": "Yucatan, do make sure your wife doesn't wear that gormless look on her face out in public."
     },
     {
       "type": "dialogue",
       "speakerName": "Yucatan",
       "speakerId": "avg_npc_263_1",
+      "isRemote": false,
       "text": "Haha..."
     },
     {
       "type": "dialogue",
       "speakerName": "Sciurus",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "Laugh it up! I'm telling you, Ratatos, I've got my own plans this time!"
     },
     {
       "type": "dialogue",
       "speakerName": "Sciurus",
       "speakerId": "avg_npc_262_1",
+      "isRemote": false,
       "text": "And when they come to fruition, that Enciodes is going to owe us Browntails a favor, just you wait and see!"
     },
     {
@@ -382,111 +461,133 @@
       "type": "dialogue",
       "speakerName": "Ratatos",
       "speakerId": "avg_npc_253_1",
+      "isRemote": false,
       "text": "I'll put my faith in you for now, but here's a word to the wise: try and keep a level head."
     },
     {
       "type": "dialogue",
       "speakerName": "Ratatos",
       "speakerId": "avg_npc_253_1",
+      "isRemote": false,
       "text": "Kjeragandr's statue, the Victorians, not to mention Enciodes's scheming..."
     },
     {
       "type": "dialogue",
       "speakerName": "Ratatos",
       "speakerId": "avg_npc_253_1",
+      "isRemote": false,
       "text": "*sigh* A lot of big things to worry about."
     },
     {
       "type": "dialogue",
       "speakerName": "Ratatos",
       "speakerId": "avg_npc_253_1",
+      "isRemote": false,
       "text": "I'm afraid... we're not exactly in for a peaceful time here."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "24_g4_boudoir"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Arctosz",
       "speakerId": "avg_npc_254_1",
+      "isRemote": false,
       "text": "Outrageous! The Victorians have gone too far!"
     },
     {
       "type": "dialogue",
       "speakerName": "Arctosz",
       "speakerId": "avg_npc_254_1",
+      "isRemote": false,
       "text": "You need only say the word, my Saintess, and I'll gather my men and chase the louts out of Kjerag!"
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "Please calm down, Sir Arctosz."
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "The Victorian soldiers are only here to congratulate us on the completion of Kjeragandr's statue."
     },
     {
       "type": "dialogue",
       "speakerName": "Arctosz",
       "speakerId": "avg_npc_254_1",
+      "isRemote": false,
       "text": "What kind of congratulating needs two thousand men? It's a pretense!"
     },
     {
       "type": "dialogue",
       "speakerName": "Arctosz",
       "speakerId": "avg_npc_254_1",
+      "isRemote": false,
       "text": "They set up camp at the foot of Mount Karlan, those faithless bastards! Surely it would anger Kjeragandr to allow blasphemers at the ceremony!"
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Arctosz",
       "speakerId": "avg_npc_254_1",
+      "isRemote": false,
       "text": "My Saintess! Are we really going to let them do as they please on our land?!"
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "You are not wrong. I am well aware that they hold no reverence for Kjeragandr in their hearts."
     },
     {
       "type": "dialogue",
       "speakerName": "Arctosz",
       "speakerId": "avg_npc_254_1",
+      "isRemote": false,
       "text": "Then we should—!"
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "That is precisely why we should not."
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "Do you believe that our statue of Kjeragandr was built only for the faithful to revere?"
     },
     {
       "type": "dialogue",
       "speakerName": "Arctosz",
       "speakerId": "avg_npc_254_1",
+      "isRemote": false,
       "text": "I, well..."
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "Look. Look upon the statue."
     },
     {
@@ -496,210 +597,252 @@
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "Three years ago, we accepted the proposal of the Silverash clan, and it was decided that atop Lake Silberneherze we would build a statue of Kjeragandr."
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "She would be solemn and stately. She would be merciful and magnanimous."
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "She has become that which lifts the spirits of the people of Kjerag. She has become a symbol of Kjerag to the outside world."
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "As anyone should have predicted, there will be more visitors to Kjerag in the future, and with them will come many unavoidable challenges."
     },
     {
       "type": "dialogue",
       "speakerName": "Arctosz",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "You say that, but—"
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "There is no 'but', Sir Arctosz."
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "The people of Kjerag's faith in Kjeragandr is unshakable. That is incomprehensible to outsiders."
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "Faithful or faithless, one who comes before this statue will find oneself bathed in Her light."
     },
     {
       "type": "dialogue",
       "speakerName": "Arctosz",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "But, Great Saintess, that isn't what's happening here!"
     },
     {
       "type": "dialogue",
       "speakerName": "Arctosz",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "If they were just ordinary tourists, I wouldn't be sounding the alarm! But those men are the Victorian Army! It's not the same!"
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "Are they an 'army', or are they a 'noble's guard'?"
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "Or might they be 'Victoria' herself?"
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "They've come to Kjerag on a mission of congratulations. We have no reason to refuse or rebuff them."
     },
     {
       "type": "dialogue",
       "speakerName": "Arctosz",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "Well..."
     },
     {
       "type": "dialogue",
       "speakerName": "Arctosz",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "They're clearly up to no good here, so just in case..."
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "24_g4_boudoir"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "As it stands, I still do not endorse some of Sir Enciodes's overly risky decisions."
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "Despite all the growth that they have brought to Kjerag..."
     },
     {
       "type": "dialogue",
       "speakerName": "Arctosz",
       "speakerId": "avg_npc_254_1",
+      "isRemote": false,
       "text": "What <i>has</i> Enciodes been up to these past three years?"
     },
     {
       "type": "dialogue",
       "speakerName": "Arctosz",
       "speakerId": "avg_npc_254_1",
+      "isRemote": false,
       "text": "He's been making smaller moves on the mineral export issue. Could this Victorian business be another one of his disastrous schemes?"
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "...I cannot say."
     },
     {
       "type": "dialogue",
       "speakerName": "Arctosz",
       "speakerId": "avg_npc_254_1",
+      "isRemote": false,
       "text": "You cannot say?"
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "I <b>cannot</b> say, Sir Arctosz."
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "Whatever Sir Enciodes is plotting behind our backs, it will all be in the manner that he sees most fit. I and the Vine-Bead Court alike would not be familiar with his line of thought."
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "Sometimes, knowing too much is not a good thing."
     },
     {
       "type": "dialogue",
       "speakerName": "Arctosz",
       "speakerId": "avg_npc_254_1",
+      "isRemote": false,
       "text": "You mean to say..."
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "I'm just stating the facts, nothing more."
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "The ceremony must go off without a hitch. For now, we'll make our preparations. Whatever we can do, as best as we can."
     },
     {
       "type": "dialogue",
       "speakerName": "Arctosz",
       "speakerId": "avg_npc_254_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Arctosz",
       "speakerId": "avg_npc_254_1",
+      "isRemote": false,
       "text": "I understand."
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "You need not be so worried."
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "Whatever may come..."
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "Kjeragandr will protect Her people."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "24_g4_boudoir"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "......"
     },
     {
@@ -709,60 +852,70 @@
       "type": "dialogue",
       "speakerName": "Kjarr",
       "speakerId": "avg_npc_250_1",
+      "isRemote": false,
       "text": "What is on your mind, Saintess?"
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "I was pondering what Arctosz said, about Kjeragandr's statue..."
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "I hope the ceremony goes smoothly."
     },
     {
       "type": "dialogue",
       "speakerName": "Kjarr",
       "speakerId": "avg_npc_250_1",
+      "isRemote": false,
       "text": "It will."
     },
     {
       "type": "dialogue",
       "speakerName": "Kjarr",
       "speakerId": "avg_npc_250_1",
+      "isRemote": false,
       "text": "'Kjeragandr will protect Her people', no?"
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "I still hope we won't need to bother Her this time."
     },
     {
       "type": "dialogue",
       "speakerName": "Kjarr",
       "speakerId": "avg_npc_250_1",
+      "isRemote": false,
       "text": "You wish for Her to simply watch?"
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "Kjerag must learn to face risks and challenges."
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "A child can't spend its whole life in its mother's arms, Kjarr."
     },
     {
       "type": "dialogue",
       "speakerName": "Kjarr",
       "speakerId": "avg_npc_250_1",
+      "isRemote": false,
       "text": "...That much is true."
     },
     {
@@ -772,24 +925,28 @@
       "type": "dialogue",
       "speakerName": "Kjarr",
       "speakerId": "avg_npc_250_1",
+      "isRemote": false,
       "text": "Ah, yet another chat has turned rather morose."
     },
     {
       "type": "dialogue",
       "speakerName": "Kjarr",
       "speakerId": "avg_npc_250_1",
+      "isRemote": false,
       "text": "Speaking of the statue of Kjeragandr, I've half a mind to give that Arctosz a slap."
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "Why?"
     },
     {
       "type": "dialogue",
       "speakerName": "Kjarr",
       "speakerId": "avg_npc_250_1",
+      "isRemote": false,
       "text": "He got that big statue's face out of some ancient records, correct? The one it's got right now."
     },
     {
@@ -800,69 +957,84 @@
       "type": "dialogue",
       "speakerName": "Kjarr",
       "speakerId": "avg_npc_250_1",
+      "isRemote": false,
       "text": "Definitely deserves a slap or two!"
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Kjarr",
       "speakerId": "avg_npc_250_1",
+      "isRemote": false,
       "text": "Saintess?"
     },
     {
       "type": "dialogue",
       "speakerName": "Kjarr",
       "speakerId": "avg_npc_250_1",
+      "isRemote": false,
       "text": "Enya?"
     },
     {
       "type": "dialogue",
       "speakerName": "Kjarr",
       "speakerId": "avg_npc_250_1",
+      "isRemote": false,
       "text": "Why'd you turn so quiet?"
     },
     {
       "type": "dialogue",
       "speakerName": "Enya",
       "speakerId": "avg_174_slbell_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Kjarr",
       "speakerId": "avg_npc_250_1",
+      "isRemote": false,
       "text": "No, you're just teasing me again. Surely."
     },
     {
       "type": "dialogue",
       "speakerName": "Kjarr",
       "speakerId": "avg_npc_250_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Kjarr",
       "speakerId": "avg_npc_250_1",
+      "isRemote": false,
       "text": "Could I...? No, could Kjeragandr... actually have such a wide face?"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "45_g5_victoriabarracks_o"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Enciodes",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "In two days, the Saintess will perform the early morning blessing, in celebration of the completion of Kjeragandr's statue."
     },
     {
       "type": "dialogue",
       "speakerName": "Enciodes",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "Here is your invitation, My Lord."
     },
     {
@@ -872,222 +1044,259 @@
       "type": "dialogue",
       "speakerName": "Victorian Viscount",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "Ah, Sir Enciodes, haha, that is how Kjerag's folk address you, yes?"
     },
     {
       "type": "dialogue",
       "speakerName": "Victorian Viscount",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "You are far too kind. We had come specifically for this purpose, and I would not have dared to trouble you for a special invitation."
     },
     {
       "type": "dialogue",
       "speakerName": "Victorian Viscount",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "Worry not, my boys and I will arrive on time, all to celebrate the completion of our statue of Kjeragandr... O Blessed Kjeragandr!"
     },
     {
       "type": "dialogue",
       "speakerName": "Enciodes",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "...You seem to have adapted well to life in Kjerag."
     },
     {
       "type": "dialogue",
       "speakerName": "Victorian Viscount",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "Kjerag's scenery is a beauty, her dishes unique, and her people most lively. What's not to like?"
     },
     {
       "type": "dialogue",
       "speakerName": "Victorian Viscount",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "Not for nothing does Her Grace so often praise Kjerag's natural bounties. I dare say it's lived up to its reputation!"
     },
     {
       "type": "dialogue",
       "speakerName": "Enciodes",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "...Her Grace flatters us."
     },
     {
       "type": "dialogue",
       "speakerName": "Enciodes",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "To have esteemed guests from afar praise us in such a way is an honor for Kjerag and the Silverash clan both."
     },
     {
       "type": "dialogue",
       "speakerName": "Victorian Viscount",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "No need to be modest, Sir Enciodes."
     },
     {
       "type": "dialogue",
       "speakerName": "Victorian Viscount",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "Though we came here to congratulate you on the completion of the statue, I can say that I've been thoroughly captivated by Kjerag's charms during my stay."
     },
     {
       "type": "dialogue",
       "speakerName": "Victorian Viscount",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "I hope that Her Grace, magnanimous as she is, will allow me to extend my pleasurable stay in Kjerag after the ceremony."
     },
     {
       "type": "dialogue",
       "speakerName": "Enciodes",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Victorian Viscount",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "Sir Enciodes, surely you'll permit me to do some sightseeing, yes?"
     },
     {
       "type": "dialogue",
       "speakerName": "Enciodes",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "...But of course."
     },
     {
       "type": "dialogue",
       "speakerName": "Enciodes",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "Considering that My Lord is eager to gain a deeper understanding of Kjerag, I see no reason to refuse."
     },
     {
       "type": "dialogue",
       "speakerName": "Enciodes",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "Though I would note that in this season, Kjerag's winds are bitterly cold, and many unseen dangers lurk atop the mountains."
     },
     {
       "type": "dialogue",
       "speakerName": "Enciodes",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "You and your guards will need to bundle up warmly. I would also request that you steer clear of certain dangerous areas during your tour, so as to avoid blizzards and frostbite."
     },
     {
       "type": "dialogue",
       "speakerName": "Victorian Viscount",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "Truly a most considerate warning!"
     },
     {
       "type": "dialogue",
       "speakerName": "Victorian Viscount",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "Kjerag really is a bit too chilly, but don't you worry, Sir Enciodes. That's hardly a problem for us. A thick coat should do the trick."
     },
     {
       "type": "dialogue",
       "speakerName": "Victorian Viscount",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "Of course, speaking personally, I prefer to relax in a warm cabin with a roaring fireplace to traipsing about a snowy wonderland atop some mountain. With some fondue afterwards."
     },
     {
       "type": "dialogue",
       "speakerName": "Victorian Viscount",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "Oh, that flavor, mmm!"
     },
     {
       "type": "dialogue",
       "speakerName": "Enciodes",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "I am relieved to hear you say that, My Lord."
     },
     {
       "type": "dialogue",
       "speakerName": "Victorian Viscount",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "Relieved? Oh, heavens no, I wouldn't go that far."
     },
     {
       "type": "dialogue",
       "speakerName": "Victorian Viscount",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "I'm afraid you can't feel too relieved, Sir Enciodes. You should keep your wits about you."
     },
     {
       "type": "dialogue",
       "speakerName": "Enciodes",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "Please, elaborate."
     },
     {
       "type": "dialogue",
       "speakerName": "Victorian Viscount",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "Oh, your relationship with Her Grace notwithstanding, I'm afraid there are many things that I'm not at ease to speak about."
     },
     {
       "type": "dialogue",
       "speakerName": "Victorian Viscount",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "Our friend so kind to those of lower station, with such affection for Kjerag... but is this affection returned by the worthy? Patience certainly has its limits."
     },
     {
       "type": "dialogue",
       "speakerName": "Victorian Viscount",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "And if our cooperation within Kjerag continues along a rough path, well, should Her Grace decide her patience has reached an end..."
     },
     {
       "type": "dialogue",
       "speakerName": "Victorian Viscount",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "I'm sure we would both rather not let things come to that, Sir Enciodes."
     },
     {
       "type": "dialogue",
       "speakerName": "Enciodes",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Enciodes",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "I understand your meaning, My Lord."
     },
     {
       "type": "dialogue",
       "speakerName": "Enciodes",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "As for that 'cooperation', I will give you my response within the next few days. I will not keep Her Grace waiting too long."
     },
     {
       "type": "dialogue",
       "speakerName": "Victorian Viscount",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "Alright..."
     },
     {
       "type": "dialogue",
       "speakerName": "Victorian Viscount",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "I'm looking forward to hearing some good news from you, then."
     },
     {
       "type": "dialogue",
       "speakerName": "Enciodes",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "You'll be the first to know."
     },
     {
       "type": "dialogue",
       "speakerName": "Enciodes",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "Having handed over the invitation, I have no further need to trouble you, My Lord."
     },
     {
       "type": "dialogue",
       "speakerName": "Enciodes",
       "speakerId": "avg_172_svrash_1",
+      "isRemote": false,
       "text": "I look forward to seeing you at the ceremony in two days."
     },
     {
@@ -1097,54 +1306,63 @@
       "type": "dialogue",
       "speakerName": "Victorian Viscount",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Seasoned Soldier",
       "speakerId": "avg_npc_1157_1",
+      "isRemote": false,
       "text": "That Kjerag fellow didn't even offer a 'hello' as he passed. What a stuck-up prick!"
     },
     {
       "type": "dialogue",
       "speakerName": "Victorian Viscount",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "It's just a show he's put on for me."
     },
     {
       "type": "dialogue",
       "speakerName": "Seasoned Soldier",
       "speakerId": "avg_npc_1157_1",
+      "isRemote": false,
       "text": "A show? You men of learning, spending your days playing your games..."
     },
     {
       "type": "dialogue",
       "speakerName": "Seasoned Soldier",
       "speakerId": "avg_npc_1157_1",
+      "isRemote": false,
       "text": "Harold, I can tell you've been in a bad mood these past few days. Is he giving you trouble?"
     },
     {
       "type": "dialogue",
       "speakerName": "Harold",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "Perish the thought! Sure, the lad's got some skills, but nothing to lose sleep over."
     },
     {
       "type": "dialogue",
       "speakerName": "Harold",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "Alright, enough of that. No use trying to hide from what's coming, so let's go do what must be done!"
     },
     {
       "type": "dialogue",
       "speakerName": "Seasoned Soldier",
       "speakerId": "avg_npc_1157_1",
+      "isRemote": false,
       "text": "Good to hear that you know what you're doing."
     },
     {
       "type": "dialogue",
       "speakerName": "Seasoned Soldier",
       "speakerId": "avg_npc_1157_1",
+      "isRemote": false,
       "text": "If that's all, then I best hurry off first. *hic* I'm counting on you to handle those fancy nobs, Harold!"
     },
     {
@@ -1154,57 +1372,70 @@
       "type": "dialogue",
       "speakerName": "Harold",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "Wait, just a moment there, did you lot go drinking without me again?"
     },
     {
       "type": "dialogue",
       "speakerName": "Harold",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "Just one moment! Set the drink aside, did you finish the fondue I was only halfway done with?"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "45_g3_traincarriage"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": null,
+      "isRemote": false,
       "text": "Zzz... *snore*..."
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": null,
+      "isRemote": false,
       "text": "(Kjerag) Grüezi... Ha det..."
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": null,
+      "isRemote": false,
       "text": "Zzz... Zzz..."
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": null,
+      "isRemote": false,
       "text": "Mamochka..."
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": null,
+      "isRemote": false,
       "text": "Don't worry... Zzz... I can do it..."
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": null,
+      "isRemote": false,
       "text": "*unintelligible Kjerag*"
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": null,
+      "isRemote": false,
       "text": "*snore*... Zzz..."
     },
     {
@@ -1214,30 +1445,35 @@
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "Whoa!"
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "Who's there?! Who has the guts to ambush me—!"
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "...Oh."
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "How long have I been asleep...?"
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "Ugh... My butt hurts. This ride's real bumpy, feels like my whole body is shaking apart."
     },
     {
@@ -1247,6 +1483,7 @@
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "Mmm—hah. That's much comfier."
     },
     {
@@ -1260,42 +1497,49 @@
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "So this is Kjerag..."
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "It's just snow."
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "And mountains."
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "It's got a few more of those than Ursus, but other than that, what's the difference? Snow everywhere, dry and cold."
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "I don't see what's worth you always going on about..."
     },
     {
@@ -1312,15 +1556,21 @@
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "Whew! Here at last!"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "45_g1_kjeragtrainstation"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "'Scuse me, pardon me, sorry about that!"
     },
     {
@@ -1330,12 +1580,14 @@
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "Whew, finally made it out...!"
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "Wow, crazy, the station is way too crowded!"
     },
     {
@@ -1345,12 +1597,14 @@
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "Alright, let me see, get off the train and turn left, leave through the ticketing gates, and then..."
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "...Hey, what's the deal with this map?!"
     },
     {
@@ -1360,6 +1614,7 @@
       "type": "dialogue",
       "speakerName": "Feisty Burdenbeast",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "Moo—!"
     },
     {
@@ -1369,6 +1624,7 @@
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "Whoa! Wha-What the hell!"
     },
     {
@@ -1378,78 +1634,91 @@
       "type": "dialogue",
       "speakerName": "Feisty Burdenbeast",
       "speakerId": "avg_npc_1163_1",
+      "isRemote": false,
       "text": "Moo—! Moo—!"
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "Huh? A burdenbeast? Why's there a burdenbeast in the station...?"
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "You look like a real tough one."
     },
     {
       "type": "dialogue",
       "speakerName": "Burdenbeast Herder",
       "speakerId": "avg_npc_279_1",
+      "isRemote": false,
       "text": "Hoho, young lady, could this be your first time in Kjerag?"
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "Not bad, muzhchina. How'd you figure that one out?"
     },
     {
       "type": "dialogue",
       "speakerName": "Burdenbeast Herder",
       "speakerId": "avg_npc_279_1",
+      "isRemote": false,
       "text": "Hah, I have an eye for foreigners, I pick 'em out with just a glance."
     },
     {
       "type": "dialogue",
       "speakerName": "Burdenbeast Herder",
       "speakerId": "avg_npc_279_1",
+      "isRemote": false,
       "text": "You could say that this burdenbeast's our own Kjerag specialty, one named by the Great Saintess herself!"
     },
     {
       "type": "dialogue",
       "speakerName": "Burdenbeast Herder",
       "speakerId": "avg_npc_279_1",
+      "isRemote": false,
       "text": "They're called, uh, what was it again... Oh right! They're called 'BangBang Burdenbeast'!"
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "'BangBang Burdenbeast'...?"
     },
     {
       "type": "dialogue",
       "speakerName": "Feisty Burdenbeast",
       "speakerId": "avg_npc_1163_1",
+      "isRemote": false,
       "text": "Moo, moomoo—"
     },
     {
       "type": "dialogue",
       "speakerName": "Burdenbeast Herder",
       "speakerId": "avg_npc_279_1",
+      "isRemote": false,
       "text": "That's right, that's what they're called!"
     },
     {
       "type": "dialogue",
       "speakerName": "Burdenbeast Herder",
       "speakerId": "avg_npc_279_1",
+      "isRemote": false,
       "text": "Look here, young lady. Over here."
     },
     {
       "type": "dialogue",
       "speakerName": "Burdenbeast Herder",
       "speakerId": "avg_npc_279_1",
+      "isRemote": false,
       "text": "If you want to take the burdenbeast for a ride, just press this button here, and the pen opens."
     },
     {
@@ -1459,78 +1728,91 @@
       "type": "dialogue",
       "speakerName": "Feisty Burdenbeast",
       "speakerId": "avg_npc_1163_1",
+      "isRemote": false,
       "text": "Moo!"
     },
     {
       "type": "dialogue",
       "speakerName": "Burdenbeast Herder",
       "speakerId": "avg_npc_279_1",
+      "isRemote": false,
       "text": "Alright, settle down, settle down."
     },
     {
       "type": "dialogue",
       "speakerName": "Burdenbeast Herder",
       "speakerId": "avg_npc_279_1",
+      "isRemote": false,
       "text": "We've been taming these beasts for a long while now. Each and every one of them handpicked, and they're smart to boot!"
     },
     {
       "type": "dialogue",
       "speakerName": "Burdenbeast Herder",
       "speakerId": "avg_npc_279_1",
+      "isRemote": false,
       "text": "Wherever you're heading, just put the fare in that pouch on the burdenbeast when you get there, and you're solid!"
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "Haha! Sounds fun! Can I really ride this burdenbeast down the street? That's super cool! I'm in!"
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "Hey, muzhchina, what happens if someone just... doesn't pay?"
     },
     {
       "type": "dialogue",
       "speakerName": "Burdenbeast Herder",
       "speakerId": "avg_npc_279_1",
+      "isRemote": false,
       "text": "I think you'll find, young lady, it's not quite so easy to cut and run in Kjerag!"
     },
     {
       "type": "dialogue",
       "speakerName": "Burdenbeast Herder",
       "speakerId": "avg_npc_279_1",
+      "isRemote": false,
       "text": "Didn't you see the disclaimer over there?"
     },
     {
       "type": "dialogue",
       "speakerName": "Feisty Burdenbeast",
       "speakerId": "avg_npc_1163_1",
+      "isRemote": false,
       "text": "Moo—! Moomoomoo!"
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "Let's take a look..."
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "'In the case of any breach of contract by the customer, the company holds no responsibility for attacks by the supplied burdenbeast, or any other bodily injury or loss/damage of property'..."
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "Will the burdenbeast take the cash itself or something?"
     },
     {
       "type": "dialogue",
       "speakerName": "Feisty Burdenbeast",
       "speakerId": "avg_npc_1163_1",
+      "isRemote": false,
       "text": "Moomoo!"
     },
     {
@@ -1540,30 +1822,35 @@
       "type": "dialogue",
       "speakerName": "Feisty Burdenbeast",
       "speakerId": "avg_npc_1163_1",
+      "isRemote": false,
       "text": "Hrrmh—! Hrrmph—moo!"
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "Well alright then! That's exactly how you should handle faredodgers!"
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "I'll definitely give it a try if I get a chance later!"
     },
     {
       "type": "dialogue",
       "speakerName": "Burdenbeast Herder",
       "speakerId": "avg_npc_279_1",
+      "isRemote": false,
       "text": "That's great to hear, young lady."
     },
     {
       "type": "dialogue",
       "speakerName": "Burdenbeast Herder",
       "speakerId": "avg_npc_279_1",
+      "isRemote": false,
       "text": "Well, I won't keep you any longer. Welcome to Kjerag!"
     },
     {
@@ -1573,33 +1860,42 @@
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "Oh, wait a sec, muzhchina...!"
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "He sure walks fast. I was going to ask him which way I should go..."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "45_g1_kjeragtrainstation"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "If I cross over there... Hmm, that should be right, right?"
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "Platform 3, Platform 3..."
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "Huh?"
     },
     {
@@ -1609,18 +1905,21 @@
       "type": "dialogue",
       "speakerName": "Seasoned Soldier",
       "speakerId": "avg_npc_1157_1",
+      "isRemote": false,
       "text": "Halt! Gather up!"
     },
     {
       "type": "dialogue",
       "speakerName": "Seasoned Soldier",
       "speakerId": "avg_npc_1157_1",
+      "isRemote": false,
       "text": "Form up!"
     },
     {
       "type": "dialogue",
       "speakerName": "Stern Soldier",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "Yes, sir!"
     },
     {
@@ -1630,72 +1929,84 @@
       "type": "dialogue",
       "speakerName": "Curious Woman",
       "speakerId": "avg_npc_281_1",
+      "isRemote": false,
       "text": "Why are there soldiers in the train station?"
     },
     {
       "type": "dialogue",
       "speakerName": "Curious Woman",
       "speakerId": "avg_npc_281_1",
+      "isRemote": false,
       "text": "Did something happen?"
     },
     {
       "type": "dialogue",
       "speakerName": "Stern Soldier",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Seasoned Soldier",
       "speakerId": "avg_npc_1157_1",
+      "isRemote": false,
       "text": "Attention!"
     },
     {
       "type": "dialogue",
       "speakerName": "Stern Soldier",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "Aye!"
     },
     {
       "type": "dialogue",
       "speakerName": "Bold Man",
       "speakerId": "avg_npc_277_1",
+      "isRemote": false,
       "text": "No need to worry, last time I saw them buy some knickknacks to take home. Maybe they just came for some sightseeing."
     },
     {
       "type": "dialogue",
       "speakerName": "Bold Man",
       "speakerId": "avg_npc_277_1",
+      "isRemote": false,
       "text": "Though it looks like their uniforms aren't very warm. You see? That young fellow over there's so cold his nose is running!"
     },
     {
       "type": "dialogue",
       "speakerName": "Stern Soldier",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Harold",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "(Dammit, wipe your nose already!)"
     },
     {
       "type": "dialogue",
       "speakerName": "Harold",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "(Where are those coats I bought you? Why aren't you wearing them?)"
     },
     {
       "type": "dialogue",
       "speakerName": "Seasoned Soldier",
       "speakerId": "avg_npc_1157_1",
+      "isRemote": false,
       "text": "(Harold, please! Those coats you bought... they've all got 'I ♥ Snow' stitched on!)"
     },
     {
       "type": "dialogue",
       "speakerName": "Harold",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "(What's the problem? I think they look great.)"
     },
     {
@@ -1705,24 +2016,28 @@
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "(I think they look great too.)"
     },
     {
       "type": "dialogue",
       "speakerName": "Seasoned Soldier",
       "speakerId": "avg_npc_1157_1",
+      "isRemote": false,
       "text": "(Alright, you keep wearing yours then.)"
     },
     {
       "type": "dialogue",
       "speakerName": "Seasoned Soldier",
       "speakerId": "avg_npc_1157_1",
+      "isRemote": false,
       "text": "(......)"
     },
     {
       "type": "dialogue",
       "speakerName": "Seasoned Soldier",
       "speakerId": "avg_npc_1157_1",
+      "isRemote": false,
       "text": "(Hey, wait, who's the kid?!)"
     },
     {
@@ -1732,168 +2047,196 @@
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "Me? Oh, don't mind me, you guys keep talking."
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "I was just curious as to why there was a big crowd blocking the way, so I had a look-see... When I heard you all talking I couldn't help but join in."
     },
     {
       "type": "dialogue",
       "speakerName": "Harold",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "No need to apologize! You are a lady of excellent taste!"
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "Excellent taste... You mean me? Haha, you sure can call them like you see them!"
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "I was just looking at those coats myself! The 'I ♥ Snow' is a little kitschy, but they really are super warm!"
     },
     {
       "type": "dialogue",
       "speakerName": "Harold",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "*cough*!"
     },
     {
       "type": "dialogue",
       "speakerName": "Seasoned Soldier",
       "speakerId": "avg_npc_1157_1",
+      "isRemote": false,
       "text": "I gotta say, Harold, you're right. The lady really does have excellent taste."
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "Say, dedushka, you're not just ordinary tourists, are you? What are you guys doing in Kjerag?"
     },
     {
       "type": "dialogue",
       "speakerName": "Harold",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "Dedushka? Ursine for grandfather, I believe? Fair enough, I suppose you're about the same age as my no-good daughter back home."
     },
     {
       "type": "dialogue",
       "speakerName": "Harold",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "As for what we're here to do, haha, we're just here for sightseeing, same as you."
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "I'm not just here for sightseeing though."
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "Oh, right, do you know how to get to Platform 3?"
     },
     {
       "type": "dialogue",
       "speakerName": "Harold",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "Platform 3?"
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "Yeah, I'm supposed to transfer there to get to Lake Silberneherze."
     },
     {
       "type": "dialogue",
       "speakerName": "Harold",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "Hmm..."
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "I'm guessing you don't know either then? Damn, I better go ask someone else then—"
     },
     {
       "type": "dialogue",
       "speakerName": "Harold",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "Hold!"
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "Huh?!"
     },
     {
       "type": "dialogue",
       "speakerName": "Harold",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "If it's Platform 3 you're after... then you've come to the right man!"
     },
     {
       "type": "dialogue",
       "speakerName": "Harold",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "If you were to ask who knows best the nooks and crannies of this terminal, I, Harold Craigavon, would be your answer!"
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "Oh, wow! Are you for real?"
     },
     {
       "type": "dialogue",
       "speakerName": "Harold",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "Entirely. I would never lie to a lady."
     },
     {
       "type": "dialogue",
       "speakerName": "Harold",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "Since I took my first step off the train one month ago, I have found myself a captive of this bustling terminal!"
     },
     {
       "type": "dialogue",
       "speakerName": "Harold",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "I've whiled away the hours perusing every shop, to the point that I was invited to cut the ribbon for the opening of that souvenir shop there!"
     },
     {
       "type": "dialogue",
       "speakerName": "Harold",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "I dare say that the burdenbeasts here treat my fellows and I a touch bit kinder than your average tourist!"
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "Huh... You sure about that?"
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "I mean, look, the burdenbeast you're talking about is nibbling on that guy's clothes."
     },
     {
       "type": "dialogue",
       "speakerName": "Stern Soldier",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "......"
     },
     {
@@ -1903,45 +2246,56 @@
       "type": "dialogue",
       "speakerName": "Rude Burdenbeast",
       "speakerId": null,
+      "isRemote": false,
       "text": "Mmm! Moo!"
     },
     {
       "type": "dialogue",
       "speakerName": "Rude Burdenbeast",
       "speakerId": null,
+      "isRemote": false,
       "text": "(*chews*)"
     },
     {
       "type": "dialogue",
       "speakerName": "Stern Soldier",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "............"
     },
     {
       "type": "dialogue",
       "speakerName": "Harold",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "It's as you say, this little fellow is a pea in our pod."
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "Hahahaha! I don't think your man was expecting to be stuck in that particular pod!"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "45_g1_kjeragtrainstation"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "Hah... Whew, you're too much."
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "Alright, that's enough of that. I need to hit the road. Hope I can get to Lake Silberneherze before it's dark..."
     },
     {
@@ -1951,78 +2305,91 @@
       "type": "dialogue",
       "speakerName": "Harold",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "Hold it. Listen."
     },
     {
       "type": "dialogue",
       "speakerName": "Harold",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "Did you hear that, young lady?"
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "Hear what...? That platform announcement?"
     },
     {
       "type": "dialogue",
       "speakerName": "Harold",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "Correct. It happens to be announcing the arrival of the train at Platform 3."
     },
     {
       "type": "dialogue",
       "speakerName": "Harold",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "And it seems that I, coincidentally, am headed the same way as you."
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "You are?"
     },
     {
       "type": "dialogue",
       "speakerName": "Harold",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "To put it more plainly, my destination is the statue of Kjeragandr atop Lake Silberneherze."
     },
     {
       "type": "dialogue",
       "speakerName": "Harold",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "Not just my destination, mind you. All these upstanding young fellows as well. We're all getting on that train."
     },
     {
       "type": "dialogue",
       "speakerName": "Harold",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "In two days' time, everyone will be gazing upon that grand statue... And that's precisely why we're here."
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "...Oh?"
     },
     {
       "type": "dialogue",
       "speakerName": "Leto",
       "speakerId": "avg_194_leto_1",
+      "isRemote": false,
       "text": "This Kjeragandr statue they built, is it really that amazing...?"
     },
     {
       "type": "dialogue",
       "speakerName": "Harold",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "Perhaps so! As a tourist myself, I do think it will become quite the popular attraction."
     },
     {
       "type": "dialogue",
       "speakerName": "Harold",
       "speakerId": "avg_4114_harold_1",
+      "isRemote": false,
       "text": "Now, with that all said—I'm hoping I could have the pleasure of your company on our little tour, young lady?"
     },
     {

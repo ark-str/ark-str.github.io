@@ -6,20 +6,26 @@
   "title": "開拓者の小屋",
   "storyCode": "DV-2",
   "avgTag": "戦闘後",
-  "sourcePath": "vendor/ArknightsGamedata/jp/gamedata/story/activities/act19side/level_act19side_02_end.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/jp/gamedata/story/activities/act19side/level_act19side_02_end.txt",
   "sourceHash": "e79099f712f609eca60d2e1be083ee17598c1a49a66cab5e0a5dc6e6f868cb8f",
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "29_g8_alley_n"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Mechanist",
       "speakerId": "avg_npc_521_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Mechanist",
       "speakerId": "avg_npc_521_1",
+      "isRemote": false,
       "text": "よもやこんなことになっていようとは。私も予想外だったと認めざるを得ないな。"
     },
     {
@@ -38,54 +44,59 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_532_1",
-          "text": "安心しろ、私もまた監獄に向かいたくはない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "これなら、現場の後始末はどうにでもなりそうだな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "私はメカニックだ。機械をバラすだけなら、それほど時間はかからない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "しかし、君はこの中に人が入っていないことを知っていたのか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_532_1",
-          "text": "この連中とは何度かやり合っているからな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "こいつらに追われたことがあった、と？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_532_1",
-          "text": "そんなところだ。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_532_1",
+      "isRemote": false,
+      "text": "安心しろ、私もまた監獄に向かいたくはない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "これなら、現場の後始末はどうにでもなりそうだな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "私はメカニックだ。機械をバラすだけなら、それほど時間はかからない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "しかし、君はこの中に人が入っていないことを知っていたのか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_532_1",
+      "isRemote": false,
+      "text": "この連中とは何度かやり合っているからな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "こいつらに追われたことがあった、と？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_532_1",
+      "isRemote": false,
+      "text": "そんなところだ。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -105,66 +116,73 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "何にせよ、奴らがこの場に現れた以上、ミュルジスの行方を追跡されたくない人物がいるということになる。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "一体何者だろうか。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_532_1",
-          "text": "可能性は色々と考えられるな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_532_1",
-          "text": "私とミュルジスはあまり連絡を取り合ってはいなかったが、失踪前に彼女がライン生命主導の極秘実験に関わっていたことは知っている。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_532_1",
-          "text": "私がすでにライン生命を離れていることを鑑みるに、それを私に伝えたことは機密保持契約に反する行為だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "ライン生命の警備課は、秘密を漏らした職員を始末するのに最先端兵器を送り込むものなのか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_532_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "なるほど、これも守秘義務の範疇か。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "それに比べて、ロドスは実に良心的な企業だな。Dr.{@nickname}。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "何にせよ、奴らがこの場に現れた以上、ミュルジスの行方を追跡されたくない人物がいるということになる。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "一体何者だろうか。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_532_1",
+      "isRemote": false,
+      "text": "可能性は色々と考えられるな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_532_1",
+      "isRemote": false,
+      "text": "私とミュルジスはあまり連絡を取り合ってはいなかったが、失踪前に彼女がライン生命主導の極秘実験に関わっていたことは知っている。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_532_1",
+      "isRemote": false,
+      "text": "私がすでにライン生命を離れていることを鑑みるに、それを私に伝えたことは機密保持契約に反する行為だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "ライン生命の警備課は、秘密を漏らした職員を始末するのに最先端兵器を送り込むものなのか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_532_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "なるほど、これも守秘義務の範疇か。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "それに比べて、ロドスは実に良心的な企業だな。Dr.{@nickname}。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -184,66 +202,73 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_532_1",
-          "text": "ともあれ、ミュルジスが平凡な社員などではないことは事実だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_532_1",
-          "text": "その彼女を窮地に追い込んだことを思うと、相手は私と同レベルのプロフェッショナルだろう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_532_1",
-          "text": "――このタイプのパワードスーツは、半年ほど前からいくつかの傭兵団体に配備されるようになった物だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_532_1",
-          "text": "装甲の素材や搭載された武器には取り立てて優れたところがなく、全体的な性能としては五年前に軍が作った量産型スーツと同程度だが……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_532_1",
-          "text": "一つだけ特別な点として――このスーツには、装用条件がない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "つまるところ……動かす分に要求される身体能力のハードルが相当低いということか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_532_1",
-          "text": "ああ。生理学的指標において、一般的な運動状態を維持できる人間であれば、誰もが条件を満たしている。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_532_1",
-          "text": "私にも、Mechanistさんにも、ドクターにも扱えるというわけだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "......"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_532_1",
+      "isRemote": false,
+      "text": "ともあれ、ミュルジスが平凡な社員などではないことは事実だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_532_1",
+      "isRemote": false,
+      "text": "その彼女を窮地に追い込んだことを思うと、相手は私と同レベルのプロフェッショナルだろう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_532_1",
+      "isRemote": false,
+      "text": "――このタイプのパワードスーツは、半年ほど前からいくつかの傭兵団体に配備されるようになった物だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_532_1",
+      "isRemote": false,
+      "text": "装甲の素材や搭載された武器には取り立てて優れたところがなく、全体的な性能としては五年前に軍が作った量産型スーツと同程度だが……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_532_1",
+      "isRemote": false,
+      "text": "一つだけ特別な点として――このスーツには、装用条件がない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "つまるところ……動かす分に要求される身体能力のハードルが相当低いということか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_532_1",
+      "isRemote": false,
+      "text": "ああ。生理学的指標において、一般的な運動状態を維持できる人間であれば、誰もが条件を満たしている。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_532_1",
+      "isRemote": false,
+      "text": "私にも、Mechanistさんにも、ドクターにも扱えるというわけだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -266,6 +291,7 @@
               "type": "dialogue",
               "speakerName": "Mechanist",
               "speakerId": "avg_npc_521_1",
+              "isRemote": false,
               "text": "君は気に入らないと思うぞ、ドクター。私が保証しよう。"
             },
             {
@@ -273,60 +299,66 @@
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "以前の常識で言えば、パワードスーツを着られるような人間は兵士の中でも精鋭だけに限られていた。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "戦場で長時間あの大きな機体を操って、何度か跳躍したあとも己の吐瀉物で溺れ死なずに戦い続けるなどという芸当は――訓練されていない人間には到底無理な話だからな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "詳しく知りたければジュナーに聞いてみるといい。なんでも、彼女は一度着ただけで退役を検討したそうだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "まあ、数年経った今では技術も進歩しているだろうし、そもそも傭兵の中には元兵士の連中も多くいるものだが……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "それにしても、誰でも装用可能ときたか。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "これは戦争自体のやり方を覆すほどの発明かもしれないな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_532_1",
-          "text": "現状、類似のパワードスーツが外部にはほとんど流れていないことから見て、この技術はまだプロトタイプの段階だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_532_1",
-          "text": "私はその出所を追っているのだが、多くの実験兵器同様、手がかりを見つけるのは容易ではない。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "以前の常識で言えば、パワードスーツを着られるような人間は兵士の中でも精鋭だけに限られていた。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "戦場で長時間あの大きな機体を操って、何度か跳躍したあとも己の吐瀉物で溺れ死なずに戦い続けるなどという芸当は――訓練されていない人間には到底無理な話だからな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "詳しく知りたければジュナーに聞いてみるといい。なんでも、彼女は一度着ただけで退役を検討したそうだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "まあ、数年経った今では技術も進歩しているだろうし、そもそも傭兵の中には元兵士の連中も多くいるものだが……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "それにしても、誰でも装用可能ときたか。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "これは戦争自体のやり方を覆すほどの発明かもしれないな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_532_1",
+      "isRemote": false,
+      "text": "現状、類似のパワードスーツが外部にはほとんど流れていないことから見て、この技術はまだプロトタイプの段階だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_532_1",
+      "isRemote": false,
+      "text": "私はその出所を追っているのだが、多くの実験兵器同様、手がかりを見つけるのは容易ではない。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -341,54 +373,59 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "顧客が傭兵であるとは限らない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "これを買った連中からすれば、傭兵もこの新型スーツも等しく――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_532_1",
-          "text": "――単なる実験台でしかないということだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_532_1",
-          "text": "移動都市が落とす影の端は、往々にして文明の法則が適用されるかどうかの境界線でもあり――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_532_1",
-          "text": "荒野で活動する傭兵たちは、あの開拓者たち同様、便利な実験台にされている。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_532_1",
-          "text": "仮に実験が失敗し、彼らを「消費」したとしても、その行方を追う者などほとんどいない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_532_1",
-          "text": "そうしてすぐさま、次の実験台が補充されていく。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "顧客が傭兵であるとは限らない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "これを買った連中からすれば、傭兵もこの新型スーツも等しく――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_532_1",
+      "isRemote": false,
+      "text": "――単なる実験台でしかないということだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_532_1",
+      "isRemote": false,
+      "text": "移動都市が落とす影の端は、往々にして文明の法則が適用されるかどうかの境界線でもあり――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_532_1",
+      "isRemote": false,
+      "text": "荒野で活動する傭兵たちは、あの開拓者たち同様、便利な実験台にされている。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_532_1",
+      "isRemote": false,
+      "text": "仮に実験が失敗し、彼らを「消費」したとしても、その行方を追う者などほとんどいない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_532_1",
+      "isRemote": false,
+      "text": "そうしてすぐさま、次の実験台が補充されていく。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -398,66 +435,73 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_532_1",
-          "text": "異議を唱えたところで無意味なんだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_532_1",
-          "text": "傭兵たちは、与えられた新しい武器が暴発する可能性をはっきりと認識している一方で、それが相手取る人々の武器より強力な場合もあることも理解している。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_532_1",
-          "text": "法律上、こうした合意の上での取引は対等なものに近しい。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_532_1",
-          "text": "Mechanistさん。何か新しい発見でも？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "何か引っかかる……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "始めから、どこか妙だとは思っていたんだが。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "私は何故――すぐにこのスーツが無人機であると気付かなかった？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "こうした場合には通常、傭兵による遠隔操作だろうと、プログラムされた自動操縦機能だろうと、明確な行動パターンが存在するはずだ。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_532_1",
+      "isRemote": false,
+      "text": "異議を唱えたところで無意味なんだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_532_1",
+      "isRemote": false,
+      "text": "傭兵たちは、与えられた新しい武器が暴発する可能性をはっきりと認識している一方で、それが相手取る人々の武器より強力な場合もあることも理解している。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_532_1",
+      "isRemote": false,
+      "text": "法律上、こうした合意の上での取引は対等なものに近しい。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_532_1",
+      "isRemote": false,
+      "text": "Mechanistさん。何か新しい発見でも？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "何か引っかかる……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "始めから、どこか妙だとは思っていたんだが。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "私は何故――すぐにこのスーツが無人機であると気付かなかった？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "こうした場合には通常、傭兵による遠隔操作だろうと、プログラムされた自動操縦機能だろうと、明確な行動パターンが存在するはずだ。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -472,869 +516,1015 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "いいや。このパワードスーツは、それ以上に柔軟な行動を取っていた……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "ロドスで開発された新世代武器の中で最も自動化の進んだ物を以てしても、私の目は欺けない。――だというのに、軍に飼い慣らされた愚かな技術者たちにそんな芸当ができるだろうか？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_532_1",
-          "text": "――"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "何をしたんだ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_532_1",
-          "text": "パワードスーツの「神経の中枢」を破壊した。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "チューブから……銀色の液体が滴っているが。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mechanist",
-          "speakerId": "avg_npc_521_1",
-          "text": "この物質は何だ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サリア",
-          "speakerId": "avg_npc_532_1",
-          "text": "恐らく、それこそがあなたの疑問の答えだろう。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サニー",
-          "speakerId": "avg_npc_535_1",
-          "text": "逃げ切れた、か……？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "ふぅ……こんなに、走るの……久しぶり……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "さっきのあれは、一体……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "奇妙な形状の物体",
-          "speakerId": "avg_npc_533_1",
-          "text": "――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エレナ",
-          "speakerId": "avg_135_halo_1",
-          "text": "うそ、追いかけてきた！？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サニー",
-          "speakerId": "avg_npc_535_1",
-          "text": "伏せろ！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "これ、さっきのとは別のやつだ……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "少なく見積もって十数機以上……ううん、もっといるかも。居住区が取り囲まれてる……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サニー",
-          "speakerId": "avg_npc_535_1",
-          "text": "こいつら……前より増えてやがる……！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エレナ",
-          "speakerId": "avg_135_halo_1",
-          "text": "増えてるって……前に見たことがあるの？　ちゃんと説明して！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サニー",
-          "speakerId": "avg_npc_535_1",
-          "text": "……ちゃんと説明すべきことがあるのはあんたのほうじゃないか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エレナ",
-          "speakerId": "avg_135_halo_1",
-          "text": "え……？　何を言ってるの……？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "ッ、避けて――！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エレナ",
-          "speakerId": "avg_135_halo_1",
-          "text": "――動きが速すぎる……！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エレナ",
-          "speakerId": "avg_135_halo_1",
-          "text": "あの攻撃が当たったらタダじゃ済まないよ……！　一度屋内に戻ったほうがいいかも……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サニー",
-          "speakerId": "avg_npc_535_1",
-          "text": "いや、やめておけ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エレナ",
-          "speakerId": "avg_135_halo_1",
-          "text": "どうして？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "あれは……私たちがいた小屋……！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "目には見えない巨大な力が与える衝撃に、開拓者のバラックは激しく揺れ、頑丈とは言い難いドアや扉や窓がひび割れていく。\nそれと同時に、空中を浮遊していた奇妙な物体が一斉にその小屋へと群がった。\n血のにおいを嗅ぎつけた小さな生き物が獲物の傷口に潜り込んでいくように、銀色の液体が扉や窓に入った亀裂へと素早く染みこむ。\nそして――次の瞬間、その場の科学者にも理解の及ばないことが起きた。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エレナ",
-          "speakerId": "avg_135_halo_1",
-          "text": "小屋が……消えた……？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "ううん。消えたわけじゃなくて――分解されたんだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エレナ",
-          "speakerId": "avg_135_halo_1",
-          "text": "分解、って……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "あそこ……空中にいくつも漂ってる破片が見える？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エレナ",
-          "speakerId": "avg_135_halo_1",
-          "text": "あれのこと？　さっきの小屋の一部だとか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "一部と言うより……全部をバラバラにしたものじゃないかな。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "その言葉と共に、宙に浮いていた破片が次々と落ちていく。\n轟音と煙、辺りに散らばる瓦礫……止まっていた時間が動き出したかの如く、あるべきすべてが戻ってくる。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エレナ",
-          "speakerId": "avg_135_halo_1",
-          "text": "わ、私……幻覚を見せるアーツか何かをかけられてるのかな……？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エレナ",
-          "speakerId": "avg_135_halo_1",
-          "text": "そうとしか思えないよ……だって、今見たものは全部、私の知ってる物理法則を超えちゃってたし……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "……あの銀色の液体がやったんだと思う。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "無数の小さな個体に分裂して小屋を分解し、その一部を持ち去ってから……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "また元の形に戻ったんだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エレナ",
-          "speakerId": "avg_135_halo_1",
-          "text": "つまり……何十本も見えない手を持ってるようなもの？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サニー",
-          "speakerId": "avg_npc_535_1",
-          "text": "怪談話みたいだな……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "ッ、そうだ、フィリオプシス――！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エレナ",
-          "speakerId": "avg_135_halo_1",
-          "text": "……！　まだ中にいるんだった！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エレナ",
-          "speakerId": "avg_135_halo_1",
-          "text": "まさかジョイスまで……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "開拓隊の隊員",
-          "speakerId": "avg_npc_534_1",
-          "text": "ごほっ……げほっ、ごほっ……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サニー",
-          "speakerId": "avg_npc_535_1",
-          "text": "マイヤーズ！　逃げ切れたんだな！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "開拓隊の隊員",
-          "speakerId": "avg_npc_534_1",
-          "text": "あ……ああ……モル、先生も……一緒だ……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フィリオプシス",
-          "speakerId": "avg_128_plosis_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エレナ",
-          "speakerId": "avg_135_halo_1",
-          "text": "ジョイス！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "開拓隊の隊員",
-          "speakerId": "avg_npc_534_1",
-          "text": "だ……大丈夫、彼女は無事だ……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "……大きな怪我こそしてないけど、力尽きて気を失ってる……すぐに休ませないと。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サニー",
-          "speakerId": "avg_npc_535_1",
-          "text": "だが、ここに留まっちゃいられないぞ。開拓者居住区のどこにも、安全な場所なんてないからな……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "メアリー",
-          "speakerId": "avg_npc_527_1",
-          "text": "今の、見てたわよね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ライン生命警備課職員",
-          "speakerId": "avg_npc_528_1",
-          "text": "仰る意味がわからないのですが……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "メアリー",
-          "speakerId": "avg_npc_527_1",
-          "text": "ふざけないで！　今の振動を感じなかったわけ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "メアリー",
-          "speakerId": "avg_npc_527_1",
-          "text": "空中に浮いているアレが見えるでしょ？　ライン生命が開発した新型ドローンか何か？　正直に言いなさい！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ライン生命警備課職員",
-          "speakerId": "avg_npc_528_1",
-          "text": "……私はあなたのご命令通り、あの基地に対しては何の行動も取っていません。それだけは保証します。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "メアリー",
-          "speakerId": "avg_npc_527_1",
-          "text": "もういいわ。あなたの上司は誰？　フェルディナンドとかいったかしら？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ライン生命警備課職員",
-          "speakerId": "avg_npc_528_1",
-          "text": "フェルディナンド・クルーニー氏はエネルギー課の主任です。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "メアリー",
-          "speakerId": "avg_npc_527_1",
-          "text": "組織図なんてどうでもいいわ。決定権が誰にあるか聞いてるの。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "メアリー",
-          "speakerId": "avg_npc_527_1",
-          "text": "とにかく、通信機を貸して。その人と直接話すから。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ライン生命警備課職員",
-          "speakerId": "avg_npc_528_1",
-          "text": "ですが、フェルディナンド主任は大変多忙な方で……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "メアリー",
-          "speakerId": "avg_npc_527_1",
-          "text": "だったら今すぐメッセージを送りなさい！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "メアリー",
-          "speakerId": "avg_npc_527_1",
-          "text": "自分がどれだけバカなことをしてるか、自覚はあるのかってね！！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ライン生命研究員",
-          "speakerId": "avg_npc_529_1",
-          "text": "主任、監視ステーションからメッセージが届きました。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_522_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_522_1",
-          "text": "ははっ……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ライン生命研究員",
-          "speakerId": "avg_npc_529_1",
-          "text": "それと、息子さんからご連絡が来ていますが、通信を繋げますか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_522_1",
-          "text": "いつも通り、今は忙しいと伝えてくれたまえ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_522_1",
-          "text": "それと、エレナから送られてきた最新のレポートを、私の端末に転送してもらえるかな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ライン生命研究員",
-          "speakerId": "avg_npc_529_1",
-          "text": "わかりました、主任。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_522_1",
-          "text": "何度も言っているじゃないか。主任と呼ぶのはやめてくれとね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ライン生命研究員",
-          "speakerId": "avg_npc_529_1",
-          "text": "あっ……！　申し訳ありません、フェルディナンドさん。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_522_1",
-          "text": "よろしい。ときに、エレナと言えば……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_522_1",
-          "text": "君は彼女と仲が良かったな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "フェルディナンド",
-          "speakerId": "avg_npc_522_1",
-          "text": "どんなものを贈れば喜んでもらえるか、私の代わりに考えてくれないか？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エレナ",
-          "speakerId": "avg_135_halo_1",
-          "text": "……オリヴィア。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "ああ、エレナ。……ごめん、怪我人を診るのに手一杯で……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "エレナは怪我してない？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エレナ",
-          "speakerId": "avg_135_halo_1",
-          "text": "あ、うん……大丈夫。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エレナ",
-          "speakerId": "avg_135_halo_1",
-          "text": "キミみたいな現場経験はないけど、自分の面倒は見られるから。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エレナ",
-          "speakerId": "avg_135_halo_1",
-          "text": "でもさ……私たち、すぐにここから離れるべきじゃないかな？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エレナ",
-          "speakerId": "avg_135_halo_1",
-          "text": "今なら基地は混乱状態だし、開拓隊も自分たちのことで手一杯……逃げ出すチャンスだと思うんだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エレナ",
-          "speakerId": "avg_135_halo_1",
-          "text": "きっともうメッセージは届いてるから、助けに来てくれるはずだし……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エレナ",
-          "speakerId": "avg_135_halo_1",
-          "text": "警備課と合流できれば、基地内の脅威を排除して、ドロシーを助け出すことだって……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "多分、あなたの言ってることは正しい。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エレナ",
-          "speakerId": "avg_135_halo_1",
-          "text": "だったら……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "だけど、私にはあの人たちを見捨てることなんてできない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "あなたも見たように……彼らはジョイスを見捨てなかったから。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サニー",
-          "speakerId": "avg_npc_535_1",
-          "text": "サイレンス先生！　こっちにも怪我人が！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "――ドローン、行って。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サニー",
-          "speakerId": "avg_npc_535_1",
-          "text": "……このままじゃ、俺たちは持ちこたえられそうもないな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サニー",
-          "speakerId": "avg_npc_535_1",
-          "text": "攻撃手段は何だって試したが、まるで効いちゃいない。あの化け物どもには傷一つ負わせられなかった。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サニー",
-          "speakerId": "avg_npc_535_1",
-          "text": "隠れる場所すらなくなって……これじゃ……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "開拓隊の隊員",
-          "speakerId": "avg_npc_534_1",
-          "text": "リーダー……こいつらにそんな話してどうすんだよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "開拓隊の隊員",
-          "speakerId": "avg_npc_534_1",
-          "text": "腹の中では笑ってるかもしれないんだぞ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "開拓隊の隊員",
-          "speakerId": "avg_npc_534_1",
-          "text": "頭上を飛び回ってるあれは、きっと保安局と大企業の奴らが送り込んだ兵器なんだよ！　あの連中は、俺たちを二度とこの基地から出したくないんだろうさ……！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サニー",
-          "speakerId": "avg_npc_535_1",
-          "text": "サム、今はその話はよせ。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "グレイ",
-          "speakerId": "avg_1027_greyy2_1",
-          "text": "げほ……ごほっ……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "グレイ",
-          "speakerId": "avg_1027_greyy2_1",
-          "text": "あの、皆さん……僕、考えたん、ですが……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "聞かせて。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "グレイ",
-          "speakerId": "avg_1027_greyy2_1",
-          "text": "はぁ……はぁ……ごほ、ごほごほっ……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "焦らず、ゆっくりでいいから。たくさん走ったあとだし、無理はしないで。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "グレイ",
-          "speakerId": "avg_1027_greyy2_1",
-          "text": "は……はい。……あの、浮いている物体なんですが……光と、人の声を追跡しているように思うんです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "グレイ",
-          "speakerId": "avg_1027_greyy2_1",
-          "text": "見ていてください……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "……アーツの光を追いかけて、飛んでいってる……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "グレイ",
-          "speakerId": "avg_1027_greyy2_1",
-          "text": "ふぅ……ただ、これはその場しのぎでしかないんです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "グレイ",
-          "speakerId": "avg_1027_greyy2_1",
-          "text": "僕のアーツではもう、長時間騙すことはできなくて。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "ううん。よく見つけてくれたね、ありがとう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "走光性か……良い着眼点だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "グレイ、近くにいる開拓者たちを避難させてくれる？　あの人たちはあなたを信頼してるから。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "彼らには暗いところに隠れて、声を出さないようにしてもらいたいんだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "グレイ",
-          "speakerId": "avg_1027_greyy2_1",
-          "text": "はい、任せてください。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "グレイ",
-          "speakerId": "avg_1027_greyy2_1",
-          "text": "そういう仕事なら、先輩たちと一緒に何度も経験してきましたから……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "グレイ",
-          "speakerId": "avg_1027_greyy2_1",
-          "text": "サイレンス先生とエレナさんも、気を付けてくださいね。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エレナ",
-          "speakerId": "avg_135_halo_1",
-          "text": "それで、私たちはどうするの？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "なるべく音を立てて。最低限、ほかの人たちの足音が目立たないようにしたいから、こちらの音は大きければ大きいほどいい。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サニー",
-          "speakerId": "avg_npc_535_1",
-          "text": "……わかった。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サニー",
-          "speakerId": "avg_npc_535_1",
-          "text": "サム。あと五、六人ここに呼んで、そのついでに一番でかい音が出せる工具を持ってきてくれ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "開拓隊の隊員",
-          "speakerId": "avg_npc_534_1",
-          "text": "本当にあいつらの言う通りにするのか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サニー",
-          "speakerId": "avg_npc_535_1",
-          "text": "もっといいアイデアがあるなら聞くぜ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "開拓隊の隊員",
-          "speakerId": "avg_npc_534_1",
-          "text": "……わかったよ、リーダー。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "あの銀色の奴らを全部こっちにおびき寄せるよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エレナ",
-          "speakerId": "avg_135_halo_1",
-          "text": "そうやって囮になって――その次は？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サイレンス",
-          "speakerId": "avg_108_silent_1",
-          "text": "まずは、できる限り時間を稼いで――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "優しい女性の声",
-          "speakerId": null,
-          "text": "そのあとは、研究エリアへ逃げてきて。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "サニー",
-          "speakerId": "avg_npc_535_1",
-          "text": "この声は……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エレナ",
-          "speakerId": "avg_135_halo_1",
-          "text": "ドロシー！？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "優しい女性の声",
-          "speakerId": null,
-          "text": "ええ。私よ、エレナ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "優しい女性の声",
-          "speakerId": null,
-          "text": "ラボにあるスピーカーを少し改造して、繋げてみたの。……驚かせていなければいいんだけど。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エレナ",
-          "speakerId": "avg_135_halo_1",
-          "text": "キミのほうは無事なの？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "優しい女性の声",
-          "speakerId": null,
-          "text": "私は大丈夫よ。心配しないで。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "優しい女性の声",
-          "speakerId": null,
-          "text": "研究エリアの建物は頑丈だから、みんなにとっても身を護るにはいい場所だと思うの。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "優しい女性の声",
-          "speakerId": null,
-          "text": "さあ、みんな。――開拓隊の友人たちにも、ライン生命の同僚たちにも、研究エリアの扉は開かれているわ。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "いいや。このパワードスーツは、それ以上に柔軟な行動を取っていた……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "ロドスで開発された新世代武器の中で最も自動化の進んだ物を以てしても、私の目は欺けない。――だというのに、軍に飼い慣らされた愚かな技術者たちにそんな芸当ができるだろうか？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_532_1",
+      "isRemote": false,
+      "text": "――"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "何をしたんだ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_532_1",
+      "isRemote": false,
+      "text": "パワードスーツの「神経の中枢」を破壊した。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "チューブから……銀色の液体が滴っているが。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mechanist",
+      "speakerId": "avg_npc_521_1",
+      "isRemote": false,
+      "text": "この物質は何だ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サリア",
+      "speakerId": "avg_npc_532_1",
+      "isRemote": false,
+      "text": "恐らく、それこそがあなたの疑問の答えだろう。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "29_g1_outdoorbase"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サニー",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "逃げ切れた、か……？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "ふぅ……こんなに、走るの……久しぶり……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "さっきのあれは、一体……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "奇妙な形状の物体",
+      "speakerId": "avg_npc_533_1",
+      "isRemote": false,
+      "text": "――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エレナ",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "うそ、追いかけてきた！？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サニー",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "伏せろ！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "これ、さっきのとは別のやつだ……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "少なく見積もって十数機以上……ううん、もっといるかも。居住区が取り囲まれてる……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サニー",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "こいつら……前より増えてやがる……！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エレナ",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "増えてるって……前に見たことがあるの？　ちゃんと説明して！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サニー",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "……ちゃんと説明すべきことがあるのはあんたのほうじゃないか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エレナ",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "え……？　何を言ってるの……？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "ッ、避けて――！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エレナ",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "――動きが速すぎる……！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エレナ",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "あの攻撃が当たったらタダじゃ済まないよ……！　一度屋内に戻ったほうがいいかも……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サニー",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "いや、やめておけ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エレナ",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "どうして？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "あれは……私たちがいた小屋……！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "目には見えない巨大な力が与える衝撃に、開拓者のバラックは激しく揺れ、頑丈とは言い難いドアや扉や窓がひび割れていく。\nそれと同時に、空中を浮遊していた奇妙な物体が一斉にその小屋へと群がった。\n血のにおいを嗅ぎつけた小さな生き物が獲物の傷口に潜り込んでいくように、銀色の液体が扉や窓に入った亀裂へと素早く染みこむ。\nそして――次の瞬間、その場の科学者にも理解の及ばないことが起きた。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エレナ",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "小屋が……消えた……？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "ううん。消えたわけじゃなくて――分解されたんだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エレナ",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "分解、って……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "あそこ……空中にいくつも漂ってる破片が見える？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エレナ",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "あれのこと？　さっきの小屋の一部だとか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "一部と言うより……全部をバラバラにしたものじゃないかな。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "その言葉と共に、宙に浮いていた破片が次々と落ちていく。\n轟音と煙、辺りに散らばる瓦礫……止まっていた時間が動き出したかの如く、あるべきすべてが戻ってくる。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エレナ",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "わ、私……幻覚を見せるアーツか何かをかけられてるのかな……？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エレナ",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "そうとしか思えないよ……だって、今見たものは全部、私の知ってる物理法則を超えちゃってたし……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "……あの銀色の液体がやったんだと思う。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "無数の小さな個体に分裂して小屋を分解し、その一部を持ち去ってから……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "また元の形に戻ったんだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エレナ",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "つまり……何十本も見えない手を持ってるようなもの？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サニー",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "怪談話みたいだな……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "ッ、そうだ、フィリオプシス――！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エレナ",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "……！　まだ中にいるんだった！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エレナ",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "まさかジョイスまで……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "開拓隊の隊員",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "ごほっ……げほっ、ごほっ……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サニー",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "マイヤーズ！　逃げ切れたんだな！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "開拓隊の隊員",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "あ……ああ……モル、先生も……一緒だ……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フィリオプシス",
+      "speakerId": "avg_128_plosis_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エレナ",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "ジョイス！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "開拓隊の隊員",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "だ……大丈夫、彼女は無事だ……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "……大きな怪我こそしてないけど、力尽きて気を失ってる……すぐに休ませないと。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サニー",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "だが、ここに留まっちゃいられないぞ。開拓者居住区のどこにも、安全な場所なんてないからな……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "29_g2_edgeofbase"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "メアリー",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "今の、見てたわよね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ライン生命警備課職員",
+      "speakerId": "avg_npc_528_1",
+      "isRemote": false,
+      "text": "仰る意味がわからないのですが……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "メアリー",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "ふざけないで！　今の振動を感じなかったわけ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "メアリー",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "空中に浮いているアレが見えるでしょ？　ライン生命が開発した新型ドローンか何か？　正直に言いなさい！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ライン生命警備課職員",
+      "speakerId": "avg_npc_528_1",
+      "isRemote": false,
+      "text": "……私はあなたのご命令通り、あの基地に対しては何の行動も取っていません。それだけは保証します。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "メアリー",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "もういいわ。あなたの上司は誰？　フェルディナンドとかいったかしら？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ライン生命警備課職員",
+      "speakerId": "avg_npc_528_1",
+      "isRemote": false,
+      "text": "フェルディナンド・クルーニー氏はエネルギー課の主任です。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "メアリー",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "組織図なんてどうでもいいわ。決定権が誰にあるか聞いてるの。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "メアリー",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "とにかく、通信機を貸して。その人と直接話すから。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ライン生命警備課職員",
+      "speakerId": "avg_npc_528_1",
+      "isRemote": false,
+      "text": "ですが、フェルディナンド主任は大変多忙な方で……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "メアリー",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "だったら今すぐメッセージを送りなさい！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "メアリー",
+      "speakerId": "avg_npc_527_1",
+      "isRemote": false,
+      "text": "自分がどれだけバカなことをしてるか、自覚はあるのかってね！！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "29_g9_headquarter"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ライン生命研究員",
+      "speakerId": "avg_npc_529_1",
+      "isRemote": false,
+      "text": "主任、監視ステーションからメッセージが届きました。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "ははっ……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ライン生命研究員",
+      "speakerId": "avg_npc_529_1",
+      "isRemote": false,
+      "text": "それと、息子さんからご連絡が来ていますが、通信を繋げますか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "いつも通り、今は忙しいと伝えてくれたまえ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "それと、エレナから送られてきた最新のレポートを、私の端末に転送してもらえるかな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ライン生命研究員",
+      "speakerId": "avg_npc_529_1",
+      "isRemote": false,
+      "text": "わかりました、主任。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "何度も言っているじゃないか。主任と呼ぶのはやめてくれとね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ライン生命研究員",
+      "speakerId": "avg_npc_529_1",
+      "isRemote": false,
+      "text": "あっ……！　申し訳ありません、フェルディナンドさん。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "よろしい。ときに、エレナと言えば……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "君は彼女と仲が良かったな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "フェルディナンド",
+      "speakerId": "avg_npc_522_1",
+      "isRemote": false,
+      "text": "どんなものを贈れば喜んでもらえるか、私の代わりに考えてくれないか？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "29_g2_edgeofbase"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エレナ",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "……オリヴィア。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "ああ、エレナ。……ごめん、怪我人を診るのに手一杯で……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "エレナは怪我してない？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エレナ",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "あ、うん……大丈夫。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エレナ",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "キミみたいな現場経験はないけど、自分の面倒は見られるから。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エレナ",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "でもさ……私たち、すぐにここから離れるべきじゃないかな？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エレナ",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "今なら基地は混乱状態だし、開拓隊も自分たちのことで手一杯……逃げ出すチャンスだと思うんだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エレナ",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "きっともうメッセージは届いてるから、助けに来てくれるはずだし……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エレナ",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "警備課と合流できれば、基地内の脅威を排除して、ドロシーを助け出すことだって……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "多分、あなたの言ってることは正しい。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エレナ",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "だったら……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "だけど、私にはあの人たちを見捨てることなんてできない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "あなたも見たように……彼らはジョイスを見捨てなかったから。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サニー",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "サイレンス先生！　こっちにも怪我人が！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "――ドローン、行って。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サニー",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "……このままじゃ、俺たちは持ちこたえられそうもないな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サニー",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "攻撃手段は何だって試したが、まるで効いちゃいない。あの化け物どもには傷一つ負わせられなかった。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サニー",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "隠れる場所すらなくなって……これじゃ……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "開拓隊の隊員",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "リーダー……こいつらにそんな話してどうすんだよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "開拓隊の隊員",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "腹の中では笑ってるかもしれないんだぞ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "開拓隊の隊員",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "頭上を飛び回ってるあれは、きっと保安局と大企業の奴らが送り込んだ兵器なんだよ！　あの連中は、俺たちを二度とこの基地から出したくないんだろうさ……！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サニー",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "サム、今はその話はよせ。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "グレイ",
+      "speakerId": "avg_1027_greyy2_1",
+      "isRemote": false,
+      "text": "げほ……ごほっ……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "グレイ",
+      "speakerId": "avg_1027_greyy2_1",
+      "isRemote": false,
+      "text": "あの、皆さん……僕、考えたん、ですが……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "聞かせて。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "グレイ",
+      "speakerId": "avg_1027_greyy2_1",
+      "isRemote": false,
+      "text": "はぁ……はぁ……ごほ、ごほごほっ……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "焦らず、ゆっくりでいいから。たくさん走ったあとだし、無理はしないで。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "グレイ",
+      "speakerId": "avg_1027_greyy2_1",
+      "isRemote": false,
+      "text": "は……はい。……あの、浮いている物体なんですが……光と、人の声を追跡しているように思うんです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "グレイ",
+      "speakerId": "avg_1027_greyy2_1",
+      "isRemote": false,
+      "text": "見ていてください……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "……アーツの光を追いかけて、飛んでいってる……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "グレイ",
+      "speakerId": "avg_1027_greyy2_1",
+      "isRemote": false,
+      "text": "ふぅ……ただ、これはその場しのぎでしかないんです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "グレイ",
+      "speakerId": "avg_1027_greyy2_1",
+      "isRemote": false,
+      "text": "僕のアーツではもう、長時間騙すことはできなくて。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "ううん。よく見つけてくれたね、ありがとう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "走光性か……良い着眼点だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "グレイ、近くにいる開拓者たちを避難させてくれる？　あの人たちはあなたを信頼してるから。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "彼らには暗いところに隠れて、声を出さないようにしてもらいたいんだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "グレイ",
+      "speakerId": "avg_1027_greyy2_1",
+      "isRemote": false,
+      "text": "はい、任せてください。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "グレイ",
+      "speakerId": "avg_1027_greyy2_1",
+      "isRemote": false,
+      "text": "そういう仕事なら、先輩たちと一緒に何度も経験してきましたから……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "グレイ",
+      "speakerId": "avg_1027_greyy2_1",
+      "isRemote": false,
+      "text": "サイレンス先生とエレナさんも、気を付けてくださいね。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エレナ",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "それで、私たちはどうするの？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "なるべく音を立てて。最低限、ほかの人たちの足音が目立たないようにしたいから、こちらの音は大きければ大きいほどいい。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サニー",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "……わかった。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サニー",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "サム。あと五、六人ここに呼んで、そのついでに一番でかい音が出せる工具を持ってきてくれ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "開拓隊の隊員",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "本当にあいつらの言う通りにするのか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サニー",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "もっといいアイデアがあるなら聞くぜ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "開拓隊の隊員",
+      "speakerId": "avg_npc_534_1",
+      "isRemote": false,
+      "text": "……わかったよ、リーダー。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "あの銀色の奴らを全部こっちにおびき寄せるよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エレナ",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "そうやって囮になって――その次は？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サイレンス",
+      "speakerId": "avg_108_silent_1",
+      "isRemote": false,
+      "text": "まずは、できる限り時間を稼いで――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "優しい女性の声",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "そのあとは、研究エリアへ逃げてきて。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "サニー",
+      "speakerId": "avg_npc_535_1",
+      "isRemote": false,
+      "text": "この声は……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エレナ",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "ドロシー！？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "優しい女性の声",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "ええ。私よ、エレナ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "優しい女性の声",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "ラボにあるスピーカーを少し改造して、繋げてみたの。……驚かせていなければいいんだけど。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エレナ",
+      "speakerId": "avg_135_halo_1",
+      "isRemote": false,
+      "text": "キミのほうは無事なの？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "優しい女性の声",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "私は大丈夫よ。心配しないで。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "優しい女性の声",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "研究エリアの建物は頑丈だから、みんなにとっても身を護るにはいい場所だと思うの。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "優しい女性の声",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "さあ、みんな。――開拓隊の友人たちにも、ライン生命の同僚たちにも、研究エリアの扉は開かれているわ。"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": []

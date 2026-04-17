@@ -6,80 +6,103 @@
   "title": "흔적을 찾아",
   "storyCode": "TR-24",
   "avgTag": "작전 전",
-  "sourcePath": "vendor/ArknightsGamedata/kr/gamedata/story/obt/main/level_main_13-06_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/kr/gamedata/story/obt/main/level_main_13-06_beg.txt",
   "sourceHash": "c94a94c9c5418465dd084a63dee48ec2c4a3f34ec56382f2c51ce7fb3d53db7b",
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_cherunder_2"
+    },
+    {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "……이곳도 완전히 파괴되었다."
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "앞서 로도스 아일랜드가 예상했던 것처럼, 도시 바깥에서 도시 안쪽으로 이어지는 비밀 통로가 더 있었어."
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "테레시스는 더 샤드 빌딩이 수리될 때까지, 비행선이 다 만들어질 때까지 이런 지점들을 이용해서 강철과 결정 유닛, 그리고 주술 장치들을 대량으로 런디니움으로 옮긴 거야."
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "하지만 애초에 이 재료들을 어떻게 런디니움 주변까지 옮길 수 있었던 걸까? 아무리 멍청한 공작이라도 자신들이 제어할 수 없는 대량의 물자가 빅토리아 국경 내에서 유통되도록 놔두진 않았을 거야."
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "그러니까 내 생각엔, 아마 그 물건들은 나흐체러르 킹의 군단이 그랬던 것처럼 '슉'하고 이런 지점들 주변에 나타난 것 같아."
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "우리가 계속해서 찾고 있었던 그 '살카즈 보급선'이라는 건 아마 이 운송 과정의 가장 마지막 과정이자, 가장 중요하지 않는 과정일 지도 몰라."
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "……이건 대체 무슨 기술을 사용한 거지?"
     },
     {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "문제가 한 가지 더 있다. 테레시스가 정말로 이런 능력을 갖췄다면, 그는 왜 이 기술을 전쟁에 직접 활용하지 않는 거지?"
     },
     {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "군대를 적군 방어선의 후방에 나타나게 하거나, 폭발하는 오리지늄 폭탄을 공작들의 머리 위에 이동시키면 되잖아."
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "어쩌면 이 기술도 제약이 많은 걸지도 몰라. 아니면…… 허점투성이거나."
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "그 리치는 그 기술이 오리지늄 아츠의 범위를 벗어난 일종의 아츠라고 했어. 하지만 도저히 상상이 안 가……"
     },
     {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "W, 그쪽은……"
     },
     {
@@ -89,18 +112,21 @@
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": null,
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": null,
+      "isRemote": false,
       "text": "응?"
     },
     {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": null,
+      "isRemote": false,
       "text": "아, 전투의 흔적 같은 건 없어. 여긴 완전 박살이 났거든."
     },
     {
@@ -110,7 +136,15 @@
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "……가자, 여긴 이제 볼 것도 없어."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_labentrance"
     },
     {
       "type": "sceneBreak"
@@ -119,6 +153,7 @@
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "이네스, 로도스 아일랜드가 방위군 지휘탑에 있었던 그 정보들을 분석하고, 목표를 '브렌트우드'라는 한 마을 인근에 정했다고 했었지?"
     },
     {
@@ -128,84 +163,98 @@
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "그건 클로저가 분석해 낸 거야. 그 녀석은 1094년 테레시스가 도시에 들어온 이후로 생긴 모든 운송 정보들을 훔쳐서 여러 정보들이 중첩된 로드맵을 하나 만들었거든."
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "그 지도에서 런디니움 주변의 모든 마을들은 이런 화물 운송 기록들로 가득 차 있어."
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "뭐니뭐니 해도 여긴 빅토리아의 수도잖아. 전쟁 전에는 시민들이 매일매일 스테이크와 술을 잔뜩 먹어대는 바람에 진열대에 상품이 올라갈 틈도 없었다더라고."
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "하지만 이 마을…… '브렌트우드'는 눈에 거슬릴 정도로 텅 비어 있어. 통행 기록도 전혀 없고, 그 많지 않은 기록도 대부분 1094년에서 1095년 사이에 기록된 것들이야."
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "다른 곳과 비교해 보면 정말 비정상적이지. 이 마을은 빅토리아의 중심에 위치하고 있지만, 마치 다른 사람들한테 잊혀진 것 같아."
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "당시 로도스 아일랜드는 브렌트우드가 살카즈 지하 철로의 기점이거나, 비밀 도로망의 요점일 수도 있다고 생각해서 암암리에 일종의 통행 통제를 했었어."
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "우리도 방금 이런 운송 지점이 확실히 존재한다는 걸 증명했잖아?"
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "하지만 우리도, 흠, 테레시스에겐 '보이지 않는 큰 손'이 있다는 걸 알고 있어. 아무것도 없는 공중에서 물건을 원하는 위치에 둘 수 있는 그 능력 말이야."
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "어쩌면 브렌트우드가 가지는 의미에 대해 다시 한번 생각해 보는 게 좋겠어."
     },
     {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "……아니."
     },
     {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "이 장소에 가까워질수록 뱀파이어의 마법진은 점점 더 빈번하게 나타나고 있다."
     },
     {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "그리고 가장 멀리 위치한 지점들을 브렌트우드와 이어보면, 그 거리가 서로 거의 비슷하다는 걸 알 수 있지. 그러니 이 거리야말로 물건을 떨어뜨릴 수 있는 최대 한계라는 걸 알 수 있어."
     },
     {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_npc_412_1",
+      "isRemote": false,
       "text": "괜한 추측 같은 거 하지 마. 내가 그 브렌트우드라는 동네를 잘 아는데, 거긴 정말 찢어질 정도로 가난해서 뭘 숨길 수도 없어. 내가 몇 달 전에 거기 갔을 땐 빈둥거리는 살카즈들조차 없었다니까."
     },
     {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_npc_412_1",
+      "isRemote": false,
       "text": "카라반도 거기는 안 지나쳐. 아마 너무 재미없어서 그런 거겠지."
     },
     {
@@ -215,288 +264,350 @@
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "……하아."
     },
     {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "출발하자. 단서가 없는 이상, 우연에 맡겨보는 것도 나쁘진 않겠지."
     },
     {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "첫 번째 지점은 이곳으로 하자."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "40_g6_mountaincave"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "40_g6_mountaincave"
+    },
+    {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "네 예감이 정말 맞는 걸지도 모르겠어. 여긴 그림자가 상당히 이상해."
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "혼란스럽다고 해야 하나? 하지만 흔적도 남아있는 것 같아."
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "이건 마치…… 배 한 척이 이동하면서 서로 겹치고 간섭하는 파동을 일으키고, 결국엔 그 파동이 모든 걸 뒤죽박죽으로 만들어 버린 그런 느낌이야."
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "이동이라기 보다는, 오히려…… 표류에 가까운 것 같아."
     },
     {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "'표류'라."
     },
     {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "어떤 만년의 다이아볼릭 노인이 내게 들려준 이야기를 하나 해준 적 있었지. 그 노인의 지리멸렬한 헛소리 속에서도 그 단어가 나왔었다."
     },
     {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_npc_412_1",
+      "isRemote": false,
       "text": "무슨 이야기였는데?"
     },
     {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "재앙에 관한 이야기였다."
     },
     {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "앞으로 우리 눈앞에 나타나는 게 그 이야기에 들은 것과 같은 게 아니었으면 좋겠군."
     },
     {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "우리 운이 아직 남아 있길 바라야지."
     },
     {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_npc_412_1",
+      "isRemote": false,
       "text": "자기가 운이 좋다고 했던 용병들은 전부 죽었어."
     },
     {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "그럼 W, 만반의 준비를 한다는 의미에서, 넌 여기에 남아 우릴 백업해라."
     },
     {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "이번 임무는 전투가 아니니 일단 우리가 무엇을 마주하고 있는지 제대로 파악할 필요가 있다."
     },
     {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "만약 상황이 나빠지면 철수해야 하니, 네가……"
     },
     {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_npc_412_1",
+      "isRemote": false,
       "text": "안심해. 너희의 퇴로는 내가 확실하게 끊어 버릴 테니까."
     },
     {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_npc_412_1",
+      "isRemote": false,
       "text": "뱀파이어나 나흐체러르, 아니면 아예 테레시스한테 동굴 입구까지 쫓기게 되더라도, 내가 폭발 각도를 잘 계산해서 설치할 테니까 괜찮아. 너희가 동굴 입구에 거의 다다르는 그 순간 내가 바로……"
     },
     {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_npc_412_1",
+      "isRemote": false,
       "text": "콰앙!"
     },
     {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_npc_412_1",
+      "isRemote": false,
       "text": "그러면 너도 네가 가장 좋아하는 이야기 속 등장인물 같은 게 될 수 있을 거야, 외드레르!"
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "너 혼자선 테레시아를 상대할 수 없어, W."
     },
     {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_npc_412_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_npc_412_1",
+      "isRemote": false,
       "text": "이네스."
     },
     {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_npc_412_1",
+      "isRemote": false,
       "text": "난 정말로 너흴 여기에 묻어버릴 거야."
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "……흥. 자기도 알고 있으면서."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "W라면 정말로 산을 통째로 날려버릴 거다."
     },
     {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "너도 저 녀석이 얼마나 미쳤는지는 잘 알 텐데. 왜 굳이 테레시아 얘기를 꺼내서 자극하는 거지?"
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "W가 불쌍할 정도로 아무렇지도 않은 척을 하잖아. 오히려 난 저 녀석이 자신이 정말로 원하는 게 무엇인지 깨닫기를 바라고 있어."
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "너도 도시에 오래 있었잖아. 저 녀석이 단순히 진상을 알고 싶었던 거라면 직접 너한테 물어봤겠지."
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "너 한 번이라도 W한테 “저 테레시아는 진짜냐”라고 질문받아 본 적 있어?"
     },
     {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "나한테도 물어 본 적 없었어. 봐, W는 심리적으로 전혀 성장하지 않았다니까."
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "그게 아니라면 그 '테레시아'한테 꼬리를 흔들며 용서를 구하든가, 아니면 죽일 각오를 다지든가."
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "지금 W가 왜 저런 모습을 하고 있겠어? 우리한테 강하다는 걸 어필하기 위해서일까?"
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "아니면 아무 일도 없었다고, 늘 하던 대로 사람을 죽이고 지뢰를 매설하기만 하면 모든 것이 해결될 거라고 스스로를 설득하는 걸까?"
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "W가 정말 아무 생각 없이 살려면 그렇게 할 수 있겠지. 하지만 지금 W는…… 마치 살얼음판 위에 서 있는 어린아이 같아."
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "꾸물거리며 발을 내딛어야 할지 고민하거나, 앞으로 몇 걸음 나아가기만 하면 다시 몇 걸음 되돌아오고, 가만히 서서 앞뒤를 살펴보며, 헛된 감상에 빠져들기도 해."
     },
     {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "난 전혀 눈치채지 못했는데."
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "……거짓말. 귀찮은 일을 만들고 싶지 않았던 것뿐이잖아."
     },
     {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "네가 저 녀석을 그렇게나 신경 쓸 줄은 몰랐군."
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "난 내 자신을 신경 쓰는 거야. 그 녀석한테 죽기는 싫다고."
     },
     {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "진지하게 하는 얘긴데, 이네스. 카즈델로 돌아갈 생각 없어?"
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "하! 내가 너희의 원대한 계획에 발목이라도 잡았다는 거야?"
     },
     {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "그게 아니라, W와 나는 이 전장에 계속 남아 있을 이유가 있잖아."
     },
     {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "하지만 너는?"
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "……나도 있어."
     },
     {
@@ -506,39 +617,49 @@
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "도착했어."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "43_g5_spinestops"
+    },
+    {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "이곳이 바로…… 산의 내부야."
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "녀석들이 이 산을 전부 파낸 거야?"
     },
     {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "이러면 W의 폭파 계획이 더 순조롭겠네."
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "여기 있는 이 선로, 그리고 이 정도 규모의 하역 시스템이라니."
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "거대한 녀석이네."
     },
     {
@@ -548,6 +669,7 @@
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "숨어."
     },
     {
@@ -557,159 +679,189 @@
       "type": "dialogue",
       "speakerName": "피곤한 살카즈 노동자",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "다음은 언제래?"
     },
     {
       "type": "dialogue",
       "speakerName": "말수 적은 살카즈 노동자",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "곧."
     },
     {
       "type": "dialogue",
       "speakerName": "말수 적은 살카즈 노동자",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "늘 시간을 엄수하잖아."
     },
     {
       "type": "dialogue",
       "speakerName": "피곤한 살카즈 노동자",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "하아, 차라리 빅토리아인을 죽이는 일을 하겠다고 상관한테 말이나 해보는 거였는데."
     },
     {
       "type": "dialogue",
       "speakerName": "말수 적은 살카즈 노동자",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "싸움도 못하면서."
     },
     {
       "type": "dialogue",
       "speakerName": "피곤한 살카즈 노동자",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "나도 알거든! 하지만 여긴…… 너무 숨막히잖아."
     },
     {
       "type": "dialogue",
       "speakerName": "피곤한 살카즈 노동자",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "난 매일 그 진짜인지 가짜인지도 모를 환각까지 본다니까."
     },
     {
       "type": "dialogue",
       "speakerName": "피곤한 살카즈 노동자",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "여긴 정말…… 소용돌이 같아. 쓰레기들이 계속해서 시공을 건너오는 것 같잖아."
     },
     {
       "type": "dialogue",
       "speakerName": "피곤한 살카즈 노동자",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "그래도 울술라가 착해서 다행이야. 틈만 나면 우릴 귀찮게 하는 일도 없고, 행패도 안 부리고."
     },
     {
       "type": "dialogue",
       "speakerName": "피곤한 살카즈 노동자",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "군사위원회에서도 그 사람이 가장 젊은 소령이라며?"
     },
     {
       "type": "dialogue",
       "speakerName": "말수 적은 살카즈 노동자",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "그 여자는 왕정의 구성원이 아니야, 오래 못 갈걸."
     },
     {
       "type": "dialogue",
       "speakerName": "피곤한 살카즈 노동자",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "테레시아 전하랑 섭정왕도 순수 혈통의 마족은 아니잖아?"
     },
     {
       "type": "dialogue",
       "speakerName": "피곤한 살카즈 노동자",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "쳇, 왕정, 왕정이면 또 어때서! 누가보면 그 인간들이 카즈델을 되찾은 줄 알겠네!"
     },
     {
       "type": "dialogue",
       "speakerName": "말수 적은 살카즈 노동자",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "그래도 그 사람들이 가장 대단한 건 사실이잖아."
     },
     {
       "type": "dialogue",
       "speakerName": "피곤한 살카즈 노동자",
       "speakerId": "avg_npc_053",
+      "isRemote": false,
       "text": "그야 그건……"
     },
     {
       "type": "dialogue",
       "speakerName": "말수 적은 살카즈 노동자",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "됐어, 일할 시간이다."
     },
     {
       "type": "dialogue",
       "speakerName": "말수 적은 살카즈 노동자",
       "speakerId": "avg_npc_054",
+      "isRemote": false,
       "text": "기계 옆에서 기다려, 적재 준비해."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "43_g5_spinestops"
+    },
+    {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "……녀석들이 말한 이름, 들은 적 있어?"
     },
     {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "울술라."
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "그렇다면……"
     },
     {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "우리가 생각하는 그 사람이 아닐 수도 있다. 보통 살카즈의 이름은 코드네임 같은 것에 불과하니까. 아니면 영웅담 같은 곳에서 따온 거겠지."
     },
     {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "시간 도둑 울술라, 자물쇠와 열쇠의 울술라. 이건 베헤모스에 관련된 살카즈의 전설 같은 거잖아. 누가 가져다 써도 이상할 건 없지."
     },
     {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "……잠깐. 시간 도둑…… 울술라?"
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "'외드레르'. 그럼 네 이름에는 무슨 의미가 있어?"
     },
     {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "아무것도 없어."
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "하."
     },
     {
@@ -719,45 +871,77 @@
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "종소리다."
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "잠깐, 저길 봐……"
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "저게 뭐지?"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "43_g4_spinestops_ex"
+    },
+    {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "저게 그…… '운송선'인가?"
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "이 정도 크기라니…… 테레시스는 이런 걸 숨기고 있었구나……"
     },
     {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "설마, 정말인 건가……?"
     },
     {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "시간 도둑…… 울술라."
     },
     {
@@ -767,24 +951,28 @@
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "avg_npc_1067_1",
+      "isRemote": false,
       "text": "정말 신기하지 않아?"
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "avg_npc_1067_1",
+      "isRemote": false,
       "text": "울술라의 전설에 따르면, 눈앞의 모든 걸 느리게 할 수 있고, 안개 사이로 과거를 엿볼 수 있는 베헤모스 한 마리가 카즈델을 공격했다고 해."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "avg_npc_1067_1",
+      "isRemote": false,
       "text": "결국 영웅 울술라는 시간과 공간의 환상 속에서 길을 잃은 동포들을 구하기 위해 무수한 과거를 여행했지."
     },
     {
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "avg_npc_1067_1",
+      "isRemote": false,
       "text": "무심코 이 이름을 선택한 내가 이 전설을 실제로 목격하게 될 줄 누가 알았겠어."
     },
     {
@@ -794,66 +982,77 @@
       "type": "dialogue",
       "speakerName": "???",
       "speakerId": "avg_npc_1067_1",
+      "isRemote": false,
       "text": "네 뿔은 날이 가면 갈수록 볼만해지네, 이네스. 진짜 살카즈로 착각할 뻔했어."
     },
     {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "울술라."
     },
     {
       "type": "dialogue",
       "speakerName": "울술라",
       "speakerId": "avg_npc_1067_1",
+      "isRemote": false,
       "text": "외드레르, 너 맨프레드 장군을 실망시켜도 정말 괜찮겠어?"
     },
     {
       "type": "dialogue",
       "speakerName": "울술라",
       "speakerId": "avg_npc_1067_1",
+      "isRemote": false,
       "text": "소문을 들었을 때, 난 네가 이네스한테 손을 쓰지 않으리라는 걸 알고 있었어. 하지만 비밀을 지켜야 하는 내 일의 특성상, 런디니움에 있는 널 직접 찾아갈 순 없더라고."
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "흥, 네가 바로 흉터의 상점의 후계자구나? 듣자하니 여기서 해골 운전사가 된 지 꽤 된 것 같던데?"
     },
     {
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "전설에나 나오는 영웅 역할극이나 하는 게 너한테 그렇게 간절했어?"
     },
     {
       "type": "dialogue",
       "speakerName": "울술라",
       "speakerId": "avg_npc_1067_1",
+      "isRemote": false,
       "text": "오래된 것들은 더 이상 사람들의 관심을 끌지 못해."
     },
     {
       "type": "dialogue",
       "speakerName": "울술라",
       "speakerId": "avg_npc_1067_1",
+      "isRemote": false,
       "text": "과거를 그리워하는 바보들이나 계속 이 이름을 사용하고 있지."
     },
     {
       "type": "dialogue",
       "speakerName": "외드레르",
       "speakerId": "avg_4088_hodrer_1",
+      "isRemote": false,
       "text": "그럼 이름을 바꾸면 될 텐데."
     },
     {
       "type": "dialogue",
       "speakerName": "울술라",
       "speakerId": "avg_npc_1067_1",
+      "isRemote": false,
       "text": "그러다 멀리서 달려와 준 옛 친구들이 날 찾지 못하면?"
     },
     {
       "type": "dialogue",
       "speakerName": "울술라",
       "speakerId": "avg_npc_1067_1",
+      "isRemote": false,
       "text": "술이나 한잔 할래?"
     },
     {
@@ -863,18 +1062,21 @@
       "type": "dialogue",
       "speakerName": "이네스",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "너 예전엔 술 입에도 안 댔잖아."
     },
     {
       "type": "dialogue",
       "speakerName": "울술라",
       "speakerId": "avg_npc_1067_1",
+      "isRemote": false,
       "text": "그건 예전이지…… 예전."
     },
     {
       "type": "dialogue",
       "speakerName": "울술라",
       "speakerId": "avg_npc_1067_1",
+      "isRemote": false,
       "text": "그리고 예전엔 너도 나한테 검을 겨누지 않았어, 이네스."
     },
     {

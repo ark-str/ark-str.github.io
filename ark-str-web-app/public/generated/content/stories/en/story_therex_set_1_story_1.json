@@ -6,7 +6,7 @@
   "title": "Scorching-Hot Assault!",
   "storyCode": null,
   "avgTag": "Interlude",
-  "sourcePath": "vendor/ArknightsGamedata/en/gamedata/story/obt/memory/story_therex_1_1.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/en/gamedata/story/obt/memory/story_therex_1_1.txt",
   "sourceHash": "530c9535aa7cd2ac8f9ed3bab6d20fed02b9f5337ed1fd8c50bc1ee00f92c0d0",
   "bodyAvailable": true,
   "blocks": [
@@ -18,6 +18,10 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
       "type": "narration",
       "text": "2:30 P.M. \\ Clear\nRhodes Island Landship, Chief Engineer's Office"
     },
@@ -25,9 +29,14 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_motorroom"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Engineering Operator",
       "speakerId": "avg_npc_088",
+      "isRemote": false,
       "text": "Boss, here's this month's wiring inspection report."
     },
     {
@@ -37,118 +46,141 @@
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "Hmm, hmm... Looks good to me."
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "Eh? This part here is somewhat strange."
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "—There's been similar irregularities from two to six in the morning every day? This is the dorm, right?"
     },
     {
       "type": "dialogue",
       "speakerName": "Engineering Operator",
       "speakerId": "avg_npc_088",
+      "isRemote": false,
       "text": "That's the dorm. Oh, that reminds me. On the first few days, we got reports of a power outage there."
     },
     {
       "type": "dialogue",
       "speakerName": "Engineering Operator",
       "speakerId": "avg_npc_088",
+      "isRemote": false,
       "text": "We checked it out, and the wiring was all fine. The only thing was that the per unit time output was way over the threshold."
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "Achoo—Uh, by the way, doesn't it feel kinda cold in here?"
     },
     {
       "type": "dialogue",
       "speakerName": "Engineering Operator",
       "speakerId": "avg_npc_088",
+      "isRemote": false,
       "text": "A little."
     },
     {
       "type": "dialogue",
       "speakerName": "Engineering Operator",
       "speakerId": "avg_npc_088",
+      "isRemote": false,
       "text": "More accurately, it's been kinda cold in here lately... Maybe we should change the AC temperature?"
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "Nah, let's just bear with it. Gotta conserve energy."
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "Now back on topic, I'm guessing someone's been up to no good and decided to use their unauthorized electronics here."
     },
     {
       "type": "dialogue",
       "speakerName": "Engineering Operator",
       "speakerId": "avg_npc_088",
+      "isRemote": false,
       "text": "Oh, right, Boss. You know THRM-EX? I saw him in the hallway each and every time I did my inspections."
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "Huh? So it's actually the electronics that's up to no good?"
     },
     {
       "type": "dialogue",
       "speakerName": "Engineering Operator",
       "speakerId": "avg_npc_088",
+      "isRemote": false,
       "text": "Should I bring THRM-EX here?"
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "Let's see where he's at now. Operator logs... There we go."
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "Oh, THRM-EX is out on a mission in Siracusa? Who else is there... The Doctor?!"
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "Uh, well, that's unexpected..."
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "Hm..."
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "Oh well, if there's a problem, I'm sure it's just a tiny problem that we don't have to worry about, and if the Doctor's there, I'm sure everything will get sorted out no problem."
     },
     {
       "type": "dialogue",
       "speakerName": "Closure",
       "speakerId": "char_007_closre",
+      "isRemote": false,
       "text": "And once they're back, I'll talk to Kal'tsit and figure out what's up."
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_offce"
     },
     {
       "type": "narration",
@@ -161,12 +193,14 @@
       "type": "dialogue",
       "speakerName": "Pharmaceutical Company Representative",
       "speakerId": "avg_npc_028",
+      "isRemote": false,
       "text": "Thank you very much for coming all the way here. We have no issues with the terms of the contract."
     },
     {
       "type": "dialogue",
       "speakerName": "Pharmaceutical Company Representative",
       "speakerId": "avg_npc_028",
+      "isRemote": false,
       "text": "It has been both an honor and a pleasure to meet you, Doctor of Rhodes Island. Certainly, it was an unexpected surprise. Please send Miss Amiya our gratitude as well."
     },
     {
@@ -182,15 +216,14 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Pharmaceutical Company Representative",
-          "speakerId": "avg_npc_028",
-          "text": "Now if you would give me the medicine's formula and sample—"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Pharmaceutical Company Representative",
+      "speakerId": "avg_npc_028",
+      "isRemote": false,
+      "text": "Now if you would give me the medicine's formula and sample—"
     },
     {
       "type": "choice",
@@ -200,39 +233,42 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "Hmph! Is it finally my time to shine?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Pharmaceutical Company Representative",
-          "speakerId": "avg_npc_028",
-          "text": "D-Did that thing just speak?! Here I thought it was just a menacing-looking machine..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "Born from Raythean Industries's latest and greatest technologies and jointly customized by the genius Closure and the great Mayer, it is I, THRM-EX, the most perfect robot you'll find in this day and age!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "Dear sir, it is no wonder that my capabilities have left you in awe."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "And may I add that my capabilities far exceed your imagination. Feast your eyes on my burning hotness. Don't blink as I give you the performance of a lifetime with my light and heat—"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "Hmph! Is it finally my time to shine?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Pharmaceutical Company Representative",
+      "speakerId": "avg_npc_028",
+      "isRemote": false,
+      "text": "D-Did that thing just speak?! Here I thought it was just a menacing-looking machine..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "Born from Raythean Industries's latest and greatest technologies and jointly customized by the genius Closure and the great Mayer, it is I, THRM-EX, the most perfect robot you'll find in this day and age!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "Dear sir, it is no wonder that my capabilities have left you in awe."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "And may I add that my capabilities far exceed your imagination. Feast your eyes on my burning hotness. Don't blink as I give you the performance of a lifetime with my light and heat—"
     },
     {
       "type": "choice",
@@ -242,15 +278,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "Ah, Doctor, summoned me again, did you? You need my assistance. How may I help you, then? Your wish is my command."
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "Ah, Doctor, summoned me again, did you? You need my assistance. How may I help you, then? Your wish is my command."
     },
     {
       "type": "choice",
@@ -270,39 +305,42 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "Very well! THRM-EX, now severing control link—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Operator Straightedge",
-          "speakerId": "avg_npc_012",
-          "text": "Hey, wait, you didn't have to turn yourself off!!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Operator Straightedge",
-          "speakerId": "avg_npc_012",
-          "text": "Ahem."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Operator Straightedge",
-          "speakerId": "avg_npc_012",
-          "text": "Doctor, the portable Originium floppies are ready."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Pharmaceutical Company Representative",
-          "speakerId": "avg_npc_028",
-          "text": "I take it this is the formula for the medicine?"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "Very well! THRM-EX, now severing control link—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Operator Straightedge",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "Hey, wait, you didn't have to turn yourself off!!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Operator Straightedge",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "Ahem."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Operator Straightedge",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "Doctor, the portable Originium floppies are ready."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Pharmaceutical Company Representative",
+      "speakerId": "avg_npc_028",
+      "isRemote": false,
+      "text": "I take it this is the formula for the medicine?"
     },
     {
       "type": "choice",
@@ -312,15 +350,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "Mmph! Ohhhh!"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "Mmph! Ohhhh!"
     },
     {
       "type": "choice",
@@ -330,30 +367,31 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Pharmaceutical Company Representative",
-          "speakerId": "avg_npc_028",
-          "text": "What a marvelous machine... uh, robot! Rhodes Island really is on another level. Not just its pharmaceuticals, but also its engineering and technological prowess!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "Much appreciated! Your sharp eyes are on another level as well! Your warm compliments will keep me going for the day!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Pharmaceutical Company Representative",
-          "speakerId": "avg_npc_028",
-          "text": "Ha... haha..."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Pharmaceutical Company Representative",
+      "speakerId": "avg_npc_028",
+      "isRemote": false,
+      "text": "What a marvelous machine... uh, robot! Rhodes Island really is on another level. Not just its pharmaceuticals, but also its engineering and technological prowess!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "Much appreciated! Your sharp eyes are on another level as well! Your warm compliments will keep me going for the day!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Pharmaceutical Company Representative",
+      "speakerId": "avg_npc_028",
+      "isRemote": false,
+      "text": "Ha... haha..."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -363,39 +401,42 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Spot",
-          "speakerId": "char_284_spot",
-          "text": "Is it finally over? I'm starting to miss my A6 clowns."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Spot",
-          "speakerId": "char_284_spot",
-          "text": "At least the clowns know how to talk normal, not like these temporary teammates I'm stuck with. They're either quiet as a mouse or don't know when to shut up."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Firewatch",
-          "speakerId": "char_158_milu",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "Mr. Spot, you leaned next to me yesterday to dry your rain-soaked hair. It may only have been ten minutes, but the fact that the distance between us has shortened has ignited my burning passion!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Spot",
-          "speakerId": "char_284_spot",
-          "text": "Ahem."
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Spot",
+      "speakerId": "char_284_spot",
+      "isRemote": false,
+      "text": "Is it finally over? I'm starting to miss my A6 clowns."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Spot",
+      "speakerId": "char_284_spot",
+      "isRemote": false,
+      "text": "At least the clowns know how to talk normal, not like these temporary teammates I'm stuck with. They're either quiet as a mouse or don't know when to shut up."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Firewatch",
+      "speakerId": "char_158_milu",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "Mr. Spot, you leaned next to me yesterday to dry your rain-soaked hair. It may only have been ten minutes, but the fact that the distance between us has shortened has ignited my burning passion!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Spot",
+      "speakerId": "char_284_spot",
+      "isRemote": false,
+      "text": "Ahem."
     },
     {
       "type": "choice",
@@ -405,60 +446,66 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Pharmaceutical Company Representative",
-          "speakerId": "avg_npc_028",
-          "text": "Phew, I didn't expect our meeting to go without a hitch—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Firewatch",
-          "speakerId": "char_158_milu",
-          "text": "Shut up."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Pharmaceutical Company Representative",
-          "speakerId": "avg_npc_028",
-          "text": "Huh?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Spot",
-          "speakerId": "char_284_spot",
-          "text": "Tsk, my friend, you have one real lucky mouth."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Firewatch",
-          "speakerId": "char_158_milu",
-          "text": "Get down!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Operator Straightedge",
-          "speakerId": "avg_npc_012",
-          "text": "W-What's going on? The wall just blew up!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "Ah, a thermal shock! How familiar! But it is no match for my energy output!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "Doctor, since I shielded you, I take it you are safe and sound?"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Pharmaceutical Company Representative",
+      "speakerId": "avg_npc_028",
+      "isRemote": false,
+      "text": "Phew, I didn't expect our meeting to go without a hitch—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Firewatch",
+      "speakerId": "char_158_milu",
+      "isRemote": false,
+      "text": "Shut up."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Pharmaceutical Company Representative",
+      "speakerId": "avg_npc_028",
+      "isRemote": false,
+      "text": "Huh?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Spot",
+      "speakerId": "char_284_spot",
+      "isRemote": false,
+      "text": "Tsk, my friend, you have one real lucky mouth."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Firewatch",
+      "speakerId": "char_158_milu",
+      "isRemote": false,
+      "text": "Get down!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Operator Straightedge",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "W-What's going on? The wall just blew up!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "Ah, a thermal shock! How familiar! But it is no match for my energy output!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "Doctor, since I shielded you, I take it you are safe and sound?"
     },
     {
       "type": "choice",
@@ -473,57 +520,63 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Operator Straightedge",
-          "speakerId": "avg_npc_012",
-          "text": "Judging by the scale of the Originium bomb's explosion, it must've been the local gangsters."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Operator Straightedge",
-          "speakerId": "avg_npc_012",
-          "text": "Well, that's strange. We've been operating here for a while. We have some run-ins with them once in a while, but most of the time, we get along fine. We share some of our medicine with them, after all."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "Heh, I know! They must be after me! Understandable, of course! With my burning passion, there is not a more perfect robot in this world!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "If they got their hands on me, they would never again need to rely on such crude explosives!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Spot",
-          "speakerId": "char_284_spot",
-          "text": "Sometimes I wonder if this guy came out of the same womb as Midnight."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Firewatch",
-          "speakerId": "char_158_milu",
-          "text": "He's probably right."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Spot",
-          "speakerId": "char_284_spot",
-          "text": "Oh?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Firewatch",
-          "speakerId": "char_158_milu",
-          "text": "It's a well-organized and planned-out attack. They must have a clear objective, and they came specifically right at this moment."
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Operator Straightedge",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "Judging by the scale of the Originium bomb's explosion, it must've been the local gangsters."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Operator Straightedge",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "Well, that's strange. We've been operating here for a while. We have some run-ins with them once in a while, but most of the time, we get along fine. We share some of our medicine with them, after all."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "Heh, I know! They must be after me! Understandable, of course! With my burning passion, there is not a more perfect robot in this world!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "If they got their hands on me, they would never again need to rely on such crude explosives!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Spot",
+      "speakerId": "char_284_spot",
+      "isRemote": false,
+      "text": "Sometimes I wonder if this guy came out of the same womb as Midnight."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Firewatch",
+      "speakerId": "char_158_milu",
+      "isRemote": false,
+      "text": "He's probably right."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Spot",
+      "speakerId": "char_284_spot",
+      "isRemote": false,
+      "text": "Oh?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Firewatch",
+      "speakerId": "char_158_milu",
+      "isRemote": false,
+      "text": "It's a well-organized and planned-out attack. They must have a clear objective, and they came specifically right at this moment."
     },
     {
       "type": "choice",
@@ -533,45 +586,49 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Firewatch",
-          "speakerId": "char_158_milu",
-          "text": "Looks like news of this transaction leaked out."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Operator Straightedge",
-          "speakerId": "avg_npc_012",
-          "text": "Firewatch's staring at each and every one of us... kind of creeps me out..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Firewatch",
-          "speakerId": "char_158_milu",
-          "text": "I won't let anyone hurt my friends."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Spot",
-          "speakerId": "char_284_spot",
-          "text": "Hey, speaking of the formula, this representative guy? He passed out."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Spot",
-          "speakerId": "char_284_spot",
-          "text": "What a wimp. He was standing pretty far from the wall. He probably just fainted because he was spooked."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Firewatch",
-          "speakerId": "char_158_milu",
-          "text": "Get yourselves ready. We've got company. Five of them."
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Firewatch",
+      "speakerId": "char_158_milu",
+      "isRemote": false,
+      "text": "Looks like news of this transaction leaked out."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Operator Straightedge",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "Firewatch's staring at each and every one of us... kind of creeps me out..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Firewatch",
+      "speakerId": "char_158_milu",
+      "isRemote": false,
+      "text": "I won't let anyone hurt my friends."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Spot",
+      "speakerId": "char_284_spot",
+      "isRemote": false,
+      "text": "Hey, speaking of the formula, this representative guy? He passed out."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Spot",
+      "speakerId": "char_284_spot",
+      "isRemote": false,
+      "text": "What a wimp. He was standing pretty far from the wall. He probably just fainted because he was spooked."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Firewatch",
+      "speakerId": "char_158_milu",
+      "isRemote": false,
+      "text": "Get yourselves ready. We've got company. Five of them."
     },
     {
       "type": "choice",
@@ -581,15 +638,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "Very well, Doctor! Just leave this to me and my burning passion!"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "Very well, Doctor! Just leave this to me and my burning passion!"
     },
     {
       "type": "choice",
@@ -599,63 +655,73 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Firewatch",
-          "speakerId": "char_158_milu",
-          "text": "Here they come."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "Harrrrgh! Full throttle!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Firewatch",
-          "speakerId": "char_158_milu",
-          "text": "That took care of them."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Spot",
-          "speakerId": "char_284_spot",
-          "text": "Well, if that isn't efficient..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "Ugh... Uhhh... Burn... Burning..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Spot",
-          "speakerId": "char_284_spot",
-          "text": "So that was an eleventh-hour last resort, huh?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Operator Straightedge",
-          "speakerId": "avg_npc_012",
-          "text": "Is THRM-EX okay? I'm not sure I get what he's saying."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "Burning... Hot..."
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Firewatch",
+      "speakerId": "char_158_milu",
+      "isRemote": false,
+      "text": "Here they come."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "Harrrrgh! Full throttle!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_offce"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Firewatch",
+      "speakerId": "char_158_milu",
+      "isRemote": false,
+      "text": "That took care of them."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Spot",
+      "speakerId": "char_284_spot",
+      "isRemote": false,
+      "text": "Well, if that isn't efficient..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "Ugh... Uhhh... Burn... Burning..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Spot",
+      "speakerId": "char_284_spot",
+      "isRemote": false,
+      "text": "So that was an eleventh-hour last resort, huh?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Operator Straightedge",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "Is THRM-EX okay? I'm not sure I get what he's saying."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "Burning... Hot..."
     },
     {
       "type": "choice",
@@ -670,39 +736,42 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Firewatch",
-          "speakerId": "char_158_milu",
-          "text": "We still have more enemies outside."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Spot",
-          "speakerId": "char_284_spot",
-          "text": "Why does that matter? We can handle them."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Firewatch",
-          "speakerId": "char_158_milu",
-          "text": "I can handle them myself."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Spot",
-          "speakerId": "char_284_spot",
-          "text": "Well, look at you... So confident."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Operator Straightedge",
-          "speakerId": "avg_npc_012",
-          "text": "Everyone, there's an exit in the back... This used to be a safehouse before it was an office anyway."
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Firewatch",
+      "speakerId": "char_158_milu",
+      "isRemote": false,
+      "text": "We still have more enemies outside."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Spot",
+      "speakerId": "char_284_spot",
+      "isRemote": false,
+      "text": "Why does that matter? We can handle them."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Firewatch",
+      "speakerId": "char_158_milu",
+      "isRemote": false,
+      "text": "I can handle them myself."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Spot",
+      "speakerId": "char_284_spot",
+      "isRemote": false,
+      "text": "Well, look at you... So confident."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Operator Straightedge",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "Everyone, there's an exit in the back... This used to be a safehouse before it was an office anyway."
     },
     {
       "type": "choice",
@@ -712,21 +781,21 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "Hot..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Operator Straightedge",
-          "speakerId": "avg_npc_012",
-          "text": "What about you, Doctor? Looks like THRM-EX is still freezing up."
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "Hot..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Operator Straightedge",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "What about you, Doctor? Looks like THRM-EX is still freezing up."
     },
     {
       "type": "choice",
@@ -736,21 +805,21 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Operator Straightedge",
-          "speakerId": "avg_npc_012",
-          "text": "Are you sure you'll be fine?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Spot",
-          "speakerId": "char_284_spot",
-          "text": "Come on, get a move on. You heard your order."
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Operator Straightedge",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "Are you sure you'll be fine?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Spot",
+      "speakerId": "char_284_spot",
+      "isRemote": false,
+      "text": "Come on, get a move on. You heard your order."
     },
     {
       "type": "choice",
@@ -760,30 +829,31 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Firewatch",
-          "speakerId": "char_158_milu",
-          "text": "Understood."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mafioso A",
-          "speakerId": "avg_npc_031",
-          "text": "*cough*... Why is it so hot in here? Those demolition morons sure like to overdo it..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mafioso A",
-          "speakerId": "avg_npc_031",
-          "text": "Don't move—Huh? Just one of you in here? You took down five of us by yourself?"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Firewatch",
+      "speakerId": "char_158_milu",
+      "isRemote": false,
+      "text": "Understood."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mafioso A",
+      "speakerId": "avg_npc_031",
+      "isRemote": false,
+      "text": "*cough*... Why is it so hot in here? Those demolition morons sure like to overdo it..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mafioso A",
+      "speakerId": "avg_npc_031",
+      "isRemote": false,
+      "text": "Don't move—Huh? Just one of you in here? You took down five of us by yourself?"
     },
     {
       "type": "choice",
@@ -803,27 +873,28 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mafioso A",
-          "speakerId": "avg_npc_031",
-          "text": "You, you, and you. You three, keep an eye on that one!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mafioso A",
-          "speakerId": "avg_npc_031",
-          "text": "The rest of you, search the house. Remember, we're looking for a few floppies."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mafioso B",
-          "speakerId": "avg_npc_031",
-          "text": "Yo, boss, there's another exit here!"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mafioso A",
+      "speakerId": "avg_npc_031",
+      "isRemote": false,
+      "text": "You, you, and you. You three, keep an eye on that one!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mafioso A",
+      "speakerId": "avg_npc_031",
+      "isRemote": false,
+      "text": "The rest of you, search the house. Remember, we're looking for a few floppies."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mafioso B",
+      "speakerId": "avg_npc_031",
+      "isRemote": false,
+      "text": "Yo, boss, there's another exit here!"
     },
     {
       "type": "choice",
@@ -833,45 +904,49 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mafioso A",
-          "speakerId": "avg_npc_031",
-          "text": "Cazzo! He took it away?!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mafioso B",
-          "speakerId": "avg_npc_031",
-          "text": "Uh, this isn't how we planned for this to go... Should we go after them?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mafioso A",
-          "speakerId": "avg_npc_031",
-          "text": "Go after what?! We're after their formula! If they already have it...! Screw it!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mafioso A",
-          "speakerId": "avg_npc_031",
-          "text": "The formula's gone, but we're bringing something back with us. Look for some medicine or whatever! Now get on it!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "Burning... Hot..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mafioso A",
-          "speakerId": "avg_npc_031",
-          "text": "Huh, what's this fancy thing? It's glittering. Is it made of Originium?"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mafioso A",
+      "speakerId": "avg_npc_031",
+      "isRemote": false,
+      "text": "Cazzo! He took it away?!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mafioso B",
+      "speakerId": "avg_npc_031",
+      "isRemote": false,
+      "text": "Uh, this isn't how we planned for this to go... Should we go after them?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mafioso A",
+      "speakerId": "avg_npc_031",
+      "isRemote": false,
+      "text": "Go after what?! We're after their formula! If they already have it...! Screw it!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mafioso A",
+      "speakerId": "avg_npc_031",
+      "isRemote": false,
+      "text": "The formula's gone, but we're bringing something back with us. Look for some medicine or whatever! Now get on it!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "Burning... Hot..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mafioso A",
+      "speakerId": "avg_npc_031",
+      "isRemote": false,
+      "text": "Huh, what's this fancy thing? It's glittering. Is it made of Originium?"
     },
     {
       "type": "choice",
@@ -881,15 +956,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mafioso A",
-          "speakerId": "avg_npc_031",
-          "text": "Huh? Now how come I ain't never heard of a gizmo like that?"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mafioso A",
+      "speakerId": "avg_npc_031",
+      "isRemote": false,
+      "text": "Huh? Now how come I ain't never heard of a gizmo like that?"
     },
     {
       "type": "choice",
@@ -899,21 +973,21 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Mafioso A",
-          "speakerId": "avg_npc_031",
-          "text": "Well, you got no weapons on you, and you look like you ain't gonna last two seconds in a fight."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mafioso A",
-          "speakerId": "avg_npc_031",
-          "text": "Alright... Show me what this thing's all about."
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mafioso A",
+      "speakerId": "avg_npc_031",
+      "isRemote": false,
+      "text": "Well, you got no weapons on you, and you look like you ain't gonna last two seconds in a fight."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mafioso A",
+      "speakerId": "avg_npc_031",
+      "isRemote": false,
+      "text": "Alright... Show me what this thing's all about."
     },
     {
       "type": "choice",
@@ -923,36 +997,42 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Firewatch",
-          "speakerId": "char_158_milu",
-          "text": "(Aim)"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "Burning hot!!!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "Whoa, Doctor, did all this actually happen?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "When you were in Siracusa, you beat up five mafia guys with just one punch, and then scared ten others shitless with just a few words? Then you used them as a bargaining chip and got us a huge order that's super in our favor?"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Firewatch",
+      "speakerId": "char_158_milu",
+      "isRemote": false,
+      "text": "(Aim)"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "Burning hot!!!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_room_2"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "Whoa, Doctor, did all this actually happen?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "When you were in Siracusa, you beat up five mafia guys with just one punch, and then scared ten others shitless with just a few words? Then you used them as a bargaining chip and got us a huge order that's super in our favor?"
     },
     {
       "type": "choice",
@@ -972,33 +1052,35 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "Oh, don't be so humble, I heard the whole story when Firewatch and the squad reported to Kal'tsit."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "They were working with a local gang to ambush you guys and steal the formula and samples. They really thought they could make off with all that without spending a penny."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "And that would apparently put them in a better negotiating position when they deal with Rhodes Island in the future."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "That's more or less what they were planning, right?"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "Oh, don't be so humble, I heard the whole story when Firewatch and the squad reported to Kal'tsit."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "They were working with a local gang to ambush you guys and steal the formula and samples. They really thought they could make off with all that without spending a penny."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "And that would apparently put them in a better negotiating position when they deal with Rhodes Island in the future."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "That's more or less what they were planning, right?"
     },
     {
       "type": "choice",
@@ -1018,39 +1100,42 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "Well, I should've expected no less, Doctor! Your whole mission turned out like some TV drama. You should talk to Kal'tsit, see if she'll let you go on missions outside some more."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "There's one thing about all this that's kinda strange, though."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "According to the report, 'The Doctor accurately calculated the amount of time it would take for THRM-EX's functions to be fully restored and gave THRM-EX the order to conduct a second round of heat energy Arts attacks at the perfect moment'—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "I crunched the numbers in my head, and THRM-EX shouldn't have completely recovered yet."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "You were going to have another operator attack, am I right?"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "Well, I should've expected no less, Doctor! Your whole mission turned out like some TV drama. You should talk to Kal'tsit, see if she'll let you go on missions outside some more."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "There's one thing about all this that's kinda strange, though."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "According to the report, 'The Doctor accurately calculated the amount of time it would take for THRM-EX's functions to be fully restored and gave THRM-EX the order to conduct a second round of heat energy Arts attacks at the perfect moment'—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "I crunched the numbers in my head, and THRM-EX shouldn't have completely recovered yet."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "You were going to have another operator attack, am I right?"
     },
     {
       "type": "choice",
@@ -1060,8 +1145,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -1071,153 +1155,179 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "Good evening, the most ingenious Master Closure and the most, most radiant Doctor!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "Where's my other 'most?!'"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "The great Mayer is attending to my body as we speak. With your participation, I can feel that burning hotness in me surging!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "Why, hello, Doctor! Would you like me to go over that story of how, through our flawless cooperation at the most treacherous moment, we together defeated the Siracusan hooligans who tried to defile me?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mayer",
-          "speakerId": "char_242_mayer",
-          "text": "Stop, THRM-EX... I've already listened to your story hundreds of times. Granted, I've barely left the workshop for the past few days."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "You can't keep badass rumors under wraps just because you keep your door shut, Mayer. Just like how everyone knows how badass I am."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mayer",
-          "speakerId": "char_242_mayer",
-          "text": "Meeboos."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "H-Hey, no biting! I came here with the Doctor this time, and I sure as hell knocked!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mayer",
-          "speakerId": "char_242_mayer",
-          "text": "—Open THRM-EX's Energy Module Panel."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "Could've told me sooner they weren't here for me..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mayer",
-          "speakerId": "char_242_mayer",
-          "text": "His energy storage looks fine to me."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "Please, my most respected Miss Mayer, a device personally designed by you can't possibly be defective! Look, my overflowing hotness is emanating in all directions from my body!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "So what was the reason you launched the second wave earlier?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "Let me guess... Maybe the weapon energy output logic is faulty?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mayer",
-          "speakerId": "char_242_mayer",
-          "text": "I've already checked before you guys got there. The logic itself is fine."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "Huh, 'itself?' So you mean there are still issues?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mayer",
-          "speakerId": "char_242_mayer",
-          "text": "Mm, I'm not sure if we can really call this a problem. Take a look yourself."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_242_mayer",
-          "text": "Efficiency... improvement? It's only by a few percentage points, but the energy that THRM-EX uses when he attacks has clearly been decreasing."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "What a surprise! That's a great improvement—Mayer, you're so awesome!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mayer",
-          "speakerId": "char_242_mayer",
-          "text": "Stop... not so fast. I didn't implement this change. You know how busy I've been lately, don't you?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "Right, when I asked you to look into refactoring the robot arm automation logic, you even told me you couldn't work it into your schedule."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "Guess I'll just come out and ask, then. THRM-EX, has someone tinkered with you lately?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "A most simple question to answer! Aside from you, the cutest ever Master Closure, and the most intelligent Miss Mayer, I'm of course most intimate with our unbeatable Doctor!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "Doctor, showing an interest in operating platforms and AI, are we?"
-        }
       ]
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_corridor"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "Good evening, the most ingenious Master Closure and the most, most radiant Doctor!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "Where's my other 'most?!'"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "The great Mayer is attending to my body as we speak. With your participation, I can feel that burning hotness in me surging!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "Why, hello, Doctor! Would you like me to go over that story of how, through our flawless cooperation at the most treacherous moment, we together defeated the Siracusan hooligans who tried to defile me?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mayer",
+      "speakerId": "char_242_mayer",
+      "isRemote": false,
+      "text": "Stop, THRM-EX... I've already listened to your story hundreds of times. Granted, I've barely left the workshop for the past few days."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "You can't keep badass rumors under wraps just because you keep your door shut, Mayer. Just like how everyone knows how badass I am."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mayer",
+      "speakerId": "char_242_mayer",
+      "isRemote": false,
+      "text": "Meeboos."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "H-Hey, no biting! I came here with the Doctor this time, and I sure as hell knocked!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mayer",
+      "speakerId": "char_242_mayer",
+      "isRemote": false,
+      "text": "—Open THRM-EX's Energy Module Panel."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "Could've told me sooner they weren't here for me..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mayer",
+      "speakerId": "char_242_mayer",
+      "isRemote": false,
+      "text": "His energy storage looks fine to me."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "Please, my most respected Miss Mayer, a device personally designed by you can't possibly be defective! Look, my overflowing hotness is emanating in all directions from my body!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "So what was the reason you launched the second wave earlier?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "Let me guess... Maybe the weapon energy output logic is faulty?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mayer",
+      "speakerId": "char_242_mayer",
+      "isRemote": false,
+      "text": "I've already checked before you guys got there. The logic itself is fine."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "Huh, 'itself?' So you mean there are still issues?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mayer",
+      "speakerId": "char_242_mayer",
+      "isRemote": false,
+      "text": "Mm, I'm not sure if we can really call this a problem. Take a look yourself."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_242_mayer",
+      "isRemote": false,
+      "text": "Efficiency... improvement? It's only by a few percentage points, but the energy that THRM-EX uses when he attacks has clearly been decreasing."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "What a surprise! That's a great improvement—Mayer, you're so awesome!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mayer",
+      "speakerId": "char_242_mayer",
+      "isRemote": false,
+      "text": "Stop... not so fast. I didn't implement this change. You know how busy I've been lately, don't you?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "Right, when I asked you to look into refactoring the robot arm automation logic, you even told me you couldn't work it into your schedule."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "Guess I'll just come out and ask, then. THRM-EX, has someone tinkered with you lately?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "A most simple question to answer! Aside from you, the cutest ever Master Closure, and the most intelligent Miss Mayer, I'm of course most intimate with our unbeatable Doctor!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "Doctor, showing an interest in operating platforms and AI, are we?"
     },
     {
       "type": "choice",
@@ -1237,87 +1347,98 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "Yeah, I figured it couldn't be you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "I mean, Mayer and I don't get much sleep because we're busy, but you and Kal'tsit seem to have 48 hours to spend in a day."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "Don't worry, Master Closure! You can count on me to ensure the Doctor gets to enjoy a hot bedtime."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "Huh?!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "A hot bedtime..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "I see, so that's what you've been up to this month."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "Rhodes Island is an epoch-making vessel, yet there is one flaw. The temperature inside the dormitories is not warm enough at night!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mayer",
-          "speakerId": "char_242_mayer",
-          "text": "Yeah, apparently that's the case for some operators. Silence talked to me about it too. Said she sometimes wants to grow some feathers while she's sleeping."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "Oh? Is my energy conservation plan affecting everyone's sleep?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "A—Achoo!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "Well, we don't really have a choice. There's more and more people on this ship each day, and there are so many cabins being used at the same time. We need to keep iterating on our energy efficiency, and that ain't an easy job at all."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "I, too, wish to help take that weight off your shoulders, Master Closure. That is why, ever since that night I heard the Doctor sneeze, I made a decision."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "I thought I would share the warmth, the hotness in my body with the Doctor and any other operators who struggle with the coldness!"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "Yeah, I figured it couldn't be you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "I mean, Mayer and I don't get much sleep because we're busy, but you and Kal'tsit seem to have 48 hours to spend in a day."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "Don't worry, Master Closure! You can count on me to ensure the Doctor gets to enjoy a hot bedtime."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "Huh?!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "A hot bedtime..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "I see, so that's what you've been up to this month."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "Rhodes Island is an epoch-making vessel, yet there is one flaw. The temperature inside the dormitories is not warm enough at night!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mayer",
+      "speakerId": "char_242_mayer",
+      "isRemote": false,
+      "text": "Yeah, apparently that's the case for some operators. Silence talked to me about it too. Said she sometimes wants to grow some feathers while she's sleeping."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "Oh? Is my energy conservation plan affecting everyone's sleep?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "A—Achoo!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "Well, we don't really have a choice. There's more and more people on this ship each day, and there are so many cabins being used at the same time. We need to keep iterating on our energy efficiency, and that ain't an easy job at all."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "I, too, wish to help take that weight off your shoulders, Master Closure. That is why, ever since that night I heard the Doctor sneeze, I made a decision."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "I thought I would share the warmth, the hotness in my body with the Doctor and any other operators who struggle with the coldness!"
     },
     {
       "type": "choice",
@@ -1332,81 +1453,91 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "Forgive me, Doctor! I was lacking in experience at the time! I wasn't yet able to manage the difference between the temperature to melt my foes and that to warm my friends!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mayer",
-          "speakerId": "char_242_mayer",
-          "text": "Whoa, Closure and I never implemented space heater logic into you!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "You know, when you jumped like that, you almost sent me flying to the wall..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mayer",
-          "speakerId": "char_242_mayer",
-          "text": "Aren't you excited, Closure? THRM-EX's far exceeded the capabilities we designed for him!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "Yeah, I've been listening."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "He wants to warm the Doctor up, so he keeps using energy Arts every night, and so he needs to recharge often. Energy usage goes through the roof, overloading the wiring, and my conservation plan goes to waste—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "Wait, huh?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "THRM-EX, you changed your energy output logic on your own?!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "My beautiful Master Closure, thank you very much for your passionate embrace! You are right. It wasn't easy, but I remembered that I am an excellent robot forged with your intelligence!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "A little setback—including almost roasting the Doctor alive—is not enough to dampen my spirits. After a period of trial and error, I finally found a way!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "And if I may brag for a moment, if I could give the Doctor and the other operators the warmth that they desired, the hard work would most certainly have paid off."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "Is this... a robot evolving on its own? Even Lancet-2 and Castle-3 haven't come this far!"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "Forgive me, Doctor! I was lacking in experience at the time! I wasn't yet able to manage the difference between the temperature to melt my foes and that to warm my friends!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mayer",
+      "speakerId": "char_242_mayer",
+      "isRemote": false,
+      "text": "Whoa, Closure and I never implemented space heater logic into you!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "You know, when you jumped like that, you almost sent me flying to the wall..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mayer",
+      "speakerId": "char_242_mayer",
+      "isRemote": false,
+      "text": "Aren't you excited, Closure? THRM-EX's far exceeded the capabilities we designed for him!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "Yeah, I've been listening."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "He wants to warm the Doctor up, so he keeps using energy Arts every night, and so he needs to recharge often. Energy usage goes through the roof, overloading the wiring, and my conservation plan goes to waste—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "Wait, huh?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "THRM-EX, you changed your energy output logic on your own?!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "My beautiful Master Closure, thank you very much for your passionate embrace! You are right. It wasn't easy, but I remembered that I am an excellent robot forged with your intelligence!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "A little setback—including almost roasting the Doctor alive—is not enough to dampen my spirits. After a period of trial and error, I finally found a way!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "And if I may brag for a moment, if I could give the Doctor and the other operators the warmth that they desired, the hard work would most certainly have paid off."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "Is this... a robot evolving on its own? Even Lancet-2 and Castle-3 haven't come this far!"
     },
     {
       "type": "choice",
@@ -1416,123 +1547,140 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "Doctor, your guess is exactly on point as always!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "Just as I mentioned, as my provision of heat for you and our operators continued to improve, my understanding of how to control my power has also grown."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "While I was still paralyzed, I could feel that you were in danger."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "My worry for your wellbeing managed to reignite that burning power within my heart, and by the time I regained consciousness, I was already blasting that strike at our enemies!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "Although my moment to shine on the battlefield is still brief, I still wish to serve you to the best of my ability—no, beyond my abilities!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mayer",
-          "speakerId": "char_242_mayer",
-          "text": "Closure, you hear that? This means it was THRM-EX's own will that drove this breakthrough! That was not even a coincidence!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mayer",
-          "speakerId": "char_242_mayer",
-          "text": "I gotta—I gotta get this all recorded!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mayer",
-          "speakerId": "char_242_mayer",
-          "text": "THRM-EX, I want you to help me run some experiments. Is that okay?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "Gladly, my dear Miss Mayer!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mayer",
-          "speakerId": "char_242_mayer",
-          "text": "Meeboos, Meeboos! Bring all my equipment here—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "Mayer."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mayer",
-          "speakerId": "char_242_mayer",
-          "text": "Closure, what are you blocking me for?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mayer",
-          "speakerId": "char_242_mayer",
-          "text": "You're a researcher yourself. This might be a huge breakthrough to your research in smart robots! Aren't you excited?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "Of course I am! Can't you tell?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mayer",
-          "speakerId": "char_242_mayer",
-          "text": "Oh, you're being much quieter. Yeah, I can see that you're super excited."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "Right, but there's one thing you said that I don't really agree with."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mayer",
-          "speakerId": "char_242_mayer",
-          "text": "Hm? What is it?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "——That wasn't a coincidence."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "I think that probably wasn't a coincidence to THRM-EX."
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "Doctor, your guess is exactly on point as always!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "Just as I mentioned, as my provision of heat for you and our operators continued to improve, my understanding of how to control my power has also grown."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "While I was still paralyzed, I could feel that you were in danger."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "My worry for your wellbeing managed to reignite that burning power within my heart, and by the time I regained consciousness, I was already blasting that strike at our enemies!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "Although my moment to shine on the battlefield is still brief, I still wish to serve you to the best of my ability—no, beyond my abilities!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mayer",
+      "speakerId": "char_242_mayer",
+      "isRemote": false,
+      "text": "Closure, you hear that? This means it was THRM-EX's own will that drove this breakthrough! That was not even a coincidence!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mayer",
+      "speakerId": "char_242_mayer",
+      "isRemote": false,
+      "text": "I gotta—I gotta get this all recorded!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mayer",
+      "speakerId": "char_242_mayer",
+      "isRemote": false,
+      "text": "THRM-EX, I want you to help me run some experiments. Is that okay?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "Gladly, my dear Miss Mayer!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mayer",
+      "speakerId": "char_242_mayer",
+      "isRemote": false,
+      "text": "Meeboos, Meeboos! Bring all my equipment here—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "Mayer."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mayer",
+      "speakerId": "char_242_mayer",
+      "isRemote": false,
+      "text": "Closure, what are you blocking me for?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mayer",
+      "speakerId": "char_242_mayer",
+      "isRemote": false,
+      "text": "You're a researcher yourself. This might be a huge breakthrough to your research in smart robots! Aren't you excited?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "Of course I am! Can't you tell?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mayer",
+      "speakerId": "char_242_mayer",
+      "isRemote": false,
+      "text": "Oh, you're being much quieter. Yeah, I can see that you're super excited."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "Right, but there's one thing you said that I don't really agree with."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mayer",
+      "speakerId": "char_242_mayer",
+      "isRemote": false,
+      "text": "Hm? What is it?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "——That wasn't a coincidence."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "I think that probably wasn't a coincidence to THRM-EX."
     },
     {
       "type": "choice",
@@ -1542,72 +1690,80 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "Doctor, are you sure you don't want to give operation platform robotics and AI research a try?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mayer",
-          "speakerId": "char_242_mayer",
-          "text": "Hmm, but didn't you design his personality?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "Well, I did design it, but all I did was define a few basic parameters. I have nothing to do with the information he processes and the decisions he makes after that."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mayer",
-          "speakerId": "char_242_mayer",
-          "text": "So in that case..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "THRM-EX's breakthrough was not because of us, the designers, or any kind of tech. It's what he wanted himself."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "I still remember the very first thing you said to me, Master Closure! 'Your name is THRM-EX, and you must be strong!'"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "THRM-EX",
-          "speakerId": "char_376_therex",
-          "text": "And to me, heat is strength! There's no such thing as a maximum temperature. You can always get hotter! I will forever follow this path that leads me to greater hotness!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mayer",
-          "speakerId": "char_242_mayer",
-          "text": "Whoa, that's some burning enthusiasm."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "Just like that! That's getting myself all fired up too!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Closure",
-          "speakerId": "char_007_closre",
-          "text": "Doctor, Mayer, we'll bear witness to THRM-EX bringing about an even stronger thermal shock!"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "Doctor, are you sure you don't want to give operation platform robotics and AI research a try?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mayer",
+      "speakerId": "char_242_mayer",
+      "isRemote": false,
+      "text": "Hmm, but didn't you design his personality?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "Well, I did design it, but all I did was define a few basic parameters. I have nothing to do with the information he processes and the decisions he makes after that."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mayer",
+      "speakerId": "char_242_mayer",
+      "isRemote": false,
+      "text": "So in that case..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "THRM-EX's breakthrough was not because of us, the designers, or any kind of tech. It's what he wanted himself."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "I still remember the very first thing you said to me, Master Closure! 'Your name is THRM-EX, and you must be strong!'"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "THRM-EX",
+      "speakerId": "char_376_therex",
+      "isRemote": false,
+      "text": "And to me, heat is strength! There's no such thing as a maximum temperature. You can always get hotter! I will forever follow this path that leads me to greater hotness!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mayer",
+      "speakerId": "char_242_mayer",
+      "isRemote": false,
+      "text": "Whoa, that's some burning enthusiasm."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "Just like that! That's getting myself all fired up too!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Closure",
+      "speakerId": "char_007_closre",
+      "isRemote": false,
+      "text": "Doctor, Mayer, we'll bear witness to THRM-EX bringing about an even stronger thermal shock!"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": [

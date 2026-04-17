@@ -6,7 +6,7 @@
   "title": "混战",
   "storyCode": "0-4",
   "avgTag": "行动前",
-  "sourcePath": "vendor/ArknightsGamedata/cn/gamedata/story/obt/main/level_main_00-04_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/cn/gamedata/story/obt/main/level_main_00-04_beg.txt",
   "sourceHash": "1bd7fabbfdc1a59a3ba5de41837778d91efaf270e584236b7cdb7001e7608d51",
   "bodyAvailable": true,
   "blocks": [
@@ -15,21 +15,28 @@
       "text": "第三关（前）"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_cher_5"
+    },
+    {
       "type": "dialogue",
       "speakerName": "杜宾",
       "speakerId": "char_130_doberm",
+      "isRemote": false,
       "text": "Ace！"
     },
     {
       "type": "dialogue",
       "speakerName": "Ace",
       "speakerId": "char_014_riope",
+      "isRemote": false,
       "text": "看来，你们都平安无事。"
     },
     {
       "type": "dialogue",
       "speakerName": "杜宾",
       "speakerId": "char_130_doberm",
+      "isRemote": false,
       "text": "这里还没到汇合点......怎么只有你一个人？"
     },
     {
@@ -39,6 +46,7 @@
       "type": "dialogue",
       "speakerName": "整合运动成员",
       "speakerId": "char_1002_nsabr",
+      "isRemote": false,
       "text": "他们就是那些从核心区出逃的人！别放他们走！"
     },
     {
@@ -48,24 +56,28 @@
       "type": "dialogue",
       "speakerName": "杜宾",
       "speakerId": "char_130_doberm",
+      "isRemote": false,
       "text": "呿，穷追不舍！"
     },
     {
       "type": "dialogue",
       "speakerName": "杜宾",
       "speakerId": "char_130_doberm",
+      "isRemote": false,
       "text": "E2小队，应敌——"
     },
     {
       "type": "dialogue",
       "speakerName": "Ace",
       "speakerId": "char_014_riope",
+      "isRemote": false,
       "text": "杜宾，不要恋战，优先后撤！"
     },
     {
       "type": "dialogue",
       "speakerName": "Ace",
       "speakerId": "char_014_riope",
+      "isRemote": false,
       "text": "阿米娅，Dr.{@nickname}！快！"
     },
     {
@@ -75,18 +87,21 @@
       "type": "dialogue",
       "speakerName": "杜宾",
       "speakerId": "char_130_doberm",
+      "isRemote": false,
       "text": "这里也不安全。"
     },
     {
       "type": "dialogue",
       "speakerName": "Ace",
       "speakerId": "char_014_riope",
+      "isRemote": false,
       "text": "是的，我们还要继续向下一个汇合点移动。"
     },
     {
       "type": "dialogue",
       "speakerName": "杜宾",
       "speakerId": "char_130_doberm",
+      "isRemote": false,
       "text": "你的小队呢？"
     },
     {
@@ -96,24 +111,28 @@
       "type": "dialogue",
       "speakerName": "整合运动成员",
       "speakerId": "char_1002_nsabr",
+      "isRemote": false,
       "text": "藏到哪去了？把他们找出来！"
     },
     {
       "type": "dialogue",
       "speakerName": "杜宾",
       "speakerId": "char_130_doberm",
+      "isRemote": false,
       "text": "又来了吗！"
     },
     {
       "type": "dialogue",
       "speakerName": "Ace",
       "speakerId": "char_014_riope",
+      "isRemote": false,
       "text": "Dr.{@nickname}，请下命令吧。"
     },
     {
       "type": "dialogue",
       "speakerName": "Ace",
       "speakerId": "char_014_riope",
+      "isRemote": false,
       "text": "就像以前那样。"
     },
     {
@@ -124,120 +143,136 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "阿米娅",
-          "speakerId": "char_002_amiya",
-          "text": "啊，Ace......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米娅",
-          "speakerId": "char_002_amiya",
-          "text": "其实有些，小小的变故。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米娅",
-          "speakerId": "char_002_amiya",
-          "text": "博士......意外失去了记忆。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "......原来如此。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米娅",
-          "speakerId": "char_002_amiya",
-          "text": "抱歉，Ace......事情和以前相比，有不小的区别。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "是吗。你没必要向我道歉。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "博士的指挥能力，有没有因为失忆受到影响？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米娅",
-          "speakerId": "char_002_amiya",
-          "text": "......和以前一样。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米娅",
-          "speakerId": "char_002_amiya",
-          "text": "博士的决策依旧十分可靠，我保证。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "那就好。我听从博士的指挥。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "失去了的东西是可以找回来的。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "眼下有更棘手的问题等着我们去解决。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "整合运动成员",
-          "speakerId": "char_1002_nsabr",
-          "text": "他们在这儿！快，快攻击！！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "杜宾",
-          "speakerId": "char_130_doberm",
-          "text": "聊天还没结束？我已经开始战斗了！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "Dr.{@nickname}，请下命令吧。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "整合运动成员",
-          "speakerId": "char_1002_nsabr",
-          "text": "放，把那些畜生放出来，让他们尝尝被撕咬的滋味！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "杜宾",
-          "speakerId": "char_130_doberm",
-          "text": "博士！Ace！敌人近在眼前了！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "——"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米娅",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "啊，Ace......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米娅",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "其实有些，小小的变故。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米娅",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "博士......意外失去了记忆。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "......原来如此。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米娅",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "抱歉，Ace......事情和以前相比，有不小的区别。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "是吗。你没必要向我道歉。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "博士的指挥能力，有没有因为失忆受到影响？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米娅",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "......和以前一样。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米娅",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "博士的决策依旧十分可靠，我保证。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "那就好。我听从博士的指挥。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "失去了的东西是可以找回来的。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "眼下有更棘手的问题等着我们去解决。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "整合运动成员",
+      "speakerId": "char_1002_nsabr",
+      "isRemote": false,
+      "text": "他们在这儿！快，快攻击！！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜宾",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "聊天还没结束？我已经开始战斗了！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "Dr.{@nickname}，请下命令吧。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "整合运动成员",
+      "speakerId": "char_1002_nsabr",
+      "isRemote": false,
+      "text": "放，把那些畜生放出来，让他们尝尝被撕咬的滋味！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜宾",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "博士！Ace！敌人近在眼前了！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "——"
     },
     {
       "type": "choice",
@@ -257,105 +292,118 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "明白。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "E3小队！支援杜宾！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "整合运动成员",
-          "speakerId": "char_1002_nsabr",
-          "text": "埋伏？！！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "杜宾",
-          "speakerId": "char_130_doberm",
-          "text": "E3小队......一直隐藏着行踪，就是等着和我们配合，夹击敌人吗。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "在通讯受到干扰的情况下，小队应该在汇合点附近行动，这样，即使是我或者侦查干员发生了意外......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "整体的撤退计划，依然能够正常实施。这是我的判断。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "杜宾",
-          "speakerId": "char_130_doberm",
-          "text": "也就是说，Ace你把小队留在汇合点，一个人......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "毕竟最重要的，是去除汇合点周围的威胁。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "优先确认你们的状况是一种冒险。我不能带上整个小队一起。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "小队存在的目的，本来就是为了让战术更有效，而不是固步自封，成为拖累。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "杜宾",
-          "speakerId": "char_130_doberm",
-          "text": "哈。接下来，用实战去解决了整合运动再说吧！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "阿米娅，拜托你。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "阿米娅",
-          "speakerId": "char_002_amiya",
-          "text": "知道了！我会辅佐博士，通过法术支援你们的！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "终于......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ace",
-          "speakerId": "char_014_riope",
-          "text": "Dr.{@nickname}，请你，指挥罗德岛。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "明白。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "E3小队！支援杜宾！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "整合运动成员",
+      "speakerId": "char_1002_nsabr",
+      "isRemote": false,
+      "text": "埋伏？！！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜宾",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "E3小队......一直隐藏着行踪，就是等着和我们配合，夹击敌人吗。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "在通讯受到干扰的情况下，小队应该在汇合点附近行动，这样，即使是我或者侦查干员发生了意外......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "整体的撤退计划，依然能够正常实施。这是我的判断。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜宾",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "也就是说，Ace你把小队留在汇合点，一个人......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "毕竟最重要的，是去除汇合点周围的威胁。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "优先确认你们的状况是一种冒险。我不能带上整个小队一起。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "小队存在的目的，本来就是为了让战术更有效，而不是固步自封，成为拖累。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "杜宾",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "哈。接下来，用实战去解决了整合运动再说吧！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "阿米娅，拜托你。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "阿米娅",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "知道了！我会辅佐博士，通过法术支援你们的！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "终于......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ace",
+      "speakerId": "char_014_riope",
+      "isRemote": false,
+      "text": "Dr.{@nickname}，请你，指挥罗德岛。"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": [

@@ -6,7 +6,7 @@
   "title": "Tactical Blockage",
   "storyCode": "TR-11",
   "avgTag": "Before Operation",
-  "sourcePath": "vendor/ArknightsGamedata/en/gamedata/story/obt/main/level_main_02-01_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/en/gamedata/story/obt/main/level_main_02-01_beg.txt",
   "sourceHash": "1e19cc69f0a4dbadd85f128745cfb5b68be41fda3f4d7a4f4998af4fe76d5668",
   "bodyAvailable": true,
   "blocks": [
@@ -21,51 +21,63 @@
       "type": "dialogue",
       "speakerName": "PRTS",
       "speakerId": null,
+      "isRemote": false,
       "text": "Good morning, Dr. {@nickname}. You have currently been sleeping for 99999----"
     },
     {
       "type": "dialogue",
       "speakerName": "PRTS",
       "speakerId": null,
+      "isRemote": false,
       "text": "----9999 hours."
     },
     {
       "type": "dialogue",
       "speakerName": "PRTS",
       "speakerId": null,
+      "isRemote": false,
       "text": "Although your reluctance to leave bed is not beyond reason, your presence is urgently needed at the operations command room."
     },
     {
       "type": "dialogue",
       "speakerName": "PRTS",
       "speakerId": null,
+      "isRemote": false,
       "text": "Furthermore, here is some medical advice from Dr. Kal'tsit: Please keep the windows open to maintain a source of fresh air, and spend some time on the deck to maintain healthy levels of Vitamin D."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_bridge"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Amiya",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "Ah, Doctor! Good morning."
     },
     {
       "type": "dialogue",
       "speakerName": "Dobermann",
       "speakerId": "char_130_doberm",
+      "isRemote": false,
       "text": "So you made it, Dr. {@nickname}."
     },
     {
       "type": "dialogue",
       "speakerName": "Amiya",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "Doctor, are you feeling better now?"
     },
     {
       "type": "dialogue",
       "speakerName": "Amiya",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "You looked like you were still in pain and and couldn't move around well yesterday."
     },
     {
@@ -76,138 +88,161 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "I'm perfectly fine and full of energy today!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "After all, we still have other missions to take care of..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "So the sooner we can start preparing, the better. Doctor, you should get used to having to shift gears quickly here."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Dobermann",
-          "speakerId": "char_130_doberm",
-          "text": "Doctor,"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Dobermann",
-          "speakerId": "char_130_doberm",
-          "text": "Even though we sustained heavy losses in Chernobog, we gained a lot of information about Reunion and, more importantly, got you out alive."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Dobermann",
-          "speakerId": "char_130_doberm",
-          "text": "Based on the negotiations we had yesterday, the closest nomadic city to us, Lungmen, has offered us a cooperation pact and agreed to exchange information with us."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Dobermann",
-          "speakerId": "char_130_doberm",
-          "text": "We have some evidence that Reunion might be targeting Lungmen next."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Dobermann",
-          "speakerId": "char_130_doberm",
-          "text": "We'll have to wait for Dr. Kal'tsit's permission first before we can get the rest of the information. She's still stationed within Lungmen."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Lungmen has granted us permission to temporary camp near the city. They've also agreed to compensate a portion of our losses and expenditures during the operation."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "In exchanges, Rhodes Island is expected to help defend the city's outskirts."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "But the reason why I called for you so early is..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Dobermann",
-          "speakerId": "char_130_doberm",
-          "text": "Let me explain it, Amiya."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Dobermann",
-          "speakerId": "char_130_doberm",
-          "text": "Last night, we discovered another wave of Chernobog survivors making their way towards Lungmen. They're expected to get there in the afternoon."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Dobermann",
-          "speakerId": "char_130_doberm",
-          "text": "We'll be expected to safeguard the outskirts of District 5 just like the last few days. Only this time, there might be more Reunion members mixed into the group."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Dobermann",
-          "speakerId": "char_130_doberm",
-          "text": "Because the situation is a bit different, we'll need to discuss some new tactics with you before beginning the operation."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Anyway, Doctor, there's a lot to get through today, so..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Let's do our best!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Dobermann",
-          "speakerId": "char_130_doberm",
-          "text": "In any case..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Dobermann",
-          "speakerId": "char_130_doberm",
-          "text": "Both of you, please complete your combat preparations. Doctor, once you've decided on your squad assignments, please let the operators know so that they also have time to prepare."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Dobermann",
-          "speakerId": "char_130_doberm",
-          "text": "We'll set out 15 minutes after you finish your drills."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Dobermann",
-          "speakerId": "char_130_doberm",
-          "text": "Oh, and make sure you're not late this time."
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "I'm perfectly fine and full of energy today!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "After all, we still have other missions to take care of..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "So the sooner we can start preparing, the better. Doctor, you should get used to having to shift gears quickly here."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Dobermann",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "Doctor,"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Dobermann",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "Even though we sustained heavy losses in Chernobog, we gained a lot of information about Reunion and, more importantly, got you out alive."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Dobermann",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "Based on the negotiations we had yesterday, the closest nomadic city to us, Lungmen, has offered us a cooperation pact and agreed to exchange information with us."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Dobermann",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "We have some evidence that Reunion might be targeting Lungmen next."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Dobermann",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "We'll have to wait for Dr. Kal'tsit's permission first before we can get the rest of the information. She's still stationed within Lungmen."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Lungmen has granted us permission to temporary camp near the city. They've also agreed to compensate a portion of our losses and expenditures during the operation."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "In exchanges, Rhodes Island is expected to help defend the city's outskirts."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "But the reason why I called for you so early is..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Dobermann",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "Let me explain it, Amiya."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Dobermann",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "Last night, we discovered another wave of Chernobog survivors making their way towards Lungmen. They're expected to get there in the afternoon."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Dobermann",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "We'll be expected to safeguard the outskirts of District 5 just like the last few days. Only this time, there might be more Reunion members mixed into the group."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Dobermann",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "Because the situation is a bit different, we'll need to discuss some new tactics with you before beginning the operation."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Anyway, Doctor, there's a lot to get through today, so..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Let's do our best!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Dobermann",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "In any case..."
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_0_rhodes3"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Dobermann",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "Both of you, please complete your combat preparations. Doctor, once you've decided on your squad assignments, please let the operators know so that they also have time to prepare."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Dobermann",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "We'll set out 15 minutes after you finish your drills."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Dobermann",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "Oh, and make sure you're not late this time."
     }
   ],
   "observedOperators": [

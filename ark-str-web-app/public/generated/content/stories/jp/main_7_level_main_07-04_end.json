@@ -6,7 +6,7 @@
   "title": "共闘の誓い-2",
   "storyCode": "7-5",
   "avgTag": "戦闘後",
-  "sourcePath": "vendor/ArknightsGamedata/jp/gamedata/story/obt/main/level_main_07-04_end.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/jp/gamedata/story/obt/main/level_main_07-04_end.txt",
   "sourceHash": "0d6a63f1741ffdd3557b197166d3098c6c83ad081220af6f30fc18cde433f3e9",
   "bodyAvailable": true,
   "blocks": [
@@ -18,6 +18,10 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_laccolith"
+    },
+    {
       "type": "choice",
       "options": [
         {
@@ -25,15 +29,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "その通りだ。状況は逼迫している。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "その通りだ。状況は逼迫している。"
     },
     {
       "type": "choice",
@@ -43,39 +46,42 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "えっと……そうする場合もありますが。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "今はこの中枢区画は移動中ですから、下層の基礎構造部分に入るのは困難です。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "砂地で移動都市が通りかかるのを待っていたら、相対速度的にも高度的にも、かなりの行動制限を受ける。作戦遂行は実質不可能だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "移動都市下層部のメンテナンス口やダストシュートをこじ開けられなければ、用意したエサやカモフラージュが無意味になる。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "我々の五個小隊は、砂嵐を隠れ蓑にして中枢区画に接近、最終的にその下層に位置する工業エリアに侵入する。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "えっと……そうする場合もありますが。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "今はこの中枢区画は移動中ですから、下層の基礎構造部分に入るのは困難です。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "砂地で移動都市が通りかかるのを待っていたら、相対速度的にも高度的にも、かなりの行動制限を受ける。作戦遂行は実質不可能だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "移動都市下層部のメンテナンス口やダストシュートをこじ開けられなければ、用意したエサやカモフラージュが無意味になる。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "我々の五個小隊は、砂嵐を隠れ蓑にして中枢区画に接近、最終的にその下層に位置する工業エリアに侵入する。"
     },
     {
       "type": "choice",
@@ -85,51 +91,56 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "ウルサスの地方官僚相手に勇み足を踏むつもりはない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "容易に動向を察知された挙げ句、遣わされた高速軍艦でロドスごと蹂躙されるのはご免だからな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "この辺境の地でそんなことが起きても、メディアで報道されることはない。ただ資産家や保険会社が、裏で入手した被害者の名前を顧客リストから消し、宙に浮いた財産をそっと金庫にしまうだけだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "誰も口を開くことはない。ウルサスがそれを望まないからだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "中立の立場はロドスに自由を保証しているが、その代わり、我々はどこかの政治勢力を後ろ盾にすることはできない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "水面下の行動は我々の基本的生存戦略だ。君を救出する際も同様の状況だった。憶えていないだろうがね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "作戦規模の大小に関わらず、ロドスが同時派遣可能な最大戦力は、5個小隊。それが我々の戦略を成り立たせる必須条件だ。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "ウルサスの地方官僚相手に勇み足を踏むつもりはない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "容易に動向を察知された挙げ句、遣わされた高速軍艦でロドスごと蹂躙されるのはご免だからな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "この辺境の地でそんなことが起きても、メディアで報道されることはない。ただ資産家や保険会社が、裏で入手した被害者の名前を顧客リストから消し、宙に浮いた財産をそっと金庫にしまうだけだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "誰も口を開くことはない。ウルサスがそれを望まないからだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "中立の立場はロドスに自由を保証しているが、その代わり、我々はどこかの政治勢力を後ろ盾にすることはできない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "水面下の行動は我々の基本的生存戦略だ。君を救出する際も同様の状況だった。憶えていないだろうがね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "作戦規模の大小に関わらず、ロドスが同時派遣可能な最大戦力は、5個小隊。それが我々の戦略を成り立たせる必須条件だ。"
     },
     {
       "type": "choice",
@@ -149,21 +160,21 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "龍門ほどの規模の都市でも、本気を出せば我々を潰すのは容易い。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "君も目にしたと思うが、近衛局や、他国のエリート兵団にも劣らぬ特殊部隊の実力は一介の製薬会社とは比べ物にもならない。我々は自分たちで思うほど強い存在ではないのだよ。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "龍門ほどの規模の都市でも、本気を出せば我々を潰すのは容易い。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "君も目にしたと思うが、近衛局や、他国のエリート兵団にも劣らぬ特殊部隊の実力は一介の製薬会社とは比べ物にもならない。我々は自分たちで思うほど強い存在ではないのだよ。"
     },
     {
       "type": "choice",
@@ -173,39 +184,42 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "この陰謀には既に感染者が巻き込まれているからだ。ロドスが戦う理由はその一点に尽きる。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "今ロドスは龍門を離れ、時速15キロで次の目的地へ航行中だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "その間、我々は荒野に数週間留まることになるかもしれない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "ロドスの通信員と一部の限られた船以外、誰も我々との交信はできない。全ての視線を避ける移動ルートを選択しているのだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "もし龍門が約束を破るようなことになったとしても、我々を見つけ出すのは容易ではあるまい。邪魔をされる前に中枢区画を止める。そのための本作戦だ。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "この陰謀には既に感染者が巻き込まれているからだ。ロドスが戦う理由はその一点に尽きる。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "今ロドスは龍門を離れ、時速15キロで次の目的地へ航行中だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "その間、我々は荒野に数週間留まることになるかもしれない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "ロドスの通信員と一部の限られた船以外、誰も我々との交信はできない。全ての視線を避ける移動ルートを選択しているのだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "もし龍門が約束を破るようなことになったとしても、我々を見つけ出すのは容易ではあるまい。邪魔をされる前に中枢区画を止める。そのための本作戦だ。"
     },
     {
       "type": "choice",
@@ -215,8 +229,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -236,63 +249,70 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "そうだ。他にも策が必要だ。より効果的で、かつ致命的な——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "…………"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "ドクターもケルシー先生も、すごく悪い顔になっていますよ……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "私は作戦内容を理解してるつもりですが、そんな邪悪な笑みを見せられると……この作戦が悪魔じみた計画に思えてきます……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "待てアーミヤ……私が笑っただって？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "ええ、笑ってました。口角は上がってませんでしたが、私にはそう感じられました。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "何だ、そういうことか。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "……でも、良かったです。二人が仲良くなれそうで。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "いや。言っておくが、私は友好関係を築くつもりはない。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "そうだ。他にも策が必要だ。より効果的で、かつ致命的な——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "…………"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ドクターもケルシー先生も、すごく悪い顔になっていますよ……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "私は作戦内容を理解してるつもりですが、そんな邪悪な笑みを見せられると……この作戦が悪魔じみた計画に思えてきます……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "待てアーミヤ……私が笑っただって？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ええ、笑ってました。口角は上がってませんでしたが、私にはそう感じられました。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "何だ、そういうことか。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "……でも、良かったです。二人が仲良くなれそうで。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "いや。言っておくが、私は友好関係を築くつもりはない。"
     },
     {
       "type": "choice",
@@ -312,315 +332,371 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "えぇ〜……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "ちなみにこの五つの小隊を率いるのは、私とアーミヤ、それと他三名のエリートオペレーターだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "偵察小隊が一つ、作戦小隊が三つ、残る一つは特殊工作小隊だ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "そういえば……隊長の中に一人、作戦開始前に君に会っておいてもらいたい人物がいる——"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "ロスモンティス！　待って！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "あっ……ブレイズ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "ひどい怪我なのに、なんで来たの？　早く戻って。安静にしてて。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "今回の作戦に参加するの？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "うん。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "代わりの人を探してくるよ。そうだ、Miseryに行かせよう、君より市街戦が得意だし。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "彼なら大丈夫でしょ。代わらせるよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "私に行かせたくないの？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "そう。君が行くべきじゃないの。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "ブレイズ、なんだか変。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "君の今までの任務とは違うんだよ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "死ぬから？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "何……言ってるの！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "そんな……死ぬなんてそんな簡単に言うもんじゃない！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "君はまだ幼いんだから。こんな危険な任務に行くべきじゃない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "でもアーミヤも行くよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "だってあの子は……！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "あの子は……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "アーミヤちゃんは……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "アーミヤも私と同じ、感染者でオペレーター、でしょ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "それと、ログを確認したの。AceとScoutは二人ともチェルノボーグに向かったのが最後の記録……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "戻ってきてないということは、二人はもう死んだんでしょ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "行ってみたいの。行って自分の目で確かめたい。レユニオンのボスがどういう人なのか、そこで誰が何をしたのか。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "AceとScoutの身に何が起きたのかを、知りたい……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "ロスモンティス、そんなことは……憶えてなくてもいいんだよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "……ブレイズ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "ああもう、何言ってんだか……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "違うの。ごめんね、そんなふうに言うべきじゃなかった。この口が悪いんだ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "でも彼らの死は……それは……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "ブレイズ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "……私が悪かった。嬉しいことも悲しいことも、みんな記憶の一部だよね。憶えなくていい記憶なんてないよね。ごめん。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "ブレイズ、やっぱり変。言ってることが支離滅裂だよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "でも……どうしてわざわざ思い出そうとするの？　君には苦しんで欲しくないんだ。君なら……その記憶を手放すこともできるのに。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "そのまま手放して、二度と振り返らなくてもいいのに……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "振り返らないのなら、記憶に意味がなくなる。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "それは忘れるってことでしょ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "私は忘れたりしない。誰の死でも、絶対に忘れない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "ハハ……そうだね。君も私と同じ、ロドスのエリートオペレーターなんだよね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "君の代わりに行けないなんて、ほんと……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "くっ、ううっ……グスッ……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "どうしたの？　傷が痛むの？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "……大丈夫。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "送ってくよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "まったく……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ブレイズ",
-          "speakerId": "char_017_homura",
-          "text": "ロスモンティス……アーミヤちゃんと、無事で帰ってきてね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "うん。わかった。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "えぇ〜……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "ちなみにこの五つの小隊を率いるのは、私とアーミヤ、それと他三名のエリートオペレーターだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "偵察小隊が一つ、作戦小隊が三つ、残る一つは特殊工作小隊だ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "そういえば……隊長の中に一人、作戦開始前に君に会っておいてもらいたい人物がいる——"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_bridge"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "ロスモンティス！　待って！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "あっ……ブレイズ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "ひどい怪我なのに、なんで来たの？　早く戻って。安静にしてて。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "今回の作戦に参加するの？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "うん。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "代わりの人を探してくるよ。そうだ、Miseryに行かせよう、君より市街戦が得意だし。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "彼なら大丈夫でしょ。代わらせるよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "私に行かせたくないの？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "そう。君が行くべきじゃないの。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "ブレイズ、なんだか変。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "君の今までの任務とは違うんだよ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "死ぬから？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "何……言ってるの！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "そんな……死ぬなんてそんな簡単に言うもんじゃない！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "君はまだ幼いんだから。こんな危険な任務に行くべきじゃない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "でもアーミヤも行くよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "だってあの子は……！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "あの子は……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "アーミヤちゃんは……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "アーミヤも私と同じ、感染者でオペレーター、でしょ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "それと、ログを確認したの。AceとScoutは二人ともチェルノボーグに向かったのが最後の記録……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "戻ってきてないということは、二人はもう死んだんでしょ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "行ってみたいの。行って自分の目で確かめたい。レユニオンのボスがどういう人なのか、そこで誰が何をしたのか。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "AceとScoutの身に何が起きたのかを、知りたい……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "ロスモンティス、そんなことは……憶えてなくてもいいんだよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "……ブレイズ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "ああもう、何言ってんだか……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "違うの。ごめんね、そんなふうに言うべきじゃなかった。この口が悪いんだ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "でも彼らの死は……それは……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "ブレイズ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "……私が悪かった。嬉しいことも悲しいことも、みんな記憶の一部だよね。憶えなくていい記憶なんてないよね。ごめん。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "ブレイズ、やっぱり変。言ってることが支離滅裂だよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "でも……どうしてわざわざ思い出そうとするの？　君には苦しんで欲しくないんだ。君なら……その記憶を手放すこともできるのに。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "そのまま手放して、二度と振り返らなくてもいいのに……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "振り返らないのなら、記憶に意味がなくなる。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "それは忘れるってことでしょ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "私は忘れたりしない。誰の死でも、絶対に忘れない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "ハハ……そうだね。君も私と同じ、ロドスのエリートオペレーターなんだよね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "君の代わりに行けないなんて、ほんと……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "くっ、ううっ……グスッ……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "どうしたの？　傷が痛むの？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "……大丈夫。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "送ってくよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "まったく……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ブレイズ",
+      "speakerId": "char_017_homura",
+      "isRemote": false,
+      "text": "ロスモンティス……アーミヤちゃんと、無事で帰ってきてね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "うん。わかった。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_laccolith"
     },
     {
       "type": "choice",
@@ -630,75 +706,84 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "Dr.{@nickname}……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "エリートオペレーターたちは、理由はそれぞれですが、みんな自分自身の努力も才能もロドスのために捧げてきました。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "戦場でのエリートオペレーターには、場合によっては自身の判断で戦術の運用方法を決定する権限があり、隊員たちは彼らを全力でサポートします。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "エリートオペレーターたちは、普通の人から見れば特別な存在かもしれません。でも彼らはみんな……本当の彼らは私たちの想像している姿と一緒とは限らないんです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "ブレイズさんもそうです。彼女に関する噂はたくさんありますが、実はいろんな人たちによってかなり脚色されています。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "同じように……というわけではありませんが、彼女については、みんな持つ印象が違うんです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "ドクターなら、彼女……ロスモンティスさんと彼女自身の選択を、少しずつでも理解していけるはずです……きっと。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "…………"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "その反応を見る限りだと、もう会っているみたいだな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "ええっ？　そうなんですか……？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "じゃあ……もう大丈夫ですね。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Dr.{@nickname}……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "エリートオペレーターたちは、理由はそれぞれですが、みんな自分自身の努力も才能もロドスのために捧げてきました。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "戦場でのエリートオペレーターには、場合によっては自身の判断で戦術の運用方法を決定する権限があり、隊員たちは彼らを全力でサポートします。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "エリートオペレーターたちは、普通の人から見れば特別な存在かもしれません。でも彼らはみんな……本当の彼らは私たちの想像している姿と一緒とは限らないんです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ブレイズさんもそうです。彼女に関する噂はたくさんありますが、実はいろんな人たちによってかなり脚色されています。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "同じように……というわけではありませんが、彼女については、みんな持つ印象が違うんです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ドクターなら、彼女……ロスモンティスさんと彼女自身の選択を、少しずつでも理解していけるはずです……きっと。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "…………"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "その反応を見る限りだと、もう会っているみたいだな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ええっ？　そうなんですか……？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "じゃあ……もう大丈夫ですね。"
     },
     {
       "type": "choice",
@@ -708,21 +793,21 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "大体のポイントはこんな感じです。でも実際……必ずしも計画通りに事が運ぶとは限りませんから。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "重要なのは行動だ。計画はあくまで机上の空論に過ぎない。行動中の予期せぬ出来事が計画を覆すことは大いにあり得る。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "大体のポイントはこんな感じです。でも実際……必ずしも計画通りに事が運ぶとは限りませんから。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "重要なのは行動だ。計画はあくまで机上の空論に過ぎない。行動中の予期せぬ出来事が計画を覆すことは大いにあり得る。"
     },
     {
       "type": "choice",
@@ -732,336 +817,400 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "エンジニア",
-          "speakerId": "avg_npc_012",
-          "text": "しまった……！　まずいぞ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エンジニア",
-          "speakerId": "avg_npc_012",
-          "text": "砂塵の密度が低い。この太陽光の角度だと装置を完全に隠せない！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エンジニア",
-          "speakerId": "avg_npc_012",
-          "text": "ブリッジから見下ろせば、全力稼働し始める前に丸見えだ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "オペレーター",
-          "speakerId": "char_016_medic",
-          "text": "だがこれ以上遮蔽物を増やすわけにはいかない。空気の流れを邪魔したら、砂嵐を起こすほどの上昇気流が作れなくなる！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エンジニア",
-          "speakerId": "avg_npc_012",
-          "text": "どうする、更に位置を下げるか？　間に合わないかもしれないぞ！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "……私に任せてくれ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "ファイヤーウォッチ、私が行動を開始したら、実際の効果を観測しつつ、調整する方向を教えてくれ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ファイヤーウォッチ",
-          "speakerId": "char_158_milu",
-          "text": "ニアール？　何をするつもりだ——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "光の角度を変える。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "この大地に広がる苦難を減らすためであれば……たとえ太陽の光だろうと、少しの間、力を貸してくれると信じたい。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エリジウム",
-          "speakerId": "char_401_elysm",
-          "text": "あれ？　砂丘の方にいるのはニアールさん？　まだ撤退しないの？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エリジウム",
-          "speakerId": "char_401_elysm",
-          "text": "何してるんだろう……考え事？　あっ！　ポーズとってる！　あんなところで体操かな……でもどうして？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エリジウム",
-          "speakerId": "char_401_elysm",
-          "text": "……あれ？　ニアールさんの体が光り出した……ちょっと、えっ、何コレすっごい眩しい！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エリジウム",
-          "speakerId": "char_401_elysm",
-          "text": "え？　ちょっと誰……ああ、ありがとう隊長……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エリジウム",
-          "speakerId": "char_401_elysm",
-          "text": "僕の目を覆ってくれたのは感謝してるけど、だんだんまぶたに指がめり込んで来てるよ、痛い痛い！　放して隊長！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エリジウム",
-          "speakerId": "char_401_elysm",
-          "text": "ふぅ、目が潰れるかと思った……で、結局ニアールさんは何してるんだろう？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エリジウム",
-          "speakerId": "char_401_elysm",
-          "text": "大丈夫？　いや、隊長になんでそんなことが……ていうか、あんな太陽よりも眩しい光を出してどうするの？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エリジウム",
-          "speakerId": "char_401_elysm",
-          "text": "あれ？　……周りの光がだんだんニアールさんの光と同化してる？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エリジウム",
-          "speakerId": "char_401_elysm",
-          "text": "……うわぁ。あたり一面が光の海みたいに……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エリジウム",
-          "speakerId": "char_401_elysm",
-          "text": "隊長、このエリアの光輝度が全部同じレベルに調整されたみたい。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エリジウム",
-          "speakerId": "char_401_elysm",
-          "text": "ニアールさんの仕業だって？　いや、見りゃわかるよ。でもすごくない？　耀騎士ってこんなことまでできるんだ……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エリジウム",
-          "speakerId": "char_401_elysm",
-          "text": "あ、そうだ。ねぇ隊長、雑学クイズでもしよう。あの砂丘の影の向きを見て、今が午前なのか午後なのかわかる？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エリジウム",
-          "speakerId": "char_401_elysm",
-          "text": "えー？　場を和ませようとしただけでしょ？　それにこれから砂嵐が起こったら、何も見えなくなっちゃうでしょ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "エリジウム",
-          "speakerId": "char_401_elysm",
-          "text": "……はい、黙ります。ドーモスミマセン。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "もっと高度を上げろ！　今、敵の術式に当たりそうだったぞ！？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "パイロット",
-          "speakerId": "avg_npc_012",
-          "text": "安心してください、教官。レユニオンの術師に撃ち落とされるほどヤワな訓練は積んじゃいませんよ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "いいかよく聞け！　囮になるってのは、飛行スキルを見せびらかすのとは違うんだぞ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "パイロット",
-          "speakerId": "avg_npc_012",
-          "text": "でも圧倒的な実力差を見せつけてやれば、レユニオンの連中だって降参するかもしれませんよ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "パイロット",
-          "speakerId": "avg_npc_012",
-          "text": "なんて言うんでしたっけ、武力誇示？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "曲芸飛行は武力誇示とは言わない！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "パイロット",
-          "speakerId": "avg_npc_012",
-          "text": "教官、しっかり掴まっててくださいね！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "バカやめろ！　うぐっ……おい、エチケット袋はどこだ！？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "戦術送風機起動完了！　アーミヤ、車輌を出せ！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "はい！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "各ドライバー、等速を維持。図面の通り、登攀ツールが使用可能な距離まで中枢区画下層部に接近する。では状況開始！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "戦術送風機の起こす砂嵐が、私たちの作戦行動を隠してくれます。皆さん、防塵カバーをちゃんとチェックしてください。機器に砂が入らないように！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "でも、この光……すごく透き通っています。どうして太陽光が砂塵に遮られていないんでしょう？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "おかげで目標の可視度も上がっています。これはまるで……アーツみたい。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "これ……自然現象なんですか？　作戦予定には入ってませんよね？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "……そういう話は後回しだ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "わかりました！　登攀ツール発射準備！　オペレーターの皆さん、ワイヤーが壁に完全に固定されているかどうかを優先的に確認してください！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "全員の登攀完了が確認できたら、車輌は撤退しますので！　私がこんなことを言うのは珍しいかもしれませんが……皆さん、この光はきっと私たちに幸運をもたらしてくれます！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "……そうだな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "（うっかり光を強くし過ぎて、地表に向けるしかないなんて、今はとても言い出せない……）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "ん？　……待て、移動都市が加速している？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "風の勢いを借りても、砂塵のカバーできる範囲は1kmが限界だ！　今、この範囲から出られると、我々の存在に気づかれる！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "皆さん、急いでください！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "運転手",
-          "speakerId": "avg_npc_012",
-          "text": "間に合いません！　今すぐスピードを落とさないと！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "運転手",
-          "speakerId": "avg_npc_012",
-          "text": "このまま進んだら、数秒後には砂塵でカムフラージュできる範囲から外れます！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "運転手",
-          "speakerId": "avg_npc_012",
-          "text": "あと何人残っているかわかりませんが、早く——"
-        }
       ]
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_laccolith"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エンジニア",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "しまった……！　まずいぞ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エンジニア",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "砂塵の密度が低い。この太陽光の角度だと装置を完全に隠せない！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エンジニア",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "ブリッジから見下ろせば、全力稼働し始める前に丸見えだ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "オペレーター",
+      "speakerId": "char_016_medic",
+      "isRemote": false,
+      "text": "だがこれ以上遮蔽物を増やすわけにはいかない。空気の流れを邪魔したら、砂嵐を起こすほどの上昇気流が作れなくなる！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エンジニア",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "どうする、更に位置を下げるか？　間に合わないかもしれないぞ！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "……私に任せてくれ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "ファイヤーウォッチ、私が行動を開始したら、実際の効果を観測しつつ、調整する方向を教えてくれ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ファイヤーウォッチ",
+      "speakerId": "char_158_milu",
+      "isRemote": false,
+      "text": "ニアール？　何をするつもりだ——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "光の角度を変える。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "この大地に広がる苦難を減らすためであれば……たとえ太陽の光だろうと、少しの間、力を貸してくれると信じたい。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エリジウム",
+      "speakerId": "char_401_elysm",
+      "isRemote": false,
+      "text": "あれ？　砂丘の方にいるのはニアールさん？　まだ撤退しないの？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エリジウム",
+      "speakerId": "char_401_elysm",
+      "isRemote": false,
+      "text": "何してるんだろう……考え事？　あっ！　ポーズとってる！　あんなところで体操かな……でもどうして？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エリジウム",
+      "speakerId": "char_401_elysm",
+      "isRemote": false,
+      "text": "……あれ？　ニアールさんの体が光り出した……ちょっと、えっ、何コレすっごい眩しい！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エリジウム",
+      "speakerId": "char_401_elysm",
+      "isRemote": false,
+      "text": "え？　ちょっと誰……ああ、ありがとう隊長……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エリジウム",
+      "speakerId": "char_401_elysm",
+      "isRemote": false,
+      "text": "僕の目を覆ってくれたのは感謝してるけど、だんだんまぶたに指がめり込んで来てるよ、痛い痛い！　放して隊長！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エリジウム",
+      "speakerId": "char_401_elysm",
+      "isRemote": false,
+      "text": "ふぅ、目が潰れるかと思った……で、結局ニアールさんは何してるんだろう？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エリジウム",
+      "speakerId": "char_401_elysm",
+      "isRemote": false,
+      "text": "大丈夫？　いや、隊長になんでそんなことが……ていうか、あんな太陽よりも眩しい光を出してどうするの？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エリジウム",
+      "speakerId": "char_401_elysm",
+      "isRemote": false,
+      "text": "あれ？　……周りの光がだんだんニアールさんの光と同化してる？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エリジウム",
+      "speakerId": "char_401_elysm",
+      "isRemote": false,
+      "text": "……うわぁ。あたり一面が光の海みたいに……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エリジウム",
+      "speakerId": "char_401_elysm",
+      "isRemote": false,
+      "text": "隊長、このエリアの光輝度が全部同じレベルに調整されたみたい。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エリジウム",
+      "speakerId": "char_401_elysm",
+      "isRemote": false,
+      "text": "ニアールさんの仕業だって？　いや、見りゃわかるよ。でもすごくない？　耀騎士ってこんなことまでできるんだ……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エリジウム",
+      "speakerId": "char_401_elysm",
+      "isRemote": false,
+      "text": "あ、そうだ。ねぇ隊長、雑学クイズでもしよう。あの砂丘の影の向きを見て、今が午前なのか午後なのかわかる？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エリジウム",
+      "speakerId": "char_401_elysm",
+      "isRemote": false,
+      "text": "えー？　場を和ませようとしただけでしょ？　それにこれから砂嵐が起こったら、何も見えなくなっちゃうでしょ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "エリジウム",
+      "speakerId": "char_401_elysm",
+      "isRemote": false,
+      "text": "……はい、黙ります。ドーモスミマセン。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_aircraft"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "もっと高度を上げろ！　今、敵の術式に当たりそうだったぞ！？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "パイロット",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "安心してください、教官。レユニオンの術師に撃ち落とされるほどヤワな訓練は積んじゃいませんよ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "いいかよく聞け！　囮になるってのは、飛行スキルを見せびらかすのとは違うんだぞ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "パイロット",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "でも圧倒的な実力差を見せつけてやれば、レユニオンの連中だって降参するかもしれませんよ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "パイロット",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "なんて言うんでしたっけ、武力誇示？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "曲芸飛行は武力誇示とは言わない！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "パイロット",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "教官、しっかり掴まっててくださいね！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "バカやめろ！　うぐっ……おい、エチケット袋はどこだ！？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_laccolith"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "戦術送風機起動完了！　アーミヤ、車輌を出せ！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "はい！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "各ドライバー、等速を維持。図面の通り、登攀ツールが使用可能な距離まで中枢区画下層部に接近する。では状況開始！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "戦術送風機の起こす砂嵐が、私たちの作戦行動を隠してくれます。皆さん、防塵カバーをちゃんとチェックしてください。機器に砂が入らないように！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "でも、この光……すごく透き通っています。どうして太陽光が砂塵に遮られていないんでしょう？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "おかげで目標の可視度も上がっています。これはまるで……アーツみたい。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "これ……自然現象なんですか？　作戦予定には入ってませんよね？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "……そういう話は後回しだ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "わかりました！　登攀ツール発射準備！　オペレーターの皆さん、ワイヤーが壁に完全に固定されているかどうかを優先的に確認してください！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "全員の登攀完了が確認できたら、車輌は撤退しますので！　私がこんなことを言うのは珍しいかもしれませんが……皆さん、この光はきっと私たちに幸運をもたらしてくれます！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "……そうだな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "（うっかり光を強くし過ぎて、地表に向けるしかないなんて、今はとても言い出せない……）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "ん？　……待て、移動都市が加速している？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "風の勢いを借りても、砂塵のカバーできる範囲は1kmが限界だ！　今、この範囲から出られると、我々の存在に気づかれる！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "皆さん、急いでください！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_laccolith"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "運転手",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "間に合いません！　今すぐスピードを落とさないと！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "運転手",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "このまま進んだら、数秒後には砂塵でカムフラージュできる範囲から外れます！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "運転手",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "あと何人残っているかわかりませんが、早く——"
     },
     {
       "type": "choice",
@@ -1071,15 +1220,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "運転手",
-          "speakerId": "avg_npc_012",
-          "text": "えっ？　じゃあ、ドクターはどうやって？"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "運転手",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "えっ？　じゃあ、ドクターはどうやって？"
     },
     {
       "type": "choice",
@@ -1099,27 +1247,28 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "運転手",
-          "speakerId": "avg_npc_012",
-          "text": "……危険です、ドクター！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "運転手",
-          "speakerId": "avg_npc_012",
-          "text": "訓練を受けてない者が一人で登るなんて冗談じゃありませんよ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "運転手",
-          "speakerId": "avg_npc_012",
-          "text": "ケルシー先生にサポートを用意してもらってないんですか？"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "運転手",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "……危険です、ドクター！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "運転手",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "訓練を受けてない者が一人で登るなんて冗談じゃありませんよ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "運転手",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "ケルシー先生にサポートを用意してもらってないんですか？"
     },
     {
       "type": "choice",
@@ -1139,15 +1288,14 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "サポートならいる。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "サポートならいる。"
     },
     {
       "type": "choice",
@@ -1157,96 +1305,108 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "私だ。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "ケルシーが片手をあなたの腰に回し、ワイヤーを繋いだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "char_003_kalts",
-          "text": "Dr.{@nickname}、自分で運命を掴むのは、また次の機会にするがいい。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "激しい砂嵐の中、意外と硬い感触がするその「手」が、果たしてケルシーのものなのかどうか、あなたは確信が持てなくなっていた。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "各小隊、作戦位置についてください！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "これからの行動では、少しのミスも許されません。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "10:30 a.m.\n中枢区画最下層"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "オペレーター",
-          "speakerId": "avg_npc_012",
-          "text": "確かに、これは侵入の痕跡ですね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "オペレーター",
-          "speakerId": "avg_npc_012",
-          "text": "侵入者は一人しかいないと断定できます。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "あそこの血の跡は、レユニオンのものかどうかはわかりませんが、まだ新しいみたいです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "かなりの確率でチェンさんだと思います……！　急ぎましょう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "あっ、ドクター！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "無事に到着できたようで何よりです。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "私だ。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "ケルシーが片手をあなたの腰に回し、ワイヤーを繋いだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "Dr.{@nickname}、自分で運命を掴むのは、また次の機会にするがいい。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "激しい砂嵐の中、意外と硬い感触がするその「手」が、果たしてケルシーのものなのかどうか、あなたは確信が持てなくなっていた。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "各小隊、作戦位置についてください！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "これからの行動では、少しのミスも許されません。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_cherunder"
+    },
+    {
+      "type": "narration",
+      "text": "10:30 a.m.\n中枢区画最下層"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "オペレーター",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "確かに、これは侵入の痕跡ですね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "オペレーター",
+      "speakerId": "avg_npc_012",
+      "isRemote": false,
+      "text": "侵入者は一人しかいないと断定できます。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "あそこの血の跡は、レユニオンのものかどうかはわかりませんが、まだ新しいみたいです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "かなりの確率でチェンさんだと思います……！　急ぎましょう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "あっ、ドクター！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "無事に到着できたようで何よりです。"
     },
     {
       "type": "choice",
@@ -1266,21 +1426,21 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "……えっ？　ええ！？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "危なかったんですか？　Dr.{@nickname}、どこか怪我はしてませんか？"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "……えっ？　ええ！？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "危なかったんですか？　Dr.{@nickname}、どこか怪我はしてませんか？"
     },
     {
       "type": "choice",
@@ -1290,8 +1450,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     }
   ],
   "observedOperators": [

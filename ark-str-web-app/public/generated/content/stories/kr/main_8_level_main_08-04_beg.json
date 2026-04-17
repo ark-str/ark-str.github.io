@@ -6,16 +6,24 @@
   "title": "불씨, 한순간에 사라질",
   "storyCode": "R8-4",
   "avgTag": "작전 전",
-  "sourcePath": "vendor/ArknightsGamedata/kr/gamedata/story/obt/main/level_main_08-04_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/kr/gamedata/story/obt/main/level_main_08-04_beg.txt",
   "sourceHash": "c7ab68cb42874333d92e39975ba16bb0d9b636d1614273d27aafa5c2e5599814",
   "bodyAvailable": true,
   "blocks": [
+    {
+      "type": "background",
+      "backgroundId": "bg_snow_2"
+    },
     {
       "type": "narration",
       "text": "훼이지에에게\n흐릿한 기억 속 할아버지의 이름은 이반 이자슬라프……\n흔한 이름만큼 어디서든 볼 수 있는 평범한 농부였지.\n그런 그는 자신을 희생했어, 여러 가지 이유로 자신의 목숨을……\n내가 다른 사람의 목숨을 희생시킬 만한 존재인지 가끔 생각하곤 해.\n알리나와 함께 있어. 평소에는 상냥한 편이지만 가끔 예민하게 굴어서 대하는 게 쉽진 않아.\n계획은 순조롭게 진행 중이야.\n내 생각대로라면 이제 곧 일부 감염자들끼리 힘을 합칠 수 있을 거야.\n부디 효과가 있었으면 좋겠어.\n할아버지, 부디 편히 잠드세요. 할머니 말고, 제게 소중한 사람은 할아버지뿐이에요.\n2월 7일"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_iceforest_1"
     },
     {
       "type": "narration",
@@ -25,84 +33,98 @@
       "type": "dialogue",
       "speakerName": "탈룰라",
       "speakerId": "avg_npc_078",
+      "isRemote": false,
       "text": "저기……"
     },
     {
       "type": "dialogue",
       "speakerName": "감염자",
       "speakerId": "avg_npc_094",
+      "isRemote": false,
       "text": "여긴 왜 왔지? 이 옷은…… 이건 또 어느 대단하신 분인가?"
     },
     {
       "type": "dialogue",
       "speakerName": "감염자",
       "speakerId": "avg_npc_094",
+      "isRemote": false,
       "text": "돌아가! 여긴 아무것도 없어, 너희가 몽땅 뺏어갔잖아! 빼앗아 가지 못한 건 다 불타버렸어!"
     },
     {
       "type": "dialogue",
       "speakerName": "감염자",
       "speakerId": "avg_npc_094",
+      "isRemote": false,
       "text": "제길, 날 죽이러 온 거냐? 죽일 테면 죽여봐라, 이 악마 같은 놈들!"
     },
     {
       "type": "dialogue",
       "speakerName": "탈룰라",
       "speakerId": "avg_npc_078",
+      "isRemote": false,
       "text": "그런 게 아니다. 감염자 감시팀이 오늘 이곳에 올 거라고 알려주러 온 거다."
     },
     {
       "type": "dialogue",
       "speakerName": "감염자",
       "speakerId": "avg_npc_094",
+      "isRemote": false,
       "text": "흥, 올 테면 오라고 해! 우릴 몽땅 죽이라고 해!"
     },
     {
       "type": "dialogue",
       "speakerName": "감염자",
       "speakerId": "avg_npc_094",
+      "isRemote": false,
       "text": "사람이 살 수 없을 것 같은 마을 하나 못 봐주겠다면 와서 마음대로 하라고 해!"
     },
     {
       "type": "dialogue",
       "speakerName": "탈룰라",
       "speakerId": "avg_npc_078",
+      "isRemote": false,
       "text": "잘 숨어 있어. 내가 저들과 이야기해 보지, 아니면 내가 숨어 있다가……"
     },
     {
       "type": "dialogue",
       "speakerName": "감염자",
       "speakerId": "avg_npc_094",
+      "isRemote": false,
       "text": "넌 대체 뭐지? 너희 같은 귀족들은 아무리 고상한 척 굴어도 결국 원하는 건 우리 목숨이잖아……"
     },
     {
       "type": "dialogue",
       "speakerName": "감염자",
       "speakerId": "avg_npc_094",
+      "isRemote": false,
       "text": "흥, 그래도 넌 그들과는 좀 다른 것 같군. 우리와 적어도 대화라는 걸 하잖아, 녀석들은 우리한테 채찍질하는 것조차 귀찮아하거든!"
     },
     {
       "type": "dialogue",
       "speakerName": "감염자",
       "speakerId": "avg_npc_094",
+      "isRemote": false,
       "text": "응? 어디 갔지?"
     },
     {
       "type": "dialogue",
       "speakerName": "감염자",
       "speakerId": "avg_npc_094",
+      "isRemote": false,
       "text": "사라진 건가……?"
     },
     {
       "type": "dialogue",
       "speakerName": "감염자",
       "speakerId": "avg_npc_094",
+      "isRemote": false,
       "text": "이건 또 무슨 꿍꿍이야? 허억……"
     },
     {
       "type": "dialogue",
       "speakerName": "감염자",
       "speakerId": "avg_npc_094",
+      "isRemote": false,
       "text": "우리 목숨도 여기까지인 건가."
     },
     {
@@ -112,48 +134,56 @@
       "type": "dialogue",
       "speakerName": "감염자 감시팀",
       "speakerId": "avg_npc_082",
+      "isRemote": false,
       "text": "제 팔자를 잘 아는 건 좋은 일이지."
     },
     {
       "type": "dialogue",
       "speakerName": "감염자",
       "speakerId": "avg_npc_094",
+      "isRemote": false,
       "text": "헉……"
     },
     {
       "type": "dialogue",
       "speakerName": "감염자 감시팀",
       "speakerId": "avg_npc_082",
+      "isRemote": false,
       "text": "……가난하고 비쩍 곯았군. 체격도 왜소한 게 군대 광산에 보내봤자 별 쓸모도 없겠어."
     },
     {
       "type": "dialogue",
       "speakerName": "감염자 감시팀",
       "speakerId": "avg_npc_082",
+      "isRemote": false,
       "text": "어떻게 죽여줄까? 한 번에? 아니면 천천히?"
     },
     {
       "type": "dialogue",
       "speakerName": "감염자",
       "speakerId": "avg_npc_094",
+      "isRemote": false,
       "text": "……살려 주십시오! 저 하나 살려주셔도 손해 볼 건 없지 않습니까?"
     },
     {
       "type": "dialogue",
       "speakerName": "감염자 감시팀",
       "speakerId": "avg_npc_082",
+      "isRemote": false,
       "text": "손에 무기를 들고 그따위 말을 해?"
     },
     {
       "type": "dialogue",
       "speakerName": "감염자",
       "speakerId": "avg_npc_094",
+      "isRemote": false,
       "text": "……죄, 죄송합니다! 이건 방금 어떤 녀석 때문에, 대체 어디로 사라진 건지……"
     },
     {
       "type": "dialogue",
       "speakerName": "감염자 감시팀",
       "speakerId": "avg_npc_082",
+      "isRemote": false,
       "text": "감염자는 짐승보다 못한 족속이지. 짐승은 짐이라도 나르지만 너희는 폐하의 소중한 땅을 갉아먹을 뿐이야!"
     },
     {
@@ -163,144 +193,168 @@
       "type": "dialogue",
       "speakerName": "탈룰라",
       "speakerId": "avg_npc_078",
+      "isRemote": false,
       "text": "왜 그렇게 말하지?"
     },
     {
       "type": "dialogue",
       "speakerName": "감염자 감시팀",
       "speakerId": "avg_npc_082",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "감염자 감시팀",
       "speakerId": "avg_npc_082",
+      "isRemote": false,
       "text": "누구냐?"
     },
     {
       "type": "dialogue",
       "speakerName": "탈룰라",
       "speakerId": "avg_npc_078",
+      "isRemote": false,
       "text": "머나먼 동쪽에서 왔다."
     },
     {
       "type": "dialogue",
       "speakerName": "감염자 감시팀",
       "speakerId": "avg_npc_082",
+      "isRemote": false,
       "text": "뭐라는 거야?…… 너도 감염자냐?"
     },
     {
       "type": "dialogue",
       "speakerName": "탈룰라",
       "speakerId": "avg_npc_078",
+      "isRemote": false,
       "text": "그래."
     },
     {
       "type": "dialogue",
       "speakerName": "탈룰라",
       "speakerId": "avg_npc_078",
+      "isRemote": false,
       "text": "난 스스로 생각할 수도 있고, 말도 할 수 있지."
     },
     {
       "type": "dialogue",
       "speakerName": "탈룰라",
       "speakerId": "avg_npc_078",
+      "isRemote": false,
       "text": "우리의 생사는 우리가 결정한다. 그걸 네가 왜 결정한다는 거지?"
     },
     {
       "type": "dialogue",
       "speakerName": "감염자 감시팀",
       "speakerId": "avg_npc_082",
+      "isRemote": false,
       "text": "뭐라고!"
     },
     {
       "type": "dialogue",
       "speakerName": "탈룰라",
       "speakerId": "avg_npc_078",
+      "isRemote": false,
       "text": "조용한 곳에서 스스로 죽게 해줬다면 이렇게 화가 나진 않았을 거야……"
     },
     {
       "type": "dialogue",
       "speakerName": "탈룰라",
       "speakerId": "avg_npc_078",
+      "isRemote": false,
       "text": "하지만…… 거기 감염자 형제여, 고개를 들고 똑똑히 봐라! 저자의 눈빛과 입, 그리고 저 웃음을!"
     },
     {
       "type": "dialogue",
       "speakerName": "탈룰라",
       "speakerId": "avg_npc_078",
+      "isRemote": false,
       "text": "저들은 우리의 생사를 마음대로 결정하고 우리를 조종하려 하지. 우리더러 싸구려 목숨이라고 하지만, 그러는 저놈들은 또 뭐가 그리 대단한가?"
     },
     {
       "type": "dialogue",
       "speakerName": "감염자 감시팀",
       "speakerId": "avg_npc_082",
+      "isRemote": false,
       "text": "닥쳐!"
     },
     {
       "type": "dialogue",
       "speakerName": "탈룰라",
       "speakerId": "avg_npc_078",
+      "isRemote": false,
       "text": "감염자 형제여, 저자들의 행동을 떠올려 봐라! 올바르게 행동했다고, 훌륭한 태도를 지녔다고 누굴 봐준 적이 있었던가?"
     },
     {
       "type": "dialogue",
       "speakerName": "탈룰라",
       "speakerId": "avg_npc_078",
+      "isRemote": false,
       "text": "아니! 저들은 감염자들이 쓸모 있다고 여길 때만 살려뒀다."
     },
     {
       "type": "dialogue",
       "speakerName": "탈룰라",
       "speakerId": "avg_npc_078",
+      "isRemote": false,
       "text": "그런데 이제 돈도, 땅도 없으니 뒤도 안 돌아보고 형제들을 버린 것이다. 이제 감염자는 도시 안에서 살 수 없게 되었지!"
     },
     {
       "type": "dialogue",
       "speakerName": "탈룰라",
       "speakerId": "avg_npc_078",
+      "isRemote": false,
       "text": "우리의 생사는 우리가 직접 정해야 한다!"
     },
     {
       "type": "dialogue",
       "speakerName": "감염자",
       "speakerId": "avg_npc_094",
+      "isRemote": false,
       "text": "……!"
     },
     {
       "type": "dialogue",
       "speakerName": "감염자",
       "speakerId": "avg_npc_094",
+      "isRemote": false,
       "text": "넌…… 대체 누구냐?"
     },
     {
       "type": "dialogue",
       "speakerName": "감염자 감시팀",
       "speakerId": "avg_npc_082",
+      "isRemote": false,
       "text": "빌어먹을 녀석, 이름을 대라!"
     },
     {
       "type": "dialogue",
       "speakerName": "감염자 감시팀",
       "speakerId": "avg_npc_082",
+      "isRemote": false,
       "text": "폐하의 이름을 도용해 사람들을 현혹하려 하다니, 절대 살려두지 않겠다!"
     },
     {
       "type": "dialogue",
       "speakerName": "탈룰라",
       "speakerId": "avg_npc_078",
+      "isRemote": false,
       "text": "내겐 이름이 없다. 부르고 싶은 대로 불러, 이름을 꼭 부르고 싶다면, 탈룰라라고 부르면 된다."
     },
     {
       "type": "dialogue",
       "speakerName": "탈룰라",
       "speakerId": "avg_npc_078",
+      "isRemote": false,
       "text": "네놈들에겐 내 이름을 알 자격 따윈 없어."
     },
     {
       "type": "dialogue",
       "speakerName": "탈룰라",
       "speakerId": "avg_npc_078",
+      "isRemote": false,
       "text": "대신, 내 불꽃으로 너희들을 몽땅 태워주마!"
     },
     {

@@ -6,10 +6,14 @@
   "title": "別れの夜",
   "storyCode": "7-2",
   "avgTag": "戦闘前",
-  "sourcePath": "vendor/ArknightsGamedata/jp/gamedata/story/obt/main/level_main_07-01_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/jp/gamedata/story/obt/main/level_main_07-01_beg.txt",
   "sourceHash": "bd8dd8b0abd52e0e3815a3bf1a2492830685194ef6bcd59886e88a97b917bacc",
   "bodyAvailable": true,
   "blocks": [
+    {
+      "type": "background",
+      "backgroundId": "bg_corridor"
+    },
     {
       "type": "narration",
       "text": "6:30 p.m."
@@ -21,18 +25,21 @@
       "type": "dialogue",
       "speakerName": "PRTS",
       "speakerId": null,
+      "isRemote": false,
       "text": "識別コード00000-00002、接続権限レベル-8。"
     },
     {
       "type": "dialogue",
       "speakerName": "PRTS",
       "speakerId": null,
+      "isRemote": false,
       "text": "Dr.{@nickname}、ロドス総合感染生物処理室へようこそ。生体データに基づき、あなたの指示についての予測が行われました。"
     },
     {
       "type": "dialogue",
       "speakerName": "PRTS",
       "speakerId": null,
+      "isRemote": false,
       "text": "また、あなたが不愉快な心情にあることが検出されております。"
     },
     {
@@ -46,12 +53,14 @@
               "type": "dialogue",
               "speakerName": "PRTS",
               "speakerId": null,
+              "isRemote": false,
               "text": "Dr.{@nickname}より、一定の攻撃性が検知されました。"
             },
             {
               "type": "dialogue",
               "speakerName": "PRTS",
               "speakerId": null,
+              "isRemote": false,
               "text": "ご安心ください。セキュリティシステムによる拘束通電処置は実行されません。また、システムの計測結果について過剰に心配する必要もありません。"
             }
           ]
@@ -64,18 +73,21 @@
               "type": "dialogue",
               "speakerName": "PRTS",
               "speakerId": null,
+              "isRemote": false,
               "text": "Dr.{@nickname}は沈黙を選択したと判断します。"
             },
             {
               "type": "dialogue",
               "speakerName": "PRTS",
               "speakerId": null,
+              "isRemote": false,
               "text": "無言による抗議行為、あるいはコミュニケーション拒否、いずれも一種のAPD、回避性パーソナリティ障害と思われます。"
             },
             {
               "type": "dialogue",
               "speakerName": "PRTS",
               "speakerId": null,
+              "isRemote": false,
               "text": "ですが、どのような方にもシステムは平等に対応しますので、どうぞご自由に行動してください。"
             }
           ]
@@ -88,55 +100,61 @@
               "type": "dialogue",
               "speakerName": "PRTS",
               "speakerId": null,
+              "isRemote": false,
               "text": "愉快、不愉快とは主観的判断です。"
             },
             {
               "type": "dialogue",
               "speakerName": "PRTS",
               "speakerId": null,
+              "isRemote": false,
               "text": "ですが、本システムには記録されているほぼ全ての精神活動状態、及び各種の分泌ホルモン数値をベースとした、統計による判断基準が集約されています。"
             },
             {
               "type": "dialogue",
               "speakerName": "PRTS",
               "speakerId": null,
+              "isRemote": false,
               "text": "よって、本システムによる主観的判断を比喩する表現については、限りなく客観的事実に近いものと見なして問題ありません。"
             },
             {
               "type": "dialogue",
               "speakerName": "PRTS",
               "speakerId": null,
+              "isRemote": false,
               "text": "本システムは、Dr.{@nickname}がどのような行動を選択しても、高レベルのシミュレーションとそれに基づく対処が可能です。"
             },
             {
               "type": "dialogue",
               "speakerName": "PRTS",
               "speakerId": null,
+              "isRemote": false,
               "text": "ですから、自由に行動していただいて構いません。"
             },
             {
               "type": "dialogue",
               "speakerName": "PRTS",
               "speakerId": null,
+              "isRemote": false,
               "text": "PRTSは、非殺傷性の対象無力化システムを完備しています。"
             },
             {
               "type": "dialogue",
               "speakerName": "PRTS",
               "speakerId": null,
+              "isRemote": false,
               "text": "過激な行動と判断された場合、システムが速やかにあなたを気絶させ3.55時間後に覚醒させます。その結果あなたの行動が通常の水準に戻ることが保証されます。"
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "PRTS",
-          "speakerId": null,
-          "text": "Welcome home, Doctor."
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "PRTS",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Welcome home, Doctor."
     },
     {
       "type": "choice",
@@ -146,15 +164,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_042",
-          "text": "あなたが、Dr.{@nickname}？"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "あなたが、Dr.{@nickname}？"
     },
     {
       "type": "choice",
@@ -174,33 +191,35 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_042",
-          "text": "……あなたで間違いなさそう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_042",
-          "text": "感じる……ちょっと変わってるけど。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_042",
-          "text": "それと……あなたの抱えてる人、その服は……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_042",
-          "text": "その人が誰なのか、聞いてもいい？"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "……あなたで間違いなさそう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "感じる……ちょっと変わってるけど。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "それと……あなたの抱えてる人、その服は……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "その人が誰なのか、聞いてもいい？"
     },
     {
       "type": "choice",
@@ -213,18 +232,21 @@
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "戦士？"
             },
             {
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "でも、彼女はあなたの身体に傷を残した……敵なの？"
             },
             {
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "いや、違う……これは致命傷じゃないし、そもそも傷のつき方に殺意が感じられない……"
             }
           ]
@@ -237,18 +259,21 @@
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "その人も感染者……？"
             },
             {
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "そんな単純な意味じゃ……ないよね。"
             },
             {
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "Dr.{@nickname}、何か大切なものを喪ったみたいな顔をしてる。"
             }
           ]
@@ -261,24 +286,26 @@
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "その人はあなたの友達？"
             },
             {
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "でも、友達にしては……あなたとの繋がりが、すごく薄いよ？"
             },
             {
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "なんだか……なんだかすぐにでも消えてしまいそう。"
             }
           ]
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -288,28 +315,28 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_042",
-          "text": "人と人の交流の跡。それが、匂いとか、温度とか、イメージとして感じるの。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_042",
-          "text": "よくわからないけど、彼女は……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "少女が、フロストノヴァの身体に触れようと手を伸ばす。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "人と人の交流の跡。それが、匂いとか、温度とか、イメージとして感じるの。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "よくわからないけど、彼女は……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "少女が、フロストノヴァの身体に触れようと手を伸ばす。"
     },
     {
       "type": "choice",
@@ -322,36 +349,42 @@
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "えっと……"
             },
             {
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "うーん……"
             },
             {
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "あなたはそうして欲しくないんだよね？"
             },
             {
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "いや、違うよ。私は部外者。彼女とは何の繋がりもないの。"
             },
             {
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "これは私がするべきことじゃない。そういうことでしょ？"
             },
             {
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "……わかった。ごめんなさい。"
             }
           ]
@@ -361,8 +394,7 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -375,12 +407,14 @@
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "違う、私にはできない……"
             },
             {
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "アーミヤは特別だよ。あのアーツは知ってる……大変だと思うよ。"
             }
           ]
@@ -393,18 +427,21 @@
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "たぶん……私は彼女に触れてはいけないの。感じ取ることさえも。"
             },
             {
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "彼女と、この大地の繋がりは、私とは縁がないから。"
             },
             {
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "そんな彼女に触れる資格は、私にはないから……"
             }
           ]
@@ -417,18 +454,19 @@
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "他のみんなも、そう言うよ。"
             },
             {
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "ロドスのみんなも、それぞれ個性的だけど……私は特別に変なのかもしれないって思う。"
             }
           ]
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -441,12 +479,14 @@
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "ううん、大丈夫だよ。慣れっこだから。"
             },
             {
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "この機械を……使いたいんだよね？"
             }
           ]
@@ -459,18 +499,21 @@
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "お、怒らないで……"
             },
             {
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "あなたが黙ったままだと、私……どうしたらいいかわからない。"
             },
             {
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "この機械を……使いたいんだよね？"
             }
           ]
@@ -483,24 +526,26 @@
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "大丈夫だよ。"
             },
             {
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "怖がられるよりも、普通に話してくれる方が嬉しいの……だから、大丈夫。"
             },
             {
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": "avg_npc_042",
+              "isRemote": false,
               "text": "この機械を……使いたいんだよね？"
             }
           ]
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -510,33 +555,35 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_042",
-          "text": "……わかった。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_042",
-          "text": "手伝ってあげるね。記録を見せて。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_042",
-          "text": "うん、大丈夫そう。このポッドは掃除してある。彼女をこのデッキに乗せて。ゆっくり、うんいいよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_042",
-          "text": "そしたら自動でデッキがポッドの中に入るから、それで……ドアが閉まったら、このボタンを押して終わりだよ。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "……わかった。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "手伝ってあげるね。記録を見せて。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "うん、大丈夫そう。このポッドは掃除してある。彼女をこのデッキに乗せて。ゆっくり、うんいいよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "そしたら自動でデッキがポッドの中に入るから、それで……ドアが閉まったら、このボタンを押して終わりだよ。"
     },
     {
       "type": "choice",
@@ -546,15 +593,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_042",
-          "text": "うん、何度もやったから。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "うん、何度もやったから。"
     },
     {
       "type": "choice",
@@ -564,27 +610,28 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_042",
-          "text": "ロドスの感染者たちは、最後はみんなここに来るんだよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_042",
-          "text": "私の知ってる人や感じたことのある人、あと同じチームのメンバーなんかは、みんな私が送り出すの。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_042",
-          "text": "説明書は難しいから、簡単な操作方法を全部自分の端末に書いてあるの。それを読み返せば、たぶん身体が覚えてて、すぐに慣れてくるんだ。操作にも、送り出す感覚にも……"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "ロドスの感染者たちは、最後はみんなここに来るんだよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "私の知ってる人や感じたことのある人、あと同じチームのメンバーなんかは、みんな私が送り出すの。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "説明書は難しいから、簡単な操作方法を全部自分の端末に書いてあるの。それを読み返せば、たぶん身体が覚えてて、すぐに慣れてくるんだ。操作にも、送り出す感覚にも……"
     },
     {
       "type": "choice",
@@ -594,15 +641,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_042",
-          "text": "えっと……たぶん鎖みたいなものかな。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "えっと……たぶん鎖みたいなものかな。"
     },
     {
       "type": "choice",
@@ -612,27 +658,28 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_042",
-          "text": "二人の間を繋いだ糸、と言ってもいいけど。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_042",
-          "text": "自分と繋がってる人を送り出すのは、その人と結びついた糸を解くことになるの。糸の片方は自分に繋がったままで、その向こうに誰もいなくなったとしても、糸が落ちて消えることはない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_042",
-          "text": "でもそれは、身体から何かが消えたような感覚なんだ。そこにまだ何かが残ってるかどうかは判らないけど、かつてその人が存在してたこと、もう戻ってこないことはなんとなく解る……そんな感覚。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "二人の間を繋いだ糸、と言ってもいいけど。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "自分と繋がってる人を送り出すのは、その人と結びついた糸を解くことになるの。糸の片方は自分に繋がったままで、その向こうに誰もいなくなったとしても、糸が落ちて消えることはない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "でもそれは、身体から何かが消えたような感覚なんだ。そこにまだ何かが残ってるかどうかは判らないけど、かつてその人が存在してたこと、もう戻ってこないことはなんとなく解る……そんな感覚。"
     },
     {
       "type": "choice",
@@ -642,15 +689,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "？？？",
-          "speakerId": "avg_npc_042",
-          "text": "だって慣れていれば、突然失う痛みにも耐えられるでしょ？"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "？？？",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "だって慣れていれば、突然失う痛みにも耐えられるでしょ？"
     },
     {
       "type": "choice",
@@ -660,69 +706,77 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "PRTS",
-          "speakerId": null,
-          "text": "お取り込み中、失礼します。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "PRTS",
-          "speakerId": null,
-          "text": "ロドス総合感染生物処理室に滞在中のエリートオペレーター、Rosmontis様、現在使用中の識別コードは15分後に無効となります。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "PRTS",
-          "speakerId": null,
-          "text": "ただ今よりリモートアップデートを行いますので、そのまま現在地にて15秒ほどお待ちください。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "PRTS",
-          "speakerId": null,
-          "text": "また、接舷エリアにて小規模な戦闘が発生しております。当施設の被害を最小限に抑えるため、識別コードのアップデート完了後は、可及的速やかに支援に直行されることをおすすめします。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rosmontis",
-          "speakerId": "avg_npc_042",
-          "text": "あっ、うんわかった。すぐ行くね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rosmontis",
-          "speakerId": "avg_npc_042",
-          "text": "待って、今の処理データを端末に書き込んでから……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "PRTS",
-          "speakerId": null,
-          "text": "6度目の提言をいたします。本システムに権限を開放していただければ、すぐに端末へ情報をお送り——"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rosmontis",
-          "speakerId": "avg_npc_042",
-          "text": "ダメ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rosmontis",
-          "speakerId": "avg_npc_042",
-          "text": "これは私が……私が自分で書き込まなきゃいけないの。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "PRTS",
-          "speakerId": null,
-          "text": "承知しました。どうぞ。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "PRTS",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "お取り込み中、失礼します。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "PRTS",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "ロドス総合感染生物処理室に滞在中のエリートオペレーター、Rosmontis様、現在使用中の識別コードは15分後に無効となります。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "PRTS",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "ただ今よりリモートアップデートを行いますので、そのまま現在地にて15秒ほどお待ちください。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "PRTS",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "また、接舷エリアにて小規模な戦闘が発生しております。当施設の被害を最小限に抑えるため、識別コードのアップデート完了後は、可及的速やかに支援に直行されることをおすすめします。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rosmontis",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "あっ、うんわかった。すぐ行くね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rosmontis",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "待って、今の処理データを端末に書き込んでから……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "PRTS",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "6度目の提言をいたします。本システムに権限を開放していただければ、すぐに端末へ情報をお送り——"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rosmontis",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "ダメ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rosmontis",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "これは私が……私が自分で書き込まなきゃいけないの。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "PRTS",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "承知しました。どうぞ。"
     },
     {
       "type": "choice",
@@ -732,15 +786,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Rosmontis",
-          "speakerId": "avg_npc_042",
-          "text": "え？　私のことだよ。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rosmontis",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "え？　私のことだよ。"
     },
     {
       "type": "choice",
@@ -750,27 +803,28 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Rosmontis",
-          "speakerId": "avg_npc_042",
-          "text": "ロスモンティス、でいいよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "あ、そうだ……その人、名前は？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "せめて……せめて何て呼ばれてたのか知りたいの。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rosmontis",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "ロスモンティス、でいいよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "あ、そうだ……その人、名前は？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "せめて……せめて何て呼ばれてたのか知りたいの。"
     },
     {
       "type": "choice",
@@ -780,36 +834,38 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "フロストノヴァ……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "綺麗な名前。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "はじめまして、フロストノヴァ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ロスモンティス",
-          "speakerId": "avg_npc_042",
-          "text": "……さようなら。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "フロストノヴァ……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "綺麗な名前。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "はじめまして、フロストノヴァ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ロスモンティス",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "……さようなら。"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": []

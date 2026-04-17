@@ -6,26 +6,33 @@
   "title": "高空での拒止",
   "storyCode": "14-14",
   "avgTag": "戦闘前",
-  "sourcePath": "vendor/ArknightsGamedata/jp/gamedata/story/obt/main/level_main_14-12_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/jp/gamedata/story/obt/main/level_main_14-12_beg.txt",
   "sourceHash": "14bd9a399efd243e731ec8a59dcb853ae9065ccf1bdcd8b74a715114a9202e4b",
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "27_g1_shard_indoor"
+    },
+    {
       "type": "dialogue",
       "speakerName": "端末の声",
       "speakerId": "avg_npc_1297_1",
+      "isRemote": false,
       "text": "ウルサスの皇帝は、我々の使者への接見を拒否しました。彼らは依然としてカズデルを独立した敵対政権と見なしています。"
     },
     {
       "type": "dialogue",
       "speakerName": "端末の声",
       "speakerId": "avg_npc_1297_1",
+      "isRemote": false,
       "text": "サルゴンに派遣した使者からはまだ返事がなく、リターニアのあの選帝侯は積極的に交流を図る意思を示しています……"
     },
     {
       "type": "dialogue",
       "speakerName": "端末の声",
       "speakerId": "avg_npc_1297_1",
+      "isRemote": false,
       "text": "戦場にあの金色の光が現れて以降、大公爵たちの進攻の意図は明白です。我々の外側の戦線は縮小しています……"
     },
     {
@@ -39,6 +46,7 @@
       "type": "dialogue",
       "speakerName": "テレシス",
       "speakerId": "avg_npc_1297_1",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -55,36 +63,42 @@
       "type": "dialogue",
       "speakerName": "王庭軍衛兵",
       "speakerId": "avg_npc_419_1",
+      "isRemote": false,
       "text": "殿下、前線から情報が届きました……ヴィクトリアの国剣がすでに起動し、「アナンナ」の攻勢が抑制されています。我々の戦況は緊迫しています。"
     },
     {
       "type": "dialogue",
       "speakerName": "王庭軍衛兵",
       "speakerId": "avg_npc_419_1",
+      "isRemote": false,
       "text": "もう一つ、マンフレッド将軍は「ライフボーン」の奪還に失敗しました。"
     },
     {
       "type": "dialogue",
       "speakerName": "テレシス",
       "speakerId": "avg_npc_1297_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "テレシス",
       "speakerId": "avg_npc_1297_1",
+      "isRemote": false,
       "text": "現在骨骸は何者が掌握し、最後に目撃した位置はどこだ？"
     },
     {
       "type": "dialogue",
       "speakerName": "王庭軍衛兵",
       "speakerId": "avg_npc_419_1",
+      "isRemote": false,
       "text": "傭兵小隊です。聴罪師の報告によると、骨骸にはあの「ロドス」と呼ばれる組織の中心メンバーも乗っているとのことです。"
     },
     {
       "type": "dialogue",
       "speakerName": "テレシス",
       "speakerId": "avg_npc_1297_1",
+      "isRemote": false,
       "text": "「ロドス」……あの者も、恐らくいるのであろう。"
     },
     {
@@ -94,30 +108,35 @@
       "type": "dialogue",
       "speakerName": "テレシス",
       "speakerId": "avg_npc_1297_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "王庭軍衛兵",
       "speakerId": "avg_npc_419_1",
+      "isRemote": false,
       "text": "殿下、「ライフボーン」の次の動向は定かではありません。あれは飛空船とザ・シャードのいずれにとっても脅威です。"
     },
     {
       "type": "dialogue",
       "speakerName": "テレシス",
       "speakerId": "avg_npc_1297_1",
+      "isRemote": false,
       "text": "構わぬ、テレジアを信じよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "テレシス",
       "speakerId": "avg_npc_1297_1",
+      "isRemote": false,
       "text": "彼奴らがザ・シャードに近づこうものなら……"
     },
     {
       "type": "dialogue",
       "speakerName": "テレシス",
       "speakerId": "avg_npc_1297_1",
+      "isRemote": false,
       "text": "約束した裁きを我が剣があの者にくれてやろう。"
     },
     {
@@ -131,10 +150,15 @@
       "type": "dialogue",
       "speakerName": "テレシス",
       "speakerId": "avg_npc_1297_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "37_g9_airshipdockcorridor"
     },
     {
       "type": "narration",
@@ -147,12 +171,14 @@
       "type": "dialogue",
       "speakerName": "船室内の影",
       "speakerId": null,
+      "isRemote": false,
       "text": "テレジア、私は感じるのだ――あの「魔王」が、我々を追ってきている。"
     },
     {
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "……彼女たちは簡単に諦めるような人ではないもの。"
     },
     {
@@ -162,6 +188,7 @@
       "type": "dialogue",
       "speakerName": "船室内の影",
       "speakerId": null,
+      "isRemote": false,
       "text": "……フッ。"
     },
     {
@@ -179,69 +206,84 @@
       "type": "dialogue",
       "speakerName": "船室内の影",
       "speakerId": null,
+      "isRemote": false,
       "text": "奴らが来た――"
     },
     {
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "それにより起こる火花は、朽ち果てるすべてを、燃やし尽くす炎となるでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "テレジア",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "そうであれば、彼女たちがどこまで歩みを進められるかを見てみましょう。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "43_g1_giantmonstercockpit"
+    },
+    {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
       "text": "この骨骸、ほんとにこうやって操縦するの！？"
     },
     {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
       "text": "ヘドリーはこの骨っころに、おとなしくあたしたちを助けるよう、ちゃんと言い聞かせてるんでしょうね？"
     },
     {
       "type": "dialogue",
       "speakerName": "イネス",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "それは本人に聞いてみることね。"
     },
     {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
       "text": "くたばりぞこなって言葉も発せないのに、聞けですって？"
     },
     {
       "type": "dialogue",
       "speakerName": "イネス",
       "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
       "text": "なら彼を信じなさい。"
     },
     {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
       "text": "……チッ。あいつが段取りを間違えてなければいいんだけど。"
     },
     {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
       "text": "というか、今はこの骨骸もあたしたちの手に戻ったわけだし、当初の計画を実行すべきじゃないかしら？"
     },
     {
       "type": "dialogue",
       "speakerName": "W",
       "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
       "text": "このデカブツに爆弾を詰め込んで、ザ・シャードとテレシスを吹っ飛ばしてやりましょうよ。"
     },
     {
@@ -255,8 +297,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -266,16 +307,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "narration",
-          "text": "船窓からのぞくと、嵐はすでに止んだものの、空はいまだ不気味な真紅であるのが見て取れる。\n「アナンナ」。それは空の傷口のように、ザ・シャードの真上に高く懸かっている。\n飛空船は、本来この世に存在しないはずの古の遺跡へとまっすぐ向かい、この大地の最奥の秘密に近づきつつある。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "narration",
+      "text": "船窓からのぞくと、嵐はすでに止んだものの、空はいまだ不気味な真紅であるのが見て取れる。\n「アナンナ」。それは空の傷口のように、ザ・シャードの真上に高く懸かっている。\n飛空船は、本来この世に存在しないはずの古の遺跡へとまっすぐ向かい、この大地の最奥の秘密に近づきつつある。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -290,24 +329,24 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "では可能性はただ一つ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "兵器としてよりも、もっと重要な使い道があるということだ。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "では可能性はただ一つ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "兵器としてよりも、もっと重要な使い道があるということだ。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -317,8 +356,7 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -328,42 +366,45 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "チッ、あのねフード。こいつが言いたいのは、テレシスをぶっ殺す前に、まずは飛空船の問題を解決する必要があるってことよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "間違いがあるなら言ってみなさい、ババア。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "そうだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "ならまずは飛空船を撃ち落としてからにしましょう。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "チッ、あのねフード。こいつが言いたいのは、テレシスをぶっ殺す前に、まずは飛空船の問題を解決する必要があるってことよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "間違いがあるなら言ってみなさい、ババア。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "そうだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "ならまずは飛空船を撃ち落としてからにしましょう。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -378,144 +419,164 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "……は？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_npc_394_1",
-          "text": "感じます……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_npc_394_1",
-          "text": "彼女……テレジアさんがそこにいる、そうですか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "……そうだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "飛空船を追撃するのであれば、これからの戦いでは、間違いなく彼女と対峙することになるだろう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "我々は彼女を――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "ハハ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "あんたそれ、あたしたちは彼女を殺す覚悟をしなければならないって言いたいの？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "もし……それが必要であるならば。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "見上げたもんね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "てっきり、あんたと殿下の仲は良いものだと思ってたけど。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "ケルシー、あんたはいつもいつもこうやって天秤にかけてきたってこと？　やれ文明だの、やれ大地だの――こういったもののためなら、誰だろうと殺せちゃうのね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "たとえその人が……テレジアだとしても。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "フンッ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "でも、あたしはあんたとは違うわ、ケルシー。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "サルカズの魂から殿下を救い出し、全部終わらせてみせる。あんたたちがやりたくないなら、あたしがやる。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "だから……今に見ていなさい。絶対に。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "絶対に、もう二度と裏切りなんてものは起きないわ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "ドクター、今この場で最も理性的でいられる人物は君であると信じている。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "これからの作戦指揮は、全て君に任せたい。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "……は？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "感じます……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "彼女……テレジアさんがそこにいる、そうですか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "……そうだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "飛空船を追撃するのであれば、これからの戦いでは、間違いなく彼女と対峙することになるだろう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "我々は彼女を――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "ハハ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "あんたそれ、あたしたちは彼女を殺す覚悟をしなければならないって言いたいの？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "もし……それが必要であるならば。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "見上げたもんね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "てっきり、あんたと殿下の仲は良いものだと思ってたけど。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "ケルシー、あんたはいつもいつもこうやって天秤にかけてきたってこと？　やれ文明だの、やれ大地だの――こういったもののためなら、誰だろうと殺せちゃうのね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "たとえその人が……テレジアだとしても。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "フンッ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "でも、あたしはあんたとは違うわ、ケルシー。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "サルカズの魂から殿下を救い出し、全部終わらせてみせる。あんたたちがやりたくないなら、あたしがやる。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "だから……今に見ていなさい。絶対に。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "絶対に、もう二度と裏切りなんてものは起きないわ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "ドクター、今この場で最も理性的でいられる人物は君であると信じている。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "これからの作戦指揮は、全て君に任せたい。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -530,18 +591,17 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "立派なことばっか言ってないで、一体どうやって飛空船を仕留めるのよ？　この骨骸にある武器じゃどう見ても足りないわ。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "立派なことばっか言ってないで、一体どうやって飛空船を仕留めるのよ？　この骨骸にある武器じゃどう見ても足りないわ。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -556,24 +616,24 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "そんなことできるの？　あの飛空船はこの骨骸とそう大差ない大きさなのよ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "あんたの戦術も過激になったじゃない。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "そんなことできるの？　あの飛空船はこの骨骸とそう大差ない大きさなのよ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "あんたの戦術も過激になったじゃない。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -588,42 +648,45 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_4133_logos_1",
-          "text": "確かに唯一の方法であり、試す価値はある。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_4133_logos_1",
-          "text": "我が全力でもって骨骸を庇護し、飛空船からの砲火に対処する。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_4133_logos_1",
-          "text": "骨骸が飛空船に接触できさえすれば、我らに勝機はある。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_npc_394_1",
-          "text": "私はドクターを信じます。それと、私もLogosさんを手伝います。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "皆がこの計画に同意したのなら、W……"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_4133_logos_1",
+      "isRemote": false,
+      "text": "確かに唯一の方法であり、試す価値はある。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_4133_logos_1",
+      "isRemote": false,
+      "text": "我が全力でもって骨骸を庇護し、飛空船からの砲火に対処する。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_4133_logos_1",
+      "isRemote": false,
+      "text": "骨骸が飛空船に接触できさえすれば、我らに勝機はある。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "私はドクターを信じます。それと、私もLogosさんを手伝います。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "皆がこの計画に同意したのなら、W……"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -633,150 +696,167 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "ハッ……まるであたしがビビってるみたいじゃないの。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "老いぼれ、起きなさい。出発するわよ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "全員、しっかり掴まってなさい！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "幻が消え、さざ波は静けさを取り戻した。\nしかし一瞬にして、彼女たちの下にはすでに――"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_npc_394_1",
-          "text": "危ない――"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "膨れ上がった巫術の光線が放たれ、破滅のエネルギーがそれに触れる一切を洗い流す。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_npc_394_1",
-          "text": "飛空船の反応が早いです！　私たちに追いつかれる準備を早々にしていたようです！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "光線が全てを滅ぼす前に銀色の呪文が浮かび上がった。それらの文字はまるで何かの引力を持つようにして、巫術の奔流を必死に引っ張る。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_4133_logos_1",
-          "text": "「普く術、我が示す道に従い進む。」"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "破滅のエネルギーは角度が逸れ、ちょうど巨獣の骨骸の隙間を通り抜けると、その骨に深くこすった跡を残しただけだった。\nエネルギーは次第に消え、主砲の砲火がようやく止んだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_4133_logos_1",
-          "text": "飛空船の巫術配列が、レヴァナントのアーツの力を増幅しておる。二度目の主砲の砲撃には耐えられぬぞ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_4133_logos_1",
-          "text": "急げ、飛空船に近づくのだ。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "無数の巫術ドローンが飛び立ち、血に染まったローブを身にまとう巫霊たちが宙に舞い上がる。\nそれらはすでに骨骸のある位置へと襲い掛かっていた。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "ほんっと対応が素早いわね！　慈悲の欠片も見えないわ……この骨骸は奴らの宝物じゃないわけ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "テレシスはあたしたちを骨骸ごとここで蒸発させるつもり？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_npc_394_1",
-          "text": "Wさん、もう少し近づかないとダメそうです。この距離では「ライフボーン」が飛空船に接続できません！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "無理よ、飛空船の火力がヤバすぎるわ。穏便に近づく方法なんてないわ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "ハッ、あんたたち刺激が欲しい？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "こうして――やるしかないわ！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "轟音、宙を裂くような悲鳴。\n大きな骨骸が飛空船の装甲に直接ぶつかった。\n青紫色の神経束が必死に伸び、絡みつくことのできる全てを包み込んで、飛空船にきつくまとわりつく。脆い板状の骨は砕けると、空から落ち、枝と蔓の中に消えた。\nレヴァナントが咆哮する。身体の束縛に怒り、その図太さと冒涜にさらに狂う。\n飛空船の甲板に足を踏み入れずとも、レヴァナントの叫びはサルカズ一人一人の心を貫いていた。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "やった！　飛空船を掴んだわ！"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "ハッ……まるであたしがビビってるみたいじゃないの。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "老いぼれ、起きなさい。出発するわよ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "全員、しっかり掴まってなさい！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "幻が消え、さざ波は静けさを取り戻した。\nしかし一瞬にして、彼女たちの下にはすでに――"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "危ない――"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "膨れ上がった巫術の光線が放たれ、破滅のエネルギーがそれに触れる一切を洗い流す。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "飛空船の反応が早いです！　私たちに追いつかれる準備を早々にしていたようです！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "光線が全てを滅ぼす前に銀色の呪文が浮かび上がった。それらの文字はまるで何かの引力を持つようにして、巫術の奔流を必死に引っ張る。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_4133_logos_1",
+      "isRemote": false,
+      "text": "「普く術、我が示す道に従い進む。」"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "破滅のエネルギーは角度が逸れ、ちょうど巨獣の骨骸の隙間を通り抜けると、その骨に深くこすった跡を残しただけだった。\nエネルギーは次第に消え、主砲の砲火がようやく止んだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_4133_logos_1",
+      "isRemote": false,
+      "text": "飛空船の巫術配列が、レヴァナントのアーツの力を増幅しておる。二度目の主砲の砲撃には耐えられぬぞ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_4133_logos_1",
+      "isRemote": false,
+      "text": "急げ、飛空船に近づくのだ。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "無数の巫術ドローンが飛び立ち、血に染まったローブを身にまとう巫霊たちが宙に舞い上がる。\nそれらはすでに骨骸のある位置へと襲い掛かっていた。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "ほんっと対応が素早いわね！　慈悲の欠片も見えないわ……この骨骸は奴らの宝物じゃないわけ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "テレシスはあたしたちを骨骸ごとここで蒸発させるつもり？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Wさん、もう少し近づかないとダメそうです。この距離では「ライフボーン」が飛空船に接続できません！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "無理よ、飛空船の火力がヤバすぎるわ。穏便に近づく方法なんてないわ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "ハッ、あんたたち刺激が欲しい？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "こうして――やるしかないわ！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "轟音、宙を裂くような悲鳴。\n大きな骨骸が飛空船の装甲に直接ぶつかった。\n青紫色の神経束が必死に伸び、絡みつくことのできる全てを包み込んで、飛空船にきつくまとわりつく。脆い板状の骨は砕けると、空から落ち、枝と蔓の中に消えた。\nレヴァナントが咆哮する。身体の束縛に怒り、その図太さと冒涜にさらに狂う。\n飛空船の甲板に足を踏み入れずとも、レヴァナントの叫びはサルカズ一人一人の心を貫いていた。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "43_g1_giantmonstercockpit"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "やった！　飛空船を掴んだわ！"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -791,69 +871,75 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "うっさいわね。いちいち指図しないで！　やることくらい分かってるわよ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "骨っころ！　あんたの出番よ！　さっさと――"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "ちょっと――どうして動かないの！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "もしもーし？　反応しなさいよ！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_npc_394_1",
-          "text": "巨獣の骨骸はひどい損傷を受けたせいで、魂がまた離れてしまったようです――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "こんな時に！！？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_npc_394_1",
-          "text": "このままだと骨骸は逆に飛空船に引っ張られてしまいます！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_npc_394_1",
-          "text": "ドクター、どうすればいいですか？"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "うっさいわね。いちいち指図しないで！　やることくらい分かってるわよ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "骨っころ！　あんたの出番よ！　さっさと――"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "ちょっと――どうして動かないの！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "もしもーし？　反応しなさいよ！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "巨獣の骨骸はひどい損傷を受けたせいで、魂がまた離れてしまったようです――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "こんな時に！！？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "このままだと骨骸は逆に飛空船に引っ張られてしまいます！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "ドクター、どうすればいいですか？"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -868,18 +954,17 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "へぇ、戦術がますます大胆になってきたじゃないの。あたしとしたことが、褒めてやりたくなるわ。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "へぇ、戦術がますます大胆になってきたじゃないの。あたしとしたことが、褒めてやりたくなるわ。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -889,18 +974,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_npc_394_1",
-          "text": "はい、準備はできています。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "はい、準備はできています。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -910,18 +994,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "あんたに言われるまでもないわ。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "あんたに言われるまでもないわ。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -931,24 +1014,24 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_4133_logos_1",
-          "text": "うむ。三十分の間、いかなる敵も近づかせはせぬ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "ドクター、君も我々と共に飛空船へ向かう必要がある。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_4133_logos_1",
+      "isRemote": false,
+      "text": "うむ。三十分の間、いかなる敵も近づかせはせぬ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "ドクター、君も我々と共に飛空船へ向かう必要がある。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -958,18 +1041,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "……君には躊躇いも、質問もないな。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "……君には躊躇いも、質問もないな。"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -979,158 +1061,184 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "無駄話はいいわ。計画が決まったならさっさと行くわよ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "子ウサギ、この神経束を伝って滑り降りるわよ。あの巫霊どもの射程に身をさらさないようにね！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_npc_394_1",
-          "text": "分かりました、流れ弾は私が止めます。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_npc_394_1",
-          "text": "ドクター、ケルシー先生。私とWさんが着地地点を片づけます。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_npc_394_1",
-          "text": "どうかお気をつけて。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "Mon3tr。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mon3tr",
-          "speakerId": "npc_10002",
-          "text": "（嬉しそうな雄たけび）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "Mon3trに掴まるんだ、ドクター。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "君にしか……制御できないものがある。あるいは、君は我々が苦しんでいる時の最後の希望となるかもしれない。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケルシー",
-          "speakerId": "avg_003_kalts_1",
-          "text": "かつての君のように。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "Mon3trがあなたを抱えて飛び降りる。重力が失われる感覚にあなたは少し狼狽した。激しい風で目を開けられない。\nLogosの呪文とWの笑い声が遠くからあなたの耳に届いた。爆発音が絶え間なく響く。それはサルカズのドローンが撃ち落とされる音だった。\nついに浮遊感が消え、あなたの手を握る者がいた。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_npc_394_1",
-          "text": "ドクター。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_npc_394_1",
-          "text": "着きました。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "どうやら老いぼれが挨拶に来てくれたみたいね。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "この船ってレヴァナントなのよね？　そいつ頭に乗っかられるのが嫌みたいよ？"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "不気味な影が金属の壁から染み出して、一瞬にして飛空船の甲板の隅々を満たす。\n影は小刻みに震えている。その収縮するリズムこそレヴァナントの呼吸そのものだ。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "不気味な影",
-          "speakerId": "avg_npc_1340_1",
-          "text": "……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_npc_394_1",
-          "text": "これはレヴァナントの造物です。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "avg_npc_394_1",
-          "text": "とっくに準備をしていたようですね。レヴァナントは、私たちにそう簡単に止めさせるつもりはないようです。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "簡単よ、止まるまでボコボコにしてやればいいだけでしょ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "W",
-          "speakerId": "avg_1035_wisdel_1",
-          "text": "今回は、爆弾をたーっぷり持ってきたもの。"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "無駄話はいいわ。計画が決まったならさっさと行くわよ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "子ウサギ、この神経束を伝って滑り降りるわよ。あの巫霊どもの射程に身をさらさないようにね！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "分かりました、流れ弾は私が止めます。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "ドクター、ケルシー先生。私とWさんが着地地点を片づけます。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "どうかお気をつけて。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "Mon3tr。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mon3tr",
+      "speakerId": "npc_10002",
+      "isRemote": false,
+      "text": "（嬉しそうな雄たけび）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "Mon3trに掴まるんだ、ドクター。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "君にしか……制御できないものがある。あるいは、君は我々が苦しんでいる時の最後の希望となるかもしれない。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケルシー",
+      "speakerId": "avg_003_kalts_1",
+      "isRemote": false,
+      "text": "かつての君のように。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
+      "type": "narration",
+      "text": "Mon3trがあなたを抱えて飛び降りる。重力が失われる感覚にあなたは少し狼狽した。激しい風で目を開けられない。\nLogosの呪文とWの笑い声が遠くからあなたの耳に届いた。爆発音が絶え間なく響く。それはサルカズのドローンが撃ち落とされる音だった。\nついに浮遊感が消え、あなたの手を握る者がいた。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "50_g9_airshipdeck"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "ドクター。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "着きました。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "どうやら老いぼれが挨拶に来てくれたみたいね。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "この船ってレヴァナントなのよね？　そいつ頭に乗っかられるのが嫌みたいよ？"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "不気味な影が金属の壁から染み出して、一瞬にして飛空船の甲板の隅々を満たす。\n影は小刻みに震えている。その収縮するリズムこそレヴァナントの呼吸そのものだ。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "不気味な影",
+      "speakerId": "avg_npc_1340_1",
+      "isRemote": false,
+      "text": "……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "これはレヴァナントの造物です。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "とっくに準備をしていたようですね。レヴァナントは、私たちにそう簡単に止めさせるつもりはないようです。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "簡単よ、止まるまでボコボコにしてやればいいだけでしょ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "W",
+      "speakerId": "avg_1035_wisdel_1",
+      "isRemote": false,
+      "text": "今回は、爆弾をたーっぷり持ってきたもの。"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": []

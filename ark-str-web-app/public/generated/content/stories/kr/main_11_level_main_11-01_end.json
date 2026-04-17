@@ -6,10 +6,14 @@
   "title": "명예를 위하여",
   "storyCode": "11-1",
   "avgTag": "작전 후",
-  "sourcePath": "vendor/ArknightsGamedata/kr/gamedata/story/obt/main/level_main_11-01_end.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/kr/gamedata/story/obt/main/level_main_11-01_end.txt",
   "sourceHash": "0c961a5851cf6775946ef88293fc32bfbb898d11983df421b7159890910e4b59",
   "bodyAvailable": true,
   "blocks": [
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
     {
       "type": "narration",
       "text": "……알레데일, 엿듣는 건 좋은 습관이 아니다.\n비열한 자들이나 몰래 숨어서 남의 생사에 대해 계략을 꾸미지.\n그들이 이익을 얻을진 몰라도, 그렇게 훔쳐 온 승리는 절대 오래가지 못한다."
@@ -18,12 +22,14 @@
       "type": "dialogue",
       "speakerName": "알레데일",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "(흥…… 저들은 모두 비열한 사람들이야……)"
     },
     {
       "type": "dialogue",
       "speakerName": "알레데일",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "(아버지……)"
     },
     {
@@ -34,15 +40,21 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_towerinside"
+    },
+    {
       "type": "dialogue",
       "speakerName": "얼굴이 희미한 장교",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "저희도 얼른 내려가죠."
     },
     {
       "type": "dialogue",
       "speakerName": "얼굴이 희미한 장교",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "병사들이 인원수를 세고 있습니다. 혼란을 틈타 군중들 속에 섞여 들어가면 아무도 우리가 이탈했었다는 걸 눈치채지 못할 겁니다."
     },
     {
@@ -52,18 +64,21 @@
       "type": "dialogue",
       "speakerName": "얼굴이 잘 보이지 않는 상인",
       "speakerId": "avg_npc_177",
+      "isRemote": false,
       "text": "……무슨 기척이 들리지 않아?"
     },
     {
       "type": "dialogue",
       "speakerName": "얼굴이 희미한 장교",
       "speakerId": "avg_npc_408_1",
+      "isRemote": false,
       "text": "작은 동물 같은 거겠죠. 걱정하지 않아도 됩니다. 이런 좁은 방에 사람이 숨을 수나 있겠습니까?"
     },
     {
       "type": "dialogue",
       "speakerName": "알레데일",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "휴우……"
     },
     {
@@ -77,6 +92,7 @@
       "type": "dialogue",
       "speakerName": "알레데일",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "꺄악!"
     },
     {
@@ -115,45 +131,56 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "32_g2_dukegarden"
+    },
+    {
       "type": "dialogue",
       "speakerName": "빅토리아 장교",
       "speakerId": "avg_npc_409_1",
+      "isRemote": false,
       "text": "저기 봐, 저…… 저분은……"
     },
     {
       "type": "dialogue",
       "speakerName": "빅토리아 장교",
       "speakerId": "avg_npc_409_1",
+      "isRemote": false,
       "text": "알렉산드리나 전하다!"
     },
     {
       "type": "dialogue",
       "speakerName": "빅토리아 장교",
       "speakerId": "avg_npc_409_1",
+      "isRemote": false,
       "text": "즉시 폐하께 아뢰라. 전하를 찾았다. 전하는 지금 정원에 계신다……"
     },
     {
       "type": "dialogue",
       "speakerName": "빅토리아 장교",
       "speakerId": "avg_npc_409_1",
+      "isRemote": false,
       "text": "잠깐, 내가 잘못 본 건 아니지? 저건…… 사라진……"
     },
     {
       "type": "dialogue",
       "speakerName": "빅토리아 장교",
       "speakerId": "avg_npc_409_1",
+      "isRemote": false,
       "text": "우리의 전하…… 전하께서 왕의 숨결을 찾으셨다!"
     },
     {
       "type": "dialogue",
       "speakerName": "빅토리아 장교",
       "speakerId": "avg_npc_409_1",
+      "isRemote": false,
       "text": "빅토리아에 가호를!"
     },
     {
       "type": "dialogue",
       "speakerName": "빅토리아 장교",
       "speakerId": "avg_npc_409_1",
+      "isRemote": false,
       "text": "우리 왕에게 가호를!"
     },
     {
@@ -170,6 +197,7 @@
       "type": "dialogue",
       "speakerName": "시녀 에일쉬",
       "speakerId": "avg_npc_663_1",
+      "isRemote": false,
       "text": "알레데일 아가씨……아가씨가 왜 여기에?"
     },
     {
@@ -179,375 +207,448 @@
       "type": "dialogue",
       "speakerName": "알레데일",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "……에일쉬."
     },
     {
       "type": "dialogue",
       "speakerName": "알레데일",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "에일쉬도 저들이 안 보여?"
     },
     {
       "type": "dialogue",
       "speakerName": "시녀 에일쉬",
       "speakerId": "avg_npc_663_1",
+      "isRemote": false,
       "text": "저들이라니? 무슨 말씀이신지? 알렉산드리나 전하 말인가요?"
     },
     {
       "type": "dialogue",
       "speakerName": "시녀 에일쉬",
       "speakerId": "avg_npc_663_1",
+      "isRemote": false,
       "text": "전하는 한 분밖에 없어요."
     },
     {
       "type": "dialogue",
       "speakerName": "알레데일",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "아니, 저, 황금빛의……"
     },
     {
       "type": "dialogue",
       "speakerName": "알레데일",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "방금 전까지도 내게 말도 걸었는데."
     },
     {
       "type": "dialogue",
       "speakerName": "시녀 에일쉬",
       "speakerId": "avg_npc_663_1",
+      "isRemote": false,
       "text": "무슨 일이 있었던 거예요? 드레스는 왜 또 이렇게 더러워졌고요…… 아가씨, 괜찮으세요?"
     },
     {
       "type": "dialogue",
       "speakerName": "알레데일",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "나도…… 잘 모르겠어."
     },
     {
       "type": "dialogue",
       "speakerName": "알레데일",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "별이…… 별이 위층 방에 떨어졌어."
     },
     {
       "type": "dialogue",
       "speakerName": "알레데일",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "증기 기사…… 갑옷…… 비열한 놈들을 쓰러뜨려야 해!"
     },
     {
       "type": "dialogue",
       "speakerName": "시녀 에일쉬",
       "speakerId": "avg_npc_663_1",
+      "isRemote": false,
       "text": "무슨 말씀이신지 모르겠어요."
     },
     {
       "type": "dialogue",
       "speakerName": "알레데일",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "에일쉬, 머리가 너무 어지러워."
     },
     {
       "type": "dialogue",
       "speakerName": "시녀 에일쉬",
       "speakerId": "avg_npc_663_1",
+      "isRemote": false,
       "text": "아가씨, 좀 쉬셔야 합니다. 이 광경을 보고 어지럽지 않은 사람은 없을 거예요. 오늘 너무나 많은 일이 일어났어요."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_manorindoor"
+    },
+    {
       "type": "dialogue",
       "speakerName": "귀족 여자",
       "speakerId": "avg_npc_175",
+      "isRemote": false,
       "text": "봤나요? 알렉산드리나 전하가 사라진 왕의 숨결을 안고 돌아왔대요!"
     },
     {
       "type": "dialogue",
       "speakerName": "귀족 남자",
       "speakerId": "avg_npc_176",
+      "isRemote": false,
       "text": "정원에서 울려 퍼진 환호 소리에 창문과 벽이 부서지는 줄 알았네. 자신의 눈을 믿을 수 있는 사람이 있을까. 저건 알렉산드리나 전하야…… 고작 몇 살밖에 되지 않으실 텐데?"
     },
     {
       "type": "dialogue",
       "speakerName": "귀족 여자",
       "speakerId": "avg_npc_175",
+      "isRemote": false,
       "text": "다들 '기적'이라고 말하고 있어요."
     },
     {
       "type": "dialogue",
       "speakerName": "귀족 남자",
       "speakerId": "avg_npc_176",
+      "isRemote": false,
       "text": "그래, 기적. 이게 바로 기적이야."
     },
     {
       "type": "dialogue",
       "speakerName": "귀족 남자",
       "speakerId": "avg_npc_176",
+      "isRemote": false,
       "text": "기적과 우연의 가장 큰 차이는, 기적은 아무 이유 없이 지금 이곳에 나타나지 않는다는 것이야."
     },
     {
       "type": "dialogue",
       "speakerName": "귀족 남자",
       "speakerId": "avg_npc_176",
+      "isRemote": false,
       "text": "폐하의 탄신이 얼마 남지 않은 이 시점에…… 어찌 이 기적적인 일을 훌륭한 계시로 여기지 않을 수 있겠나."
     },
     {
       "type": "dialogue",
       "speakerName": "귀족 여자",
       "speakerId": "avg_npc_175",
+      "isRemote": false,
       "text": "그건 아니죠. 아무리 자작극이긴 하지만, 그래도 흥미로웠는걸요."
     },
     {
       "type": "dialogue",
       "speakerName": "귀족 여자",
       "speakerId": "avg_npc_175",
+      "isRemote": false,
       "text": "공작님들이 지금의 폐하와 컴버랜드 공작을 어떻게 평가했었는지 다시 떠올리게 되네요……"
     },
     {
       "type": "dialogue",
       "speakerName": "귀족 남자",
       "speakerId": "avg_npc_176",
+      "isRemote": false,
       "text": "그만하지. 걱정은 일단 잊어버리고, 연회나 즐기자고."
     },
     {
       "type": "dialogue",
       "speakerName": "귀족 여자",
       "speakerId": "avg_npc_175",
+      "isRemote": false,
       "text": "맞는 말입니다. 저들이 지금 이 순간을 충분히 즐기게 해두죠……"
     },
     {
       "type": "dialogue",
       "speakerName": "귀족 남자 & 귀족 여자",
       "speakerId": null,
+      "isRemote": false,
       "text": "빅토리아에 가호를!"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "27_g11_lentinobleroom_indoor"
+    },
+    {
       "type": "dialogue",
       "speakerName": "격앙된 목소리",
       "speakerId": null,
+      "isRemote": false,
       "text": "……사람들이 알렉산드리나의 모험 여행을 눈치챈 것 같군."
     },
     {
       "type": "dialogue",
       "speakerName": "중후한 목소리",
       "speakerId": null,
+      "isRemote": false,
       "text": "폐하…… 전하께서 지하 통로에 가셨다는 것을 진작 알고 계셨습니까?"
     },
     {
       "type": "dialogue",
       "speakerName": "격앙된 목소리",
       "speakerId": null,
+      "isRemote": false,
       "text": "좋은 기회지 않나. 내가 왕궁에 없으면 충실하던 근위병들도 잡담을 나누거나 졸기 마련일 테고, 우리 꼬마 침입자가 지하 통로에 들어가는 걸 놓칠 것이라 생각했지."
     },
     {
       "type": "dialogue",
       "speakerName": "중후한 목소리",
       "speakerId": null,
+      "isRemote": false,
       "text": "이 모든 게 모두 폐하의 계획이셨군요."
     },
     {
       "type": "dialogue",
       "speakerName": "격앙된 목소리",
       "speakerId": null,
+      "isRemote": false,
       "text": "반은 그분의 생각이야. 그분은 가끔 사람들 앞에서 작은 장난 같은 걸 치기 좋아하지."
     },
     {
       "type": "dialogue",
       "speakerName": "중후한 목소리",
       "speakerId": null,
+      "isRemote": false,
       "text": "그분이 협조하기로 했다는 건, 그분도 이게 필요한 일이라고 생각하시는 걸까요?"
     },
     {
       "type": "dialogue",
       "speakerName": "격앙된 목소리",
       "speakerId": null,
+      "isRemote": false,
       "text": "……런디니움의 여름이 곧 다가온다. 날씨도 후덥지근하고 이따금 큰비가 내리기도 하지. 자네도 알레데일과 부인을 미리 도시 밖으로 내보낼 준비를 하고 있지 않나?"
     },
     {
       "type": "dialogue",
       "speakerName": "중후한 목소리",
       "speakerId": null,
+      "isRemote": false,
       "text": "폐하! 결코 별다른 뜻이 있어서 그런 건 아닙니다. 다만……"
     },
     {
       "type": "dialogue",
       "speakerName": "격앙된 목소리",
       "speakerId": null,
+      "isRemote": false,
       "text": "로버트, 자네는 딸을 아주 아끼지. 나도 마찬가지야."
     },
     {
       "type": "dialogue",
       "speakerName": "격앙된 목소리",
       "speakerId": null,
+      "isRemote": false,
       "text": "우리는 빅토리아를 위해 모든 걸 걸겠지만, 이 아이들이야말로 빅토리아의 진정한 미래야. 만에 하나 우리가 실패한다면……"
     },
     {
       "type": "dialogue",
       "speakerName": "중후한 목소리",
       "speakerId": null,
+      "isRemote": false,
       "text": "그런 일은 없을 겁니다, 폐하. 제가 이 목숨을 걸고서라도 최악의 사태가 일어나는 걸 반드시 막겠습니다."
     },
     {
       "type": "dialogue",
       "speakerName": "격앙된 목소리",
       "speakerId": null,
+      "isRemote": false,
       "text": "나는 우리의 미래에 용기와 자신감이 넘쳐. 그렇다고 내가 알렉산드리나를 위한 퇴로를 계획하지 않을 이유가 되진 않지."
     },
     {
       "type": "dialogue",
       "speakerName": "격앙된 목소리",
       "speakerId": null,
+      "isRemote": false,
       "text": "그 아이는 분명 빅토리아의 왕이 될 거야. 조금 더 일찍 자기 도시를 파악하게 하는 게 나쁠 게 없지 않나?"
     },
     {
       "type": "dialogue",
       "speakerName": "격앙된 목소리",
       "speakerId": null,
+      "isRemote": false,
       "text": "게다가 이런 해프닝은 지금처럼 다소 갑갑한 오후의 분위기를 전환할 수도 있을 터."
     },
     {
       "type": "dialogue",
       "speakerName": "격앙된 목소리",
       "speakerId": null,
+      "isRemote": false,
       "text": "사람들이 정신적으로 스트레스를 받을수록 격려가 필요하지. 그것이야말로 우리가 이곳에 모인 의미기도 하고."
     },
     {
       "type": "dialogue",
       "speakerName": "격앙된 목소리",
       "speakerId": null,
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "격앙된 목소리",
       "speakerId": null,
+      "isRemote": false,
       "text": "물론…… 우리도 예감이라는 게 있으니, 이런 계획을 세우는 게 아니겠나?"
     },
     {
       "type": "dialogue",
       "speakerName": "중후한 목소리",
       "speakerId": null,
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "격앙된 목소리",
       "speakerId": null,
+      "isRemote": false,
       "text": "자, 로버트. 이 차를 다 마시고 우리도 그만 내려가지."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "32_g2_dukegarden"
+    },
+    {
       "type": "dialogue",
       "speakerName": "알레데일",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "음악 소리가 들리네. 저건 아버지가 폐하를 위해 불러온 악단이지?"
     },
     {
       "type": "dialogue",
       "speakerName": "시녀 에일쉬",
       "speakerId": "avg_npc_663_1",
+      "isRemote": false,
       "text": "그럼요, 알레데일 아가씨. 연회가 곧 시작됩니다."
     },
     {
       "type": "dialogue",
       "speakerName": "알레데일",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "다들 즐거워 보이네."
     },
     {
       "type": "dialogue",
       "speakerName": "시녀 에일쉬",
       "speakerId": "avg_npc_663_1",
+      "isRemote": false,
       "text": "아가씨는 즐겁지 않으세요?"
     },
     {
       "type": "dialogue",
       "speakerName": "알레데일",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "에일쉬…… 앞으로도 이런 날이 계속될까?"
     },
     {
       "type": "dialogue",
       "speakerName": "알레데일",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "나랑 에일쉬, 아버지, 그리고 어머니…… 우린 영원히 함께하겠지?"
     },
     {
       "type": "dialogue",
       "speakerName": "시녀 에일쉬",
       "speakerId": "avg_npc_663_1",
+      "isRemote": false,
       "text": "글쎄요, 알레데일 아가씨. 저는 영원한 게 없다고 생각합니다. 마치 이 정원의 꽃들처럼요."
     },
     {
       "type": "dialogue",
       "speakerName": "알레데일",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "알레데일",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "아니야, 에일쉬. 분명 영원히 변하지 않는 게 있어!"
     },
     {
       "type": "dialogue",
       "speakerName": "알레데일",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "예를 들어, 내가 커서 증기 기사가 되는 것처럼, 그 린치 씨처럼! 아니, 나는 린치 씨를 뛰어넘을 거야!"
     },
     {
       "type": "dialogue",
       "speakerName": "알레데일",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "내가 나쁜 놈을 쫓아내고 모두를 지켜낼 거야."
     },
     {
       "type": "dialogue",
       "speakerName": "알레데일",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "내가 증증증증조 할머니처럼, 컴버랜드의 이름이 영원히 빛나게 할 거야."
     },
     {
       "type": "dialogue",
       "speakerName": "알레데일",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "에일쉬, 약속할게. 내가 꼭 보여줄게!"
     },
     {
       "type": "dialogue",
       "speakerName": "시녀 에일쉬",
       "speakerId": "avg_npc_663_1",
+      "isRemote": false,
       "text": "아가씨……"
     },
     {
       "type": "dialogue",
       "speakerName": "알레데일",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "……나는 런디니움을 떠나지 않아. 에일쉬, 너도 떠나면 안 돼."
     },
     {
       "type": "dialogue",
       "speakerName": "알레데일",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "내가 아버지한테 말할게……"
     },
     {
       "type": "dialogue",
       "speakerName": "알레데일",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "여긴 우리 집이야. 컴버랜드의 모든 사람이 그랬듯이, 나도 우리 가문을 물려받고 지킬 거야. 내 목숨의 끝이 올 때까지."
     },
     {
       "type": "dialogue",
       "speakerName": "알레데일",
       "speakerId": "avg_npc_655_1",
+      "isRemote": false,
       "text": "맹세해."
     },
     {

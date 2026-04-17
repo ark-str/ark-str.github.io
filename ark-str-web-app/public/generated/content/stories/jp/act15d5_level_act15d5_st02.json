@@ -6,10 +6,14 @@
   "title": "荒野悠々",
   "storyCode": "",
   "avgTag": "幕間",
-  "sourcePath": "vendor/ArknightsGamedata/jp/gamedata/story/activities/act15d5/level_act15d5_st02.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/jp/gamedata/story/activities/act15d5/level_act15d5_st02.txt",
   "sourceHash": "0433852a24c05e6c374d57b62351117a10bdc25eccbd876ed71538c82c21a652",
   "bodyAvailable": true,
   "blocks": [
+    {
+      "type": "background",
+      "backgroundId": "bg_desert_1"
+    },
     {
       "type": "narration",
       "text": "果ての見えない荒野。赤い髪のヴァルポの男が地面にしゃがんで何かをじっと見つめている。\n彼の背後には一台の車が停まっていた。白髪のループスの男と黒髪のフェリーンがその車の点検をしていた。\nどうやら三人は共に旅をしているようだ。そしてその道中で、車が故障してしまったのだ。"
@@ -21,6 +25,7 @@
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "おーい、アオスタ、ちょっと来てくれ！"
     },
     {
@@ -30,100 +35,120 @@
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "何です？"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "見てみろよ、この虫――"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "一列に並んで歩いて、めっちゃ規律正しくね？"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "それにこの列かなり長いぜ。どこに行くつもりなんだろうな。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "……元気が出てきたみたいですね。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "おうよ、だいぶ良くなったぜ！"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "ですがキアーベ……あなたの体調に関する自己判断は、あまり信用できません。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "オメーは俺の母ちゃんかよ！"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "あなた三十分ほど前まで、吐血してたじゃないですか。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "そうだっけ？　ハハッ、でも今は大丈夫だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "あっ！　やっべ、お前と話してたら虫が行っちまったじゃねえか。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "はぁ……僕は車の修理に戻りますよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "おっ、何が問題かわかったか？　俺も手伝ってやろうか？"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "パイプに不具合があるようです。それでエンジンがかからないんですよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "僕とブローカの二人で対応できます。あなたはどこかへ行ったりしなければそれでいいです。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "どっか行くったってここにゃ何もねぇぞ。どこに行くってんだよ？"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_desert_1"
     },
     {
       "type": "narration",
@@ -133,216 +158,259 @@
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "ふぅ……ブローカ、キアーベを呼んできてください。"
     },
     {
       "type": "dialogue",
       "speakerName": "ブローカ",
       "speakerId": "char_356_broca",
+      "isRemote": false,
       "text": "ああ。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_desert_1"
+    },
+    {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "おい、ブローカ、どっちの方がションベンを遠くに飛ばせるか勝負しようぜ！"
     },
     {
       "type": "dialogue",
       "speakerName": "ブローカ",
       "speakerId": "char_356_broca",
+      "isRemote": false,
       "text": "……今は出ない。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "そんな質問に真面目に答えなくていいんですよ、ブローカ。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "……んだよ、もったいねぇなぁ！　立ちションするのにピッタリな天気だってのによぉ！"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "極寒の地を除いて、ショ……用を足すのに不都合な天気なんてないと思いますが。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "わかってねぇなぁ、アオスタ、こういうのは気分の問題なんだよ！"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "おぉ、見ろ、完璧な曲線を描いてるぜ――あ！　*シラクーザスラング*！"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "どうしました？"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "急に風が吹いてきて俺の完璧な曲線が靴にかかっちまいやがった！　くそっ、ついてねぇぜ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "……ふざけてないで、早く出発しますよ。日が落ちる前に集落でも見つけないと、今日は荒野で野宿ですからね。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "荒野じゃいけないのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "そういえば、俺まだキャンプってしたことねぇんだよな。そうだ、今日はキャンプにしようぜ！"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "荒野は危険です。加えて、そもそもこの盗んできた車にはキャンプ道具なんてありません。車で寝るしかないですよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "それに、燃料の問題もありますしね。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "チェッ、使えねぇヤツだなぁ、コイツの持ち主は。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "都市に住んでいて郊外に出る予定もないのに、車にキャンプ道具なんて普通積みませんよ。ましてや予備の燃料なんて。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "だけどよ、準備したとこで損はねぇだろ？　いつ誰がキャンプ用に借りて行くかわからねぇじゃねぇか！"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "じゃあキアーベなら準備しておくんですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "うーん……しねぇな。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "だったら黙って出発の準備をしてください。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "へいへい。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_desert_1"
+    },
+    {
       "type": "dialogue",
       "speakerName": "ブローカ",
       "speakerId": "char_356_broca",
+      "isRemote": false,
       "text": "出発できるか？"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "はい。僕が運転します。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "なに？　次は俺の番だろ？"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "キアーベはゆっくり休んでください。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "アオスタ、俺気付いたんだけどよ、お前最近どんどん母ちゃん化してきてるぞ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "なぁ、ブローカ、お前もそう思わねぇか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ブローカ",
       "speakerId": "char_356_broca",
+      "isRemote": false,
       "text": "ちょっとな。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "……あなたたち二人が鉱石病に感染したからですよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "生活習慣の改善が、病状の抑制に役立つと聞きました。キアーベ、あなたは毎日もっと早く寝ないといけません。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "おいマジかよ……知ってるかアオスタ？　俺の母ちゃんですら、そんなことは一度だって言ったことねぇぜ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "*シラクーザの慇懃なご挨拶*、うるさい。"
     },
     {
@@ -359,12 +427,14 @@
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "音楽かけようぜ。何がいいかな……っと。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "おぉ、この車の持ち主は結構色んな曲聞いてんだな……アハッ！　これなんか、ジャケが結構イケてんじゃねぇか、これにしよう！"
     },
     {
@@ -381,201 +451,238 @@
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "（口笛）結構いいよな。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "確かに。では、行きますよ。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_desert_1"
+    },
+    {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "そういえば、アオスタ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "ん？"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "俺たちって、今どこに向かってるんだ？"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "その質問の答えは、出発する時にすでに言ったはずですが……"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "忘れちまったんだよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "そもそも聞いてなかっただけでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "目的地はロコモティヴァシティです。逃げ出す際に僕が持ち出した地図によれば、そこが一番近い街です。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "あそことうちのファミリーの仲はあんまり。規模的にもうちのファミリーがようようと手を出せるところではない。運次第ですが、彼らに拾ってもらってもいい。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "もしダメでも、少なくとも足を休められる場所はあります。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "……なぁ、シラクーザの西の方に、奇妙な町があるって聞いたぜ。そこにゃよくお化けが出るんだってさ。ちょっと行ってみねぇ？"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "バカ言わないでください。どこにあるかもわからないんでしょ？　そもそもそんなもの、誰かの作り話に決まってる……"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "じゃあ、ほかの十三家の連中がいる都市に行くってのはどうだ？　まあ、期待はできねぇけどな。古巣の例もあるしよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "ケッ。シチリア連合なんて名前だけは立派だけどな。あいつらも一応は「十三家」の端くれだってのによ、年がら年中、身内で揉めてるだけじゃねぇかよ。なーにが連合だ、クソが。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "シチリア連合は本物の大ファミリーとは違って、中小規模クラスの寄せ集めのファミリーで構成されてますからね。決定的な強者がいなければ、誰が上に立つかで揉めるのも仕方ない。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "平和な小競り合いですよ。大ファミリーの連中は、僕たちみたいなシチリア連合の無名の者を相手にしませんから。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "チッ、まあそのうち向こうから加わってくれって頼みに来るだろうけどな。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "とにかくヴァイトシティにはしばらく戻れません……いや、もしかしたら永遠に戻れないかもしれません。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "それに、トリンファミリーの怒りも買ってしまいましたからね……もはやヴァイトに僕たちの居場所はありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "ハハッ！　あんなでっけー騒ぎを起こしたんだ、ボスのツラを拝んでやりてぇぜ。ペッ、あのリントンの汚ねぇ顔は今どんな表情してやがんだろうな。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "……まったく。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "どうした？　ハッ、ここまできて後悔しても遅いぜ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "後悔……とまではいきませんよ。リントンは確かにクソ野郎でしたから。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "僕たちを馬鹿にしても限度というものがあります。"
     },
     {
       "type": "dialogue",
       "speakerName": "ブローカ",
       "speakerId": "char_356_broca",
+      "isRemote": false,
       "text": "ああ。俺も後悔はしてない。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "肥溜めのことなんて忘れようぜ。そういやよ、ファミリーのために罪を被ることが、一員になるための儀式だってとこもあるだろ？　苦難を背負うことで本当の家族になれるんだとよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "だが、俺たちはファミリーに逆らって、あの都市から逃げ出した。つまり、俺たちは共に苦難を背負ったんだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "つーわけで、俺は今ここに宣言するぜ。お前たちは二人とも、このキアーベファミリーの一員だ！"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "アオスタ、お前はファミリーの第一参謀だ！"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "ハハッ。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "ブローカ、お前はファミリーの特攻隊長だ！"
     },
     {
       "type": "dialogue",
       "speakerName": "ブローカ",
       "speakerId": "char_356_broca",
+      "isRemote": false,
       "text": "フッ。"
     },
     {
@@ -589,225 +696,266 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_desert_1"
+    },
+    {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "ってか、こんなに走ったのに人っ子一人見当たらねぇぞ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "もともと少数の集落や村以外は、都市の外に人なんてほとんどいませんよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "都市ではやっていけない一部のファミリーが、荒野で好き勝手してますから。何回かファミリーの商隊についていったことがありますが、いつも万全な対策をしてましたよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "今の僕たちみたいに何の準備もないまま荒野に出るなんて、普通に考えたら死あるのみです。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "ハッ、「死あるのみ」か……その表現、俺は好きだぜ。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "まぁでもそうだな、俺が修理工場にいた頃も、外に行く奴らは色々と準備しに来てたな。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "はぁ……逃げ出す時にもっと食い物を持って来りゃよかったな……なあ、アオスタ――"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "トランクの食料はダメですよ、緊急用なんですから。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "チェッ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "逃げられただけでも御の字ですよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "もしも昨晩の見張りがマンデルじゃなければ、僕たちは今頃暗い部屋の中で、目隠しされて椅子に縛りつけられてますよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "ブローカ、次にこういうことがあった時は、食い物多めに持ったか俺に確認してくれ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ブローカ",
       "speakerId": "char_356_broca",
+      "isRemote": false,
       "text": "ああ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "はぁ……まったく。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "でもつまんねーよな、こんな広い土地があるのに使えないなんて。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "ほら見ろよ、この場所。ここにこーんなでっかい修理工場建てて、車の改造なんかできたらどんだけ気持ちイイだろうな。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "場所があっても、長く住める場所ではありませんからね。天災には抗えません。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "はぁ、天災に鉱石病……この大地には良いことなんて何もねぇな。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "ブローカ、何か面白いことねぇか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ブローカ",
       "speakerId": "char_356_broca",
+      "isRemote": false,
       "text": "……読むか？"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "なんだそれは？"
     },
     {
       "type": "dialogue",
       "speakerName": "ブローカ",
       "speakerId": "char_356_broca",
+      "isRemote": false,
       "text": "読み終わったばかりの本だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "どんな内容なんだ？"
     },
     {
       "type": "dialogue",
       "speakerName": "ブローカ",
       "speakerId": "char_356_broca",
+      "isRemote": false,
       "text": "対立するファミリーに所属していたことで、最終的に引き裂かれたある恋人同士の小説だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ブローカ",
       "speakerId": "char_356_broca",
+      "isRemote": false,
       "text": "……結末に感動する。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "俺はいいや。しかしお前、なんでそんなの持ってるんだ？"
     },
     {
       "type": "dialogue",
       "speakerName": "ブローカ",
       "speakerId": "char_356_broca",
+      "isRemote": false,
       "text": "アオスタが道中暇だろうって言ってたからな。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "なぁ、ブローカ……前から気になってたんだがよ、お前そういう本が好きなのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ブローカ",
       "speakerId": "char_356_broca",
+      "isRemote": false,
       "text": "すごく好きというわけではない。ただ暇な時に読むのは悪くない。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "そうか……そいえばアオスタ、お前って彼女いたことあんの？"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "……ありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "ブローカは？"
     },
     {
       "type": "dialogue",
       "speakerName": "ブローカ",
       "speakerId": "char_356_broca",
+      "isRemote": false,
       "text": "ない。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "ハハッ、俺もねぇや。恋愛って何が面白いんだろうな。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "なぁ、アオスタ、お前もこういう本が好きなのか？"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "僕は政治や歴史に関する本の方が好きですね。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "チッ、お前に聞くんじゃなかったよ。そういう単語は、聞いただけで眠くなっちまう。"
     },
     {
@@ -821,30 +969,42 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_desert_1"
+    },
+    {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "はぁ、なんか刺激的なことねぇかな――ん？"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "なぁ、アオスタ、あそこ見てみろよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "あれは……？"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_desert_1"
+    },
+    {
       "type": "dialogue",
       "speakerName": "商人",
       "speakerId": "avg_npc_006",
+      "isRemote": false,
       "text": "お願いします、どうか許してください……私はまだ家に母と子供がいるんです……"
     },
     {
@@ -854,81 +1014,98 @@
       "type": "dialogue",
       "speakerName": "強盗頭領",
       "speakerId": null,
+      "isRemote": false,
       "text": "うるせえ、俺様だって同じだ！"
     },
     {
       "type": "dialogue",
       "speakerName": "強盗頭領",
       "speakerId": null,
+      "isRemote": false,
       "text": "黙って大人しくしてろ、俺様を怒らせたらメッタ刺しにするぞ。"
     },
     {
       "type": "dialogue",
       "speakerName": "商人",
       "speakerId": "avg_npc_006",
+      "isRemote": false,
       "text": "ううっ……"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_desert_1"
+    },
+    {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "おい、アオスタ、ブローカ……俺に考えがある。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "彼らに加わって一緒に略奪するなんて言わないでくださいね。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "あ？　あの強盗をやっつけて、その礼に商人から何かもらおうぜって話をしてんだよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "まあ、お前のその提案も悪くないけどな。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "いえ、あなたのプランにしましょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "本当か？"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "本当です。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "……もし何もくれなければ、その時に奪えばいいだけです。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "よーし！　そんじゃ全速前進だ、あのアホどもをぶっ飛ばすぞ！　ブローカ、ケンカの準備だ！"
     },
     {
       "type": "dialogue",
       "speakerName": "ブローカ",
       "speakerId": "char_356_broca",
+      "isRemote": false,
       "text": "ああ。"
     },
     {
@@ -938,21 +1115,28 @@
       "type": "dialogue",
       "speakerName": "強盗A",
       "speakerId": null,
+      "isRemote": false,
       "text": "おい、あれを見ろ！"
     },
     {
       "type": "dialogue",
       "speakerName": "強盗頭領",
       "speakerId": null,
+      "isRemote": false,
       "text": "なんだ！？"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_desert_1"
+    },
+    {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "ハッ、これでもくらえ！"
     },
     {
@@ -962,6 +1146,7 @@
       "type": "dialogue",
       "speakerName": "強盗B",
       "speakerId": null,
+      "isRemote": false,
       "text": "ふん！"
     },
     {
@@ -971,6 +1156,7 @@
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "チッ。防ぎやがったか。"
     },
     {
@@ -980,36 +1166,42 @@
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "（小声）僕がチャンスを作ります。あなたはその隙に……"
     },
     {
       "type": "dialogue",
       "speakerName": "商人",
       "speakerId": "avg_npc_006",
+      "isRemote": false,
       "text": "（小声）わ、わかった。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "それと、ブローカ、あなたは……"
     },
     {
       "type": "dialogue",
       "speakerName": "ブローカ",
       "speakerId": "char_356_broca",
+      "isRemote": false,
       "text": "ああ、ベストを尽くそう。"
     },
     {
       "type": "dialogue",
       "speakerName": "強盗A",
       "speakerId": null,
+      "isRemote": false,
       "text": "なにコソコソしゃべってやがる！"
     },
     {
       "type": "dialogue",
       "speakerName": "ブローカ",
       "speakerId": "char_356_broca",
+      "isRemote": false,
       "text": "！"
     },
     {
@@ -1019,30 +1211,35 @@
       "type": "dialogue",
       "speakerName": "強盗頭領",
       "speakerId": null,
+      "isRemote": false,
       "text": "消えろ！"
     },
     {
       "type": "dialogue",
       "speakerName": "強盗頭領",
       "speakerId": null,
+      "isRemote": false,
       "text": "チッ、手強いな……お前ら来い、こいつから抑えるぞ！"
     },
     {
       "type": "dialogue",
       "speakerName": "強盗C",
       "speakerId": null,
+      "isRemote": false,
       "text": "おう！"
     },
     {
       "type": "dialogue",
       "speakerName": "ブローカ",
       "speakerId": "char_356_broca",
+      "isRemote": false,
       "text": "フンッ！"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "……"
     },
     {
@@ -1052,6 +1249,7 @@
       "type": "dialogue",
       "speakerName": "強盗B",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "おいそこのガキ！　どこへ行く気だ？"
     },
     {
@@ -1061,12 +1259,14 @@
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "今のうちです！"
     },
     {
       "type": "dialogue",
       "speakerName": "商人",
       "speakerId": "avg_npc_006",
+      "isRemote": false,
       "text": "わ、わかった！"
     },
     {
@@ -1080,21 +1280,28 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_desert_1"
+    },
+    {
       "type": "dialogue",
       "speakerName": "強盗頭領",
       "speakerId": null,
+      "isRemote": false,
       "text": "*シラクーザスラング*！　てめぇら、よくもやってくれたな！！"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "おい待てよ、これじゃ俺たちがもらう物資はどうなるんだ？"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "まずはここを生き延びるのが先決です！"
     },
     {
@@ -1111,12 +1318,14 @@
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "キアーベ、乗って！"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "おうっ！"
     },
     {
@@ -1133,18 +1342,21 @@
       "type": "dialogue",
       "speakerName": "強盗A",
       "speakerId": null,
+      "isRemote": false,
       "text": "逃げるんじゃねぇ！"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "ブローカ！"
     },
     {
       "type": "dialogue",
       "speakerName": "ブローカ",
       "speakerId": "char_356_broca",
+      "isRemote": false,
       "text": "ああ！"
     },
     {
@@ -1161,6 +1373,7 @@
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "しっかりつかまってください！"
     },
     {
@@ -1170,6 +1383,7 @@
       "type": "dialogue",
       "speakerName": "強盗頭領",
       "speakerId": null,
+      "isRemote": false,
       "text": "チッ、逃がすな！"
     },
     {
@@ -1186,30 +1400,39 @@
       "type": "dialogue",
       "speakerName": "強盗頭領",
       "speakerId": null,
+      "isRemote": false,
       "text": "なにボケっとしてやがる！　お前とお前、それからお前はあの商人を追え。残りはあのクズども三人を追うぞ！"
     },
     {
       "type": "dialogue",
       "speakerName": "強盗頭領",
       "speakerId": null,
+      "isRemote": false,
       "text": "あいつらは必ず今日この荒野でぶっ殺す！"
     },
     {
       "type": "dialogue",
       "speakerName": "強盗たち",
       "speakerId": null,
+      "isRemote": false,
       "text": "おうよ！"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_desert_1"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "わーお、見ろよアオスタ、あいつら追って来るぜ！"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "わかってます。シートベルトしてください、スピード上げますよ！"
     },
     {
@@ -1223,6 +1446,10 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_desert_1"
+    },
+    {
       "type": "narration",
       "text": "アオスタが限界までスピードを上げても、強盗たちは食らいついて離れない。"
     },
@@ -1230,99 +1457,119 @@
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "ハッ、マジで諦めの悪い奴らだな――ゲホッゲホッ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "キアーベ、窓を閉めて。連中を見なくてもいいです。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "な――んだ――って――？　風が強くて聞こえねぇよ――！"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "ブローカ、キアーベを引っ張り込んで。"
     },
     {
       "type": "dialogue",
       "speakerName": "ブローカ",
       "speakerId": "char_356_broca",
+      "isRemote": false,
       "text": "ああ。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "ゴホッゴホッゴホッ――なんだなんだ！？"
     },
     {
       "type": "dialogue",
       "speakerName": "ブローカ",
       "speakerId": "char_356_broca",
+      "isRemote": false,
       "text": "アオスタが窓から顔出すなと。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "どうしました？　急に咳き込んだりして。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "わかんねぇけど、風が喉に吹き込んだんだろ？"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "ならいいですが。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "さて、良い知らせと悪い知らせがありますが、どっちから聞きたいですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "うーん悪い方が先かな。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "燃料があとわずかです。もうすぐこの車は動かなくなります。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "ハッ、じゃあ良い知らせは？"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "燃料が底をつく前に、奴らを振り切れそうです。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_desert_1"
+    },
+    {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "なるほど、こっからでも移動都市の壁が見えるぜ。"
     },
     {
@@ -1332,54 +1579,63 @@
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "ええ、おそらくあれがロコモティヴァシティです。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "へぇ、結構立派じゃねえか。ヴァイトより――ゲホッゲホッ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "キアーベ、本当に大丈夫ですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "へーきへーき。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "……ならキアーベも車を推してください。近いように見えますが、徒歩では丸一日かけてもたどり着けませんよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "もう燃料はないんだろ？　だったら車を捨てて歩いた方が速いぜ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "実は少しだけ残してあります。都市に近づいたら――もしくは奴らが追いついてきたら乗るつもりです。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "それと、この車は今僕たちが持つ唯一の財産です。これを捨てたら無一文で見知らぬ街に入ることになりますよ。どうするんですか？"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "（口笛）わかったよ。"
     },
     {
@@ -1396,18 +1652,21 @@
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "なぁ、アオスタ、音楽流すくらいは構わないだろ？　燃料も消費しないし。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "……まぁ、それくらいならいいですよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "よっしゃ！　どれにしようかなぁ――こいつはどうだ！"
     },
     {
@@ -1424,237 +1683,280 @@
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "――チェッ、全然盛り上がんねぇ曲だな。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "僕はいい曲だと思いますけど。"
     },
     {
       "type": "dialogue",
       "speakerName": "ブローカ",
       "speakerId": "char_356_broca",
+      "isRemote": false,
       "text": "俺もだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "わかったよ、二人が気に入ったならこれにしよう。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_desert_1"
+    },
+    {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "なぁ、アオスタ……俺たちがどうやって知り合ったか覚えてるか？"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "え？　もちろん覚えてますよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "あの頃、まだあなたは修理工場で働いていて、うちのファミリーの人間とトラブルになってそいつをぶちのめした。それで僕はあなたを始末するよう命じられたんです。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "ハッ！　それで俺たちゃ、散々やり合った挙句、最後に打ち解けて仲良くなったんだよな。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "フッ。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "ゴホッゴホッゴホッ！"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "キアーベ。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "大丈夫だって。ブローカは、覚えてるか？"
     },
     {
       "type": "dialogue",
       "speakerName": "ブローカ",
       "speakerId": "char_356_broca",
+      "isRemote": false,
       "text": "もちろんだ、永遠に忘れない。お前たち二人が俺を救った。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "ハハッ、お前はほんっとにバカだったよなあ。自分のファミリーに裏切られても気付かないなんてよ……"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "でも安心しろ、俺は絶対お前を裏切ったりしないからよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ブローカ",
       "speakerId": "char_356_broca",
+      "isRemote": false,
       "text": "ああ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "……考えてみれば、僕たちは知り合ってかなり経つんですね。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "そうだな、ゴホゴホッ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "キアーベ、やっぱりあなたは車で休んでてください。無理をしてはいけません、車は僕とブローカで十分推せますから。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "ハッ、無理なんかしてねぇよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "ブローカ、俺たちゃ多分、一緒に鉱石病にかかったよな？"
     },
     {
       "type": "dialogue",
       "speakerName": "ブローカ",
       "speakerId": "char_356_broca",
+      "isRemote": false,
       "text": "わからない。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "違いますよ、ただ二人ともほぼ同時にそう判明しただけで――"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "ブローカはおそらく、ファミリーの抗争中に源石製の武器によって傷つけられたせいでしょう。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "あなたに関しては、普段から感染対策を怠っているので、いつ感染したとしてもおかしくありません。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "へいへい。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "ゴホゴホッ！　アオスタ……お前も一日中俺たちと一緒にいたら、いつか感染するんじゃねぇの？"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "かもしれません。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "でも感染したとしても別に。悪いことだとは思いませんし。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "あ？　なんでだ？"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "二人が辛い思いをしてるのを、一人見ているよりはましです。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "ハハハッ、さすがは俺のダチだな。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "キアーベ、今日はほんとに無駄話が多いですね。やっぱり車の中で横になって休んでてください。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "ゴホゴホッ。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "アオスタ、俺は嫌いなものリストに一つ追加することにした。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "何をです？"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "鉱石病だ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "……ブローカ、キアーベを車に乗せてあげてください。"
     },
     {
       "type": "dialogue",
       "speakerName": "ブローカ",
       "speakerId": "char_356_broca",
+      "isRemote": false,
       "text": "ああ。"
     },
     {
@@ -1671,148 +1973,176 @@
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "だってよ……この病気のせいで、俺たちはリントンの野郎に捨て駒みたいに扱われたんだぜ。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "おまけに呼吸までしにくい。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "アオスタ……俺たちが十三家のボスになった暁には、ぜってぇこの鉱石病をどうにかしてやる。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "……ええ、その時には大勢の医者にこの病気を研究させましょう。もしくは優秀な病院に金を積んで研究でもさせましょうか。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "ハッ、そうだな。そんで俺がでっけー病院をぶっ建てて、感染したせいで、他人に踏みつけられた連中を全員ぶち込んで、みんなまとめて治してやるよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "そんで見下した奴らを全員ぶちのめす。"
     },
     {
       "type": "dialogue",
       "speakerName": "ブローカ",
       "speakerId": "char_356_broca",
+      "isRemote": false,
       "text": "俺も手伝おう。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "ハッ！　当たり前だろ、アオスタもだぞ。忘れんなよ、お前らは俺の第一参謀と特攻隊長なんだからな。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "ええ。わかったから、もう黙って休んでください。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "ゴホゴホッ……"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "なぁ、アオスタ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "……何です？"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "荒野で死ぬのってどう思う？"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "は？"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "何を言ってるんですか。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "十三家のボスになるんじゃなかったんですか？　こんな場所で死んでどうするんです。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "ハッ、そうだな。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "だが、よく考えてみたんだけどよ、こうやって荒野で死ぬってのもそんなに悪くないんじゃねぇかって。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "どんなにすげぇ奴でも死んだら墓に入る。荒野で死ぬのも何百万もするベッドで死ぬのも大して違いはねぇだろ？"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "石を何個か拾ってきて、穴掘って入って、横になって目を閉じる。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "そんで、一人で静かに死ぬ。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "そんなに悪かねぇよな。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "待ってください、キアーベ、一体何を言ってるんです！？"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "俺が言いたいのは……今日の空は、マジ*シラクーザ式感嘆*青いよなって――"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
     },
     {
       "type": "narration",
@@ -1832,48 +2162,56 @@
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "キアーベ、キアーベ！？"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "こんなところで死んだらダメです！　キアーベ！"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "ブローカ、車に乗って付近に集落がないか探しましょう、誰かしら人が見つかるといいのですが――"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "スー……スー……"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "ブローカ",
       "speakerId": "char_356_broca",
+      "isRemote": false,
       "text": "アオスタ、キアーベは眠っただけだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "……まったくこの人は。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "しかしキアーベの病状は予断を許しません。できることなら感染者を進んで診てくれる医者を見つけたい……"
     },
     {
@@ -1883,147 +2221,175 @@
       "type": "dialogue",
       "speakerName": "ロドスオペレーター",
       "speakerId": "avg_npc_012",
+      "isRemote": false,
       "text": "おーい！　お前らの車、故障してるのか？　助けは必要か？"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_canteen"
+    },
+    {
       "type": "dialogue",
       "speakerName": "ジェイ",
       "speakerId": "char_272_strong",
+      "isRemote": false,
       "text": "できやした、刺身盛り合わせ三人前です。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "ハハッ、やっと来たぜ。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "ありがとうございます。"
     },
     {
       "type": "dialogue",
       "speakerName": "ブローカ",
       "speakerId": "char_356_broca",
+      "isRemote": false,
       "text": "どうも。"
     },
     {
       "type": "dialogue",
       "speakerName": "ジェイ",
       "speakerId": "char_272_strong",
+      "isRemote": false,
       "text": "つまり、キアーベさんたちはその時ロドスに助けられて、そのまま加入したってわけですかい？"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "いえ、そのスケールというオペレーターは、ロコモティヴァにあるロドス事務所に連れて行ってくれたんです。キアーベはそこに駐在していた医療オペレーターの治療を受けました。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "おぉ、ジェイ！　お前の料理やっぱウマいな！"
     },
     {
       "type": "dialogue",
       "speakerName": "ジェイ",
       "speakerId": "char_272_strong",
+      "isRemote": false,
       "text": "ありがとうございやす。てっきり皆さんはそのままロドスに入ったのかと思いやしたよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "ちげぇよ。あの時はまだロドスをよく知らなかったしな。しかもアオスタは薬と交換に車まで渡したんだぜ？　ケチ臭い奴らだと思ってたくらいだ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ジェイ",
       "speakerId": "char_272_strong",
+      "isRemote": false,
       "text": "ハハッ。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "けどロドスの薬はすげぇ効いたんだぜ。なっ、ブローカ？"
     },
     {
       "type": "dialogue",
       "speakerName": "ブローカ",
       "speakerId": "char_356_broca",
+      "isRemote": false,
       "text": "確かにな。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "僕たちがロドスに加入した理由を簡単に言うと、キアーベが、ロコモティヴァのとあるファミリーのボスを怒らせて、またも追われる身になったからです。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "その時に助けてくれたのもスケールさんでした。"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "そして彼の紹介で、僕たちはロドスに来たんです。"
     },
     {
       "type": "dialogue",
       "speakerName": "ジェイ",
       "speakerId": "char_272_strong",
+      "isRemote": false,
       "text": "そうだったんすね。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "でもよ、アオスタ……あれは俺のせいじゃねぇだろ？"
     },
     {
       "type": "dialogue",
       "speakerName": "アオスタ",
       "speakerId": "char_346_aosta",
+      "isRemote": false,
       "text": "わかってますよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ジェイ",
       "speakerId": "char_272_strong",
+      "isRemote": false,
       "text": "こいつはまた、訳ありみたいっすね。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "ハッ！　ジェイ、お前時間あるか？　じっくり聞かせてやるよ。"
     },
     {
       "type": "dialogue",
       "speakerName": "ジェイ",
       "speakerId": "char_272_strong",
+      "isRemote": false,
       "text": "もう夜中っすね、明日は任務もないですし……ちょっくら龍門から持ってきた酒を取ってきやす。飲みながら話しましょうや。"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "ハッ、そりゃあいいな！"
     },
     {
       "type": "dialogue",
       "speakerName": "キアーベ",
       "speakerId": "char_349_chiave",
+      "isRemote": false,
       "text": "あれはな、夜のことだったんだが、俺とアオスタがちょうど――"
     },
     {

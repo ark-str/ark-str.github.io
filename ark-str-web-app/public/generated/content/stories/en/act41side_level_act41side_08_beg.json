@@ -6,10 +6,14 @@
   "title": "At the End of the Night",
   "storyCode": "EA-8",
   "avgTag": "Before Operation",
-  "sourcePath": "vendor/ArknightsGamedata/en/gamedata/story/activities/act41side/level_act41side_08_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/en/gamedata/story/activities/act41side/level_act41side_08_beg.txt",
   "sourceHash": "e0bddf8ef78e28a9f8278a9451fafd64f89c493cb04288ff1a6f3eab6415191e",
   "bodyAvailable": true,
   "blocks": [
+    {
+      "type": "background",
+      "backgroundId": "59_g4_dragonsquare_n"
+    },
     {
       "type": "narration",
       "text": "Nemos drags the coffin out of the citadel.\nNot a single soul is in the square with the statue. Curfew has begun, but she drags the red dragon's coffin over as the draconic flames burn within her own body.\nWherever she goes, the darkness retreats. Once she moves on, it re-occupies the space."
@@ -21,24 +25,28 @@
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "Hah, Culann... I envy you."
     },
     {
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "No one could have slept through you dragging that colossal statue, forcing them to come out to see what's going on."
     },
     {
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "But what about me, Culann? What am I supposed to do?"
     },
     {
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "Do I have to keep shouting 'The Red Dragon is dead!' as I walk down the street?"
     },
     {
@@ -52,24 +60,28 @@
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "...I hope you all remember the ancient ballads, Tarans."
     },
     {
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "So, Red Dragon. Which song should I sing to announce your death?"
     },
     {
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "How about the blasphemous 'Tim Finn's Wake'? Would you enjoy a funeral where people get into fights, splash whiskey on your corpse, and then you wake up after smelling the alcohol?"
     },
     {
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "Forget it. No one wants you coming back to life."
     },
     {
@@ -83,12 +95,14 @@
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "The black clouds shroud the marsh and vales, the cold wind shrieks through the mounts and hills♪"
     },
     {
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "At crack of dawn I see a traveler, who asked me the way to the golden field♪"
     },
     {
@@ -102,42 +116,56 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "59_g3_dragonsquare_d"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Curious Resident",
       "speakerId": null,
+      "isRemote": false,
       "text": "Taran language classes, Kieran? That can't possibly be free, right?"
     },
     {
       "type": "dialogue",
       "speakerName": "Curious Resident",
       "speakerId": null,
+      "isRemote": false,
       "text": "At that price... Well, it's doable, as long as we cut down on the wine."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "59_g4_dragonsquare_n"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Wasted Resident",
       "speakerId": null,
+      "isRemote": false,
       "text": "Bloody hell, Kieran! If I helped you more back then, could you have escaped the Victorians...?"
     },
     {
       "type": "dialogue",
       "speakerName": "Wasted Resident",
       "speakerId": null,
+      "isRemote": false,
       "text": "Damned dark mist! If the Red Dragon won't drive it away, I'll do it myself!"
     },
     {
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "The black clouds shroud the marsh and vales, the cold wind shrieks through the mounts and hills♪"
     },
     {
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "At crack of dawn I see a traveler, who asked me the way to the golden field♪"
     },
     {
@@ -147,54 +175,70 @@
       "type": "dialogue",
       "speakerName": "Wasted Resident",
       "speakerId": null,
+      "isRemote": false,
       "text": "Who is that? Nemos? What's she up to, singing in the middle of the night?"
     },
     {
       "type": "dialogue",
       "speakerName": "Wasted Resident",
       "speakerId": null,
+      "isRemote": false,
       "text": "And what's that she's dragging, that burns so bright...?"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "59_g3_dragonsquare_d"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Worried Resident",
       "speakerId": null,
+      "isRemote": false,
       "text": "Darling, even if you want to help the Taran cause, surely you don't have to join the army?"
     },
     {
       "type": "dialogue",
       "speakerName": "Worried Resident",
       "speakerId": null,
+      "isRemote": false,
       "text": "...Fine, I'll wait for you to come home, for the day we win our freedom."
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "59_g4_dragonsquare_n"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Fed-up Resident",
       "speakerId": null,
+      "isRemote": false,
       "text": "Finally some quiet. Going on and on about how your hand hurts, when your whole arm's already gone! And it's not like screaming about it's going to get you any medicine."
     },
     {
       "type": "dialogue",
       "speakerName": "Fed-up Resident",
       "speakerId": null,
+      "isRemote": false,
       "text": "If it was going to be like this, I wish you'd never come home. I'd rather spend my whole life missing you..."
     },
     {
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "I said to him: poor chap, even I don't know how far you have to go♪"
     },
     {
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "But if you wish, I'll go with you for a bit, towards the golden field♪"
     },
     {
@@ -204,27 +248,35 @@
       "type": "dialogue",
       "speakerName": "Fed-up Resident",
       "speakerId": null,
+      "isRemote": false,
       "text": "Isn't this a funeral song?"
     },
     {
       "type": "dialogue",
       "speakerName": "Fed-up Resident",
       "speakerId": null,
+      "isRemote": false,
       "text": "Those purple flames... Who is it mourning?!"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "59_g2_citystreets_n"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Astonished Resident",
       "speakerId": null,
+      "isRemote": false,
       "text": "What?! The enemies have entered the woods and are right outside the city?"
     },
     {
       "type": "dialogue",
       "speakerName": "Astonished Resident",
       "speakerId": null,
+      "isRemote": false,
       "text": "I can't sit back and do nothing, Nemos. Where is the army recruiting? I'll take my weapons and go!"
     },
     {
@@ -241,12 +293,14 @@
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "Turn right and pass by the palace, cross the river of fine wine♪"
     },
     {
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "I'll share a cup by the riverside, before we return to the golden field road♪"
     },
     {
@@ -256,12 +310,14 @@
       "type": "dialogue",
       "speakerName": "Theo",
       "speakerId": "avg_npc_240",
+      "isRemote": false,
       "text": "Miss Nemos, will you be moving in with Mr. Culann after the war's over?"
     },
     {
       "type": "dialogue",
       "speakerName": "Theo",
       "speakerId": "avg_npc_240",
+      "isRemote": false,
       "text": "Aw, I was hoping there'd be someone other than me to cook for him..."
     },
     {
@@ -271,12 +327,14 @@
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "Perhaps the most important thing to do before Her Highness returns... is to repair the workshop door."
     },
     {
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "(Sniffle)"
     },
     {
@@ -286,12 +344,14 @@
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "I hope you find that golden field, and a home in flames you'll never yield♪"
     },
     {
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "I'm sure you won't hesitate then, and complete your trip to the golden field♪"
     },
     {
@@ -301,40 +361,50 @@
       "type": "dialogue",
       "speakerName": "The Exiled King",
       "speakerId": "avg_npc_1690_1",
+      "isRemote": false,
       "text": "A wakewoman on the brink of death. Who does she think she's going to rouse with those songs?"
     },
     {
       "type": "dialogue",
       "speakerName": "The Exiled King",
       "speakerId": "avg_npc_1690_1",
+      "isRemote": false,
       "text": "When she can't even wake herself up."
     },
     {
       "type": "dialogue",
       "speakerName": "The Exiled King",
       "speakerId": "avg_npc_1690_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "The Exiled King",
       "speakerId": "avg_npc_1690_1",
+      "isRemote": false,
       "text": "But whatever happens, Brigid, oh silly child of my distant bloodline..."
     },
     {
       "type": "dialogue",
       "speakerName": "The Exiled King",
       "speakerId": "avg_npc_1690_1",
+      "isRemote": false,
       "text": "Don't come back."
     },
     {
       "type": "dialogue",
       "speakerName": "The Exiled King",
       "speakerId": "avg_npc_1690_1",
+      "isRemote": false,
       "text": "This city isn't worth your life."
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "59_g4_dragonsquare_n"
     },
     {
       "type": "narration",
@@ -347,87 +417,105 @@
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "I stepped into the dark woods one morn, calling to the mists of hoar♪"
     },
     {
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "I trod upon the road, heading out to war♪"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "59_g4_dragonsquare_n"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "Nemos..."
     },
     {
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "Emma!"
     },
     {
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "I almost couldn't recognize you, you're... still..."
     },
     {
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "I'm not doing good, Nemos. I'll be dead soon. I just want to lie in bed and stop breathing."
     },
     {
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "My joints hurt, and my throat's burning. I'm even seeing people who aren't with us anymore."
     },
     {
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "But I heard your song, and saw the coffin! I'm on death's door already, so I figured why not come and see... *cough*, *cough*!"
     },
     {
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "Where is the dark mist?"
     },
     {
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "Maybe in the forest, maybe in the city, maybe right behind us. I don't know, and I don't care."
     },
     {
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "Ha... ha... I... don't care either."
     },
     {
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "One question, Nemos... I need you to answer it before I can die in peace—"
     },
     {
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "(Ragged breathing) Inside that coffin... Is that truly our Red Dragon?"
     },
     {
@@ -441,24 +529,28 @@
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "I put her in the coffin myself."
     },
     {
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "Why did she die...?"
     },
     {
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "Who killed her?"
     },
     {
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "WHO?!"
     },
     {
@@ -472,18 +564,21 @@
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "You guys... still want... revenge?"
     },
     {
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "That's right, as long as we can move..."
     },
     {
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "We can avenge the Red Dragon."
     },
     {
@@ -497,6 +592,7 @@
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "Wait, Nemos, wait!"
     },
     {
@@ -504,18 +600,28 @@
     },
     {
       "type": "narration",
-      "text": "//黑雾\n//录一下m_bat_act22side_01_intro"
+      "text": "//黑雾"
+    },
+    {
+      "type": "background",
+      "backgroundId": "59_g2_citystreets_n"
+    },
+    {
+      "type": "narration",
+      "text": "//录一下m_bat_act22side_01_intro"
     },
     {
       "type": "dialogue",
       "speakerName": "Loughshinny",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "How many times must I repeat myself, mist? Eblana is dead! I killed her with my own hands!"
     },
     {
       "type": "dialogue",
       "speakerName": "Loughshinny",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "Her body lies in the coffin Nemos is now dragging through the city. The people must know she is dead, and return her violet flames so their bodies will no longer burn!"
     },
     {
@@ -525,6 +631,7 @@
       "type": "dialogue",
       "speakerName": "Loughshinny",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "*pant*... *pant*..."
     },
     {
@@ -534,6 +641,7 @@
       "type": "dialogue",
       "speakerName": "Loughshinny",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "When has she ever cared about honoring her promises? But if that's all that matters to you—"
     },
     {
@@ -547,30 +655,35 @@
       "type": "dialogue",
       "speakerName": "Loughshinny",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "Know that the only Red Dragon stands before you."
     },
     {
       "type": "dialogue",
       "speakerName": "Loughshinny",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "Whatever she's promised you, the only way you'll get it is through me."
     },
     {
       "type": "dialogue",
       "speakerName": "Loughshinny",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "Do you hear the doors opening in the distance? You must have."
     },
     {
       "type": "dialogue",
       "speakerName": "Loughshinny",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "Nemos aside, the first resident to break curfew has already opened their door."
     },
     {
       "type": "dialogue",
       "speakerName": "Loughshinny",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "So for their sake, as well as the hundreds more who will take to the very same streets, you must remain here."
     },
     {
@@ -580,6 +693,7 @@
       "type": "dialogue",
       "speakerName": "Loughshinny",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "Before my answer to Na Saoirsí is deemed a failure, before the people here are reduced to shambling corpses bent on tearing the dark mist apart, you have no right to take the lives of anyone trespassing in the dark."
     },
     {
@@ -589,12 +703,14 @@
       "type": "dialogue",
       "speakerName": "Loughshinny",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "You call <i>this</i> arrogance?"
     },
     {
       "type": "dialogue",
       "speakerName": "Loughshinny",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "If Tara needs it, I can be far more arrogant than that."
     },
     {
@@ -608,6 +724,10 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "59_g4_dragonsquare_n"
+    },
+    {
       "type": "narration",
       "text": "The juxtaposition of the giant statue with the two tiny figures makes them seem like ghosts.\nBut somehow, Nemos can also feel the presence of others besides Emma. In fact, they seem to have crowded the square, as if the whole city is here.\nThey are all watching and listening, lit up by the strange purple glow from their Originium lamps.\nNo, it is more than a glow... Their bodies are burning purple."
     },
@@ -615,6 +735,7 @@
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "The one who killed the Red Dragon is..."
     },
     {
@@ -628,6 +749,7 @@
       "type": "dialogue",
       "speakerName": "Distant Voice",
       "speakerId": null,
+      "isRemote": false,
       "text": "...I stepped into the dark woods one morn, calling to the mists of hoar..."
     },
     {
@@ -638,30 +760,35 @@
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "(Chokes back tears) Culann..."
     },
     {
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "(Sob) If... If it wasn't you to throw his life away protecting these people..."
     },
     {
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "The one who killed the Red Dragon is no one other than... the Red Dragon..."
     },
     {
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "It was herself."
     },
     {
@@ -675,24 +802,28 @@
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "The Red Dragon killed herself!"
     },
     {
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "She never intended to light the flames within your bodies! But she did not want you to burn into cinders, so she offered her own life instead!"
     },
     {
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "To protect you from death, and yet..."
     },
     {
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "Must you exact a fruitless revenge? Must you destroy everything she gave her life for?"
     },
     {
@@ -706,12 +837,14 @@
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "You're saying... she killed herself... so we wouldn't exact revenge?!"
     },
     {
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "Then... what do we do now?"
     },
     {
@@ -725,54 +858,63 @@
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "Niels... my unborn child... the Red Dragon... someone, tell me..."
     },
     {
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "Emma?"
     },
     {
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "If even revenge is out of my hands, then what else can I do?"
     },
     {
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "I have nothing else, the war took everything from me..."
     },
     {
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "How am I supposed to live on? Tell me, Niels... tell me, Red Dragon..."
     },
     {
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "Anyone, just tell me, quickly... how am I supposed to live on?"
     },
     {
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "Or... should I... go to you instead?"
     },
     {
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "Emma, no!"
     },
     {
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "Isn't this... the only path left for me?"
     },
     {
@@ -782,18 +924,21 @@
       "type": "dialogue",
       "speakerName": "Gradually Approaching Voice",
       "speakerId": null,
+      "isRemote": false,
       "text": "I stepped into the dark woods one morn, calling to the mists of hoar♪"
     },
     {
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "Niels, is that you? Are you finally back?"
     },
     {
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "...!"
     },
     {
@@ -803,30 +948,35 @@
       "type": "dialogue",
       "speakerName": "Brigid",
       "speakerId": "avg_4177_brigid_1",
+      "isRemote": false,
       "text": "I trod upon the road, heading out to war♪"
     },
     {
       "type": "dialogue",
       "speakerName": "Brigid",
       "speakerId": "avg_4177_brigid_1",
+      "isRemote": false,
       "text": "No pipes a-singing, nor battle drums a-roar♪"
     },
     {
       "type": "dialogue",
       "speakerName": "Brigid",
       "speakerId": "avg_4177_brigid_1",
+      "isRemote": false,
       "text": "Only the bells behind me, through dew and fog their rings do soar♪"
     },
     {
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "Stop singing!"
     },
     {
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "That song snatched Niels away from me! Why would you still sing that song, nomad?!"
     },
     {
@@ -840,42 +990,49 @@
       "type": "dialogue",
       "speakerName": "Moran",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "Again through the dark woods—♪"
     },
     {
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "I said stop singing that!"
     },
     {
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "—Wait, 'again'?"
     },
     {
       "type": "dialogue",
       "speakerName": "Moran",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "Moran",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "It may be presumptuous, but I tried writing a new verse to the song."
     },
     {
       "type": "dialogue",
       "speakerName": "Moran",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "Because I don't want our brave loved ones... to just leave us, to never to see us again, to be eternally lost in the mist, just like we are."
     },
     {
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "..."
     },
     {
@@ -889,6 +1046,7 @@
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "...Not to reunite, but to... light the path you trod...?"
     },
     {
@@ -902,72 +1060,84 @@
       "type": "dialogue",
       "speakerName": "Moran",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "Return it... Return your flames, and the blessing of the Red Dragon."
     },
     {
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "Return the flames...?"
     },
     {
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "If I... return this blessing... this fire back to her, will it light up their path?"
     },
     {
       "type": "dialogue",
       "speakerName": "Moran",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "Return it, and the wandering departed will also return to the flames and rest in peace."
     },
     {
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "No, I don't want that, I just... want to see him again..."
     },
     {
       "type": "dialogue",
       "speakerName": "Moran",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "If you die as you are, you will only ever brush past each other in the fog, again and again."
     },
     {
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "Then... what should I do?"
     },
     {
       "type": "dialogue",
       "speakerName": "Moran",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "Live on."
     },
     {
       "type": "dialogue",
       "speakerName": "Moran",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "He chose to walk into the mist so you wouldn't need to be lost within it as well."
     },
     {
       "type": "dialogue",
       "speakerName": "Dying Resident",
       "speakerId": "avg_npc_1696_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "Moran",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "Return the fire to light his path. And then let the years pass, let life begin anew, and when your hair is white and he learns his wish was fulfilled..."
     },
     {
       "type": "dialogue",
       "speakerName": "Moran",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "Only then will you meet again."
     },
     {
@@ -988,15 +1158,21 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "59_g4_dragonsquare_n"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "The doors... are opening?"
     },
     {
       "type": "dialogue",
       "speakerName": "Moran",
       "speakerId": "avg_npc_728_1",
+      "isRemote": false,
       "text": "They are."
     },
     {
@@ -1010,36 +1186,42 @@
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "Finally, finally..."
     },
     {
       "type": "dialogue",
       "speakerName": "Solemn Wakewoman",
       "speakerId": "avg_npc_1691_1",
+      "isRemote": false,
       "text": "Place the Red Dragon's coffin at the statue's base, Nemos."
     },
     {
       "type": "dialogue",
       "speakerName": "Solemn Wakewoman",
       "speakerId": "avg_npc_1691_1",
+      "isRemote": false,
       "text": "It seems Na Saoirsí will witness a grand fire-returning ceremony tonight."
     },
     {
       "type": "dialogue",
       "speakerName": "Solemn Wakewoman",
       "speakerId": "avg_npc_1691_1",
+      "isRemote": false,
       "text": "You should be the first, Nemos."
     },
     {
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "Me? But this is <i>her</i> funeral, so... are you sure?"
     },
     {
       "type": "dialogue",
       "speakerName": "Solemn Wakewoman",
       "speakerId": "avg_npc_1691_1",
+      "isRemote": false,
       "text": "It is more than just hers, is it not?"
     },
     {
@@ -1056,12 +1238,14 @@
       "type": "dialogue",
       "speakerName": "The Exiled King",
       "speakerId": "avg_npc_1690_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "The Exiled King",
       "speakerId": "avg_npc_1690_1",
+      "isRemote": false,
       "text": "Now we're even, wood-brains."
     },
     {
@@ -1075,6 +1259,7 @@
       "type": "dialogue",
       "speakerName": "Nemos",
       "speakerId": "avg_npc_1692_1",
+      "isRemote": false,
       "text": "...Rest in peace."
     },
     {
@@ -1095,15 +1280,21 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "59_g2_citystreets_n"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Loughshinny",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "..."
     },
     {
       "type": "dialogue",
       "speakerName": "Loughshinny",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "As I said, this... is my answer."
     },
     {
@@ -1124,6 +1315,10 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
       "type": "narration",
       "text": "She walks the whole way from the city gates to the square. Every living resident is gathered before the burning statue.\nThe soaring purple flames have already taken over one side of the citadel. No one is able to approach, so Loughshinny gets all the space she could want."
     },
@@ -1131,12 +1326,14 @@
       "type": "dialogue",
       "speakerName": "Loughshinny",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "...It should work from here too."
     },
     {
       "type": "dialogue",
       "speakerName": "Loughshinny",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "Eblana... May Tara never need your flames again."
     },
     {
@@ -1154,18 +1351,21 @@
       "type": "dialogue",
       "speakerName": "Loughshinny",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "Still not giving up, Eblana?"
     },
     {
       "type": "dialogue",
       "speakerName": "Loughshinny",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "Very well then. I'll play along with you..."
     },
     {
       "type": "dialogue",
       "speakerName": "Loughshinny",
       "speakerId": "avg_1020_reed2_1",
+      "isRemote": false,
       "text": "One last time."
     },
     {

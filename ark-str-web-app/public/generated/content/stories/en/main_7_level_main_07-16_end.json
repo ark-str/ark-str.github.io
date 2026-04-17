@@ -6,26 +6,36 @@
   "title": "Death of a Patriot",
   "storyCode": "7-18",
   "avgTag": "After Operation",
-  "sourcePath": "vendor/ArknightsGamedata/en/gamedata/story/obt/main/level_main_07-16_end.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/en/gamedata/story/obt/main/level_main_07-16_end.txt",
   "sourceHash": "acadff309887f810ed84ac84c6273542421c92e24beb47fea39d490a59556afd",
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "bg_chercen_2"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "char_003_kalts",
+      "isRemote": false,
       "text": "Mon3tr, hold!"
     },
     {
       "type": "dialogue",
       "speakerName": "Mon3tr",
       "speakerId": null,
+      "isRemote": false,
       "text": "(Screech)"
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "char_003_kalts",
+      "isRemote": false,
       "text": "Sniper operators, keep up the fire on his torso. His armor is already severely damaged. Casters, keep the other guerrilla fighters under control. Don't let them interfere."
     },
     {
@@ -35,36 +45,42 @@
       "type": "dialogue",
       "speakerName": "Mon3tr",
       "speakerId": null,
+      "isRemote": false,
       "text": "(Wails)"
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "char_003_kalts",
+      "isRemote": false,
       "text": "Pull back, Mon3tr. You don't have advantage in close quarters! You can't stop him now!"
     },
     {
       "type": "dialogue",
       "speakerName": "Rosmontis",
       "speakerId": "avg_npc_042",
+      "isRemote": false,
       "text": "The sword is slipping! Even if... I try to hold him, I can't move him. He feels like a landslide..."
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "char_003_kalts",
+      "isRemote": false,
       "text": "Focus the energy into a beam... focus... keep focusing... then aim the beam at his heart!"
     },
     {
       "type": "dialogue",
       "speakerName": "Mon3tr",
       "speakerId": null,
+      "isRemote": false,
       "text": "Hissss..."
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "char_003_kalts",
+      "isRemote": false,
       "text": "Fire! Now!"
     },
     {
@@ -74,18 +90,21 @@
       "type": "dialogue",
       "speakerName": "Patriot",
       "speakerId": "avg_npc_025_1",
+      "isRemote": false,
       "text": "......"
     },
     {
       "type": "dialogue",
       "speakerName": "Mon3tr",
       "speakerId": null,
+      "isRemote": false,
       "text": "Grrr..."
     },
     {
       "type": "dialogue",
       "speakerName": "Kal'tsit",
       "speakerId": "char_003_kalts",
+      "isRemote": false,
       "text": "Even that wasn't enough to destroy him..."
     },
     {
@@ -99,1049 +118,1244 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "'Ever fight is to the death. Life on the line in every fight, for life will return to the blood, and live forever in another body...'"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "Vanguard operators, keep up the pressure... fall back. His own body will unleash the 'cannibalism' ritual, as if he himself is a gigantic witchcraft device..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "Buldrokkas'tee, there are many Sarkaz who would not see a Wendigo like you sacrificed for nothing."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "No. How can I, be sacrificed?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "I can still, move. I can still, kill you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "My body, still hears, my commands."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "I have not yet felt, the pain... misery, and regret."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Is it enough? Could it be? Enough?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Mr. Buldrokkas'tee... please, stop... stop this! Fighting more will only bring you more suffering!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Warrior."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "A warrior, should carry, all of the dead."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "I carry, their pain, their hate, their silence."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "If I, stop..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "They died for nothing."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Suffering? You should, suffer."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "You cannot, defeat me."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Hnng..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Wife",
-          "speakerId": null,
-          "text": "Don't be sad, my love..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Wife",
-          "speakerId": null,
-          "text": "You won't remarry? Don't be like that, dear..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Wife",
-          "speakerId": null,
-          "text": "*Sigh*, but you won't agree with my yapping. You're stubborn as a stone. Have I ever convinced you of anything?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Wife",
-          "speakerId": null,
-          "text": "You'll keep fighting, won't  you?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Wife",
-          "speakerId": null,
-          "text": "Promise me, Buldrokkas'tee, promise me you won't die in battle."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Wife",
-          "speakerId": null,
-          "text": "My only hope is that you don't suffer any more. Just think, after I'm gone, you'll still have our family. Look, our little Gro."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Wife",
-          "speakerId": null,
-          "text": "He's so cute when he's sleeping."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Wife",
-          "speakerId": null,
-          "text": "With his two little red horns, that still haven't hardened..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Wife",
-          "speakerId": null,
-          "text": "This is life. It's the continuation of my life. A child is the continuation of all the life in our world."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Wife",
-          "speakerId": null,
-          "text": "I know you won't eat me. I know how much you hate Wendigo traditions."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Wife",
-          "speakerId": null,
-          "text": "But I do so wish to flow through your life forever."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Wife",
-          "speakerId": null,
-          "text": "And yet, life... is ever immortal."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Wife",
-          "speakerId": null,
-          "text": "You're withering away. All that sadness is going to destroy you. Our son needs you to take care of him. Lingering here will be the death of you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Wife",
-          "speakerId": null,
-          "text": "...No, Buldrokkas'tee. You're not a cold-blooded monster."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Wife",
-          "speakerId": null,
-          "text": "Your love for me is true. Even a misanthropic woman like me, managed to return your love all the same."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Wife",
-          "speakerId": null,
-          "text": "You look surprised... Don't be. I love you, just as tenderly and generously as you loved me."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Wife",
-          "speakerId": null,
-          "text": "Buldrokkas'tee, my love... the family you'll come to have, is also my family."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Wife",
-          "speakerId": null,
-          "text": "That's how I love you."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Helen, I don't deserve your love."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "I couldn't protect you. I couldn't, keep my word."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "My family, I couldn't protect... any of them."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "I don't deserve... love."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "You trusted me. I broke my promise."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "I broke my promise, but I live. And so the promise, still remains."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Because the promise, bears hate, and regret."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rosmontis",
-          "speakerId": "avg_npc_042",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Not only, the dead. Feline, where is it? Your hate? Your regret?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rosmontis",
-          "speakerId": "avg_npc_042",
-          "text": "I..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "You, carry it, as you go."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "The people, of this city. The Ursus Infected. The world. Those who lost, their parents. The world. Those whose parents, did wrong."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "They are all carried."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Son",
-          "speakerId": null,
-          "text": "Father, I'm begging you! Don't stand with the Empire!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Son",
-          "speakerId": null,
-          "text": "Orders? The Empire's orders are ridiculous!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Son",
-          "speakerId": null,
-          "text": "No, I'm sorry, Father... I wasn't mocking you. I would never."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Son",
-          "speakerId": null,
-          "text": "But the imperial decree is a cruel joke played on all of us."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Son",
-          "speakerId": null,
-          "text": "My friend Hector was flogged alive on the bridge, just because they found out he had Oripathy!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Son",
-          "speakerId": null,
-          "text": "Didn't you like his poetry too? Didn't you read them aloud at night and shed tears of joy?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Son",
-          "speakerId": null,
-          "text": "He's dead! He's been sent down the dark path of death and left us forever, never to return!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Son",
-          "speakerId": null,
-          "text": "He was a poet. Only the written word had the right to send him to his death!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Son",
-          "speakerId": null,
-          "text": "The Empire's so-called infected decree is just a wicked intrusion into our hearts!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Son",
-          "speakerId": null,
-          "text": "That kind of death, the death of the Infected, is a disgrace to both those who take life and who lose it!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Son",
-          "speakerId": null,
-          "text": "Did the soldiers of the Empire win the Emperor's favor with this disgrace? It's ridiculous!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Son",
-          "speakerId": null,
-          "text": "You were born in Kazdel, you grew up with Infected Sarkaz... I know you can understand the Ursus Infected too!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Son",
-          "speakerId": null,
-          "text": "...Why are you so indifferent? Is your heart made of iron too? Or is it because you, as a still uninfected Sarkaz, have no compassion in your heart?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Son",
-          "speakerId": null,
-          "text": "We're Sarkaz... who's more susceptible to Oripathy than Sarkaz?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Son",
-          "speakerId": null,
-          "text": "Maybe when one of us gets infected, you'll know how absurd these crimes are!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Son",
-          "speakerId": null,
-          "text": "Maybe then you'll leave your path of bloodshed and take a walk down the boulevard of mercy!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Son",
-          "speakerId": null,
-          "text": "Fine, fine, Father...! You're the one and only Buldrokkas'tee! If Oripathy won't haunt a tough soldier like you, it'll just have to creep up on me!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Son",
-          "speakerId": null,
-          "text": "When it's hovering over my corpse laughing at you, you'll finally realize your mistake!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Son",
-          "speakerId": null,
-          "text": "Don't let yourself regret it, Father!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "...Grrovae'zeeal, you were innocent. So innocent."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "The Infected, was me. I hid it, from you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Father, to the end, had eyes, and was blind. Father couldn't walk, the right path."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "I... regret."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "I truly, regret."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "My son... Father killed you. Father let you, die for nothing."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Father... doesn't deserve, to be your father."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "If I stop fighting, I betray them."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "More... I see... more and more..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Mr. Patriot... You have so much regret... You never said anything? You never confided in anyone?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "I can only bear, my regrets."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "Mon3tr, get back from him!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "I would think, why did, the King, as she was, end like that?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "You won't answer. Her Majesty's death, to this day, is a mystery."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "But I know, she never ran. Start to finish, she would only smile."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "If I stop fighting, all resistance, means nothing. If I stop fighting, I ran."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "I cannot stop."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Daughter",
-          "speakerId": null,
-          "text": "We're not related, though? It's kind of weird to call you dad."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Daughter",
-          "speakerId": null,
-          "text": "...You don't look so good?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Daughter",
-          "speakerId": null,
-          "text": "No way! It's not because... my brothers and sisters are scared of me!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Daughter",
-          "speakerId": null,
-          "text": "Hey, do you have any ideas? On how I can get them to stop hiding from me because of you?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Daughter",
-          "speakerId": null,
-          "text": "If you do, I'll even call you daddy!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Daughter",
-          "speakerId": null,
-          "text": "Huh? Threat-en? I don't know what that word means. You didn't teach me yet."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Daughter",
-          "speakerId": null,
-          "text": "*Sigh*, you told me my brother learned everything really fast. But I can only go step by step... Where's my brother now?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Daughter",
-          "speakerId": null,
-          "text": "Huh?! Why are you hugging me all of a sudden? You'll freeze!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Daughter",
-          "speakerId": null,
-          "text": "...Are you crying? I felt something drip on my shoulder..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Daughter",
-          "speakerId": null,
-          "text": "No? Everyone says you don't have blood or tears. Does that mean you don't cry?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Daughter",
-          "speakerId": null,
-          "text": "But you're definitely crying, Daddy..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Daughter",
-          "speakerId": null,
-          "text": "...I don't know what I was saying! I'm sorry! Daddy, are you crying because you're freezing and it hurts?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Daughter",
-          "speakerId": null,
-          "text": "Daddy! Daddy! I won't say things like that anymore! And, and when I grow up... I'll make a medicine for you so you won't get frozen!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Daughter",
-          "speakerId": null,
-          "text": "Then you won't cry anymore, right? I'm gonna grow up really fast!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Daughter",
-          "speakerId": null,
-          "text": "Family?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Daughter",
-          "speakerId": null,
-          "text": "Oh, you mean my brothers and sisters, and me, and you, we're all a family? Even my brother who isn't here?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Daughter",
-          "speakerId": null,
-          "text": "Um... then, Daddy, you're everyone's daddy!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Daughter",
-          "speakerId": null,
-          "text": "Then I'll learn from you, and avenge grandma! I'll kill all the bad people who bully us!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Daughter",
-          "speakerId": null,
-          "text": "I can't say that?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Daughter",
-          "speakerId": null,
-          "text": "Why?! You kill the bad guys every day, Daddy!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Daughter",
-          "speakerId": null,
-          "text": "...What do you mean you don't want me to become like you? Aren't you a good guy?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Daughter",
-          "speakerId": null,
-          "text": "How can my daddy be a bad guy?! That doesn't make any sense! Tell me! How are you a bad guy?!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Daughter",
-          "speakerId": null,
-          "text": "I hate you, Daddy!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Daughter",
-          "speakerId": null,
-          "text": "If I can't be like you, can I go to the city?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Daughter",
-          "speakerId": null,
-          "text": "Um... Daddy... Can we really go to the city?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Daughter",
-          "speakerId": null,
-          "text": "The candy fingers you were talking about... are they really good?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Daughter",
-          "speakerId": null,
-          "text": "So I can't eat it if I'm like you...? Oh...!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Daughter",
-          "speakerId": null,
-          "text": "I don't get it."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Daughter",
-          "speakerId": null,
-          "text": "Daddy...?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Daughter",
-          "speakerId": null,
-          "text": "I guess, it doesn't matter, I could be a good guy or a bad guy."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Daughter",
-          "speakerId": null,
-          "text": "As long as I can be with you, Daddy, and my brothers and sisters... forever."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Daughter",
-          "speakerId": null,
-          "text": "You're my family, I know. My closest family."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Daughter",
-          "speakerId": null,
-          "text": "Obviously, the second is... the third is..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Yelena... Yelena... My daughter."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "My daughter... Father, couldn't, do anything, for you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "I couldn't, do anything."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "I owe you, too much."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Too much."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Too much, too much..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Cautus girl. You are, Rhodes Island's leader."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "What is special, about you?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "One of your people, told me of you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Your warriors, are excellent. But only excellent, they still die."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Where is it? Show me, your worth."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "You want to stop, the core city. But you can't, defeat me?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rosmontis",
-          "speakerId": "avg_npc_042",
-          "text": "Don't touch Amiya!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rosmontis",
-          "speakerId": "avg_npc_042",
-          "text": "One, two, three... four!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "Shield, shattered.\nSpear, snapped.\nThe huge monster doesn't even flinch. He keeps hulking forward."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Heh."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "You can, pierce my armor. This suit, is finally, at its limit."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rosmontis",
-          "speakerId": "avg_npc_042",
-          "text": "...You won't get away...!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Feline, you are strong. A threat, to me."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Wait, Mr. Patriot."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Only ten, more steps. No need to wait."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "You're at your limit, I know."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Because you're not a caster like Miss FrostNova..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "This is enough already."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "I've seen everything... in these Arts. Everything of you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "...It's enough, Mr. Patriot."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "It's enough."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "What... is... this?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "This strike, it's precise."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "I can't, move, anymore."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "...His wounds are finally catching up to him."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "Buldrokkas'tee..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "(I planned, to destroy you, then the guerrillas, in your name, kill Talulah."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "(No need, now. You won, the right, to kill, Talulah.)"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "(Mr... Patriot?)"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "(How could I, let the Infected, be enslaved, exploited?)"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "(My life, take it. Use it. It's your prize, as the victors.)"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "You, won."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Dame. Please. Take this."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "—What is it?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "The key, to stop, Chernobog."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "If you go, to the bridge... you need it."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Mr. Patriot, you... just to..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Oh..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "No."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "I did, intend, to kill you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "But now, you defeated me. You earned it."
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "'Ever fight is to the death. Life on the line in every fight, for life will return to the blood, and live forever in another body...'"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "Vanguard operators, keep up the pressure... fall back. His own body will unleash the 'cannibalism' ritual, as if he himself is a gigantic witchcraft device..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "Buldrokkas'tee, there are many Sarkaz who would not see a Wendigo like you sacrificed for nothing."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "No. How can I, be sacrificed?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "I can still, move. I can still, kill you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "My body, still hears, my commands."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "I have not yet felt, the pain... misery, and regret."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Is it enough? Could it be? Enough?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Mr. Buldrokkas'tee... please, stop... stop this! Fighting more will only bring you more suffering!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Warrior."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "A warrior, should carry, all of the dead."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "I carry, their pain, their hate, their silence."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "If I, stop..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "They died for nothing."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Suffering? You should, suffer."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "You cannot, defeat me."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Hnng..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_indoor_u"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Wife",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Don't be sad, my love..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Wife",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "You won't remarry? Don't be like that, dear..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Wife",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "*Sigh*, but you won't agree with my yapping. You're stubborn as a stone. Have I ever convinced you of anything?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Wife",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "You'll keep fighting, won't  you?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Wife",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Promise me, Buldrokkas'tee, promise me you won't die in battle."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Wife",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "My only hope is that you don't suffer any more. Just think, after I'm gone, you'll still have our family. Look, our little Gro."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Wife",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "He's so cute when he's sleeping."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Wife",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "With his two little red horns, that still haven't hardened..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Wife",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "This is life. It's the continuation of my life. A child is the continuation of all the life in our world."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Wife",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "I know you won't eat me. I know how much you hate Wendigo traditions."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Wife",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "But I do so wish to flow through your life forever."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Wife",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "And yet, life... is ever immortal."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Wife",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "You're withering away. All that sadness is going to destroy you. Our son needs you to take care of him. Lingering here will be the death of you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Wife",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "...No, Buldrokkas'tee. You're not a cold-blooded monster."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Wife",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Your love for me is true. Even a misanthropic woman like me, managed to return your love all the same."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Wife",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "You look surprised... Don't be. I love you, just as tenderly and generously as you loved me."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Wife",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Buldrokkas'tee, my love... the family you'll come to have, is also my family."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Wife",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "That's how I love you."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Helen, I don't deserve your love."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "I couldn't protect you. I couldn't, keep my word."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "My family, I couldn't protect... any of them."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "I don't deserve... love."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_chercen_2"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "You trusted me. I broke my promise."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "I broke my promise, but I live. And so the promise, still remains."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Because the promise, bears hate, and regret."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rosmontis",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Not only, the dead. Feline, where is it? Your hate? Your regret?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rosmontis",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "I..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "You, carry it, as you go."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "The people, of this city. The Ursus Infected. The world. Those who lost, their parents. The world. Those whose parents, did wrong."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "They are all carried."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_cherbefore_1"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Son",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Father, I'm begging you! Don't stand with the Empire!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Son",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Orders? The Empire's orders are ridiculous!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Son",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "No, I'm sorry, Father... I wasn't mocking you. I would never."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Son",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "But the imperial decree is a cruel joke played on all of us."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Son",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "My friend Hector was flogged alive on the bridge, just because they found out he had Oripathy!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Son",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Didn't you like his poetry too? Didn't you read them aloud at night and shed tears of joy?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Son",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "He's dead! He's been sent down the dark path of death and left us forever, never to return!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Son",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "He was a poet. Only the written word had the right to send him to his death!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Son",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "The Empire's so-called infected decree is just a wicked intrusion into our hearts!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Son",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "That kind of death, the death of the Infected, is a disgrace to both those who take life and who lose it!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Son",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Did the soldiers of the Empire win the Emperor's favor with this disgrace? It's ridiculous!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Son",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "You were born in Kazdel, you grew up with Infected Sarkaz... I know you can understand the Ursus Infected too!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Son",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "...Why are you so indifferent? Is your heart made of iron too? Or is it because you, as a still uninfected Sarkaz, have no compassion in your heart?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Son",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "We're Sarkaz... who's more susceptible to Oripathy than Sarkaz?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Son",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Maybe when one of us gets infected, you'll know how absurd these crimes are!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Son",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Maybe then you'll leave your path of bloodshed and take a walk down the boulevard of mercy!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Son",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Fine, fine, Father...! You're the one and only Buldrokkas'tee! If Oripathy won't haunt a tough soldier like you, it'll just have to creep up on me!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Son",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "When it's hovering over my corpse laughing at you, you'll finally realize your mistake!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Son",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Don't let yourself regret it, Father!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "...Grrovae'zeeal, you were innocent. So innocent."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "The Infected, was me. I hid it, from you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Father, to the end, had eyes, and was blind. Father couldn't walk, the right path."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "I... regret."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "I truly, regret."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "My son... Father killed you. Father let you, die for nothing."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Father... doesn't deserve, to be your father."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_chercen_2"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "If I stop fighting, I betray them."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "More... I see... more and more..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Mr. Patriot... You have so much regret... You never said anything? You never confided in anyone?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "I can only bear, my regrets."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "Mon3tr, get back from him!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "I would think, why did, the King, as she was, end like that?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "You won't answer. Her Majesty's death, to this day, is a mystery."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "But I know, she never ran. Start to finish, she would only smile."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "If I stop fighting, all resistance, means nothing. If I stop fighting, I ran."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "I cannot stop."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_snow_2"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Daughter",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "We're not related, though? It's kind of weird to call you dad."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Daughter",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "...You don't look so good?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Daughter",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "No way! It's not because... my brothers and sisters are scared of me!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Daughter",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Hey, do you have any ideas? On how I can get them to stop hiding from me because of you?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Daughter",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "If you do, I'll even call you daddy!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Daughter",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Huh? Threat-en? I don't know what that word means. You didn't teach me yet."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Daughter",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "*Sigh*, you told me my brother learned everything really fast. But I can only go step by step... Where's my brother now?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Daughter",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Huh?! Why are you hugging me all of a sudden? You'll freeze!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Daughter",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "...Are you crying? I felt something drip on my shoulder..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Daughter",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "No? Everyone says you don't have blood or tears. Does that mean you don't cry?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Daughter",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "But you're definitely crying, Daddy..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Daughter",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "...I don't know what I was saying! I'm sorry! Daddy, are you crying because you're freezing and it hurts?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Daughter",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Daddy! Daddy! I won't say things like that anymore! And, and when I grow up... I'll make a medicine for you so you won't get frozen!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Daughter",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Then you won't cry anymore, right? I'm gonna grow up really fast!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Daughter",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Family?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Daughter",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Oh, you mean my brothers and sisters, and me, and you, we're all a family? Even my brother who isn't here?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Daughter",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Um... then, Daddy, you're everyone's daddy!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Daughter",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Then I'll learn from you, and avenge grandma! I'll kill all the bad people who bully us!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Daughter",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "I can't say that?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Daughter",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Why?! You kill the bad guys every day, Daddy!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Daughter",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "...What do you mean you don't want me to become like you? Aren't you a good guy?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Daughter",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "How can my daddy be a bad guy?! That doesn't make any sense! Tell me! How are you a bad guy?!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Daughter",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "I hate you, Daddy!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Daughter",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "If I can't be like you, can I go to the city?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Daughter",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Um... Daddy... Can we really go to the city?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Daughter",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "The candy fingers you were talking about... are they really good?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Daughter",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "So I can't eat it if I'm like you...? Oh...!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Daughter",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "I don't get it."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Daughter",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Daddy...?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Daughter",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "I guess, it doesn't matter, I could be a good guy or a bad guy."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Daughter",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "As long as I can be with you, Daddy, and my brothers and sisters... forever."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Daughter",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "You're my family, I know. My closest family."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Daughter",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Obviously, the second is... the third is..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Yelena... Yelena... My daughter."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "My daughter... Father, couldn't, do anything, for you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "I couldn't, do anything."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "I owe you, too much."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Too much."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_chercen_2"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Too much, too much..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Cautus girl. You are, Rhodes Island's leader."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "What is special, about you?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "One of your people, told me of you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Your warriors, are excellent. But only excellent, they still die."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Where is it? Show me, your worth."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "You want to stop, the core city. But you can't, defeat me?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rosmontis",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "Don't touch Amiya!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rosmontis",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "One, two, three... four!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "Shield, shattered.\nSpear, snapped.\nThe huge monster doesn't even flinch. He keeps hulking forward."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Heh."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "You can, pierce my armor. This suit, is finally, at its limit."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rosmontis",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "...You won't get away...!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Feline, you are strong. A threat, to me."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Wait, Mr. Patriot."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Only ten, more steps. No need to wait."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "You're at your limit, I know."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Because you're not a caster like Miss FrostNova..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "This is enough already."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "I've seen everything... in these Arts. Everything of you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "...It's enough, Mr. Patriot."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "It's enough."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "What... is... this?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "This strike, it's precise."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "I can't, move, anymore."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "...His wounds are finally catching up to him."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "Buldrokkas'tee..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "(I planned, to destroy you, then the guerrillas, in your name, kill Talulah."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "(No need, now. You won, the right, to kill, Talulah.)"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "(Mr... Patriot?)"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "(How could I, let the Infected, be enslaved, exploited?)"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "(My life, take it. Use it. It's your prize, as the victors.)"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "You, won."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Dame. Please. Take this."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "—What is it?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "The key, to stop, Chernobog."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "If you go, to the bridge... you need it."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Mr. Patriot, you... just to..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Oh..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "No."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "I did, intend, to kill you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "But now, you defeated me. You earned it."
     },
     {
       "type": "choice",
@@ -1151,1255 +1365,1469 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Because I don't trust you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "I only trust, war."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "My daughter, was naive. She was soft, she assumed, an outcome."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "I don't. I wait for results."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "And this... is the best... result."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "My men, surprised, did not use, their strength. They live."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Only I, alone... will die. A worthy death."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rhodes Island Operator",
-          "speakerId": null,
-          "text": "...What happened?!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rhodes Island Operator",
-          "speakerId": null,
-          "text": "Closure, I need the schematics to Bioprocessing Unit Thirteen!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rhodes Island Operator",
-          "speakerId": null,
-          "text": "Cabin temperature is increasing rapidly! It's an energy leak!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rhodes Island Operator",
-          "speakerId": null,
-          "text": "Wait, it's changing shape! Why is it progressing like this after fourteen hours?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rhodes Island Operator",
-          "speakerId": null,
-          "text": "PRTS, who was in this cabin last?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rhodes Island Operator",
-          "speakerId": null,
-          "text": "Dr. {@nickname}? Did we lose someone in the battle for Lungmen? Who's being processed?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rhodes Island Operator",
-          "speakerId": null,
-          "text": "What?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rhodes Island Operator",
-          "speakerId": null,
-          "text": "Wait, slow down. Who did you say Dr. {@nickname} put in there?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Dame!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "I'm listening, Buldrokkas'tee."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "The Wendigos, exiled ourselves, lost everything."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "But we carry, Sarkaz traditions."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Ancestors, molded me, nurtured me, watched over me. Now, bear witness."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "Buldrokkas'tee..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "...I don't know if I'm qualified."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "I think you, are the best, choice."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "'...I hereby witness a Sarkaz. Buldrokkas'tee, Wendigo of Kazdel, betrayed neither flesh nor blood, disgraced not his tribe.'"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "'He leaves his body, with his life, under the light...'"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "'...And his soul returns to the warm blood of the Wendigos.'"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "This is a curse."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "It is not, to me."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Oh... I feel... I feel... My vision, begins to blur."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Thank you, Dame."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "I thought you hated this stuff."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "But I, am old."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Phantom Crossbowman",
-          "speakerId": "avg_npc_016",
-          "text": "No..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Phantom Crossbowman",
-          "speakerId": "avg_npc_016",
-          "text": "Where are we?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sarkaz Warrior",
-          "speakerId": "avg_npc_053",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Phantom Crossbowman",
-          "speakerId": "avg_npc_016",
-          "text": "Ha. So that's how it is. Ha."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Phantom Crossbowman",
-          "speakerId": "avg_npc_016",
-          "text": "Talulah really did betray us."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Phantom Crossbowman",
-          "speakerId": "avg_npc_016",
-          "text": "You think we're just going to stand here and let you kill us?!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sarkaz Warrior",
-          "speakerId": "avg_npc_053",
-          "text": "You can't fight."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sarkaz Warrior",
-          "speakerId": "avg_npc_053",
-          "text": "If there's an afterlife, take your revenge there."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Phantom Crossbowman",
-          "speakerId": "avg_npc_016",
-          "text": "We're supposed to give up, just because we know we're going to die?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Phantom Crossbowman",
-          "speakerId": "avg_npc_016",
-          "text": "We're going to be killed for no reason and—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mephisto",
-          "speakerId": "char_1507_Mephisto",
-          "text": "Don't kill them."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sarkaz Warrior",
-          "speakerId": "avg_npc_053",
-          "text": "...?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mephisto",
-          "speakerId": "char_1507_Mephisto",
-          "text": "Let them go."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sarkaz Warrior",
-          "speakerId": "avg_npc_053",
-          "text": "Mephisto...?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mephisto",
-          "speakerId": "char_1507_Mephisto",
-          "text": "Devils, I'll give you bodies that know no pain. Let them go."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sarkaz Warrior",
-          "speakerId": "avg_npc_053",
-          "text": "We're a lot tougher than your herd."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mephisto",
-          "speakerId": "char_1507_Mephisto",
-          "text": "I'll share my life with you. And you'll really fight forever, a tireless fight."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sarkaz Warrior",
-          "speakerId": "avg_npc_053",
-          "text": "...Fine."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sarkaz Warrior",
-          "speakerId": "avg_npc_053",
-          "text": "But if we let them go, my people have to watch them. We're not about to disobey Talulah now."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sarkaz Warrior",
-          "speakerId": "avg_npc_053",
-          "text": "You, crossbowmen. Go."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Phantom Crossbowman",
-          "speakerId": "avg_npc_016",
-          "text": "Mephisto?!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Phantom Crossbowman",
-          "speakerId": "avg_npc_016",
-          "text": "(Why would he save us...? Is this part of Talulah's plot?)"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Sarkaz Warrior",
-          "speakerId": "avg_npc_053",
-          "text": "But why come here?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mephisto",
-          "speakerId": "char_1507_Mephisto",
-          "text": "...Because I want to go in there. I want to know what secrets there are. I want to know why Rhodes Island would bring someone out of here."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mephisto",
-          "speakerId": "char_1507_Mephisto",
-          "text": "Because I saw someone coming out of here on the logs."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Phantom Crossbowman",
-          "speakerId": "avg_npc_016",
-          "text": "Mephisto...? Why?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mephisto",
-          "speakerId": "char_1507_Mephisto",
-          "text": "Would you like to hear a song?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Phantom Crossbowman",
-          "speakerId": "avg_npc_016",
-          "text": "But, Captain Faust said... He said..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mephisto",
-          "speakerId": "char_1507_Mephisto",
-          "text": "Yes, yes. I can't sing anymore."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mephisto",
-          "speakerId": "char_1507_Mephisto",
-          "text": "Oh, but I can try."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mephisto",
-          "speakerId": "char_1507_Mephisto",
-          "text": "It ought to be a lullaby, yes? I don't remember who taught it to me... I've forgotten."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Mephisto",
-          "speakerId": "char_1507_Mephisto",
-          "text": "It's just, someone in my dreams was humming it."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "Go to sleep, go to sleep♪\nHedgehog dolls and little bears..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "The Ursus, Infected, where will, they go?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "How many stars... does the dark night, hide?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Shieldguard",
-          "speakerId": "avg_npc_058",
-          "text": "...Captain, Captain!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Final order."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Shieldguard",
-          "speakerId": "avg_npc_058",
-          "text": "Captain..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Fight on. Live on."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Only you, walk... your own path."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "To have a path, you must walk."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "I will die. But I do not know, if I should die, now."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "What is it, my death, can change?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Maybe you, can tell me, the answer."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "Sink into the still dark...\nBrothers, sisters, young, and old. Dreams, oh dreams, envelop their bodies...♪"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoshiguma",
-          "speakerId": "char_136_hsguma",
-          "text": "Missy? What are you bawling about...?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Swire",
-          "speakerId": "char_308_swire",
-          "text": "I'm not bawling!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoshiguma",
-          "speakerId": "char_136_hsguma",
-          "text": "Fine, fine. But you're right in front of the door to L.G.D. Headquarters."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoshiguma",
-          "speakerId": "char_136_hsguma",
-          "text": "Probably don't want other people seeing you cry, huh?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Swire",
-          "speakerId": "char_308_swire",
-          "text": "N... Nobody's here anyway!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoshiguma",
-          "speakerId": "char_136_hsguma",
-          "text": "How about this? I'll sit on the steps in front of you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoshiguma",
-          "speakerId": "char_136_hsguma",
-          "text": "I'm big enough. Nobody'll see you cry if I'm in the way."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Swire",
-          "speakerId": "char_308_swire",
-          "text": "What are you doing...?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoshiguma",
-          "speakerId": "char_136_hsguma",
-          "text": "Oh. Well, we screwed up, so we feel lousy, right?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoshiguma",
-          "speakerId": "char_136_hsguma",
-          "text": "I mean both of us, Missy. We both blew it, didn't we?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Swire",
-          "speakerId": "char_308_swire",
-          "text": "What do I care...? I don't care where she went!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoshiguma",
-          "speakerId": "char_136_hsguma",
-          "text": "Um, right. I know."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Swire",
-          "speakerId": "char_308_swire",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Hoshiguma",
-          "speakerId": "char_136_hsguma",
-          "text": "Hey, no hitting. You're going to hit me no matter what I say, huh?"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Finally..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "My... life... can end."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Helen... Grrovae'zeeal... Yelena..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "It's you..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "I'm finally... going home..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "No."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "—No."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "No."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Hallucination."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "How... I, don't need visions, don't need, consolation!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Who...?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Who shows me... hallucinations?!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Oh... How...? How did Mr. Patriot... break free?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Now, I see."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "—You. Cautus. It's you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "You, are her... successor."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Theresis, lied. The King... had a... successor."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "You are... the Lord of Fiends."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "Ah...!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "To die, at the hands, of... the King of Sarkaz."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "I... how?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "In the end, I could not, escape fate."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "No. No..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "No."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "Amiya?! You can't...?!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "S-Sorry! B-But Dr. Kal'tsit..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "I heard, in the past, Lords of Sarkaz, gave visions of comfort, as favors."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Their champions, could see great walls, or loves long passed—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Countless soldiers, for these visions, fought ceaselessly."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "I just, I only... Mr. Patriot, I didn't mean to... I didn't want..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "...The end of your life... it shouldn't be so tragic!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "I saw it... I saw your two hundred years of life..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "The constant fighting... and so much loss... you lost everything..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "I don't... I don't want that... to be your end!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "My, end?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "...No"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "I wanted to give you... a better..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "No!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "My end, is not, someone else's, to give!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "A vision? No! That is not my end!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "If it is tragic, then it is tragic. If foolish, then foolish!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "This is, my end. The end... I deserve."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "I lived. I fought. I failed."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "It's, enough."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Why? Why...? Why is it enough?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "No one should have to lose everything like this!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "...You are still, a child."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "I'm not a child! I've been in more battles than I can count!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "...A good ending, is never earned. Only children, believe in, happily ever after."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "You, and my daughter, are only children, who believe in, fairy tales."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "I told FrostNova, too heavy... too heavy."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "I disagreed, with her. She was... a young girl. Only a child."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Oripathy, slavers, our world... won't even spare, a child."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Talulah, sent her, to die."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Then why not join us and fight Talulah tog—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "What can you, give me?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "You cannot, even give, what Talulah, once gave me."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Later, what will you, become?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "This is fate. I tasted, too much."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "I will never, bow to fate."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Even if, every time, fate brings me, to the same... end..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "I would rather, wrestle it, until again, the sun rises."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "But... Maybe, you can change."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "I fought fate, so many years... in the end, I could not win."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "But you... Maybe you're, different..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Do you have, what it takes, to succeed the King?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "Oh..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Do you have, the power, to leave, alive?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Do you have, the courage, and insight, to step into, the infinite, wilderness?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "I can't do it alone."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "But I'm not alone."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Maybe..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Everything... is yours. Only you... can do it."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "That... Reunion, tyrant, fate... You will... overthrow them."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "Wait.\nNo.\nKal'tsit looks up at the darkened sky.\nWhere have I seen this before?\nIt couldn't be..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "Amiya... Amiya...?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "The Sarkaz prophecy is born out of their collective racial memory. Originium energy bursts popping in areas with high concentrations... the core city is suffering a Catastrophe."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "The altar... Amiya... Wendigo... The Lord of Fiends?!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "Wait, if this has a direct affect... Impossible! The last of the ancient Wendigo bloodline is directly connected to the entire Sarkaz race?!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "The prophecy... this prophecy?!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "Snow? Buldrokkas'tee's cannibalization resonated with all the altars?! And what I just added... the Wendigos' ressurection...!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "All operators!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "Anything he says... Anything Buldrokkas'tee says...!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "Do not believe a single word!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "The Wendigo suddenly speaks, his hoarse voice seemingly echoing throughout the entire central district."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "I see cities, devastated.\nI see Originium, blanketing the land.\nI see you, black crown on your head, melting millions of lives, into nothing but memories.\nI see the, King of Sarkaz, enslaving all peoples, everywhere."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Shieldguard",
-          "speakerId": "avg_npc_058",
-          "text": "Huh...?!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "...Wh... at?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "Impossible... No..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "Patriot! Don't believe the prophecy! It's just a physiological side effect of the Originium Arts!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "But... But I know... all the prophecies... come true."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "And I died, at the hands of, the King of Sarkaz."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "...Dame. No. Dame."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "Buldrokkas'tee! Did you not fight against fate your entire life?!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "The young, King of Sarkaz..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "...You, you..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "Will be the most horrific disaster to afflict our world."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "She must die!\nOr else, the world will die!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "I cannot, let you live."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Patriot",
-          "speakerId": "avg_npc_025_1",
-          "text": "You can hate me."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "The sound of clanking armor reaches your ears.\nThe ravaged monster suddenly reaches out to Amiya."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Kal'tsit",
-          "speakerId": "char_003_kalts",
-          "text": "—Amiya!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Rosmontis",
-          "speakerId": "avg_npc_042",
-          "text": "W-Watch out!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "char_002_amiya",
-          "text": "......"
-        },
-        {
-          "type": "narration",
-          "text": "The Cautus girl does not flinch. The shadow of death sweeps upon her smoke-blackened face. She does not move. She does not scream. She only stares directly into Patriot's eyes.\nAs if staring directly into his soul.\nAt the same time, heavy black blades and shimmering beams of ominous energy pierce swiftly into the giant's immortal body. Still, he remains unshaken.\nJust as Patriot is about to crush the skull of the girl in black..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "The Wendigo freezes in place.\nSomething appears to be dripping sorrowfully from his helmet.\n......\nA minute passes.\nDuring this eternity of a minute, there are no other sounds except for the low rumbling of the moving city."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "Then, the realization dawns. The monster standing before us is dead.\nHaving never taken a single step backward, unwavering for even a single second, in the end, death put a stop to the Patriot's lifelong advance."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Because I don't trust you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "I only trust, war."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "My daughter, was naive. She was soft, she assumed, an outcome."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "I don't. I wait for results."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "And this... is the best... result."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "My men, surprised, did not use, their strength. They live."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Only I, alone... will die. A worthy death."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_corridor"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rhodes Island Operator",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "...What happened?!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rhodes Island Operator",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Closure, I need the schematics to Bioprocessing Unit Thirteen!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rhodes Island Operator",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Cabin temperature is increasing rapidly! It's an energy leak!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rhodes Island Operator",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Wait, it's changing shape! Why is it progressing like this after fourteen hours?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rhodes Island Operator",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "PRTS, who was in this cabin last?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rhodes Island Operator",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Dr. {@nickname}? Did we lose someone in the battle for Lungmen? Who's being processed?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rhodes Island Operator",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "What?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rhodes Island Operator",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "Wait, slow down. Who did you say Dr. {@nickname} put in there?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_chercen_2"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Dame!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "I'm listening, Buldrokkas'tee."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "The Wendigos, exiled ourselves, lost everything."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "But we carry, Sarkaz traditions."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Ancestors, molded me, nurtured me, watched over me. Now, bear witness."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "Buldrokkas'tee..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "...I don't know if I'm qualified."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "I think you, are the best, choice."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "'...I hereby witness a Sarkaz. Buldrokkas'tee, Wendigo of Kazdel, betrayed neither flesh nor blood, disgraced not his tribe.'"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "'He leaves his body, with his life, under the light...'"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "'...And his soul returns to the warm blood of the Wendigos.'"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "This is a curse."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "It is not, to me."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Oh... I feel... I feel... My vision, begins to blur."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Thank you, Dame."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "I thought you hated this stuff."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "But I, am old."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_perimeter"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Phantom Crossbowman",
+      "speakerId": "avg_npc_016",
+      "isRemote": false,
+      "text": "No..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Phantom Crossbowman",
+      "speakerId": "avg_npc_016",
+      "isRemote": false,
+      "text": "Where are we?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sarkaz Warrior",
+      "speakerId": "avg_npc_053",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Phantom Crossbowman",
+      "speakerId": "avg_npc_016",
+      "isRemote": false,
+      "text": "Ha. So that's how it is. Ha."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Phantom Crossbowman",
+      "speakerId": "avg_npc_016",
+      "isRemote": false,
+      "text": "Talulah really did betray us."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Phantom Crossbowman",
+      "speakerId": "avg_npc_016",
+      "isRemote": false,
+      "text": "You think we're just going to stand here and let you kill us?!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sarkaz Warrior",
+      "speakerId": "avg_npc_053",
+      "isRemote": false,
+      "text": "You can't fight."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sarkaz Warrior",
+      "speakerId": "avg_npc_053",
+      "isRemote": false,
+      "text": "If there's an afterlife, take your revenge there."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Phantom Crossbowman",
+      "speakerId": "avg_npc_016",
+      "isRemote": false,
+      "text": "We're supposed to give up, just because we know we're going to die?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Phantom Crossbowman",
+      "speakerId": "avg_npc_016",
+      "isRemote": false,
+      "text": "We're going to be killed for no reason and—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mephisto",
+      "speakerId": "char_1507_Mephisto",
+      "isRemote": false,
+      "text": "Don't kill them."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sarkaz Warrior",
+      "speakerId": "avg_npc_053",
+      "isRemote": false,
+      "text": "...?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mephisto",
+      "speakerId": "char_1507_Mephisto",
+      "isRemote": false,
+      "text": "Let them go."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sarkaz Warrior",
+      "speakerId": "avg_npc_053",
+      "isRemote": false,
+      "text": "Mephisto...?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mephisto",
+      "speakerId": "char_1507_Mephisto",
+      "isRemote": false,
+      "text": "Devils, I'll give you bodies that know no pain. Let them go."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sarkaz Warrior",
+      "speakerId": "avg_npc_053",
+      "isRemote": false,
+      "text": "We're a lot tougher than your herd."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mephisto",
+      "speakerId": "char_1507_Mephisto",
+      "isRemote": false,
+      "text": "I'll share my life with you. And you'll really fight forever, a tireless fight."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sarkaz Warrior",
+      "speakerId": "avg_npc_053",
+      "isRemote": false,
+      "text": "...Fine."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sarkaz Warrior",
+      "speakerId": "avg_npc_053",
+      "isRemote": false,
+      "text": "But if we let them go, my people have to watch them. We're not about to disobey Talulah now."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sarkaz Warrior",
+      "speakerId": "avg_npc_053",
+      "isRemote": false,
+      "text": "You, crossbowmen. Go."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Phantom Crossbowman",
+      "speakerId": "avg_npc_016",
+      "isRemote": false,
+      "text": "Mephisto?!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Phantom Crossbowman",
+      "speakerId": "avg_npc_016",
+      "isRemote": false,
+      "text": "(Why would he save us...? Is this part of Talulah's plot?)"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Sarkaz Warrior",
+      "speakerId": "avg_npc_053",
+      "isRemote": false,
+      "text": "But why come here?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mephisto",
+      "speakerId": "char_1507_Mephisto",
+      "isRemote": false,
+      "text": "...Because I want to go in there. I want to know what secrets there are. I want to know why Rhodes Island would bring someone out of here."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mephisto",
+      "speakerId": "char_1507_Mephisto",
+      "isRemote": false,
+      "text": "Because I saw someone coming out of here on the logs."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Phantom Crossbowman",
+      "speakerId": "avg_npc_016",
+      "isRemote": false,
+      "text": "Mephisto...? Why?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mephisto",
+      "speakerId": "char_1507_Mephisto",
+      "isRemote": false,
+      "text": "Would you like to hear a song?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Phantom Crossbowman",
+      "speakerId": "avg_npc_016",
+      "isRemote": false,
+      "text": "But, Captain Faust said... He said..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mephisto",
+      "speakerId": "char_1507_Mephisto",
+      "isRemote": false,
+      "text": "Yes, yes. I can't sing anymore."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mephisto",
+      "speakerId": "char_1507_Mephisto",
+      "isRemote": false,
+      "text": "Oh, but I can try."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mephisto",
+      "speakerId": "char_1507_Mephisto",
+      "isRemote": false,
+      "text": "It ought to be a lullaby, yes? I don't remember who taught it to me... I've forgotten."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Mephisto",
+      "speakerId": "char_1507_Mephisto",
+      "isRemote": false,
+      "text": "It's just, someone in my dreams was humming it."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "Go to sleep, go to sleep♪\nHedgehog dolls and little bears..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_chercen_2"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "The Ursus, Infected, where will, they go?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "How many stars... does the dark night, hide?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Shieldguard",
+      "speakerId": "avg_npc_058",
+      "isRemote": false,
+      "text": "...Captain, Captain!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Final order."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Shieldguard",
+      "speakerId": "avg_npc_058",
+      "isRemote": false,
+      "text": "Captain..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Fight on. Live on."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Only you, walk... your own path."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "To have a path, you must walk."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "I will die. But I do not know, if I should die, now."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "What is it, my death, can change?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Maybe you, can tell me, the answer."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "Sink into the still dark...\nBrothers, sisters, young, and old. Dreams, oh dreams, envelop their bodies...♪"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_building_3"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoshiguma",
+      "speakerId": "char_136_hsguma",
+      "isRemote": false,
+      "text": "Missy? What are you bawling about...?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Swire",
+      "speakerId": "char_308_swire",
+      "isRemote": false,
+      "text": "I'm not bawling!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoshiguma",
+      "speakerId": "char_136_hsguma",
+      "isRemote": false,
+      "text": "Fine, fine. But you're right in front of the door to L.G.D. Headquarters."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoshiguma",
+      "speakerId": "char_136_hsguma",
+      "isRemote": false,
+      "text": "Probably don't want other people seeing you cry, huh?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Swire",
+      "speakerId": "char_308_swire",
+      "isRemote": false,
+      "text": "N... Nobody's here anyway!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoshiguma",
+      "speakerId": "char_136_hsguma",
+      "isRemote": false,
+      "text": "How about this? I'll sit on the steps in front of you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoshiguma",
+      "speakerId": "char_136_hsguma",
+      "isRemote": false,
+      "text": "I'm big enough. Nobody'll see you cry if I'm in the way."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Swire",
+      "speakerId": "char_308_swire",
+      "isRemote": false,
+      "text": "What are you doing...?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoshiguma",
+      "speakerId": "char_136_hsguma",
+      "isRemote": false,
+      "text": "Oh. Well, we screwed up, so we feel lousy, right?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoshiguma",
+      "speakerId": "char_136_hsguma",
+      "isRemote": false,
+      "text": "I mean both of us, Missy. We both blew it, didn't we?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Swire",
+      "speakerId": "char_308_swire",
+      "isRemote": false,
+      "text": "What do I care...? I don't care where she went!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoshiguma",
+      "speakerId": "char_136_hsguma",
+      "isRemote": false,
+      "text": "Um, right. I know."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Swire",
+      "speakerId": "char_308_swire",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Hoshiguma",
+      "speakerId": "char_136_hsguma",
+      "isRemote": false,
+      "text": "Hey, no hitting. You're going to hit me no matter what I say, huh?"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_light"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Finally..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "My... life... can end."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Helen... Grrovae'zeeal... Yelena..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "It's you..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "I'm finally... going home..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "No."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "—No."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "No."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Hallucination."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "How... I, don't need visions, don't need, consolation!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Who...?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Who shows me... hallucinations?!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_chercen_2"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Oh... How...? How did Mr. Patriot... break free?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Now, I see."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "—You. Cautus. It's you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "You, are her... successor."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Theresis, lied. The King... had a... successor."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "You are... the Lord of Fiends."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "Ah...!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "To die, at the hands, of... the King of Sarkaz."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "I... how?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "In the end, I could not, escape fate."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "No. No..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "No."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "Amiya?! You can't...?!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "S-Sorry! B-But Dr. Kal'tsit..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "I heard, in the past, Lords of Sarkaz, gave visions of comfort, as favors."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Their champions, could see great walls, or loves long passed—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Countless soldiers, for these visions, fought ceaselessly."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "I just, I only... Mr. Patriot, I didn't mean to... I didn't want..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "...The end of your life... it shouldn't be so tragic!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "I saw it... I saw your two hundred years of life..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "The constant fighting... and so much loss... you lost everything..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "I don't... I don't want that... to be your end!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "My, end?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "...No"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "I wanted to give you... a better..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "No!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "My end, is not, someone else's, to give!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "A vision? No! That is not my end!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "If it is tragic, then it is tragic. If foolish, then foolish!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "This is, my end. The end... I deserve."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "I lived. I fought. I failed."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "It's, enough."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Why? Why...? Why is it enough?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "No one should have to lose everything like this!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "...You are still, a child."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "I'm not a child! I've been in more battles than I can count!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "...A good ending, is never earned. Only children, believe in, happily ever after."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "You, and my daughter, are only children, who believe in, fairy tales."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "I told FrostNova, too heavy... too heavy."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "I disagreed, with her. She was... a young girl. Only a child."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Oripathy, slavers, our world... won't even spare, a child."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Talulah, sent her, to die."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Then why not join us and fight Talulah tog—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "What can you, give me?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "You cannot, even give, what Talulah, once gave me."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Later, what will you, become?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "This is fate. I tasted, too much."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "I will never, bow to fate."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Even if, every time, fate brings me, to the same... end..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "I would rather, wrestle it, until again, the sun rises."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "But... Maybe, you can change."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "I fought fate, so many years... in the end, I could not win."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "But you... Maybe you're, different..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Do you have, what it takes, to succeed the King?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "Oh..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Do you have, the power, to leave, alive?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Do you have, the courage, and insight, to step into, the infinite, wilderness?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "I can't do it alone."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "But I'm not alone."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Maybe..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Everything... is yours. Only you... can do it."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "That... Reunion, tyrant, fate... You will... overthrow them."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "Wait.\nNo.\nKal'tsit looks up at the darkened sky.\nWhere have I seen this before?\nIt couldn't be..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "Amiya... Amiya...?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "The Sarkaz prophecy is born out of their collective racial memory. Originium energy bursts popping in areas with high concentrations... the core city is suffering a Catastrophe."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "The altar... Amiya... Wendigo... The Lord of Fiends?!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "Wait, if this has a direct affect... Impossible! The last of the ancient Wendigo bloodline is directly connected to the entire Sarkaz race?!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "The prophecy... this prophecy?!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "Snow? Buldrokkas'tee's cannibalization resonated with all the altars?! And what I just added... the Wendigos' ressurection...!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "All operators!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "Anything he says... Anything Buldrokkas'tee says...!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "Do not believe a single word!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "The Wendigo suddenly speaks, his hoarse voice seemingly echoing throughout the entire central district."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "I see cities, devastated.\nI see Originium, blanketing the land.\nI see you, black crown on your head, melting millions of lives, into nothing but memories.\nI see the, King of Sarkaz, enslaving all peoples, everywhere."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Shieldguard",
+      "speakerId": "avg_npc_058",
+      "isRemote": false,
+      "text": "Huh...?!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "...Wh... at?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "Impossible... No..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "Patriot! Don't believe the prophecy! It's just a physiological side effect of the Originium Arts!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "But... But I know... all the prophecies... come true."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "And I died, at the hands of, the King of Sarkaz."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "...Dame. No. Dame."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "Buldrokkas'tee! Did you not fight against fate your entire life?!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "The young, King of Sarkaz..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "...You, you..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "Will be the most horrific disaster to afflict our world."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "She must die!\nOr else, the world will die!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "I cannot, let you live."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Patriot",
+      "speakerId": "avg_npc_025_1",
+      "isRemote": false,
+      "text": "You can hate me."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "The sound of clanking armor reaches your ears.\nThe ravaged monster suddenly reaches out to Amiya."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Kal'tsit",
+      "speakerId": "char_003_kalts",
+      "isRemote": false,
+      "text": "—Amiya!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Rosmontis",
+      "speakerId": "avg_npc_042",
+      "isRemote": false,
+      "text": "W-Watch out!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "narration",
+      "text": "The Cautus girl does not flinch. The shadow of death sweeps upon her smoke-blackened face. She does not move. She does not scream. She only stares directly into Patriot's eyes.\nAs if staring directly into his soul.\nAt the same time, heavy black blades and shimmering beams of ominous energy pierce swiftly into the giant's immortal body. Still, he remains unshaken.\nJust as Patriot is about to crush the skull of the girl in black..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "The Wendigo freezes in place.\nSomething appears to be dripping sorrowfully from his helmet.\n......\nA minute passes.\nDuring this eternity of a minute, there are no other sounds except for the low rumbling of the moving city."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "Then, the realization dawns. The monster standing before us is dead.\nHaving never taken a single step backward, unwavering for even a single second, in the end, death put a stop to the Patriot's lifelong advance."
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": [

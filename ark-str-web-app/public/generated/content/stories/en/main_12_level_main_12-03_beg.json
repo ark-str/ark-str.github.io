@@ -6,38 +6,47 @@
   "title": "Unity is Luxury",
   "storyCode": "12-4",
   "avgTag": "Before Operation",
-  "sourcePath": "vendor/ArknightsGamedata/en/gamedata/story/obt/main/level_main_12-03_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/en/gamedata/story/obt/main/level_main_12-03_beg.txt",
   "sourceHash": "bc17f2a0b7c082208cf68550a5fd991a28a20699d65af841b815665d0bfa4018",
   "bodyAvailable": true,
   "blocks": [
     {
+      "type": "background",
+      "backgroundId": "21_G7_decisivebattlealley_d"
+    },
+    {
       "type": "dialogue",
       "speakerName": "'Trilby Asher'",
       "speakerId": "avg_npc_867_1",
+      "isRemote": false,
       "text": "How quick to answer, Doctor of Rhodes Island."
     },
     {
       "type": "dialogue",
       "speakerName": "'Trilby Asher'",
       "speakerId": "avg_npc_867_1",
+      "isRemote": false,
       "text": "A safe location has been sent to Alexandrina's terminal. Please stand by there. I cannot guarantee your safety for any actions you take outside of our arrangement."
     },
     {
       "type": "dialogue",
       "speakerName": "Siege",
       "speakerId": "avg_npc_407_1",
+      "isRemote": false,
       "text": "My terminal? When did...?!"
     },
     {
       "type": "dialogue",
       "speakerName": "'Trilby Asher'",
       "speakerId": "avg_npc_867_1",
+      "isRemote": false,
       "text": "You have some impressive talents among your ranks. That's very good. This should contribute to our common goal instead of becoming an obstacle to our cooperation."
     },
     {
       "type": "dialogue",
       "speakerName": "'Trilby Asher'",
       "speakerId": "avg_npc_867_1",
+      "isRemote": false,
       "text": "Right?"
     },
     {
@@ -54,6 +63,7 @@
               "type": "dialogue",
               "speakerName": "'Trilby Asher'",
               "speakerId": "avg_npc_867_1",
+              "isRemote": false,
               "text": "Of course. We must slowly build our trust."
             }
           ]
@@ -66,6 +76,7 @@
               "type": "dialogue",
               "speakerName": "'Trilby Asher'",
               "speakerId": "avg_npc_867_1",
+              "isRemote": false,
               "text": "A cautious silence. How admirable."
             }
           ]
@@ -78,52 +89,56 @@
               "type": "dialogue",
               "speakerName": "'Trilby Asher'",
               "speakerId": "avg_npc_867_1",
+              "isRemote": false,
               "text": "Regrettably, yes."
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "'Trilby Asher'",
-          "speakerId": "avg_npc_867_1",
-          "text": "Please await our next communication."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ascalon",
-          "speakerId": "avg_npc_395_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ascalon",
-          "speakerId": "avg_npc_395_1",
-          "text": "Doctor, I need to contact Closure and reevaluate the safety of Rhodes Island's communications. Until then, maintain radio silence."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ascalon",
-          "speakerId": "avg_npc_395_1",
-          "text": "Of course, we also need to... take care of the issues regarding the landship's calling procedures."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Thank you, Ines."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "'Trilby Asher'",
+      "speakerId": "avg_npc_867_1",
+      "isRemote": false,
+      "text": "Please await our next communication."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ascalon",
+      "speakerId": "avg_npc_395_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ascalon",
+      "speakerId": "avg_npc_395_1",
+      "isRemote": false,
+      "text": "Doctor, I need to contact Closure and reevaluate the safety of Rhodes Island's communications. Until then, maintain radio silence."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ascalon",
+      "speakerId": "avg_npc_395_1",
+      "isRemote": false,
+      "text": "Of course, we also need to... take care of the issues regarding the landship's calling procedures."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Thank you, Ines."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -133,18 +148,17 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Ines",
-          "speakerId": "avg_4087_ines_1",
-          "text": "I'm afraid not."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ines",
+      "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
+      "text": "I'm afraid not."
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -154,30 +168,31 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Ines",
-          "speakerId": "avg_4087_ines_1",
-          "text": "I'm aware."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ines",
-          "speakerId": "avg_4087_ines_1",
-          "text": "This is our first meeting, for this version of you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ines",
-          "speakerId": "avg_4087_ines_1",
-          "text": "Have you really lost your memories...? Or is this part of your plan?"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ines",
+      "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
+      "text": "I'm aware."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ines",
+      "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
+      "text": "This is our first meeting, for this version of you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ines",
+      "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
+      "text": "Have you really lost your memories...? Or is this part of your plan?"
+    },
+    {
+      "type": "sceneBreak"
     },
     {
       "type": "choice",
@@ -197,794 +212,922 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "Ines",
-          "speakerId": "avg_4087_ines_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ines",
-          "speakerId": "avg_4087_ines_1",
-          "text": "I've never been quick to judge, Dr. {@nickname}. I can sense that you've gone through some... changes."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ines",
-          "speakerId": "avg_4087_ines_1",
-          "text": "We'll have a lot of time to get reacquainted in the future."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ines",
-          "speakerId": "avg_4087_ines_1",
-          "text": "Rather than trusting verbal statements, I prefer to see things for myself."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Amiya",
-          "speakerId": "avg_npc_394_1",
-          "text": "Ines, the Doctor..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ines",
-          "speakerId": "avg_4087_ines_1",
-          "text": "Relax, Amiya. My prejudices won't be a factor."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Ines",
-          "speakerId": "avg_4087_ines_1",
-          "text": "For now."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Self-Salvation Corps Fighter",
-          "speakerId": "avg_npc_398_1",
-          "text": "The evacuation's almost complete!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_npc_229_1",
-          "text": "Good, we need to get out of here ASAP."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Robben",
-          "speakerId": "avg_npc_414_1",
-          "text": "That Sarkaz from Rhodes Island. Is his name Logos?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_npc_229_1",
-          "text": "And I thought we'd seen all the surprises Rhodes Island's fighting style had to offer, having fought alongside Misery all this time."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Robben",
-          "speakerId": "avg_npc_414_1",
-          "text": "Right. It doesn't matter who exactly he is. His cursecraft has been a great help."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Self-Salvation Corps Fighter",
-          "speakerId": "avg_npc_398_1",
-          "text": "Hah... and he's a great darts player, too."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Self-Salvation Corps Fighter",
-          "speakerId": "avg_npc_398_1",
-          "text": "I played against him for a couple rounds. His accuracy might just be as terrifying as those Arts of his."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_650_1",
-          "text": "A friend of mine taught me a couple tricks before, that's all."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_650_1",
-          "text": "He's no match for me in a chair sliding match, but when it comes to darts... He's not so bad."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_650_1",
-          "text": "Horn, the Sarkaz forces have retreated. We should seize this opportunity."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_npc_229_1",
-          "text": "According to the plan, Rhodes Island and the Self-Salvation Corps will take the supply route, head toward the exit, and make their way to a town called Brentwood to build a new safe house there."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_npc_229_1",
-          "text": "We will regroup with them there."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_npc_229_1",
-          "text": "I suggest we charge toward the city walls. Norport Borough is gone, and even though the Sarkaz have patched up the walls, they wouldn't have had enough time to build new plates to fill the hole there."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_npc_229_1",
-          "text": "The exposed underground structure might just help us somehow."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_650_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_650_1",
-          "text": "Looks like I've met another old friend."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Self-Salvation Corps Fighter",
-          "speakerId": "avg_npc_398_1",
-          "text": "The one who taught you to play darts."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_650_1",
-          "text": "Regrettably, no."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_650_1",
-          "text": "Unlike this old friend, my friends are loyal to one another until our deaths."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_650_1",
-          "text": "Everyone, I'm afraid I still have matters to attend to within the city. Horn is more than capable of leading you outside Londinium, and my coworker Misery will also lend you his assistance should the need arise."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_npc_229_1",
-          "text": "Understood."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Horn",
-          "speakerId": "avg_npc_229_1",
-          "text": "Stay hidden, everyone. Follow me."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_650_1",
-          "text": "Are the mountains of the past really so worthy of reminiscing? Blood and tears are nothing to be obsessed with."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "'Molly'",
-          "speakerId": "avg_npc_657_1",
-          "text": "I must say I'm not entirely fascinated by them."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "'Molly'",
-          "speakerId": "avg_npc_657_1",
-          "text": "But what if the mountains are the only place there is left to stay? What if only the light of glory there can give us warmth?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_650_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_650_1",
-          "text": "And here I thought I'd hunted enough of you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "'Molly'",
-          "speakerId": "avg_npc_657_1",
-          "text": "This is the thirty-first 'Molly.' You are a hardworking one, Banshee."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_650_1",
-          "text": "But you prevailed nonetheless. You helped Theresis decimate the Self-Salvation Corps."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "'Molly'",
-          "speakerId": "avg_npc_657_1",
-          "text": "That's business."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_650_1",
-          "text": "I would pry up every tile in Londinium to find the last of your hidden shards, Damazti."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Logos",
-          "speakerId": "avg_npc_650_1",
-          "text": "You yet refute the possibility of change. This has always been your choice."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Damazti Cluster",
-          "speakerId": "avg_npc_426_1",
-          "text": "A little arrogant, aren't we, young Banshee? We understand change. We come from change itself."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Damazti Cluster",
-          "speakerId": "avg_npc_426_1",
-          "text": "But change is merely a means to adaptation. All change has a final objective."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Damazti Cluster",
-          "speakerId": "avg_npc_426_1",
-          "text": "Even before the Sarkaz found themselves in this state, we had long been walking upon the lands."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Damazti Cluster",
-          "speakerId": "avg_npc_426_1",
-          "text": "Ideologies, faiths, missions, slogans. None of them can escape the sands of time."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Damazti Cluster",
-          "speakerId": "avg_npc_426_1",
-          "text": "Those ideas you mistake as novel have been conceived long ago. The paths you deem noble have been paved time and again."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Damazti Cluster",
-          "speakerId": "avg_npc_426_1",
-          "text": "And where are they now?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Damazti Cluster",
-          "speakerId": "avg_npc_426_1",
-          "text": "We yet still before you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Damazti Cluster",
-          "speakerId": "avg_npc_426_1",
-          "text": "And that is the greatest proof."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "(Bang!)"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "(Bang, bang!)"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "Phew—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Baird",
-          "speakerId": "avg_npc_863_1",
-          "text": "You should save some strength, Cador. You've eaten more than enough."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Baird",
-          "speakerId": "avg_npc_863_1",
-          "text": "Delphine has talked to you about your appetite problem already. We're much worse off than we used to be now."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "Relax, Baird. Things haven't completely gone to shit yet."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "Them devils aren't nearly as strong as they look. All they did was catch us off-guard."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "I had a chat with Marshall from the transport union. They have a group of men over there. Once we rope in more people on our end, we might just stand a chance to defeat the Sarkaz."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "Just like how we joined forces with those other gangs to take the cops down."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "Jump them from behind, get the job done clean. 'Pow pow,' 'bam!'"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "A couple punches. That's all it takes."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Baird",
-          "speakerId": "avg_npc_863_1",
-          "text": "The Sarkaz army isn't cops."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "I know. They're a force to be reckoned with."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "But we aren't afraid of blood. We aren't afraid of sacrifices! We will walk over our fallen comrades, and smash their faces in with our fists—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "Like our gym's name, 'Slobberknocker!'"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "Marshall and I worked it out. We will definitely win!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Baird",
-          "speakerId": "avg_npc_863_1",
-          "text": "Just like those bootleg Lungmen videos you collect, hm?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "I'm serious, I've been around the block in Norport not much shorter than you."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "We need to find a way out of this mess ourselves just like before."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "That Siege of yours just up and left Glasgow all those years ago, and our turf got handed over, just like that. It was you and I who racked our brains to figure out how to gain a foothold here again."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "This is nothing different than before. We stand together, get prepared, and beat them all up. That's how we've made it this far."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "It doesn't matter how things are outside. Out on the streets, we do things the street way."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "Next, we just gotta find ourselves the right moment..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Baird",
-          "speakerId": "avg_npc_863_1",
-          "text": "Looks like Delphine's back."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_npc_866_1",
-          "text": "......"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "Did Ol' Baldy Per finally give in? Given the circumstances, we're paying a pretty decent price. I'm sure he—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "What's this? Is that... blood?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_npc_866_1",
-          "text": "Ol' Baldy Per is dead."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "The Sarkaz—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Timid Citizen",
-          "speakerId": "avg_npc_177",
-          "text": "No, not the Sarkaz! Dammit, I have no idea who they were, but they were already at it when we got to the store!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Timid Citizen",
-          "speakerId": "avg_npc_177",
-          "text": "They were a bloodthirsty bunch! I saw with my own eyes there was this man with a crowbar, pinning another man on the floor. That man even—"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Timid Citizen",
-          "speakerId": "avg_npc_177",
-          "text": "*cough* *cough*, *cough* *cough*!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_npc_866_1",
-          "text": "The situation's bad. My guess is some starving bum set his sights on Per's shop. The idiot still had bread in his glass showcase."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_npc_866_1",
-          "text": "And it went as you'd expect."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_npc_866_1",
-          "text": "You can more or less guess just how many of these 'bums' there are in this locked-down district."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "Bloody idiots... Whatever they have been sniffing must've finally got to their heads!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_npc_866_1",
-          "text": "I know the man with the crowbar. He's a tail hair product salesman. Always had a smile on his face."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_npc_866_1",
-          "text": "I bought from him a number of times since he gave me discounts. They aren't all that good, though."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_npc_866_1",
-          "text": "I saw him just now... His eyes were deep red, there was blood on his lips. That crowbar was completely bent. I... I almost didn't recognize him."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_npc_866_1",
-          "text": "Fear is spreading, Cador."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "The transport union guys did say there could be cowards going nuts, but how could..."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Delphine",
-          "speakerId": "avg_npc_866_1",
-          "text": "Barricade the door!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Timid Citizen",
-          "speakerId": "avg_npc_177",
-          "text": "I... I..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Baird",
-          "speakerId": "avg_npc_863_1",
-          "text": "What are you spacing out for? Make yourself useful! Cador, push that sofa over here!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "Bloody bastards, what do the lot of you want?!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Voice Outside the Door",
-          "speakerId": "avg_npc_862_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "Now piss off, we've got people alive in here. This is Glasgow's territory!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Voice Outside the Door",
-          "speakerId": "avg_npc_862_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "Baird, watch out!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "A fire axe smashes through the gym's thick door and breaks open a hole. The sharp axe brushes past Baird's hair.\nA few strands of her hair flutter in the air."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "I said it already. We've got people still bloody alive in here!"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "Cador presses against the door with his body and grabs the axe peeking through the hole back with his two hands. The man outside makes several attempts to pull the axe back in vain."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "I don't care who the hell you are, but get out of my sight, or I'll have this axe in your brain!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Voice Outside the Door",
-          "speakerId": "avg_npc_862_1",
-          "text": "......"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "narration",
-          "text": "The axe wobbles a few times, and after a few heavy kicking sounds on the door, the men outside finally gives up, their chaotic footsteps slowly growing quieter."
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Timid Citizen",
-          "speakerId": "avg_npc_177",
-          "text": "Your hand... Your fingers..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "......"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "Good thing that bandages are the last thing we'll run out of in a gym."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "Baird, Delphine. We need to take inventory of all our resources again."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "I'll take down a couple sandbags to reinforce our front door."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Timid Citizen",
-          "speakerId": "avg_npc_177",
-          "text": "Th-These people... Have they gone mad?!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Timid Citizen",
-          "speakerId": "avg_npc_177",
-          "text": "They... The citizens of Norport Borough were all upstanding men, basically... What about the police? They were always so quick to write tickets!"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "If I were a cop so unlucky as to not make it out of this plate in time, I would definitely have locked myself in my home with my weapon at the ready by now."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "I... I need to head on over to the transport union later. The people here still trust Marshall."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "He—Everyone always listens to him. He'll find a way."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Cador",
-          "speakerId": "avg_npc_862_1",
-          "text": "Dammit... Bloody hell! The Sarkaz are still out there. These people are out of their minds. How could they—"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Timid Citizen",
-          "speakerId": "avg_npc_177",
-          "text": "What... What should we do now? Cador said we just had to wait for..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Baird",
-          "speakerId": "avg_npc_863_1",
-          "text": "An opportunity?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Baird",
-          "speakerId": "avg_npc_863_1",
-          "text": "Mr. 'Next Academician,' are you aware of the great fire in Norport fifteen years ago?"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Timid Citizen",
-          "speakerId": "avg_npc_177",
-          "text": "Oh, yes, I've heard. It was in the port, if I recall..."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Baird",
-          "speakerId": "avg_npc_863_1",
-          "text": "It doesn't actually take very much to burn down a port."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Baird",
-          "speakerId": "avg_npc_863_1",
-          "text": "All you need is scorching hot weather, a warehouse full of wood shavings, and a cigarette butt not fully extinguished."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Baird",
-          "speakerId": "avg_npc_863_1",
-          "text": "No one can put out a fire like that."
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Baird",
-          "speakerId": "avg_npc_863_1",
-          "text": "All we can do is watch everything burn to ashes."
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ines",
+      "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ines",
+      "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
+      "text": "I've never been quick to judge, Dr. {@nickname}. I can sense that you've gone through some... changes."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ines",
+      "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
+      "text": "We'll have a lot of time to get reacquainted in the future."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ines",
+      "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
+      "text": "Rather than trusting verbal statements, I prefer to see things for myself."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Amiya",
+      "speakerId": "avg_npc_394_1",
+      "isRemote": false,
+      "text": "Ines, the Doctor..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ines",
+      "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
+      "text": "Relax, Amiya. My prejudices won't be a factor."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Ines",
+      "speakerId": "avg_4087_ines_1",
+      "isRemote": false,
+      "text": "For now."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "27_g7_subway"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Self-Salvation Corps Fighter",
+      "speakerId": "avg_npc_398_1",
+      "isRemote": false,
+      "text": "The evacuation's almost complete!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_npc_229_1",
+      "isRemote": false,
+      "text": "Good, we need to get out of here ASAP."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Robben",
+      "speakerId": "avg_npc_414_1",
+      "isRemote": false,
+      "text": "That Sarkaz from Rhodes Island. Is his name Logos?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_npc_229_1",
+      "isRemote": false,
+      "text": "And I thought we'd seen all the surprises Rhodes Island's fighting style had to offer, having fought alongside Misery all this time."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Robben",
+      "speakerId": "avg_npc_414_1",
+      "isRemote": false,
+      "text": "Right. It doesn't matter who exactly he is. His cursecraft has been a great help."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Self-Salvation Corps Fighter",
+      "speakerId": "avg_npc_398_1",
+      "isRemote": false,
+      "text": "Hah... and he's a great darts player, too."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Self-Salvation Corps Fighter",
+      "speakerId": "avg_npc_398_1",
+      "isRemote": false,
+      "text": "I played against him for a couple rounds. His accuracy might just be as terrifying as those Arts of his."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_650_1",
+      "isRemote": false,
+      "text": "A friend of mine taught me a couple tricks before, that's all."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_650_1",
+      "isRemote": false,
+      "text": "He's no match for me in a chair sliding match, but when it comes to darts... He's not so bad."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_650_1",
+      "isRemote": false,
+      "text": "Horn, the Sarkaz forces have retreated. We should seize this opportunity."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_npc_229_1",
+      "isRemote": false,
+      "text": "According to the plan, Rhodes Island and the Self-Salvation Corps will take the supply route, head toward the exit, and make their way to a town called Brentwood to build a new safe house there."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_npc_229_1",
+      "isRemote": false,
+      "text": "We will regroup with them there."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_npc_229_1",
+      "isRemote": false,
+      "text": "I suggest we charge toward the city walls. Norport Borough is gone, and even though the Sarkaz have patched up the walls, they wouldn't have had enough time to build new plates to fill the hole there."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_npc_229_1",
+      "isRemote": false,
+      "text": "The exposed underground structure might just help us somehow."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_650_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_650_1",
+      "isRemote": false,
+      "text": "Looks like I've met another old friend."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Self-Salvation Corps Fighter",
+      "speakerId": "avg_npc_398_1",
+      "isRemote": false,
+      "text": "The one who taught you to play darts."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_650_1",
+      "isRemote": false,
+      "text": "Regrettably, no."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_650_1",
+      "isRemote": false,
+      "text": "Unlike this old friend, my friends are loyal to one another until our deaths."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_650_1",
+      "isRemote": false,
+      "text": "Everyone, I'm afraid I still have matters to attend to within the city. Horn is more than capable of leading you outside Londinium, and my coworker Misery will also lend you his assistance should the need arise."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_npc_229_1",
+      "isRemote": false,
+      "text": "Understood."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Horn",
+      "speakerId": "avg_npc_229_1",
+      "isRemote": false,
+      "text": "Stay hidden, everyone. Follow me."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "27_g7_subway"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_650_1",
+      "isRemote": false,
+      "text": "Are the mountains of the past really so worthy of reminiscing? Blood and tears are nothing to be obsessed with."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "'Molly'",
+      "speakerId": "avg_npc_657_1",
+      "isRemote": false,
+      "text": "I must say I'm not entirely fascinated by them."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "'Molly'",
+      "speakerId": "avg_npc_657_1",
+      "isRemote": false,
+      "text": "But what if the mountains are the only place there is left to stay? What if only the light of glory there can give us warmth?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_650_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_650_1",
+      "isRemote": false,
+      "text": "And here I thought I'd hunted enough of you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "'Molly'",
+      "speakerId": "avg_npc_657_1",
+      "isRemote": false,
+      "text": "This is the thirty-first 'Molly.' You are a hardworking one, Banshee."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_650_1",
+      "isRemote": false,
+      "text": "But you prevailed nonetheless. You helped Theresis decimate the Self-Salvation Corps."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "'Molly'",
+      "speakerId": "avg_npc_657_1",
+      "isRemote": false,
+      "text": "That's business."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_650_1",
+      "isRemote": false,
+      "text": "I would pry up every tile in Londinium to find the last of your hidden shards, Damazti."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Logos",
+      "speakerId": "avg_npc_650_1",
+      "isRemote": false,
+      "text": "You yet refute the possibility of change. This has always been your choice."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Damazti Cluster",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "A little arrogant, aren't we, young Banshee? We understand change. We come from change itself."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Damazti Cluster",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "But change is merely a means to adaptation. All change has a final objective."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Damazti Cluster",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "Even before the Sarkaz found themselves in this state, we had long been walking upon the lands."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Damazti Cluster",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "Ideologies, faiths, missions, slogans. None of them can escape the sands of time."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Damazti Cluster",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "Those ideas you mistake as novel have been conceived long ago. The paths you deem noble have been paved time and again."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Damazti Cluster",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "And where are they now?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Damazti Cluster",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "We yet still before you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Damazti Cluster",
+      "speakerId": "avg_npc_426_1",
+      "isRemote": false,
+      "text": "And that is the greatest proof."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "37_g1_glasgowboxinggym"
+    },
+    {
+      "type": "narration",
+      "text": "(Bang!)"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "(Bang, bang!)"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "Phew—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Baird",
+      "speakerId": "avg_npc_863_1",
+      "isRemote": false,
+      "text": "You should save some strength, Cador. You've eaten more than enough."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Baird",
+      "speakerId": "avg_npc_863_1",
+      "isRemote": false,
+      "text": "Delphine has talked to you about your appetite problem already. We're much worse off than we used to be now."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "Relax, Baird. Things haven't completely gone to shit yet."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "Them devils aren't nearly as strong as they look. All they did was catch us off-guard."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "I had a chat with Marshall from the transport union. They have a group of men over there. Once we rope in more people on our end, we might just stand a chance to defeat the Sarkaz."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "Just like how we joined forces with those other gangs to take the cops down."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "Jump them from behind, get the job done clean. 'Pow pow,' 'bam!'"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "A couple punches. That's all it takes."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Baird",
+      "speakerId": "avg_npc_863_1",
+      "isRemote": false,
+      "text": "The Sarkaz army isn't cops."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "I know. They're a force to be reckoned with."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "But we aren't afraid of blood. We aren't afraid of sacrifices! We will walk over our fallen comrades, and smash their faces in with our fists—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "Like our gym's name, 'Slobberknocker!'"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "Marshall and I worked it out. We will definitely win!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Baird",
+      "speakerId": "avg_npc_863_1",
+      "isRemote": false,
+      "text": "Just like those bootleg Lungmen videos you collect, hm?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "I'm serious, I've been around the block in Norport not much shorter than you."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "We need to find a way out of this mess ourselves just like before."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "That Siege of yours just up and left Glasgow all those years ago, and our turf got handed over, just like that. It was you and I who racked our brains to figure out how to gain a foothold here again."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "This is nothing different than before. We stand together, get prepared, and beat them all up. That's how we've made it this far."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "It doesn't matter how things are outside. Out on the streets, we do things the street way."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "Next, we just gotta find ourselves the right moment..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Baird",
+      "speakerId": "avg_npc_863_1",
+      "isRemote": false,
+      "text": "Looks like Delphine's back."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_npc_866_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "Did Ol' Baldy Per finally give in? Given the circumstances, we're paying a pretty decent price. I'm sure he—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "What's this? Is that... blood?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_npc_866_1",
+      "isRemote": false,
+      "text": "Ol' Baldy Per is dead."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "The Sarkaz—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Timid Citizen",
+      "speakerId": "avg_npc_177",
+      "isRemote": false,
+      "text": "No, not the Sarkaz! Dammit, I have no idea who they were, but they were already at it when we got to the store!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Timid Citizen",
+      "speakerId": "avg_npc_177",
+      "isRemote": false,
+      "text": "They were a bloodthirsty bunch! I saw with my own eyes there was this man with a crowbar, pinning another man on the floor. That man even—"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Timid Citizen",
+      "speakerId": "avg_npc_177",
+      "isRemote": false,
+      "text": "*cough* *cough*, *cough* *cough*!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_npc_866_1",
+      "isRemote": false,
+      "text": "The situation's bad. My guess is some starving bum set his sights on Per's shop. The idiot still had bread in his glass showcase."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_npc_866_1",
+      "isRemote": false,
+      "text": "And it went as you'd expect."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_npc_866_1",
+      "isRemote": false,
+      "text": "You can more or less guess just how many of these 'bums' there are in this locked-down district."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "Bloody idiots... Whatever they have been sniffing must've finally got to their heads!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_npc_866_1",
+      "isRemote": false,
+      "text": "I know the man with the crowbar. He's a tail hair product salesman. Always had a smile on his face."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_npc_866_1",
+      "isRemote": false,
+      "text": "I bought from him a number of times since he gave me discounts. They aren't all that good, though."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_npc_866_1",
+      "isRemote": false,
+      "text": "I saw him just now... His eyes were deep red, there was blood on his lips. That crowbar was completely bent. I... I almost didn't recognize him."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_npc_866_1",
+      "isRemote": false,
+      "text": "Fear is spreading, Cador."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "The transport union guys did say there could be cowards going nuts, but how could..."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Delphine",
+      "speakerId": "avg_npc_866_1",
+      "isRemote": false,
+      "text": "Barricade the door!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Timid Citizen",
+      "speakerId": "avg_npc_177",
+      "isRemote": false,
+      "text": "I... I..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Baird",
+      "speakerId": "avg_npc_863_1",
+      "isRemote": false,
+      "text": "What are you spacing out for? Make yourself useful! Cador, push that sofa over here!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "Bloody bastards, what do the lot of you want?!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Voice Outside the Door",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "Now piss off, we've got people alive in here. This is Glasgow's territory!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Voice Outside the Door",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "Baird, watch out!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "A fire axe smashes through the gym's thick door and breaks open a hole. The sharp axe brushes past Baird's hair.\nA few strands of her hair flutter in the air."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "I said it already. We've got people still bloody alive in here!"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "Cador presses against the door with his body and grabs the axe peeking through the hole back with his two hands. The man outside makes several attempts to pull the axe back in vain."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "I don't care who the hell you are, but get out of my sight, or I'll have this axe in your brain!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Voice Outside the Door",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "narration",
+      "text": "The axe wobbles a few times, and after a few heavy kicking sounds on the door, the men outside finally gives up, their chaotic footsteps slowly growing quieter."
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Timid Citizen",
+      "speakerId": "avg_npc_177",
+      "isRemote": false,
+      "text": "Your hand... Your fingers..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "......"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "Good thing that bandages are the last thing we'll run out of in a gym."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "Baird, Delphine. We need to take inventory of all our resources again."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "I'll take down a couple sandbags to reinforce our front door."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Timid Citizen",
+      "speakerId": "avg_npc_177",
+      "isRemote": false,
+      "text": "Th-These people... Have they gone mad?!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Timid Citizen",
+      "speakerId": "avg_npc_177",
+      "isRemote": false,
+      "text": "They... The citizens of Norport Borough were all upstanding men, basically... What about the police? They were always so quick to write tickets!"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "If I were a cop so unlucky as to not make it out of this plate in time, I would definitely have locked myself in my home with my weapon at the ready by now."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "I... I need to head on over to the transport union later. The people here still trust Marshall."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "He—Everyone always listens to him. He'll find a way."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Cador",
+      "speakerId": "avg_npc_862_1",
+      "isRemote": false,
+      "text": "Dammit... Bloody hell! The Sarkaz are still out there. These people are out of their minds. How could they—"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Timid Citizen",
+      "speakerId": "avg_npc_177",
+      "isRemote": false,
+      "text": "What... What should we do now? Cador said we just had to wait for..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Baird",
+      "speakerId": "avg_npc_863_1",
+      "isRemote": false,
+      "text": "An opportunity?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Baird",
+      "speakerId": "avg_npc_863_1",
+      "isRemote": false,
+      "text": "Mr. 'Next Academician,' are you aware of the great fire in Norport fifteen years ago?"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Timid Citizen",
+      "speakerId": "avg_npc_177",
+      "isRemote": false,
+      "text": "Oh, yes, I've heard. It was in the port, if I recall..."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Baird",
+      "speakerId": "avg_npc_863_1",
+      "isRemote": false,
+      "text": "It doesn't actually take very much to burn down a port."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Baird",
+      "speakerId": "avg_npc_863_1",
+      "isRemote": false,
+      "text": "All you need is scorching hot weather, a warehouse full of wood shavings, and a cigarette butt not fully extinguished."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Baird",
+      "speakerId": "avg_npc_863_1",
+      "isRemote": false,
+      "text": "No one can put out a fire like that."
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Baird",
+      "speakerId": "avg_npc_863_1",
+      "isRemote": false,
+      "text": "All we can do is watch everything burn to ashes."
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": []

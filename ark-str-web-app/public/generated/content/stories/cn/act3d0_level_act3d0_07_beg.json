@@ -6,7 +6,7 @@
   "title": "一锤定音",
   "storyCode": "OF-7",
   "avgTag": "行动前",
-  "sourcePath": "vendor/ArknightsGamedata/cn/gamedata/story/activities/act3d0/level_act3d0_07_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/cn/gamedata/story/activities/act3d0/level_act3d0_07_beg.txt",
   "sourceHash": "eec714c3b9ddf627ce21cfee45ace779ec3bee78a04511390f651e7c7be735e4",
   "bodyAvailable": true,
   "blocks": [
@@ -18,21 +18,28 @@
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_Festival_2"
+    },
+    {
       "type": "dialogue",
       "speakerName": "工作人员",
       "speakerId": "avg_npc_020",
+      "isRemote": false,
       "text": "发生什么事了？喂？"
     },
     {
       "type": "dialogue",
       "speakerName": "Alty",
       "speakerId": "npc_2004_Alty",
+      "isRemote": false,
       "text": "欸，出了什么事吗？外面是不是有些状况啊？"
     },
     {
       "type": "dialogue",
       "speakerName": "工作人员",
       "speakerId": "avg_npc_020",
+      "isRemote": false,
       "text": "请不用担心，目前还没有异常。请您往这边走。"
     },
     {
@@ -42,12 +49,14 @@
       "type": "dialogue",
       "speakerName": "工作人员",
       "speakerId": "avg_npc_020",
+      "isRemote": false,
       "text": "嘉宾已就位，还有2分30秒准备登台。"
     },
     {
       "type": "dialogue",
       "speakerName": "工作人员",
       "speakerId": "avg_npc_020",
+      "isRemote": false,
       "text": "快！把外面的事情处理好。"
     },
     {
@@ -57,72 +66,84 @@
       "type": "dialogue",
       "speakerName": "克洛宁",
       "speakerId": "avg_npc_023_2",
+      "isRemote": false,
       "text": "事到如今，赫尔曼你也没有什么威望了！"
     },
     {
       "type": "dialogue",
       "speakerName": "克洛宁",
       "speakerId": "avg_npc_023_2",
+      "isRemote": false,
       "text": "这些人都是这几年我发展的手下，他们才知道什么是努力换来的回报和美好的生活！"
     },
     {
       "type": "dialogue",
       "speakerName": "克洛宁",
       "speakerId": "avg_npc_023_2",
+      "isRemote": false,
       "text": "今天就是音乐节的最高峰，我会带上我这么多年应得的所有利益离开这里。"
     },
     {
       "type": "dialogue",
       "speakerName": "克洛宁",
       "speakerId": "avg_npc_023_2",
+      "isRemote": false,
       "text": "你还被蒙在鼓里吧。"
     },
     {
       "type": "dialogue",
       "speakerName": "克洛宁",
       "speakerId": "avg_npc_023_2",
+      "isRemote": false,
       "text": "我现在就大发慈悲地告诉你，你们看到的火山监测站的数据是错的，很快它就会彻底活性化。"
     },
     {
       "type": "dialogue",
       "speakerName": "克洛宁",
       "speakerId": "avg_npc_023_2",
+      "isRemote": false,
       "text": "源石会伴随着爆发蔓延，至少半个城市都逃不过被毁灭的结局！"
     },
     {
       "type": "dialogue",
       "speakerName": "克洛宁",
       "speakerId": "avg_npc_023_2",
+      "isRemote": false,
       "text": "而我什么都不会失去，等到灾难结束我还会回来进行开采。"
     },
     {
       "type": "dialogue",
       "speakerName": "克洛宁",
       "speakerId": "avg_npc_023_2",
+      "isRemote": false,
       "text": "汐斯塔果然是我的一片宝地！我也深爱着它啊，赫尔曼！"
     },
     {
       "type": "dialogue",
       "speakerName": "赫尔曼",
       "speakerId": "avg_npc_024",
+      "isRemote": false,
       "text": "你胆敢说出这样的话！"
     },
     {
       "type": "dialogue",
       "speakerName": "克洛宁",
       "speakerId": "avg_npc_023_2",
+      "isRemote": false,
       "text": "既然我是这个城市的天灾信使，那么我当然可以。"
     },
     {
       "type": "dialogue",
       "speakerName": "克洛宁",
       "speakerId": "avg_npc_023_2",
+      "isRemote": false,
       "text": "而你们所有人都会被我在此击败，然后眼睁睁地看着汐斯塔变成一片废墟！"
     },
     {
       "type": "dialogue",
       "speakerName": "克洛宁",
       "speakerId": "avg_npc_023_2",
+      "isRemote": false,
       "text": "当然，最后死在光荣的汐斯塔火山爆发之中。除了我，没有人能把这些秘密带离这里。"
     },
     {
@@ -143,60 +164,66 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "克洛宁",
-          "speakerId": "avg_npc_023_2",
-          "text": "......罗，德，岛。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "赫尔曼",
-          "speakerId": "avg_npc_024",
-          "text": "我对你实在太失望了，克洛宁。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "克洛宁",
-          "speakerId": "avg_npc_023_2",
-          "text": "失望？你说失望？失望的是我！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "克洛宁",
-          "speakerId": "avg_npc_023_2",
-          "text": "我永远也不会忘记失去了家而不得不睡在垃圾桶中躲避风雨的日子！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "克洛宁",
-          "speakerId": "avg_npc_023_2",
-          "text": "财富才是新生活的钥匙，我自那时就明白了这个道理！而你呢？却用我们辛苦得到的钱，去救助那些感染者垃圾！？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "克洛宁",
-          "speakerId": "avg_npc_023_2",
-          "text": "你要把汐斯塔无上的价值葬送在你的伪善之中吗！？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "赫尔曼",
-          "speakerId": "avg_npc_024",
-          "text": "你好好看看你自己，克洛宁。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "赫尔曼",
-          "speakerId": "avg_npc_024",
-          "text": "然后，去监狱中思考自己看到了什么吧！"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "克洛宁",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "......罗，德，岛。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "赫尔曼",
+      "speakerId": "avg_npc_024",
+      "isRemote": false,
+      "text": "我对你实在太失望了，克洛宁。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "克洛宁",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "失望？你说失望？失望的是我！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "克洛宁",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "我永远也不会忘记失去了家而不得不睡在垃圾桶中躲避风雨的日子！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "克洛宁",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "财富才是新生活的钥匙，我自那时就明白了这个道理！而你呢？却用我们辛苦得到的钱，去救助那些感染者垃圾！？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "克洛宁",
+      "speakerId": "avg_npc_023_2",
+      "isRemote": false,
+      "text": "你要把汐斯塔无上的价值葬送在你的伪善之中吗！？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "赫尔曼",
+      "speakerId": "avg_npc_024",
+      "isRemote": false,
+      "text": "你好好看看你自己，克洛宁。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "赫尔曼",
+      "speakerId": "avg_npc_024",
+      "isRemote": false,
+      "text": "然后，去监狱中思考自己看到了什么吧！"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": []

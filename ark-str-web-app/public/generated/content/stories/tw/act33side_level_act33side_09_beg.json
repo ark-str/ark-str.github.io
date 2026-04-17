@@ -6,10 +6,14 @@
   "title": "塵埃落定",
   "storyCode": "BB-9",
   "avgTag": "行動前",
-  "sourcePath": "vendor/ArknightsGamedata/tw/gamedata/story/activities/act33side/level_act33side_09_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/tw/gamedata/story/activities/act33side/level_act33side_09_beg.txt",
   "sourceHash": "0967c2235a0f0886aa4d46b773f439c30c932fe3f4328ea06edac1cc31e9000e",
   "bodyAvailable": true,
   "blocks": [
+    {
+      "type": "background",
+      "backgroundId": "bg_desert_1"
+    },
     {
       "type": "narration",
       "text": "卡茲戴爾地區，巴別塔羅德島本艦外"
@@ -21,46 +25,57 @@
       "type": "dialogue",
       "speakerName": "決然的刺客",
       "speakerId": "avg_npc_1307_1",
+      "isRemote": false,
       "text": "巴別塔並無防備，如攝政王所料。"
     },
     {
       "type": "dialogue",
       "speakerName": "謹慎的刺客",
       "speakerId": "avg_npc_1307_1",
+      "isRemote": false,
       "text": "減少動靜，提高警惕。"
     },
     {
       "type": "dialogue",
       "speakerName": "謹慎的刺客",
       "speakerId": "avg_npc_1307_1",
+      "isRemote": false,
       "text": "按原定路線進入，找到魔王。A路線和B路線同樣待命。"
     },
     {
       "type": "dialogue",
       "speakerName": "決然的刺客",
       "speakerId": "avg_npc_1307_1",
+      "isRemote": false,
       "text": "核心戰力不存在於這艘船上。他們撤回支援需要時間。"
     },
     {
       "type": "dialogue",
       "speakerName": "決然的刺客",
       "speakerId": "avg_npc_1307_1",
+      "isRemote": false,
       "text": "巴別塔的護衛也依舊沒有反應過來。"
     },
     {
       "type": "dialogue",
       "speakerName": "謹慎的刺客",
       "speakerId": "avg_npc_1307_1",
+      "isRemote": false,
       "text": "……攝政王殿下賭對了。有敵方的大人物在幫我們。"
     },
     {
       "type": "dialogue",
       "speakerName": "謹慎的刺客",
       "speakerId": "avg_npc_1307_1",
+      "isRemote": false,
       "text": "全隊，即刻登艦。速戰速決，減少意外。"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_room_2"
     },
     {
       "type": "narration",
@@ -73,45 +88,56 @@
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "……好討厭的聲音，博士還沒來……"
     },
     {
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "特蕾西婭小姐……只好去找特蕾西婭小姐了。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_corridor_2"
+    },
+    {
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "唐寧叔叔，您好！您的鉗子掉在地上了，給你！"
     },
     {
       "type": "dialogue",
       "speakerName": "巴別塔成員",
       "speakerId": "avg_npc_1308_1",
+      "isRemote": false,
       "text": "謝謝阿米婭。你要去哪？"
     },
     {
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "去議長室找特蕾西婭小姐。對了，您有看到博士嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "巴別塔成員",
       "speakerId": "avg_npc_1308_1",
+      "isRemote": false,
       "text": "博士？這幾天好像一直沒見過，應該是在指揮室指揮作戰吧？"
     },
     {
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "哦，果然博士還是很忙……再見！"
     },
     {
@@ -121,12 +147,14 @@
       "type": "dialogue",
       "speakerName": "巴別塔成員",
       "speakerId": "avg_npc_1308_1",
+      "isRemote": false,
       "text": "阿米婭，跑慢點！艦船上很多地方還在維修呢，別絆著了！"
     },
     {
       "type": "dialogue",
       "speakerName": "巴別塔成員",
       "speakerId": "avg_npc_1308_1",
+      "isRemote": false,
       "text": "這孩子真是——"
     },
     {
@@ -136,6 +164,7 @@
       "type": "dialogue",
       "speakerName": "巴別塔成員",
       "speakerId": "avg_npc_1308_1",
+      "isRemote": false,
       "text": "呃……"
     },
     {
@@ -145,33 +174,42 @@
       "type": "dialogue",
       "speakerName": "謹慎的刺客",
       "speakerId": "avg_npc_1307_1",
+      "isRemote": false,
       "text": "解決一個，繼續走。"
     },
     {
       "type": "dialogue",
       "speakerName": "決然的刺客",
       "speakerId": "avg_npc_1307_1",
+      "isRemote": false,
       "text": "內應已經埋伏在各處待命，隨時可以配合我們。"
     },
     {
       "type": "dialogue",
       "speakerName": "決然的刺客",
       "speakerId": "avg_npc_1307_1",
+      "isRemote": false,
       "text": "遇到其他人直接動手，艦上剩下的人都沒有威脅。"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "49_g10_theresaoffice"
+    },
+    {
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "特蕾西婭小姐，我帶來了我的故事書——"
     },
     {
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "欸……為什麼門關著？"
     },
     {
@@ -181,6 +219,7 @@
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "特蕾西婭小姐，是我！您在裡面嗎？"
     },
     {
@@ -197,6 +236,7 @@
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "特蕾西婭小姐——"
     },
     {
@@ -206,60 +246,70 @@
       "type": "dialogue",
       "speakerName": "特蕾西婭",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "阿米婭，為什麼你會在這裡？"
     },
     {
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "我聽到了討厭的聲音，離我很近……我有點害怕。"
     },
     {
       "type": "dialogue",
       "speakerName": "特蕾西婭",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "特蕾西婭",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "我們馬上就能回家了。"
     },
     {
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "您看起來很累……"
     },
     {
       "type": "dialogue",
       "speakerName": "特蕾西婭",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "那阿米婭想陪著我一起工作嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "特蕾西婭",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "這是……故事書？"
     },
     {
       "type": "dialogue",
       "speakerName": "特蕾西婭",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "原來如此。如果是陪阿米婭，我稍微偷偷懶，博士和凱爾希醫生一定不會說什麼。"
     },
     {
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "謝謝特蕾西婭小姐！"
     },
     {
       "type": "dialogue",
       "speakerName": "特蕾西婭",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "來，坐在這裡。等我們講完這個故事，就能帶阿米婭一起去我的家裡玩。"
     },
     {
@@ -269,27 +319,35 @@
       "type": "dialogue",
       "speakerName": "特蕾西婭",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "那麼，上次我們的故事講到哪裡了？"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_laccolith"
+    },
+    {
       "type": "dialogue",
       "speakerName": "孽茨雷",
       "speakerId": "avg_npc_420_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "孽茨雷",
       "speakerId": "avg_npc_420_1",
+      "isRemote": false,
       "text": "杜卡雷，你該離遠點。"
     },
     {
       "type": "dialogue",
       "speakerName": "孽茨雷",
       "speakerId": "avg_npc_420_1",
+      "isRemote": false,
       "text": "你的身上全是庸人的血。"
     },
     {
@@ -299,12 +357,14 @@
       "type": "dialogue",
       "speakerName": "杜卡雷",
       "speakerId": "avg_npc_410_1",
+      "isRemote": false,
       "text": "只是順手淨化了些妄議此事的子裔罷了。無人該在此刻輕言那對兄妹的生死。"
     },
     {
       "type": "dialogue",
       "speakerName": "杜卡雷",
       "speakerId": "avg_npc_410_1",
+      "isRemote": false,
       "text": "大不敬。"
     },
     {
@@ -314,52 +374,64 @@
       "type": "dialogue",
       "speakerName": "杜卡雷",
       "speakerId": "avg_npc_410_1",
+      "isRemote": false,
       "text": "孽茨雷，你此刻不應該退守城內嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "孽茨雷",
       "speakerId": "avg_npc_420_1",
+      "isRemote": false,
       "text": "那與我所等待的戰爭無關。"
     },
     {
       "type": "dialogue",
       "speakerName": "杜卡雷",
       "speakerId": "avg_npc_410_1",
+      "isRemote": false,
       "text": "特雷西斯讓你來確保她的死亡？"
     },
     {
       "type": "dialogue",
       "speakerName": "孽茨雷",
       "speakerId": "avg_npc_420_1",
+      "isRemote": false,
       "text": "那你何嘗不是在輕蔑那對兄妹？攝政王不會做這種安排。"
     },
     {
       "type": "dialogue",
       "speakerName": "孽茨雷",
       "speakerId": "avg_npc_420_1",
+      "isRemote": false,
       "text": "我只是來此見證一場戰爭的結束，以及另一場戰爭的開始。"
     },
     {
       "type": "dialogue",
       "speakerName": "孽茨雷",
       "speakerId": "avg_npc_420_1",
+      "isRemote": false,
       "text": "若魔王敗亡，我將背負這片刻的死亡氣息……代王見證，我於深淵中握住的勝利。"
     },
     {
       "type": "dialogue",
       "speakerName": "杜卡雷",
       "speakerId": "avg_npc_410_1",
+      "isRemote": false,
       "text": "……原來你還會感受到悲傷。"
     },
     {
       "type": "dialogue",
       "speakerName": "孽茨雷",
       "speakerId": "avg_npc_420_1",
+      "isRemote": false,
       "text": "彼此。"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "34_g2_reedmarshes"
     },
     {
       "type": "narration",
@@ -369,51 +441,63 @@
       "type": "dialogue",
       "speakerName": "菈瑪蓮",
       "speakerId": "avg_npc_1071_1",
+      "isRemote": false,
       "text": "……哀琺尼爾……你是否還在她的身邊？"
     },
     {
       "type": "dialogue",
       "speakerName": "菈瑪蓮",
       "speakerId": "avg_npc_1071_1",
+      "isRemote": false,
       "text": "輓歌又要為誰而鳴？"
     },
     {
       "type": "sceneBreak"
     },
     {
+      "type": "background",
+      "backgroundId": "49_g10_theresaoffice"
+    },
+    {
       "type": "dialogue",
       "speakerName": "特蕾西婭",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "……"
     },
     {
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "特蕾西婭小姐，您為什麼停下了，故事才剛剛到要緊的地方啊？"
     },
     {
       "type": "dialogue",
       "speakerName": "特蕾西婭",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "阿米婭，我想為你留下一點小小的懸念。讓我換一種更舒服的方式給你講故事好嗎？"
     },
     {
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "可……嗯，好吧，聽您的。"
     },
     {
       "type": "dialogue",
       "speakerName": "特蕾西婭",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "阿米婭，小心點。"
     },
     {
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "泡泡！欸，這是——"
     },
     {
@@ -434,6 +518,7 @@
       "type": "dialogue",
       "speakerName": "阿米婭",
       "speakerId": "avg_npc_1295_1",
+      "isRemote": false,
       "text": "特蕾西婭……小姐……"
     },
     {
@@ -443,12 +528,14 @@
       "type": "dialogue",
       "speakerName": "特蕾西婭",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "先留在裡面安穩地睡一覺吧，阿米婭。"
     },
     {
       "type": "dialogue",
       "speakerName": "特蕾西婭",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "……待在我身邊，是安全的。"
     },
     {
@@ -458,6 +545,7 @@
       "type": "dialogue",
       "speakerName": "特蕾西婭",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "唉……"
     },
     {
@@ -467,66 +555,77 @@
       "type": "dialogue",
       "speakerName": "決然的刺客",
       "speakerId": "avg_npc_1307_1",
+      "isRemote": false,
       "text": "特蕾西婭殿下……"
     },
     {
       "type": "dialogue",
       "speakerName": "決然的刺客",
       "speakerId": "avg_npc_1307_1",
+      "isRemote": false,
       "text": "我們會用性命向您證明將軍所追求的未來。"
     },
     {
       "type": "dialogue",
       "speakerName": "特蕾西婭",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "不，我只是在嘆息另一件事。"
     },
     {
       "type": "dialogue",
       "speakerName": "特蕾西婭",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "其實，您的遮掩在我的面前並沒有意義。"
     },
     {
       "type": "dialogue",
       "speakerName": "特蕾西婭",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "我依然記得您當年在以勒什車輦前領命的樣子，您在那一戰中的英勇令我動容。"
     },
     {
       "type": "dialogue",
       "speakerName": "特蕾西婭",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "還有與您一起的人，他們中的大多數我都記得。"
     },
     {
       "type": "dialogue",
       "speakerName": "特蕾西婭",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "都是配得上被稱為勇士的人。與此刻在卡茲戴爾城內奮戰的英雄相比，也毫不遜色。"
     },
     {
       "type": "dialogue",
       "speakerName": "決然的刺客",
       "speakerId": "avg_npc_1307_1",
+      "isRemote": false,
       "text": "……並非為了掩飾身分，我們知道這在您面前毫無意義。"
     },
     {
       "type": "dialogue",
       "speakerName": "決然的刺客",
       "speakerId": "avg_npc_1307_1",
+      "isRemote": false,
       "text": "割去雙角，捨棄名姓，甚至毀掉身上每一寸可被當作特徵的肌膚，只是因為當我們決定用如此低劣的手段屠戮魔王後——"
     },
     {
       "type": "dialogue",
       "speakerName": "決然的刺客",
       "speakerId": "avg_npc_1307_1",
+      "isRemote": false,
       "text": "我們不配被薩卡茲記住。不能被記住。"
     },
     {
       "type": "dialogue",
       "speakerName": "決然的刺客",
       "speakerId": "avg_npc_1307_1",
+      "isRemote": false,
       "text": "動手。"
     },
     {
@@ -543,18 +642,21 @@
       "type": "dialogue",
       "speakerName": "特蕾西婭",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "我記得你們的名字。"
     },
     {
       "type": "dialogue",
       "speakerName": "特蕾西婭",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "盧卡……我記得你。"
     },
     {
       "type": "dialogue",
       "speakerName": "特蕾西婭",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "當年你獨自拖住蒸汽騎士，在蒸汽的掩蓋下扯出了那位騎士，並當眾將其斬首……"
     },
     {
@@ -568,16 +670,22 @@
       "type": "dialogue",
       "speakerName": "特蕾西婭",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "……我也記得你。鐮須。"
     },
     {
       "type": "dialogue",
       "speakerName": "特蕾西婭",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "千萬同名薩卡茲中最特殊的一位，被俘虜後從高塔術師的營地中救下了三位同胞，還摧毀了他們的法陣……"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "49_g10_theresaoffice"
     },
     {
       "type": "narration",
@@ -587,28 +695,36 @@
       "type": "dialogue",
       "speakerName": "特蕾西婭",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "還有你……萊文。"
     },
     {
       "type": "dialogue",
       "speakerName": "特蕾西婭",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "你為特雷西斯阻擋弓弩，失去了一臂，但在地獄裡活下來並一直堅持到撤退……"
     },
     {
       "type": "dialogue",
       "speakerName": "特蕾西婭",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "我並不希望你們作為無名之徒死去。"
     },
     {
       "type": "dialogue",
       "speakerName": "特蕾西婭",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "至少……我記得。"
     },
     {
       "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "49_g10_theresaoffice"
     },
     {
       "type": "narration",
@@ -621,18 +737,21 @@
       "type": "dialogue",
       "speakerName": "決然的刺客",
       "speakerId": "avg_npc_1307_1",
+      "isRemote": false,
       "text": "我們想在死前為薩卡茲再做些什麼，才走到您的面前……"
     },
     {
       "type": "dialogue",
       "speakerName": "決然的刺客",
       "speakerId": "avg_npc_1307_1",
+      "isRemote": false,
       "text": "來殺死您——我們曾宣誓效忠的魔王。"
     },
     {
       "type": "dialogue",
       "speakerName": "決然的刺客",
       "speakerId": "avg_npc_1307_1",
+      "isRemote": false,
       "text": "您的強大我們比誰都清楚。那麼，就讓我們這些該死的叛徒，與您共赴地獄吧。"
     },
     {
@@ -642,6 +761,7 @@
       "type": "dialogue",
       "speakerName": "特蕾西婭",
       "speakerId": "avg_npc_1296_1",
+      "isRemote": false,
       "text": "……"
     },
     {

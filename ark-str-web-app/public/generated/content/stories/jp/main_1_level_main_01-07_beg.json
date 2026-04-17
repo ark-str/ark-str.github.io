@@ -6,7 +6,7 @@
   "title": "暴君",
   "storyCode": "1-7",
   "avgTag": "戦闘前",
-  "sourcePath": "vendor/ArknightsGamedata/jp/gamedata/story/obt/main/level_main_01-07_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/jp/gamedata/story/obt/main/level_main_01-07_beg.txt",
   "sourceHash": "b4f8327901c1a672a1a4beb5a76b12d21c5965e65287ecc680259ca97e5a6e89",
   "bodyAvailable": true,
   "blocks": [
@@ -15,27 +15,35 @@
       "text": "第十关（前）"
     },
     {
+      "type": "background",
+      "backgroundId": "bg_cher_10"
+    },
+    {
       "type": "dialogue",
       "speakerName": "ドーベルマン",
       "speakerId": "char_130_doberm",
+      "isRemote": false,
       "text": "衝撃に備えろ！"
     },
     {
       "type": "dialogue",
       "speakerName": "ドーベルマン",
       "speakerId": "char_130_doberm",
+      "isRemote": false,
       "text": "総員、散開せよ！！"
     },
     {
       "type": "dialogue",
       "speakerName": "ドーベルマン",
       "speakerId": "char_130_doberm",
+      "isRemote": false,
       "text": "クソッ、規模が大きすぎる！　何もかも破壊し尽くさんばかりの勢いだ……！"
     },
     {
       "type": "dialogue",
       "speakerName": "ドーベルマン",
       "speakerId": "char_130_doberm",
+      "isRemote": false,
       "text": "このままではまずいぞ……！"
     },
     {
@@ -45,60 +53,70 @@
       "type": "dialogue",
       "speakerName": "Ace",
       "speakerId": "char_014_riope",
+      "isRemote": false,
       "text": "——!"
     },
     {
       "type": "dialogue",
       "speakerName": "Ace",
       "speakerId": "char_014_riope",
+      "isRemote": false,
       "text": "急いで退避するんだ！"
     },
     {
       "type": "dialogue",
       "speakerName": "医療オペレーター",
       "speakerId": "char_016_medic",
+      "isRemote": false,
       "text": "は、はい……！"
     },
     {
       "type": "dialogue",
       "speakerName": "Ace",
       "speakerId": "char_014_riope",
+      "isRemote": false,
       "text": "ッ来るぞ、踏ん張れ！"
     },
     {
       "type": "dialogue",
       "speakerName": "レユニオン構成員",
       "speakerId": null,
+      "isRemote": false,
       "text": "ひっ……！　あ、ぁ……！！"
     },
     {
       "type": "dialogue",
       "speakerName": "レユニオン構成員",
       "speakerId": null,
+      "isRemote": false,
       "text": "空が……空が、落ちてくる……！！"
     },
     {
       "type": "dialogue",
       "speakerName": "レユニオン構成員",
       "speakerId": null,
+      "isRemote": false,
       "text": "ぐっ……！　い……痛い……身体が、痛い……！"
     },
     {
       "type": "dialogue",
       "speakerName": "レユニオン構成員",
       "speakerId": null,
+      "isRemote": false,
       "text": "手が……俺の手がない！　う、あああっ……！"
     },
     {
       "type": "dialogue",
       "speakerName": "レユニオン構成員",
       "speakerId": null,
+      "isRemote": false,
       "text": "は、はは……どうして……どうしてこんなことに……"
     },
     {
       "type": "dialogue",
       "speakerName": "レユニオン構成員",
       "speakerId": null,
+      "isRemote": false,
       "text": "い、嫌だ、死にたくない、死にたく……あああああああっ！！"
     },
     {
@@ -108,30 +126,35 @@
       "type": "dialogue",
       "speakerName": "ニアール",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "っ、重装オペレーター！"
     },
     {
       "type": "dialogue",
       "speakerName": "ニアール",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "術師の保護に回れ！"
     },
     {
       "type": "dialogue",
       "speakerName": "ニアール",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "――！？　なっ……"
     },
     {
       "type": "dialogue",
       "speakerName": "ニアール",
       "speakerId": "char_148_nearl",
+      "isRemote": false,
       "text": "一体何の音だ……！？"
     },
     {
       "type": "dialogue",
       "speakerName": "Ace",
       "speakerId": "char_014_riope",
+      "isRemote": false,
       "text": "隕石だ、かなりデカい――クソッ、通り沿いに落ちた！　伏せろ！"
     },
     {
@@ -141,18 +164,21 @@
       "type": "dialogue",
       "speakerName": "医療オペレーター",
       "speakerId": "char_016_medic",
+      "isRemote": false,
       "text": "きゃっ……！"
     },
     {
       "type": "dialogue",
       "speakerName": "アーミヤ",
       "speakerId": "char_002_amiya",
+      "isRemote": false,
       "text": "！　建物が、倒れて――！　危ない！　そこを離れてください！"
     },
     {
       "type": "dialogue",
       "speakerName": "前衛オペレーター",
       "speakerId": "char_013_riop",
+      "isRemote": false,
       "text": "こっちだ、早く！！"
     },
     {
@@ -166,129 +192,146 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "医療オペレーター",
-          "speakerId": "char_016_medic",
-          "text": "――あっ……！？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "医療オペレーター",
-          "speakerId": "char_016_medic",
-          "text": "いたっ……ド、ドクター……？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "前衛オペレーター",
-          "speakerId": "char_013_riop",
-          "text": "つ、突き飛ばして逃がしてくれたのか！？　……だけど、それじゃドクターが――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "前衛オペレーター",
-          "speakerId": "char_013_riop",
-          "text": "――ッ、危ない！！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "Dr.{@nickname}！！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "前衛オペレーター",
-          "speakerId": "char_013_riop",
-          "text": "……えっ？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "前衛オペレーター",
-          "speakerId": "char_013_riop",
-          "text": "待っ……ニアールさん、無茶です！！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "――伏せろ、ドクター！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "……っ、はあ……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "間に合ったようだな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "前衛オペレーター",
-          "speakerId": "char_013_riop",
-          "text": "……！　生きてる！　よかった、二人とも生きてるぞ！！　さすがニアールさん……！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "……ふぅ、はぁっ……！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "ニアールさん！　ドクター！　早くこちらへ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "私は大丈夫だ！　先に行け、ドクター！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "この盾は、まだ持ちこたえられる！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "だから跳ぶんだ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "ためらうな、早く！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "ドクター……！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "だ、大丈夫ですか？　お怪我はありませんか？"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "医療オペレーター",
+      "speakerId": "char_016_medic",
+      "isRemote": false,
+      "text": "――あっ……！？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "医療オペレーター",
+      "speakerId": "char_016_medic",
+      "isRemote": false,
+      "text": "いたっ……ド、ドクター……？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "前衛オペレーター",
+      "speakerId": "char_013_riop",
+      "isRemote": false,
+      "text": "つ、突き飛ばして逃がしてくれたのか！？　……だけど、それじゃドクターが――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "前衛オペレーター",
+      "speakerId": "char_013_riop",
+      "isRemote": false,
+      "text": "――ッ、危ない！！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "Dr.{@nickname}！！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "前衛オペレーター",
+      "speakerId": "char_013_riop",
+      "isRemote": false,
+      "text": "……えっ？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "前衛オペレーター",
+      "speakerId": "char_013_riop",
+      "isRemote": false,
+      "text": "待っ……ニアールさん、無茶です！！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "――伏せろ、ドクター！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "……っ、はあ……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "間に合ったようだな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "前衛オペレーター",
+      "speakerId": "char_013_riop",
+      "isRemote": false,
+      "text": "……！　生きてる！　よかった、二人とも生きてるぞ！！　さすがニアールさん……！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "……ふぅ、はぁっ……！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ニアールさん！　ドクター！　早くこちらへ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "私は大丈夫だ！　先に行け、ドクター！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "この盾は、まだ持ちこたえられる！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "だから跳ぶんだ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "ためらうな、早く！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ドクター……！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "だ、大丈夫ですか？　お怪我はありませんか？"
     },
     {
       "type": "choice",
@@ -308,225 +351,258 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "……あなたという人は……もうあんな真似はしないでくれ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "仮に無茶をするにしても、まず私に声をかけてもらえねば、守れるものも守れなくなってしまうだろう？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "もとより、どのような状況でも、あなたが傷付くことなど容認できないが――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "私の目の前でとなれば、なおのこと見過ごせない。……どうか、そのことを理解しておいてほしい。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "……とにかく今は、みなさんが無事でよかったです……！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "……ただ……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "（あとどれだけ持ちこたえられるのか……）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "（本当に、生き延びることができるのか……どうにも、不安は尽きないけれど……）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "……はぁ……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "……？　なんだか、降ってくる隕石が減ったような……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "天災の第一波は越えた、ということでしょうか……？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "……まだ、気を抜くわけにはいかん。この天災がどれだけ続くかは未知数だからな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "とはいえ……天災の中心からは抜け出せたと見ていいだろう。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "ひとまず、乗り切ったようだな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "はい……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "みなさん、動けそうですか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "前衛オペレーター",
-          "speakerId": "char_013_riop",
-          "text": "はい！　オペレーター全員、大きな問題はありません！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "前衛オペレーター",
-          "speakerId": "char_013_riop",
-          "text": "一部怪我人もいますが、いずれも軽傷です！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "前衛オペレーター",
-          "speakerId": "char_013_riop",
-          "text": "……俺たち……生き延びたんですね……！"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "レユニオン構成員",
-          "speakerId": null,
-          "text": "ア……う、ぁあ……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "レユニオンにも、無事な人が――"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "レユニオン構成員",
-          "speakerId": "char_1002_nsabr",
-          "text": "……お前……ら……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "レユニオン構成員",
-          "speakerId": "char_1002_nsabr",
-          "text": "ぁ……ああああっ！！　ロドス……ロドスの奴らだ……！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "……ッ、なんだ……？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "レユニオン構成員",
-          "speakerId": "char_1002_nsabr",
-          "text": "アァ……ぁ……う、アアアアアア！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "まさか、まだ戦うつもりなんでしょうか……！？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "レユニオン構成員",
-          "speakerId": "char_1002_nsabr",
-          "text": "……ロドス……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "レユニオン構成員",
-          "speakerId": "char_1002_nsabr",
-          "text": "……殺せ……ロドスを殺せ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "チッ、こいつら……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "レユニオン構成員",
-          "speakerId": "char_1002_nsabr",
-          "text": "逃すな……殺せ……始末しろ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "イカれた連中め……！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ニアール",
-          "speakerId": "char_148_nearl",
-          "text": "なぜこのようなことを……命が惜しくないのか！？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アーミヤ",
-          "speakerId": "char_002_amiya",
-          "text": "ドーベルマンさん、これは……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "ああ。……ほかに道はないようだな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ドーベルマン",
-          "speakerId": "char_130_doberm",
-          "text": "素早く対処し、先を急ぐぞ！"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "……あなたという人は……もうあんな真似はしないでくれ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "仮に無茶をするにしても、まず私に声をかけてもらえねば、守れるものも守れなくなってしまうだろう？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "もとより、どのような状況でも、あなたが傷付くことなど容認できないが――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "私の目の前でとなれば、なおのこと見過ごせない。……どうか、そのことを理解しておいてほしい。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "……とにかく今は、みなさんが無事でよかったです……！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "……ただ……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "（あとどれだけ持ちこたえられるのか……）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "（本当に、生き延びることができるのか……どうにも、不安は尽きないけれど……）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "……はぁ……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "……？　なんだか、降ってくる隕石が減ったような……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "天災の第一波は越えた、ということでしょうか……？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "……まだ、気を抜くわけにはいかん。この天災がどれだけ続くかは未知数だからな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "とはいえ……天災の中心からは抜け出せたと見ていいだろう。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "ひとまず、乗り切ったようだな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "はい……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "みなさん、動けそうですか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "前衛オペレーター",
+      "speakerId": "char_013_riop",
+      "isRemote": false,
+      "text": "はい！　オペレーター全員、大きな問題はありません！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "前衛オペレーター",
+      "speakerId": "char_013_riop",
+      "isRemote": false,
+      "text": "一部怪我人もいますが、いずれも軽傷です！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "前衛オペレーター",
+      "speakerId": "char_013_riop",
+      "isRemote": false,
+      "text": "……俺たち……生き延びたんですね……！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "レユニオン構成員",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "ア……う、ぁあ……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "レユニオンにも、無事な人が――"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "レユニオン構成員",
+      "speakerId": "char_1002_nsabr",
+      "isRemote": false,
+      "text": "……お前……ら……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "レユニオン構成員",
+      "speakerId": "char_1002_nsabr",
+      "isRemote": false,
+      "text": "ぁ……ああああっ！！　ロドス……ロドスの奴らだ……！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "……ッ、なんだ……？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "レユニオン構成員",
+      "speakerId": "char_1002_nsabr",
+      "isRemote": false,
+      "text": "アァ……ぁ……う、アアアアアア！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "まさか、まだ戦うつもりなんでしょうか……！？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "レユニオン構成員",
+      "speakerId": "char_1002_nsabr",
+      "isRemote": false,
+      "text": "……ロドス……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "レユニオン構成員",
+      "speakerId": "char_1002_nsabr",
+      "isRemote": false,
+      "text": "……殺せ……ロドスを殺せ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "チッ、こいつら……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "レユニオン構成員",
+      "speakerId": "char_1002_nsabr",
+      "isRemote": false,
+      "text": "逃すな……殺せ……始末しろ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "イカれた連中め……！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ニアール",
+      "speakerId": "char_148_nearl",
+      "isRemote": false,
+      "text": "なぜこのようなことを……命が惜しくないのか！？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アーミヤ",
+      "speakerId": "char_002_amiya",
+      "isRemote": false,
+      "text": "ドーベルマンさん、これは……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "ああ。……ほかに道はないようだな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ドーベルマン",
+      "speakerId": "char_130_doberm",
+      "isRemote": false,
+      "text": "素早く対処し、先を急ぐぞ！"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": [

@@ -6,10 +6,14 @@
   "title": "落下物",
   "storyCode": "RI-1",
   "avgTag": "戦闘前",
-  "sourcePath": "vendor/ArknightsGamedata/jp/gamedata/story/activities/act12d0/level_act12d0_01_beg.txt",
+  "sourcePath": "../../vendor/ArknightsGamedata/jp/gamedata/story/activities/act12d0/level_act12d0_01_beg.txt",
   "sourceHash": "1882cac66f16d0e49f61383ccadfbca947cfee0a925f6d6355533250f9b299ee",
   "bodyAvailable": true,
   "blocks": [
+    {
+      "type": "background",
+      "backgroundId": "bg_black"
+    },
     {
       "type": "narration",
       "text": "ここには、君が望むすべてがある。\nひとときの安らぎも、母の抱擁も、戦争のない大地も。\n君はしがらみから解き放たれ、自由になったのだ。"
@@ -40,13 +44,11 @@
             }
           ]
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "narration",
-          "text": "君は、時という名の川に落ちた石なのだ。責任や宿命、欲望、絆は水と共に流れていくが、君はずっと、水底に在り続ける。\n君はこの世のすべてと無縁になり、この世のすべては、君を邪魔することはできない。"
-        }
       ]
+    },
+    {
+      "type": "narration",
+      "text": "君は、時という名の川に落ちた石なのだ。責任や宿命、欲望、絆は水と共に流れていくが、君はずっと、水底に在り続ける。\n君はこの世のすべてと無縁になり、この世のすべては、君を邪魔することはできない。"
     },
     {
       "type": "choice",
@@ -66,8 +68,7 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -92,8 +93,7 @@
             }
           ]
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -110,6 +110,7 @@
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": null,
+              "isRemote": false,
               "text": "……ター、ドクター！"
             },
             {
@@ -120,6 +121,7 @@
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": null,
+              "isRemote": false,
               "text": "これだけ寝て、まだ起きねぇのかよ。面倒だなあ。"
             },
             {
@@ -133,12 +135,14 @@
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": null,
+              "isRemote": false,
               "text": "これでも起きねぇか。どうする？　アーミヤもいないし、大風車でもやってみるか。"
             },
             {
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": null,
+              "isRemote": false,
               "text": "だいふうしゃ？　それ面白い？　おいらもやる！"
             },
             {
@@ -159,6 +163,7 @@
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": null,
+              "isRemote": false,
               "text": "……ター、ドクター！"
             },
             {
@@ -169,6 +174,7 @@
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": null,
+              "isRemote": false,
               "text": "これだけ寝て、まだ起きねぇのかよ。面倒だなあ。"
             },
             {
@@ -182,12 +188,14 @@
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": null,
+              "isRemote": false,
               "text": "これでも起きねぇか。どうする？　アーミヤもいないし、大風車でもやってみるか。"
             },
             {
               "type": "dialogue",
               "speakerName": "？？？",
               "speakerId": null,
+              "isRemote": false,
               "text": "だいふうしゃ？　それ面白い？　おいらもやる！"
             },
             {
@@ -196,8 +204,7 @@
             }
           ]
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -217,66 +224,84 @@
           "value": "2",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ケオベ",
-          "speakerId": null,
-          "text": "ガヴィル、だいふうしゃってどうやって遊ぶの？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": null,
-          "text": "ああ、相手の足か腕を掴んで、ぶん回すんだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": null,
-          "text": "んで、ちょうど良いところで投げ飛ばす。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケオベ",
-          "speakerId": null,
-          "text": "面白そう！　やってみてもいい？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": null,
-          "text": "いいぜ、アタシがドクターをキャッチしてやるから……ん？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": null,
-          "text": "やっと起きたか、ドクター。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケオベ",
-          "speakerId": null,
-          "text": "あ、ほんとだ！　ドクターおはよう！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": null,
-          "text": "こらケーちゃん、いきなり飛びつくな！　また気絶しちまったらめんどいだろ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケオベ",
-          "speakerId": null,
-          "text": "わあっ、ごめんね、ドクター！"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_desert_1"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケオベ",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "ガヴィル、だいふうしゃってどうやって遊ぶの？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "ああ、相手の足か腕を掴んで、ぶん回すんだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "んで、ちょうど良いところで投げ飛ばす。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケオベ",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "面白そう！　やってみてもいい？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "いいぜ、アタシがドクターをキャッチしてやるから……ん？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "やっと起きたか、ドクター。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケオベ",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "あ、ほんとだ！　ドクターおはよう！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "こらケーちゃん、いきなり飛びつくな！　また気絶しちまったらめんどいだろ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケオベ",
+      "speakerId": null,
+      "isRemote": false,
+      "text": "わあっ、ごめんね、ドクター！"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_desert_1"
     },
     {
       "type": "choice",
@@ -289,12 +314,14 @@
               "type": "dialogue",
               "speakerName": "ガヴィル",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "大丈夫だ。これくらいの高さどうってことない。"
             },
             {
               "type": "dialogue",
               "speakerName": "ケオベ",
               "speakerId": "char_2013_cerber",
+              "isRemote": false,
               "text": "おいらも平気だよ！"
             }
           ]
@@ -307,6 +334,7 @@
               "type": "dialogue",
               "speakerName": "ガヴィル",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "おいおい、ドクター。まさかまた記憶を失ったのか？"
             }
           ]
@@ -316,8 +344,7 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -330,24 +357,28 @@
               "type": "dialogue",
               "speakerName": "ガヴィル",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "アタシが医者だってこと忘れんなよ。騙されねぇよ。"
             },
             {
               "type": "dialogue",
               "speakerName": "ガヴィル",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "とりあえず、状況を簡単に説明すんぞ。"
             },
             {
               "type": "dialogue",
               "speakerName": "ガヴィル",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "ざっくり言うと、飛行ユニットが墜落したんだ。"
             },
             {
               "type": "dialogue",
               "speakerName": "ケオベ",
               "speakerId": "char_2013_cerber",
+              "isRemote": false,
               "text": "空の上の、ものすごーく高いところから落ちたんだよ！　ヒュー！　ドーン！　って。"
             }
           ]
@@ -360,30 +391,33 @@
               "type": "dialogue",
               "speakerName": "ガヴィル",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "冗談を言える元気があんなら大丈夫だろ。"
             },
             {
               "type": "dialogue",
               "speakerName": "ガヴィル",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "とりあえず、状況を簡単に説明すんぞ。"
             },
             {
               "type": "dialogue",
               "speakerName": "ガヴィル",
               "speakerId": "char_187_ccheal",
+              "isRemote": false,
               "text": "ざっくり言うと、飛行ユニットが墜落したんだ。"
             },
             {
               "type": "dialogue",
               "speakerName": "ケオベ",
               "speakerId": "char_2013_cerber",
+              "isRemote": false,
               "text": "空の上の、ものすごーく高いところから落ちたんだよ！　ヒュー！　ドーン！　って。"
             }
           ]
         }
-      ],
-      "sharedBlocks": []
+      ]
     },
     {
       "type": "choice",
@@ -403,33 +437,35 @@
           "value": "3",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "チッ、わーったよ。まあドクターはとにかく運が悪かったんだ。攻撃を受けたとき、丁度座席の近くで爆発が起こったんだからな。それでドクターは吹っ飛ばされて、壁にぶつかって気を失った。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "だけどもうアタシが手当てしてやったから安心していいぞ。つーかロドスに戻ったばっかの頃に比べると、だいぶ丈夫になってんじゃねぇか。やるな、ドクター。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケオベ",
-          "speakerId": "char_2013_cerber",
-          "text": "うぅ、ごめんねドクター。おいらがドクターを受け止めればよかったんだけど、爆発の音にびっくりしちゃって……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "お前は悪くねぇよ。正直アタシも、あの連中が対空武器を持ってるなんて予想外だったし。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "チッ、わーったよ。まあドクターはとにかく運が悪かったんだ。攻撃を受けたとき、丁度座席の近くで爆発が起こったんだからな。それでドクターは吹っ飛ばされて、壁にぶつかって気を失った。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "だけどもうアタシが手当てしてやったから安心していいぞ。つーかロドスに戻ったばっかの頃に比べると、だいぶ丈夫になってんじゃねぇか。やるな、ドクター。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケオベ",
+      "speakerId": "char_2013_cerber",
+      "isRemote": false,
+      "text": "うぅ、ごめんねドクター。おいらがドクターを受け止めればよかったんだけど、爆発の音にびっくりしちゃって……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "お前は悪くねぇよ。正直アタシも、あの連中が対空武器を持ってるなんて予想外だったし。"
     },
     {
       "type": "choice",
@@ -439,15 +475,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "ああ。言ってなかったか？　ここの連中はみんな気性が荒いんだ。アタシには敵わないけどな。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "ああ。言ってなかったか？　ここの連中はみんな気性が荒いんだ。アタシには敵わないけどな。"
     },
     {
       "type": "choice",
@@ -457,27 +492,28 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "落下速度を抑えるために、みんな先に飛び降りた。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "アタシとケオベはお前を守るために最後に飛び降りたんだぜ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "いや違った、まだLancet-2が機内に残ってたな。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "落下速度を抑えるために、みんな先に飛び降りた。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "アタシとケオベはお前を守るために最後に飛び降りたんだぜ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "いや違った、まだLancet-2が機内に残ってたな。"
     },
     {
       "type": "choice",
@@ -487,15 +523,14 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "たぶんあっちだ。ほら、あの丘のむこう。あれを越えればすぐだ。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "たぶんあっちだ。ほら、あの丘のむこう。あれを越えればすぐだ。"
     },
     {
       "type": "choice",
@@ -505,132 +540,157 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "おう。"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "あった、アタシらの飛行ユニットだ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "うわっ、煙が出てるけど大丈夫かよこれ。この様子じゃもう使い物になんねぇな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "いや、でもまだ修理できそうな気もするな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ケオベ",
-          "speakerId": "char_2013_cerber",
-          "text": "ドクター、ガヴィル、飛行ユニットのところに誰かいるよ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "ん？　あれは……"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Lancet-2",
-          "speakerId": "char_285_medic2",
-          "text": "近寄らないでください！　私にはロドスの資産を守る義務があるとは言え、ただの医療ロボットなんです、うぅ……"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アダクリス人A",
-          "speakerId": "avg_npc_071",
-          "text": "おい、この機械なんか喋ってるぞ。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アダクリス人B",
-          "speakerId": "avg_npc_070",
-          "text": "空からすげーモンが落っこちてきたと思ったら、まさか喋る機械まで載ってるなんてな！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アダクリス人C",
-          "speakerId": "avg_npc_070",
-          "text": "なぁオマエら、本当はこの中に人が入ってんじゃねぇか？"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アダクリス人A",
-          "speakerId": "avg_npc_071",
-          "text": "さあな。なんならこいつも攫っとくか。族長もきっと気に入ってくれるだろうし。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アダクリス人B",
-          "speakerId": "avg_npc_070",
-          "text": "そうするか！　よーし野郎ども、こいつも担いでいくぞ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "Lancet-2",
-          "speakerId": "char_285_medic2",
-          "text": "助けて――"
-        },
-        {
-          "type": "sceneBreak"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "やめろ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アダクリス人A",
-          "speakerId": "avg_npc_071",
-          "text": "……&%（なにモンだ！？）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "アタシらのモンを盗ろうとするなんて、死にてぇらしいな！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アダクリス人A",
-          "speakerId": "avg_npc_071",
-          "text": "……$%%#（お前らのモンって証拠はあんのか！？　これは空から落ちてきたんだ！）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アダクリス人B",
-          "speakerId": "avg_npc_070",
-          "text": "！@#%……&（そうだそうだ！　オレらが先に見つけたんだ！　だからオレらのモンだ！）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "くそ、一理あんな。"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "おう。"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_desert_2"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "あった、アタシらの飛行ユニットだ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "うわっ、煙が出てるけど大丈夫かよこれ。この様子じゃもう使い物になんねぇな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "いや、でもまだ修理できそうな気もするな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ケオベ",
+      "speakerId": "char_2013_cerber",
+      "isRemote": false,
+      "text": "ドクター、ガヴィル、飛行ユニットのところに誰かいるよ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "ん？　あれは……"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "background",
+      "backgroundId": "bg_desert_2"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Lancet-2",
+      "speakerId": "char_285_medic2",
+      "isRemote": false,
+      "text": "近寄らないでください！　私にはロドスの資産を守る義務があるとは言え、ただの医療ロボットなんです、うぅ……"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アダクリス人A",
+      "speakerId": "avg_npc_071",
+      "isRemote": false,
+      "text": "おい、この機械なんか喋ってるぞ。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アダクリス人B",
+      "speakerId": "avg_npc_070",
+      "isRemote": false,
+      "text": "空からすげーモンが落っこちてきたと思ったら、まさか喋る機械まで載ってるなんてな！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アダクリス人C",
+      "speakerId": "avg_npc_070",
+      "isRemote": false,
+      "text": "なぁオマエら、本当はこの中に人が入ってんじゃねぇか？"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アダクリス人A",
+      "speakerId": "avg_npc_071",
+      "isRemote": false,
+      "text": "さあな。なんならこいつも攫っとくか。族長もきっと気に入ってくれるだろうし。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アダクリス人B",
+      "speakerId": "avg_npc_070",
+      "isRemote": false,
+      "text": "そうするか！　よーし野郎ども、こいつも担いでいくぞ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "Lancet-2",
+      "speakerId": "char_285_medic2",
+      "isRemote": false,
+      "text": "助けて――"
+    },
+    {
+      "type": "sceneBreak"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "やめろ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アダクリス人A",
+      "speakerId": "avg_npc_071",
+      "isRemote": false,
+      "text": "……&%（なにモンだ！？）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "アタシらのモンを盗ろうとするなんて、死にてぇらしいな！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アダクリス人A",
+      "speakerId": "avg_npc_071",
+      "isRemote": false,
+      "text": "……$%%#（お前らのモンって証拠はあんのか！？　これは空から落ちてきたんだ！）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アダクリス人B",
+      "speakerId": "avg_npc_070",
+      "isRemote": false,
+      "text": "！@#%……&（そうだそうだ！　オレらが先に見つけたんだ！　だからオレらのモンだ！）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "くそ、一理あんな。"
     },
     {
       "type": "choice",
@@ -640,54 +700,59 @@
           "value": "1",
           "blocks": []
         }
-      ],
-      "sharedBlocks": [
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "あーわりぃ。アタシらの言葉がわかんねぇんだったな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "ここは一応サルゴンだけど、まともなサルゴン語を話せる奴なんていないからな。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "だけど全部訳すのもめんどくせ……よし、こうしよう！　お前に伝えたほうがいい内容だけ通訳してやる。"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "他の場合はえーと……感じろ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アダクリス人A",
-          "speakerId": "avg_npc_071",
-          "text": "……&*#（なあにブツブツ言ってやがるんだ、こんにゃろー！）"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "ガヴィル",
-          "speakerId": "char_187_ccheal",
-          "text": "それがお前らのモンってんなら、全員ぶっ倒せばアタシらのモンになるって言ってたんだよ！"
-        },
-        {
-          "type": "dialogue",
-          "speakerName": "アダクリス人B",
-          "speakerId": "avg_npc_070",
-          "text": "&&……！＠（なんだと？　生意気な女め！　野郎ども、やれ！）"
-        },
-        {
-          "type": "sceneBreak"
-        }
       ]
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "あーわりぃ。アタシらの言葉がわかんねぇんだったな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "ここは一応サルゴンだけど、まともなサルゴン語を話せる奴なんていないからな。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "だけど全部訳すのもめんどくせ……よし、こうしよう！　お前に伝えたほうがいい内容だけ通訳してやる。"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "他の場合はえーと……感じろ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アダクリス人A",
+      "speakerId": "avg_npc_071",
+      "isRemote": false,
+      "text": "……&*#（なあにブツブツ言ってやがるんだ、こんにゃろー！）"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "ガヴィル",
+      "speakerId": "char_187_ccheal",
+      "isRemote": false,
+      "text": "それがお前らのモンってんなら、全員ぶっ倒せばアタシらのモンになるって言ってたんだよ！"
+    },
+    {
+      "type": "dialogue",
+      "speakerName": "アダクリス人B",
+      "speakerId": "avg_npc_070",
+      "isRemote": false,
+      "text": "&&……！＠（なんだと？　生意気な女め！　野郎ども、やれ！）"
+    },
+    {
+      "type": "sceneBreak"
     }
   ],
   "observedOperators": [
