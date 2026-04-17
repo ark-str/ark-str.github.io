@@ -1,11 +1,11 @@
 # Backgrounds, Radio Cutins, and Choice Cleanup
 
-Status: active
+Status: completed
 Owner: Codex
 Started: 2026-04-17
 Parent issue: `#37`
-Active child issue: `#38`
-Draft PR: pending
+Completed child issue: `#38`
+Merged PR: `#39`
 
 ## Objective
 
@@ -30,11 +30,11 @@ Expand the reader pipeline and UI so story backgrounds are bundled and rendered,
 
 ## Tasks
 
-- [ ] retire the previous active plan and update product docs for the new phase
-- [ ] add background parsing plus cutin-radio metadata to the story parser
-- [ ] extend generated media extraction to copy referenced background PNGs alongside speaker portraits
-- [ ] update reader loaders, types, and UI for backgrounds, radio badges, and simplified choice rendering
-- [ ] rebuild generated artifacts, verify, and close the harness PR flow
+- [x] retire the previous active plan and update product docs for the new phase
+- [x] add background parsing plus cutin-radio metadata to the story parser
+- [x] extend generated media extraction to copy referenced background PNGs alongside speaker portraits
+- [x] update reader loaders, types, and UI for backgrounds, radio badges, and simplified choice rendering
+- [x] rebuild generated artifacts, verify, and close the harness PR flow
 
 ## Verification
 
