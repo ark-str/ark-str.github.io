@@ -1,22 +1,23 @@
 # Latest Iteration
 
-Latest parent iteration: `#37`
+Latest parent iteration: `#40`
 
 Completed child issue:
 
-- `#38` via merged PR `#39` - bundle and render story backgrounds, mark `CharacterCutin` lines as remote wireless dialogue, and normalize Doctor choice follow-up flow without placeholder or shared-response sections
+- `#41` via merged PR `#42` - refresh the reader information architecture with a floating app bar, group overview routes, generated reading metrics, and story-only dynamic backdrops
 
 Current closeout outcome:
 
-- `Background(image="...")` tags now generate explicit `background` blocks and copy only referenced `avgs/bg` PNGs into `ark-str-web-app/public/generated/backgrounds/`
-- reader story routes now load bundled background paths from generated metadata and render them inline without runtime 404s
-- dialogue blocks now carry `isRemote` so cutin-driven lines are visibly marked as wireless communication in the reader shell
-- Doctor choice normalization no longer emits the unfinished fallback sentence, and predicates that apply to every option now render as ordinary continuation after the choice
-- `sourcePath` stays repository-relative under `vendor/ArknightsGamedata/` even when generated from a harness worktree, and background matching is now case-insensitive against upstream `avgs/bg` files
-- parser, content pipeline, app export, and exported-site smoke all passed through `npm run verify` before merge from branch `codex-backgrounds-radio-choice-issue-38-wt`
+- home, locale archive, group overview, and story routes now share a rounded floating app bar with locale switching, theme toggle, and in-group story navigation
+- the reader now has a first-class `/reader/[locale]/[groupId]` route that shows story counts, total visible characters, and estimated reading time for each group
+- story pages keep bundled `background` blocks in the reading flow while also driving a fixed blurred backdrop that updates as the reader scrolls
+- story layouts now use left-side group navigation, a central reading column, a full-width summary section below the body, and a floating scroll-to-top action
+- generated content index entries now include visible character counts and reading-time estimates for both stories and groups, with integrity checks enforcing the calculation contract
+- exported-site smoke now covers the home shell, locale archive, group route, story backdrop, story summary section, and reader session recovery under the `/ark-str/` base path
+- `npm run verify` passed on branch `codex-reader-ia-layout-refresh-issue-41` after the group reading-time calculation was corrected to use the generated character total instead of summing per-story minimums
 
 Remaining product gaps:
 
 - story summaries are not generated yet
 - character unlock extraction is not implemented yet
-- GitHub Actions still emits a non-blocking Node 20 deprecation warning for the official Pages actions versions currently in use
+- the locale archive still renders the full group list without pagination or virtualization

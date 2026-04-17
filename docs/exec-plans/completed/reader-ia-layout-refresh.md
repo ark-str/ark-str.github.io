@@ -30,7 +30,7 @@ Refresh the reader information architecture and page layout so navigation feels 
 
 ## Verification
 
-- `npm run content:update`
+- `npm run content:build-index`
 - `npm run content:check`
 - `npm run app:verify`
 - `npm run smoke`
