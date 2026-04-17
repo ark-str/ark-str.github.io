@@ -1,16 +1,17 @@
 # Latest Iteration
 
-Latest parent iteration: `#52`
+Latest parent iteration: `#55`
 
 Completed child issue:
 
-- `#53` via PR `#54` - rename tracked generated portrait assets so GitHub Pages verify uses the same lowercase paths as the generated portrait manifests
+- `#56` via PR `#57` - normalize generated background filenames and tracked generated background assets so GitHub Pages verify resolves the same lowercase public paths on macOS and Linux
 
 Current closeout outcome:
 
-- the remaining case-only portrait filename mismatches under `ark-str-web-app/public/generated/portraits/speakers/` were renamed to lowercase tracked paths
-- the earlier manifest/registry hotfix from `#50` now has matching committed public assets, so Linux CI no longer fails on mixed-case portrait filenames
-- `npm run verify` passed on branch `codex-pages-portrait-rename-issue-53`
+- generated background manifests and the app registry now emit lowercase bundled background filenames while keeping the original background IDs as lookup keys
+- the tracked files under `ark-str-web-app/public/generated/backgrounds/` were renamed to the same lowercase paths, removing the remaining Linux-only case mismatch from the Pages deploy
+- the stale portrait-rename active plan was removed and replaced by a completed background casefix iteration record
+- `npm run verify` passed on branch `codex-pages-background-casefix-issue-56`
 
 Remaining product gaps:
 

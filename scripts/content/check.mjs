@@ -3,6 +3,7 @@ import path from "node:path";
 import {
   buildContentArtifacts,
   getGeneratedFilePaths,
+  getNormalizedBackgroundFileName,
   getNormalizedPortraitFileName,
   hasArknightsDataSource,
   hasPortraitSource,
@@ -332,7 +333,14 @@ function validateGeneratedArtifacts(generated) {
 
   for (const backgroundId of Object.keys(appBackgroundManifest)) {
     invariant(backgroundIds.has(backgroundId), `background manifest references an unobserved backgroundId: ${backgroundId}`);
-    const backgroundFilePath = path.join(filePaths.generatedBackgroundsRoot, `${backgroundId}.png`);
+    const backgroundPublicPath = appBackgroundManifest[backgroundId];
+    invariant(
+      typeof backgroundPublicPath === "string" && backgroundPublicPath.length > 0,
+      `background manifest path is invalid for ${backgroundId}`,
+    );
+    const backgroundFileName =
+      path.basename(backgroundPublicPath) || getNormalizedBackgroundFileName(backgroundId);
+    const backgroundFilePath = path.join(filePaths.generatedBackgroundsRoot, backgroundFileName);
     invariant(fs.existsSync(backgroundFilePath), `background file is missing for ${backgroundId}`);
   }
 }
