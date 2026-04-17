@@ -4,7 +4,7 @@ Latest parent iteration: `#49`
 
 Completed child issue:
 
-- `#50` - normalize generated portrait filenames so GitHub Pages deploys pass on case-sensitive runners
+- `#50` via PR `#51` - normalize generated portrait filenames so GitHub Pages deploys pass on case-sensitive runners
 
 Current closeout outcome:
 
