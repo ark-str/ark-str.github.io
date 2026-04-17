@@ -5,6 +5,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import {
   getGeneratedFilePaths,
+  getGeneratedPortraitPublicPath,
   resolveStorySource,
   selectStoryTitle,
   writeGeneratedArtifacts,
@@ -230,5 +231,64 @@ test("writeGeneratedArtifacts keeps story payloads out of app-internal generated
   assert.match(
     fs.readFileSync(filePaths.appRegistry, "utf8"),
     /"avg_npc_175": "\/generated\/portraits\/speakers\/avg_npc_175\.png"/,
+  );
+});
+
+test("writeGeneratedArtifacts normalizes portrait filenames for mixed-case speaker ids", () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "ark-str-generated-"));
+  const artifacts = {
+    index: {
+      generatedAt: "2026-04-18T00:00:00.000Z",
+      vendor: {
+        source: "ArknightsAssets/ArknightsGamedata",
+        submodulePath: "vendor/ArknightsGamedata",
+        submoduleSha: "abc123",
+        servers: [],
+      },
+      groups: [],
+      stories: [],
+    },
+    sourceManifest: {
+      generatedAt: "2026-04-18T00:00:00.000Z",
+      vendor: { submoduleSha: "abc123" },
+      items: [],
+    },
+    summaryManifest: {
+      generatedAt: "2026-04-18T00:00:00.000Z",
+      vendor: { submoduleSha: "abc123" },
+      items: [],
+    },
+    storyDetails: [],
+    portraitPaths: {
+      AVG_4081_WARMY_1: getGeneratedPortraitPublicPath("AVG_4081_WARMY_1"),
+      avg_4081_warmy_1: getGeneratedPortraitPublicPath("avg_4081_warmy_1"),
+    },
+  };
+
+  fs.mkdirSync(path.join(root, "vendor", "ArknightsResource", "avgs", "npcs"), {
+    recursive: true,
+  });
+  fs.writeFileSync(
+    path.join(root, "vendor", "ArknightsResource", "avgs", "npcs", "AVG_4081_WARMY_1_1.png"),
+    "warmy",
+  );
+
+  writeGeneratedArtifacts(artifacts, root);
+  const filePaths = getGeneratedFilePaths(root);
+  const portraitManifest = JSON.parse(fs.readFileSync(filePaths.appPortraitManifest, "utf8"));
+  const generatedPortraitFileNames = fs.readdirSync(filePaths.generatedPortraitsRoot).sort();
+
+  assert.equal(
+    fs.existsSync(path.join(filePaths.generatedPortraitsRoot, "avg_4081_warmy_1.png")),
+    true,
+  );
+  assert.deepEqual(generatedPortraitFileNames, ["avg_4081_warmy_1.png"]);
+  assert.equal(
+    portraitManifest.AVG_4081_WARMY_1,
+    "/generated/portraits/speakers/avg_4081_warmy_1.png",
+  );
+  assert.equal(
+    portraitManifest.avg_4081_warmy_1,
+    "/generated/portraits/speakers/avg_4081_warmy_1.png",
   );
 });

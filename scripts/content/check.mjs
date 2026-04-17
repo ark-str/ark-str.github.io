@@ -3,6 +3,7 @@ import path from "node:path";
 import {
   buildContentArtifacts,
   getGeneratedFilePaths,
+  getNormalizedPortraitFileName,
   hasArknightsDataSource,
   hasPortraitSource,
   loadGeneratedArtifacts,
@@ -318,7 +319,14 @@ function validateGeneratedArtifacts(generated) {
 
   for (const speakerId of Object.keys(appPortraitManifest)) {
     invariant(portraitSpeakerIds.has(speakerId), `portrait manifest references an unobserved speakerId: ${speakerId}`);
-    const portraitFilePath = path.join(filePaths.generatedPortraitsRoot, `${speakerId}.png`);
+    const portraitPublicPath = appPortraitManifest[speakerId];
+    invariant(
+      typeof portraitPublicPath === "string" && portraitPublicPath.length > 0,
+      `portrait manifest path is invalid for ${speakerId}`,
+    );
+    const portraitFileName =
+      path.basename(portraitPublicPath) || getNormalizedPortraitFileName(speakerId);
+    const portraitFilePath = path.join(filePaths.generatedPortraitsRoot, portraitFileName);
     invariant(fs.existsSync(portraitFilePath), `portrait file is missing for ${speakerId}`);
   }
 
