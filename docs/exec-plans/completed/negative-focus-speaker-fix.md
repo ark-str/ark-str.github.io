@@ -4,6 +4,11 @@
 
 Fix story speaker resolution so visual-only negative-focus frames do not attach portraits to unrelated dialogue.
 
+Status: completed
+Parent issue: `#58`
+Completed child issue: `#59`
+Merged PR: `#60`
+
 ## Scope
 
 - make `priority < 0` frames ineligible for dialogue speaker selection
@@ -36,3 +41,4 @@ Fix story speaker resolution so visual-only negative-focus frames do not attach 
 
 - `focus < 0` means the frame can remain visible, but it is not an eligible dialogue speaker.
 - Existing speaker-name bindings are only reused after active frames are cleared.
+- `level_act12side_01_beg` is the regression fixture for inactive Chen state followed by tourist dialogue.

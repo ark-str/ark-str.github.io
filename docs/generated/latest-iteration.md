@@ -1,17 +1,18 @@
 # Latest Iteration
 
-Latest parent iteration: `#55`
+Latest parent iteration: `#58`
 
 Completed child issue:
 
-- `#56` via PR `#57` - normalize generated background filenames and tracked generated background assets so GitHub Pages verify resolves the same lowercase public paths on macOS and Linux
+- `#59` via PR `#60` - treat negative-focus story frames as visual-only so unrelated dialogue does not inherit an inactive portrait
 
 Current closeout outcome:
 
-- generated background manifests and the app registry now emit lowercase bundled background filenames while keeping the original background IDs as lookup keys
-- the tracked files under `ark-str-web-app/public/generated/backgrounds/` were renamed to the same lowercase paths, removing the remaining Linux-only case mismatch from the Pages deploy
-- the stale portrait-rename active plan was removed and replaced by a completed background casefix iteration record
-- `npm run verify` passed on branch `codex-pages-background-casefix-issue-56`
+- `priority < 0` character/charslot frames now remain visual state but are excluded from dialogue speaker selection
+- speaker-name fallback is skipped while any visual frame is still active, preventing stale bindings from adding unrelated portraits
+- `level_act12side_01_beg` now leaves `경박한 관광객` without Chen's `speakerId`, while the following Chen line still resolves to `char_010_chen`
+- generated story detail artifacts were rebuilt with `content:build-index`
+- `npm run verify` passed on branch `codex-negative-focus-speaker-issue-59`
 
 Remaining product gaps:
 
