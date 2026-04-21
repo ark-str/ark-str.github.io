@@ -8,6 +8,7 @@ Fix story-reader chrome navigation and simplify story background behavior for is
 
 - #61 parent iteration: Simplify reader navigation and story background behavior
 - #62 child issue: Fix reader story chrome and static backdrop behavior
+- PR: #63
 - Dependencies: none
 
 ## Scope
@@ -22,4 +23,5 @@ Fix story-reader chrome navigation and simplify story background behavior for is
 ## Validation
 
 - `npm run app:verify`
+- `npm run smoke`
 - `npm run verify`
