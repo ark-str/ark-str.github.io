@@ -20,8 +20,6 @@ import type {
 } from "@/features/content/types";
 import { useReaderSession } from "@/features/reader/runtime/reader-session-context";
 
-const STORY_BACKDROP_FADE_MS = 500;
-
 function formatMetric(value: number) {
   return new Intl.NumberFormat("ko-KR").format(value);
 }
@@ -107,101 +105,37 @@ function CharacterObservationTracker({
   return null;
 }
 
-function collectBackgroundSequenceFromBlocks(blocks: StoryBlock[], accumulator: string[] = []) {
+function findFirstBackgroundId(blocks: StoryBlock[]): string | null {
   for (const block of blocks) {
     if (block.type === "background") {
-      accumulator.push(block.backgroundId);
-      continue;
+      return block.backgroundId;
     }
 
     if (block.type === "choice") {
       for (const option of block.options) {
-        collectBackgroundSequenceFromBlocks(option.blocks, accumulator);
+        const optionBackgroundId = findFirstBackgroundId(option.blocks);
+        if (optionBackgroundId) {
+          return optionBackgroundId;
+        }
       }
     }
   }
 
-  return accumulator;
+  return null;
 }
 
 function StoryBackdrop({ backgroundPath }: { backgroundPath: string | null }) {
-  const [currentPath, setCurrentPath] = useState<string | null>(backgroundPath);
-  const [previousPath, setPreviousPath] = useState<string | null>(null);
-  const [isTransitionArmed, setIsTransitionArmed] = useState(false);
-  const currentPathRef = useRef<string | null>(backgroundPath);
-
-  useEffect(() => {
-    currentPathRef.current = currentPath;
-  }, [currentPath]);
-
-  useEffect(() => {
-    const committedPath = currentPathRef.current;
-
-    if (backgroundPath === committedPath) {
-      return;
-    }
-
-    let settleRafId: number | null = null;
-    let timeoutId: number | null = null;
-    const rafId = window.requestAnimationFrame(() => {
-      if (!backgroundPath) {
-        setCurrentPath(null);
-        setPreviousPath(null);
-        setIsTransitionArmed(false);
-        return;
-      }
-
-      if (!committedPath) {
-        setCurrentPath(backgroundPath);
-        setPreviousPath(null);
-        setIsTransitionArmed(false);
-        return;
-      }
-
-      setPreviousPath(committedPath);
-      setCurrentPath(backgroundPath);
-      setIsTransitionArmed(true);
-
-      settleRafId = window.requestAnimationFrame(() => {
-        setIsTransitionArmed(false);
-      });
-      timeoutId = window.setTimeout(() => {
-        setPreviousPath(null);
-      }, STORY_BACKDROP_FADE_MS);
-    });
-
-    return () => {
-      window.cancelAnimationFrame(rafId);
-      if (settleRafId !== null) {
-        window.cancelAnimationFrame(settleRafId);
-      }
-      if (timeoutId !== null) {
-        window.clearTimeout(timeoutId);
-      }
-    };
-  }, [backgroundPath]);
-
   return (
     <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden" data-testid="story-backdrop">
-      {currentPath ? (
+      {backgroundPath ? (
         <>
-          {previousPath ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
-              alt=""
-              aria-hidden="true"
-              className="story-backdrop-media absolute inset-0 h-full w-full object-cover object-center blur-xl"
-              style={{ opacity: isTransitionArmed ? 1 : 0 }}
-              src={previousPath}
-            />
-          ) : null}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             alt=""
             aria-hidden="true"
-            className="story-backdrop-media absolute inset-0 h-full w-full object-cover object-center blur-xl"
-            style={{ opacity: isTransitionArmed ? 0 : 1 }}
-            src={currentPath}
+            className="absolute inset-0 h-full w-full object-cover object-center blur-xl"
+            data-testid="story-backdrop-image"
+            src={backgroundPath}
           />
           <div className="story-backdrop-overlay absolute inset-0" />
           <div className="story-backdrop-highlight absolute inset-0" />
@@ -488,21 +422,23 @@ export function ReaderStoryShell({
   summaryAvailable: boolean;
 }) {
   const isBodyAvailable = story.bodyAvailable && detail;
-  const backgroundSequence = useMemo(
-    () => (detail ? collectBackgroundSequenceFromBlocks(detail.blocks) : []),
-    [detail],
-  );
-  const [selectedBackgroundId, setSelectedBackgroundId] = useState<string | null>(null);
-  const activeBackgroundId = useMemo(() => {
-    if (selectedBackgroundId && backgroundSequence.includes(selectedBackgroundId)) {
-      return selectedBackgroundId;
-    }
+  const initialBackgroundId = useMemo(() => (detail ? findFirstBackgroundId(detail.blocks) : null), [detail]);
+  const [activeBackground, setActiveBackground] = useState<{
+    storyId: string;
+    backgroundId: string | null;
+  }>({
+    storyId: story.storyId,
+    backgroundId: initialBackgroundId,
+  });
+  const activeBackgroundId =
+    activeBackground.storyId === story.storyId ? activeBackground.backgroundId : initialBackgroundId;
 
-    return backgroundSequence[0] ?? null;
-  }, [backgroundSequence, selectedBackgroundId]);
   const handleBackgroundVisible = useCallback((backgroundId: string) => {
-    setSelectedBackgroundId(backgroundId);
-  }, []);
+    setActiveBackground({
+      storyId: story.storyId,
+      backgroundId,
+    });
+  }, [story.storyId]);
   const activeBackgroundPath = activeBackgroundId ? (backgroundPaths[activeBackgroundId] ?? null) : null;
 
   return (

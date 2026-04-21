@@ -11,6 +11,7 @@ import {
   findSummaryEntry,
   getGroupStories,
   getReaderGroupHref,
+  getReaderLocaleHref,
   getReaderStoryStaticParams,
   getReaderStoryHref,
   readStoryBackgroundPaths,
@@ -65,7 +66,7 @@ export default async function ReaderStoryPage({
           label: READER_LOCALE_LABELS[targetLocale].label,
           href: buildLocaleSwitchHref(index, targetLocale, groupId, storyId),
         })),
-        storyRootHref: getReaderGroupHref(locale, groupId),
+        storyRootHref: getReaderLocaleHref(locale),
         groupCrumb: {
           label: group.title,
           href: getReaderGroupHref(locale, groupId),

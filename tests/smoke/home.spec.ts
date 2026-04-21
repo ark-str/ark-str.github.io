@@ -14,6 +14,12 @@ const generatedIndex = JSON.parse(
     "utf8",
   ),
 );
+const generatedBackgrounds = JSON.parse(
+  fs.readFileSync(
+    path.join(process.cwd(), "ark-str-web-app", "src", "generated", "content", "backgrounds.json"),
+    "utf8",
+  ),
+);
 
 function readStoryDetail(story: { bodyPath?: string | null }) {
   if (!story.bodyPath) {
@@ -32,7 +38,14 @@ function readStoryDetail(story: { bodyPath?: string | null }) {
       ),
       "utf8",
     ),
-  ) as { observedOperators?: Array<{ speakerId: string; aliases: string[] }> };
+  ) as {
+    observedOperators?: Array<{ speakerId: string; aliases: string[] }>;
+    blocks?: Array<{
+      type?: string;
+      backgroundId?: string;
+      options?: Array<{ blocks?: unknown[] }>;
+    }>;
+  };
 }
 
 function hasBundledPortrait(speakerId: string) {
@@ -47,6 +60,42 @@ function hasBundledPortrait(speakerId: string) {
       `${speakerId}.png`,
     ),
   );
+}
+
+function hasBundledBackground(backgroundId: string) {
+  return (
+    typeof generatedBackgrounds[backgroundId] === "string" &&
+    fs.existsSync(
+      path.join(
+        process.cwd(),
+        "ark-str-web-app",
+        "public",
+        generatedBackgrounds[backgroundId].replace(/^\/+/, ""),
+      ),
+    )
+  );
+}
+
+function collectBackgroundIds(blocks: Array<{
+  type?: string;
+  backgroundId?: string;
+  options?: Array<{ blocks?: unknown[] }>;
+}> = []) {
+  const ids: string[] = [];
+
+  for (const block of blocks) {
+    if (block.type === "background" && typeof block.backgroundId === "string") {
+      ids.push(block.backgroundId);
+    }
+
+    if (block.type === "choice") {
+      for (const option of block.options ?? []) {
+        ids.push(...collectBackgroundIds(option.blocks as Parameters<typeof collectBackgroundIds>[0]));
+      }
+    }
+  }
+
+  return ids;
 }
 
 function resolveSampleStory() {
@@ -84,16 +133,31 @@ function resolveBackgroundStory() {
 
   for (const story of prioritizedStories) {
     const detail = readStoryDetail(story);
-    if (detail?.blocks?.some((block: { type?: string }) => block.type === "background")) {
-      return story;
+    const backgroundIds = [
+      ...new Set(collectBackgroundIds(detail?.blocks).filter((backgroundId) => hasBundledBackground(backgroundId))),
+    ];
+    if (backgroundIds.length >= 2) {
+      return {
+        story,
+        backgroundIds,
+      };
     }
   }
 
-  throw new Error("A sample reader story with a background block is required for smoke tests.");
+  throw new Error("A sample reader story with multiple bundled background blocks is required for smoke tests.");
 }
 
 const sampleStorySelection = resolveSampleStory();
 const sampleStory = sampleStorySelection.story;
+const sampleStoryGroup = generatedIndex.groups.find(
+  (group: { server: string; groupId: string }) =>
+    group.server === sampleStory.server && group.groupId === sampleStory.groupId,
+);
+
+if (!sampleStoryGroup) {
+  throw new Error("A sample reader story must have a matching group entry.");
+}
+
 const sampleObservedOperator =
   sampleStorySelection.detail.observedOperators?.find((observedOperator) =>
     hasBundledPortrait(observedOperator.speakerId),
@@ -103,6 +167,8 @@ const sampleObservedAlias =
   sampleObservedOperator?.aliases[0] ??
   null;
 const sampleBackgroundStory = resolveBackgroundStory();
+const sampleBackgroundIds = sampleBackgroundStory.backgroundIds;
+const sampleBackgroundStoryEntry = sampleBackgroundStory.story;
 
 function toAppPath(route = "") {
   const normalizedRoute = route.replace(/^\/+/, "");
@@ -185,6 +251,27 @@ test.describe("reader shell smoke", () => {
     await expect(page.getByTestId("story-body")).toBeVisible();
     await expect(page.getByTestId("story-summary-section")).toBeVisible();
 
+    const appBar = page.getByTestId("floating-app-bar");
+    await expect(appBar.getByRole("link", { name: "스토리" })).toHaveAttribute(
+      "href",
+      `/ark-str/reader/${sampleStory.server}/`,
+    );
+
+    await appBar.getByRole("link", { name: "스토리" }).click();
+    await expect(page).toHaveURL(new RegExp(`/ark-str/reader/${sampleStory.server}/$`));
+
+    await page.goto(
+      toAppPath(`reader/${sampleStory.server}/${sampleStory.groupId}/${sampleStory.storyId}`),
+    );
+    await appBar.getByRole("link", { name: sampleStoryGroup.title }).click();
+    await expect(page).toHaveURL(
+      new RegExp(`/ark-str/reader/${sampleStory.server}/${sampleStory.groupId}/$`),
+    );
+
+    await page.goto(
+      toAppPath(`reader/${sampleStory.server}/${sampleStory.groupId}/${sampleStory.storyId}`),
+    );
+
     await page.waitForFunction(
       ([key, locale, speakerId]) => {
         const stored = window.localStorage.getItem(key);
@@ -240,11 +327,27 @@ test.describe("reader shell smoke", () => {
 
     await page.goto(
       toAppPath(
-        `reader/${sampleBackgroundStory.server}/${sampleBackgroundStory.groupId}/${sampleBackgroundStory.storyId}`,
+        `reader/${sampleBackgroundStoryEntry.server}/${sampleBackgroundStoryEntry.groupId}/${sampleBackgroundStoryEntry.storyId}`,
       ),
     );
+    await expect
+      .poll(() => page.evaluate(() => window.getComputedStyle(document.body, "::before").position))
+      .toBe("fixed");
     await expect(page.getByTestId("background-block").first()).toBeVisible();
     await expect(page.getByTestId("background-preview-image").first()).toBeVisible();
+    await expect(page.getByTestId("story-backdrop-image")).toHaveAttribute(
+      "src",
+      `${appBasePath}${generatedBackgrounds[sampleBackgroundIds[0]]}`,
+    );
+
+    const secondBackgroundBlock = page
+      .locator(`[data-testid="background-block"][data-background-id="${sampleBackgroundIds[1]}"]`)
+      .first();
+    await secondBackgroundBlock.evaluate((node) => node.scrollIntoView({ block: "center" }));
+    await expect(page.getByTestId("story-backdrop-image")).toHaveAttribute(
+      "src",
+      `${appBasePath}${generatedBackgrounds[sampleBackgroundIds[1]]}`,
+    );
 
     await page.goto(toAppPath());
     await expect(page.getByTestId("last-visited-story")).toContainText(sampleStory.title);
