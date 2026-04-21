@@ -68,8 +68,8 @@ This phase keeps the recovered reader shell and Pages deployment path stable whi
 - locale archives route into dedicated group overview pages before story routes
 - generated group and story metrics for total visible characters and estimated reading time
 - story pages keep the global archive feel, but only story pages add a dynamic fixed background backdrop sourced from in-flow `background` blocks
-- story pages keep `background` blocks in the flow as transition markers with bundled preview images shown uncropped while the backdrop updates on scroll
-- story-page backdrop transitions use a slower 0.5 second fade between active images instead of switching instantly
+- story pages keep `background` blocks in the flow as scroll markers with bundled preview images shown uncropped while the backdrop updates from IntersectionObserver visibility
+- story-page backdrop swaps are immediate; cross-fade state is intentionally omitted to keep the reader surface predictable
 - story pages place group story navigation on the left and a floating scroll-to-top action at the lower right
 - dialogue cards use a portrait-plus-header layout that gives the spoken text the full card width instead of a narrow side-by-side split
 - Doctor choice normalization no longer renders a nested "Shared response" section; predicates that reference every option are treated as post-choice continuation

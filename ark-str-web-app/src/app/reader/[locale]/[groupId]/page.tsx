@@ -8,8 +8,8 @@ import {
   buildLocaleSwitchHref,
   findGroupEntry,
   getGroupStories,
-  getReaderGroupHref,
   getReaderGroupStaticParams,
+  getReaderLocaleHref,
   readContentIndex,
 } from "@/features/content/service/read-content-index";
 import { ReaderGroupOverview } from "@/features/reader/ui/reader-group-overview";
@@ -48,7 +48,7 @@ export default async function ReaderGroupPage({
           label: READER_LOCALE_LABELS[targetLocale].label,
           href: buildLocaleSwitchHref(index, targetLocale, groupId),
         })),
-        storyRootHref: getReaderGroupHref(locale, groupId),
+        storyRootHref: getReaderLocaleHref(locale),
         groupCrumb: {
           label: group.title,
           href: null,
