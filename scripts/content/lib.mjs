@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { collectObservedOperators, parseStoryText } from "./story-parser.mjs";
+import { buildStorylineIndex } from "./storyline-index.mjs";
 
 export const ARKNIGHTS_DATA_SUBMODULE_PATH = "vendor/ArknightsGamedata";
 export const ARKNIGHTS_DATA_REMOTE = "https://github.com/ArknightsAssets/ArknightsGamedata.git";
@@ -466,6 +467,7 @@ export function getRequiredExcelPaths(serverRoot) {
     storyReviewMetaTable: path.join(excelRoot, "story_review_meta_table.json"),
     stageTable: path.join(excelRoot, "stage_table.json"),
     storyTable: path.join(excelRoot, "story_table.json"),
+    zoneTable: path.join(excelRoot, "zone_table.json"),
   };
 }
 
@@ -718,6 +720,7 @@ export function buildContentArtifacts(
 
   const serverSummaries = [];
   const groupItems = [];
+  const storylineItems = [];
   const storyItems = [];
   const sourceItems = [];
   const summaryItems = [];
@@ -729,9 +732,11 @@ export function buildContentArtifacts(
     readJson(requiredPaths.storyReviewMetaTable);
     const stageTable = readJson(requiredPaths.stageTable);
     const storyTable = readJson(requiredPaths.storyTable);
+    const zoneTable = readJson(requiredPaths.zoneTable);
 
     let groupCount = 0;
     let storyCount = 0;
+    const serverGroupItems = [];
 
     const isReaderLocale = isCanonicalReaderLocale(server);
 
@@ -830,7 +835,7 @@ export function buildContentArtifacts(
       }
 
       if (isReaderLocale) {
-        groupItems.push({
+        const groupItem = {
           server,
           groupId,
           title: groupRecord.name ?? groupId,
@@ -841,8 +846,22 @@ export function buildContentArtifacts(
           storyCount: unlockDatas.length,
           totalVisibleCharacterCount,
           estimatedMinutes: estimateReadingMinutes(totalVisibleCharacterCount),
-        });
+        };
+        groupItems.push(groupItem);
+        serverGroupItems.push(groupItem);
       }
+    }
+
+    if (isReaderLocale) {
+      storylineItems.push(
+        ...buildStorylineIndex({
+          groups: serverGroupItems,
+          server,
+          stageTable,
+          storyReviewTable,
+          zoneTable,
+        }),
+      );
     }
 
     serverSummaries.push({
@@ -854,6 +873,7 @@ export function buildContentArtifacts(
         storyReviewMetaTable: hashFile(requiredPaths.storyReviewMetaTable),
         stageTable: hashFile(requiredPaths.stageTable),
         storyTable: hashFile(requiredPaths.storyTable),
+        zoneTable: hashFile(requiredPaths.zoneTable),
       },
     });
   }
@@ -865,6 +885,12 @@ export function buildContentArtifacts(
     left.storyId.localeCompare(right.storyId);
 
   groupItems.sort((left, right) => left.server.localeCompare(right.server) || left.groupId.localeCompare(right.groupId));
+  storylineItems.sort(
+    (left, right) =>
+      left.server.localeCompare(right.server) ||
+      left.sortKey - right.sortKey ||
+      left.storylineId.localeCompare(right.storylineId),
+  );
   storyItems.sort(sortByKey);
   sourceItems.sort((left, right) => left.server.localeCompare(right.server) || left.storyId.localeCompare(right.storyId));
   summaryItems.sort((left, right) => left.server.localeCompare(right.server) || left.storyId.localeCompare(right.storyId));
@@ -890,6 +916,7 @@ export function buildContentArtifacts(
         servers: serverSummaries,
       },
       groups: groupItems,
+      storylines: storylineItems,
       stories: storyItems,
     },
     sourceManifest: {

@@ -9,6 +9,7 @@ import {
   getGroupStories,
   getReaderLocaleHref,
   getLocaleGroups,
+  getLocaleStorylines,
   readContentIndex,
 } from "@/features/content/service/read-content-index";
 import { ReaderLocaleArchive } from "@/features/reader/ui/reader-locale-archive";
@@ -39,6 +40,7 @@ export default async function ReaderLocalePage({
     ...group,
     stories: getGroupStories(index, locale, group.groupId),
   }));
+  const storylines = getLocaleStorylines(index, locale);
 
   return (
     <ReaderLocaleArchive
@@ -55,6 +57,7 @@ export default async function ReaderLocalePage({
       }}
       groups={groups}
       locale={locale}
+      storylines={storylines}
     />
   );
 }

@@ -27,6 +27,32 @@ export type ContentGroupEntry = {
   estimatedMinutes: number;
 };
 
+export type ContentStorylineItemRole = "primary" | "reference";
+
+export type ContentStorylineItem = {
+  groupId: string;
+  storySetId: string | null;
+  locationId: string | null;
+  locationType: string | null;
+  role: ContentStorylineItemRole;
+  sortKey: number;
+  displayTitle: string;
+};
+
+export type ContentStorylineEntry = {
+  server: ReaderLocale;
+  storylineId: string;
+  title: string;
+  storylineType: string | null;
+  sortKey: number;
+  isSynthetic: boolean;
+  primaryGroupCount: number;
+  referenceCount: number;
+  totalVisibleCharacterCount: number;
+  estimatedMinutes: number;
+  items: ContentStorylineItem[];
+};
+
 export type ContentStoryIndexEntry = {
   server: ReaderLocale;
   storyId: string;
@@ -55,6 +81,7 @@ export type ContentIndex = {
     servers: ContentVendorSummary[];
   };
   groups: ContentGroupEntry[];
+  storylines: ContentStorylineEntry[];
   stories: ContentStoryIndexEntry[];
 };
 

@@ -22,6 +22,7 @@ The app should feel editorial, deliberate, and product-specific rather than like
 - reader session persistence for preferred locale and last visited story
 - app-level light/dark theme toggle persisted through the preferences feature
 - canonical locale archive routes, group overview routes, and direct story deep links
+- locale archives render generated storyline sections, with primary story-set cards separated from flow reference links
 - first-pass story body rendering sourced from bundled story detail JSON
 - a restrained floating app bar shared by home, archive, group, and story routes
 - story pages with left-side group navigation, main reading column, bottom summary section, and a floating top button
