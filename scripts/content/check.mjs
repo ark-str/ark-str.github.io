@@ -75,6 +75,10 @@ function compareLiveArtifacts(generated, live) {
     generated.index.groups.length === live.index.groups.length,
     "Generated group count does not match live vendor-derived group count",
   );
+  invariant(
+    JSON.stringify(generated.index.storylines) === JSON.stringify(live.index.storylines),
+    "Generated storyline index drift detected",
+  );
 
   const generatedStories = buildStoryMap(generated.index.stories);
   for (const liveStory of live.index.stories) {
@@ -137,6 +141,7 @@ function validateGeneratedArtifacts(generated) {
   const filePaths = getGeneratedFilePaths(process.cwd());
   invariant(Array.isArray(generated.index.vendor.servers), "index.vendor.servers must be an array");
   invariant(Array.isArray(generated.index.groups), "index.groups must be an array");
+  invariant(Array.isArray(generated.index.storylines), "index.storylines must be an array");
   invariant(Array.isArray(generated.index.stories), "index.stories must be an array");
   invariant(Array.isArray(generated.sourceManifest.items), "source-manifest items must be an array");
   invariant(Array.isArray(generated.summaryManifest.items), "summary-manifest items must be an array");
@@ -215,6 +220,87 @@ function validateGeneratedArtifacts(generated) {
       group.estimatedMinutes === estimateReadingMinutes(group.totalVisibleCharacterCount),
       "group.estimatedMinutes must match the generated visible character total",
     );
+  }
+
+  const groupMap = new Map(generated.index.groups.map((group) => [`${group.server}:${group.groupId}`, group]));
+  const primaryGroupMembership = new Map();
+
+  for (const storyline of generated.index.storylines) {
+    invariant(typeof storyline.server === "string" && storyline.server.length > 0, "storyline.server must be present");
+    invariant(
+      typeof storyline.storylineId === "string" && storyline.storylineId.length > 0,
+      "storyline.storylineId must be present",
+    );
+    invariant(typeof storyline.title === "string" && storyline.title.length > 0, "storyline.title must be present");
+    invariant(Number.isInteger(storyline.sortKey), "storyline.sortKey must be an integer");
+    invariant(typeof storyline.isSynthetic === "boolean", "storyline.isSynthetic must be a boolean");
+    invariant(Array.isArray(storyline.items), "storyline.items must be an array");
+    invariant(
+      Number.isInteger(storyline.primaryGroupCount) && storyline.primaryGroupCount >= 0,
+      "storyline.primaryGroupCount must be a non-negative integer",
+    );
+    invariant(
+      Number.isInteger(storyline.referenceCount) && storyline.referenceCount >= 0,
+      "storyline.referenceCount must be a non-negative integer",
+    );
+    invariant(
+      Number.isInteger(storyline.totalVisibleCharacterCount) && storyline.totalVisibleCharacterCount >= 0,
+      "storyline.totalVisibleCharacterCount must be a non-negative integer",
+    );
+    invariant(
+      storyline.estimatedMinutes === estimateReadingMinutes(storyline.totalVisibleCharacterCount),
+      "storyline.estimatedMinutes must match the generated visible character total",
+    );
+
+    let primaryGroupCount = 0;
+    let referenceCount = 0;
+    let totalVisibleCharacterCount = 0;
+
+    for (const item of storyline.items) {
+      invariant(typeof item.groupId === "string" && item.groupId.length > 0, "storyline item groupId must be present");
+      invariant(item.role === "primary" || item.role === "reference", "storyline item role must be valid");
+      invariant(Number.isInteger(item.sortKey), "storyline item sortKey must be an integer");
+      invariant(
+        typeof item.displayTitle === "string" && item.displayTitle.length > 0,
+        "storyline item displayTitle must be present",
+      );
+
+      const groupKey = `${storyline.server}:${item.groupId}`;
+      const group = groupMap.get(groupKey);
+      invariant(group, `storyline item references missing group ${groupKey}`);
+
+      if (item.role === "primary") {
+        primaryGroupCount += 1;
+        totalVisibleCharacterCount += group.totalVisibleCharacterCount;
+
+        const previousStorylineId = primaryGroupMembership.get(groupKey);
+        invariant(
+          !previousStorylineId,
+          `group ${groupKey} has multiple primary storylines: ${previousStorylineId}, ${storyline.storylineId}`,
+        );
+        primaryGroupMembership.set(groupKey, storyline.storylineId);
+      } else {
+        referenceCount += 1;
+      }
+    }
+
+    invariant(
+      storyline.primaryGroupCount === primaryGroupCount,
+      `storyline primary count mismatch for ${storyline.server}:${storyline.storylineId}`,
+    );
+    invariant(
+      storyline.referenceCount === referenceCount,
+      `storyline reference count mismatch for ${storyline.server}:${storyline.storylineId}`,
+    );
+    invariant(
+      storyline.totalVisibleCharacterCount === totalVisibleCharacterCount,
+      `storyline visible character total mismatch for ${storyline.server}:${storyline.storylineId}`,
+    );
+  }
+
+  for (const group of generated.index.groups) {
+    const groupKey = `${group.server}:${group.groupId}`;
+    invariant(primaryGroupMembership.has(groupKey), `group ${groupKey} is missing a primary storyline`);
   }
 
   for (const item of generated.sourceManifest.items) {

@@ -5,6 +5,7 @@ import type {
   ContentGroupEntry,
   ContentIndex,
   ContentStoryIndexEntry,
+  ContentStorylineEntry,
   ReaderHomeModel,
   ReaderLocale,
   StoryBlock,
@@ -141,6 +142,10 @@ export function readStoryBackgroundPaths(detail: StoryDetail | null): Record<str
 
 export function getLocaleGroups(index: ContentIndex, locale: ReaderLocale): ContentGroupEntry[] {
   return index.groups.filter((group) => group.server === locale);
+}
+
+export function getLocaleStorylines(index: ContentIndex, locale: ReaderLocale): ContentStorylineEntry[] {
+  return index.storylines.filter((storyline) => storyline.server === locale);
 }
 
 export function getLocaleStories(index: ContentIndex, locale: ReaderLocale): ContentStoryIndexEntry[] {

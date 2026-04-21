@@ -169,6 +169,21 @@ const sampleObservedAlias =
 const sampleBackgroundStory = resolveBackgroundStory();
 const sampleBackgroundIds = sampleBackgroundStory.backgroundIds;
 const sampleBackgroundStoryEntry = sampleBackgroundStory.story;
+const koreanMainStoryline = generatedIndex.storylines.find(
+  (storyline: { server: string; storylineId: string }) =>
+    storyline.server === "kr" && storyline.storylineId === "mainLine",
+);
+const koreanMainStorylineReference = koreanMainStoryline?.items.find(
+  (item: { role: string }) => item.role === "reference",
+);
+
+if (!koreanMainStoryline) {
+  throw new Error("The Korean reader archive must include the mainLine storyline.");
+}
+
+if (!koreanMainStorylineReference) {
+  throw new Error("The Korean mainLine storyline must include at least one flow reference.");
+}
 
 function toAppPath(route = "") {
   const normalizedRoute = route.replace(/^\/+/, "");
@@ -235,6 +250,29 @@ test.describe("reader shell smoke", () => {
     await page.getByTestId("open-locale-archive-link").click();
     await expect(page).toHaveURL(/\/ark-str\/reader\/en\/$/);
     await expect(page.getByTestId("reader-shell")).toBeVisible();
+
+    await page.goto(toAppPath("reader/kr"));
+    await expect(page.getByTestId("reader-shell")).toBeVisible();
+    const mainStorylineSection = page.locator(
+      '[data-testid="storyline-section"][data-storyline-id="mainLine"]',
+    );
+    await expect(mainStorylineSection).toBeVisible();
+    await expect(mainStorylineSection.getByRole("heading", { name: "내일을 위하여" })).toBeVisible();
+    await expect(
+      mainStorylineSection.locator('[data-testid="storyline-primary-card"][data-group-id="main_0"]'),
+    ).toBeVisible();
+    await expect(mainStorylineSection.getByTestId("storyline-reference-link").first()).toHaveAttribute(
+      "href",
+      `/ark-str/reader/kr/${koreanMainStorylineReference.groupId}/`,
+    );
+    await expect(
+      page.locator(
+        '[data-testid="storyline-section"][data-storyline-id="synthetic_operator_narratives"]',
+      ),
+    ).toContainText("오퍼레이터 서사");
+    await expect(
+      page.locator('[data-testid="storyline-section"][data-storyline-id="synthetic_uncategorized"]'),
+    ).toContainText("미분류");
 
     await page.goto(
       toAppPath(`reader/${sampleStory.server}/${sampleStory.groupId}`),
