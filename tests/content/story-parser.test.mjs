@@ -94,6 +94,32 @@ test("parseStoryText resolves focused Character slots into operator-aware dialog
   ]);
 });
 
+test("parseStoryText treats negative-focus character frames as non-speaker visual state", () => {
+  const blocks = parseStoryText(`
+[character(name="char_010_chen_summer",focus=-1)]
+[name="경박한 관광객"]헤이, 거기 예쁜이, 우리랑 같이 해변에 놀러 가지 않을래?
+[character(name="char_010_chen_summer")]
+[name="첸"]꺼져.
+`);
+
+  assert.deepEqual(blocks, [
+    {
+      type: "dialogue",
+      isRemote: false,
+      speakerName: "경박한 관광객",
+      speakerId: null,
+      text: "헤이, 거기 예쁜이, 우리랑 같이 해변에 놀러 가지 않을래?",
+    },
+    {
+      type: "dialogue",
+      isRemote: false,
+      speakerName: "첸",
+      speakerId: "char_010_chen",
+      text: "꺼져.",
+    },
+  ]);
+});
+
 test("parseStoryText ignores char_empty placeholders when only one real Character speaker remains", () => {
   const blocks = parseStoryText(`
 [character(name="avg_npc_196_1#1",name2="char_empty",fadetime=1)]
@@ -255,7 +281,7 @@ test("parseStoryText resolves charslot and cutin frames together and clears slot
 [charslot(slot="r",focus="n")]
 [name="Rat King"]Neutral cutin beats de-emphasized slot.
 [CharacterCutin(widgetID="1", block=true)]
-[name="Cheery Legatus"]De-emphasized slot still binds when cutin is gone.
+[name="Cheery Legatus"]De-emphasized slot suppresses fallback while it remains active.
 [charslot]
 [name="Cheery Legatus"]Binding fallback survives after slot clear.
 `);
@@ -265,7 +291,7 @@ test("parseStoryText resolves charslot and cutin frames together and clears slot
     [
       "avg_npc_175",
       "avg_npc_034",
-      "avg_npc_175",
+      null,
       "avg_npc_175",
     ],
   );
@@ -283,7 +309,7 @@ test("parseStoryText neutralizes all active charslot priorities for all-focus up
 
   assert.deepEqual(
     blocks.filter((block) => block.type === "dialogue").map((block) => block.speakerId),
-    ["avg_369_bena_1", "avg_369_bena_1"],
+    ["avg_369_bena_1", null],
   );
 });
 

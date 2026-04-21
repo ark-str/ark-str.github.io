@@ -245,12 +245,16 @@ function createFrame(parserState, source, key, speakerId, priority) {
   };
 }
 
-function resolveWinningFrame(parserState) {
-  const activeFrames = [
+function getActiveFrames(parserState) {
+  return [
     ...parserState.cutins.values(),
     ...(parserState.characterFrame ? [parserState.characterFrame] : []),
     ...parserState.charslots.values(),
   ];
+}
+
+function resolveWinningFrame(parserState) {
+  const activeFrames = getActiveFrames(parserState).filter((frame) => frame.priority >= 0);
 
   return activeFrames.reduce((winningFrame, candidateFrame) => {
     if (!winningFrame) {
@@ -282,8 +286,9 @@ function resolveDialogueSpeaker(line, parserState) {
   }
 
   const knownSpeakerBinding = parserState.speakerBindings.get(speakerName) ?? null;
+  const hasActiveFrame = getActiveFrames(parserState).length > 0;
   const winningFrame = resolveWinningFrame(parserState);
-  const speakerId = winningFrame ? winningFrame.speakerId : knownSpeakerBinding;
+  const speakerId = winningFrame ? winningFrame.speakerId : hasActiveFrame ? null : knownSpeakerBinding;
 
   const block = {
     type: "dialogue",
