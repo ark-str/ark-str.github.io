@@ -7,7 +7,10 @@ import {
 import {
   buildLocaleSwitchHref,
   findGroupEntry,
+  getLocaleGroups,
+  getLocaleStorylines,
   getGroupStories,
+  getReaderGroupHref,
   getReaderGroupStaticParams,
   getReaderLocaleHref,
   readContentIndex,
@@ -39,10 +42,46 @@ export default async function ReaderGroupPage({
   }
 
   const stories = getGroupStories(index, locale, groupId);
+  const groupsById = new Map(getLocaleGroups(index, locale).map((item) => [item.groupId, item]));
+  const primaryStoryline =
+    getLocaleStorylines(index, locale).find((storyline) =>
+      storyline.items.some((item) => item.role === "primary" && item.groupId === groupId),
+    ) ?? null;
   const groupWithAssets = {
     ...group,
     backgroundImageHref: resolvePublicAssetPath(group.backgroundImagePath),
   };
+  const groupFlowItems = (
+    primaryStoryline?.items ?? [
+      {
+        displayTitle: group.title,
+        groupId,
+        locationId: null,
+        locationType: null,
+        role: "primary" as const,
+        sortKey: 0,
+        storySetId: null,
+      },
+    ]
+  ).flatMap((item, index) => {
+    const itemGroup = groupsById.get(item.groupId);
+    if (!itemGroup) {
+      return [];
+    }
+
+    return [
+      {
+        backgroundImageAspect: itemGroup.backgroundImageAspect,
+        backgroundImageHref: resolvePublicAssetPath(itemGroup.backgroundImagePath),
+        displayTitle: item.displayTitle || itemGroup.title,
+        groupId: item.groupId,
+        href: getReaderGroupHref(locale, item.groupId),
+        isCurrent: item.groupId === groupId,
+        itemKey: `${item.locationId ?? item.storySetId ?? item.groupId}:${item.role}:${index}`,
+        role: item.role,
+      },
+    ];
+  });
 
   return (
     <ReaderGroupOverview
@@ -61,6 +100,8 @@ export default async function ReaderGroupPage({
         storySelect: null,
       }}
       group={groupWithAssets}
+      groupFlowItems={groupFlowItems}
+      storylineTitle={primaryStoryline?.title ?? group.title}
       locale={locale}
       stories={stories}
     />
