@@ -265,19 +265,33 @@ test.describe("reader shell smoke", () => {
     );
     await expect(mainStorylineSection).toBeVisible();
     await expect(mainStorylineSection.getByRole("heading", { name: "내일을 위하여" })).toBeVisible();
-    const storylineIds = await page.getByTestId("storyline-section").evaluateAll((nodes) =>
+    const storylineGrid = page.getByTestId("storyline-grid");
+    const storylineIds = await storylineGrid.getByTestId("storyline-section").evaluateAll((nodes) =>
       nodes.map((node) => node.getAttribute("data-storyline-id")),
     );
-    expect(storylineIds.at(-1)).toBe("synthetic_operator_narratives");
+    expect(storylineIds).not.toContain("synthetic_operator_narratives");
+    const operatorStorylineSection = page.getByTestId("operator-storyline-section");
+    await expect(
+      operatorStorylineSection.locator(
+        '[data-testid="storyline-section"][data-storyline-id="synthetic_operator_narratives"]',
+      ),
+    ).toBeVisible();
 
-    const mainStorylineDetails = mainStorylineSection.locator("details");
-    await expect(mainStorylineDetails).not.toHaveAttribute("open", "");
+    const mainStorylinePanel = mainStorylineSection.getByTestId("storyline-panel");
+    await expect(mainStorylinePanel).toHaveAttribute("data-state", "closed");
     const mainPrimaryRow = mainStorylineSection.locator(
       '[data-testid="storyline-primary-card"][data-group-id="main_0"]',
     );
-    await expect(mainPrimaryRow).toBeHidden();
-    await mainStorylineSection.locator("summary").click();
-    await expect(mainStorylineDetails).toHaveAttribute("open", "");
+    await expect(mainStorylinePanel).toHaveAttribute("aria-hidden", "true");
+    await mainStorylineSection.getByTestId("storyline-toggle").click();
+    await expect(mainStorylinePanel).toHaveAttribute("data-state", "open");
+    await expect(mainStorylinePanel).toHaveAttribute("aria-hidden", "false");
+    const panelTransitionDuration = await mainStorylinePanel.evaluate(
+      (node) => window.getComputedStyle(node).transitionDuration,
+    );
+    expect(panelTransitionDuration).toContain("0.3s");
+    const mainStorylineItemGrid = mainStorylineSection.getByTestId("storyline-item-grid");
+    await expect(mainStorylineItemGrid).toHaveCSS("display", "grid");
     await expect(mainPrimaryRow).toBeVisible();
     await expect(mainPrimaryRow).toHaveAttribute("href", `/ark-str/reader/kr/${koreanMainStorylinePrimary.groupId}/`);
     await expect(mainPrimaryRow).toContainText("stories");
