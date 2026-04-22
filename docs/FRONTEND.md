@@ -27,7 +27,7 @@ The app should feel editorial, deliberate, and product-specific rather than like
 - first-pass story body rendering sourced from bundled story detail JSON
 - a restrained floating app bar shared by home, archive, group, and story routes
 - story pages with left-side group navigation, main reading column, bottom summary section, and a floating top button
-- group overview pages render title and Stories/chars/time metrics over the generated hero image, then show the named current storyline as horizontally scrollable group/reference cards before simplified story cards; reference cards carry an up-right cue and story cards avoid exposing internal story IDs
+- group overview pages render title and Stories/chars/time metrics over the generated hero image, then show the named current storyline as horizontally scrollable group/reference cards before simplified story cards; oversized storylines are bounded to the current group neighborhood, reference cards carry an up-right cue, and story cards avoid exposing internal story IDs
 - story-only dynamic backdrops driven directly by intersecting bundled background blocks, while non-story pages keep the archive base background
 - in-flow background blocks keep their own bundled image previews without cropping and still drive the fixed story backdrop
 - story backdrop swaps on story pages happen immediately without cross-fade state

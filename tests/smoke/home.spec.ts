@@ -179,6 +179,13 @@ const koreanMainStorylineReference = koreanMainStoryline?.items.find(
 const koreanMainStorylinePrimary = koreanMainStoryline?.items.find(
   (item: { role: string; groupId: string }) => item.role === "primary" && item.groupId === "main_0",
 );
+const koreanOperatorStoryline = generatedIndex.storylines.find(
+  (storyline: { server: string; storylineId: string }) =>
+    storyline.server === "kr" && storyline.storylineId === "synthetic_operator_narratives",
+);
+const koreanOperatorStorylinePrimary = koreanOperatorStoryline?.items.find(
+  (item: { role: string }) => item.role === "primary",
+);
 
 if (!koreanMainStoryline) {
   throw new Error("The Korean reader archive must include the mainLine storyline.");
@@ -190,6 +197,14 @@ if (!koreanMainStorylineReference) {
 
 if (!koreanMainStorylinePrimary) {
   throw new Error("The Korean mainLine storyline must include main_0 as a primary group.");
+}
+
+if (!koreanOperatorStoryline) {
+  throw new Error("The Korean reader archive must include the operator narrative storyline.");
+}
+
+if (!koreanOperatorStorylinePrimary) {
+  throw new Error("The Korean operator narrative storyline must include at least one primary group.");
 }
 
 function toAppPath(route = "") {
@@ -381,6 +396,16 @@ test.describe("reader shell smoke", () => {
     ).first();
     await expect(mainGroupFlowReferenceCard).toBeVisible();
     await expect(mainGroupFlowReferenceCard.locator("svg")).toBeVisible();
+
+    await page.goto(toAppPath(`reader/kr/${koreanOperatorStorylinePrimary.groupId}`));
+    const operatorGroupFlow = page.getByTestId("group-flow-nav");
+    await expect(operatorGroupFlow.getByRole("heading", { name: koreanOperatorStoryline.title })).toBeVisible();
+    expect(await operatorGroupFlow.getByTestId("group-flow-card").count()).toBeLessThanOrEqual(24);
+    await expect(
+      operatorGroupFlow.locator(
+        `[data-testid="group-flow-card"][data-group-id="${koreanOperatorStorylinePrimary.groupId}"][data-current="true"]`,
+      ),
+    ).toBeVisible();
 
     await page.goto(
       toAppPath(`reader/${sampleStory.server}/${sampleStory.groupId}/${sampleStory.storyId}`),

@@ -16,9 +16,31 @@ import {
   readContentIndex,
   resolvePublicAssetPath,
 } from "@/features/content/service/read-content-index";
+import type { ContentStorylineItem } from "@/features/content/types";
 import { ReaderGroupOverview } from "@/features/reader/ui/reader-group-overview";
 
 export const dynamicParams = false;
+
+const GROUP_FLOW_ITEM_LIMIT = 24;
+
+function selectGroupFlowItems(items: ContentStorylineItem[], currentGroupId: string): ContentStorylineItem[] {
+  if (items.length <= GROUP_FLOW_ITEM_LIMIT) {
+    return items;
+  }
+
+  const currentIndex = items.findIndex((item) => item.groupId === currentGroupId);
+  if (currentIndex < 0) {
+    return items.slice(0, GROUP_FLOW_ITEM_LIMIT);
+  }
+
+  const beforeCount = Math.floor((GROUP_FLOW_ITEM_LIMIT - 1) / 2);
+  const start = Math.max(
+    0,
+    Math.min(currentIndex - beforeCount, items.length - GROUP_FLOW_ITEM_LIMIT),
+  );
+
+  return items.slice(start, start + GROUP_FLOW_ITEM_LIMIT);
+}
 
 export function generateStaticParams() {
   return getReaderGroupStaticParams();
@@ -51,8 +73,9 @@ export default async function ReaderGroupPage({
     ...group,
     backgroundImageHref: resolvePublicAssetPath(group.backgroundImagePath),
   };
-  const groupFlowItems = (
-    primaryStoryline?.items ?? [
+  const selectedStorylineItems = primaryStoryline
+    ? selectGroupFlowItems(primaryStoryline.items, groupId)
+    : [
       {
         displayTitle: group.title,
         groupId,
@@ -62,8 +85,8 @@ export default async function ReaderGroupPage({
         sortKey: 0,
         storySetId: null,
       },
-    ]
-  ).flatMap((item, index) => {
+    ];
+  const groupFlowItems = selectedStorylineItems.flatMap((item, index) => {
     const itemGroup = groupsById.get(item.groupId);
     if (!itemGroup) {
       return [];
