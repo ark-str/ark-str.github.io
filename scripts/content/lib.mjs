@@ -598,7 +598,7 @@ function readProjectGroupBackgroundFile(relativeGroupBackgroundPath, cwd = getRe
   return fs.existsSync(sourceFilePath) ? fs.readFileSync(sourceFilePath) : null;
 }
 
-function readGroupBackgroundSourceFile(groupBackgroundPath, cwd = getRepoRoot()) {
+export function readGroupBackgroundSourceFile(groupBackgroundPath, cwd = getRepoRoot()) {
   if (groupBackgroundPath?.sourceType === "project") {
     return readProjectGroupBackgroundFile(groupBackgroundPath.sourcePath, cwd);
   }

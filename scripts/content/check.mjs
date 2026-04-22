@@ -8,6 +8,7 @@ import {
   hasArknightsDataSource,
   hasPortraitSource,
   loadGeneratedArtifacts,
+  readGroupBackgroundSourceFile,
 } from "./lib.mjs";
 
 function invariant(condition, message) {
@@ -129,6 +130,32 @@ function compareLiveArtifacts(generated, live) {
       generatedGroup.backgroundImagePath === liveGroup.backgroundImagePath,
       `Generated group background image path drift detected for ${key}`,
     );
+    invariant(
+      generatedGroup.backgroundImageAspect === liveGroup.backgroundImageAspect,
+      `Generated group background image aspect drift detected for ${key}`,
+    );
+
+    if (liveGroup.backgroundImagePath) {
+      const resolvedGroupBackgroundPath = live.groupBackgroundPaths?.[key] ?? null;
+      invariant(resolvedGroupBackgroundPath?.sourcePath, `Missing group background source for ${key}`);
+
+      const sourceBuffer = readGroupBackgroundSourceFile(resolvedGroupBackgroundPath, process.cwd());
+      invariant(sourceBuffer, `Unable to read group background source for ${key}`);
+
+      const generatedFileName =
+        path.basename(liveGroup.backgroundImagePath) || getNormalizedBackgroundFileName(liveGroup.backgroundImageId);
+      const generatedFilePath = path.join(
+        getGeneratedFilePaths(process.cwd()).generatedGroupBackgroundsRoot,
+        generatedFileName,
+      );
+      invariant(fs.existsSync(generatedFilePath), `Generated group background file is missing for ${key}`);
+
+      const generatedBuffer = fs.readFileSync(generatedFilePath);
+      invariant(
+        Buffer.compare(sourceBuffer, generatedBuffer) === 0,
+        `Generated group background file is stale for ${key}`,
+      );
+    }
   }
 
   if (hasPortraitSource(process.cwd())) {

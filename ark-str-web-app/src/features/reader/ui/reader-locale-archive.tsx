@@ -121,6 +121,8 @@ export function ReaderLocaleArchive({
                 aria-hidden="true"
                 className={getArchiveCardBackgroundClassName(item.group.backgroundImageAspect)}
                 data-testid="storyline-primary-card-background"
+                decoding="async"
+                loading="lazy"
                 src={item.group.backgroundImageHref}
               />
               <span className="absolute inset-0 bg-[var(--panel)]/72" aria-hidden="true" />
