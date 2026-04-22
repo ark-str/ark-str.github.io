@@ -4,24 +4,28 @@ import * as React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 
-type DisclosureCardProps = {
+type DisclosureCardProps = Omit<React.HTMLAttributes<HTMLDivElement>, "children"> & {
   children: React.ReactNode;
-  className?: string;
   contentClassName?: string;
-  dataStorylineId: string;
+  contentTestId?: string;
+  defaultOpen?: boolean;
+  panelTestId?: string;
   summary: React.ReactNode;
-  testId: string;
+  toggleTestId?: string;
 };
 
 export function DisclosureCard({
   children,
   className,
   contentClassName,
-  dataStorylineId,
+  contentTestId,
+  defaultOpen = false,
+  panelTestId,
   summary,
-  testId,
+  toggleTestId,
+  ...props
 }: DisclosureCardProps) {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = React.useState(defaultOpen);
   const panelId = React.useId();
   const toggle = () => setIsOpen((current) => !current);
   const handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
@@ -41,14 +45,13 @@ export function DisclosureCard({
         className,
       )}
       data-state={isOpen ? "open" : "closed"}
-      data-storyline-id={dataStorylineId}
-      data-testid={testId}
+      {...props}
     >
       <div
         aria-controls={panelId}
         aria-expanded={isOpen}
         className="grid w-full cursor-pointer grid-cols-[1fr_auto] gap-4 p-6 text-left"
-        data-testid="storyline-toggle"
+        data-testid={toggleTestId}
         onClick={toggle}
         onKeyDown={handleKeyDown}
         role="button"
@@ -72,12 +75,13 @@ export function DisclosureCard({
           isOpen ? "border-[var(--border)] opacity-100" : "border-transparent opacity-0",
         )}
         data-state={isOpen ? "open" : "closed"}
-        data-testid="storyline-panel"
+        data-testid={panelTestId}
         id={panelId}
+        inert={!isOpen ? true : undefined}
         style={{ gridTemplateRows: isOpen ? "1fr" : "0fr" }}
       >
         <div className="min-h-0 overflow-hidden">
-          <CardContent className={cn("grid gap-2 pt-4", contentClassName)} data-testid="storyline-item-grid">
+          <CardContent className={cn("grid gap-2 pt-4", contentClassName)} data-testid={contentTestId}>
             {children}
           </CardContent>
         </div>

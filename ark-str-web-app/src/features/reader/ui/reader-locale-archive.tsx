@@ -148,9 +148,12 @@ export function ReaderLocaleArchive({
             <DisclosureCard
               key={storyline.storylineId}
               contentClassName="sm:grid-cols-2 2xl:grid-cols-3"
-              dataStorylineId={storyline.storylineId}
+              contentTestId="storyline-item-grid"
+              data-storyline-id={storyline.storylineId}
+              data-testid="storyline-section"
+              panelTestId="storyline-panel"
               summary={renderStorylineSummary(storyline)}
-              testId="storyline-section"
+              toggleTestId="storyline-toggle"
             >
               {renderStorylineItems(storyline)}
             </DisclosureCard>
@@ -163,9 +166,12 @@ export function ReaderLocaleArchive({
           <DisclosureCard
             className="md:data-[state=open]:col-span-1 xl:data-[state=open]:col-span-1"
             contentClassName="sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4"
-            dataStorylineId={operatorStoryline.storylineId}
+            contentTestId="storyline-item-grid"
+            data-storyline-id={operatorStoryline.storylineId}
+            data-testid="storyline-section"
+            panelTestId="storyline-panel"
             summary={renderStorylineSummary(operatorStoryline)}
-            testId="storyline-section"
+            toggleTestId="storyline-toggle"
           >
             {renderStorylineItems(operatorStoryline)}
           </DisclosureCard>

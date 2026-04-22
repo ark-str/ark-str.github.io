@@ -283,9 +283,11 @@ test.describe("reader shell smoke", () => {
       '[data-testid="storyline-primary-card"][data-group-id="main_0"]',
     );
     await expect(mainStorylinePanel).toHaveAttribute("aria-hidden", "true");
+    await expect(mainStorylinePanel).toHaveAttribute("inert", "");
     await mainStorylineSection.getByTestId("storyline-toggle").click();
     await expect(mainStorylinePanel).toHaveAttribute("data-state", "open");
     await expect(mainStorylinePanel).toHaveAttribute("aria-hidden", "false");
+    await expect(mainStorylinePanel).not.toHaveAttribute("inert", "");
     const panelTransitionDuration = await mainStorylinePanel.evaluate(
       (node) => window.getComputedStyle(node).transitionDuration,
     );
