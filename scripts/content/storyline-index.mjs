@@ -188,7 +188,7 @@ export function buildStorylineIndex({
         isSynthetic: true,
         items: createSyntheticItems(operatorGroups),
         server,
-        sortKey: 900000,
+        sortKey: 900100,
         storylineId: OPERATOR_STORYLINE_ID,
         storylineType: "SYNTHETIC",
         title: "오퍼레이터 서사",
@@ -206,7 +206,7 @@ export function buildStorylineIndex({
         isSynthetic: true,
         items: createSyntheticItems(uncategorizedGroups),
         server,
-        sortKey: 900100,
+        sortKey: 900000,
         storylineId: UNCATEGORIZED_STORYLINE_ID,
         storylineType: "SYNTHETIC",
         title: "미분류",
@@ -214,5 +214,7 @@ export function buildStorylineIndex({
     );
   }
 
-  return storylines;
+  return storylines.sort(
+    (left, right) => left.sortKey - right.sortKey || left.storylineId.localeCompare(right.storylineId),
+  );
 }
