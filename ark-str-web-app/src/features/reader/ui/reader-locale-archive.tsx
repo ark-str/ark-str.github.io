@@ -15,6 +15,7 @@ import type {
 } from "@/features/content/types";
 
 type ArchiveGroup = ContentGroupEntry & {
+  backgroundImageHref: string | null;
   stories: ContentStoryIndexEntry[];
 };
 
@@ -26,6 +27,15 @@ const OPERATOR_STORYLINE_ID = "synthetic_operator_narratives";
 
 function formatMetric(value: number) {
   return new Intl.NumberFormat("ko-KR").format(value);
+}
+
+function getArchiveCardBackgroundClassName(backgroundImageAspect: ContentGroupEntry["backgroundImageAspect"]) {
+  const sharedClassName =
+    "absolute inset-0 h-full w-full transition duration-[var(--motion-fast)] ease-out group-hover:opacity-[0.38]";
+
+  return backgroundImageAspect === "square"
+    ? `${sharedClassName} object-contain p-5 opacity-[0.34] blur-[1px]`
+    : `${sharedClassName} scale-105 object-cover opacity-[0.28] blur-[2px]`;
 }
 
 export function ReaderLocaleArchive({
@@ -98,13 +108,29 @@ export function ReaderLocaleArchive({
       return (
         <Link
           key={`${storyline.storylineId}:${item.groupId}`}
-          className="grid gap-3 rounded-[var(--radius-md)] border border-[var(--border)] bg-[var(--panel)] p-4 text-[var(--text)] transition duration-[var(--motion-fast)] ease-out hover:-translate-y-px hover:border-[var(--accent)] hover:shadow-[var(--shadow-sm)]"
+          className="group relative grid min-h-28 overflow-hidden rounded-[var(--radius-md)] border border-[var(--border)] bg-[var(--panel)] p-4 text-[var(--text)] transition duration-[var(--motion-fast)] ease-out hover:-translate-y-px hover:border-[var(--accent)] hover:shadow-[var(--shadow-sm)]"
           data-group-id={item.groupId}
           data-testid="storyline-primary-card"
           href={href}
         >
-          <span className="text-base font-semibold leading-6">{item.group.title}</span>
-          <span className="grid grid-cols-3 gap-2 text-[11px] font-semibold uppercase tracking-[0.12em] text-[var(--text-muted)]">
+          {item.group.backgroundImageHref ? (
+            <>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                alt=""
+                aria-hidden="true"
+                className={getArchiveCardBackgroundClassName(item.group.backgroundImageAspect)}
+                data-testid="storyline-primary-card-background"
+                decoding="async"
+                loading="lazy"
+                src={item.group.backgroundImageHref}
+              />
+              <span className="absolute inset-0 bg-[var(--panel)]/72" aria-hidden="true" />
+              <span className="absolute inset-0 bg-gradient-to-br from-[var(--panel)]/92 via-[var(--panel)]/60 to-[var(--accent-soft)]/35" aria-hidden="true" />
+            </>
+          ) : null}
+          <span className="relative z-10 text-base font-semibold leading-6">{item.group.title}</span>
+          <span className="relative z-10 grid gap-1 text-[11px] font-semibold uppercase tracking-[0.12em] text-[var(--text-muted)] sm:grid-cols-3 sm:gap-2">
             <span>{formatMetric(item.group.storyCount)} stories</span>
             <span>{formatMetric(item.group.totalVisibleCharacterCount)} chars</span>
             <span>약 {formatMetric(item.group.estimatedMinutes)}분</span>

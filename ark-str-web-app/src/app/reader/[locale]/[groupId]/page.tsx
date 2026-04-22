@@ -11,6 +11,7 @@ import {
   getReaderGroupStaticParams,
   getReaderLocaleHref,
   readContentIndex,
+  resolvePublicAssetPath,
 } from "@/features/content/service/read-content-index";
 import { ReaderGroupOverview } from "@/features/reader/ui/reader-group-overview";
 
@@ -38,6 +39,10 @@ export default async function ReaderGroupPage({
   }
 
   const stories = getGroupStories(index, locale, groupId);
+  const groupWithAssets = {
+    ...group,
+    backgroundImageHref: resolvePublicAssetPath(group.backgroundImagePath),
+  };
 
   return (
     <ReaderGroupOverview
@@ -55,7 +60,7 @@ export default async function ReaderGroupPage({
         },
         storySelect: null,
       }}
-      group={group}
+      group={groupWithAssets}
       locale={locale}
       stories={stories}
     />

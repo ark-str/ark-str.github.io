@@ -40,6 +40,14 @@ function getPublishedStoryDetailPath(relativePath: string) {
   return path.join(process.cwd(), "public", "generated", "content", relativePath);
 }
 
+export function resolvePublicAssetPath(publicPath: string | null): string | null {
+  if (!publicPath) {
+    return null;
+  }
+
+  return `${getConfiguredBasePath()}${publicPath}`;
+}
+
 export function readContentIndex(): ContentIndex {
   return contentIndex as ContentIndex;
 }
@@ -58,7 +66,7 @@ export function readPortraitPathForSpeakerId(speakerId: string | null): string |
     return null;
   }
 
-  return `${getConfiguredBasePath()}${portraitPath}`;
+  return resolvePublicAssetPath(portraitPath);
 }
 
 export function readBackgroundPathForBackgroundId(backgroundId: string | null): string | null {
@@ -71,7 +79,7 @@ export function readBackgroundPathForBackgroundId(backgroundId: string | null): 
     return null;
   }
 
-  return `${getConfiguredBasePath()}${backgroundPath}`;
+  return resolvePublicAssetPath(backgroundPath);
 }
 
 export function readStoryPortraitPaths(detail: StoryDetail | null): Record<string, string> {

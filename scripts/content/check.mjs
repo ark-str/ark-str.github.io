@@ -8,6 +8,7 @@ import {
   hasArknightsDataSource,
   hasPortraitSource,
   loadGeneratedArtifacts,
+  readGroupBackgroundSourceFile,
 } from "./lib.mjs";
 
 function invariant(condition, message) {
@@ -121,6 +122,40 @@ function compareLiveArtifacts(generated, live) {
       generatedGroup.estimatedMinutes === liveGroup.estimatedMinutes,
       `Generated group estimated minutes drift detected for ${key}`,
     );
+    invariant(
+      generatedGroup.backgroundImageId === liveGroup.backgroundImageId,
+      `Generated group background image id drift detected for ${key}`,
+    );
+    invariant(
+      generatedGroup.backgroundImagePath === liveGroup.backgroundImagePath,
+      `Generated group background image path drift detected for ${key}`,
+    );
+    invariant(
+      generatedGroup.backgroundImageAspect === liveGroup.backgroundImageAspect,
+      `Generated group background image aspect drift detected for ${key}`,
+    );
+
+    if (liveGroup.backgroundImagePath) {
+      const resolvedGroupBackgroundPath = live.groupBackgroundPaths?.[key] ?? null;
+      invariant(resolvedGroupBackgroundPath?.sourcePath, `Missing group background source for ${key}`);
+
+      const sourceBuffer = readGroupBackgroundSourceFile(resolvedGroupBackgroundPath, process.cwd());
+      invariant(sourceBuffer, `Unable to read group background source for ${key}`);
+
+      const generatedFileName =
+        path.basename(liveGroup.backgroundImagePath) || getNormalizedBackgroundFileName(liveGroup.backgroundImageId);
+      const generatedFilePath = path.join(
+        getGeneratedFilePaths(process.cwd()).generatedGroupBackgroundsRoot,
+        generatedFileName,
+      );
+      invariant(fs.existsSync(generatedFilePath), `Generated group background file is missing for ${key}`);
+
+      const generatedBuffer = fs.readFileSync(generatedFilePath);
+      invariant(
+        Buffer.compare(sourceBuffer, generatedBuffer) === 0,
+        `Generated group background file is stale for ${key}`,
+      );
+    }
   }
 
   if (hasPortraitSource(process.cwd())) {
@@ -220,6 +255,34 @@ function validateGeneratedArtifacts(generated) {
       group.estimatedMinutes === estimateReadingMinutes(group.totalVisibleCharacterCount),
       "group.estimatedMinutes must match the generated visible character total",
     );
+    invariant(
+      group.backgroundImageId === null ||
+        (typeof group.backgroundImageId === "string" && group.backgroundImageId.length > 0),
+      "group.backgroundImageId must be null or a non-empty string",
+    );
+    invariant(
+      group.backgroundImageAspect === null ||
+        group.backgroundImageAspect === "square" ||
+        group.backgroundImageAspect === "wide",
+      "group.backgroundImageAspect must be null, square, or wide",
+    );
+    invariant(
+      group.backgroundImagePath === null ||
+        (typeof group.backgroundImagePath === "string" &&
+          group.backgroundImagePath.startsWith("/generated/group-backgrounds/")),
+      "group.backgroundImagePath must be null or a generated group background path",
+    );
+    invariant(
+      !group.backgroundImagePath || group.backgroundImageId,
+      "group.backgroundImagePath requires group.backgroundImageId",
+    );
+
+    if (group.backgroundImagePath) {
+      const backgroundFileName =
+        path.basename(group.backgroundImagePath) || getNormalizedBackgroundFileName(group.backgroundImageId);
+      const backgroundFilePath = path.join(filePaths.generatedGroupBackgroundsRoot, backgroundFileName);
+      invariant(fs.existsSync(backgroundFilePath), `group background file is missing for ${group.server}:${group.groupId}`);
+    }
   }
 
   const groupMap = new Map(generated.index.groups.map((group) => [`${group.server}:${group.groupId}`, group]));

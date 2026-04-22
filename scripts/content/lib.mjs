@@ -13,6 +13,13 @@ export const PORTRAIT_SOURCE_REMOTE = "https://github.com/fexli/ArknightsResourc
 export const PORTRAIT_SOURCE_BRANCH = "main";
 export const PORTRAIT_NPCS_DIRECTORY = path.join("avgs", "npcs");
 export const BACKGROUND_SOURCE_DIRECTORY = path.join("avgs", "bg");
+export const PROJECT_GROUP_BACKGROUND_SOURCE_DIRECTORY = path.join("assets", "group-backgrounds");
+export const GROUP_BACKGROUND_SOURCE_DIRECTORY = "avgs";
+export const GROUP_BACKGROUND_MAPREVIEW_DIRECTORY = "mapreview";
+export const GROUP_BACKGROUND_SOURCE_DIRECTORIES = [
+  GROUP_BACKGROUND_SOURCE_DIRECTORY,
+  GROUP_BACKGROUND_MAPREVIEW_DIRECTORY,
+];
 export const PORTRAIT_CACHE_MARKER = ".ark-str-portrait-cache.json";
 export const CANONICAL_READER_LOCALES = ["cn", "en", "jp", "kr", "tw"];
 
@@ -84,6 +91,10 @@ export function getBackgroundSourceRoot(cwd = getRepoRoot()) {
   return path.join(getPortraitSourceRoot(cwd), BACKGROUND_SOURCE_DIRECTORY);
 }
 
+export function getProjectGroupBackgroundSourceRoot(cwd = getRepoRoot()) {
+  return path.join(cwd, PROJECT_GROUP_BACKGROUND_SOURCE_DIRECTORY);
+}
+
 export function getPortraitCacheMarkerPath(cwd = getRepoRoot()) {
   return path.join(getPortraitSourceRoot(cwd), PORTRAIT_CACHE_MARKER);
 }
@@ -118,6 +129,10 @@ export function getGeneratedBackgroundsRoot(cwd = getRepoRoot()) {
   return path.join(cwd, "ark-str-web-app", "public", "generated", "backgrounds");
 }
 
+export function getGeneratedGroupBackgroundsRoot(cwd = getRepoRoot()) {
+  return path.join(cwd, "ark-str-web-app", "public", "generated", "group-backgrounds");
+}
+
 export function getNormalizedBackgroundFileName(backgroundId) {
   if (typeof backgroundId !== "string") {
     return null;
@@ -134,6 +149,11 @@ export function getNormalizedBackgroundFileName(backgroundId) {
 export function getGeneratedBackgroundPublicPath(backgroundId) {
   const normalizedFileName = getNormalizedBackgroundFileName(backgroundId);
   return normalizedFileName ? `/generated/backgrounds/${normalizedFileName}` : null;
+}
+
+export function getGeneratedGroupBackgroundPublicPath(backgroundId) {
+  const normalizedFileName = getNormalizedBackgroundFileName(backgroundId);
+  return normalizedFileName ? `/generated/group-backgrounds/${normalizedFileName}` : null;
 }
 
 export function getGeneratedAppContentRoot(cwd = getRepoRoot()) {
@@ -155,6 +175,7 @@ export function getGeneratedFilePaths(cwd = getRepoRoot()) {
   const appContentRoot = getGeneratedAppContentRoot(cwd);
   const generatedPortraitsRoot = getGeneratedPortraitsRoot(cwd);
   const generatedBackgroundsRoot = getGeneratedBackgroundsRoot(cwd);
+  const generatedGroupBackgroundsRoot = getGeneratedGroupBackgroundsRoot(cwd);
 
   return {
     contentRoot,
@@ -163,6 +184,7 @@ export function getGeneratedFilePaths(cwd = getRepoRoot()) {
     appContentRoot,
     generatedPortraitsRoot,
     generatedBackgroundsRoot,
+    generatedGroupBackgroundsRoot,
     index: path.join(contentRoot, "index.json"),
     sourceManifest: path.join(statusRoot, "source-manifest.json"),
     summaryManifest: path.join(statusRoot, "summary-manifest.json"),
@@ -215,6 +237,33 @@ function runGit(args, { cwd = getRepoRoot(), stdio = "pipe" } = {}) {
 
 function hashBuffer(buffer) {
   return crypto.createHash("sha256").update(buffer).digest("hex");
+}
+
+function readPngDimensions(buffer) {
+  if (
+    !Buffer.isBuffer(buffer) ||
+    buffer.length < 24 ||
+    buffer[0] !== 0x89 ||
+    buffer[1] !== 0x50 ||
+    buffer[2] !== 0x4e ||
+    buffer[3] !== 0x47
+  ) {
+    return null;
+  }
+
+  const width = buffer.readUInt32BE(16);
+  const height = buffer.readUInt32BE(20);
+  return width > 0 && height > 0 ? { width, height } : null;
+}
+
+function detectGroupBackgroundAspectFromBuffer(buffer, fallback = "wide") {
+  const dimensions = readPngDimensions(buffer);
+  if (!dimensions) {
+    return fallback;
+  }
+
+  const ratio = dimensions.width / dimensions.height;
+  return ratio >= 0.85 && ratio <= 1.15 ? "square" : "wide";
 }
 
 export function hashFile(filePath) {
@@ -287,7 +336,11 @@ export function ensurePortraitSourceCache(
     writeJson(cacheMarkerPath, {
       source: PORTRAIT_SOURCE_REMOTE,
       branch: PORTRAIT_SOURCE_BRANCH,
-      directories: [PORTRAIT_NPCS_DIRECTORY, BACKGROUND_SOURCE_DIRECTORY],
+      directories: [
+        PORTRAIT_NPCS_DIRECTORY,
+        BACKGROUND_SOURCE_DIRECTORY,
+        ...GROUP_BACKGROUND_SOURCE_DIRECTORIES,
+      ],
     });
   };
 
@@ -312,7 +365,11 @@ export function ensurePortraitSourceCache(
       cacheMarker?.source !== PORTRAIT_SOURCE_REMOTE ||
       cacheMarker?.branch !== PORTRAIT_SOURCE_BRANCH ||
       JSON.stringify(cacheMarker?.directories ?? []) !==
-        JSON.stringify([PORTRAIT_NPCS_DIRECTORY, BACKGROUND_SOURCE_DIRECTORY])
+        JSON.stringify([
+          PORTRAIT_NPCS_DIRECTORY,
+          BACKGROUND_SOURCE_DIRECTORY,
+          ...GROUP_BACKGROUND_SOURCE_DIRECTORIES,
+        ])
     ) {
       rebuildCache();
     }
@@ -364,6 +421,49 @@ function listTrackedBackgroundFiles(cwd = getRepoRoot()) {
     .split("\n")
     .map((line) => line.trim())
     .filter((line) => line.endsWith(".png"));
+}
+
+function listTrackedGroupBackgroundFiles(cwd = getRepoRoot()) {
+  const isDirectGroupImagePath = (relativePath) => {
+    if (!relativePath.endsWith(".png")) {
+      return false;
+    }
+
+    const normalizedParent = path.dirname(relativePath).replaceAll("\\", "/");
+    return GROUP_BACKGROUND_SOURCE_DIRECTORIES.includes(normalizedParent);
+  };
+
+  if (!hasPortraitSource(cwd)) {
+    return GROUP_BACKGROUND_SOURCE_DIRECTORIES.flatMap((sourceDirectory) => {
+      const sourceRoot = path.join(getPortraitSourceRoot(cwd), sourceDirectory);
+      if (!fs.existsSync(sourceRoot)) {
+        return [];
+      }
+
+      return fs
+        .readdirSync(sourceRoot)
+        .filter((fileName) => fileName.endsWith(".png"))
+        .map((fileName) => path.join(sourceDirectory, fileName).replaceAll("\\", "/"));
+    });
+  }
+
+  const rootAvgFiles = runGit(
+    [
+      "-C",
+      getPortraitSourceRoot(cwd),
+      "ls-tree",
+      "-r",
+      "--name-only",
+      "HEAD",
+      ...GROUP_BACKGROUND_SOURCE_DIRECTORIES,
+    ],
+    { cwd },
+  ).stdout
+    .split("\n")
+    .map((line) => line.trim())
+    .filter(isDirectGroupImagePath);
+
+  return rootAvgFiles;
 }
 
 function selectPortraitMatch(speakerId, trackedPortraitFiles) {
@@ -457,6 +557,53 @@ function selectBackgroundMatch(backgroundId, trackedBackgroundFiles) {
 
 function readTrackedBackgroundFile(relativeBackgroundPath, cwd = getRepoRoot()) {
   return readTrackedResourceFile(relativeBackgroundPath, cwd);
+}
+
+function selectGroupBackgroundMatch(backgroundId, trackedGroupBackgroundFiles) {
+  return selectBackgroundMatch(backgroundId, trackedGroupBackgroundFiles);
+}
+
+function readTrackedGroupBackgroundFile(relativeGroupBackgroundPath, cwd = getRepoRoot()) {
+  return readTrackedResourceFile(relativeGroupBackgroundPath, cwd);
+}
+
+function listProjectGroupBackgroundFiles(cwd = getRepoRoot()) {
+  const sourceRoot = getProjectGroupBackgroundSourceRoot(cwd);
+  if (!fs.existsSync(sourceRoot)) {
+    return [];
+  }
+
+  return fs
+    .readdirSync(sourceRoot)
+    .filter((fileName) => fileName.toLowerCase().endsWith(".png"))
+    .map((fileName) => path.join(PROJECT_GROUP_BACKGROUND_SOURCE_DIRECTORY, fileName).replaceAll("\\", "/"));
+}
+
+function selectProjectGroupBackgroundMatch(groupId, projectGroupBackgroundFiles) {
+  const normalizedGroupId = normalizeNonEmptyString(groupId);
+  if (!normalizedGroupId) {
+    return null;
+  }
+
+  const expectedBasename = normalizedGroupId.toLowerCase();
+  return (
+    projectGroupBackgroundFiles
+      .filter((relativePath) => path.basename(relativePath, ".png").toLowerCase() === expectedBasename)
+      .sort((left, right) => path.basename(left).localeCompare(path.basename(right)))[0] ?? null
+  );
+}
+
+function readProjectGroupBackgroundFile(relativeGroupBackgroundPath, cwd = getRepoRoot()) {
+  const sourceFilePath = path.join(cwd, relativeGroupBackgroundPath);
+  return fs.existsSync(sourceFilePath) ? fs.readFileSync(sourceFilePath) : null;
+}
+
+export function readGroupBackgroundSourceFile(groupBackgroundPath, cwd = getRepoRoot()) {
+  if (groupBackgroundPath?.sourceType === "project") {
+    return readProjectGroupBackgroundFile(groupBackgroundPath.sourcePath, cwd);
+  }
+
+  return readTrackedGroupBackgroundFile(groupBackgroundPath?.sourcePath, cwd);
 }
 
 export function getRequiredExcelPaths(serverRoot) {
@@ -706,6 +853,211 @@ function estimateReadingMinutes(visibleCharacterCount) {
   return Math.max(1, Math.ceil(visibleCharacterCount / 450));
 }
 
+function normalizeNonEmptyString(value) {
+  return typeof value === "string" && value.trim().length > 0 ? value.trim() : null;
+}
+
+function uniqueNonEmptyStrings(values) {
+  return [...new Set(values.map(normalizeNonEmptyString).filter(Boolean))];
+}
+
+function getMilestoneGroupIdsForActivity(activityId, zoneTable) {
+  if (typeof activityId !== "string" || activityId.length === 0) {
+    return [];
+  }
+
+  return Object.values(zoneTable?.zones ?? {})
+    .filter((zone) => typeof zone?.zoneID === "string" && zone.zoneID.startsWith(`${activityId}_`))
+    .map((zone) => zone.sixStarMilestoneGroupId)
+    .filter((groupId) => typeof groupId === "string" && groupId.length > 0);
+}
+
+function resolveStorySetGroupId(storySet, storyReviewTable, zoneTable) {
+  const candidates = [];
+
+  if (typeof storySet?.mainlineData?.zoneId === "string") {
+    candidates.push(storySet.mainlineData.zoneId);
+  }
+
+  if (typeof storySet?.relevantActivityId === "string") {
+    candidates.push(storySet.relevantActivityId);
+    candidates.push(...getMilestoneGroupIdsForActivity(storySet.relevantActivityId, zoneTable));
+  }
+
+  if (typeof storySet?.mainlineData?.retroId === "string") {
+    candidates.push(storySet.mainlineData.retroId);
+  }
+
+  if (typeof storySet?.ssData?.retroActivityId === "string") {
+    candidates.push(storySet.ssData.retroActivityId);
+  }
+
+  for (const candidate of [...new Set(candidates)]) {
+    if (Object.hasOwn(storyReviewTable, candidate)) {
+      return candidate;
+    }
+  }
+
+  return null;
+}
+
+function createMainlineAssetAliases(storySet) {
+  const match = /^setId_mainline_(\d+)_(\d+)$/.exec(storySet?.storySetId ?? "");
+
+  if (!match) {
+    return [];
+  }
+
+  return [`ac${match[1]}_title${match[2]}`, `ac${match[1]}_kv`];
+}
+
+function getArchivePrimaryAssetPath(groupId, storyReviewMetaTable) {
+  const components = storyReviewMetaTable?.actArchiveData?.components ?? {};
+  const pics = storyReviewMetaTable?.actArchiveResData?.pics ?? {};
+  const componentIds = uniqueNonEmptyStrings([
+    groupId,
+    typeof groupId === "string" ? groupId.replace(/side$/, "sre") : null,
+  ]);
+
+  for (const componentId of componentIds) {
+    const component = components[componentId];
+    const sortedPicIds = Object.values(component?.pic?.pics ?? {})
+      .sort((left, right) => (left.picSortId ?? 0) - (right.picSortId ?? 0))
+      .map((pic) => pic.picId);
+
+    for (const picId of sortedPicIds) {
+      const assetPath = normalizeNonEmptyString(pics[picId]?.assetPath);
+      if (assetPath) {
+        return assetPath;
+      }
+    }
+  }
+
+  return null;
+}
+
+function createGroupBackgroundCandidate(storySet, groupId, storyReviewMetaTable) {
+  const titleImageId = normalizeNonEmptyString(storySet?.titleImageId);
+  const kvImageId = normalizeNonEmptyString(storySet?.kvImageId);
+  const backgroundId = normalizeNonEmptyString(storySet?.backgroundId);
+  const decoImageId = normalizeNonEmptyString(storySet?.mainlineData?.decoImageId);
+  const mainlineAliases = createMainlineAssetAliases(storySet);
+  const isMainline = storySet?.storySetType === "MAINLINE";
+  const relevantActivityId = normalizeNonEmptyString(storySet?.relevantActivityId);
+  const archivePrimaryAssetPath = getArchivePrimaryAssetPath(groupId, storyReviewMetaTable);
+  const mapReviewCandidates = uniqueNonEmptyStrings([
+    relevantActivityId ? `${relevantActivityId}_01` : null,
+    groupId ? `${groupId}_01` : null,
+  ]);
+  const backgroundImageId = titleImageId ?? kvImageId ?? mainlineAliases[0] ?? relevantActivityId ?? groupId;
+
+  if (!backgroundImageId) {
+    return null;
+  }
+
+  if (isMainline) {
+    const sourceIds = uniqueNonEmptyStrings([
+      mainlineAliases[0],
+      titleImageId,
+      decoImageId,
+      mainlineAliases[1],
+      kvImageId,
+      backgroundId,
+      ...mapReviewCandidates,
+    ]);
+
+    return {
+      backgroundImageId,
+      backgroundImageAspect: "square",
+      sourceIds,
+    };
+  }
+
+  return {
+    backgroundImageId,
+    backgroundImageAspect: "wide",
+    sourceIds: uniqueNonEmptyStrings([
+      kvImageId,
+      titleImageId,
+      archivePrimaryAssetPath,
+      ...mapReviewCandidates,
+      backgroundId,
+    ]),
+  };
+}
+
+function buildGroupBackgroundCandidates({ stageTable, storyReviewTable, storyReviewMetaTable, zoneTable }) {
+  const groupBackgroundCandidates = new Map();
+
+  for (const storySet of Object.values(stageTable?.storylineStorySets ?? {})) {
+    const groupId = resolveStorySetGroupId(storySet, storyReviewTable, zoneTable);
+    const candidate = createGroupBackgroundCandidate(storySet, groupId, storyReviewMetaTable);
+    if (!groupId || !candidate) {
+      continue;
+    }
+
+    const candidates = groupBackgroundCandidates.get(groupId) ?? [];
+    if (!candidates.some((item) => item.backgroundImageId === candidate.backgroundImageId)) {
+      candidates.push(candidate);
+    }
+    groupBackgroundCandidates.set(groupId, candidates);
+  }
+
+  return groupBackgroundCandidates;
+}
+
+export function collectReferencedGroupBackgroundPaths(groupBackgroundCandidates, cwd = getRepoRoot()) {
+  const groupBackgroundPaths = {};
+  const projectGroupBackgroundFiles = listProjectGroupBackgroundFiles(cwd);
+  const trackedGroupBackgroundFiles = listTrackedGroupBackgroundFiles(cwd);
+
+  for (const [groupKey, candidates] of [...groupBackgroundCandidates.entries()].sort(([left], [right]) =>
+    left.localeCompare(right),
+  )) {
+    const groupId = groupKey.split(":").slice(1).join(":");
+    const projectBackgroundMatch = selectProjectGroupBackgroundMatch(groupId, projectGroupBackgroundFiles);
+    if (projectBackgroundMatch) {
+      const projectBackgroundBuffer = readProjectGroupBackgroundFile(projectBackgroundMatch, cwd);
+      const publicPath = getGeneratedGroupBackgroundPublicPath(groupId);
+      if (projectBackgroundBuffer && publicPath) {
+        groupBackgroundPaths[groupKey] = {
+          backgroundImageId: groupId,
+          backgroundImageAspect: detectGroupBackgroundAspectFromBuffer(projectBackgroundBuffer),
+          backgroundImagePath: publicPath,
+          sourcePath: projectBackgroundMatch,
+          sourceType: "project",
+        };
+        continue;
+      }
+    }
+
+    for (const candidate of candidates) {
+      const backgroundMatch = candidate.sourceIds
+        .map((sourceId) => selectGroupBackgroundMatch(sourceId, trackedGroupBackgroundFiles))
+        .find(Boolean);
+      if (!backgroundMatch) {
+        continue;
+      }
+
+      const publicPath = getGeneratedGroupBackgroundPublicPath(candidate.backgroundImageId);
+      if (!publicPath) {
+        continue;
+      }
+
+      groupBackgroundPaths[groupKey] = {
+        backgroundImageId: candidate.backgroundImageId,
+        backgroundImageAspect: candidate.backgroundImageAspect,
+        backgroundImagePath: publicPath,
+        sourcePath: backgroundMatch,
+        sourceType: "vendor",
+      };
+      break;
+    }
+  }
+
+  return groupBackgroundPaths;
+}
+
 export function buildContentArtifacts(
   cwd = getRepoRoot(),
   { ensurePortraitSource = false, remotePortraitSource = false } = {},
@@ -725,14 +1077,21 @@ export function buildContentArtifacts(
   const sourceItems = [];
   const summaryItems = [];
   const storyDetails = [];
+  const groupBackgroundCandidates = new Map();
 
   for (const { server, root } of serverRoots) {
     const requiredPaths = getRequiredExcelPaths(root);
     const storyReviewTable = readJson(requiredPaths.storyReviewTable);
-    readJson(requiredPaths.storyReviewMetaTable);
+    const storyReviewMetaTable = readJson(requiredPaths.storyReviewMetaTable);
     const stageTable = readJson(requiredPaths.stageTable);
     const storyTable = readJson(requiredPaths.storyTable);
     const zoneTable = readJson(requiredPaths.zoneTable);
+    const serverGroupBackgroundCandidates = buildGroupBackgroundCandidates({
+      stageTable,
+      storyReviewTable,
+      storyReviewMetaTable,
+      zoneTable,
+    });
 
     let groupCount = 0;
     let storyCount = 0;
@@ -835,6 +1194,7 @@ export function buildContentArtifacts(
       }
 
       if (isReaderLocale) {
+        const backgroundImageCandidates = serverGroupBackgroundCandidates.get(groupId) ?? [];
         const groupItem = {
           server,
           groupId,
@@ -843,12 +1203,16 @@ export function buildContentArtifacts(
           actType: groupRecord.actType ?? null,
           startTime: groupRecord.startTime ?? null,
           endTime: groupRecord.endTime ?? null,
+          backgroundImageId: null,
+          backgroundImageAspect: null,
+          backgroundImagePath: null,
           storyCount: unlockDatas.length,
           totalVisibleCharacterCount,
           estimatedMinutes: estimateReadingMinutes(totalVisibleCharacterCount),
         };
         groupItems.push(groupItem);
         serverGroupItems.push(groupItem);
+        groupBackgroundCandidates.set(`${server}:${groupId}`, backgroundImageCandidates);
       }
     }
 
@@ -898,13 +1262,25 @@ export function buildContentArtifacts(
   if (
     ensurePortraitSource &&
     (collectReferencedSpeakerIds(storyDetails).size > 0 ||
-      collectReferencedBackgroundIds(storyDetails).size > 0)
+      collectReferencedBackgroundIds(storyDetails).size > 0 ||
+      [...groupBackgroundCandidates.values()].some((candidates) => candidates.length > 0))
   ) {
     ensurePortraitSourceCache(cwd, { remote: remotePortraitSource });
   }
 
   const portraitPaths = collectReferencedPortraitPaths(storyDetails, cwd);
   const backgroundPaths = collectReferencedBackgroundPaths(storyDetails, cwd);
+  const groupBackgroundPaths = collectReferencedGroupBackgroundPaths(groupBackgroundCandidates, cwd);
+
+  for (const groupItem of groupItems) {
+    const groupKey = `${groupItem.server}:${groupItem.groupId}`;
+    const resolvedGroupBackground = groupBackgroundPaths[groupKey] ?? null;
+    if (resolvedGroupBackground) {
+      groupItem.backgroundImageId = resolvedGroupBackground.backgroundImageId;
+      groupItem.backgroundImageAspect = resolvedGroupBackground.backgroundImageAspect;
+      groupItem.backgroundImagePath = resolvedGroupBackground.backgroundImagePath;
+    }
+  }
 
   return {
     index: {
@@ -936,6 +1312,7 @@ export function buildContentArtifacts(
     storyDetails,
     portraitPaths,
     backgroundPaths,
+    groupBackgroundPaths,
   };
 }
 
@@ -1034,6 +1411,8 @@ export function writeGeneratedArtifacts(artifacts, cwd = getRepoRoot()) {
   ensureDirectory(filePaths.generatedPortraitsRoot);
   fs.rmSync(filePaths.generatedBackgroundsRoot, { recursive: true, force: true });
   ensureDirectory(filePaths.generatedBackgroundsRoot);
+  fs.rmSync(filePaths.generatedGroupBackgroundsRoot, { recursive: true, force: true });
+  ensureDirectory(filePaths.generatedGroupBackgroundsRoot);
   fs.rmSync(filePaths.appContentRoot, { recursive: true, force: true });
   ensureDirectory(filePaths.appContentRoot);
   writeJson(filePaths.index, artifacts.index);
@@ -1046,6 +1425,7 @@ export function writeGeneratedArtifacts(artifacts, cwd = getRepoRoot()) {
 
   const trackedPortraitFiles = listTrackedPortraitFiles(cwd);
   const trackedBackgroundFiles = listTrackedBackgroundFiles(cwd);
+  const trackedGroupBackgroundFiles = listTrackedGroupBackgroundFiles(cwd);
 
   for (const storyDetail of artifacts.storyDetails ?? []) {
     writeJson(path.join(filePaths.contentRoot, storyDetail.filePath), storyDetail.detail);
@@ -1084,6 +1464,30 @@ export function writeGeneratedArtifacts(artifacts, cwd = getRepoRoot()) {
     const targetFilePath = path.join(cwd, "ark-str-web-app", "public", publicPath.replace(/^\//, ""));
     ensureDirectory(path.dirname(targetFilePath));
     fs.writeFileSync(targetFilePath, backgroundFileBuffer);
+  }
+
+  for (const group of artifacts.index.groups ?? []) {
+    if (!group.backgroundImageId || !group.backgroundImagePath) {
+      continue;
+    }
+
+    const groupKey = `${group.server}:${group.groupId}`;
+    const resolvedGroupBackgroundPath = artifacts.groupBackgroundPaths?.[groupKey] ?? {
+      sourcePath: selectGroupBackgroundMatch(group.backgroundImageId, trackedGroupBackgroundFiles),
+      sourceType: "vendor",
+    };
+    if (!resolvedGroupBackgroundPath.sourcePath) {
+      continue;
+    }
+
+    const groupBackgroundFileBuffer = readGroupBackgroundSourceFile(resolvedGroupBackgroundPath, cwd);
+    if (!groupBackgroundFileBuffer) {
+      continue;
+    }
+
+    const targetFilePath = path.join(cwd, "ark-str-web-app", "public", group.backgroundImagePath.replace(/^\//, ""));
+    ensureDirectory(path.dirname(targetFilePath));
+    fs.writeFileSync(targetFilePath, groupBackgroundFileBuffer);
   }
 
   fs.writeFileSync(
