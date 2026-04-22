@@ -3,6 +3,7 @@ import { ReaderPageFrame } from "@/components/layout/reader-page-frame";
 import type { FloatingAppBarModel } from "@/components/layout/types";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardTitle } from "@/components/ui/card";
+import { DisclosureCard } from "@/components/ui/disclosure-card";
 import { READER_LOCALE_LABELS } from "@/features/content/config/canonical-reader-locales";
 import { getReaderGroupHref } from "@/features/content/config/reader-routes";
 import type {
@@ -20,6 +21,8 @@ type ArchiveGroup = ContentGroupEntry & {
 type ArchiveStorylineItem = ContentStorylineItem & {
   group: ArchiveGroup;
 };
+
+const OPERATOR_STORYLINE_ID = "synthetic_operator_narratives";
 
 function formatMetric(value: number) {
   return new Intl.NumberFormat("ko-KR").format(value);
@@ -46,6 +49,69 @@ export function ReaderLocaleArchive({
       }),
     }))
     .filter((storyline) => storyline.items.length > 0);
+  const mainStorylines = archiveStorylines.filter(
+    (storyline) => storyline.storylineId !== OPERATOR_STORYLINE_ID,
+  );
+  const operatorStoryline =
+    archiveStorylines.find((storyline) => storyline.storylineId === OPERATOR_STORYLINE_ID) ?? null;
+
+  const renderStorylineSummary = (storyline: (typeof archiveStorylines)[number]) => (
+    <div className="grid gap-4">
+      <div className="flex flex-wrap items-center gap-2">
+        <Badge variant={storyline.isSynthetic ? "default" : "accent"} className="w-fit">
+          {storyline.isSynthetic ? "Generated" : "Storyline"}
+        </Badge>
+        {storyline.storylineType ? <Badge variant="default">{storyline.storylineType}</Badge> : null}
+      </div>
+      <div className="space-y-2">
+        <CardTitle className="text-2xl">{storyline.title}</CardTitle>
+        <CardDescription>
+          <span className="block">
+            {storyline.primaryGroupCount} groups · {storyline.referenceCount} references
+          </span>
+          <span className="mt-1 block">
+            {formatMetric(storyline.totalVisibleCharacterCount)} chars · 약{" "}
+            {formatMetric(storyline.estimatedMinutes)}분
+          </span>
+        </CardDescription>
+      </div>
+    </div>
+  );
+
+  const renderStorylineItems = (storyline: (typeof archiveStorylines)[number]) =>
+    storyline.items.map((item) => {
+      const href = getReaderGroupHref(locale, item.group.groupId);
+
+      if (item.role === "reference") {
+        return (
+          <Link
+            key={`${storyline.storylineId}:${item.locationId ?? item.groupId}:${item.groupId}`}
+            className="block rounded-[var(--radius-sm)] border border-[var(--border)] bg-[var(--surface-muted)] px-3 py-2 text-sm font-semibold text-[var(--text-muted)] transition duration-[var(--motion-fast)] ease-out hover:border-[var(--accent)] hover:bg-[var(--accent-soft)] hover:text-[var(--text)]"
+            data-testid="storyline-reference-link"
+            href={href}
+          >
+            {item.displayTitle}
+          </Link>
+        );
+      }
+
+      return (
+        <Link
+          key={`${storyline.storylineId}:${item.groupId}`}
+          className="grid gap-3 rounded-[var(--radius-md)] border border-[var(--border)] bg-[var(--panel)] p-4 text-[var(--text)] transition duration-[var(--motion-fast)] ease-out hover:-translate-y-px hover:border-[var(--accent)] hover:shadow-[var(--shadow-sm)]"
+          data-group-id={item.groupId}
+          data-testid="storyline-primary-card"
+          href={href}
+        >
+          <span className="text-base font-semibold leading-6">{item.group.title}</span>
+          <span className="grid grid-cols-3 gap-2 text-[11px] font-semibold uppercase tracking-[0.12em] text-[var(--text-muted)]">
+            <span>{formatMetric(item.group.storyCount)} stories</span>
+            <span>{formatMetric(item.group.totalVisibleCharacterCount)} chars</span>
+            <span>약 {formatMetric(item.group.estimatedMinutes)}분</span>
+          </span>
+        </Link>
+      );
+    });
 
   return (
     <ReaderPageFrame
@@ -76,80 +142,41 @@ export function ReaderLocaleArchive({
       }
       testId="reader-shell"
     >
-      <section className="grid items-start gap-4 md:grid-cols-2 xl:grid-cols-3">
-        {archiveStorylines.map((storyline) => {
+      <section className="grid items-start gap-4 md:grid-cols-2 xl:grid-cols-3" data-testid="storyline-grid">
+        {mainStorylines.map((storyline) => {
           return (
-            <Card
+            <DisclosureCard
               key={storyline.storylineId}
-              className="overflow-hidden bg-[var(--surface)]/95"
+              contentClassName="sm:grid-cols-2 2xl:grid-cols-3"
+              contentTestId="storyline-item-grid"
               data-storyline-id={storyline.storylineId}
               data-testid="storyline-section"
+              panelTestId="storyline-panel"
+              summary={renderStorylineSummary(storyline)}
+              toggleTestId="storyline-toggle"
             >
-              <details className="group">
-                <summary className="grid cursor-pointer gap-4 p-6 marker:hidden [&::-webkit-details-marker]:hidden">
-                  <div className="flex items-start justify-between gap-3">
-                    <div className="flex flex-wrap items-center gap-2">
-                      <Badge variant={storyline.isSynthetic ? "default" : "accent"} className="w-fit">
-                        {storyline.isSynthetic ? "Generated" : "Storyline"}
-                      </Badge>
-                      {storyline.storylineType ? <Badge variant="default">{storyline.storylineType}</Badge> : null}
-                    </div>
-                    <span
-                      aria-hidden="true"
-                      className="grid size-8 shrink-0 place-items-center rounded-[var(--radius-sm)] border border-[var(--border)] bg-[var(--surface-muted)] text-lg font-semibold text-[var(--text-muted)] transition duration-[var(--motion-fast)] group-open:rotate-45"
-                    >
-                      +
-                    </span>
-                  </div>
-                  <div className="space-y-2">
-                    <CardTitle className="text-2xl">{storyline.title}</CardTitle>
-                    <CardDescription>
-                      {storyline.primaryGroupCount} groups · {storyline.referenceCount} references ·{" "}
-                      {formatMetric(storyline.totalVisibleCharacterCount)} chars · 약{" "}
-                      {formatMetric(storyline.estimatedMinutes)}분
-                    </CardDescription>
-                  </div>
-                </summary>
-                <CardContent className="grid gap-2 border-t border-[var(--border)] pt-4">
-                  {storyline.items.map((item) => {
-                    const href = getReaderGroupHref(locale, item.group.groupId);
-
-                    if (item.role === "reference") {
-                      return (
-                        <Link
-                          key={`${storyline.storylineId}:${item.locationId ?? item.groupId}:${item.groupId}`}
-                          className="block rounded-[var(--radius-sm)] border border-[var(--border)] bg-[var(--surface-muted)] px-3 py-2 text-sm font-semibold text-[var(--text-muted)] transition duration-[var(--motion-fast)] ease-out hover:border-[var(--accent)] hover:bg-[var(--accent-soft)] hover:text-[var(--text)]"
-                          data-testid="storyline-reference-link"
-                          href={href}
-                        >
-                          {item.displayTitle}
-                        </Link>
-                      );
-                    }
-
-                    return (
-                      <Link
-                        key={`${storyline.storylineId}:${item.groupId}`}
-                        className="grid gap-3 rounded-[var(--radius-md)] border border-[var(--border)] bg-[var(--panel)] p-4 text-[var(--text)] transition duration-[var(--motion-fast)] ease-out hover:-translate-y-px hover:border-[var(--accent)] hover:shadow-[var(--shadow-sm)]"
-                        data-group-id={item.groupId}
-                        data-testid="storyline-primary-card"
-                        href={href}
-                      >
-                        <span className="text-base font-semibold leading-6">{item.group.title}</span>
-                        <span className="grid grid-cols-3 gap-2 text-[11px] font-semibold uppercase tracking-[0.12em] text-[var(--text-muted)]">
-                          <span>{formatMetric(item.group.storyCount)} stories</span>
-                          <span>{formatMetric(item.group.totalVisibleCharacterCount)} chars</span>
-                          <span>약 {formatMetric(item.group.estimatedMinutes)}분</span>
-                        </span>
-                      </Link>
-                    );
-                  })}
-                </CardContent>
-              </details>
-            </Card>
+              {renderStorylineItems(storyline)}
+            </DisclosureCard>
           );
         })}
       </section>
+
+      {operatorStoryline ? (
+        <section className="mt-2" data-testid="operator-storyline-section">
+          <DisclosureCard
+            className="md:data-[state=open]:col-span-1 xl:data-[state=open]:col-span-1"
+            contentClassName="sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4"
+            contentTestId="storyline-item-grid"
+            data-storyline-id={operatorStoryline.storylineId}
+            data-testid="storyline-section"
+            panelTestId="storyline-panel"
+            summary={renderStorylineSummary(operatorStoryline)}
+            toggleTestId="storyline-toggle"
+          >
+            {renderStorylineItems(operatorStoryline)}
+          </DisclosureCard>
+        </section>
+      ) : null}
     </ReaderPageFrame>
   );
 }
