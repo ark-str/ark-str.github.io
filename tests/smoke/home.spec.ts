@@ -176,6 +176,9 @@ const koreanMainStoryline = generatedIndex.storylines.find(
 const koreanMainStorylineReference = koreanMainStoryline?.items.find(
   (item: { role: string }) => item.role === "reference",
 );
+const koreanMainStorylinePrimary = koreanMainStoryline?.items.find(
+  (item: { role: string; groupId: string }) => item.role === "primary" && item.groupId === "main_0",
+);
 
 if (!koreanMainStoryline) {
   throw new Error("The Korean reader archive must include the mainLine storyline.");
@@ -183,6 +186,10 @@ if (!koreanMainStoryline) {
 
 if (!koreanMainStorylineReference) {
   throw new Error("The Korean mainLine storyline must include at least one flow reference.");
+}
+
+if (!koreanMainStorylinePrimary) {
+  throw new Error("The Korean mainLine storyline must include main_0 as a primary group.");
 }
 
 function toAppPath(route = "") {
@@ -258,10 +265,28 @@ test.describe("reader shell smoke", () => {
     );
     await expect(mainStorylineSection).toBeVisible();
     await expect(mainStorylineSection.getByRole("heading", { name: "내일을 위하여" })).toBeVisible();
-    await expect(
-      mainStorylineSection.locator('[data-testid="storyline-primary-card"][data-group-id="main_0"]'),
-    ).toBeVisible();
-    await expect(mainStorylineSection.getByTestId("storyline-reference-link").first()).toHaveAttribute(
+    const storylineIds = await page.getByTestId("storyline-section").evaluateAll((nodes) =>
+      nodes.map((node) => node.getAttribute("data-storyline-id")),
+    );
+    expect(storylineIds.at(-1)).toBe("synthetic_operator_narratives");
+
+    const mainStorylineDetails = mainStorylineSection.locator("details");
+    await expect(mainStorylineDetails).not.toHaveAttribute("open", "");
+    const mainPrimaryRow = mainStorylineSection.locator(
+      '[data-testid="storyline-primary-card"][data-group-id="main_0"]',
+    );
+    await expect(mainPrimaryRow).toBeHidden();
+    await mainStorylineSection.locator("summary").click();
+    await expect(mainStorylineDetails).toHaveAttribute("open", "");
+    await expect(mainPrimaryRow).toBeVisible();
+    await expect(mainPrimaryRow).toHaveAttribute("href", `/ark-str/reader/kr/${koreanMainStorylinePrimary.groupId}/`);
+    await expect(mainPrimaryRow).toContainText("stories");
+    await expect(mainPrimaryRow).toContainText("chars");
+    await expect(mainPrimaryRow).not.toContainText("Open group");
+    await expect(mainStorylineSection.getByTestId("storyline-reference-list")).toHaveCount(0);
+    const firstReferenceRow = mainStorylineSection.getByTestId("storyline-reference-link").first();
+    await expect(firstReferenceRow).toHaveText(koreanMainStorylineReference.displayTitle);
+    await expect(firstReferenceRow).toHaveAttribute(
       "href",
       `/ark-str/reader/kr/${koreanMainStorylineReference.groupId}/`,
     );

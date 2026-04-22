@@ -65,8 +65,8 @@ This phase keeps the recovered reader shell and Pages deployment path stable whi
 - locale-scoped character alias observation storage under `ark-str:character-observations:v1`
 - explicit empty summary state until the summary-generation issue lands, rendered below the story body instead of in a side rail
 - a floating rounded app bar shared by home, locale archive, group, and story pages
-- locale archives group story sets by generated storyline metadata before routing into dedicated group overview pages
-- storyline archive sections treat `STORY_SET` as primary membership, `BEFORE` / `AFTER` as flow references, `NONE/NONE` review groups as `오퍼레이터 서사`, and unmatched event groups as `미분류`
+- locale archives group story sets by generated storyline metadata in initially collapsed grid cards before routing into dedicated group overview pages
+- expanded storyline archive sections render `STORY_SET` primary groups and `BEFORE` / `AFTER` flow references in the same sorted list; `NONE/NONE` review groups are `오퍼레이터 서사`, unmatched event groups are `미분류`, and `오퍼레이터 서사` is sorted last
 - generated group and story metrics for total visible characters and estimated reading time
 - story pages keep the global archive feel, but only story pages add a dynamic fixed background backdrop sourced from in-flow `background` blocks
 - story pages keep `background` blocks in the flow as scroll markers with bundled preview images shown uncropped while the backdrop updates from IntersectionObserver visibility

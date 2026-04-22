@@ -159,4 +159,6 @@ test("buildStorylineIndex adds synthetic operator and uncategorized storylines",
   assert.equal(uncategorizedLine.title, "미분류");
   assert.equal(uncategorizedLine.isSynthetic, true);
   assert.deepEqual(uncategorizedLine.items.map((item) => item.groupId), ["act_unmatched"]);
+
+  assert.equal(storylines.at(-1).storylineId, "synthetic_operator_narratives");
 });
