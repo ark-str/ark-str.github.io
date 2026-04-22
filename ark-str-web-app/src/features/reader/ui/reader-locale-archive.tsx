@@ -108,7 +108,7 @@ export function ReaderLocaleArchive({
       return (
         <Link
           key={`${storyline.storylineId}:${item.groupId}`}
-          className="group relative grid min-h-28 content-start gap-4 overflow-hidden rounded-[var(--radius-md)] border border-white/10 bg-black/80 p-5 text-white transition duration-[var(--motion-fast)] ease-out hover:-translate-y-px hover:border-[var(--accent)] hover:shadow-[var(--shadow-sm)]"
+          className="group relative grid min-h-28 content-start gap-0 overflow-hidden rounded-[var(--radius-md)] border border-white/10 bg-black/80 p-5 text-white transition duration-[var(--motion-fast)] ease-out hover:-translate-y-px hover:border-[var(--accent)] hover:shadow-[var(--shadow-sm)]"
           data-group-id={item.groupId}
           data-testid="storyline-primary-card"
           href={href}
@@ -130,22 +130,22 @@ export function ReaderLocaleArchive({
             </>
           ) : null}
           <span
-            className="relative z-10 text-base font-semibold leading-6 text-white drop-shadow-md"
+            className="relative z-10 mb-4 text-base font-semibold leading-6 text-white drop-shadow-md"
             data-testid="storyline-primary-card-title"
           >
             {item.group.title}
           </span>
           <span
-            className="relative z-10 flex flex-wrap gap-x-2 gap-y-1.5 text-[11px] font-semibold uppercase tracking-[0.12em] text-white/80"
+            className="relative z-10 flex flex-wrap gap-1.5 text-[10px] font-semibold uppercase tracking-[0.06em] text-white/80"
             data-testid="storyline-primary-card-metrics"
           >
-            <span className="inline-flex h-7 items-center rounded-full border border-white/15 bg-black/35 px-3">
+            <span className="inline-flex h-6 items-center rounded-full border border-white/15 bg-black/35 px-2.5">
               {formatMetric(item.group.storyCount)} stories
             </span>
-            <span className="inline-flex h-7 items-center rounded-full border border-white/15 bg-black/35 px-3">
+            <span className="inline-flex h-6 items-center rounded-full border border-white/15 bg-black/35 px-2.5">
               {formatMetric(item.group.totalVisibleCharacterCount)} chars
             </span>
-            <span className="inline-flex h-7 items-center rounded-full border border-white/15 bg-black/35 px-3">
+            <span className="inline-flex h-6 items-center rounded-full border border-white/15 bg-black/35 px-2.5">
               약 {formatMetric(item.group.estimatedMinutes)}분
             </span>
           </span>
