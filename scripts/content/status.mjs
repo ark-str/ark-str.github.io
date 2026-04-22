@@ -38,10 +38,10 @@ const status = {
         storyDetailCount: generated.index.stories.filter((story) => story.bodyAvailable).length,
         summaryMissingCount: generated.summaryManifest.items.filter((item) => item.status === "missing").length,
         backgroundCount: fs.existsSync(generatedPaths.generatedBackgroundsRoot)
-          ? fs.readdirSync(generatedPaths.generatedBackgroundsRoot).filter((fileName) => fileName.endsWith(".png")).length
+          ? fs.readdirSync(generatedPaths.generatedBackgroundsRoot).filter((fileName) => fileName.endsWith(".webp")).length
           : 0,
         portraitCount: fs.existsSync(generatedPaths.generatedPortraitsRoot)
-          ? fs.readdirSync(generatedPaths.generatedPortraitsRoot).filter((fileName) => fileName.endsWith(".png")).length
+          ? fs.readdirSync(generatedPaths.generatedPortraitsRoot).filter((fileName) => fileName.endsWith(".webp")).length
           : 0,
         submoduleSha: generated.index.vendor.submoduleSha,
       }

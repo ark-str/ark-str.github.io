@@ -1,11 +1,21 @@
+"use client";
+
 import Link from "next/link";
 import { ReaderPageFrame } from "@/components/layout/reader-page-frame";
 import type { FloatingAppBarModel } from "@/components/layout/types";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardTitle } from "@/components/ui/card";
 import { DisclosureCard } from "@/components/ui/disclosure-card";
-import { READER_LOCALE_LABELS } from "@/features/content/config/canonical-reader-locales";
-import { getReaderGroupHref } from "@/features/content/config/reader-routes";
+import {
+  CANONICAL_READER_LOCALES,
+  READER_LOCALE_LABELS,
+} from "@/features/content/config/canonical-reader-locales";
+import { getReaderGroupHref, getReaderLocaleHref } from "@/features/content/config/reader-routes";
+import {
+  getGroupStories,
+  getLocaleGroups,
+  getLocaleStorylines,
+} from "@/features/content/config/content-index-selectors";
 import type {
   ContentGroupEntry,
   ContentStoryIndexEntry,
@@ -13,6 +23,7 @@ import type {
   ContentStorylineItem,
   ReaderLocale,
 } from "@/features/content/types";
+import { resolveRuntimePublicPath, useContentIndex } from "@/features/content/runtime/use-public-content";
 
 type ArchiveGroup = ContentGroupEntry & {
   backgroundImageHref: string | null;
@@ -38,17 +49,32 @@ function getArchiveCardBackgroundClassName(backgroundImageAspect: ContentGroupEn
     : `${sharedClassName} scale-105 object-cover opacity-70 blur-[1px]`;
 }
 
-export function ReaderLocaleArchive({
-  appBar,
-  groups,
-  locale,
-  storylines,
-}: {
-  appBar: FloatingAppBarModel;
-  locale: ReaderLocale;
-  groups: ArchiveGroup[];
-  storylines: ContentStorylineEntry[];
-}) {
+function createArchiveAppBar(locale: ReaderLocale): FloatingAppBarModel {
+  return {
+    currentLocale: locale,
+    groupCrumb: null,
+    localeOptions: CANONICAL_READER_LOCALES.map((targetLocale) => ({
+      href: getReaderLocaleHref(targetLocale),
+      label: READER_LOCALE_LABELS[targetLocale].label,
+      locale: targetLocale,
+    })),
+    storyRootHref: getReaderLocaleHref(locale),
+    storySelect: null,
+  };
+}
+
+export function ReaderLocaleArchive({ locale }: { locale: ReaderLocale }) {
+  const indexState = useContentIndex();
+  const appBar = createArchiveAppBar(locale);
+  const index = indexState.data;
+  const groups: ArchiveGroup[] = index
+    ? getLocaleGroups(index, locale).map((group) => ({
+        ...group,
+        backgroundImageHref: resolveRuntimePublicPath(group.backgroundImagePath),
+        stories: getGroupStories(index, locale, group.groupId),
+      }))
+    : [];
+  const storylines: ContentStorylineEntry[] = index ? getLocaleStorylines(index, locale) : [];
   const groupsById = new Map(groups.map((group) => [group.groupId, group]));
   const archiveStorylines = storylines
     .map((storyline) => ({
@@ -214,6 +240,22 @@ export function ReaderLocaleArchive({
             {renderStorylineItems(operatorStoryline)}
           </DisclosureCard>
         </section>
+      ) : null}
+
+      {indexState.status === "loading" || indexState.status === "idle" ? (
+        <Card className="bg-[var(--surface)]/90">
+          <CardContent className="px-5 py-6 text-sm leading-7 text-[var(--text-muted)]">
+            generated content index를 불러오는 중입니다.
+          </CardContent>
+        </Card>
+      ) : null}
+
+      {indexState.status === "error" ? (
+        <Card className="border-[var(--danger-border)] bg-[var(--surface)]/90">
+          <CardContent className="px-5 py-6 text-sm leading-7 text-[var(--text-muted)]">
+            generated content index를 불러오지 못했습니다: {indexState.error.message}
+          </CardContent>
+        </Card>
       ) : null}
     </ReaderPageFrame>
   );

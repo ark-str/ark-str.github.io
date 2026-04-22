@@ -20,6 +20,12 @@ const generatedBackgrounds = JSON.parse(
     "utf8",
   ),
 );
+const generatedAssets = JSON.parse(
+  fs.readFileSync(
+    path.join(process.cwd(), "ark-str-web-app", "public", "generated", "content", "assets.json"),
+    "utf8",
+  ),
+);
 
 function readStoryDetail(story: { bodyPath?: string | null }) {
   if (!story.bodyPath) {
@@ -49,16 +55,12 @@ function readStoryDetail(story: { bodyPath?: string | null }) {
 }
 
 function hasBundledPortrait(speakerId: string) {
-  return fs.existsSync(
-    path.join(
-      process.cwd(),
-      "ark-str-web-app",
-      "public",
-      "generated",
-      "portraits",
-      "speakers",
-      `${speakerId}.png`,
-    ),
+  const portraitPath = generatedAssets.portraits?.[speakerId];
+  return (
+    typeof portraitPath === "string" &&
+    fs.existsSync(
+      path.join(process.cwd(), "ark-str-web-app", "public", portraitPath.replace(/^\/+/, "")),
+    )
   );
 }
 

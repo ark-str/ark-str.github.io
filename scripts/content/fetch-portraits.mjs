@@ -6,7 +6,7 @@ const artifacts = buildContentArtifacts(process.cwd(), {
   remotePortraitSource: useRemote,
 });
 
-writeGeneratedArtifacts(artifacts, process.cwd());
+await writeGeneratedArtifacts(artifacts, process.cwd());
 
 console.log(
   JSON.stringify(

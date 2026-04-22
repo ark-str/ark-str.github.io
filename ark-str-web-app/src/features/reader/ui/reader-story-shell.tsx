@@ -10,9 +10,33 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { persistCharacterObservations } from "@/features/characters/runtime/persist-character-observations";
-import { getReaderStoryHref } from "@/features/content/config/reader-routes";
+import {
+  CANONICAL_READER_LOCALES,
+  READER_LOCALE_LABELS,
+} from "@/features/content/config/canonical-reader-locales";
+import {
+  buildLocaleSwitchHref,
+  findGroupEntry,
+  findStoryEntry,
+  getReaderGroupHref,
+  getReaderLocaleHref,
+  getReaderStoryHref,
+} from "@/features/content/config/reader-routes";
+import {
+  findSummaryEntry,
+  getGroupStories,
+} from "@/features/content/config/content-index-selectors";
+import {
+  resolveRuntimePublicPath,
+  useAssetManifest,
+  useContentIndex,
+  useStoryDetail,
+  useSummaryManifest,
+} from "@/features/content/runtime/use-public-content";
 import type {
+  AssetManifest,
   ContentGroupEntry,
+  ContentIndex,
   ContentStoryIndexEntry,
   ReaderLocale,
   StoryBlock,
@@ -122,6 +146,137 @@ function findFirstBackgroundId(blocks: StoryBlock[]): string | null {
   }
 
   return null;
+}
+
+function collectSpeakerIds(blocks: StoryBlock[], speakerIds: Set<string>) {
+  for (const block of blocks) {
+    if (block.type === "dialogue") {
+      if (block.speakerId) {
+        speakerIds.add(block.speakerId);
+      }
+      continue;
+    }
+
+    if (block.type === "choice") {
+      for (const option of block.options) {
+        collectSpeakerIds(option.blocks, speakerIds);
+      }
+    }
+  }
+}
+
+function collectBackgroundIds(blocks: StoryBlock[], backgroundIds: Set<string>) {
+  for (const block of blocks) {
+    if (block.type === "background") {
+      backgroundIds.add(block.backgroundId);
+      continue;
+    }
+
+    if (block.type === "choice") {
+      for (const option of block.options) {
+        collectBackgroundIds(option.blocks, backgroundIds);
+      }
+    }
+  }
+}
+
+function createPathLookup(ids: Set<string>, manifestLookup: Record<string, string>) {
+  return Object.fromEntries(
+    [...ids].sort((left, right) => left.localeCompare(right)).flatMap((id) => {
+      const resolvedPath = resolveRuntimePublicPath(manifestLookup[id] ?? null);
+      return resolvedPath ? [[id, resolvedPath]] : [];
+    }),
+  );
+}
+
+function createStoryPortraitPaths(detail: StoryDetail | null, assetManifest: AssetManifest | null) {
+  if (!detail || !assetManifest) {
+    return {};
+  }
+
+  const speakerIds = new Set<string>();
+  collectSpeakerIds(detail.blocks, speakerIds);
+  return createPathLookup(speakerIds, assetManifest.portraits);
+}
+
+function createStoryBackgroundPaths(detail: StoryDetail | null, assetManifest: AssetManifest | null) {
+  if (!detail || !assetManifest) {
+    return {};
+  }
+
+  const backgroundIds = new Set<string>();
+  collectBackgroundIds(detail.blocks, backgroundIds);
+  return createPathLookup(backgroundIds, assetManifest.backgrounds);
+}
+
+function createStoryAppBar({
+  group,
+  groupId,
+  index,
+  locale,
+  siblingStories,
+  story,
+  storyId,
+}: {
+  group: ContentGroupEntry | null;
+  groupId: string;
+  index: ContentIndex | null;
+  locale: ReaderLocale;
+  siblingStories: ContentStoryIndexEntry[];
+  story: ContentStoryIndexEntry | null;
+  storyId: string;
+}): FloatingAppBarModel {
+  return {
+    currentLocale: locale,
+    groupCrumb: {
+      href: group ? getReaderGroupHref(locale, group.groupId) : null,
+      label: group?.title ?? groupId,
+    },
+    localeOptions: CANONICAL_READER_LOCALES.map((targetLocale) => ({
+      href: index
+        ? buildLocaleSwitchHref(index, targetLocale, groupId, storyId)
+        : getReaderLocaleHref(targetLocale),
+      label: READER_LOCALE_LABELS[targetLocale].label,
+      locale: targetLocale,
+    })),
+    storyRootHref: getReaderLocaleHref(locale),
+    storySelect: story
+      ? {
+          currentStoryId: story.storyId,
+          options: siblingStories.map((entry) => ({
+            href: getReaderStoryHref(locale, entry.groupId, entry.storyId),
+            label: entry.title,
+            storyId: entry.storyId,
+          })),
+        }
+      : null,
+  };
+}
+
+function ReaderStoryStatus({
+  appBar,
+  message,
+}: {
+  appBar: FloatingAppBarModel;
+  message: string;
+}) {
+  return (
+    <ReaderPageFrame
+      appBar={appBar}
+      header={
+        <section className="relative z-10">
+          <Card className="bg-[var(--surface)]/90">
+            <CardContent className="px-5 py-6 text-sm leading-7 text-[var(--text-muted)]">
+              {message}
+            </CardContent>
+          </Card>
+        </section>
+      }
+      testId="reader-shell"
+    >
+      <span />
+    </ReaderPageFrame>
+  );
 }
 
 function StoryBackdrop({ backgroundPath }: { backgroundPath: string | null }) {
@@ -401,45 +556,86 @@ function StoryBodyRenderer({
 }
 
 export function ReaderStoryShell({
-  appBar,
-  backgroundPaths,
-  detail,
-  group,
+  groupId,
   locale,
-  portraitPaths,
-  story,
-  summaryAvailable,
-  siblingStories,
+  storyId,
 }: {
-  appBar: FloatingAppBarModel;
+  groupId: string;
   locale: ReaderLocale;
-  group: ContentGroupEntry;
-  story: ContentStoryIndexEntry;
-  detail: StoryDetail | null;
-  backgroundPaths: Record<string, string>;
-  portraitPaths: Record<string, string>;
-  siblingStories: ContentStoryIndexEntry[];
-  summaryAvailable: boolean;
+  storyId: string;
 }) {
-  const isBodyAvailable = story.bodyAvailable && detail;
+  const indexState = useContentIndex();
+  const summaryState = useSummaryManifest();
+  const assetState = useAssetManifest();
+  const index = indexState.data;
+  const group = index ? findGroupEntry(index, locale, groupId) : null;
+  const story = index ? findStoryEntry(index, locale, groupId, storyId) : null;
+  const siblingStories = index ? getGroupStories(index, locale, groupId) : [];
+  const storyBodyPath = story?.bodyAvailable ? story.bodyPath : null;
+  const detailState = useStoryDetail(storyBodyPath);
+  const detail = detailState.data;
+  const appBar = createStoryAppBar({
+    group,
+    groupId,
+    index,
+    locale,
+    siblingStories,
+    story,
+    storyId,
+  });
+  const portraitPaths = useMemo(
+    () => createStoryPortraitPaths(detail, assetState.data),
+    [assetState.data, detail],
+  );
+  const backgroundPaths = useMemo(
+    () => createStoryBackgroundPaths(detail, assetState.data),
+    [assetState.data, detail],
+  );
+  const summaryAvailable =
+    findSummaryEntry(summaryState.data, locale, storyId)?.status === "ready";
+
+  const isIndexLoading = indexState.status === "loading" || indexState.status === "idle";
+  const isBodyLoading =
+    Boolean(story?.bodyAvailable) &&
+    (detailState.status === "loading" || detailState.status === "idle" || assetState.status === "loading" || assetState.status === "idle");
+  const isBodyAvailable = Boolean(story?.bodyAvailable && detail);
   const initialBackgroundId = useMemo(() => (detail ? findFirstBackgroundId(detail.blocks) : null), [detail]);
   const [activeBackground, setActiveBackground] = useState<{
     storyId: string;
     backgroundId: string | null;
   }>({
-    storyId: story.storyId,
+    storyId,
     backgroundId: initialBackgroundId,
   });
   const activeBackgroundId =
-    activeBackground.storyId === story.storyId ? activeBackground.backgroundId : initialBackgroundId;
+    activeBackground.storyId === storyId
+      ? activeBackground.backgroundId ?? initialBackgroundId
+      : initialBackgroundId;
 
   const handleBackgroundVisible = useCallback((backgroundId: string) => {
     setActiveBackground({
-      storyId: story.storyId,
+      storyId,
       backgroundId,
     });
-  }, [story.storyId]);
+  }, [storyId]);
   const activeBackgroundPath = activeBackgroundId ? (backgroundPaths[activeBackgroundId] ?? null) : null;
+
+  if (isIndexLoading) {
+    return <ReaderStoryStatus appBar={appBar} message="generated content index를 불러오는 중입니다." />;
+  }
+
+  if (indexState.status === "error") {
+    return (
+      <ReaderStoryStatus
+        appBar={appBar}
+        message={`generated content index를 불러오지 못했습니다: ${indexState.error.message}`}
+      />
+    );
+  }
+
+  if (!index || !group || !story) {
+    return <ReaderStoryStatus appBar={appBar} message="요청한 story를 찾을 수 없습니다." />;
+  }
 
   return (
     <ReaderPageFrame
@@ -517,7 +713,7 @@ export function ReaderStoryShell({
           </aside>
 
           <section className="grid gap-4">
-            {isBodyAvailable ? (
+            {isBodyAvailable && detail ? (
               <StoryBodyRenderer
                 activeBackgroundId={activeBackgroundId}
                 backgroundPaths={backgroundPaths}
@@ -525,6 +721,24 @@ export function ReaderStoryShell({
                 onBackgroundVisible={handleBackgroundVisible}
                 portraitPaths={portraitPaths}
               />
+            ) : isBodyLoading ? (
+              <Card className="bg-[var(--surface)]/90">
+                <CardContent className="pt-6 text-sm leading-7 text-[var(--text-muted)]">
+                  generated story body와 asset manifest를 불러오는 중입니다.
+                </CardContent>
+              </Card>
+            ) : detailState.status === "error" ? (
+              <Card className="bg-[var(--surface)]/90">
+                <CardContent className="pt-6 text-sm leading-7 text-[var(--text-muted)]">
+                  generated story body를 불러오지 못했습니다: {detailState.error.message}
+                </CardContent>
+              </Card>
+            ) : assetState.status === "error" ? (
+              <Card className="bg-[var(--surface)]/90">
+                <CardContent className="pt-6 text-sm leading-7 text-[var(--text-muted)]">
+                  generated asset manifest를 불러오지 못했습니다: {assetState.error.message}
+                </CardContent>
+              </Card>
             ) : (
               <Card className="bg-[var(--surface)]/90">
                 <CardContent className="pt-6 text-sm leading-7 text-[var(--text-muted)]">

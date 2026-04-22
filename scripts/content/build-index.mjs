@@ -1,7 +1,7 @@
 import { buildContentArtifacts, writeGeneratedArtifacts } from "./lib.mjs";
 
 const artifacts = buildContentArtifacts(process.cwd());
-writeGeneratedArtifacts(artifacts, process.cwd());
+await writeGeneratedArtifacts(artifacts, process.cwd());
 
 console.log(
   JSON.stringify(

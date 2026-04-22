@@ -2,6 +2,7 @@ import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
+import sharp from "sharp";
 import { collectObservedOperators, parseStoryText } from "./story-parser.mjs";
 import { buildStorylineIndex } from "./storyline-index.mjs";
 
@@ -22,6 +23,9 @@ export const GROUP_BACKGROUND_SOURCE_DIRECTORIES = [
 ];
 export const PORTRAIT_CACHE_MARKER = ".ark-str-portrait-cache.json";
 export const CANONICAL_READER_LOCALES = ["cn", "en", "jp", "kr", "tw"];
+const GENERATED_IMAGE_EXTENSION = ".webp";
+const PORTRAIT_IMAGE_OPTIONS = { maxWidth: 384, quality: 78 };
+const BACKGROUND_IMAGE_OPTIONS = { maxWidth: 1024, quality: 76 };
 
 export function getRepoRoot() {
   return process.cwd();
@@ -117,7 +121,7 @@ export function getNormalizedPortraitFileName(speakerId) {
     return null;
   }
 
-  return `${normalizedSpeakerId.toLowerCase()}.png`;
+  return `${normalizedSpeakerId.toLowerCase()}${GENERATED_IMAGE_EXTENSION}`;
 }
 
 export function getGeneratedPortraitPublicPath(speakerId) {
@@ -143,7 +147,7 @@ export function getNormalizedBackgroundFileName(backgroundId) {
     return null;
   }
 
-  return `${normalizedBackgroundId.toLowerCase()}.png`;
+  return `${normalizedBackgroundId.toLowerCase()}${GENERATED_IMAGE_EXTENSION}`;
 }
 
 export function getGeneratedBackgroundPublicPath(backgroundId) {
@@ -192,6 +196,8 @@ export function getGeneratedFilePaths(cwd = getRepoRoot()) {
     appSummaryManifest: path.join(appContentRoot, "summary-manifest.json"),
     appPortraitManifest: path.join(appContentRoot, "portraits.json"),
     appBackgroundManifest: path.join(appContentRoot, "backgrounds.json"),
+    assetManifest: path.join(contentRoot, "assets.json"),
+    appAssetManifest: path.join(appContentRoot, "assets.json"),
     appRegistry: path.join(appContentRoot, "registry.js"),
   };
 }
@@ -206,7 +212,7 @@ export function readJson(filePath) {
 
 export function writeJson(filePath, value) {
   ensureDirectory(path.dirname(filePath));
-  fs.writeFileSync(filePath, `${JSON.stringify(value, null, 2)}\n`);
+  fs.writeFileSync(filePath, `${JSON.stringify(value)}\n`);
 }
 
 export function hasArknightsDataSource(cwd = getRepoRoot()) {
@@ -606,6 +612,27 @@ export function readGroupBackgroundSourceFile(groupBackgroundPath, cwd = getRepo
   return readTrackedGroupBackgroundFile(groupBackgroundPath?.sourcePath, cwd);
 }
 
+async function optimizeGeneratedImageBuffer(imageBuffer, options) {
+  return sharp(imageBuffer, { limitInputPixels: false })
+    .rotate()
+    .resize({
+      width: options.maxWidth,
+      withoutEnlargement: true,
+    })
+    .webp({
+      effort: 4,
+      quality: options.quality,
+      alphaQuality: Math.min(90, options.quality + 8),
+    })
+    .toBuffer();
+}
+
+async function writeOptimizedGeneratedImage(targetFilePath, imageBuffer, options) {
+  ensureDirectory(path.dirname(targetFilePath));
+  const optimizedBuffer = await optimizeGeneratedImageBuffer(imageBuffer, options);
+  fs.writeFileSync(targetFilePath, optimizedBuffer);
+}
+
 export function getRequiredExcelPaths(serverRoot) {
   const excelRoot = path.join(serverRoot, "gamedata", "excel");
 
@@ -793,6 +820,10 @@ function collectReferencedPortraitPaths(storyDetails, cwd = getRepoRoot()) {
       continue;
     }
 
+    if (!readTrackedPortraitFile(portraitMatch, cwd)) {
+      continue;
+    }
+
     const publicPath = getGeneratedPortraitPublicPath(speakerId);
     if (!publicPath) {
       continue;
@@ -812,6 +843,10 @@ function collectReferencedBackgroundPaths(storyDetails, cwd = getRepoRoot()) {
   for (const backgroundId of [...backgroundIds].filter(Boolean).sort((left, right) => left.localeCompare(right))) {
     const backgroundMatch = selectBackgroundMatch(backgroundId, trackedBackgroundFiles);
     if (!backgroundMatch) {
+      continue;
+    }
+
+    if (!readTrackedBackgroundFile(backgroundMatch, cwd)) {
       continue;
     }
 
@@ -1036,6 +1071,10 @@ export function collectReferencedGroupBackgroundPaths(groupBackgroundCandidates,
         .map((sourceId) => selectGroupBackgroundMatch(sourceId, trackedGroupBackgroundFiles))
         .find(Boolean);
       if (!backgroundMatch) {
+        continue;
+      }
+
+      if (!readTrackedGroupBackgroundFile(backgroundMatch, cwd)) {
         continue;
       }
 
@@ -1401,13 +1440,25 @@ function createGeneratedRegistrySource(stories, portraitPaths, backgroundPaths) 
   ].join("\n");
 }
 
-export function writeGeneratedArtifacts(artifacts, cwd = getRepoRoot()) {
+function createAssetManifest(artifacts) {
+  return {
+    portraits: artifacts.portraitPaths ?? {},
+    backgrounds: artifacts.backgroundPaths ?? {},
+    groupBackgrounds: Object.fromEntries(
+      (artifacts.index.groups ?? [])
+        .filter((group) => group.backgroundImagePath)
+        .map((group) => [`${group.server}:${group.groupId}`, group.backgroundImagePath]),
+    ),
+  };
+}
+
+export async function writeGeneratedArtifacts(artifacts, cwd = getRepoRoot()) {
   const filePaths = getGeneratedFilePaths(cwd);
   ensureDirectory(filePaths.contentRoot);
   ensureDirectory(filePaths.statusRoot);
   fs.rmSync(filePaths.storiesRoot, { recursive: true, force: true });
   ensureDirectory(filePaths.storiesRoot);
-  fs.rmSync(filePaths.generatedPortraitsRoot, { recursive: true, force: true });
+  fs.rmSync(path.dirname(filePaths.generatedPortraitsRoot), { recursive: true, force: true });
   ensureDirectory(filePaths.generatedPortraitsRoot);
   fs.rmSync(filePaths.generatedBackgroundsRoot, { recursive: true, force: true });
   ensureDirectory(filePaths.generatedBackgroundsRoot);
@@ -1422,6 +1473,9 @@ export function writeGeneratedArtifacts(artifacts, cwd = getRepoRoot()) {
   writeJson(filePaths.appSummaryManifest, artifacts.summaryManifest);
   writeJson(filePaths.appBackgroundManifest, artifacts.backgroundPaths ?? {});
   writeJson(filePaths.appPortraitManifest, artifacts.portraitPaths ?? {});
+  const assetManifest = createAssetManifest(artifacts);
+  writeJson(filePaths.assetManifest, assetManifest);
+  writeJson(filePaths.appAssetManifest, assetManifest);
 
   const trackedPortraitFiles = listTrackedPortraitFiles(cwd);
   const trackedBackgroundFiles = listTrackedBackgroundFiles(cwd);
@@ -1446,8 +1500,7 @@ export function writeGeneratedArtifacts(artifacts, cwd = getRepoRoot()) {
     }
 
     const targetFilePath = path.join(cwd, "ark-str-web-app", "public", publicPath.replace(/^\//, ""));
-    ensureDirectory(path.dirname(targetFilePath));
-    fs.writeFileSync(targetFilePath, portraitFileBuffer);
+    await writeOptimizedGeneratedImage(targetFilePath, portraitFileBuffer, PORTRAIT_IMAGE_OPTIONS);
   }
 
   for (const [backgroundId, publicPath] of Object.entries(artifacts.backgroundPaths ?? {})) {
@@ -1462,8 +1515,7 @@ export function writeGeneratedArtifacts(artifacts, cwd = getRepoRoot()) {
     }
 
     const targetFilePath = path.join(cwd, "ark-str-web-app", "public", publicPath.replace(/^\//, ""));
-    ensureDirectory(path.dirname(targetFilePath));
-    fs.writeFileSync(targetFilePath, backgroundFileBuffer);
+    await writeOptimizedGeneratedImage(targetFilePath, backgroundFileBuffer, BACKGROUND_IMAGE_OPTIONS);
   }
 
   for (const group of artifacts.index.groups ?? []) {
@@ -1486,8 +1538,7 @@ export function writeGeneratedArtifacts(artifacts, cwd = getRepoRoot()) {
     }
 
     const targetFilePath = path.join(cwd, "ark-str-web-app", "public", group.backgroundImagePath.replace(/^\//, ""));
-    ensureDirectory(path.dirname(targetFilePath));
-    fs.writeFileSync(targetFilePath, groupBackgroundFileBuffer);
+    await writeOptimizedGeneratedImage(targetFilePath, groupBackgroundFileBuffer, BACKGROUND_IMAGE_OPTIONS);
   }
 
   fs.writeFileSync(

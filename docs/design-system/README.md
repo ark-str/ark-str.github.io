@@ -27,8 +27,8 @@ This v1 does not include:
 - typography: sans-first, with display and body tokens kept in the same modern family
 - surface language: restrained radii and compact chrome instead of pill-heavy cards
 - archive surfaces: locale archive pages use animated collapsed storyline grid cards that keep their grid cell when expanded, simple regular storyline item lists, thinner flow-reference links, generated group image washes, and a separate bottom operator narrative grid section
-- group imagery: manually curated `assets/group-backgrounds/<groupId>.png` files override inferred assets; MAINLINE images are treated as square contained title art, while ACTIVITY images are treated as wide atmospheric backgrounds
-- story surfaces: dynamic story backdrops switch behind the content from intersecting background blocks while in-flow background cards keep uncropped image previews and dialogue cards prioritize body-first reading layouts
+- group imagery: manually curated `assets/group-backgrounds/<groupId>.png` files override inferred sources; generated output is optimized WebP, MAINLINE images are treated as square contained title art, and ACTIVITY images are treated as wide atmospheric backgrounds
+- story surfaces: dynamic story backdrops switch behind the content from intersecting background blocks while in-flow background cards keep uncropped optimized WebP previews and dialogue cards prioritize body-first reading layouts
 - implementation base: shadcn-style shared primitives customized for this project
 - theme strategy: light and dark from the start
 - runtime rule: no remote fonts, assets, or scripts

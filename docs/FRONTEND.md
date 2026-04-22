@@ -35,6 +35,8 @@ The app should feel editorial, deliberate, and product-specific rather than like
 - dialogue cards prioritize a vertical reading layout with portrait and speaker meta in the header and the body text spanning the full card width
 - a generated-content readiness panel and explicit summary empty state sourced from bundled JSON
 - gh-pages-safe reader routes rendered from exported static files under the `/ark-str/` base path
+- reader route shells should avoid embedding full story payloads in server-rendered props; archive, group, story detail, and asset lookups load from bundled generated JSON at runtime
+- generated story media should use local optimized WebP assets referenced through the generated asset manifest, not direct vendor paths
 - no framework starter copy, remote links, or vendor branding
 - reader shell must use shared UI primitives instead of one-off styled markup
 

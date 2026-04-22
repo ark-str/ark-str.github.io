@@ -8,7 +8,8 @@ Every meaningful change should pass:
 2. `npm run content:check`
 3. `npm run harness:test`
 4. `npm run app:verify`
-5. `npm run smoke`
+5. `npm run export:size-check`
+6. `npm run smoke`
 
 `npm run verify` runs the full root sequence.
 
@@ -16,6 +17,7 @@ Every meaningful change should pass:
 
 - The app must build without runtime network access after dependencies are installed.
 - The app must export successfully for the gh-pages `/ark-str/` base path.
+- The exported artifact must stay under the committed size budget: `ark-str-web-app/.next-export` below 2 GiB and `.next-export/generated` below 750 MiB.
 - The repository must provide a manual GitHub Pages deployment workflow that rebuilds and verifies before publishing `ark-str-web-app/.next-export`.
 - The app must keep dev-cache and export-cache output isolated so `npm run verify` does not slow the next `npm run dev`.
 - The app must render without requiring a server-side data source.
