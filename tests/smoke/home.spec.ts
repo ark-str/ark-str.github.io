@@ -328,6 +328,34 @@ test.describe("reader shell smoke", () => {
       "rgb(255, 255, 255)",
     );
     await expect(mainPrimaryRow.getByTestId("storyline-primary-card-metrics").locator("span")).toHaveCount(3);
+    const archivePrimaryCardSpacing = await mainPrimaryRow.evaluate((card) => {
+      const title = card.querySelector('[data-testid="storyline-primary-card-title"]');
+      const metrics = card.querySelector('[data-testid="storyline-primary-card-metrics"]');
+      const firstBadge = metrics?.querySelector("span");
+
+      if (!title || !metrics || !firstBadge) {
+        throw new Error("Archive primary card spacing targets were not found.");
+      }
+
+      const titleStyles = window.getComputedStyle(title);
+      const metricsStyles = window.getComputedStyle(metrics);
+      const badgeStyles = window.getComputedStyle(firstBadge);
+
+      return {
+        badgeHeight: badgeStyles.height,
+        badgePaddingLeft: badgeStyles.paddingLeft,
+        columnGap: metricsStyles.columnGap,
+        rowGap: metricsStyles.rowGap,
+        titleMarginBottom: titleStyles.marginBottom,
+      };
+    });
+    expect(archivePrimaryCardSpacing).toEqual({
+      badgeHeight: "24px",
+      badgePaddingLeft: "10px",
+      columnGap: "6px",
+      rowGap: "6px",
+      titleMarginBottom: "16px",
+    });
     await expect(mainPrimaryRow).toContainText("stories");
     await expect(mainPrimaryRow).toContainText("chars");
     await expect(mainPrimaryRow).not.toContainText("Open group");
