@@ -1,6 +1,6 @@
 # Pages Artifact Optimization
 
-Status: active
+Status: completed
 Issue: #82
 Branch: `issue-82-pages-artifact-optimization`
 
@@ -40,3 +40,10 @@ This iteration has one implementation issue and no child issue dependencies. If 
 - Milestone 1: pipeline and reader runtime structure implemented.
 - Milestone 2: generated content refreshed and artifact size measured.
 - Milestone 3: docs, final verification, PR review, and merge.
+
+## Outcome
+
+- Generated images are optimized as WebP and indexed through `public/generated/content/assets.json`.
+- Static route pages no longer embed story body payloads; reader screens load the generated index, manifests, and current story body from bundled public JSON.
+- Root verification now enforces export and generated-asset size budgets.
+- PR review follow-up fixed asset-manifest failure surfacing and stale optimized group-art verification.

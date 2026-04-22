@@ -24,8 +24,8 @@ export const GROUP_BACKGROUND_SOURCE_DIRECTORIES = [
 export const PORTRAIT_CACHE_MARKER = ".ark-str-portrait-cache.json";
 export const CANONICAL_READER_LOCALES = ["cn", "en", "jp", "kr", "tw"];
 const GENERATED_IMAGE_EXTENSION = ".webp";
-const PORTRAIT_IMAGE_OPTIONS = { maxWidth: 384, quality: 78 };
-const BACKGROUND_IMAGE_OPTIONS = { maxWidth: 1024, quality: 76 };
+export const PORTRAIT_IMAGE_OPTIONS = { maxWidth: 384, quality: 78 };
+export const BACKGROUND_IMAGE_OPTIONS = { maxWidth: 1024, quality: 76 };
 
 export function getRepoRoot() {
   return process.cwd();
@@ -612,7 +612,7 @@ export function readGroupBackgroundSourceFile(groupBackgroundPath, cwd = getRepo
   return readTrackedGroupBackgroundFile(groupBackgroundPath?.sourcePath, cwd);
 }
 
-async function optimizeGeneratedImageBuffer(imageBuffer, options) {
+export async function optimizeGeneratedImageBuffer(imageBuffer, options) {
   return sharp(imageBuffer, { limitInputPixels: false })
     .rotate()
     .resize({

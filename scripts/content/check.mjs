@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import {
+  BACKGROUND_IMAGE_OPTIONS,
   buildContentArtifacts,
   getGeneratedFilePaths,
   getNormalizedBackgroundFileName,
@@ -8,6 +9,8 @@ import {
   hasArknightsDataSource,
   hasPortraitSource,
   loadGeneratedArtifacts,
+  optimizeGeneratedImageBuffer,
+  readGroupBackgroundSourceFile,
 } from "./lib.mjs";
 
 function invariant(condition, message) {
@@ -62,7 +65,7 @@ function collectBackgroundIdsFromBlocks(blocks, accumulator) {
   }
 }
 
-function compareLiveArtifacts(generated, live) {
+async function compareLiveArtifacts(generated, live) {
   invariant(
     generated.index.vendor.submoduleSha === live.index.vendor.submoduleSha,
     `Generated vendor SHA ${generated.index.vendor.submoduleSha} does not match live vendor SHA ${live.index.vendor.submoduleSha}`,
@@ -137,6 +140,8 @@ function compareLiveArtifacts(generated, live) {
     if (liveGroup.backgroundImagePath) {
       const resolvedGroupBackgroundPath = live.groupBackgroundPaths?.[key] ?? null;
       invariant(resolvedGroupBackgroundPath?.sourcePath, `Missing group background source for ${key}`);
+      const sourceBuffer = readGroupBackgroundSourceFile(resolvedGroupBackgroundPath, process.cwd());
+      invariant(sourceBuffer, `Unable to read group background source for ${key}`);
 
       const generatedFileName =
         path.basename(liveGroup.backgroundImagePath) || getNormalizedBackgroundFileName(liveGroup.backgroundImageId);
@@ -145,6 +150,13 @@ function compareLiveArtifacts(generated, live) {
         generatedFileName,
       );
       invariant(fs.existsSync(generatedFilePath), `Generated group background file is missing for ${key}`);
+
+      const expectedBuffer = await optimizeGeneratedImageBuffer(sourceBuffer, BACKGROUND_IMAGE_OPTIONS);
+      const generatedBuffer = fs.readFileSync(generatedFilePath);
+      invariant(
+        Buffer.compare(expectedBuffer, generatedBuffer) === 0,
+        `Generated group background file is stale for ${key}`,
+      );
     }
   }
 
@@ -510,7 +522,7 @@ const generated = loadGeneratedArtifacts(process.cwd());
 validateGeneratedArtifacts(generated);
 
 if (hasArknightsDataSource(process.cwd())) {
-  compareLiveArtifacts(generated, buildContentArtifacts(process.cwd()));
+  await compareLiveArtifacts(generated, buildContentArtifacts(process.cwd()));
 }
 
 if (!hasPortraitSource(process.cwd())) {

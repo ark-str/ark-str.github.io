@@ -598,7 +598,7 @@ export function ReaderStoryShell({
   const isBodyLoading =
     Boolean(story?.bodyAvailable) &&
     (detailState.status === "loading" || detailState.status === "idle" || assetState.status === "loading" || assetState.status === "idle");
-  const isBodyAvailable = Boolean(story?.bodyAvailable && detail);
+  const isBodyAvailable = Boolean(story?.bodyAvailable && detail && assetState.status === "ready");
   const initialBackgroundId = useMemo(() => (detail ? findFirstBackgroundId(detail.blocks) : null), [detail]);
   const [activeBackground, setActiveBackground] = useState<{
     storyId: string;
