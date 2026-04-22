@@ -1,12 +1,37 @@
+"use client";
+
 import Link from "next/link";
 import { ReaderPageFrame } from "@/components/layout/reader-page-frame";
 import type { FloatingAppBarModel } from "@/components/layout/types";
 import { Badge } from "@/components/ui/badge";
-import { Card, CardHeader, CardTitle } from "@/components/ui/card";
-import type { ReaderLocale } from "@/features/content/types";
-import type { ContentGroupEntry, ContentStoryIndexEntry, ContentStorylineItemRole } from "@/features/content/types";
-import { getReaderStoryHref } from "@/features/content/config/reader-routes";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  CANONICAL_READER_LOCALES,
+  READER_LOCALE_LABELS,
+} from "@/features/content/config/canonical-reader-locales";
+import {
+  buildLocaleSwitchHref,
+  findGroupEntry,
+  getReaderGroupHref,
+  getReaderLocaleHref,
+  getReaderStoryHref,
+} from "@/features/content/config/reader-routes";
+import {
+  getGroupStories,
+  getLocaleGroups,
+  getLocaleStorylines,
+} from "@/features/content/config/content-index-selectors";
+import type {
+  ContentGroupEntry,
+  ContentIndex,
+  ContentStorylineItem,
+  ContentStorylineItemRole,
+  ReaderLocale,
+} from "@/features/content/types";
+import { resolveRuntimePublicPath, useContentIndex } from "@/features/content/runtime/use-public-content";
 import { cn } from "@/lib/utils";
+
+const GROUP_FLOW_ITEM_LIMIT = 24;
 
 function formatMetric(value: number) {
   return new Intl.NumberFormat("ko-KR").format(value);
@@ -59,21 +84,167 @@ type GroupFlowItem = {
   role: ContentStorylineItemRole;
 };
 
-export function ReaderGroupOverview({
-  appBar,
+function selectGroupFlowItems(items: ContentStorylineItem[], currentGroupId: string): ContentStorylineItem[] {
+  if (items.length <= GROUP_FLOW_ITEM_LIMIT) {
+    return items;
+  }
+
+  const currentIndex = items.findIndex((item) => item.groupId === currentGroupId);
+  if (currentIndex < 0) {
+    return items.slice(0, GROUP_FLOW_ITEM_LIMIT);
+  }
+
+  const beforeCount = Math.floor((GROUP_FLOW_ITEM_LIMIT - 1) / 2);
+  const start = Math.max(0, Math.min(currentIndex - beforeCount, items.length - GROUP_FLOW_ITEM_LIMIT));
+
+  return items.slice(start, start + GROUP_FLOW_ITEM_LIMIT);
+}
+
+function createGroupAppBar({
   group,
-  groupFlowItems,
-  storylineTitle,
+  groupId,
+  index,
   locale,
-  stories,
+}: {
+  group: ContentGroupEntry | null;
+  groupId: string;
+  index: ContentIndex | null;
+  locale: ReaderLocale;
+}): FloatingAppBarModel {
+  return {
+    currentLocale: locale,
+    groupCrumb: {
+      href: null,
+      label: group?.title ?? groupId,
+    },
+    localeOptions: CANONICAL_READER_LOCALES.map((targetLocale) => ({
+      href: index
+        ? buildLocaleSwitchHref(index, targetLocale, groupId)
+        : getReaderLocaleHref(targetLocale),
+      label: READER_LOCALE_LABELS[targetLocale].label,
+      locale: targetLocale,
+    })),
+    storyRootHref: getReaderLocaleHref(locale),
+    storySelect: null,
+  };
+}
+
+function buildGroupFlowItems({
+  group,
+  groupId,
+  groupsById,
+  locale,
+  primaryItems,
+}: {
+  group: ContentGroupEntry;
+  groupId: string;
+  groupsById: Map<string, ContentGroupEntry>;
+  locale: ReaderLocale;
+  primaryItems: ContentStorylineItem[] | null;
+}): GroupFlowItem[] {
+  const selectedStorylineItems = primaryItems
+    ? selectGroupFlowItems(primaryItems, groupId)
+    : [
+        {
+          displayTitle: group.title,
+          groupId,
+          locationId: null,
+          locationType: null,
+          role: "primary" as const,
+          sortKey: 0,
+          storySetId: null,
+        },
+      ];
+
+  return selectedStorylineItems.flatMap((item, index) => {
+    const itemGroup = groupsById.get(item.groupId);
+    if (!itemGroup) {
+      return [];
+    }
+
+    return [
+      {
+        backgroundImageAspect: itemGroup.backgroundImageAspect,
+        backgroundImageHref: resolveRuntimePublicPath(itemGroup.backgroundImagePath),
+        displayTitle: item.displayTitle || itemGroup.title,
+        groupId: item.groupId,
+        href: getReaderGroupHref(locale, item.groupId),
+        isCurrent: item.groupId === groupId,
+        itemKey: `${item.locationId ?? item.storySetId ?? item.groupId}:${item.role}:${index}`,
+        role: item.role,
+      },
+    ];
+  });
+}
+
+function ReaderGroupStatus({
+  appBar,
+  message,
 }: {
   appBar: FloatingAppBarModel;
-  group: GroupWithAssets;
-  groupFlowItems: GroupFlowItem[];
-  storylineTitle: string;
-  locale: ReaderLocale;
-  stories: ContentStoryIndexEntry[];
+  message: string;
 }) {
+  return (
+    <ReaderPageFrame
+      appBar={appBar}
+      header={
+        <section>
+          <Card className="bg-[var(--surface)]/90">
+            <CardContent className="px-5 py-6 text-sm leading-7 text-[var(--text-muted)]">
+              {message}
+            </CardContent>
+          </Card>
+        </section>
+      }
+      testId="group-shell"
+    >
+      <span />
+    </ReaderPageFrame>
+  );
+}
+
+export function ReaderGroupOverview({ groupId, locale }: { groupId: string; locale: ReaderLocale }) {
+  const indexState = useContentIndex();
+  const index = indexState.data;
+  const group = index ? findGroupEntry(index, locale, groupId) : null;
+  const appBar = createGroupAppBar({ group, groupId, index, locale });
+
+  if (indexState.status === "loading" || indexState.status === "idle") {
+    return <ReaderGroupStatus appBar={appBar} message="generated content index를 불러오는 중입니다." />;
+  }
+
+  if (indexState.status === "error") {
+    return (
+      <ReaderGroupStatus
+        appBar={appBar}
+        message={`generated content index를 불러오지 못했습니다: ${indexState.error.message}`}
+      />
+    );
+  }
+
+  if (!index || !group) {
+    return <ReaderGroupStatus appBar={appBar} message="요청한 story group을 찾을 수 없습니다." />;
+  }
+
+  const stories = getGroupStories(index, locale, groupId);
+  const groupsById = new Map(getLocaleGroups(index, locale).map((item) => [item.groupId, item]));
+  const primaryStoryline =
+    getLocaleStorylines(index, locale).find((storyline) =>
+      storyline.items.some((item) => item.role === "primary" && item.groupId === groupId),
+    ) ?? null;
+  const groupWithAssets: GroupWithAssets = {
+    ...group,
+    backgroundImageHref: resolveRuntimePublicPath(group.backgroundImagePath),
+  };
+  const groupFlowItems = buildGroupFlowItems({
+    group,
+    groupId,
+    groupsById,
+    locale,
+    primaryItems: primaryStoryline?.items ?? null,
+  });
+  const storylineTitle = primaryStoryline?.title ?? group.title;
+
   return (
     <ReaderPageFrame
       appBar={appBar}
@@ -84,15 +255,15 @@ export function ReaderGroupOverview({
               className="relative flex aspect-[16/7] min-h-72 items-end justify-center overflow-hidden bg-[var(--surface-muted)]"
               data-testid="group-hero-image"
             >
-              {group.backgroundImageHref ? (
+              {groupWithAssets.backgroundImageHref ? (
                 <>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     alt=""
                     aria-hidden="true"
-                    className={getGroupHeroImageClassName(group.backgroundImageAspect)}
+                    className={getGroupHeroImageClassName(groupWithAssets.backgroundImageAspect)}
                     decoding="async"
-                    src={group.backgroundImageHref}
+                    src={groupWithAssets.backgroundImageHref}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/72 via-black/18 to-transparent" />
                 </>

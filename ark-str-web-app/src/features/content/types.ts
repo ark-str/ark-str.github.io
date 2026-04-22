@@ -103,6 +103,12 @@ export type SummaryManifest = {
   items: SummaryManifestEntry[];
 };
 
+export type AssetManifest = {
+  portraits: Record<string, string>;
+  backgrounds: Record<string, string>;
+  groupBackgrounds: Record<string, string>;
+};
+
 export type DialogueBlock = {
   type: "dialogue";
   speakerName: string;

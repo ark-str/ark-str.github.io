@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import {
+  BACKGROUND_IMAGE_OPTIONS,
   buildContentArtifacts,
   getGeneratedFilePaths,
   getNormalizedBackgroundFileName,
@@ -8,6 +9,7 @@ import {
   hasArknightsDataSource,
   hasPortraitSource,
   loadGeneratedArtifacts,
+  optimizeGeneratedImageBuffer,
   readGroupBackgroundSourceFile,
 } from "./lib.mjs";
 
@@ -63,7 +65,7 @@ function collectBackgroundIdsFromBlocks(blocks, accumulator) {
   }
 }
 
-function compareLiveArtifacts(generated, live) {
+async function compareLiveArtifacts(generated, live) {
   invariant(
     generated.index.vendor.submoduleSha === live.index.vendor.submoduleSha,
     `Generated vendor SHA ${generated.index.vendor.submoduleSha} does not match live vendor SHA ${live.index.vendor.submoduleSha}`,
@@ -138,7 +140,6 @@ function compareLiveArtifacts(generated, live) {
     if (liveGroup.backgroundImagePath) {
       const resolvedGroupBackgroundPath = live.groupBackgroundPaths?.[key] ?? null;
       invariant(resolvedGroupBackgroundPath?.sourcePath, `Missing group background source for ${key}`);
-
       const sourceBuffer = readGroupBackgroundSourceFile(resolvedGroupBackgroundPath, process.cwd());
       invariant(sourceBuffer, `Unable to read group background source for ${key}`);
 
@@ -150,9 +151,10 @@ function compareLiveArtifacts(generated, live) {
       );
       invariant(fs.existsSync(generatedFilePath), `Generated group background file is missing for ${key}`);
 
+      const expectedBuffer = await optimizeGeneratedImageBuffer(sourceBuffer, BACKGROUND_IMAGE_OPTIONS);
       const generatedBuffer = fs.readFileSync(generatedFilePath);
       invariant(
-        Buffer.compare(sourceBuffer, generatedBuffer) === 0,
+        Buffer.compare(expectedBuffer, generatedBuffer) === 0,
         `Generated group background file is stale for ${key}`,
       );
     }
@@ -184,6 +186,8 @@ function validateGeneratedArtifacts(generated) {
   invariant(fs.existsSync(filePaths.appSummaryManifest), "app-generated summary-manifest.json is missing");
   invariant(fs.existsSync(filePaths.appBackgroundManifest), "app-generated backgrounds.json is missing");
   invariant(fs.existsSync(filePaths.appPortraitManifest), "app-generated portraits.json is missing");
+  invariant(fs.existsSync(filePaths.assetManifest), "published assets.json is missing");
+  invariant(fs.existsSync(filePaths.appAssetManifest), "app-generated assets.json is missing");
   invariant(fs.existsSync(filePaths.appRegistry), "app-generated registry.js is missing");
   invariant(
     !fs.existsSync(path.join(filePaths.appContentRoot, "stories")),
@@ -194,6 +198,8 @@ function validateGeneratedArtifacts(generated) {
   const appSummaryManifest = JSON.parse(fs.readFileSync(filePaths.appSummaryManifest, "utf8"));
   const appBackgroundManifest = JSON.parse(fs.readFileSync(filePaths.appBackgroundManifest, "utf8"));
   const appPortraitManifest = JSON.parse(fs.readFileSync(filePaths.appPortraitManifest, "utf8"));
+  const assetManifest = JSON.parse(fs.readFileSync(filePaths.assetManifest, "utf8"));
+  const appAssetManifest = JSON.parse(fs.readFileSync(filePaths.appAssetManifest, "utf8"));
   invariant(
     JSON.stringify(appIndex) === JSON.stringify(generated.index),
     "app-generated index.json does not match the published generated index",
@@ -204,6 +210,18 @@ function validateGeneratedArtifacts(generated) {
   );
   invariant(appBackgroundManifest && typeof appBackgroundManifest === "object", "app-generated backgrounds.json must be an object");
   invariant(appPortraitManifest && typeof appPortraitManifest === "object", "app-generated portraits.json must be an object");
+  invariant(
+    JSON.stringify(assetManifest) === JSON.stringify(appAssetManifest),
+    "app-generated assets.json does not match the published generated assets manifest",
+  );
+  invariant(
+    JSON.stringify(assetManifest.portraits ?? {}) === JSON.stringify(appPortraitManifest),
+    "assets.json portrait manifest must match portraits.json",
+  );
+  invariant(
+    JSON.stringify(assetManifest.backgrounds ?? {}) === JSON.stringify(appBackgroundManifest),
+    "assets.json background manifest must match backgrounds.json",
+  );
 
   invariant(
     generated.index.stories.length === generated.sourceManifest.items.length,
@@ -282,6 +300,10 @@ function validateGeneratedArtifacts(generated) {
         path.basename(group.backgroundImagePath) || getNormalizedBackgroundFileName(group.backgroundImageId);
       const backgroundFilePath = path.join(filePaths.generatedGroupBackgroundsRoot, backgroundFileName);
       invariant(fs.existsSync(backgroundFilePath), `group background file is missing for ${group.server}:${group.groupId}`);
+      invariant(
+        backgroundFileName.endsWith(".webp"),
+        `group background file must be WebP for ${group.server}:${group.groupId}`,
+      );
     }
   }
 
@@ -478,6 +500,7 @@ function validateGeneratedArtifacts(generated) {
       path.basename(portraitPublicPath) || getNormalizedPortraitFileName(speakerId);
     const portraitFilePath = path.join(filePaths.generatedPortraitsRoot, portraitFileName);
     invariant(fs.existsSync(portraitFilePath), `portrait file is missing for ${speakerId}`);
+    invariant(portraitFileName.endsWith(".webp"), `portrait file must be WebP for ${speakerId}`);
   }
 
   for (const backgroundId of Object.keys(appBackgroundManifest)) {
@@ -491,6 +514,7 @@ function validateGeneratedArtifacts(generated) {
       path.basename(backgroundPublicPath) || getNormalizedBackgroundFileName(backgroundId);
     const backgroundFilePath = path.join(filePaths.generatedBackgroundsRoot, backgroundFileName);
     invariant(fs.existsSync(backgroundFilePath), `background file is missing for ${backgroundId}`);
+    invariant(backgroundFileName.endsWith(".webp"), `background file must be WebP for ${backgroundId}`);
   }
 }
 
@@ -498,7 +522,7 @@ const generated = loadGeneratedArtifacts(process.cwd());
 validateGeneratedArtifacts(generated);
 
 if (hasArknightsDataSource(process.cwd())) {
-  compareLiveArtifacts(generated, buildContentArtifacts(process.cwd()));
+  await compareLiveArtifacts(generated, buildContentArtifacts(process.cwd()));
 }
 
 if (!hasPortraitSource(process.cwd())) {

@@ -1,46 +1,9 @@
 import { notFound } from "next/navigation";
-import {
-  CANONICAL_READER_LOCALES,
-  READER_LOCALE_LABELS,
-  isReaderLocale,
-} from "@/features/content/config/canonical-reader-locales";
-import {
-  buildLocaleSwitchHref,
-  findGroupEntry,
-  getLocaleGroups,
-  getLocaleStorylines,
-  getGroupStories,
-  getReaderGroupHref,
-  getReaderGroupStaticParams,
-  getReaderLocaleHref,
-  readContentIndex,
-  resolvePublicAssetPath,
-} from "@/features/content/service/read-content-index";
-import type { ContentStorylineItem } from "@/features/content/types";
+import { isReaderLocale } from "@/features/content/config/canonical-reader-locales";
+import { getReaderGroupStaticParams } from "@/features/content/service/read-content-index";
 import { ReaderGroupOverview } from "@/features/reader/ui/reader-group-overview";
 
 export const dynamicParams = false;
-
-const GROUP_FLOW_ITEM_LIMIT = 24;
-
-function selectGroupFlowItems(items: ContentStorylineItem[], currentGroupId: string): ContentStorylineItem[] {
-  if (items.length <= GROUP_FLOW_ITEM_LIMIT) {
-    return items;
-  }
-
-  const currentIndex = items.findIndex((item) => item.groupId === currentGroupId);
-  if (currentIndex < 0) {
-    return items.slice(0, GROUP_FLOW_ITEM_LIMIT);
-  }
-
-  const beforeCount = Math.floor((GROUP_FLOW_ITEM_LIMIT - 1) / 2);
-  const start = Math.max(
-    0,
-    Math.min(currentIndex - beforeCount, items.length - GROUP_FLOW_ITEM_LIMIT),
-  );
-
-  return items.slice(start, start + GROUP_FLOW_ITEM_LIMIT);
-}
 
 export function generateStaticParams() {
   return getReaderGroupStaticParams();
@@ -57,76 +20,5 @@ export default async function ReaderGroupPage({
     notFound();
   }
 
-  const index = readContentIndex();
-  const group = findGroupEntry(index, locale, groupId);
-  if (!group) {
-    notFound();
-  }
-
-  const stories = getGroupStories(index, locale, groupId);
-  const groupsById = new Map(getLocaleGroups(index, locale).map((item) => [item.groupId, item]));
-  const primaryStoryline =
-    getLocaleStorylines(index, locale).find((storyline) =>
-      storyline.items.some((item) => item.role === "primary" && item.groupId === groupId),
-    ) ?? null;
-  const groupWithAssets = {
-    ...group,
-    backgroundImageHref: resolvePublicAssetPath(group.backgroundImagePath),
-  };
-  const selectedStorylineItems = primaryStoryline
-    ? selectGroupFlowItems(primaryStoryline.items, groupId)
-    : [
-      {
-        displayTitle: group.title,
-        groupId,
-        locationId: null,
-        locationType: null,
-        role: "primary" as const,
-        sortKey: 0,
-        storySetId: null,
-      },
-    ];
-  const groupFlowItems = selectedStorylineItems.flatMap((item, index) => {
-    const itemGroup = groupsById.get(item.groupId);
-    if (!itemGroup) {
-      return [];
-    }
-
-    return [
-      {
-        backgroundImageAspect: itemGroup.backgroundImageAspect,
-        backgroundImageHref: resolvePublicAssetPath(itemGroup.backgroundImagePath),
-        displayTitle: item.displayTitle || itemGroup.title,
-        groupId: item.groupId,
-        href: getReaderGroupHref(locale, item.groupId),
-        isCurrent: item.groupId === groupId,
-        itemKey: `${item.locationId ?? item.storySetId ?? item.groupId}:${item.role}:${index}`,
-        role: item.role,
-      },
-    ];
-  });
-
-  return (
-    <ReaderGroupOverview
-      appBar={{
-        currentLocale: locale,
-        localeOptions: CANONICAL_READER_LOCALES.map((targetLocale) => ({
-          locale: targetLocale,
-          label: READER_LOCALE_LABELS[targetLocale].label,
-          href: buildLocaleSwitchHref(index, targetLocale, groupId),
-        })),
-        storyRootHref: getReaderLocaleHref(locale),
-        groupCrumb: {
-          label: group.title,
-          href: null,
-        },
-        storySelect: null,
-      }}
-      group={groupWithAssets}
-      groupFlowItems={groupFlowItems}
-      storylineTitle={primaryStoryline?.title ?? group.title}
-      locale={locale}
-      stories={stories}
-    />
-  );
+  return <ReaderGroupOverview groupId={groupId} locale={locale} />;
 }

@@ -22,6 +22,11 @@ function createPngHeader(width, height) {
   return buffer;
 }
 
+const tinyPng = Buffer.from(
+  "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+/p9sAAAAASUVORK5CYII=",
+  "base64",
+);
+
 test("selectStoryTitle prefers storyName then stage name then storyId", () => {
   assert.equal(
     selectStoryTitle({ storyId: "story-a", storyName: "Named Story" }, { name: "Stage Name" }),
@@ -124,7 +129,7 @@ test("resolveStorySource falls back to metadata hashing when the file is missing
   assert.match(resolved.sourceHash, /^[0-9a-f]{64}$/);
 });
 
-test("writeGeneratedArtifacts keeps story payloads out of app-internal generated content", () => {
+test("writeGeneratedArtifacts keeps story payloads out of app-internal generated content", async () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "ark-str-generated-"));
   const artifacts = {
     index: {
@@ -189,8 +194,8 @@ test("writeGeneratedArtifacts keeps story payloads out of app-internal generated
       },
     ],
     portraitPaths: {
-      char_002_amiya: "/generated/portraits/speakers/char_002_amiya.png",
-      avg_npc_175: "/generated/portraits/speakers/avg_npc_175.png",
+      char_002_amiya: "/generated/portraits/speakers/char_002_amiya.webp",
+      avg_npc_175: "/generated/portraits/speakers/avg_npc_175.webp",
     },
   };
 
@@ -199,18 +204,18 @@ test("writeGeneratedArtifacts keeps story payloads out of app-internal generated
   });
   fs.writeFileSync(
     path.join(root, "vendor", "ArknightsResource", "avgs", "npcs", "char_002_amiya_1_2.png"),
-    "char-second",
+    tinyPng,
   );
   fs.writeFileSync(
     path.join(root, "vendor", "ArknightsResource", "avgs", "npcs", "char_002_amiya_1_1.png"),
-    "char-first",
+    tinyPng,
   );
   fs.writeFileSync(
     path.join(root, "vendor", "ArknightsResource", "avgs", "npcs", "avg_npc_175_175.png"),
-    "npc-first",
+    tinyPng,
   );
 
-  writeGeneratedArtifacts(artifacts, root);
+  await writeGeneratedArtifacts(artifacts, root);
   const filePaths = getGeneratedFilePaths(root);
 
   assert.equal(
@@ -218,34 +223,28 @@ test("writeGeneratedArtifacts keeps story payloads out of app-internal generated
     true,
   );
   assert.equal(
-    fs.existsSync(path.join(filePaths.generatedPortraitsRoot, "char_002_amiya.png")),
+    fs.existsSync(path.join(filePaths.generatedPortraitsRoot, "char_002_amiya.webp")),
     true,
   );
   assert.equal(
-    fs.existsSync(path.join(filePaths.generatedPortraitsRoot, "avg_npc_175.png")),
+    fs.existsSync(path.join(filePaths.generatedPortraitsRoot, "avg_npc_175.webp")),
     true,
   );
-  assert.equal(
-    fs.readFileSync(path.join(filePaths.generatedPortraitsRoot, "char_002_amiya.png"), "utf8"),
-    "char-first",
-  );
-  assert.equal(
-    fs.readFileSync(path.join(filePaths.generatedPortraitsRoot, "avg_npc_175.png"), "utf8"),
-    "npc-first",
-  );
+  assert.equal(fs.existsSync(path.join(root, "ark-str-web-app", "public", "generated", "portraits", "assistant")), false);
   assert.equal(fs.existsSync(path.join(filePaths.appContentRoot, "stories")), false);
   assert.match(fs.readFileSync(filePaths.appRegistry, "utf8"), /"en:story-a": "stories\/en\/story-a\.json"/);
   assert.match(
     fs.readFileSync(filePaths.appRegistry, "utf8"),
-    /"char_002_amiya": "\/generated\/portraits\/speakers\/char_002_amiya\.png"/,
+    /"char_002_amiya": "\/generated\/portraits\/speakers\/char_002_amiya\.webp"/,
   );
   assert.match(
     fs.readFileSync(filePaths.appRegistry, "utf8"),
-    /"avg_npc_175": "\/generated\/portraits\/speakers\/avg_npc_175\.png"/,
+    /"avg_npc_175": "\/generated\/portraits\/speakers\/avg_npc_175\.webp"/,
   );
+  assert.deepEqual(JSON.parse(fs.readFileSync(filePaths.assetManifest, "utf8")).portraits, artifacts.portraitPaths);
 });
 
-test("writeGeneratedArtifacts normalizes portrait filenames for mixed-case speaker ids", () => {
+test("writeGeneratedArtifacts normalizes portrait filenames for mixed-case speaker ids", async () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "ark-str-generated-"));
   const artifacts = {
     index: {
@@ -281,30 +280,30 @@ test("writeGeneratedArtifacts normalizes portrait filenames for mixed-case speak
   });
   fs.writeFileSync(
     path.join(root, "vendor", "ArknightsResource", "avgs", "npcs", "AVG_4081_WARMY_1_1.png"),
-    "warmy",
+    tinyPng,
   );
 
-  writeGeneratedArtifacts(artifacts, root);
+  await writeGeneratedArtifacts(artifacts, root);
   const filePaths = getGeneratedFilePaths(root);
   const portraitManifest = JSON.parse(fs.readFileSync(filePaths.appPortraitManifest, "utf8"));
   const generatedPortraitFileNames = fs.readdirSync(filePaths.generatedPortraitsRoot).sort();
 
   assert.equal(
-    fs.existsSync(path.join(filePaths.generatedPortraitsRoot, "avg_4081_warmy_1.png")),
+    fs.existsSync(path.join(filePaths.generatedPortraitsRoot, "avg_4081_warmy_1.webp")),
     true,
   );
-  assert.deepEqual(generatedPortraitFileNames, ["avg_4081_warmy_1.png"]);
+  assert.deepEqual(generatedPortraitFileNames, ["avg_4081_warmy_1.webp"]);
   assert.equal(
     portraitManifest.AVG_4081_WARMY_1,
-    "/generated/portraits/speakers/avg_4081_warmy_1.png",
+    "/generated/portraits/speakers/avg_4081_warmy_1.webp",
   );
   assert.equal(
     portraitManifest.avg_4081_warmy_1,
-    "/generated/portraits/speakers/avg_4081_warmy_1.png",
+    "/generated/portraits/speakers/avg_4081_warmy_1.webp",
   );
 });
 
-test("writeGeneratedArtifacts normalizes background filenames for mixed-case background ids", () => {
+test("writeGeneratedArtifacts normalizes background filenames for mixed-case background ids", async () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "ark-str-generated-"));
   const artifacts = {
     index: {
@@ -341,26 +340,26 @@ test("writeGeneratedArtifacts normalizes background filenames for mixed-case bac
   });
   fs.writeFileSync(
     path.join(root, "vendor", "ArknightsResource", "avgs", "bg", "38_g21_skyStarry_R1.png"),
-    "bg",
+    tinyPng,
   );
 
-  writeGeneratedArtifacts(artifacts, root);
+  await writeGeneratedArtifacts(artifacts, root);
   const filePaths = getGeneratedFilePaths(root);
   const backgroundManifest = JSON.parse(fs.readFileSync(filePaths.appBackgroundManifest, "utf8"));
   const generatedBackgroundFileNames = fs.readdirSync(filePaths.generatedBackgroundsRoot).sort();
 
-  assert.deepEqual(generatedBackgroundFileNames, ["38_g21_skystarry_r1.png"]);
+  assert.deepEqual(generatedBackgroundFileNames, ["38_g21_skystarry_r1.webp"]);
   assert.equal(
     backgroundManifest["38_g21_skyStarry_R1"],
-    "/generated/backgrounds/38_g21_skystarry_r1.png",
+    "/generated/backgrounds/38_g21_skystarry_r1.webp",
   );
   assert.equal(
     backgroundManifest["38_g21_skystarry_r1"],
-    "/generated/backgrounds/38_g21_skystarry_r1.png",
+    "/generated/backgrounds/38_g21_skystarry_r1.webp",
   );
 });
 
-test("writeGeneratedArtifacts copies inferred group background images from resource art", () => {
+test("writeGeneratedArtifacts copies inferred group background images from resource art", async () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "ark-str-generated-"));
   const groupBackgroundPath = getGeneratedGroupBackgroundPublicPath("title_stultifera_navis");
   const artifacts = {
@@ -418,15 +417,12 @@ test("writeGeneratedArtifacts copies inferred group background images from resou
   fs.mkdirSync(path.join(root, "vendor", "ArknightsResource", "mapreview"), {
     recursive: true,
   });
-  fs.writeFileSync(path.join(root, "vendor", "ArknightsResource", "mapreview", "act17side_01.png"), "group-bg");
+  fs.writeFileSync(path.join(root, "vendor", "ArknightsResource", "mapreview", "act17side_01.png"), tinyPng);
 
-  writeGeneratedArtifacts(artifacts, root);
+  await writeGeneratedArtifacts(artifacts, root);
   const filePaths = getGeneratedFilePaths(root);
 
-  assert.equal(
-    fs.readFileSync(path.join(filePaths.generatedGroupBackgroundsRoot, "title_stultifera_navis.png"), "utf8"),
-    "group-bg",
-  );
+  assert.equal(fs.existsSync(path.join(filePaths.generatedGroupBackgroundsRoot, "title_stultifera_navis.webp")), true);
 });
 
 test("collectReferencedGroupBackgroundPaths prefers project group overrides", () => {
@@ -454,7 +450,7 @@ test("collectReferencedGroupBackgroundPaths prefers project group overrides", ()
   assert.deepEqual(groupBackgroundPaths["en:act17side"], {
     backgroundImageId: "act17side",
     backgroundImageAspect: "square",
-    backgroundImagePath: "/generated/group-backgrounds/act17side.png",
+    backgroundImagePath: "/generated/group-backgrounds/act17side.webp",
     sourcePath: "assets/group-backgrounds/act17side.png",
     sourceType: "project",
   });

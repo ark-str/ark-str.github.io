@@ -58,8 +58,11 @@ This phase keeps the recovered reader shell and Pages deployment path stable whi
 - `npm run content:portraits` or `npm run content:update` can refresh the blobless `vendor/ArknightsResource/` media cache from `ArknightsResource/`, materialize only referenced `avgs/npcs/` portraits and `avgs/bg/` backgrounds, and copy them into bundled app assets
 - portrait selection uses the basename-sorted first matching `avgs/npcs` file for each referenced `speakerId`
 - background selection uses the exact `image` key first and otherwise the basename-sorted first matching `avgs/bg` file for each referenced background ID
-- reader portraits render from bundled `public/generated/portraits/speakers/<speakerId>.png` assets with top-aligned full-body crops
-- reader backgrounds render from bundled `public/generated/backgrounds/<backgroundId>.png` assets inline with the story body
+- reader portraits render from bundled optimized `public/generated/portraits/speakers/<speakerId>.webp` assets with top-aligned full-body crops
+- reader backgrounds render from bundled optimized `public/generated/backgrounds/<backgroundId>.webp` assets inline with the story body
+- generated group artwork renders from bundled optimized `public/generated/group-backgrounds/<groupId>.webp` assets
+- generated JSON is minified and heavy story body files are loaded by client runtime fetches from bundled `public/generated/content/` paths so exported route HTML/RSC payloads stay small
+- `public/generated/content/assets.json` is the runtime lookup for portraits, backgrounds, and group backgrounds, mirrored into `src/generated/content/assets.json` for integrity checks
 - story-level `observedOperators` arrays embedded in generated story detail JSON remain limited to `char_` speaker IDs for alias persistence
 - local storage reader-session restore for preferred locale and last visited story
 - locale-scoped character alias observation storage under `ark-str:character-observations:v1`
@@ -79,5 +82,6 @@ This phase keeps the recovered reader shell and Pages deployment path stable whi
 - Doctor choice normalization no longer renders a nested "Shared response" section; predicates that reference every option are treated as post-choice continuation
 - gh-pages-safe static export under the `/ark-str/` base path
 - isolated `.next-dev` and `.next-export` caches so `npm run verify` does not degrade the next `npm run dev` startup
+- export-size checks run after static export to keep `ark-str-web-app/.next-export` and generated assets within the committed budget
 - a manual GitHub Actions Pages workflow that rebuilds, verifies, and publishes `ark-str-web-app/out`
 - the visual system uses a sans-first type stack and a more restrained radius scale while keeping the archive background mood

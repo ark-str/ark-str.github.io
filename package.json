@@ -7,6 +7,7 @@
     "constraints:check": "node scripts/guards/check-constraints.mjs",
     "arch:check": "node scripts/guards/check-architecture.mjs",
     "design-system:check": "node scripts/guards/check-design-system.mjs",
+    "export:size-check": "node scripts/guards/check-export-size.mjs",
     "guards:all": "npm run docs:check && npm run constraints:check && npm run arch:check && npm run design-system:check",
     "content:sync": "node scripts/content/sync.mjs",
     "content:build-index": "node scripts/content/build-index.mjs",
@@ -29,6 +30,7 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.59.1",
+    "sharp": "^0.34.5",
     "typescript": "^5"
   }
 }

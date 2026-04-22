@@ -5,6 +5,7 @@ const commands = [
   ["npm", ["run", "content:check"]],
   ["npm", ["run", "harness:test"]],
   ["npm", ["run", "app:verify"]],
+  ["npm", ["run", "export:size-check"]],
   ["npm", ["run", "smoke"]],
 ];
 

@@ -2,17 +2,17 @@ import fs from "node:fs";
 import path from "node:path";
 import { READER_LOCALE_LABELS } from "@/features/content/config/canonical-reader-locales";
 import type {
-  ContentGroupEntry,
   ContentIndex,
-  ContentStoryIndexEntry,
-  ContentStorylineEntry,
   ReaderHomeModel,
   ReaderLocale,
   StoryBlock,
   StoryDetail,
   SummaryManifest,
-  SummaryManifestEntry,
 } from "@/features/content/types";
+import {
+  getLocaleGroups,
+  getLocaleStories,
+} from "@/features/content/config/content-index-selectors";
 import {
   getBackgroundPathForBackgroundId,
   contentIndex,
@@ -20,6 +20,13 @@ import {
   getStoryDetailPath,
   summaryManifest,
 } from "@/generated/content/registry";
+export {
+  findSummaryEntry,
+  getGroupStories,
+  getLocaleGroups,
+  getLocaleStories,
+  getLocaleStorylines,
+} from "@/features/content/config/content-index-selectors";
 export {
   buildLocaleSwitchHref,
   findGroupEntry,
@@ -148,26 +155,6 @@ export function readStoryBackgroundPaths(detail: StoryDetail | null): Record<str
   );
 }
 
-export function getLocaleGroups(index: ContentIndex, locale: ReaderLocale): ContentGroupEntry[] {
-  return index.groups.filter((group) => group.server === locale);
-}
-
-export function getLocaleStorylines(index: ContentIndex, locale: ReaderLocale): ContentStorylineEntry[] {
-  return index.storylines.filter((storyline) => storyline.server === locale);
-}
-
-export function getLocaleStories(index: ContentIndex, locale: ReaderLocale): ContentStoryIndexEntry[] {
-  return index.stories.filter((story) => story.server === locale);
-}
-
-export function getGroupStories(
-  index: ContentIndex,
-  locale: ReaderLocale,
-  groupId: string,
-): ContentStoryIndexEntry[] {
-  return index.stories.filter((story) => story.server === locale && story.groupId === groupId);
-}
-
 export async function readStoryDetail(
   locale: ReaderLocale,
   storyId: string,
@@ -185,20 +172,6 @@ export async function readStoryDetail(
   } catch {
     return null;
   }
-}
-
-export function findSummaryEntry(
-  summaryManifestValue: SummaryManifest | null,
-  locale: ReaderLocale,
-  storyId: string,
-): SummaryManifestEntry | null {
-  if (!summaryManifestValue) {
-    return null;
-  }
-
-  return (
-    summaryManifestValue.items.find((item) => item.server === locale && item.storyId === storyId) ?? null
-  );
 }
 
 export function readReaderHomeModel(): ReaderHomeModel {
