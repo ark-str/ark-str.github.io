@@ -97,7 +97,7 @@ export function ReaderGroupOverview({
                   <div className="absolute inset-0 bg-gradient-to-t from-black/72 via-black/18 to-transparent" />
                 </>
               ) : (
-                <div className="h-full w-full bg-[radial-gradient(circle_at_top_left,var(--accent-soft),transparent_42%),linear-gradient(135deg,var(--surface-muted),var(--panel))]" />
+                <div className="h-full w-full bg-[radial-gradient(circle_at_top_left,color-mix(in_srgb,var(--accent)_28%,transparent),transparent_42%),linear-gradient(135deg,black,color-mix(in_srgb,var(--text)_18%,black))]" />
               )}
               <div className="absolute inset-x-0 bottom-0 z-10 grid justify-items-center gap-4 px-5 pb-7 pt-20 text-center text-white md:px-8 md:pb-9">
                 <h1 className="max-w-4xl font-[var(--font-display)] text-4xl font-semibold leading-tight tracking-[-0.04em] md:text-6xl">
