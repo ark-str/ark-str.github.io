@@ -179,6 +179,13 @@ const koreanMainStorylineReference = koreanMainStoryline?.items.find(
 const koreanMainStorylinePrimary = koreanMainStoryline?.items.find(
   (item: { role: string; groupId: string }) => item.role === "primary" && item.groupId === "main_0",
 );
+const koreanOperatorStoryline = generatedIndex.storylines.find(
+  (storyline: { server: string; storylineId: string }) =>
+    storyline.server === "kr" && storyline.storylineId === "synthetic_operator_narratives",
+);
+const koreanOperatorStorylinePrimary = koreanOperatorStoryline?.items.find(
+  (item: { role: string }) => item.role === "primary",
+);
 
 if (!koreanMainStoryline) {
   throw new Error("The Korean reader archive must include the mainLine storyline.");
@@ -190,6 +197,14 @@ if (!koreanMainStorylineReference) {
 
 if (!koreanMainStorylinePrimary) {
   throw new Error("The Korean mainLine storyline must include main_0 as a primary group.");
+}
+
+if (!koreanOperatorStoryline) {
+  throw new Error("The Korean reader archive must include the operator narrative storyline.");
+}
+
+if (!koreanOperatorStorylinePrimary) {
+  throw new Error("The Korean operator narrative storyline must include at least one primary group.");
 }
 
 function toAppPath(route = "") {
@@ -308,6 +323,11 @@ test.describe("reader shell smoke", () => {
     await expect(mainStorylineItemList).toHaveCSS("flex-direction", "column");
     await expect(mainPrimaryRow).toBeVisible();
     await expect(mainPrimaryRow).toHaveAttribute("href", `/ark-str/reader/kr/${koreanMainStorylinePrimary.groupId}/`);
+    await expect(mainPrimaryRow.getByTestId("storyline-primary-card-title")).toHaveCSS(
+      "color",
+      "rgb(255, 255, 255)",
+    );
+    await expect(mainPrimaryRow.getByTestId("storyline-primary-card-metrics").locator("span")).toHaveCount(3);
     await expect(mainPrimaryRow).toContainText("stories");
     await expect(mainPrimaryRow).toContainText("chars");
     await expect(mainPrimaryRow).not.toContainText("Open group");
@@ -335,6 +355,57 @@ test.describe("reader shell smoke", () => {
     );
     await expect(page.getByTestId("group-shell")).toBeVisible();
     await expect(page.getByTestId("group-stats")).toBeVisible();
+    await expect(page.getByTestId("group-flow-nav")).toBeVisible();
+    await expect(
+      page.locator(
+        `[data-testid="group-flow-card"][data-group-id="${sampleStory.groupId}"][data-current="true"]`,
+      ),
+    ).toBeVisible();
+    const sampleStoryCard = page.locator(
+      `[data-testid="group-story-card"][href="/ark-str/reader/${sampleStory.server}/${sampleStory.groupId}/${sampleStory.storyId}/"]`,
+    );
+    await expect(sampleStoryCard).toBeVisible();
+    await expect(sampleStoryCard.getByTestId("group-story-metrics")).toContainText("chars");
+    await expect(sampleStoryCard).not.toContainText(sampleStory.storyId);
+    await expect(page.getByTestId("group-shell")).not.toContainText("Open story");
+    await expect(page.getByTestId("group-shell")).not.toContainText("Bundled body ready");
+
+    await page.goto(toAppPath(`reader/kr/${koreanMainStorylinePrimary.groupId}`));
+    const mainGroupFlow = page.getByTestId("group-flow-nav");
+    await expect(mainGroupFlow).toBeVisible();
+    await expect(mainGroupFlow.getByRole("heading", { name: koreanMainStoryline.title })).toBeVisible();
+    await expect(mainGroupFlow).not.toContainText("Storyline flow");
+    const currentMainGroupFlowCard = mainGroupFlow.locator(
+      `[data-testid="group-flow-card"][data-group-id="${koreanMainStorylinePrimary.groupId}"][data-current="true"]`,
+    );
+    await expect(currentMainGroupFlowCard).toBeVisible();
+    await expect(currentMainGroupFlowCard.getByTestId("group-flow-card-title")).toHaveCSS(
+      "color",
+      "rgb(255, 255, 255)",
+    );
+    const currentMainGroupFlowImage = currentMainGroupFlowCard.getByTestId("group-flow-card-image");
+    if ((await currentMainGroupFlowImage.count()) > 0) {
+      await expect(currentMainGroupFlowImage).toBeVisible();
+      const currentMainGroupFlowImageOpacity = Number(
+        await currentMainGroupFlowImage.evaluate((node) => window.getComputedStyle(node).opacity),
+      );
+      expect(currentMainGroupFlowImageOpacity).toBeGreaterThanOrEqual(0.7);
+    }
+    const mainGroupFlowReferenceCard = mainGroupFlow.locator(
+      `[data-testid="group-flow-card"][data-group-id="${koreanMainStorylineReference.groupId}"][data-role="reference"]`,
+    ).first();
+    await expect(mainGroupFlowReferenceCard).toBeVisible();
+    await expect(mainGroupFlowReferenceCard.locator("svg")).toBeVisible();
+
+    await page.goto(toAppPath(`reader/kr/${koreanOperatorStorylinePrimary.groupId}`));
+    const operatorGroupFlow = page.getByTestId("group-flow-nav");
+    await expect(operatorGroupFlow.getByRole("heading", { name: koreanOperatorStoryline.title })).toBeVisible();
+    expect(await operatorGroupFlow.getByTestId("group-flow-card").count()).toBeLessThanOrEqual(24);
+    await expect(
+      operatorGroupFlow.locator(
+        `[data-testid="group-flow-card"][data-group-id="${koreanOperatorStorylinePrimary.groupId}"][data-current="true"]`,
+      ),
+    ).toBeVisible();
 
     await page.goto(
       toAppPath(`reader/${sampleStory.server}/${sampleStory.groupId}/${sampleStory.storyId}`),

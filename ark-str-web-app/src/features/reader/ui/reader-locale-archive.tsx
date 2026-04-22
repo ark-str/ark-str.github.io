@@ -31,11 +31,11 @@ function formatMetric(value: number) {
 
 function getArchiveCardBackgroundClassName(backgroundImageAspect: ContentGroupEntry["backgroundImageAspect"]) {
   const sharedClassName =
-    "absolute inset-0 h-full w-full transition duration-[var(--motion-fast)] ease-out group-hover:opacity-[0.38]";
+    "absolute inset-0 h-full w-full transition duration-[var(--motion-fast)] ease-out group-hover:opacity-[0.78]";
 
   return backgroundImageAspect === "square"
-    ? `${sharedClassName} object-contain p-5 opacity-[0.34] blur-[1px]`
-    : `${sharedClassName} scale-105 object-cover opacity-[0.28] blur-[2px]`;
+    ? `${sharedClassName} object-contain p-5 opacity-75 blur-[0.5px]`
+    : `${sharedClassName} scale-105 object-cover opacity-70 blur-[1px]`;
 }
 
 export function ReaderLocaleArchive({
@@ -108,7 +108,7 @@ export function ReaderLocaleArchive({
       return (
         <Link
           key={`${storyline.storylineId}:${item.groupId}`}
-          className="group relative grid min-h-28 overflow-hidden rounded-[var(--radius-md)] border border-[var(--border)] bg-[var(--panel)] p-4 text-[var(--text)] transition duration-[var(--motion-fast)] ease-out hover:-translate-y-px hover:border-[var(--accent)] hover:shadow-[var(--shadow-sm)]"
+          className="group relative grid min-h-28 content-start gap-4 overflow-hidden rounded-[var(--radius-md)] border border-white/10 bg-black/80 p-5 text-white transition duration-[var(--motion-fast)] ease-out hover:-translate-y-px hover:border-[var(--accent)] hover:shadow-[var(--shadow-sm)]"
           data-group-id={item.groupId}
           data-testid="storyline-primary-card"
           href={href}
@@ -125,15 +125,29 @@ export function ReaderLocaleArchive({
                 loading="lazy"
                 src={item.group.backgroundImageHref}
               />
-              <span className="absolute inset-0 bg-[var(--panel)]/72" aria-hidden="true" />
-              <span className="absolute inset-0 bg-gradient-to-br from-[var(--panel)]/92 via-[var(--panel)]/60 to-[var(--accent-soft)]/35" aria-hidden="true" />
+              <span className="absolute inset-0 bg-black/36" aria-hidden="true" />
+              <span className="absolute inset-0 bg-gradient-to-br from-black/78 via-black/34 to-black/10" aria-hidden="true" />
             </>
           ) : null}
-          <span className="relative z-10 text-base font-semibold leading-6">{item.group.title}</span>
-          <span className="relative z-10 grid gap-1 text-[11px] font-semibold uppercase tracking-[0.12em] text-[var(--text-muted)] sm:grid-cols-3 sm:gap-2">
-            <span>{formatMetric(item.group.storyCount)} stories</span>
-            <span>{formatMetric(item.group.totalVisibleCharacterCount)} chars</span>
-            <span>약 {formatMetric(item.group.estimatedMinutes)}분</span>
+          <span
+            className="relative z-10 text-base font-semibold leading-6 text-white drop-shadow-md"
+            data-testid="storyline-primary-card-title"
+          >
+            {item.group.title}
+          </span>
+          <span
+            className="relative z-10 flex flex-wrap gap-x-2 gap-y-1.5 text-[11px] font-semibold uppercase tracking-[0.12em] text-white/80"
+            data-testid="storyline-primary-card-metrics"
+          >
+            <span className="inline-flex h-7 items-center rounded-full border border-white/15 bg-black/35 px-3">
+              {formatMetric(item.group.storyCount)} stories
+            </span>
+            <span className="inline-flex h-7 items-center rounded-full border border-white/15 bg-black/35 px-3">
+              {formatMetric(item.group.totalVisibleCharacterCount)} chars
+            </span>
+            <span className="inline-flex h-7 items-center rounded-full border border-white/15 bg-black/35 px-3">
+              약 {formatMetric(item.group.estimatedMinutes)}분
+            </span>
           </span>
         </Link>
       );
