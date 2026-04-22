@@ -22,6 +22,9 @@ export type ContentGroupEntry = {
   actType: string | null;
   startTime: number | null;
   endTime: number | null;
+  backgroundImageId: string | null;
+  backgroundImageAspect: "square" | "wide" | null;
+  backgroundImagePath: string | null;
   storyCount: number;
   totalVisibleCharacterCount: number;
   estimatedMinutes: number;

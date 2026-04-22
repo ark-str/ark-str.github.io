@@ -23,9 +23,11 @@ The app should feel editorial, deliberate, and product-specific rather than like
 - app-level light/dark theme toggle persisted through the preferences feature
 - canonical locale archive routes, group overview routes, and direct story deep links
 - locale archives render generated storyline sections as animated collapsed grid cards; regular storyline cards stay inside the main grid as single cells whether closed or open, expanded regular sections keep a simple one-column list, and operator narratives sit in a separate bottom section with an internal grid
+- locale archive primary group cards may include generated group images sourced first from `assets/group-backgrounds/<groupId>.png`; square MAINLINE artwork is contained and wide ACTIVITY artwork is used as a soft card background
 - first-pass story body rendering sourced from bundled story detail JSON
 - a restrained floating app bar shared by home, archive, group, and story routes
 - story pages with left-side group navigation, main reading column, bottom summary section, and a floating top button
+- group overview pages render the generated group image above the title and metrics when one is available
 - story-only dynamic backdrops driven directly by intersecting bundled background blocks, while non-story pages keep the archive base background
 - in-flow background blocks keep their own bundled image previews without cropping and still drive the fixed story backdrop
 - story backdrop swaps on story pages happen immediately without cross-fade state

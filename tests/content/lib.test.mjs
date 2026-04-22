@@ -4,13 +4,23 @@ import path from "node:path";
 import test from "node:test";
 import assert from "node:assert/strict";
 import {
+  collectReferencedGroupBackgroundPaths,
   getGeneratedFilePaths,
   getGeneratedBackgroundPublicPath,
+  getGeneratedGroupBackgroundPublicPath,
   getGeneratedPortraitPublicPath,
   resolveStorySource,
   selectStoryTitle,
   writeGeneratedArtifacts,
 } from "../../scripts/content/lib.mjs";
+
+function createPngHeader(width, height) {
+  const buffer = Buffer.alloc(24);
+  buffer.set([0x89, 0x50, 0x4e, 0x47], 0);
+  buffer.writeUInt32BE(width, 16);
+  buffer.writeUInt32BE(height, 20);
+  return buffer;
+}
 
 test("selectStoryTitle prefers storyName then stage name then storyId", () => {
   assert.equal(
@@ -348,4 +358,104 @@ test("writeGeneratedArtifacts normalizes background filenames for mixed-case bac
     backgroundManifest["38_g21_skystarry_r1"],
     "/generated/backgrounds/38_g21_skystarry_r1.png",
   );
+});
+
+test("writeGeneratedArtifacts copies inferred group background images from resource art", () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "ark-str-generated-"));
+  const groupBackgroundPath = getGeneratedGroupBackgroundPublicPath("title_stultifera_navis");
+  const artifacts = {
+    index: {
+      generatedAt: "2026-04-22T00:00:00.000Z",
+      vendor: {
+        source: "ArknightsAssets/ArknightsGamedata",
+        submodulePath: "vendor/ArknightsGamedata",
+        submoduleSha: "abc123",
+        servers: [],
+      },
+      groups: [
+        {
+          server: "en",
+          groupId: "act17side",
+          title: "Stultifera Navis",
+          entryType: "ACTIVITY",
+          actType: "SIDE_STORY",
+          startTime: null,
+          endTime: null,
+          backgroundImageId: "title_stultifera_navis",
+          backgroundImageAspect: "wide",
+          backgroundImagePath: groupBackgroundPath,
+          storyCount: 1,
+          totalVisibleCharacterCount: 450,
+          estimatedMinutes: 1,
+        },
+      ],
+      stories: [],
+    },
+    sourceManifest: {
+      generatedAt: "2026-04-22T00:00:00.000Z",
+      vendor: { submoduleSha: "abc123" },
+      items: [],
+    },
+    summaryManifest: {
+      generatedAt: "2026-04-22T00:00:00.000Z",
+      vendor: { submoduleSha: "abc123" },
+      items: [],
+    },
+    storyDetails: [],
+    portraitPaths: {},
+    backgroundPaths: {},
+    groupBackgroundPaths: {
+      "en:act17side": {
+        backgroundImageId: "title_stultifera_navis",
+        backgroundImageAspect: "wide",
+        backgroundImagePath: groupBackgroundPath,
+        sourcePath: "mapreview/act17side_01.png",
+        sourceType: "vendor",
+      },
+    },
+  };
+
+  fs.mkdirSync(path.join(root, "vendor", "ArknightsResource", "mapreview"), {
+    recursive: true,
+  });
+  fs.writeFileSync(path.join(root, "vendor", "ArknightsResource", "mapreview", "act17side_01.png"), "group-bg");
+
+  writeGeneratedArtifacts(artifacts, root);
+  const filePaths = getGeneratedFilePaths(root);
+
+  assert.equal(
+    fs.readFileSync(path.join(filePaths.generatedGroupBackgroundsRoot, "title_stultifera_navis.png"), "utf8"),
+    "group-bg",
+  );
+});
+
+test("collectReferencedGroupBackgroundPaths prefers project group overrides", () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "ark-str-generated-"));
+  const groupBackgroundCandidates = new Map([
+    [
+      "en:act17side",
+      [
+        {
+          backgroundImageId: "title_stultifera_navis",
+          backgroundImageAspect: "wide",
+          sourceIds: ["27_kv"],
+        },
+      ],
+    ],
+  ]);
+
+  fs.mkdirSync(path.join(root, "assets", "group-backgrounds"), { recursive: true });
+  fs.mkdirSync(path.join(root, "vendor", "ArknightsResource", "avgs"), { recursive: true });
+  fs.writeFileSync(path.join(root, "assets", "group-backgrounds", "act17side.png"), createPngHeader(256, 256));
+  fs.writeFileSync(path.join(root, "vendor", "ArknightsResource", "avgs", "27_kv.png"), createPngHeader(1600, 900));
+
+  const groupBackgroundPaths = collectReferencedGroupBackgroundPaths(groupBackgroundCandidates, root);
+
+  assert.deepEqual(groupBackgroundPaths["en:act17side"], {
+    backgroundImageId: "act17side",
+    backgroundImageAspect: "square",
+    backgroundImagePath: "/generated/group-backgrounds/act17side.png",
+    sourcePath: "assets/group-backgrounds/act17side.png",
+    sourceType: "project",
+  });
 });

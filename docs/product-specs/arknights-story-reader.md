@@ -68,6 +68,7 @@ This phase keeps the recovered reader shell and Pages deployment path stable whi
 - locale archives group story sets by generated storyline metadata in initially collapsed animated grid cards that remain one main-grid cell whether closed or open before routing into dedicated group overview pages
 - expanded regular storyline archive sections render `STORY_SET` primary groups and `BEFORE` / `AFTER` flow references in the same sorted one-column list; `NONE/NONE` review groups are `오퍼레이터 서사`, unmatched event groups are `미분류`, and `오퍼레이터 서사` is sorted last and rendered as a bottom section outside the main grid with an internal group grid
 - generated group and story metrics for total visible characters and estimated reading time
+- generated group-level images copied into `public/generated/group-backgrounds/`; manually curated `assets/group-backgrounds/<groupId>.png` files override inferred `ArknightsResource` sources, MAINLINE groups prefer square artwork, and ACTIVITY groups prefer wide atmospheric images
 - story pages keep the global archive feel, but only story pages add a dynamic fixed background backdrop sourced from in-flow `background` blocks
 - story pages keep `background` blocks in the flow as scroll markers with bundled preview images shown uncropped while the backdrop updates from IntersectionObserver visibility
 - story-page backdrop swaps are immediate; cross-fade state is intentionally omitted to keep the reader surface predictable

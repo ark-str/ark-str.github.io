@@ -19,6 +19,7 @@ This project intentionally separates the repository harness from the runnable we
 - `ark-str-web-app/src/features/` - product features with explicit layer boundaries
 - `ark-str-web-app/src/generated/content/` - app-internal generated metadata and exact-path loader map derived from the published content artifacts
 - `ark-str-web-app/public/generated/` - generated static assets consumed at runtime
+- `assets/group-backgrounds/` - project-owned source images for manually curated reader group backgrounds
 - `scripts/guards/` - mechanical repository rules
 - `scripts/harness/` - verification and autonomous iteration entry points
 - `scripts/content/` - build-time content synchronization and generation entry points

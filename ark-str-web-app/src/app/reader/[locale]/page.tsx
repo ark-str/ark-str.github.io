@@ -11,6 +11,7 @@ import {
   getLocaleGroups,
   getLocaleStorylines,
   readContentIndex,
+  resolvePublicAssetPath,
 } from "@/features/content/service/read-content-index";
 import { ReaderLocaleArchive } from "@/features/reader/ui/reader-locale-archive";
 
@@ -38,6 +39,7 @@ export default async function ReaderLocalePage({
 
   const groups = getLocaleGroups(index, locale).map((group) => ({
     ...group,
+    backgroundImageHref: resolvePublicAssetPath(group.backgroundImagePath),
     stories: getGroupStories(index, locale, group.groupId),
   }));
   const storylines = getLocaleStorylines(index, locale);
