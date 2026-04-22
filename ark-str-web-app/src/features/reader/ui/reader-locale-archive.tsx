@@ -147,8 +147,7 @@ export function ReaderLocaleArchive({
           return (
             <DisclosureCard
               key={storyline.storylineId}
-              contentClassName="sm:grid-cols-2 2xl:grid-cols-3"
-              contentTestId="storyline-item-grid"
+              contentTestId="storyline-item-list"
               data-storyline-id={storyline.storylineId}
               data-testid="storyline-section"
               panelTestId="storyline-panel"
@@ -164,8 +163,7 @@ export function ReaderLocaleArchive({
       {operatorStoryline ? (
         <section className="mt-2" data-testid="operator-storyline-section">
           <DisclosureCard
-            className="md:data-[state=open]:col-span-1 xl:data-[state=open]:col-span-1"
-            contentClassName="sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4"
+            contentClassName="grid sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4"
             contentTestId="storyline-item-grid"
             data-storyline-id={operatorStoryline.storylineId}
             data-testid="storyline-section"

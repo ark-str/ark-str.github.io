@@ -40,8 +40,7 @@ export function DisclosureCard({
   return (
     <Card
       className={cn(
-        "overflow-hidden bg-[var(--surface)]/95 transition-[grid-column] duration-300 ease-out",
-        "md:data-[state=open]:col-span-2 xl:data-[state=open]:col-span-3",
+        "overflow-hidden bg-[var(--surface)]/95",
         className,
       )}
       data-state={isOpen ? "open" : "closed"}
@@ -81,7 +80,7 @@ export function DisclosureCard({
         style={{ gridTemplateRows: isOpen ? "1fr" : "0fr" }}
       >
         <div className="min-h-0 overflow-hidden">
-          <CardContent className={cn("grid gap-2 pt-4", contentClassName)} data-testid={contentTestId}>
+          <CardContent className={cn("flex flex-col gap-2 pt-4", contentClassName)} data-testid={contentTestId}>
             {children}
           </CardContent>
         </div>

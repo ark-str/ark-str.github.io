@@ -288,12 +288,24 @@ test.describe("reader shell smoke", () => {
     await expect(mainStorylinePanel).toHaveAttribute("data-state", "open");
     await expect(mainStorylinePanel).toHaveAttribute("aria-hidden", "false");
     await expect(mainStorylinePanel).not.toHaveAttribute("inert", "");
+    const mainStorylineGridPlacement = await mainStorylineSection.evaluate((node) => {
+      const styles = window.getComputedStyle(node);
+      return {
+        gridColumnEnd: styles.gridColumnEnd,
+        gridColumnStart: styles.gridColumnStart,
+      };
+    });
+    expect(mainStorylineGridPlacement).toEqual({
+      gridColumnEnd: "auto",
+      gridColumnStart: "auto",
+    });
     const panelTransitionDuration = await mainStorylinePanel.evaluate(
       (node) => window.getComputedStyle(node).transitionDuration,
     );
     expect(panelTransitionDuration).toContain("0.3s");
-    const mainStorylineItemGrid = mainStorylineSection.getByTestId("storyline-item-grid");
-    await expect(mainStorylineItemGrid).toHaveCSS("display", "grid");
+    const mainStorylineItemList = mainStorylineSection.getByTestId("storyline-item-list");
+    await expect(mainStorylineItemList).toHaveCSS("display", "flex");
+    await expect(mainStorylineItemList).toHaveCSS("flex-direction", "column");
     await expect(mainPrimaryRow).toBeVisible();
     await expect(mainPrimaryRow).toHaveAttribute("href", `/ark-str/reader/kr/${koreanMainStorylinePrimary.groupId}/`);
     await expect(mainPrimaryRow).toContainText("stories");
@@ -311,6 +323,9 @@ test.describe("reader shell smoke", () => {
         '[data-testid="storyline-section"][data-storyline-id="synthetic_operator_narratives"]',
       ),
     ).toContainText("오퍼레이터 서사");
+    const operatorStorylineGrid = operatorStorylineSection.getByTestId("storyline-item-grid");
+    await operatorStorylineSection.getByTestId("storyline-toggle").click();
+    await expect(operatorStorylineGrid).toHaveCSS("display", "grid");
     await expect(
       page.locator('[data-testid="storyline-section"][data-storyline-id="synthetic_uncategorized"]'),
     ).toContainText("미분류");
