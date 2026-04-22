@@ -1,19 +1,19 @@
 # Latest Iteration
 
-Latest parent iteration: `#70`
+Latest parent iteration: `#73`
 
 Completed child issue:
 
-- `#71` - implement animated archive disclosure polish
+- `#74` - fix regular archive card grid span
 
 Current closeout outcome:
 
-- storyline cards split header metadata into group/reference and chars/time lines
-- storyline cards open and close with a 300ms local disclosure animation
-- expanded storyline cards render primary groups and flow references in a responsive grid
-- primary group and flow reference row contents are preserved from the prior archive iteration
-- `오퍼레이터 서사` is excluded from the main storyline grid and rendered as a bottom section
-- `npm run verify` passed on branch `codex-reader-archive-polish-issue-71`
+- regular storyline cards stay inside the main grid as one cell whether closed or open
+- only `오퍼레이터 서사` is excluded from the main storyline grid and rendered as a bottom section
+- expanded regular storyline contents stay as a simple one-column list
+- the bottom `오퍼레이터 서사` section keeps an internal responsive grid
+- smoke coverage now checks the open regular card grid placement, regular list layout, and operator grid layout
+- `npm run verify` passed on branch `codex-archive-grid-span-issue-74`
 
 Remaining product gaps:
 
