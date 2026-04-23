@@ -422,10 +422,7 @@ export function BootstrapHome({
           </CardContent>
         </Card>
 
-        <Card
-          className="mt-[6rem] bg-[var(--surface)]/94"
-          data-testid="home-recommendations"
-        >
+        <Card className="mt-[13.5rem] bg-[var(--surface)]/94" data-testid="home-recommendations">
           <CardHeader className="gap-3">
             <div className="flex items-center gap-3">
               <LibraryBig className="h-5 w-5 text-[var(--accent)]" />

@@ -757,6 +757,14 @@ test.describe("reader shell smoke", () => {
     await expect(page.getByTestId("story-body")).toContainText("Dr.로도스");
     await expect(page.getByTestId("story-body")).not.toContainText("{@Nickname}");
 
+    await page.goto(toAppPath());
+    await page.getByTestId("nickname-input").fill("$&");
+    await page.goto(
+      toAppPath(`reader/kr/${koreanNicknameStory.groupId}/${koreanNicknameStory.storyId}`),
+    );
+    await expect(page.getByTestId("story-body")).toContainText("$& 박사");
+    await expect(page.getByTestId("story-body")).not.toContainText("{@nickname}");
+
     await page.goto(
       toAppPath(
         `reader/${sampleBackgroundStoryEntry.server}/${sampleBackgroundStoryEntry.groupId}/${sampleBackgroundStoryEntry.storyId}`,
