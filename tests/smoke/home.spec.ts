@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { expect, test } from "@playwright/test";
-import type { Page } from "@playwright/test";
+import type { Locator, Page } from "@playwright/test";
 
 const appBasePath = process.env.PLAYWRIGHT_APP_BASE_PATH ?? "/ark-str";
 const readerSessionKey = "ark-str:reader-session:v1";
@@ -240,6 +240,10 @@ function trackBrowserErrors(page: Page) {
   };
 }
 
+async function readScrollbarTrackBackground(locator: Locator) {
+  return locator.evaluate((node) => window.getComputedStyle(node, "::-webkit-scrollbar-track").backgroundColor);
+}
+
 test.describe("reader shell smoke", () => {
   test("opens locale archives, reads a story, and restores session without browser errors", async ({
     page,
@@ -392,8 +396,23 @@ test.describe("reader shell smoke", () => {
       toAppPath(`reader/${sampleStory.server}/${sampleStory.groupId}`),
     );
     await expect(page.getByTestId("group-shell")).toBeVisible();
+    await page.setViewportSize({ width: 390, height: 820 });
+    const groupHeroTitleBounds = await page.getByTestId("group-hero-title").evaluate((node) => {
+      const rect = node.getBoundingClientRect();
+      return {
+        right: rect.right,
+        viewportWidth: window.innerWidth,
+        width: rect.width,
+      };
+    });
+    expect(groupHeroTitleBounds.width).toBeLessThanOrEqual(groupHeroTitleBounds.viewportWidth);
+    expect(groupHeroTitleBounds.right).toBeLessThanOrEqual(groupHeroTitleBounds.viewportWidth);
+    await page.setViewportSize({ width: 1280, height: 720 });
     await expect(page.getByTestId("group-stats")).toBeVisible();
     await expect(page.getByTestId("group-flow-nav")).toBeVisible();
+    expect(await readScrollbarTrackBackground(page.getByTestId("group-flow-scroll"))).toBe(
+      "rgba(0, 0, 0, 0)",
+    );
     await expect(
       page.locator(
         `[data-testid="group-flow-card"][data-group-id="${sampleStory.groupId}"][data-current="true"]`,
@@ -453,6 +472,35 @@ test.describe("reader shell smoke", () => {
     await expect(page.getByTestId("chrome-story-select")).toBeVisible();
     await expect(page.getByTestId("story-body")).toBeVisible();
     await expect(page.getByTestId("story-summary-section")).toBeVisible();
+    await expect(page.getByTestId("reader-shell")).not.toContainText(sampleStory.sourcePath);
+    await expect(page.getByTestId("reader-shell")).not.toContainText(
+      `${sampleStoryGroup.storyCount} stories in`,
+    );
+    await expect(page.getByTestId("story-header-metrics").getByTestId("story-metric-badge")).toHaveCount(2);
+    const siblingNav = page.getByTestId("story-sibling-nav");
+    await expect(siblingNav).toBeVisible();
+    await expect(siblingNav.getByTestId("story-group-metrics").getByTestId("story-metric-badge")).toHaveCount(3);
+    await expect(siblingNav).not.toContainText("Group");
+    await expect(page.getByTestId("story-sibling-list")).toHaveCSS("overflow-y", "auto");
+    expect(await readScrollbarTrackBackground(page.getByTestId("story-sibling-list"))).toBe(
+      "rgba(0, 0, 0, 0)",
+    );
+    const activeSiblingCard = siblingNav.locator(
+      `[data-testid="story-sibling-card"][href="/ark-str/reader/${sampleStory.server}/${sampleStory.groupId}/${sampleStory.storyId}/"]`,
+    );
+    await expect(activeSiblingCard).toBeVisible();
+    await expect(activeSiblingCard).not.toContainText(sampleStory.storyId);
+    await expect(activeSiblingCard.getByTestId("story-sibling-metrics").getByTestId("story-metric-badge")).toHaveCount(2);
+    if (sampleStory.storyCode) {
+      await expect(activeSiblingCard.getByTestId("story-stage-badge")).toContainText(sampleStory.storyCode);
+    }
+    if (sampleStory.avgTag) {
+      await expect(activeSiblingCard.getByTestId("story-phase-badge")).toContainText(sampleStory.avgTag);
+    }
+    await page.setViewportSize({ width: 390, height: 820 });
+    await expect(siblingNav).toBeHidden();
+    await page.setViewportSize({ width: 1280, height: 720 });
+    await expect(siblingNav).toBeVisible();
 
     const appBar = page.getByTestId("floating-app-bar");
     await expect(appBar).toHaveCSS("position", "fixed");
@@ -460,6 +508,31 @@ test.describe("reader shell smoke", () => {
     await expect(appBar).toHaveCSS("border-top-left-radius", "0px");
     await expect(appBar.getByTestId("app-home-icon")).toBeVisible();
     await expect(appBar.getByTestId("theme-toggle")).toHaveText("");
+    const appBarControlSizes = await appBar.evaluate((node) => {
+      const homeControl = node.querySelector('a[aria-label="홈"]');
+      const themeToggle = node.querySelector('[data-testid="theme-toggle"]');
+      const homeIcon = node.querySelector('[data-testid="app-home-icon"]');
+
+      if (!homeControl || !themeToggle || !homeIcon) {
+        throw new Error("App bar controls were not found.");
+      }
+
+      const homeRect = homeControl.getBoundingClientRect();
+      const themeRect = themeToggle.getBoundingClientRect();
+      const iconRect = homeIcon.getBoundingClientRect();
+
+      return {
+        homeHeight: Math.round(homeRect.height),
+        homeWidth: Math.round(homeRect.width),
+        iconHeight: Math.round(iconRect.height),
+        themeHeight: Math.round(themeRect.height),
+        themeWidth: Math.round(themeRect.width),
+      };
+    });
+    expect(appBarControlSizes.homeHeight).toBe(appBarControlSizes.themeHeight);
+    expect(appBarControlSizes.homeWidth).toBe(appBarControlSizes.themeWidth);
+    expect(appBarControlSizes.homeHeight).toBeGreaterThanOrEqual(44);
+    expect(appBarControlSizes.iconHeight).toBeLessThan(appBarControlSizes.homeHeight);
     await expect(appBar.getByTestId("breadcrumb-separator-icon")).toHaveCount(2);
     const appBarBackdropFilter = await appBar.evaluate((node) => {
       const styles = window.getComputedStyle(node);

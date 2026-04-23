@@ -1,20 +1,21 @@
 # Latest Iteration
 
-Latest parent iteration: `#86`
+Latest parent iteration: `#88`
 
 Completed child issue:
 
-- `#86` - update app bar chrome and icon behavior
+- `#88` - refine reader group and story navigation UI
 
 Current closeout outcome:
 
-- the shared app bar is fixed to the top edge instead of using rounded floating chrome
-- breadcrumb separators use icon-only chevrons while preserving the existing navigation layout
-- the home control uses the bundled `ark_str_icon.png`, and the same asset is registered for browser metadata icons
-- the theme control is icon-only and remains persisted through the existing preferences feature
-- the app bar measures its own height for mobile wrapping and hides on downward scroll until the reader scrolls upward
-- smoke coverage now checks the app icon, fixed app bar chrome, icon separators, and scroll hide/reveal behavior
-- `npm run verify` passed on branch `issue-86-app-bar-chrome`
+- group overview hero titles wrap safely on narrow mobile widths
+- the public app icon is served as a compact 96px bundled asset, while app-bar home/theme controls share the same larger hit area
+- story headers no longer expose raw vendor source paths or redundant group story-count copy
+- story-page group metrics and sibling-story metadata render as wrapping badges
+- the sibling-story navigation card is desktop-only, viewport-height constrained, and independently scrollable
+- sibling-story cards keep bridge/stage/pre/post metadata visible without exposing internal story IDs
+- horizontal and vertical scrollbar tracks/corners are transparent across local scroll regions
+- `npm run verify` passed on branch `issue-88-reader-layout-refinements`
 
 Remaining product gaps:
 

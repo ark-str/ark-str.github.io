@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useEffectEvent, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useEffectEvent, useMemo, useRef, useState, type ReactNode } from "react";
 import Link from "next/link";
 import { ArrowUp } from "lucide-react";
 import { ReaderPageFrame } from "@/components/layout/reader-page-frame";
@@ -43,9 +43,53 @@ import type {
   StoryDetail,
 } from "@/features/content/types";
 import { useReaderSession } from "@/features/reader/runtime/reader-session-context";
+import { cn } from "@/lib/utils";
 
 function formatMetric(value: number) {
   return new Intl.NumberFormat("ko-KR").format(value);
+}
+
+function StoryClassificationBadges({
+  compact = false,
+  story,
+}: {
+  compact?: boolean;
+  story: ContentStoryIndexEntry;
+}) {
+  const storyCode = story.storyCode?.trim();
+  const avgTag = story.avgTag?.trim();
+  const badgeClassName = compact ? "px-2 py-0.5 text-[10px] tracking-[0.12em]" : undefined;
+
+  return (
+    <>
+      {storyCode ? (
+        <Badge className={badgeClassName} data-testid="story-stage-badge" variant="contrast">
+          {storyCode}
+        </Badge>
+      ) : null}
+      {avgTag ? (
+        <Badge
+          className={badgeClassName}
+          data-testid="story-phase-badge"
+          variant={avgTag === "브릿지" ? "accent" : "default"}
+        >
+          {avgTag}
+        </Badge>
+      ) : null}
+    </>
+  );
+}
+
+function StoryMetricBadge({ children, compact = false }: { children: ReactNode; compact?: boolean }) {
+  return (
+    <Badge
+      className={cn("normal-case tracking-[0.08em]", compact && "px-2 py-0.5 text-[10px]")}
+      data-testid="story-metric-badge"
+      variant="default"
+    >
+      {children}
+    </Badge>
+  );
 }
 
 function ReaderPortraitSlot({
@@ -649,22 +693,16 @@ export function ReaderStoryShell({
       header={
         <section className="relative z-10 space-y-4">
           <div className="flex flex-wrap items-center gap-2">
-            {story.storyCode ? <Badge variant="default">{story.storyCode}</Badge> : null}
-            {story.avgTag ? <Badge variant="default">{story.avgTag}</Badge> : null}
-            <Badge variant="default">{story.storyId}</Badge>
+            <StoryClassificationBadges story={story} />
           </div>
           <div className="space-y-2">
-            <h1 className="font-[var(--font-display)] text-4xl font-semibold leading-tight tracking-[-0.03em] md:text-5xl">
+            <h1 className="break-words font-[var(--font-display)] text-4xl font-semibold leading-tight tracking-[-0.03em] [overflow-wrap:anywhere] md:text-5xl">
               {story.title}
             </h1>
-            <p className="max-w-5xl text-sm leading-7 text-[var(--text-muted)] md:text-base">
-              {story.sourcePath}
-            </p>
           </div>
-          <div className="flex flex-wrap gap-3 text-sm text-[var(--text-muted)]">
-            <span>{formatMetric(story.visibleCharacterCount)} chars</span>
-            <span>약 {formatMetric(story.estimatedMinutes)}분</span>
-            <span>{group.storyCount} stories in {group.title}</span>
+          <div className="flex flex-wrap gap-2" data-testid="story-header-metrics">
+            <StoryMetricBadge>{formatMetric(story.visibleCharacterCount)} chars</StoryMetricBadge>
+            <StoryMetricBadge>약 {formatMetric(story.estimatedMinutes)}분</StoryMetricBadge>
           </div>
         </section>
       }
@@ -681,39 +719,50 @@ export function ReaderStoryShell({
 
       <section className="relative z-10 grid gap-6">
         <div className="grid gap-6 xl:grid-cols-[260px_minmax(0,1fr)]">
-          <aside className="grid gap-4 self-start xl:sticky xl:top-28">
-            <Card className="bg-[var(--surface)]/96">
-              <CardHeader>
-                <Badge variant="default" className="w-fit">
-                  Group
-                </Badge>
-                <CardTitle>{group.title}</CardTitle>
-                <CardDescription>
-                  {group.storyCount} stories · {formatMetric(group.totalVisibleCharacterCount)} chars · 약{" "}
-                  {formatMetric(group.estimatedMinutes)}분
-                </CardDescription>
+          <aside className="hidden self-start xl:sticky xl:top-[calc(var(--app-bar-height,7rem)+var(--space-4))] xl:block">
+            <Card
+              className="flex max-h-[calc(100vh-var(--app-bar-height,7rem)-var(--space-8))] flex-col bg-[var(--surface)]/96"
+              data-testid="story-sibling-nav"
+            >
+              <CardHeader className="shrink-0">
+                <CardTitle className="break-words leading-tight [overflow-wrap:anywhere]">
+                  {group.title}
+                </CardTitle>
+                <div className="flex flex-wrap gap-2" data-testid="story-group-metrics">
+                  <StoryMetricBadge compact>{formatMetric(group.storyCount)} stories</StoryMetricBadge>
+                  <StoryMetricBadge compact>
+                    {formatMetric(group.totalVisibleCharacterCount)} chars
+                  </StoryMetricBadge>
+                  <StoryMetricBadge compact>약 {formatMetric(group.estimatedMinutes)}분</StoryMetricBadge>
+                </div>
               </CardHeader>
-              <CardContent className="grid gap-2">
-                {siblingStories.map((entry) => (
-                  <Link
-                    key={entry.storyId}
-                    className={`rounded-[var(--radius-md)] border px-3 py-3 text-sm transition duration-[var(--motion-fast)] ease-out ${
-                      entry.storyId === story.storyId
-                        ? "border-[var(--accent)] bg-[var(--accent-soft)] text-[var(--accent-strong)]"
-                        : "border-[var(--border)] bg-[var(--panel)]/90 text-[var(--text)] hover:border-[var(--accent)] hover:bg-[var(--surface-muted)]"
-                    }`}
-                    href={getReaderStoryHref(locale, entry.groupId, entry.storyId)}
-                  >
-                    <span className="block font-semibold">{entry.title}</span>
-                    <span className="mt-1 block text-[10px] uppercase tracking-[0.14em] text-[var(--text-muted)]">
-                      {entry.storyCode ?? entry.storyId}
-                    </span>
-                    <span className="mt-1 block text-xs text-[var(--text-muted)]">
-                      {formatMetric(entry.visibleCharacterCount)} chars · 약{" "}
-                      {formatMetric(entry.estimatedMinutes)}분
-                    </span>
-                  </Link>
-                ))}
+              <CardContent className="min-h-0 overflow-y-auto px-4 pb-4 pr-3" data-testid="story-sibling-list">
+                <div className="grid gap-2 pr-1">
+                  {siblingStories.map((entry) => (
+                    <Link
+                      key={entry.storyId}
+                      className={cn(
+                        "grid gap-2 rounded-[var(--radius-md)] border px-3 py-3 text-sm transition duration-[var(--motion-fast)] ease-out",
+                        entry.storyId === story.storyId
+                          ? "border-[var(--accent)] bg-[var(--accent-soft)] text-[var(--accent-strong)]"
+                          : "border-[var(--border)] bg-[var(--panel)]/90 text-[var(--text)] hover:border-[var(--accent)] hover:bg-[var(--surface-muted)]",
+                      )}
+                      data-testid="story-sibling-card"
+                      href={getReaderStoryHref(locale, entry.groupId, entry.storyId)}
+                    >
+                      <span className="block font-semibold leading-5">{entry.title}</span>
+                      <span className="flex flex-wrap gap-1.5" data-testid="story-sibling-classification">
+                        <StoryClassificationBadges compact story={entry} />
+                      </span>
+                      <span className="flex flex-wrap gap-1.5" data-testid="story-sibling-metrics">
+                        <StoryMetricBadge compact>
+                          {formatMetric(entry.visibleCharacterCount)} chars
+                        </StoryMetricBadge>
+                        <StoryMetricBadge compact>약 {formatMetric(entry.estimatedMinutes)}분</StoryMetricBadge>
+                      </span>
+                    </Link>
+                  ))}
+                </div>
               </CardContent>
             </Card>
           </aside>

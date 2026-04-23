@@ -252,7 +252,7 @@ export function ReaderGroupOverview({ groupId, locale }: { groupId: string; loca
         <section>
           <Card className="overflow-hidden border-[var(--border)] bg-[var(--surface)]/92 shadow-[var(--shadow-sm)]">
             <div
-              className="relative flex aspect-[16/7] min-h-72 items-end justify-center overflow-hidden bg-[var(--surface-muted)]"
+              className="relative flex h-72 items-end justify-center overflow-hidden bg-[var(--surface-muted)] md:aspect-[16/7] md:h-auto md:min-h-72"
               data-testid="group-hero-image"
             >
               {groupWithAssets.backgroundImageHref ? (
@@ -271,7 +271,10 @@ export function ReaderGroupOverview({ groupId, locale }: { groupId: string; loca
                 <div className="h-full w-full bg-[radial-gradient(circle_at_top_left,color-mix(in_srgb,var(--accent)_28%,transparent),transparent_42%),linear-gradient(135deg,black,color-mix(in_srgb,var(--text)_18%,black))]" />
               )}
               <div className="absolute inset-x-0 bottom-0 z-10 grid justify-items-center gap-4 px-5 pb-7 pt-20 text-center text-white md:px-8 md:pb-9">
-                <h1 className="max-w-4xl font-[var(--font-display)] text-4xl font-semibold leading-tight tracking-[-0.04em] md:text-6xl">
+                <h1
+                  className="max-w-[min(100%,64rem)] break-words px-2 font-[var(--font-display)] text-4xl font-semibold leading-tight tracking-[-0.04em] [overflow-wrap:anywhere] md:text-6xl"
+                  data-testid="group-hero-title"
+                >
                   {group.title}
                 </h1>
                 <div
@@ -304,7 +307,7 @@ export function ReaderGroupOverview({ groupId, locale }: { groupId: string; loca
             {formatMetric(groupFlowItems.length)} groups
           </span>
         </div>
-        <div className="-mx-4 flex gap-3 overflow-x-auto px-4 py-2 md:mx-0 md:px-2">
+        <div className="-mx-4 flex gap-3 overflow-x-auto px-4 py-2 md:mx-0 md:px-2" data-testid="group-flow-scroll">
           {groupFlowItems.map((item) => (
             <Link
               key={item.itemKey}

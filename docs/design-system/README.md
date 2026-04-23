@@ -28,10 +28,11 @@ This v1 does not include:
 - surface language: restrained radii and compact chrome instead of pill-heavy cards
 - archive surfaces: locale archive pages use height-only animated collapsed storyline grid cards that keep their grid cell when expanded, simple regular storyline item lists, thinner flow-reference links, generated group image washes, and a separate bottom operator narrative grid section
 - group imagery: manually curated `assets/group-backgrounds/<groupId>.png` files override inferred sources; generated output is optimized WebP, MAINLINE images are treated as square contained title art, and ACTIVITY images are treated as wide atmospheric backgrounds
-- app chrome: the shared app bar is fixed to the top edge, uses the bundled archive icon for home navigation and browser metadata, keeps breadcrumb separators icon-only, and hides on downward scroll so long-form reading gets more vertical space
-- story surfaces: dynamic story backdrops switch behind the content from intersecting background blocks without blur/backdrop-filter effects, while in-flow background cards keep uncropped optimized WebP previews and dialogue cards prioritize body-first reading layouts
+- app chrome: the shared app bar is fixed to the top edge, uses a compact bundled archive icon for home navigation and browser metadata, keeps home/theme touch targets aligned, keeps breadcrumb separators icon-only, and hides on downward scroll so long-form reading gets more vertical space
+- story surfaces: dynamic story backdrops switch behind the content from intersecting background blocks without blur/backdrop-filter effects, while in-flow background cards keep uncropped optimized WebP previews, dialogue cards prioritize body-first reading layouts, and desktop sibling navigation uses compact wrapping badges with its own scroll area
 - implementation base: shadcn-style shared primitives customized for this project
 - theme strategy: light and dark from the start
+- scrollbars: transparent tracks and corners for both axes, with subdued local thumbs
 - runtime rule: no remote fonts, assets, or scripts
 
 ## Where It Lives
