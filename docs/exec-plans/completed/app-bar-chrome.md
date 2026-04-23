@@ -40,3 +40,4 @@ Update the shared app bar chrome so it behaves like a fixed top application bar 
 
 - Use a measured `--app-bar-height` CSS variable so fixed chrome can wrap on mobile without covering content.
 - Keep the app bar layout structure intact; only the outer chrome and icon treatments changed.
+- Reveal the hidden app bar on focus capture so keyboard users do not tab into visually hidden controls.

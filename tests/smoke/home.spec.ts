@@ -475,6 +475,10 @@ test.describe("reader shell smoke", () => {
     );
     await page.evaluate(() => window.scrollTo(0, 1200));
     await expect(appBar).toHaveAttribute("data-hidden", "true");
+    await appBar.getByRole("link", { name: "홈" }).focus();
+    await expect(appBar).toHaveAttribute("data-hidden", "false");
+    await page.evaluate(() => window.scrollTo(0, 1300));
+    await expect(appBar).toHaveAttribute("data-hidden", "true");
     await page.evaluate(() => window.scrollTo(0, 600));
     await expect(appBar).toHaveAttribute("data-hidden", "false");
 

@@ -119,6 +119,7 @@ export function FloatingAppBar({ model }: FloatingAppBarProps) {
       )}
       data-hidden={isHidden ? "true" : "false"}
       data-testid="floating-app-bar"
+      onFocusCapture={() => setIsHidden(false)}
     >
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-3 px-5 py-3 md:px-8 lg:flex-row lg:items-center lg:justify-between lg:px-12">
         <div className="flex flex-wrap items-center gap-2">
