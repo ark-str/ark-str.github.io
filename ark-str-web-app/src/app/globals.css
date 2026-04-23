@@ -142,10 +142,10 @@ body > * {
 }
 
 .home-full-bleed {
-  left: 50%;
   width: 100vw;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
 }
 
 a {
