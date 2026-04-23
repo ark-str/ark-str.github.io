@@ -201,6 +201,10 @@ const koreanNicknameStory = generatedIndex.stories.find(
   (story: { server: string; storyId: string }) =>
     story.server === "kr" && story.storyId === "act12d0_level_act12d0_01_end",
 );
+const koreanCapitalNicknameStory = generatedIndex.stories.find(
+  (story: { server: string; storyId: string }) =>
+    story.server === "kr" && story.storyId === "main_1_level_main_01-12_beg",
+);
 
 if (!koreanMainStoryline) {
   throw new Error("The Korean reader archive must include the mainLine storyline.");
@@ -228,6 +232,10 @@ if (!koreanOperatorStorylinePrimary) {
 
 if (!koreanNicknameStory) {
   throw new Error("The Korean content index must include a nickname-token story sample.");
+}
+
+if (!koreanCapitalNicknameStory) {
+  throw new Error("The Korean content index must include a capitalized nickname-token story sample.");
 }
 
 function toAppPath(route = "") {
@@ -742,6 +750,12 @@ test.describe("reader shell smoke", () => {
     await expect(page.getByTestId("story-body")).toContainText("로도스 박사");
     await expect(page.getByTestId("story-body")).not.toContainText("{@nickname}");
     await expect(page.getByTestId("story-body")).not.toContainText("{@nickName}");
+
+    await page.goto(
+      toAppPath(`reader/kr/${koreanCapitalNicknameStory.groupId}/${koreanCapitalNicknameStory.storyId}`),
+    );
+    await expect(page.getByTestId("story-body")).toContainText("Dr.로도스");
+    await expect(page.getByTestId("story-body")).not.toContainText("{@Nickname}");
 
     await page.goto(
       toAppPath(
