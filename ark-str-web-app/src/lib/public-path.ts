@@ -12,4 +12,5 @@ export function resolvePublicPath(publicPath: string) {
   return `${basePath}${normalizedPublicPath}`;
 }
 
-export const appIconPath = resolvePublicPath("/ark_str_icon.png");
+export const browserIconPath = resolvePublicPath("/ark_str_icon.png");
+export const appChromeIconPath = resolvePublicPath("/ark_str_app_icon.png");

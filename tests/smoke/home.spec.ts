@@ -8,6 +8,8 @@ const readerSessionKey = "ark-str:reader-session:v1";
 const preferencesKey = "ark-str:app-preferences:v1";
 const characterObservationsKey = "ark-str:character-observations:v1";
 const legacyBootstrapKey = "ark-str:reader-bootstrap:v1";
+const browserIconFile = path.join(process.cwd(), "ark-str-web-app", "public", "ark_str_icon.png");
+const appChromeIconFile = path.join(process.cwd(), "ark-str-web-app", "public", "ark_str_app_icon.png");
 const generatedIndex = JSON.parse(
   fs.readFileSync(
     path.join(process.cwd(), "ark-str-web-app", "public", "generated", "content", "index.json"),
@@ -52,6 +54,10 @@ function readStoryDetail(story: { bodyPath?: string | null }) {
       options?: Array<{ blocks?: unknown[] }>;
     }>;
   };
+}
+
+function readPngColorType(filePath: string) {
+  return fs.readFileSync(filePath)[25];
 }
 
 function hasBundledPortrait(speakerId: string) {
@@ -268,6 +274,8 @@ test.describe("reader shell smoke", () => {
       "href",
       `${appBasePath}/ark_str_icon.png`,
     );
+    expect(readPngColorType(browserIconFile)).toBe(2);
+    expect(readPngColorType(appChromeIconFile)).toBe(6);
     await expect(page.getByTestId("server-count")).not.toHaveText("0");
     await expect(page.getByTestId("story-count")).not.toHaveText("0");
 
@@ -496,6 +504,18 @@ test.describe("reader shell smoke", () => {
     }
     if (sampleStory.avgTag) {
       await expect(activeSiblingCard.getByTestId("story-phase-badge")).toContainText(sampleStory.avgTag);
+      const phaseBadgeBorderColor = await activeSiblingCard
+        .getByTestId("story-phase-badge")
+        .evaluate((node) => window.getComputedStyle(node).borderTopColor);
+      const accentBorderColor = await page.evaluate(() => {
+        const probe = document.createElement("span");
+        probe.style.color = "var(--accent)";
+        document.body.append(probe);
+        const color = window.getComputedStyle(probe).color;
+        probe.remove();
+        return color;
+      });
+      expect(phaseBadgeBorderColor).toBe(accentBorderColor);
     }
     await page.setViewportSize({ width: 390, height: 820 });
     await expect(siblingNav).toBeHidden();
@@ -508,31 +528,73 @@ test.describe("reader shell smoke", () => {
     await expect(appBar).toHaveCSS("border-top-left-radius", "0px");
     await expect(appBar.getByTestId("app-home-icon")).toBeVisible();
     await expect(appBar.getByTestId("theme-toggle")).toHaveText("");
-    const appBarControlSizes = await appBar.evaluate((node) => {
+    const appBarControlSizes = await appBar.evaluate((node, groupTitle) => {
       const homeControl = node.querySelector('a[aria-label="홈"]');
+      const storyRootControl = [...node.querySelectorAll("a")].find(
+        (item) => item.textContent?.trim() === "스토리",
+      );
       const themeToggle = node.querySelector('[data-testid="theme-toggle"]');
-      const homeIcon = node.querySelector('[data-testid="app-home-icon"]');
+      const homeIcon = node.querySelector<HTMLImageElement>('[data-testid="app-home-icon"]');
+      const localeSelect = node.querySelector('[data-testid="locale-select"]');
+      const storySelect = node.querySelector('[data-testid="chrome-story-select"]');
+      const groupCrumb = [...node.querySelectorAll("a, span")].find(
+        (item) => item.textContent?.trim() === groupTitle,
+      );
 
-      if (!homeControl || !themeToggle || !homeIcon) {
+      if (!homeControl || !storyRootControl || !themeToggle || !homeIcon || !localeSelect || !storySelect || !groupCrumb) {
         throw new Error("App bar controls were not found.");
       }
 
       const homeRect = homeControl.getBoundingClientRect();
+      const storyRootRect = storyRootControl.getBoundingClientRect();
       const themeRect = themeToggle.getBoundingClientRect();
       const iconRect = homeIcon.getBoundingClientRect();
+      const homeStyles = window.getComputedStyle(homeControl);
+      const storyRootStyles = window.getComputedStyle(storyRootControl);
+      const localeRect = localeSelect.getBoundingClientRect();
+      const localeStyles = window.getComputedStyle(localeSelect);
+      const storySelectRect = storySelect.getBoundingClientRect();
+      const storySelectStyles = window.getComputedStyle(storySelect);
+      const themeStyles = window.getComputedStyle(themeToggle);
 
       return {
+        groupFontSize: window.getComputedStyle(groupCrumb).fontSize,
+        homeBackgroundColor: homeStyles.backgroundColor,
         homeHeight: Math.round(homeRect.height),
+        homeIconSrc: homeIcon.getAttribute("src"),
+        homeRadius: homeStyles.borderTopLeftRadius,
         homeWidth: Math.round(homeRect.width),
         iconHeight: Math.round(iconRect.height),
+        localeFontSize: window.getComputedStyle(localeSelect).fontSize,
+        localeHeight: Math.round(localeRect.height),
+        localeRadius: localeStyles.borderTopLeftRadius,
+        storyRootHeight: Math.round(storyRootRect.height),
+        storyRootRadius: storyRootStyles.borderTopLeftRadius,
+        storySelectFontSize: window.getComputedStyle(storySelect).fontSize,
+        storySelectHeight: Math.round(storySelectRect.height),
+        storySelectRadius: storySelectStyles.borderTopLeftRadius,
+        themeBackgroundColor: themeStyles.backgroundColor,
         themeHeight: Math.round(themeRect.height),
+        themeRadius: themeStyles.borderTopLeftRadius,
         themeWidth: Math.round(themeRect.width),
       };
-    });
+    }, sampleStoryGroup.title);
     expect(appBarControlSizes.homeHeight).toBe(appBarControlSizes.themeHeight);
+    expect(appBarControlSizes.homeHeight).toBe(appBarControlSizes.storyRootHeight);
+    expect(appBarControlSizes.localeHeight).toBe(appBarControlSizes.storyRootHeight);
+    expect(appBarControlSizes.storySelectHeight).toBe(appBarControlSizes.storyRootHeight);
     expect(appBarControlSizes.homeWidth).toBe(appBarControlSizes.themeWidth);
-    expect(appBarControlSizes.homeHeight).toBeGreaterThanOrEqual(44);
-    expect(appBarControlSizes.iconHeight).toBeLessThan(appBarControlSizes.homeHeight);
+    expect(appBarControlSizes.homeHeight).toBe(36);
+    expect(appBarControlSizes.homeRadius).toBe(appBarControlSizes.storyRootRadius);
+    expect(appBarControlSizes.themeRadius).toBe(appBarControlSizes.storyRootRadius);
+    expect(appBarControlSizes.localeRadius).toBe(appBarControlSizes.storyRootRadius);
+    expect(appBarControlSizes.storySelectRadius).toBe(appBarControlSizes.storyRootRadius);
+    expect(appBarControlSizes.iconHeight).toBeGreaterThanOrEqual(32);
+    expect(appBarControlSizes.homeIconSrc).toBe(`${appBasePath}/ark_str_app_icon.png`);
+    expect(appBarControlSizes.homeBackgroundColor).toBe(appBarControlSizes.themeBackgroundColor);
+    expect(appBarControlSizes.groupFontSize).toBe("12px");
+    expect(appBarControlSizes.localeFontSize).toBe("12px");
+    expect(appBarControlSizes.storySelectFontSize).toBe("12px");
     await expect(appBar.getByTestId("breadcrumb-separator-icon")).toHaveCount(2);
     const appBarBackdropFilter = await appBar.evaluate((node) => {
       const styles = window.getComputedStyle(node);
