@@ -481,6 +481,20 @@ test.describe("reader shell smoke", () => {
     await expect(appBar).toHaveAttribute("data-hidden", "true");
     await page.evaluate(() => window.scrollTo(0, 600));
     await expect(appBar).toHaveAttribute("data-hidden", "false");
+    await page.evaluate(async () => {
+      for (let index = 0; index < 12; index += 1) {
+        window.scrollBy(0, 1);
+        await new Promise(requestAnimationFrame);
+      }
+    });
+    await expect(appBar).toHaveAttribute("data-hidden", "true");
+    await page.evaluate(async () => {
+      for (let index = 0; index < 12; index += 1) {
+        window.scrollBy(0, -1);
+        await new Promise(requestAnimationFrame);
+      }
+    });
+    await expect(appBar).toHaveAttribute("data-hidden", "false");
 
     await appBar.getByRole("link", { name: "스토리" }).click();
     await expect(page).toHaveURL(new RegExp(`/ark-str/reader/${sampleStory.server}/$`));

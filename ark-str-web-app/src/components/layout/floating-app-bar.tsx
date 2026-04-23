@@ -66,13 +66,14 @@ export function FloatingAppBar({ model }: FloatingAppBarProps) {
 
       if (nextScrollY <= 24) {
         setIsHidden(false);
+        lastScrollYRef.current = nextScrollY;
       } else if (scrollDelta > 8) {
         setIsHidden(true);
+        lastScrollYRef.current = nextScrollY;
       } else if (scrollDelta < -8) {
         setIsHidden(false);
+        lastScrollYRef.current = nextScrollY;
       }
-
-      lastScrollYRef.current = nextScrollY;
     };
 
     const handleScroll = () => {
