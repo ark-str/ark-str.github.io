@@ -320,6 +320,10 @@ test.describe("reader shell smoke", () => {
       (node) => window.getComputedStyle(node).transitionDuration,
     );
     expect(panelTransitionDuration).toContain("0.3s");
+    const panelTransitionProperty = await mainStorylinePanel.evaluate(
+      (node) => window.getComputedStyle(node).transitionProperty,
+    );
+    expect(panelTransitionProperty).not.toContain("opacity");
     const mainStorylineItemList = mainStorylineSection.getByTestId("storyline-item-list");
     await expect(mainStorylineItemList).toHaveCSS("display", "flex");
     await expect(mainStorylineItemList).toHaveCSS("flex-direction", "column");
@@ -447,6 +451,17 @@ test.describe("reader shell smoke", () => {
     await expect(page.getByTestId("story-summary-section")).toBeVisible();
 
     const appBar = page.getByTestId("floating-app-bar");
+    const appBarBackdropFilter = await appBar.evaluate((node) => {
+      const styles = window.getComputedStyle(node);
+      return {
+        backdropFilter: styles.backdropFilter,
+        webkitBackdropFilter: styles.getPropertyValue("-webkit-backdrop-filter"),
+      };
+    });
+    expect(appBarBackdropFilter).toEqual({
+      backdropFilter: "none",
+      webkitBackdropFilter: "",
+    });
     await expect(appBar.getByRole("link", { name: "스토리" })).toHaveAttribute(
       "href",
       `/ark-str/reader/${sampleStory.server}/`,
@@ -534,6 +549,7 @@ test.describe("reader shell smoke", () => {
       "src",
       `${appBasePath}${generatedBackgrounds[sampleBackgroundIds[0]]}`,
     );
+    await expect(page.getByTestId("story-backdrop-image")).toHaveCSS("filter", "none");
 
     const secondBackgroundBlock = page
       .locator(`[data-testid="background-block"][data-background-id="${sampleBackgroundIds[1]}"]`)

@@ -44,7 +44,7 @@ export function FloatingAppBar({ model }: FloatingAppBarProps) {
 
   return (
     <div
-      className="sticky top-4 z-40 rounded-[var(--radius-xl)] border border-[var(--border)] bg-[var(--surface)]/78 px-4 py-3 shadow-[var(--shadow-md)] backdrop-blur-xl"
+      className="sticky top-4 z-40 rounded-[var(--radius-xl)] border border-[var(--border)] bg-[var(--surface)]/96 px-4 py-3 shadow-[var(--shadow-md)]"
       data-testid="floating-app-bar"
     >
       <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
