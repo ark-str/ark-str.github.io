@@ -1,21 +1,19 @@
 # Latest Iteration
 
-Latest parent iteration: `#88`
+Latest parent iteration: `#90`
 
 Completed child issue:
 
-- `#88` - refine reader group and story navigation UI
+- `#90` - refine app bar icon treatment and story phase badges
 
 Current closeout outcome:
 
-- group overview hero titles wrap safely on narrow mobile widths
-- the public app icon is served as a compact 96px bundled asset, while app-bar home/theme controls share the same larger hit area
-- story headers no longer expose raw vendor source paths or redundant group story-count copy
-- story-page group metrics and sibling-story metadata render as wrapping badges
-- the sibling-story navigation card is desktop-only, viewport-height constrained, and independently scrollable
-- sibling-story cards keep bridge/stage/pre/post metadata visible without exposing internal story IDs
-- horizontal and vertical scrollbar tracks/corners are transparent across local scroll regions
-- `npm run verify` passed on branch `issue-88-reader-layout-refinements`
+- browser metadata keeps the black-background `ark_str_icon.png`, while app chrome uses transparent `ark_str_app_icon.png`
+- the app chrome icon is theme-aware: white in dark theme and inverted for light theme
+- app-bar home/theme/dropdown controls share the compact Story-button height and radius
+- app-bar dropdown and group text use the 12px small-button scale
+- story sidebar phase badges use the same accent tone for bridge and operation phases
+- `npm run verify` passed on branch `issue-90-appbar-icon-density`
 
 Remaining product gaps:
 

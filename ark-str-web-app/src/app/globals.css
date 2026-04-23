@@ -92,6 +92,14 @@ html[data-theme="dark"] {
     padding-box;
 }
 
+.app-chrome-icon {
+  filter: none;
+}
+
+html[data-theme="light"] .app-chrome-icon {
+  filter: invert(1);
+}
+
 html {
   background: var(--bg);
 }

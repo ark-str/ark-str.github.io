@@ -51,14 +51,17 @@ function formatMetric(value: number) {
 
 function StoryClassificationBadges({
   compact = false,
+  phaseTone = "auto",
   story,
 }: {
   compact?: boolean;
+  phaseTone?: "accent" | "auto";
   story: ContentStoryIndexEntry;
 }) {
   const storyCode = story.storyCode?.trim();
   const avgTag = story.avgTag?.trim();
   const badgeClassName = compact ? "px-2 py-0.5 text-[10px] tracking-[0.12em]" : undefined;
+  const phaseVariant = phaseTone === "accent" || avgTag === "브릿지" ? "accent" : "default";
 
   return (
     <>
@@ -71,7 +74,7 @@ function StoryClassificationBadges({
         <Badge
           className={badgeClassName}
           data-testid="story-phase-badge"
-          variant={avgTag === "브릿지" ? "accent" : "default"}
+          variant={phaseVariant}
         >
           {avgTag}
         </Badge>
@@ -752,7 +755,7 @@ export function ReaderStoryShell({
                     >
                       <span className="block font-semibold leading-5">{entry.title}</span>
                       <span className="flex flex-wrap gap-1.5" data-testid="story-sibling-classification">
-                        <StoryClassificationBadges compact story={entry} />
+                        <StoryClassificationBadges compact phaseTone="accent" story={entry} />
                       </span>
                       <span className="flex flex-wrap gap-1.5" data-testid="story-sibling-metrics">
                         <StoryMetricBadge compact>

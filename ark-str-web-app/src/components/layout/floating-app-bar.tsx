@@ -11,7 +11,7 @@ import { useAppPreferences } from "@/features/preferences/runtime/app-preference
 import { useReaderSession } from "@/features/reader/runtime/reader-session-context";
 import type { ReaderLocale } from "@/features/content/types";
 import type { FloatingAppBarModel } from "@/components/layout/types";
-import { appIconPath } from "@/lib/public-path";
+import { appChromeIconPath } from "@/lib/public-path";
 
 type FloatingAppBarProps = {
   model: FloatingAppBarModel;
@@ -126,21 +126,24 @@ export function FloatingAppBar({ model }: FloatingAppBarProps) {
         <div className="flex flex-wrap items-center gap-2">
           <Link
             aria-label="홈"
-            className={cn(buttonVariants({ size: "icon", variant: "ghost" }), "h-11 w-11")}
+            className={cn(
+              buttonVariants({ size: "icon", variant: "subtle" }),
+              "h-9 w-9 rounded-[var(--radius-sm)] p-0.5",
+            )}
             href="/"
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               alt=""
               aria-hidden="true"
-              className="h-7 w-7 rounded-[var(--radius-sm)] object-cover"
+              className="app-chrome-icon h-8 w-8 object-contain"
               data-testid="app-home-icon"
               decoding="sync"
               fetchPriority="high"
-              height={28}
+              height={32}
               loading="eager"
-              src={appIconPath}
-              width={28}
+              src={appChromeIconPath}
+              width={32}
             />
           </Link>
           <Link className={cn(buttonVariants({ size: "sm", variant: "subtle" }))} href={storyRootHref}>
@@ -157,14 +160,14 @@ export function FloatingAppBar({ model }: FloatingAppBarProps) {
                 <Link
                   className={cn(
                     buttonVariants({ size: "sm", variant: "ghost" }),
-                    "min-w-0 max-w-full basis-full truncate sm:basis-auto sm:max-w-[18rem]",
+                    "min-w-0 max-w-full basis-full truncate text-xs sm:basis-auto sm:max-w-[18rem]",
                   )}
                   href={model.groupCrumb.href}
                 >
                   {model.groupCrumb.label}
                 </Link>
               ) : (
-                <span className="min-w-0 max-w-full basis-full truncate px-3 text-sm font-semibold text-[var(--text)] sm:basis-auto sm:max-w-[18rem]">
+                <span className="min-w-0 max-w-full basis-full truncate px-3 text-xs font-semibold text-[var(--text)] sm:basis-auto sm:max-w-[18rem]">
                   {model.groupCrumb.label}
                 </span>
               )}
@@ -179,9 +182,10 @@ export function FloatingAppBar({ model }: FloatingAppBarProps) {
               />
               <div className="min-w-[15rem] flex-1 lg:min-w-[20rem]">
                 <Select
-                  className="h-10 rounded-[var(--radius-md)] bg-[var(--surface)]/92 py-0 text-sm shadow-none"
+                  className="h-9 rounded-[var(--radius-sm)] bg-[var(--surface)]/92 py-0 text-xs shadow-none"
                   data-testid="chrome-story-select"
                   onChange={handleStoryChange}
+                  style={{ fontSize: "12px" }}
                   value={model.storySelect.currentStoryId}
                 >
                   {model.storySelect.options.map((option) => (
@@ -198,10 +202,11 @@ export function FloatingAppBar({ model }: FloatingAppBarProps) {
         <div className="flex flex-wrap items-center gap-2 lg:justify-end">
           <div className="min-w-[10rem]">
             <Select
-              className="h-10 rounded-[var(--radius-md)] bg-[var(--surface)]/92 py-0 text-sm shadow-none"
+              className="h-9 rounded-[var(--radius-sm)] bg-[var(--surface)]/92 py-0 text-xs shadow-none"
               data-testid="locale-select"
               disabled={!isSessionHydrated}
               onChange={handleLocaleChange}
+              style={{ fontSize: "12px" }}
               value={currentLocale}
             >
               {model.localeOptions.map((option) => (
@@ -213,7 +218,10 @@ export function FloatingAppBar({ model }: FloatingAppBarProps) {
           </div>
           <button
             aria-label={isDarkTheme ? "라이트 테마로 변경" : "다크 테마로 변경"}
-            className={cn(buttonVariants({ size: "icon", variant: "subtle" }), "h-11 w-11")}
+            className={cn(
+              buttonVariants({ size: "icon", variant: "subtle" }),
+              "h-9 w-9 rounded-[var(--radius-sm)]",
+            )}
             data-testid="theme-toggle"
             disabled={!isThemeHydrated}
             onClick={toggleTheme}
