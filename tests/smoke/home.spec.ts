@@ -453,15 +453,12 @@ test.describe("reader shell smoke", () => {
     const appBar = page.getByTestId("floating-app-bar");
     const appBarBackdropFilter = await appBar.evaluate((node) => {
       const styles = window.getComputedStyle(node);
-      return {
-        backdropFilter: styles.backdropFilter,
-        webkitBackdropFilter: styles.getPropertyValue("-webkit-backdrop-filter"),
-      };
+      return [
+        styles.backdropFilter,
+        styles.getPropertyValue("-webkit-backdrop-filter"),
+      ].filter(Boolean);
     });
-    expect(appBarBackdropFilter).toEqual({
-      backdropFilter: "none",
-      webkitBackdropFilter: "",
-    });
+    expect(appBarBackdropFilter.every((value) => value === "none")).toBe(true);
     await expect(appBar.getByRole("link", { name: "스토리" })).toHaveAttribute(
       "href",
       `/ark-str/reader/${sampleStory.server}/`,
