@@ -260,6 +260,10 @@ test.describe("reader shell smoke", () => {
     await expect(page.getByTestId("locale-select")).toBeEnabled();
     await expect(page.getByTestId("locale-select")).toHaveValue("kr");
     await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
+    await expect(page.locator('link[rel="icon"]')).toHaveAttribute(
+      "href",
+      `${appBasePath}/ark_str_icon.png`,
+    );
     await expect(page.getByTestId("server-count")).not.toHaveText("0");
     await expect(page.getByTestId("story-count")).not.toHaveText("0");
 
@@ -451,6 +455,12 @@ test.describe("reader shell smoke", () => {
     await expect(page.getByTestId("story-summary-section")).toBeVisible();
 
     const appBar = page.getByTestId("floating-app-bar");
+    await expect(appBar).toHaveCSS("position", "fixed");
+    await expect(appBar).toHaveCSS("top", "0px");
+    await expect(appBar).toHaveCSS("border-top-left-radius", "0px");
+    await expect(appBar.getByTestId("app-home-icon")).toBeVisible();
+    await expect(appBar.getByTestId("theme-toggle")).toHaveText("");
+    await expect(appBar.getByTestId("breadcrumb-separator-icon")).toHaveCount(2);
     const appBarBackdropFilter = await appBar.evaluate((node) => {
       const styles = window.getComputedStyle(node);
       return [
@@ -463,6 +473,28 @@ test.describe("reader shell smoke", () => {
       "href",
       `/ark-str/reader/${sampleStory.server}/`,
     );
+    await page.evaluate(() => window.scrollTo(0, 1200));
+    await expect(appBar).toHaveAttribute("data-hidden", "true");
+    await appBar.getByRole("link", { name: "홈" }).focus();
+    await expect(appBar).toHaveAttribute("data-hidden", "false");
+    await page.evaluate(() => window.scrollTo(0, 1300));
+    await expect(appBar).toHaveAttribute("data-hidden", "true");
+    await page.evaluate(() => window.scrollTo(0, 600));
+    await expect(appBar).toHaveAttribute("data-hidden", "false");
+    await page.evaluate(async () => {
+      for (let index = 0; index < 12; index += 1) {
+        window.scrollBy(0, 1);
+        await new Promise(requestAnimationFrame);
+      }
+    });
+    await expect(appBar).toHaveAttribute("data-hidden", "true");
+    await page.evaluate(async () => {
+      for (let index = 0; index < 12; index += 1) {
+        window.scrollBy(0, -1);
+        await new Promise(requestAnimationFrame);
+      }
+    });
+    await expect(appBar).toHaveAttribute("data-hidden", "false");
 
     await appBar.getByRole("link", { name: "스토리" }).click();
     await expect(page).toHaveURL(new RegExp(`/ark-str/reader/${sampleStory.server}/$`));

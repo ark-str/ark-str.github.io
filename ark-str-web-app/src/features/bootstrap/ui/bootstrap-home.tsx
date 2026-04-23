@@ -90,8 +90,8 @@ export function BootstrapHome({
                 명일방주 스토리를 그룹 단위로 탐색하고, 마지막 읽기 지점으로 바로 복귀하는 읽기 표면입니다.
               </CardTitle>
               <CardDescription className="max-w-3xl text-base leading-8 md:text-lg">
-                상단 floating app bar를 기준으로 홈, 아카이브, 그룹, 스토리 레이아웃을 한 흐름으로
-                묶습니다. story 페이지에서는 배경이 고정되고, 본문 카드만 앞으로 스크롤됩니다.
+                상단 fixed app bar를 기준으로 홈, 아카이브, 그룹, 스토리 레이아웃을 한 흐름으로
+                묶습니다. 아래로 스크롤하면 앱바가 숨겨지고, story 페이지에서는 본문 카드만 앞으로 스크롤됩니다.
               </CardDescription>
             </CardHeader>
             <CardContent className="grid gap-6 pt-6">
