@@ -12,6 +12,7 @@ export type LastVisitedStory = LastVisitedGroup & {
 
 export type ReaderSessionState = {
   preferredLocale: ReaderLocale;
+  nickName: string;
   lastVisitedGroup: LastVisitedGroup | null;
   lastVisitedStory: LastVisitedStory | null;
 };

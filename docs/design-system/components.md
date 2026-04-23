@@ -17,6 +17,12 @@ These are the base layer that features should compose before adding their own pr
 
 ## Product Patterns
 
+Current product patterns:
+
+- home landing hero with nickname capture and continue-reading action
+- image-backed recommendation group cards
+- selected-locale archive statistics
+
 Planned product patterns for subsequent issues:
 
 - `LocaleSwitch`
