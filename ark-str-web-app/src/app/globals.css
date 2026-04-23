@@ -71,6 +71,25 @@ html[data-theme="dark"] {
 
 * {
   box-sizing: border-box;
+  scrollbar-color: color-mix(in srgb, var(--text-muted) 42%, transparent) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+*::-webkit-scrollbar-track,
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  border: 0.2rem solid transparent;
+  border-radius: 999px;
+  background:
+    linear-gradient(color-mix(in srgb, var(--text-muted) 42%, transparent), color-mix(in srgb, var(--text-muted) 42%, transparent))
+    padding-box;
 }
 
 html {

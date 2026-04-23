@@ -126,7 +126,7 @@ export function FloatingAppBar({ model }: FloatingAppBarProps) {
         <div className="flex flex-wrap items-center gap-2">
           <Link
             aria-label="홈"
-            className={cn(buttonVariants({ size: "icon", variant: "ghost" }), "h-10 w-10")}
+            className={cn(buttonVariants({ size: "icon", variant: "ghost" }), "h-11 w-11")}
             href="/"
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -135,7 +135,10 @@ export function FloatingAppBar({ model }: FloatingAppBarProps) {
               aria-hidden="true"
               className="h-7 w-7 rounded-[var(--radius-sm)] object-cover"
               data-testid="app-home-icon"
+              decoding="sync"
+              fetchPriority="high"
               height={28}
+              loading="eager"
               src={appIconPath}
               width={28}
             />
@@ -152,13 +155,16 @@ export function FloatingAppBar({ model }: FloatingAppBarProps) {
               />
               {model.groupCrumb.href ? (
                 <Link
-                  className={cn(buttonVariants({ size: "sm", variant: "ghost" }), "max-w-[18rem] truncate")}
+                  className={cn(
+                    buttonVariants({ size: "sm", variant: "ghost" }),
+                    "min-w-0 max-w-full basis-full truncate sm:basis-auto sm:max-w-[18rem]",
+                  )}
                   href={model.groupCrumb.href}
                 >
                   {model.groupCrumb.label}
                 </Link>
               ) : (
-                <span className="px-3 text-sm font-semibold text-[var(--text)]">
+                <span className="min-w-0 max-w-full basis-full truncate px-3 text-sm font-semibold text-[var(--text)] sm:basis-auto sm:max-w-[18rem]">
                   {model.groupCrumb.label}
                 </span>
               )}
@@ -207,7 +213,7 @@ export function FloatingAppBar({ model }: FloatingAppBarProps) {
           </div>
           <button
             aria-label={isDarkTheme ? "라이트 테마로 변경" : "다크 테마로 변경"}
-            className={cn(buttonVariants({ size: "icon", variant: "subtle" }), "h-10 w-10")}
+            className={cn(buttonVariants({ size: "icon", variant: "subtle" }), "h-11 w-11")}
             data-testid="theme-toggle"
             disabled={!isThemeHydrated}
             onClick={toggleTheme}

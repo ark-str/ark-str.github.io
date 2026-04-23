@@ -25,9 +25,11 @@ The app should feel editorial, deliberate, and product-specific rather than like
 - locale archives render generated storyline sections as collapsed grid cards with 300ms height-only disclosure animation; regular storyline cards stay inside the main grid as single cells whether closed or open, expanded regular sections keep a simple one-column list, and operator narratives sit in a separate bottom section with an internal grid
 - locale archive primary group cards use the same dark image treatment as group-flow cards, with white titles and Stories/chars/time metrics rendered as compact pill badges
 - first-pass story body rendering sourced from bundled story detail JSON
-- a restrained fixed top app bar shared by home, archive, group, and story routes without backdrop-filter effects; it uses icon-first home/theme controls, icon breadcrumb separators, mobile wrapping, and hides on downward scroll until the reader scrolls upward
-- story pages with left-side group navigation, main reading column, bottom summary section, and a floating top button
-- group overview pages render title and Stories/chars/time metrics over the generated hero image, then show the named current storyline as horizontally scrollable group/reference cards before simplified story cards; oversized storylines are bounded to the current group neighborhood, reference cards carry an up-right cue, and story cards avoid exposing internal story IDs
+- a restrained fixed top app bar shared by home, archive, group, and story routes without backdrop-filter effects; it uses icon-first home/theme controls with matching touch targets, a small bundled app icon, icon breadcrumb separators, mobile wrapping, and hides on downward scroll until the reader scrolls upward
+- story pages with desktop-only left-side group navigation, main reading column, bottom summary section, and a floating top button
+- group overview pages render wrapping titles and Stories/chars/time metrics over the generated hero image, then show the named current storyline as horizontally scrollable group/reference cards before simplified story cards; oversized storylines are bounded to the current group neighborhood, reference cards carry an up-right cue, and story cards avoid exposing internal story IDs
+- story route headers avoid raw vendor paths and group-count copy; the desktop sibling-story navigation card is viewport-constrained with internal scrolling and wraps story metadata as badges
+- horizontal and vertical scrollbar tracks/corners are transparent, with only a subtle local thumb for scroll affordance
 - story-only dynamic backdrops driven directly by intersecting bundled background blocks without fixed-layer blur, while non-story pages keep the archive base background
 - in-flow background blocks keep their own bundled image previews without cropping and still drive the fixed story backdrop
 - story backdrop swaps on story pages happen immediately without cross-fade state
