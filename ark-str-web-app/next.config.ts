@@ -19,6 +19,9 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   basePath: normalizedBasePath || undefined,
   assetPrefix: normalizedBasePath || undefined,
+  env: {
+    NEXT_PUBLIC_ARK_STR_BASE_PATH: normalizedBasePath,
+  },
   images: {
     unoptimized: true,
   },

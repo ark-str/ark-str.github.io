@@ -11,7 +11,7 @@ type ReaderPageFrameProps = {
 export function ReaderPageFrame({ appBar, children, header, testId }: ReaderPageFrameProps) {
   return (
     <main
-      className="relative mx-auto flex min-h-screen w-full max-w-7xl flex-col gap-6 px-5 py-6 text-[var(--text)] md:px-8 lg:px-12"
+      className="relative mx-auto flex min-h-screen w-full max-w-7xl flex-col gap-6 px-5 pb-6 pt-[calc(var(--app-bar-height,7rem)+var(--space-6))] text-[var(--text)] md:px-8 lg:px-12"
       data-testid={testId}
     >
       <FloatingAppBar model={appBar} />

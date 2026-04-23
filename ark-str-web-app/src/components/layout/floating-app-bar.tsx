@@ -1,9 +1,9 @@
 "use client";
 
-import type { ChangeEvent } from "react";
+import { useEffect, useRef, useState, type ChangeEvent } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Home, MoonStar, SunMedium } from "lucide-react";
+import { ChevronRight, MoonStar, SunMedium } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import { Select } from "@/components/ui/select";
 import { cn } from "@/lib/utils";
@@ -11,6 +11,7 @@ import { useAppPreferences } from "@/features/preferences/runtime/app-preference
 import { useReaderSession } from "@/features/reader/runtime/reader-session-context";
 import type { ReaderLocale } from "@/features/content/types";
 import type { FloatingAppBarModel } from "@/components/layout/types";
+import { appIconPath } from "@/lib/public-path";
 
 type FloatingAppBarProps = {
   model: FloatingAppBarModel;
@@ -18,12 +19,79 @@ type FloatingAppBarProps = {
 
 export function FloatingAppBar({ model }: FloatingAppBarProps) {
   const router = useRouter();
+  const appBarRef = useRef<HTMLDivElement | null>(null);
+  const lastScrollYRef = useRef(0);
+  const animationFrameRef = useRef<number | null>(null);
+  const [isHidden, setIsHidden] = useState(false);
   const { isHydrated: isThemeHydrated, state: preferencesState, toggleTheme } = useAppPreferences();
   const { isHydrated: isSessionHydrated, setPreferredLocale, state: readerState } = useReaderSession();
 
   const currentLocale = model.currentLocale ?? readerState.preferredLocale;
   const storyRootHref = model.storyRootHref ?? `/reader/${readerState.preferredLocale}`;
   const isDarkTheme = preferencesState.theme === "dark";
+
+  useEffect(() => {
+    const updateAppBarHeight = () => {
+      const appBarHeight = appBarRef.current?.getBoundingClientRect().height ?? 0;
+      if (appBarHeight > 0) {
+        document.documentElement.style.setProperty("--app-bar-height", `${appBarHeight}px`);
+      }
+    };
+
+    updateAppBarHeight();
+    window.addEventListener("resize", updateAppBarHeight);
+
+    const resizeObserver =
+      typeof ResizeObserver !== "undefined" && appBarRef.current
+        ? new ResizeObserver(updateAppBarHeight)
+        : null;
+    if (appBarRef.current) {
+      resizeObserver?.observe(appBarRef.current);
+    }
+
+    return () => {
+      window.removeEventListener("resize", updateAppBarHeight);
+      resizeObserver?.disconnect();
+      document.documentElement.style.removeProperty("--app-bar-height");
+    };
+  }, []);
+
+  useEffect(() => {
+    lastScrollYRef.current = window.scrollY;
+
+    const updateVisibility = () => {
+      animationFrameRef.current = null;
+      const nextScrollY = window.scrollY;
+      const scrollDelta = nextScrollY - lastScrollYRef.current;
+
+      if (nextScrollY <= 24) {
+        setIsHidden(false);
+      } else if (scrollDelta > 8) {
+        setIsHidden(true);
+      } else if (scrollDelta < -8) {
+        setIsHidden(false);
+      }
+
+      lastScrollYRef.current = nextScrollY;
+    };
+
+    const handleScroll = () => {
+      if (animationFrameRef.current !== null) {
+        return;
+      }
+
+      animationFrameRef.current = window.requestAnimationFrame(updateVisibility);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (animationFrameRef.current !== null) {
+        window.cancelAnimationFrame(animationFrameRef.current);
+      }
+    };
+  }, []);
 
   const handleLocaleChange = (event: ChangeEvent<HTMLSelectElement>) => {
     const nextLocale = event.target.value as ReaderLocale;
@@ -44,21 +112,42 @@ export function FloatingAppBar({ model }: FloatingAppBarProps) {
 
   return (
     <div
-      className="sticky top-4 z-40 rounded-[var(--radius-xl)] border border-[var(--border)] bg-[var(--surface)]/96 px-4 py-3 shadow-[var(--shadow-md)]"
+      ref={appBarRef}
+      className={cn(
+        "fixed inset-x-0 top-0 z-50 border-b border-[var(--border)] bg-[var(--surface)]/98 shadow-[var(--shadow-md)] transition-transform duration-[var(--motion-base)] ease-out",
+        isHidden ? "-translate-y-full" : "translate-y-0",
+      )}
+      data-hidden={isHidden ? "true" : "false"}
       data-testid="floating-app-bar"
     >
-      <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
+      <div className="mx-auto flex w-full max-w-7xl flex-col gap-3 px-5 py-3 md:px-8 lg:flex-row lg:items-center lg:justify-between lg:px-12">
         <div className="flex flex-wrap items-center gap-2">
-          <Link className={cn(buttonVariants({ size: "sm", variant: "subtle" }))} href="/">
-            <Home className="h-4 w-4" />
-            홈
+          <Link
+            aria-label="홈"
+            className={cn(buttonVariants({ size: "icon", variant: "ghost" }), "h-10 w-10")}
+            href="/"
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              alt=""
+              aria-hidden="true"
+              className="h-7 w-7 rounded-[var(--radius-sm)] object-cover"
+              data-testid="app-home-icon"
+              height={28}
+              src={appIconPath}
+              width={28}
+            />
           </Link>
           <Link className={cn(buttonVariants({ size: "sm", variant: "subtle" }))} href={storyRootHref}>
             스토리
           </Link>
           {model.groupCrumb ? (
             <>
-              <span className="px-1 text-sm text-[var(--text-muted)]">&gt;</span>
+              <ChevronRight
+                aria-hidden="true"
+                className="h-4 w-4 text-[var(--text-muted)]"
+                data-testid="breadcrumb-separator-icon"
+              />
               {model.groupCrumb.href ? (
                 <Link
                   className={cn(buttonVariants({ size: "sm", variant: "ghost" }), "max-w-[18rem] truncate")}
@@ -75,7 +164,11 @@ export function FloatingAppBar({ model }: FloatingAppBarProps) {
           ) : null}
           {model.storySelect ? (
             <>
-              <span className="px-1 text-sm text-[var(--text-muted)]">&gt;</span>
+              <ChevronRight
+                aria-hidden="true"
+                className="h-4 w-4 text-[var(--text-muted)]"
+                data-testid="breadcrumb-separator-icon"
+              />
               <div className="min-w-[15rem] flex-1 lg:min-w-[20rem]">
                 <Select
                   className="h-10 rounded-[var(--radius-md)] bg-[var(--surface)]/92 py-0 text-sm shadow-none"
@@ -111,18 +204,14 @@ export function FloatingAppBar({ model }: FloatingAppBarProps) {
             </Select>
           </div>
           <button
-            aria-label="Toggle theme"
-            className={cn(buttonVariants({ size: "sm", variant: "subtle" }), "min-w-28 justify-between")}
+            aria-label={isDarkTheme ? "라이트 테마로 변경" : "다크 테마로 변경"}
+            className={cn(buttonVariants({ size: "icon", variant: "subtle" }), "h-10 w-10")}
             data-testid="theme-toggle"
             disabled={!isThemeHydrated}
             onClick={toggleTheme}
             type="button"
           >
-            <span className="inline-flex items-center gap-2">
-              {isDarkTheme ? <MoonStar className="h-4 w-4" /> : <SunMedium className="h-4 w-4" />}
-              Theme
-            </span>
-            <span className="text-[10px] uppercase tracking-[0.18em]">{preferencesState.theme}</span>
+            {isDarkTheme ? <MoonStar className="h-4 w-4" /> : <SunMedium className="h-4 w-4" />}
           </button>
         </div>
       </div>
