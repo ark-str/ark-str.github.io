@@ -303,6 +303,19 @@ test.describe("reader shell smoke", () => {
     await expect(page.getByTestId("service-intro-icon")).toBeVisible();
     await expect(page.getByTestId("service-intro-section")).toContainText("ARK STR");
     await expect(page.getByTestId("service-intro-section")).toContainText("명일방주");
+    const serviceIntroBounds = await page.getByTestId("service-intro-section").evaluate((node) => {
+      const rect = node.getBoundingClientRect();
+
+      return {
+        left: rect.left,
+        width: rect.width,
+        viewportWidth: window.innerWidth,
+      };
+    });
+    expect(Math.abs(serviceIntroBounds.left)).toBeLessThanOrEqual(1);
+    expect(Math.abs(serviceIntroBounds.width - serviceIntroBounds.viewportWidth)).toBeLessThanOrEqual(
+      1,
+    );
     const homeViewportWidth = await page.evaluate(() => ({
       clientWidth: document.documentElement.clientWidth,
       scrollWidth: document.documentElement.scrollWidth,
