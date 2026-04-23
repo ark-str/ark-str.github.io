@@ -1,6 +1,6 @@
 # Reader Flicker Performance
 
-Status: active
+Status: completed
 Issue: #84
 Branch: `issue-84-reader-flicker-performance`
 
@@ -38,3 +38,10 @@ Remove disclosure fade flicker and reduce story-page scroll flicker across Safar
 ## Decision Log
 
 - Treat the flicker as a whole-page compositing issue because the user observed it in Chrome and on the app bar, not only in Safari or only on the backdrop image.
+
+## Outcome
+
+- Storyline disclosure panels keep their height animation but no longer fade opacity.
+- Floating app bar, story backdrop image, group nav card, and summary card avoid scroll-time blur/backdrop-filter compositing hotspots.
+- Story background observer updates no longer create a new state object for the same active story/background pair.
+- Smoke tests lock the no-opacity/no-filter rendering contract.
