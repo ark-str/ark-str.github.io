@@ -65,6 +65,8 @@ This phase keeps the recovered reader shell and Pages deployment path stable whi
 - `public/generated/content/assets.json` is the runtime lookup for portraits, backgrounds, and group backgrounds, mirrored into `src/generated/content/assets.json` for integrity checks
 - story-level `observedOperators` arrays embedded in generated story detail JSON remain limited to `char_` speaker IDs for alias persistence
 - local storage reader-session restore for preferred locale and last visited story
+- local storage reader nickname capture on the home screen; story rendering replaces `{@nickname}` and `{@nickName}` tokens at runtime and falls back to an empty string when no nickname is set
+- home renders an ARK STR onboarding surface with a clean centered nickname input, two-line continue-reading action that shows the target story title, full-bleed square-edged localized service copy using the accent-colored app icon, generously separated curated recommendation groups, selected-locale group/story/character-count statistics, and maintainer credit
 - locale-scoped character alias observation storage under `ark-str:character-observations:v1`
 - explicit empty summary state until the summary-generation issue lands, rendered below the story body instead of in a side rail
 - a fixed top app bar shared by home, locale archive, group, and story pages; it uses separate browser and transparent app chrome icons, matched compact home/theme/dropdown control heights and radii, icon breadcrumb separators, icon-only theme control, mobile wrapping, and scroll-down hide / scroll-up reveal behavior

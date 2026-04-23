@@ -42,6 +42,7 @@ import type {
   StoryBlock,
   StoryDetail,
 } from "@/features/content/types";
+import { interpolateStoryText } from "@/features/reader/service/interpolate-story-text";
 import { useReaderSession } from "@/features/reader/runtime/reader-session-context";
 import { cn } from "@/lib/utils";
 
@@ -450,12 +451,14 @@ function StoryBlocks({
   activeBackgroundId,
   backgroundPaths,
   blocks,
+  nickName,
   onBackgroundVisible,
   portraitPaths,
 }: {
   activeBackgroundId: string | null;
   backgroundPaths: Record<string, string>;
   blocks: StoryBlock[];
+  nickName: string;
   onBackgroundVisible: (backgroundId: string) => void;
   portraitPaths: Record<string, string>;
 }) {
@@ -463,6 +466,9 @@ function StoryBlocks({
     <>
       {blocks.map((block, index) => {
         if (block.type === "dialogue") {
+          const speakerName = interpolateStoryText(block.speakerName, { nickName });
+          const dialogueText = interpolateStoryText(block.text, { nickName });
+
           return (
             <article
               key={`dialogue-${index}`}
@@ -475,12 +481,12 @@ function StoryBlocks({
               <div className="flex items-start gap-4">
                 <ReaderPortraitSlot
                   portraitPath={block.speakerId ? (portraitPaths[block.speakerId] ?? null) : null}
-                  speakerName={block.speakerName}
+                  speakerName={speakerName}
                 />
                 <div className="min-w-0 flex-1 pt-1">
                   <div className="flex flex-wrap items-center gap-2">
                     <h3 className="text-lg font-semibold tracking-[-0.02em] text-[var(--text)]">
-                      {block.speakerName}
+                      {speakerName}
                     </h3>
                     {block.isRemote ? (
                       <Badge variant="accent" className="text-[10px] uppercase tracking-[0.14em]">
@@ -491,20 +497,22 @@ function StoryBlocks({
                 </div>
               </div>
               <p className="whitespace-pre-wrap text-[1.02rem] leading-8 text-[var(--text)]">
-                {block.text}
+                {dialogueText}
               </p>
             </article>
           );
         }
 
         if (block.type === "narration") {
+          const narrationText = interpolateStoryText(block.text, { nickName });
+
           return (
             <article
               key={`narration-${index}`}
               className="rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--panel)]/95 p-5 shadow-[var(--shadow-sm)]"
             >
               <p className="whitespace-pre-wrap text-[1.02rem] leading-8 text-[var(--text)]">
-                {block.text}
+                {narrationText}
               </p>
             </article>
           );
@@ -554,13 +562,16 @@ function StoryBlocks({
                   key={option.value}
                   className="rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--panel)] p-4"
                 >
-                  <p className="text-sm font-semibold text-[var(--accent)]">{option.label}</p>
+                  <p className="text-sm font-semibold text-[var(--accent)]">
+                    {interpolateStoryText(option.label, { nickName })}
+                  </p>
                   {option.blocks.length > 0 ? (
                     <div className="mt-3 grid gap-3">
                       <StoryBlocks
                         activeBackgroundId={activeBackgroundId}
                         backgroundPaths={backgroundPaths}
                         blocks={option.blocks}
+                        nickName={nickName}
                         onBackgroundVisible={onBackgroundVisible}
                         portraitPaths={portraitPaths}
                       />
@@ -580,12 +591,14 @@ function StoryBodyRenderer({
   activeBackgroundId,
   backgroundPaths,
   blocks,
+  nickName,
   onBackgroundVisible,
   portraitPaths,
 }: {
   activeBackgroundId: string | null;
   backgroundPaths: Record<string, string>;
   blocks: StoryBlock[];
+  nickName: string;
   onBackgroundVisible: (backgroundId: string) => void;
   portraitPaths: Record<string, string>;
 }) {
@@ -595,6 +608,7 @@ function StoryBodyRenderer({
         activeBackgroundId={activeBackgroundId}
         backgroundPaths={backgroundPaths}
         blocks={blocks}
+        nickName={nickName}
         onBackgroundVisible={onBackgroundVisible}
         portraitPaths={portraitPaths}
       />
@@ -611,6 +625,7 @@ export function ReaderStoryShell({
   locale: ReaderLocale;
   storyId: string;
 }) {
+  const { state: readerSessionState } = useReaderSession();
   const indexState = useContentIndex();
   const summaryState = useSummaryManifest();
   const assetState = useAssetManifest();
@@ -776,6 +791,7 @@ export function ReaderStoryShell({
                 activeBackgroundId={activeBackgroundId}
                 backgroundPaths={backgroundPaths}
                 blocks={detail.blocks}
+                nickName={readerSessionState.nickName}
                 onBackgroundVisible={handleBackgroundVisible}
                 portraitPaths={portraitPaths}
               />

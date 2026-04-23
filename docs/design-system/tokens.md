@@ -21,6 +21,9 @@ The active theme is applied through `html[data-theme="light|dark"]`.
 - `--accent-soft` - soft accent fill
 - `--accent-strong` - stronger accent text or surface
 - `--accent-contrast` - text on accent surfaces
+- `--image-overlay` - dark wash over generated artwork cards
+- `--image-text` - primary text on image-backed cards
+- `--image-muted` - secondary text and borders on image-backed cards
 - `--border` - structural outline
 - `--ring` - focus ring
 - `--success` - positive status

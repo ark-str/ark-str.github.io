@@ -1,19 +1,18 @@
 # Latest Iteration
 
-Latest parent iteration: `#90`
+Latest parent iteration: `#92`
 
 Completed child issue:
 
-- `#90` - refine app bar icon treatment and story phase badges
+- `#92` - redesign home landing experience
 
 Current closeout outcome:
 
-- browser metadata keeps the black-background `ark_str_icon.png`, while app chrome uses transparent `ark_str_app_icon.png`
-- the app chrome icon is theme-aware: white in dark theme and inverted for light theme
-- app-bar home/theme/dropdown controls share the compact Story-button height and radius
-- app-bar dropdown and group text use the 12px small-button scale
-- story sidebar phase badges use the same accent tone for bridge and operation phases
-- `npm run verify` passed on branch `issue-90-appbar-icon-density`
+- home now presents an ARK STR landing page with a clean centered nickname input, continue-reading action with target story title, full-bleed square-edged service introduction using the accent-colored app icon, spacious curated recommendations, locale-aware statistics, and maintainer credit
+- reader nickname is persisted in `ark-str:reader-session:v1`
+- story body rendering replaces `{@nickname}` and `{@nickName}` tokens from the persisted nickname, or with an empty string when unset
+- recommendation cards are selected-locale aware and use bundled generated group artwork
+- `npm run verify` passed on branch `issue-92-home-landing`
 
 Remaining product gaps:
 

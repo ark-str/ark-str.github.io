@@ -36,6 +36,25 @@ export {
   getReaderStoryHref,
 } from "@/features/content/config/reader-routes";
 
+const homeRecommendationGroups = [
+  {
+    collectionId: "terra_notes",
+    groupIds: ["main_7", "act18d0", "act8mini", "act33side", "main_14"],
+  },
+  {
+    collectionId: "ancient_archive",
+    groupIds: ["act17side", "act25side", "act15mini", "main_14", "act34side", "main_15", "act42side"],
+  },
+  {
+    collectionId: "explore_behemoth",
+    groupIds: ["act23side", "main_13", "act34side", "act46side"],
+  },
+  {
+    collectionId: "explore_beast_lords",
+    groupIds: ["act5d0", "act12d0", "act27side", "act35side", "act37side", "act38side"],
+  },
+];
+
 function getConfiguredBasePath() {
   const configuredBasePath = process.env.ARK_STR_BASE_PATH?.trim() ?? "";
   return configuredBasePath.length > 0
@@ -176,11 +195,13 @@ export async function readStoryDetail(
 
 export function readReaderHomeModel(): ReaderHomeModel {
   const index = readContentIndex();
+  const krGroups = getLocaleGroups(index, "kr");
 
   return {
     locales: Object.entries(READER_LOCALE_LABELS).map(([locale, metadata]) => {
-      const localeStories = getLocaleStories(index, locale as ReaderLocale);
-      const localeGroups = getLocaleGroups(index, locale as ReaderLocale);
+      const readerLocale = locale as ReaderLocale;
+      const localeStories = getLocaleStories(index, readerLocale);
+      const localeGroups = getLocaleGroups(index, readerLocale);
       const featuredStory = localeStories[0]
         ? {
             storyId: localeStories[0].storyId,
@@ -188,14 +209,40 @@ export function readReaderHomeModel(): ReaderHomeModel {
             title: localeStories[0].title,
           }
         : null;
+      const totalVisibleCharacterCount = localeGroups.reduce(
+        (sum, group) => sum + group.totalVisibleCharacterCount,
+        0,
+      );
+      const recommendationCollections = homeRecommendationGroups.map((collection) => ({
+        collectionId: collection.collectionId,
+        items: collection.groupIds.map((groupId) => {
+          const group = localeGroups.find((item) => item.groupId === groupId) ?? null;
+          const fallbackGroup = krGroups.find((item) => item.groupId === groupId) ?? null;
+
+          return {
+            groupId,
+            title: group?.title ?? fallbackGroup?.title ?? groupId,
+            storyCount: group?.storyCount ?? fallbackGroup?.storyCount ?? 0,
+            totalVisibleCharacterCount:
+              group?.totalVisibleCharacterCount ?? fallbackGroup?.totalVisibleCharacterCount ?? 0,
+            estimatedMinutes: group?.estimatedMinutes ?? fallbackGroup?.estimatedMinutes ?? 0,
+            backgroundImagePath: resolvePublicAssetPath(
+              group?.backgroundImagePath ?? fallbackGroup?.backgroundImagePath ?? null,
+            ),
+            isAvailable: Boolean(group),
+          };
+        }),
+      }));
 
       return {
-        locale: locale as ReaderLocale,
+        locale: readerLocale,
         label: metadata.label,
         description: metadata.description,
         groupCount: localeGroups.length,
         storyCount: localeStories.length,
+        totalVisibleCharacterCount,
         featuredStory,
+        recommendationCollections,
       };
     }),
   };

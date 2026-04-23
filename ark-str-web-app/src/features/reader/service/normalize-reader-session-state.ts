@@ -93,6 +93,14 @@ function normalizeVisitedStory(raw: unknown): ReaderSessionState["lastVisitedSto
   };
 }
 
+function normalizeNickName(raw: unknown): string {
+  if (typeof raw !== "string") {
+    return DEFAULT_READER_SESSION_STATE.nickName;
+  }
+
+  return raw.slice(0, 24);
+}
+
 export function normalizeReaderSessionState(
   raw: unknown,
   legacyBootstrapRaw?: unknown,
@@ -113,6 +121,7 @@ export function normalizeReaderSessionState(
 
   return {
     preferredLocale: mapLegacyLocale(candidate.preferredLocale ?? fallbackPreferredLocale),
+    nickName: normalizeNickName(candidate.nickName),
     lastVisitedGroup: normalizeVisitedGroup(candidate.lastVisitedGroup),
     lastVisitedStory: normalizeVisitedStory(candidate.lastVisitedStory),
   };

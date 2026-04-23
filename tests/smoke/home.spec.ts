@@ -177,6 +177,9 @@ const sampleObservedAlias =
 const sampleBackgroundStory = resolveBackgroundStory();
 const sampleBackgroundIds = sampleBackgroundStory.backgroundIds;
 const sampleBackgroundStoryEntry = sampleBackgroundStory.story;
+const koreanFeaturedStory = generatedIndex.stories.find(
+  (story: { server: string }) => story.server === "kr",
+);
 const koreanMainStoryline = generatedIndex.storylines.find(
   (storyline: { server: string; storylineId: string }) =>
     storyline.server === "kr" && storyline.storylineId === "mainLine",
@@ -194,9 +197,21 @@ const koreanOperatorStoryline = generatedIndex.storylines.find(
 const koreanOperatorStorylinePrimary = koreanOperatorStoryline?.items.find(
   (item: { role: string }) => item.role === "primary",
 );
+const koreanNicknameStory = generatedIndex.stories.find(
+  (story: { server: string; storyId: string }) =>
+    story.server === "kr" && story.storyId === "act12d0_level_act12d0_01_end",
+);
+const koreanCapitalNicknameStory = generatedIndex.stories.find(
+  (story: { server: string; storyId: string }) =>
+    story.server === "kr" && story.storyId === "main_1_level_main_01-12_beg",
+);
 
 if (!koreanMainStoryline) {
   throw new Error("The Korean reader archive must include the mainLine storyline.");
+}
+
+if (!koreanFeaturedStory) {
+  throw new Error("The Korean reader archive must include a featured story sample.");
 }
 
 if (!koreanMainStorylineReference) {
@@ -213,6 +228,14 @@ if (!koreanOperatorStoryline) {
 
 if (!koreanOperatorStorylinePrimary) {
   throw new Error("The Korean operator narrative storyline must include at least one primary group.");
+}
+
+if (!koreanNicknameStory) {
+  throw new Error("The Korean content index must include a nickname-token story sample.");
+}
+
+if (!koreanCapitalNicknameStory) {
+  throw new Error("The Korean content index must include a capitalized nickname-token story sample.");
 }
 
 function toAppPath(route = "") {
@@ -266,6 +289,7 @@ test.describe("reader shell smoke", () => {
     await page.reload();
 
     await expect(page.getByTestId("bootstrap-shell")).toBeVisible();
+    await expect(page.getByTestId("home-hero")).toBeVisible();
     await expect(page.getByTestId("readiness-panel")).toBeVisible();
     await expect(page.getByTestId("locale-select")).toBeEnabled();
     await expect(page.getByTestId("locale-select")).toHaveValue("kr");
@@ -276,18 +300,39 @@ test.describe("reader shell smoke", () => {
     );
     expect(readPngColorType(browserIconFile)).toBe(2);
     expect(readPngColorType(appChromeIconFile)).toBe(6);
+    await expect(page.getByTestId("service-intro-icon")).toBeVisible();
+    await expect(page.getByTestId("service-intro-section")).toContainText("ARK STR");
+    await expect(page.getByTestId("service-intro-section")).toContainText("명일방주");
+    const homeViewportWidth = await page.evaluate(() => ({
+      clientWidth: document.documentElement.clientWidth,
+      scrollWidth: document.documentElement.scrollWidth,
+    }));
+    expect(homeViewportWidth.scrollWidth).toBeLessThanOrEqual(homeViewportWidth.clientWidth + 1);
+    await expect(page.getByTestId("home-recommendations")).toContainText("관리자의 테라노트");
+    await expect(page.getByTestId("home-recommendations")).not.toContainText("테라를 읽기 위한 네 가지 동선");
+    await expect(page.getByTestId("home-recommendation-collection")).toHaveCount(4);
+    await expect(page.getByTestId("home-footer")).toContainText("Maintainer - dev.Woong");
+    const nicknameInput = page.getByTestId("nickname-input");
+    await expect(nicknameInput).toBeEnabled();
+    await nicknameInput.fill("로도스");
+    await expect(nicknameInput).toHaveValue("로도스");
+    await expect(page.getByTestId("continue-reading-link")).toContainText(koreanFeaturedStory.title);
+    await expect(page.getByTestId("continue-reading-link")).not.toContainText("로도스");
     await expect(page.getByTestId("server-count")).not.toHaveText("0");
     await expect(page.getByTestId("story-count")).not.toHaveText("0");
 
     await page.getByTestId("locale-select").selectOption("en");
+    await expect(page.getByTestId("service-intro-section")).toContainText("Arknights");
     await page.getByTestId("theme-toggle").click();
     await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
 
     await page.reload();
     await expect(page.getByTestId("locale-select")).toHaveValue("en");
     await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+    await expect(page.getByTestId("nickname-input")).toHaveValue("로도스");
+    await expect(page.getByTestId("home-recommendations")).toContainText("Administrator's Terra Notes");
 
-    await page.getByTestId("open-locale-archive-link").click();
+    await page.getByRole("link", { name: "스토리" }).click();
     await expect(page).toHaveURL(/\/ark-str\/reader\/en\/$/);
     await expect(page.getByTestId("reader-shell")).toBeVisible();
 
@@ -700,6 +745,27 @@ test.describe("reader shell smoke", () => {
     }
 
     await page.goto(
+      toAppPath(`reader/kr/${koreanNicknameStory.groupId}/${koreanNicknameStory.storyId}`),
+    );
+    await expect(page.getByTestId("story-body")).toContainText("로도스 박사");
+    await expect(page.getByTestId("story-body")).not.toContainText("{@nickname}");
+    await expect(page.getByTestId("story-body")).not.toContainText("{@nickName}");
+
+    await page.goto(
+      toAppPath(`reader/kr/${koreanCapitalNicknameStory.groupId}/${koreanCapitalNicknameStory.storyId}`),
+    );
+    await expect(page.getByTestId("story-body")).toContainText("Dr.로도스");
+    await expect(page.getByTestId("story-body")).not.toContainText("{@Nickname}");
+
+    await page.goto(toAppPath());
+    await page.getByTestId("nickname-input").fill("$&");
+    await page.goto(
+      toAppPath(`reader/kr/${koreanNicknameStory.groupId}/${koreanNicknameStory.storyId}`),
+    );
+    await expect(page.getByTestId("story-body")).toContainText("$& 박사");
+    await expect(page.getByTestId("story-body")).not.toContainText("{@nickname}");
+
+    await page.goto(
       toAppPath(
         `reader/${sampleBackgroundStoryEntry.server}/${sampleBackgroundStoryEntry.groupId}/${sampleBackgroundStoryEntry.storyId}`,
       ),
@@ -725,7 +791,6 @@ test.describe("reader shell smoke", () => {
     );
 
     await page.goto(toAppPath());
-    await expect(page.getByTestId("last-visited-story")).toContainText(sampleStory.title);
     await expect(page.getByTestId("continue-reading-link")).toHaveAttribute(
       "href",
       `/ark-str/reader/${sampleStory.server}/${sampleStory.groupId}/${sampleStory.storyId}/`,

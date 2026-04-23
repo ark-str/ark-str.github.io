@@ -45,6 +45,12 @@ function useReaderSessionStore() {
         preferredLocale,
       }));
     },
+    setNickName(nickName: string) {
+      setState((current) => ({
+        ...current,
+        nickName: nickName.slice(0, 24),
+      }));
+    },
     setLastVisitedStory(lastVisitedStory: LastVisitedStory) {
       setState((current) => ({
         ...current,

@@ -175,11 +175,28 @@ export type ReaderLocaleArchive = {
   description: string;
   groupCount: number;
   storyCount: number;
+  totalVisibleCharacterCount: number;
   featuredStory: {
     storyId: string;
     groupId: string;
     title: string;
   } | null;
+  recommendationCollections: ReaderHomeRecommendationCollection[];
+};
+
+export type ReaderHomeRecommendationItem = {
+  groupId: string;
+  title: string;
+  storyCount: number;
+  totalVisibleCharacterCount: number;
+  estimatedMinutes: number;
+  backgroundImagePath: string | null;
+  isAvailable: boolean;
+};
+
+export type ReaderHomeRecommendationCollection = {
+  collectionId: string;
+  items: ReaderHomeRecommendationItem[];
 };
 
 export type ReaderHomeModel = {
