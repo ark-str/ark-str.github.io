@@ -70,8 +70,8 @@ export function DisclosureCard({
       <div
         aria-hidden={!isOpen}
         className={cn(
-          "grid overflow-hidden border-t transition-[grid-template-rows,opacity,border-color] duration-300 ease-out",
-          isOpen ? "border-[var(--border)] opacity-100" : "border-transparent opacity-0",
+          "grid overflow-hidden border-t transition-[grid-template-rows,border-color] duration-300 ease-out",
+          isOpen ? "border-[var(--border)]" : "border-transparent",
         )}
         data-state={isOpen ? "open" : "closed"}
         data-testid={panelTestId}

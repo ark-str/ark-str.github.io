@@ -288,7 +288,7 @@ function StoryBackdrop({ backgroundPath }: { backgroundPath: string | null }) {
           <img
             alt=""
             aria-hidden="true"
-            className="absolute inset-0 h-full w-full object-cover object-center blur-xl"
+            className="absolute inset-0 h-full w-full object-cover object-center"
             data-testid="story-backdrop-image"
             src={backgroundPath}
           />
@@ -613,9 +613,15 @@ export function ReaderStoryShell({
       : initialBackgroundId;
 
   const handleBackgroundVisible = useCallback((backgroundId: string) => {
-    setActiveBackground({
-      storyId,
-      backgroundId,
+    setActiveBackground((current) => {
+      if (current.storyId === storyId && current.backgroundId === backgroundId) {
+        return current;
+      }
+
+      return {
+        storyId,
+        backgroundId,
+      };
     });
   }, [storyId]);
   const activeBackgroundPath = activeBackgroundId ? (backgroundPaths[activeBackgroundId] ?? null) : null;
@@ -676,7 +682,7 @@ export function ReaderStoryShell({
       <section className="relative z-10 grid gap-6">
         <div className="grid gap-6 xl:grid-cols-[260px_minmax(0,1fr)]">
           <aside className="grid gap-4 self-start xl:sticky xl:top-28">
-            <Card className="bg-[var(--surface)]/90 backdrop-blur-sm">
+            <Card className="bg-[var(--surface)]/96">
               <CardHeader>
                 <Badge variant="default" className="w-fit">
                   Group
@@ -751,7 +757,7 @@ export function ReaderStoryShell({
         </div>
 
         <section data-testid="story-summary-section">
-          <Card className="bg-[var(--surface)]/92 backdrop-blur-sm">
+          <Card className="bg-[var(--surface)]/96">
             <CardHeader>
               <Badge variant="default" className="w-fit">
                 Summary
