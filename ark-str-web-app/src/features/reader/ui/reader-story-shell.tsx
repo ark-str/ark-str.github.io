@@ -177,23 +177,29 @@ function CharacterObservationTracker({
   return null;
 }
 
-function findFirstBackgroundId(blocks: StoryBlock[]): string | null {
+function findFirstBackgroundBlock(
+  blocks: StoryBlock[],
+): { backgroundId: string | null } | null {
   for (const block of blocks) {
-    if (block.type === "background" && block.backgroundId) {
-      return block.backgroundId;
+    if (block.type === "background") {
+      return { backgroundId: block.backgroundId };
     }
 
     if (block.type === "choice") {
       for (const option of block.options) {
-        const optionBackgroundId = findFirstBackgroundId(option.blocks);
-        if (optionBackgroundId) {
-          return optionBackgroundId;
+        const optionBackground = findFirstBackgroundBlock(option.blocks);
+        if (optionBackground) {
+          return optionBackground;
         }
       }
     }
   }
 
   return null;
+}
+
+function findFirstBackgroundId(blocks: StoryBlock[]): string | null {
+  return findFirstBackgroundBlock(blocks)?.backgroundId ?? null;
 }
 
 function collectSpeakerIds(blocks: StoryBlock[], speakerIds: Set<string>) {

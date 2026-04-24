@@ -16,7 +16,7 @@ Current closeout outcome:
 - `charslot(...)` frames are cleared when `character(...)` scene state takes over, preventing old slot portraits from leaking into later dialogue
 - speaker-name fallback after active frames clear is limited to confirmed fresh-frame `char_` operator aliases, including focus-only `charslot` updates, so stale frames do not contaminate unrelated speaker names
 - `Sticker(text="...")` title-card text is preserved as narration with escaped line breaks decoded and bracketed labels intact, and `Image(image="...")` scene art now emits background blocks backed by direct `ArknightsResource/avgs/` images
-- no-image `Image` / `Background` tags emit `backgroundId: null` clear markers that clear the fixed story backdrop, and adjacent duplicate background IDs from paired `Background` / `Image` tags are coalesced before rendering
+- no-image `Image` / `Background` tags emit `backgroundId: null` clear markers that clear the fixed story backdrop, including leading clear markers, and adjacent duplicate background IDs from paired `Background` / `Image` tags are coalesced before rendering
 - story details were regenerated from the updated parser
 - `npm run verify` passed on branch `issue-96-act22side-parser-fix`
 

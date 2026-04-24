@@ -50,5 +50,5 @@ Merged PR: `#97`
 - Non-operator names such as NPC labels are not stable enough for cross-scene fallback; they need an explicit active visual frame.
 - Operator aliases are reused only when they were confirmed by the first dialogue attached to a fresh `char_` visual frame, preventing stale frames from contaminating unrelated speaker names.
 - `Image(image="...")` reuses the existing background block contract so story art can drive both in-flow previews and the fixed story backdrop without a new runtime block type.
-- `[Image(...)]` or `[Background(...)]` tags without an `image` value clear the active fixed backdrop through a `backgroundId: null` marker, and the reader state preserves that explicit `null` instead of falling back to the first scene image.
+- `[Image(...)]` or `[Background(...)]` tags without an `image` value clear the active fixed backdrop through a `backgroundId: null` marker, and the reader state preserves that explicit `null` instead of falling back to the first scene image, including when the clear marker is the first background block in the story.
 - Adjacent duplicate `Background` / `Image` blocks represent the same visual layer update and are collapsed to avoid repeated preview cards.
