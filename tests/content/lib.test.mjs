@@ -9,6 +9,8 @@ import {
   getGeneratedBackgroundPublicPath,
   getGeneratedGroupBackgroundPublicPath,
   getGeneratedPortraitPublicPath,
+  readStorySummaryText,
+  resolveStorySummarySource,
   resolveStorySource,
   selectStoryTitle,
   writeGeneratedArtifacts,
@@ -129,6 +131,60 @@ test("resolveStorySource falls back to metadata hashing when the file is missing
   assert.match(resolved.sourceHash, /^[0-9a-f]{64}$/);
 });
 
+test("resolveStorySummarySource maps story files to [uc]info files", () => {
+  assert.equal(
+    resolveStorySummarySource(
+      "vendor/ArknightsGamedata/kr/gamedata/story/activities/act22side/level_act22side_02_beg.txt",
+    ),
+    "vendor/ArknightsGamedata/kr/gamedata/story/[uc]info/activities/act22side/level_act22side_02_beg.txt",
+  );
+  assert.equal(
+    resolveStorySummarySource(
+      "vendor/ArknightsGamedata/kr/gamedata/story/info/activities/act22side/level_act22side_02_beg.txt",
+    ),
+    "vendor/ArknightsGamedata/kr/gamedata/story/[uc]info/activities/act22side/level_act22side_02_beg.txt",
+  );
+  assert.equal(
+    resolveStorySummarySource(
+      "vendor/ArknightsGamedata/kr/gamedata/story/[uc]info/activities/act22side/level_act22side_02_beg.txt",
+    ),
+    "vendor/ArknightsGamedata/kr/gamedata/story/[uc]info/activities/act22side/level_act22side_02_beg.txt",
+  );
+});
+
+test("readStorySummaryText reads normalized vendor [uc]info text", () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "ark-str-summary-"));
+  const summaryPath = path.join(
+    root,
+    "vendor",
+    "ArknightsGamedata",
+    "kr",
+    "gamedata",
+    "story",
+    "[uc]info",
+    "activities",
+    "act22side",
+    "level_act22side_02_beg.txt",
+  );
+  fs.mkdirSync(path.dirname(summaryPath), { recursive: true });
+  fs.writeFileSync(summaryPath, "\uFEFF요약 첫 줄\r\n요약 둘째 줄\n\n");
+
+  assert.equal(
+    readStorySummaryText(
+      root,
+      "vendor/ArknightsGamedata/kr/gamedata/story/activities/act22side/level_act22side_02_beg.txt",
+    ),
+    "요약 첫 줄\n요약 둘째 줄",
+  );
+  assert.equal(
+    readStorySummaryText(
+      root,
+      "vendor/ArknightsGamedata/kr/gamedata/story/activities/act22side/missing.txt",
+    ),
+    null,
+  );
+});
+
 test("writeGeneratedArtifacts keeps story payloads out of app-internal generated content", async () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "ark-str-generated-"));
   const artifacts = {
@@ -188,6 +244,7 @@ test("writeGeneratedArtifacts keeps story payloads out of app-internal generated
           sourcePath: "vendor/ArknightsGamedata/en/gamedata/story/story-a.txt",
           sourceHash: "deadbeef",
           bodyAvailable: true,
+          summaryText: "Story A summary.",
           blocks: [],
           observedOperators: [],
         },

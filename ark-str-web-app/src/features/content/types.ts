@@ -165,6 +165,7 @@ export type StoryDetail = {
   sourcePath: string;
   sourceHash: string;
   bodyAvailable: boolean;
+  summaryText: string | null;
   blocks: StoryBlock[];
   observedOperators: ObservedOperator[];
 };

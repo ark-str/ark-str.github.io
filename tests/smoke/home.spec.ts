@@ -48,6 +48,7 @@ function readStoryDetail(story: { bodyPath?: string | null }) {
     ),
   ) as {
     observedOperators?: Array<{ speakerId: string; aliases: string[] }>;
+    summaryText?: string | null;
     blocks?: Array<{
       type?: string;
       backgroundId?: string | null;
@@ -118,7 +119,11 @@ function resolveSampleStory() {
 
   for (const story of prioritizedStories) {
     const detail = readStoryDetail(story);
-    if (detail?.observedOperators?.some((observedOperator) => hasBundledPortrait(observedOperator.speakerId))) {
+    if (
+      typeof detail?.summaryText === "string" &&
+      detail.summaryText.length > 0 &&
+      detail.observedOperators?.some((observedOperator) => hasBundledPortrait(observedOperator.speakerId))
+    ) {
       return {
         story,
         detail,
@@ -187,6 +192,7 @@ const sampleObservedAlias =
   sampleObservedOperator?.aliases.find((alias) => alias.trim().length > 0 && alias !== "???") ??
   sampleObservedOperator?.aliases[0] ??
   null;
+const sampleSummaryText = sampleStorySelection.detail.summaryText;
 const sampleBackgroundStory = resolveBackgroundStory();
 const sampleBackgroundIds = sampleBackgroundStory.backgroundIds;
 const sampleBackgroundStoryEntry = sampleBackgroundStory.story;
@@ -249,6 +255,10 @@ if (!koreanNicknameStory) {
 
 if (!koreanCapitalNicknameStory) {
   throw new Error("The Korean content index must include a capitalized nickname-token story sample.");
+}
+
+if (!sampleSummaryText) {
+  throw new Error("The sample reader story must include generated summary text.");
 }
 
 function toAppPath(route = "") {
@@ -573,7 +583,6 @@ test.describe("reader shell smoke", () => {
     await expect(page.getByTestId("story-backdrop")).toBeVisible();
     await expect(page.getByTestId("chrome-story-select")).toBeVisible();
     await expect(page.getByTestId("story-body")).toBeVisible();
-    await expect(page.getByTestId("story-summary-section")).toBeVisible();
     await expect(page.getByTestId("story-bottom-nav")).toBeVisible();
     if (samplePreviousStory) {
       await expect(page.getByTestId("story-previous-link")).toHaveAttribute(
@@ -591,6 +600,33 @@ test.describe("reader shell smoke", () => {
     } else {
       await expect(page.getByTestId("story-next-disabled")).toBeVisible();
     }
+    const summarySection = page.getByTestId("story-summary-section");
+    await expect(summarySection).toBeVisible();
+    await expect(summarySection.getByText("SUMMARY")).toBeVisible();
+    await expect(summarySection).not.toContainText("Story summary");
+    await expect(summarySection).not.toContainText("이 스토리의 summary는 아직 생성되지 않았습니다");
+    const summaryToggle = page.getByTestId("story-summary-toggle");
+    const summaryPanel = page.getByTestId("story-summary-panel");
+    await expect(summaryToggle).toHaveAttribute("aria-expanded", "false");
+    await expect(summaryPanel).toHaveAttribute("data-state", "closed");
+    const closedSummaryHeight = await summaryPanel.evaluate((node) =>
+      Math.round(node.getBoundingClientRect().height),
+    );
+    expect(closedSummaryHeight).toBeLessThanOrEqual(1);
+    await expect(summaryPanel).toHaveCSS("visibility", "hidden");
+    const summaryTransitionProperty = await summaryPanel.evaluate(
+      (node) => window.getComputedStyle(node).transitionProperty,
+    );
+    expect(summaryTransitionProperty).toContain("max-height");
+    expect(summaryTransitionProperty).not.toContain("opacity");
+    await summaryToggle.click();
+    await expect(summaryToggle).toHaveAttribute("aria-expanded", "true");
+    await expect(summaryPanel).toHaveAttribute("data-state", "open");
+    await expect(summaryPanel).toHaveCSS("visibility", "visible");
+    await expect
+      .poll(() => summaryPanel.evaluate((node) => Math.round(node.getBoundingClientRect().height)))
+      .toBeGreaterThan(1);
+    await expect(summaryPanel).toContainText(sampleSummaryText);
     await expect(page.getByTestId("reader-shell")).not.toContainText(sampleStory.sourcePath);
     await expect(page.getByTestId("reader-shell")).not.toContainText(
       `${sampleStoryGroup.storyCount} stories in`,
@@ -809,36 +845,38 @@ test.describe("reader shell smoke", () => {
       await observedSpeakerArticle.scrollIntoViewIfNeeded();
       await expect(observedSpeakerArticle.getByTestId("speaker-portrait-image")).toBeVisible();
       const portraitRenderMetrics = await observedSpeakerArticle.evaluate((article) => {
-        const slot = article.querySelector('[data-testid="speaker-portrait-slot"]');
+        const backdrop = article.querySelector('[data-testid="speaker-portrait-backdrop"]');
         const image = article.querySelector('[data-testid="speaker-portrait-image"]');
 
-        if (!slot || !image) {
+        if (!backdrop || !image) {
           throw new Error("Speaker portrait targets were not found.");
         }
 
-        const slotRect = slot.getBoundingClientRect();
+        const articleRect = article.getBoundingClientRect();
+        const backdropRect = backdrop.getBoundingClientRect();
         const imageRect = image.getBoundingClientRect();
-        const slotStyles = window.getComputedStyle(slot);
 
         return {
+          articleHeight: Math.round(articleRect.height),
+          articleTop: Math.round(articleRect.top),
+          articleWidth: Math.round(articleRect.width),
+          backdropHeight: Math.round(backdropRect.height),
+          backdropTop: Math.round(backdropRect.top),
+          backdropWidth: Math.round(backdropRect.width),
           imageHeight: Math.round(imageRect.height),
           imageTop: Math.round(imageRect.top),
           imageWidth: Math.round(imageRect.width),
-          slotBorderTopWidth: slotStyles.borderTopWidth,
-          slotHeight: Math.round(slotRect.height),
-          slotTop: Math.round(slotRect.top),
-          slotWidth: Math.round(slotRect.width),
         };
       });
-      expect(portraitRenderMetrics.slotBorderTopWidth).toBe("0px");
-      expect(portraitRenderMetrics.slotHeight).toBeGreaterThanOrEqual(128);
+      expect(portraitRenderMetrics.articleHeight).toBeGreaterThanOrEqual(224);
+      expect(portraitRenderMetrics.backdropHeight).toBe(portraitRenderMetrics.articleHeight);
+      expect(portraitRenderMetrics.backdropWidth).toBe(portraitRenderMetrics.articleWidth);
+      expect(portraitRenderMetrics.backdropTop).toBe(portraitRenderMetrics.articleTop);
       expect(portraitRenderMetrics.imageHeight).toBeGreaterThanOrEqual(
-        portraitRenderMetrics.slotHeight * 2 - 1,
+        portraitRenderMetrics.backdropHeight * 2 - 1,
       );
-      expect(portraitRenderMetrics.imageWidth).toBeGreaterThanOrEqual(
-        portraitRenderMetrics.slotWidth * 2 - 1,
-      );
-      expect(portraitRenderMetrics.imageTop).toBe(portraitRenderMetrics.slotTop);
+      expect(portraitRenderMetrics.imageWidth).toBe(portraitRenderMetrics.backdropWidth);
+      expect(portraitRenderMetrics.imageTop).toBe(portraitRenderMetrics.backdropTop);
     }
 
     await page.goto(

@@ -779,6 +779,48 @@ export function resolveStorySource({
   };
 }
 
+function normalizeSummaryText(value) {
+  const normalized =
+    typeof value === "string" ? value.replace(/^\uFEFF/, "").replace(/\r\n?/g, "\n").trim() : "";
+
+  return normalized.length > 0 ? normalized : null;
+}
+
+export function resolveStorySummarySource(sourcePath) {
+  const normalizedSourcePath =
+    typeof sourcePath === "string" ? sourcePath.replaceAll("\\", "/") : "";
+  const storyRootMarker = "/gamedata/story/";
+  const markerIndex = normalizedSourcePath.indexOf(storyRootMarker);
+
+  if (markerIndex === -1) {
+    return null;
+  }
+
+  const sourceRoot = normalizedSourcePath.slice(0, markerIndex + storyRootMarker.length);
+  const storyRelativePath = normalizedSourcePath.slice(markerIndex + storyRootMarker.length);
+  const summaryRelativePath = storyRelativePath.startsWith("[uc]info/")
+    ? storyRelativePath
+    : storyRelativePath.startsWith("info/")
+      ? `[uc]${storyRelativePath}`
+      : path.join("[uc]info", storyRelativePath).replaceAll("\\", "/");
+
+  return `${sourceRoot}${summaryRelativePath}`;
+}
+
+export function readStorySummaryText(cwd = getRepoRoot(), sourcePath) {
+  const summarySourcePath = resolveStorySummarySource(sourcePath);
+  if (!summarySourcePath) {
+    return null;
+  }
+
+  const absoluteSummaryPath = resolveWorkspacePath(cwd, summarySourcePath);
+  if (!fs.existsSync(absoluteSummaryPath)) {
+    return null;
+  }
+
+  return normalizeSummaryText(fs.readFileSync(absoluteSummaryPath, "utf8"));
+}
+
 function collectSpeakerIdsFromBlocks(blocks, accumulator) {
   for (const block of blocks) {
     if (block.type === "dialogue") {
@@ -1216,11 +1258,12 @@ export function buildContentArtifacts(
             bodyAvailable: story.bodyAvailable,
             generatedAt,
           });
+          const summaryText = readStorySummaryText(cwd, story.sourcePath);
           summaryItems.push({
             server,
             storyId: story.storyId,
             sourceHash: story.sourceHash,
-            status: "missing",
+            status: summaryText ? "ready" : "missing",
           });
 
           if (source.sourceExists) {
@@ -1246,6 +1289,7 @@ export function buildContentArtifacts(
                 sourcePath: story.sourcePath,
                 sourceHash: story.sourceHash,
                 bodyAvailable: true,
+                summaryText,
                 blocks: parsedBlocks,
                 observedOperators: collectObservedOperators(parsedBlocks),
               },

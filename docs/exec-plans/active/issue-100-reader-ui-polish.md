@@ -7,7 +7,7 @@ Refine the locale archive header and story reading surface so navigation and por
 ## Scope
 
 - Remove the locale archive helper sentence and keep the Storylines stats card right-aligned on mobile.
-- Render story dialogue portraits without an inner border, filling the portrait slot with a 2x top-aligned crop.
+- Render story dialogue portraits as card-wide background layers with a 2x top-aligned crop.
 - Add previous/next story navigation at the bottom of the story page.
 - Update frontend/design docs and smoke coverage for the changed UI contract.
 
@@ -15,7 +15,7 @@ Refine the locale archive header and story reading surface so navigation and por
 
 - Keep assets local and bundled.
 - Keep browser behavior in feature UI/runtime code.
-- Do not mix this work into PR #99; track it separately under issue #100.
+- Keep issue #100 separate, but merge PR #99's summary branch into this branch before final review so the summary UI is not accidentally dropped.
 
 ## Tasks
 
@@ -30,4 +30,5 @@ Refine the locale archive header and story reading surface so navigation and por
 ## Decision Log
 
 - Use the current group story order for previous/next navigation.
-- Treat "2x portrait" as a 200% image crop inside a stable slot, not a 2x card-size increase.
+- Treat "2x portrait" as a 200% card-wide image backdrop, not a small profile slot.
+- Merge PR #99 before finalizing issue #100 because both changes touch the story reader shell.

@@ -1,14 +1,14 @@
 "use client";
 
-import { useCallback, useEffect, useEffectEvent, useMemo, useRef, useState, type ReactNode } from "react";
+import { useCallback, useEffect, useEffectEvent, useId, useMemo, useRef, useState, type ReactNode } from "react";
 import Link from "next/link";
-import { ArrowUp } from "lucide-react";
+import { ArrowUp, ChevronDown } from "lucide-react";
 import { ReaderPageFrame } from "@/components/layout/reader-page-frame";
 import type { FloatingAppBarModel } from "@/components/layout/types";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { persistCharacterObservations } from "@/features/characters/runtime/persist-character-observations";
 import {
   CANONICAL_READER_LOCALES,
@@ -22,16 +22,12 @@ import {
   getReaderLocaleHref,
   getReaderStoryHref,
 } from "@/features/content/config/reader-routes";
-import {
-  findSummaryEntry,
-  getGroupStories,
-} from "@/features/content/config/content-index-selectors";
+import { getGroupStories } from "@/features/content/config/content-index-selectors";
 import {
   resolveRuntimePublicPath,
   useAssetManifest,
   useContentIndex,
   useStoryDetail,
-  useSummaryManifest,
 } from "@/features/content/runtime/use-public-content";
 import type {
   AssetManifest,
@@ -96,29 +92,36 @@ function StoryMetricBadge({ children, compact = false }: { children: ReactNode; 
   );
 }
 
-function ReaderPortraitSlot({
+function ReaderDialoguePortraitBackdrop({
   portraitPath,
   speakerName,
 }: {
   portraitPath: string | null;
   speakerName: string;
 }) {
+  if (!portraitPath) {
+    return null;
+  }
+
   return (
     <div
-      className="relative h-32 w-24 shrink-0 overflow-hidden rounded-[var(--radius-sm)] bg-[var(--surface-muted)]"
-      data-testid="speaker-portrait-slot"
+      className="pointer-events-none absolute inset-0 z-0 overflow-hidden rounded-[inherit]"
+      data-testid="speaker-portrait-backdrop"
     >
-      {portraitPath ? (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
-          alt={`${speakerName} portrait`}
-          className="absolute left-1/2 top-0 block h-[200%] w-[200%] max-w-none -translate-x-1/2 object-cover object-top"
-          data-testid="speaker-portrait-image"
-          height={256}
-          src={portraitPath}
-          width={192}
-        />
-      ) : null}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        alt={`${speakerName} portrait`}
+        className="absolute inset-x-0 top-0 block h-[200%] w-full max-w-none object-cover object-top opacity-45"
+        data-testid="speaker-portrait-image"
+        height={512}
+        src={portraitPath}
+        width={384}
+      />
+      <span aria-hidden="true" className="absolute inset-0 bg-[var(--surface)]/68" />
+      <span
+        aria-hidden="true"
+        className="absolute inset-0 bg-gradient-to-r from-[var(--surface)]/28 via-[var(--surface)]/82 to-[var(--surface)]/96"
+      />
     </div>
   );
 }
@@ -528,6 +531,87 @@ function StoryBottomNavigation({
   );
 }
 
+function StorySummaryCard({ summaryText }: { summaryText: string | null }) {
+  const [isOpen, setIsOpen] = useState(false);
+  const [contentHeight, setContentHeight] = useState(0);
+  const contentId = useId();
+  const contentRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const node = contentRef.current;
+    if (!node) {
+      return;
+    }
+
+    const syncContentHeight = () => {
+      setContentHeight(node.scrollHeight);
+    };
+
+    syncContentHeight();
+    if (typeof ResizeObserver === "undefined") {
+      return;
+    }
+
+    const observer = new ResizeObserver(syncContentHeight);
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [summaryText]);
+
+  if (!summaryText) {
+    return null;
+  }
+
+  return (
+    <section className="relative z-10" data-testid="story-summary-section">
+      <Card className="overflow-hidden bg-[var(--surface)]/96 shadow-[var(--shadow-sm)]">
+        <CardHeader className="p-0">
+          <button
+            aria-controls={contentId}
+            aria-expanded={isOpen}
+            className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left"
+            data-testid="story-summary-toggle"
+            onClick={() => setIsOpen((current) => !current)}
+            type="button"
+          >
+            <Badge className="w-fit uppercase tracking-[0.16em]" variant="default">
+              SUMMARY
+            </Badge>
+            <ChevronDown
+              aria-hidden="true"
+              className={cn(
+                "h-4 w-4 shrink-0 text-[var(--text-muted)] transition-transform duration-300 ease-out",
+                isOpen && "rotate-180",
+              )}
+            />
+          </button>
+        </CardHeader>
+        <div
+          aria-hidden={!isOpen}
+          className={cn(
+            "overflow-hidden transition-[max-height] duration-300 ease-out",
+            !isOpen && "pointer-events-none",
+          )}
+          data-state={isOpen ? "open" : "closed"}
+          data-testid="story-summary-panel"
+          id={contentId}
+          style={{
+            maxHeight: isOpen ? `${contentHeight}px` : "0px",
+            visibility: isOpen ? "visible" : "hidden",
+          }}
+        >
+          <div ref={contentRef}>
+            <CardContent className="px-5 pb-5 pt-0">
+              <p className="whitespace-pre-wrap text-sm leading-7 text-[var(--text)]">
+                {summaryText}
+              </p>
+            </CardContent>
+          </div>
+        </div>
+      </Card>
+    </section>
+  );
+}
+
 function StoryBlocks({
   activeBackgroundId,
   backgroundPaths,
@@ -553,33 +637,32 @@ function StoryBlocks({
           return (
             <article
               key={`dialogue-${index}`}
-              className={`flex min-h-44 flex-col gap-4 rounded-[var(--radius-lg)] border bg-[var(--surface)]/94 p-4 shadow-[var(--shadow-sm)] ${
+              className={`relative isolate min-h-56 overflow-hidden rounded-[var(--radius-lg)] border bg-[var(--surface)]/94 p-5 shadow-[var(--shadow-sm)] ${
                 block.isRemote
                   ? "border-[var(--accent)] border-dashed"
                   : "border-[var(--border)]"
               }`}
+              data-testid="dialogue-card"
             >
-              <div className="flex items-start gap-4">
-                <ReaderPortraitSlot
-                  portraitPath={block.speakerId ? (portraitPaths[block.speakerId] ?? null) : null}
-                  speakerName={speakerName}
-                />
-                <div className="min-w-0 flex-1 pt-1">
-                  <div className="flex flex-wrap items-center gap-2">
-                    <h3 className="text-lg font-semibold tracking-[-0.02em] text-[var(--text)]">
-                      {speakerName}
-                    </h3>
-                    {block.isRemote ? (
-                      <Badge variant="accent" className="text-[10px] uppercase tracking-[0.14em]">
-                        Wireless link
-                      </Badge>
-                    ) : null}
-                  </div>
+              <ReaderDialoguePortraitBackdrop
+                portraitPath={block.speakerId ? (portraitPaths[block.speakerId] ?? null) : null}
+                speakerName={speakerName}
+              />
+              <div className="relative z-10 grid gap-4">
+                <div className="flex flex-wrap items-center gap-2">
+                  <h3 className="text-lg font-semibold tracking-[-0.02em] text-[var(--text)]">
+                    {speakerName}
+                  </h3>
+                  {block.isRemote ? (
+                    <Badge variant="accent" className="text-[10px] uppercase tracking-[0.14em]">
+                      Wireless link
+                    </Badge>
+                  ) : null}
                 </div>
+                <p className="whitespace-pre-wrap text-[1.02rem] leading-8 text-[var(--text)]">
+                  {dialogueText}
+                </p>
               </div>
-              <p className="whitespace-pre-wrap text-[1.02rem] leading-8 text-[var(--text)]">
-                {dialogueText}
-              </p>
             </article>
           );
         }
@@ -708,7 +791,6 @@ export function ReaderStoryShell({
 }) {
   const { state: readerSessionState } = useReaderSession();
   const indexState = useContentIndex();
-  const summaryState = useSummaryManifest();
   const assetState = useAssetManifest();
   const index = indexState.data;
   const group = index ? findGroupEntry(index, locale, groupId) : null;
@@ -740,9 +822,6 @@ export function ReaderStoryShell({
     () => createStoryBackgroundPaths(detail, assetState.data),
     [assetState.data, detail],
   );
-  const summaryAvailable =
-    findSummaryEntry(summaryState.data, locale, storyId)?.status === "ready";
-
   const isIndexLoading = indexState.status === "loading" || indexState.status === "idle";
   const isBodyLoading =
     Boolean(story?.bodyAvailable) &&
@@ -825,6 +904,8 @@ export function ReaderStoryShell({
       <StoryBackdrop backgroundPath={activeBackgroundPath} />
 
       <section className="relative z-10 grid gap-6">
+        <StorySummaryCard key={story.storyId} summaryText={detail?.summaryText ?? null} />
+
         <div className="grid gap-6 xl:grid-cols-[260px_minmax(0,1fr)]">
           <aside className="hidden self-start xl:sticky xl:top-[calc(var(--app-bar-height,7rem)+var(--space-4))] xl:block">
             <Card
@@ -912,36 +993,6 @@ export function ReaderStoryShell({
             )}
           </section>
         </div>
-
-        <section data-testid="story-summary-section">
-          <Card className="bg-[var(--surface)]/96">
-            <CardHeader>
-              <Badge variant="default" className="w-fit">
-                Summary
-              </Badge>
-              <CardTitle>Story summary</CardTitle>
-              <CardDescription>
-                summary는 스토리 본문 아래 전체폭 영역에서 제공합니다.
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              {summaryAvailable ? (
-                <p className="text-sm leading-7 text-[var(--text)]">
-                  summary contract is marked available, but summary rendering is not implemented in this
-                  issue.
-                </p>
-              ) : (
-                <div
-                  className="rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--panel)] p-4 text-sm leading-7 text-[var(--text-muted)]"
-                  data-testid="summary-empty-state"
-                >
-                  이 스토리의 summary는 아직 생성되지 않았습니다. 후속 파이프라인 이슈에서 summary와
-                  character unlock fact가 추가됩니다.
-                </div>
-              )}
-            </CardContent>
-          </Card>
-        </section>
 
         <StoryBottomNavigation locale={locale} nextStory={nextStory} previousStory={previousStory} />
       </section>
