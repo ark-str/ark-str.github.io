@@ -525,7 +525,10 @@ function StorySummaryCard({ summaryText }: { summaryText: string | null }) {
           data-state={isOpen ? "open" : "closed"}
           data-testid="story-summary-panel"
           id={contentId}
-          style={{ maxHeight: isOpen ? `${contentHeight}px` : "0px" }}
+          style={{
+            maxHeight: isOpen ? `${contentHeight}px` : "0px",
+            visibility: isOpen ? "visible" : "hidden",
+          }}
         >
           <div ref={contentRef}>
             <CardContent className="px-5 pb-5 pt-0">

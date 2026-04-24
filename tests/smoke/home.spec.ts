@@ -560,6 +560,7 @@ test.describe("reader shell smoke", () => {
       Math.round(node.getBoundingClientRect().height),
     );
     expect(closedSummaryHeight).toBeLessThanOrEqual(1);
+    await expect(summaryPanel).toHaveCSS("visibility", "hidden");
     const summaryTransitionProperty = await summaryPanel.evaluate(
       (node) => window.getComputedStyle(node).transitionProperty,
     );
@@ -568,6 +569,7 @@ test.describe("reader shell smoke", () => {
     await summaryToggle.click();
     await expect(summaryToggle).toHaveAttribute("aria-expanded", "true");
     await expect(summaryPanel).toHaveAttribute("data-state", "open");
+    await expect(summaryPanel).toHaveCSS("visibility", "visible");
     await expect
       .poll(() => summaryPanel.evaluate((node) => Math.round(node.getBoundingClientRect().height)))
       .toBeGreaterThan(1);
