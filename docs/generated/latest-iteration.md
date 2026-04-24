@@ -8,7 +8,7 @@ Completed child issue:
 
 Merged PR:
 
-- pending
+- `#99` - Add vendor story summaries to reader
 
 Current closeout outcome:
 
