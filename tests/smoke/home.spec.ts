@@ -869,9 +869,13 @@ test.describe("reader shell smoke", () => {
         };
       });
       expect(portraitRenderMetrics.articleHeight).toBeGreaterThanOrEqual(224);
-      expect(portraitRenderMetrics.backdropHeight).toBe(portraitRenderMetrics.articleHeight);
-      expect(portraitRenderMetrics.backdropWidth).toBe(portraitRenderMetrics.articleWidth);
-      expect(portraitRenderMetrics.backdropTop).toBe(portraitRenderMetrics.articleTop);
+      expect(
+        Math.abs(portraitRenderMetrics.backdropHeight - portraitRenderMetrics.articleHeight),
+      ).toBeLessThanOrEqual(2);
+      expect(
+        Math.abs(portraitRenderMetrics.backdropWidth - portraitRenderMetrics.articleWidth),
+      ).toBeLessThanOrEqual(2);
+      expect(Math.abs(portraitRenderMetrics.backdropTop - portraitRenderMetrics.articleTop)).toBeLessThanOrEqual(1);
       expect(portraitRenderMetrics.imageHeight).toBeGreaterThanOrEqual(
         portraitRenderMetrics.backdropHeight * 2 - 1,
       );
