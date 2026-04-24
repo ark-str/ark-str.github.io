@@ -7,7 +7,7 @@ Fix story speaker resolution so `act22side` multiline dialogue keeps its speaker
 Status: completed
 Parent issue: `#96`
 Completed child issue: `#96`
-Merged PR: pending
+Merged PR: `#97`
 
 ## Scope
 
