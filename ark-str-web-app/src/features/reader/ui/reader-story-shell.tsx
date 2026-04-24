@@ -105,18 +105,18 @@ function ReaderPortraitSlot({
 }) {
   return (
     <div
-      className="flex h-24 w-20 shrink-0 items-start justify-center overflow-hidden rounded-[var(--radius-sm)] border border-[var(--border)] bg-[var(--surface-muted)]"
+      className="relative h-32 w-24 shrink-0 overflow-hidden rounded-[var(--radius-sm)] bg-[var(--surface-muted)]"
       data-testid="speaker-portrait-slot"
     >
       {portraitPath ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img
           alt={`${speakerName} portrait`}
-          className="block h-full w-full object-cover object-top"
+          className="absolute left-1/2 top-0 block h-[200%] w-[200%] max-w-none -translate-x-1/2 object-cover object-top"
           data-testid="speaker-portrait-image"
-          height={96}
+          height={256}
           src={portraitPath}
-          width={80}
+          width={192}
         />
       ) : null}
     </div>
@@ -466,6 +466,68 @@ function StoryFloatingTopButton() {
   );
 }
 
+function StoryBottomNavigation({
+  locale,
+  nextStory,
+  previousStory,
+}: {
+  locale: ReaderLocale;
+  nextStory: ContentStoryIndexEntry | null;
+  previousStory: ContentStoryIndexEntry | null;
+}) {
+  const itemClassName =
+    "flex min-h-14 items-center px-5 py-4 text-sm font-semibold tracking-[-0.01em] transition duration-[var(--motion-fast)] ease-out";
+  const activeClassName =
+    "text-[var(--text)] hover:bg-[var(--surface-muted)] hover:text-[var(--accent-strong)]";
+  const disabledClassName = "text-[var(--text-muted)] opacity-45";
+
+  return (
+    <nav
+      aria-label="Story navigation"
+      className="grid grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] overflow-hidden rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--surface)]/94 shadow-[var(--shadow-sm)]"
+      data-testid="story-bottom-nav"
+    >
+      {previousStory ? (
+        <Link
+          aria-label={`이전 스토리: ${previousStory.title}`}
+          className={cn(itemClassName, activeClassName, "justify-start")}
+          data-testid="story-previous-link"
+          href={getReaderStoryHref(locale, previousStory.groupId, previousStory.storyId)}
+        >
+          ‹ 이동
+        </Link>
+      ) : (
+        <span
+          aria-disabled="true"
+          className={cn(itemClassName, disabledClassName, "justify-start")}
+          data-testid="story-previous-disabled"
+        >
+          ‹ 이동
+        </span>
+      )}
+      <span aria-hidden="true" className="my-3 w-px bg-[var(--border)]" />
+      {nextStory ? (
+        <Link
+          aria-label={`다음 스토리: ${nextStory.title}`}
+          className={cn(itemClassName, activeClassName, "justify-end text-right")}
+          data-testid="story-next-link"
+          href={getReaderStoryHref(locale, nextStory.groupId, nextStory.storyId)}
+        >
+          다음 ›
+        </Link>
+      ) : (
+        <span
+          aria-disabled="true"
+          className={cn(itemClassName, disabledClassName, "justify-end text-right")}
+          data-testid="story-next-disabled"
+        >
+          다음 ›
+        </span>
+      )}
+    </nav>
+  );
+}
+
 function StoryBlocks({
   activeBackgroundId,
   backgroundPaths,
@@ -491,7 +553,7 @@ function StoryBlocks({
           return (
             <article
               key={`dialogue-${index}`}
-              className={`flex flex-col gap-4 rounded-[var(--radius-lg)] border bg-[var(--surface)]/94 p-4 shadow-[var(--shadow-sm)] ${
+              className={`flex min-h-44 flex-col gap-4 rounded-[var(--radius-lg)] border bg-[var(--surface)]/94 p-4 shadow-[var(--shadow-sm)] ${
                 block.isRemote
                   ? "border-[var(--accent)] border-dashed"
                   : "border-[var(--border)]"
@@ -652,6 +714,12 @@ export function ReaderStoryShell({
   const group = index ? findGroupEntry(index, locale, groupId) : null;
   const story = index ? findStoryEntry(index, locale, groupId, storyId) : null;
   const siblingStories = index ? getGroupStories(index, locale, groupId) : [];
+  const currentStoryIndex = siblingStories.findIndex((entry) => entry.storyId === storyId);
+  const previousStory = currentStoryIndex > 0 ? siblingStories[currentStoryIndex - 1] : null;
+  const nextStory =
+    currentStoryIndex >= 0 && currentStoryIndex < siblingStories.length - 1
+      ? siblingStories[currentStoryIndex + 1]
+      : null;
   const storyBodyPath = story?.bodyAvailable ? story.bodyPath : null;
   const detailState = useStoryDetail(storyBodyPath);
   const detail = detailState.data;
@@ -874,6 +942,8 @@ export function ReaderStoryShell({
             </CardContent>
           </Card>
         </section>
+
+        <StoryBottomNavigation locale={locale} nextStory={nextStory} previousStory={previousStory} />
       </section>
 
       <StoryFloatingTopButton />

@@ -73,7 +73,7 @@ This phase keeps the recovered reader shell and Pages deployment path stable whi
 - locale-scoped character alias observation storage under `ark-str:character-observations:v1`
 - explicit empty summary state until the summary-generation issue lands, rendered below the story body instead of in a side rail
 - a fixed top app bar shared by home, locale archive, group, and story pages; it uses separate browser and transparent app chrome icons, matched compact home/theme/dropdown control heights and radii, icon breadcrumb separators, icon-only theme control, mobile wrapping, and scroll-down hide / scroll-up reveal behavior
-- locale archives group story sets by generated storyline metadata in initially collapsed grid cards with height-only 300ms disclosure animation that remain one main-grid cell whether closed or open before routing into dedicated group overview pages
+- locale archives remove redundant helper copy from the header, keep the Storylines stats card right-aligned on mobile, and group story sets by generated storyline metadata in initially collapsed grid cards with height-only 300ms disclosure animation that remain one main-grid cell whether closed or open before routing into dedicated group overview pages
 - expanded regular storyline archive sections render `STORY_SET` primary groups and `BEFORE` / `AFTER` flow references in the same sorted one-column list; `NONE/NONE` review groups are `오퍼레이터 서사`, unmatched event groups are `미분류`, and `오퍼레이터 서사` is sorted last and rendered as a bottom section outside the main grid with an internal group grid
 - generated group and story metrics for total visible characters and estimated reading time
 - generated group-level images copied into `public/generated/group-backgrounds/`; manually curated `assets/group-backgrounds/<groupId>.png` files override inferred `ArknightsResource` sources, MAINLINE groups prefer square artwork, and ACTIVITY groups prefer wide atmospheric images
@@ -83,10 +83,10 @@ This phase keeps the recovered reader shell and Pages deployment path stable whi
 - story pages keep `background` blocks in the flow as scroll markers with bundled preview images shown uncropped while the backdrop updates from IntersectionObserver visibility
 - story-page backdrop swaps are immediate; cross-fade state is intentionally omitted to keep the reader surface predictable
 - story-page fixed backdrops and fixed app chrome avoid blur/backdrop-filter effects to prevent scroll-time compositor flicker
-- story pages place desktop-only group story navigation on the left with viewport-constrained internal scrolling, hide that navigation on mobile, and keep a floating scroll-to-top action at the lower right
+- story pages place desktop-only group story navigation on the left with viewport-constrained internal scrolling, hide that navigation on mobile, provide bottom previous/next story navigation inside the current group, and keep a floating scroll-to-top action at the lower right
 - story route headers avoid raw vendor source paths and redundant group-count copy, while group/story metadata is rendered as compact wrapping badges and sidebar phase badges use matching accent tones
 - global horizontal and vertical scrollbar tracks/corners are transparent so local scroll regions do not add heavy chrome
-- dialogue cards use a portrait-plus-header layout that gives the spoken text the full card width instead of a narrow side-by-side split
+- dialogue cards use a portrait-plus-header layout with borderless 2x top-cropped portraits, giving the spoken text the full card width instead of a narrow side-by-side split
 - Doctor choice normalization no longer renders a nested "Shared response" section; predicates that reference every option are treated as post-choice continuation
 - gh-pages-safe static export under the `/ark-str/` base path
 - isolated `.next-dev` and `.next-export` caches so `npm run verify` does not degrade the next `npm run dev` startup

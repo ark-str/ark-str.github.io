@@ -183,7 +183,7 @@ export function ReaderLocaleArchive({ locale }: { locale: ReaderLocale }) {
     <ReaderPageFrame
       appBar={appBar}
       header={
-        <section className="flex flex-wrap items-end justify-between gap-4">
+        <section className="grid gap-4 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-end">
           <div className="space-y-2">
             <Badge variant="accent" className="w-fit">
               Locale archive
@@ -191,11 +191,11 @@ export function ReaderLocaleArchive({ locale }: { locale: ReaderLocale }) {
             <h1 className="font-[var(--font-display)] text-4xl font-semibold leading-tight tracking-[-0.03em] md:text-5xl">
               {READER_LOCALE_LABELS[locale].label}
             </h1>
-            <p className="max-w-3xl text-sm leading-7 text-[var(--text-muted)] md:text-base">
-              locale archive는 group overview와 story reader의 출발점입니다.
-            </p>
           </div>
-          <Card className="min-w-48 bg-[var(--surface)]/90">
+          <Card
+            className="min-w-48 justify-self-end bg-[var(--surface)]/90"
+            data-testid="archive-storylines-card"
+          >
             <CardContent className="px-5 py-4 text-right">
               <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--text-muted)]">
                 Storylines

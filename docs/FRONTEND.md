@@ -23,12 +23,12 @@ The app should feel editorial, deliberate, and product-specific rather than like
 - home renders a localized ARK STR landing surface with a clean centered nickname prompt, two-line continue action showing the target story title, full-bleed square-edged service introduction using the accent-colored app icon, generously separated curated recommendation collections, selected-locale statistics, and maintainer credit
 - app-level light/dark theme toggle persisted through the preferences feature
 - canonical locale archive routes, group overview routes, and direct story deep links
-- locale archives render generated storyline sections as collapsed grid cards with 300ms height-only disclosure animation; regular storyline cards stay inside the main grid as single cells whether closed or open, expanded regular sections keep a simple one-column list, and operator narratives sit in a separate bottom section with an internal grid
+- locale archives remove helper copy from the route header, keep the Storylines stats card right-aligned on mobile, and render generated storyline sections as collapsed grid cards with 300ms height-only disclosure animation; regular storyline cards stay inside the main grid as single cells whether closed or open, expanded regular sections keep a simple one-column list, and operator narratives sit in a separate bottom section with an internal grid
 - locale archive primary group cards use the same dark image treatment as group-flow cards, with white titles and Stories/chars/time metrics rendered as compact pill badges
 - first-pass story body rendering sourced from bundled story detail JSON
 - story text rendering replaces `{@nickname}` and `{@nickName}` from the local reader nickname, using an empty string when unset
 - a restrained fixed top app bar shared by home, archive, group, and story routes without backdrop-filter effects; it keeps browser metadata on the black-background icon, uses a separate transparent app chrome icon for the home control, and keeps home/theme buttons, dropdowns, and group text aligned to the same compact height/radius/text scale as the Story button
-- story pages with desktop-only left-side group navigation, main reading column, bottom summary section, and a floating top button
+- story pages with desktop-only left-side group navigation, main reading column, bottom summary section, bottom previous/next story navigation, and a floating top button
 - group overview pages render wrapping titles and Stories/chars/time metrics over the generated hero image, then show the named current storyline as horizontally scrollable group/reference cards before simplified story cards; oversized storylines are bounded to the current group neighborhood, reference cards carry an up-right cue, and story cards avoid exposing internal story IDs
 - story route headers avoid raw vendor paths and group-count copy; the desktop sibling-story navigation card is viewport-constrained with internal scrolling, wraps story metadata as badges, and renders bridge/pre/post phase badges with the same accent tone
 - horizontal and vertical scrollbar tracks/corners are transparent, with only a subtle local thumb for scroll affordance
@@ -36,7 +36,7 @@ The app should feel editorial, deliberate, and product-specific rather than like
 - in-flow background blocks keep their own bundled image previews without cropping and still drive the fixed story backdrop
 - story backdrop swaps on story pages happen immediately without cross-fade state
 - the UI uses a sans-first type system and a tighter radius scale for more consistent modern chrome
-- dialogue cards prioritize a vertical reading layout with portrait and speaker meta in the header and the body text spanning the full card width
+- dialogue cards prioritize a vertical reading layout with borderless 2x top-cropped portraits and speaker meta in the header, while the body text spans the full card width
 - a generated-content readiness panel and explicit summary empty state sourced from bundled JSON
 - gh-pages-safe reader routes rendered from exported static files under the `/ark-str/` base path
 - reader route shells should avoid embedding full story payloads in server-rendered props; archive, group, story detail, and asset lookups load from bundled generated JSON at runtime

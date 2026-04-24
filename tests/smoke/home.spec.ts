@@ -161,6 +161,19 @@ const sampleStoryGroup = generatedIndex.groups.find(
   (group: { server: string; groupId: string }) =>
     group.server === sampleStory.server && group.groupId === sampleStory.groupId,
 );
+const sampleSiblingStories = generatedIndex.stories.filter(
+  (story: { server: string; groupId: string }) =>
+    story.server === sampleStory.server && story.groupId === sampleStory.groupId,
+);
+const sampleStorySiblingIndex = sampleSiblingStories.findIndex(
+  (story: { storyId: string }) => story.storyId === sampleStory.storyId,
+);
+const samplePreviousStory =
+  sampleStorySiblingIndex > 0 ? sampleSiblingStories[sampleStorySiblingIndex - 1] : null;
+const sampleNextStory =
+  sampleStorySiblingIndex >= 0 && sampleStorySiblingIndex < sampleSiblingStories.length - 1
+    ? sampleSiblingStories[sampleStorySiblingIndex + 1]
+    : null;
 
 if (!sampleStoryGroup) {
   throw new Error("A sample reader story must have a matching group entry.");
@@ -351,6 +364,29 @@ test.describe("reader shell smoke", () => {
 
     await page.goto(toAppPath("reader/kr"));
     await expect(page.getByTestId("reader-shell")).toBeVisible();
+    await expect(page.getByTestId("reader-shell")).not.toContainText(
+      "locale archive는 group overview와 story reader의 출발점입니다.",
+    );
+    await page.setViewportSize({ width: 390, height: 820 });
+    const archiveStorylinesAlignment = await page
+      .getByTestId("archive-storylines-card")
+      .evaluate((node) => {
+        const cardRect = node.getBoundingClientRect();
+        const parentRect = node.parentElement?.getBoundingClientRect();
+
+        if (!parentRect) {
+          throw new Error("Archive storylines card parent was not found.");
+        }
+
+        return {
+          cardRight: Math.round(cardRect.right),
+          parentRight: Math.round(parentRect.right),
+        };
+      });
+    expect(
+      Math.abs(archiveStorylinesAlignment.cardRight - archiveStorylinesAlignment.parentRight),
+    ).toBeLessThanOrEqual(1);
+    await page.setViewportSize({ width: 1280, height: 720 });
     const mainStorylineSection = page.locator(
       '[data-testid="storyline-section"][data-storyline-id="mainLine"]',
     );
@@ -538,6 +574,23 @@ test.describe("reader shell smoke", () => {
     await expect(page.getByTestId("chrome-story-select")).toBeVisible();
     await expect(page.getByTestId("story-body")).toBeVisible();
     await expect(page.getByTestId("story-summary-section")).toBeVisible();
+    await expect(page.getByTestId("story-bottom-nav")).toBeVisible();
+    if (samplePreviousStory) {
+      await expect(page.getByTestId("story-previous-link")).toHaveAttribute(
+        "href",
+        `/ark-str/reader/${samplePreviousStory.server}/${samplePreviousStory.groupId}/${samplePreviousStory.storyId}/`,
+      );
+    } else {
+      await expect(page.getByTestId("story-previous-disabled")).toBeVisible();
+    }
+    if (sampleNextStory) {
+      await expect(page.getByTestId("story-next-link")).toHaveAttribute(
+        "href",
+        `/ark-str/reader/${sampleNextStory.server}/${sampleNextStory.groupId}/${sampleNextStory.storyId}/`,
+      );
+    } else {
+      await expect(page.getByTestId("story-next-disabled")).toBeVisible();
+    }
     await expect(page.getByTestId("reader-shell")).not.toContainText(sampleStory.sourcePath);
     await expect(page.getByTestId("reader-shell")).not.toContainText(
       `${sampleStoryGroup.storyCount} stories in`,
@@ -755,6 +808,37 @@ test.describe("reader shell smoke", () => {
 
       await observedSpeakerArticle.scrollIntoViewIfNeeded();
       await expect(observedSpeakerArticle.getByTestId("speaker-portrait-image")).toBeVisible();
+      const portraitRenderMetrics = await observedSpeakerArticle.evaluate((article) => {
+        const slot = article.querySelector('[data-testid="speaker-portrait-slot"]');
+        const image = article.querySelector('[data-testid="speaker-portrait-image"]');
+
+        if (!slot || !image) {
+          throw new Error("Speaker portrait targets were not found.");
+        }
+
+        const slotRect = slot.getBoundingClientRect();
+        const imageRect = image.getBoundingClientRect();
+        const slotStyles = window.getComputedStyle(slot);
+
+        return {
+          imageHeight: Math.round(imageRect.height),
+          imageTop: Math.round(imageRect.top),
+          imageWidth: Math.round(imageRect.width),
+          slotBorderTopWidth: slotStyles.borderTopWidth,
+          slotHeight: Math.round(slotRect.height),
+          slotTop: Math.round(slotRect.top),
+          slotWidth: Math.round(slotRect.width),
+        };
+      });
+      expect(portraitRenderMetrics.slotBorderTopWidth).toBe("0px");
+      expect(portraitRenderMetrics.slotHeight).toBeGreaterThanOrEqual(128);
+      expect(portraitRenderMetrics.imageHeight).toBeGreaterThanOrEqual(
+        portraitRenderMetrics.slotHeight * 2 - 1,
+      );
+      expect(portraitRenderMetrics.imageWidth).toBeGreaterThanOrEqual(
+        portraitRenderMetrics.slotWidth * 2 - 1,
+      );
+      expect(portraitRenderMetrics.imageTop).toBe(portraitRenderMetrics.slotTop);
     }
 
     await page.goto(
