@@ -87,7 +87,7 @@ This phase keeps the recovered reader shell and Pages deployment path stable whi
 - story pages place a spoiler-safe summary card immediately below the route title; it starts collapsed, keeps only the `SUMMARY` badge and disclosure icon in the header, and expands with a height-only animation to reveal the generated summary text
 - story route headers avoid raw vendor source paths and redundant group-count copy, while group/story metadata is rendered as compact wrapping badges and sidebar phase badges use matching accent tones
 - global horizontal and vertical scrollbar tracks/corners are transparent so local scroll regions do not add heavy chrome
-- dialogue cards use card-wide 2x top-cropped portrait backdrops behind the speaker header and spoken text instead of a narrow side-by-side profile slot
+- dialogue cards preserve the original text-first card layout and only enlarge available speaker portraits with a 2x top-cropped render inside the existing portrait slot
 - Doctor choice normalization no longer renders a nested "Shared response" section; predicates that reference every option are treated as post-choice continuation
 - gh-pages-safe static export under the `/ark-str/` base path
 - isolated `.next-dev` and `.next-export` caches so `npm run verify` does not degrade the next `npm run dev` startup

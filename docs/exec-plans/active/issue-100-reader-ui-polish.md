@@ -7,7 +7,7 @@ Refine the locale archive header and story reading surface so navigation and por
 ## Scope
 
 - Remove the locale archive helper sentence and keep the Storylines stats card right-aligned on mobile.
-- Render story dialogue portraits as card-wide background layers with a 2x top-aligned crop.
+- Preserve the original story dialogue card UI and only enlarge speaker portraits with a 2x top-aligned crop inside the existing portrait slot.
 - Add previous/next story navigation at the bottom of the story page.
 - Update frontend/design docs and smoke coverage for the changed UI contract.
 
@@ -30,5 +30,5 @@ Refine the locale archive header and story reading surface so navigation and por
 ## Decision Log
 
 - Use the current group story order for previous/next navigation.
-- Treat "2x portrait" as a 200% card-wide image backdrop, not a small profile slot.
+- Treat "2x portrait" as a crop-only enhancement inside the original portrait slot, not a dark full-card overlay or layout rewrite.
 - Merge PR #99 before finalizing issue #100 because both changes touch the story reader shell.

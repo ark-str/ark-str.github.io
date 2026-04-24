@@ -845,42 +845,34 @@ test.describe("reader shell smoke", () => {
       await observedSpeakerArticle.scrollIntoViewIfNeeded();
       await expect(observedSpeakerArticle.getByTestId("speaker-portrait-image")).toBeVisible();
       const portraitRenderMetrics = await observedSpeakerArticle.evaluate((article) => {
-        const backdrop = article.querySelector('[data-testid="speaker-portrait-backdrop"]');
+        const slot = article.querySelector('[data-testid="speaker-portrait-slot"]');
         const image = article.querySelector('[data-testid="speaker-portrait-image"]');
 
-        if (!backdrop || !image) {
+        if (!slot || !image) {
           throw new Error("Speaker portrait targets were not found.");
         }
 
-        const articleRect = article.getBoundingClientRect();
-        const backdropRect = backdrop.getBoundingClientRect();
+        const slotRect = slot.getBoundingClientRect();
         const imageRect = image.getBoundingClientRect();
 
         return {
-          articleHeight: Math.round(articleRect.height),
-          articleTop: Math.round(articleRect.top),
-          articleWidth: Math.round(articleRect.width),
-          backdropHeight: Math.round(backdropRect.height),
-          backdropTop: Math.round(backdropRect.top),
-          backdropWidth: Math.round(backdropRect.width),
           imageHeight: Math.round(imageRect.height),
           imageTop: Math.round(imageRect.top),
           imageWidth: Math.round(imageRect.width),
+          slotHeight: Math.round(slotRect.height),
+          slotTop: Math.round(slotRect.top),
+          slotWidth: Math.round(slotRect.width),
         };
       });
-      expect(portraitRenderMetrics.articleHeight).toBeGreaterThanOrEqual(224);
-      expect(
-        Math.abs(portraitRenderMetrics.backdropHeight - portraitRenderMetrics.articleHeight),
-      ).toBeLessThanOrEqual(2);
-      expect(
-        Math.abs(portraitRenderMetrics.backdropWidth - portraitRenderMetrics.articleWidth),
-      ).toBeLessThanOrEqual(2);
-      expect(Math.abs(portraitRenderMetrics.backdropTop - portraitRenderMetrics.articleTop)).toBeLessThanOrEqual(1);
+      expect(portraitRenderMetrics.slotHeight).toBe(96);
+      expect(portraitRenderMetrics.slotWidth).toBe(80);
       expect(portraitRenderMetrics.imageHeight).toBeGreaterThanOrEqual(
-        portraitRenderMetrics.backdropHeight * 2 - 1,
+        portraitRenderMetrics.slotHeight * 2 - 1,
       );
-      expect(portraitRenderMetrics.imageWidth).toBe(portraitRenderMetrics.backdropWidth);
-      expect(portraitRenderMetrics.imageTop).toBe(portraitRenderMetrics.backdropTop);
+      expect(portraitRenderMetrics.imageWidth).toBeGreaterThan(
+        portraitRenderMetrics.slotWidth,
+      );
+      expect(Math.abs(portraitRenderMetrics.imageTop - portraitRenderMetrics.slotTop)).toBeLessThanOrEqual(1);
     }
 
     await page.goto(

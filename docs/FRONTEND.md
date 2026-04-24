@@ -36,7 +36,7 @@ The app should feel editorial, deliberate, and product-specific rather than like
 - in-flow background blocks keep their own bundled image previews without cropping and still drive the fixed story backdrop
 - story backdrop swaps on story pages happen immediately without cross-fade state
 - the UI uses a sans-first type system and a tighter radius scale for more consistent modern chrome
-- dialogue cards prioritize a vertical reading layout with card-wide 2x top-cropped portrait backdrops behind speaker meta and body text
+- dialogue cards keep the original text-first card layout while speaker portraits render as 2x top-cropped images inside the existing portrait slot
 - a generated-content readiness panel and vendor `[uc]info` story summaries sourced from bundled story detail JSON
 - gh-pages-safe reader routes rendered from exported static files under the `/ark-str/` base path
 - reader route shells should avoid embedding full story payloads in server-rendered props; archive, group, story detail, and asset lookups load from bundled generated JSON at runtime

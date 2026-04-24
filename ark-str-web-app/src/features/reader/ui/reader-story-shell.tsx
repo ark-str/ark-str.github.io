@@ -92,36 +92,29 @@ function StoryMetricBadge({ children, compact = false }: { children: ReactNode; 
   );
 }
 
-function ReaderDialoguePortraitBackdrop({
+function ReaderPortraitSlot({
   portraitPath,
   speakerName,
 }: {
   portraitPath: string | null;
   speakerName: string;
 }) {
-  if (!portraitPath) {
-    return null;
-  }
-
   return (
     <div
-      className="pointer-events-none absolute inset-0 z-0 overflow-hidden rounded-[inherit]"
-      data-testid="speaker-portrait-backdrop"
+      className="relative flex h-24 w-20 shrink-0 items-start justify-center overflow-hidden rounded-[var(--radius-sm)] border border-[var(--border)] bg-[var(--surface-muted)]"
+      data-testid="speaker-portrait-slot"
     >
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        alt={`${speakerName} portrait`}
-        className="absolute inset-x-0 top-0 block h-[200%] w-full max-w-none object-cover object-top opacity-45"
-        data-testid="speaker-portrait-image"
-        height={512}
-        src={portraitPath}
-        width={384}
-      />
-      <span aria-hidden="true" className="absolute inset-0 bg-[var(--surface)]/68" />
-      <span
-        aria-hidden="true"
-        className="absolute inset-0 bg-gradient-to-r from-[var(--surface)]/28 via-[var(--surface)]/82 to-[var(--surface)]/96"
-      />
+      {portraitPath ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          alt={`${speakerName} portrait`}
+          className="absolute left-1/2 top-0 block h-[calc(200%+4px)] w-auto max-w-none -translate-x-1/2 object-contain object-top"
+          data-testid="speaker-portrait-image"
+          height={192}
+          src={portraitPath}
+          width={160}
+        />
+      ) : null}
     </div>
   );
 }
@@ -637,32 +630,33 @@ function StoryBlocks({
           return (
             <article
               key={`dialogue-${index}`}
-              className={`relative isolate min-h-56 overflow-hidden rounded-[var(--radius-lg)] border bg-[var(--surface)]/94 p-5 shadow-[var(--shadow-sm)] ${
+              className={`flex flex-col gap-4 rounded-[var(--radius-lg)] border bg-[var(--surface)]/94 p-4 shadow-[var(--shadow-sm)] ${
                 block.isRemote
                   ? "border-[var(--accent)] border-dashed"
                   : "border-[var(--border)]"
               }`}
-              data-testid="dialogue-card"
             >
-              <ReaderDialoguePortraitBackdrop
-                portraitPath={block.speakerId ? (portraitPaths[block.speakerId] ?? null) : null}
-                speakerName={speakerName}
-              />
-              <div className="relative z-10 grid gap-4">
-                <div className="flex flex-wrap items-center gap-2">
-                  <h3 className="text-lg font-semibold tracking-[-0.02em] text-[var(--text)]">
-                    {speakerName}
-                  </h3>
-                  {block.isRemote ? (
-                    <Badge variant="accent" className="text-[10px] uppercase tracking-[0.14em]">
-                      Wireless link
-                    </Badge>
-                  ) : null}
+              <div className="flex items-start gap-4">
+                <ReaderPortraitSlot
+                  portraitPath={block.speakerId ? (portraitPaths[block.speakerId] ?? null) : null}
+                  speakerName={speakerName}
+                />
+                <div className="min-w-0 flex-1 pt-1">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <h3 className="text-lg font-semibold tracking-[-0.02em] text-[var(--text)]">
+                      {speakerName}
+                    </h3>
+                    {block.isRemote ? (
+                      <Badge variant="accent" className="text-[10px] uppercase tracking-[0.14em]">
+                        Wireless link
+                      </Badge>
+                    ) : null}
+                  </div>
                 </div>
-                <p className="whitespace-pre-wrap text-[1.02rem] leading-8 text-[var(--text)]">
-                  {dialogueText}
-                </p>
               </div>
+              <p className="whitespace-pre-wrap text-[1.02rem] leading-8 text-[var(--text)]">
+                {dialogueText}
+              </p>
             </article>
           );
         }
