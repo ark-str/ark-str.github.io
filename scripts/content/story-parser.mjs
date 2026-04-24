@@ -273,22 +273,52 @@ function resolveWinningFrame(parserState) {
   }, null);
 }
 
-function resolveDialogueSpeaker(line, parserState) {
+function parseDialogueTag(line) {
   const dialogueMatch = /^\[name="([^"]+)"\]\s*(.*)$/i.exec(line);
-  if (!dialogueMatch) {
+  if (dialogueMatch) {
+    return {
+      speakerName: dialogueMatch[1].trim(),
+      text: dialogueMatch[2]?.trim(),
+    };
+  }
+
+  const multilineMatch = /^\[multiline\(([^\]]*)\)\]\s*(.*)$/i.exec(line);
+  if (!multilineMatch) {
     return null;
   }
 
-  const speakerName = dialogueMatch[1].trim();
-  const text = dialogueMatch[2]?.trim();
+  const speakerName = getLooseAttributeValue(multilineMatch[1] ?? null, "name");
+  if (!speakerName) {
+    return null;
+  }
+
+  return {
+    speakerName: speakerName.trim(),
+    text: multilineMatch[2]?.trim(),
+  };
+}
+
+function resolveDialogueSpeaker(line, parserState) {
+  const dialogueTag = parseDialogueTag(line);
+  if (!dialogueTag) {
+    return null;
+  }
+
+  const { speakerName, text } = dialogueTag;
   if (!text) {
     return [];
   }
 
   const knownSpeakerBinding = parserState.speakerBindings.get(speakerName) ?? null;
+  const eligibleSpeakerBinding =
+    knownSpeakerBinding?.startsWith("char_") ? knownSpeakerBinding : null;
   const hasActiveFrame = getActiveFrames(parserState).length > 0;
   const winningFrame = resolveWinningFrame(parserState);
-  const speakerId = winningFrame ? winningFrame.speakerId : hasActiveFrame ? null : knownSpeakerBinding;
+  const speakerId = winningFrame
+    ? winningFrame.speakerId
+    : hasActiveFrame
+      ? null
+      : eligibleSpeakerBinding;
 
   const block = {
     type: "dialogue",
@@ -365,6 +395,7 @@ function consumeCharacterTag(remainder, parserState) {
 
   const rawAttributes = characterMatch[1] ?? null;
   const slots = parseCharacterSlots(rawAttributes);
+  parserState.charslots.clear();
 
   if (slots.length === 0) {
     parserState.characterFrame = null;
