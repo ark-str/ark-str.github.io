@@ -16,7 +16,7 @@ Merged PR: `#97`
 - clear stale `charslot(...)` frames when `character(...)` scene state takes over
 - limit speaker-name fallback to confirmed fresh-frame canonical `char_` operator aliases after active frames are cleared, including focus-only `charslot` updates
 - parse `Sticker(text="...")` tags as narration for theater/location title cards, including escaped line-break decoding and bracketed label preservation
-- parse `Image(image="...")` tags as background blocks using direct `ArknightsResource/avgs/` story images, emit clear markers for no-image tags, and coalesce adjacent duplicate background IDs
+- parse `Image(image="...")` tags as background blocks using direct `ArknightsResource/avgs/` story images, emit clear markers for no-image tags that clear the fixed story backdrop, and coalesce adjacent duplicate background IDs
 - rebuild generated story detail artifacts with `content:build-index`
 - finish with `npm run verify`
 
@@ -50,5 +50,5 @@ Merged PR: `#97`
 - Non-operator names such as NPC labels are not stable enough for cross-scene fallback; they need an explicit active visual frame.
 - Operator aliases are reused only when they were confirmed by the first dialogue attached to a fresh `char_` visual frame, preventing stale frames from contaminating unrelated speaker names.
 - `Image(image="...")` reuses the existing background block contract so story art can drive both in-flow previews and the fixed story backdrop without a new runtime block type.
-- `[Image(...)]` or `[Background(...)]` tags without an `image` value clear the active fixed backdrop through a `backgroundId: null` marker.
+- `[Image(...)]` or `[Background(...)]` tags without an `image` value clear the active fixed backdrop through a `backgroundId: null` marker, and the reader state preserves that explicit `null` instead of falling back to the first scene image.
 - Adjacent duplicate `Background` / `Image` blocks represent the same visual layer update and are collapsed to avoid repeated preview cards.

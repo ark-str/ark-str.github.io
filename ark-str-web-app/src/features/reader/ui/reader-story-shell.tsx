@@ -677,14 +677,16 @@ export function ReaderStoryShell({
   const initialBackgroundId = useMemo(() => (detail ? findFirstBackgroundId(detail.blocks) : null), [detail]);
   const [activeBackground, setActiveBackground] = useState<{
     storyId: string;
-    backgroundId: string | null;
+    backgroundId: string | null | undefined;
   }>({
     storyId,
-    backgroundId: initialBackgroundId,
+    backgroundId: undefined,
   });
   const activeBackgroundId =
     activeBackground.storyId === storyId
-      ? activeBackground.backgroundId ?? initialBackgroundId
+      ? activeBackground.backgroundId === undefined
+        ? initialBackgroundId
+        : activeBackground.backgroundId
       : initialBackgroundId;
 
   const handleBackgroundVisible = useCallback((backgroundId: string | null) => {
