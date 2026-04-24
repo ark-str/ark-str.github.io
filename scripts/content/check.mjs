@@ -432,7 +432,8 @@ function validateGeneratedArtifacts(generated) {
 
         if (block?.type === "background") {
           invariant(
-            typeof block.backgroundId === "string" && block.backgroundId.length > 0,
+            block.backgroundId === null ||
+              (typeof block.backgroundId === "string" && block.backgroundId.length > 0),
             `background block backgroundId is invalid for ${story.server}:${story.storyId}`,
           );
         }

@@ -359,6 +359,26 @@ test("parseStoryText does not persist stale char bindings from non-fresh frames"
   );
 });
 
+test("parseStoryText preserves charslot confirmation through focus-only updates", () => {
+  const blocks = parseStoryText(`
+[charslot(slot="l",name="char_500_noirc_1")]
+[name="Noir Corne"]Hold the line.
+[charslot(slot="l",focus="l")]
+[name="White creature"]This line is still visually ambiguous.
+[charslot]
+[name="White creature"]This should not inherit Noir Corne.
+`);
+
+  assert.deepEqual(
+    blocks.filter((block) => block.type === "dialogue").map((block) => block.speakerId),
+    [
+      "char_500_noirc",
+      "char_500_noirc",
+      null,
+    ],
+  );
+});
+
 test("parseStoryText resolves mixed cutin and character frames with priority and recency", () => {
   const blocks = parseStoryText(`
 [CharacterCutin(widgetID="1", name="char_2006_weiywfmzuki_1", style="cutin")]
@@ -472,6 +492,7 @@ test("parseStoryText emits background blocks from Image tags and narration from 
 [theater(mode=true)]
 [Sticker(id="st1", text="런디니움 오슈테리그", x=290, y=320)]
 [Sticker(id="st2", text="더 샤드 빌딩 내부\\n관제실", x=290, y=400)]
+[Sticker(id="st3", text="_노드 [DWDB-221E]와 교차 인증 연결 수립", x=290, y=450)]
 [stickerclear]
 [theater(mode=false)]
 [Image(image="27_i01", fadetime=1, xScale=1.3, yScale=1.3)]
@@ -481,7 +502,7 @@ test("parseStoryText emits background blocks from Image tags and narration from 
   assert.deepEqual(blocks, [
     {
       type: "narration",
-      text: "런디니움 오슈테리그\n더 샤드 빌딩 내부\n관제실",
+      text: "런디니움 오슈테리그\n더 샤드 빌딩 내부\n관제실\n_노드 [DWDB-221E]와 교차 인증 연결 수립",
     },
     {
       type: "background",
@@ -513,6 +534,32 @@ test("parseStoryText coalesces adjacent duplicate scene image backgrounds", () =
     {
       type: "background",
       backgroundId: "ac5_2_off",
+    },
+  ]);
+});
+
+test("parseStoryText emits clear markers for scene image clears", () => {
+  const blocks = parseStoryText(`
+[Image(image="27_i01", fadetime=1)]
+[Image(fadetime=2)]
+[name="테레시스"]공사는 이제 마무리 단계다.
+`);
+
+  assert.deepEqual(blocks, [
+    {
+      type: "background",
+      backgroundId: "27_i01",
+    },
+    {
+      type: "background",
+      backgroundId: null,
+    },
+    {
+      type: "dialogue",
+      isRemote: false,
+      speakerName: "테레시스",
+      speakerId: null,
+      text: "공사는 이제 마무리 단계다.",
     },
   ]);
 });

@@ -179,7 +179,7 @@ function CharacterObservationTracker({
 
 function findFirstBackgroundId(blocks: StoryBlock[]): string | null {
   for (const block of blocks) {
-    if (block.type === "background") {
+    if (block.type === "background" && block.backgroundId) {
       return block.backgroundId;
     }
 
@@ -216,7 +216,9 @@ function collectSpeakerIds(blocks: StoryBlock[], speakerIds: Set<string>) {
 function collectBackgroundIds(blocks: StoryBlock[], backgroundIds: Set<string>) {
   for (const block of blocks) {
     if (block.type === "background") {
-      backgroundIds.add(block.backgroundId);
+      if (block.backgroundId) {
+        backgroundIds.add(block.backgroundId);
+      }
       continue;
     }
 
@@ -354,10 +356,10 @@ function StoryBackgroundMarker({
   isActive,
   onVisible,
 }: {
-  backgroundId: string;
+  backgroundId: string | null;
   backgroundPath: string | null;
   isActive: boolean;
-  onVisible: (backgroundId: string) => void;
+  onVisible: (backgroundId: string | null) => void;
 }) {
   const markerRef = useRef<HTMLElement | null>(null);
 
@@ -385,6 +387,17 @@ function StoryBackgroundMarker({
     observer.observe(node);
     return () => observer.disconnect();
   }, [backgroundId, onVisible]);
+
+  if (!backgroundId) {
+    return (
+      <span
+        ref={markerRef}
+        aria-hidden="true"
+        className="block h-px"
+        data-testid="background-clear"
+      />
+    );
+  }
 
   return (
     <article
@@ -459,7 +472,7 @@ function StoryBlocks({
   backgroundPaths: Record<string, string>;
   blocks: StoryBlock[];
   nickName: string;
-  onBackgroundVisible: (backgroundId: string) => void;
+  onBackgroundVisible: (backgroundId: string | null) => void;
   portraitPaths: Record<string, string>;
 }) {
   return (
@@ -535,7 +548,7 @@ function StoryBlocks({
             <StoryBackgroundMarker
               key={`background-${index}`}
               backgroundId={block.backgroundId}
-              backgroundPath={backgroundPaths[block.backgroundId] ?? null}
+              backgroundPath={block.backgroundId ? (backgroundPaths[block.backgroundId] ?? null) : null}
               isActive={activeBackgroundId === block.backgroundId}
               onVisible={onBackgroundVisible}
             />
@@ -599,7 +612,7 @@ function StoryBodyRenderer({
   backgroundPaths: Record<string, string>;
   blocks: StoryBlock[];
   nickName: string;
-  onBackgroundVisible: (backgroundId: string) => void;
+  onBackgroundVisible: (backgroundId: string | null) => void;
   portraitPaths: Record<string, string>;
 }) {
   return (
@@ -674,7 +687,7 @@ export function ReaderStoryShell({
       ? activeBackground.backgroundId ?? initialBackgroundId
       : initialBackgroundId;
 
-  const handleBackgroundVisible = useCallback((backgroundId: string) => {
+  const handleBackgroundVisible = useCallback((backgroundId: string | null) => {
     setActiveBackground((current) => {
       if (current.storyId === storyId && current.backgroundId === backgroundId) {
         return current;

@@ -71,6 +71,67 @@ function decodeTextAttributeValue(rawValue) {
     .trim();
 }
 
+function parseTagWithAttributes(remainder, tagName) {
+  const tagPrefix = `[${tagName}`;
+  if (!remainder.toLowerCase().startsWith(tagPrefix.toLowerCase())) {
+    return null;
+  }
+
+  let cursor = tagPrefix.length;
+  if (remainder[cursor] === "]") {
+    return {
+      rawAttributes: null,
+      remainder: remainder.slice(cursor + 1).trim(),
+    };
+  }
+
+  if (remainder[cursor] !== "(") {
+    return null;
+  }
+
+  cursor += 1;
+  const attributesStart = cursor;
+  let isInQuote = false;
+  let isEscaped = false;
+
+  while (cursor < remainder.length) {
+    const char = remainder[cursor];
+
+    if (isEscaped) {
+      isEscaped = false;
+      cursor += 1;
+      continue;
+    }
+
+    if (char === "\\" && isInQuote) {
+      isEscaped = true;
+      cursor += 1;
+      continue;
+    }
+
+    if (char === '"') {
+      isInQuote = !isInQuote;
+      cursor += 1;
+      continue;
+    }
+
+    if (char === ")" && !isInQuote) {
+      if (remainder[cursor + 1] !== "]") {
+        return null;
+      }
+
+      return {
+        rawAttributes: remainder.slice(attributesStart, cursor),
+        remainder: remainder.slice(cursor + 2).trim(),
+      };
+    }
+
+    cursor += 1;
+  }
+
+  return null;
+}
+
 function parseDecisionLine(line) {
   if (!line.startsWith("[Decision(")) {
     return null;
@@ -360,56 +421,52 @@ function resolveDialogueSpeaker(line, parserState) {
 }
 
 function consumeBackgroundTag(remainder) {
-  const backgroundMatch = /^\[Background(?:\(([^\]]*)\))?\]\s*(.*)$/i.exec(remainder);
+  const backgroundMatch = parseTagWithAttributes(remainder, "Background");
   if (!backgroundMatch) {
     return null;
   }
 
-  const rawAttributes = backgroundMatch[1] ?? null;
+  const rawAttributes = backgroundMatch.rawAttributes;
   const backgroundId = normalizeBackgroundId(getLooseAttributeValue(rawAttributes, "image"));
 
   return {
-    blocks: backgroundId
-      ? [
-          {
-            type: "background",
-            backgroundId,
-          },
-        ]
-      : [],
-    remainder: backgroundMatch[2]?.trim() ?? "",
+    blocks: [
+      {
+        type: "background",
+        backgroundId,
+      },
+    ],
+    remainder: backgroundMatch.remainder,
   };
 }
 
 function consumeImageTag(remainder) {
-  const imageMatch = /^\[Image(?:\(([^\]]*)\))?\]\s*(.*)$/i.exec(remainder);
+  const imageMatch = parseTagWithAttributes(remainder, "Image");
   if (!imageMatch) {
     return null;
   }
 
-  const rawAttributes = imageMatch[1] ?? null;
+  const rawAttributes = imageMatch.rawAttributes;
   const backgroundId = normalizeBackgroundId(getLooseAttributeValue(rawAttributes, "image"));
 
   return {
-    blocks: backgroundId
-      ? [
-          {
-            type: "background",
-            backgroundId,
-          },
-        ]
-      : [],
-    remainder: imageMatch[2]?.trim() ?? "",
+    blocks: [
+      {
+        type: "background",
+        backgroundId,
+      },
+    ],
+    remainder: imageMatch.remainder,
   };
 }
 
 function consumeStickerTag(remainder) {
-  const stickerMatch = /^\[Sticker(?:\(([^\]]*)\))?\]\s*(.*)$/i.exec(remainder);
+  const stickerMatch = parseTagWithAttributes(remainder, "Sticker");
   if (!stickerMatch) {
     return null;
   }
 
-  const rawAttributes = stickerMatch[1] ?? null;
+  const rawAttributes = stickerMatch.rawAttributes;
   const stickerText = decodeTextAttributeValue(getLooseAttributeValue(rawAttributes, "text"));
 
   return {
@@ -421,7 +478,7 @@ function consumeStickerTag(remainder) {
           },
         ]
       : [],
-    remainder: stickerMatch[2]?.trim() ?? "",
+    remainder: stickerMatch.remainder,
   };
 }
 
@@ -526,10 +583,12 @@ function consumeCharslotTag(remainder, parserState) {
     }
   }
 
-  parserState.charslots.set(
-    slotKey,
-    createFrame(parserState, "charslot", slotKey, nextSpeakerId, nextPriority),
-  );
+  const nextFrame = createFrame(parserState, "charslot", slotKey, nextSpeakerId, nextPriority);
+  if (speakerToken === null && existingFrame?.speakerId === nextSpeakerId) {
+    nextFrame.hasConfirmedSpeakerBinding = existingFrame.hasConfirmedSpeakerBinding;
+  }
+
+  parserState.charslots.set(slotKey, nextFrame);
 
   return charslotMatch[2]?.trim() ?? "";
 }

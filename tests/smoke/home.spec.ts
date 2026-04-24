@@ -50,7 +50,7 @@ function readStoryDetail(story: { bodyPath?: string | null }) {
     observedOperators?: Array<{ speakerId: string; aliases: string[] }>;
     blocks?: Array<{
       type?: string;
-      backgroundId?: string;
+      backgroundId?: string | null;
       options?: Array<{ blocks?: unknown[] }>;
     }>;
   };
@@ -86,7 +86,7 @@ function hasBundledBackground(backgroundId: string) {
 
 function collectBackgroundIds(blocks: Array<{
   type?: string;
-  backgroundId?: string;
+  backgroundId?: string | null;
   options?: Array<{ blocks?: unknown[] }>;
 }> = []) {
   const ids: string[] = [];

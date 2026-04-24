@@ -14,9 +14,9 @@ Merged PR: `#97`
 - parse `[multiline(name="...")]` and `[multiline(name="...",end=true)]` as dialogue, not narration
 - keep `charslot(...)` focus resolution for multiline dialogue
 - clear stale `charslot(...)` frames when `character(...)` scene state takes over
-- limit speaker-name fallback to confirmed fresh-frame canonical `char_` operator aliases after active frames are cleared
-- parse `Sticker(text="...")` tags as narration for theater/location title cards, including escaped line-break decoding
-- parse `Image(image="...")` tags as background blocks using direct `ArknightsResource/avgs/` story images and coalesce adjacent duplicate background IDs
+- limit speaker-name fallback to confirmed fresh-frame canonical `char_` operator aliases after active frames are cleared, including focus-only `charslot` updates
+- parse `Sticker(text="...")` tags as narration for theater/location title cards, including escaped line-break decoding and bracketed label preservation
+- parse `Image(image="...")` tags as background blocks using direct `ArknightsResource/avgs/` story images, emit clear markers for no-image tags, and coalesce adjacent duplicate background IDs
 - rebuild generated story detail artifacts with `content:build-index`
 - finish with `npm run verify`
 
@@ -33,7 +33,7 @@ Merged PR: `#97`
 - add parser regression coverage for `level_act22side_01_beg` multiline Finn dialogue with `end=true`
 - add parser regression coverage for `level_act22side_st01` stale patrol and whispered dialogue cases
 - add parser and asset-copy regression coverage for `level_st_10-01`-style sticker title cards and `Image(image="27_i01")` scene art
-- add parser regression coverage for escaped sticker text, adjacent duplicate background blocks, and stale `char_` fallback contamination
+- add parser regression coverage for escaped and bracketed sticker text, adjacent duplicate background blocks, no-image clear markers, and stale `char_` fallback contamination
 - update product docs for multiline dialogue and non-operator fallback rules
 - regenerate generated story detail artifacts with `content:build-index`
 
@@ -50,4 +50,5 @@ Merged PR: `#97`
 - Non-operator names such as NPC labels are not stable enough for cross-scene fallback; they need an explicit active visual frame.
 - Operator aliases are reused only when they were confirmed by the first dialogue attached to a fresh `char_` visual frame, preventing stale frames from contaminating unrelated speaker names.
 - `Image(image="...")` reuses the existing background block contract so story art can drive both in-flow previews and the fixed story backdrop without a new runtime block type.
+- `[Image(...)]` or `[Background(...)]` tags without an `image` value clear the active fixed backdrop through a `backgroundId: null` marker.
 - Adjacent duplicate `Background` / `Image` blocks represent the same visual layer update and are collapsed to avoid repeated preview cards.
