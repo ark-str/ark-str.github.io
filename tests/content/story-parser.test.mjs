@@ -446,6 +446,36 @@ test("parseStoryText emits background blocks from Background tags", () => {
   ]);
 });
 
+test("parseStoryText emits background blocks from Image tags and narration from Sticker tags", () => {
+  const blocks = parseStoryText(`
+[theater(mode=true)]
+[Sticker(id="st1", text="런디니움 오슈테리그", x=290, y=320)]
+[Sticker(id="st2", text="더 샤드 빌딩 내부", x=290, y=400)]
+[stickerclear]
+[theater(mode=false)]
+[Image(image="27_i01", fadetime=1, xScale=1.3, yScale=1.3)]
+[name="테레시스"]공사는 이제 마무리 단계다.
+`);
+
+  assert.deepEqual(blocks, [
+    {
+      type: "narration",
+      text: "런디니움 오슈테리그\n더 샤드 빌딩 내부",
+    },
+    {
+      type: "background",
+      backgroundId: "27_i01",
+    },
+    {
+      type: "dialogue",
+      isRemote: false,
+      speakerName: "테레시스",
+      speakerId: null,
+      text: "공사는 이제 마무리 단계다.",
+    },
+  ]);
+});
+
 test("collectObservedOperators deduplicates aliases per speakerId", () => {
   const blocks = parseStoryText(`
 [Character(name="char_101_sora_1#4")]

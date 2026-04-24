@@ -357,6 +357,50 @@ function consumeBackgroundTag(remainder) {
   };
 }
 
+function consumeImageTag(remainder) {
+  const imageMatch = /^\[Image(?:\(([^\]]*)\))?\]\s*(.*)$/i.exec(remainder);
+  if (!imageMatch) {
+    return null;
+  }
+
+  const rawAttributes = imageMatch[1] ?? null;
+  const backgroundId = normalizeBackgroundId(getLooseAttributeValue(rawAttributes, "image"));
+
+  return {
+    blocks: backgroundId
+      ? [
+          {
+            type: "background",
+            backgroundId,
+          },
+        ]
+      : [],
+    remainder: imageMatch[2]?.trim() ?? "",
+  };
+}
+
+function consumeStickerTag(remainder) {
+  const stickerMatch = /^\[Sticker(?:\(([^\]]*)\))?\]\s*(.*)$/i.exec(remainder);
+  if (!stickerMatch) {
+    return null;
+  }
+
+  const rawAttributes = stickerMatch[1] ?? null;
+  const stickerText = getLooseAttributeValue(rawAttributes, "text");
+
+  return {
+    blocks: stickerText
+      ? [
+          {
+            type: "narration",
+            text: stickerText,
+          },
+        ]
+      : [],
+    remainder: stickerMatch[2]?.trim() ?? "",
+  };
+}
+
 function consumeCharacterCutinTag(remainder, parserState) {
   const cutinMatch = /^\[CharacterCutin(?:\(([^\]]*)\))?\]\s*(.*)$/i.exec(remainder);
   if (!cutinMatch) {
@@ -508,6 +552,26 @@ function extractVisibleBlocks(line, parserState) {
     if (backgroundResult) {
       blocks.push(...backgroundResult.blocks);
       remainder = backgroundResult.remainder;
+      if (!remainder) {
+        return blocks;
+      }
+      continue;
+    }
+
+    const imageResult = consumeImageTag(remainder);
+    if (imageResult) {
+      blocks.push(...imageResult.blocks);
+      remainder = imageResult.remainder;
+      if (!remainder) {
+        return blocks;
+      }
+      continue;
+    }
+
+    const stickerResult = consumeStickerTag(remainder);
+    if (stickerResult) {
+      blocks.push(...stickerResult.blocks);
+      remainder = stickerResult.remainder;
       if (!remainder) {
         return blocks;
       }

@@ -2,7 +2,7 @@
 
 ## Objective
 
-Fix story speaker resolution so `act22side` multiline dialogue keeps its speaker portrait while stale portraits do not leak after visual frames are cleared.
+Fix story speaker resolution so `act22side` multiline dialogue keeps its speaker portrait while stale portraits do not leak after visual frames are cleared, then extend scene parsing for title stickers and image-backed backgrounds.
 
 Status: completed
 Parent issue: `#96`
@@ -15,6 +15,8 @@ Merged PR: `#97`
 - keep `charslot(...)` focus resolution for multiline dialogue
 - clear stale `charslot(...)` frames when `character(...)` scene state takes over
 - limit speaker-name fallback to canonical `char_` operator IDs after active frames are cleared
+- parse `Sticker(text="...")` tags as narration for theater/location title cards
+- parse `Image(image="...")` tags as background blocks using direct `ArknightsResource/avgs/` story images
 - rebuild generated story detail artifacts with `content:build-index`
 - finish with `npm run verify`
 
@@ -30,6 +32,7 @@ Merged PR: `#97`
 - add parser regression coverage for `level_act22side_02_beg` multiline Fisher dialogue
 - add parser regression coverage for `level_act22side_01_beg` multiline Finn dialogue with `end=true`
 - add parser regression coverage for `level_act22side_st01` stale patrol and whispered dialogue cases
+- add parser and asset-copy regression coverage for `level_st_10-01`-style sticker title cards and `Image(image="27_i01")` scene art
 - update product docs for multiline dialogue and non-operator fallback rules
 - regenerate generated story detail artifacts with `content:build-index`
 
@@ -45,3 +48,4 @@ Merged PR: `#97`
 - `multiline` is dialogue syntax when it contains a `name` attribute, so it must use the same focused speaker resolver as `name`.
 - Non-operator names such as NPC labels are not stable enough for cross-scene fallback; they need an explicit active visual frame.
 - Operator aliases remain safe to reuse through canonical `char_` speaker IDs because they feed the existing alias ledger.
+- `Image(image="...")` reuses the existing background block contract so story art can drive both in-flow previews and the fixed story backdrop without a new runtime block type.

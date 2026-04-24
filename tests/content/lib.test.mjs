@@ -330,6 +330,7 @@ test("writeGeneratedArtifacts normalizes background filenames for mixed-case bac
     storyDetails: [],
     portraitPaths: {},
     backgroundPaths: {
+      "27_i01": getGeneratedBackgroundPublicPath("27_i01"),
       "38_g21_skyStarry_R1": getGeneratedBackgroundPublicPath("38_g21_skyStarry_R1"),
       "38_g21_skystarry_r1": getGeneratedBackgroundPublicPath("38_g21_skystarry_r1"),
     },
@@ -342,13 +343,21 @@ test("writeGeneratedArtifacts normalizes background filenames for mixed-case bac
     path.join(root, "vendor", "ArknightsResource", "avgs", "bg", "38_g21_skyStarry_R1.png"),
     tinyPng,
   );
+  fs.writeFileSync(
+    path.join(root, "vendor", "ArknightsResource", "avgs", "27_i01.png"),
+    tinyPng,
+  );
 
   await writeGeneratedArtifacts(artifacts, root);
   const filePaths = getGeneratedFilePaths(root);
   const backgroundManifest = JSON.parse(fs.readFileSync(filePaths.appBackgroundManifest, "utf8"));
   const generatedBackgroundFileNames = fs.readdirSync(filePaths.generatedBackgroundsRoot).sort();
 
-  assert.deepEqual(generatedBackgroundFileNames, ["38_g21_skystarry_r1.webp"]);
+  assert.deepEqual(generatedBackgroundFileNames, ["27_i01.webp", "38_g21_skystarry_r1.webp"]);
+  assert.equal(
+    backgroundManifest["27_i01"],
+    "/generated/backgrounds/27_i01.webp",
+  );
   assert.equal(
     backgroundManifest["38_g21_skyStarry_R1"],
     "/generated/backgrounds/38_g21_skystarry_r1.webp",
