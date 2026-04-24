@@ -70,7 +70,7 @@ export function FloatingAppBar({ model }: FloatingAppBarProps) {
       } else if (scrollDelta > 8) {
         setIsHidden(true);
         lastScrollYRef.current = nextScrollY;
-      } else if (scrollDelta < -8) {
+      } else if (scrollDelta < -1) {
         setIsHidden(false);
         lastScrollYRef.current = nextScrollY;
       }

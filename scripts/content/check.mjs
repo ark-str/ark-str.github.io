@@ -10,6 +10,7 @@ import {
   hasPortraitSource,
   loadGeneratedArtifacts,
   optimizeGeneratedImageBuffer,
+  readJson,
   readGroupBackgroundSourceFile,
 } from "./lib.mjs";
 
@@ -66,6 +67,7 @@ function collectBackgroundIdsFromBlocks(blocks, accumulator) {
 }
 
 async function compareLiveArtifacts(generated, live) {
+  const filePaths = getGeneratedFilePaths(process.cwd());
   invariant(
     generated.index.vendor.submoduleSha === live.index.vendor.submoduleSha,
     `Generated vendor SHA ${generated.index.vendor.submoduleSha} does not match live vendor SHA ${live.index.vendor.submoduleSha}`,
@@ -84,11 +86,24 @@ async function compareLiveArtifacts(generated, live) {
   );
 
   const generatedStories = buildStoryMap(generated.index.stories);
+  const generatedSummaryItems = new Map(
+    generated.summaryManifest.items.map((item) => [`${item.server}:${item.storyId}`, item]),
+  );
+  const liveSummaryItems = new Map(
+    live.summaryManifest.items.map((item) => [`${item.server}:${item.storyId}`, item]),
+  );
+  const liveStoryDetails = new Map(
+    live.storyDetails.map((storyDetail) => [`${storyDetail.locale}:${storyDetail.storyId}`, storyDetail]),
+  );
   for (const liveStory of live.index.stories) {
     const key = `${liveStory.server}:${liveStory.storyId}`;
     const generatedStory = generatedStories.get(key);
 
     invariant(generatedStory, `Missing generated story entry for ${key}`);
+    const generatedSummary = generatedSummaryItems.get(key);
+    const liveSummary = liveSummaryItems.get(key);
+    invariant(generatedSummary, `Missing generated summary entry for ${key}`);
+    invariant(liveSummary, `Missing live summary entry for ${key}`);
     invariant(
       generatedStory.sourceHash === liveStory.sourceHash,
       `Generated source hash drift detected for ${key}`,
@@ -106,6 +121,19 @@ async function compareLiveArtifacts(generated, live) {
       generatedStory.estimatedMinutes === liveStory.estimatedMinutes,
       `Generated estimated minutes drift detected for ${key}`,
     );
+    invariant(
+      generatedSummary.status === liveSummary.status,
+      `Generated summary status drift detected for ${key}`,
+    );
+    if (generatedStory.bodyAvailable && generatedStory.bodyPath) {
+      const generatedBody = readJson(path.join(filePaths.contentRoot, generatedStory.bodyPath));
+      const liveStoryDetail = liveStoryDetails.get(key);
+      invariant(liveStoryDetail, `Missing live story detail for ${key}`);
+      invariant(
+        generatedBody.summaryText === liveStoryDetail.detail.summaryText,
+        `Generated summary text drift detected for ${key}`,
+      );
+    }
   }
 
   const generatedGroups = new Map(
@@ -396,6 +424,7 @@ function validateGeneratedArtifacts(generated) {
     invariant(item.bodyAvailable === story.bodyAvailable, `source-manifest body availability mismatch for ${key}`);
   }
 
+  const summaryStatusByStoryKey = new Map();
   for (const item of generated.summaryManifest.items) {
     const key = `${item.server}:${item.storyId}`;
     const story = storyMap.get(key);
@@ -405,6 +434,7 @@ function validateGeneratedArtifacts(generated) {
       item.status === "missing" || item.status === "ready" || item.status === "stale",
       `summary-manifest status is invalid for ${key}`,
     );
+    summaryStatusByStoryKey.set(key, item.status);
   }
 
   for (const story of generated.index.stories) {
@@ -418,6 +448,16 @@ function validateGeneratedArtifacts(generated) {
     const body = JSON.parse(fs.readFileSync(bodyFilePath, "utf8"));
     invariant(body.storyId === story.storyId, `story detail storyId mismatch for ${story.server}:${story.storyId}`);
     invariant(body.server === story.server, `story detail locale mismatch for ${story.server}:${story.storyId}`);
+    invariant(
+      body.summaryText === null || (typeof body.summaryText === "string" && body.summaryText.trim().length > 0),
+      `story detail summaryText must be null or non-empty for ${story.server}:${story.storyId}`,
+    );
+    if (summaryStatusByStoryKey.get(`${story.server}:${story.storyId}`) === "ready") {
+      invariant(
+        typeof body.summaryText === "string" && body.summaryText.trim().length > 0,
+        `ready summary is missing from story detail for ${story.server}:${story.storyId}`,
+      );
+    }
     invariant(Array.isArray(body.blocks), `story detail blocks must be an array for ${story.server}:${story.storyId}`);
     invariant(
       Array.isArray(body.observedOperators),
