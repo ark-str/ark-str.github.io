@@ -28,7 +28,7 @@ The app should feel editorial, deliberate, and product-specific rather than like
 - first-pass story body rendering sourced from bundled story detail JSON
 - story text rendering replaces `{@nickname}` and `{@nickName}` from the local reader nickname, using an empty string when unset
 - a restrained fixed top app bar shared by home, archive, group, and story routes without backdrop-filter effects; it keeps browser metadata on the black-background icon, uses a separate transparent app chrome icon for the home control, and keeps home/theme buttons, dropdowns, and group text aligned to the same compact height/radius/text scale as the Story button
-- story pages with desktop-only left-side group navigation, main reading column, bottom summary section, and a floating top button
+- story pages with a spoiler-safe collapsible summary card directly under the title, desktop-only left-side group navigation, main reading column, and a floating top button
 - group overview pages render wrapping titles and Stories/chars/time metrics over the generated hero image, then show the named current storyline as horizontally scrollable group/reference cards before simplified story cards; oversized storylines are bounded to the current group neighborhood, reference cards carry an up-right cue, and story cards avoid exposing internal story IDs
 - story route headers avoid raw vendor paths and group-count copy; the desktop sibling-story navigation card is viewport-constrained with internal scrolling, wraps story metadata as badges, and renders bridge/pre/post phase badges with the same accent tone
 - horizontal and vertical scrollbar tracks/corners are transparent, with only a subtle local thumb for scroll affordance
@@ -37,7 +37,7 @@ The app should feel editorial, deliberate, and product-specific rather than like
 - story backdrop swaps on story pages happen immediately without cross-fade state
 - the UI uses a sans-first type system and a tighter radius scale for more consistent modern chrome
 - dialogue cards prioritize a vertical reading layout with portrait and speaker meta in the header and the body text spanning the full card width
-- a generated-content readiness panel and explicit summary empty state sourced from bundled JSON
+- a generated-content readiness panel and vendor `[uc]info` story summaries sourced from bundled story detail JSON
 - gh-pages-safe reader routes rendered from exported static files under the `/ark-str/` base path
 - reader route shells should avoid embedding full story payloads in server-rendered props; archive, group, story detail, and asset lookups load from bundled generated JSON at runtime
 - generated story media should use local optimized WebP assets referenced through the generated asset manifest, not direct vendor paths

@@ -396,6 +396,7 @@ function validateGeneratedArtifacts(generated) {
     invariant(item.bodyAvailable === story.bodyAvailable, `source-manifest body availability mismatch for ${key}`);
   }
 
+  const summaryStatusByStoryKey = new Map();
   for (const item of generated.summaryManifest.items) {
     const key = `${item.server}:${item.storyId}`;
     const story = storyMap.get(key);
@@ -405,6 +406,7 @@ function validateGeneratedArtifacts(generated) {
       item.status === "missing" || item.status === "ready" || item.status === "stale",
       `summary-manifest status is invalid for ${key}`,
     );
+    summaryStatusByStoryKey.set(key, item.status);
   }
 
   for (const story of generated.index.stories) {
@@ -418,6 +420,16 @@ function validateGeneratedArtifacts(generated) {
     const body = JSON.parse(fs.readFileSync(bodyFilePath, "utf8"));
     invariant(body.storyId === story.storyId, `story detail storyId mismatch for ${story.server}:${story.storyId}`);
     invariant(body.server === story.server, `story detail locale mismatch for ${story.server}:${story.storyId}`);
+    invariant(
+      body.summaryText === null || (typeof body.summaryText === "string" && body.summaryText.trim().length > 0),
+      `story detail summaryText must be null or non-empty for ${story.server}:${story.storyId}`,
+    );
+    if (summaryStatusByStoryKey.get(`${story.server}:${story.storyId}`) === "ready") {
+      invariant(
+        typeof body.summaryText === "string" && body.summaryText.trim().length > 0,
+        `ready summary is missing from story detail for ${story.server}:${story.storyId}`,
+      );
+    }
     invariant(Array.isArray(body.blocks), `story detail blocks must be an array for ${story.server}:${story.storyId}`);
     invariant(
       Array.isArray(body.observedOperators),

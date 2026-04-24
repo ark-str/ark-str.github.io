@@ -48,6 +48,7 @@ function readStoryDetail(story: { bodyPath?: string | null }) {
     ),
   ) as {
     observedOperators?: Array<{ speakerId: string; aliases: string[] }>;
+    summaryText?: string | null;
     blocks?: Array<{
       type?: string;
       backgroundId?: string | null;
@@ -118,7 +119,11 @@ function resolveSampleStory() {
 
   for (const story of prioritizedStories) {
     const detail = readStoryDetail(story);
-    if (detail?.observedOperators?.some((observedOperator) => hasBundledPortrait(observedOperator.speakerId))) {
+    if (
+      typeof detail?.summaryText === "string" &&
+      detail.summaryText.length > 0 &&
+      detail.observedOperators?.some((observedOperator) => hasBundledPortrait(observedOperator.speakerId))
+    ) {
       return {
         story,
         detail,
@@ -174,6 +179,7 @@ const sampleObservedAlias =
   sampleObservedOperator?.aliases.find((alias) => alias.trim().length > 0 && alias !== "???") ??
   sampleObservedOperator?.aliases[0] ??
   null;
+const sampleSummaryText = sampleStorySelection.detail.summaryText;
 const sampleBackgroundStory = resolveBackgroundStory();
 const sampleBackgroundIds = sampleBackgroundStory.backgroundIds;
 const sampleBackgroundStoryEntry = sampleBackgroundStory.story;
@@ -236,6 +242,10 @@ if (!koreanNicknameStory) {
 
 if (!koreanCapitalNicknameStory) {
   throw new Error("The Korean content index must include a capitalized nickname-token story sample.");
+}
+
+if (!sampleSummaryText) {
+  throw new Error("The sample reader story must include generated summary text.");
 }
 
 function toAppPath(route = "") {
@@ -537,7 +547,31 @@ test.describe("reader shell smoke", () => {
     await expect(page.getByTestId("story-backdrop")).toBeVisible();
     await expect(page.getByTestId("chrome-story-select")).toBeVisible();
     await expect(page.getByTestId("story-body")).toBeVisible();
-    await expect(page.getByTestId("story-summary-section")).toBeVisible();
+    const summarySection = page.getByTestId("story-summary-section");
+    await expect(summarySection).toBeVisible();
+    await expect(summarySection.getByText("SUMMARY")).toBeVisible();
+    await expect(summarySection).not.toContainText("Story summary");
+    await expect(summarySection).not.toContainText("이 스토리의 summary는 아직 생성되지 않았습니다");
+    const summaryToggle = page.getByTestId("story-summary-toggle");
+    const summaryPanel = page.getByTestId("story-summary-panel");
+    await expect(summaryToggle).toHaveAttribute("aria-expanded", "false");
+    await expect(summaryPanel).toHaveAttribute("data-state", "closed");
+    const closedSummaryHeight = await summaryPanel.evaluate((node) =>
+      Math.round(node.getBoundingClientRect().height),
+    );
+    expect(closedSummaryHeight).toBeLessThanOrEqual(1);
+    const summaryTransitionProperty = await summaryPanel.evaluate(
+      (node) => window.getComputedStyle(node).transitionProperty,
+    );
+    expect(summaryTransitionProperty).toContain("max-height");
+    expect(summaryTransitionProperty).not.toContain("opacity");
+    await summaryToggle.click();
+    await expect(summaryToggle).toHaveAttribute("aria-expanded", "true");
+    await expect(summaryPanel).toHaveAttribute("data-state", "open");
+    await expect
+      .poll(() => summaryPanel.evaluate((node) => Math.round(node.getBoundingClientRect().height)))
+      .toBeGreaterThan(1);
+    await expect(summaryPanel).toContainText(sampleSummaryText);
     await expect(page.getByTestId("reader-shell")).not.toContainText(sampleStory.sourcePath);
     await expect(page.getByTestId("reader-shell")).not.toContainText(
       `${sampleStoryGroup.storyCount} stories in`,
