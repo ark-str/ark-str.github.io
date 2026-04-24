@@ -338,6 +338,27 @@ test("parseStoryText does not fallback to non-operator speaker bindings after fr
   );
 });
 
+test("parseStoryText does not persist stale char bindings from non-fresh frames", () => {
+  const blocks = parseStoryText(`
+[Character(name="char_500_noirc_1")]
+[name="Noir Corne"]Hold the line.
+[name="White creature"]This line is still visually ambiguous.
+[Character]
+[name="White creature"]This should not inherit Noir Corne.
+[name="Noir Corne"]This can use the confirmed operator fallback.
+`);
+
+  assert.deepEqual(
+    blocks.filter((block) => block.type === "dialogue").map((block) => block.speakerId),
+    [
+      "char_500_noirc",
+      "char_500_noirc",
+      null,
+      "char_500_noirc",
+    ],
+  );
+});
+
 test("parseStoryText resolves mixed cutin and character frames with priority and recency", () => {
   const blocks = parseStoryText(`
 [CharacterCutin(widgetID="1", name="char_2006_weiywfmzuki_1", style="cutin")]
@@ -450,7 +471,7 @@ test("parseStoryText emits background blocks from Image tags and narration from 
   const blocks = parseStoryText(`
 [theater(mode=true)]
 [Sticker(id="st1", text="런디니움 오슈테리그", x=290, y=320)]
-[Sticker(id="st2", text="더 샤드 빌딩 내부", x=290, y=400)]
+[Sticker(id="st2", text="더 샤드 빌딩 내부\\n관제실", x=290, y=400)]
 [stickerclear]
 [theater(mode=false)]
 [Image(image="27_i01", fadetime=1, xScale=1.3, yScale=1.3)]
@@ -460,7 +481,7 @@ test("parseStoryText emits background blocks from Image tags and narration from 
   assert.deepEqual(blocks, [
     {
       type: "narration",
-      text: "런디니움 오슈테리그\n더 샤드 빌딩 내부",
+      text: "런디니움 오슈테리그\n더 샤드 빌딩 내부\n관제실",
     },
     {
       type: "background",
@@ -472,6 +493,26 @@ test("parseStoryText emits background blocks from Image tags and narration from 
       speakerName: "테레시스",
       speakerId: null,
       text: "공사는 이제 마무리 단계다.",
+    },
+  ]);
+});
+
+test("parseStoryText coalesces adjacent duplicate scene image backgrounds", () => {
+  const blocks = parseStoryText(`
+[Background(image="ac5_2_on")]
+[Image(image="ac5_2_on",x=-20,y=-20)]
+[Image(image="ac5_2_on",x=-20,y=-20)]
+[Image(image="ac5_2_off",x=-20,y=-20)]
+`);
+
+  assert.deepEqual(blocks, [
+    {
+      type: "background",
+      backgroundId: "ac5_2_on",
+    },
+    {
+      type: "background",
+      backgroundId: "ac5_2_off",
     },
   ]);
 });

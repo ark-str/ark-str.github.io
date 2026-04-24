@@ -54,9 +54,9 @@ This phase keeps the recovered reader shell and Pages deployment path stable whi
 - `[name="..."]` and `[multiline(name="...")]` script tags are both normalized as dialogue, using the currently focused visual frame for portrait lookup
 - mixed `CharacterCutin`, `character` / `Character`, and `charslot` tags can coexist, and each dialogue line chooses exactly one winning eligible speaker frame by highest priority then most recent update
 - `character(...)` scene updates clear stale `charslot(...)` frames so slot-based portraits do not leak into later character-driven scenes
-- `focus < 0` and neutral `charslot` frames stay visible but are not eligible dialogue speakers; speaker-name fallback after active frames clear is limited to canonical `char_` operator IDs, while non-operator portraits require an explicit active visual frame
-- `Sticker(text="...")` tags are normalized into narration so theater/location title cards remain readable in the linear story flow
-- `Background(image="...")` and `Image(image="...")` tags are normalized into explicit background blocks and use bundled `ArknightsResource/avgs/bg/` or direct `ArknightsResource/avgs/` images when available
+- `focus < 0` and neutral `charslot` frames stay visible but are not eligible dialogue speakers; speaker-name fallback after active frames clear is limited to confirmed fresh-frame `char_` operator aliases, while non-operator portraits require an explicit active visual frame
+- `Sticker(text="...")` tags are normalized into narration with escaped line breaks decoded so theater/location title cards remain readable in the linear story flow
+- `Background(image="...")` and `Image(image="...")` tags are normalized into explicit background blocks, adjacent duplicate background IDs are coalesced, and bundled `ArknightsResource/avgs/bg/` or direct `ArknightsResource/avgs/` images are used when available
 - `CharacterCutin` winning frames are presented as remote radio communication in the reader
 - `npm run content:portraits` or `npm run content:update` can refresh the blobless `vendor/ArknightsResource/` media cache from `ArknightsResource/`, materialize only referenced `avgs/npcs/` portraits plus `avgs/bg/` and direct `avgs/` story images, and copy them into bundled app assets
 - portrait selection uses the basename-sorted first matching `avgs/npcs` file for each referenced `speakerId`

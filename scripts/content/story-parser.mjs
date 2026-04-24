@@ -27,6 +27,12 @@ function pushVisibleBlock(target, block) {
     }
   }
 
+  if (block.type === "background" && target.at(-1)?.type === "background") {
+    if (target.at(-1).backgroundId === block.backgroundId) {
+      return;
+    }
+  }
+
   if (block.type === "narration" && target.at(-1)?.type === "narration") {
     target[target.length - 1] = {
       type: "narration",
@@ -45,6 +51,24 @@ function normalizeBackgroundId(rawBackgroundId) {
   }
 
   return backgroundId.replace(/\.(png|jpe?g|webp)$/i, "");
+}
+
+function isCharSpeakerId(speakerId) {
+  return typeof speakerId === "string" && speakerId.startsWith("char_");
+}
+
+function decodeTextAttributeValue(rawValue) {
+  if (typeof rawValue !== "string") {
+    return null;
+  }
+
+  return rawValue
+    .replace(/\\n/g, "\n")
+    .replace(/\\r/g, "\r")
+    .replace(/\\t/g, "\t")
+    .replace(/\\"/g, '"')
+    .replace(/\\\\/g, "\\")
+    .trim();
 }
 
 function parseDecisionLine(line) {
@@ -310,8 +334,7 @@ function resolveDialogueSpeaker(line, parserState) {
   }
 
   const knownSpeakerBinding = parserState.speakerBindings.get(speakerName) ?? null;
-  const eligibleSpeakerBinding =
-    knownSpeakerBinding?.startsWith("char_") ? knownSpeakerBinding : null;
+  const eligibleSpeakerBinding = isCharSpeakerId(knownSpeakerBinding) ? knownSpeakerBinding : null;
   const hasActiveFrame = getActiveFrames(parserState).length > 0;
   const winningFrame = resolveWinningFrame(parserState);
   const speakerId = winningFrame
@@ -328,8 +351,9 @@ function resolveDialogueSpeaker(line, parserState) {
     text,
   };
 
-  if (winningFrame && speakerId !== null) {
+  if (winningFrame && isCharSpeakerId(speakerId) && !winningFrame.hasConfirmedSpeakerBinding) {
     parserState.speakerBindings.set(speakerName, speakerId);
+    winningFrame.hasConfirmedSpeakerBinding = true;
   }
 
   return [block];
@@ -386,7 +410,7 @@ function consumeStickerTag(remainder) {
   }
 
   const rawAttributes = stickerMatch[1] ?? null;
-  const stickerText = getLooseAttributeValue(rawAttributes, "text");
+  const stickerText = decodeTextAttributeValue(getLooseAttributeValue(rawAttributes, "text"));
 
   return {
     blocks: stickerText

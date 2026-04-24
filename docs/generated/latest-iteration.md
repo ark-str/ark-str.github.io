@@ -14,9 +14,10 @@ Current closeout outcome:
 
 - `[multiline(name="...")]` and `[multiline(name="...",end=true)]` are normalized as speaker-bearing dialogue instead of narration
 - `charslot(...)` frames are cleared when `character(...)` scene state takes over, preventing old slot portraits from leaking into later dialogue
-- speaker-name fallback after active frames clear is limited to canonical `char_` operator IDs, so non-operator NPC labels require an explicit active visual frame
-- `Sticker(text="...")` title-card text is preserved as narration, and `Image(image="...")` scene art now emits background blocks backed by direct `ArknightsResource/avgs/` images
-- `act22side` story details were regenerated from the updated parser
+- speaker-name fallback after active frames clear is limited to confirmed fresh-frame `char_` operator aliases, so stale frames do not contaminate unrelated speaker names
+- `Sticker(text="...")` title-card text is preserved as narration with escaped line breaks decoded, and `Image(image="...")` scene art now emits background blocks backed by direct `ArknightsResource/avgs/` images
+- adjacent duplicate background IDs from paired `Background` / `Image` tags are coalesced before rendering
+- story details were regenerated from the updated parser
 - `npm run verify` passed on branch `issue-96-act22side-parser-fix`
 
 Remaining product gaps:
