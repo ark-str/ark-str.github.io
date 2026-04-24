@@ -243,6 +243,142 @@ test("parseStoryText resolves spaced charslot attributes from act34side npc exch
   ]);
 });
 
+test("parseStoryText treats multiline tags as focused dialogue", () => {
+  const blocks = parseStoryText(`
+[charslot(slot="r",name="avg_4017_puzzle_1#4$1",focus="r")]
+[multiline(name="피셔")]급성 감염이래요. 상처 부위에 들어간 활성 오리지늄 파편이 꽤 많았던 터라……
+[charslot(slot="r",name="avg_4017_puzzle_1#1$1",focus="r")]
+[multiline(name="피셔")]물론, 지금은 병세는 진정된 상태니까 걱정하지 마세요.
+`);
+
+  assert.deepEqual(blocks, [
+    {
+      type: "dialogue",
+      isRemote: false,
+      speakerName: "피셔",
+      speakerId: "avg_4017_puzzle_1",
+      text: "급성 감염이래요. 상처 부위에 들어간 활성 오리지늄 파편이 꽤 많았던 터라……",
+    },
+    {
+      type: "dialogue",
+      isRemote: false,
+      speakerName: "피셔",
+      speakerId: "avg_4017_puzzle_1",
+      text: "물론, 지금은 병세는 진정된 상태니까 걱정하지 마세요.",
+    },
+  ]);
+});
+
+test("parseStoryText keeps multiline end tags as dialogue", () => {
+  const blocks = parseStoryText(`
+[charslot(slot="l",name="avg_npc_725_1#1$1",focus="l")]
+[multiline(name="핀")]아, 그래……
+[charslot(slot="l",name="avg_npc_725_1#8$1",focus="l")]
+[multiline(name="핀",end=true)]사실 어젯밤 일에 대해서 감사의 말을 하고 싶었어.
+`);
+
+  assert.deepEqual(blocks, [
+    {
+      type: "dialogue",
+      isRemote: false,
+      speakerName: "핀",
+      speakerId: "avg_npc_725_1",
+      text: "아, 그래……",
+    },
+    {
+      type: "dialogue",
+      isRemote: false,
+      speakerName: "핀",
+      speakerId: "avg_npc_725_1",
+      text: "사실 어젯밤 일에 대해서 감사의 말을 하고 싶었어.",
+    },
+  ]);
+});
+
+test("parseStoryText clears charslot frames when character scenes take over", () => {
+  const blocks = parseStoryText(`
+[charslot(slot="left",name="avg_npc_242")]
+[charslot(slot="right",name="avg_npc_725_1#1$1")]
+[character(name="avg_npc_725_1#6$1")]
+[name="핀"]……윽, 글룸핀서한테 물린 거야.
+[character(name="avg_1020_reed2_1#1$1")]
+[name="리드"]그렇다면 내가 너희들과 함께……
+[dialog]
+[character(fadetime=0.5)]
+[name="순찰대 대원"]저쪽이다! 진흙 위에 발자국이 있어, 저쪽으로 갔다!
+[name="순찰대 대원"]그 불을 지른 타라의 쓰레기들도 분명히 이 주변에 있을 거야!
+[character(name="avg_npc_725_1#4$1")]
+[name="핀"]……어, 어서 숨어!
+`);
+
+  assert.deepEqual(
+    blocks.filter((block) => block.type === "dialogue").map((block) => block.speakerId),
+    [
+      "avg_npc_725_1",
+      "avg_1020_reed2_1",
+      null,
+      null,
+      "avg_npc_725_1",
+    ],
+  );
+});
+
+test("parseStoryText does not fallback to non-operator speaker bindings after frame clear", () => {
+  const blocks = parseStoryText(`
+[character(name="avg_npc_725_1#4$1")]
+[name="핀"]먼저 보이는 대사.
+[character(fadetime=0.2)]
+[name="핀"](나는…… 윽……)
+[name="리드"]……
+`);
+
+  assert.deepEqual(
+    blocks.filter((block) => block.type === "dialogue").map((block) => block.speakerId),
+    ["avg_npc_725_1", null, null],
+  );
+});
+
+test("parseStoryText does not persist stale char bindings from non-fresh frames", () => {
+  const blocks = parseStoryText(`
+[Character(name="char_500_noirc_1")]
+[name="Noir Corne"]Hold the line.
+[name="White creature"]This line is still visually ambiguous.
+[Character]
+[name="White creature"]This should not inherit Noir Corne.
+[name="Noir Corne"]This can use the confirmed operator fallback.
+`);
+
+  assert.deepEqual(
+    blocks.filter((block) => block.type === "dialogue").map((block) => block.speakerId),
+    [
+      "char_500_noirc",
+      "char_500_noirc",
+      null,
+      "char_500_noirc",
+    ],
+  );
+});
+
+test("parseStoryText preserves charslot confirmation through focus-only updates", () => {
+  const blocks = parseStoryText(`
+[charslot(slot="l",name="char_500_noirc_1")]
+[name="Noir Corne"]Hold the line.
+[charslot(slot="l",focus="l")]
+[name="White creature"]This line is still visually ambiguous.
+[charslot]
+[name="White creature"]This should not inherit Noir Corne.
+`);
+
+  assert.deepEqual(
+    blocks.filter((block) => block.type === "dialogue").map((block) => block.speakerId),
+    [
+      "char_500_noirc",
+      "char_500_noirc",
+      null,
+    ],
+  );
+});
+
 test("parseStoryText resolves mixed cutin and character frames with priority and recency", () => {
   const blocks = parseStoryText(`
 [CharacterCutin(widgetID="1", name="char_2006_weiywfmzuki_1", style="cutin")]
@@ -283,7 +419,7 @@ test("parseStoryText resolves charslot and cutin frames together and clears slot
 [CharacterCutin(widgetID="1", block=true)]
 [name="Cheery Legatus"]De-emphasized slot suppresses fallback while it remains active.
 [charslot]
-[name="Cheery Legatus"]Binding fallback survives after slot clear.
+[name="Cheery Legatus"]Non-operator binding fallback stays suppressed after slot clear.
 `);
 
   assert.deepEqual(
@@ -292,7 +428,7 @@ test("parseStoryText resolves charslot and cutin frames together and clears slot
       "avg_npc_175",
       "avg_npc_034",
       null,
-      "avg_npc_175",
+      null,
     ],
   );
 });
@@ -347,6 +483,83 @@ test("parseStoryText emits background blocks from Background tags", () => {
       speakerName: "에기르 연구원 A",
       speakerId: null,
       text: "배경이 바뀌었다.",
+    },
+  ]);
+});
+
+test("parseStoryText emits background blocks from Image tags and narration from Sticker tags", () => {
+  const blocks = parseStoryText(`
+[theater(mode=true)]
+[Sticker(id="st1", text="런디니움 오슈테리그", x=290, y=320)]
+[Sticker(id="st2", text="더 샤드 빌딩 내부\\n관제실", x=290, y=400)]
+[Sticker(id="st3", text="_노드 [DWDB-221E]와 교차 인증 연결 수립", x=290, y=450)]
+[stickerclear]
+[theater(mode=false)]
+[Image(image="27_i01", fadetime=1, xScale=1.3, yScale=1.3)]
+[name="테레시스"]공사는 이제 마무리 단계다.
+`);
+
+  assert.deepEqual(blocks, [
+    {
+      type: "narration",
+      text: "런디니움 오슈테리그\n더 샤드 빌딩 내부\n관제실\n_노드 [DWDB-221E]와 교차 인증 연결 수립",
+    },
+    {
+      type: "background",
+      backgroundId: "27_i01",
+    },
+    {
+      type: "dialogue",
+      isRemote: false,
+      speakerName: "테레시스",
+      speakerId: null,
+      text: "공사는 이제 마무리 단계다.",
+    },
+  ]);
+});
+
+test("parseStoryText coalesces adjacent duplicate scene image backgrounds", () => {
+  const blocks = parseStoryText(`
+[Background(image="ac5_2_on")]
+[Image(image="ac5_2_on",x=-20,y=-20)]
+[Image(image="ac5_2_on",x=-20,y=-20)]
+[Image(image="ac5_2_off",x=-20,y=-20)]
+`);
+
+  assert.deepEqual(blocks, [
+    {
+      type: "background",
+      backgroundId: "ac5_2_on",
+    },
+    {
+      type: "background",
+      backgroundId: "ac5_2_off",
+    },
+  ]);
+});
+
+test("parseStoryText emits clear markers for scene image clears", () => {
+  const blocks = parseStoryText(`
+[Image(image="27_i01", fadetime=1)]
+[Image(fadetime=2)]
+[name="테레시스"]공사는 이제 마무리 단계다.
+`);
+
+  assert.deepEqual(blocks, [
+    {
+      type: "background",
+      backgroundId: "27_i01",
+    },
+    {
+      type: "background",
+      backgroundId: null,
+    },
+    {
+      type: "dialogue",
+      isRemote: false,
+      speakerName: "테레시스",
+      speakerId: null,
+      text: "공사는 이제 마무리 단계다.",
     },
   ]);
 });

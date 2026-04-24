@@ -119,7 +119,7 @@ export type DialogueBlock = {
 
 export type BackgroundBlock = {
   type: "background";
-  backgroundId: string;
+  backgroundId: string | null;
 };
 
 export type NarrationBlock = {

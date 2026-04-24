@@ -48,14 +48,17 @@ This phase keeps the recovered reader shell and Pages deployment path stable whi
 - canonical locale URLs at `/reader/[locale]`, `/reader/[locale]/[groupId]`, and `/reader/[locale]/[groupId]/[storyId]`
 - generated story detail files under `public/generated/content/stories/`
 - metadata-only app-internal generated loaders under `src/generated/content/` for exact-path export-safe reads
-- first-pass body rendering for dialogue, narration, background changes, scene breaks, and Doctor choice branches
+- first-pass body rendering for dialogue, multiline dialogue, sticker narration, background changes, scene images, scene breaks, and Doctor choice branches
 - dialogue-level `speakerId` as the shared visual lookup key for `Character(...)`, `character(...)`, and `charslot(...)` tags
 - `char_` speaker IDs are canonicalized to the first three `_`-delimited segments, while non-`char` speaker IDs keep their stripped raw token for visual portrait lookup
+- `[name="..."]` and `[multiline(name="...")]` script tags are both normalized as dialogue, using the currently focused visual frame for portrait lookup
 - mixed `CharacterCutin`, `character` / `Character`, and `charslot` tags can coexist, and each dialogue line chooses exactly one winning eligible speaker frame by highest priority then most recent update
-- `focus < 0` and neutral `charslot` frames stay visible but are not eligible dialogue speakers; while any frame is active, speaker-name bindings are only reused after those frames clear
-- `Background(image="...")` tags are normalized into explicit background blocks and use bundled `ArknightsResource/avgs/bg/` images when available
+- `character(...)` scene updates clear stale `charslot(...)` frames so slot-based portraits do not leak into later character-driven scenes
+- `focus < 0`, neutral `charslot` frames, and focus-only `charslot` updates stay visible but do not create new fallback aliases; speaker-name fallback after active frames clear is limited to confirmed fresh-frame `char_` operator aliases, while non-operator portraits require an explicit active visual frame
+- `Sticker(text="...")` tags are normalized into narration with escaped line breaks decoded and bracketed labels preserved so theater/location title cards remain readable in the linear story flow
+- `Background(image="...")` and `Image(image="...")` tags are normalized into explicit background blocks, no-image clear tags emit `backgroundId: null` markers, adjacent duplicate background IDs are coalesced, and bundled `ArknightsResource/avgs/bg/` or direct `ArknightsResource/avgs/` images are used when available
 - `CharacterCutin` winning frames are presented as remote radio communication in the reader
-- `npm run content:portraits` or `npm run content:update` can refresh the blobless `vendor/ArknightsResource/` media cache from `ArknightsResource/`, materialize only referenced `avgs/npcs/` portraits and `avgs/bg/` backgrounds, and copy them into bundled app assets
+- `npm run content:portraits` or `npm run content:update` can refresh the blobless `vendor/ArknightsResource/` media cache from `ArknightsResource/`, materialize only referenced `avgs/npcs/` portraits plus `avgs/bg/` and direct `avgs/` story images, and copy them into bundled app assets
 - portrait selection uses the basename-sorted first matching `avgs/npcs` file for each referenced `speakerId`
 - background selection uses the exact `image` key first and otherwise the basename-sorted first matching `avgs/bg` file for each referenced background ID
 - reader portraits render from bundled optimized `public/generated/portraits/speakers/<speakerId>.webp` assets with top-aligned full-body crops

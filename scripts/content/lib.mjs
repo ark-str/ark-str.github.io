@@ -13,9 +13,10 @@ export const PORTRAIT_SOURCE_PATH = "vendor/ArknightsResource";
 export const PORTRAIT_SOURCE_REMOTE = "https://github.com/fexli/ArknightsResource.git";
 export const PORTRAIT_SOURCE_BRANCH = "main";
 export const PORTRAIT_NPCS_DIRECTORY = path.join("avgs", "npcs");
+export const STORY_IMAGE_SOURCE_DIRECTORY = "avgs";
 export const BACKGROUND_SOURCE_DIRECTORY = path.join("avgs", "bg");
 export const PROJECT_GROUP_BACKGROUND_SOURCE_DIRECTORY = path.join("assets", "group-backgrounds");
-export const GROUP_BACKGROUND_SOURCE_DIRECTORY = "avgs";
+export const GROUP_BACKGROUND_SOURCE_DIRECTORY = STORY_IMAGE_SOURCE_DIRECTORY;
 export const GROUP_BACKGROUND_MAPREVIEW_DIRECTORY = "mapreview";
 export const GROUP_BACKGROUND_SOURCE_DIRECTORIES = [
   GROUP_BACKGROUND_SOURCE_DIRECTORY,
@@ -93,6 +94,10 @@ export function getPortraitNpcSourceRoot(cwd = getRepoRoot()) {
 
 export function getBackgroundSourceRoot(cwd = getRepoRoot()) {
   return path.join(getPortraitSourceRoot(cwd), BACKGROUND_SOURCE_DIRECTORY);
+}
+
+export function getStoryImageSourceRoot(cwd = getRepoRoot()) {
+  return path.join(getPortraitSourceRoot(cwd), STORY_IMAGE_SOURCE_DIRECTORY);
 }
 
 export function getProjectGroupBackgroundSourceRoot(cwd = getRepoRoot()) {
@@ -408,25 +413,44 @@ function listTrackedPortraitFiles(cwd = getRepoRoot()) {
 
 function listTrackedBackgroundFiles(cwd = getRepoRoot()) {
   const backgroundRoot = getBackgroundSourceRoot(cwd);
+  const storyImageRoot = getStoryImageSourceRoot(cwd);
 
-  if (!hasPortraitSource(cwd)) {
-    if (!fs.existsSync(backgroundRoot)) {
-      return [];
+  const isBackgroundImageSourcePath = (relativePath) => {
+    if (!relativePath.endsWith(".png")) {
+      return false;
     }
 
-    return fs
-      .readdirSync(backgroundRoot)
-      .filter((fileName) => fileName.endsWith(".png"))
-      .map((fileName) => path.join(BACKGROUND_SOURCE_DIRECTORY, fileName).replaceAll("\\", "/"));
+    const normalizedPath = relativePath.replaceAll("\\", "/");
+    return (
+      normalizedPath.startsWith(`${BACKGROUND_SOURCE_DIRECTORY}/`) ||
+      path.dirname(normalizedPath) === STORY_IMAGE_SOURCE_DIRECTORY
+    );
+  };
+
+  if (!hasPortraitSource(cwd)) {
+    const backgroundFiles = fs.existsSync(backgroundRoot)
+      ? fs
+          .readdirSync(backgroundRoot)
+          .filter((fileName) => fileName.endsWith(".png"))
+          .map((fileName) => path.join(BACKGROUND_SOURCE_DIRECTORY, fileName).replaceAll("\\", "/"))
+      : [];
+    const storyImageFiles = fs.existsSync(storyImageRoot)
+      ? fs
+          .readdirSync(storyImageRoot)
+          .filter((fileName) => fileName.endsWith(".png"))
+          .map((fileName) => path.join(STORY_IMAGE_SOURCE_DIRECTORY, fileName).replaceAll("\\", "/"))
+      : [];
+
+    return [...backgroundFiles, ...storyImageFiles];
   }
 
   return runGit(
-    ["-C", getPortraitSourceRoot(cwd), "ls-tree", "-r", "--name-only", "HEAD", BACKGROUND_SOURCE_DIRECTORY],
+    ["-C", getPortraitSourceRoot(cwd), "ls-tree", "-r", "--name-only", "HEAD", STORY_IMAGE_SOURCE_DIRECTORY],
     { cwd },
   ).stdout
     .split("\n")
     .map((line) => line.trim())
-    .filter((line) => line.endsWith(".png"));
+    .filter(isBackgroundImageSourcePath);
 }
 
 function listTrackedGroupBackgroundFiles(cwd = getRepoRoot()) {

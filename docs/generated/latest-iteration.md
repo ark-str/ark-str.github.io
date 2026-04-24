@@ -1,18 +1,24 @@
 # Latest Iteration
 
-Latest parent iteration: `#92`
+Latest parent iteration: `#96`
 
 Completed child issue:
 
-- `#92` - redesign home landing experience
+- `#96` - fix act22side multiline and stale portrait parsing
+
+Merged PR:
+
+- `#97` - Fix act22side multiline and stale portrait parsing
 
 Current closeout outcome:
 
-- home now presents an ARK STR landing page with a clean centered nickname input, continue-reading action with target story title, full-bleed square-edged service introduction using the accent-colored app icon, spacious curated recommendations, locale-aware statistics, and maintainer credit
-- reader nickname is persisted in `ark-str:reader-session:v1`
-- story body rendering replaces `{@nickname}` and `{@nickName}` tokens from the persisted nickname, or with an empty string when unset
-- recommendation cards are selected-locale aware and use bundled generated group artwork
-- `npm run verify` passed on branch `issue-92-home-landing`
+- `[multiline(name="...")]` and `[multiline(name="...",end=true)]` are normalized as speaker-bearing dialogue instead of narration
+- `charslot(...)` frames are cleared when `character(...)` scene state takes over, preventing old slot portraits from leaking into later dialogue
+- speaker-name fallback after active frames clear is limited to confirmed fresh-frame `char_` operator aliases, including focus-only `charslot` updates, so stale frames do not contaminate unrelated speaker names
+- `Sticker(text="...")` title-card text is preserved as narration with escaped line breaks decoded and bracketed labels intact, and `Image(image="...")` scene art now emits background blocks backed by direct `ArknightsResource/avgs/` images
+- no-image `Image` / `Background` tags emit `backgroundId: null` clear markers that clear the fixed story backdrop, including leading clear markers, and adjacent duplicate background IDs from paired `Background` / `Image` tags are coalesced before rendering
+- story details were regenerated from the updated parser
+- `npm run verify` passed on branch `issue-96-act22side-parser-fix`
 
 Remaining product gaps:
 

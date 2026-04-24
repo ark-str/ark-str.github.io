@@ -27,6 +27,12 @@ function pushVisibleBlock(target, block) {
     }
   }
 
+  if (block.type === "background" && target.at(-1)?.type === "background") {
+    if (target.at(-1).backgroundId === block.backgroundId) {
+      return;
+    }
+  }
+
   if (block.type === "narration" && target.at(-1)?.type === "narration") {
     target[target.length - 1] = {
       type: "narration",
@@ -45,6 +51,85 @@ function normalizeBackgroundId(rawBackgroundId) {
   }
 
   return backgroundId.replace(/\.(png|jpe?g|webp)$/i, "");
+}
+
+function isCharSpeakerId(speakerId) {
+  return typeof speakerId === "string" && speakerId.startsWith("char_");
+}
+
+function decodeTextAttributeValue(rawValue) {
+  if (typeof rawValue !== "string") {
+    return null;
+  }
+
+  return rawValue
+    .replace(/\\n/g, "\n")
+    .replace(/\\r/g, "\r")
+    .replace(/\\t/g, "\t")
+    .replace(/\\"/g, '"')
+    .replace(/\\\\/g, "\\")
+    .trim();
+}
+
+function parseTagWithAttributes(remainder, tagName) {
+  const tagPrefix = `[${tagName}`;
+  if (!remainder.toLowerCase().startsWith(tagPrefix.toLowerCase())) {
+    return null;
+  }
+
+  let cursor = tagPrefix.length;
+  if (remainder[cursor] === "]") {
+    return {
+      rawAttributes: null,
+      remainder: remainder.slice(cursor + 1).trim(),
+    };
+  }
+
+  if (remainder[cursor] !== "(") {
+    return null;
+  }
+
+  cursor += 1;
+  const attributesStart = cursor;
+  let isInQuote = false;
+  let isEscaped = false;
+
+  while (cursor < remainder.length) {
+    const char = remainder[cursor];
+
+    if (isEscaped) {
+      isEscaped = false;
+      cursor += 1;
+      continue;
+    }
+
+    if (char === "\\" && isInQuote) {
+      isEscaped = true;
+      cursor += 1;
+      continue;
+    }
+
+    if (char === '"') {
+      isInQuote = !isInQuote;
+      cursor += 1;
+      continue;
+    }
+
+    if (char === ")" && !isInQuote) {
+      if (remainder[cursor + 1] !== "]") {
+        return null;
+      }
+
+      return {
+        rawAttributes: remainder.slice(attributesStart, cursor),
+        remainder: remainder.slice(cursor + 2).trim(),
+      };
+    }
+
+    cursor += 1;
+  }
+
+  return null;
 }
 
 function parseDecisionLine(line) {
@@ -273,22 +358,51 @@ function resolveWinningFrame(parserState) {
   }, null);
 }
 
-function resolveDialogueSpeaker(line, parserState) {
+function parseDialogueTag(line) {
   const dialogueMatch = /^\[name="([^"]+)"\]\s*(.*)$/i.exec(line);
-  if (!dialogueMatch) {
+  if (dialogueMatch) {
+    return {
+      speakerName: dialogueMatch[1].trim(),
+      text: dialogueMatch[2]?.trim(),
+    };
+  }
+
+  const multilineMatch = /^\[multiline\(([^\]]*)\)\]\s*(.*)$/i.exec(line);
+  if (!multilineMatch) {
     return null;
   }
 
-  const speakerName = dialogueMatch[1].trim();
-  const text = dialogueMatch[2]?.trim();
+  const speakerName = getLooseAttributeValue(multilineMatch[1] ?? null, "name");
+  if (!speakerName) {
+    return null;
+  }
+
+  return {
+    speakerName: speakerName.trim(),
+    text: multilineMatch[2]?.trim(),
+  };
+}
+
+function resolveDialogueSpeaker(line, parserState) {
+  const dialogueTag = parseDialogueTag(line);
+  if (!dialogueTag) {
+    return null;
+  }
+
+  const { speakerName, text } = dialogueTag;
   if (!text) {
     return [];
   }
 
   const knownSpeakerBinding = parserState.speakerBindings.get(speakerName) ?? null;
+  const eligibleSpeakerBinding = isCharSpeakerId(knownSpeakerBinding) ? knownSpeakerBinding : null;
   const hasActiveFrame = getActiveFrames(parserState).length > 0;
   const winningFrame = resolveWinningFrame(parserState);
-  const speakerId = winningFrame ? winningFrame.speakerId : hasActiveFrame ? null : knownSpeakerBinding;
+  const speakerId = winningFrame
+    ? winningFrame.speakerId
+    : hasActiveFrame
+      ? null
+      : eligibleSpeakerBinding;
 
   const block = {
     type: "dialogue",
@@ -298,32 +412,73 @@ function resolveDialogueSpeaker(line, parserState) {
     text,
   };
 
-  if (winningFrame && speakerId !== null) {
+  if (winningFrame && isCharSpeakerId(speakerId) && !winningFrame.hasConfirmedSpeakerBinding) {
     parserState.speakerBindings.set(speakerName, speakerId);
+    winningFrame.hasConfirmedSpeakerBinding = true;
   }
 
   return [block];
 }
 
 function consumeBackgroundTag(remainder) {
-  const backgroundMatch = /^\[Background(?:\(([^\]]*)\))?\]\s*(.*)$/i.exec(remainder);
+  const backgroundMatch = parseTagWithAttributes(remainder, "Background");
   if (!backgroundMatch) {
     return null;
   }
 
-  const rawAttributes = backgroundMatch[1] ?? null;
+  const rawAttributes = backgroundMatch.rawAttributes;
   const backgroundId = normalizeBackgroundId(getLooseAttributeValue(rawAttributes, "image"));
 
   return {
-    blocks: backgroundId
+    blocks: [
+      {
+        type: "background",
+        backgroundId,
+      },
+    ],
+    remainder: backgroundMatch.remainder,
+  };
+}
+
+function consumeImageTag(remainder) {
+  const imageMatch = parseTagWithAttributes(remainder, "Image");
+  if (!imageMatch) {
+    return null;
+  }
+
+  const rawAttributes = imageMatch.rawAttributes;
+  const backgroundId = normalizeBackgroundId(getLooseAttributeValue(rawAttributes, "image"));
+
+  return {
+    blocks: [
+      {
+        type: "background",
+        backgroundId,
+      },
+    ],
+    remainder: imageMatch.remainder,
+  };
+}
+
+function consumeStickerTag(remainder) {
+  const stickerMatch = parseTagWithAttributes(remainder, "Sticker");
+  if (!stickerMatch) {
+    return null;
+  }
+
+  const rawAttributes = stickerMatch.rawAttributes;
+  const stickerText = decodeTextAttributeValue(getLooseAttributeValue(rawAttributes, "text"));
+
+  return {
+    blocks: stickerText
       ? [
           {
-            type: "background",
-            backgroundId,
+            type: "narration",
+            text: stickerText,
           },
         ]
       : [],
-    remainder: backgroundMatch[2]?.trim() ?? "",
+    remainder: stickerMatch.remainder,
   };
 }
 
@@ -365,6 +520,7 @@ function consumeCharacterTag(remainder, parserState) {
 
   const rawAttributes = characterMatch[1] ?? null;
   const slots = parseCharacterSlots(rawAttributes);
+  parserState.charslots.clear();
 
   if (slots.length === 0) {
     parserState.characterFrame = null;
@@ -427,10 +583,12 @@ function consumeCharslotTag(remainder, parserState) {
     }
   }
 
-  parserState.charslots.set(
-    slotKey,
-    createFrame(parserState, "charslot", slotKey, nextSpeakerId, nextPriority),
-  );
+  const nextFrame = createFrame(parserState, "charslot", slotKey, nextSpeakerId, nextPriority);
+  if (speakerToken === null && existingFrame?.speakerId === nextSpeakerId) {
+    nextFrame.hasConfirmedSpeakerBinding = existingFrame.hasConfirmedSpeakerBinding;
+  }
+
+  parserState.charslots.set(slotKey, nextFrame);
 
   return charslotMatch[2]?.trim() ?? "";
 }
@@ -477,6 +635,26 @@ function extractVisibleBlocks(line, parserState) {
     if (backgroundResult) {
       blocks.push(...backgroundResult.blocks);
       remainder = backgroundResult.remainder;
+      if (!remainder) {
+        return blocks;
+      }
+      continue;
+    }
+
+    const imageResult = consumeImageTag(remainder);
+    if (imageResult) {
+      blocks.push(...imageResult.blocks);
+      remainder = imageResult.remainder;
+      if (!remainder) {
+        return blocks;
+      }
+      continue;
+    }
+
+    const stickerResult = consumeStickerTag(remainder);
+    if (stickerResult) {
+      blocks.push(...stickerResult.blocks);
+      remainder = stickerResult.remainder;
       if (!remainder) {
         return blocks;
       }

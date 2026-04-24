@@ -152,7 +152,9 @@ export function readStoryBackgroundPaths(detail: StoryDetail | null): Record<str
   const collectBackgroundIdsFromBlocks = (blocks: StoryBlock[]) => {
     for (const block of blocks) {
       if (block.type === "background") {
-        backgroundIds.add(block.backgroundId);
+        if (block.backgroundId) {
+          backgroundIds.add(block.backgroundId);
+        }
         continue;
       }
 
