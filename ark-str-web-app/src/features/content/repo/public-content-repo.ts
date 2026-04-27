@@ -1,4 +1,11 @@
-import type { AssetManifest, ContentIndex, StoryDetail, SummaryManifest } from "@/features/content/types";
+import type {
+  AssetManifest,
+  ContentIndex,
+  ContentSearchLocaleIndex,
+  ReaderLocale,
+  StoryDetail,
+  SummaryManifest,
+} from "@/features/content/types";
 
 function getRuntimeBasePath() {
   const configuredBasePath = process.env.NEXT_PUBLIC_ARK_STR_BASE_PATH?.trim() ?? "";
@@ -10,7 +17,7 @@ function getRuntimeBasePath() {
     return "";
   }
 
-  for (const marker of ["/reader", "/notes"]) {
+  for (const marker of ["/reader", "/search", "/notes"]) {
     const markerIndex = window.location.pathname.indexOf(marker);
     if (markerIndex > 0) {
       return window.location.pathname.slice(0, markerIndex);
@@ -39,6 +46,10 @@ async function fetchGeneratedJson<T>(publicPath: string): Promise<T> {
 
 export function fetchContentIndex() {
   return fetchGeneratedJson<ContentIndex>("/generated/content/index.json");
+}
+
+export function fetchSearchIndex(locale: ReaderLocale) {
+  return fetchGeneratedJson<ContentSearchLocaleIndex>(`/generated/content/search/${locale}.json`);
 }
 
 export function fetchSummaryManifest() {
