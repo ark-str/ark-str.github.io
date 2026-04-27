@@ -6,8 +6,9 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { ArrowUpRight, Search } from "lucide-react";
 import { ReaderPageFrame } from "@/components/layout/reader-page-frame";
 import type { FloatingAppBarModel } from "@/components/layout/types";
-import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { LoadingIndicator, LoadingStateCard } from "@/components/ui/loading-indicator";
+import { StoryClassificationBadges } from "@/components/ui/story-classification-badges";
 import {
   CANONICAL_READER_LOCALES,
   READER_LOCALE_LABELS,
@@ -108,40 +109,38 @@ function SearchResultCard({
       href={storyHref}
     >
       <Card className="bg-[var(--surface)]/94 transition duration-[var(--motion-fast)] ease-out group-hover:-translate-y-px group-hover:border-[var(--accent)] group-hover:shadow-[var(--shadow-sm)]">
-        <CardHeader className="grid gap-4 md:grid-cols-[minmax(0,1fr)_auto] md:items-start">
-          <div className="grid min-w-0 gap-3">
-            <div className="flex flex-wrap gap-1.5" data-testid="search-result-classification">
-              {result.story.storyCode ? (
-                <Badge className="px-2 py-0.5 text-[10px]" data-testid="search-result-stage-badge" variant="contrast">
-                  {result.story.storyCode}
-                </Badge>
-              ) : null}
-              {result.story.avgTag ? (
-                <Badge className="px-2 py-0.5 text-[10px]" data-testid="search-result-phase-badge" variant="accent">
-                  {result.story.avgTag}
-                </Badge>
-              ) : null}
-            </div>
-            <div className="grid gap-1.5">
-              <CardTitle className="break-words text-2xl [overflow-wrap:anywhere]">
-                {result.story.title}
-              </CardTitle>
-              <p className="break-words text-sm text-[var(--text-muted)]">
-                {result.story.groupTitle}
-              </p>
-            </div>
+        <CardHeader className="grid gap-4 px-5 py-4 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-start">
+          <div className="grid min-w-0 gap-1" data-testid="search-result-title-block">
+            <CardTitle className="break-words text-xl [overflow-wrap:anywhere] md:text-2xl">
+              {result.story.title}
+            </CardTitle>
+            <p className="break-words text-sm text-[var(--text-muted)]">
+              {result.story.groupTitle}
+            </p>
+            <StoryClassificationBadges
+              avgTag={result.story.avgTag}
+              className="mt-1"
+              compact
+              phaseTestId="search-result-phase-badge"
+              stageTestId="search-result-stage-badge"
+              storyCode={result.story.storyCode}
+              testId="search-result-classification"
+            />
           </div>
-          <div className="flex shrink-0 items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)] md:justify-end">
+          <div
+            className="flex shrink-0 flex-wrap items-start gap-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)] sm:justify-end"
+            data-testid="search-result-metrics"
+          >
             <span className="rounded-[var(--radius-sm)] border border-[var(--border)] bg-[var(--surface-muted)] px-2.5 py-1">
               {formatMetric(result.story.visibleCharacterCount)} chars
             </span>
             <span className="rounded-[var(--radius-sm)] border border-[var(--border)] bg-[var(--surface-muted)] px-2.5 py-1">
               약 {formatMetric(result.story.estimatedMinutes)}분
             </span>
-            <ArrowUpRight aria-hidden="true" className="h-4 w-4 text-[var(--accent-strong)]" />
+            <ArrowUpRight aria-hidden="true" className="mt-1 h-4 w-4 text-[var(--accent-strong)]" />
           </div>
         </CardHeader>
-        <CardContent className="px-6 pb-6">
+        <CardContent className="px-5 pb-5">
           <p
             className="rounded-[var(--radius-md)] border border-[var(--border)] bg-[var(--panel)] px-4 py-3 text-sm leading-7 text-[var(--text)]"
             data-testid="search-result-line"
@@ -251,18 +250,18 @@ export function SearchOverview() {
               </h1>
             </div>
           </div>
-          <form className="relative" data-testid="search-form" onSubmit={handleSubmit}>
+          <form className="relative mx-auto w-full max-w-[500px] sm:w-[500px]" data-testid="search-form" onSubmit={handleSubmit}>
             <label className="sr-only" htmlFor="story-search-input">
               스토리 검색
             </label>
             <Search
               aria-hidden="true"
-              className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-[var(--text-muted)]"
+              className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-[var(--text-muted)]"
             />
             <input
               autoComplete="off"
               autoFocus
-              className="h-14 w-full rounded-[var(--radius-md)] border border-[var(--border)] bg-[var(--surface)]/92 px-11 text-base font-semibold text-[var(--text)] shadow-[var(--shadow-sm)] outline-none transition focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--ring)]"
+              className="h-12 w-full rounded-[var(--radius-md)] border border-[var(--border)] bg-[var(--surface)]/92 pl-10 pr-4 text-sm font-semibold text-[var(--text)] shadow-[var(--shadow-sm)] outline-none transition focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--ring)] [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-decoration]:hidden"
               data-testid="search-input"
               id="story-search-input"
               onChange={(event) =>
@@ -288,11 +287,9 @@ export function SearchOverview() {
             </CardContent>
           </Card>
         ) : indexState.status === "loading" ? (
-          <Card className="bg-[var(--surface)]/94" data-testid="search-loading-state">
-            <CardContent className="px-5 py-6 text-sm leading-7 text-[var(--text-muted)]">
-              {localeLabel} 검색 인덱스를 불러오는 중입니다.
-            </CardContent>
-          </Card>
+          <div data-testid="search-loading-state">
+            <LoadingStateCard label={`${localeLabel} 검색 인덱스 로딩 중`} />
+          </div>
         ) : indexState.status === "error" ? (
           <Card className="bg-[var(--surface)]/94" data-testid="search-error-state">
             <CardContent className="px-5 py-6 text-sm leading-7 text-[var(--text-muted)]">
@@ -319,7 +316,10 @@ export function SearchOverview() {
               </span>
               <span>{localeLabel}</span>
             </div>
-            <div className="grid gap-4" data-testid="search-results-list">
+            <div
+              className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,34rem),1fr))] gap-4"
+              data-testid="search-results-list"
+            >
               {visibleResults.map((result) => (
                 <SearchResultCard
                   key={result.story.storyId}
@@ -330,11 +330,11 @@ export function SearchOverview() {
             </div>
             {hasMoreResults ? (
               <div
-                className="py-4 text-center text-xs font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)]"
+                className="flex justify-center py-4"
                 data-testid="search-results-sentinel"
                 ref={loadMoreRef}
               >
-                더 불러오는 중
+                <LoadingIndicator label="검색 결과 추가 로딩 중" />
               </div>
             ) : null}
           </>
