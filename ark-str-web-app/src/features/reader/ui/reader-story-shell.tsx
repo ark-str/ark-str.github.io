@@ -2,12 +2,13 @@
 
 import { useCallback, useEffect, useEffectEvent, useId, useMemo, useRef, useState, type ReactNode } from "react";
 import Link from "next/link";
-import { ArrowUp, ChevronDown } from "lucide-react";
+import { ArrowUp, ChevronDown, NotebookPen, X } from "lucide-react";
 import { ReaderPageFrame } from "@/components/layout/reader-page-frame";
 import type { FloatingAppBarModel } from "@/components/layout/types";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { persistCharacterObservations } from "@/features/characters/runtime/persist-character-observations";
 import {
@@ -40,6 +41,7 @@ import type {
 } from "@/features/content/types";
 import { interpolateStoryText } from "@/features/reader/service/interpolate-story-text";
 import { useReaderSession } from "@/features/reader/runtime/reader-session-context";
+import { useStoryNotes } from "@/features/notes/runtime/story-notes-context";
 import { cn } from "@/lib/utils";
 
 function formatMetric(value: number) {
@@ -459,6 +461,121 @@ function StoryFloatingTopButton() {
       <ArrowUp className="h-4 w-4" />
       Top
     </Button>
+  );
+}
+
+function StoryNoteDock({
+  groupId,
+  groupTitle,
+  locale,
+  storyId,
+  storyTitle,
+}: {
+  groupId: string;
+  groupTitle: string;
+  locale: ReaderLocale;
+  storyId: string;
+  storyTitle: string;
+}) {
+  const { isHydrated, setStoryNote, state } = useStoryNotes();
+  const [isOpen, setIsOpen] = useState(false);
+  const note = state.notes[storyId] ?? null;
+  const hasNote = Boolean(note);
+  const noteText = note?.text ?? "";
+
+  useEffect(() => {
+    if (!isOpen) {
+      return;
+    }
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setIsOpen(false);
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [isOpen]);
+
+  const handleTextChange = (text: string) => {
+    setStoryNote({
+      groupId,
+      groupTitle,
+      locale,
+      storyId,
+      storyTitle,
+      text,
+    });
+  };
+
+  return (
+    <>
+      <Button
+        aria-label="스토리 메모 열기"
+        className={cn(
+          "fixed bottom-[calc(var(--space-6)+2.75rem)] right-6 z-40 h-11 w-11 rounded-[var(--radius-md)] p-0",
+          hasNote && "border-[var(--accent)] text-[var(--accent-strong)]",
+        )}
+        data-has-note={hasNote ? "true" : "false"}
+        data-testid="story-note-open-button"
+        disabled={!isHydrated}
+        onClick={() => setIsOpen(true)}
+        variant="subtle"
+      >
+        <NotebookPen className="h-4 w-4" />
+      </Button>
+
+      {isOpen ? (
+        <div data-testid="story-note-layer">
+          <button
+            aria-label="스토리 메모 닫기"
+            className="fixed inset-0 z-[60] cursor-default bg-[color-mix(in_srgb,var(--bg)_56%,transparent)]"
+            data-testid="story-note-backdrop"
+            onClick={() => setIsOpen(false)}
+            type="button"
+          />
+          <aside
+            aria-label="스토리 메모"
+            className="fixed inset-x-0 bottom-0 z-[70] flex max-h-[82vh] flex-col rounded-t-[var(--radius-xl)] border border-[var(--border)] bg-[var(--surface)] shadow-[var(--shadow-lg)] md:inset-y-0 md:left-auto md:right-0 md:h-full md:max-h-none md:w-[28rem] md:rounded-none md:border-y-0 md:border-l md:border-r-0"
+            data-testid="story-note-panel"
+          >
+            <div className="mx-auto mt-3 h-1 w-12 rounded-[999px] bg-[var(--border)] md:hidden" />
+            <header className="flex items-start justify-between gap-4 border-b border-[var(--border)] px-5 py-4">
+              <div className="min-w-0">
+                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--accent-strong)]">
+                  Memo
+                </p>
+                <h2 className="mt-1 truncate text-lg font-semibold tracking-[-0.02em] text-[var(--text)]">
+                  {storyTitle}
+                </h2>
+                <p className="mt-1 truncate text-xs text-[var(--text-muted)]">{groupTitle}</p>
+              </div>
+              <Button
+                aria-label="스토리 메모 닫기"
+                className="h-9 w-9 shrink-0 rounded-[var(--radius-sm)]"
+                data-testid="story-note-close-button"
+                onClick={() => setIsOpen(false)}
+                size="icon"
+                variant="ghost"
+              >
+                <X className="h-4 w-4" />
+              </Button>
+            </header>
+            <div className="flex min-h-0 flex-1 flex-col gap-3 px-5 py-4">
+              <Textarea
+                autoFocus
+                className="min-h-[18rem] flex-1 resize-none rounded-[var(--radius-md)] shadow-none"
+                data-testid="story-note-textarea"
+                onChange={(event) => handleTextChange(event.target.value)}
+                placeholder="이 story에 남길 메모"
+                value={noteText}
+              />
+            </div>
+          </aside>
+        </div>
+      ) : null}
+    </>
   );
 }
 
@@ -992,6 +1109,13 @@ export function ReaderStoryShell({
       </section>
 
       <StoryFloatingTopButton />
+      <StoryNoteDock
+        groupId={story.groupId}
+        groupTitle={group.title}
+        locale={locale}
+        storyId={story.storyId}
+        storyTitle={story.title}
+      />
     </ReaderPageFrame>
   );
 }

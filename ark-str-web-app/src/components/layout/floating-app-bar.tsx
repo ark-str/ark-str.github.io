@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState, type ChangeEvent } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { ChevronRight, MoonStar, SunMedium } from "lucide-react";
+import { ChevronRight, MoonStar, NotebookText, SunMedium } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import { Select } from "@/components/ui/select";
 import { cn } from "@/lib/utils";
@@ -216,6 +216,17 @@ export function FloatingAppBar({ model }: FloatingAppBarProps) {
               ))}
             </Select>
           </div>
+          <Link
+            aria-label="메모 모아보기"
+            className={cn(
+              buttonVariants({ size: "icon", variant: "subtle" }),
+              "h-9 w-9 rounded-[var(--radius-sm)]",
+            )}
+            data-testid="notes-overview-link"
+            href="/notes"
+          >
+            <NotebookText className="h-4 w-4" />
+          </Link>
           <button
             aria-label={isDarkTheme ? "라이트 테마로 변경" : "다크 테마로 변경"}
             className={cn(
