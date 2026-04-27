@@ -5,8 +5,9 @@ import Link from "next/link";
 import { ArrowUpRight, NotebookText } from "lucide-react";
 import { ReaderPageFrame } from "@/components/layout/reader-page-frame";
 import type { FloatingAppBarModel } from "@/components/layout/types";
-import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { LoadingStateCard } from "@/components/ui/loading-indicator";
+import { StoryClassificationBadges } from "@/components/ui/story-classification-badges";
 import { Textarea } from "@/components/ui/textarea";
 import {
   CANONICAL_READER_LOCALES,
@@ -103,28 +104,15 @@ function NoteOverviewCard({
           <p className="break-words text-sm text-[var(--text-muted)]" data-testid="note-group-title">
             {note.groupTitle}
           </p>
-          {storyEntry?.storyCode || storyEntry?.avgTag ? (
-            <div className="mt-1 flex flex-wrap gap-1.5" data-testid="note-classification-badges">
-              {storyEntry.storyCode ? (
-                <Badge
-                  className="px-2 py-0.5 text-[10px] tracking-[0.12em]"
-                  data-testid="note-stage-badge"
-                  variant="contrast"
-                >
-                  {storyEntry.storyCode}
-                </Badge>
-              ) : null}
-              {storyEntry.avgTag ? (
-                <Badge
-                  className="px-2 py-0.5 text-[10px] tracking-[0.12em]"
-                  data-testid="note-phase-badge"
-                  variant="accent"
-                >
-                  {storyEntry.avgTag}
-                </Badge>
-              ) : null}
-            </div>
-          ) : null}
+          <StoryClassificationBadges
+            avgTag={storyEntry?.avgTag}
+            className="mt-1"
+            compact
+            phaseTestId="note-phase-badge"
+            stageTestId="note-stage-badge"
+            storyCode={storyEntry?.storyCode}
+            testId="note-classification-badges"
+          />
         </div>
         <div className="shrink-0">
           {storyHref ? (
@@ -191,11 +179,7 @@ export function NotesOverview() {
     >
       <section className="relative z-10 grid gap-4" data-testid="notes-overview">
         {!isHydrated ? (
-          <Card className="bg-[var(--surface)]/94">
-            <CardContent className="px-5 py-6 text-sm leading-7 text-[var(--text-muted)]">
-              메모를 불러오는 중입니다.
-            </CardContent>
-          </Card>
+          <LoadingStateCard label="메모 로딩 중" />
         ) : notes.length === 0 ? (
           <Card className="bg-[var(--surface)]/94" data-testid="notes-empty-state">
             <CardContent className="px-5 py-6 text-sm leading-7 text-[var(--text-muted)]">

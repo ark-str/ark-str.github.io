@@ -1,10 +1,12 @@
 "use client";
 
 import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 import { ReaderPageFrame } from "@/components/layout/reader-page-frame";
 import type { FloatingAppBarModel } from "@/components/layout/types";
-import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { LoadingStateCard } from "@/components/ui/loading-indicator";
+import { StoryClassificationBadges } from "@/components/ui/story-classification-badges";
 import {
   CANONICAL_READER_LOCALES,
   READER_LOCALE_LABELS,
@@ -47,26 +49,6 @@ function getFlowCardImageClassName(backgroundImageAspect: ContentGroupEntry["bac
   return backgroundImageAspect === "square"
     ? "absolute inset-0 h-full w-full object-contain object-center p-5 opacity-75 blur-[0.5px]"
     : "absolute inset-0 h-full w-full scale-110 object-cover object-center opacity-70 blur-[1px]";
-}
-
-function ArrowUpRightIcon() {
-  return (
-    <svg
-      aria-hidden="true"
-      className="h-3.5 w-3.5 shrink-0"
-      fill="none"
-      viewBox="0 0 16 16"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M4.25 11.75 11.5 4.5m0 0H5.75m5.75 0v5.75"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="1.7"
-      />
-    </svg>
-  );
 }
 
 type GroupWithAssets = ContentGroupEntry & {
@@ -179,9 +161,11 @@ function buildGroupFlowItems({
 
 function ReaderGroupStatus({
   appBar,
+  isLoading = false,
   message,
 }: {
   appBar: FloatingAppBarModel;
+  isLoading?: boolean;
   message: string;
 }) {
   return (
@@ -189,11 +173,15 @@ function ReaderGroupStatus({
       appBar={appBar}
       header={
         <section>
-          <Card className="bg-[var(--surface)]/90">
-            <CardContent className="px-5 py-6 text-sm leading-7 text-[var(--text-muted)]">
-              {message}
-            </CardContent>
-          </Card>
+          {isLoading ? (
+            <LoadingStateCard className="bg-[var(--surface)]/90" label={message} />
+          ) : (
+            <Card className="bg-[var(--surface)]/90">
+              <CardContent className="px-5 py-6 text-sm leading-7 text-[var(--text-muted)]">
+                {message}
+              </CardContent>
+            </Card>
+          )}
         </section>
       }
       testId="group-shell"
@@ -210,7 +198,7 @@ export function ReaderGroupOverview({ groupId, locale }: { groupId: string; loca
   const appBar = createGroupAppBar({ group, groupId, index, locale });
 
   if (indexState.status === "loading" || indexState.status === "idle") {
-    return <ReaderGroupStatus appBar={appBar} message="generated content index를 불러오는 중입니다." />;
+    return <ReaderGroupStatus appBar={appBar} isLoading message="generated content index 로딩 중" />;
   }
 
   if (indexState.status === "error") {
@@ -347,7 +335,7 @@ export function ReaderGroupOverview({ groupId, locale }: { groupId: string; loca
                 data-testid="group-flow-card-title"
               >
                 {item.displayTitle}
-                {item.role === "reference" ? <ArrowUpRightIcon /> : null}
+                {item.role === "reference" ? <ArrowUpRight aria-hidden="true" className="h-3.5 w-3.5 shrink-0" /> : null}
               </span>
             </Link>
           ))}
@@ -366,8 +354,11 @@ export function ReaderGroupOverview({ groupId, locale }: { groupId: string; loca
               <CardHeader className="grid gap-4 md:grid-cols-[minmax(0,1fr)_auto] md:items-end">
                 <div className="grid gap-3">
                   <div className="flex flex-wrap items-center gap-2">
-                    {story.storyCode ? <Badge variant="default">{story.storyCode}</Badge> : null}
-                    {story.avgTag ? <Badge variant="default">{story.avgTag}</Badge> : null}
+                    <StoryClassificationBadges
+                      avgTag={story.avgTag}
+                      storyCode={story.storyCode}
+                      testId="group-story-classification"
+                    />
                   </div>
                   <div className="grid gap-1">
                     <CardTitle className="text-3xl">{story.title}</CardTitle>

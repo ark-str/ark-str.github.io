@@ -7,7 +7,9 @@ import { ReaderPageFrame } from "@/components/layout/reader-page-frame";
 import type { FloatingAppBarModel } from "@/components/layout/types";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { LoadingStateCard } from "@/components/ui/loading-indicator";
 import { Separator } from "@/components/ui/separator";
+import { StoryClassificationBadges as SharedStoryClassificationBadges } from "@/components/ui/story-classification-badges";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { persistCharacterObservations } from "@/features/characters/runtime/persist-character-observations";
@@ -50,36 +52,12 @@ function formatMetric(value: number) {
 
 function StoryClassificationBadges({
   compact = false,
-  phaseTone = "auto",
   story,
 }: {
   compact?: boolean;
-  phaseTone?: "accent" | "auto";
   story: ContentStoryIndexEntry;
 }) {
-  const storyCode = story.storyCode?.trim();
-  const avgTag = story.avgTag?.trim();
-  const badgeClassName = compact ? "px-2 py-0.5 text-[10px] tracking-[0.12em]" : undefined;
-  const phaseVariant = phaseTone === "accent" || avgTag === "브릿지" ? "accent" : "default";
-
-  return (
-    <>
-      {storyCode ? (
-        <Badge className={badgeClassName} data-testid="story-stage-badge" variant="contrast">
-          {storyCode}
-        </Badge>
-      ) : null}
-      {avgTag ? (
-        <Badge
-          className={badgeClassName}
-          data-testid="story-phase-badge"
-          variant={phaseVariant}
-        >
-          {avgTag}
-        </Badge>
-      ) : null}
-    </>
-  );
+  return <SharedStoryClassificationBadges avgTag={story.avgTag} compact={compact} storyCode={story.storyCode} />;
 }
 
 function StoryMetricBadge({ children, compact = false }: { children: ReactNode; compact?: boolean }) {
@@ -309,9 +287,11 @@ function createStoryAppBar({
 
 function ReaderStoryStatus({
   appBar,
+  isLoading = false,
   message,
 }: {
   appBar: FloatingAppBarModel;
+  isLoading?: boolean;
   message: string;
 }) {
   return (
@@ -319,11 +299,15 @@ function ReaderStoryStatus({
       appBar={appBar}
       header={
         <section className="relative z-10">
-          <Card className="bg-[var(--surface)]/90">
-            <CardContent className="px-5 py-6 text-sm leading-7 text-[var(--text-muted)]">
-              {message}
-            </CardContent>
-          </Card>
+          {isLoading ? (
+            <LoadingStateCard className="bg-[var(--surface)]/90" label={message} />
+          ) : (
+            <Card className="bg-[var(--surface)]/90">
+              <CardContent className="px-5 py-6 text-sm leading-7 text-[var(--text-muted)]">
+                {message}
+              </CardContent>
+            </Card>
+          )}
         </section>
       }
       testId="reader-shell"
@@ -968,7 +952,7 @@ export function ReaderStoryShell({
   const activeBackgroundPath = activeBackgroundId ? (backgroundPaths[activeBackgroundId] ?? null) : null;
 
   if (isIndexLoading) {
-    return <ReaderStoryStatus appBar={appBar} message="generated content index를 불러오는 중입니다." />;
+    return <ReaderStoryStatus appBar={appBar} isLoading message="generated content index 로딩 중" />;
   }
 
   if (indexState.status === "error") {
@@ -1051,7 +1035,7 @@ export function ReaderStoryShell({
                     >
                       <span className="block font-semibold leading-5">{entry.title}</span>
                       <span className="flex flex-wrap gap-1.5" data-testid="story-sibling-classification">
-                        <StoryClassificationBadges compact phaseTone="accent" story={entry} />
+                        <StoryClassificationBadges compact story={entry} />
                       </span>
                       <span className="flex flex-wrap gap-1.5" data-testid="story-sibling-metrics">
                         <StoryMetricBadge compact>
@@ -1077,11 +1061,7 @@ export function ReaderStoryShell({
                 portraitPaths={portraitPaths}
               />
             ) : isBodyLoading ? (
-              <Card className="bg-[var(--surface)]/90">
-                <CardContent className="pt-6 text-sm leading-7 text-[var(--text-muted)]">
-                  generated story body와 asset manifest를 불러오는 중입니다.
-                </CardContent>
-              </Card>
+              <LoadingStateCard className="bg-[var(--surface)]/90" label="스토리 본문 로딩 중" />
             ) : detailState.status === "error" ? (
               <Card className="bg-[var(--surface)]/90">
                 <CardContent className="pt-6 text-sm leading-7 text-[var(--text-muted)]">

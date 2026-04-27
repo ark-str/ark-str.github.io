@@ -6,6 +6,7 @@ import type { FloatingAppBarModel } from "@/components/layout/types";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardTitle } from "@/components/ui/card";
 import { DisclosureCard } from "@/components/ui/disclosure-card";
+import { LoadingStateCard } from "@/components/ui/loading-indicator";
 import {
   CANONICAL_READER_LOCALES,
   READER_LOCALE_LABELS,
@@ -243,11 +244,7 @@ export function ReaderLocaleArchive({ locale }: { locale: ReaderLocale }) {
       ) : null}
 
       {indexState.status === "loading" || indexState.status === "idle" ? (
-        <Card className="bg-[var(--surface)]/90">
-          <CardContent className="px-5 py-6 text-sm leading-7 text-[var(--text-muted)]">
-            generated content index를 불러오는 중입니다.
-          </CardContent>
-        </Card>
+        <LoadingStateCard className="bg-[var(--surface)]/90" label="generated content index 로딩 중" />
       ) : null}
 
       {indexState.status === "error" ? (

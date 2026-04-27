@@ -586,6 +586,24 @@ test.describe("reader shell smoke", () => {
     );
     await expect(sampleStoryCard).toBeVisible();
     await expect(sampleStoryCard.getByTestId("group-story-metrics")).toContainText("chars");
+    if (sampleStory.storyCode) {
+      await expect(sampleStoryCard.getByTestId("story-stage-badge")).toContainText(sampleStory.storyCode);
+    }
+    if (sampleStory.avgTag) {
+      await expect(sampleStoryCard.getByTestId("story-phase-badge")).toContainText(sampleStory.avgTag);
+      const groupStoryPhaseBadgeBorderColor = await sampleStoryCard
+        .getByTestId("story-phase-badge")
+        .evaluate((node) => window.getComputedStyle(node).borderTopColor);
+      const accentBorderColor = await page.evaluate(() => {
+        const probe = document.createElement("span");
+        probe.style.color = "var(--accent)";
+        document.body.append(probe);
+        const color = window.getComputedStyle(probe).color;
+        probe.remove();
+        return color;
+      });
+      expect(groupStoryPhaseBadgeBorderColor).toBe(accentBorderColor);
+    }
     await expect(sampleStoryCard).not.toContainText(sampleStory.storyId);
     await expect(page.getByTestId("group-shell")).not.toContainText("Open story");
     await expect(page.getByTestId("group-shell")).not.toContainText("Bundled body ready");
@@ -850,7 +868,10 @@ test.describe("reader shell smoke", () => {
         `/ark-str/reader/${sampleAlternateLocaleStory.server}/${sampleAlternateLocaleStory.groupId}/${sampleAlternateLocaleStory.storyId}/$`,
       ),
     );
+    await expect(page.getByTestId("reader-shell")).toBeVisible();
+    await expect(page.getByTestId("story-note-open-button")).toBeVisible({ timeout: 15_000 });
     await page.evaluate(() => window.scrollTo(0, 1300));
+    await expect.poll(() => page.evaluate(() => window.scrollY)).toBeGreaterThan(720);
     await expect(page.getByTestId("scroll-top-button")).toBeVisible();
     const floatingActionMetrics = await page.evaluate(() => {
       const noteButton = document.querySelector('[data-testid="story-note-open-button"]');
@@ -1129,9 +1150,36 @@ test.describe("reader shell smoke", () => {
     await expect(page).toHaveURL(/\/ark-str\/search\/$/);
     await expect(page.getByTestId("search-shell")).toBeVisible();
     await expect(page.getByTestId("search-empty-state")).toBeVisible();
+    const searchFormMetrics = await page.getByTestId("search-form").evaluate((node) => {
+      const input = node.querySelector<HTMLInputElement>('[data-testid="search-input"]');
+      const icon = node.querySelector("svg");
+
+      if (!input || !icon) {
+        throw new Error("Search input layout targets were not found.");
+      }
+
+      const formRect = node.getBoundingClientRect();
+      const inputRect = input.getBoundingClientRect();
+      const iconRect = icon.getBoundingClientRect();
+
+      return {
+        formCenter: Math.round(formRect.left + formRect.width / 2),
+        iconCenter: Math.round(iconRect.top + iconRect.height / 2),
+        inputCenter: Math.round(inputRect.top + inputRect.height / 2),
+        inputLeftGap: Math.round(iconRect.left - inputRect.left),
+        viewportCenter: Math.round(window.innerWidth / 2),
+        width: Math.round(formRect.width),
+      };
+    });
+    expect(searchFormMetrics.width).toBeGreaterThanOrEqual(496);
+    expect(searchFormMetrics.width).toBeLessThanOrEqual(500);
+    expect(Math.abs(searchFormMetrics.formCenter - searchFormMetrics.viewportCenter)).toBeLessThanOrEqual(1);
+    expect(Math.abs(searchFormMetrics.iconCenter - searchFormMetrics.inputCenter)).toBeLessThanOrEqual(1);
+    expect(searchFormMetrics.inputLeftGap).toBeGreaterThanOrEqual(12);
     await page.getByTestId("search-input").fill(sampleSearchQuery);
     await expect.poll(() => new URL(page.url()).searchParams.get("q")).toBe(sampleSearchQuery);
     await expect(page.getByTestId("search-results-list")).toBeVisible({ timeout: 15_000 });
+    await expect(page.getByTestId("search-results-list")).toHaveCSS("display", "grid");
     await expect(page.getByTestId("search-result-highlight").first()).toContainText(sampleSearchQuery);
 
     await page.goto(toAppPath(`search?q=${encodeURIComponent(broadSearchQuery)}`));
@@ -1143,6 +1191,8 @@ test.describe("reader shell smoke", () => {
     const initialRenderedSearchCards = await page.getByTestId("search-result-card").count();
     expect(initialRenderedSearchCards).toBeGreaterThanOrEqual(40);
     if (initialRenderedSearchCards < broadSearchResultCount) {
+      await expect(page.getByTestId("search-results-sentinel").getByTestId("loading-indicator")).toBeVisible();
+      await expect(page.getByTestId("search-results-sentinel")).not.toContainText("더 불러오는 중");
       await page.getByTestId("search-results-sentinel").scrollIntoViewIfNeeded();
       await expect.poll(() => page.getByTestId("search-result-card").count()).toBeGreaterThan(
         initialRenderedSearchCards,
@@ -1157,6 +1207,51 @@ test.describe("reader shell smoke", () => {
       `/ark-str/reader/kr/${sampleSearchStory.groupId}/${sampleSearchStory.storyId}/`,
     );
     await expect(firstSearchResult.getByTestId("search-result-line")).toBeVisible();
+    await expect(firstSearchResult.getByTestId("search-result-title-block")).toContainText(
+      sampleSearchStory.title,
+    );
+    await expect(firstSearchResult.getByTestId("search-result-title-block")).toContainText(
+      sampleSearchStory.groupTitle,
+    );
+    if (sampleSearchStory.storyCode) {
+      await expect(firstSearchResult.getByTestId("search-result-stage-badge")).toContainText(
+        sampleSearchStory.storyCode,
+      );
+    }
+    if (sampleSearchStory.avgTag) {
+      await expect(firstSearchResult.getByTestId("search-result-phase-badge")).toContainText(
+        sampleSearchStory.avgTag,
+      );
+      const searchPhaseBadgeBorderColor = await firstSearchResult
+        .getByTestId("search-result-phase-badge")
+        .evaluate((node) => window.getComputedStyle(node).borderTopColor);
+      const accentBorderColor = await page.evaluate(() => {
+        const probe = document.createElement("span");
+        probe.style.color = "var(--accent)";
+        document.body.append(probe);
+        const color = window.getComputedStyle(probe).color;
+        probe.remove();
+        return color;
+      });
+      expect(searchPhaseBadgeBorderColor).toBe(accentBorderColor);
+    }
+    const firstSearchResultLayout = await firstSearchResult.evaluate((node) => {
+      const metrics = node.querySelector('[data-testid="search-result-metrics"]');
+      const titleBlock = node.querySelector('[data-testid="search-result-title-block"]');
+
+      if (!metrics || !titleBlock) {
+        throw new Error("Search result layout targets were not found.");
+      }
+
+      const metricsRect = metrics.getBoundingClientRect();
+      const titleRect = titleBlock.getBoundingClientRect();
+
+      return {
+        metricsTop: Math.round(metricsRect.top),
+        titleTop: Math.round(titleRect.top),
+      };
+    });
+    expect(Math.abs(firstSearchResultLayout.metricsTop - firstSearchResultLayout.titleTop)).toBeLessThanOrEqual(2);
     await firstSearchResult.click();
     await expect(page).toHaveURL(
       new RegExp(`/ark-str/reader/kr/${sampleSearchStory.groupId}/${sampleSearchStory.storyId}/$`),
