@@ -29,6 +29,12 @@ const generatedAssets = JSON.parse(
     "utf8",
   ),
 );
+const generatedKoreanSearchIndex = JSON.parse(
+  fs.readFileSync(
+    path.join(process.cwd(), "ark-str-web-app", "public", "generated", "content", "search", "kr.json"),
+    "utf8",
+  ),
+);
 
 function readStoryDetail(story: { bodyPath?: string | null }) {
   if (!story.bodyPath) {
@@ -216,6 +222,14 @@ const sampleSummaryText = sampleStorySelection.detail.summaryText;
 const sampleBackgroundStory = resolveBackgroundStory();
 const sampleBackgroundIds = sampleBackgroundStory.backgroundIds;
 const sampleBackgroundStoryEntry = sampleBackgroundStory.story;
+const sampleSearchQuery = "로도스";
+const sampleSearchStory = generatedKoreanSearchIndex.stories.find(
+  (story: { text: string }) => story.text.includes(sampleSearchQuery),
+);
+const broadSearchQuery = "W";
+const broadSearchResultCount = generatedKoreanSearchIndex.stories.filter((story: { text: string }) =>
+  story.text.toLocaleLowerCase().includes(broadSearchQuery.toLocaleLowerCase()),
+).length;
 const koreanFeaturedStory = generatedIndex.stories.find(
   (story: { server: string }) => story.server === "kr",
 );
@@ -279,6 +293,14 @@ if (!koreanCapitalNicknameStory) {
 
 if (!sampleSummaryText) {
   throw new Error("The sample reader story must include generated summary text.");
+}
+
+if (!sampleSearchStory) {
+  throw new Error("The Korean search index must include a story matching the sample search query.");
+}
+
+if (broadSearchResultCount <= 40) {
+  throw new Error("The Korean search index must include enough broad-query results for incremental rendering.");
 }
 
 function toAppPath(route = "") {
@@ -955,6 +977,8 @@ test.describe("reader shell smoke", () => {
     await expect(appBar).toHaveCSS("border-top-left-radius", "0px");
     await expect(appBar.getByTestId("app-home-icon")).toBeVisible();
     await expect(appBar.getByTestId("theme-toggle")).toHaveText("");
+    await expect(appBar.getByTestId("search-overview-link")).toHaveText("");
+    await expect(appBar.getByTestId("search-overview-link")).toHaveAttribute("href", "/ark-str/search/");
     await expect(appBar.getByTestId("notes-overview-link")).toHaveText("");
     await expect(appBar.getByTestId("notes-overview-link")).toHaveAttribute("href", "/ark-str/notes/");
     const appBarControlSizes = await appBar.evaluate((node, groupTitle) => {
@@ -963,6 +987,7 @@ test.describe("reader shell smoke", () => {
         (item) => item.textContent?.trim() === "스토리",
       );
       const themeToggle = node.querySelector('[data-testid="theme-toggle"]');
+      const searchControl = node.querySelector('[data-testid="search-overview-link"]');
       const notesControl = node.querySelector('[data-testid="notes-overview-link"]');
       const homeIcon = node.querySelector<HTMLImageElement>('[data-testid="app-home-icon"]');
       const localeSelect = node.querySelector('[data-testid="locale-select"]');
@@ -975,6 +1000,7 @@ test.describe("reader shell smoke", () => {
         !homeControl ||
         !storyRootControl ||
         !themeToggle ||
+        !searchControl ||
         !notesControl ||
         !homeIcon ||
         !localeSelect ||
@@ -987,6 +1013,7 @@ test.describe("reader shell smoke", () => {
       const homeRect = homeControl.getBoundingClientRect();
       const storyRootRect = storyRootControl.getBoundingClientRect();
       const themeRect = themeToggle.getBoundingClientRect();
+      const searchRect = searchControl.getBoundingClientRect();
       const notesRect = notesControl.getBoundingClientRect();
       const iconRect = homeIcon.getBoundingClientRect();
       const homeStyles = window.getComputedStyle(homeControl);
@@ -996,6 +1023,7 @@ test.describe("reader shell smoke", () => {
       const storySelectRect = storySelect.getBoundingClientRect();
       const storySelectStyles = window.getComputedStyle(storySelect);
       const themeStyles = window.getComputedStyle(themeToggle);
+      const searchStyles = window.getComputedStyle(searchControl);
       const notesStyles = window.getComputedStyle(notesControl);
 
       return {
@@ -1016,6 +1044,12 @@ test.describe("reader shell smoke", () => {
         notesRadius: notesStyles.borderTopLeftRadius,
         notesRight: Math.round(notesRect.right),
         notesWidth: Math.round(notesRect.width),
+        searchBackgroundColor: searchStyles.backgroundColor,
+        searchHeight: Math.round(searchRect.height),
+        searchLeft: Math.round(searchRect.left),
+        searchRadius: searchStyles.borderTopLeftRadius,
+        searchRight: Math.round(searchRect.right),
+        searchWidth: Math.round(searchRect.width),
         storyRootHeight: Math.round(storyRootRect.height),
         storyRootRadius: storyRootStyles.borderTopLeftRadius,
         storySelectFontSize: window.getComputedStyle(storySelect).fontSize,
@@ -1029,23 +1063,28 @@ test.describe("reader shell smoke", () => {
       };
     }, sampleStoryGroup.title);
     expect(appBarControlSizes.homeHeight).toBe(appBarControlSizes.themeHeight);
+    expect(appBarControlSizes.searchHeight).toBe(appBarControlSizes.themeHeight);
     expect(appBarControlSizes.notesHeight).toBe(appBarControlSizes.themeHeight);
     expect(appBarControlSizes.homeHeight).toBe(appBarControlSizes.storyRootHeight);
     expect(appBarControlSizes.localeHeight).toBe(appBarControlSizes.storyRootHeight);
     expect(appBarControlSizes.storySelectHeight).toBe(appBarControlSizes.storyRootHeight);
     expect(appBarControlSizes.homeWidth).toBe(appBarControlSizes.themeWidth);
+    expect(appBarControlSizes.searchWidth).toBe(appBarControlSizes.themeWidth);
     expect(appBarControlSizes.notesWidth).toBe(appBarControlSizes.themeWidth);
     expect(appBarControlSizes.homeHeight).toBe(36);
     expect(appBarControlSizes.homeRadius).toBe(appBarControlSizes.storyRootRadius);
     expect(appBarControlSizes.themeRadius).toBe(appBarControlSizes.storyRootRadius);
+    expect(appBarControlSizes.searchRadius).toBe(appBarControlSizes.storyRootRadius);
     expect(appBarControlSizes.notesRadius).toBe(appBarControlSizes.storyRootRadius);
     expect(appBarControlSizes.localeRadius).toBe(appBarControlSizes.storyRootRadius);
     expect(appBarControlSizes.storySelectRadius).toBe(appBarControlSizes.storyRootRadius);
     expect(appBarControlSizes.iconHeight).toBeGreaterThanOrEqual(32);
     expect(appBarControlSizes.homeIconSrc).toBe(`${appBasePath}/ark_str_app_icon.png`);
     expect(appBarControlSizes.homeBackgroundColor).toBe(appBarControlSizes.themeBackgroundColor);
+    expect(appBarControlSizes.searchBackgroundColor).toBe(appBarControlSizes.themeBackgroundColor);
     expect(appBarControlSizes.notesBackgroundColor).toBe(appBarControlSizes.themeBackgroundColor);
-    expect(appBarControlSizes.localeRight).toBeLessThanOrEqual(appBarControlSizes.notesLeft);
+    expect(appBarControlSizes.localeRight).toBeLessThanOrEqual(appBarControlSizes.searchLeft);
+    expect(appBarControlSizes.searchRight).toBeLessThanOrEqual(appBarControlSizes.notesLeft);
     expect(appBarControlSizes.notesRight).toBeLessThanOrEqual(appBarControlSizes.themeLeft);
     expect(appBarControlSizes.groupFontSize).toBe("12px");
     expect(appBarControlSizes.localeFontSize).toBe("12px");
@@ -1086,6 +1125,46 @@ test.describe("reader shell smoke", () => {
     });
     await expect(appBar).toHaveAttribute("data-hidden", "false");
 
+    await appBar.getByTestId("search-overview-link").click();
+    await expect(page).toHaveURL(/\/ark-str\/search\/$/);
+    await expect(page.getByTestId("search-shell")).toBeVisible();
+    await expect(page.getByTestId("search-empty-state")).toBeVisible();
+    await page.getByTestId("search-input").fill(sampleSearchQuery);
+    await expect.poll(() => new URL(page.url()).searchParams.get("q")).toBe(sampleSearchQuery);
+    await expect(page.getByTestId("search-results-list")).toBeVisible({ timeout: 15_000 });
+    await expect(page.getByTestId("search-result-highlight").first()).toContainText(sampleSearchQuery);
+
+    await page.goto(toAppPath(`search?q=${encodeURIComponent(broadSearchQuery)}`));
+    await expect(page.getByTestId("search-input")).toHaveValue(broadSearchQuery);
+    await expect(page.getByTestId("search-results-list")).toBeVisible({ timeout: 15_000 });
+    await expect(page.getByTestId("search-results-count")).toHaveText(
+      new Intl.NumberFormat("ko-KR").format(broadSearchResultCount),
+    );
+    const initialRenderedSearchCards = await page.getByTestId("search-result-card").count();
+    expect(initialRenderedSearchCards).toBeGreaterThanOrEqual(40);
+    if (initialRenderedSearchCards < broadSearchResultCount) {
+      await page.getByTestId("search-results-sentinel").scrollIntoViewIfNeeded();
+      await expect.poll(() => page.getByTestId("search-result-card").count()).toBeGreaterThan(
+        initialRenderedSearchCards,
+      );
+    }
+
+    await page.goto(toAppPath(`search?q=${encodeURIComponent(sampleSearchQuery)}`));
+    await expect(page.getByTestId("search-input")).toHaveValue(sampleSearchQuery);
+    const firstSearchResult = page.getByTestId("search-result-card").first();
+    await expect(firstSearchResult).toHaveAttribute(
+      "href",
+      `/ark-str/reader/kr/${sampleSearchStory.groupId}/${sampleSearchStory.storyId}/`,
+    );
+    await expect(firstSearchResult.getByTestId("search-result-line")).toBeVisible();
+    await firstSearchResult.click();
+    await expect(page).toHaveURL(
+      new RegExp(`/ark-str/reader/kr/${sampleSearchStory.groupId}/${sampleSearchStory.storyId}/$`),
+    );
+
+    await page.goto(
+      toAppPath(`reader/${sampleStory.server}/${sampleStory.groupId}/${sampleStory.storyId}`),
+    );
     await appBar.getByRole("link", { name: "스토리" }).click();
     await expect(page).toHaveURL(new RegExp(`/ark-str/reader/${sampleStory.server}/$`));
 

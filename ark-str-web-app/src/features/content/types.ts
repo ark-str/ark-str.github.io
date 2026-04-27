@@ -88,6 +88,24 @@ export type ContentIndex = {
   stories: ContentStoryIndexEntry[];
 };
 
+export type ContentSearchStoryEntry = {
+  storyId: string;
+  groupId: string;
+  groupTitle: string;
+  title: string;
+  storyCode: string | null;
+  avgTag: string | null;
+  visibleCharacterCount: number;
+  estimatedMinutes: number;
+  text: string;
+};
+
+export type ContentSearchLocaleIndex = {
+  generatedAt: string;
+  locale: ReaderLocale;
+  stories: ContentSearchStoryEntry[];
+};
+
 export type SummaryManifestEntry = {
   server: ReaderLocale;
   storyId: string;

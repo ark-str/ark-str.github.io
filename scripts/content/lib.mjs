@@ -177,10 +177,15 @@ export function getGeneratedStoriesRoot(cwd = getRepoRoot()) {
   return path.join(getGeneratedContentRoot(cwd), "stories");
 }
 
+export function getGeneratedSearchRoot(cwd = getRepoRoot()) {
+  return path.join(getGeneratedContentRoot(cwd), "search");
+}
+
 export function getGeneratedFilePaths(cwd = getRepoRoot()) {
   const contentRoot = getGeneratedContentRoot(cwd);
   const statusRoot = getGeneratedStatusRoot(cwd);
   const storiesRoot = getGeneratedStoriesRoot(cwd);
+  const searchRoot = getGeneratedSearchRoot(cwd);
   const appContentRoot = getGeneratedAppContentRoot(cwd);
   const generatedPortraitsRoot = getGeneratedPortraitsRoot(cwd);
   const generatedBackgroundsRoot = getGeneratedBackgroundsRoot(cwd);
@@ -190,6 +195,7 @@ export function getGeneratedFilePaths(cwd = getRepoRoot()) {
     contentRoot,
     statusRoot,
     storiesRoot,
+    searchRoot,
     appContentRoot,
     generatedPortraitsRoot,
     generatedBackgroundsRoot,
@@ -946,6 +952,89 @@ function countVisibleCharactersFromBlocks(blocks) {
   return total;
 }
 
+function collectSearchLinesFromBlocks(blocks, accumulator) {
+  for (const block of blocks ?? []) {
+    if (block?.type === "dialogue") {
+      const speakerName = typeof block.speakerName === "string" ? block.speakerName.trim() : "";
+      const text = typeof block.text === "string" ? block.text.trim() : "";
+      const line = speakerName ? `${speakerName}: ${text}` : text;
+      if (line.length > 0) {
+        accumulator.push(line);
+      }
+      continue;
+    }
+
+    if (block?.type === "narration") {
+      for (const line of String(block.text ?? "").split(/\n+/)) {
+        const trimmedLine = line.trim();
+        if (trimmedLine.length > 0) {
+          accumulator.push(trimmedLine);
+        }
+      }
+      continue;
+    }
+
+    if (block?.type === "choice") {
+      for (const option of block.options ?? []) {
+        const label = typeof option.label === "string" ? option.label.trim() : "";
+        if (label.length > 0) {
+          accumulator.push(label);
+        }
+        collectSearchLinesFromBlocks(option.blocks, accumulator);
+      }
+    }
+  }
+}
+
+function buildSearchIndexes({ generatedAt, groupItems, storyItems, storyDetails }) {
+  const groupsByKey = new Map(groupItems.map((group) => [`${group.server}:${group.groupId}`, group]));
+  const detailsByKey = new Map(
+    storyDetails.map((storyDetail) => [`${storyDetail.locale}:${storyDetail.storyId}`, storyDetail.detail]),
+  );
+  const searchIndexes = Object.fromEntries(
+    CANONICAL_READER_LOCALES.map((locale) => [
+      locale,
+      {
+        generatedAt,
+        locale,
+        stories: [],
+      },
+    ]),
+  );
+
+  for (const story of storyItems) {
+    if (!story.bodyAvailable || !CANONICAL_READER_LOCALES.includes(story.server)) {
+      continue;
+    }
+
+    const detail = detailsByKey.get(`${story.server}:${story.storyId}`);
+    if (!detail) {
+      continue;
+    }
+
+    const lines = [];
+    collectSearchLinesFromBlocks(detail.blocks, lines);
+    const text = lines.join("\n");
+    if (text.length === 0) {
+      continue;
+    }
+
+    searchIndexes[story.server].stories.push({
+      storyId: story.storyId,
+      groupId: story.groupId,
+      groupTitle: groupsByKey.get(`${story.server}:${story.groupId}`)?.title ?? story.groupId,
+      title: story.title,
+      storyCode: story.storyCode,
+      avgTag: story.avgTag,
+      visibleCharacterCount: story.visibleCharacterCount,
+      estimatedMinutes: story.estimatedMinutes,
+      text,
+    });
+  }
+
+  return searchIndexes;
+}
+
 function estimateReadingMinutes(visibleCharacterCount) {
   if (!Number.isFinite(visibleCharacterCount) || visibleCharacterCount <= 0) {
     return 0;
@@ -1389,6 +1478,13 @@ export function buildContentArtifacts(
     }
   }
 
+  const searchIndexes = buildSearchIndexes({
+    generatedAt,
+    groupItems,
+    storyDetails,
+    storyItems,
+  });
+
   return {
     index: {
       generatedAt,
@@ -1417,6 +1513,7 @@ export function buildContentArtifacts(
       items: summaryItems,
     },
     storyDetails,
+    searchIndexes,
     portraitPaths,
     backgroundPaths,
     groupBackgroundPaths,
@@ -1430,6 +1527,12 @@ export function loadGeneratedArtifacts(cwd = getRepoRoot()) {
     index: readJson(filePaths.index),
     sourceManifest: readJson(filePaths.sourceManifest),
     summaryManifest: readJson(filePaths.summaryManifest),
+    searchIndexes: Object.fromEntries(
+      CANONICAL_READER_LOCALES.map((locale) => [
+        locale,
+        readJson(path.join(filePaths.searchRoot, `${locale}.json`)),
+      ]),
+    ),
   };
 }
 
@@ -1526,6 +1629,8 @@ export async function writeGeneratedArtifacts(artifacts, cwd = getRepoRoot()) {
   ensureDirectory(filePaths.statusRoot);
   fs.rmSync(filePaths.storiesRoot, { recursive: true, force: true });
   ensureDirectory(filePaths.storiesRoot);
+  fs.rmSync(filePaths.searchRoot, { recursive: true, force: true });
+  ensureDirectory(filePaths.searchRoot);
   fs.rmSync(path.dirname(filePaths.generatedPortraitsRoot), { recursive: true, force: true });
   ensureDirectory(filePaths.generatedPortraitsRoot);
   fs.rmSync(filePaths.generatedBackgroundsRoot, { recursive: true, force: true });
@@ -1551,6 +1656,10 @@ export async function writeGeneratedArtifacts(artifacts, cwd = getRepoRoot()) {
 
   for (const storyDetail of artifacts.storyDetails ?? []) {
     writeJson(path.join(filePaths.contentRoot, storyDetail.filePath), storyDetail.detail);
+  }
+
+  for (const [locale, searchIndex] of Object.entries(artifacts.searchIndexes ?? {})) {
+    writeJson(path.join(filePaths.searchRoot, `${locale}.json`), searchIndex);
   }
 
   for (const [speakerId, publicPath] of Object.entries(artifacts.portraitPaths ?? {})) {

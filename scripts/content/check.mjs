@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import {
   BACKGROUND_IMAGE_OPTIONS,
+  CANONICAL_READER_LOCALES,
   buildContentArtifacts,
   getGeneratedFilePaths,
   getNormalizedBackgroundFileName,
@@ -64,6 +65,31 @@ function collectBackgroundIdsFromBlocks(blocks, accumulator) {
       }
     }
   }
+}
+
+function hasSearchableText(blocks = []) {
+  for (const block of blocks) {
+    if (
+      (block?.type === "dialogue" || block?.type === "narration") &&
+      typeof block.text === "string" &&
+      block.text.trim().length > 0
+    ) {
+      return true;
+    }
+
+    if (block?.type === "choice") {
+      for (const option of block.options ?? []) {
+        if (typeof option.label === "string" && option.label.trim().length > 0) {
+          return true;
+        }
+        if (hasSearchableText(option.blocks ?? [])) {
+          return true;
+        }
+      }
+    }
+  }
+
+  return false;
 }
 
 async function compareLiveArtifacts(generated, live) {
@@ -200,6 +226,18 @@ async function compareLiveArtifacts(generated, live) {
       "Generated portrait manifest does not match live vendor-derived portrait availability",
     );
   }
+
+  for (const locale of CANONICAL_READER_LOCALES) {
+    const generatedSearchIndex = generated.searchIndexes?.[locale];
+    const liveSearchIndex = live.searchIndexes?.[locale];
+    invariant(generatedSearchIndex, `Missing generated search index for ${locale}`);
+    invariant(liveSearchIndex, `Missing live search index for ${locale}`);
+    invariant(generatedSearchIndex.locale === locale, `Generated search index locale mismatch for ${locale}`);
+    invariant(
+      JSON.stringify(generatedSearchIndex.stories) === JSON.stringify(liveSearchIndex.stories),
+      `Generated search index drift detected for ${locale}`,
+    );
+  }
 }
 
 function validateGeneratedArtifacts(generated) {
@@ -217,6 +255,7 @@ function validateGeneratedArtifacts(generated) {
   invariant(fs.existsSync(filePaths.assetManifest), "published assets.json is missing");
   invariant(fs.existsSync(filePaths.appAssetManifest), "app-generated assets.json is missing");
   invariant(fs.existsSync(filePaths.appRegistry), "app-generated registry.js is missing");
+  invariant(fs.existsSync(filePaths.searchRoot), "published search index directory is missing");
   invariant(
     !fs.existsSync(path.join(filePaths.appContentRoot, "stories")),
     "app-generated story mirror directory must not exist",
@@ -336,6 +375,39 @@ function validateGeneratedArtifacts(generated) {
   }
 
   const groupMap = new Map(generated.index.groups.map((group) => [`${group.server}:${group.groupId}`, group]));
+  const searchStoryKeys = new Set();
+
+  for (const locale of CANONICAL_READER_LOCALES) {
+    const searchFilePath = path.join(filePaths.searchRoot, `${locale}.json`);
+    invariant(fs.existsSync(searchFilePath), `published search index is missing for ${locale}`);
+
+    const searchIndex = generated.searchIndexes?.[locale] ?? JSON.parse(fs.readFileSync(searchFilePath, "utf8"));
+    invariant(searchIndex.locale === locale, `search index locale mismatch for ${locale}`);
+    invariant(typeof searchIndex.generatedAt === "string", `search index generatedAt must be present for ${locale}`);
+    invariant(Array.isArray(searchIndex.stories), `search index stories must be an array for ${locale}`);
+
+    for (const searchStory of searchIndex.stories) {
+      const key = `${locale}:${searchStory.storyId}`;
+      const story = storyMap.get(key);
+      const group = groupMap.get(`${locale}:${searchStory.groupId}`);
+      invariant(story, `search index story is missing from index stories: ${key}`);
+      invariant(group, `search index story references missing group: ${locale}:${searchStory.groupId}`);
+      invariant(story.bodyAvailable, `search index story must have a generated body: ${key}`);
+      invariant(searchStory.groupId === story.groupId, `search index groupId mismatch for ${key}`);
+      invariant(searchStory.groupTitle === group.title, `search index groupTitle mismatch for ${key}`);
+      invariant(searchStory.title === story.title, `search index title mismatch for ${key}`);
+      invariant(searchStory.storyCode === story.storyCode, `search index storyCode mismatch for ${key}`);
+      invariant(searchStory.avgTag === story.avgTag, `search index avgTag mismatch for ${key}`);
+      invariant(
+        searchStory.visibleCharacterCount === story.visibleCharacterCount,
+        `search index visibleCharacterCount mismatch for ${key}`,
+      );
+      invariant(searchStory.estimatedMinutes === story.estimatedMinutes, `search index estimatedMinutes mismatch for ${key}`);
+      invariant(typeof searchStory.text === "string" && searchStory.text.trim().length > 0, `search index text is empty for ${key}`);
+      searchStoryKeys.add(key);
+    }
+  }
+
   const primaryGroupMembership = new Map();
 
   for (const storyline of generated.index.storylines) {
@@ -463,6 +535,12 @@ function validateGeneratedArtifacts(generated) {
       Array.isArray(body.observedOperators),
       `story detail observedOperators must be an array for ${story.server}:${story.storyId}`,
     );
+    if (hasSearchableText(body.blocks)) {
+      invariant(
+        searchStoryKeys.has(`${story.server}:${story.storyId}`),
+        `story detail with searchable text is missing from search index for ${story.server}:${story.storyId}`,
+      );
+    }
 
     for (const block of body.blocks) {
       if (block?.type !== "dialogue") {

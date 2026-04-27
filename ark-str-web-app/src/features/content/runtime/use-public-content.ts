@@ -1,10 +1,18 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import type { AssetManifest, ContentIndex, StoryDetail, SummaryManifest } from "@/features/content/types";
+import type {
+  AssetManifest,
+  ContentIndex,
+  ContentSearchLocaleIndex,
+  ReaderLocale,
+  StoryDetail,
+  SummaryManifest,
+} from "@/features/content/types";
 import {
   fetchAssetManifest,
   fetchContentIndex,
+  fetchSearchIndex,
   fetchStoryDetail,
   fetchSummaryManifest,
   resolveRuntimePublicPath,
@@ -28,6 +36,7 @@ const assetCache: { value: AssetManifest | null; promise: Promise<AssetManifest>
   promise: null,
 };
 const storyDetailCache = new Map<string, Promise<StoryDetail>>();
+const searchIndexCache = new Map<ReaderLocale, Promise<ContentSearchLocaleIndex>>();
 
 function loadContentIndex() {
   if (indexCache.value) {
@@ -74,6 +83,17 @@ function loadStoryDetail(bodyPath: string) {
 
   const promise = fetchStoryDetail(normalizedBodyPath);
   storyDetailCache.set(normalizedBodyPath, promise);
+  return promise;
+}
+
+function loadSearchIndex(locale: ReaderLocale) {
+  const cached = searchIndexCache.get(locale);
+  if (cached) {
+    return cached;
+  }
+
+  const promise = fetchSearchIndex(locale);
+  searchIndexCache.set(locale, promise);
   return promise;
 }
 
@@ -212,6 +232,42 @@ export function useStoryDetail(bodyPath: string | null) {
 
   if (state.bodyPath !== bodyPath) {
     return { data: null, error: null, status: "loading" } satisfies AsyncState<StoryDetail | null>;
+  }
+
+  return state.result;
+}
+
+export function useSearchIndex(locale: ReaderLocale) {
+  const [state, setState] = useState<{
+    locale: ReaderLocale | null;
+    result: AsyncState<ContentSearchLocaleIndex>;
+  }>({
+    locale: null,
+    result: { data: null, error: null, status: "loading" },
+  });
+
+  useEffect(() => {
+    let isCancelled = false;
+
+    loadSearchIndex(locale)
+      .then((data) => {
+        if (!isCancelled) {
+          setState({ locale, result: { data, error: null, status: "ready" } });
+        }
+      })
+      .catch((error: unknown) => {
+        if (!isCancelled) {
+          setState({ locale, result: createErrorState(error) });
+        }
+      });
+
+    return () => {
+      isCancelled = true;
+    };
+  }, [locale]);
+
+  if (state.locale !== locale) {
+    return { data: null, error: null, status: "loading" } satisfies AsyncState<ContentSearchLocaleIndex>;
   }
 
   return state.result;
