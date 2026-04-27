@@ -7,6 +7,7 @@ const appBasePath = process.env.PLAYWRIGHT_APP_BASE_PATH ?? "/ark-str";
 const readerSessionKey = "ark-str:reader-session:v1";
 const preferencesKey = "ark-str:app-preferences:v1";
 const characterObservationsKey = "ark-str:character-observations:v1";
+const storyNotesKey = "ark-str:story-notes:v1";
 const legacyBootstrapKey = "ark-str:reader-bootstrap:v1";
 const browserIconFile = path.join(process.cwd(), "ark-str-web-app", "public", "ark_str_icon.png");
 const appChromeIconFile = path.join(process.cwd(), "ark-str-web-app", "public", "ark_str_app_icon.png");
@@ -179,9 +180,28 @@ const sampleNextStory =
   sampleStorySiblingIndex >= 0 && sampleStorySiblingIndex < sampleSiblingStories.length - 1
     ? sampleSiblingStories[sampleStorySiblingIndex + 1]
     : null;
+const sampleAlternateLocaleStory = generatedIndex.stories.find(
+  (story: { server: string; storyId: string }) =>
+    story.storyId === sampleStory.storyId && story.server !== sampleStory.server,
+);
+const sampleAlternateLocaleGroup = sampleAlternateLocaleStory
+  ? generatedIndex.groups.find(
+      (group: { server: string; groupId: string }) =>
+        group.server === sampleAlternateLocaleStory.server &&
+        group.groupId === sampleAlternateLocaleStory.groupId,
+    )
+  : null;
 
 if (!sampleStoryGroup) {
   throw new Error("A sample reader story must have a matching group entry.");
+}
+
+if (!sampleAlternateLocaleStory) {
+  throw new Error("A sample reader story must have a matching alternate locale story.");
+}
+
+if (!sampleAlternateLocaleGroup) {
+  throw new Error("The alternate locale story must have a matching group entry.");
 }
 
 const sampleObservedOperator =
@@ -272,11 +292,18 @@ function toAppPath(route = "") {
 
 function trackBrowserErrors(page: Page) {
   const consoleErrors: string[] = [];
+  const notFoundResponses: string[] = [];
   const pageErrors: string[] = [];
 
   page.on("console", (message) => {
     if (message.type() === "error") {
       consoleErrors.push(message.text());
+    }
+  });
+
+  page.on("response", (response) => {
+    if (response.status() === 404) {
+      notFoundResponses.push(response.url());
     }
   });
 
@@ -286,6 +313,7 @@ function trackBrowserErrors(page: Page) {
 
   return {
     assertClean() {
+      expect(notFoundResponses, "unexpected 404 responses").toEqual([]);
       expect(consoleErrors, "unexpected browser console errors").toEqual([]);
       expect(pageErrors, "unexpected uncaught browser errors").toEqual([]);
     },
@@ -303,12 +331,13 @@ test.describe("reader shell smoke", () => {
     const browserErrors = trackBrowserErrors(page);
 
     await page.goto(toAppPath());
-    await page.evaluate(([session, prefs, legacy, characterObservations]) => {
+    await page.evaluate(([session, prefs, legacy, characterObservations, storyNotes]) => {
       window.localStorage.removeItem(session);
       window.localStorage.removeItem(prefs);
       window.localStorage.removeItem(legacy);
       window.localStorage.removeItem(characterObservations);
-    }, [readerSessionKey, preferencesKey, legacyBootstrapKey, characterObservationsKey]);
+      window.localStorage.removeItem(storyNotes);
+    }, [readerSessionKey, preferencesKey, legacyBootstrapKey, characterObservationsKey, storyNotesKey]);
     await page.reload();
 
     await expect(page.getByTestId("bootstrap-shell")).toBeVisible();
@@ -584,6 +613,7 @@ test.describe("reader shell smoke", () => {
     await expect(page.getByTestId("chrome-story-select")).toBeVisible();
     await expect(page.getByTestId("story-body")).toBeVisible();
     await expect(page.getByTestId("story-bottom-nav")).toBeVisible();
+    await expect(page.getByTestId("story-note-open-button")).toBeEnabled();
     if (samplePreviousStory) {
       await expect(page.getByTestId("story-previous-link")).toHaveAttribute(
         "href",
@@ -600,6 +630,256 @@ test.describe("reader shell smoke", () => {
     } else {
       await expect(page.getByTestId("story-next-disabled")).toBeVisible();
     }
+
+    const sampleNoteText = "Smoke test note for shared story memo.";
+    const updatedSampleNoteText = `${sampleNoteText}\nEdited from another locale.`;
+    await page.getByTestId("story-note-open-button").click();
+    const desktopNotePanel = page.getByTestId("story-note-panel");
+    await expect(desktopNotePanel).toBeVisible();
+    const desktopNotePanelMetrics = await desktopNotePanel.evaluate((node) => {
+      const rect = node.getBoundingClientRect();
+      return {
+        bottom: Math.round(rect.bottom),
+        height: Math.round(rect.height),
+        left: Math.round(rect.left),
+        right: Math.round(rect.right),
+        top: Math.round(rect.top),
+        viewportHeight: window.innerHeight,
+        viewportWidth: window.innerWidth,
+        width: Math.round(rect.width),
+      };
+    });
+    expect(desktopNotePanelMetrics.top).toBe(0);
+    expect(Math.abs(desktopNotePanelMetrics.right - desktopNotePanelMetrics.viewportWidth)).toBeLessThanOrEqual(1);
+    expect(Math.abs(desktopNotePanelMetrics.height - desktopNotePanelMetrics.viewportHeight)).toBeLessThanOrEqual(1);
+    expect(desktopNotePanelMetrics.left).toBeGreaterThan(desktopNotePanelMetrics.viewportWidth / 2);
+    expect(desktopNotePanelMetrics.width).toBeGreaterThan(320);
+    await page.getByTestId("story-note-textarea").fill(sampleNoteText);
+    await page.waitForFunction(
+      ([key, storyId, text, locale, groupId]) => {
+        const stored = window.localStorage.getItem(key);
+        if (!stored) {
+          return false;
+        }
+
+        try {
+          const parsed = JSON.parse(stored);
+          const note = parsed?.notes?.[storyId];
+          return note?.text === text && note?.locale === locale && note?.groupId === groupId;
+        } catch {
+          return false;
+        }
+      },
+      [storyNotesKey, sampleStory.storyId, sampleNoteText, sampleStory.server, sampleStory.groupId],
+    );
+    await expect(page.getByTestId("story-note-open-button")).toHaveAttribute("data-has-note", "true");
+    await page.getByTestId("story-note-close-button").click();
+    await page.reload();
+    await page.getByTestId("story-note-open-button").click();
+    await expect(page.getByTestId("story-note-textarea")).toHaveValue(sampleNoteText);
+    await page.getByTestId("story-note-close-button").click();
+
+    await page.goto(
+      toAppPath(
+        `reader/${sampleAlternateLocaleStory.server}/${sampleAlternateLocaleStory.groupId}/${sampleAlternateLocaleStory.storyId}`,
+      ),
+    );
+    await expect(page.getByTestId("reader-shell")).toBeVisible();
+    await page.getByTestId("story-note-open-button").click();
+    await expect(page.getByTestId("story-note-textarea")).toHaveValue(sampleNoteText);
+    await page.getByTestId("story-note-textarea").fill(updatedSampleNoteText);
+    await page.waitForFunction(
+      ([key, storyId, text, locale, groupId]) => {
+        const stored = window.localStorage.getItem(key);
+        if (!stored) {
+          return false;
+        }
+
+        try {
+          const parsed = JSON.parse(stored);
+          const note = parsed?.notes?.[storyId];
+          return note?.text === text && note?.locale === locale && note?.groupId === groupId;
+        } catch {
+          return false;
+        }
+      },
+      [
+        storyNotesKey,
+        sampleStory.storyId,
+        updatedSampleNoteText,
+        sampleAlternateLocaleStory.server,
+        sampleAlternateLocaleStory.groupId,
+      ],
+    );
+    await page.getByTestId("story-note-close-button").click();
+
+    await page.setViewportSize({ width: 390, height: 820 });
+    await page.getByTestId("story-note-open-button").click();
+    const mobileNotePanel = page.getByTestId("story-note-panel");
+    const mobileNotePanelMetrics = await mobileNotePanel.evaluate((node) => {
+      const rect = node.getBoundingClientRect();
+      return {
+        bottom: Math.round(rect.bottom),
+        left: Math.round(rect.left),
+        top: Math.round(rect.top),
+        viewportHeight: window.innerHeight,
+        viewportWidth: window.innerWidth,
+        width: Math.round(rect.width),
+      };
+    });
+    expect(Math.abs(mobileNotePanelMetrics.left)).toBeLessThanOrEqual(1);
+    expect(Math.abs(mobileNotePanelMetrics.width - mobileNotePanelMetrics.viewportWidth)).toBeLessThanOrEqual(1);
+    expect(Math.abs(mobileNotePanelMetrics.bottom - mobileNotePanelMetrics.viewportHeight)).toBeLessThanOrEqual(1);
+    expect(mobileNotePanelMetrics.top).toBeGreaterThan(100);
+    await page.getByTestId("story-note-close-button").click();
+    await page.setViewportSize({ width: 1280, height: 720 });
+    await page.evaluate(() => window.scrollTo(0, 0));
+
+    await page.getByTestId("notes-overview-link").click();
+    await expect(page).toHaveURL(/\/ark-str\/notes\/$/);
+    await expect(page.getByTestId("notes-shell")).toBeVisible();
+    await expect(page.getByTestId("notes-list")).toHaveCSS("display", "grid");
+    const noteCard = page.getByTestId("note-card").filter({ hasText: sampleAlternateLocaleStory.title });
+    await expect(noteCard).toBeVisible();
+    await expect(noteCard).toContainText(sampleAlternateLocaleStory.title);
+    await expect(noteCard).toContainText(sampleAlternateLocaleGroup.title);
+    await expect(noteCard).not.toContainText("한국어");
+    await expect(noteCard).not.toContainText("简体中文");
+    if (sampleAlternateLocaleStory.storyCode) {
+      await expect(noteCard.getByTestId("note-stage-badge")).toContainText(sampleAlternateLocaleStory.storyCode);
+    }
+    if (sampleAlternateLocaleStory.avgTag) {
+      await expect(noteCard.getByTestId("note-phase-badge")).toContainText(sampleAlternateLocaleStory.avgTag);
+    }
+    await expect(noteCard.getByTestId("note-card-textarea")).toHaveValue(updatedSampleNoteText);
+    await expect(noteCard.getByTestId("note-story-link")).toHaveAttribute(
+      "href",
+      `/ark-str/reader/${sampleAlternateLocaleStory.server}/${sampleAlternateLocaleStory.groupId}/${sampleAlternateLocaleStory.storyId}/`,
+    );
+    const noteCardLayoutMetrics = await noteCard.evaluate((node) => {
+      const titleBlock = node.querySelector('[data-testid="note-title-block"]');
+      const storyLink = node.querySelector('[data-testid="note-story-link"]');
+      const updatedAt = node.querySelector('[data-testid="note-updated-at"]');
+
+      if (!titleBlock || !storyLink || !updatedAt) {
+        throw new Error("Note card layout targets were not found.");
+      }
+
+      const cardRect = node.getBoundingClientRect();
+      const titleRect = titleBlock.getBoundingClientRect();
+      const linkRect = storyLink.getBoundingClientRect();
+      const updatedAtRect = updatedAt.getBoundingClientRect();
+
+      return {
+        cardBottom: Math.round(cardRect.bottom),
+        cardRight: Math.round(cardRect.right),
+        linkLeft: Math.round(linkRect.left),
+        linkRight: Math.round(linkRect.right),
+        titleRight: Math.round(titleRect.right),
+        updatedAtBottom: Math.round(updatedAtRect.bottom),
+        updatedAtRight: Math.round(updatedAtRect.right),
+      };
+    });
+    expect(noteCardLayoutMetrics.linkLeft).toBeGreaterThanOrEqual(noteCardLayoutMetrics.titleRight);
+    expect(noteCardLayoutMetrics.cardRight - noteCardLayoutMetrics.linkRight).toBeLessThanOrEqual(24);
+    expect(noteCardLayoutMetrics.cardBottom - noteCardLayoutMetrics.updatedAtBottom).toBeLessThanOrEqual(24);
+    expect(noteCardLayoutMetrics.cardRight - noteCardLayoutMetrics.updatedAtRight).toBeLessThanOrEqual(24);
+    const overviewEditedNoteText = `${updatedSampleNoteText}\nEdited in the notes overview.`;
+    await noteCard.getByTestId("note-card-textarea").fill(overviewEditedNoteText);
+    await page.waitForFunction(
+      ([key, storyId, text]) => {
+        const stored = window.localStorage.getItem(key);
+        if (!stored) {
+          return false;
+        }
+
+        try {
+          const parsed = JSON.parse(stored);
+          return parsed?.notes?.[storyId]?.text === text;
+        } catch {
+          return false;
+        }
+      },
+      [storyNotesKey, sampleStory.storyId, overviewEditedNoteText],
+    );
+    await noteCard.getByTestId("note-card-textarea").fill("");
+    await expect(noteCard).toBeVisible();
+    await expect(noteCard.getByTestId("note-card-textarea")).toHaveValue("");
+    await noteCard.getByTestId("note-card-textarea").fill(overviewEditedNoteText);
+    await page.waitForFunction(
+      ([key, storyId, text]) => {
+        const stored = window.localStorage.getItem(key);
+        if (!stored) {
+          return false;
+        }
+
+        try {
+          const parsed = JSON.parse(stored);
+          return parsed?.notes?.[storyId]?.text === text;
+        } catch {
+          return false;
+        }
+      },
+      [storyNotesKey, sampleStory.storyId, overviewEditedNoteText],
+    );
+    await noteCard.getByTestId("note-story-link").click();
+    await expect(page).toHaveURL(
+      new RegExp(
+        `/ark-str/reader/${sampleAlternateLocaleStory.server}/${sampleAlternateLocaleStory.groupId}/${sampleAlternateLocaleStory.storyId}/$`,
+      ),
+    );
+    await page.evaluate(() => window.scrollTo(0, 1300));
+    await expect(page.getByTestId("scroll-top-button")).toBeVisible();
+    const floatingActionMetrics = await page.evaluate(() => {
+      const noteButton = document.querySelector('[data-testid="story-note-open-button"]');
+      const topButton = document.querySelector('[data-testid="scroll-top-button"]');
+
+      if (!noteButton || !topButton) {
+        throw new Error("Floating reader controls were not found.");
+      }
+
+      const noteRect = noteButton.getBoundingClientRect();
+      const topRect = topButton.getBoundingClientRect();
+
+      return {
+        gap: Math.round(topRect.top - noteRect.bottom),
+        noteBottom: Math.round(noteRect.bottom),
+        noteRight: Math.round(noteRect.right),
+        topRight: Math.round(topRect.right),
+        topTop: Math.round(topRect.top),
+      };
+    });
+    expect(floatingActionMetrics.noteBottom).toBeLessThanOrEqual(floatingActionMetrics.topTop);
+    expect(floatingActionMetrics.gap).toBeLessThanOrEqual(12);
+    expect(Math.abs(floatingActionMetrics.noteRight - floatingActionMetrics.topRight)).toBeLessThanOrEqual(1);
+    await page.getByTestId("story-note-open-button").click();
+    await expect(page.getByTestId("story-note-textarea")).toHaveValue(overviewEditedNoteText);
+    await page.getByTestId("story-note-textarea").fill("   ");
+    await page.waitForFunction(
+      ([key, storyId]) => {
+        const stored = window.localStorage.getItem(key);
+        if (!stored) {
+          return false;
+        }
+
+        try {
+          const parsed = JSON.parse(stored);
+          return !parsed?.notes?.[storyId];
+        } catch {
+          return false;
+        }
+      },
+      [storyNotesKey, sampleStory.storyId],
+    );
+    await expect(page.getByTestId("story-note-textarea")).toHaveValue("");
+    await page.getByTestId("story-note-close-button").click();
+    await page.goto(toAppPath("notes"));
+    await expect(page.getByTestId("notes-empty-state")).toBeVisible();
+
+    await page.goto(
+      toAppPath(`reader/${sampleStory.server}/${sampleStory.groupId}/${sampleStory.storyId}`),
+    );
+    await expect(page.getByTestId("reader-shell")).toBeVisible();
     const summarySection = page.getByTestId("story-summary-section");
     await expect(summarySection).toBeVisible();
     await expect(summarySection.getByText("SUMMARY")).toBeVisible();
@@ -675,12 +955,15 @@ test.describe("reader shell smoke", () => {
     await expect(appBar).toHaveCSS("border-top-left-radius", "0px");
     await expect(appBar.getByTestId("app-home-icon")).toBeVisible();
     await expect(appBar.getByTestId("theme-toggle")).toHaveText("");
+    await expect(appBar.getByTestId("notes-overview-link")).toHaveText("");
+    await expect(appBar.getByTestId("notes-overview-link")).toHaveAttribute("href", "/ark-str/notes/");
     const appBarControlSizes = await appBar.evaluate((node, groupTitle) => {
       const homeControl = node.querySelector('a[aria-label="홈"]');
       const storyRootControl = [...node.querySelectorAll("a")].find(
         (item) => item.textContent?.trim() === "스토리",
       );
       const themeToggle = node.querySelector('[data-testid="theme-toggle"]');
+      const notesControl = node.querySelector('[data-testid="notes-overview-link"]');
       const homeIcon = node.querySelector<HTMLImageElement>('[data-testid="app-home-icon"]');
       const localeSelect = node.querySelector('[data-testid="locale-select"]');
       const storySelect = node.querySelector('[data-testid="chrome-story-select"]');
@@ -688,13 +971,23 @@ test.describe("reader shell smoke", () => {
         (item) => item.textContent?.trim() === groupTitle,
       );
 
-      if (!homeControl || !storyRootControl || !themeToggle || !homeIcon || !localeSelect || !storySelect || !groupCrumb) {
+      if (
+        !homeControl ||
+        !storyRootControl ||
+        !themeToggle ||
+        !notesControl ||
+        !homeIcon ||
+        !localeSelect ||
+        !storySelect ||
+        !groupCrumb
+      ) {
         throw new Error("App bar controls were not found.");
       }
 
       const homeRect = homeControl.getBoundingClientRect();
       const storyRootRect = storyRootControl.getBoundingClientRect();
       const themeRect = themeToggle.getBoundingClientRect();
+      const notesRect = notesControl.getBoundingClientRect();
       const iconRect = homeIcon.getBoundingClientRect();
       const homeStyles = window.getComputedStyle(homeControl);
       const storyRootStyles = window.getComputedStyle(storyRootControl);
@@ -703,6 +996,7 @@ test.describe("reader shell smoke", () => {
       const storySelectRect = storySelect.getBoundingClientRect();
       const storySelectStyles = window.getComputedStyle(storySelect);
       const themeStyles = window.getComputedStyle(themeToggle);
+      const notesStyles = window.getComputedStyle(notesControl);
 
       return {
         groupFontSize: window.getComputedStyle(groupCrumb).fontSize,
@@ -714,7 +1008,14 @@ test.describe("reader shell smoke", () => {
         iconHeight: Math.round(iconRect.height),
         localeFontSize: window.getComputedStyle(localeSelect).fontSize,
         localeHeight: Math.round(localeRect.height),
+        localeRight: Math.round(localeRect.right),
         localeRadius: localeStyles.borderTopLeftRadius,
+        notesBackgroundColor: notesStyles.backgroundColor,
+        notesHeight: Math.round(notesRect.height),
+        notesLeft: Math.round(notesRect.left),
+        notesRadius: notesStyles.borderTopLeftRadius,
+        notesRight: Math.round(notesRect.right),
+        notesWidth: Math.round(notesRect.width),
         storyRootHeight: Math.round(storyRootRect.height),
         storyRootRadius: storyRootStyles.borderTopLeftRadius,
         storySelectFontSize: window.getComputedStyle(storySelect).fontSize,
@@ -722,23 +1023,30 @@ test.describe("reader shell smoke", () => {
         storySelectRadius: storySelectStyles.borderTopLeftRadius,
         themeBackgroundColor: themeStyles.backgroundColor,
         themeHeight: Math.round(themeRect.height),
+        themeLeft: Math.round(themeRect.left),
         themeRadius: themeStyles.borderTopLeftRadius,
         themeWidth: Math.round(themeRect.width),
       };
     }, sampleStoryGroup.title);
     expect(appBarControlSizes.homeHeight).toBe(appBarControlSizes.themeHeight);
+    expect(appBarControlSizes.notesHeight).toBe(appBarControlSizes.themeHeight);
     expect(appBarControlSizes.homeHeight).toBe(appBarControlSizes.storyRootHeight);
     expect(appBarControlSizes.localeHeight).toBe(appBarControlSizes.storyRootHeight);
     expect(appBarControlSizes.storySelectHeight).toBe(appBarControlSizes.storyRootHeight);
     expect(appBarControlSizes.homeWidth).toBe(appBarControlSizes.themeWidth);
+    expect(appBarControlSizes.notesWidth).toBe(appBarControlSizes.themeWidth);
     expect(appBarControlSizes.homeHeight).toBe(36);
     expect(appBarControlSizes.homeRadius).toBe(appBarControlSizes.storyRootRadius);
     expect(appBarControlSizes.themeRadius).toBe(appBarControlSizes.storyRootRadius);
+    expect(appBarControlSizes.notesRadius).toBe(appBarControlSizes.storyRootRadius);
     expect(appBarControlSizes.localeRadius).toBe(appBarControlSizes.storyRootRadius);
     expect(appBarControlSizes.storySelectRadius).toBe(appBarControlSizes.storyRootRadius);
     expect(appBarControlSizes.iconHeight).toBeGreaterThanOrEqual(32);
     expect(appBarControlSizes.homeIconSrc).toBe(`${appBasePath}/ark_str_app_icon.png`);
     expect(appBarControlSizes.homeBackgroundColor).toBe(appBarControlSizes.themeBackgroundColor);
+    expect(appBarControlSizes.notesBackgroundColor).toBe(appBarControlSizes.themeBackgroundColor);
+    expect(appBarControlSizes.localeRight).toBeLessThanOrEqual(appBarControlSizes.notesLeft);
+    expect(appBarControlSizes.notesRight).toBeLessThanOrEqual(appBarControlSizes.themeLeft);
     expect(appBarControlSizes.groupFontSize).toBe("12px");
     expect(appBarControlSizes.localeFontSize).toBe("12px");
     expect(appBarControlSizes.storySelectFontSize).toBe("12px");
@@ -934,11 +1242,12 @@ test.describe("reader shell smoke", () => {
     const browserErrors = trackBrowserErrors(page);
 
     await page.goto(toAppPath());
-    await page.evaluate(([session, prefs, characterObservations]) => {
+    await page.evaluate(([session, prefs, characterObservations, storyNotes]) => {
       window.localStorage.setItem(session, "{broken-json");
       window.localStorage.setItem(prefs, "{broken-json");
       window.localStorage.setItem(characterObservations, "{broken-json");
-    }, [readerSessionKey, preferencesKey, characterObservationsKey]);
+      window.localStorage.setItem(storyNotes, "{broken-json");
+    }, [readerSessionKey, preferencesKey, characterObservationsKey, storyNotesKey]);
     await page.reload();
 
     await expect(page.getByTestId("bootstrap-shell")).toBeVisible();

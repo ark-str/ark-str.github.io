@@ -1,13 +1,23 @@
 import type { AssetManifest, ContentIndex, StoryDetail, SummaryManifest } from "@/features/content/types";
 
 function getRuntimeBasePath() {
+  const configuredBasePath = process.env.NEXT_PUBLIC_ARK_STR_BASE_PATH?.trim() ?? "";
+  if (configuredBasePath.length > 0) {
+    return `/${configuredBasePath.replace(/^\/+|\/+$/g, "")}`;
+  }
+
   if (typeof window === "undefined") {
     return "";
   }
 
-  const marker = "/reader";
-  const markerIndex = window.location.pathname.indexOf(marker);
-  return markerIndex > 0 ? window.location.pathname.slice(0, markerIndex) : "";
+  for (const marker of ["/reader", "/notes"]) {
+    const markerIndex = window.location.pathname.indexOf(marker);
+    if (markerIndex > 0) {
+      return window.location.pathname.slice(0, markerIndex);
+    }
+  }
+
+  return "";
 }
 
 export function resolveRuntimePublicPath(publicPath: string | null): string | null {

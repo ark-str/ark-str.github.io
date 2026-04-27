@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { AppPreferencesProvider } from "@/features/preferences/runtime/app-preferences-context";
 import { ReaderSessionProvider } from "@/features/reader/runtime/reader-session-context";
+import { StoryNotesProvider } from "@/features/notes/runtime/story-notes-context";
 import { browserIconPath } from "@/lib/public-path";
 
 export const metadata: Metadata = {
@@ -23,7 +24,9 @@ export default function RootLayout({
     <html lang="ko" className="h-full" data-theme="light">
       <body className="min-h-full">
         <AppPreferencesProvider>
-          <ReaderSessionProvider>{children}</ReaderSessionProvider>
+          <ReaderSessionProvider>
+            <StoryNotesProvider>{children}</StoryNotesProvider>
+          </ReaderSessionProvider>
         </AppPreferencesProvider>
       </body>
     </html>

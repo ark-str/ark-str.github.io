@@ -69,10 +69,13 @@ This phase keeps the recovered reader shell and Pages deployment path stable whi
 - story-level `observedOperators` arrays embedded in generated story detail JSON remain limited to `char_` speaker IDs for alias persistence
 - local storage reader-session restore for preferred locale and last visited story
 - local storage reader nickname capture on the home screen; story rendering replaces `{@nickname}` and `{@nickName}` tokens at runtime and falls back to an empty string when no nickname is set
+- local storage story notes keyed by `storyId`, shared across localized versions of the same story, saved on every text edit, and deleted when the note is cleared
 - home renders an ARK STR onboarding surface with a clean centered nickname input, two-line continue-reading action that shows the target story title, full-bleed square-edged localized service copy using the accent-colored app icon, generously separated curated recommendation groups, selected-locale group/story/character-count statistics, and maintainer credit
 - locale-scoped character alias observation storage under `ark-str:character-observations:v1`
 - generated story detail JSON embeds localized `summaryText` from vendor `[uc]info` files when available, and the summary manifest marks those stories as `ready`
 - a fixed top app bar shared by home, locale archive, group, and story pages; it uses separate browser and transparent app chrome icons, matched compact home/theme/dropdown control heights and radii, icon breadcrumb separators, icon-only theme control, mobile wrapping, and scroll-down hide / scroll-up reveal behavior
+- the app bar includes a note icon between locale and theme controls that opens a `/notes` overview of saved story notes with links back to the last edited story route
+- the `/notes` overview renders saved notes as editable grid cards with story sidebar-style stage/phase badges, story return links, last-edited timestamps, and stable in-place editing while text is being cleared
 - locale archives remove redundant helper copy from the header, keep the Storylines stats card right-aligned on mobile, and group story sets by generated storyline metadata in initially collapsed grid cards with height-only 300ms disclosure animation that remain one main-grid cell whether closed or open before routing into dedicated group overview pages
 - expanded regular storyline archive sections render `STORY_SET` primary groups and `BEFORE` / `AFTER` flow references in the same sorted one-column list; `NONE/NONE` review groups are `오퍼레이터 서사`, unmatched event groups are `미분류`, and `오퍼레이터 서사` is sorted last and rendered as a bottom section outside the main grid with an internal group grid
 - generated group and story metrics for total visible characters and estimated reading time
@@ -84,6 +87,7 @@ This phase keeps the recovered reader shell and Pages deployment path stable whi
 - story-page backdrop swaps are immediate; cross-fade state is intentionally omitted to keep the reader surface predictable
 - story-page fixed backdrops and fixed app chrome avoid blur/backdrop-filter effects to prevent scroll-time compositor flicker
 - story pages place desktop-only group story navigation on the left with viewport-constrained internal scrolling, hide that navigation on mobile, provide bottom previous/next story navigation inside the current group, and keep a floating scroll-to-top action at the lower right
+- story pages expose a fixed lower-right note button above the floating top button; its editor opens as a right sidebar on wide screens and a bottom sheet on mobile
 - story pages place a spoiler-safe summary card immediately below the route title; it starts collapsed, keeps only the `SUMMARY` badge and disclosure icon in the header, and expands with a height-only animation to reveal the generated summary text
 - story route headers avoid raw vendor source paths and redundant group-count copy, while group/story metadata is rendered as compact wrapping badges and sidebar phase badges use matching accent tones
 - global horizontal and vertical scrollbar tracks/corners are transparent so local scroll regions do not add heavy chrome
