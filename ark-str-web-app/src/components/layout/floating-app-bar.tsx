@@ -9,6 +9,7 @@ import { Select } from "@/components/ui/select";
 import { cn } from "@/lib/utils";
 import { useAppPreferences } from "@/features/preferences/runtime/app-preferences-context";
 import { useReaderSession } from "@/features/reader/runtime/reader-session-context";
+import { getUiCopy } from "@/features/i18n/config/ui-copy";
 import type { ReaderLocale } from "@/features/content/types";
 import type { FloatingAppBarModel } from "@/components/layout/types";
 import { appChromeIconPath } from "@/lib/public-path";
@@ -29,6 +30,7 @@ export function FloatingAppBar({ model }: FloatingAppBarProps) {
   const currentLocale = model.currentLocale ?? readerState.preferredLocale;
   const storyRootHref = model.storyRootHref ?? `/reader/${readerState.preferredLocale}`;
   const isDarkTheme = preferencesState.theme === "dark";
+  const copy = getUiCopy(currentLocale);
 
   useEffect(() => {
     const updateAppBarHeight = () => {
@@ -125,7 +127,7 @@ export function FloatingAppBar({ model }: FloatingAppBarProps) {
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-3 px-5 py-3 md:px-8 lg:flex-row lg:items-center lg:justify-between lg:px-12">
         <div className="flex flex-wrap items-center gap-2">
           <Link
-            aria-label="홈"
+            aria-label={copy.appBar.home}
             className={cn(
               buttonVariants({ size: "icon", variant: "subtle" }),
               "h-9 w-9 rounded-[var(--radius-sm)] p-0.5",
@@ -147,7 +149,7 @@ export function FloatingAppBar({ model }: FloatingAppBarProps) {
             />
           </Link>
           <Link className={cn(buttonVariants({ size: "sm", variant: "subtle" }))} href={storyRootHref}>
-            스토리
+            {copy.appBar.story}
           </Link>
           {model.groupCrumb ? (
             <>
@@ -217,7 +219,7 @@ export function FloatingAppBar({ model }: FloatingAppBarProps) {
             </Select>
           </div>
           <Link
-            aria-label="검색"
+            aria-label={copy.appBar.search}
             className={cn(
               buttonVariants({ size: "icon", variant: "subtle" }),
               "h-9 w-9 rounded-[var(--radius-sm)]",
@@ -228,7 +230,7 @@ export function FloatingAppBar({ model }: FloatingAppBarProps) {
             <Search className="h-4 w-4" />
           </Link>
           <Link
-            aria-label="메모 모아보기"
+            aria-label={copy.appBar.notes}
             className={cn(
               buttonVariants({ size: "icon", variant: "subtle" }),
               "h-9 w-9 rounded-[var(--radius-sm)]",
@@ -239,7 +241,7 @@ export function FloatingAppBar({ model }: FloatingAppBarProps) {
             <NotebookText className="h-4 w-4" />
           </Link>
           <button
-            aria-label={isDarkTheme ? "라이트 테마로 변경" : "다크 테마로 변경"}
+            aria-label={isDarkTheme ? copy.appBar.themeLight : copy.appBar.themeDark}
             className={cn(
               buttonVariants({ size: "icon", variant: "subtle" }),
               "h-9 w-9 rounded-[var(--radius-sm)]",

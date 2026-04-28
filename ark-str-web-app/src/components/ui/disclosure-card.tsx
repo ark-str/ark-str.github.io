@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { Plus } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 
@@ -60,11 +61,11 @@ export function DisclosureCard({
         <span
           aria-hidden="true"
           className={cn(
-            "grid size-8 shrink-0 place-items-center rounded-[var(--radius-sm)] border border-[var(--border)] bg-[var(--surface-muted)] text-lg font-semibold text-[var(--text-muted)] transition-transform duration-300 ease-out",
+            "grid size-8 shrink-0 place-items-center rounded-[var(--radius-sm)] border border-[var(--border)] bg-[var(--surface-muted)] text-[var(--text-muted)] transition-transform duration-300 ease-out",
             isOpen && "rotate-45",
           )}
         >
-          +
+          <Plus className="h-4 w-4" data-testid="disclosure-toggle-icon" />
         </span>
       </div>
       <div

@@ -19,6 +19,8 @@ import {
 } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { appChromeIconPath } from "@/lib/public-path";
+import { getUiCopy, type UiCopy } from "@/features/i18n/config/ui-copy";
+import { formatUiNumber } from "@/features/i18n/service/format-ui";
 import type {
   ContentReadinessSnapshot,
   ReaderHomeModel,
@@ -27,149 +29,6 @@ import type {
   ReaderLocale,
 } from "@/features/content/types";
 import { useReaderSession } from "@/features/reader/runtime/reader-session-context";
-
-const homeCopy = {
-  cn: {
-    namePrompt: "你的名字是？",
-    namePlaceholder: "博士代号",
-    continueReading: "继续阅读",
-    openArchive: "打开故事库",
-    serviceTitle: "ARK STR",
-    serviceIntro:
-      "一个本地优先的明日方舟叙事档案，按故事线、章节与人物痕迹重新整理泰拉的长篇文本。",
-    recommendationEyebrow: "推荐阅读",
-    statsTitle: "收录统计",
-    groups: "组",
-    stories: "故事",
-    chars: "字",
-    minutes: "分钟",
-    missing: "未收录",
-    generatedAt: "内容快照",
-    footer: "Maintainer - dev.Woong · 명생명사",
-    collections: {
-      terra_notes: "管理员的泰拉笔记",
-      ancient_archive: "旧人类档案",
-      explore_behemoth: "探索：巨兽",
-      explore_beast_lords: "探索：兽主",
-    },
-  },
-  en: {
-    namePrompt: "What is your name?",
-    namePlaceholder: "Doctor codename",
-    continueReading: "Continue reading",
-    openArchive: "Open archive",
-    serviceTitle: "ARK STR",
-    serviceIntro:
-      "A local-first Arknights narrative archive that reorganizes Terra's long-form stories by storyline, chapter, and character traces.",
-    recommendationEyebrow: "Recommended reads",
-    statsTitle: "Archive stats",
-    groups: "groups",
-    stories: "stories",
-    chars: "chars",
-    minutes: "min",
-    missing: "Unavailable",
-    generatedAt: "Content snapshot",
-    footer: "Maintainer - dev.Woong · 명생명사",
-    collections: {
-      terra_notes: "Administrator's Terra Notes",
-      ancient_archive: "Old Humanity Archive",
-      explore_behemoth: "Explore: Behemoths",
-      explore_beast_lords: "Explore: Beast Lords",
-    },
-  },
-  jp: {
-    namePrompt: "あなたの名前は？",
-    namePlaceholder: "ドクター名",
-    continueReading: "続きを読む",
-    openArchive: "アーカイブを開く",
-    serviceTitle: "ARK STR",
-    serviceIntro:
-      "アークナイツの膨大な物語を、ストーリーライン、章、人物の痕跡から読み直すローカルファーストのアーカイブです。",
-    recommendationEyebrow: "おすすめ",
-    statsTitle: "収録統計",
-    groups: "グループ",
-    stories: "ストーリー",
-    chars: "文字",
-    minutes: "分",
-    missing: "未収録",
-    generatedAt: "コンテンツスナップショット",
-    footer: "Maintainer - dev.Woong · 명생명사",
-    collections: {
-      terra_notes: "管理者のテラノート",
-      ancient_archive: "旧人類アーカイブ",
-      explore_behemoth: "探索：ベヒモス",
-      explore_beast_lords: "探索：獣主",
-    },
-  },
-  kr: {
-    namePrompt: "당신의 이름은?",
-    namePlaceholder: "박사 이름",
-    continueReading: "이어서 읽기",
-    openArchive: "스토리 둘러보기",
-    serviceTitle: "ARK STR",
-    serviceIntro:
-      "명일방주의 방대한 서사를 스토리라인, 에피소드, 인물의 흔적으로 다시 읽는 로컬 퍼스트 아카이브입니다.",
-    recommendationEyebrow: "추천 글 목록",
-    statsTitle: "수록 통계",
-    groups: "그룹",
-    stories: "스토리",
-    chars: "글자",
-    minutes: "분",
-    missing: "미수록",
-    generatedAt: "콘텐츠 스냅샷",
-    footer: "Maintainer - dev.Woong · 명생명사",
-    collections: {
-      terra_notes: "관리자의 테라노트",
-      ancient_archive: "구인류 아카이브",
-      explore_behemoth: "탐색: 베헤모스",
-      explore_beast_lords: "탐색: 짐승 군주",
-    },
-  },
-  tw: {
-    namePrompt: "你的名字是？",
-    namePlaceholder: "博士代號",
-    continueReading: "繼續閱讀",
-    openArchive: "打開故事庫",
-    serviceTitle: "ARK STR",
-    serviceIntro:
-      "一個本地優先的明日方舟敘事檔案，按故事線、篇章與人物痕跡重新整理泰拉的長篇文本。",
-    recommendationEyebrow: "推薦閱讀",
-    statsTitle: "收錄統計",
-    groups: "組",
-    stories: "故事",
-    chars: "字",
-    minutes: "分鐘",
-    missing: "未收錄",
-    generatedAt: "內容快照",
-    footer: "Maintainer - dev.Woong · 명생명사",
-    collections: {
-      terra_notes: "管理員的泰拉筆記",
-      ancient_archive: "舊人類檔案",
-      explore_behemoth: "探索：巨獸",
-      explore_beast_lords: "探索：獸主",
-    },
-  },
-} satisfies Record<
-  ReaderLocale,
-  {
-    namePrompt: string;
-    namePlaceholder: string;
-    continueReading: string;
-    openArchive: string;
-    serviceTitle: string;
-    serviceIntro: string;
-    recommendationEyebrow: string;
-    statsTitle: string;
-    groups: string;
-    stories: string;
-    chars: string;
-    minutes: string;
-    missing: string;
-    generatedAt: string;
-    footer: string;
-    collections: Record<string, string>;
-  }
->;
 
 function buildStoryHref(
   locale: ReaderLocale,
@@ -183,16 +42,12 @@ function buildGroupHref(locale: ReaderLocale, groupId: string) {
   return `/reader/${locale}/${groupId}`;
 }
 
-function formatMetric(value: number) {
-  return new Intl.NumberFormat("ko-KR").format(value);
-}
-
 function RecommendationItemCard({
   copy,
   item,
   locale,
 }: {
-  copy: (typeof homeCopy)[ReaderLocale];
+  copy: UiCopy["home"];
   item: ReaderHomeRecommendationItem;
   locale: ReaderLocale;
 }) {
@@ -226,13 +81,13 @@ function RecommendationItemCard({
         </div>
         <div className="flex flex-wrap gap-2 text-[var(--image-muted)]">
           <span className="rounded-[var(--radius-sm)] border border-[var(--image-muted)] px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.12em]">
-            {formatMetric(item.storyCount)} {copy.stories}
+            {formatUiNumber(locale, item.storyCount)} {copy.stories}
           </span>
           <span className="rounded-[var(--radius-sm)] border border-[var(--image-muted)] px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.12em]">
-            {formatMetric(item.totalVisibleCharacterCount)} {copy.chars}
+            {formatUiNumber(locale, item.totalVisibleCharacterCount)} {copy.chars}
           </span>
           <span className="rounded-[var(--radius-sm)] border border-[var(--image-muted)] px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.12em]">
-            {formatMetric(item.estimatedMinutes)} {copy.minutes}
+            {formatUiNumber(locale, item.estimatedMinutes)} {copy.minutes}
           </span>
         </div>
       </div>
@@ -263,7 +118,7 @@ function RecommendationCollection({
   locale,
 }: {
   collection: ReaderHomeRecommendationCollection;
-  copy: (typeof homeCopy)[ReaderLocale];
+  copy: UiCopy["home"];
   locale: ReaderLocale;
 }) {
   return (
@@ -278,7 +133,7 @@ function RecommendationCollection({
           ] ?? collection.collectionId}
         </h3>
         <Badge variant="default">
-          {formatMetric(collection.items.length)} trails
+          {formatUiNumber(locale, collection.items.length)} {copy.trails}
         </Badge>
       </div>
       <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
@@ -317,7 +172,7 @@ export function BootstrapHome({
 }) {
   const { isHydrated, setNickName, state } = useReaderSession();
   const currentLocale = state.preferredLocale;
-  const copy = homeCopy[currentLocale];
+  const copy = getUiCopy(currentLocale).home;
   const currentArchive =
     homeModel.locales.find((locale) => locale.locale === currentLocale) ??
     homeModel.locales[0] ??
@@ -460,17 +315,15 @@ export function BootstrapHome({
             <dl className="grid gap-3 md:grid-cols-3">
               <StatCard
                 label={copy.groups}
-                value={formatMetric(currentArchive?.groupCount ?? 0)}
+                value={formatUiNumber(currentLocale, currentArchive?.groupCount ?? 0)}
               />
               <StatCard
                 label={copy.stories}
-                value={formatMetric(currentArchive?.storyCount ?? 0)}
+                value={formatUiNumber(currentLocale, currentArchive?.storyCount ?? 0)}
               />
               <StatCard
                 label={copy.chars}
-                value={formatMetric(
-                  currentArchive?.totalVisibleCharacterCount ?? 0,
-                )}
+                value={formatUiNumber(currentLocale, currentArchive?.totalVisibleCharacterCount ?? 0)}
               />
             </dl>
             <div className="sr-only">

@@ -7,7 +7,7 @@ type LoadingIndicatorProps = {
   label?: string;
 };
 
-function LoadingIndicator({ className, label = "로딩 중" }: LoadingIndicatorProps) {
+function LoadingIndicator({ className, label = "Loading" }: LoadingIndicatorProps) {
   return (
     <span
       aria-label={label}

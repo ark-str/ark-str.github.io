@@ -419,7 +419,7 @@ test.describe("reader shell smoke", () => {
     await expect(page.getByTestId("nickname-input")).toHaveValue("로도스");
     await expect(page.getByTestId("home-recommendations")).toContainText("Administrator's Terra Notes");
 
-    await page.getByRole("link", { name: "스토리" }).click();
+    await page.getByRole("link", { name: "Story" }).click();
     await expect(page).toHaveURL(/\/ark-str\/reader\/en\/$/);
     await expect(page.getByTestId("reader-shell")).toBeVisible();
 
@@ -467,6 +467,8 @@ test.describe("reader shell smoke", () => {
 
     const mainStorylinePanel = mainStorylineSection.getByTestId("storyline-panel");
     await expect(mainStorylinePanel).toHaveAttribute("data-state", "closed");
+    await expect(mainStorylineSection.getByTestId("disclosure-toggle-icon")).toBeVisible();
+    await expect(mainStorylineSection.getByTestId("storyline-toggle")).not.toContainText("+");
     const mainPrimaryRow = mainStorylineSection.locator(
       '[data-testid="storyline-primary-card"][data-group-id="main_0"]',
     );
@@ -533,8 +535,8 @@ test.describe("reader shell smoke", () => {
       rowGap: "6px",
       titleMarginBottom: "16px",
     });
-    await expect(mainPrimaryRow).toContainText("stories");
-    await expect(mainPrimaryRow).toContainText("chars");
+    await expect(mainPrimaryRow).toContainText("스토리");
+    await expect(mainPrimaryRow).toContainText("글자");
     await expect(mainPrimaryRow).not.toContainText("Open group");
     await expect(mainStorylineSection.getByTestId("storyline-reference-list")).toHaveCount(0);
     const firstReferenceRow = mainStorylineSection.getByTestId("storyline-reference-link").first();
@@ -585,7 +587,7 @@ test.describe("reader shell smoke", () => {
       `[data-testid="group-story-card"][href="/ark-str/reader/${sampleStory.server}/${sampleStory.groupId}/${sampleStory.storyId}/"]`,
     );
     await expect(sampleStoryCard).toBeVisible();
-    await expect(sampleStoryCard.getByTestId("group-story-metrics")).toContainText("chars");
+    await expect(sampleStoryCard.getByTestId("group-story-metrics")).toContainText("글자");
     if (sampleStory.storyCode) {
       await expect(sampleStoryCard.getByTestId("story-stage-badge")).toContainText(sampleStory.storyCode);
     }
@@ -771,6 +773,12 @@ test.describe("reader shell smoke", () => {
     expect(Math.abs(mobileNotePanelMetrics.width - mobileNotePanelMetrics.viewportWidth)).toBeLessThanOrEqual(1);
     expect(Math.abs(mobileNotePanelMetrics.bottom - mobileNotePanelMetrics.viewportHeight)).toBeLessThanOrEqual(1);
     expect(mobileNotePanelMetrics.top).toBeGreaterThan(100);
+    await expect(mobileNotePanel.locator('[data-testid="story-note-panel-handle"]')).toHaveCount(0);
+    const mobileNotePanelUrl = page.url();
+    await page.goBack();
+    await expect(page.getByTestId("story-note-panel")).toHaveCount(0);
+    expect(page.url()).toBe(mobileNotePanelUrl);
+    await page.getByTestId("story-note-open-button").click();
     await page.getByTestId("story-note-close-button").click();
     await page.setViewportSize({ width: 1280, height: 720 });
     await page.evaluate(() => window.scrollTo(0, 0));
@@ -1186,7 +1194,7 @@ test.describe("reader shell smoke", () => {
     await expect(page.getByTestId("search-input")).toHaveValue(broadSearchQuery);
     await expect(page.getByTestId("search-results-list")).toBeVisible({ timeout: 15_000 });
     await expect(page.getByTestId("search-results-count")).toHaveText(
-      new Intl.NumberFormat("ko-KR").format(broadSearchResultCount),
+      `${new Intl.NumberFormat("ko-KR").format(broadSearchResultCount)}개 스토리`,
     );
     const initialRenderedSearchCards = await page.getByTestId("search-result-card").count();
     expect(initialRenderedSearchCards).toBeGreaterThanOrEqual(40);

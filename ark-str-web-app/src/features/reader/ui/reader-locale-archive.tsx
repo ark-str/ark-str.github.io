@@ -24,6 +24,8 @@ import type {
   ContentStorylineItem,
   ReaderLocale,
 } from "@/features/content/types";
+import { getUiCopy } from "@/features/i18n/config/ui-copy";
+import { formatUiMinutes, formatUiNumber } from "@/features/i18n/service/format-ui";
 import { resolveRuntimePublicPath, useContentIndex } from "@/features/content/runtime/use-public-content";
 
 type ArchiveGroup = ContentGroupEntry & {
@@ -36,10 +38,6 @@ type ArchiveStorylineItem = ContentStorylineItem & {
 };
 
 const OPERATOR_STORYLINE_ID = "synthetic_operator_narratives";
-
-function formatMetric(value: number) {
-  return new Intl.NumberFormat("ko-KR").format(value);
-}
 
 function getArchiveCardBackgroundClassName(backgroundImageAspect: ContentGroupEntry["backgroundImageAspect"]) {
   const sharedClassName =
@@ -67,6 +65,7 @@ function createArchiveAppBar(locale: ReaderLocale): FloatingAppBarModel {
 export function ReaderLocaleArchive({ locale }: { locale: ReaderLocale }) {
   const indexState = useContentIndex();
   const appBar = createArchiveAppBar(locale);
+  const copy = getUiCopy(locale);
   const index = indexState.data;
   const groups: ArchiveGroup[] = index
     ? getLocaleGroups(index, locale).map((group) => ({
@@ -96,7 +95,7 @@ export function ReaderLocaleArchive({ locale }: { locale: ReaderLocale }) {
     <div className="grid gap-4">
       <div className="flex flex-wrap items-center gap-2">
         <Badge variant={storyline.isSynthetic ? "default" : "accent"} className="w-fit">
-          {storyline.isSynthetic ? "Generated" : "Storyline"}
+          {storyline.isSynthetic ? copy.archive.generated : copy.archive.storyline}
         </Badge>
         {storyline.storylineType ? <Badge variant="default">{storyline.storylineType}</Badge> : null}
       </div>
@@ -104,11 +103,12 @@ export function ReaderLocaleArchive({ locale }: { locale: ReaderLocale }) {
         <CardTitle className="text-2xl">{storyline.title}</CardTitle>
         <CardDescription>
           <span className="block">
-            {storyline.primaryGroupCount} groups · {storyline.referenceCount} references
+            {formatUiNumber(locale, storyline.primaryGroupCount)} {copy.common.groups} ·{" "}
+            {formatUiNumber(locale, storyline.referenceCount)} {copy.archive.references}
           </span>
           <span className="mt-1 block">
-            {formatMetric(storyline.totalVisibleCharacterCount)} chars · 약{" "}
-            {formatMetric(storyline.estimatedMinutes)}분
+            {formatUiNumber(locale, storyline.totalVisibleCharacterCount)} {copy.common.chars} ·{" "}
+            {formatUiMinutes(locale, storyline.estimatedMinutes)}
           </span>
         </CardDescription>
       </div>
@@ -167,13 +167,13 @@ export function ReaderLocaleArchive({ locale }: { locale: ReaderLocale }) {
             data-testid="storyline-primary-card-metrics"
           >
             <span className="inline-flex h-6 items-center rounded-full border border-white/15 bg-black/35 px-2.5">
-              {formatMetric(item.group.storyCount)} stories
+              {formatUiNumber(locale, item.group.storyCount)} {copy.common.stories}
             </span>
             <span className="inline-flex h-6 items-center rounded-full border border-white/15 bg-black/35 px-2.5">
-              {formatMetric(item.group.totalVisibleCharacterCount)} chars
+              {formatUiNumber(locale, item.group.totalVisibleCharacterCount)} {copy.common.chars}
             </span>
             <span className="inline-flex h-6 items-center rounded-full border border-white/15 bg-black/35 px-2.5">
-              약 {formatMetric(item.group.estimatedMinutes)}분
+              {formatUiMinutes(locale, item.group.estimatedMinutes)}
             </span>
           </span>
         </Link>
@@ -187,7 +187,7 @@ export function ReaderLocaleArchive({ locale }: { locale: ReaderLocale }) {
         <section className="grid gap-4 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-end">
           <div className="space-y-2">
             <Badge variant="accent" className="w-fit">
-              Locale archive
+              {copy.archive.localeArchive}
             </Badge>
             <h1 className="font-[var(--font-display)] text-4xl font-semibold leading-tight tracking-[-0.03em] md:text-5xl">
               {READER_LOCALE_LABELS[locale].label}
@@ -199,10 +199,12 @@ export function ReaderLocaleArchive({ locale }: { locale: ReaderLocale }) {
           >
             <CardContent className="px-5 py-4 text-right">
               <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--text-muted)]">
-                Storylines
+                {copy.archive.storylines}
               </p>
               <p className="mt-2 text-3xl font-semibold text-[var(--text)]">{archiveStorylines.length}</p>
-              <p className="mt-1 text-xs text-[var(--text-muted)]">{groups.length} groups</p>
+              <p className="mt-1 text-xs text-[var(--text-muted)]">
+                {formatUiNumber(locale, groups.length)} {copy.common.groups}
+              </p>
             </CardContent>
           </Card>
         </section>
@@ -244,13 +246,13 @@ export function ReaderLocaleArchive({ locale }: { locale: ReaderLocale }) {
       ) : null}
 
       {indexState.status === "loading" || indexState.status === "idle" ? (
-        <LoadingStateCard className="bg-[var(--surface)]/90" label="generated content index 로딩 중" />
+        <LoadingStateCard className="bg-[var(--surface)]/90" label={copy.status.contentIndexLoading} />
       ) : null}
 
       {indexState.status === "error" ? (
         <Card className="border-[var(--danger-border)] bg-[var(--surface)]/90">
           <CardContent className="px-5 py-6 text-sm leading-7 text-[var(--text-muted)]">
-            generated content index를 불러오지 못했습니다: {indexState.error.message}
+            {copy.status.contentIndexError(indexState.error.message)}
           </CardContent>
         </Card>
       ) : null}

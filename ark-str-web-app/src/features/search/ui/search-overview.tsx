@@ -16,6 +16,8 @@ import {
 import { getReaderStoryHref } from "@/features/content/config/reader-routes";
 import { useSearchIndex } from "@/features/content/runtime/use-public-content";
 import type { ContentSearchStoryEntry, ReaderLocale } from "@/features/content/types";
+import { getUiCopy } from "@/features/i18n/config/ui-copy";
+import { formatUiMinutes, formatUiNumber } from "@/features/i18n/service/format-ui";
 import { useReaderSession } from "@/features/reader/runtime/reader-session-context";
 import {
   INITIAL_VISIBLE_SEARCH_RESULT_COUNT,
@@ -39,10 +41,6 @@ function createSearchAppBar(): FloatingAppBarModel {
     storyRootHref: null,
     storySelect: null,
   };
-}
-
-function formatMetric(value: number) {
-  return new Intl.NumberFormat("ko-KR").format(value);
 }
 
 function createSearchHref(query: string) {
@@ -101,6 +99,7 @@ function SearchResultCard({
   result: StorySearchResult<ContentSearchStoryEntry>;
 }) {
   const storyHref = getReaderStoryHref(locale, result.story.groupId, result.story.storyId);
+  const copy = getUiCopy(locale);
 
   return (
     <Link
@@ -132,10 +131,10 @@ function SearchResultCard({
             data-testid="search-result-metrics"
           >
             <span className="rounded-[var(--radius-sm)] border border-[var(--border)] bg-[var(--surface-muted)] px-2.5 py-1">
-              {formatMetric(result.story.visibleCharacterCount)} chars
+              {formatUiNumber(locale, result.story.visibleCharacterCount)} {copy.common.chars}
             </span>
             <span className="rounded-[var(--radius-sm)] border border-[var(--border)] bg-[var(--surface-muted)] px-2.5 py-1">
-              약 {formatMetric(result.story.estimatedMinutes)}분
+              {formatUiMinutes(locale, result.story.estimatedMinutes)}
             </span>
             <ArrowUpRight aria-hidden="true" className="mt-1 h-4 w-4 text-[var(--accent-strong)]" />
           </div>
@@ -160,6 +159,7 @@ export function SearchOverview() {
   const urlQuery = searchParams.get("q") ?? "";
   const { state: readerSessionState } = useReaderSession();
   const locale = readerSessionState.preferredLocale;
+  const copy = getUiCopy(locale);
   const [inputState, setInputState] = useState({
     sourceQuery: urlQuery,
     value: urlQuery,
@@ -246,13 +246,13 @@ export function SearchOverview() {
             </span>
             <div className="min-w-0">
               <h1 className="font-[var(--font-display)] text-3xl font-semibold leading-tight tracking-[-0.03em] text-[var(--text)] md:text-4xl">
-                검색
+                {copy.search.title}
               </h1>
             </div>
           </div>
           <form className="relative mx-auto w-full max-w-[500px] sm:w-[500px]" data-testid="search-form" onSubmit={handleSubmit}>
             <label className="sr-only" htmlFor="story-search-input">
-              스토리 검색
+              {copy.search.label}
             </label>
             <Search
               aria-hidden="true"
@@ -270,7 +270,7 @@ export function SearchOverview() {
                   value: event.target.value,
                 })
               }
-              placeholder={`${localeLabel} 스토리 검색`}
+              placeholder={copy.search.placeholder(localeLabel)}
               type="search"
               value={inputValue}
             />
@@ -283,23 +283,23 @@ export function SearchOverview() {
         {query.length === 0 ? (
           <Card className="bg-[var(--surface)]/94" data-testid="search-empty-state">
             <CardContent className="px-5 py-6 text-sm leading-7 text-[var(--text-muted)]">
-              검색어를 입력하면 현재 언어의 모든 스토리에서 찾아봅니다.
+              {copy.search.empty}
             </CardContent>
           </Card>
         ) : indexState.status === "loading" ? (
           <div data-testid="search-loading-state">
-            <LoadingStateCard label={`${localeLabel} 검색 인덱스 로딩 중`} />
+            <LoadingStateCard label={copy.search.indexLoading(localeLabel)} />
           </div>
         ) : indexState.status === "error" ? (
           <Card className="bg-[var(--surface)]/94" data-testid="search-error-state">
             <CardContent className="px-5 py-6 text-sm leading-7 text-[var(--text-muted)]">
-              검색 인덱스를 불러오지 못했습니다.
+              {copy.search.indexError}
             </CardContent>
           </Card>
         ) : results.length === 0 ? (
           <Card className="bg-[var(--surface)]/94" data-testid="search-no-results-state">
             <CardContent className="px-5 py-6 text-sm leading-7 text-[var(--text-muted)]">
-              일치하는 스토리가 없습니다.
+              {copy.search.noResults}
             </CardContent>
           </Card>
         ) : (
@@ -308,11 +308,8 @@ export function SearchOverview() {
               className="flex flex-wrap items-center justify-between gap-3 text-sm text-[var(--text-muted)]"
               data-testid="search-results-summary"
             >
-              <span>
-                <strong className="font-semibold text-[var(--text)]" data-testid="search-results-count">
-                  {formatMetric(results.length)}
-                </strong>
-                개 스토리
+              <span className="font-semibold text-[var(--text)]" data-testid="search-results-count">
+                {copy.search.resultStories(formatUiNumber(locale, results.length))}
               </span>
               <span>{localeLabel}</span>
             </div>
@@ -334,7 +331,7 @@ export function SearchOverview() {
                 data-testid="search-results-sentinel"
                 ref={loadMoreRef}
               >
-                <LoadingIndicator label="검색 결과 추가 로딩 중" />
+                <LoadingIndicator label={copy.search.loadingMore} />
               </div>
             ) : null}
           </>

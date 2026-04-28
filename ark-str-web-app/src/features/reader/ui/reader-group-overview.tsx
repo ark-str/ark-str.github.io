@@ -30,14 +30,12 @@ import type {
   ContentStorylineItemRole,
   ReaderLocale,
 } from "@/features/content/types";
+import { getUiCopy } from "@/features/i18n/config/ui-copy";
+import { formatUiMinutes, formatUiNumber } from "@/features/i18n/service/format-ui";
 import { resolveRuntimePublicPath, useContentIndex } from "@/features/content/runtime/use-public-content";
 import { cn } from "@/lib/utils";
 
 const GROUP_FLOW_ITEM_LIMIT = 24;
-
-function formatMetric(value: number) {
-  return new Intl.NumberFormat("ko-KR").format(value);
-}
 
 function getGroupHeroImageClassName(backgroundImageAspect: ContentGroupEntry["backgroundImageAspect"]) {
   return backgroundImageAspect === "square"
@@ -196,22 +194,23 @@ export function ReaderGroupOverview({ groupId, locale }: { groupId: string; loca
   const index = indexState.data;
   const group = index ? findGroupEntry(index, locale, groupId) : null;
   const appBar = createGroupAppBar({ group, groupId, index, locale });
+  const copy = getUiCopy(locale);
 
   if (indexState.status === "loading" || indexState.status === "idle") {
-    return <ReaderGroupStatus appBar={appBar} isLoading message="generated content index 로딩 중" />;
+    return <ReaderGroupStatus appBar={appBar} isLoading message={copy.status.contentIndexLoading} />;
   }
 
   if (indexState.status === "error") {
     return (
       <ReaderGroupStatus
         appBar={appBar}
-        message={`generated content index를 불러오지 못했습니다: ${indexState.error.message}`}
+        message={copy.status.contentIndexError(indexState.error.message)}
       />
     );
   }
 
   if (!index || !group) {
-    return <ReaderGroupStatus appBar={appBar} message="요청한 story group을 찾을 수 없습니다." />;
+    return <ReaderGroupStatus appBar={appBar} message={copy.group.missing} />;
   }
 
   const stories = getGroupStories(index, locale, groupId);
@@ -270,13 +269,13 @@ export function ReaderGroupOverview({ groupId, locale }: { groupId: string; loca
                   data-testid="group-stats"
                 >
                   <span className="rounded-full border border-white/20 bg-black/35 px-3 py-1.5 backdrop-blur-md">
-                    {formatMetric(group.storyCount)} Stories
+                    {formatUiNumber(locale, group.storyCount)} {copy.common.stories}
                   </span>
                   <span className="rounded-full border border-white/20 bg-black/35 px-3 py-1.5 backdrop-blur-md">
-                    {formatMetric(group.totalVisibleCharacterCount)} chars
+                    {formatUiNumber(locale, group.totalVisibleCharacterCount)} {copy.common.chars}
                   </span>
                   <span className="rounded-full border border-white/20 bg-black/35 px-3 py-1.5 backdrop-blur-md">
-                    약 {formatMetric(group.estimatedMinutes)}분
+                    {formatUiMinutes(locale, group.estimatedMinutes)}
                   </span>
                 </div>
               </div>
@@ -292,7 +291,7 @@ export function ReaderGroupOverview({ groupId, locale }: { groupId: string; loca
             {storylineTitle}
           </h2>
           <span className="text-xs text-[var(--text-muted)]">
-            {formatMetric(groupFlowItems.length)} groups
+            {formatUiNumber(locale, groupFlowItems.length)} {copy.common.groups}
           </span>
         </div>
         <div className="-mx-4 flex gap-3 overflow-x-auto px-4 py-2 md:mx-0 md:px-2" data-testid="group-flow-scroll">
@@ -369,10 +368,10 @@ export function ReaderGroupOverview({ groupId, locale }: { groupId: string; loca
                   data-testid="group-story-metrics"
                 >
                   <span className="rounded-full border border-[var(--border)] bg-[var(--surface-muted)] px-3 py-1.5">
-                    {formatMetric(story.visibleCharacterCount)} chars
+                    {formatUiNumber(locale, story.visibleCharacterCount)} {copy.common.chars}
                   </span>
                   <span className="rounded-full border border-[var(--border)] bg-[var(--surface-muted)] px-3 py-1.5">
-                    약 {formatMetric(story.estimatedMinutes)}분
+                    {formatUiMinutes(locale, story.estimatedMinutes)}
                   </span>
                 </div>
               </CardHeader>
