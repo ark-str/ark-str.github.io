@@ -18,9 +18,12 @@ import {
   getReaderStoryHref,
 } from "@/features/content/config/reader-routes";
 import { useContentIndex } from "@/features/content/runtime/use-public-content";
-import type { ContentStoryIndexEntry } from "@/features/content/types";
+import type { ContentStoryIndexEntry, ReaderLocale } from "@/features/content/types";
+import { getUiCopy, type UiCopy } from "@/features/i18n/config/ui-copy";
+import { formatUiDateTime } from "@/features/i18n/service/format-ui";
 import { useStoryNotes } from "@/features/notes/runtime/story-notes-context";
 import type { StoryNoteEntry } from "@/features/notes/types";
+import { useReaderSession } from "@/features/reader/runtime/reader-session-context";
 
 function createNotesAppBar(): FloatingAppBarModel {
   return {
@@ -36,30 +39,22 @@ function createNotesAppBar(): FloatingAppBarModel {
   };
 }
 
-function formatUpdatedAt(value: string) {
-  const date = new Date(value);
-  if (!Number.isFinite(date.getTime())) {
-    return value;
-  }
-
-  return new Intl.DateTimeFormat("ko-KR", {
-    dateStyle: "medium",
-    timeStyle: "short",
-  }).format(date);
-}
-
 function sortNotes(notes: Record<string, StoryNoteEntry>) {
   return Object.values(notes).sort((left, right) => Date.parse(right.updatedAt) - Date.parse(left.updatedAt));
 }
 
 function NoteOverviewCard({
+  copy,
   note,
   setStoryNote,
   storyEntry,
+  uiLocale,
 }: {
+  copy: UiCopy["notes"];
   note: StoryNoteEntry;
   setStoryNote: ReturnType<typeof useStoryNotes>["setStoryNote"];
   storyEntry: ContentStoryIndexEntry | null;
+  uiLocale: ReaderLocale;
 }) {
   const [draftText, setDraftText] = useState(note.text);
   const storyHref = storyEntry ? getReaderStoryHref(note.locale, storyEntry.groupId, storyEntry.storyId) : null;
@@ -121,7 +116,7 @@ function NoteOverviewCard({
               data-testid="note-story-link"
               href={storyHref}
             >
-              스토리로 이동
+              {copy.goToStory}
               <ArrowUpRight aria-hidden="true" className="h-3.5 w-3.5" />
             </Link>
           ) : (
@@ -130,14 +125,14 @@ function NoteOverviewCard({
               className="inline-flex h-9 w-fit items-center rounded-[var(--radius-sm)] border border-[var(--border)] px-3 text-xs font-semibold text-[var(--text-muted)] opacity-60"
               data-testid="note-story-link-disabled"
             >
-              스토리로 이동
+              {copy.goToStory}
             </span>
           )}
         </div>
       </CardHeader>
       <CardContent className="grid gap-4 px-5 pb-5">
         <Textarea
-          aria-label={`${note.storyTitle} 메모 수정`}
+          aria-label={copy.editNote(note.storyTitle)}
           className="min-h-36 resize-y rounded-[var(--radius-md)] shadow-none"
           data-testid="note-card-textarea"
           onBlur={handleTextBlur}
@@ -145,7 +140,7 @@ function NoteOverviewCard({
           value={draftText}
         />
         <p className="justify-self-end text-xs text-[var(--text-muted)]" data-testid="note-updated-at">
-          {formatUpdatedAt(note.updatedAt)}
+          {formatUiDateTime(uiLocale, note.updatedAt)}
         </p>
       </CardContent>
     </article>
@@ -155,8 +150,11 @@ function NoteOverviewCard({
 export function NotesOverview() {
   const appBar = createNotesAppBar();
   const { isHydrated, setStoryNote, state } = useStoryNotes();
+  const { state: readerSessionState } = useReaderSession();
   const indexState = useContentIndex();
   const notes = sortNotes(state.notes);
+  const uiLocale = readerSessionState.preferredLocale;
+  const copy = getUiCopy(uiLocale);
 
   return (
     <ReaderPageFrame
@@ -169,7 +167,7 @@ export function NotesOverview() {
             </span>
             <div className="min-w-0">
               <h1 className="font-[var(--font-display)] text-3xl font-semibold leading-tight tracking-[-0.03em] text-[var(--text)] md:text-4xl">
-                메모
+                {copy.notes.title}
               </h1>
             </div>
           </div>
@@ -179,11 +177,11 @@ export function NotesOverview() {
     >
       <section className="relative z-10 grid gap-4" data-testid="notes-overview">
         {!isHydrated ? (
-          <LoadingStateCard label="메모 로딩 중" />
+          <LoadingStateCard label={copy.notes.loading} />
         ) : notes.length === 0 ? (
           <Card className="bg-[var(--surface)]/94" data-testid="notes-empty-state">
             <CardContent className="px-5 py-6 text-sm leading-7 text-[var(--text-muted)]">
-              아직 작성한 메모가 없습니다.
+              {copy.notes.empty}
             </CardContent>
           </Card>
         ) : (
@@ -197,10 +195,12 @@ export function NotesOverview() {
 
               return (
                 <NoteOverviewCard
+                  copy={copy.notes}
                   key={note.storyId}
                   note={note}
                   setStoryNote={setStoryNote}
                   storyEntry={storyEntry || null}
+                  uiLocale={uiLocale}
                 />
               );
             })}

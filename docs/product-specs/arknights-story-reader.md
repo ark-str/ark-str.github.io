@@ -77,6 +77,7 @@ This phase keeps the recovered reader shell and Pages deployment path stable whi
 - a fixed top app bar shared by home, locale archive, group, and story pages; it uses separate browser and transparent app chrome icons, matched compact home/theme/dropdown control heights and radii, icon breadcrumb separators, icon-only theme control, mobile wrapping, and scroll-down hide / scroll-up reveal behavior
 - the app bar includes a note icon between locale and theme controls that opens a `/notes` overview of saved story notes with links back to the last edited story route
 - the app bar includes a search icon between locale and notes controls that opens `/search`, where the current locale's story index is loaded once and then searched as the query changes
+- app chrome, reader status, notes, search, and common metric labels are localized from the configured reader UI locale, and the document language is synchronized client-side after persisted locale restore
 - the `/notes` overview renders saved notes as editable grid cards with story sidebar-style stage/phase badges, story return links, last-edited timestamps, and stable in-place editing while text is being cleared
 - the `/search` overview supports `/search?q=<query>` deep links, a centered 500px desktop search input, debounced URL replacement while typing, highlighted matching story lines, grid story cards that route back to the matched story, and scroll-driven incremental rendering for broad one-character queries
 - stage and operation phase badges share one design across notes, search, group story cards, story headers, and story side navigation
@@ -92,7 +93,7 @@ This phase keeps the recovered reader shell and Pages deployment path stable whi
 - story-page backdrop swaps are immediate; cross-fade state is intentionally omitted to keep the reader surface predictable
 - story-page fixed backdrops and fixed app chrome avoid blur/backdrop-filter effects to prevent scroll-time compositor flicker
 - story pages place desktop-only group story navigation on the left with viewport-constrained internal scrolling, hide that navigation on mobile, provide bottom previous/next story navigation inside the current group, and keep a floating scroll-to-top action at the lower right
-- story pages expose a fixed lower-right note button above the floating top button; its editor opens as a right sidebar on wide screens and a bottom sheet on mobile
+- story pages expose a fixed lower-right note button above the floating top button; its editor opens as a right sidebar on wide screens and a bottom sheet on mobile, omits a drag handle, and closes on browser back before route navigation
 - story pages place a spoiler-safe summary card immediately below the route title; it starts collapsed, keeps only the `SUMMARY` badge and disclosure icon in the header, and expands with a height-only animation to reveal the generated summary text
 - story route headers avoid raw vendor source paths and redundant group-count copy, while group/story metadata is rendered as compact wrapping badges and sidebar phase badges use matching accent tones
 - global horizontal and vertical scrollbar tracks/corners are transparent so local scroll regions do not add heavy chrome

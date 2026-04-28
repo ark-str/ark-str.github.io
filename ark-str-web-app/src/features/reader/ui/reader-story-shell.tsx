@@ -41,14 +41,12 @@ import type {
   StoryBlock,
   StoryDetail,
 } from "@/features/content/types";
+import { getUiCopy, type UiCopy } from "@/features/i18n/config/ui-copy";
+import { formatUiMinutes, formatUiNumber } from "@/features/i18n/service/format-ui";
 import { interpolateStoryText } from "@/features/reader/service/interpolate-story-text";
 import { useReaderSession } from "@/features/reader/runtime/reader-session-context";
 import { useStoryNotes } from "@/features/notes/runtime/story-notes-context";
 import { cn } from "@/lib/utils";
-
-function formatMetric(value: number) {
-  return new Intl.NumberFormat("ko-KR").format(value);
-}
 
 function StoryClassificationBadges({
   compact = false,
@@ -449,12 +447,14 @@ function StoryFloatingTopButton() {
 }
 
 function StoryNoteDock({
+  copy,
   groupId,
   groupTitle,
   locale,
   storyId,
   storyTitle,
 }: {
+  copy: UiCopy["storyNote"];
   groupId: string;
   groupTitle: string;
   locale: ReaderLocale;
@@ -463,9 +463,39 @@ function StoryNoteDock({
 }) {
   const { isHydrated, setStoryNote, state } = useStoryNotes();
   const [isOpen, setIsOpen] = useState(false);
+  const historyMarkerRef = useRef(false);
   const note = state.notes[storyId] ?? null;
   const hasNote = Boolean(note);
   const noteText = note?.text ?? "";
+
+  useEffect(() => {
+    if (!isOpen || historyMarkerRef.current || typeof window === "undefined") {
+      return;
+    }
+
+    window.history.pushState(
+      {
+        ...(window.history.state && typeof window.history.state === "object"
+          ? window.history.state
+          : {}),
+        storyNotePanel: true,
+      },
+      "",
+      window.location.href,
+    );
+    historyMarkerRef.current = true;
+  }, [isOpen]);
+
+  const closePanel = useCallback(() => {
+    if (historyMarkerRef.current && typeof window !== "undefined") {
+      historyMarkerRef.current = false;
+      setIsOpen(false);
+      window.history.back();
+      return;
+    }
+
+    setIsOpen(false);
+  }, []);
 
   useEffect(() => {
     if (!isOpen) {
@@ -474,12 +504,30 @@ function StoryNoteDock({
 
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
-        setIsOpen(false);
+        closePanel();
       }
     };
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [closePanel, isOpen]);
+
+  useEffect(() => {
+    if (!isOpen) {
+      return;
+    }
+
+    const handlePopState = () => {
+      if (!historyMarkerRef.current) {
+        return;
+      }
+
+      historyMarkerRef.current = false;
+      setIsOpen(false);
+    };
+
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
   }, [isOpen]);
 
   const handleTextChange = (text: string) => {
@@ -496,7 +544,7 @@ function StoryNoteDock({
   return (
     <>
       <Button
-        aria-label="스토리 메모 열기"
+        aria-label={copy.open}
         className={cn(
           "fixed bottom-[calc(var(--space-6)+2.75rem)] right-6 z-40 h-11 w-11 rounded-[var(--radius-md)] p-0",
           hasNote && "border-[var(--accent)] text-[var(--accent-strong)]",
@@ -513,18 +561,17 @@ function StoryNoteDock({
       {isOpen ? (
         <div data-testid="story-note-layer">
           <button
-            aria-label="스토리 메모 닫기"
+            aria-label={copy.close}
             className="fixed inset-0 z-[60] cursor-default bg-[color-mix(in_srgb,var(--bg)_56%,transparent)]"
             data-testid="story-note-backdrop"
-            onClick={() => setIsOpen(false)}
+            onClick={closePanel}
             type="button"
           />
           <aside
-            aria-label="스토리 메모"
+            aria-label={copy.label}
             className="fixed inset-x-0 bottom-0 z-[70] flex max-h-[82vh] flex-col rounded-t-[var(--radius-xl)] border border-[var(--border)] bg-[var(--surface)] shadow-[var(--shadow-lg)] md:inset-y-0 md:left-auto md:right-0 md:h-full md:max-h-none md:w-[28rem] md:rounded-none md:border-y-0 md:border-l md:border-r-0"
             data-testid="story-note-panel"
           >
-            <div className="mx-auto mt-3 h-1 w-12 rounded-[999px] bg-[var(--border)] md:hidden" />
             <header className="flex items-start justify-between gap-4 border-b border-[var(--border)] px-5 py-4">
               <div className="min-w-0">
                 <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--accent-strong)]">
@@ -536,10 +583,10 @@ function StoryNoteDock({
                 <p className="mt-1 truncate text-xs text-[var(--text-muted)]">{groupTitle}</p>
               </div>
               <Button
-                aria-label="스토리 메모 닫기"
+                aria-label={copy.close}
                 className="h-9 w-9 shrink-0 rounded-[var(--radius-sm)]"
                 data-testid="story-note-close-button"
-                onClick={() => setIsOpen(false)}
+                onClick={closePanel}
                 size="icon"
                 variant="ghost"
               >
@@ -552,7 +599,7 @@ function StoryNoteDock({
                 className="min-h-[18rem] flex-1 resize-none rounded-[var(--radius-md)] shadow-none"
                 data-testid="story-note-textarea"
                 onChange={(event) => handleTextChange(event.target.value)}
-                placeholder="이 story에 남길 메모"
+                placeholder={copy.placeholder}
                 value={noteText}
               />
             </div>
@@ -564,10 +611,12 @@ function StoryNoteDock({
 }
 
 function StoryBottomNavigation({
+  copy,
   locale,
   nextStory,
   previousStory,
 }: {
+  copy: UiCopy["storyNavigation"];
   locale: ReaderLocale;
   nextStory: ContentStoryIndexEntry | null;
   previousStory: ContentStoryIndexEntry | null;
@@ -580,18 +629,18 @@ function StoryBottomNavigation({
 
   return (
     <nav
-      aria-label="Story navigation"
+      aria-label={copy.label}
       className="grid grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] overflow-hidden rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--surface)]/94 shadow-[var(--shadow-sm)]"
       data-testid="story-bottom-nav"
     >
       {previousStory ? (
         <Link
-          aria-label={`이전 스토리: ${previousStory.title}`}
+          aria-label={copy.previousAria(previousStory.title)}
           className={cn(itemClassName, activeClassName, "justify-start")}
           data-testid="story-previous-link"
           href={getReaderStoryHref(locale, previousStory.groupId, previousStory.storyId)}
         >
-          ‹ 이동
+          {copy.previous}
         </Link>
       ) : (
         <span
@@ -599,18 +648,18 @@ function StoryBottomNavigation({
           className={cn(itemClassName, disabledClassName, "justify-start")}
           data-testid="story-previous-disabled"
         >
-          ‹ 이동
+          {copy.previous}
         </span>
       )}
       <span aria-hidden="true" className="my-3 w-px bg-[var(--border)]" />
       {nextStory ? (
         <Link
-          aria-label={`다음 스토리: ${nextStory.title}`}
+          aria-label={copy.nextAria(nextStory.title)}
           className={cn(itemClassName, activeClassName, "justify-end text-right")}
           data-testid="story-next-link"
           href={getReaderStoryHref(locale, nextStory.groupId, nextStory.storyId)}
         >
-          다음 ›
+          {copy.next}
         </Link>
       ) : (
         <span
@@ -618,7 +667,7 @@ function StoryBottomNavigation({
           className={cn(itemClassName, disabledClassName, "justify-end text-right")}
           data-testid="story-next-disabled"
         >
-          다음 ›
+          {copy.next}
         </span>
       )}
     </nav>
@@ -909,6 +958,7 @@ export function ReaderStoryShell({
     story,
     storyId,
   });
+  const copy = getUiCopy(locale);
   const portraitPaths = useMemo(
     () => createStoryPortraitPaths(detail, assetState.data),
     [assetState.data, detail],
@@ -952,20 +1002,20 @@ export function ReaderStoryShell({
   const activeBackgroundPath = activeBackgroundId ? (backgroundPaths[activeBackgroundId] ?? null) : null;
 
   if (isIndexLoading) {
-    return <ReaderStoryStatus appBar={appBar} isLoading message="generated content index 로딩 중" />;
+    return <ReaderStoryStatus appBar={appBar} isLoading message={copy.status.contentIndexLoading} />;
   }
 
   if (indexState.status === "error") {
     return (
       <ReaderStoryStatus
         appBar={appBar}
-        message={`generated content index를 불러오지 못했습니다: ${indexState.error.message}`}
+        message={copy.status.contentIndexError(indexState.error.message)}
       />
     );
   }
 
   if (!index || !group || !story) {
-    return <ReaderStoryStatus appBar={appBar} message="요청한 story를 찾을 수 없습니다." />;
+    return <ReaderStoryStatus appBar={appBar} message={copy.status.storyMissing} />;
   }
 
   return (
@@ -982,8 +1032,10 @@ export function ReaderStoryShell({
             </h1>
           </div>
           <div className="flex flex-wrap gap-2" data-testid="story-header-metrics">
-            <StoryMetricBadge>{formatMetric(story.visibleCharacterCount)} chars</StoryMetricBadge>
-            <StoryMetricBadge>약 {formatMetric(story.estimatedMinutes)}분</StoryMetricBadge>
+            <StoryMetricBadge>
+              {formatUiNumber(locale, story.visibleCharacterCount)} {copy.common.chars}
+            </StoryMetricBadge>
+            <StoryMetricBadge>{formatUiMinutes(locale, story.estimatedMinutes)}</StoryMetricBadge>
           </div>
         </section>
       }
@@ -1012,11 +1064,13 @@ export function ReaderStoryShell({
                   {group.title}
                 </CardTitle>
                 <div className="flex flex-wrap gap-2" data-testid="story-group-metrics">
-                  <StoryMetricBadge compact>{formatMetric(group.storyCount)} stories</StoryMetricBadge>
                   <StoryMetricBadge compact>
-                    {formatMetric(group.totalVisibleCharacterCount)} chars
+                    {formatUiNumber(locale, group.storyCount)} {copy.common.stories}
                   </StoryMetricBadge>
-                  <StoryMetricBadge compact>약 {formatMetric(group.estimatedMinutes)}분</StoryMetricBadge>
+                  <StoryMetricBadge compact>
+                    {formatUiNumber(locale, group.totalVisibleCharacterCount)} {copy.common.chars}
+                  </StoryMetricBadge>
+                  <StoryMetricBadge compact>{formatUiMinutes(locale, group.estimatedMinutes)}</StoryMetricBadge>
                 </div>
               </CardHeader>
               <CardContent className="min-h-0 overflow-y-auto px-4 pb-4 pr-3" data-testid="story-sibling-list">
@@ -1039,9 +1093,9 @@ export function ReaderStoryShell({
                       </span>
                       <span className="flex flex-wrap gap-1.5" data-testid="story-sibling-metrics">
                         <StoryMetricBadge compact>
-                          {formatMetric(entry.visibleCharacterCount)} chars
+                          {formatUiNumber(locale, entry.visibleCharacterCount)} {copy.common.chars}
                         </StoryMetricBadge>
-                        <StoryMetricBadge compact>약 {formatMetric(entry.estimatedMinutes)}분</StoryMetricBadge>
+                        <StoryMetricBadge compact>{formatUiMinutes(locale, entry.estimatedMinutes)}</StoryMetricBadge>
                       </span>
                     </Link>
                   ))}
@@ -1061,35 +1115,40 @@ export function ReaderStoryShell({
                 portraitPaths={portraitPaths}
               />
             ) : isBodyLoading ? (
-              <LoadingStateCard className="bg-[var(--surface)]/90" label="스토리 본문 로딩 중" />
+              <LoadingStateCard className="bg-[var(--surface)]/90" label={copy.status.storyBodyLoading} />
             ) : detailState.status === "error" ? (
               <Card className="bg-[var(--surface)]/90">
                 <CardContent className="pt-6 text-sm leading-7 text-[var(--text-muted)]">
-                  generated story body를 불러오지 못했습니다: {detailState.error.message}
+                  {copy.status.storyBodyError(detailState.error.message)}
                 </CardContent>
               </Card>
             ) : assetState.status === "error" ? (
               <Card className="bg-[var(--surface)]/90">
                 <CardContent className="pt-6 text-sm leading-7 text-[var(--text-muted)]">
-                  generated asset manifest를 불러오지 못했습니다: {assetState.error.message}
+                  {copy.status.assetManifestError(assetState.error.message)}
                 </CardContent>
               </Card>
             ) : (
               <Card className="bg-[var(--surface)]/90">
                 <CardContent className="pt-6 text-sm leading-7 text-[var(--text-muted)]">
-                  이 스토리는 generated body JSON이 아직 준비되지 않았습니다. source manifest에는
-                  등록되어 있지만 본문 파일이 비어 있거나 미해결 상태입니다.
+                  {copy.status.storyBodyUnavailable}
                 </CardContent>
               </Card>
             )}
           </section>
         </div>
 
-        <StoryBottomNavigation locale={locale} nextStory={nextStory} previousStory={previousStory} />
+        <StoryBottomNavigation
+          copy={copy.storyNavigation}
+          locale={locale}
+          nextStory={nextStory}
+          previousStory={previousStory}
+        />
       </section>
 
       <StoryFloatingTopButton />
       <StoryNoteDock
+        copy={copy.storyNote}
         groupId={story.groupId}
         groupTitle={group.title}
         locale={locale}

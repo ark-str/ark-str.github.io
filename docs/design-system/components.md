@@ -13,7 +13,7 @@ Current shared primitives live in `ark-str-web-app/src/components/ui/`.
 - `Separator`
 - `DisclosureCard`
 
-These are the base layer that features should compose before adding their own product-specific UI. `DisclosureCard` owns only generic open/close behavior and must not encode feature-specific grid spanning.
+These are the base layer that features should compose before adding their own product-specific UI. `DisclosureCard` owns only generic open/close behavior, uses a centered icon toggle rather than a text glyph, and must not encode feature-specific grid spanning.
 
 ## Product Patterns
 
