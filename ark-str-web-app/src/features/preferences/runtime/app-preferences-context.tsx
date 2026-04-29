@@ -44,6 +44,15 @@ function useAppPreferencesStore() {
         theme,
       }));
     },
+    setGoogleAiStudioApiKey(googleAiStudioApiKey: string) {
+      setState((current) => ({
+        ...current,
+        googleAiStudioApiKey: googleAiStudioApiKey.trim().slice(0, 256),
+      }));
+    },
+    replaceAppPreferences(nextState: AppPreferencesState) {
+      setState(normalizeAppPreferencesState(nextState));
+    },
     toggleTheme() {
       setState((current) => ({
         ...current,

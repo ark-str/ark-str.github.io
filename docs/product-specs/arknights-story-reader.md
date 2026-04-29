@@ -5,7 +5,7 @@ Phase: reader visual refresh
 
 ## Product Goal
 
-Build a web application that makes Arknights story content easier to read, summarize, and browse without requiring runtime network access.
+Build a web application that makes Arknights story content easier to read, summarize, and browse while keeping bundled story reading local-first by default.
 
 ## Main Pages
 
@@ -37,8 +37,9 @@ Build a web application that makes Arknights story content easier to read, summa
 
 - App Router only
 - bundled resources only
-- no runtime external fetches
+- no runtime external fetches except the user-initiated Google AI Studio story summary call after the user stores an API key locally
 - local storage only for mutable user state
+- Google AI Studio API keys are browser-local preferences and are excluded from backup export JSON
 - repository root owns the harness and `ark-str-web-app/` owns the runnable app
 
 ## Current Phase
@@ -70,6 +71,10 @@ This phase keeps the recovered reader shell and Pages deployment path stable whi
 - local storage reader-session restore for preferred locale and last visited story
 - local storage reader nickname capture on the home screen; story rendering replaces `{@nickname}` and `{@nickName}` tokens at runtime and falls back to an empty string when no nickname is set
 - local storage story notes keyed by `storyId`, shared across localized versions of the same story, saved on every text edit, and deleted when the note is cleared
+- local storage read-progress markers keyed by `storyId`, shared across localized versions of the same story, toggled from story pages and shown on group story cards
+- story pages include top and bottom action rows under the title and under the story body for read toggling and one-shot AI summary generation; AI summaries use the rendered story paragraph text, render Markdown output, share the same transient state between the top and bottom widgets, are not persisted, and route to `/settings` when no Google AI Studio API key is saved
+- `/settings` stores the reader name and Google AI Studio API key with a Google AI Studio link, a public/shared-device warning, and a collapsible issuance guide; it exports/imports local user data as JSON without an export success alert, resets notes or read-progress markers, and opens the repository GitHub issue form in a new tab for bug reports and feature requests
+- backup JSON includes reader session, app theme, story notes, read progress, and character observations; it intentionally excludes Google AI Studio API keys and transient AI summary results
 - locale-scoped story search indexes generated into bundled static JSON so `/search?q=...` can deep-link into current-language full-story text search without runtime network access
 - home renders an ARK STR onboarding surface with a clean centered nickname input, two-line continue-reading action that shows the target story title, full-bleed square-edged localized service copy using the accent-colored app icon, generously separated curated recommendation groups, selected-locale group/story/character-count statistics, and maintainer credit
 - locale-scoped character alias observation storage under `ark-str:character-observations:v1`
@@ -77,6 +82,7 @@ This phase keeps the recovered reader shell and Pages deployment path stable whi
 - a fixed top app bar shared by home, locale archive, group, and story pages; it uses separate browser and transparent app chrome icons, matched compact home/theme/dropdown control heights and radii, icon breadcrumb separators, icon-only theme control, mobile wrapping, and scroll-down hide / scroll-up reveal behavior
 - the app bar includes a note icon between locale and theme controls that opens a `/notes` overview of saved story notes with links back to the last edited story route
 - the app bar includes a search icon between locale and notes controls that opens `/search`, where the current locale's story index is loaded once and then searched as the query changes
+- the app bar includes a settings icon to the right of the theme toggle, and the group breadcrumb is rendered as the same bordered compact control on group and story pages
 - app chrome, reader status, notes, search, and common metric labels are localized from the configured reader UI locale, and the document language is synchronized client-side after persisted locale restore
 - the `/notes` overview renders saved notes as editable grid cards with story sidebar-style stage/phase badges, story return links, last-edited timestamps, and stable in-place editing while text is being cleared
 - the `/search` overview supports `/search?q=<query>` deep links, a centered 500px desktop search input, debounced URL replacement while typing, highlighted matching story lines, grid story cards that route back to the matched story, and scroll-driven incremental rendering for broad one-character queries
@@ -84,6 +90,7 @@ This phase keeps the recovered reader shell and Pages deployment path stable whi
 - loading generated content, story bodies, notes hydration, and search indexes uses loading indicators rather than visible loading sentences
 - locale archives remove redundant helper copy from the header, keep the Storylines stats card right-aligned on mobile, and group story sets by generated storyline metadata in initially collapsed grid cards with height-only 300ms disclosure animation that remain one main-grid cell whether closed or open before routing into dedicated group overview pages
 - expanded regular storyline archive sections render `STORY_SET` primary groups and `BEFORE` / `AFTER` flow references in the same sorted one-column list; `NONE/NONE` review groups are `오퍼레이터 서사`, unmatched event groups are `미분류`, and `오퍼레이터 서사` is sorted last and rendered as a bottom section outside the main grid with an internal group grid
+- synthetic storyline names such as uncategorized and operator narratives are translated through UI copy instead of leaking the generated Korean labels into other locales
 - generated group and story metrics for total visible characters and estimated reading time
 - generated group-level images copied into `public/generated/group-backgrounds/`; manually curated `assets/group-backgrounds/<groupId>.png` files override inferred `ArknightsResource` sources, MAINLINE groups prefer square artwork, and ACTIVITY groups prefer wide atmospheric images
 - locale archive primary group cards render generated group artwork with a dark overlay, white titles, and compact Stories/chars/time metric badges

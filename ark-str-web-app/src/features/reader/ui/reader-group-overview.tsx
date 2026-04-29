@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { ReaderPageFrame } from "@/components/layout/reader-page-frame";
 import type { FloatingAppBarModel } from "@/components/layout/types";
+import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { LoadingStateCard } from "@/components/ui/loading-indicator";
 import { StoryClassificationBadges } from "@/components/ui/story-classification-badges";
@@ -32,6 +33,7 @@ import type {
 } from "@/features/content/types";
 import { getUiCopy } from "@/features/i18n/config/ui-copy";
 import { formatUiMinutes, formatUiNumber } from "@/features/i18n/service/format-ui";
+import { useReadProgress } from "@/features/read-progress/runtime/read-progress-context";
 import { resolveRuntimePublicPath, useContentIndex } from "@/features/content/runtime/use-public-content";
 import { cn } from "@/lib/utils";
 
@@ -94,7 +96,7 @@ function createGroupAppBar({
   return {
     currentLocale: locale,
     groupCrumb: {
-      href: null,
+      href: getReaderGroupHref(locale, group?.groupId ?? groupId),
       label: group?.title ?? groupId,
     },
     localeOptions: CANONICAL_READER_LOCALES.map((targetLocale) => ({
@@ -191,6 +193,7 @@ function ReaderGroupStatus({
 
 export function ReaderGroupOverview({ groupId, locale }: { groupId: string; locale: ReaderLocale }) {
   const indexState = useContentIndex();
+  const readProgress = useReadProgress();
   const index = indexState.data;
   const group = index ? findGroupEntry(index, locale, groupId) : null;
   const appBar = createGroupAppBar({ group, groupId, index, locale });
@@ -230,7 +233,9 @@ export function ReaderGroupOverview({ groupId, locale }: { groupId: string; loca
     locale,
     primaryItems: primaryStoryline?.items ?? null,
   });
-  const storylineTitle = primaryStoryline?.title ?? group.title;
+  const storylineTitle = primaryStoryline
+    ? copy.archive.syntheticTitles[primaryStoryline.storylineId] ?? primaryStoryline.title
+    : group.title;
 
   return (
     <ReaderPageFrame
@@ -342,42 +347,56 @@ export function ReaderGroupOverview({ groupId, locale }: { groupId: string; loca
       </section>
 
       <section className="grid gap-4">
-        {stories.map((story) => (
-          <Link
-            key={story.storyId}
-            className="group block"
-            data-testid="group-story-card"
-            href={getReaderStoryHref(locale, story.groupId, story.storyId)}
-          >
-            <Card className="bg-[var(--surface)]/94 transition duration-[var(--motion-fast)] ease-out group-hover:-translate-y-px group-hover:border-[var(--accent)] group-hover:shadow-[var(--shadow-sm)]">
-              <CardHeader className="grid gap-4 md:grid-cols-[minmax(0,1fr)_auto] md:items-end">
-                <div className="grid gap-3">
-                  <div className="flex flex-wrap items-center gap-2">
-                    <StoryClassificationBadges
-                      avgTag={story.avgTag}
-                      storyCode={story.storyCode}
-                      testId="group-story-classification"
-                    />
+        {stories.map((story) => {
+          const isRead = readProgress.isHydrated && readProgress.isStoryRead(story.storyId);
+
+          return (
+            <Link
+              key={story.storyId}
+              className="group block"
+              data-read={isRead ? "true" : "false"}
+              data-testid="group-story-card"
+              href={getReaderStoryHref(locale, story.groupId, story.storyId)}
+            >
+              <Card className="bg-[var(--surface)]/94 transition duration-[var(--motion-fast)] ease-out group-hover:-translate-y-px group-hover:border-[var(--accent)] group-hover:shadow-[var(--shadow-sm)]">
+                <CardHeader className="grid gap-4 md:grid-cols-[minmax(0,1fr)_auto] md:items-end">
+                  <div className="grid gap-3">
+                    <div className="flex flex-wrap items-center gap-2">
+                      <StoryClassificationBadges
+                        avgTag={story.avgTag}
+                        storyCode={story.storyCode}
+                        testId="group-story-classification"
+                      />
+                      {isRead ? (
+                        <Badge
+                          className="px-2 py-0.5 text-[10px] tracking-[0.12em]"
+                          data-testid="group-story-read-badge"
+                          variant="accent"
+                        >
+                          {copy.storyActions.readBadge}
+                        </Badge>
+                      ) : null}
+                    </div>
+                    <div className="grid gap-1">
+                      <CardTitle className="text-3xl">{story.title}</CardTitle>
+                    </div>
                   </div>
-                  <div className="grid gap-1">
-                    <CardTitle className="text-3xl">{story.title}</CardTitle>
+                  <div
+                    className="flex flex-wrap gap-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)] md:justify-end"
+                    data-testid="group-story-metrics"
+                  >
+                    <span className="rounded-full border border-[var(--border)] bg-[var(--surface-muted)] px-3 py-1.5">
+                      {formatUiNumber(locale, story.visibleCharacterCount)} {copy.common.chars}
+                    </span>
+                    <span className="rounded-full border border-[var(--border)] bg-[var(--surface-muted)] px-3 py-1.5">
+                      {formatUiMinutes(locale, story.estimatedMinutes)}
+                    </span>
                   </div>
-                </div>
-                <div
-                  className="flex flex-wrap gap-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-[var(--text-muted)] md:justify-end"
-                  data-testid="group-story-metrics"
-                >
-                  <span className="rounded-full border border-[var(--border)] bg-[var(--surface-muted)] px-3 py-1.5">
-                    {formatUiNumber(locale, story.visibleCharacterCount)} {copy.common.chars}
-                  </span>
-                  <span className="rounded-full border border-[var(--border)] bg-[var(--surface-muted)] px-3 py-1.5">
-                    {formatUiMinutes(locale, story.estimatedMinutes)}
-                  </span>
-                </div>
-              </CardHeader>
-            </Card>
-          </Link>
-        ))}
+                </CardHeader>
+              </Card>
+            </Link>
+          );
+        })}
       </section>
     </ReaderPageFrame>
   );

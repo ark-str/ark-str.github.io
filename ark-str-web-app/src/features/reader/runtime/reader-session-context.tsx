@@ -51,6 +51,9 @@ function useReaderSessionStore() {
         nickName: nickName.slice(0, 24),
       }));
     },
+    replaceReaderSession(nextState: ReaderSessionState) {
+      setState(normalizeReaderSessionState(nextState));
+    },
     setLastVisitedStory(lastVisitedStory: LastVisitedStory) {
       setState((current) => ({
         ...current,

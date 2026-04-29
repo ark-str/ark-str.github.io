@@ -21,6 +21,22 @@ for (const entry of codeRoots) {
 }
 
 const violations = [];
+const allowedRemoteFetchFiles = new Set([
+  "ark-str-web-app/src/features/ai-summary/runtime/summarize-story-with-gemini.ts",
+]);
+const allowedRemoteUrlsByFile = new Map([
+  [
+    "ark-str-web-app/src/features/ai-summary/config/google-ai-studio.ts",
+    new Set(["https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"]),
+  ],
+  [
+    "ark-str-web-app/src/features/settings/ui/settings-overview.tsx",
+    new Set([
+      "https://aistudio.google.com/app/apikey",
+      "https://github.com/wjlee611/ark-str/issues/new",
+    ]),
+  ],
+]);
 
 for (const filePath of files) {
   const text = readText(filePath);
@@ -30,12 +46,23 @@ for (const filePath of files) {
     violations.push(`${repoPath}: remote Google font helper is disallowed`);
   }
 
-  if (/\bfetch\s*\(\s*["'`](https?:)?\/\//.test(text)) {
+  if (
+    /\bfetch\s*\(\s*["'`](https?:)?\/\//.test(text) &&
+    !allowedRemoteFetchFiles.has(repoPath)
+  ) {
     violations.push(`${repoPath}: remote fetch is disallowed in this local-first app`);
   }
 
   if (/(src=|href=)["']https?:\/\//.test(text)) {
     violations.push(`${repoPath}: remote asset or link detected in runtime code`);
+  }
+
+  const allowedRemoteUrls = allowedRemoteUrlsByFile.get(repoPath) ?? new Set();
+  for (const match of text.matchAll(/["'`](https?:\/\/[^"'`]+)["'`]/g)) {
+    const url = match[1];
+    if (!allowedRemoteUrls.has(url)) {
+      violations.push(`${repoPath}: remote URL literal detected in runtime code`);
+    }
   }
 
   if (/url\(\s*["']?https?:\/\//.test(text)) {

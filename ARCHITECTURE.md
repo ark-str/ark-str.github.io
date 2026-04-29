@@ -8,7 +8,7 @@ This project intentionally separates the repository harness from the runnable we
 - Independent Next.js application lives in `ark-str-web-app/`
 - App Router under `ark-str-web-app/src/app`
 - No backend
-- No remote runtime dependencies
+- No remote runtime dependencies except the explicit user-triggered Google AI Studio summary request
 - User state persisted to `localStorage`
 - Future external game data handled through build-time vendor sources under `vendor/`
 
@@ -48,6 +48,7 @@ Disallowed patterns:
 - `service` importing `runtime` or `ui`
 - ad-hoc `localStorage` access outside `repo` and `runtime`
 - remote resources from component code
+- external API calls outside the AI summary runtime exception
 - moving harness logic into `ark-str-web-app/`
 - hard-coded runtime colors outside `ark-str-web-app/src/app/globals.css`
 
@@ -60,6 +61,8 @@ Disallowed patterns:
 - Published story assets live under `ark-str-web-app/public/generated/`, and the app consumes small generated metadata under `ark-str-web-app/src/generated/content/` so export builds do not scan `public/` directly or mirror the full story corpus into app source.
 - Reader route shells compose shared chrome and story/group metadata on the server, while story-only dynamic background switching stays in client UI components.
 - Theme state is owned by the preferences feature and applied through semantic CSS variables.
+- Preferences also own the optional Google AI Studio API key; backup/export code must exclude it while preserving it across imports.
+- Read progress is owned by `features/read-progress`, keyed by canonical `storyId`, and shared across localized routes.
 
 ## Why This Exists
 
