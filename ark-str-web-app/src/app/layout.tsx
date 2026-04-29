@@ -3,6 +3,7 @@ import "./globals.css";
 import { AppPreferencesProvider } from "@/features/preferences/runtime/app-preferences-context";
 import { ReaderSessionProvider } from "@/features/reader/runtime/reader-session-context";
 import { StoryNotesProvider } from "@/features/notes/runtime/story-notes-context";
+import { ReadProgressProvider } from "@/features/read-progress/runtime/read-progress-context";
 import { UiLocaleDocumentSync } from "@/features/i18n/ui/ui-locale-document-sync";
 import { browserIconPath } from "@/lib/public-path";
 
@@ -27,7 +28,9 @@ export default function RootLayout({
         <AppPreferencesProvider>
           <ReaderSessionProvider>
             <UiLocaleDocumentSync />
-            <StoryNotesProvider>{children}</StoryNotesProvider>
+            <StoryNotesProvider>
+              <ReadProgressProvider>{children}</ReadProgressProvider>
+            </StoryNotesProvider>
           </ReaderSessionProvider>
         </AppPreferencesProvider>
       </body>

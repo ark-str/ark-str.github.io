@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState, type ChangeEvent } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { ChevronRight, MoonStar, NotebookText, Search, SunMedium } from "lucide-react";
+import { ChevronRight, MoonStar, NotebookText, Search, Settings, SunMedium } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import { Select } from "@/components/ui/select";
 import { cn } from "@/lib/utils";
@@ -161,15 +161,22 @@ export function FloatingAppBar({ model }: FloatingAppBarProps) {
               {model.groupCrumb.href ? (
                 <Link
                   className={cn(
-                    buttonVariants({ size: "sm", variant: "ghost" }),
+                    buttonVariants({ size: "sm", variant: "subtle" }),
                     "min-w-0 max-w-full basis-full truncate text-xs sm:basis-auto sm:max-w-[18rem]",
                   )}
+                  data-testid="group-crumb-link"
                   href={model.groupCrumb.href}
                 >
                   {model.groupCrumb.label}
                 </Link>
               ) : (
-                <span className="min-w-0 max-w-full basis-full truncate px-3 text-xs font-semibold text-[var(--text)] sm:basis-auto sm:max-w-[18rem]">
+                <span
+                  className={cn(
+                    buttonVariants({ size: "sm", variant: "subtle" }),
+                    "min-w-0 max-w-full basis-full truncate text-xs sm:basis-auto sm:max-w-[18rem]",
+                  )}
+                  data-testid="group-crumb-link"
+                >
                   {model.groupCrumb.label}
                 </span>
               )}
@@ -253,6 +260,17 @@ export function FloatingAppBar({ model }: FloatingAppBarProps) {
           >
             {isDarkTheme ? <MoonStar className="h-4 w-4" /> : <SunMedium className="h-4 w-4" />}
           </button>
+          <Link
+            aria-label={copy.appBar.settings}
+            className={cn(
+              buttonVariants({ size: "icon", variant: "subtle" }),
+              "h-9 w-9 rounded-[var(--radius-sm)]",
+            )}
+            data-testid="settings-overview-link"
+            href="/settings"
+          >
+            <Settings className="h-4 w-4" />
+          </Link>
         </div>
       </div>
     </div>

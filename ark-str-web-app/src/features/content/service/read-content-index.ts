@@ -47,7 +47,7 @@ const homeRecommendationGroups = [
   },
   {
     collectionId: "explore_behemoth",
-    groupIds: ["act23side", "main_13", "act34side", "act46side"],
+    groupIds: ["act23side", "main_13", "act31side", "act34side", "act46side"],
   },
   {
     collectionId: "explore_beast_lords",

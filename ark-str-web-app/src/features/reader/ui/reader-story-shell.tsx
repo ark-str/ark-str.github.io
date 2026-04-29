@@ -2,17 +2,24 @@
 
 import { useCallback, useEffect, useEffectEvent, useId, useMemo, useRef, useState, type ReactNode } from "react";
 import Link from "next/link";
-import { ArrowUp, ChevronDown, NotebookPen, X } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { ArrowUp, BookCheck, ChevronDown, NotebookPen, Sparkles, X } from "lucide-react";
 import { ReaderPageFrame } from "@/components/layout/reader-page-frame";
 import type { FloatingAppBarModel } from "@/components/layout/types";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { LoadingStateCard } from "@/components/ui/loading-indicator";
+import { LoadingIndicator, LoadingStateCard } from "@/components/ui/loading-indicator";
 import { Separator } from "@/components/ui/separator";
 import { StoryClassificationBadges as SharedStoryClassificationBadges } from "@/components/ui/story-classification-badges";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { persistCharacterObservations } from "@/features/characters/runtime/persist-character-observations";
+import { summarizeStoryWithGemini } from "@/features/ai-summary/runtime/summarize-story-with-gemini";
+import {
+  parseAiSummaryMarkdown,
+  type AiSummaryInline,
+  type AiSummaryMarkdownBlock,
+} from "@/features/ai-summary/service/parse-ai-summary-markdown";
 import {
   CANONICAL_READER_LOCALES,
   READER_LOCALE_LABELS,
@@ -43,9 +50,11 @@ import type {
 } from "@/features/content/types";
 import { getUiCopy, type UiCopy } from "@/features/i18n/config/ui-copy";
 import { formatUiMinutes, formatUiNumber } from "@/features/i18n/service/format-ui";
+import { useAppPreferences } from "@/features/preferences/runtime/app-preferences-context";
 import { interpolateStoryText } from "@/features/reader/service/interpolate-story-text";
 import { useReaderSession } from "@/features/reader/runtime/reader-session-context";
 import { useStoryNotes } from "@/features/notes/runtime/story-notes-context";
+import { useReadProgress } from "@/features/read-progress/runtime/read-progress-context";
 import { cn } from "@/lib/utils";
 
 function StoryClassificationBadges({
@@ -149,6 +158,234 @@ function CharacterObservationTracker({
   }, [detail, locale]);
 
   return null;
+}
+
+type StoryActionPlacement = "top" | "bottom";
+
+type AiSummaryState =
+  | {
+      status: "loading";
+      text: null;
+      error: null;
+    }
+  | {
+      status: "success";
+      text: string;
+      error: null;
+    }
+  | {
+      status: "error";
+      text: null;
+      error: string;
+    }
+  | null;
+
+function collectRenderedStoryParagraphText() {
+  if (typeof document === "undefined") {
+    return "";
+  }
+
+  const storyBody = document.querySelector('[data-testid="story-body"]');
+  if (!storyBody) {
+    return "";
+  }
+
+  return [...storyBody.querySelectorAll("p")]
+    .map((paragraph) => paragraph.textContent?.trim() ?? "")
+    .filter(Boolean)
+    .join("\n\n");
+}
+
+function StoryActionPanel({
+  copy,
+  isRead,
+  isReadHydrated,
+  onSummarize,
+  onOpenSettings,
+  onToggleRead,
+  placement,
+  summaryState,
+}: {
+  copy: UiCopy["storyActions"];
+  isRead: boolean;
+  isReadHydrated: boolean;
+  onSummarize: () => void;
+  onOpenSettings: () => void;
+  onToggleRead: () => void;
+  placement: StoryActionPlacement;
+  summaryState: AiSummaryState;
+}) {
+  return (
+    <section
+      aria-label={placement === "top" ? copy.topLabel : copy.bottomLabel}
+      className="grid gap-3"
+      data-placement={placement}
+      data-testid="story-action-panel"
+    >
+      <div className="flex flex-wrap gap-2">
+        <Button
+          aria-pressed={isRead}
+          className={cn(isRead && "border-[var(--accent)] text-[var(--accent-strong)]")}
+          data-read={isRead ? "true" : "false"}
+          data-testid="story-read-toggle"
+          disabled={!isReadHydrated}
+          onClick={onToggleRead}
+          size="sm"
+          variant="subtle"
+        >
+          <BookCheck aria-hidden="true" className="h-4 w-4" />
+          {isRead ? copy.markUnread : copy.markRead}
+        </Button>
+        <Button
+          data-testid="story-ai-summary-button"
+          disabled={summaryState?.status === "loading"}
+          onClick={onSummarize}
+          size="sm"
+          variant="subtle"
+        >
+          {summaryState?.status === "loading" ? (
+            <LoadingIndicator className="text-current" label={copy.aiSummaryLoading} />
+          ) : (
+            <Sparkles aria-hidden="true" className="h-4 w-4" />
+          )}
+          {copy.aiSummary}
+        </Button>
+      </div>
+
+      {summaryState ? (
+        <Card className="bg-[var(--surface)]/96 shadow-[var(--shadow-sm)]" data-testid="story-ai-summary-card">
+          <CardContent className="px-5 py-4">
+            {summaryState.status === "loading" ? (
+              <div className="flex min-h-16 items-center justify-center">
+                <LoadingIndicator label={copy.aiSummaryLoading} />
+              </div>
+            ) : summaryState.status === "error" ? (
+              <div className="grid gap-3">
+                <p className="text-sm leading-7 text-[var(--warning)]" data-testid="story-ai-summary-error">
+                  {copy.aiSummaryError(summaryState.error)}
+                </p>
+                {summaryState.error === copy.apiKeyRequired ? (
+                  <Button
+                    className="w-fit"
+                    data-testid="story-ai-summary-settings-link"
+                    onClick={onOpenSettings}
+                    size="sm"
+                    variant="subtle"
+                  >
+                    {copy.openSettings}
+                  </Button>
+                ) : null}
+              </div>
+            ) : (
+              <div className="grid gap-2" data-testid="story-ai-summary-result">
+                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--accent-strong)]">
+                  {copy.aiSummaryResult}
+                </p>
+                <StoryAiSummaryMarkdown blocks={parseAiSummaryMarkdown(summaryState.text)} />
+              </div>
+            )}
+          </CardContent>
+        </Card>
+      ) : null}
+    </section>
+  );
+}
+
+function renderAiSummaryInline(tokens: AiSummaryInline[], keyPrefix: string) {
+  return tokens.map((token, index) => {
+    const key = `${keyPrefix}-${index}`;
+
+    if (token.type === "strong") {
+      return (
+        <strong className="font-semibold text-[var(--text)]" data-testid="story-ai-summary-strong" key={key}>
+          {token.text}
+        </strong>
+      );
+    }
+
+    if (token.type === "emphasis") {
+      return (
+        <em className="italic" key={key}>
+          {token.text}
+        </em>
+      );
+    }
+
+    if (token.type === "code") {
+      return (
+        <code
+          className="rounded-[var(--radius-sm)] border border-[var(--border)] bg-[var(--panel)] px-1 py-0.5 font-[var(--font-mono)] text-[0.9em]"
+          data-testid="story-ai-summary-inline-code"
+          key={key}
+        >
+          {token.text}
+        </code>
+      );
+    }
+
+    return token.text;
+  });
+}
+
+function StoryAiSummaryMarkdown({ blocks }: { blocks: AiSummaryMarkdownBlock[] }) {
+  return (
+    <div className="grid gap-3 text-sm leading-7 text-[var(--text)]" data-testid="story-ai-summary-markdown">
+      {blocks.map((block, index) => {
+        if (block.type === "heading") {
+          const HeadingTag = block.level === 2 ? "h3" : "h4";
+
+          return (
+            <HeadingTag
+              className="mt-1 text-base font-semibold leading-6 tracking-[-0.02em] text-[var(--text)] first:mt-0"
+              data-testid="story-ai-summary-heading"
+              key={`heading-${index}`}
+            >
+              {renderAiSummaryInline(block.content, `heading-${index}`)}
+            </HeadingTag>
+          );
+        }
+
+        if (block.type === "list") {
+          const ListTag = block.ordered ? "ol" : "ul";
+
+          return (
+            <ListTag
+              className={cn(
+                "grid gap-1 pl-5",
+                block.ordered ? "list-decimal" : "list-disc",
+              )}
+              data-testid="story-ai-summary-list"
+              key={`list-${index}`}
+            >
+              {block.items.map((item, itemIndex) => (
+                <li key={`item-${itemIndex}`}>
+                  {renderAiSummaryInline(item, `list-${index}-${itemIndex}`)}
+                </li>
+              ))}
+            </ListTag>
+          );
+        }
+
+        if (block.type === "code") {
+          return (
+            <pre
+              className="overflow-x-auto rounded-[var(--radius-md)] border border-[var(--border)] bg-[var(--panel)] p-3 font-[var(--font-mono)] text-xs leading-6"
+              data-testid="story-ai-summary-code"
+              key={`code-${index}`}
+            >
+              <code>{block.text}</code>
+            </pre>
+          );
+        }
+
+        return (
+          <p className="whitespace-pre-wrap" key={`paragraph-${index}`}>
+            {renderAiSummaryInline(block.content, `paragraph-${index}`)}
+          </p>
+        );
+      })}
+    </div>
+  );
 }
 
 function findFirstBackgroundBlock(
@@ -417,6 +654,8 @@ function StoryBackgroundMarker({
 }
 
 function StoryFloatingTopButton() {
+  const { state: readerSessionState } = useReaderSession();
+  const copy = getUiCopy(readerSessionState.preferredLocale).storyBody;
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -441,7 +680,7 @@ function StoryFloatingTopButton() {
       variant="accent"
     >
       <ArrowUp className="h-4 w-4" />
-      Top
+      {copy.top}
     </Button>
   );
 }
@@ -575,7 +814,7 @@ function StoryNoteDock({
             <header className="flex items-start justify-between gap-4 border-b border-[var(--border)] px-5 py-4">
               <div className="min-w-0">
                 <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--accent-strong)]">
-                  Memo
+                  {copy.shortLabel}
                 </p>
                 <h2 className="mt-1 truncate text-lg font-semibold tracking-[-0.02em] text-[var(--text)]">
                   {storyTitle}
@@ -674,7 +913,7 @@ function StoryBottomNavigation({
   );
 }
 
-function StorySummaryCard({ summaryText }: { summaryText: string | null }) {
+function StorySummaryCard({ copy, summaryText }: { copy: UiCopy["storyBody"]; summaryText: string | null }) {
   const [isOpen, setIsOpen] = useState(false);
   const [contentHeight, setContentHeight] = useState(0);
   const contentId = useId();
@@ -717,7 +956,7 @@ function StorySummaryCard({ summaryText }: { summaryText: string | null }) {
             type="button"
           >
             <Badge className="w-fit uppercase tracking-[0.16em]" variant="default">
-              SUMMARY
+              {copy.summary}
             </Badge>
             <ChevronDown
               aria-hidden="true"
@@ -759,6 +998,7 @@ function StoryBlocks({
   activeBackgroundId,
   backgroundPaths,
   blocks,
+  copy,
   nickName,
   onBackgroundVisible,
   portraitPaths,
@@ -766,6 +1006,7 @@ function StoryBlocks({
   activeBackgroundId: string | null;
   backgroundPaths: Record<string, string>;
   blocks: StoryBlock[];
+  copy: UiCopy["storyBody"];
   nickName: string;
   onBackgroundVisible: (backgroundId: string | null) => void;
   portraitPaths: Record<string, string>;
@@ -798,7 +1039,7 @@ function StoryBlocks({
                     </h3>
                     {block.isRemote ? (
                       <Badge variant="accent" className="text-[10px] uppercase tracking-[0.14em]">
-                        Wireless link
+                        {copy.wirelessLink}
                       </Badge>
                     ) : null}
                   </div>
@@ -831,7 +1072,7 @@ function StoryBlocks({
             <div key={`scene-break-${index}`} className="flex items-center gap-4 py-1">
               <Separator className="flex-1" />
               <span className="text-xs uppercase tracking-[0.24em] text-[var(--text-muted)]">
-                Scene break
+                {copy.sceneBreak}
               </span>
               <Separator className="flex-1" />
             </div>
@@ -858,10 +1099,10 @@ function StoryBlocks({
           >
             <div className="space-y-2">
               <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--accent-strong)]">
-                Doctor choice
+                {copy.doctorChoice}
               </p>
               <h3 className="text-2xl font-semibold tracking-[-0.02em] text-[var(--text)]">
-                Available responses
+                {copy.availableResponses}
               </h3>
             </div>
             <div className="mt-5 grid gap-4">
@@ -879,6 +1120,7 @@ function StoryBlocks({
                         activeBackgroundId={activeBackgroundId}
                         backgroundPaths={backgroundPaths}
                         blocks={option.blocks}
+                        copy={copy}
                         nickName={nickName}
                         onBackgroundVisible={onBackgroundVisible}
                         portraitPaths={portraitPaths}
@@ -899,6 +1141,7 @@ function StoryBodyRenderer({
   activeBackgroundId,
   backgroundPaths,
   blocks,
+  copy,
   nickName,
   onBackgroundVisible,
   portraitPaths,
@@ -906,6 +1149,7 @@ function StoryBodyRenderer({
   activeBackgroundId: string | null;
   backgroundPaths: Record<string, string>;
   blocks: StoryBlock[];
+  copy: UiCopy["storyBody"];
   nickName: string;
   onBackgroundVisible: (backgroundId: string | null) => void;
   portraitPaths: Record<string, string>;
@@ -916,6 +1160,7 @@ function StoryBodyRenderer({
         activeBackgroundId={activeBackgroundId}
         backgroundPaths={backgroundPaths}
         blocks={blocks}
+        copy={copy}
         nickName={nickName}
         onBackgroundVisible={onBackgroundVisible}
         portraitPaths={portraitPaths}
@@ -933,7 +1178,10 @@ export function ReaderStoryShell({
   locale: ReaderLocale;
   storyId: string;
 }) {
+  const router = useRouter();
   const { state: readerSessionState } = useReaderSession();
+  const appPreferences = useAppPreferences();
+  const readProgress = useReadProgress();
   const indexState = useContentIndex();
   const assetState = useAssetManifest();
   const index = indexState.data;
@@ -959,6 +1207,13 @@ export function ReaderStoryShell({
     storyId,
   });
   const copy = getUiCopy(locale);
+  const [summaryState, setSummaryState] = useState<{
+    storyId: string;
+    value: AiSummaryState;
+  }>({
+    storyId,
+    value: null,
+  });
   const portraitPaths = useMemo(
     () => createStoryPortraitPaths(detail, assetState.data),
     [assetState.data, detail],
@@ -1000,6 +1255,76 @@ export function ReaderStoryShell({
     });
   }, [storyId]);
   const activeBackgroundPath = activeBackgroundId ? (backgroundPaths[activeBackgroundId] ?? null) : null;
+  const isStoryRead = readProgress.isHydrated && readProgress.isStoryRead(storyId);
+
+  const handleToggleRead = () => {
+    readProgress.toggleStoryRead(storyId);
+  };
+
+  const handleSummarize = async () => {
+    const apiKey = appPreferences.state.googleAiStudioApiKey.trim();
+
+    if (!apiKey) {
+      setSummaryState({
+        storyId,
+        value: {
+          status: "error",
+          text: null,
+          error: copy.storyActions.apiKeyRequired,
+        },
+      });
+      return;
+    }
+
+    const storyText = collectRenderedStoryParagraphText();
+    if (storyText.length === 0 || !story) {
+      setSummaryState({
+        storyId,
+        value: {
+          status: "error",
+          text: null,
+          error: copy.storyActions.aiSummaryNoText,
+        },
+      });
+      return;
+    }
+
+      setSummaryState({
+        storyId,
+        value: {
+          status: "loading",
+          text: null,
+          error: null,
+        },
+      });
+
+    try {
+      const summary = await summarizeStoryWithGemini({
+        apiKey,
+        locale,
+        storyText,
+        storyTitle: story.title,
+      });
+
+      setSummaryState({
+        storyId,
+        value: {
+          status: "success",
+          text: summary,
+          error: null,
+        },
+      });
+    } catch {
+      setSummaryState({
+        storyId,
+        value: {
+          status: "error",
+          text: null,
+          error: copy.storyActions.aiSummaryRequestFailed,
+        },
+      });
+    }
+  };
 
   if (isIndexLoading) {
     return <ReaderStoryStatus appBar={appBar} isLoading message={copy.status.contentIndexLoading} />;
@@ -1051,7 +1376,21 @@ export function ReaderStoryShell({
       <StoryBackdrop backgroundPath={activeBackgroundPath} />
 
       <section className="relative z-10 grid gap-6">
-        <StorySummaryCard key={story.storyId} summaryText={detail?.summaryText ?? null} />
+        <StoryActionPanel
+          copy={copy.storyActions}
+          isRead={isStoryRead}
+          isReadHydrated={readProgress.isHydrated}
+          onOpenSettings={() => router.push("/settings")}
+          onSummarize={handleSummarize}
+          onToggleRead={handleToggleRead}
+          placement="top"
+          summaryState={summaryState.storyId === storyId ? summaryState.value : null}
+        />
+        <StorySummaryCard
+          copy={copy.storyBody}
+          key={story.storyId}
+          summaryText={detail?.summaryText ?? null}
+        />
 
         <div className="grid gap-6 xl:grid-cols-[260px_minmax(0,1fr)]">
           <aside className="hidden self-start xl:sticky xl:top-[calc(var(--app-bar-height,7rem)+var(--space-4))] xl:block">
@@ -1110,6 +1449,7 @@ export function ReaderStoryShell({
                 activeBackgroundId={activeBackgroundId}
                 backgroundPaths={backgroundPaths}
                 blocks={detail.blocks}
+                copy={copy.storyBody}
                 nickName={readerSessionState.nickName}
                 onBackgroundVisible={handleBackgroundVisible}
                 portraitPaths={portraitPaths}
@@ -1138,6 +1478,16 @@ export function ReaderStoryShell({
           </section>
         </div>
 
+        <StoryActionPanel
+          copy={copy.storyActions}
+          isRead={isStoryRead}
+          isReadHydrated={readProgress.isHydrated}
+          onOpenSettings={() => router.push("/settings")}
+          onSummarize={handleSummarize}
+          onToggleRead={handleToggleRead}
+          placement="bottom"
+          summaryState={summaryState.storyId === storyId ? summaryState.value : null}
+        />
         <StoryBottomNavigation
           copy={copy.storyNavigation}
           locale={locale}

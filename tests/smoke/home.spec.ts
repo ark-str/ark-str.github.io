@@ -8,6 +8,7 @@ const readerSessionKey = "ark-str:reader-session:v1";
 const preferencesKey = "ark-str:app-preferences:v1";
 const characterObservationsKey = "ark-str:character-observations:v1";
 const storyNotesKey = "ark-str:story-notes:v1";
+const readProgressKey = "ark-str:read-progress:v1";
 const legacyBootstrapKey = "ark-str:reader-bootstrap:v1";
 const browserIconFile = path.join(process.cwd(), "ark-str-web-app", "public", "ark_str_icon.png");
 const appChromeIconFile = path.join(process.cwd(), "ark-str-web-app", "public", "ark_str_app_icon.png");
@@ -353,13 +354,21 @@ test.describe("reader shell smoke", () => {
     const browserErrors = trackBrowserErrors(page);
 
     await page.goto(toAppPath());
-    await page.evaluate(([session, prefs, legacy, characterObservations, storyNotes]) => {
+    await page.evaluate(([session, prefs, legacy, characterObservations, storyNotes, readProgress]) => {
       window.localStorage.removeItem(session);
       window.localStorage.removeItem(prefs);
       window.localStorage.removeItem(legacy);
       window.localStorage.removeItem(characterObservations);
       window.localStorage.removeItem(storyNotes);
-    }, [readerSessionKey, preferencesKey, legacyBootstrapKey, characterObservationsKey, storyNotesKey]);
+      window.localStorage.removeItem(readProgress);
+    }, [
+      readerSessionKey,
+      preferencesKey,
+      legacyBootstrapKey,
+      characterObservationsKey,
+      storyNotesKey,
+      readProgressKey,
+    ]);
     await page.reload();
 
     await expect(page.getByTestId("bootstrap-shell")).toBeVisible();
@@ -398,6 +407,19 @@ test.describe("reader shell smoke", () => {
     await expect(page.getByTestId("home-recommendations")).toContainText("관리자의 테라노트");
     await expect(page.getByTestId("home-recommendations")).not.toContainText("테라를 읽기 위한 네 가지 동선");
     await expect(page.getByTestId("home-recommendation-collection")).toHaveCount(4);
+    const behemothCollection = page
+      .getByTestId("home-recommendation-collection")
+      .filter({ hasText: "탐색: 베헤모스" });
+    const behemothHrefs = await behemothCollection.locator("a").evaluateAll((nodes) =>
+      nodes.map((node) => node.getAttribute("href")),
+    );
+    expect(behemothHrefs).toEqual([
+      "/ark-str/reader/kr/act23side/",
+      "/ark-str/reader/kr/main_13/",
+      "/ark-str/reader/kr/act31side/",
+      "/ark-str/reader/kr/act34side/",
+      "/ark-str/reader/kr/act46side/",
+    ]);
     await expect(page.getByTestId("home-footer")).toContainText("Maintainer - dev.Woong");
     const nicknameInput = page.getByTestId("nickname-input");
     await expect(nicknameInput).toBeEnabled();
@@ -556,11 +578,32 @@ test.describe("reader shell smoke", () => {
     await expect(
       page.locator('[data-testid="storyline-section"][data-storyline-id="synthetic_uncategorized"]'),
     ).toContainText("미분류");
+    await page.goto(toAppPath("reader/en"));
+    await expect(
+      page.locator(
+        '[data-testid="storyline-section"][data-storyline-id="synthetic_operator_narratives"]',
+      ),
+    ).toContainText("Operator Narratives");
+    await expect(
+      page.locator(
+        '[data-testid="storyline-section"][data-storyline-id="synthetic_operator_narratives"]',
+      ),
+    ).not.toContainText("오퍼레이터 서사");
+    await expect(
+      page.locator('[data-testid="storyline-section"][data-storyline-id="synthetic_uncategorized"]'),
+    ).toContainText("Uncategorized");
 
     await page.goto(
       toAppPath(`reader/${sampleStory.server}/${sampleStory.groupId}`),
     );
     await expect(page.getByTestId("group-shell")).toBeVisible();
+    const groupPageCrumb = page.getByTestId("group-crumb-link");
+    await expect(groupPageCrumb).toHaveAttribute(
+      "href",
+      `/ark-str/reader/${sampleStory.server}/${sampleStory.groupId}/`,
+    );
+    await expect(groupPageCrumb).toHaveText(sampleStoryGroup.title);
+    await expect(groupPageCrumb).toHaveCSS("border-top-left-radius", "6.8px");
     await page.setViewportSize({ width: 390, height: 820 });
     const groupHeroTitleBounds = await page.getByTestId("group-hero-title").evaluate((node) => {
       const rect = node.getBoundingClientRect();
@@ -656,6 +699,95 @@ test.describe("reader shell smoke", () => {
     await expect(page.getByTestId("story-body")).toBeVisible();
     await expect(page.getByTestId("story-bottom-nav")).toBeVisible();
     await expect(page.getByTestId("story-note-open-button")).toBeEnabled();
+    await expect(page.getByTestId("story-action-panel")).toHaveCount(2);
+    const topReadToggle = page.getByTestId("story-read-toggle").first();
+    await expect(topReadToggle).toHaveAttribute("data-read", "false");
+    await topReadToggle.click();
+    await expect(topReadToggle).toHaveAttribute("data-read", "true");
+    await page.waitForFunction(
+      ([key, storyId]) => {
+        const stored = window.localStorage.getItem(key);
+        if (!stored) {
+          return false;
+        }
+
+        try {
+          const parsed = JSON.parse(stored);
+          return parsed?.readStories?.[storyId]?.storyId === storyId;
+        } catch {
+          return false;
+        }
+      },
+      [readProgressKey, sampleStory.storyId],
+    );
+    await page.getByTestId("story-ai-summary-button").first().click();
+    await expect(page).toHaveURL(
+      new RegExp(`/ark-str/reader/${sampleStory.server}/${sampleStory.groupId}/${sampleStory.storyId}/?$`),
+    );
+    await expect(page.getByTestId("story-ai-summary-card")).toHaveCount(2);
+    await expect(page.getByTestId("story-ai-summary-error")).toHaveCount(2);
+    await expect(page.getByTestId("story-ai-summary-settings-link")).toHaveCount(2);
+    await page.getByTestId("story-ai-summary-settings-link").first().click();
+    await expect(page).toHaveURL(/\/ark-str\/settings\/$/);
+    await page.goBack();
+    await expect(page.getByTestId("reader-shell")).toBeVisible();
+    let aiSummaryRequestCount = 0;
+    await page.route("https://generativelanguage.googleapis.com/**", async (route) => {
+      aiSummaryRequestCount += 1;
+      await route.fulfill({
+        contentType: "application/json",
+        body: JSON.stringify({
+          candidates: [
+            {
+              content: {
+                parts: [
+                  {
+                    text:
+                      aiSummaryRequestCount === 1
+                        ? "# Shared top action summary\n\n- **Plot**: top branch uses `Rhodes`."
+                        : "## Shared bottom action summary\n\n1. **Outcome**: bottom branch.\n\n```txt\nshared markdown code\n```",
+                  },
+                ],
+              },
+            },
+          ],
+        }),
+      });
+    });
+    await page.evaluate(([key]) => {
+      const current = JSON.parse(window.localStorage.getItem(key) ?? "{}");
+      window.localStorage.setItem(
+        key,
+        JSON.stringify({
+          ...current,
+          googleAiStudioApiKey: "smoke-api-key",
+          theme: current.theme === "dark" ? "dark" : "light",
+        }),
+      );
+    }, [preferencesKey]);
+    await page.reload();
+    await expect(page.getByTestId("story-body")).toBeVisible({ timeout: 15_000 });
+    await page.getByTestId("story-ai-summary-button").first().click();
+    await expect(page.getByTestId("story-ai-summary-card")).toHaveCount(2);
+    await expect(page.getByTestId("story-ai-summary-result")).toHaveCount(2);
+    await expect(page.getByTestId("story-ai-summary-card").first()).toContainText(
+      "Shared top action summary",
+    );
+    await expect(page.getByTestId("story-ai-summary-card").last()).toContainText(
+      "Shared top action summary",
+    );
+    await expect(page.getByTestId("story-ai-summary-heading")).toHaveCount(2);
+    await expect(page.getByTestId("story-ai-summary-list")).toHaveCount(2);
+    await expect(page.getByTestId("story-ai-summary-strong")).toHaveCount(2);
+    await expect(page.getByTestId("story-ai-summary-inline-code")).toHaveCount(2);
+    await page.getByTestId("story-ai-summary-button").last().click();
+    await expect(page.getByTestId("story-ai-summary-card").first()).toContainText(
+      "Shared bottom action summary",
+    );
+    await expect(page.getByTestId("story-ai-summary-card").last()).toContainText(
+      "Shared bottom action summary",
+    );
+    await expect(page.getByTestId("story-ai-summary-code")).toHaveCount(2);
     if (samplePreviousStory) {
       await expect(page.getByTestId("story-previous-link")).toHaveAttribute(
         "href",
@@ -672,6 +804,17 @@ test.describe("reader shell smoke", () => {
     } else {
       await expect(page.getByTestId("story-next-disabled")).toBeVisible();
     }
+
+    await page.goto(toAppPath(`reader/${sampleStory.server}/${sampleStory.groupId}`));
+    const readSampleStoryCard = page.locator(
+      `[data-testid="group-story-card"][href="/ark-str/reader/${sampleStory.server}/${sampleStory.groupId}/${sampleStory.storyId}/"]`,
+    );
+    await expect(readSampleStoryCard).toHaveAttribute("data-read", "true");
+    await expect(readSampleStoryCard.getByTestId("group-story-read-badge")).toContainText("읽음");
+    await page.goto(
+      toAppPath(`reader/${sampleStory.server}/${sampleStory.groupId}/${sampleStory.storyId}`),
+    );
+    await expect(page.getByTestId("reader-shell")).toBeVisible();
 
     const sampleNoteText = "Smoke test note for shared story memo.";
     const updatedSampleNoteText = `${sampleNoteText}\nEdited from another locale.`;
@@ -727,6 +870,7 @@ test.describe("reader shell smoke", () => {
       ),
     );
     await expect(page.getByTestId("reader-shell")).toBeVisible();
+    await expect(page.getByTestId("story-read-toggle").first()).toHaveAttribute("data-read", "true");
     await page.getByTestId("story-note-open-button").click();
     await expect(page.getByTestId("story-note-textarea")).toHaveValue(sampleNoteText);
     await page.getByTestId("story-note-textarea").fill(updatedSampleNoteText);
@@ -870,6 +1014,99 @@ test.describe("reader shell smoke", () => {
       },
       [storyNotesKey, sampleStory.storyId, overviewEditedNoteText],
     );
+
+    await page.getByTestId("settings-overview-link").click();
+    await expect(page).toHaveURL(/\/ark-str\/settings\/$/);
+    await expect(page.getByTestId("settings-shell")).toBeVisible();
+    await expect(page.getByTestId("settings-name-input")).toHaveValue("로도스");
+    await page.getByTestId("settings-api-key-input").fill("smoke-secret-key");
+    await expect(page.getByTestId("settings-api-key-input")).toHaveValue("smoke-secret-key");
+    await expect(page.getByTestId("settings-api-key-warning")).toContainText(
+      /공용|公共|shared|共有|共享/,
+    );
+    await expect(page.getByTestId("settings-api-key-link")).toBeVisible();
+    await expect(page.getByTestId("settings-api-key-link")).toHaveAttribute(
+      "href",
+      "https://aistudio.google.com/app/apikey",
+    );
+    await expect(page.getByTestId("settings-api-key-link")).toHaveAttribute("target", "_blank");
+    const apiKeyGuide = page.getByTestId("settings-api-key-guide");
+    await expect(apiKeyGuide).toContainText("API key");
+    await expect(apiKeyGuide.locator("li")).toHaveCount(3);
+    await expect(page.getByTestId("settings-issue-link")).toHaveAttribute("target", "_blank");
+    const backupFilePath = path.join("/tmp", `ark-str-smoke-backup-${Date.now()}.json`);
+    const downloadPromise = page.waitForEvent("download");
+    await page.getByTestId("settings-export-button").click();
+    const download = await downloadPromise;
+    await download.saveAs(backupFilePath);
+    await expect(page.getByTestId("settings-status")).toHaveCount(0);
+    const backupJson = JSON.parse(fs.readFileSync(backupFilePath, "utf8"));
+    expect(JSON.stringify(backupJson)).not.toContain("smoke-secret-key");
+    expect(backupJson.storyNotes.notes[sampleStory.storyId].text).toBe(overviewEditedNoteText);
+    expect(backupJson.readProgress.readStories[sampleStory.storyId].storyId).toBe(sampleStory.storyId);
+    expect(backupJson.readerSession.nickName).toBe("로도스");
+
+    page.once("dialog", (dialog) => dialog.accept());
+    await page.getByTestId("settings-reset-notes-button").click();
+    await page.waitForFunction(
+      ([key, storyId]) => {
+        const stored = window.localStorage.getItem(key);
+        if (!stored) {
+          return true;
+        }
+
+        try {
+          const parsed = JSON.parse(stored);
+          return !parsed?.notes?.[storyId];
+        } catch {
+          return false;
+        }
+      },
+      [storyNotesKey, sampleStory.storyId],
+    );
+    page.once("dialog", (dialog) => dialog.accept());
+    await page.getByTestId("settings-reset-read-progress-button").click();
+    await page.waitForFunction(
+      ([key, storyId]) => {
+        const stored = window.localStorage.getItem(key);
+        if (!stored) {
+          return true;
+        }
+
+        try {
+          const parsed = JSON.parse(stored);
+          return !parsed?.readStories?.[storyId];
+        } catch {
+          return false;
+        }
+      },
+      [readProgressKey, sampleStory.storyId],
+    );
+    await page.getByTestId("settings-import-input").setInputFiles(backupFilePath);
+    await page.waitForFunction(
+      ([notesKey, progressKey, storyId, text]) => {
+        const notesStored = window.localStorage.getItem(notesKey);
+        const progressStored = window.localStorage.getItem(progressKey);
+        if (!notesStored || !progressStored) {
+          return false;
+        }
+
+        try {
+          const notesParsed = JSON.parse(notesStored);
+          const progressParsed = JSON.parse(progressStored);
+          return (
+            notesParsed?.notes?.[storyId]?.text === text &&
+            progressParsed?.readStories?.[storyId]?.storyId === storyId
+          );
+        } catch {
+          return false;
+        }
+      },
+      [storyNotesKey, readProgressKey, sampleStory.storyId, overviewEditedNoteText],
+    );
+    await expect(page.getByTestId("settings-api-key-input")).toHaveValue("smoke-secret-key");
+    await page.goto(toAppPath("notes"));
+    await expect(page.getByTestId("notes-list")).toBeVisible();
     await noteCard.getByTestId("note-story-link").click();
     await expect(page).toHaveURL(
       new RegExp(
@@ -878,6 +1115,7 @@ test.describe("reader shell smoke", () => {
     );
     await expect(page.getByTestId("reader-shell")).toBeVisible();
     await expect(page.getByTestId("story-note-open-button")).toBeVisible({ timeout: 15_000 });
+    await expect(page.getByTestId("story-body")).toBeVisible({ timeout: 15_000 });
     await page.evaluate(() => window.scrollTo(0, 1300));
     await expect.poll(() => page.evaluate(() => window.scrollY)).toBeGreaterThan(720);
     await expect(page.getByTestId("scroll-top-button")).toBeVisible();
@@ -933,7 +1171,7 @@ test.describe("reader shell smoke", () => {
     await expect(page.getByTestId("reader-shell")).toBeVisible();
     const summarySection = page.getByTestId("story-summary-section");
     await expect(summarySection).toBeVisible();
-    await expect(summarySection.getByText("SUMMARY")).toBeVisible();
+    await expect(summarySection.getByText("요약")).toBeVisible();
     await expect(summarySection).not.toContainText("Story summary");
     await expect(summarySection).not.toContainText("이 스토리의 summary는 아직 생성되지 않았습니다");
     const summaryToggle = page.getByTestId("story-summary-toggle");
@@ -1010,6 +1248,8 @@ test.describe("reader shell smoke", () => {
     await expect(appBar.getByTestId("search-overview-link")).toHaveAttribute("href", "/ark-str/search/");
     await expect(appBar.getByTestId("notes-overview-link")).toHaveText("");
     await expect(appBar.getByTestId("notes-overview-link")).toHaveAttribute("href", "/ark-str/notes/");
+    await expect(appBar.getByTestId("settings-overview-link")).toHaveText("");
+    await expect(appBar.getByTestId("settings-overview-link")).toHaveAttribute("href", "/ark-str/settings/");
     const appBarControlSizes = await appBar.evaluate((node, groupTitle) => {
       const homeControl = node.querySelector('a[aria-label="홈"]');
       const storyRootControl = [...node.querySelectorAll("a")].find(
@@ -1018,6 +1258,7 @@ test.describe("reader shell smoke", () => {
       const themeToggle = node.querySelector('[data-testid="theme-toggle"]');
       const searchControl = node.querySelector('[data-testid="search-overview-link"]');
       const notesControl = node.querySelector('[data-testid="notes-overview-link"]');
+      const settingsControl = node.querySelector('[data-testid="settings-overview-link"]');
       const homeIcon = node.querySelector<HTMLImageElement>('[data-testid="app-home-icon"]');
       const localeSelect = node.querySelector('[data-testid="locale-select"]');
       const storySelect = node.querySelector('[data-testid="chrome-story-select"]');
@@ -1031,6 +1272,7 @@ test.describe("reader shell smoke", () => {
         !themeToggle ||
         !searchControl ||
         !notesControl ||
+        !settingsControl ||
         !homeIcon ||
         !localeSelect ||
         !storySelect ||
@@ -1044,6 +1286,7 @@ test.describe("reader shell smoke", () => {
       const themeRect = themeToggle.getBoundingClientRect();
       const searchRect = searchControl.getBoundingClientRect();
       const notesRect = notesControl.getBoundingClientRect();
+      const settingsRect = settingsControl.getBoundingClientRect();
       const iconRect = homeIcon.getBoundingClientRect();
       const homeStyles = window.getComputedStyle(homeControl);
       const storyRootStyles = window.getComputedStyle(storyRootControl);
@@ -1054,6 +1297,7 @@ test.describe("reader shell smoke", () => {
       const themeStyles = window.getComputedStyle(themeToggle);
       const searchStyles = window.getComputedStyle(searchControl);
       const notesStyles = window.getComputedStyle(notesControl);
+      const settingsStyles = window.getComputedStyle(settingsControl);
 
       return {
         groupFontSize: window.getComputedStyle(groupCrumb).fontSize,
@@ -1079,6 +1323,11 @@ test.describe("reader shell smoke", () => {
         searchRadius: searchStyles.borderTopLeftRadius,
         searchRight: Math.round(searchRect.right),
         searchWidth: Math.round(searchRect.width),
+        settingsBackgroundColor: settingsStyles.backgroundColor,
+        settingsHeight: Math.round(settingsRect.height),
+        settingsLeft: Math.round(settingsRect.left),
+        settingsRadius: settingsStyles.borderTopLeftRadius,
+        settingsWidth: Math.round(settingsRect.width),
         storyRootHeight: Math.round(storyRootRect.height),
         storyRootRadius: storyRootStyles.borderTopLeftRadius,
         storySelectFontSize: window.getComputedStyle(storySelect).fontSize,
@@ -1088,23 +1337,27 @@ test.describe("reader shell smoke", () => {
         themeHeight: Math.round(themeRect.height),
         themeLeft: Math.round(themeRect.left),
         themeRadius: themeStyles.borderTopLeftRadius,
+        themeRight: Math.round(themeRect.right),
         themeWidth: Math.round(themeRect.width),
       };
     }, sampleStoryGroup.title);
     expect(appBarControlSizes.homeHeight).toBe(appBarControlSizes.themeHeight);
     expect(appBarControlSizes.searchHeight).toBe(appBarControlSizes.themeHeight);
     expect(appBarControlSizes.notesHeight).toBe(appBarControlSizes.themeHeight);
+    expect(appBarControlSizes.settingsHeight).toBe(appBarControlSizes.themeHeight);
     expect(appBarControlSizes.homeHeight).toBe(appBarControlSizes.storyRootHeight);
     expect(appBarControlSizes.localeHeight).toBe(appBarControlSizes.storyRootHeight);
     expect(appBarControlSizes.storySelectHeight).toBe(appBarControlSizes.storyRootHeight);
     expect(appBarControlSizes.homeWidth).toBe(appBarControlSizes.themeWidth);
     expect(appBarControlSizes.searchWidth).toBe(appBarControlSizes.themeWidth);
     expect(appBarControlSizes.notesWidth).toBe(appBarControlSizes.themeWidth);
+    expect(appBarControlSizes.settingsWidth).toBe(appBarControlSizes.themeWidth);
     expect(appBarControlSizes.homeHeight).toBe(36);
     expect(appBarControlSizes.homeRadius).toBe(appBarControlSizes.storyRootRadius);
     expect(appBarControlSizes.themeRadius).toBe(appBarControlSizes.storyRootRadius);
     expect(appBarControlSizes.searchRadius).toBe(appBarControlSizes.storyRootRadius);
     expect(appBarControlSizes.notesRadius).toBe(appBarControlSizes.storyRootRadius);
+    expect(appBarControlSizes.settingsRadius).toBe(appBarControlSizes.storyRootRadius);
     expect(appBarControlSizes.localeRadius).toBe(appBarControlSizes.storyRootRadius);
     expect(appBarControlSizes.storySelectRadius).toBe(appBarControlSizes.storyRootRadius);
     expect(appBarControlSizes.iconHeight).toBeGreaterThanOrEqual(32);
@@ -1112,9 +1365,11 @@ test.describe("reader shell smoke", () => {
     expect(appBarControlSizes.homeBackgroundColor).toBe(appBarControlSizes.themeBackgroundColor);
     expect(appBarControlSizes.searchBackgroundColor).toBe(appBarControlSizes.themeBackgroundColor);
     expect(appBarControlSizes.notesBackgroundColor).toBe(appBarControlSizes.themeBackgroundColor);
+    expect(appBarControlSizes.settingsBackgroundColor).toBe(appBarControlSizes.themeBackgroundColor);
     expect(appBarControlSizes.localeRight).toBeLessThanOrEqual(appBarControlSizes.searchLeft);
     expect(appBarControlSizes.searchRight).toBeLessThanOrEqual(appBarControlSizes.notesLeft);
     expect(appBarControlSizes.notesRight).toBeLessThanOrEqual(appBarControlSizes.themeLeft);
+    expect(appBarControlSizes.themeRight).toBeLessThanOrEqual(appBarControlSizes.settingsLeft);
     expect(appBarControlSizes.groupFontSize).toBe("12px");
     expect(appBarControlSizes.localeFontSize).toBe("12px");
     expect(appBarControlSizes.storySelectFontSize).toBe("12px");
@@ -1424,12 +1679,13 @@ test.describe("reader shell smoke", () => {
     const browserErrors = trackBrowserErrors(page);
 
     await page.goto(toAppPath());
-    await page.evaluate(([session, prefs, characterObservations, storyNotes]) => {
+    await page.evaluate(([session, prefs, characterObservations, storyNotes, readProgress]) => {
       window.localStorage.setItem(session, "{broken-json");
       window.localStorage.setItem(prefs, "{broken-json");
       window.localStorage.setItem(characterObservations, "{broken-json");
       window.localStorage.setItem(storyNotes, "{broken-json");
-    }, [readerSessionKey, preferencesKey, characterObservationsKey, storyNotesKey]);
+      window.localStorage.setItem(readProgress, "{broken-json");
+    }, [readerSessionKey, preferencesKey, characterObservationsKey, storyNotesKey, readProgressKey]);
     await page.reload();
 
     await expect(page.getByTestId("bootstrap-shell")).toBeVisible();

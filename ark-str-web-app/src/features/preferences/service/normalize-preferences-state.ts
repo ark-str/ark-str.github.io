@@ -9,6 +9,10 @@ export function normalizeAppPreferencesState(raw: unknown): AppPreferencesState 
   const candidate = raw as Partial<AppPreferencesState>;
 
   return {
+    googleAiStudioApiKey:
+      typeof candidate.googleAiStudioApiKey === "string"
+        ? candidate.googleAiStudioApiKey.trim().slice(0, 256)
+        : DEFAULT_APP_PREFERENCES_STATE.googleAiStudioApiKey,
     theme:
       candidate.theme === "light" || candidate.theme === "dark"
         ? candidate.theme

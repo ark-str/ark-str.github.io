@@ -38,6 +38,12 @@ function useStoryNotesStore() {
     setStoryNote(draft: StoryNoteDraft) {
       setState((current) => updateStoryNoteState(current, draft));
     },
+    replaceStoryNotes(nextState: StoryNotesState) {
+      setState(normalizeStoryNotesState(nextState));
+    },
+    resetStoryNotes() {
+      setState(DEFAULT_STORY_NOTES_STATE);
+    },
   };
 }
 

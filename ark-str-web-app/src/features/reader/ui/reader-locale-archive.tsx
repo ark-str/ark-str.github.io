@@ -100,7 +100,9 @@ export function ReaderLocaleArchive({ locale }: { locale: ReaderLocale }) {
         {storyline.storylineType ? <Badge variant="default">{storyline.storylineType}</Badge> : null}
       </div>
       <div className="space-y-2">
-        <CardTitle className="text-2xl">{storyline.title}</CardTitle>
+        <CardTitle className="text-2xl">
+          {copy.archive.syntheticTitles[storyline.storylineId] ?? storyline.title}
+        </CardTitle>
         <CardDescription>
           <span className="block">
             {formatUiNumber(locale, storyline.primaryGroupCount)} {copy.common.groups} ·{" "}

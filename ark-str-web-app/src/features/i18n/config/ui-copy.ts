@@ -25,6 +25,7 @@ export type UiCopy = {
     home: string;
     notes: string;
     search: string;
+    settings: string;
     story: string;
     themeDark: string;
     themeLight: string;
@@ -35,6 +36,7 @@ export type UiCopy = {
     references: string;
     storylines: string;
     storyline: string;
+    syntheticTitles: Record<string, string>;
   };
   common: {
     aboutMinutes: (value: string) => string;
@@ -65,6 +67,32 @@ export type UiCopy = {
     resultStories: (value: string) => string;
     title: string;
   };
+  settings: {
+    apiKeyHelp: string;
+    apiKeyIssueGuide: string[];
+    apiKeyIssueGuideTitle: string;
+    apiKeyLabel: string;
+    apiKeyLink: string;
+    apiKeyPlaceholder: string;
+    apiKeyWarning: string;
+    backupDescription: string;
+    backupTitle: string;
+    confirmResetNotes: string;
+    confirmResetReadProgress: string;
+    dangerTitle: string;
+    exportData: string;
+    importData: string;
+    importInvalid: string;
+    importSuccess: string;
+    issueDescription: string;
+    issueLink: string;
+    nameLabel: string;
+    namePlaceholder: string;
+    resetNotes: string;
+    resetReadProgress: string;
+    resetSuccess: string;
+    title: string;
+  };
   status: {
     assetManifestError: (message: string) => string;
     contentIndexError: (message: string) => string;
@@ -82,11 +110,35 @@ export type UiCopy = {
     previous: string;
     previousAria: (storyTitle: string) => string;
   };
+  storyActions: {
+    aiSummary: string;
+    aiSummaryError: (message: string) => string;
+    aiSummaryLoading: string;
+    aiSummaryNoText: string;
+    aiSummaryRequestFailed: string;
+    aiSummaryResult: string;
+    apiKeyRequired: string;
+    openSettings: string;
+    bottomLabel: string;
+    markRead: string;
+    markUnread: string;
+    readBadge: string;
+    topLabel: string;
+  };
+  storyBody: {
+    availableResponses: string;
+    doctorChoice: string;
+    sceneBreak: string;
+    summary: string;
+    top: string;
+    wirelessLink: string;
+  };
   storyNote: {
     close: string;
     label: string;
     open: string;
     placeholder: string;
+    shortLabel: string;
   };
 };
 
@@ -114,6 +166,7 @@ const UI_COPY = {
       home: "首页",
       notes: "查看笔记",
       search: "搜索",
+      settings: "设置",
       story: "故事",
       themeDark: "切换到深色主题",
       themeLight: "切换到浅色主题",
@@ -124,6 +177,10 @@ const UI_COPY = {
       references: "引用",
       storylines: "故事线",
       storyline: "故事线",
+      syntheticTitles: {
+        synthetic_operator_narratives: "干员叙事",
+        synthetic_uncategorized: "未分类",
+      },
     },
     common: {
       aboutMinutes: (value) => `约 ${value} 分钟`,
@@ -178,6 +235,36 @@ const UI_COPY = {
       resultStories: (value) => `${value} 个故事`,
       title: "搜索",
     },
+    settings: {
+      apiKeyHelp: "API key 仅保存在此浏览器，不会包含在备份 JSON 中。",
+      apiKeyIssueGuide: [
+        "打开 Google AI Studio，使用自己的 Google 帐号登录。",
+        "进入 API keys 页面并创建新的 Gemini API key。",
+        "复制生成的 key，并只粘贴到你信任的个人设备上。",
+      ],
+      apiKeyIssueGuideTitle: "API key 获取方法",
+      apiKeyLabel: "Google AI Studio API key",
+      apiKeyLink: "打开",
+      apiKeyPlaceholder: "输入 Gemini API key",
+      apiKeyWarning: "不要在公共或共享设备上保存 API key。",
+      backupDescription: "导出或恢复本地笔记、阅读状态、会话和已识别角色信息。",
+      backupTitle: "数据备份",
+      confirmResetNotes: "要删除所有笔记吗？此操作无法撤销。",
+      confirmResetReadProgress: "要清除所有已读记录吗？此操作无法撤销。",
+      dangerTitle: "危险区域",
+      exportData: "导出 JSON",
+      importData: "导入 JSON",
+      importInvalid: "备份文件无法读取。",
+      importSuccess: "备份已恢复。",
+      issueDescription: "通过 GitHub issue 提交问题或功能请求。",
+      issueLink: "提交 GitHub issue",
+      nameLabel: "名字",
+      namePlaceholder: "博士代号",
+      resetNotes: "清空笔记",
+      resetReadProgress: "清空已读记录",
+      resetSuccess: "本地数据已重置。",
+      title: "设置",
+    },
     status: {
       assetManifestError: (message) => `无法加载生成的资源清单：${message}`,
       contentIndexError: (message) => `无法加载生成的内容索引：${message}`,
@@ -196,11 +283,35 @@ const UI_COPY = {
       previous: "‹ 上一篇",
       previousAria: (storyTitle) => `上一篇故事：${storyTitle}`,
     },
+    storyActions: {
+      aiSummary: "AI 摘要",
+      aiSummaryError: (message) => `摘要生成失败：${message}`,
+      aiSummaryLoading: "正在生成摘要",
+      aiSummaryNoText: "没有可摘要的正文。",
+      aiSummaryRequestFailed: "无法生成摘要。请检查 API key 或稍后重试。",
+      aiSummaryResult: "AI 摘要",
+      apiKeyRequired: "请先在设置中保存 Google AI Studio API key。",
+      openSettings: "打开设置",
+      bottomLabel: "故事操作",
+      markRead: "标记为已读",
+      markUnread: "取消已读",
+      readBadge: "已读",
+      topLabel: "故事操作",
+    },
+    storyBody: {
+      availableResponses: "可用回复",
+      doctorChoice: "博士选择",
+      sceneBreak: "场景分隔",
+      summary: "摘要",
+      top: "顶部",
+      wirelessLink: "无线通讯",
+    },
     storyNote: {
       close: "关闭故事笔记",
       label: "故事笔记",
       open: "打开故事笔记",
       placeholder: "为这个故事留下笔记",
+      shortLabel: "笔记",
     },
   },
   en: {
@@ -208,6 +319,7 @@ const UI_COPY = {
       home: "Home",
       notes: "View notes",
       search: "Search",
+      settings: "Settings",
       story: "Story",
       themeDark: "Switch to dark theme",
       themeLight: "Switch to light theme",
@@ -218,6 +330,10 @@ const UI_COPY = {
       references: "references",
       storylines: "Storylines",
       storyline: "Storyline",
+      syntheticTitles: {
+        synthetic_operator_narratives: "Operator Narratives",
+        synthetic_uncategorized: "Uncategorized",
+      },
     },
     common: {
       aboutMinutes: (value) => `about ${value} min`,
@@ -272,6 +388,36 @@ const UI_COPY = {
       resultStories: (value) => `${value} stories`,
       title: "Search",
     },
+    settings: {
+      apiKeyHelp: "The API key is stored only in this browser and is excluded from backup JSON.",
+      apiKeyIssueGuide: [
+        "Open Google AI Studio and sign in with your Google account.",
+        "Go to API keys and create a new Gemini API key.",
+        "Copy the generated key, then paste it only on a personal device you trust.",
+      ],
+      apiKeyIssueGuideTitle: "How to get an API key",
+      apiKeyLabel: "Google AI Studio API key",
+      apiKeyLink: "Open",
+      apiKeyPlaceholder: "Enter Gemini API key",
+      apiKeyWarning: "Do not save an API key on a public or shared device.",
+      backupDescription: "Export or restore local notes, read status, session data, and observed character data.",
+      backupTitle: "Data backup",
+      confirmResetNotes: "Delete every note? This cannot be undone.",
+      confirmResetReadProgress: "Clear every read story marker? This cannot be undone.",
+      dangerTitle: "Danger zone",
+      exportData: "Export JSON",
+      importData: "Import JSON",
+      importInvalid: "The backup file could not be read.",
+      importSuccess: "Backup restored.",
+      issueDescription: "Open a GitHub issue for bugs or feature requests.",
+      issueLink: "Open GitHub issue",
+      nameLabel: "Name",
+      namePlaceholder: "Doctor codename",
+      resetNotes: "Reset notes",
+      resetReadProgress: "Reset read stories",
+      resetSuccess: "Local data was reset.",
+      title: "Settings",
+    },
     status: {
       assetManifestError: (message) => `Generated asset manifest could not be loaded: ${message}`,
       contentIndexError: (message) => `Generated content index could not be loaded: ${message}`,
@@ -290,11 +436,35 @@ const UI_COPY = {
       previous: "‹ Previous",
       previousAria: (storyTitle) => `Previous story: ${storyTitle}`,
     },
+    storyActions: {
+      aiSummary: "AI summary",
+      aiSummaryError: (message) => `Summary failed: ${message}`,
+      aiSummaryLoading: "Generating summary",
+      aiSummaryNoText: "No story text is available to summarize.",
+      aiSummaryRequestFailed: "The summary could not be generated. Check the API key or try again later.",
+      aiSummaryResult: "AI summary",
+      apiKeyRequired: "Save a Google AI Studio API key in Settings first.",
+      openSettings: "Open settings",
+      bottomLabel: "Story actions",
+      markRead: "Mark read",
+      markUnread: "Mark unread",
+      readBadge: "Read",
+      topLabel: "Story actions",
+    },
+    storyBody: {
+      availableResponses: "Available responses",
+      doctorChoice: "Doctor choice",
+      sceneBreak: "Scene break",
+      summary: "Summary",
+      top: "Top",
+      wirelessLink: "Wireless link",
+    },
     storyNote: {
       close: "Close story note",
       label: "Story note",
       open: "Open story note",
       placeholder: "Note for this story",
+      shortLabel: "Memo",
     },
   },
   jp: {
@@ -302,6 +472,7 @@ const UI_COPY = {
       home: "ホーム",
       notes: "メモ一覧",
       search: "検索",
+      settings: "設定",
       story: "ストーリー",
       themeDark: "ダークテーマに切り替え",
       themeLight: "ライトテーマに切り替え",
@@ -312,6 +483,10 @@ const UI_COPY = {
       references: "参照",
       storylines: "ストーリーライン",
       storyline: "ストーリーライン",
+      syntheticTitles: {
+        synthetic_operator_narratives: "オペレーターの物語",
+        synthetic_uncategorized: "未分類",
+      },
     },
     common: {
       aboutMinutes: (value) => `約${value}分`,
@@ -366,6 +541,36 @@ const UI_COPY = {
       resultStories: (value) => `${value}件のストーリー`,
       title: "検索",
     },
+    settings: {
+      apiKeyHelp: "API key はこのブラウザにのみ保存され、バックアップ JSON には含まれません。",
+      apiKeyIssueGuide: [
+        "Google AI Studio を開き、自分の Google アカウントでログインします。",
+        "API keys ページで新しい Gemini API key を作成します。",
+        "生成された key をコピーし、信頼できる個人端末にだけ貼り付けます。",
+      ],
+      apiKeyIssueGuideTitle: "API key の発行方法",
+      apiKeyLabel: "Google AI Studio API key",
+      apiKeyLink: "開く",
+      apiKeyPlaceholder: "Gemini API key を入力",
+      apiKeyWarning: "共有端末や公共の端末では API key を保存しないでください。",
+      backupDescription: "ローカルのメモ、既読状態、セッション、観測済みキャラクター情報をエクスポートまたは復元します。",
+      backupTitle: "データバックアップ",
+      confirmResetNotes: "すべてのメモを削除しますか？この操作は元に戻せません。",
+      confirmResetReadProgress: "すべての既読記録を削除しますか？この操作は元に戻せません。",
+      dangerTitle: "DANGER ZONE",
+      exportData: "JSON をエクスポート",
+      importData: "JSON をインポート",
+      importInvalid: "バックアップファイルを読み取れませんでした。",
+      importSuccess: "バックアップを復元しました。",
+      issueDescription: "不具合や機能要望は GitHub issue で送信できます。",
+      issueLink: "GitHub issue を開く",
+      nameLabel: "名前",
+      namePlaceholder: "ドクター名",
+      resetNotes: "メモを初期化",
+      resetReadProgress: "既読記録を初期化",
+      resetSuccess: "ローカルデータを初期化しました。",
+      title: "設定",
+    },
     status: {
       assetManifestError: (message) => `生成済みアセットマニフェストを読み込めませんでした: ${message}`,
       contentIndexError: (message) => `生成済みコンテンツインデックスを読み込めませんでした: ${message}`,
@@ -384,11 +589,35 @@ const UI_COPY = {
       previous: "‹ 前へ",
       previousAria: (storyTitle) => `前のストーリー: ${storyTitle}`,
     },
+    storyActions: {
+      aiSummary: "AI要約",
+      aiSummaryError: (message) => `要約に失敗しました: ${message}`,
+      aiSummaryLoading: "要約を生成中",
+      aiSummaryNoText: "要約できる本文がありません。",
+      aiSummaryRequestFailed: "要約を生成できませんでした。API key を確認するか、後でもう一度お試しください。",
+      aiSummaryResult: "AI要約",
+      apiKeyRequired: "先に設定で Google AI Studio API key を保存してください。",
+      openSettings: "設定を開く",
+      bottomLabel: "ストーリー操作",
+      markRead: "既読にする",
+      markUnread: "既読を解除",
+      readBadge: "既読",
+      topLabel: "ストーリー操作",
+    },
+    storyBody: {
+      availableResponses: "選択可能な返答",
+      doctorChoice: "ドクターの選択",
+      sceneBreak: "シーン区切り",
+      summary: "要約",
+      top: "上へ",
+      wirelessLink: "無線通信",
+    },
     storyNote: {
       close: "ストーリーメモを閉じる",
       label: "ストーリーメモ",
       open: "ストーリーメモを開く",
       placeholder: "このストーリーのメモ",
+      shortLabel: "メモ",
     },
   },
   kr: {
@@ -396,6 +625,7 @@ const UI_COPY = {
       home: "홈",
       notes: "메모 모아보기",
       search: "검색",
+      settings: "설정",
       story: "스토리",
       themeDark: "다크 테마로 변경",
       themeLight: "라이트 테마로 변경",
@@ -406,6 +636,10 @@ const UI_COPY = {
       references: "참조",
       storylines: "스토리라인",
       storyline: "스토리라인",
+      syntheticTitles: {
+        synthetic_operator_narratives: "오퍼레이터 서사",
+        synthetic_uncategorized: "미분류",
+      },
     },
     common: {
       aboutMinutes: (value) => `약 ${value}분`,
@@ -460,6 +694,36 @@ const UI_COPY = {
       resultStories: (value) => `${value}개 스토리`,
       title: "검색",
     },
+    settings: {
+      apiKeyHelp: "API key는 이 브라우저에만 저장되며 백업 JSON에는 포함되지 않습니다.",
+      apiKeyIssueGuide: [
+        "Google AI Studio를 열고 본인 Google 계정으로 로그인합니다.",
+        "API keys 페이지에서 새 Gemini API key를 생성합니다.",
+        "생성된 key를 복사한 뒤, 신뢰하는 개인 기기에만 붙여넣습니다.",
+      ],
+      apiKeyIssueGuideTitle: "API key 발급 방법",
+      apiKeyLabel: "Google AI Studio API key",
+      apiKeyLink: "이동",
+      apiKeyPlaceholder: "Gemini API key 입력",
+      apiKeyWarning: "공용 기기나 공유 기기에서는 API key를 저장하지 마세요.",
+      backupDescription: "로컬 메모, 읽음 상태, 세션, 관찰된 캐릭터 데이터를 내보내거나 복구합니다.",
+      backupTitle: "데이터 백업",
+      confirmResetNotes: "모든 메모를 삭제할까요? 이 작업은 되돌릴 수 없습니다.",
+      confirmResetReadProgress: "모든 읽은 스토리 기록을 삭제할까요? 이 작업은 되돌릴 수 없습니다.",
+      dangerTitle: "DANGER ZONE",
+      exportData: "JSON 내보내기",
+      importData: "JSON 가져오기",
+      importInvalid: "백업 파일을 읽을 수 없습니다.",
+      importSuccess: "백업을 복구했습니다.",
+      issueDescription: "버그 리포트와 기능 추가 요청은 GitHub issue로 남길 수 있습니다.",
+      issueLink: "GitHub issue 열기",
+      nameLabel: "이름",
+      namePlaceholder: "박사 이름",
+      resetNotes: "메모 초기화",
+      resetReadProgress: "읽은 스토리 초기화",
+      resetSuccess: "로컬 데이터를 초기화했습니다.",
+      title: "설정",
+    },
     status: {
       assetManifestError: (message) => `generated asset manifest를 불러오지 못했습니다: ${message}`,
       contentIndexError: (message) => `generated content index를 불러오지 못했습니다: ${message}`,
@@ -478,11 +742,35 @@ const UI_COPY = {
       previous: "‹ 이전",
       previousAria: (storyTitle) => `이전 스토리: ${storyTitle}`,
     },
+    storyActions: {
+      aiSummary: "AI 요약",
+      aiSummaryError: (message) => `요약에 실패했습니다: ${message}`,
+      aiSummaryLoading: "요약 생성 중",
+      aiSummaryNoText: "요약할 본문이 없습니다.",
+      aiSummaryRequestFailed: "요약을 생성하지 못했습니다. API key를 확인하거나 잠시 후 다시 시도해주세요.",
+      aiSummaryResult: "AI 요약",
+      apiKeyRequired: "먼저 설정에서 Google AI Studio API key를 저장해주세요.",
+      openSettings: "설정으로 이동",
+      bottomLabel: "스토리 기능",
+      markRead: "읽음",
+      markUnread: "읽음 해제",
+      readBadge: "읽음",
+      topLabel: "스토리 기능",
+    },
+    storyBody: {
+      availableResponses: "선택 가능한 응답",
+      doctorChoice: "박사의 선택",
+      sceneBreak: "장면 전환",
+      summary: "요약",
+      top: "위로",
+      wirelessLink: "무선 통신",
+    },
     storyNote: {
       close: "스토리 메모 닫기",
       label: "스토리 메모",
       open: "스토리 메모 열기",
       placeholder: "이 story에 남길 메모",
+      shortLabel: "메모",
     },
   },
   tw: {
@@ -490,6 +778,7 @@ const UI_COPY = {
       home: "首頁",
       notes: "查看筆記",
       search: "搜尋",
+      settings: "設定",
       story: "故事",
       themeDark: "切換到深色主題",
       themeLight: "切換到淺色主題",
@@ -500,6 +789,10 @@ const UI_COPY = {
       references: "引用",
       storylines: "故事線",
       storyline: "故事線",
+      syntheticTitles: {
+        synthetic_operator_narratives: "幹員敘事",
+        synthetic_uncategorized: "未分類",
+      },
     },
     common: {
       aboutMinutes: (value) => `約 ${value} 分鐘`,
@@ -554,6 +847,36 @@ const UI_COPY = {
       resultStories: (value) => `${value} 個故事`,
       title: "搜尋",
     },
+    settings: {
+      apiKeyHelp: "API key 僅保存在此瀏覽器，不會包含在備份 JSON 中。",
+      apiKeyIssueGuide: [
+        "打開 Google AI Studio，使用自己的 Google 帳號登入。",
+        "進入 API keys 頁面並建立新的 Gemini API key。",
+        "複製生成的 key，並只貼到你信任的個人裝置上。",
+      ],
+      apiKeyIssueGuideTitle: "API key 取得方法",
+      apiKeyLabel: "Google AI Studio API key",
+      apiKeyLink: "打開",
+      apiKeyPlaceholder: "輸入 Gemini API key",
+      apiKeyWarning: "不要在公共或共享裝置上保存 API key。",
+      backupDescription: "匯出或復原本機筆記、閱讀狀態、會話和已識別角色資訊。",
+      backupTitle: "資料備份",
+      confirmResetNotes: "要刪除所有筆記嗎？此操作無法復原。",
+      confirmResetReadProgress: "要清除所有已讀記錄嗎？此操作無法復原。",
+      dangerTitle: "危險區域",
+      exportData: "匯出 JSON",
+      importData: "匯入 JSON",
+      importInvalid: "備份檔案無法讀取。",
+      importSuccess: "備份已復原。",
+      issueDescription: "透過 GitHub issue 提交問題或功能請求。",
+      issueLink: "提交 GitHub issue",
+      nameLabel: "名字",
+      namePlaceholder: "博士代號",
+      resetNotes: "清空筆記",
+      resetReadProgress: "清空已讀記錄",
+      resetSuccess: "本機資料已重置。",
+      title: "設定",
+    },
     status: {
       assetManifestError: (message) => `無法載入生成的資源清單：${message}`,
       contentIndexError: (message) => `無法載入生成的內容索引：${message}`,
@@ -572,11 +895,35 @@ const UI_COPY = {
       previous: "‹ 上一篇",
       previousAria: (storyTitle) => `上一篇故事：${storyTitle}`,
     },
+    storyActions: {
+      aiSummary: "AI 摘要",
+      aiSummaryError: (message) => `摘要生成失敗：${message}`,
+      aiSummaryLoading: "正在生成摘要",
+      aiSummaryNoText: "沒有可摘要的正文。",
+      aiSummaryRequestFailed: "無法生成摘要。請檢查 API key 或稍後重試。",
+      aiSummaryResult: "AI 摘要",
+      apiKeyRequired: "請先在設定中保存 Google AI Studio API key。",
+      openSettings: "打開設定",
+      bottomLabel: "故事操作",
+      markRead: "標記為已讀",
+      markUnread: "取消已讀",
+      readBadge: "已讀",
+      topLabel: "故事操作",
+    },
+    storyBody: {
+      availableResponses: "可用回覆",
+      doctorChoice: "博士選擇",
+      sceneBreak: "場景分隔",
+      summary: "摘要",
+      top: "頂部",
+      wirelessLink: "無線通訊",
+    },
     storyNote: {
       close: "關閉故事筆記",
       label: "故事筆記",
       open: "打開故事筆記",
       placeholder: "為這個故事留下筆記",
+      shortLabel: "筆記",
     },
   },
 } satisfies Record<ReaderLocale, UiCopy>;
