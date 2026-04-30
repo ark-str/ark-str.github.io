@@ -320,7 +320,10 @@ function trackBrowserErrors(page: Page) {
 
   page.on("console", (message) => {
     if (message.type() === "error") {
-      consoleErrors.push(message.text());
+      const text = message.text();
+      if (text !== "Failed to load resource: the server responded with a status of 503 (Service Unavailable)") {
+        consoleErrors.push(text);
+      }
     }
   });
 
@@ -741,6 +744,22 @@ test.describe("reader shell smoke", () => {
         contents?: Array<{ parts?: Array<{ text?: string }> }>;
       };
       latestAiSummaryPrompt = payload.contents?.[0]?.parts?.[0]?.text ?? "";
+
+      if (aiSummaryRequestCount === 1) {
+        await route.fulfill({
+          contentType: "application/json",
+          status: 503,
+          body: JSON.stringify({
+            error: {
+              code: 503,
+              message: "The model is overloaded. Please try again later.",
+              status: "UNAVAILABLE",
+            },
+          }),
+        });
+        return;
+      }
+
       await route.fulfill({
         contentType: "application/json",
         body: JSON.stringify({
@@ -750,7 +769,7 @@ test.describe("reader shell smoke", () => {
                 parts: [
                   {
                     text:
-                      aiSummaryRequestCount === 1
+                      aiSummaryRequestCount === 2
                         ? "# Shared top action summary\n\n- **Plot**: top branch uses `Rhodes`."
                         : "## Shared bottom action summary\n\n1. **Outcome**: bottom branch.\n\n```txt\nshared markdown code\n```",
                   },
@@ -774,6 +793,24 @@ test.describe("reader shell smoke", () => {
     }, [preferencesKey]);
     await page.reload();
     await expect(page.getByTestId("story-body")).toBeVisible({ timeout: 15_000 });
+    const firstSummarySpeaker = await page
+      .locator("[data-ai-summary-speaker]")
+      .first()
+      .getAttribute("data-ai-summary-speaker");
+    expect(firstSummarySpeaker).toBeTruthy();
+    await page.getByTestId("story-ai-summary-button").first().click();
+    await expect(page.getByTestId("story-ai-summary-card")).toHaveCount(2);
+    await expect(page.getByTestId("story-ai-summary-error")).toHaveCount(2);
+    await expect(page.getByTestId("story-ai-summary-error").first()).toContainText("응답 코드: 503");
+    await expect(page.getByTestId("story-ai-summary-error").first()).not.toContainText(
+      "요약에 실패했습니다: 요약에 실패했습니다",
+    );
+    expect(aiSummaryRequestCount).toBe(1);
+    expect(latestAiSummaryPrompt).toContain("## 등장인물(이명 포함)");
+    expect(latestAiSummaryPrompt).toContain("## 주요 내용");
+    expect(latestAiSummaryPrompt).toContain("## 최종 요약");
+    const latestAiSummaryTranscript = latestAiSummaryPrompt.split("Story text:\n")[1] ?? "";
+    expect(latestAiSummaryTranscript).toContain(`${firstSummarySpeaker}:`);
     await page.getByTestId("story-ai-summary-button").first().click();
     await expect(page.getByTestId("story-ai-summary-card")).toHaveCount(2);
     await expect(page.getByTestId("story-ai-summary-result")).toHaveCount(2);
@@ -783,9 +820,6 @@ test.describe("reader shell smoke", () => {
     await expect(page.getByTestId("story-ai-summary-card").last()).toContainText(
       "Shared top action summary",
     );
-    expect(latestAiSummaryPrompt).toContain("## 등장인물(이명 포함)");
-    expect(latestAiSummaryPrompt).toContain("## 주요 내용");
-    expect(latestAiSummaryPrompt).toContain("## 최종 요약");
     await expect(page.getByTestId("story-ai-summary-heading")).toHaveCount(2);
     await expect(page.getByTestId("story-ai-summary-list")).toHaveCount(2);
     await expect(page.getByTestId("story-ai-summary-strong")).toHaveCount(2);

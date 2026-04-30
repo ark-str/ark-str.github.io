@@ -14,7 +14,10 @@ import { StoryClassificationBadges as SharedStoryClassificationBadges } from "@/
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { persistCharacterObservations } from "@/features/characters/runtime/persist-character-observations";
-import { summarizeStoryWithGemini } from "@/features/ai-summary/runtime/summarize-story-with-gemini";
+import {
+  isGeminiSummaryHttpError,
+  summarizeStoryWithGemini,
+} from "@/features/ai-summary/runtime/summarize-story-with-gemini";
 import {
   parseAiSummaryMarkdown,
   type AiSummaryInline,
@@ -180,7 +183,7 @@ type AiSummaryState =
     }
   | null;
 
-function collectRenderedStoryParagraphText() {
+function collectRenderedStorySummaryText() {
   if (typeof document === "undefined") {
     return "";
   }
@@ -190,8 +193,30 @@ function collectRenderedStoryParagraphText() {
     return "";
   }
 
-  return [...storyBody.querySelectorAll("p")]
-    .map((paragraph) => paragraph.textContent?.trim() ?? "")
+  return [...storyBody.querySelectorAll<HTMLElement>("[data-ai-summary-line]")]
+    .map((line) => {
+      const text = line.textContent?.trim();
+      if (!text) {
+        return "";
+      }
+
+      const lineType = line.getAttribute("data-ai-summary-line");
+      if (lineType === "dialogue") {
+        const speakerName =
+          line.closest<HTMLElement>("[data-ai-summary-speaker]")?.dataset.aiSummarySpeaker?.trim() ?? "";
+        return speakerName ? `${speakerName}: ${text}` : text;
+      }
+
+      if (lineType === "choice") {
+        return `Doctor choice: ${text}`;
+      }
+
+      if (lineType === "narration") {
+        return `Narration: ${text}`;
+      }
+
+      return text;
+    })
     .filter(Boolean)
     .join("\n\n");
 }
@@ -1026,6 +1051,7 @@ function StoryBlocks({
                   ? "border-[var(--accent)] border-dashed"
                   : "border-[var(--border)]"
               }`}
+              data-ai-summary-speaker={speakerName}
             >
               <div className="flex items-start gap-4">
                 <ReaderPortraitSlot
@@ -1045,7 +1071,10 @@ function StoryBlocks({
                   </div>
                 </div>
               </div>
-              <p className="whitespace-pre-wrap text-[1.02rem] leading-8 text-[var(--text)]">
+              <p
+                className="whitespace-pre-wrap text-[1.02rem] leading-8 text-[var(--text)]"
+                data-ai-summary-line="dialogue"
+              >
                 {dialogueText}
               </p>
             </article>
@@ -1060,7 +1089,10 @@ function StoryBlocks({
               key={`narration-${index}`}
               className="rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--panel)]/95 p-5 shadow-[var(--shadow-sm)]"
             >
-              <p className="whitespace-pre-wrap text-[1.02rem] leading-8 text-[var(--text)]">
+              <p
+                className="whitespace-pre-wrap text-[1.02rem] leading-8 text-[var(--text)]"
+                data-ai-summary-line="narration"
+              >
                 {narrationText}
               </p>
             </article>
@@ -1111,7 +1143,7 @@ function StoryBlocks({
                   key={option.value}
                   className="rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--panel)] p-4"
                 >
-                  <p className="text-sm font-semibold text-[var(--accent)]">
+                  <p className="text-sm font-semibold text-[var(--accent)]" data-ai-summary-line="choice">
                     {interpolateStoryText(option.label, { nickName })}
                   </p>
                   {option.blocks.length > 0 ? (
@@ -1276,7 +1308,7 @@ export function ReaderStoryShell({
       return;
     }
 
-    const storyText = collectRenderedStoryParagraphText();
+    const storyText = collectRenderedStorySummaryText();
     if (storyText.length === 0 || !story) {
       setSummaryState({
         storyId,
@@ -1289,14 +1321,14 @@ export function ReaderStoryShell({
       return;
     }
 
-      setSummaryState({
-        storyId,
-        value: {
-          status: "loading",
-          text: null,
-          error: null,
-        },
-      });
+    setSummaryState({
+      storyId,
+      value: {
+        status: "loading",
+        text: null,
+        error: null,
+      },
+    });
 
     try {
       const summary = await summarizeStoryWithGemini({
@@ -1314,13 +1346,15 @@ export function ReaderStoryShell({
           error: null,
         },
       });
-    } catch {
+    } catch (error) {
       setSummaryState({
         storyId,
         value: {
           status: "error",
           text: null,
-          error: copy.storyActions.aiSummaryRequestFailed,
+          error: isGeminiSummaryHttpError(error)
+            ? copy.storyActions.aiSummaryHttpError(error.status)
+            : copy.storyActions.aiSummaryRequestFailed,
         },
       });
     }

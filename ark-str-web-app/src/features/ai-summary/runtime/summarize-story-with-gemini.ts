@@ -10,6 +10,20 @@ type SummarizeStoryInput = {
   storyTitle: string;
 };
 
+export class GeminiSummaryHttpError extends Error {
+  readonly status: number;
+
+  constructor(status: number) {
+    super(`Gemini API request failed with status ${status}`);
+    this.name = "GeminiSummaryHttpError";
+    this.status = status;
+  }
+}
+
+export function isGeminiSummaryHttpError(error: unknown): error is GeminiSummaryHttpError {
+  return error instanceof GeminiSummaryHttpError;
+}
+
 const SUMMARY_SECTION_HEADINGS = {
   cn: {
     characters: "登场人物（含别名）",
@@ -90,7 +104,7 @@ export async function summarizeStoryWithGemini({
   });
 
   if (!response.ok) {
-    throw new Error(`Gemini API request failed with status ${response.status}`);
+    throw new GeminiSummaryHttpError(response.status);
   }
 
   const payload: unknown = await response.json();

@@ -13,6 +13,7 @@ Add story read progress, a settings page, transient AI story summaries, translat
 - Add `/settings` for name, API key, backup/restore, reset controls, and GitHub issue routing.
 - Include read progress and notes in backup import/export while excluding the API key.
 - Polish settings status alerts, the API key guide disclosure, the AI summary prompt shape, and the global maintainer footer.
+- Show Gemini HTTP response codes on AI summary API failures and include speaker names in summary context.
 
 ## Constraints
 
@@ -32,6 +33,8 @@ Add story read progress, a settings page, transient AI story summaries, translat
 - [x] Restore export success status as a dismissible alert.
 - [x] Require stable AI summary sections for characters, key events, and final summary.
 - [x] Move maintainer credit into the shared page frame footer with a new-tab Issue link.
+- [x] Surface AI summary HTTP response codes without retrying.
+- [x] Send speaker-aware story transcript lines to the AI summary prompt.
 
 ## Verification
 
@@ -44,3 +47,4 @@ Add story read progress, a settings page, transient AI story summaries, translat
 - AI summaries are transient UI output and are not persisted or backed up.
 - Settings status messages are allowed for export/import/reset, but must be dismissible.
 - Maintainer credit is shared page chrome rather than home-only content.
+- Gemini API failures expose only the HTTP response code; error response bodies remain hidden from users.
