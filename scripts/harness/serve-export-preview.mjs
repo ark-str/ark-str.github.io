@@ -4,7 +4,7 @@ import path from "node:path";
 
 const host = process.env.SMOKE_HOST ?? "127.0.0.1";
 const port = Number.parseInt(process.env.SMOKE_PORT ?? "3200", 10);
-const appBasePath = (process.env.PLAYWRIGHT_APP_BASE_PATH ?? "/ark-str").replace(/^\/+|\/+$/g, "");
+const appBasePath = (process.env.PLAYWRIGHT_APP_BASE_PATH ?? "").replace(/^\/+|\/+$/g, "");
 const repoRoot = process.cwd();
 const exportRoot = path.join(repoRoot, "ark-str-web-app", ".next-export");
 const previewRoot = path.join(
@@ -77,5 +77,6 @@ const server = http.createServer((request, response) => {
 });
 
 server.listen(port, host, () => {
-  console.log(`export preview server listening on http://${host}:${port}/${appBasePath}/`);
+  const previewPath = appBasePath.length > 0 ? `/${appBasePath}/` : "/";
+  console.log(`export preview server listening on http://${host}:${port}${previewPath}`);
 });

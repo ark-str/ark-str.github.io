@@ -36,7 +36,7 @@ npm run verify
 
 ## Deploy To GitHub Pages
 
-The repository publishes a static export to project pages at `https://wjlee611.github.io/ark-str/`.
+The repository publishes a static export to the organization Pages root at `https://ark-str.github.io/`.
 
 Before the first deployment, set the repository Pages source to `GitHub Actions` in `Settings -> Pages`.
 
@@ -81,6 +81,6 @@ The repository is in the manual Pages deployment enablement phase after the firs
 - app-internal generated metadata under `ark-str-web-app/src/generated/content/` keep the reader export-safe without mirroring full story payloads into app source
 - bundled reader portraits now come from a blobless local cache of `ArknightsResource/avgs/npcs/`, use the first basename-sorted matching file per `speakerId`, and render as top-aligned full-body crops while only referenced files are materialized and copied into the app bundle
 - `npm run dev` uses an isolated `.next-dev` cache and export verification uses `.next-export`, so verify no longer poisons the next local dev startup
-- `npm run verify` now validates the exported site with Playwright against the `/ark-str/` subpath
+- `npm run verify` now validates the exported site with Playwright against the Pages root path
 - a manual `Deploy GitHub Pages` workflow can publish the exported artifact through GitHub Actions
 - summary generation and character unlock extraction remain follow-up work

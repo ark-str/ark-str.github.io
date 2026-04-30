@@ -33,7 +33,7 @@ const allowedRemoteUrlsByFile = new Map([
     "ark-str-web-app/src/lib/external-links.ts",
     new Set([
       "https://aistudio.google.com/app/apikey",
-      "https://github.com/wjlee611/ark-str/issues/new",
+      "https://github.com/ark-str/ark-str.github.io/issues/new",
     ]),
   ],
 ]);

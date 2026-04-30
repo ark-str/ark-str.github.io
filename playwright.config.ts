@@ -3,7 +3,7 @@ import { defineConfig } from "@playwright/test";
 const smokePort = 3200;
 const smokeHost = "127.0.0.1";
 const smokeBaseUrl = `http://${smokeHost}:${smokePort}`;
-const smokeAppBasePath = "/ark-str";
+const smokeAppBasePath = "";
 
 export default defineConfig({
   testDir: "./tests/smoke",
@@ -20,7 +20,7 @@ export default defineConfig({
   outputDir: "artifacts/playwright/test-results",
   webServer: {
     command: `SMOKE_HOST=${smokeHost} SMOKE_PORT=${smokePort} PLAYWRIGHT_APP_BASE_PATH=${smokeAppBasePath} node scripts/harness/serve-export-preview.mjs`,
-    url: `${smokeBaseUrl}${smokeAppBasePath}/`,
+    url: `${smokeBaseUrl}${smokeAppBasePath || "/"}`,
     reuseExistingServer: false,
     stdout: "pipe",
     stderr: "pipe",

@@ -16,7 +16,7 @@ Every meaningful change should pass:
 ## Expectations
 
 - The app must build without runtime network access after dependencies are installed.
-- The app must export successfully for the gh-pages `/ark-str/` base path.
+- The app must export successfully for the `https://ark-str.github.io/` Pages root path.
 - The exported artifact must stay under the committed size budget: `ark-str-web-app/.next-export` below 2 GiB and `.next-export/generated` below 750 MiB.
 - The repository must provide a manual GitHub Pages deployment workflow that rebuilds and verifies before publishing `ark-str-web-app/.next-export`.
 - The app must keep dev-cache and export-cache output isolated so `npm run verify` does not slow the next `npm run dev`.

@@ -53,7 +53,7 @@ The app should feel editorial, deliberate, and product-specific rather than like
 - the UI uses a sans-first type system and a tighter radius scale for more consistent modern chrome
 - dialogue cards keep the original text-first card layout while speaker portraits render as 2x top-cropped images inside the existing portrait slot
 - a generated-content readiness panel and vendor `[uc]info` story summaries sourced from bundled story detail JSON
-- gh-pages-safe reader routes rendered from exported static files under the `/ark-str/` base path
+- gh-pages-safe reader routes rendered from exported static files under the Pages root path
 - reader route shells should avoid embedding full story payloads in server-rendered props; archive, group, story detail, and asset lookups load from bundled generated JSON at runtime
 - generated story media should use local optimized WebP assets referenced through the generated asset manifest, not direct vendor paths
 - no framework starter copy or vendor branding; the Settings GitHub issue link is the documented remote-link exception

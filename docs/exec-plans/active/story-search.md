@@ -17,7 +17,7 @@ Add current-locale full-story text search with `/search?q=...` deep links, app-b
 - no runtime network calls beyond bundled generated JSON
 - no external virtualization/search dependency
 - keep browser-only search behavior inside client feature UI/runtime code
-- keep GitHub Pages `/ark-str/` export compatibility
+- keep GitHub Pages root-path export compatibility
 
 ## Tasks
 

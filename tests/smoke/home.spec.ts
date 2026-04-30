@@ -3,7 +3,7 @@ import path from "node:path";
 import { expect, test } from "@playwright/test";
 import type { Locator, Page } from "@playwright/test";
 
-const appBasePath = process.env.PLAYWRIGHT_APP_BASE_PATH ?? "/ark-str";
+const appBasePath = normalizeAppBasePath(process.env.PLAYWRIGHT_APP_BASE_PATH ?? "");
 const readerSessionKey = "ark-str:reader-session:v1";
 const preferencesKey = "ark-str:app-preferences:v1";
 const characterObservationsKey = "ark-str:character-observations:v1";
@@ -304,13 +304,32 @@ if (broadSearchResultCount <= 40) {
   throw new Error("The Korean search index must include enough broad-query results for incremental rendering.");
 }
 
+function normalizeAppBasePath(basePath: string) {
+  const normalizedBasePath = basePath.replace(/^\/+|\/+$/g, "");
+
+  return normalizedBasePath.length > 0 ? `/${normalizedBasePath}` : "";
+}
+
+function escapeRegExp(value: string) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
 function toAppPath(route = "") {
   const normalizedRoute = route.replace(/^\/+/, "");
-  const normalizedBasePath = `/${appBasePath.replace(/^\/+|\/+$/g, "")}`;
+  const [routePath = "", query = ""] = normalizedRoute.split("?", 2);
+  const normalizedRoutePath = routePath.replace(/\/+$/g, "");
+  const pathname = normalizedRoutePath.length > 0 ? `/${normalizedRoutePath}/` : "/";
 
-  return normalizedRoute.length > 0
-    ? `${normalizedBasePath}/${normalizedRoute}`
-    : `${normalizedBasePath}/`;
+  return `${appBasePath}${pathname}${query.length > 0 ? `?${query}` : ""}`;
+}
+
+function toPublicPath(publicPath: string) {
+  return `${appBasePath}/${publicPath.replace(/^\/+/, "")}`;
+}
+
+function toAppPathPattern(route = "") {
+  const path = toAppPath(route).replace(/\/$/g, "");
+  return new RegExp(`${escapeRegExp(path)}/?$`);
 }
 
 function trackBrowserErrors(page: Page) {
@@ -380,9 +399,9 @@ test.describe("reader shell smoke", () => {
     await expect(page.getByTestId("locale-select")).toBeEnabled();
     await expect(page.getByTestId("locale-select")).toHaveValue("kr");
     await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
-    await expect(page.locator('link[rel="icon"]')).toHaveAttribute(
+    await expect(page.locator('link[rel="icon"][type="image/png"]')).toHaveAttribute(
       "href",
-      `${appBasePath}/ark_str_icon.png`,
+      toPublicPath("ark_str_icon.png"),
     );
     expect(readPngColorType(browserIconFile)).toBe(2);
     expect(readPngColorType(appChromeIconFile)).toBe(6);
@@ -417,11 +436,11 @@ test.describe("reader shell smoke", () => {
       nodes.map((node) => node.getAttribute("href")),
     );
     expect(behemothHrefs).toEqual([
-      "/ark-str/reader/kr/act23side/",
-      "/ark-str/reader/kr/main_13/",
-      "/ark-str/reader/kr/act31side/",
-      "/ark-str/reader/kr/act34side/",
-      "/ark-str/reader/kr/act46side/",
+      toAppPath("reader/kr/act23side"),
+      toAppPath("reader/kr/main_13"),
+      toAppPath("reader/kr/act31side"),
+      toAppPath("reader/kr/act34side"),
+      toAppPath("reader/kr/act46side"),
     ]);
     await expect(page.getByTestId("site-footer")).toContainText("Maintainer - dev.Woong");
     await expect(page.getByTestId("site-footer")).toContainText("토루");
@@ -447,7 +466,7 @@ test.describe("reader shell smoke", () => {
     await expect(page.getByTestId("home-recommendations")).toContainText("Administrator's Terra Notes");
 
     await page.getByRole("link", { name: "Story" }).click();
-    await expect(page).toHaveURL(/\/ark-str\/reader\/en\/$/);
+    await expect(page).toHaveURL(toAppPathPattern("reader/en"));
     await expect(page.getByTestId("reader-shell")).toBeVisible();
 
     await page.goto(toAppPath("reader/kr"));
@@ -528,7 +547,10 @@ test.describe("reader shell smoke", () => {
     await expect(mainStorylineItemList).toHaveCSS("display", "flex");
     await expect(mainStorylineItemList).toHaveCSS("flex-direction", "column");
     await expect(mainPrimaryRow).toBeVisible();
-    await expect(mainPrimaryRow).toHaveAttribute("href", `/ark-str/reader/kr/${koreanMainStorylinePrimary.groupId}/`);
+    await expect(mainPrimaryRow).toHaveAttribute(
+      "href",
+      toAppPath(`reader/kr/${koreanMainStorylinePrimary.groupId}`),
+    );
     await expect(mainPrimaryRow.getByTestId("storyline-primary-card-title")).toHaveCSS(
       "color",
       "rgb(255, 255, 255)",
@@ -570,7 +592,7 @@ test.describe("reader shell smoke", () => {
     await expect(firstReferenceRow).toHaveText(koreanMainStorylineReference.displayTitle);
     await expect(firstReferenceRow).toHaveAttribute(
       "href",
-      `/ark-str/reader/kr/${koreanMainStorylineReference.groupId}/`,
+      toAppPath(`reader/kr/${koreanMainStorylineReference.groupId}`),
     );
     await expect(
       page.locator(
@@ -605,7 +627,7 @@ test.describe("reader shell smoke", () => {
     const groupPageCrumb = page.getByTestId("group-crumb-link");
     await expect(groupPageCrumb).toHaveAttribute(
       "href",
-      `/ark-str/reader/${sampleStory.server}/${sampleStory.groupId}/`,
+      toAppPath(`reader/${sampleStory.server}/${sampleStory.groupId}`),
     );
     await expect(groupPageCrumb).toHaveText(sampleStoryGroup.title);
     await expect(groupPageCrumb).toHaveCSS("border-top-left-radius", "6.8px");
@@ -632,7 +654,7 @@ test.describe("reader shell smoke", () => {
       ),
     ).toBeVisible();
     const sampleStoryCard = page.locator(
-      `[data-testid="group-story-card"][href="/ark-str/reader/${sampleStory.server}/${sampleStory.groupId}/${sampleStory.storyId}/"]`,
+      `[data-testid="group-story-card"][href="${toAppPath(`reader/${sampleStory.server}/${sampleStory.groupId}/${sampleStory.storyId}`)}"]`,
     );
     await expect(sampleStoryCard).toBeVisible();
     await expect(sampleStoryCard.getByTestId("group-story-metrics")).toContainText("글자");
@@ -727,13 +749,13 @@ test.describe("reader shell smoke", () => {
     );
     await page.getByTestId("story-ai-summary-button").first().click();
     await expect(page).toHaveURL(
-      new RegExp(`/ark-str/reader/${sampleStory.server}/${sampleStory.groupId}/${sampleStory.storyId}/?$`),
+      toAppPathPattern(`reader/${sampleStory.server}/${sampleStory.groupId}/${sampleStory.storyId}`),
     );
     await expect(page.getByTestId("story-ai-summary-card")).toHaveCount(2);
     await expect(page.getByTestId("story-ai-summary-error")).toHaveCount(2);
     await expect(page.getByTestId("story-ai-summary-settings-link")).toHaveCount(2);
     await page.getByTestId("story-ai-summary-settings-link").first().click();
-    await expect(page).toHaveURL(/\/ark-str\/settings\/$/);
+    await expect(page).toHaveURL(toAppPathPattern("settings"));
     await page.goBack();
     await expect(page.getByTestId("reader-shell")).toBeVisible();
     let aiSummaryRequestCount = 0;
@@ -835,7 +857,7 @@ test.describe("reader shell smoke", () => {
     if (samplePreviousStory) {
       await expect(page.getByTestId("story-previous-link")).toHaveAttribute(
         "href",
-        `/ark-str/reader/${samplePreviousStory.server}/${samplePreviousStory.groupId}/${samplePreviousStory.storyId}/`,
+        toAppPath(`reader/${samplePreviousStory.server}/${samplePreviousStory.groupId}/${samplePreviousStory.storyId}`),
       );
     } else {
       await expect(page.getByTestId("story-previous-disabled")).toBeVisible();
@@ -843,7 +865,7 @@ test.describe("reader shell smoke", () => {
     if (sampleNextStory) {
       await expect(page.getByTestId("story-next-link")).toHaveAttribute(
         "href",
-        `/ark-str/reader/${sampleNextStory.server}/${sampleNextStory.groupId}/${sampleNextStory.storyId}/`,
+        toAppPath(`reader/${sampleNextStory.server}/${sampleNextStory.groupId}/${sampleNextStory.storyId}`),
       );
     } else {
       await expect(page.getByTestId("story-next-disabled")).toBeVisible();
@@ -851,7 +873,7 @@ test.describe("reader shell smoke", () => {
 
     await page.goto(toAppPath(`reader/${sampleStory.server}/${sampleStory.groupId}`));
     const readSampleStoryCard = page.locator(
-      `[data-testid="group-story-card"][href="/ark-str/reader/${sampleStory.server}/${sampleStory.groupId}/${sampleStory.storyId}/"]`,
+      `[data-testid="group-story-card"][href="${toAppPath(`reader/${sampleStory.server}/${sampleStory.groupId}/${sampleStory.storyId}`)}"]`,
     );
     await expect(readSampleStoryCard).toHaveAttribute("data-read", "true");
     await expect(readSampleStoryCard.getByTestId("group-story-read-badge")).toContainText("읽음");
@@ -972,7 +994,7 @@ test.describe("reader shell smoke", () => {
     await page.evaluate(() => window.scrollTo(0, 0));
 
     await page.getByTestId("notes-overview-link").click();
-    await expect(page).toHaveURL(/\/ark-str\/notes\/$/);
+    await expect(page).toHaveURL(toAppPathPattern("notes"));
     await expect(page.getByTestId("notes-shell")).toBeVisible();
     await expect(page.getByTestId("notes-list")).toHaveCSS("display", "grid");
     const noteCard = page.getByTestId("note-card").filter({ hasText: sampleAlternateLocaleStory.title });
@@ -990,7 +1012,9 @@ test.describe("reader shell smoke", () => {
     await expect(noteCard.getByTestId("note-card-textarea")).toHaveValue(updatedSampleNoteText);
     await expect(noteCard.getByTestId("note-story-link")).toHaveAttribute(
       "href",
-      `/ark-str/reader/${sampleAlternateLocaleStory.server}/${sampleAlternateLocaleStory.groupId}/${sampleAlternateLocaleStory.storyId}/`,
+      toAppPath(
+        `reader/${sampleAlternateLocaleStory.server}/${sampleAlternateLocaleStory.groupId}/${sampleAlternateLocaleStory.storyId}`,
+      ),
     );
     const noteCardLayoutMetrics = await noteCard.evaluate((node) => {
       const titleBlock = node.querySelector('[data-testid="note-title-block"]');
@@ -1060,7 +1084,7 @@ test.describe("reader shell smoke", () => {
     );
 
     await page.getByTestId("settings-overview-link").click();
-    await expect(page).toHaveURL(/\/ark-str\/settings\/$/);
+    await expect(page).toHaveURL(toAppPathPattern("settings"));
     await expect(page.getByTestId("settings-shell")).toBeVisible();
     await expect(page.getByTestId("settings-name-input")).toHaveValue("로도스");
     await page.getByTestId("settings-api-key-input").fill("smoke-secret-key");
@@ -1172,8 +1196,8 @@ test.describe("reader shell smoke", () => {
     await expect(page.getByTestId("notes-list")).toBeVisible();
     await noteCard.getByTestId("note-story-link").click();
     await expect(page).toHaveURL(
-      new RegExp(
-        `/ark-str/reader/${sampleAlternateLocaleStory.server}/${sampleAlternateLocaleStory.groupId}/${sampleAlternateLocaleStory.storyId}/$`,
+      toAppPathPattern(
+        `reader/${sampleAlternateLocaleStory.server}/${sampleAlternateLocaleStory.groupId}/${sampleAlternateLocaleStory.storyId}`,
       ),
     );
     await expect(page.getByTestId("reader-shell")).toBeVisible();
@@ -1273,7 +1297,7 @@ test.describe("reader shell smoke", () => {
       "rgba(0, 0, 0, 0)",
     );
     const activeSiblingCard = siblingNav.locator(
-      `[data-testid="story-sibling-card"][href="/ark-str/reader/${sampleStory.server}/${sampleStory.groupId}/${sampleStory.storyId}/"]`,
+      `[data-testid="story-sibling-card"][href="${toAppPath(`reader/${sampleStory.server}/${sampleStory.groupId}/${sampleStory.storyId}`)}"]`,
     );
     await expect(activeSiblingCard).toBeVisible();
     await expect(activeSiblingCard).not.toContainText(sampleStory.storyId);
@@ -1308,11 +1332,11 @@ test.describe("reader shell smoke", () => {
     await expect(appBar.getByTestId("app-home-icon")).toBeVisible();
     await expect(appBar.getByTestId("theme-toggle")).toHaveText("");
     await expect(appBar.getByTestId("search-overview-link")).toHaveText("");
-    await expect(appBar.getByTestId("search-overview-link")).toHaveAttribute("href", "/ark-str/search/");
+    await expect(appBar.getByTestId("search-overview-link")).toHaveAttribute("href", toAppPath("search"));
     await expect(appBar.getByTestId("notes-overview-link")).toHaveText("");
-    await expect(appBar.getByTestId("notes-overview-link")).toHaveAttribute("href", "/ark-str/notes/");
+    await expect(appBar.getByTestId("notes-overview-link")).toHaveAttribute("href", toAppPath("notes"));
     await expect(appBar.getByTestId("settings-overview-link")).toHaveText("");
-    await expect(appBar.getByTestId("settings-overview-link")).toHaveAttribute("href", "/ark-str/settings/");
+    await expect(appBar.getByTestId("settings-overview-link")).toHaveAttribute("href", toAppPath("settings"));
     const appBarControlSizes = await appBar.evaluate((node, groupTitle) => {
       const homeControl = node.querySelector('a[aria-label="홈"]');
       const storyRootControl = [...node.querySelectorAll("a")].find(
@@ -1447,7 +1471,7 @@ test.describe("reader shell smoke", () => {
     expect(appBarBackdropFilter.every((value) => value === "none")).toBe(true);
     await expect(appBar.getByRole("link", { name: "스토리" })).toHaveAttribute(
       "href",
-      `/ark-str/reader/${sampleStory.server}/`,
+      toAppPath(`reader/${sampleStory.server}`),
     );
     await page.evaluate(() => window.scrollTo(0, 1200));
     await expect(appBar).toHaveAttribute("data-hidden", "true");
@@ -1473,7 +1497,7 @@ test.describe("reader shell smoke", () => {
     await expect(appBar).toHaveAttribute("data-hidden", "false");
 
     await appBar.getByTestId("search-overview-link").click();
-    await expect(page).toHaveURL(/\/ark-str\/search\/$/);
+    await expect(page).toHaveURL(toAppPathPattern("search"));
     await expect(page.getByTestId("search-shell")).toBeVisible();
     await expect(page.getByTestId("search-empty-state")).toBeVisible();
     const searchFormMetrics = await page.getByTestId("search-form").evaluate((node) => {
@@ -1530,7 +1554,7 @@ test.describe("reader shell smoke", () => {
     const firstSearchResult = page.getByTestId("search-result-card").first();
     await expect(firstSearchResult).toHaveAttribute(
       "href",
-      `/ark-str/reader/kr/${sampleSearchStory.groupId}/${sampleSearchStory.storyId}/`,
+      toAppPath(`reader/kr/${sampleSearchStory.groupId}/${sampleSearchStory.storyId}`),
     );
     await expect(firstSearchResult.getByTestId("search-result-line")).toBeVisible();
     await expect(firstSearchResult.getByTestId("search-result-title-block")).toContainText(
@@ -1580,21 +1604,21 @@ test.describe("reader shell smoke", () => {
     expect(Math.abs(firstSearchResultLayout.metricsTop - firstSearchResultLayout.titleTop)).toBeLessThanOrEqual(2);
     await firstSearchResult.click();
     await expect(page).toHaveURL(
-      new RegExp(`/ark-str/reader/kr/${sampleSearchStory.groupId}/${sampleSearchStory.storyId}/$`),
+      toAppPathPattern(`reader/kr/${sampleSearchStory.groupId}/${sampleSearchStory.storyId}`),
     );
 
     await page.goto(
       toAppPath(`reader/${sampleStory.server}/${sampleStory.groupId}/${sampleStory.storyId}`),
     );
     await appBar.getByRole("link", { name: "스토리" }).click();
-    await expect(page).toHaveURL(new RegExp(`/ark-str/reader/${sampleStory.server}/$`));
+    await expect(page).toHaveURL(toAppPathPattern(`reader/${sampleStory.server}`));
 
     await page.goto(
       toAppPath(`reader/${sampleStory.server}/${sampleStory.groupId}/${sampleStory.storyId}`),
     );
     await appBar.getByRole("link", { name: sampleStoryGroup.title }).click();
     await expect(page).toHaveURL(
-      new RegExp(`/ark-str/reader/${sampleStory.server}/${sampleStory.groupId}/$`),
+      toAppPathPattern(`reader/${sampleStory.server}/${sampleStory.groupId}`),
     );
 
     await page.goto(
@@ -1732,7 +1756,7 @@ test.describe("reader shell smoke", () => {
     await page.goto(toAppPath());
     await expect(page.getByTestId("continue-reading-link")).toHaveAttribute(
       "href",
-      `/ark-str/reader/${sampleStory.server}/${sampleStory.groupId}/${sampleStory.storyId}/`,
+      toAppPath(`reader/${sampleStory.server}/${sampleStory.groupId}/${sampleStory.storyId}`),
     );
 
     browserErrors.assertClean();

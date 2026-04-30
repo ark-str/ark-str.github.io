@@ -107,8 +107,8 @@ This phase keeps the recovered reader shell and Pages deployment path stable whi
 - global horizontal and vertical scrollbar tracks/corners are transparent so local scroll regions do not add heavy chrome
 - dialogue cards preserve the original text-first card layout and only enlarge available speaker portraits with a 2x top-cropped render inside the existing portrait slot
 - Doctor choice normalization no longer renders a nested "Shared response" section; predicates that reference every option are treated as post-choice continuation
-- gh-pages-safe static export under the `/ark-str/` base path
+- gh-pages-safe static export under the `https://ark-str.github.io/` Pages root path
 - isolated `.next-dev` and `.next-export` caches so `npm run verify` does not degrade the next `npm run dev` startup
 - export-size checks run after static export to keep `ark-str-web-app/.next-export` and generated assets within the committed budget
-- a manual GitHub Actions Pages workflow that rebuilds, verifies, and publishes `ark-str-web-app/out`
+- a manual GitHub Actions Pages workflow that rebuilds, verifies, and publishes `ark-str-web-app/.next-export`
 - the visual system uses a sans-first type stack and a more restrained radius scale while keeping the archive background mood
