@@ -420,7 +420,9 @@ test.describe("reader shell smoke", () => {
       "/ark-str/reader/kr/act34side/",
       "/ark-str/reader/kr/act46side/",
     ]);
-    await expect(page.getByTestId("home-footer")).toContainText("Maintainer - dev.Woong");
+    await expect(page.getByTestId("site-footer")).toContainText("Maintainer - dev.Woong");
+    await expect(page.getByTestId("site-footer")).toContainText("토루");
+    await expect(page.getByTestId("site-footer-issue-link")).toHaveAttribute("target", "_blank");
     const nicknameInput = page.getByTestId("nickname-input");
     await expect(nicknameInput).toBeEnabled();
     await nicknameInput.fill("로도스");
@@ -732,8 +734,13 @@ test.describe("reader shell smoke", () => {
     await page.goBack();
     await expect(page.getByTestId("reader-shell")).toBeVisible();
     let aiSummaryRequestCount = 0;
+    let latestAiSummaryPrompt = "";
     await page.route("https://generativelanguage.googleapis.com/**", async (route) => {
       aiSummaryRequestCount += 1;
+      const payload = route.request().postDataJSON() as {
+        contents?: Array<{ parts?: Array<{ text?: string }> }>;
+      };
+      latestAiSummaryPrompt = payload.contents?.[0]?.parts?.[0]?.text ?? "";
       await route.fulfill({
         contentType: "application/json",
         body: JSON.stringify({
@@ -776,6 +783,9 @@ test.describe("reader shell smoke", () => {
     await expect(page.getByTestId("story-ai-summary-card").last()).toContainText(
       "Shared top action summary",
     );
+    expect(latestAiSummaryPrompt).toContain("## 등장인물(이명 포함)");
+    expect(latestAiSummaryPrompt).toContain("## 주요 내용");
+    expect(latestAiSummaryPrompt).toContain("## 최종 요약");
     await expect(page.getByTestId("story-ai-summary-heading")).toHaveCount(2);
     await expect(page.getByTestId("story-ai-summary-list")).toHaveCount(2);
     await expect(page.getByTestId("story-ai-summary-strong")).toHaveCount(2);
@@ -1031,14 +1041,33 @@ test.describe("reader shell smoke", () => {
     );
     await expect(page.getByTestId("settings-api-key-link")).toHaveAttribute("target", "_blank");
     const apiKeyGuide = page.getByTestId("settings-api-key-guide");
+    const apiKeyGuideToggle = page.getByTestId("settings-api-key-guide-toggle");
+    const apiKeyGuidePanel = page.getByTestId("settings-api-key-guide-panel");
     await expect(apiKeyGuide).toContainText("API key");
+    await expect(apiKeyGuideToggle).toHaveAttribute("aria-expanded", "false");
+    await expect(apiKeyGuidePanel).toHaveAttribute("data-state", "closed");
+    await expect(apiKeyGuidePanel).toHaveCSS("visibility", "hidden");
+    const apiKeyGuideTransitionProperty = await apiKeyGuidePanel.evaluate(
+      (node) => window.getComputedStyle(node).transitionProperty,
+    );
+    expect(apiKeyGuideTransitionProperty).toContain("max-height");
+    await apiKeyGuideToggle.click();
+    await expect(apiKeyGuideToggle).toHaveAttribute("aria-expanded", "true");
+    await expect(apiKeyGuidePanel).toHaveAttribute("data-state", "open");
+    await expect(apiKeyGuidePanel).toHaveCSS("visibility", "visible");
     await expect(apiKeyGuide.locator("li")).toHaveCount(3);
     await expect(page.getByTestId("settings-issue-link")).toHaveAttribute("target", "_blank");
+    await expect(page.getByTestId("site-footer")).toContainText("토루");
+    await expect(page.getByTestId("site-footer-issue-link")).toHaveAttribute("target", "_blank");
     const backupFilePath = path.join("/tmp", `ark-str-smoke-backup-${Date.now()}.json`);
     const downloadPromise = page.waitForEvent("download");
     await page.getByTestId("settings-export-button").click();
     const download = await downloadPromise;
     await download.saveAs(backupFilePath);
+    await expect(page.getByTestId("settings-status")).toContainText(
+      /백업 JSON을 만들었습니다|Backup JSON created|バックアップ JSON|备份 JSON|備份 JSON/,
+    );
+    await page.getByTestId("settings-status-dismiss").click();
     await expect(page.getByTestId("settings-status")).toHaveCount(0);
     const backupJson = JSON.parse(fs.readFileSync(backupFilePath, "utf8"));
     expect(JSON.stringify(backupJson)).not.toContain("smoke-secret-key");

@@ -1,4 +1,5 @@
 import { FloatingAppBar } from "@/components/layout/floating-app-bar";
+import { ReaderPageFooter } from "@/components/layout/reader-page-footer";
 import type { FloatingAppBarModel } from "@/components/layout/types";
 
 type ReaderPageFrameProps = {
@@ -17,6 +18,7 @@ export function ReaderPageFrame({ appBar, children, header, testId }: ReaderPage
       <FloatingAppBar model={appBar} />
       {header}
       {children}
+      <ReaderPageFooter />
     </main>
   );
 }

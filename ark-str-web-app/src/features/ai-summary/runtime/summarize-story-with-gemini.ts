@@ -10,14 +10,48 @@ type SummarizeStoryInput = {
   storyTitle: string;
 };
 
+const SUMMARY_SECTION_HEADINGS = {
+  cn: {
+    characters: "登场人物（含别名）",
+    events: "主要内容",
+    final: "最终摘要",
+  },
+  en: {
+    characters: "Characters (including aliases)",
+    events: "Key events",
+    final: "Final summary",
+  },
+  jp: {
+    characters: "登場人物（別名を含む）",
+    events: "主な内容",
+    final: "最終要約",
+  },
+  kr: {
+    characters: "등장인물(이명 포함)",
+    events: "주요 내용",
+    final: "최종 요약",
+  },
+  tw: {
+    characters: "登場人物（含別名）",
+    events: "主要內容",
+    final: "最終摘要",
+  },
+} satisfies Record<ReaderLocale, { characters: string; events: string; final: string }>;
+
 function createSummaryPrompt({ locale, storyText, storyTitle }: Omit<SummarizeStoryInput, "apiKey">) {
   const localeLabel = READER_LOCALE_LABELS[locale].label;
+  const headings = SUMMARY_SECTION_HEADINGS[locale];
 
   return [
     `Summarize this Arknights story in ${localeLabel}.`,
-    "Focus on the plot, conflict, important character decisions, and outcome.",
-    "Keep the summary concise, specific, and useful for a returning reader.",
-    "Return Markdown with short headings and bullet points when helpful.",
+    "Return Markdown only. Use exactly these level-2 headings in this order:",
+    `## ${headings.characters}`,
+    `## ${headings.events}`,
+    `## ${headings.final}`,
+    "Under the characters section, list important named characters as bullets and include aliases, titles, or codenames when the story text clearly provides them.",
+    "Under the key events section, summarize the plot, conflict, important character decisions, and outcome as concise bullets.",
+    "Under the final summary section, write a short paragraph useful for a returning reader.",
+    "Do not invent details that are not supported by the story text.",
     "",
     `Title: ${storyTitle}`,
     "",
@@ -45,7 +79,7 @@ export async function summarizeStoryWithGemini({
         },
       ],
       generationConfig: {
-        temperature: 0.2,
+        temperature: 0.1,
       },
     }),
     headers: {

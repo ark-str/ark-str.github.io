@@ -20,10 +20,11 @@ The app should feel editorial, deliberate, and product-specific rather than like
 
 - reader-focused home shell inside `ark-str-web-app`
 - reader session persistence for preferred locale, reader nickname, and last visited story
-- home renders a localized ARK STR landing surface with a clean centered nickname prompt, two-line continue action showing the target story title, full-bleed square-edged service introduction using the accent-colored app icon, generously separated curated recommendation collections, selected-locale statistics, and maintainer credit
+- home renders a localized ARK STR landing surface with a clean centered nickname prompt, two-line continue action showing the target story title, full-bleed square-edged service introduction using the accent-colored app icon, generously separated curated recommendation collections, and selected-locale statistics
 - app-level light/dark theme toggle persisted through the preferences feature
-- settings live at `/settings` and expose reader name, Google AI Studio API key with a public/shared-device warning, a Google AI Studio API key link, a collapsible key issuance guide, JSON backup/restore without export success toast, note/read-progress resets, and a GitHub issue link that opens in a new tab
-- read progress is toggled from story action rows, stored by `storyId`, shared across locales, and shown on group story cards; AI summary widgets render Markdown and share one transient story-level result between the top and bottom action rows
+- settings live at `/settings` and expose reader name, Google AI Studio API key with a public/shared-device warning, a Google AI Studio API key link, an animated collapsible key issuance guide, dismissible JSON backup/restore/reset status alerts, note/read-progress resets, and a GitHub issue link that opens in a new tab
+- read progress is toggled from story action rows, stored by `storyId`, shared across locales, and shown on group story cards; AI summary widgets render Markdown, use a stable character/key-events/final-summary response format, and share one transient story-level result between the top and bottom action rows
+- every reader frame page ends with a maintainer footer and a new-tab Issue link that wraps to a centered second row on narrow screens
 - story-level notes persisted locally by `storyId`, shared across localized versions of the same story, saved as text changes, and removed from the notes list when cleared
 - the notes overview renders editable grid cards with enough minimum column width for comfortable note editing, keeps story sidebar-style stage and phase badges such as 작전 전/후 or 브릿지 visible, and does not unmount a card while its textarea is being cleared
 - story note sidebars and bottom sheets use localized controls, omit fake mobile drag handles, and consume browser back while open so back closes the note editor before route navigation
