@@ -120,6 +120,7 @@ export type UiCopy = {
   storyActions: {
     aiSummary: string;
     aiSummaryError: (message: string) => string;
+    aiSummaryHttpError: (status: number) => string;
     aiSummaryLoading: string;
     aiSummaryNoText: string;
     aiSummaryRequestFailed: string;
@@ -300,6 +301,7 @@ const UI_COPY = {
     storyActions: {
       aiSummary: "AI 摘要",
       aiSummaryError: (message) => `摘要生成失败：${message}`,
+      aiSummaryHttpError: (status) => `响应代码：${status}`,
       aiSummaryLoading: "正在生成摘要",
       aiSummaryNoText: "没有可摘要的正文。",
       aiSummaryRequestFailed: "无法生成摘要。请检查 API key 或稍后重试。",
@@ -460,6 +462,7 @@ const UI_COPY = {
     storyActions: {
       aiSummary: "AI summary",
       aiSummaryError: (message) => `Summary failed: ${message}`,
+      aiSummaryHttpError: (status) => `Response code: ${status}`,
       aiSummaryLoading: "Generating summary",
       aiSummaryNoText: "No story text is available to summarize.",
       aiSummaryRequestFailed: "The summary could not be generated. Check the API key or try again later.",
@@ -620,6 +623,7 @@ const UI_COPY = {
     storyActions: {
       aiSummary: "AI要約",
       aiSummaryError: (message) => `要約に失敗しました: ${message}`,
+      aiSummaryHttpError: (status) => `応答コード: ${status}`,
       aiSummaryLoading: "要約を生成中",
       aiSummaryNoText: "要約できる本文がありません。",
       aiSummaryRequestFailed: "要約を生成できませんでした。API key を確認するか、後でもう一度お試しください。",
@@ -780,6 +784,7 @@ const UI_COPY = {
     storyActions: {
       aiSummary: "AI 요약",
       aiSummaryError: (message) => `요약에 실패했습니다: ${message}`,
+      aiSummaryHttpError: (status) => `응답 코드: ${status}`,
       aiSummaryLoading: "요약 생성 중",
       aiSummaryNoText: "요약할 본문이 없습니다.",
       aiSummaryRequestFailed: "요약을 생성하지 못했습니다. API key를 확인하거나 잠시 후 다시 시도해주세요.",
@@ -940,6 +945,7 @@ const UI_COPY = {
     storyActions: {
       aiSummary: "AI 摘要",
       aiSummaryError: (message) => `摘要生成失敗：${message}`,
+      aiSummaryHttpError: (status) => `回應代碼：${status}`,
       aiSummaryLoading: "正在生成摘要",
       aiSummaryNoText: "沒有可摘要的正文。",
       aiSummaryRequestFailed: "無法生成摘要。請檢查 API key 或稍後重試。",
