@@ -1,7 +1,7 @@
 "use client";
 
-import { useRef, useState, type ChangeEvent } from "react";
-import { AlertTriangle, ArrowUpRight, Bug, ChevronDown, Download, Settings, Upload } from "lucide-react";
+import { useEffect, useId, useRef, useState, type ChangeEvent } from "react";
+import { AlertTriangle, ArrowUpRight, Bug, ChevronDown, Download, Settings, Upload, X } from "lucide-react";
 import { ReaderPageFrame } from "@/components/layout/reader-page-frame";
 import type { FloatingAppBarModel } from "@/components/layout/types";
 import { Button, buttonVariants } from "@/components/ui/button";
@@ -21,10 +21,8 @@ import {
   parseUserDataBackupJson,
   persistRestoredCharacterObservations,
 } from "@/features/settings/runtime/user-data-backup-actions";
+import { GITHUB_ISSUE_URL, GOOGLE_AI_STUDIO_API_KEY_URL } from "@/lib/external-links";
 import { cn } from "@/lib/utils";
-
-const GITHUB_ISSUE_URL = "https://github.com/wjlee611/ark-str/issues/new";
-const GOOGLE_AI_STUDIO_API_KEY_URL = "https://aistudio.google.com/app/apikey";
 
 function createSettingsAppBar(): FloatingAppBarModel {
   return {
@@ -38,6 +36,114 @@ function createSettingsAppBar(): FloatingAppBarModel {
     storyRootHref: null,
     storySelect: null,
   };
+}
+
+function SettingsStatus({
+  dismissLabel,
+  message,
+  onDismiss,
+}: {
+  dismissLabel: string;
+  message: string;
+  onDismiss: () => void;
+}) {
+  return (
+    <Card className="bg-[var(--surface)]/94" data-testid="settings-status">
+      <CardContent className="flex items-center justify-between gap-3 px-5 py-4 text-sm font-semibold text-[var(--accent-strong)]">
+        <span>{message}</span>
+        <Button
+          aria-label={dismissLabel}
+          className="h-8 w-8 shrink-0 rounded-[var(--radius-sm)]"
+          data-testid="settings-status-dismiss"
+          onClick={onDismiss}
+          size="icon"
+          variant="ghost"
+        >
+          <X aria-hidden="true" className="h-4 w-4" />
+        </Button>
+      </CardContent>
+    </Card>
+  );
+}
+
+function ApiKeyIssueGuide({
+  items,
+  title,
+}: {
+  items: string[];
+  title: string;
+}) {
+  const [isOpen, setIsOpen] = useState(false);
+  const [contentHeight, setContentHeight] = useState(0);
+  const contentId = useId();
+  const contentRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const node = contentRef.current;
+    if (!node) {
+      return;
+    }
+
+    const syncContentHeight = () => {
+      setContentHeight(node.scrollHeight);
+    };
+
+    syncContentHeight();
+    if (typeof ResizeObserver === "undefined") {
+      return;
+    }
+
+    const observer = new ResizeObserver(syncContentHeight);
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [items]);
+
+  return (
+    <div
+      className="overflow-hidden rounded-[var(--radius-md)] border border-[var(--border)] bg-[var(--panel)]"
+      data-testid="settings-api-key-guide"
+    >
+      <button
+        aria-controls={contentId}
+        aria-expanded={isOpen}
+        className="flex w-full cursor-pointer items-center justify-between gap-3 px-4 py-3 text-left text-xs font-semibold text-[var(--text)]"
+        data-testid="settings-api-key-guide-toggle"
+        onClick={() => setIsOpen((current) => !current)}
+        type="button"
+      >
+        <span>{title}</span>
+        <ChevronDown
+          aria-hidden="true"
+          className={cn(
+            "h-4 w-4 shrink-0 text-[var(--text-muted)] transition-transform duration-300 ease-out",
+            isOpen && "rotate-180",
+          )}
+        />
+      </button>
+      <div
+        aria-hidden={!isOpen}
+        className={cn(
+          "overflow-hidden transition-[max-height] duration-300 ease-out",
+          !isOpen && "pointer-events-none",
+        )}
+        data-state={isOpen ? "open" : "closed"}
+        data-testid="settings-api-key-guide-panel"
+        id={contentId}
+        style={{
+          maxHeight: isOpen ? `${contentHeight}px` : "0px",
+          visibility: isOpen ? "visible" : "hidden",
+        }}
+      >
+        <div ref={contentRef}>
+          <ol className="grid list-decimal gap-1 px-4 pb-3 pl-8 text-xs leading-6 text-[var(--text-muted)]">
+            {items.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ol>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export function SettingsOverview() {
@@ -66,6 +172,7 @@ export function SettingsOverview() {
     link.download = `ark-str-backup-${new Date().toISOString().slice(0, 10)}.json`;
     link.click();
     URL.revokeObjectURL(url);
+    setStatusMessage(copy.settings.exportSuccess);
   };
 
   const handleImport = async (event: ChangeEvent<HTMLInputElement>) => {
@@ -132,11 +239,11 @@ export function SettingsOverview() {
     >
       <section className="relative z-10 grid gap-4" data-testid="settings-overview">
         {statusMessage ? (
-          <Card className="bg-[var(--surface)]/94" data-testid="settings-status">
-            <CardContent className="px-5 py-4 text-sm font-semibold text-[var(--accent-strong)]">
-              {statusMessage}
-            </CardContent>
-          </Card>
+          <SettingsStatus
+            dismissLabel={copy.settings.dismissStatus}
+            message={statusMessage}
+            onDismiss={() => setStatusMessage(null)}
+          />
         ) : null}
 
         <Card className="bg-[var(--surface)]/94">
@@ -186,23 +293,10 @@ export function SettingsOverview() {
               >
                 {copy.settings.apiKeyWarning}
               </p>
-              <details
-                className="group rounded-[var(--radius-md)] border border-[var(--border)] bg-[var(--panel)] px-4 py-3"
-                data-testid="settings-api-key-guide"
-              >
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-3 text-xs font-semibold text-[var(--text)]">
-                  {copy.settings.apiKeyIssueGuideTitle}
-                  <ChevronDown
-                    aria-hidden="true"
-                    className="h-4 w-4 text-[var(--text-muted)] transition-transform duration-[var(--motion-fast)] group-open:rotate-180"
-                  />
-                </summary>
-                <ol className="mt-3 grid list-decimal gap-1 pl-4 text-xs leading-6 text-[var(--text-muted)]">
-                  {copy.settings.apiKeyIssueGuide.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ol>
-              </details>
+              <ApiKeyIssueGuide
+                items={copy.settings.apiKeyIssueGuide}
+                title={copy.settings.apiKeyIssueGuideTitle}
+              />
             </div>
           </CardContent>
         </Card>

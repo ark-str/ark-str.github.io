@@ -338,12 +338,6 @@ export function BootstrapHome({
           </CardContent>
         </Card>
 
-        <footer
-          className="pb-8 text-center text-xs font-semibold uppercase tracking-[0.18em] text-[var(--text-muted)]"
-          data-testid="home-footer"
-        >
-          {copy.footer}
-        </footer>
       </section>
     </ReaderPageFrame>
   );

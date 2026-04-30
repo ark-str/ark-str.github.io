@@ -12,6 +12,7 @@ Add story read progress, a settings page, transient AI story summaries, translat
 - Add story action rows for read toggling and Google AI Studio summaries.
 - Add `/settings` for name, API key, backup/restore, reset controls, and GitHub issue routing.
 - Include read progress and notes in backup import/export while excluding the API key.
+- Polish settings status alerts, the API key guide disclosure, the AI summary prompt shape, and the global maintainer footer.
 
 ## Constraints
 
@@ -27,7 +28,10 @@ Add story read progress, a settings page, transient AI story summaries, translat
 - [x] Add AI summary runtime and Settings UI.
 - [x] Update reader/group/archive/app bar UI.
 - [x] Update guards and docs for the narrow remote exceptions.
-- [ ] Add smoke coverage and run verification.
+- [x] Add smoke coverage and run verification.
+- [x] Restore export success status as a dismissible alert.
+- [x] Require stable AI summary sections for characters, key events, and final summary.
+- [x] Move maintainer credit into the shared page frame footer with a new-tab Issue link.
 
 ## Verification
 
@@ -38,3 +42,5 @@ Add story read progress, a settings page, transient AI story summaries, translat
 - Read progress is keyed by canonical `storyId` so localized versions share the same marker.
 - Google AI Studio API keys are stored as local user configuration but are excluded from exported backups.
 - AI summaries are transient UI output and are not persisted or backed up.
+- Settings status messages are allowed for export/import/reset, but must be dismissible.
+- Maintainer credit is shared page chrome rather than home-only content.

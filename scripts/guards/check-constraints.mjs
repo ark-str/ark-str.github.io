@@ -30,7 +30,7 @@ const allowedRemoteUrlsByFile = new Map([
     new Set(["https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"]),
   ],
   [
-    "ark-str-web-app/src/features/settings/ui/settings-overview.tsx",
+    "ark-str-web-app/src/lib/external-links.ts",
     new Set([
       "https://aistudio.google.com/app/apikey",
       "https://github.com/wjlee611/ark-str/issues/new",

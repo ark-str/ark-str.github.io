@@ -45,6 +45,11 @@ export type UiCopy = {
     loading: string;
     stories: string;
   };
+  footer: {
+    issue: string;
+    issueAria: string;
+    maintainer: string;
+  };
   group: {
     missing: string;
   };
@@ -80,7 +85,9 @@ export type UiCopy = {
     confirmResetNotes: string;
     confirmResetReadProgress: string;
     dangerTitle: string;
+    dismissStatus: string;
     exportData: string;
+    exportSuccess: string;
     importData: string;
     importInvalid: string;
     importSuccess: string;
@@ -158,7 +165,7 @@ export const UI_DOCUMENT_LANG = {
   tw: "zh-TW",
 } satisfies Record<ReaderLocale, string>;
 
-const footer = "Maintainer - dev.Woong · 명생명사";
+const footer = "Maintainer - dev.Woong · 명생명사 · 토루";
 
 const UI_COPY = {
   cn: {
@@ -188,6 +195,11 @@ const UI_COPY = {
       groups: "组",
       loading: "加载中",
       stories: "故事",
+    },
+    footer: {
+      issue: "Issue",
+      issueAria: "在新标签页打开 GitHub issue",
+      maintainer: footer,
     },
     group: {
       missing: "找不到请求的故事组。",
@@ -252,7 +264,9 @@ const UI_COPY = {
       confirmResetNotes: "要删除所有笔记吗？此操作无法撤销。",
       confirmResetReadProgress: "要清除所有已读记录吗？此操作无法撤销。",
       dangerTitle: "危险区域",
+      dismissStatus: "关闭通知",
       exportData: "导出 JSON",
+      exportSuccess: "备份 JSON 已创建。",
       importData: "导入 JSON",
       importInvalid: "备份文件无法读取。",
       importSuccess: "备份已恢复。",
@@ -342,6 +356,11 @@ const UI_COPY = {
       loading: "Loading",
       stories: "stories",
     },
+    footer: {
+      issue: "Issue",
+      issueAria: "Open GitHub issue in a new tab",
+      maintainer: footer,
+    },
     group: {
       missing: "The requested story group could not be found.",
     },
@@ -405,7 +424,9 @@ const UI_COPY = {
       confirmResetNotes: "Delete every note? This cannot be undone.",
       confirmResetReadProgress: "Clear every read story marker? This cannot be undone.",
       dangerTitle: "Danger zone",
+      dismissStatus: "Dismiss notification",
       exportData: "Export JSON",
+      exportSuccess: "Backup JSON created.",
       importData: "Import JSON",
       importInvalid: "The backup file could not be read.",
       importSuccess: "Backup restored.",
@@ -495,6 +516,11 @@ const UI_COPY = {
       loading: "読み込み中",
       stories: "ストーリー",
     },
+    footer: {
+      issue: "Issue",
+      issueAria: "GitHub issue を新しいタブで開く",
+      maintainer: footer,
+    },
     group: {
       missing: "指定されたストーリーグループが見つかりません。",
     },
@@ -558,7 +584,9 @@ const UI_COPY = {
       confirmResetNotes: "すべてのメモを削除しますか？この操作は元に戻せません。",
       confirmResetReadProgress: "すべての既読記録を削除しますか？この操作は元に戻せません。",
       dangerTitle: "DANGER ZONE",
+      dismissStatus: "通知を閉じる",
       exportData: "JSON をエクスポート",
+      exportSuccess: "バックアップ JSON を作成しました。",
       importData: "JSON をインポート",
       importInvalid: "バックアップファイルを読み取れませんでした。",
       importSuccess: "バックアップを復元しました。",
@@ -648,6 +676,11 @@ const UI_COPY = {
       loading: "로딩 중",
       stories: "스토리",
     },
+    footer: {
+      issue: "Issue",
+      issueAria: "GitHub issue를 새 탭에서 열기",
+      maintainer: footer,
+    },
     group: {
       missing: "요청한 story group을 찾을 수 없습니다.",
     },
@@ -711,7 +744,9 @@ const UI_COPY = {
       confirmResetNotes: "모든 메모를 삭제할까요? 이 작업은 되돌릴 수 없습니다.",
       confirmResetReadProgress: "모든 읽은 스토리 기록을 삭제할까요? 이 작업은 되돌릴 수 없습니다.",
       dangerTitle: "DANGER ZONE",
+      dismissStatus: "알림 닫기",
       exportData: "JSON 내보내기",
+      exportSuccess: "백업 JSON을 만들었습니다.",
       importData: "JSON 가져오기",
       importInvalid: "백업 파일을 읽을 수 없습니다.",
       importSuccess: "백업을 복구했습니다.",
@@ -801,6 +836,11 @@ const UI_COPY = {
       loading: "載入中",
       stories: "故事",
     },
+    footer: {
+      issue: "Issue",
+      issueAria: "在新分頁開啟 GitHub issue",
+      maintainer: footer,
+    },
     group: {
       missing: "找不到請求的故事組。",
     },
@@ -864,7 +904,9 @@ const UI_COPY = {
       confirmResetNotes: "要刪除所有筆記嗎？此操作無法復原。",
       confirmResetReadProgress: "要清除所有已讀記錄嗎？此操作無法復原。",
       dangerTitle: "危險區域",
+      dismissStatus: "關閉通知",
       exportData: "匯出 JSON",
+      exportSuccess: "備份 JSON 已建立。",
       importData: "匯入 JSON",
       importInvalid: "備份檔案無法讀取。",
       importSuccess: "備份已復原。",
