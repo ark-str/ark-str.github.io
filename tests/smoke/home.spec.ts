@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { expect, test } from "@playwright/test";
 import type { Locator, Page } from "@playwright/test";
+import sharp from "sharp";
 
 const appBasePath = normalizeAppBasePath(process.env.PLAYWRIGHT_APP_BASE_PATH ?? "");
 const readerSessionKey = "ark-str:reader-session:v1";
@@ -67,6 +68,12 @@ function readStoryDetail(story: { bodyPath?: string | null }) {
 
 function readPngColorType(filePath: string) {
   return fs.readFileSync(filePath)[25];
+}
+
+async function readPngPixelAlpha(filePath: string, x: number, y: number) {
+  const image = sharp(filePath).ensureAlpha().raw();
+  const { data, info } = await image.toBuffer({ resolveWithObject: true });
+  return data[(y * info.width + x) * info.channels + 3];
 }
 
 function hasBundledPortrait(speakerId: string) {
@@ -403,7 +410,9 @@ test.describe("reader shell smoke", () => {
       "href",
       toPublicPath("ark_str_icon.png"),
     );
-    expect(readPngColorType(browserIconFile)).toBe(2);
+    expect(readPngColorType(browserIconFile)).toBe(6);
+    expect(await readPngPixelAlpha(browserIconFile, 0, 0)).toBe(0);
+    expect(await readPngPixelAlpha(browserIconFile, 48, 48)).toBe(255);
     expect(readPngColorType(appChromeIconFile)).toBe(6);
     await expect(page.getByTestId("service-intro-icon")).toBeVisible();
     await expect(page.getByTestId("service-intro-section")).toContainText("ARK STR");
@@ -724,12 +733,47 @@ test.describe("reader shell smoke", () => {
     await expect(page.getByTestId("story-backdrop")).toBeVisible();
     await expect(page.getByTestId("chrome-story-select")).toBeVisible();
     await expect(page.getByTestId("story-body")).toBeVisible();
-    await expect(page.getByTestId("story-bottom-nav")).toBeVisible();
     await expect(page.getByTestId("story-note-open-button")).toBeEnabled();
+    await expect(page.getByTestId("story-control-stack")).toHaveCount(2);
     await expect(page.getByTestId("story-action-panel")).toHaveCount(2);
-    const topReadToggle = page.getByTestId("story-read-toggle").first();
+    const topStoryControls = page.locator('[data-testid="story-control-stack"][data-placement="top"]');
+    const bottomStoryControls = page.locator('[data-testid="story-control-stack"][data-placement="bottom"]');
+    await expect(topStoryControls.getByTestId("story-bottom-nav")).toBeVisible();
+    await expect(bottomStoryControls.getByTestId("story-bottom-nav")).toBeVisible();
+    await expect(topStoryControls.getByTestId("story-summary-section")).toBeVisible();
+    await expect(bottomStoryControls.getByTestId("story-summary-section")).toBeVisible();
+    const topReadToggle = topStoryControls.getByTestId("story-read-toggle");
+    await expect(topReadToggle).toBeEnabled();
     await expect(topReadToggle).toHaveAttribute("data-read", "false");
+    await bottomStoryControls.evaluate((node) => node.scrollIntoView({ block: "center" }));
+    await expect(page.getByTestId("story-read-toggle").first()).toHaveAttribute("data-read", "true");
+    await expect(page.getByTestId("story-read-toggle").last()).toHaveAttribute("data-read", "true");
+    await page.waitForFunction(
+      ([key, storyId]) => {
+        const stored = window.localStorage.getItem(key);
+        if (!stored) {
+          return false;
+        }
+
+        try {
+          const parsed = JSON.parse(stored);
+          return parsed?.readStories?.[storyId]?.storyId === storyId;
+        } catch {
+          return false;
+        }
+      },
+      [readProgressKey, sampleStory.storyId],
+    );
+    await topStoryControls.evaluate((node) => node.scrollIntoView({ block: "center" }));
+    await page.waitForFunction(() => {
+      const bottomControls = document.querySelector<HTMLElement>(
+        '[data-testid="story-control-stack"][data-placement="bottom"]',
+      );
+      return Boolean(bottomControls && bottomControls.getBoundingClientRect().top > window.innerHeight);
+    });
     await topReadToggle.click();
+    await expect(topReadToggle).toHaveAttribute("data-read", "false");
+    await bottomStoryControls.evaluate((node) => node.scrollIntoView({ block: "center" }));
     await expect(topReadToggle).toHaveAttribute("data-read", "true");
     await page.waitForFunction(
       ([key, storyId]) => {
@@ -855,20 +899,26 @@ test.describe("reader shell smoke", () => {
     );
     await expect(page.getByTestId("story-ai-summary-code")).toHaveCount(2);
     if (samplePreviousStory) {
-      await expect(page.getByTestId("story-previous-link")).toHaveAttribute(
-        "href",
-        toAppPath(`reader/${samplePreviousStory.server}/${samplePreviousStory.groupId}/${samplePreviousStory.storyId}`),
-      );
+      await expect(page.getByTestId("story-previous-link")).toHaveCount(2);
+      for (const controls of [topStoryControls, bottomStoryControls]) {
+        await expect(controls.getByTestId("story-previous-link")).toHaveAttribute(
+          "href",
+          toAppPath(`reader/${samplePreviousStory.server}/${samplePreviousStory.groupId}/${samplePreviousStory.storyId}`),
+        );
+      }
     } else {
-      await expect(page.getByTestId("story-previous-disabled")).toBeVisible();
+      await expect(page.getByTestId("story-previous-disabled")).toHaveCount(2);
     }
     if (sampleNextStory) {
-      await expect(page.getByTestId("story-next-link")).toHaveAttribute(
-        "href",
-        toAppPath(`reader/${sampleNextStory.server}/${sampleNextStory.groupId}/${sampleNextStory.storyId}`),
-      );
+      await expect(page.getByTestId("story-next-link")).toHaveCount(2);
+      for (const controls of [topStoryControls, bottomStoryControls]) {
+        await expect(controls.getByTestId("story-next-link")).toHaveAttribute(
+          "href",
+          toAppPath(`reader/${sampleNextStory.server}/${sampleNextStory.groupId}/${sampleNextStory.storyId}`),
+        );
+      }
     } else {
-      await expect(page.getByTestId("story-next-disabled")).toBeVisible();
+      await expect(page.getByTestId("story-next-disabled")).toHaveCount(2);
     }
 
     await page.goto(toAppPath(`reader/${sampleStory.server}/${sampleStory.groupId}`));
@@ -1256,15 +1306,25 @@ test.describe("reader shell smoke", () => {
       toAppPath(`reader/${sampleStory.server}/${sampleStory.groupId}/${sampleStory.storyId}`),
     );
     await expect(page.getByTestId("reader-shell")).toBeVisible();
-    const summarySection = page.getByTestId("story-summary-section");
+    const storyControlStacks = page.getByTestId("story-control-stack");
+    await expect(storyControlStacks).toHaveCount(2);
+    const topSummaryControls = page.locator('[data-testid="story-control-stack"][data-placement="top"]');
+    const bottomSummaryControls = page.locator('[data-testid="story-control-stack"][data-placement="bottom"]');
+    await expect(page.getByTestId("story-summary-section")).toHaveCount(2);
+    const summarySection = topSummaryControls.getByTestId("story-summary-section");
     await expect(summarySection).toBeVisible();
+    await expect(bottomSummaryControls.getByTestId("story-summary-section")).toBeVisible();
     await expect(summarySection.getByText("요약")).toBeVisible();
     await expect(summarySection).not.toContainText("Story summary");
     await expect(summarySection).not.toContainText("이 스토리의 summary는 아직 생성되지 않았습니다");
-    const summaryToggle = page.getByTestId("story-summary-toggle");
-    const summaryPanel = page.getByTestId("story-summary-panel");
+    const summaryToggle = topSummaryControls.getByTestId("story-summary-toggle");
+    const summaryPanel = topSummaryControls.getByTestId("story-summary-panel");
+    const bottomSummaryToggle = bottomSummaryControls.getByTestId("story-summary-toggle");
+    const bottomSummaryPanel = bottomSummaryControls.getByTestId("story-summary-panel");
     await expect(summaryToggle).toHaveAttribute("aria-expanded", "false");
+    await expect(bottomSummaryToggle).toHaveAttribute("aria-expanded", "false");
     await expect(summaryPanel).toHaveAttribute("data-state", "closed");
+    await expect(bottomSummaryPanel).toHaveAttribute("data-state", "closed");
     const closedSummaryHeight = await summaryPanel.evaluate((node) =>
       Math.round(node.getBoundingClientRect().height),
     );
@@ -1277,12 +1337,16 @@ test.describe("reader shell smoke", () => {
     expect(summaryTransitionProperty).not.toContain("opacity");
     await summaryToggle.click();
     await expect(summaryToggle).toHaveAttribute("aria-expanded", "true");
+    await expect(bottomSummaryToggle).toHaveAttribute("aria-expanded", "true");
     await expect(summaryPanel).toHaveAttribute("data-state", "open");
+    await expect(bottomSummaryPanel).toHaveAttribute("data-state", "open");
     await expect(summaryPanel).toHaveCSS("visibility", "visible");
+    await expect(bottomSummaryPanel).toHaveCSS("visibility", "visible");
     await expect
       .poll(() => summaryPanel.evaluate((node) => Math.round(node.getBoundingClientRect().height)))
       .toBeGreaterThan(1);
     await expect(summaryPanel).toContainText(sampleSummaryText);
+    await expect(bottomSummaryPanel).toContainText(sampleSummaryText);
     await expect(page.getByTestId("reader-shell")).not.toContainText(sampleStory.sourcePath);
     await expect(page.getByTestId("reader-shell")).not.toContainText(
       `${sampleStoryGroup.storyCount} stories in`,
