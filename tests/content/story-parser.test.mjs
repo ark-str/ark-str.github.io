@@ -98,6 +98,41 @@ test("parseStoryText resolves focused Character slots into operator-aware dialog
   ]);
 });
 
+test("parseStoryText keeps fresh character frames across pre-dialog separators", () => {
+  const blocks = parseStoryText(`
+[Character(name="char_379_sesa_1")]
+[dialog]
+[name="세사"]하, 하지…… 앗, 기다려! 마, 말로 하자고!
+`);
+
+  assert.deepEqual(dialogueBlocks(blocks), [
+    {
+      type: "dialogue",
+      isRemote: false,
+      speakerName: "세사",
+      speakerId: "char_379_sesa",
+      text: "하, 하지…… 앗, 기다려! 마, 말로 하자고!",
+    },
+  ]);
+});
+
+test("parseStoryText prevents confirmed character frames from leaking after dialog breaks", () => {
+  const blocks = parseStoryText(`
+[Character(name="char_379_sesa_1")]
+[name="세사"]멈춰.
+[dialog]
+[name="두린"]무슨 일이야?
+`);
+
+  assert.deepEqual(
+    dialogueBlocks(blocks).map((block) => [block.speakerName, block.speakerId]),
+    [
+      ["세사", "char_379_sesa"],
+      ["두린", null],
+    ],
+  );
+});
+
 test("parseStoryText treats negative-focus character frames as non-speaker visual state", () => {
   const blocks = parseStoryText(`
 [character(name="char_010_chen_summer",focus=-1)]

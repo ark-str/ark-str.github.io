@@ -590,7 +590,9 @@ function resolveDialogueSpeaker(line, parserState) {
 
 function markActiveFramesStale(parserState) {
   for (const frame of getActiveFrames(parserState)) {
-    frame.staleAfterSceneBreak = true;
+    if (frame.confirmedSpeakerName) {
+      frame.staleAfterSceneBreak = true;
+    }
   }
 }
 
