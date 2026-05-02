@@ -501,6 +501,40 @@ function createStoryBackgroundPaths(detail: StoryDetail | null, assetManifest: A
   return createPathLookup(backgroundIds, assetManifest.backgrounds);
 }
 
+function getBackdropActivationY() {
+  if (typeof window === "undefined") {
+    return 0;
+  }
+
+  return window.innerHeight / 2;
+}
+
+function findActiveBackgroundMarkerId(): string | null | undefined {
+  if (typeof document === "undefined") {
+    return undefined;
+  }
+
+  const storyBody = document.querySelector<HTMLElement>('[data-testid="story-body"]');
+  if (!storyBody) {
+    return undefined;
+  }
+
+  const activationY = getBackdropActivationY();
+  const markers = storyBody.querySelectorAll<HTMLElement>('[data-background-marker="true"]');
+  let activeBackgroundId: string | null | undefined;
+
+  for (const marker of markers) {
+    if (marker.getBoundingClientRect().top > activationY) {
+      continue;
+    }
+
+    activeBackgroundId =
+      marker.dataset.backgroundClear === "true" ? null : (marker.dataset.backgroundId ?? null);
+  }
+
+  return activeBackgroundId;
+}
+
 function createStoryAppBar({
   group,
   groupId,
@@ -602,46 +636,18 @@ function StoryBackgroundMarker({
   backgroundId,
   backgroundPath,
   isActive,
-  onVisible,
 }: {
   backgroundId: string | null;
   backgroundPath: string | null;
   isActive: boolean;
-  onVisible: (backgroundId: string | null) => void;
 }) {
-  const markerRef = useRef<HTMLElement | null>(null);
-
-  useEffect(() => {
-    const node = markerRef.current;
-    if (!node) {
-      return;
-    }
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (entry.isIntersecting) {
-            onVisible(backgroundId);
-          }
-        }
-      },
-      {
-        root: null,
-        rootMargin: "-18% 0px -62% 0px",
-        threshold: 0,
-      },
-    );
-
-    observer.observe(node);
-    return () => observer.disconnect();
-  }, [backgroundId, onVisible]);
-
   if (!backgroundId) {
     return (
       <span
-        ref={markerRef}
         aria-hidden="true"
         className="block h-px"
+        data-background-clear="true"
+        data-background-marker="true"
         data-testid="background-clear"
       />
     );
@@ -649,7 +655,6 @@ function StoryBackgroundMarker({
 
   return (
     <article
-      ref={markerRef}
       className={`overflow-hidden rounded-[var(--radius-lg)] border p-4 shadow-[var(--shadow-sm)] ${
         isActive
           ? "border-[var(--accent)] bg-[var(--surface)]/96"
@@ -657,6 +662,7 @@ function StoryBackgroundMarker({
       }`}
       data-active={isActive ? "true" : "false"}
       data-background-id={backgroundId}
+      data-background-marker="true"
       data-testid="background-block"
     >
       {backgroundPath ? (
@@ -1025,7 +1031,6 @@ function StoryBlocks({
   blocks,
   copy,
   nickName,
-  onBackgroundVisible,
   portraitPaths,
 }: {
   activeBackgroundId: string | null;
@@ -1033,7 +1038,6 @@ function StoryBlocks({
   blocks: StoryBlock[];
   copy: UiCopy["storyBody"];
   nickName: string;
-  onBackgroundVisible: (backgroundId: string | null) => void;
   portraitPaths: Record<string, string>;
 }) {
   return (
@@ -1118,7 +1122,6 @@ function StoryBlocks({
               backgroundId={block.backgroundId}
               backgroundPath={block.backgroundId ? (backgroundPaths[block.backgroundId] ?? null) : null}
               isActive={activeBackgroundId === block.backgroundId}
-              onVisible={onBackgroundVisible}
             />
           );
         }
@@ -1154,7 +1157,6 @@ function StoryBlocks({
                         blocks={option.blocks}
                         copy={copy}
                         nickName={nickName}
-                        onBackgroundVisible={onBackgroundVisible}
                         portraitPaths={portraitPaths}
                       />
                     </div>
@@ -1175,7 +1177,6 @@ function StoryBodyRenderer({
   blocks,
   copy,
   nickName,
-  onBackgroundVisible,
   portraitPaths,
 }: {
   activeBackgroundId: string | null;
@@ -1183,7 +1184,6 @@ function StoryBodyRenderer({
   blocks: StoryBlock[];
   copy: UiCopy["storyBody"];
   nickName: string;
-  onBackgroundVisible: (backgroundId: string | null) => void;
   portraitPaths: Record<string, string>;
 }) {
   return (
@@ -1194,7 +1194,6 @@ function StoryBodyRenderer({
         blocks={blocks}
         copy={copy}
         nickName={nickName}
-        onBackgroundVisible={onBackgroundVisible}
         portraitPaths={portraitPaths}
       />
     </div>
@@ -1274,18 +1273,48 @@ export function ReaderStoryShell({
         : activeBackground.backgroundId
       : initialBackgroundId;
 
-  const handleBackgroundVisible = useCallback((backgroundId: string | null) => {
-    setActiveBackground((current) => {
-      if (current.storyId === storyId && current.backgroundId === backgroundId) {
-        return current;
+  useEffect(() => {
+    if (!isBodyAvailable) {
+      return;
+    }
+
+    let animationFrame = 0;
+    const syncActiveBackground = () => {
+      animationFrame = 0;
+      const backgroundId = findActiveBackgroundMarkerId();
+
+      setActiveBackground((current) => {
+        if (current.storyId === storyId && current.backgroundId === backgroundId) {
+          return current;
+        }
+
+        return {
+          storyId,
+          backgroundId,
+        };
+      });
+    };
+    const requestSync = () => {
+      if (animationFrame !== 0) {
+        return;
       }
 
-      return {
-        storyId,
-        backgroundId,
-      };
-    });
-  }, [storyId]);
+      animationFrame = window.requestAnimationFrame(syncActiveBackground);
+    };
+
+    requestSync();
+    window.addEventListener("scroll", requestSync, { passive: true });
+    window.addEventListener("resize", requestSync);
+
+    return () => {
+      if (animationFrame !== 0) {
+        window.cancelAnimationFrame(animationFrame);
+      }
+
+      window.removeEventListener("scroll", requestSync);
+      window.removeEventListener("resize", requestSync);
+    };
+  }, [detail, isBodyAvailable, storyId]);
   const activeBackgroundPath = activeBackgroundId ? (backgroundPaths[activeBackgroundId] ?? null) : null;
   const isStoryRead = readProgress.isHydrated && readProgress.isStoryRead(storyId);
 
@@ -1485,7 +1514,6 @@ export function ReaderStoryShell({
                 blocks={detail.blocks}
                 copy={copy.storyBody}
                 nickName={readerSessionState.nickName}
-                onBackgroundVisible={handleBackgroundVisible}
                 portraitPaths={portraitPaths}
               />
             ) : isBodyLoading ? (

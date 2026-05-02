@@ -420,7 +420,7 @@ function resolveDialogueSpeaker(line, parserState) {
   return [block];
 }
 
-function consumeBackgroundTag(remainder) {
+function consumeBackgroundTag(remainder, parserState) {
   const backgroundMatch = parseTagWithAttributes(remainder, "Background");
   if (!backgroundMatch) {
     return null;
@@ -428,6 +428,30 @@ function consumeBackgroundTag(remainder) {
 
   const rawAttributes = backgroundMatch.rawAttributes;
   const backgroundId = normalizeBackgroundId(getLooseAttributeValue(rawAttributes, "image"));
+  if (backgroundId) {
+    parserState.activeBackdropId = backgroundId;
+    parserState.activeSceneImageId = null;
+
+    return {
+      blocks: [
+        {
+          type: "background",
+          backgroundId,
+        },
+      ],
+      remainder: backgroundMatch.remainder,
+    };
+  }
+
+  if (!parserState.activeBackdropId) {
+    return {
+      blocks: [],
+      remainder: backgroundMatch.remainder,
+    };
+  }
+
+  parserState.activeBackdropId = null;
+  parserState.activeSceneImageId = null;
 
   return {
     blocks: [
@@ -440,7 +464,7 @@ function consumeBackgroundTag(remainder) {
   };
 }
 
-function consumeImageTag(remainder) {
+function consumeImageTag(remainder, parserState) {
   const imageMatch = parseTagWithAttributes(remainder, "Image");
   if (!imageMatch) {
     return null;
@@ -448,6 +472,30 @@ function consumeImageTag(remainder) {
 
   const rawAttributes = imageMatch.rawAttributes;
   const backgroundId = normalizeBackgroundId(getLooseAttributeValue(rawAttributes, "image"));
+  if (backgroundId) {
+    parserState.activeBackdropId = backgroundId;
+    parserState.activeSceneImageId = backgroundId;
+
+    return {
+      blocks: [
+        {
+          type: "background",
+          backgroundId,
+        },
+      ],
+      remainder: imageMatch.remainder,
+    };
+  }
+
+  if (!parserState.activeSceneImageId) {
+    return {
+      blocks: [],
+      remainder: imageMatch.remainder,
+    };
+  }
+
+  parserState.activeBackdropId = null;
+  parserState.activeSceneImageId = null;
 
   return {
     blocks: [
@@ -631,7 +679,7 @@ function extractVisibleBlocks(line, parserState) {
       continue;
     }
 
-    const backgroundResult = consumeBackgroundTag(remainder);
+    const backgroundResult = consumeBackgroundTag(remainder, parserState);
     if (backgroundResult) {
       blocks.push(...backgroundResult.blocks);
       remainder = backgroundResult.remainder;
@@ -641,7 +689,7 @@ function extractVisibleBlocks(line, parserState) {
       continue;
     }
 
-    const imageResult = consumeImageTag(remainder);
+    const imageResult = consumeImageTag(remainder, parserState);
     if (imageResult) {
       blocks.push(...imageResult.blocks);
       remainder = imageResult.remainder;
@@ -736,6 +784,8 @@ export function parseStoryText(rawText) {
     characterFrame: null,
     charslots: new Map(),
     speakerBindings: new Map(),
+    activeBackdropId: null,
+    activeSceneImageId: null,
   };
 
   function flushChoice() {

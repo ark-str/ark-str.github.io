@@ -564,6 +564,59 @@ test("parseStoryText emits clear markers for scene image clears", () => {
   ]);
 });
 
+test("parseStoryText ignores image clears without an active scene image", () => {
+  const blocks = parseStoryText(`
+[Image(fadetime=0)]
+[Background(image="bg_cher_1", fadetime=1)]
+[Image(fadetime=2)]
+[name="테레시스"]공사는 이제 마무리 단계다.
+`);
+
+  assert.deepEqual(blocks, [
+    {
+      type: "background",
+      backgroundId: "bg_cher_1",
+    },
+    {
+      type: "dialogue",
+      isRemote: false,
+      speakerName: "테레시스",
+      speakerId: null,
+      text: "공사는 이제 마무리 단계다.",
+    },
+  ]);
+});
+
+test("parseStoryText emits background clears only when a backdrop is active", () => {
+  const blocks = parseStoryText(`
+[Background(fadetime=0)]
+[Background(image="bg_cher_1", fadetime=1)]
+[Background(fadetime=2)]
+[Background]
+[Image(image="27_i01", fadetime=1)]
+[Background(fadetime=0)]
+`);
+
+  assert.deepEqual(blocks, [
+    {
+      type: "background",
+      backgroundId: "bg_cher_1",
+    },
+    {
+      type: "background",
+      backgroundId: null,
+    },
+    {
+      type: "background",
+      backgroundId: "27_i01",
+    },
+    {
+      type: "background",
+      backgroundId: null,
+    },
+  ]);
+});
+
 test("collectObservedOperators deduplicates aliases per speakerId", () => {
   const blocks = parseStoryText(`
 [Character(name="char_101_sora_1#4")]
