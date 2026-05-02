@@ -1,6 +1,15 @@
 "use client";
 
-import { useCallback, useEffect, useEffectEvent, useId, useMemo, useRef, useState, type ReactNode } from "react";
+import {
+  useCallback,
+  useEffect,
+  useEffectEvent,
+  useId,
+  useMemo,
+  useRef,
+  useState,
+  type ReactNode,
+} from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { ArrowUp, BookCheck, ChevronDown, NotebookPen, Sparkles, X } from "lucide-react";
@@ -944,8 +953,17 @@ function StoryBottomNavigation({
   );
 }
 
-function StorySummaryCard({ copy, summaryText }: { copy: UiCopy["storyBody"]; summaryText: string | null }) {
-  const [isOpen, setIsOpen] = useState(false);
+function StorySummaryCard({
+  copy,
+  isOpen,
+  onToggle,
+  summaryText,
+}: {
+  copy: UiCopy["storyBody"];
+  isOpen: boolean;
+  onToggle: () => void;
+  summaryText: string | null;
+}) {
   const [contentHeight, setContentHeight] = useState(0);
   const contentId = useId();
   const contentRef = useRef<HTMLDivElement | null>(null);
@@ -983,7 +1001,7 @@ function StorySummaryCard({ copy, summaryText }: { copy: UiCopy["storyBody"]; su
             aria-expanded={isOpen}
             className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left"
             data-testid="story-summary-toggle"
-            onClick={() => setIsOpen((current) => !current)}
+            onClick={onToggle}
             type="button"
           >
             <Badge className="w-fit uppercase tracking-[0.16em]" variant="default">
@@ -1021,6 +1039,129 @@ function StorySummaryCard({ copy, summaryText }: { copy: UiCopy["storyBody"]; su
           </div>
         </div>
       </Card>
+    </section>
+  );
+}
+
+function StoryControlStack({
+  actionCopy,
+  autoReadKey,
+  isRead,
+  isReadHydrated,
+  locale,
+  navigationCopy,
+  nextStory,
+  onOpenSettings,
+  onSummarize,
+  onEnterViewport,
+  onSummaryToggle,
+  onToggleRead,
+  placement,
+  previousStory,
+  summaryCopy,
+  summaryIsOpen,
+  summaryState,
+  summaryText,
+}: {
+  actionCopy: UiCopy["storyActions"];
+  autoReadKey?: string;
+  isRead: boolean;
+  isReadHydrated: boolean;
+  locale: ReaderLocale;
+  navigationCopy: UiCopy["storyNavigation"];
+  nextStory: ContentStoryIndexEntry | null;
+  onOpenSettings: () => void;
+  onSummarize: () => void;
+  onEnterViewport?: () => void;
+  onSummaryToggle: () => void;
+  onToggleRead: () => void;
+  placement: StoryActionPlacement;
+  previousStory: ContentStoryIndexEntry | null;
+  summaryCopy: UiCopy["storyBody"];
+  summaryIsOpen: boolean;
+  summaryState: AiSummaryState;
+  summaryText: string | null;
+}) {
+  const stackRef = useRef<HTMLElement | null>(null);
+  const wasVisibleRef = useRef(false);
+  const handleEnterViewport = useEffectEvent(() => {
+    onEnterViewport?.();
+  });
+
+  useEffect(() => {
+    wasVisibleRef.current = false;
+  }, [autoReadKey]);
+
+  useEffect(() => {
+    if (!onEnterViewport) {
+      return;
+    }
+
+    const node = stackRef.current;
+    if (!node || typeof window === "undefined") {
+      return;
+    }
+
+    const syncVisibleState = (isVisible: boolean) => {
+      const wasVisible = wasVisibleRef.current;
+      wasVisibleRef.current = isVisible;
+      if (isVisible && !wasVisible) {
+        handleEnterViewport();
+      }
+    };
+
+    if (typeof IntersectionObserver === "undefined") {
+      const syncVisibility = () => {
+        const rect = node.getBoundingClientRect();
+        syncVisibleState(rect.top < window.innerHeight && rect.bottom >= 0);
+      };
+
+      syncVisibility();
+      window.addEventListener("scroll", syncVisibility, { passive: true });
+      window.addEventListener("resize", syncVisibility);
+      return () => {
+        window.removeEventListener("scroll", syncVisibility);
+        window.removeEventListener("resize", syncVisibility);
+      };
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      syncVisibleState(entries.some((entry) => entry.isIntersecting));
+    });
+
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [autoReadKey, onEnterViewport]);
+
+  return (
+    <section
+      className="relative z-10 grid gap-3"
+      data-placement={placement}
+      data-testid="story-control-stack"
+      ref={stackRef}
+    >
+      <StoryActionPanel
+        copy={actionCopy}
+        isRead={isRead}
+        isReadHydrated={isReadHydrated}
+        onOpenSettings={onOpenSettings}
+        onSummarize={onSummarize}
+        onToggleRead={onToggleRead}
+        placement={placement}
+        summaryState={summaryState}
+      />
+      <StorySummaryCard
+        copy={summaryCopy}
+        isOpen={summaryIsOpen}
+        onToggle={onSummaryToggle}
+        summaryText={summaryText}
+      />
+      <StoryBottomNavigation
+        copy={navigationCopy}
+        locale={locale}
+        nextStory={nextStory}
+        previousStory={previousStory}
+      />
     </section>
   );
 }
@@ -1245,6 +1386,13 @@ export function ReaderStoryShell({
     storyId,
     value: null,
   });
+  const [storySummaryState, setStorySummaryState] = useState<{
+    isOpen: boolean;
+    storyId: string;
+  }>({
+    isOpen: false,
+    storyId,
+  });
   const portraitPaths = useMemo(
     () => createStoryPortraitPaths(detail, assetState.data),
     [assetState.data, detail],
@@ -1317,9 +1465,30 @@ export function ReaderStoryShell({
   }, [detail, isBodyAvailable, storyId]);
   const activeBackgroundPath = activeBackgroundId ? (backgroundPaths[activeBackgroundId] ?? null) : null;
   const isStoryRead = readProgress.isHydrated && readProgress.isStoryRead(storyId);
+  const isStorySummaryOpen = storySummaryState.storyId === storyId ? storySummaryState.isOpen : false;
+
+  const handleAutoRead = () => {
+    if (!readProgress.isStoryRead(storyId)) {
+      readProgress.setStoryRead(storyId, true);
+    }
+  };
 
   const handleToggleRead = () => {
     readProgress.toggleStoryRead(storyId);
+  };
+
+  const handleSummaryToggle = () => {
+    setStorySummaryState((current) =>
+      current.storyId === storyId
+        ? {
+            isOpen: !current.isOpen,
+            storyId,
+          }
+        : {
+            isOpen: true,
+            storyId,
+          },
+    );
   };
 
   const handleSummarize = async () => {
@@ -1439,19 +1608,23 @@ export function ReaderStoryShell({
       <StoryBackdrop backgroundPath={activeBackgroundPath} />
 
       <section className="relative z-10 grid gap-6">
-        <StoryActionPanel
-          copy={copy.storyActions}
+        <StoryControlStack
+          actionCopy={copy.storyActions}
+          autoReadKey={storyId}
           isRead={isStoryRead}
           isReadHydrated={readProgress.isHydrated}
+          locale={locale}
+          navigationCopy={copy.storyNavigation}
+          nextStory={nextStory}
           onOpenSettings={() => router.push("/settings")}
           onSummarize={handleSummarize}
+          onSummaryToggle={handleSummaryToggle}
           onToggleRead={handleToggleRead}
           placement="top"
+          previousStory={previousStory}
+          summaryCopy={copy.storyBody}
+          summaryIsOpen={isStorySummaryOpen}
           summaryState={summaryState.storyId === storyId ? summaryState.value : null}
-        />
-        <StorySummaryCard
-          copy={copy.storyBody}
-          key={story.storyId}
           summaryText={detail?.summaryText ?? null}
         />
 
@@ -1540,21 +1713,25 @@ export function ReaderStoryShell({
           </section>
         </div>
 
-        <StoryActionPanel
-          copy={copy.storyActions}
+        <StoryControlStack
+          actionCopy={copy.storyActions}
+          autoReadKey={storyId}
           isRead={isStoryRead}
           isReadHydrated={readProgress.isHydrated}
+          locale={locale}
+          navigationCopy={copy.storyNavigation}
+          nextStory={nextStory}
+          onEnterViewport={readProgress.isHydrated ? handleAutoRead : undefined}
           onOpenSettings={() => router.push("/settings")}
           onSummarize={handleSummarize}
+          onSummaryToggle={handleSummaryToggle}
           onToggleRead={handleToggleRead}
           placement="bottom"
-          summaryState={summaryState.storyId === storyId ? summaryState.value : null}
-        />
-        <StoryBottomNavigation
-          copy={copy.storyNavigation}
-          locale={locale}
-          nextStory={nextStory}
           previousStory={previousStory}
+          summaryCopy={copy.storyBody}
+          summaryIsOpen={isStorySummaryOpen}
+          summaryState={summaryState.storyId === storyId ? summaryState.value : null}
+          summaryText={detail?.summaryText ?? null}
         />
       </section>
 
