@@ -133,6 +133,25 @@ test("parseStoryText prevents confirmed character frames from leaking after dial
   );
 });
 
+test("parseStoryText lets fresh cutins beat pre-dialog character frames", () => {
+  const blocks = parseStoryText(`
+[Character(name="char_empty",name2="avg_126_shotst_1",focus=1)]
+[dialog]
+[CharacterCutin(widgetID="1", name="char_016_medic", style="cutin")]
+[name="메딕 오퍼레이터"]자, 착하지~ 울지 마, 지아나. 지금 메테오 언니 찾으러 가자.
+`);
+
+  assert.deepEqual(dialogueBlocks(blocks), [
+    {
+      type: "dialogue",
+      isRemote: true,
+      speakerName: "메딕 오퍼레이터",
+      speakerId: "char_016_medic",
+      text: "자, 착하지~ 울지 마, 지아나. 지금 메테오 언니 찾으러 가자.",
+    },
+  ]);
+});
+
 test("parseStoryText treats negative-focus character frames as non-speaker visual state", () => {
   const blocks = parseStoryText(`
 [character(name="char_010_chen_summer",focus=-1)]

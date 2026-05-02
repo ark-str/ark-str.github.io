@@ -368,12 +368,8 @@ function isFrameEligibleForSpeaker(frame, speakerName) {
   return true;
 }
 
-function resolveWinningFrame(parserState, speakerName) {
-  const activeFrames = getActiveFrames(parserState).filter(
-    (frame) => frame.priority >= 0 && isFrameEligibleForSpeaker(frame, speakerName),
-  );
-
-  return activeFrames.reduce((winningFrame, candidateFrame) => {
+function selectWinningFrame(frames) {
+  return frames.reduce((winningFrame, candidateFrame) => {
     if (!winningFrame) {
       return candidateFrame;
     }
@@ -388,6 +384,24 @@ function resolveWinningFrame(parserState, speakerName) {
 
     return winningFrame;
   }, null);
+}
+
+function resolveWinningFrame(parserState, speakerName) {
+  const activeFrames = getActiveFrames(parserState).filter((frame) => frame.priority >= 0);
+  const eligibleFrames = activeFrames.filter((frame) =>
+    isFrameEligibleForSpeaker(frame, speakerName),
+  );
+  const winningFrame = selectWinningFrame(eligibleFrames);
+
+  if (winningFrame) {
+    return winningFrame;
+  }
+
+  return selectWinningFrame(
+    activeFrames.filter(
+      (frame) => frame.staleAfterSceneBreak && !frame.confirmedSpeakerName,
+    ),
+  );
 }
 
 function parseDialogueTag(line) {
@@ -590,9 +604,7 @@ function resolveDialogueSpeaker(line, parserState) {
 
 function markActiveFramesStale(parserState) {
   for (const frame of getActiveFrames(parserState)) {
-    if (frame.confirmedSpeakerName) {
-      frame.staleAfterSceneBreak = true;
-    }
+    frame.staleAfterSceneBreak = true;
   }
 }
 
