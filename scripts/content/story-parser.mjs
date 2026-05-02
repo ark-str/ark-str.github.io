@@ -71,6 +71,14 @@ function decodeTextAttributeValue(rawValue) {
     .trim();
 }
 
+function stripSubtitleRichText(rawText) {
+  if (typeof rawText !== "string") {
+    return null;
+  }
+
+  return rawText.replace(/<\/?color(?:=[^>]*)?>/gi, "").trim();
+}
+
 function parseTagWithAttributes(remainder, tagName) {
   const tagPrefix = `[${tagName}`;
   if (!remainder.toLowerCase().startsWith(tagPrefix.toLowerCase())) {
@@ -326,6 +334,8 @@ function createFrame(parserState, source, key, speakerId, priority) {
     key,
     speakerId,
     priority,
+    confirmedSpeakerName: null,
+    staleAfterSceneBreak: false,
     updatedAt: parserState.frameClock,
   };
 }
@@ -338,8 +348,22 @@ function getActiveFrames(parserState) {
   ];
 }
 
-function resolveWinningFrame(parserState) {
-  const activeFrames = getActiveFrames(parserState).filter((frame) => frame.priority >= 0);
+function isFrameEligibleForSpeaker(frame, speakerName) {
+  if (frame.source === "cutin" && frame.confirmedSpeakerName) {
+    return frame.confirmedSpeakerName === speakerName;
+  }
+
+  if (frame.staleAfterSceneBreak) {
+    return frame.confirmedSpeakerName === speakerName;
+  }
+
+  return true;
+}
+
+function resolveWinningFrame(parserState, speakerName) {
+  const activeFrames = getActiveFrames(parserState).filter(
+    (frame) => frame.priority >= 0 && isFrameEligibleForSpeaker(frame, speakerName),
+  );
 
   return activeFrames.reduce((winningFrame, candidateFrame) => {
     if (!winningFrame) {
@@ -397,7 +421,7 @@ function resolveDialogueSpeaker(line, parserState) {
   const knownSpeakerBinding = parserState.speakerBindings.get(speakerName) ?? null;
   const eligibleSpeakerBinding = isCharSpeakerId(knownSpeakerBinding) ? knownSpeakerBinding : null;
   const hasActiveFrame = getActiveFrames(parserState).length > 0;
-  const winningFrame = resolveWinningFrame(parserState);
+  const winningFrame = resolveWinningFrame(parserState, speakerName);
   const speakerId = winningFrame
     ? winningFrame.speakerId
     : hasActiveFrame
@@ -412,20 +436,38 @@ function resolveDialogueSpeaker(line, parserState) {
     text,
   };
 
-  if (winningFrame && isCharSpeakerId(speakerId) && !winningFrame.hasConfirmedSpeakerBinding) {
-    parserState.speakerBindings.set(speakerName, speakerId);
-    winningFrame.hasConfirmedSpeakerBinding = true;
+  if (winningFrame) {
+    winningFrame.confirmedSpeakerName = speakerName;
+
+    if (isCharSpeakerId(speakerId) && !winningFrame.hasConfirmedSpeakerBinding) {
+      parserState.speakerBindings.set(speakerName, speakerId);
+      winningFrame.hasConfirmedSpeakerBinding = true;
+    }
   }
 
   return [block];
 }
 
-function consumeBackgroundTag(remainder) {
+function markActiveFramesStale(parserState) {
+  for (const frame of getActiveFrames(parserState)) {
+    frame.staleAfterSceneBreak = true;
+  }
+}
+
+function clearVisualSpeakerState(parserState) {
+  parserState.cutins.clear();
+  parserState.characterFrame = null;
+  parserState.charslots.clear();
+  parserState.speakerBindings.clear();
+}
+
+function consumeBackgroundTag(remainder, parserState) {
   const backgroundMatch = parseTagWithAttributes(remainder, "Background");
   if (!backgroundMatch) {
     return null;
   }
 
+  clearVisualSpeakerState(parserState);
   const rawAttributes = backgroundMatch.rawAttributes;
   const backgroundId = normalizeBackgroundId(getLooseAttributeValue(rawAttributes, "image"));
 
@@ -440,12 +482,13 @@ function consumeBackgroundTag(remainder) {
   };
 }
 
-function consumeImageTag(remainder) {
+function consumeImageTag(remainder, parserState) {
   const imageMatch = parseTagWithAttributes(remainder, "Image");
   if (!imageMatch) {
     return null;
   }
 
+  clearVisualSpeakerState(parserState);
   const rawAttributes = imageMatch.rawAttributes;
   const backgroundId = normalizeBackgroundId(getLooseAttributeValue(rawAttributes, "image"));
 
@@ -457,6 +500,30 @@ function consumeImageTag(remainder) {
       },
     ],
     remainder: imageMatch.remainder,
+  };
+}
+
+function consumeSubtitleTag(remainder) {
+  const subtitleMatch = parseTagWithAttributes(remainder, "Subtitle");
+  if (!subtitleMatch) {
+    return null;
+  }
+
+  const rawAttributes = subtitleMatch.rawAttributes;
+  const subtitleText = stripSubtitleRichText(
+    decodeTextAttributeValue(getLooseAttributeValue(rawAttributes, "text")),
+  );
+
+  return {
+    blocks: subtitleText
+      ? [
+          {
+            type: "narration",
+            text: subtitleText,
+          },
+        ]
+      : [],
+    remainder: subtitleMatch.remainder,
   };
 }
 
@@ -586,6 +653,7 @@ function consumeCharslotTag(remainder, parserState) {
   const nextFrame = createFrame(parserState, "charslot", slotKey, nextSpeakerId, nextPriority);
   if (speakerToken === null && existingFrame?.speakerId === nextSpeakerId) {
     nextFrame.hasConfirmedSpeakerBinding = existingFrame.hasConfirmedSpeakerBinding;
+    nextFrame.confirmedSpeakerName = existingFrame.confirmedSpeakerName;
   }
 
   parserState.charslots.set(slotKey, nextFrame);
@@ -631,7 +699,7 @@ function extractVisibleBlocks(line, parserState) {
       continue;
     }
 
-    const backgroundResult = consumeBackgroundTag(remainder);
+    const backgroundResult = consumeBackgroundTag(remainder, parserState);
     if (backgroundResult) {
       blocks.push(...backgroundResult.blocks);
       remainder = backgroundResult.remainder;
@@ -641,10 +709,20 @@ function extractVisibleBlocks(line, parserState) {
       continue;
     }
 
-    const imageResult = consumeImageTag(remainder);
+    const imageResult = consumeImageTag(remainder, parserState);
     if (imageResult) {
       blocks.push(...imageResult.blocks);
       remainder = imageResult.remainder;
+      if (!remainder) {
+        return blocks;
+      }
+      continue;
+    }
+
+    const subtitleResult = consumeSubtitleTag(remainder);
+    if (subtitleResult) {
+      blocks.push(...subtitleResult.blocks);
+      remainder = subtitleResult.remainder;
       if (!remainder) {
         return blocks;
       }
@@ -663,6 +741,7 @@ function extractVisibleBlocks(line, parserState) {
 
     const dialogBreakMatch = /^\[(?:Dialog|dialog)(?:\([^\]]*\))?\]\s*(.*)$/i.exec(remainder);
     if (dialogBreakMatch) {
+      markActiveFramesStale(parserState);
       blocks.push({ type: "sceneBreak" });
       remainder = dialogBreakMatch[1]?.trim() ?? "";
       if (!remainder) {

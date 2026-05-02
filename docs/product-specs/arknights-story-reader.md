@@ -52,12 +52,14 @@ This phase keeps the recovered reader shell and Pages deployment path stable whi
 - first-pass body rendering for dialogue, multiline dialogue, sticker narration, background changes, scene images, scene breaks, and Doctor choice branches
 - dialogue-level `speakerId` as the shared visual lookup key for `Character(...)`, `character(...)`, and `charslot(...)` tags
 - `char_` speaker IDs are canonicalized to the first three `_`-delimited segments, while non-`char` speaker IDs keep their stripped raw token for visual portrait lookup
-- `[name="..."]` and `[multiline(name="...")]` script tags are both normalized as dialogue, using the currently focused visual frame for portrait lookup
+- `[name="..."]` and `[multiline(name="...")]` script tags are both normalized as dialogue, using the currently eligible visual speaker frame for portrait lookup
 - mixed `CharacterCutin`, `character` / `Character`, and `charslot` tags can coexist, and each dialogue line chooses exactly one winning eligible speaker frame by highest priority then most recent update
+- `Dialog` scene breaks make active visual frames stale for different speakers, while speaker-confirmed `CharacterCutin` frames stay scoped to that speaker so remote/cutin portraits do not leak onto adjacent speakers
 - `character(...)` scene updates clear stale `charslot(...)` frames so slot-based portraits do not leak into later character-driven scenes
 - `focus < 0`, neutral `charslot` frames, and focus-only `charslot` updates stay visible but do not create new fallback aliases; speaker-name fallback after active frames clear is limited to confirmed fresh-frame `char_` operator aliases, while non-operator portraits require an explicit active visual frame
 - `Sticker(text="...")` tags are normalized into narration with escaped line breaks decoded and bracketed labels preserved so theater/location title cards remain readable in the linear story flow
-- `Background(image="...")` and `Image(image="...")` tags are normalized into explicit background blocks, no-image clear tags emit `backgroundId: null` markers, adjacent duplicate background IDs are coalesced, and bundled `ArknightsResource/avgs/bg/` or direct `ArknightsResource/avgs/` images are used when available
+- `Subtitle(text="...")` tags are normalized into narration, with escaped text decoded and simple color wrappers removed
+- `Background(image="...")` and `Image(image="...")` tags are normalized into explicit background blocks, clear active visual speaker frames and fallback bindings, no-image clear tags emit `backgroundId: null` markers, adjacent duplicate background IDs are coalesced, and bundled `ArknightsResource/avgs/bg/` or direct `ArknightsResource/avgs/` images are used when available
 - `CharacterCutin` winning frames are presented as remote radio communication in the reader
 - `npm run content:portraits` or `npm run content:update` can refresh the blobless `vendor/ArknightsResource/` media cache from `ArknightsResource/`, materialize only referenced `avgs/npcs/` portraits plus `avgs/bg/` and direct `avgs/` story images, and copy them into bundled app assets
 - portrait selection uses the basename-sorted first matching `avgs/npcs` file for each referenced `speakerId`

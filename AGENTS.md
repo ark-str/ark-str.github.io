@@ -40,11 +40,12 @@ Build and maintain an Arknights story reader where:
 
 1. Read the current product spec in `docs/product-specs/`.
 2. Check the active execution plan in `docs/exec-plans/active/`.
-3. Use the GitHub-backed harness flow: issue DAG, one branch per child issue, dependency-safe scheduling, milestone commits, PR review, and merge.
-4. Update docs that became stale because of the change.
-5. Run `npm run verify`.
-6. Only treat the iteration as successful if the root harness checks are green, the app verify path is green, browser smoke is clean, every child PR is merged, and no known runtime issues remain.
-7. Record the outcome in `docs/generated/latest-iteration.md` when using the harness.
+3. Before committing implementation work, create or link a GitHub issue, create an issue-scoped branch from the default branch, and keep all commits and pushes on that branch.
+4. Use the GitHub-backed harness flow: issue DAG, one branch per child issue, dependency-safe scheduling, milestone commits, PR review, and merge.
+5. Update docs that became stale because of the change.
+6. Run `npm run verify`.
+7. Only treat the iteration as successful if the root harness checks are green, the app verify path is green, browser smoke is clean, every child PR is merged, and no known runtime issues remain.
+8. Record the outcome in `docs/generated/latest-iteration.md` when using the harness.
 
 ## Useful Commands
 
