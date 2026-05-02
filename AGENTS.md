@@ -43,10 +43,11 @@ Build and maintain an Arknights story reader where:
 3. Use the GitHub-backed harness flow: issue DAG, one branch per child issue, dependency-safe scheduling, milestone commits, PR review, and merge.
 4. Before starting implementation on a new branch, inspect open or recently created PRs for dependency overlap. If the task depends on an unmerged PR or branch, merge that dependency branch into the new work branch before editing so prior behavior is preserved.
 5. Do not stop at PR creation for a requested implementation iteration. After verification passes, push the branch, open the PR, complete review/check handling, merge the branch into the target branch, and confirm the post-merge branch state.
-6. Update docs that became stale because of the change.
-7. Run `npm run verify`.
-8. Only treat the iteration as successful if the root harness checks are green, the app verify path is green, browser smoke is clean, every child PR is merged, and no known runtime issues remain.
-9. Record the outcome in `docs/generated/latest-iteration.md` when using the harness.
+6. Never close or delete an implementation PR/branch until you have confirmed the PR was merged into the target branch. If cleanup is requested, verify `mergedAt` or target-branch containment first.
+7. Update docs that became stale because of the change.
+8. Run `npm run verify`.
+9. Only treat the iteration as successful if the root harness checks are green, the app verify path is green, browser smoke is clean, every child PR is merged, and no known runtime issues remain.
+10. Record the outcome in `docs/generated/latest-iteration.md` when using the harness.
 
 ## Useful Commands
 

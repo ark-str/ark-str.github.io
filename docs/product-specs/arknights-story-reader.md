@@ -54,6 +54,9 @@ This phase keeps the recovered reader shell and Pages deployment path stable whi
 - `char_` speaker IDs are canonicalized to the first three `_`-delimited segments, while non-`char` speaker IDs keep their stripped raw token for visual portrait lookup
 - `[name="..."]` and `[multiline(name="...")]` script tags are both normalized as dialogue, using the currently focused visual frame for portrait lookup
 - mixed `CharacterCutin`, `character` / `Character`, and `charslot` tags can coexist, and each dialogue line chooses exactly one winning eligible speaker frame by highest priority then most recent update
+- `Subtitle(text="...")` script tags are normalized into narration with simple rich-text color wrappers stripped so CG captions remain readable in the linear story flow
+- visual speaker frames are scoped to confirmed speakers and scene context: cutins do not leak to later mismatched speakers, scene breaks mark active frames stale, image/background changes clear visual speaker state, and neutral `charslot` focus prevents stale portraits from appearing on unrelated dialogue
+- simultaneous same-name, same-portrait non-operator `charslot` speakers are disambiguated with `(A)`, `(B)`, `(C)` suffixes only while multiple slots share the same visual key
 - `character(...)` scene updates clear stale `charslot(...)` frames so slot-based portraits do not leak into later character-driven scenes
 - `focus < 0`, neutral `charslot` frames, and focus-only `charslot` updates stay visible but do not create new fallback aliases; speaker-name fallback after active frames clear is limited to confirmed fresh-frame `char_` operator aliases, while non-operator portraits require an explicit active visual frame
 - `Sticker(text="...")` tags are normalized into narration with escaped line breaks decoded and bracketed labels preserved so theater/location title cards remain readable in the linear story flow

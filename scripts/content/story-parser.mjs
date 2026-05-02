@@ -71,6 +71,14 @@ function decodeTextAttributeValue(rawValue) {
     .trim();
 }
 
+function stripSubtitleRichText(rawText) {
+  if (typeof rawText !== "string") {
+    return null;
+  }
+
+  return rawText.replace(/<\/?color(?:=[^>]*)?>/gi, "").trim();
+}
+
 function parseTagWithAttributes(remainder, tagName) {
   const tagPrefix = `[${tagName}`;
   if (!remainder.toLowerCase().startsWith(tagPrefix.toLowerCase())) {
@@ -318,6 +326,14 @@ function isNeutralCharslotFocus(rawFocusValue) {
   return ["n", "none", "all"].includes(rawFocusValue.trim().toLowerCase());
 }
 
+function getAlphabeticSuffix(index) {
+  if (index >= 0 && index < 26) {
+    return String.fromCharCode("A".charCodeAt(0) + index);
+  }
+
+  return String(index + 1);
+}
+
 function createFrame(parserState, source, key, speakerId, priority) {
   parserState.frameClock += 1;
 
@@ -326,6 +342,8 @@ function createFrame(parserState, source, key, speakerId, priority) {
     key,
     speakerId,
     priority,
+    confirmedSpeakerName: null,
+    staleAfterSceneBreak: false,
     updatedAt: parserState.frameClock,
   };
 }
@@ -338,8 +356,22 @@ function getActiveFrames(parserState) {
   ];
 }
 
-function resolveWinningFrame(parserState) {
-  const activeFrames = getActiveFrames(parserState).filter((frame) => frame.priority >= 0);
+function isFrameEligibleForSpeaker(frame, speakerName) {
+  if (frame.source === "cutin" && frame.confirmedSpeakerName) {
+    return frame.confirmedSpeakerName === speakerName;
+  }
+
+  if (frame.staleAfterSceneBreak) {
+    return frame.confirmedSpeakerName === speakerName;
+  }
+
+  return true;
+}
+
+function resolveWinningFrame(parserState, speakerName) {
+  const activeFrames = getActiveFrames(parserState).filter(
+    (frame) => frame.priority >= 0 && isFrameEligibleForSpeaker(frame, speakerName),
+  );
 
   return activeFrames.reduce((winningFrame, candidateFrame) => {
     if (!winningFrame) {
@@ -383,6 +415,127 @@ function parseDialogueTag(line) {
   };
 }
 
+function forEachDialogueBlock(blocks, callback) {
+  for (const block of blocks) {
+    if (block.type === "dialogue") {
+      callback(block);
+      continue;
+    }
+
+    if (block.type !== "choice") {
+      continue;
+    }
+
+    for (const option of block.options) {
+      forEachDialogueBlock(option.blocks, callback);
+    }
+  }
+}
+
+function resetCharslotMatchDisambiguation(parserState) {
+  parserState.weakCharslotMatches = [];
+  parserState.strongCharslotSpeakersBySpeakerId.clear();
+}
+
+function hasConflictingStrongCharslotMatch(parserState, speakerId, speakerName) {
+  const speakerNames = parserState.strongCharslotSpeakersBySpeakerId.get(speakerId);
+  if (!speakerNames) {
+    return false;
+  }
+
+  return [...speakerNames].some((knownSpeakerName) => knownSpeakerName !== speakerName);
+}
+
+function registerWeakCharslotMatch(parserState, block, speakerId, speakerName) {
+  if (hasConflictingStrongCharslotMatch(parserState, speakerId, speakerName)) {
+    block.speakerId = null;
+    return;
+  }
+
+  parserState.weakCharslotMatches.push({
+    block,
+    speakerId,
+    speakerName,
+  });
+}
+
+function registerStrongCharslotMatch(parserState, speakerId, speakerName) {
+  const speakerNames =
+    parserState.strongCharslotSpeakersBySpeakerId.get(speakerId) ?? new Set();
+  speakerNames.add(speakerName);
+  parserState.strongCharslotSpeakersBySpeakerId.set(speakerId, speakerNames);
+
+  for (const weakMatch of parserState.weakCharslotMatches) {
+    if (weakMatch.speakerId !== speakerId || weakMatch.speakerName === speakerName) {
+      continue;
+    }
+
+    weakMatch.block.speakerId = null;
+  }
+}
+
+function recordAmbiguousCharslotSpeakerIds(parserState) {
+  const slotKeysBySpeakerId = new Map();
+  for (const [slotKey, frame] of parserState.charslots.entries()) {
+    if (!frame.speakerId || isCharSpeakerId(frame.speakerId)) {
+      continue;
+    }
+
+    const slotKeys = slotKeysBySpeakerId.get(frame.speakerId) ?? new Set();
+    slotKeys.add(slotKey);
+    slotKeysBySpeakerId.set(frame.speakerId, slotKeys);
+  }
+
+  for (const [speakerId, slotKeys] of slotKeysBySpeakerId.entries()) {
+    if (slotKeys.size > 1) {
+      parserState.ambiguousCharslotSpeakerIds.add(speakerId);
+    }
+  }
+}
+
+function applyAmbiguousSpeakerSuffixes(blocks, parserState) {
+  if (parserState.ambiguousCharslotSpeakerIds.size === 0) {
+    return;
+  }
+
+  const suffixesBySpeakerGroup = new Map();
+  forEachDialogueBlock(blocks, (block) => {
+    if (
+      !parserState.ambiguousCharslotSpeakerIds.has(block.speakerId) ||
+      block._speakerFrameSource !== "charslot" ||
+      !block._speakerFrameKey
+    ) {
+      return;
+    }
+
+    const groupKey = `${block.speakerName}\0${block.speakerId}`;
+    const suffixesBySlotKey = suffixesBySpeakerGroup.get(groupKey) ?? new Map();
+    if (!suffixesBySlotKey.has(block._speakerFrameKey)) {
+      suffixesBySlotKey.set(
+        block._speakerFrameKey,
+        getAlphabeticSuffix(suffixesBySlotKey.size),
+      );
+    }
+
+    suffixesBySpeakerGroup.set(groupKey, suffixesBySlotKey);
+    block.speakerName = `${block.speakerName} (${suffixesBySlotKey.get(block._speakerFrameKey)})`;
+  });
+}
+
+function stripInternalDialogueMetadata(blocks) {
+  forEachDialogueBlock(blocks, (block) => {
+    delete block._speakerFrameSource;
+    delete block._speakerFrameKey;
+    delete block._speakerFramePriority;
+  });
+}
+
+function finalizeStoryBlocks(blocks, parserState) {
+  applyAmbiguousSpeakerSuffixes(blocks, parserState);
+  stripInternalDialogueMetadata(blocks);
+  return blocks;
+}
+
 function resolveDialogueSpeaker(line, parserState) {
   const dialogueTag = parseDialogueTag(line);
   if (!dialogueTag) {
@@ -397,7 +550,7 @@ function resolveDialogueSpeaker(line, parserState) {
   const knownSpeakerBinding = parserState.speakerBindings.get(speakerName) ?? null;
   const eligibleSpeakerBinding = isCharSpeakerId(knownSpeakerBinding) ? knownSpeakerBinding : null;
   const hasActiveFrame = getActiveFrames(parserState).length > 0;
-  const winningFrame = resolveWinningFrame(parserState);
+  const winningFrame = resolveWinningFrame(parserState, speakerName);
   const speakerId = winningFrame
     ? winningFrame.speakerId
     : hasActiveFrame
@@ -412,12 +565,41 @@ function resolveDialogueSpeaker(line, parserState) {
     text,
   };
 
-  if (winningFrame && isCharSpeakerId(speakerId) && !winningFrame.hasConfirmedSpeakerBinding) {
-    parserState.speakerBindings.set(speakerName, speakerId);
-    winningFrame.hasConfirmedSpeakerBinding = true;
+  if (winningFrame) {
+    block._speakerFrameSource = winningFrame.source;
+    block._speakerFrameKey = winningFrame.key;
+    block._speakerFramePriority = winningFrame.priority;
+    winningFrame.confirmedSpeakerName = speakerName;
+
+    if (winningFrame.source === "charslot" && speakerId && !isCharSpeakerId(speakerId)) {
+      if (winningFrame.priority > 0) {
+        registerStrongCharslotMatch(parserState, speakerId, speakerName);
+      } else if (winningFrame.priority === 0) {
+        registerWeakCharslotMatch(parserState, block, speakerId, speakerName);
+      }
+    }
+
+    if (isCharSpeakerId(speakerId) && !winningFrame.hasConfirmedSpeakerBinding) {
+      parserState.speakerBindings.set(speakerName, speakerId);
+      winningFrame.hasConfirmedSpeakerBinding = true;
+    }
   }
 
   return [block];
+}
+
+function markActiveFramesStale(parserState) {
+  for (const frame of getActiveFrames(parserState)) {
+    frame.staleAfterSceneBreak = true;
+  }
+}
+
+function clearVisualSpeakerState(parserState) {
+  parserState.cutins.clear();
+  parserState.characterFrame = null;
+  parserState.charslots.clear();
+  parserState.speakerBindings.clear();
+  resetCharslotMatchDisambiguation(parserState);
 }
 
 function consumeBackgroundTag(remainder, parserState) {
@@ -426,6 +608,7 @@ function consumeBackgroundTag(remainder, parserState) {
     return null;
   }
 
+  clearVisualSpeakerState(parserState);
   const rawAttributes = backgroundMatch.rawAttributes;
   const backgroundId = normalizeBackgroundId(getLooseAttributeValue(rawAttributes, "image"));
   if (backgroundId) {
@@ -470,6 +653,7 @@ function consumeImageTag(remainder, parserState) {
     return null;
   }
 
+  clearVisualSpeakerState(parserState);
   const rawAttributes = imageMatch.rawAttributes;
   const backgroundId = normalizeBackgroundId(getLooseAttributeValue(rawAttributes, "image"));
   if (backgroundId) {
@@ -505,6 +689,30 @@ function consumeImageTag(remainder, parserState) {
       },
     ],
     remainder: imageMatch.remainder,
+  };
+}
+
+function consumeSubtitleTag(remainder) {
+  const subtitleMatch = parseTagWithAttributes(remainder, "Subtitle");
+  if (!subtitleMatch) {
+    return null;
+  }
+
+  const rawAttributes = subtitleMatch.rawAttributes;
+  const subtitleText = stripSubtitleRichText(
+    decodeTextAttributeValue(getLooseAttributeValue(rawAttributes, "text")),
+  );
+
+  return {
+    blocks: subtitleText
+      ? [
+          {
+            type: "narration",
+            text: subtitleText,
+          },
+        ]
+      : [],
+    remainder: subtitleMatch.remainder,
   };
 }
 
@@ -569,6 +777,7 @@ function consumeCharacterTag(remainder, parserState) {
   const rawAttributes = characterMatch[1] ?? null;
   const slots = parseCharacterSlots(rawAttributes);
   parserState.charslots.clear();
+  resetCharslotMatchDisambiguation(parserState);
 
   if (slots.length === 0) {
     parserState.characterFrame = null;
@@ -596,6 +805,7 @@ function consumeCharslotTag(remainder, parserState) {
   const slotKey = normalizeSlotKey(getLooseAttributeValue(rawAttributes, "slot"));
   if (!slotKey) {
     parserState.charslots.clear();
+    resetCharslotMatchDisambiguation(parserState);
     return charslotMatch[2]?.trim() ?? "";
   }
 
@@ -634,9 +844,11 @@ function consumeCharslotTag(remainder, parserState) {
   const nextFrame = createFrame(parserState, "charslot", slotKey, nextSpeakerId, nextPriority);
   if (speakerToken === null && existingFrame?.speakerId === nextSpeakerId) {
     nextFrame.hasConfirmedSpeakerBinding = existingFrame.hasConfirmedSpeakerBinding;
+    nextFrame.confirmedSpeakerName = existingFrame.confirmedSpeakerName;
   }
 
   parserState.charslots.set(slotKey, nextFrame);
+  recordAmbiguousCharslotSpeakerIds(parserState);
 
   return charslotMatch[2]?.trim() ?? "";
 }
@@ -699,6 +911,16 @@ function extractVisibleBlocks(line, parserState) {
       continue;
     }
 
+    const subtitleResult = consumeSubtitleTag(remainder);
+    if (subtitleResult) {
+      blocks.push(...subtitleResult.blocks);
+      remainder = subtitleResult.remainder;
+      if (!remainder) {
+        return blocks;
+      }
+      continue;
+    }
+
     const stickerResult = consumeStickerTag(remainder);
     if (stickerResult) {
       blocks.push(...stickerResult.blocks);
@@ -711,6 +933,7 @@ function extractVisibleBlocks(line, parserState) {
 
     const dialogBreakMatch = /^\[(?:Dialog|dialog)(?:\([^\]]*\))?\]\s*(.*)$/i.exec(remainder);
     if (dialogBreakMatch) {
+      markActiveFramesStale(parserState);
       blocks.push({ type: "sceneBreak" });
       remainder = dialogBreakMatch[1]?.trim() ?? "";
       if (!remainder) {
@@ -786,6 +1009,9 @@ export function parseStoryText(rawText) {
     speakerBindings: new Map(),
     activeBackdropId: null,
     activeSceneImageId: null,
+    weakCharslotMatches: [],
+    strongCharslotSpeakersBySpeakerId: new Map(),
+    ambiguousCharslotSpeakerIds: new Set(),
   };
 
   function flushChoice() {
@@ -852,7 +1078,7 @@ export function parseStoryText(rawText) {
 
   flushChoice();
 
-  return blocks;
+  return finalizeStoryBlocks(blocks, parserState);
 }
 
 function collectObservedOperatorsFromBlocks(blocks, accumulator) {

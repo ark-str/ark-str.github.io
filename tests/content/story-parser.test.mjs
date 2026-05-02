@@ -6,6 +6,10 @@ import {
   parseStoryText,
 } from "../../scripts/content/story-parser.mjs";
 
+function dialogueBlocks(blocks) {
+  return blocks.filter((block) => block.type === "dialogue");
+}
+
 test("parseStoryText extracts dialogue, narration, and scene breaks", () => {
   const blocks = parseStoryText(`
 [Dialog]
@@ -464,6 +468,234 @@ test("parseStoryText leaves ambiguous multi-slot decimal focus without a speaker
       text: "지금은 움직이면 안 돼.",
     },
   ]);
+});
+
+test("parseStoryText keeps level_act22side_07_end CG exchange portraitless after scene image", () => {
+  const blocks = parseStoryText(`
+[Character(name="avg_1020_reed2_1#6$1")]
+[name="리드"]……백파이프?
+[Dialog]
+[Image(image="34_i06", xScale=1.2, yScale=1.2,fadetime=0.2)]
+[background]
+[name="백파이프"]'리드'.
+[name="백파이프"]……니가 더블린의 '리더' 맞나?
+[name="리드"]……
+`);
+
+  assert.deepEqual(
+    dialogueBlocks(blocks).map((block) => ({
+      speakerName: block.speakerName,
+      speakerId: block.speakerId,
+      text: block.text,
+    })),
+    [
+      {
+        speakerName: "리드",
+        speakerId: "avg_1020_reed2_1",
+        text: "……백파이프?",
+      },
+      {
+        speakerName: "백파이프",
+        speakerId: null,
+        text: "'리드'.",
+      },
+      {
+        speakerName: "백파이프",
+        speakerId: null,
+        text: "……니가 더블린의 '리더' 맞나?",
+      },
+      {
+        speakerName: "리드",
+        speakerId: null,
+        text: "……",
+      },
+    ],
+  );
+});
+
+test("parseStoryText emits level_main_11-15_beg subtitles and clears CG speaker frames", () => {
+  const blocks = parseStoryText(`
+[character(name="avg_npc_062",fadetime=0.5)]
+[name="테레시스"]……
+[Dialog]
+[Image(image="32_i08_2",screenadapt="coverall")]
+[Subtitle(text="<color=#000000>익숙한 모습이 당신과 아미야 앞을 가로막았다.</color>", x=500, y=370)]
+[subtitle]
+[name="Mon3tr"](극도로 고통스러운 듯) 크르르르르!!!!
+[Dialog]
+[Subtitle(text="<color=#000000>새빨갛고 따뜻한 액체가 당신의 뺨, 그리고 아미야를 껴안은 당신의 손에 튀었다.</color>", x=500, y=370)]
+[subtitle]
+[Image(image="32_i08_1",fadetime=2,screenadapt="coverall")]
+[name="켈시"]{@nickname} 박사……
+`);
+
+  assert.deepEqual(
+    blocks.filter((block) => block.type === "narration").map((block) => block.text),
+    [
+      "익숙한 모습이 당신과 아미야 앞을 가로막았다.",
+      "새빨갛고 따뜻한 액체가 당신의 뺨, 그리고 아미야를 껴안은 당신의 손에 튀었다.",
+    ],
+  );
+  assert.deepEqual(
+    dialogueBlocks(blocks).map((block) => [block.speakerName, block.speakerId]),
+    [
+      ["테레시스", "avg_npc_062"],
+      ["Mon3tr", null],
+      ["켈시", null],
+    ],
+  );
+});
+
+test("parseStoryText emits level_main_12-02_end subtitles and prevents stale charslot leakage", () => {
+  const blocks = parseStoryText(`
+[Subtitle(text="“빠르게 통과해. 지붕 위에 매복이 있어.”", x=300, y=370)]
+[subtitle]
+[charslot(slot="m",name="avg_npc_394_1#18$1",focus="m")]
+[name="아미야"]박사님, 들리세요? 지금 어떤 목소리가……
+[charslot(slot="m",name="avg_npc_395_1#4$1",focus="m")]
+[name="아스카론"]……
+[name="아스카론"]이네스.
+[dialog]
+[name="이네스"]'회색 모자' 씨, 아주 단단히 준비했던데.
+[name="이네스"]소형 통신기지 13개 중에 4개가 수동으로 작동하는 거였어.
+`);
+
+  assert.equal(
+    blocks.find((block) => block.type === "narration")?.text,
+    "“빠르게 통과해. 지붕 위에 매복이 있어.”",
+  );
+  assert.deepEqual(
+    dialogueBlocks(blocks).map((block) => [block.speakerName, block.speakerId]),
+    [
+      ["아미야", "avg_npc_394_1"],
+      ["아스카론", "avg_npc_395_1"],
+      ["아스카론", "avg_npc_395_1"],
+      ["이네스", null],
+      ["이네스", null],
+    ],
+  );
+});
+
+test("parseStoryText keeps level_main_12-09_end cutin portraits speaker-scoped", () => {
+  const blocks = parseStoryText(`
+[CharacterCutin(widgetID="1", name="char_147_shining_1", style="cutin", offsetx=-300)]
+[name="샤이닝"]이런 흔들림은 켈시 선생님의 회복에도 좋지 않을 거예요.
+[Dialog]
+[CharacterCutin(widgetID="2", name="avg_npc_412_1#1$1", style="cutin", offsetx=300)]
+[name="W"]그래서? 테레시스도 못 죽였는데 겨우 이 정도 흔들림에 목숨을 잃을 것 같아?
+[name="샤이닝"]돌아서 가면 될 텐데요.
+[Dialog]
+[playsound(key="$Mon3tr_n")]
+[name="Mon3tr"](높아진 소리로) 그르르르
+[CharacterCutin(widgetID="2", name="avg_npc_412_1#10$1", style="cutin", offsetx=300)]
+[name="W"]금속 머리로 무슨 꿍꿍이를 세우고 있는 거야?
+[CharacterCutin(widgetID="1", name="char_147_shining_1", style="cutin", offsetx=-300)]
+[name="샤이닝"]W 씨, 길을 서두르는 게 먼저입니다.
+[CharacterCutin(widgetID="2", name="avg_npc_412_1#14$1", style="cutin", offsetx=300)]
+[name="W"]지금 저 여자가 입으로 한 마디도 내뱉지 못하니까 저 애완동물이 초조해하고 두려워서 벌벌 떠는 거 좀 봐!
+[name="샤이닝"]지금은 제 환자예요.
+`);
+
+  assert.deepEqual(
+    dialogueBlocks(blocks).map((block) => [block.speakerName, block.speakerId]),
+    [
+      ["샤이닝", "char_147_shining"],
+      ["W", "avg_npc_412_1"],
+      ["샤이닝", "char_147_shining"],
+      ["Mon3tr", null],
+      ["W", "avg_npc_412_1"],
+      ["샤이닝", "char_147_shining"],
+      ["W", "avg_npc_412_1"],
+      ["샤이닝", "char_147_shining"],
+    ],
+  );
+});
+
+test("parseStoryText keeps level_st_12-02 neutral W slots and CG memory lines portraitless", () => {
+  const blocks = parseStoryText(`
+[charslot(slot="m",name="avg_npc_412_1#10$1")]
+[delay(time=1)]
+[name="켈시"]……
+[Dialog]
+[charslot(slot="m",name="avg_npc_412_1#10$1",focus="none")]
+[name="켈시"]윽……
+[charslot(slot="m",name="avg_npc_412_1#10$1",focus="m")]
+[name="W"]안녕, 켈시. 참 재수도 없어, 그렇지?
+[charslot(slot="m",name="avg_npc_412_1#10$1",focus="none")]
+[name="켈시"]여기는……
+[charslot(slot="l",name="char_003_kalts_1",focus="l")]
+[name="켈시"]난 후회하지 않는다.
+[Dialog]
+[charslot]
+[Background]
+[Image(image="37_i05",xFrom=-150, yFrom=-120, xScale=1.1, yScale=1.1)]
+[name="켈시"]하지만 가끔……
+[name="켈시"]……지칠 때는 있지.
+[name="W"]어쩐 일이래, 네가 그런 표정을 지을 때도 다 있고?
+`);
+
+  assert.deepEqual(
+    dialogueBlocks(blocks).map((block) => [block.speakerName, block.speakerId]),
+    [
+      ["켈시", null],
+      ["켈시", null],
+      ["W", "avg_npc_412_1"],
+      ["켈시", null],
+      ["켈시", "char_003_kalts"],
+      ["켈시", null],
+      ["켈시", null],
+      ["W", null],
+    ],
+  );
+});
+
+test("parseStoryText suffixes duplicate-position non-operator speakers", () => {
+  const blocks = parseStoryText(`
+[charslot(slot="m",name="avg_npc_867_1#1$1",focus="m")]
+[name="'회색 모자'"]맞아. 우리는 다시 더블린과 동일한 출발선에 선 거야.
+[charslot]
+[dialog]
+[charslot(slot="r",name="avg_npc_867_1#1$1",duration=1)]
+[charslot(slot="l",name="avg_npc_867_1#1$1",duration=1)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_867_1#1$1",focus="m")]
+[name="'회색 모자'"]드디어 왔군. 하마터면 적철 근위대 녀석한테 제거당할 뻔했어.
+[charslot]
+[charslot(slot="r",name="avg_npc_867_1#1$1",focus="r")]
+[name="'회색 모자'"]공작님은 네 게으름에 불만이 매우 크셔.
+[charslot]
+[charslot(slot="l",name="avg_npc_867_1#1$1",focus="l")]
+[name="'회색 모자'"]네 변명은 나중에 다시 확인하겠다.
+`);
+
+  assert.deepEqual(
+    dialogueBlocks(blocks).map((block) => [block.speakerName, block.speakerId]),
+    [
+      ["'회색 모자' (A)", "avg_npc_867_1"],
+      ["'회색 모자' (A)", "avg_npc_867_1"],
+      ["'회색 모자' (B)", "avg_npc_867_1"],
+      ["'회색 모자' (C)", "avg_npc_867_1"],
+    ],
+  );
+});
+
+test("parseStoryText does not suffix single speakers that move between slots", () => {
+  const blocks = parseStoryText(`
+[charslot(slot="m",name="avg_npc_867_1#1$1",focus="m")]
+[name="'회색 모자'"]중앙에 있다.
+[charslot]
+[charslot(slot="r",name="avg_npc_867_1#1$1",focus="r")]
+[name="'회색 모자'"]오른쪽으로 이동했다.
+`);
+
+  assert.deepEqual(
+    dialogueBlocks(blocks).map((block) => [block.speakerName, block.speakerId]),
+    [
+      ["'회색 모자'", "avg_npc_867_1"],
+      ["'회색 모자'", "avg_npc_867_1"],
+    ],
+  );
 });
 
 test("parseStoryText emits background blocks from Background tags", () => {
