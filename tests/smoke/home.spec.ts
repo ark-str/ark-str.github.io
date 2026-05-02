@@ -122,6 +122,28 @@ function collectBackgroundIds(blocks: Array<{
   return ids;
 }
 
+function collectBackgroundMarkers(blocks: Array<{
+  type?: string;
+  backgroundId?: string | null;
+  options?: Array<{ blocks?: unknown[] }>;
+}> = []) {
+  const markers: Array<string | null> = [];
+
+  for (const block of blocks) {
+    if (block.type === "background") {
+      markers.push(typeof block.backgroundId === "string" ? block.backgroundId : null);
+    }
+
+    if (block.type === "choice") {
+      for (const option of block.options ?? []) {
+        markers.push(...collectBackgroundMarkers(option.blocks as Parameters<typeof collectBackgroundMarkers>[0]));
+      }
+    }
+  }
+
+  return markers;
+}
+
 function resolveSampleStory() {
   const prioritizedStories = [
     ...generatedIndex.stories.filter(
@@ -173,6 +195,34 @@ function resolveBackgroundStory() {
   }
 
   throw new Error("A sample reader story with multiple bundled background blocks is required for smoke tests.");
+}
+
+function resolveBackgroundClearStory() {
+  const prioritizedStories = [
+    ...generatedIndex.stories.filter(
+      (story: { server: string; bodyAvailable?: boolean }) => story.server === "kr" && story.bodyAvailable,
+    ),
+    ...generatedIndex.stories.filter(
+      (story: { server: string; bodyAvailable?: boolean }) => story.server !== "kr" && story.bodyAvailable,
+    ),
+  ];
+
+  for (const story of prioritizedStories) {
+    const detail = readStoryDetail(story);
+    const markers = collectBackgroundMarkers(detail?.blocks);
+    for (let index = 1; index < markers.length; index += 1) {
+      const previousMarker = markers[index - 1];
+      if (markers[index] === null && typeof previousMarker === "string" && hasBundledBackground(previousMarker)) {
+        return {
+          story,
+          clearMarkerIndex: index,
+          previousBackgroundId: previousMarker,
+        };
+      }
+    }
+  }
+
+  throw new Error("A sample reader story with a bundled background followed by a clear marker is required for smoke tests.");
 }
 
 const sampleStorySelection = resolveSampleStory();
@@ -230,6 +280,8 @@ const sampleSummaryText = sampleStorySelection.detail.summaryText;
 const sampleBackgroundStory = resolveBackgroundStory();
 const sampleBackgroundIds = sampleBackgroundStory.backgroundIds;
 const sampleBackgroundStoryEntry = sampleBackgroundStory.story;
+const sampleBackgroundClearStory = resolveBackgroundClearStory();
+const sampleBackgroundClearStoryEntry = sampleBackgroundClearStory.story;
 const sampleSearchQuery = "로도스";
 const sampleSearchStory = generatedKoreanSearchIndex.stories.find(
   (story: { text: string }) => story.text.includes(sampleSearchQuery),
@@ -1815,6 +1867,36 @@ test.describe("reader shell smoke", () => {
     await expect(page.getByTestId("story-backdrop-image")).toHaveAttribute(
       "src",
       `${appBasePath}${generatedBackgrounds[sampleBackgroundIds[1]]}`,
+    );
+
+    const firstBackgroundBlock = page
+      .locator(`[data-testid="background-block"][data-background-id="${sampleBackgroundIds[0]}"]`)
+      .first();
+    await firstBackgroundBlock.evaluate((node) => node.scrollIntoView({ block: "center" }));
+    await expect(page.getByTestId("story-backdrop-image")).toHaveAttribute(
+      "src",
+      `${appBasePath}${generatedBackgrounds[sampleBackgroundIds[0]]}`,
+    );
+
+    await page.goto(
+      toAppPath(
+        `reader/${sampleBackgroundClearStoryEntry.server}/${sampleBackgroundClearStoryEntry.groupId}/${sampleBackgroundClearStoryEntry.storyId}`,
+      ),
+    );
+    const backgroundMarkers = page.locator('[data-background-marker="true"]');
+    const previousBackgroundMarker = backgroundMarkers.nth(sampleBackgroundClearStory.clearMarkerIndex - 1);
+    const clearBackgroundMarker = backgroundMarkers.nth(sampleBackgroundClearStory.clearMarkerIndex);
+    await previousBackgroundMarker.evaluate((node) => node.scrollIntoView({ block: "center" }));
+    await expect(page.getByTestId("story-backdrop-image")).toHaveAttribute(
+      "src",
+      `${appBasePath}${generatedBackgrounds[sampleBackgroundClearStory.previousBackgroundId]}`,
+    );
+    await clearBackgroundMarker.evaluate((node) => node.scrollIntoView({ block: "center" }));
+    await expect(page.getByTestId("story-backdrop-image")).toHaveCount(0);
+    await previousBackgroundMarker.evaluate((node) => node.scrollIntoView({ block: "center" }));
+    await expect(page.getByTestId("story-backdrop-image")).toHaveAttribute(
+      "src",
+      `${appBasePath}${generatedBackgrounds[sampleBackgroundClearStory.previousBackgroundId]}`,
     );
 
     await page.goto(toAppPath());
