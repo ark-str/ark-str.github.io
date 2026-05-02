@@ -613,6 +613,10 @@ test("parseStoryText keeps level_main_12-09_end cutin portraits speaker-scoped",
 
 test("parseStoryText keeps level_st_12-02 neutral W slots and CG memory lines portraitless", () => {
   const blocks = parseStoryText(`
+[charslot(slot="m",name="avg_npc_412_1#10$1")]
+[delay(time=1)]
+[name="켈시"]……
+[Dialog]
 [charslot(slot="m",name="avg_npc_412_1#10$1",focus="none")]
 [name="켈시"]윽……
 [charslot(slot="m",name="avg_npc_412_1#10$1",focus="m")]
@@ -634,12 +638,62 @@ test("parseStoryText keeps level_st_12-02 neutral W slots and CG memory lines po
     dialogueBlocks(blocks).map((block) => [block.speakerName, block.speakerId]),
     [
       ["켈시", null],
+      ["켈시", null],
       ["W", "avg_npc_412_1"],
       ["켈시", null],
       ["켈시", "char_003_kalts"],
       ["켈시", null],
       ["켈시", null],
       ["W", null],
+    ],
+  );
+});
+
+test("parseStoryText suffixes duplicate-position non-operator speakers", () => {
+  const blocks = parseStoryText(`
+[charslot(slot="m",name="avg_npc_867_1#1$1",focus="m")]
+[name="'회색 모자'"]맞아. 우리는 다시 더블린과 동일한 출발선에 선 거야.
+[charslot]
+[dialog]
+[charslot(slot="r",name="avg_npc_867_1#1$1",duration=1)]
+[charslot(slot="l",name="avg_npc_867_1#1$1",duration=1)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_867_1#1$1",focus="m")]
+[name="'회색 모자'"]드디어 왔군. 하마터면 적철 근위대 녀석한테 제거당할 뻔했어.
+[charslot]
+[charslot(slot="r",name="avg_npc_867_1#1$1",focus="r")]
+[name="'회색 모자'"]공작님은 네 게으름에 불만이 매우 크셔.
+[charslot]
+[charslot(slot="l",name="avg_npc_867_1#1$1",focus="l")]
+[name="'회색 모자'"]네 변명은 나중에 다시 확인하겠다.
+`);
+
+  assert.deepEqual(
+    dialogueBlocks(blocks).map((block) => [block.speakerName, block.speakerId]),
+    [
+      ["'회색 모자' (A)", "avg_npc_867_1"],
+      ["'회색 모자' (A)", "avg_npc_867_1"],
+      ["'회색 모자' (B)", "avg_npc_867_1"],
+      ["'회색 모자' (C)", "avg_npc_867_1"],
+    ],
+  );
+});
+
+test("parseStoryText does not suffix single speakers that move between slots", () => {
+  const blocks = parseStoryText(`
+[charslot(slot="m",name="avg_npc_867_1#1$1",focus="m")]
+[name="'회색 모자'"]중앙에 있다.
+[charslot]
+[charslot(slot="r",name="avg_npc_867_1#1$1",focus="r")]
+[name="'회색 모자'"]오른쪽으로 이동했다.
+`);
+
+  assert.deepEqual(
+    dialogueBlocks(blocks).map((block) => [block.speakerName, block.speakerId]),
+    [
+      ["'회색 모자'", "avg_npc_867_1"],
+      ["'회색 모자'", "avg_npc_867_1"],
     ],
   );
 });

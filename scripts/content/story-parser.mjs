@@ -326,6 +326,14 @@ function isNeutralCharslotFocus(rawFocusValue) {
   return ["n", "none", "all"].includes(rawFocusValue.trim().toLowerCase());
 }
 
+function getAlphabeticSuffix(index) {
+  if (index >= 0 && index < 26) {
+    return String.fromCharCode("A".charCodeAt(0) + index);
+  }
+
+  return String(index + 1);
+}
+
 function createFrame(parserState, source, key, speakerId, priority) {
   parserState.frameClock += 1;
 
@@ -407,6 +415,127 @@ function parseDialogueTag(line) {
   };
 }
 
+function forEachDialogueBlock(blocks, callback) {
+  for (const block of blocks) {
+    if (block.type === "dialogue") {
+      callback(block);
+      continue;
+    }
+
+    if (block.type !== "choice") {
+      continue;
+    }
+
+    for (const option of block.options) {
+      forEachDialogueBlock(option.blocks, callback);
+    }
+  }
+}
+
+function resetCharslotMatchDisambiguation(parserState) {
+  parserState.weakCharslotMatches = [];
+  parserState.strongCharslotSpeakersBySpeakerId.clear();
+}
+
+function hasConflictingStrongCharslotMatch(parserState, speakerId, speakerName) {
+  const speakerNames = parserState.strongCharslotSpeakersBySpeakerId.get(speakerId);
+  if (!speakerNames) {
+    return false;
+  }
+
+  return [...speakerNames].some((knownSpeakerName) => knownSpeakerName !== speakerName);
+}
+
+function registerWeakCharslotMatch(parserState, block, speakerId, speakerName) {
+  if (hasConflictingStrongCharslotMatch(parserState, speakerId, speakerName)) {
+    block.speakerId = null;
+    return;
+  }
+
+  parserState.weakCharslotMatches.push({
+    block,
+    speakerId,
+    speakerName,
+  });
+}
+
+function registerStrongCharslotMatch(parserState, speakerId, speakerName) {
+  const speakerNames =
+    parserState.strongCharslotSpeakersBySpeakerId.get(speakerId) ?? new Set();
+  speakerNames.add(speakerName);
+  parserState.strongCharslotSpeakersBySpeakerId.set(speakerId, speakerNames);
+
+  for (const weakMatch of parserState.weakCharslotMatches) {
+    if (weakMatch.speakerId !== speakerId || weakMatch.speakerName === speakerName) {
+      continue;
+    }
+
+    weakMatch.block.speakerId = null;
+  }
+}
+
+function recordAmbiguousCharslotSpeakerIds(parserState) {
+  const slotKeysBySpeakerId = new Map();
+  for (const [slotKey, frame] of parserState.charslots.entries()) {
+    if (!frame.speakerId || isCharSpeakerId(frame.speakerId)) {
+      continue;
+    }
+
+    const slotKeys = slotKeysBySpeakerId.get(frame.speakerId) ?? new Set();
+    slotKeys.add(slotKey);
+    slotKeysBySpeakerId.set(frame.speakerId, slotKeys);
+  }
+
+  for (const [speakerId, slotKeys] of slotKeysBySpeakerId.entries()) {
+    if (slotKeys.size > 1) {
+      parserState.ambiguousCharslotSpeakerIds.add(speakerId);
+    }
+  }
+}
+
+function applyAmbiguousSpeakerSuffixes(blocks, parserState) {
+  if (parserState.ambiguousCharslotSpeakerIds.size === 0) {
+    return;
+  }
+
+  const suffixesBySpeakerGroup = new Map();
+  forEachDialogueBlock(blocks, (block) => {
+    if (
+      !parserState.ambiguousCharslotSpeakerIds.has(block.speakerId) ||
+      block._speakerFrameSource !== "charslot" ||
+      !block._speakerFrameKey
+    ) {
+      return;
+    }
+
+    const groupKey = `${block.speakerName}\0${block.speakerId}`;
+    const suffixesBySlotKey = suffixesBySpeakerGroup.get(groupKey) ?? new Map();
+    if (!suffixesBySlotKey.has(block._speakerFrameKey)) {
+      suffixesBySlotKey.set(
+        block._speakerFrameKey,
+        getAlphabeticSuffix(suffixesBySlotKey.size),
+      );
+    }
+
+    suffixesBySpeakerGroup.set(groupKey, suffixesBySlotKey);
+    block.speakerName = `${block.speakerName} (${suffixesBySlotKey.get(block._speakerFrameKey)})`;
+  });
+}
+
+function stripInternalDialogueMetadata(blocks) {
+  forEachDialogueBlock(blocks, (block) => {
+    delete block._speakerFrameSource;
+    delete block._speakerFrameKey;
+    delete block._speakerFramePriority;
+  });
+}
+
+function finalizeStoryBlocks(blocks, parserState) {
+  applyAmbiguousSpeakerSuffixes(blocks, parserState);
+  stripInternalDialogueMetadata(blocks);
+  return blocks;
+}
+
 function resolveDialogueSpeaker(line, parserState) {
   const dialogueTag = parseDialogueTag(line);
   if (!dialogueTag) {
@@ -437,7 +566,18 @@ function resolveDialogueSpeaker(line, parserState) {
   };
 
   if (winningFrame) {
+    block._speakerFrameSource = winningFrame.source;
+    block._speakerFrameKey = winningFrame.key;
+    block._speakerFramePriority = winningFrame.priority;
     winningFrame.confirmedSpeakerName = speakerName;
+
+    if (winningFrame.source === "charslot" && speakerId && !isCharSpeakerId(speakerId)) {
+      if (winningFrame.priority > 0) {
+        registerStrongCharslotMatch(parserState, speakerId, speakerName);
+      } else if (winningFrame.priority === 0) {
+        registerWeakCharslotMatch(parserState, block, speakerId, speakerName);
+      }
+    }
 
     if (isCharSpeakerId(speakerId) && !winningFrame.hasConfirmedSpeakerBinding) {
       parserState.speakerBindings.set(speakerName, speakerId);
@@ -459,6 +599,7 @@ function clearVisualSpeakerState(parserState) {
   parserState.characterFrame = null;
   parserState.charslots.clear();
   parserState.speakerBindings.clear();
+  resetCharslotMatchDisambiguation(parserState);
 }
 
 function consumeBackgroundTag(remainder, parserState) {
@@ -615,6 +756,7 @@ function consumeCharslotTag(remainder, parserState) {
   const slotKey = normalizeSlotKey(getLooseAttributeValue(rawAttributes, "slot"));
   if (!slotKey) {
     parserState.charslots.clear();
+    resetCharslotMatchDisambiguation(parserState);
     return charslotMatch[2]?.trim() ?? "";
   }
 
@@ -657,6 +799,7 @@ function consumeCharslotTag(remainder, parserState) {
   }
 
   parserState.charslots.set(slotKey, nextFrame);
+  recordAmbiguousCharslotSpeakerIds(parserState);
 
   return charslotMatch[2]?.trim() ?? "";
 }
@@ -815,6 +958,9 @@ export function parseStoryText(rawText) {
     characterFrame: null,
     charslots: new Map(),
     speakerBindings: new Map(),
+    weakCharslotMatches: [],
+    strongCharslotSpeakersBySpeakerId: new Map(),
+    ambiguousCharslotSpeakerIds: new Set(),
   };
 
   function flushChoice() {
@@ -881,7 +1027,7 @@ export function parseStoryText(rawText) {
 
   flushChoice();
 
-  return blocks;
+  return finalizeStoryBlocks(blocks, parserState);
 }
 
 function collectObservedOperatorsFromBlocks(blocks, accumulator) {
