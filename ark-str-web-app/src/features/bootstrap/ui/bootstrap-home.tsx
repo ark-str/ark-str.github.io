@@ -62,11 +62,11 @@ function RecommendationItemCard({
           src={item.backgroundImagePath}
         />
       ) : null}
-      <div className="absolute inset-0 bg-[var(--image-overlay)]" />
-      <div className="relative z-10 flex min-h-40 flex-col justify-between gap-5 p-5 text-[var(--image-text)]">
+      <div className="absolute inset-0 bg-(--image-overlay)" />
+      <div className="relative z-10 flex min-h-40 flex-col justify-between gap-5 p-5 text-(--image-text)">
         <div className="space-y-2">
           <div className="flex items-start justify-between gap-3">
-            <h3 className="text-balance font-[var(--font-display)] text-xl font-semibold leading-tight tracking-[-0.03em]">
+            <h3 className="text-balance text-xl font-semibold leading-tight tracking-[-0.03em] [font-family:var(--font-display)]">
               {item.title}
             </h3>
             {item.isAvailable ? (
@@ -74,19 +74,19 @@ function RecommendationItemCard({
             ) : null}
           </div>
           {!item.isAvailable ? (
-            <Badge className="border-[var(--image-muted)] bg-transparent text-[var(--image-muted)]">
+            <Badge className="border-(--image-muted) bg-transparent text-(--image-muted)">
               {copy.missing}
             </Badge>
           ) : null}
         </div>
-        <div className="flex flex-wrap gap-2 text-[var(--image-muted)]">
-          <span className="rounded-[var(--radius-sm)] border border-[var(--image-muted)] px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.12em]">
+        <div className="flex flex-wrap gap-2 text-(--image-muted)">
+          <span className="rounded-sm border border-(--image-muted) px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.12em]">
             {formatUiNumber(locale, item.storyCount)} {copy.stories}
           </span>
-          <span className="rounded-[var(--radius-sm)] border border-[var(--image-muted)] px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.12em]">
+          <span className="rounded-sm border border-(--image-muted) px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.12em]">
             {formatUiNumber(locale, item.totalVisibleCharacterCount)} {copy.chars}
           </span>
-          <span className="rounded-[var(--radius-sm)] border border-[var(--image-muted)] px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.12em]">
+          <span className="rounded-sm border border-(--image-muted) px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.12em]">
             {formatUiNumber(locale, item.estimatedMinutes)} {copy.minutes}
           </span>
         </div>
@@ -96,7 +96,7 @@ function RecommendationItemCard({
 
   if (!item.isAvailable) {
     return (
-      <article className="relative overflow-hidden rounded-[var(--radius-lg)] border border-[var(--border)] opacity-70">
+      <article className="relative overflow-hidden rounded-lg border border-(--border) opacity-70">
         {content}
       </article>
     );
@@ -104,7 +104,7 @@ function RecommendationItemCard({
 
   return (
     <Link
-      className="relative overflow-hidden rounded-[var(--radius-lg)] border border-[var(--border)] shadow-[var(--shadow-sm)] transition duration-[var(--motion-fast)] ease-out hover:-translate-y-1 hover:border-[var(--accent)] hover:shadow-[var(--shadow-md)]"
+      className="relative overflow-hidden rounded-lg border border-(--border) shadow-(--shadow-sm) transition duration-(--motion-fast) ease-out hover:-translate-y-1 hover:border-(--accent) hover:shadow-(--shadow-md)"
       href={buildGroupHref(locale, item.groupId)}
     >
       {content}
@@ -127,7 +127,7 @@ function RecommendationCollection({
       data-testid="home-recommendation-collection"
     >
       <div className="flex flex-wrap items-center gap-3">
-        <h3 className="font-[var(--font-display)] text-2xl font-semibold tracking-[-0.03em] text-[var(--text)]">
+        <h3 className="text-2xl font-semibold tracking-[-0.03em] text-foreground [font-family:var(--font-display)]">
           {(copy.collections as Record<string, string>)[
             collection.collectionId
           ] ?? collection.collectionId}
@@ -152,11 +152,11 @@ function RecommendationCollection({
 
 function StatCard({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--panel)] p-5">
-      <dt className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--text-muted)]">
+    <div className="rounded-lg border border-(--border) bg-(--panel) p-5">
+      <dt className="text-[10px] font-semibold uppercase tracking-[0.16em] text-(--text-muted)">
         {label}
       </dt>
-      <dd className="mt-3 font-[var(--font-display)] text-3xl font-semibold tracking-[-0.04em] text-[var(--text)]">
+      <dd className="mt-3 text-3xl font-semibold tracking-[-0.04em] text-foreground [font-family:var(--font-display)]">
         {value}
       </dd>
     </div>
@@ -212,15 +212,15 @@ export function BootstrapHome({
       }}
       header={
         <section
-          className="relative flex min-h-[34rem] items-center justify-center overflow-hidden"
+          className="relative flex min-h-136 items-center justify-center overflow-hidden"
           data-testid="home-hero"
         >
           <div className="relative z-10 mx-auto grid w-full max-w-xl justify-items-center gap-5 px-4 text-center">
-            <h1 className="font-[var(--font-display)] text-4xl font-semibold leading-tight tracking-[-0.05em] text-[var(--text)] md:text-6xl">
+            <h1 className="text-4xl font-semibold leading-tight tracking-[-0.05em] text-foreground [font-family:var(--font-display)] md:text-6xl">
               {copy.namePrompt}
             </h1>
             <input
-              className="h-14 w-full rounded-[var(--radius-md)] border border-[var(--border)] bg-[var(--surface)]/86 px-4 text-center text-xl font-semibold tracking-[-0.02em] text-[var(--text)] shadow-[var(--shadow-sm)] outline-none transition focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--ring)]"
+              className="h-14 w-full rounded-md border border-(--border) bg-(--surface)/86 px-4 text-center text-xl font-semibold tracking-[-0.02em] text-foreground shadow-(--shadow-sm) outline-none transition focus:border-(--accent) focus:ring-2 focus:ring-(--ring)"
               data-testid="nickname-input"
               disabled={!isHydrated}
               maxLength={24}
@@ -251,15 +251,15 @@ export function BootstrapHome({
     >
       <section className="grid gap-6">
         <Card
-          className="home-full-bleed relative overflow-hidden rounded-none border-x-0 bg-[var(--surface)]/94"
+          className="home-full-bleed relative overflow-hidden rounded-none border-x-0 bg-(--surface)/94"
           data-testid="service-intro-section"
         >
           <CardContent className="grid justify-items-center gap-5 px-5 py-10 text-center md:px-8 lg:px-12">
             <div className="grid justify-items-center gap-3">
-              <span className="inline-flex h-12 w-12 items-center justify-center rounded-[var(--radius-sm)] border border-[var(--border)] bg-[var(--panel)]">
+              <span className="inline-flex h-12 w-12 items-center justify-center rounded-sm border border-(--border) bg-(--panel)">
                 <span
                   aria-hidden="true"
-                  className="h-11 w-11 bg-[var(--accent)]"
+                  className="h-11 w-11 bg-(--accent)"
                   data-testid="service-intro-icon"
                   style={{
                     WebkitMask: `url(${appChromeIconPath}) center / contain no-repeat`,
@@ -267,21 +267,21 @@ export function BootstrapHome({
                   }}
                 />
               </span>
-              <h2 className="font-[var(--font-display)] text-4xl font-semibold tracking-[-0.05em] text-[var(--text)]">
+              <h2 className="text-4xl font-semibold tracking-[-0.05em] text-foreground [font-family:var(--font-display)]">
                 {copy.serviceTitle}
               </h2>
             </div>
-            <p className="max-w-3xl text-lg leading-9 text-[var(--text-muted)]">
+            <p className="max-w-3xl text-lg leading-9 text-(--text-muted)">
               {copy.serviceIntro}
             </p>
           </CardContent>
         </Card>
 
-        <Card className="mt-[8rem] bg-[var(--surface)]/94" data-testid="home-recommendations">
+        <Card className="mt-32 bg-(--surface)/94" data-testid="home-recommendations">
           <CardHeader className="gap-3">
             <div className="flex items-center gap-3">
-              <LibraryBig className="h-5 w-5 text-[var(--accent)]" />
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--accent-strong)]">
+              <LibraryBig className="h-5 w-5 text-(--accent)" />
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-(--accent-strong)">
                 {copy.recommendationEyebrow}
               </p>
             </div>
@@ -298,11 +298,11 @@ export function BootstrapHome({
           </CardContent>
         </Card>
 
-        <Card className="bg-[var(--surface)]/94" data-testid="readiness-panel">
+        <Card className="bg-(--surface)/94" data-testid="readiness-panel">
           <CardHeader className="gap-3">
             <div className="flex items-center gap-3">
-              <ChartNoAxesColumnIncreasing className="h-5 w-5 text-[var(--accent)]" />
-              <CardTitle className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--accent-strong)]">
+              <ChartNoAxesColumnIncreasing className="h-5 w-5 text-(--accent)" />
+              <CardTitle className="text-sm font-semibold uppercase tracking-[0.2em] text-(--accent-strong)">
                 {copy.statsTitle}
               </CardTitle>
             </div>
