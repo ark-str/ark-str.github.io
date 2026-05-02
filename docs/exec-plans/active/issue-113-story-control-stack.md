@@ -23,11 +23,13 @@ Unify story-page read controls, AI summary, generated summary, and previous/next
 ## Tasks
 
 - [x] Create GitHub issue #113 and branch from `main`.
-- [ ] Update story shell layout and automatic read behavior.
-- [ ] Regenerate rounded local browser icon assets.
-- [ ] Update docs and smoke tests.
-- [ ] Run `npm run verify`.
-- [ ] Commit, push the issue branch, and open a PR.
+- [x] Merge the dependent backdrop branch from issue #111 so image switching behavior remains present.
+- [x] Update story shell layout and automatic read behavior.
+- [x] Regenerate rounded local browser icon assets.
+- [x] Update docs and smoke tests.
+- [x] Run `npm run verify`.
+- [x] Commit, push the issue branch, and open a PR.
+- [x] Merge the PR and confirm the target branch includes the change.
 
 ## Verification
 
@@ -37,3 +39,4 @@ Unify story-page read controls, AI summary, generated summary, and previous/next
 
 - The bottom control stack entering the viewport is the automatic read threshold.
 - Manual read toggling remains available; only automatic completion is one-way.
+- Issue #113 depended on the unmerged backdrop-scroll work from issue #111, so PR #112 was merged first and this branch kept that dependency included before final verification.

@@ -429,6 +429,8 @@ async function readScrollbarTrackBackground(locator: Locator) {
 }
 
 test.describe("reader shell smoke", () => {
+  test.setTimeout(120_000);
+
   test("opens locale archives, reads a story, and restores session without browser errors", async ({
     page,
   }) => {

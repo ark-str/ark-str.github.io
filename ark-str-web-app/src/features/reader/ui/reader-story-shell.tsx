@@ -1386,7 +1386,13 @@ export function ReaderStoryShell({
     storyId,
     value: null,
   });
-  const [isStorySummaryOpen, setIsStorySummaryOpen] = useState(false);
+  const [storySummaryState, setStorySummaryState] = useState<{
+    isOpen: boolean;
+    storyId: string;
+  }>({
+    isOpen: false,
+    storyId,
+  });
   const portraitPaths = useMemo(
     () => createStoryPortraitPaths(detail, assetState.data),
     [assetState.data, detail],
@@ -1459,6 +1465,7 @@ export function ReaderStoryShell({
   }, [detail, isBodyAvailable, storyId]);
   const activeBackgroundPath = activeBackgroundId ? (backgroundPaths[activeBackgroundId] ?? null) : null;
   const isStoryRead = readProgress.isHydrated && readProgress.isStoryRead(storyId);
+  const isStorySummaryOpen = storySummaryState.storyId === storyId ? storySummaryState.isOpen : false;
 
   const handleAutoRead = () => {
     if (!readProgress.isStoryRead(storyId)) {
@@ -1470,9 +1477,19 @@ export function ReaderStoryShell({
     readProgress.toggleStoryRead(storyId);
   };
 
-  useEffect(() => {
-    setIsStorySummaryOpen(false);
-  }, [storyId]);
+  const handleSummaryToggle = () => {
+    setStorySummaryState((current) =>
+      current.storyId === storyId
+        ? {
+            isOpen: !current.isOpen,
+            storyId,
+          }
+        : {
+            isOpen: true,
+            storyId,
+          },
+    );
+  };
 
   const handleSummarize = async () => {
     const apiKey = appPreferences.state.googleAiStudioApiKey.trim();
@@ -1601,7 +1618,7 @@ export function ReaderStoryShell({
           nextStory={nextStory}
           onOpenSettings={() => router.push("/settings")}
           onSummarize={handleSummarize}
-          onSummaryToggle={() => setIsStorySummaryOpen((current) => !current)}
+          onSummaryToggle={handleSummaryToggle}
           onToggleRead={handleToggleRead}
           placement="top"
           previousStory={previousStory}
@@ -1707,7 +1724,7 @@ export function ReaderStoryShell({
           onEnterViewport={readProgress.isHydrated ? handleAutoRead : undefined}
           onOpenSettings={() => router.push("/settings")}
           onSummarize={handleSummarize}
-          onSummaryToggle={() => setIsStorySummaryOpen((current) => !current)}
+          onSummaryToggle={handleSummaryToggle}
           onToggleRead={handleToggleRead}
           placement="bottom"
           previousStory={previousStory}
