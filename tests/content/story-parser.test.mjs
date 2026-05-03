@@ -206,6 +206,27 @@ test("parseStoryText keeps confirmed cutins through intervening pre-dialog frame
   );
 });
 
+test("parseStoryText lets unconfirmed cutins beat empty focused character frames", () => {
+  const blocks = parseStoryText(`
+[CharacterCutin(widgetID="1", name="char_144_red_7", style="cutin")]
+[Character(name="char_empty",name2="avg_npc_206_1#7",focus=1)]
+[name="레드"]냄새가 나.
+[Character(name="char_empty",name2="avg_npc_206_1#7",focus=2)]
+[name="캐스트 아이언"]어디야?
+[Character(name="char_empty",name2="avg_npc_206_1#7",focus=1)]
+[name="레드"]이쪽.
+`);
+
+  assert.deepEqual(
+    dialogueBlocks(blocks).map((block) => [block.speakerName, block.speakerId, block.isRemote]),
+    [
+      ["레드", "char_144_red", true],
+      ["캐스트 아이언", "avg_npc_206_1", false],
+      ["레드", "char_144_red", true],
+    ],
+  );
+});
+
 test("parseStoryText does not borrow another slot when the focused slot is unresolved", () => {
   const blocks = parseStoryText(`
 [charslot(slot="left", name="char_260_durnar_1")]
@@ -225,6 +246,24 @@ test("parseStoryText does not borrow another slot when the focused slot is unres
       ["견뢰", null],
       ["아스테시아", "avg_274_Astesia_1"],
       ["견뢰", null],
+    ],
+  );
+});
+
+test("parseStoryText lets newer explicit slots recover from older unresolved focus", () => {
+  const blocks = parseStoryText(`
+[charslot(slot="m", name="avg_4214_cairn_1#5$1")]
+[charslot(slot="r", focus="r")]
+[name="특공대원 A"]움직이지 마.
+[charslot(slot="m", name="avg_4214_cairn_1#5$1")]
+[name="페르난"]말로 하자고.
+`);
+
+  assert.deepEqual(
+    dialogueBlocks(blocks).map((block) => [block.speakerName, block.speakerId]),
+    [
+      ["특공대원 A", null],
+      ["페르난", "avg_4214_cairn_1"],
     ],
   );
 });

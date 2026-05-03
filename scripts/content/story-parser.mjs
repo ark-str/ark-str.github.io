@@ -402,7 +402,27 @@ function selectFreshWinningFrame(frames, speakerName) {
     ),
   );
 
-  return confirmedCutinFrame ?? winningFrame;
+  if (confirmedCutinFrame) {
+    return confirmedCutinFrame;
+  }
+
+  const newerSpeakerFrame = selectWinningFrame(
+    frames.filter(
+      (frame) => frame.speakerId && frame.updatedAt > winningFrame.updatedAt,
+    ),
+  );
+
+  if (newerSpeakerFrame) {
+    return newerSpeakerFrame;
+  }
+
+  const unconfirmedCutinFrame = selectWinningFrame(
+    frames.filter(
+      (frame) => frame.source === "cutin" && frame.speakerId && !frame.confirmedSpeakerName,
+    ),
+  );
+
+  return unconfirmedCutinFrame ?? winningFrame;
 }
 
 function resolveWinningFrame(parserState, speakerName) {
