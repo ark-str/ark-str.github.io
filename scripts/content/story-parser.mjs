@@ -283,17 +283,17 @@ function resolveCharacterSpeakerId(rawAttributes) {
     return normalizeSpeakerIdToken(slots[0].token);
   }
 
+  const focusValue = parseNumericPriority(getLooseAttributeValue(rawAttributes, "focus"));
+  if (Number.isInteger(focusValue) && focusValue > 0) {
+    return normalizeSpeakerIdToken(slots[focusValue - 1]?.token ?? null);
+  }
+
   const uniformSpeakerId = resolveUniformSpeakerId(slots);
   if (uniformSpeakerId) {
     return uniformSpeakerId;
   }
 
-  const focusValue = parseNumericPriority(getLooseAttributeValue(rawAttributes, "focus"));
-  if (!Number.isInteger(focusValue) || focusValue <= 0) {
-    return null;
-  }
-
-  return normalizeSpeakerIdToken(slots[focusValue - 1]?.token ?? null);
+  return null;
 }
 
 function resolveCharslotPriority(rawFocusValue, slotKey) {
@@ -374,6 +374,10 @@ function selectWinningFrame(frames) {
       return candidateFrame;
     }
 
+    if (Boolean(candidateFrame.speakerId) !== Boolean(winningFrame.speakerId)) {
+      return candidateFrame.speakerId ? candidateFrame : winningFrame;
+    }
+
     if (candidateFrame.priority !== winningFrame.priority) {
       return candidateFrame.priority > winningFrame.priority ? candidateFrame : winningFrame;
     }
@@ -388,13 +392,27 @@ function selectWinningFrame(frames) {
 
 function resolveWinningFrame(parserState, speakerName) {
   const activeFrames = getActiveFrames(parserState).filter((frame) => frame.priority >= 0);
-  const eligibleFrames = activeFrames.filter((frame) =>
-    isFrameEligibleForSpeaker(frame, speakerName),
+  const freshEligibleFrames = activeFrames.filter(
+    (frame) => !frame.staleAfterSceneBreak && isFrameEligibleForSpeaker(frame, speakerName),
   );
-  const winningFrame = selectWinningFrame(eligibleFrames);
+  const freshWinningFrame = selectWinningFrame(freshEligibleFrames);
 
-  if (winningFrame) {
-    return winningFrame;
+  if (freshWinningFrame?.speakerId) {
+    return freshWinningFrame;
+  }
+
+  const staleConfirmedFrame = selectWinningFrame(
+    activeFrames.filter(
+      (frame) => frame.staleAfterSceneBreak && frame.confirmedSpeakerName === speakerName,
+    ),
+  );
+
+  if (staleConfirmedFrame) {
+    return staleConfirmedFrame;
+  }
+
+  if (freshWinningFrame) {
+    return freshWinningFrame;
   }
 
   return selectWinningFrame(

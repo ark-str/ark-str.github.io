@@ -152,6 +152,60 @@ test("parseStoryText lets fresh cutins beat pre-dialog character frames", () => 
   ]);
 });
 
+test("parseStoryText keeps cutins when character focus points to char_empty", () => {
+  const blocks = parseStoryText(`
+[CharacterCutin(widgetID="1", name="char_016_medic", style="cutin")]
+[name="메딕 오퍼레이터"]메테오, 나야. 늦은 시간에 전화해서 미안해.
+[Character(name="char_empty",name2="avg_126_shotst_1",focus=2)]
+[name="메테오"]미나, 야근 아니었어?
+[Character(name="char_empty",name2="avg_126_shotst_1",focus=1)]
+[name="메딕 오퍼레이터"]내가 아니라 지아나.
+`);
+
+  assert.deepEqual(
+    dialogueBlocks(blocks).map((block) => ({
+      speakerName: block.speakerName,
+      speakerId: block.speakerId,
+      isRemote: block.isRemote,
+    })),
+    [
+      {
+        speakerName: "메딕 오퍼레이터",
+        speakerId: "char_016_medic",
+        isRemote: true,
+      },
+      {
+        speakerName: "메테오",
+        speakerId: "avg_126_shotst_1",
+        isRemote: false,
+      },
+      {
+        speakerName: "메딕 오퍼레이터",
+        speakerId: "char_016_medic",
+        isRemote: true,
+      },
+    ],
+  );
+});
+
+test("parseStoryText keeps confirmed cutins through intervening pre-dialog frames", () => {
+  const blocks = parseStoryText(`
+[CharacterCutin(widgetID="1", name="char_002_amiya_1", style="cutin")]
+[name="아미야"]먼저 말한다.
+[Character(name="char_003_kalts_1")]
+[dialog]
+[name="아미야"]확인된 기존 컷인이 우선한다.
+`);
+
+  assert.deepEqual(
+    dialogueBlocks(blocks).map((block) => [block.speakerName, block.speakerId, block.isRemote]),
+    [
+      ["아미야", "char_002_amiya", true],
+      ["아미야", "char_002_amiya", true],
+    ],
+  );
+});
+
 test("parseStoryText treats negative-focus character frames as non-speaker visual state", () => {
   const blocks = parseStoryText(`
 [character(name="char_010_chen_summer",focus=-1)]
