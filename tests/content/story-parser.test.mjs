@@ -206,6 +206,29 @@ test("parseStoryText keeps confirmed cutins through intervening pre-dialog frame
   );
 });
 
+test("parseStoryText does not borrow another slot when the focused slot is unresolved", () => {
+  const blocks = parseStoryText(`
+[charslot(slot="left", name="char_260_durnar_1")]
+[charslot(slot="right", name="avg_274_Astesia_1#1")]
+[Background(image="31_g2_luo_reception")]
+[charslot(slot="left", focus="left")]
+[name="견뢰"]통신 상태를 확인한다.
+[charslot(slot="right", name="avg_274_Astesia_1#1", focus="right")]
+[name="아스테시아"]이쪽은 이상 없어.
+[charslot(slot="left", focus="left")]
+[name="견뢰"]아직 대기 중이다.
+`);
+
+  assert.deepEqual(
+    dialogueBlocks(blocks).map((block) => [block.speakerName, block.speakerId]),
+    [
+      ["견뢰", null],
+      ["아스테시아", "avg_274_Astesia_1"],
+      ["견뢰", null],
+    ],
+  );
+});
+
 test("parseStoryText treats negative-focus character frames as non-speaker visual state", () => {
   const blocks = parseStoryText(`
 [character(name="char_010_chen_summer",focus=-1)]

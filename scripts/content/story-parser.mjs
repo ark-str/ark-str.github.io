@@ -374,10 +374,6 @@ function selectWinningFrame(frames) {
       return candidateFrame;
     }
 
-    if (Boolean(candidateFrame.speakerId) !== Boolean(winningFrame.speakerId)) {
-      return candidateFrame.speakerId ? candidateFrame : winningFrame;
-    }
-
     if (candidateFrame.priority !== winningFrame.priority) {
       return candidateFrame.priority > winningFrame.priority ? candidateFrame : winningFrame;
     }
@@ -390,12 +386,31 @@ function selectWinningFrame(frames) {
   }, null);
 }
 
+function selectFreshWinningFrame(frames, speakerName) {
+  const winningFrame = selectWinningFrame(frames);
+
+  if (winningFrame?.speakerId) {
+    return winningFrame;
+  }
+
+  const confirmedCutinFrame = selectWinningFrame(
+    frames.filter(
+      (frame) =>
+        frame.source === "cutin" &&
+        frame.speakerId &&
+        frame.confirmedSpeakerName === speakerName,
+    ),
+  );
+
+  return confirmedCutinFrame ?? winningFrame;
+}
+
 function resolveWinningFrame(parserState, speakerName) {
   const activeFrames = getActiveFrames(parserState).filter((frame) => frame.priority >= 0);
   const freshEligibleFrames = activeFrames.filter(
     (frame) => !frame.staleAfterSceneBreak && isFrameEligibleForSpeaker(frame, speakerName),
   );
-  const freshWinningFrame = selectWinningFrame(freshEligibleFrames);
+  const freshWinningFrame = selectFreshWinningFrame(freshEligibleFrames, speakerName);
 
   if (freshWinningFrame?.speakerId) {
     return freshWinningFrame;
