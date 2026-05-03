@@ -334,7 +334,7 @@ function getAlphabeticSuffix(index) {
   return String(index + 1);
 }
 
-function createFrame(parserState, source, key, speakerId, priority) {
+function createFrame(parserState, source, key, speakerId, priority, hasExplicitSpeakerToken = false) {
   parserState.frameClock += 1;
 
   return {
@@ -342,6 +342,7 @@ function createFrame(parserState, source, key, speakerId, priority) {
     key,
     speakerId,
     priority,
+    hasExplicitSpeakerToken,
     confirmedSpeakerName: null,
     staleAfterSceneBreak: false,
     updatedAt: parserState.frameClock,
@@ -389,10 +390,6 @@ function selectWinningFrame(frames) {
 function selectFreshWinningFrame(frames, speakerName) {
   const winningFrame = selectWinningFrame(frames);
 
-  if (winningFrame?.speakerId) {
-    return winningFrame;
-  }
-
   const confirmedCutinFrame = selectWinningFrame(
     frames.filter(
       (frame) =>
@@ -402,13 +399,34 @@ function selectFreshWinningFrame(frames, speakerName) {
     ),
   );
 
+  if (!winningFrame) {
+    return confirmedCutinFrame;
+  }
+
+  if (winningFrame?.speakerId) {
+    if (
+      confirmedCutinFrame &&
+      winningFrame !== confirmedCutinFrame &&
+      winningFrame.speakerId !== confirmedCutinFrame.speakerId &&
+      winningFrame.confirmedSpeakerName &&
+      winningFrame.confirmedSpeakerName !== speakerName
+    ) {
+      return confirmedCutinFrame;
+    }
+
+    return winningFrame;
+  }
+
   if (confirmedCutinFrame) {
     return confirmedCutinFrame;
   }
 
   const newerSpeakerFrame = selectWinningFrame(
     frames.filter(
-      (frame) => frame.speakerId && frame.updatedAt > winningFrame.updatedAt,
+      (frame) =>
+        frame.speakerId &&
+        frame.updatedAt > winningFrame.updatedAt &&
+        (frame.hasExplicitSpeakerToken || frame.confirmedSpeakerName === speakerName),
     ),
   );
 
@@ -825,6 +843,7 @@ function consumeCharacterCutinTag(remainder, parserState) {
           widgetId,
           normalizeSpeakerIdToken(speakerToken),
           0,
+          true,
         ),
       );
     } else {
@@ -851,13 +870,23 @@ function consumeCharacterTag(remainder, parserState) {
     return characterMatch[2]?.trim() ?? "";
   }
 
-  parserState.characterFrame = createFrame(
+  const existingFrame = parserState.characterFrame;
+  const speakerId = resolveCharacterSpeakerId(rawAttributes);
+  const nextFrame = createFrame(
     parserState,
     "character",
     "character",
-    resolveCharacterSpeakerId(rawAttributes),
+    speakerId,
     parseNumericPriority(getLooseAttributeValue(rawAttributes, "focus")),
+    true,
   );
+
+  if (speakerId && existingFrame?.speakerId === speakerId) {
+    nextFrame.hasConfirmedSpeakerBinding = existingFrame.hasConfirmedSpeakerBinding;
+    nextFrame.confirmedSpeakerName = existingFrame.confirmedSpeakerName;
+  }
+
+  parserState.characterFrame = nextFrame;
 
   return characterMatch[2]?.trim() ?? "";
 }
@@ -908,7 +937,14 @@ function consumeCharslotTag(remainder, parserState) {
     }
   }
 
-  const nextFrame = createFrame(parserState, "charslot", slotKey, nextSpeakerId, nextPriority);
+  const nextFrame = createFrame(
+    parserState,
+    "charslot",
+    slotKey,
+    nextSpeakerId,
+    nextPriority,
+    speakerToken !== null,
+  );
   if (speakerToken === null && existingFrame?.speakerId === nextSpeakerId) {
     nextFrame.hasConfirmedSpeakerBinding = existingFrame.hasConfirmedSpeakerBinding;
     nextFrame.confirmedSpeakerName = existingFrame.confirmedSpeakerName;

@@ -227,6 +227,66 @@ test("parseStoryText lets unconfirmed cutins beat empty focused character frames
   );
 });
 
+test("parseStoryText keeps confirmed cutins from losing to confirmed frames for other speakers", () => {
+  const blocks = parseStoryText(`
+[CharacterCutin(widgetID="1", name="avg_1013_spchen_1", style="cutin")]
+[Character(name="char_empty",name2="avg_npc_196_1#5",focus=1)]
+[name="Ch'en"]Done.
+[Character(name="char_empty",name2="avg_npc_196_1#5",focus=2)]
+[name="Lin Yühsia"]They locked all the dignitaries in a single room.
+[name="Ch'en"]These hostages are basically his lifeline.
+`);
+
+  assert.deepEqual(
+    dialogueBlocks(blocks).map((block) => [block.speakerName, block.speakerId, block.isRemote]),
+    [
+      ["Ch'en", "avg_1013_spchen_1", true],
+      ["Lin Yühsia", "avg_npc_196_1", false],
+      ["Ch'en", "avg_1013_spchen_1", true],
+    ],
+  );
+});
+
+test("parseStoryText carries character confirmation through same-id frame updates", () => {
+  const blocks = parseStoryText(`
+[CharacterCutin(widgetID="1", name="char_010_chen_1", style="cutin")]
+[name="Ch'en"]I hear you.
+[Character(name="char_002_amiya_1")]
+[name="Amiya"]Can I confirm the validity of that order?
+[Character(name="char_002_amiya_1",focus=0)]
+[name="Ch'en"]100% valid, effective immediately.
+`);
+
+  assert.deepEqual(
+    dialogueBlocks(blocks).map((block) => [block.speakerName, block.speakerId, block.isRemote]),
+    [
+      ["Ch'en", "char_010_chen", true],
+      ["Amiya", "char_002_amiya", false],
+      ["Ch'en", "char_010_chen", true],
+    ],
+  );
+});
+
+test("parseStoryText lets explicit same-name local frames beat confirmed cutins", () => {
+  const blocks = parseStoryText(`
+[charslot(slot="l", name="avg_local_1#1")]
+[name="Slacking Soldier"]Local line.
+[CharacterCutin(widgetID="1", name="avg_remote_1#1", style="cutin")]
+[name="Slacking Soldier"]Remote line.
+[charslot(slot="l", name="avg_local_1#1")]
+[name="Slacking Soldier"]Local line again.
+`);
+
+  assert.deepEqual(
+    dialogueBlocks(blocks).map((block) => [block.speakerName, block.speakerId, block.isRemote]),
+    [
+      ["Slacking Soldier", "avg_local_1", false],
+      ["Slacking Soldier", "avg_remote_1", true],
+      ["Slacking Soldier", "avg_local_1", false],
+    ],
+  );
+});
+
 test("parseStoryText does not borrow another slot when the focused slot is unresolved", () => {
   const blocks = parseStoryText(`
 [charslot(slot="left", name="char_260_durnar_1")]
@@ -264,6 +324,26 @@ test("parseStoryText lets newer explicit slots recover from older unresolved foc
     [
       ["특공대원 A", null],
       ["페르난", "avg_4214_cairn_1"],
+    ],
+  );
+});
+
+test("parseStoryText ignores effect-only charslot updates for unresolved focus fallback", () => {
+  const blocks = parseStoryText(`
+[charslot(slot="m", name="avg_foo_1#1")]
+[name="Foo"]첫 대사.
+[charslot(slot="r", focus="r")]
+[name="Bar"]초상화 없는 대사.
+[charslot(slot="m", action="zoom", duration=1)]
+[name="Bar"]효과 태그 뒤에도 초상화 없는 대사.
+`);
+
+  assert.deepEqual(
+    dialogueBlocks(blocks).map((block) => [block.speakerName, block.speakerId]),
+    [
+      ["Foo", "avg_foo_1"],
+      ["Bar", null],
+      ["Bar", null],
     ],
   );
 });
@@ -530,6 +610,23 @@ test("parseStoryText does not persist stale char bindings from non-fresh frames"
       null,
       "char_500_noirc",
     ],
+  );
+});
+
+test("parseStoryText does not bind shared generic char frames to every named speaker", () => {
+  const blocks = parseStoryText(`
+[character(name="char_015_lmg",name2="char_015_lmg",focus=1)]
+[name="L.G.D. Officer A"]You can't hide!
+[character(name="char_015_lmg",name2="char_015_lmg",focus=2)]
+[name="L.G.D. Officer B"]We'll go easy on you.
+[Dialog]
+[Character]
+[name="L.G.D. Officer B"]Come out already!
+`);
+
+  assert.deepEqual(
+    blocks.filter((block) => block.type === "dialogue").map((block) => block.speakerId),
+    ["char_015_lmg", "char_015_lmg", null],
   );
 });
 
