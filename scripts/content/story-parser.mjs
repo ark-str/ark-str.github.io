@@ -881,7 +881,7 @@ function consumeCharacterTag(remainder, parserState) {
     true,
   );
 
-  if (speakerId && existingFrame?.speakerId === speakerId) {
+  if (speakerId && existingFrame?.speakerId === speakerId && !existingFrame.staleAfterSceneBreak) {
     nextFrame.hasConfirmedSpeakerBinding = existingFrame.hasConfirmedSpeakerBinding;
     nextFrame.confirmedSpeakerName = existingFrame.confirmedSpeakerName;
   }

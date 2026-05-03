@@ -630,6 +630,23 @@ test("parseStoryText does not bind shared generic char frames to every named spe
   );
 });
 
+test("parseStoryText does not carry character confirmation across scene breaks", () => {
+  const blocks = parseStoryText(`
+[Character(name="char_001_foo_1")]
+[name="Alias A"]first
+[Dialog]
+[Character(name="char_001_foo_1")]
+[name="Alias B"]second
+[Character]
+[name="Alias B"]fallback.
+`);
+
+  assert.deepEqual(
+    blocks.filter((block) => block.type === "dialogue").map((block) => block.speakerId),
+    ["char_001_foo", "char_001_foo", "char_001_foo"],
+  );
+});
+
 test("parseStoryText preserves charslot confirmation through focus-only updates", () => {
   const blocks = parseStoryText(`
 [charslot(slot="l",name="char_500_noirc_1")]
